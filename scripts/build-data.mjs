@@ -3,6 +3,7 @@ import { resolve, dirname, relative, extname } from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
 import { createHash } from 'node:crypto'
 import { canPublishImage, validateSource, validateSpecies } from '../src/data/species-model.js'
+import { prepareQuiz, publishQuiz } from './build-quiz.mjs'
 
 export const PROJECT_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
 
@@ -75,11 +76,21 @@ export async function generateData(root = PROJECT_ROOT, { check = false, validat
   return { catalog, archive: source.demoArchive }
 }
 
+export async function generateAllData(root = PROJECT_ROOT, options = {}) {
+  // Validate both sources before modifying either public projection.
+  const preview = await generateData(root, { validateOnly: true })
+  const quiz = await prepareQuiz(root, preview.catalog)
+  const result = await generateData(root, options)
+  await publishQuiz(root, quiz, options)
+  return { ...result, questionCount: quiz.questions.length }
+}
+
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
   try {
-    const result = await generateData(PROJECT_ROOT, {
+    const options = {
       check: process.argv.includes('--check'), validateOnly: process.argv.includes('--validate-only'),
-    })
-    console.log(`Данные проверены: каталог ${result.catalog.length}, архив ${result.archive.length}.`)
+    }
+    const result = await generateAllData(PROJECT_ROOT, options)
+    console.log(`Данные проверены: каталог ${result.catalog.length}, архив ${result.archive.length}, викторина ${result.questionCount}.`)
   } catch (error) { console.error(error.message); process.exitCode = 1 }
 }

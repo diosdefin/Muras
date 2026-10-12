@@ -1,8 +1,11 @@
 <script setup>
-import { computed, onMounted, ref } from 'vue'
+import { computed, nextTick, onMounted, ref } from 'vue'
 import SpeciesCard from './components/SpeciesCard.vue'
 import SpeciesModal from './components/SpeciesModal.vue'
+import QuizView from './components/quiz/QuizView.vue'
+import LessonView from './components/lesson/LessonView.vue'
 import { validateSpecies } from './data/species-model.js'
+import { validateQuestions } from './data/quiz/model.js'
 import { regionNames, STATUS_DETAILS } from './data/presentation.js'
 
 const species = ref([])
@@ -11,6 +14,36 @@ const selectedRegion = ref('ALL')
 const isLoading = ref(true)
 const errorMessage = ref('')
 const selectedSpecies = ref(null)
+const activeView = ref('catalog')
+const quizQuestions = ref([])
+const quizLoading = ref(true)
+const quizError = ref('')
+const lessonView = ref(null)
+const quizFromLesson = ref(false)
+
+async function showView(view) {
+  if (activeView.value === 'lesson' && view !== 'lesson' && await lessonView.value?.exitFullscreen() === false) return
+  activeView.value = view
+  await nextTick()
+  document.getElementById(view)?.focus()
+}
+
+function openQuizFromLesson() {
+  quizFromLesson.value = true
+  return showView('quiz')
+}
+
+async function showHome() {
+  await showView('catalog')
+  if (activeView.value !== 'catalog') return
+  window.scrollTo({ top: 0, behavior: 'instant' })
+  document.querySelector('.brand')?.focus({ preventScroll: true })
+}
+
+function studySpecies(id) {
+  const record = species.value.find(item => item.id === id)
+  if (record) openSpecies(record)
+}
 
 const statuses = [
   { value: 'ALL', label: 'Все виды' },
@@ -59,20 +92,34 @@ onMounted(async () => {
   } finally {
     isLoading.value = false
   }
+  try {
+    if (errorMessage.value) throw new Error('Для викторины нужен доступный каталог видов.')
+    const response = await fetch(`${import.meta.env.BASE_URL}data/quiz.json`)
+    if (!response.ok) throw new Error(`Не удалось загрузить вопросы: ${response.status}.`)
+    const questions = await response.json()
+    const errors = validateQuestions(questions, species.value)
+    if (errors.length) throw new Error(`Некорректные вопросы: ${errors[0]}`)
+    quizQuestions.value = questions
+  } catch (error) { quizError.value = error.message }
+  finally { quizLoading.value = false }
 })
 </script>
 
 <template>
-  <a class="skip-link" href="#catalog">Перейти к каталогу</a>
+  <a class="skip-link" :href="`#${activeView}`">Перейти к содержимому</a>
   <header class="page-header page-container">
-    <a class="brand" href="#" aria-label="Redbook — главная страница">
+    <a class="brand" href="#" aria-label="Redbook — главная страница" @click.prevent="showHome">
       <span class="brand-mark" aria-hidden="true">R<span>.</span></span>
       <span>Redbook<span class="brand-caption">Кыргызстан</span></span>
     </a>
-    <a class="header-link" href="#catalog" aria-label="Каталог видов">Каталог <span aria-hidden="true">↗</span></a>
+    <nav class="main-navigation" aria-label="Основная навигация">
+      <a class="header-link" href="#catalog" aria-label="Каталог видов" :aria-current="activeView === 'catalog' ? 'page' : undefined" @click.prevent="showView('catalog')">Каталог</a>
+      <a class="header-link" href="#quiz" :aria-current="activeView === 'quiz' ? 'page' : undefined" @click.prevent="showView('quiz')">Викторина</a>
+      <a class="header-link" href="#lesson" :aria-current="activeView === 'lesson' ? 'page' : undefined" @click.prevent="showView('lesson')">Режим урока</a>
+    </nav>
   </header>
   <main>
-    <section class="hero page-container" aria-labelledby="page-title">
+    <section v-show="activeView === 'catalog'" class="hero page-container" aria-labelledby="page-title">
       <div class="hero-copy">
         <p class="eyebrow"><span class="red-rule" aria-hidden="true"></span> Цифровая энциклопедия природы</p>
         <h1 id="page-title">Красная книга<br /><span>Кыргызстана</span></h1>
@@ -90,7 +137,7 @@ onMounted(async () => {
         <p>Природа Кыргызстана<span>Наблюдать · изучать · сохранять</span></p>
       </div>
     </section>
-    <section id="catalog" class="catalog page-container" aria-labelledby="catalog-title" tabindex="-1" :aria-busy="isLoading">
+    <section v-show="activeView === 'catalog'" id="catalog" class="catalog page-container" aria-labelledby="catalog-title" tabindex="-1" :aria-busy="isLoading">
       <div class="catalog-heading">
         <div>
           <p class="eyebrow">Каталог видов</p>
@@ -120,6 +167,10 @@ onMounted(async () => {
         <SpeciesCard v-for="animal in filteredSpecies" :key="animal.id" :species="animal" @open="openSpecies" />
       </div>
     </section>
+    <QuizView v-show="activeView === 'quiz'" :questions="quizQuestions" :species="species" :loading="quizLoading" :error="quizError" :return-to-lesson="quizFromLesson"
+      @catalog="showView('catalog')" @study="studySpecies" @lesson="showView('lesson')" />
+    <LessonView ref="lessonView" v-show="activeView === 'lesson'" :species="species" :active="activeView === 'lesson'" :loading="isLoading" :error="errorMessage"
+      @catalog="showView('catalog')" @quiz="openQuizFromLesson" />
   </main>
   <footer class="page-footer page-container">
     <p><span class="footer-brand">Redbook</span> · Образовательный проект</p>
