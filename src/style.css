@@ -73,6 +73,9 @@
   .image-caption { position: absolute; bottom: 14px; left: 14px; right: 14px; width: fit-content; padding: 4px 10px; background: #ffffffed; border-radius: 4px; font-size: 13px; color: var(--muted); }
   .image-fallback { padding: 24px; color: var(--muted); }
   .card-body { padding: 22px; display: flex; flex: 1; flex-direction: column; min-width: 0; }
+  .card-photo-credit { position: relative; z-index: 1; margin-bottom: 20px; color: var(--muted); font-size: 14px; }
+  .card-photo-credit a { display: inline-flex; align-items: center; min-height: 44px; margin-right: 12px; text-decoration: underline; text-underline-offset: 3px; }
+  .card-group { margin-bottom: 12px; color: var(--muted); font-size: 14px; font-weight: 600; }
   .status-badge { width: fit-content; max-width: 100%; padding: 5px 9px; border-radius: 4px; background: #eaf0e8; color: #36533f; font-size: 13px; font-weight: 600; overflow-wrap: anywhere; }
   .status-badge[data-category="VU"], .status-badge[data-category="NT"] { color: #715027; background: #f6efdf; }
   .status-badge[data-category="EN"], .status-badge[data-category="CR"] { color: #983a36; background: #f8eae6; }
@@ -92,7 +95,7 @@
   .skip-link { position: fixed; top: 12px; left: 12px; z-index: 100; padding: 12px 20px; background: white; border: 1px solid var(--ink); border-radius: 4px; transform: translateY(-200%); }
   .skip-link:focus { transform: translateY(0); }
 
-  .modal-shell { width: calc(100% - 24px); max-width: 1120px; max-height: calc(100vh - 24px); max-height: calc(100dvh - 24px); margin: auto; padding: 0; border: 1px solid var(--line); border-radius: 14px; background: white; color: var(--ink); overflow: hidden; box-shadow: 0 24px 80px #253b3226; }
+  .modal-shell { width: calc(100% - 24px); max-width: 1120px; max-height: calc(100vh - 24px); max-height: calc(100dvh - 24px); margin: auto; padding: 0; border: 1px solid var(--line); border-radius: 14px; background: white; color: var(--ink); overflow: hidden; overflow: clip; box-shadow: 0 24px 80px #253b3226; }
   .modal-shell[open] { display: flex; flex-direction: column; }
   .modal-shell::backdrop { background: #253b3273; }
   .modal-header { display: flex; flex-shrink: 0; align-items: center; justify-content: space-between; gap: 12px; padding: 16px; border-bottom: 1px solid var(--line); }

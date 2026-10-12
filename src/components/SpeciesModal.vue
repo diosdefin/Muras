@@ -1,6 +1,6 @@
 <script setup>
 import { computed, nextTick, onBeforeUnmount, ref, watch } from 'vue'
-import { formatPopulation, localized, publicImageUrl, regionNames, speciesName, speciesPhoto, statusDetails } from '../data/presentation.js'
+import { formatPopulation, groupLabel, localized, nationalStatus, publicImageUrl, regionNames, speciesName, speciesPhoto, statusDetails } from '../data/presentation.js'
 import { useModalDialog } from '../composables/useModalDialog.js'
 
 const props = defineProps({ species: { type: Object, required: true } })
@@ -118,9 +118,10 @@ onBeforeUnmount(() => { image.onload = null; image.onerror = null })
               :aria-valuetext="`Детализация: ${detailValue}`" aria-describedby="pixel-note" />
             <div class="range-endpoints" aria-hidden="true"><span>Меньше деталей</span><span>Больше деталей</span></div>
           </div>
-          <p id="pixel-note" class="media-note">Условный эффект не отражает численность животных.</p>
+          <p id="pixel-note" class="media-note">Условный эффект не отражает численность вида.</p>
           <p v-if="!photo" class="media-note">Фото не опубликовано: лицензия не подтверждена.</p>
           <div v-else class="photo-credit">
+            <p v-if="photo.caption" :lang="contentLanguage(photo.caption)">{{ localized(photo.caption, activeLanguage) }}</p>
             <p>{{ photo.attribution }}</p>
             <a :href="photo.originalPage" target="_blank" rel="noopener noreferrer">Источник фото <span class="sr-only">(откроется в новой вкладке)</span></a>
             <a :href="photo.licenseUrl" target="_blank" rel="noopener noreferrer">{{ photo.license }} <span class="sr-only">(откроется в новой вкладке)</span></a>
@@ -128,10 +129,12 @@ onBeforeUnmount(() => { image.onload = null; image.onerror = null })
           </div>
         </section>
         <div class="modal-information">
+          <p class="card-group">{{ groupLabel(species) }}</p>
           <p class="status-badge" :data-category="species.iucn.category">{{ statusDetails(species).label }}</p>
+          <p v-if="species.iucn.category && !species.iucn.year" class="media-note">Год индивидуальной оценки IUCN в доступном источнике не указан.</p>
           <p v-if="species.scientificName" class="modal-scientific scientific-name" lang="la">{{ species.scientificName }}</p>
-          <p class="national-status">Национальная Красная книга: {{ species.nationalRedBook.category || 'категория не подтверждена' }}.
-            {{ species.verified ? 'Запись проверена.' : 'Кандидат, проверка не завершена.' }}</p>
+          <p class="national-status">{{ nationalStatus(species) }}.
+            {{ species.nationalRedBook.edition }}. {{ species.verified ? 'Запись проверена.' : 'Требует редакторской проверки.' }}</p>
           <div class="language-switch" role="group" aria-label="Язык названия и описания">
             <button v-for="language in languages" :key="language.key" type="button"
               :aria-label="language.accessibleName" :aria-pressed="activeLanguage === language.key"
@@ -155,6 +158,13 @@ onBeforeUnmount(() => { image.onload = null; image.onerror = null })
             <h3 id="threats-title">Главные угрозы</h3>
             <ul v-if="species.threats" class="threat-list">
               <li v-for="(threat, index) in species.threats" :key="index" :lang="contentLanguage(threat.text)">{{ localized(threat.text, activeLanguage) }}</li>
+            </ul>
+            <p v-else>Сведения пока не подтверждены.</p>
+          </section>
+          <section class="information-section" aria-labelledby="conservation-title">
+            <h3 id="conservation-title">Меры охраны</h3>
+            <ul v-if="species.conservationMeasures" class="threat-list">
+              <li v-for="(measure, index) in species.conservationMeasures" :key="index" :lang="contentLanguage(measure.text)">{{ localized(measure.text, activeLanguage) }}</li>
             </ul>
             <p v-else>Сведения пока не подтверждены.</p>
           </section>

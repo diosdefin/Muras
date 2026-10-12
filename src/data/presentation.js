@@ -22,6 +22,18 @@ export function speciesName(species, language = 'ru') {
   return localized(species.names, language) || species.scientificName || species.id
 }
 
+export function groupLabel(species) {
+  return { mammals: 'Млекопитающие', birds: 'Птицы', plants: 'Растения', fish: 'Рыбы',
+    reptiles: 'Пресмыкающиеся', amphibians: 'Земноводные', invertebrates: 'Беспозвоночные',
+    fungi: 'Грибы' }[species.group] || 'Группа не установлена'
+}
+
+export function nationalStatus(species) {
+  const status = species.nationalRedBook
+  if (status?.listed !== true) return 'Красная книга КР · включение не подтверждено'
+  return `Красная книга КР · ${status.category || 'включён; категория не установлена'} (${status.year})`
+}
+
 export function formatPopulation(population) {
   if (!population?.estimate) return 'Численность неизвестна'
   const { min, max } = population.estimate

@@ -1,6 +1,6 @@
 <script setup>
 import { computed, ref } from 'vue'
-import { formatPopulation, localized, publicImageUrl, speciesName, speciesPhoto, statusDetails } from '../data/presentation.js'
+import { formatPopulation, groupLabel, localized, nationalStatus, publicImageUrl, speciesName, speciesPhoto, statusDetails } from '../data/presentation.js'
 
 const props = defineProps({ species: { type: Object, required: true } })
 const emit = defineEmits(['open'])
@@ -13,14 +13,22 @@ const formattedPopulation = computed(() => props.species.population.estimate ? f
 <template>
   <article class="species-card">
     <div class="card-image">
-      <img v-if="!imageFailed" :src="imagePath" width="800" height="600"
+      <img v-if="!imageFailed" :src="imagePath" :width="photo?.width || 800" :height="photo?.height || 600" loading="lazy" decoding="async"
         :alt="photo ? `${speciesName(species)} — фотография` : 'Условный горный пейзаж; фотография вида пока недоступна'"
         @error="imageFailed = true" />
       <p v-else class="image-fallback">Изображение недоступно</p>
       <span v-if="!photo" class="image-caption">Условная иллюстрация</span>
     </div>
     <div class="card-body">
+      <div v-if="photo" class="card-photo-credit">
+        <p>{{ localized(photo.caption) }}</p>
+        <a :href="photo.originalPage" target="_blank" rel="noopener noreferrer">Фото: {{ photo.author }}<span class="sr-only"> (оригинальная страница, новая вкладка)</span></a>
+        <a :href="photo.licenseUrl" target="_blank" rel="noopener noreferrer">{{ photo.license }}<span class="sr-only"> (условия использования, новая вкладка)</span></a>
+        <p>WebP · кадрирование; полные сведения об изменениях — в записи.</p>
+      </div>
+      <p class="card-group">{{ groupLabel(species) }}</p>
       <p class="status-badge" :data-category="species.iucn.category">{{ statusDetails(species).label }}</p>
+      <p class="national-status">{{ nationalStatus(species) }}</p>
       <h3>{{ speciesName(species) }}</h3>
       <p class="card-names">
         <span v-if="species.names.ky" lang="ky">{{ species.names.ky }}</span>
@@ -28,7 +36,7 @@ const formattedPopulation = computed(() => props.species.population.estimate ? f
       </p>
       <p v-if="species.scientificName" class="scientific-name" lang="la">{{ species.scientificName }}</p>
       <p class="card-description">{{ localized(species.habitat?.description) || 'Сведения о местообитании пока не подтверждены.' }}</p>
-      <p v-if="!species.verified" class="verification-note"><span aria-hidden="true">○</span> Кандидат · запись ещё не проверена</p>
+      <p v-if="!species.verified" class="verification-note"><span aria-hidden="true">○</span> Требует редакторской проверки</p>
       <div class="card-population">
         <span>Численность</span>
         <strong>{{ formattedPopulation }}</strong>

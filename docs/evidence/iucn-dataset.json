@@ -1,0 +1,218 @@
+{
+  "key": "19491596-35ae-4a91-9a98-85cf505f1bd3",
+  "installationKey": "fb5e4c2a-579c-434b-a446-3a665dd732ad",
+  "publishingOrganizationKey": "d44af9a3-e779-40c0-a186-79e7717c6d2b",
+  "doi": "10.15468/0qnb58",
+  "external": false,
+  "numConstituents": 0,
+  "type": "CHECKLIST",
+  "title": "The IUCN Red List of Threatened Species",
+  "description": "<p>Established in 1964, the International Union for Conservation of Nature’s Red List of Threatened Species has evolved to become the world’s most comprehensive information source on the global extinction risk status of animal, fungus and plant species.</p><p>The IUCN Red List is a critical indicator of the health of the world’s biodiversity. Far more than a list of species and their status, it is a powerful tool to inform and catalyse action for biodiversity conservation and policy change, critical to protecting the natural resources we need to survive. It provides information about range, population size, habitat and ecology, use and/or trade, threats, and conservation actions that will help inform necessary conservation decisions.</p><p>The IUCN Red List is used by government agencies, wildlife departments, conservation-related non-governmental organisations (NGOs), natural resource planners, educational organisations, students, and the business community. The Red List process has become a massive enterprise involving the IUCN Global Species Program staff, partner organisations and experts in the IUCN Species Survival Commission and partner networks who compile the species information to make The IUCN Red List the indispensable product it is today.</p>",
+  "language": "eng",
+  "homepage": "https://www.iucnredlist.org/",
+  "logoUrl": "https://raw.githubusercontent.com/mdoering/checklist_builder/master/src/main/resources/iucn/IUCN_Red_List.svg",
+  "citation": {
+    "text": "IUCN (2026). The IUCN Red List of Threatened Species. Version 2026-1. https://www.iucnredlist.org. Downloaded on 2026-07-28. https://doi.org/10.15468/0qnb58 accessed via GBIF.org on 2026-10-12.",
+    "citationProvidedBySource": true
+  },
+  "contactsCitation": [],
+  "lockedForAutoUpdate": false,
+  "createdBy": "registry-migration.gbif.org",
+  "modifiedBy": "crawler.gbif.org",
+  "created": "2011-07-18T18:35:28+06:00",
+  "modified": "2026-07-30T08:30:35.334+06:00",
+  "contacts": [
+    {
+      "key": 7094395,
+      "type": "ORIGINATOR",
+      "primary": true,
+      "userId": [],
+      "lastName": "International Union for Conservation of Nature",
+      "position": [],
+      "email": [],
+      "phone": [],
+      "homepage": [
+        "https://www.iucn.org/"
+      ],
+      "organization": "International Union for Conservation of Nature",
+      "address": [],
+      "createdBy": "crawler.gbif.org",
+      "modifiedBy": "crawler.gbif.org",
+      "created": "2026-07-30T08:30:35.308+06:00",
+      "modified": "2026-07-30T08:30:35.308+06:00"
+    },
+    {
+      "key": 7094396,
+      "type": "METADATA_AUTHOR",
+      "primary": true,
+      "userId": [
+        "https://orcid.org/0000-0003-0623-6682"
+      ],
+      "firstName": "Matthew",
+      "lastName": "Blissett",
+      "position": [
+        "Software Developer"
+      ],
+      "email": [
+        "mblissett@gbif.org"
+      ],
+      "phone": [],
+      "homepage": [],
+      "organization": "GBIF",
+      "address": [],
+      "createdBy": "crawler.gbif.org",
+      "modifiedBy": "crawler.gbif.org",
+      "created": "2026-07-30T08:30:35.31+06:00",
+      "modified": "2026-07-30T08:30:35.31+06:00"
+    },
+    {
+      "key": 7094397,
+      "type": "TECHNICAL_POINT_OF_CONTACT",
+      "primary": false,
+      "userId": [],
+      "firstName": "Simon",
+      "lastName": "Tarr",
+      "position": [
+        "Biodiversity Systems Manager"
+      ],
+      "email": [
+        "Simon.TARR@iucn.org"
+      ],
+      "phone": [],
+      "homepage": [],
+      "organization": "International Union for Conservation of Nature",
+      "address": [],
+      "createdBy": "crawler.gbif.org",
+      "modifiedBy": "crawler.gbif.org",
+      "created": "2026-07-30T08:30:35.311+06:00",
+      "modified": "2026-07-30T08:30:35.311+06:00"
+    },
+    {
+      "key": 7094398,
+      "type": "PROGRAMMER",
+      "primary": false,
+      "userId": [
+        "https://orcid.org/0000-0003-0623-6682"
+      ],
+      "firstName": "Matthew",
+      "lastName": "Blissett",
+      "position": [
+        "Software Developer"
+      ],
+      "email": [
+        "mblissett@gbif.org"
+      ],
+      "phone": [],
+      "homepage": [],
+      "organization": "GBIF",
+      "address": [],
+      "createdBy": "crawler.gbif.org",
+      "modifiedBy": "crawler.gbif.org",
+      "created": "2026-07-30T08:30:35.313+06:00",
+      "modified": "2026-07-30T08:30:35.313+06:00"
+    },
+    {
+      "key": 7094399,
+      "type": "ADMINISTRATIVE_POINT_OF_CONTACT",
+      "primary": true,
+      "userId": [],
+      "firstName": "Craig",
+      "lastName": "Hilton-Taylor",
+      "position": [],
+      "email": [
+        "Craig.HILTON-TAYLOR@iucn.org"
+      ],
+      "phone": [],
+      "homepage": [],
+      "organization": "International Union for Conservation of Nature",
+      "address": [],
+      "createdBy": "crawler.gbif.org",
+      "modifiedBy": "crawler.gbif.org",
+      "created": "2026-07-30T08:30:35.314+06:00",
+      "modified": "2026-07-30T08:30:35.314+06:00"
+    }
+  ],
+  "endpoints": [
+    {
+      "key": 1294697,
+      "type": "DWC_ARCHIVE",
+      "url": "https://hosted-datasets.gbif.org/datasets/iucn/iucn-latest.zip",
+      "createdBy": "MattBlissett",
+      "modifiedBy": "MattBlissett",
+      "created": "2026-06-09T17:13:43.8+06:00",
+      "modified": "2026-06-09T17:13:43.8+06:00",
+      "machineTags": []
+    }
+  ],
+  "machineTags": [
+    {
+      "key": 33065387,
+      "namespace": "crawler.gbif.org",
+      "name": "crawl_attempt",
+      "value": "422",
+      "createdBy": "crawler.gbif.org",
+      "created": "2026-10-06T20:45:44.444+06:00"
+    }
+  ],
+  "tags": [],
+  "identifiers": [
+    {
+      "key": 436650,
+      "type": "CLB_DATASET_KEY",
+      "identifier": "53131",
+      "createdBy": "clb-bot",
+      "created": "2025-02-21T17:21:46.961+06:00",
+      "primary": false
+    },
+    {
+      "key": 11549,
+      "type": "GBIF_PORTAL",
+      "identifier": "13623",
+      "createdBy": "registry-migration.gbif.org",
+      "created": "2012-09-05T20:04:22+06:00",
+      "primary": false
+    }
+  ],
+  "comments": [
+    {
+      "key": 35448,
+      "content": "[2023-11-20, ah] changed technical contact on request from IUCN contact (helpdesk email: 17.11. via Andrew R.)",
+      "createdBy": "andrea",
+      "modifiedBy": "andrea",
+      "created": "2023-11-20T14:02:07.607+06:00",
+      "modified": "2023-11-20T14:02:07.607+06:00"
+    },
+    {
+      "key": 35445,
+      "content": "[2023-11-17, ah] License update from CC BY-NC to CC BY on consultation with IUCN contact (helpdesk email: 17.11.23, via Andrew R.)",
+      "createdBy": "andrea",
+      "modifiedBy": "andrea",
+      "created": "2023-11-17T14:36:51.837+06:00",
+      "modified": "2023-11-17T14:36:51.837+06:00"
+    }
+  ],
+  "bibliographicCitations": [],
+  "curatorialUnits": [],
+  "taxonomicCoverages": [],
+  "geographicCoverages": [],
+  "temporalCoverages": [],
+  "keywordCollections": [],
+  "countryCoverage": [],
+  "collections": [],
+  "dataDescriptions": [],
+  "dataLanguage": "eng",
+  "pubDate": "2026-07-28T06:00:00+06:00",
+  "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+  "dwca": {
+    "coreType": "http://rs.tdwg.org/dwc/terms/Taxon",
+    "extensions": [
+      "http://rs.gbif.org/terms/1.0/VernacularName",
+      "http://rs.gbif.org/terms/1.0/Distribution"
+    ],
+    "modified": "2026-10-06T20:45:48.614+06:00"
+  },
+  "approximateCounts": {
+    "occurrenceCount": 0,
+    "nameUsageCount": 338085
+  }
+}

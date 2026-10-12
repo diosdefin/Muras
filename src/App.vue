@@ -123,7 +123,7 @@ onMounted(async () => {
   </main>
   <footer class="page-footer page-container">
     <p><span class="footer-brand">Redbook</span> · Образовательный проект</p>
-    <p>Пикселизация — условная иллюстрация,<br class="hidden sm:block" /> а не подсчёт животных.</p>
+    <p>Пикселизация — условная иллюстрация,<br class="hidden sm:block" /> а не подсчёт особей.</p>
   </footer>
   <SpeciesModal v-if="selectedSpecies" :species="selectedSpecies" @close="closeSpecies" />
 </template>

@@ -27,6 +27,31 @@ def pixelate_image(image_path: Path, output_path: Path, detail: int = 64,
         small.resize((width, height), Image.Resampling.NEAREST).save(output_path)
 
 
+def optimize_image(image_path: Path, output_path: Path, max_edge: int = 1200,
+                   quality: int = 82) -> dict:
+    """Create a local WebP without upscaling or changing the subject/aspect ratio.
+
+    The editor checks permission first and records changes in the canonical JSON.
+    This operation does not publish assets or modify scientific records.
+    """
+    from hashlib import sha256
+    from PIL import Image, ImageOps
+
+    if not 256 <= max_edge <= 2400 or not 1 <= quality <= 100:
+        raise ValueError("max-edge must be 256..2400; quality must be 1..100")
+    if output_path.suffix.lower() != ".webp":
+        raise ValueError("Optimized output must have .webp extension")
+    output_path.parent.mkdir(parents=True, exist_ok=True)
+    with Image.open(image_path) as source:
+        optimized = ImageOps.exif_transpose(source).convert("RGB")
+        optimized.thumbnail((max_edge, max_edge), Image.Resampling.LANCZOS)
+        optimized.save(output_path, "WEBP", quality=quality, method=6)
+        width, height = optimized.size
+    return {"width": width, "height": height,
+            "sha256": sha256(output_path.read_bytes()).hexdigest(),
+            "bytes": output_path.stat().st_size}
+
+
 def generate_previews(project_root: Path, detail: int = 64) -> list[Path]:
     """Read validated canonical data; only licence-confirmed photos are processed."""
     root = project_root.resolve()
@@ -50,11 +75,21 @@ def generate_previews(project_root: Path, detail: int = 64) -> list[Path]:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--detail", type=int, default=64)
+    parser.add_argument("--optimize-input", type=Path)
+    parser.add_argument("--optimize-output", type=Path)
+    parser.add_argument("--max-edge", type=int, default=1200)
+    parser.add_argument("--quality", type=int, default=82)
     args = parser.parse_args()
     try:
         if not 8 <= args.detail <= 200:
             raise ValueError("detail must be 8..200")
-        files = generate_previews(Path(__file__).resolve().parent.parent, args.detail)
-        print(f"Created {len(files)} licensed educational previews. Public JSON unchanged.")
+        if args.optimize_input or args.optimize_output:
+            if not args.optimize_input or not args.optimize_output:
+                raise ValueError("Both --optimize-input and --optimize-output are required")
+            print(json.dumps(optimize_image(args.optimize_input, args.optimize_output,
+                                            args.max_edge, args.quality)))
+        else:
+            files = generate_previews(Path(__file__).resolve().parent.parent, args.detail)
+            print(f"Created {len(files)} licensed educational previews. Public JSON unchanged.")
     except (OSError, ValueError, subprocess.CalledProcessError) as error:
         parser.exit(1, f"Image processing failed: {error}\n")
