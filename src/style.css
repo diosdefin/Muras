@@ -9,27 +9,26 @@
   color-scheme: dark;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+  background-color: #020617;
 }
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  background: #020617;
+}
+
 body {
   margin: 0;
   min-width: 320px;
+  background: #020617;
+  color: #e2e8f0;
 }
 
-@keyframes celebrate {
-  0% {
-    opacity: 0;
-    transform: translateY(0.75rem) scale(0.7);
-  }
-  70% {
-    opacity: 1;
-    transform: translateY(-0.2rem) scale(1.08);
-  }
-  100% {
-    transform: translateY(0) scale(1);
-  }
+button,
+input,
+select {
+  font: inherit;
 }
