@@ -21,12 +21,9 @@ const activeName = computed(() => props.geometry.regions.find(r => r.id === (hov
     </svg>
     <p class="map-hover-name">{{ activeName || 'Выберите область на карте или в списке' }}</p>
     <div class="map-legend"><span><i aria-hidden="true"></i> Административные границы</span><span><i class="selected" aria-hidden="true"></i> Выбранная область</span></div>
-    <div class="filter-field map-region-select">
-      <label for="map-region-select">Выберите область</label>
-      <select id="map-region-select" :value="selected" @change="emit('select', $event.target.value)">
-        <option value="">Область не выбрана</option>
-        <option v-for="region in geometry.regions" :key="region.id" :value="region.id">{{ region.name }}</option>
-      </select>
+    <div id="map-region-select" class="map-region-select" role="group" aria-labelledby="region-choice-label" tabindex="-1">
+      <p id="region-choice-label">Выберите область</p>
+      <div class="region-choices"><button v-for="region in geometry.regions" :key="region.id" type="button" :aria-label="region.name" :aria-pressed="selected === region.id" aria-controls="map-region-panel" @click="emit('select', region.id)">{{ region.name.replace(/ская область$/, '') }}</button></div>
     </div>
   </div>
 </template>
