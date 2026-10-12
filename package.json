@@ -9,6 +9,7 @@
     "prebuild": "node scripts/build-data.mjs",
     "build": "vite build",
     "preview": "vite preview",
+    "data": "node scripts/build-data.mjs",
     "data:generate": "node scripts/build-data.mjs",
     "data:validate": "node scripts/build-data.mjs --check",
     "data:images": "python scripts/process_data.py",

@@ -124,6 +124,9 @@ export function validateSpecies(records, label = 'catalog', { publicData = false
       if (!object(image)) { fail(ip, 'ожидается объект'); return }
       for (const key of ['path', 'author', 'originalPage', 'license', 'licenseUrl', 'attribution']) if (!nullableText(image[key])) fail(`${ip}.${key}`, 'ожидается строка или null')
       if (typeof image.licenseVerified !== 'boolean') fail(`${ip}.licenseVerified`, 'ожидается boolean')
+      if (image.caption !== undefined) localized(image.caption, `${ip}.caption`)
+      if (image.sha256 !== undefined && (typeof image.sha256 !== 'string' || !/^[a-f0-9]{64}$/.test(image.sha256))) fail(`${ip}.sha256`, 'ожидается SHA-256 из 64 шестнадцатеричных символов')
+      for (const key of ['width', 'height']) if (image[key] !== undefined && (!Number.isInteger(image[key]) || image[key] <= 0)) fail(`${ip}.${key}`, 'ожидается положительный размер в пикселях')
       if (image.modifications !== null && (!Array.isArray(image.modifications) || image.modifications.some(v => !text(v)))) fail(`${ip}.modifications`, 'ожидается массив строк или null')
       for (const key of ['originalPage', 'licenseUrl']) if (image[key] !== null && !url(image[key])) fail(`${ip}.${key}`, 'ожидается HTTP(S) URL')
       if (text(image.path) && (image.path.includes('..') || image.path.includes('\\') || /^[a-z]+:/i.test(image.path) || !/\.(png|jpe?g|webp)$/i.test(image.path))) fail(`${ip}.path`, 'ожидается локальный безопасный путь к PNG/JPEG/WebP')

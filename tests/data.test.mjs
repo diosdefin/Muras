@@ -6,20 +6,41 @@ import { join } from 'node:path'
 import { createHash } from 'node:crypto'
 import { PROJECT_ROOT, generateData } from '../scripts/build-data.mjs'
 import { validateSource, validateSpecies, canPublishImage } from '../src/data/species-model.js'
-import { formatPopulation, regionNames, speciesName, speciesPhoto } from '../src/data/presentation.js'
+import { formatPopulation, groupLabel, nationalStatus, regionNames, speciesName, speciesPhoto } from '../src/data/presentation.js'
 
 const source = JSON.parse(await readFile(join(PROJECT_ROOT, 'data/species.source.json'), 'utf8'))
-const fresh = () => structuredClone(source)
+const catalogIds = ['irbis', 'argali', 'manul', 'golden-eagle', 'bearded-vulture', 'saker-falcon', 'greigs-tulip', 'kaufmanns-tulip', 'sievers-apple']
+// Keep validation/generator fixtures independent of the size and licence approvals of the real catalogue.
+const fresh = () => {
+  const d = structuredClone(source)
+  d.catalog = [d.catalog[0]]
+  d.catalog[0].images = [d.catalog[0].images.find(image => !image.licenseVerified)]
+  d.catalog[0].nationalRedBook = { listed: null, category: null, edition: null, year: null, sourceIds: [] }
+  return d
+}
 
-test('canonical data: one candidate, two archived examples, no invented populations', () => {
+test('canonical data: nine Kyrgyzstan records, three groups, two archived examples, no invented populations', () => {
   assert.deepEqual(validateSource(source), [])
-  assert.deepEqual(source.catalog.map(s => s.id), ['irbis'])
+  assert.deepEqual(source.catalog.map(s => s.id), catalogIds)
+  for (const group of ['mammals', 'birds', 'plants']) assert.equal(source.catalog.filter(s => s.group === group).length, 3)
   assert.deepEqual(source.demoArchive.map(s => s.id), ['amur-tiger', 'whooping-crane'])
   for (const s of [...source.catalog, ...source.demoArchive]) {
     assert.equal(s.verified, false)
-    assert.equal(s.nationalRedBook.category, null)
     assert.equal(s.population.estimate, null)
   }
+  for (const s of source.catalog) {
+    assert.equal(s.nationalRedBook.listed, true)
+    assert.equal(s.regions[0].code, 'KG')
+    assert.ok(s.sources.find(source => s.regions[0].sourceIds.includes(source.id)).url.includes('282.pdf'))
+    assert.ok(s.names.ru && s.names.ky && s.names.en)
+    assert.equal(s.iucn.year, null) // Dataset publication year is not an assessment year.
+    assert.ok(speciesPhoto(s))
+  }
+  assert.equal(source.catalog.find(s => s.id === 'argali').nationalRedBook.category, null)
+  assert.equal(source.catalog[0].nationalRedBook.category, 'III · CR C2a(i): R, C1')
+  assert.equal(source.catalog[0].iucn.category, 'VU')
+  assert.equal(source.catalog.find(s => s.id === 'greigs-tulip').nationalRedBook.category, 'EN')
+  assert.equal(source.catalog.find(s => s.id === 'greigs-tulip').iucn.category, 'LC')
 })
 
 test('unknown fields and absent arrays produce readable validation errors', () => {
@@ -107,11 +128,11 @@ test('missing scientific data renders honest fallbacks', () => {
 })
 
 test('unconfirmed and incomplete photo licences are never publishable', () => {
-  const image = structuredClone(source.catalog[0].images[0])
+  const image = fresh().catalog[0].images[0]
   assert.equal(canPublishImage(image), false)
-  const s = structuredClone(source.catalog[0]); s.images[0].licenseVerified = true
+  const s = fresh().catalog[0]; s.images[0].licenseVerified = true
   assert.match(validateSpecies([s]).join('\n'), /заполненные метаданные/)
-  assert.match(validateSpecies(source.catalog, 'public', { publicData: true }).join('\n'), /только разрешённые фотографии/)
+  assert.match(validateSpecies(fresh().catalog, 'public', { publicData: true }).join('\n'), /только разрешённые фотографии/)
 })
 
 test('legacy backup preserves every original byte verified by SHA-256', async () => {
@@ -193,6 +214,49 @@ test('approved files must exist; traversal and unapproved leftovers fail checks'
 test('committed public projection validates and contains no private image paths', async () => {
   const publicCatalog = JSON.parse(await readFile(join(PROJECT_ROOT, 'public/data/species.json'), 'utf8'))
   assert.deepEqual(validateSpecies(publicCatalog, 'public', { publicData: true }), [])
-  assert.deepEqual(publicCatalog.map(s => s.id), ['irbis'])
+  assert.deepEqual(publicCatalog.map(s => s.id), catalogIds)
+  assert.equal(publicCatalog.every(s => s.images.length === 1 && s.images[0].path.endsWith('.webp')), true)
   assert.equal(JSON.stringify(publicCatalog).includes('data/backups'), false)
+})
+
+test('licensed assets are local WebP, have declared dimensions, captions and matching fingerprints', async () => {
+  for (const s of source.catalog) {
+    const image = speciesPhoto(s)
+    const bytes = await readFile(join(PROJECT_ROOT, image.path))
+    assert.equal(bytes.subarray(0, 4).toString(), 'RIFF')
+    assert.equal(bytes.subarray(8, 12).toString(), 'WEBP')
+    assert.equal(createHash('sha256').update(bytes).digest('hex'), image.sha256)
+    assert.ok(image.width <= 1200 && image.height <= 1200)
+    assert.ok(image.caption.ru && image.originalPage.startsWith('https://commons.wikimedia.org/wiki/File:'))
+    assert.ok(image.modifications.some(change => change.includes('пикселизация')))
+  }
+})
+
+test('an altered licensed asset fails before replacing generated public data', async () => {
+  await withFixture(async (root, d, save) => {
+    await generateData(root)
+    const before = await readFile(join(root, 'public/data/species.json'), 'utf8')
+    await mkdir(join(root, 'assets'), { recursive: true })
+    const image = structuredClone(source.catalog[0].images[0])
+    image.path = 'assets/changed.webp'
+    await writeFile(join(root, image.path), 'wrong bytes')
+    d.catalog[0].images = [image]; await save()
+    await assert.rejects(generateData(root), /Контрольная сумма фото не совпадает/)
+    assert.equal(await readFile(join(root, 'public/data/species.json'), 'utf8'), before)
+  })
+})
+
+test('invalid image fingerprints, dimensions and caption languages are rejected', () => {
+  const d = fresh(); const image = structuredClone(source.catalog[0].images[0]); d.catalog[0].images = [image]
+  image.sha256 = 'bad'; image.width = 0; image.caption.kg = 'wrong key'
+  const errors = validateSource(d).join('\n')
+  assert.match(errors, /SHA-256/); assert.match(errors, /положительный размер/); assert.match(errors, /используйте ky/)
+})
+
+test('group and national presentation handle unknown values separately from IUCN', () => {
+  assert.equal(groupLabel(source.catalog[0]), 'Млекопитающие')
+  assert.equal(groupLabel({ group: null }), 'Группа не установлена')
+  assert.match(nationalStatus(source.catalog[0]), /Красная книга КР.*CR.*2006/)
+  assert.match(nationalStatus(source.catalog.find(s => s.id === 'argali')), /категория не установлена/)
+  assert.match(nationalStatus({ nationalRedBook: null }), /включение не подтверждено/)
 })

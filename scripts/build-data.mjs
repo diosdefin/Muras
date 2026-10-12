@@ -1,6 +1,7 @@
 import { readFile, writeFile, mkdir, rm, rename, readdir } from 'node:fs/promises'
 import { resolve, dirname, relative, extname } from 'node:path'
 import { fileURLToPath, pathToFileURL } from 'node:url'
+import { createHash } from 'node:crypto'
 import { canPublishImage, validateSource, validateSpecies } from '../src/data/species-model.js'
 
 export const PROJECT_ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..')
@@ -26,13 +27,16 @@ export async function generateData(root = PROJECT_ROOT, { check = false, validat
     images: species.images.filter(canPublishImage).map((image, index) => {
       const original = safePath(root, image.path)
       const name = `${species.id}-${index + 1}${extname(image.path).toLowerCase()}`
-      assets.push({ original, name })
+      assets.push({ original, name, sha256: image.sha256 })
       return { ...image, path: `/images/approved/${name}` }
     }),
   }))
   for (const asset of assets) {
     try { asset.bytes = await readFile(asset.original) }
     catch { throw new Error(`Разрешённое изображение не найдено: ${relative(root, asset.original)}`) }
+    if (asset.sha256 && createHash('sha256').update(asset.bytes).digest('hex') !== asset.sha256) {
+      throw new Error(`Контрольная сумма фото не совпадает: ${relative(root, asset.original)}`)
+    }
   }
   const publicErrors = validateSpecies(catalog, 'publicCatalog', { publicData: true })
   if (publicErrors.length) throw new Error(publicErrors.join('\n'))
