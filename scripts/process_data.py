@@ -10,11 +10,13 @@ import json
 from pathlib import Path
 from typing import Any, TypedDict
 
+import requests
 from PIL import Image
 
 
 class Species(TypedDict):
     id: str
+    scientific_name: str
     name_ru: str
     name_kg: str
     name_en: str
@@ -31,6 +33,7 @@ class Species(TypedDict):
 SPECIES: list[Species] = [
     {
         "id": "irbis",
+        "scientific_name": "Panthera uncia",
         "name_ru": "Ирбис",
         "name_kg": "Илбирс",
         "name_en": "Snow leopard",
@@ -48,6 +51,7 @@ SPECIES: list[Species] = [
     },
     {
         "id": "amur-tiger",
+        "scientific_name": "Panthera tigris altaica",
         "name_ru": "Амурский тигр",
         "name_kg": "Амур жолборсу",
         "name_en": "Amur tiger",
@@ -64,6 +68,7 @@ SPECIES: list[Species] = [
     },
     {
         "id": "whooping-crane",
+        "scientific_name": "Grus americana",
         "name_ru": "Американский журавль",
         "name_kg": "Америка турнасы",
         "name_en": "Whooping crane",
@@ -80,6 +85,48 @@ SPECIES: list[Species] = [
         "threats": ["Утрата болот", "Изменение миграционных маршрутов"],
     },
 ]
+
+
+def fetch_gbif_data(scientific_name: str) -> dict[str, Any]:
+    """Fetch taxonomy data from the GBIF API and fall back to local values on failure."""
+    fallback = {
+        "scientific_name": scientific_name,
+        "class": None,
+        "order": None,
+        "family": None,
+        "iucnRedListCategory": None,
+    }
+
+    try:
+        response = requests.get(
+            "https://api.gbif.org/v1/species/search",
+            params={"q": scientific_name, "limit": 1},
+            timeout=20,
+        )
+        response.raise_for_status()
+        payload = response.json()
+        results = payload.get("results")
+        if not results:
+            return fallback
+
+        taxon = results[0]
+        fallback.update(
+            {
+                "scientific_name": taxon.get("scientificName") or scientific_name,
+                "class": taxon.get("class"),
+                "order": taxon.get("order"),
+                "family": taxon.get("family"),
+                "iucnRedListCategory": (
+                    taxon.get("iucnRedListCategory")
+                    or taxon.get("threatStatuses")
+                    or None
+                ),
+            }
+        )
+        return fallback
+    except (requests.RequestException, ValueError, TypeError) as exc:
+        print(f"GBIF lookup failed for {scientific_name}: {exc}. Using local fallback data.")
+        return fallback
 
 
 def pixelate_image(
@@ -138,6 +185,9 @@ def generate_database(
     records: list[dict[str, Any]] = []
     for species in SPECIES:
         record: dict[str, Any] = dict(species)
+        gbif_data = fetch_gbif_data(species["scientific_name"])
+        record.update(gbif_data)
+
         source_image = _find_source_image(source_dir, species["id"])
         if source_image is not None:
             output_path = processed_dir / f"{species['id']}.png"
