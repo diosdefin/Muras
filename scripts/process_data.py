@@ -27,6 +27,7 @@ class Species(TypedDict):
     description_en: str
     region: str
     threats: list[str]
+    donation_funds: list[dict[str, str]]
 
 
 SPECIES: list[Species] = [
@@ -47,6 +48,18 @@ SPECIES: list[Species] = [
         "description_en": "A rare mountain predator found in Kyrgyzstan.",
         "region": "Кыргызстан",
         "threats": ["Браконьерство", "Сокращение кормовой базы", "Изменение климата"],
+        "donation_funds": [
+            {
+                "name": "Snow Leopard Foundation Kyrgyzstan",
+                "description": "Защита и мониторинг популяций снежного барса в КР.",
+                "url": "https://www.snowleopard.org.kg",
+            },
+            {
+                "name": "NABU Кыргызстан",
+                "description": "Охрана природы и защита снежного барса на Тянь-Шане.",
+                "url": "https://nabu.kg",
+            },
+        ],
     },
     {
         "id": "amur-tiger",
@@ -64,6 +77,18 @@ SPECIES: list[Species] = [
         "description_en": "The largest cat species, living in the forests of the Russian Far East.",
         "region": "Дальний Восток",
         "threats": ["Вырубка лесов", "Браконьерство", "Фрагментация ареала"],
+        "donation_funds": [
+            {
+                "name": "WWF",
+                "description": "Поддержка программ сохранения тигров и их местообитаний.",
+                "url": "https://www.worldwildlife.org/species/tiger",
+            },
+            {
+                "name": "Центр «Амурский тигр»",
+                "description": "Сохранение и восстановление популяции амурского тигра.",
+                "url": "https://amur-tiger.ru",
+            },
+        ],
     },
     {
         "id": "whooping-crane",
@@ -82,6 +107,18 @@ SPECIES: list[Species] = [
         "description_en": "A rare migratory bird dependent on wetland habitats.",
         "region": "Северная Америка",
         "threats": ["Утрата болот", "Изменение миграционных маршрутов"],
+        "donation_funds": [
+            {
+                "name": "International Crane Foundation",
+                "description": "Охрана журавлей и восстановление водно-болотных угодий.",
+                "url": "https://savingcranes.org",
+            },
+            {
+                "name": "Whooping Crane Conservation Association",
+                "description": "Поддержка сохранения американского журавля и его миграций.",
+                "url": "https://savingcranes.org/whooping-crane",
+            },
+        ],
     },
 ]
 

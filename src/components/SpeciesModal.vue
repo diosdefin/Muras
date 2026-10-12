@@ -188,6 +188,45 @@ onBeforeUnmount(() => window.removeEventListener('keydown', closeOnEscape))
               </li>
             </ul>
           </div>
+          <section class="mt-10 rounded-2xl border border-emerald-200 bg-emerald-50/80 p-5 sm:p-6">
+            <div class="flex items-start gap-3">
+              <span class="text-2xl" aria-hidden="true">🐾</span>
+              <div>
+                <h3 class="text-xl font-black text-emerald-950">Как помочь этому виду?</h3>
+                <p class="mt-1 text-sm leading-6 text-emerald-900/70">
+                  Поддержите организации, которые защищают его среду обитания.
+                </p>
+              </div>
+            </div>
+            <div class="mt-5 grid gap-3 sm:grid-cols-2">
+              <article
+                v-for="fund in species.donation_funds"
+                :key="fund.name"
+                class="flex min-w-0 flex-col rounded-xl border border-emerald-200/80 bg-white/80 p-4 shadow-sm"
+              >
+                <div class="flex items-start gap-3">
+                  <span class="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg bg-emerald-100 text-sm font-black text-emerald-800" aria-hidden="true">
+                    {{ fund.name.charAt(0) }}
+                  </span>
+                  <h4 class="pt-1 font-bold leading-5 text-emerald-950">{{ fund.name }}</h4>
+                </div>
+                <p class="mt-3 flex-1 text-sm leading-6 text-slate-600">{{ fund.description }}</p>
+                <a
+                  class="mt-4 inline-flex items-center justify-center gap-2 rounded-lg bg-emerald-700 px-3 py-2.5 text-sm font-bold text-white transition hover:bg-emerald-800 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:ring-offset-2"
+                  :href="fund.url"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Перейти на сайт
+                  <svg class="h-4 w-4" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                    <path d="M11 3h6v6M17 3l-8 8" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M15 11v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h4" stroke-linecap="round" />
+                  </svg>
+                  <span class="sr-only">(открывается в новой вкладке)</span>
+                </a>
+              </article>
+            </div>
+          </section>
         </div>
       </div>
     </div>

@@ -6,6 +6,7 @@
     "name_en": "Snow leopard",
     "population": 4000,
     "population_history": 20000,
+    "pixel_scale": 333,
     "status": "VU",
     "description_ru": "Редкий хищник горных экосистем Кыргызстана, известный своей выносливостью и скрытным образом жизни.",
     "description_kg": "Кыргызстандын тоолуу аймактарында жашаган сейрек жырткыч.",
@@ -16,6 +17,18 @@
       "Сокращение кормовой базы",
       "Изменение климата"
     ],
+    "donation_funds": [
+      {
+        "name": "Snow Leopard Foundation Kyrgyzstan",
+        "description": "Защита и мониторинг популяций снежного барса в КР.",
+        "url": "https://www.snowleopard.org.kg"
+      },
+      {
+        "name": "NABU Кыргызстан",
+        "description": "Охрана природы и защита снежного барса на Тянь-Шане.",
+        "url": "https://nabu.kg"
+      }
+    ],
     "image": "/images/processed/irbis.png"
   },
   {
@@ -25,6 +38,7 @@
     "name_en": "Amur tiger",
     "population": 750,
     "population_history": 3000,
+    "pixel_scale": 63,
     "status": "EN",
     "description_ru": "Крупнейшая кошка планеты, обитающая в лесах Дальнего Востока.",
     "description_kg": "Ыраакы Чыгыштын токойлорунда жашаган чоң мышык.",
@@ -35,6 +49,18 @@
       "Браконьерство",
       "Фрагментация ареала"
     ],
+    "donation_funds": [
+      {
+        "name": "WWF",
+        "description": "Поддержка программ сохранения тигров и их местообитаний.",
+        "url": "https://www.worldwildlife.org/species/tiger"
+      },
+      {
+        "name": "Центр «Амурский тигр»",
+        "description": "Сохранение и восстановление популяции амурского тигра.",
+        "url": "https://amur-tiger.ru"
+      }
+    ],
     "image": "/images/processed/amur-tiger.png"
   },
   {
@@ -44,6 +70,7 @@
     "name_en": "Whooping crane",
     "population": 150000,
     "population_history": 350000,
+    "pixel_scale": 3125,
     "status": "CR",
     "description_ru": "Редкая перелётная птица, которой угрожают потеря болотных местообитаний и изменение миграционных маршрутов.",
     "description_kg": "Саздак жерлерге көз каранды болгон сейрек көчмөн куш.",
@@ -52,6 +79,18 @@
     "threats": [
       "Утрата болот",
       "Изменение миграционных маршрутов"
+    ],
+    "donation_funds": [
+      {
+        "name": "International Crane Foundation",
+        "description": "Охрана журавлей и восстановление водно-болотных угодий.",
+        "url": "https://savingcranes.org"
+      },
+      {
+        "name": "Whooping Crane Conservation Association",
+        "description": "Поддержка сохранения американского журавля и его миграций.",
+        "url": "https://savingcranes.org/whooping-crane"
+      }
     ],
     "image": "/images/processed/whooping-crane.png"
   }
