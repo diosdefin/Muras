@@ -2,8 +2,10 @@
 import { computed, onMounted, ref } from 'vue'
 import SpeciesCard from './components/SpeciesCard.vue'
 import SpeciesModal from './components/SpeciesModal.vue'
+import SpeciesQuiz from './components/SpeciesQuiz.vue'
 
 const species = ref([])
+const activeMode = ref('catalog')
 const selectedStatus = ref('ALL')
 const selectedRegion = ref('ALL')
 const isLoading = ref(true)
@@ -61,6 +63,26 @@ onMounted(async () => {
   <main class="min-h-screen bg-[#f3f7f1] text-slate-900">
     <header class="overflow-hidden bg-emerald-950 px-6 py-16 text-white sm:px-10 lg:px-16">
       <div class="mx-auto max-w-7xl">
+        <nav class="mb-16 flex flex-wrap gap-2" aria-label="Режимы сайта">
+          <button
+            type="button"
+            class="rounded-full px-4 py-2 text-sm font-bold transition focus:outline-none focus:ring-2 focus:ring-emerald-300"
+            :class="activeMode === 'catalog' ? 'bg-emerald-300 text-emerald-950' : 'bg-emerald-900 text-emerald-100 hover:bg-emerald-800'"
+            :aria-pressed="activeMode === 'catalog'"
+            @click="activeMode = 'catalog'"
+          >
+            Каталог
+          </button>
+          <button
+            type="button"
+            class="rounded-full px-4 py-2 text-sm font-bold transition focus:outline-none focus:ring-2 focus:ring-emerald-300"
+            :class="activeMode === 'quiz' ? 'bg-emerald-300 text-emerald-950' : 'bg-emerald-900 text-emerald-100 hover:bg-emerald-800'"
+            :aria-pressed="activeMode === 'quiz'"
+            @click="activeMode = 'quiz'"
+          >
+            Игра-викторина
+          </button>
+        </nav>
         <div class="max-w-3xl">
           <p class="mb-5 text-sm font-bold uppercase tracking-[0.35em] text-emerald-300">
             Redbook · Кыргызстан
@@ -77,7 +99,8 @@ onMounted(async () => {
       </div>
     </header>
 
-    <section class="mx-auto max-w-7xl px-6 py-10 sm:px-10 lg:px-16">
+    <SpeciesQuiz v-if="activeMode === 'quiz' && !isLoading && !errorMessage" :species="species" />
+    <section v-else class="mx-auto max-w-7xl px-6 py-10 sm:px-10 lg:px-16">
       <div class="mb-8 flex flex-col gap-5 lg:flex-row lg:items-end lg:justify-between">
         <div>
           <p class="text-sm font-bold uppercase tracking-[0.2em] text-emerald-700">Каталог видов</p>

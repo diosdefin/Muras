@@ -25,6 +25,10 @@ const languages = computed(() => [
 const currentLanguage = computed(() =>
   languages.value.find((language) => language.key === activeLanguage.value) || languages.value[0],
 )
+const helpItems = computed(() => props.species.help_ru || props.species.help || [
+  `Поддерживайте программы, которые помогают снизить угрозы: ${props.species.threats.join(', ')}.`,
+  'Рассказывайте об этом виде и выбирайте ответственные способы отдыха на природе.',
+])
 
 function drawPixelatedImage() {
   const context = canvas.value?.getContext('2d')
@@ -81,7 +85,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', closeOnEscape))
       aria-modal="true"
       :aria-label="species.name_ru"
     >
-      <div class="relative grid w-full overflow-hidden rounded-3xl bg-[#f3f7f1] shadow-2xl lg:grid-cols-2">
+      <div class="relative grid max-h-[calc(100vh-4rem)] w-full overflow-hidden rounded-3xl bg-[#f3f7f1] shadow-2xl lg:grid-cols-2">
         <button
           class="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-2xl text-emerald-950 shadow transition hover:bg-white"
           type="button"
@@ -111,7 +115,7 @@ onBeforeUnmount(() => window.removeEventListener('keydown', closeOnEscape))
             <span>Исторически: {{ species.population_history.toLocaleString('ru-RU') }}</span>
           </div>
         </div>
-        <div class="p-6 sm:p-10">
+        <div class="overflow-y-auto p-6 sm:p-10">
           <div class="mb-6 flex items-start justify-between gap-4 pr-10">
             <div>
               <p class="text-sm font-bold uppercase tracking-[0.2em] text-emerald-700">{{ species.status }}</p>
@@ -146,6 +150,15 @@ onBeforeUnmount(() => window.removeEventListener('keydown', closeOnEscape))
             <ul class="mt-3 flex flex-wrap gap-2">
               <li v-for="threat in species.threats" :key="threat" class="rounded-full bg-white px-3 py-2 text-sm text-slate-700 shadow-sm">
                 {{ threat }}
+              </li>
+            </ul>
+          </div>
+          <div class="mt-8 border-t border-emerald-950/10 pt-6">
+            <h3 class="text-xs font-bold uppercase tracking-wider text-emerald-700">🐾 Как помочь этому виду?</h3>
+            <ul class="mt-3 space-y-2 text-sm leading-6 text-slate-600">
+              <li v-for="helpItem in helpItems" :key="helpItem" class="flex gap-2">
+                <span class="text-emerald-700" aria-hidden="true">•</span>
+                <span>{{ helpItem }}</span>
               </li>
             </ul>
           </div>
