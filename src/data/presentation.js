@@ -1,4 +1,5 @@
 import { canPublishImage } from './species-model.js'
+import { populationPresentation } from './population.js'
 
 export const STATUS_DETAILS = {
   CR: { label: 'Критическая угроза', classes: 'bg-red-100 text-red-800 ring-red-200' },
@@ -12,7 +13,6 @@ export const STATUS_DETAILS = {
   EW: { label: 'Исчезнувший в природе', classes: 'bg-slate-100 text-slate-700 ring-slate-200' },
 }
 export const PLACEHOLDER = `${import.meta.env?.BASE_URL || '/'}images/placeholder.svg`
-const number = new Intl.NumberFormat('ru-RU')
 
 export function localized(value, language = 'ru') {
   return value?.[language] || value?.ru || value?.en || value?.ky || null
@@ -34,10 +34,8 @@ export function nationalStatus(species) {
   return `Красная книга КР · ${status.category || 'включён; категория не установлена'} (${status.year})`
 }
 
-export function formatPopulation(population) {
-  if (!population?.estimate) return 'Численность неизвестна'
-  const { min, max } = population.estimate
-  return `${min === max ? number.format(min) : `${number.format(min)}–${number.format(max)}`} ${population.unit || ''}`.trim()
+export function formatPopulation(population, sources = []) {
+  return populationPresentation(population, sources).label
 }
 
 export function regionNames(species) {

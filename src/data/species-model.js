@@ -1,4 +1,5 @@
 import { validComposition } from './image-composition.js'
+import { validatePopulation } from './population.js'
 
 export const LANGUAGES = ['ru', 'ky', 'en']
 export const IUCN_CATEGORIES = ['EX', 'EW', 'CR', 'EN', 'VU', 'NT', 'LC', 'DD', 'NE']
@@ -108,18 +109,7 @@ export function validateSpecies(records, label = 'catalog', { publicData = false
         if (field === 'regions' && (!text(entry.code) || !['country', 'region'].includes(entry.type))) fail(`${p}.${field}[${n}]`, 'нужны code и type country/region')
       })
     }
-    const pop = item.population
-    if (!object(pop)) fail(`${p}.population`, 'ожидается объект численности')
-    else {
-      if (!nullableText(pop.territory) || !year(pop.year) || !nullableText(pop.unit)) fail(`${p}.population`, 'некорректные territory/year/unit')
-      if (pop.estimate !== null) {
-        const e = pop.estimate
-        if (!object(e) || !['exact', 'range'].includes(e.type) || !Number.isInteger(e.min) || e.min < 0 || !Number.isInteger(e.max) || e.max < e.min || e.type === 'exact' && e.min !== e.max) fail(`${p}.population.estimate`, 'ожидается exact/range с целыми min ≤ max')
-        if (!text(pop.territory) || pop.year === null || !text(pop.unit)) fail(`${p}.population`, 'оценка требует территорию, год и единицу учёта')
-      }
-      claim('population.territory', pop.territory); claim('population.year', pop.year); claim('population.unit', pop.unit); claim('population.estimate', pop.estimate)
-      refs(pop.sourceIds, `${p}.population.sourceIds`, pop.estimate !== null, 'population.estimate')
-    }
+    errors.push(...validatePopulation(item.population, item.sources, `${p}.population`))
     if (!Array.isArray(item.images)) fail(`${p}.images`, 'ожидается массив изображений (может быть пустым)')
     else item.images.forEach((image, n) => {
       const ip = `${p}.images[${n}]`

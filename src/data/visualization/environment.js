@@ -1,5 +1,5 @@
 // Keep resize, DPR and accessibility listeners paired with explicit cleanup.
-export function observeVisualization(element, { view, Observer, resize, motionChanged }) {
+export function observeVisualization(element, { view, Observer, VisibilityObserver, resize, motionChanged, visibilityChanged = () => {} }) {
   const disposers = []
   function listen(query, handler) {
     if (query.addEventListener) {
@@ -18,6 +18,20 @@ export function observeVisualization(element, { view, Observer, resize, motionCh
     stopResolution = listen(query, () => { resize(); watchResolution() })
   }
   watchResolution()
+  let inViewport = true
+  const reportVisibility = () => visibilityChanged(inViewport && !view.document?.hidden)
+  if (view.document) {
+    view.document.addEventListener('visibilitychange', reportVisibility)
+    disposers.push(() => view.document.removeEventListener('visibilitychange', reportVisibility))
+  }
+  if (VisibilityObserver) {
+    const observer = new VisibilityObserver(entries => {
+      inViewport = entries.some(entry => entry.isIntersecting); reportVisibility()
+    })
+    observer.observe(element)
+    disposers.push(() => observer.disconnect())
+  }
+  reportVisibility()
   view.addEventListener('resize', resize)
   disposers.push(() => view.removeEventListener('resize', resize))
   if (Observer) {

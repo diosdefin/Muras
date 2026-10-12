@@ -26,7 +26,10 @@ test('canonical data: nine Kyrgyzstan records, three groups, two archived exampl
   assert.deepEqual(source.demoArchive.map(s => s.id), ['amur-tiger', 'whooping-crane'])
   for (const s of [...source.catalog, ...source.demoArchive]) {
     assert.equal(s.verified, false)
-    assert.equal(s.population.estimate, null)
+    assert.equal(s.population.type, 'unknown')
+    assert.equal(s.population.value, null)
+    assert.equal(s.population.min, null)
+    assert.equal(s.population.max, null)
   }
   for (const s of source.catalog) {
     assert.equal(s.nationalRedBook.listed, true)
@@ -83,24 +86,24 @@ test('malformed image paths and null species return errors without exceptions', 
 })
 
 function addPopulation(s) {
-  s.population = { territory: 'Test territory', year: 2020, estimate: { type: 'range', min: 12, max: 20 }, unit: 'особей', sourceIds: ['fixture'] }
-  s.sources.push({ id: 'fixture', title: 'Test fixture, not scientific evidence', publisher: 'Tests', url: 'https://example.org/fixture', accessedAt: '2026-10-12', supports: ['population.territory', 'population.year', 'population.unit', 'population.estimate'] })
+  s.population = { type: 'approximate', value: null, min: 12, max: 20, territory: 'Test territory', year: 2020, unit: 'особей', sourceIds: ['fixture'], reviewStatus: 'approved', method: 'estimate' }
+  s.sources.push({ id: 'fixture', title: 'Test fixture, not scientific evidence', publisher: 'Tests', url: 'https://example.org/fixture', accessedAt: '2026-10-12', supports: ['type', 'method', 'value', 'min', 'max', 'territory', 'year', 'unit'].map(field => `population.${field}`) })
 }
 
 test('dated, sourced population ranges and exact estimates are supported', () => {
   const d = fresh(); addPopulation(d.catalog[0])
   assert.deepEqual(validateSource(d), [])
-  assert.equal(formatPopulation(d.catalog[0].population), '12–20 особей')
-  d.catalog[0].population.estimate = { type: 'exact', min: 12, max: 12 }
+  assert.equal(formatPopulation(d.catalog[0].population, d.catalog[0].sources), '12–20 особей')
+  Object.assign(d.catalog[0].population, { type: 'exact', value: 12, min: null, max: null, method: 'complete-count' })
   assert.deepEqual(validateSource(d), [])
-  assert.equal(formatPopulation(d.catalog[0].population), '12 особей')
+  assert.equal(formatPopulation(d.catalog[0].population, d.catalog[0].sources), '12 особей')
 })
 
 test('invalid population bounds, absent year and absent references are rejected', () => {
   const d = fresh(); addPopulation(d.catalog[0]); const p = d.catalog[0].population
-  p.estimate.min = 21; p.year = null; p.sourceIds = []
+  p.min = 21; p.year = null; p.sourceIds = []
   const errors = validateSource(d).join('\n')
-  assert.match(errors, /целыми min ≤ max/); assert.match(errors, /территорию, год/); assert.match(errors, /требует источник/)
+  assert.match(errors, /диапазон min ≤ max/); assert.match(errors, /территорию, год/); assert.match(errors, /требует источник/)
 })
 
 test('IUCN is never a substitute for a documented national classification', () => {
@@ -121,7 +124,7 @@ test('invalid dates, unsafe URLs and kg instead of ky are rejected', () => {
 
 test('missing scientific data renders honest fallbacks', () => {
   const s = structuredClone(source.demoArchive[0])
-  assert.equal(formatPopulation(s.population), 'Численность неизвестна')
+  assert.equal(formatPopulation(s.population), 'Нет подтверждённой оценки численности')
   assert.deepEqual(regionNames(s), [])
   assert.equal(speciesName(s, 'ky'), 'amur-tiger')
   assert.equal(speciesPhoto(s), null)

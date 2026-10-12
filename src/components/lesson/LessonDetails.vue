@@ -1,6 +1,7 @@
 <script setup>
 import LessonReferences from './LessonReferences.vue'
-import { formatPopulation, localized, nationalStatus, regionNames, statusDetails } from '../../data/presentation.js'
+import { localized, nationalStatus, regionNames, statusDetails } from '../../data/presentation.js'
+import PopulationInfo from '../PopulationInfo.vue'
 defineProps({ species: { type: Object, required: true } })
 const taxonomyLabels = { kingdom: 'Царство', phylum: 'Тип / отдел', class: 'Класс', order: 'Отряд / порядок', family: 'Семейство', genus: 'Род' }
 </script>
@@ -29,11 +30,7 @@ const taxonomyLabels = { kingdom: 'Царство', phylum: 'Тип / отдел
         <p>{{ statusDetails(species).label }}. <LessonReferences :species="species" :ids="species.iucn?.sourceIds" /></p>
         <p>{{ species.iucn?.year ? `Год оценки IUCN: ${species.iucn.year}.` : 'Год индивидуальной оценки IUCN в доступном источнике не указан.' }}</p>
       </section>
-      <section>
-        <h3>Численность</h3>
-        <p>{{ formatPopulation(species.population) }}<template v-if="species.population?.estimate"> · {{ species.population.territory }}, {{ species.population.year }} год</template>.
-          <LessonReferences :species="species" :ids="species.population?.sourceIds" /></p>
-      </section>
+      <PopulationInfo :population="species.population" :sources="species.sources" />
       <section>
         <h3>Таксономия каталога</h3>
         <dl class="lesson-taxonomy">

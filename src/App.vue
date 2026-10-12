@@ -10,7 +10,7 @@ import CatalogSearch from './components/CatalogSearch.vue'
 import GroupFilter from './components/GroupFilter.vue'
 import { useCatalog } from './composables/useCatalog.js'
 import './components/catalog.css'
-import { validateSpecies } from './data/species-model.js'
+import { loadSpeciesCatalog } from './data/catalog-repository.js'
 import { validateQuestions } from './data/quiz/model.js'
 
 const species = ref([])
@@ -82,14 +82,7 @@ function closeSpecies() {
 
 onMounted(async () => {
   try {
-    const response = await fetch(`${import.meta.env.BASE_URL}data/species.json`)
-    if (!response.ok) {
-      throw new Error(`Не удалось загрузить данные: ${response.status}`)
-    }
-    const records = await response.json()
-    const validationErrors = validateSpecies(records, 'catalog', { publicData: true })
-    if (validationErrors.length) throw new Error(`Некорректные данные каталога: ${validationErrors[0]}`)
-    species.value = records
+    species.value = await loadSpeciesCatalog()
   } catch (error) {
     errorMessage.value = error.message
   } finally {

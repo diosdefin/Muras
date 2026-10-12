@@ -19,7 +19,7 @@
 | regions | Массив `{code, type, names: {ru,ky,en}, sourceIds}` или null; type: country/region; не угадывать область по id |
 | threats | Массив `{text: {ru,ky,en}, sourceIds}` или null |
 | conservationMeasures | Такой же массив подтверждённых мер охраны или null |
-| population | `{territory, year, estimate, unit, sourceIds}`; estimate — null или `{type: exact/range, min, max}` |
+| population | `{type, value, min, max, territory, year, unit, sourceIds, reviewStatus, method}`; exact/approximate/unknown, научная оценка отдельно от редакторского допуска |
 | images | Массив метаданных фото; неподтверждённые ресурсы остаются только в источнике/архиве |
 | sources | Массив `{id, title, publisher, url, accessedAt, supports}`; HTTP(S)-ссылки, supports — пути полей |
 | verified | Boolean; true только после полной редакторской проверки национальной записи |
@@ -28,13 +28,19 @@
 Для неизвестной численности используется:
 
 ```json
-{"territory": null, "year": null, "estimate": null, "unit": null, "sourceIds": []}
+{"type":"unknown","value":null,"min":null,"max":null,"territory":null,"year":null,"unit":null,"sourceIds":[],"reviewStatus":"pending","method":null}
 ```
 
-Формат оценки: min/max — целые неотрицательные числа, min ≤ max; для exact они равны.
-Наличие оценки требует территории, года, единицы учёта и ссылки на источник. Программно
-это поддерживается, но в текущем каталоге не добавлена ни одна численная оценка. Исторического
-поля нет: старые значения сохранены только в неизменяемой резервной копии.
+`exact`: положительное безопасное целое value, min/max:null, method:complete-count.
+`approximate`: конечное неотрицательное value ИЛИ min/max с min ≤ max (без среднего),
+method:estimate. `unknown`: value/min/max/method:null. Известные значения требуют
+территории, года (1500..текущий), единицы и источников, подтверждающих каждое заполненное
+научное поле. reviewStatus: pending/approved/rejected; только approved допускает
+публикацию известной оценки. Поле verified вида не изменяется вслед за проверкой оценки.
+Все девять текущих видов и два архивных примера остаются unknown. Удалена только пустая
+обёртка estimate:null; старые данные восстанавливаются из Git, исходные исторические
+числа остаются в неизменённой резервной копии. Полные правила и визуальное поведение:
+[population-visualization.md](population-visualization.md).
 
 Национальная классификация не заполняется категорией IUCN. Указанная национальная category
 требует listed:true; известное listed требует издания/документа, года и источника.
@@ -45,7 +51,8 @@
 
 Каждое научное поле связано с источником через supports. Примеры путей: scientificName,
 names.ky, taxonomy.genus, iucn.category, habitat, regions.0, threats.1,
-conservationMeasures.0, population.estimate. Вложенные sourceIds должны ссылаться на
+conservationMeasures.0, population.value, population.min, population.type, population.method.
+Вложенные sourceIds должны ссылаться на
 источник, поддерживающий соответствующее утверждение. Индексы arrays в supports нужно
 обновлять при перестановке элементов. Наличие ссылки проверяется программно; содержание
 страницы, корректность перевода и реальность научного утверждения — редактором.

@@ -51,7 +51,7 @@ test('brief information is a verbatim sourced excerpt, not a new scientific clai
     const excerpt = firstSentence(species.habitat?.description)
     assert.ok(species.habitat.description.ru.startsWith(excerpt))
     assert.ok(species.habitat.sourceIds.length)
-    assert.equal(formatPopulation(species.population), 'Численность неизвестна')
+    assert.equal(formatPopulation(species.population), 'Нет подтверждённой оценки численности')
     assert.equal(species.verified, false)
     assert.ok(speciesPhoto(species).licenseVerified)
   }

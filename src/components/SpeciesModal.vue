@@ -1,9 +1,11 @@
 <script setup>
 import { computed, ref, watch } from 'vue'
-import { formatPopulation, groupLabel, localized, nationalStatus, regionNames, speciesName, speciesPhoto, statusDetails } from '../data/presentation.js'
+import { groupLabel, localized, nationalStatus, regionNames, speciesName, speciesPhoto, statusDetails } from '../data/presentation.js'
+import { populationPresentation } from '../data/population.js'
 import { useModalDialog } from '../composables/useModalDialog.js'
 import SpeciesVisualization from './SpeciesVisualization.vue'
 import LessonReferences from './lesson/LessonReferences.vue'
+import PopulationInfo from './PopulationInfo.vue'
 
 const props = defineProps({ species: { type: Object, required: true } })
 const emit = defineEmits(['close', 'support'])
@@ -11,7 +13,7 @@ const dialog = ref(null)
 const closeButton = ref(null)
 const activeLanguage = ref('ru')
 const photo = computed(() => speciesPhoto(props.species))
-const formattedPopulation = computed(() => formatPopulation(props.species.population))
+const population = computed(() => populationPresentation(props.species.population, props.species.sources))
 const languages = [
   { key: 'ru', label: 'RU', accessibleName: 'Русский язык' },
   { key: 'ky', label: 'KG', accessibleName: 'Кыргызский язык' },
@@ -60,7 +62,7 @@ watch(() => props.species, () => { activeLanguage.value = 'ru' }, { immediate: t
     <div class="modal-scroll">
       <div class="modal-grid">
         <section class="modal-media" aria-label="Фотография и образовательная визуализация">
-          <SpeciesVisualization :photo="photo" :name="currentName" />
+          <SpeciesVisualization :photo="photo" :name="currentName" :population-type="population.type" :species-id="species.id" />
           <div v-if="photo" class="photo-credit">
             <p class="photo-credit-links"><a :href="photo.originalPage" target="_blank" rel="noopener noreferrer">Фото: {{ photo.author }} <span class="sr-only">(оригинальная страница, новая вкладка)</span></a>
             <a :href="photo.licenseUrl" target="_blank" rel="noopener noreferrer">{{ photo.license }} <span class="sr-only">(откроется в новой вкладке)</span></a>
@@ -94,12 +96,8 @@ watch(() => props.species, () => { activeLanguage.value = 'ru' }, { immediate: t
               <dt>Ареал</dt>
               <dd>{{ regionNames(species).join(', ') || 'Сведения пока не подтверждены' }}</dd>
             </div>
-            <div>
-              <dt>Численность</dt>
-              <dd>{{ formattedPopulation }}</dd>
-              <dd v-if="species.population.estimate" class="fact-context">{{ species.population.territory }}, {{ species.population.year }} год</dd>
-            </div>
           </dl>
+          <PopulationInfo :population="species.population" :sources="species.sources" />
           </section>
           <details class="modal-disclosure"><summary>Угрозы и охрана</summary><div>
           <section class="information-section" aria-labelledby="threats-title">
