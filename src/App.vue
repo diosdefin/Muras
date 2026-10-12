@@ -5,6 +5,7 @@ import SpeciesModal from './components/SpeciesModal.vue'
 import QuizView from './components/quiz/QuizView.vue'
 import LessonView from './components/lesson/LessonView.vue'
 import MapSection from './components/map/MapSection.vue'
+import SupportView from './components/support/SupportView.vue'
 import { validateSpecies } from './data/species-model.js'
 import { validateQuestions } from './data/quiz/model.js'
 import { regionNames, STATUS_DETAILS } from './data/presentation.js'
@@ -21,12 +22,23 @@ const quizLoading = ref(true)
 const quizError = ref('')
 const lessonView = ref(null)
 const quizFromLesson = ref(false)
+const supportSpeciesId = ref(null)
+
+async function openSupport(id = null) {
+  supportSpeciesId.value = species.value.some(record => record.id === id) ? id : null
+  closeSpecies()
+  await nextTick() // Let the dialog restore background scrolling/focus before switching views.
+  await showView('support')
+}
 
 async function showView(view, focusId = view) {
   if (activeView.value === 'lesson' && view !== 'lesson' && await lessonView.value?.exitFullscreen() === false) return
   activeView.value = view
   await nextTick()
-  document.getElementById(focusId)?.focus()
+  if (view === 'support') {
+    document.getElementById(focusId)?.focus({ preventScroll: true })
+    window.scrollTo({ top: 0, behavior: 'instant' })
+  } else document.getElementById(focusId)?.focus()
 }
 
 function openQuizFromLesson() {
@@ -118,6 +130,7 @@ onMounted(async () => {
       <a class="header-link" href="#map" @click.prevent="showView('catalog', 'map')">Карта</a>
       <a class="header-link" href="#quiz" :aria-current="activeView === 'quiz' ? 'page' : undefined" @click.prevent="showView('quiz')">Викторина</a>
       <a class="header-link" href="#lesson" :aria-current="activeView === 'lesson' ? 'page' : undefined" @click.prevent="showView('lesson')">Режим урока</a>
+      <a class="header-link" href="#support" :aria-current="activeView === 'support' ? 'page' : undefined" @click.prevent="openSupport()">Сохрани вид</a>
     </nav>
   </header>
   <main>
@@ -174,10 +187,12 @@ onMounted(async () => {
       @catalog="showView('catalog')" @study="studySpecies" @lesson="showView('lesson')" />
     <LessonView ref="lessonView" v-show="activeView === 'lesson'" :species="species" :active="activeView === 'lesson'" :loading="isLoading" :error="errorMessage"
       @catalog="showView('catalog')" @quiz="openQuizFromLesson" />
+    <SupportView v-show="activeView === 'support'" :species="species" :species-id="supportSpeciesId" :loading="isLoading" :error="errorMessage"
+      @select="supportSpeciesId = $event" @study="studySpecies" @catalog="showView('catalog')" />
   </main>
   <footer class="page-footer page-container">
     <p><span class="footer-brand">Redbook</span> · Образовательный проект</p>
     <p>Пикселизация — условная иллюстрация,<br class="hidden sm:block" /> а не подсчёт особей.</p>
   </footer>
-  <SpeciesModal v-if="selectedSpecies" :species="selectedSpecies" @close="closeSpecies" />
+  <SpeciesModal v-if="selectedSpecies" :species="selectedSpecies" @close="closeSpecies" @support="openSupport" />
 </template>

@@ -5,7 +5,7 @@ import { useModalDialog } from '../composables/useModalDialog.js'
 import SpeciesVisualization from './SpeciesVisualization.vue'
 
 const props = defineProps({ species: { type: Object, required: true } })
-const emit = defineEmits(['close'])
+const emit = defineEmits(['close', 'support'])
 const dialog = ref(null)
 const closeButton = ref(null)
 const activeLanguage = ref('ru')
@@ -83,6 +83,7 @@ watch(() => props.species, () => { activeLanguage.value = 'ru' }, { immediate: t
           <p class="species-description" :lang="currentDescription ? contentLanguage(species.habitat?.description) : 'ru'">
             {{ currentDescription || 'Сведения о местообитании пока не подтверждены.' }}
           </p>
+          <div class="support-modal-action"><button class="text-link" type="button" @click="emit('support', species.id)">Помочь сохранить вид <span aria-hidden="true">↗</span></button><p>Познакомиться с концепцией поддержки. Приём пожертвований пока не открыт.</p></div>
           <dl class="species-facts">
             <div>
               <dt>Ареал</dt>
