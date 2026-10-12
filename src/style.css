@@ -9,13 +9,26 @@
   color-scheme: dark;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
+  background-color: #020617;
 }
 
 * {
   box-sizing: border-box;
 }
 
+html {
+  background: #020617;
+}
+
 body {
   margin: 0;
   min-width: 320px;
+  background: #020617;
+  color: #e2e8f0;
+}
+
+button,
+input,
+select {
+  font: inherit;
 }

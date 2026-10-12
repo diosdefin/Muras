@@ -1,58 +1,167 @@
 [
   {
-    "id": "irbis",
-    "name_ru": "Ирбис",
-    "name_kg": "Илбирс",
+    "id": "ak-ilbirs",
+    "category": "mammals",
+    "scientific_name": "Panthera uncia",
+    "name_ru": "Ак илбирс",
+    "name_kg": "Ак илбирс",
     "name_en": "Snow leopard",
-    "population": 4000,
-    "population_history": 20000,
+    "population": 3500,
+    "population_history": 12000,
     "status": "VU",
-    "description_ru": "Редкий хищник горных экосистем Кыргызстана, известный своей выносливостью и скрытным образом жизни.",
-    "description_kg": "Кыргызстандын тоолуу аймактарында жашаган сейрек жырткыч.",
-    "description_en": "A rare mountain predator found in Kyrgyzstan.",
+    "description_ru": "Редкий вид Ак илбирс, находящийся под пристальным вниманием национального мониторинга и природоохранных программ Кыргызской Республики.",
+    "description_kg": "Кыргызстандын тоолуу жана alpine экосистемаларында жашаган сейрек жырткыч.",
+    "description_en": "A rare mountain predator adapted to alpine and highland ecosystems.",
     "region": "Кыргызстан",
     "threats": [
       "Браконьерство",
-      "Сокращение кормовой базы",
-      "Изменение климата"
+      "Утрата местообитаний",
+      "Сокращение кормовой базы"
     ],
-    "image": "/images/processed/irbis.png"
+    "funding": [
+      {
+        "name": "NABU Kyrgyzstan",
+        "url": "https://nabu-kyrgyzstan.org/",
+        "account": "Платёжный портал · поддержка природоохранных программ"
+      },
+      {
+        "name": "Snow Leopard Foundation Kyrgyzstan",
+        "url": "https://snowleopardfoundation.kg/",
+        "account": "Платёжный портал · сохранение снежного барса и горных экосистем"
+      }
+    ],
+    "image": null
   },
   {
-    "id": "amur-tiger",
-    "name_ru": "Амурский тигр",
-    "name_kg": "Амур жолборсу",
-    "name_en": "Amur tiger",
-    "population": 750,
-    "population_history": 3000,
+    "id": "tyanshan-brown-bear",
+    "category": "mammals",
+    "scientific_name": "Ursus arctos isabellinus",
+    "name_ru": "Тянь-шаньский бурый медведь",
+    "name_kg": "Тянь-Шань арцтуу аюу",
+    "name_en": "Tien Shan brown bear",
+    "population": 800,
+    "population_history": 2000,
     "status": "EN",
-    "description_ru": "Крупнейшая кошка планеты, обитающая в лесах Дальнего Востока.",
-    "description_kg": "Ыраакы Чыгыштын токойлорунда жашаган чоң мышык.",
-    "description_en": "The largest cat species, living in the forests of the Russian Far East.",
-    "region": "Дальний Восток",
+    "description_ru": "Редкий вид Тянь-шаньский бурый медведь, находящийся под пристальным вниманием национального мониторинга и природоохранных программ Кыргызской Республики.",
+    "description_kg": "Тянь-Шань тоолорунда жашаган чыныгы жырткыч жаныбар.",
+    "description_en": "A mountain bear whose survival depends on intact alpine corridors and prey species.",
+    "region": "Тянь-Шань",
     "threats": [
-      "Вырубка лесов",
-      "Браконьерство",
-      "Фрагментация ареала"
+      "Столкновение с человеком",
+      "Сокращение лесных коридоров",
+      "Нарушение миграций"
     ],
-    "image": "/images/processed/amur-tiger.png"
+    "funding": [
+      {
+        "name": "NABU Kyrgyzstan",
+        "url": "https://nabu-kyrgyzstan.org/",
+        "account": "Платёжный портал · поддержка медвежьих коридоров и биоразнообразия"
+      },
+      {
+        "name": "Snow Leopard Foundation Kyrgyzstan",
+        "url": "https://snowleopardfoundation.kg/",
+        "account": "Платёжный портал · охрана горных экосистем"
+      }
+    ],
+    "image": null
   },
   {
-    "id": "whooping-crane",
-    "name_ru": "Американский журавль",
-    "name_kg": "Америка турнасы",
-    "name_en": "Whooping crane",
-    "population": 150000,
-    "population_history": 350000,
-    "status": "CR",
-    "description_ru": "Редкая перелётная птица, которой угрожают потеря болотных местообитаний и изменение миграционных маршрутов.",
-    "description_kg": "Саздак жерлерге көз каранды болгон сейрек көчмөн куш.",
-    "description_en": "A rare migratory bird dependent on wetland habitats.",
-    "region": "Северная Америка",
+    "id": "maral",
+    "category": "mammals",
+    "scientific_name": "Cervus elaphus songaricus",
+    "name_ru": "Марал",
+    "name_kg": "Марал",
+    "name_en": "Maral",
+    "population": 3500,
+    "population_history": 9000,
+    "status": "VU",
+    "description_ru": "Редкий вид Марал, находящийся под пристальным вниманием национального мониторинга и природоохранных программ Кыргызской Республики.",
+    "description_kg": "Кыргызстандын жогорку бийиктиктеги жайыттарында жашаган улук туяктуу жаныбар.",
+    "description_en": "A large deer subspecies of the mountain ranges of Central Asia.",
+    "region": "Кыргызстан",
     "threats": [
-      "Утрата болот",
-      "Изменение миграционных маршрутов"
+      "Перевыпас",
+      "Лесозаготовки",
+      "Репродуктивное давление"
     ],
-    "image": "/images/processed/whooping-crane.png"
+    "funding": [
+      {
+        "name": "NABU Kyrgyzstan",
+        "url": "https://nabu-kyrgyzstan.org/",
+        "account": "Платёжный портал · восстановление пастбищ и обитания"
+      },
+      {
+        "name": "Snow Leopard Foundation Kyrgyzstan",
+        "url": "https://snowleopardfoundation.kg/",
+        "account": "Платёжный портал · поддержка горной фауны"
+      }
+    ],
+    "image": null
+  },
+  {
+    "id": "mountain-goose",
+    "category": "birds",
+    "scientific_name": "Anser indicus",
+    "name_ru": "Горный гусь",
+    "name_kg": "Тоолуу каз",
+    "name_en": "Bar-headed goose",
+    "population": 1500,
+    "population_history": 4000,
+    "status": "NT",
+    "description_ru": "Редкий вид Горный гусь, находящийся под пристальным вниманием национального мониторинга и природоохранных программ Кыргызской Республики.",
+    "description_kg": "Ала тоолуу чөлөндөрдөгү көчмөн жана жетиштүү суусактуу жаныбар.",
+    "description_en": "A migratory goose breeding on high mountain lakes and wetlands.",
+    "region": "Кыргызстан",
+    "threats": [
+      "Утрата водно-болотных угодий",
+      "Ухудшение миграционных остановок",
+      "Антропогенное давление"
+    ],
+    "funding": [
+      {
+        "name": "NABU Kyrgyzstan",
+        "url": "https://nabu-kyrgyzstan.org/",
+        "account": "Платёжный портал · поддержка водно-болотных экосистем"
+      },
+      {
+        "name": "Snow Leopard Foundation Kyrgyzstan",
+        "url": "https://snowleopardfoundation.kg/",
+        "account": "Платёжный портал · сохранение миграционных маршрутов"
+      }
+    ],
+    "image": null
+  },
+  {
+    "id": "fritillaria-eduardii",
+    "category": "plants",
+    "scientific_name": "Fritillaria eduardii",
+    "name_ru": "Цветок Айгуль",
+    "name_kg": "Айгүл гулү",
+    "name_en": "Fritillaria eduardii",
+    "population": 150,
+    "population_history": 500,
+    "status": "CR",
+    "description_ru": "Редкий вид Цветок Айгуль, находящийся под пристальным вниманием национального мониторинга и природоохранных программ Кыргызской Республики.",
+    "description_kg": "Кыргызстандын жогорку тоолуу жайларында кездешүүчү сейрек гүл.",
+    "description_en": "A rare high-altitude flowering plant with highly restricted habitat.",
+    "region": "Кыргызстан",
+    "threats": [
+      "Сбор растений",
+      "Утрата местообитаний",
+      "Лесопосадки и выпас"
+    ],
+    "funding": [
+      {
+        "name": "NABU Kyrgyzstan",
+        "url": "https://nabu-kyrgyzstan.org/",
+        "account": "Платёжный портал · сохранение редких растений и их местообитаний"
+      },
+      {
+        "name": "Snow Leopard Foundation Kyrgyzstan",
+        "url": "https://snowleopardfoundation.kg/",
+        "account": "Платёжный портал · защита горных экосистем и биоразнообразия"
+      }
+    ],
+    "image": null
   }
 ]
