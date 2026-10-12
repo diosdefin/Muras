@@ -10,19 +10,14 @@ const canvas = ref(null)
 const activeLanguage = ref('ru')
 const populationValue = ref(props.species.population)
 const image = new Image()
-let drawFrame = 0
 
 const PIXEL_SCALE_BY_SPECIES = {
-  irbis: 333,
-  'amur-tiger': 63,
-  'whooping-crane': 3125,
+  irbis: { current: 12, historical: 80 },
+  'amur-tiger': { current: 12, historical: 48 },
+  'whooping-crane': { current: 48, historical: 112 },
 }
-const MIN_GRID_WIDTH = 12
-const MAX_GRID_WIDTH = 200
+const SOURCE_IMAGE_EXTENSIONS = ['jpg', 'png', 'webp']
 
-const imagePath = computed(() =>
-  props.species.image || `/images/processed/${props.species.id}.png`,
-)
 const formattedPopulation = computed(() =>
   new Intl.NumberFormat('ru-RU').format(populationValue.value),
 )
@@ -35,7 +30,17 @@ const currentLanguage = computed(() =>
   languages.value.find((language) => language.key === activeLanguage.value) || languages.value[0],
 )
 
-function drawPixelatedImage() {
+function getGridWidth(targetPopulation) {
+  const scale = PIXEL_SCALE_BY_SPECIES[props.species.id] || { current: 12, historical: 80 }
+  const populationRange = props.species.population_history - props.species.population
+  const progress = populationRange > 0
+    ? (targetPopulation - props.species.population) / populationRange
+    : 0
+
+  return Math.round(scale.current + Math.max(0, Math.min(1, progress)) * (scale.historical - scale.current))
+}
+
+function renderPixelated(targetPopulation) {
   const context = canvas.value?.getContext('2d')
   if (!context) return
 
@@ -44,7 +49,7 @@ function drawPixelatedImage() {
   context.clearRect(0, 0, width, height)
   context.fillStyle = '#064e3b'
   context.fillRect(0, 0, width, height)
-  if (!image.complete || !image.naturalWidth) {
+  if (!image.complete || !image.naturalWidth || !image.naturalHeight) {
     context.fillStyle = '#a7f3d0'
     context.font = '600 16px system-ui'
     context.textAlign = 'center'
@@ -53,47 +58,58 @@ function drawPixelatedImage() {
   }
 
   const aspectRatio = image.naturalWidth / image.naturalHeight
-  const individualsPerPixel = props.species.pixel_scale
-    || PIXEL_SCALE_BY_SPECIES[props.species.id]
-    || 1000
-  const cols = Math.max(
-    MIN_GRID_WIDTH,
-    Math.min(MAX_GRID_WIDTH, Math.round(populationValue.value / individualsPerPixel)),
-  )
+  const cols = getGridWidth(targetPopulation)
   const rows = Math.max(1, Math.round(cols / aspectRatio))
   const pixelCanvas = document.createElement('canvas')
   pixelCanvas.width = cols
   pixelCanvas.height = rows
   const pixelContext = pixelCanvas.getContext('2d')
-  pixelContext.imageSmoothingEnabled = false
-  pixelContext.drawImage(image, 0, 0, cols, rows)
-  context.imageSmoothingEnabled = false
-  context.drawImage(pixelCanvas, 0, 0, width, height)
-}
+  if (!pixelContext) return
 
-function scheduleDrawPixelatedImage() {
-  cancelAnimationFrame(drawFrame)
-  drawFrame = requestAnimationFrame(drawPixelatedImage)
+  pixelContext.imageSmoothingEnabled = false
+  pixelContext.mozImageSmoothingEnabled = false
+  pixelContext.webkitImageSmoothingEnabled = false
+  pixelContext.drawImage(image, 0, 0, cols, rows)
+
+  context.imageSmoothingEnabled = false
+  context.mozImageSmoothingEnabled = false
+  context.webkitImageSmoothingEnabled = false
+  context.drawImage(pixelCanvas, 0, 0, width, height)
 }
 
 function closeOnEscape(event) {
   if (event.key === 'Escape') emit('close')
 }
 
+function loadOriginalImage() {
+  let extensionIndex = 0
+
+  const tryNextSource = () => {
+    if (extensionIndex >= SOURCE_IMAGE_EXTENSIONS.length) {
+      renderPixelated(populationValue.value)
+      return
+    }
+
+    const extension = SOURCE_IMAGE_EXTENSIONS[extensionIndex]
+    extensionIndex += 1
+    image.src = `/images/source/${props.species.id}.${extension}`
+  }
+
+  image.onload = () => renderPixelated(populationValue.value)
+  image.onerror = tryNextSource
+  tryNextSource()
+}
+
 watch(() => props.species, () => {
   populationValue.value = props.species.population
   activeLanguage.value = 'ru'
-  image.src = imagePath.value
-  image.onload = scheduleDrawPixelatedImage
-  nextTick(scheduleDrawPixelatedImage)
+  loadOriginalImage()
+  nextTick(() => renderPixelated(populationValue.value))
 }, { immediate: true })
 
-watch(populationValue, scheduleDrawPixelatedImage)
+watch(populationValue, (targetPopulation) => renderPixelated(targetPopulation))
 onMounted(() => window.addEventListener('keydown', closeOnEscape))
-onBeforeUnmount(() => {
-  cancelAnimationFrame(drawFrame)
-  window.removeEventListener('keydown', closeOnEscape)
-})
+onBeforeUnmount(() => window.removeEventListener('keydown', closeOnEscape))
 </script>
 
 <template>
