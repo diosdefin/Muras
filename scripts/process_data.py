@@ -20,12 +20,14 @@ class Species(TypedDict):
     name_en: str
     population: int
     population_history: int
+    pixel_scale: int
     status: str
     description_ru: str
     description_kg: str
     description_en: str
     region: str
     threats: list[str]
+    donation_funds: list[dict[str, str]]
 
 
 SPECIES: list[Species] = [
@@ -36,6 +38,7 @@ SPECIES: list[Species] = [
         "name_en": "Snow leopard",
         "population": 4000,
         "population_history": 20000,
+        "pixel_scale": 333,
         "status": "VU",
         "description_ru": (
             "Редкий хищник горных экосистем Кыргызстана, известный своей "
@@ -45,6 +48,18 @@ SPECIES: list[Species] = [
         "description_en": "A rare mountain predator found in Kyrgyzstan.",
         "region": "Кыргызстан",
         "threats": ["Браконьерство", "Сокращение кормовой базы", "Изменение климата"],
+        "donation_funds": [
+            {
+                "name": "Snow Leopard Foundation Kyrgyzstan",
+                "description": "Защита и мониторинг популяций снежного барса в КР.",
+                "url": "https://www.snowleopard.org.kg",
+            },
+            {
+                "name": "NABU Кыргызстан",
+                "description": "Охрана природы и защита снежного барса на Тянь-Шане.",
+                "url": "https://nabu.kg",
+            },
+        ],
     },
     {
         "id": "amur-tiger",
@@ -53,6 +68,7 @@ SPECIES: list[Species] = [
         "name_en": "Amur tiger",
         "population": 750,
         "population_history": 3000,
+        "pixel_scale": 63,
         "status": "EN",
         "description_ru": (
             "Крупнейшая кошка планеты, обитающая в лесах Дальнего Востока."
@@ -61,6 +77,18 @@ SPECIES: list[Species] = [
         "description_en": "The largest cat species, living in the forests of the Russian Far East.",
         "region": "Дальний Восток",
         "threats": ["Вырубка лесов", "Браконьерство", "Фрагментация ареала"],
+        "donation_funds": [
+            {
+                "name": "WWF",
+                "description": "Поддержка программ сохранения тигров и их местообитаний.",
+                "url": "https://www.worldwildlife.org/species/tiger",
+            },
+            {
+                "name": "Центр «Амурский тигр»",
+                "description": "Сохранение и восстановление популяции амурского тигра.",
+                "url": "https://amur-tiger.ru",
+            },
+        ],
     },
     {
         "id": "whooping-crane",
@@ -69,6 +97,7 @@ SPECIES: list[Species] = [
         "name_en": "Whooping crane",
         "population": 150000,
         "population_history": 350000,
+        "pixel_scale": 3125,
         "status": "CR",
         "description_ru": (
             "Редкая перелётная птица, которой угрожают потеря болотных "
@@ -78,6 +107,18 @@ SPECIES: list[Species] = [
         "description_en": "A rare migratory bird dependent on wetland habitats.",
         "region": "Северная Америка",
         "threats": ["Утрата болот", "Изменение миграционных маршрутов"],
+        "donation_funds": [
+            {
+                "name": "International Crane Foundation",
+                "description": "Охрана журавлей и восстановление водно-болотных угодий.",
+                "url": "https://savingcranes.org",
+            },
+            {
+                "name": "Whooping Crane Conservation Association",
+                "description": "Поддержка сохранения американского журавля и его миграций.",
+                "url": "https://savingcranes.org/whooping-crane",
+            },
+        ],
     },
 ]
 
@@ -88,10 +129,13 @@ def pixelate_image(
     population: int,
     width: int = 800,
     height: int = 600,
+    individuals_per_pixel: int = 1000,
 ) -> None:
-    """Pixelate an image using a population-based grid and save the result."""
+    """Pixelate an image using an individual population-to-pixel scale."""
     if population <= 0:
         raise ValueError("population must be greater than zero")
+    if individuals_per_pixel <= 0:
+        raise ValueError("individuals_per_pixel must be greater than zero")
     if width <= 0 or height <= 0:
         raise ValueError("width and height must be greater than zero")
 
@@ -102,8 +146,8 @@ def pixelate_image(
     with Image.open(image_path) as source:
         source_width, source_height = source.size
         aspect_ratio = source_width / source_height
-        cols = max(8, min(200, int((population * aspect_ratio) ** 0.5)))
-        rows = max(8, min(200, int(population / cols)))
+        cols = max(12, min(200, round(population / individuals_per_pixel)))
+        rows = max(1, round(cols / aspect_ratio))
 
         pixelated = source.convert("RGB").resize(
             (cols, rows), resample=Image.Resampling.BILINEAR
@@ -147,6 +191,7 @@ def generate_database(
                 species["population"],
                 width,
                 height,
+                individuals_per_pixel=species["pixel_scale"],
             )
             record["image"] = f"/images/processed/{output_path.name}"
         else:
