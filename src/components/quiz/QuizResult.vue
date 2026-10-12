@@ -1,8 +1,8 @@
 <script setup>
 import { computed } from 'vue'
 import { DIFFICULTIES } from '../../data/quiz/model.js'
-const props = defineProps({ result: { type: Object, required: true }, mistakes: { type: Array, required: true }, storageAvailable: Boolean })
-defineEmits(['restart', 'repeat', 'choose', 'catalog', 'study'])
+const props = defineProps({ result: { type: Object, required: true }, mistakes: { type: Array, required: true }, storageAvailable: Boolean, returnToLesson: Boolean })
+defineEmits(['restart', 'repeat', 'choose', 'catalog', 'study', 'lesson'])
 const label = computed(() => DIFFICULTIES.find(level => level.id === props.result.difficulty).label)
 const message = computed(() => props.result.percent === 100 ? 'Все ответы верны' : props.result.percent >= 70 ? 'Хороший результат' : 'Продолжайте исследовать')
 </script>
@@ -19,6 +19,7 @@ const message = computed(() => props.result.percent === 100 ? 'Все ответ
       <button type="button" class="quiz-primary" @click="$emit('restart')">Пройти снова</button>
       <button v-if="mistakes.length" type="button" class="quiz-secondary" @click="$emit('repeat')">Повторить ошибки ({{ mistakes.length }})</button>
       <button type="button" class="quiz-secondary" @click="$emit('choose')">Выбрать уровень</button>
+      <button v-if="returnToLesson" type="button" class="quiz-secondary" @click="$emit('lesson')">Вернуться к уроку</button>
       <button type="button" class="quiz-secondary" @click="$emit('catalog')">Вернуться к каталогу</button>
     </div>
     <section v-if="mistakes.length" class="quiz-review" aria-labelledby="quiz-review-title">

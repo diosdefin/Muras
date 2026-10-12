@@ -209,6 +209,83 @@
 
 @keyframes quiz-arrive { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
 
+@layer components {
+  .main-navigation { flex-wrap: wrap; }
+  .lesson-section { padding-block: 24px 40px; }
+  .lesson-toolbar { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 20px; }
+  .lesson-toolbar h1 { font-family: Georgia, "Times New Roman", serif; font-size: 28px; line-height: 1.2; margin-top: 4px; }
+  .lesson-tools { display: flex; flex-wrap: wrap; gap: 12px; min-width: 0; }
+  .lesson-tools select { min-width: 0; width: 100%; min-height: 48px; border: 1px solid #839388; border-radius: 6px; background: white; padding: 10px 36px 10px 12px; font-size: 16px; }
+  .lesson-slide { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; min-width: 0; }
+  .lesson-photo, .lesson-content { min-width: 0; }
+  .lesson-photo > img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; object-fit: contain; background: #eaf0e8; border-radius: 6px; }
+  .lesson-photo figcaption { margin-top: 12px; font-size: 15px; line-height: 1.5; color: var(--muted); }
+  .lesson-photo-links { display: flex; flex-wrap: wrap; gap: 0 12px; align-items: center; }
+  .lesson-photo-links a { display: inline-flex; min-height: 44px; align-items: center; text-decoration: underline; text-underline-offset: 3px; }
+  .lesson-content h2 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(32px, 3.2vw, 56px); line-height: 1.1; margin-block: 8px 12px; }
+  .lesson-group { font-size: 16px; color: var(--muted); }
+  .lesson-names { display: flex; flex-wrap: wrap; gap: 4px 20px; font-size: 21px; }
+  .lesson-editorial { font-size: 15px; color: #983a36; margin-top: 10px; }
+  .lesson-brief-facts { display: grid; gap: 14px; margin-top: 20px; }
+  .lesson-brief-facts h3 { font-size: 15px; font-weight: 650; color: var(--muted); }
+  .lesson-brief-facts p, .lesson-brief-facts li { font-size: 19px; line-height: 1.4; overflow-wrap: anywhere; }
+  .lesson-brief-facts ul { list-style: disc; padding-left: 22px; }
+  .lesson-references { display: inline-flex; flex-wrap: wrap; gap: 2px; vertical-align: baseline; }
+  .lesson-references a { display: inline-flex; min-width: 30px; min-height: 44px; align-items: center; justify-content: center; font-size: 14px; text-decoration: underline; text-underline-offset: 3px; }
+  .lesson-statuses { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--line); font-size: 15px; line-height: 1.5; }
+  .lesson-navigation { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px; margin-top: 20px; }
+  .lesson-paging, .lesson-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; min-width: 0; }
+  .lesson-paging > p { font-size: 16px; font-variant-numeric: tabular-nums; }
+  .lesson-navigation button:disabled { opacity: .6; cursor: default; }
+  .lesson-keyboard-note { margin-top: 12px; font-size: 14px; color: var(--muted); }
+  .lesson-details { margin-top: 20px; border-top: 1px solid var(--line); }
+  .lesson-details summary { cursor: pointer; min-height: 48px; padding-block: 12px; font-weight: 600; font-size: 17px; overflow-wrap: anywhere; }
+  .lesson-details-content { display: grid; grid-template-columns: minmax(0, 1fr); gap: 24px; padding-block: 16px; font-size: 18px; }
+  .lesson-details-content > .lesson-editorial { grid-column: 1 / -1; }
+  .lesson-details-content section { min-width: 0; }
+  .lesson-details-content h3 { font-size: 20px; font-weight: 650; margin-bottom: 12px; }
+  .lesson-details-content ul { list-style: disc; padding-left: 22px; }
+  .lesson-details-content li + li, .lesson-details-content p + p { margin-top: 10px; }
+  .lesson-taxonomy > div { display: flex; flex-wrap: wrap; gap: 4px 12px; justify-content: space-between; border-bottom: 1px solid var(--line); padding-block: 8px; }
+  .lesson-taxonomy dt { color: var(--muted); }
+  .lesson-source-list a { display: block; min-height: 44px; padding-block: 10px; text-decoration: underline; text-underline-offset: 3px; }
+  .lesson-notice { padding: 16px; margin-bottom: 20px; background: white; border-left: 3px solid var(--green); font-size: 17px; }
+  .quiz-lesson-return { margin-bottom: 24px; }
+  .lesson-section:fullscreen { width: 100%; max-width: none; height: 100%; margin: 0; padding: 24px 32px; background: var(--paper); overflow-y: auto; overscroll-behavior: contain; }
+  .lesson-section::backdrop { background: var(--paper); }
+}
+
+@media (min-width: 768px) {
+  .lesson-tools select { width: min(320px, 40vw); }
+  .lesson-details-content { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (min-width: 1024px) {
+  .lesson-section { padding-top: 24px; }
+  .lesson-slide { grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr); gap: 32px; align-items: start; }
+  .lesson-photo > img { max-height: 440px; }
+  .lesson-references a { min-height: 30px; min-width: 30px; font-size: 16px; }
+}
+@media (min-width: 1024px) and (max-height: 800px) {
+  .lesson-section:fullscreen { padding-block: 16px; }
+  .lesson-section:fullscreen .lesson-toolbar { margin-bottom: 16px; }
+  .lesson-section:fullscreen .lesson-photo > img { max-height: 370px; }
+  .lesson-section:fullscreen .lesson-content h2 { margin-block: 4px 8px; }
+  .lesson-section:fullscreen .lesson-editorial { margin-top: 8px; }
+  .lesson-section:fullscreen .lesson-brief-facts { gap: 8px; margin-top: 12px; }
+  .lesson-section:fullscreen .lesson-statuses { margin-top: 8px; padding-top: 8px; }
+  .lesson-section:fullscreen .lesson-navigation { margin-top: 16px; }
+}
+@media (min-width: 1600px) {
+  .lesson-section { width: min(100% - 96px, 1760px); }
+  .lesson-content h2 { font-size: 56px; }
+  .lesson-names { font-size: 28px; }
+  .lesson-brief-facts p, .lesson-brief-facts li { font-size: 24px; }
+  .lesson-brief-facts h3, .lesson-statuses, .lesson-photo figcaption, .lesson-editorial, .lesson-group { font-size: 18px; }
+  .lesson-photo > img { max-height: 620px; }
+  .lesson-toolbar h1 { font-size: 36px; }
+  .lesson-navigation button { font-size: 18px; min-height: 52px; }
+}
+
 @media (min-width: 480px) {
   .page-header { flex-wrap: nowrap; }
   .main-navigation { width: auto; justify-content: flex-end; }

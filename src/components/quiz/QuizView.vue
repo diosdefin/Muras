@@ -5,8 +5,8 @@ import QuizResult from './QuizResult.vue'
 import { useQuiz } from '../../composables/useQuiz.js'
 import { DIFFICULTIES, QUESTION_LIMIT } from '../../data/quiz/model.js'
 
-const props = defineProps({ questions: { type: Array, required: true }, species: { type: Array, required: true }, loading: Boolean, error: { type: String, default: '' } })
-const emit = defineEmits(['catalog', 'study'])
+const props = defineProps({ questions: { type: Array, required: true }, species: { type: Array, required: true }, loading: Boolean, error: { type: String, default: '' }, returnToLesson: Boolean })
+const emit = defineEmits(['catalog', 'study', 'lesson'])
 const { attempt, stage, currentQuestion, currentAnswer, result, mistakes, progress, history, storageAvailable,
   start, answer, next, restart, repeatMistakes, selectDifficulty } = useQuiz(toRef(props, 'questions'))
 const content = ref(null)
@@ -27,6 +27,7 @@ watch(() => `${stage.value}:${currentQuestion.value?.id}`, async () => {
       <h1 id="quiz-title">Насколько хорошо<br class="hidden sm:block" /> вы знаете природу?</h1>
       <p>Виды Кыргызстана, их местообитания и охрана. Каждый ответ — возможность узнать больше.</p>
     </header>
+    <button v-if="returnToLesson && stage !== 'result'" type="button" class="quiz-secondary quiz-lesson-return" @click="emit('lesson')">Вернуться к уроку</button>
     <p v-if="loading" class="catalog-message" role="status">Загружаем вопросы…</p>
     <p v-else-if="error" class="catalog-message error-message" role="alert">{{ error }} Каталог остаётся доступен.</p>
     <div v-else ref="content">
@@ -55,8 +56,8 @@ watch(() => `${stage.value}:${currentQuestion.value?.id}`, async () => {
           @answer="answer" @next="next" @study="emit('study', $event)" />
         <button type="button" class="quiz-back" @click="emit('catalog')">← Вернуться к каталогу</button>
       </div>
-      <QuizResult v-else class="quiz-enter" :result="result" :mistakes="mistakes" :storage-available="storageAvailable"
-        @restart="restart" @repeat="repeatMistakes" @choose="selectDifficulty" @catalog="emit('catalog')" @study="emit('study', $event)" />
+      <QuizResult v-else class="quiz-enter" :result="result" :mistakes="mistakes" :storage-available="storageAvailable" :return-to-lesson="returnToLesson"
+        @restart="restart" @repeat="repeatMistakes" @choose="selectDifficulty" @catalog="emit('catalog')" @study="emit('study', $event)" @lesson="emit('lesson')" />
     </div>
   </section>
 </template>
