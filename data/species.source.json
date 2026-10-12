@@ -1,0 +1,291 @@
+{
+  "schemaVersion": 1,
+  "catalog": [
+    {
+      "id": "irbis",
+      "scientificName": "Panthera uncia",
+      "names": {
+        "ru": "Ирбис",
+        "ky": "Илбирс",
+        "en": "Snow leopard"
+      },
+      "taxonomy": {
+        "kingdom": null,
+        "phylum": null,
+        "class": null,
+        "order": null,
+        "family": null,
+        "genus": "Panthera"
+      },
+      "group": null,
+      "nationalRedBook": {
+        "listed": null,
+        "category": null,
+        "edition": null,
+        "year": null,
+        "sourceIds": []
+      },
+      "iucn": {
+        "category": "VU",
+        "year": null,
+        "sourceIds": [
+          "catsg-snow-leopard"
+        ]
+      },
+      "habitat": {
+        "description": {
+          "ru": "Высокогорные местообитания со скалистыми склонами. Вид встречается в Кыргызстане.",
+          "ky": "Аскалуу капталдары бар бийик тоолуу аймактар. Кыргызстанда кездешет.",
+          "en": "High mountain habitats with rocky slopes. The species occurs in Kyrgyzstan."
+        },
+        "sourceIds": [
+          "catsg-snow-leopard",
+          "slt-kyrgyzstan"
+        ]
+      },
+      "regions": [
+        {
+          "code": "KG",
+          "type": "country",
+          "names": {
+            "ru": "Кыргызстан",
+            "ky": "Кыргызстан",
+            "en": "Kyrgyzstan"
+          },
+          "sourceIds": [
+            "slt-kyrgyzstan"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "text": {
+            "ru": "Браконьерство",
+            "ky": "Браконьерлик",
+            "en": "Poaching"
+          },
+          "sourceIds": [
+            "slt-kyrgyzstan"
+          ]
+        },
+        {
+          "text": {
+            "ru": "Сокращение естественной кормовой базы",
+            "ky": "Табигый азык базасынын азайышы",
+            "en": "Loss of natural prey"
+          },
+          "sourceIds": [
+            "slt-kyrgyzstan"
+          ]
+        }
+      ],
+      "conservationMeasures": [
+        {
+          "text": {
+            "ru": "Противодействие браконьерству",
+            "ky": "Браконьерликке каршы күрөш",
+            "en": "Anti-poaching programmes"
+          },
+          "sourceIds": [
+            "slt-kyrgyzstan"
+          ]
+        }
+      ],
+      "population": {
+        "territory": null,
+        "year": null,
+        "estimate": null,
+        "unit": null,
+        "sourceIds": []
+      },
+      "images": [
+        {
+          "path": "data/backups/legacy-2026-10-12/images/source/irbis.jpg",
+          "author": null,
+          "originalPage": null,
+          "license": null,
+          "licenseUrl": null,
+          "attribution": null,
+          "modifications": null,
+          "licenseVerified": false
+        }
+      ],
+      "sources": [
+        {
+          "id": "catsg-snow-leopard",
+          "title": "Living Species — Snow Leopard",
+          "publisher": "IUCN/SSC Cat Specialist Group",
+          "url": "https://www.catsg.org/living-species-snowleopard",
+          "accessedAt": "2026-10-12",
+          "supports": [
+            "scientificName",
+            "names.en",
+            "taxonomy.genus",
+            "iucn.category",
+            "habitat"
+          ]
+        },
+        {
+          "id": "gslep-kyrgyzstan-names",
+          "title": "Кыргызстан — местные названия снежного барса",
+          "publisher": "Global Snow Leopard and Ecosystem Protection Program",
+          "url": "https://globalsnowleopard.org/%D0%BA%D1%8B%D1%80%D0%B3%D1%8B%D0%B7%D1%81%D1%82%D0%B0%D0%BD/?lang=ru",
+          "accessedAt": "2026-10-12",
+          "supports": [
+            "names.ru",
+            "names.ky"
+          ]
+        },
+        {
+          "id": "slt-kyrgyzstan",
+          "title": "Kyrgyzstan — research and conservation programmes",
+          "publisher": "Snow Leopard Trust",
+          "url": "https://snowleopard.org/our-work/where-we-work/kyrgyzstan/",
+          "accessedAt": "2026-10-12",
+          "supports": [
+            "habitat",
+            "regions.0",
+            "threats.0",
+            "threats.1",
+            "conservationMeasures.0"
+          ]
+        }
+      ],
+      "verified": false,
+      "lastReviewedAt": "2026-10-12"
+    }
+  ],
+  "demoArchive": [
+    {
+      "id": "amur-tiger",
+      "scientificName": null,
+      "names": {
+        "ru": null,
+        "ky": null,
+        "en": null
+      },
+      "taxonomy": {
+        "kingdom": null,
+        "phylum": null,
+        "class": null,
+        "order": null,
+        "family": null,
+        "genus": null
+      },
+      "group": null,
+      "nationalRedBook": {
+        "listed": null,
+        "category": null,
+        "edition": null,
+        "year": null,
+        "sourceIds": []
+      },
+      "iucn": {
+        "category": null,
+        "year": null,
+        "sourceIds": []
+      },
+      "habitat": null,
+      "regions": null,
+      "threats": null,
+      "conservationMeasures": null,
+      "population": {
+        "territory": null,
+        "year": null,
+        "estimate": null,
+        "unit": null,
+        "sourceIds": []
+      },
+      "images": [
+        {
+          "path": "data/backups/legacy-2026-10-12/images/source/amur-tiger.jpg",
+          "author": null,
+          "originalPage": null,
+          "license": null,
+          "licenseUrl": null,
+          "attribution": null,
+          "modifications": null,
+          "licenseVerified": false
+        }
+      ],
+      "sources": [],
+      "verified": false,
+      "lastReviewedAt": "2026-10-12"
+    },
+    {
+      "id": "whooping-crane",
+      "scientificName": "Grus americana",
+      "names": {
+        "ru": null,
+        "ky": null,
+        "en": "Whooping Crane"
+      },
+      "taxonomy": {
+        "kingdom": null,
+        "phylum": null,
+        "class": "Aves",
+        "order": "Gruiformes",
+        "family": "Gruidae",
+        "genus": null
+      },
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": null,
+        "category": null,
+        "edition": null,
+        "year": null,
+        "sourceIds": []
+      },
+      "iucn": {
+        "category": "EN",
+        "year": null,
+        "sourceIds": [
+          "cms-whooping-crane"
+        ]
+      },
+      "habitat": null,
+      "regions": null,
+      "threats": null,
+      "conservationMeasures": null,
+      "population": {
+        "territory": null,
+        "year": null,
+        "estimate": null,
+        "unit": null,
+        "sourceIds": []
+      },
+      "images": [
+        {
+          "path": "data/backups/legacy-2026-10-12/images/source/whooping-crane.jpg",
+          "author": "jimkruger",
+          "originalPage": null,
+          "license": null,
+          "licenseUrl": null,
+          "attribution": null,
+          "modifications": null,
+          "licenseVerified": false
+        }
+      ],
+      "sources": [
+        {
+          "id": "cms-whooping-crane",
+          "title": "Whooping Crane — Grus americana",
+          "publisher": "Convention on the Conservation of Migratory Species of Wild Animals",
+          "url": "https://www.cms.int/species/grus-americana",
+          "accessedAt": "2026-10-12",
+          "supports": [
+            "scientificName",
+            "names.en",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "group",
+            "iucn.category"
+          ]
+        }
+      ],
+      "verified": false,
+      "lastReviewedAt": "2026-10-12"
+    }
+  ]
+}

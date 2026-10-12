@@ -2,6 +2,8 @@
 import { computed, onMounted, ref } from 'vue'
 import SpeciesCard from './components/SpeciesCard.vue'
 import SpeciesModal from './components/SpeciesModal.vue'
+import { validateSpecies } from './data/species-model.js'
+import { regionNames, STATUS_DETAILS } from './data/presentation.js'
 
 const species = ref([])
 const selectedStatus = ref('ALL')
@@ -12,14 +14,13 @@ const selectedSpecies = ref(null)
 
 const statuses = [
   { value: 'ALL', label: 'Все виды' },
-  { value: 'CR', label: 'CR · критическая угроза' },
-  { value: 'EN', label: 'EN · под угрозой' },
-  { value: 'VU', label: 'VU · уязвимый вид' },
+  ...Object.entries(STATUS_DETAILS).map(([value, detail]) => ({ value, label: `IUCN ${value} · ${detail.label}` })),
+  { value: 'UNKNOWN', label: 'IUCN · статус неизвестен' },
 ]
 
 const regions = computed(() => {
   const availableRegions = new Set(
-    species.value.map((item) => item.region || (item.id === 'irbis' ? 'Кыргызстан' : 'Другие регионы')),
+    species.value.flatMap((item) => regionNames(item).length ? regionNames(item) : ['Регион неизвестен']),
   )
 
   return ['ALL', ...availableRegions]
@@ -27,9 +28,10 @@ const regions = computed(() => {
 
 const filteredSpecies = computed(() =>
   species.value.filter((item) => {
-    const region = item.region || (item.id === 'irbis' ? 'Кыргызстан' : 'Другие регионы')
-    const matchesStatus = selectedStatus.value === 'ALL' || item.status === selectedStatus.value
-    const matchesRegion = selectedRegion.value === 'ALL' || region === selectedRegion.value
+    const regions = regionNames(item)
+    const matchesStatus = selectedStatus.value === 'ALL' || (item.iucn.category || 'UNKNOWN') === selectedStatus.value
+    const matchesRegion = selectedRegion.value === 'ALL' || regions.includes(selectedRegion.value) ||
+      (selectedRegion.value === 'Регион неизвестен' && regions.length === 0)
     return matchesStatus && matchesRegion
   }),
 )
@@ -44,11 +46,14 @@ function closeSpecies() {
 
 onMounted(async () => {
   try {
-    const response = await fetch('/data/species.json')
+    const response = await fetch(`${import.meta.env.BASE_URL}data/species.json`)
     if (!response.ok) {
       throw new Error(`Не удалось загрузить данные: ${response.status}`)
     }
-    species.value = await response.json()
+    const records = await response.json()
+    const validationErrors = validateSpecies(records, 'catalog', { publicData: true })
+    if (validationErrors.length) throw new Error(`Некорректные данные каталога: ${validationErrors[0]}`)
+    species.value = records
   } catch (error) {
     errorMessage.value = error.message
   } finally {
@@ -70,8 +75,8 @@ onMounted(async () => {
             <span class="text-emerald-300">в пикселях</span>
           </h1>
           <p class="mt-6 max-w-2xl text-lg leading-8 text-emerald-100/80">
-            Атлас исчезающих видов, где каждый пиксель — это одна жизнь.
-            Чем меньше популяция, тем заметнее её хрупкость.
+            Учебный каталог редких видов Кыргызстана.
+            Пикселизация — условная иллюстрация, а не подсчёт животных.
           </p>
         </div>
       </div>
