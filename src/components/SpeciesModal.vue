@@ -1,18 +1,15 @@
 <script setup>
-import { computed, nextTick, onBeforeUnmount, ref, watch } from 'vue'
-import { formatPopulation, groupLabel, localized, nationalStatus, publicImageUrl, regionNames, speciesName, speciesPhoto, statusDetails } from '../data/presentation.js'
+import { computed, ref, watch } from 'vue'
+import { formatPopulation, groupLabel, localized, nationalStatus, regionNames, speciesName, speciesPhoto, statusDetails } from '../data/presentation.js'
 import { useModalDialog } from '../composables/useModalDialog.js'
+import SpeciesVisualization from './SpeciesVisualization.vue'
 
 const props = defineProps({ species: { type: Object, required: true } })
 const emit = defineEmits(['close'])
 const dialog = ref(null)
 const closeButton = ref(null)
-const canvas = ref(null)
 const activeLanguage = ref('ru')
-const detailValue = ref(32)
-const image = new Image()
 const photo = computed(() => speciesPhoto(props.species))
-const imagePath = computed(() => publicImageUrl(photo.value?.path))
 const formattedPopulation = computed(() => formatPopulation(props.species.population))
 const languages = [
   { key: 'ru', label: 'RU', accessibleName: 'Русский язык' },
@@ -29,37 +26,6 @@ const nameLanguage = computed(() => Object.values(props.species.names).some(Bool
 
 useModalDialog(dialog, closeButton)
 
-function drawPixelatedImage() {
-  const context = canvas.value?.getContext('2d')
-  if (!context) return
-  const { width, height } = canvas.value
-  context.clearRect(0, 0, width, height)
-  context.fillStyle = '#eef1e9'
-  context.fillRect(0, 0, width, height)
-  if (!image.complete || !image.naturalWidth) {
-    context.fillStyle = '#253b32'
-    context.font = '600 24px system-ui'
-    context.textAlign = 'center'
-    context.fillText('Изображение недоступно', width / 2, height / 2)
-    return
-  }
-  const cols = Math.max(8, Math.min(200, detailValue.value))
-  const rows = Math.max(1, Math.round(cols * height / width))
-  const pixelCanvas = document.createElement('canvas')
-  pixelCanvas.width = cols
-  pixelCanvas.height = rows
-  const pixelContext = pixelCanvas.getContext('2d')
-  if (!pixelContext) return
-  const scale = Math.max(width / image.naturalWidth, height / image.naturalHeight)
-  const cropWidth = width / scale
-  const cropHeight = height / scale
-  pixelContext.imageSmoothingEnabled = false
-  pixelContext.drawImage(image, (image.naturalWidth - cropWidth) / 2, (image.naturalHeight - cropHeight) / 2,
-    cropWidth, cropHeight, 0, 0, cols, rows)
-  context.imageSmoothingEnabled = false
-  context.drawImage(pixelCanvas, 0, 0, width, height)
-}
-
 let backdropPointer = false
 function outsideDialog(event) {
   if (event.target !== dialog.value) return false
@@ -73,16 +39,7 @@ function closeFromBackdrop(event) {
   backdropPointer = false
 }
 
-watch(() => props.species, () => {
-  detailValue.value = 32
-  activeLanguage.value = 'ru'
-  image.onload = drawPixelatedImage
-  image.onerror = drawPixelatedImage
-  image.src = imagePath.value
-  nextTick(drawPixelatedImage)
-}, { immediate: true })
-watch(detailValue, drawPixelatedImage)
-onBeforeUnmount(() => { image.onload = null; image.onerror = null })
+watch(() => props.species, () => { activeLanguage.value = 'ru' }, { immediate: true })
 </script>
 
 <template>
@@ -101,26 +58,9 @@ onBeforeUnmount(() => { image.onload = null; image.onerror = null })
     </header>
     <div class="modal-scroll">
       <div class="modal-grid">
-        <section class="modal-media" aria-label="Учебная иллюстрация">
-          <figure>
-            <div class="canvas-frame">
-              <canvas ref="canvas" width="800" height="600" role="img"
-                :aria-label="photo ? 'Условная пикселизация фотографии' : 'Учебная пикселизация условного пейзажа; это не фото вида'">
-                Учебная иллюстрация. Детализацию можно изменить ползунком ниже.
-              </canvas>
-            </div>
-            <figcaption>{{ photo ? 'Фотография вида · учебный эффект' : 'Условный горный пейзаж · не фотография вида' }}</figcaption>
-          </figure>
-          <div class="pixel-control">
-            <label for="detail-slider">Учебная пикселизация</label>
-            <p class="detail-value">Детализация: <output for="detail-slider">{{ detailValue }}</output></p>
-            <input id="detail-slider" v-model.number="detailValue" type="range" min="8" max="200" step="1"
-              :aria-valuetext="`Детализация: ${detailValue}`" aria-describedby="pixel-note" />
-            <div class="range-endpoints" aria-hidden="true"><span>Меньше деталей</span><span>Больше деталей</span></div>
-          </div>
-          <p id="pixel-note" class="media-note">Условный эффект не отражает численность вида.</p>
-          <p v-if="!photo" class="media-note">Фото не опубликовано: лицензия не подтверждена.</p>
-          <div v-else class="photo-credit">
+        <section class="modal-media" aria-label="Фотография и образовательная визуализация">
+          <SpeciesVisualization :photo="photo" :name="currentName" />
+          <div v-if="photo" class="photo-credit">
             <p v-if="photo.caption" :lang="contentLanguage(photo.caption)">{{ localized(photo.caption, activeLanguage) }}</p>
             <p>{{ photo.attribution }}</p>
             <a :href="photo.originalPage" target="_blank" rel="noopener noreferrer">Источник фото <span class="sr-only">(откроется в новой вкладке)</span></a>

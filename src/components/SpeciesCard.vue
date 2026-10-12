@@ -1,5 +1,6 @@
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, ref, watch } from 'vue'
+import { compositionStyle } from '../data/image-composition.js'
 import { formatPopulation, groupLabel, localized, nationalStatus, publicImageUrl, speciesName, speciesPhoto, statusDetails } from '../data/presentation.js'
 
 const props = defineProps({ species: { type: Object, required: true } })
@@ -8,12 +9,13 @@ const imageFailed = ref(false)
 const photo = computed(() => speciesPhoto(props.species))
 const imagePath = computed(() => publicImageUrl(photo.value?.path))
 const formattedPopulation = computed(() => props.species.population.estimate ? formatPopulation(props.species.population) : 'Неизвестна')
+watch(imagePath, () => { imageFailed.value = false })
 </script>
 
 <template>
   <article class="species-card">
     <div class="card-image">
-      <img v-if="!imageFailed" :src="imagePath" :width="photo?.width || 800" :height="photo?.height || 600" loading="lazy" decoding="async"
+      <img v-if="!imageFailed" :src="imagePath" :style="compositionStyle(photo)" :width="photo?.width || 800" :height="photo?.height || 600" loading="lazy" decoding="async"
         :alt="photo ? `${speciesName(species)} — фотография` : 'Условный горный пейзаж; фотография вида пока недоступна'"
         @error="imageFailed = true" />
       <p v-else class="image-fallback">Изображение недоступно</p>
