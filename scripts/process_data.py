@@ -20,6 +20,7 @@ class Species(TypedDict):
     name_en: str
     population: int
     population_history: int
+    pixel_scale: int
     status: str
     description_ru: str
     description_kg: str
@@ -36,6 +37,7 @@ SPECIES: list[Species] = [
         "name_en": "Snow leopard",
         "population": 4000,
         "population_history": 20000,
+        "pixel_scale": 333,
         "status": "VU",
         "description_ru": (
             "Редкий хищник горных экосистем Кыргызстана, известный своей "
@@ -53,6 +55,7 @@ SPECIES: list[Species] = [
         "name_en": "Amur tiger",
         "population": 750,
         "population_history": 3000,
+        "pixel_scale": 63,
         "status": "EN",
         "description_ru": (
             "Крупнейшая кошка планеты, обитающая в лесах Дальнего Востока."
@@ -69,6 +72,7 @@ SPECIES: list[Species] = [
         "name_en": "Whooping crane",
         "population": 150000,
         "population_history": 350000,
+        "pixel_scale": 3125,
         "status": "CR",
         "description_ru": (
             "Редкая перелётная птица, которой угрожают потеря болотных "
@@ -88,10 +92,13 @@ def pixelate_image(
     population: int,
     width: int = 800,
     height: int = 600,
+    individuals_per_pixel: int = 1000,
 ) -> None:
-    """Pixelate an image using a population-based grid and save the result."""
+    """Pixelate an image using an individual population-to-pixel scale."""
     if population <= 0:
         raise ValueError("population must be greater than zero")
+    if individuals_per_pixel <= 0:
+        raise ValueError("individuals_per_pixel must be greater than zero")
     if width <= 0 or height <= 0:
         raise ValueError("width and height must be greater than zero")
 
@@ -102,8 +109,8 @@ def pixelate_image(
     with Image.open(image_path) as source:
         source_width, source_height = source.size
         aspect_ratio = source_width / source_height
-        cols = max(8, min(200, int((population * aspect_ratio) ** 0.5)))
-        rows = max(8, min(200, int(population / cols)))
+        cols = max(12, min(200, round(population / individuals_per_pixel)))
+        rows = max(1, round(cols / aspect_ratio))
 
         pixelated = source.convert("RGB").resize(
             (cols, rows), resample=Image.Resampling.BILINEAR
@@ -147,6 +154,7 @@ def generate_database(
                 species["population"],
                 width,
                 height,
+                individuals_per_pixel=species["pixel_scale"],
             )
             record["image"] = f"/images/processed/{output_path.name}"
         else:

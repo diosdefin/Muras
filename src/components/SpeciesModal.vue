@@ -10,6 +10,15 @@ const canvas = ref(null)
 const activeLanguage = ref('ru')
 const populationValue = ref(props.species.population)
 const image = new Image()
+let drawFrame = 0
+
+const PIXEL_SCALE_BY_SPECIES = {
+  irbis: 333,
+  'amur-tiger': 63,
+  'whooping-crane': 3125,
+}
+const MIN_GRID_WIDTH = 12
+const MAX_GRID_WIDTH = 200
 
 const imagePath = computed(() =>
   props.species.image || `/images/processed/${props.species.id}.png`,
@@ -44,8 +53,14 @@ function drawPixelatedImage() {
   }
 
   const aspectRatio = image.naturalWidth / image.naturalHeight
-  const cols = Math.max(8, Math.min(200, Math.floor((populationValue.value * aspectRatio) ** 0.5)))
-  const rows = Math.max(8, Math.min(200, Math.floor(populationValue.value / cols)))
+  const individualsPerPixel = props.species.pixel_scale
+    || PIXEL_SCALE_BY_SPECIES[props.species.id]
+    || 1000
+  const cols = Math.max(
+    MIN_GRID_WIDTH,
+    Math.min(MAX_GRID_WIDTH, Math.round(populationValue.value / individualsPerPixel)),
+  )
+  const rows = Math.max(1, Math.round(cols / aspectRatio))
   const pixelCanvas = document.createElement('canvas')
   pixelCanvas.width = cols
   pixelCanvas.height = rows
@@ -56,6 +71,11 @@ function drawPixelatedImage() {
   context.drawImage(pixelCanvas, 0, 0, width, height)
 }
 
+function scheduleDrawPixelatedImage() {
+  cancelAnimationFrame(drawFrame)
+  drawFrame = requestAnimationFrame(drawPixelatedImage)
+}
+
 function closeOnEscape(event) {
   if (event.key === 'Escape') emit('close')
 }
@@ -64,13 +84,16 @@ watch(() => props.species, () => {
   populationValue.value = props.species.population
   activeLanguage.value = 'ru'
   image.src = imagePath.value
-  image.onload = drawPixelatedImage
-  nextTick(drawPixelatedImage)
+  image.onload = scheduleDrawPixelatedImage
+  nextTick(scheduleDrawPixelatedImage)
 }, { immediate: true })
 
-watch(populationValue, drawPixelatedImage)
+watch(populationValue, scheduleDrawPixelatedImage)
 onMounted(() => window.addEventListener('keydown', closeOnEscape))
-onBeforeUnmount(() => window.removeEventListener('keydown', closeOnEscape))
+onBeforeUnmount(() => {
+  cancelAnimationFrame(drawFrame)
+  window.removeEventListener('keydown', closeOnEscape)
+})
 </script>
 
 <template>
