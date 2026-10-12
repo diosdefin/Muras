@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { readFile, writeFile, mkdir, mkdtemp, rm } from 'node:fs/promises'
+import { readFile, writeFile, mkdir, mkdtemp, rm, cp } from 'node:fs/promises'
 import { join } from 'node:path'
 import { tmpdir } from 'node:os'
 import { ref } from 'vue'
@@ -211,6 +211,7 @@ test('generation validates quiz before overwriting data and detects a stale publ
   try {
     await mkdir(join(root, 'data'), { recursive: true })
     await mkdir(join(root, 'src/data/quiz'), { recursive: true })
+    await cp(join(PROJECT_ROOT, 'data/geography'), join(root, 'data/geography'), { recursive: true })
     const document = structuredClone(sourceDocument)
     document.catalog.forEach(s => { s.images = [] }) // No private/photo assets needed in this isolated fixture.
     await writeFile(join(root, 'data/species.source.json'), JSON.stringify(document))

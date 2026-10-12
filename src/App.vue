@@ -4,6 +4,7 @@ import SpeciesCard from './components/SpeciesCard.vue'
 import SpeciesModal from './components/SpeciesModal.vue'
 import QuizView from './components/quiz/QuizView.vue'
 import LessonView from './components/lesson/LessonView.vue'
+import MapSection from './components/map/MapSection.vue'
 import { validateSpecies } from './data/species-model.js'
 import { validateQuestions } from './data/quiz/model.js'
 import { regionNames, STATUS_DETAILS } from './data/presentation.js'
@@ -21,11 +22,11 @@ const quizError = ref('')
 const lessonView = ref(null)
 const quizFromLesson = ref(false)
 
-async function showView(view) {
+async function showView(view, focusId = view) {
   if (activeView.value === 'lesson' && view !== 'lesson' && await lessonView.value?.exitFullscreen() === false) return
   activeView.value = view
   await nextTick()
-  document.getElementById(view)?.focus()
+  document.getElementById(focusId)?.focus()
 }
 
 function openQuizFromLesson() {
@@ -114,6 +115,7 @@ onMounted(async () => {
     </a>
     <nav class="main-navigation" aria-label="Основная навигация">
       <a class="header-link" href="#catalog" aria-label="Каталог видов" :aria-current="activeView === 'catalog' ? 'page' : undefined" @click.prevent="showView('catalog')">Каталог</a>
+      <a class="header-link" href="#map" @click.prevent="showView('catalog', 'map')">Карта</a>
       <a class="header-link" href="#quiz" :aria-current="activeView === 'quiz' ? 'page' : undefined" @click.prevent="showView('quiz')">Викторина</a>
       <a class="header-link" href="#lesson" :aria-current="activeView === 'lesson' ? 'page' : undefined" @click.prevent="showView('lesson')">Режим урока</a>
     </nav>
@@ -137,6 +139,7 @@ onMounted(async () => {
         <p>Природа Кыргызстана<span>Наблюдать · изучать · сохранять</span></p>
       </div>
     </section>
+    <MapSection v-show="activeView === 'catalog'" :species="species" :loading="isLoading" :error="errorMessage" @open="openSpecies" />
     <section v-show="activeView === 'catalog'" id="catalog" class="catalog page-container" aria-labelledby="catalog-title" tabindex="-1" :aria-busy="isLoading">
       <div class="catalog-heading">
         <div>
