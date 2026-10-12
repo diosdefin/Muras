@@ -1,0 +1,635 @@
+[
+  {
+    "id": "beginner-snow-leopard-photo",
+    "difficulty": "beginner",
+    "question": "Какой вид изображён на фотографии?",
+    "options": [
+      {
+        "id": "irbis",
+        "text": "Ирбис"
+      },
+      {
+        "id": "manul",
+        "text": "Манул"
+      },
+      {
+        "id": "argali",
+        "text": "Архар"
+      },
+      {
+        "id": "golden-eagle",
+        "text": "Беркут"
+      }
+    ],
+    "correctAnswerId": "irbis",
+    "explanation": "Это ирбис. В каталоге его кыргызское название — «Илбирс». Страница оригинального файла Commons определяет животных на снимке как снежных барсов; место съёмки не подтверждено.",
+    "speciesId": "irbis",
+    "sourceIds": [
+      "decree-170",
+      "commons-photo"
+    ],
+    "factPaths": [
+      "names.ru",
+      "names.ky",
+      "images.0.caption"
+    ],
+    "image": {
+      "speciesImageIndex": 0
+    }
+  },
+  {
+    "id": "beginner-manul-photo",
+    "difficulty": "beginner",
+    "question": "Узнайте кошку на фотографии.",
+    "options": [
+      {
+        "id": "manul",
+        "text": "Манул"
+      },
+      {
+        "id": "irbis",
+        "text": "Ирбис"
+      },
+      {
+        "id": "argali",
+        "text": "Архар"
+      },
+      {
+        "id": "saker-falcon",
+        "text": "Балобан"
+      }
+    ],
+    "correctAnswerId": "manul",
+    "explanation": "На снимке манул. Фотография сделана в Московском зоопарке: она иллюстрирует вид, а не доказывает встречаемость этого экземпляра в Кыргызстане.",
+    "speciesId": "manul",
+    "sourceIds": [
+      "decree-170",
+      "commons-photo"
+    ],
+    "factPaths": [
+      "names.ru",
+      "images.0.caption"
+    ],
+    "image": {
+      "speciesImageIndex": 0
+    }
+  },
+  {
+    "id": "beginner-eagle-photo",
+    "difficulty": "beginner",
+    "question": "Как называется эта птица в полёте?",
+    "options": [
+      {
+        "id": "golden-eagle",
+        "text": "Беркут"
+      },
+      {
+        "id": "bearded-vulture",
+        "text": "Бородач"
+      },
+      {
+        "id": "saker-falcon",
+        "text": "Балобан"
+      },
+      {
+        "id": "manul",
+        "text": "Манул"
+      }
+    ],
+    "correctAnswerId": "golden-eagle",
+    "explanation": "Это беркут, по-кыргызски «Бүркүт». Определение вида подтверждает страница фотографии Commons; точное место съёмки не установлено.",
+    "speciesId": "golden-eagle",
+    "sourceIds": [
+      "decree-170",
+      "commons-photo"
+    ],
+    "factPaths": [
+      "names.ru",
+      "names.ky",
+      "images.0.caption"
+    ],
+    "image": {
+      "speciesImageIndex": 0
+    }
+  },
+  {
+    "id": "beginner-vulture-photo",
+    "difficulty": "beginner",
+    "question": "Определите птицу на этом снимке.",
+    "options": [
+      {
+        "id": "bearded-vulture",
+        "text": "Бородач"
+      },
+      {
+        "id": "golden-eagle",
+        "text": "Беркут"
+      },
+      {
+        "id": "saker-falcon",
+        "text": "Балобан"
+      },
+      {
+        "id": "argali",
+        "text": "Архар"
+      }
+    ],
+    "correctAnswerId": "bearded-vulture",
+    "explanation": "На фотографии бородач. Согласно оригинальной странице, снимок сделан в Гран-Парадизо, Италия. Это иллюстрация вида, встречаемость которого в Кыргызстане подтверждается отдельно каталогом.",
+    "speciesId": "bearded-vulture",
+    "sourceIds": [
+      "decree-170",
+      "commons-photo",
+      "redbook-2006"
+    ],
+    "factPaths": [
+      "names.ru",
+      "images.0.caption",
+      "regions.0"
+    ],
+    "image": {
+      "speciesImageIndex": 0
+    }
+  },
+  {
+    "id": "beginner-saker-kyrgyz-name",
+    "difficulty": "beginner",
+    "question": "Какому русскому названию соответствует кыргызское «Ителги»?",
+    "options": [
+      {
+        "id": "saker-falcon",
+        "text": "Балобан"
+      },
+      {
+        "id": "golden-eagle",
+        "text": "Беркут"
+      },
+      {
+        "id": "bearded-vulture",
+        "text": "Бородач"
+      },
+      {
+        "id": "irbis",
+        "text": "Ирбис"
+      }
+    ],
+    "correctAnswerId": "saker-falcon",
+    "explanation": "«Ителги» — балобан. Эта пара названий приведена в перечне птиц постановления №170, на котором основаны названия в каталоге.",
+    "speciesId": "saker-falcon",
+    "sourceIds": [
+      "decree-170"
+    ],
+    "factPaths": [
+      "names.ru",
+      "names.ky"
+    ],
+    "image": null
+  },
+  {
+    "id": "beginner-greig-kyrgyz-name",
+    "difficulty": "beginner",
+    "question": "Какое растение называется «Грейг мандалагы»?",
+    "options": [
+      {
+        "id": "greigs-tulip",
+        "text": "Тюльпан Грейга"
+      },
+      {
+        "id": "kaufmanns-tulip",
+        "text": "Тюльпан Кауфмана"
+      },
+      {
+        "id": "sievers-apple",
+        "text": "Яблоня Сиверса"
+      },
+      {
+        "id": "manul",
+        "text": "Манул"
+      }
+    ],
+    "correctAnswerId": "greigs-tulip",
+    "explanation": "«Грейг мандалагы» — тюльпан Грейга. Кыргызское название взято из таблицы растений постановления, а не придумано переводчиком.",
+    "speciesId": "greigs-tulip",
+    "sourceIds": [
+      "decree-170"
+    ],
+    "factPaths": [
+      "names.ru",
+      "names.ky"
+    ],
+    "image": null
+  },
+  {
+    "id": "researcher-manul-habitat",
+    "difficulty": "researcher",
+    "question": "Какие высокогорные местообитания манула описаны в каталоге?",
+    "options": [
+      {
+        "id": "steppe",
+        "text": "Степи и сырты Тянь-Шаня"
+      },
+      {
+        "id": "forest",
+        "text": "Только густые леса"
+      },
+      {
+        "id": "water",
+        "text": "Открытая водная поверхность озёр"
+      },
+      {
+        "id": "garden",
+        "text": "Только ботанические сады"
+      }
+    ],
+    "correctAnswerId": "steppe",
+    "explanation": "В условиях Тянь-Шаня манул занимает высокогорные степи и сырты. В описании также указаны каменистые россыпи, скальные расщелины и сурчиные норы.",
+    "speciesId": "manul",
+    "sourceIds": [
+      "redbook-2006"
+    ],
+    "factPaths": [
+      "habitat"
+    ],
+    "image": null
+  },
+  {
+    "id": "researcher-saker-power-lines",
+    "difficulty": "researcher",
+    "question": "Какая из перечисленных угроз балобану указана в каталоге?",
+    "options": [
+      {
+        "id": "power",
+        "text": "Гибель на опорах линий электропередачи"
+      },
+      {
+        "id": "bulbs",
+        "text": "Выкапывание луковиц"
+      },
+      {
+        "id": "wood",
+        "text": "Вырубка деревьев на топливо"
+      },
+      {
+        "id": "marmots",
+        "text": "Промысел сурков"
+      }
+    ],
+    "correctAnswerId": "power",
+    "explanation": "Для балобана указаны деградация местообитаний и гибель на опорах ЛЭП. Другой фактор из его карточки — изъятие птенцов и отлов для продажи.",
+    "speciesId": "saker-falcon",
+    "sourceIds": [
+      "redbook-2006"
+    ],
+    "factPaths": [
+      "threats.0",
+      "threats.1"
+    ],
+    "image": null
+  },
+  {
+    "id": "researcher-greig-protection",
+    "difficulty": "researcher",
+    "question": "Какая рекомендация издания 2006 года приведена для тюльпана Грейга?",
+    "options": [
+      {
+        "id": "flowers",
+        "text": "Запрет сбора цветов и луковиц"
+      },
+      {
+        "id": "nests",
+        "text": "Картирование мест гнездования"
+      },
+      {
+        "id": "marmots",
+        "text": "Прекращение промысла сурков"
+      },
+      {
+        "id": "trees",
+        "text": "Охрана изолированных насаждений деревьев"
+      }
+    ],
+    "correctAnswerId": "flowers",
+    "explanation": "Издание рекомендует запретить сбор цветов и луковиц тюльпана Грейга, ограничивать выпас во время цветения и наблюдать за популяциями. Это рекомендации источника, а не утверждение об их полном выполнении.",
+    "speciesId": "greigs-tulip",
+    "sourceIds": [
+      "redbook-2006"
+    ],
+    "factPaths": [
+      "conservationMeasures.0"
+    ],
+    "image": null
+  },
+  {
+    "id": "researcher-apple-threat",
+    "difficulty": "researcher",
+    "question": "Какая угроза яблоне Сиверса прямо указана в её карточке?",
+    "options": [
+      {
+        "id": "wood",
+        "text": "Вырубка деревьев на топливо"
+      },
+      {
+        "id": "chicks",
+        "text": "Изъятие птенцов из гнёзд"
+      },
+      {
+        "id": "power",
+        "text": "Гибель на опорах ЛЭП"
+      },
+      {
+        "id": "marmots",
+        "text": "Промысел сурков"
+      }
+    ],
+    "correctAnswerId": "wood",
+    "explanation": "В карточке яблони Сиверса приведены вырубка деревьев на топливо и чрезмерный выпас скота. Эти угрозы пересказаны по национальной Красной книге 2006 года.",
+    "speciesId": "sievers-apple",
+    "sourceIds": [
+      "redbook-2006"
+    ],
+    "factPaths": [
+      "threats.0",
+      "threats.1"
+    ],
+    "image": null
+  },
+  {
+    "id": "researcher-eagle-nests",
+    "difficulty": "researcher",
+    "question": "Какой фактор беспокойства и прямого воздействия на беркута указан в каталоге?",
+    "options": [
+      {
+        "id": "chicks",
+        "text": "Изъятие птенцов из гнёзд"
+      },
+      {
+        "id": "bulbs",
+        "text": "Выкапывание луковиц"
+      },
+      {
+        "id": "wood",
+        "text": "Вырубка на топливо"
+      },
+      {
+        "id": "flowers",
+        "text": "Сбор цветов"
+      }
+    ],
+    "correctAnswerId": "chicks",
+    "explanation": "Изъятие птенцов из гнёзд и беспокойство перечислены среди угроз беркуту. В издании 2006 года предложено усилить охрану гнездовий и вести их учёт.",
+    "speciesId": "golden-eagle",
+    "sourceIds": [
+      "redbook-2006"
+    ],
+    "factPaths": [
+      "threats.1",
+      "conservationMeasures.0"
+    ],
+    "image": null
+  },
+  {
+    "id": "researcher-vulture-protection",
+    "difficulty": "researcher",
+    "question": "Какая мера охраны бородача рекомендована в издании 2006 года?",
+    "options": [
+      {
+        "id": "nests",
+        "text": "Охрана и картирование мест гнездования"
+      },
+      {
+        "id": "bulbs",
+        "text": "Запрет сбора луковиц"
+      },
+      {
+        "id": "marmots",
+        "text": "Прекращение промысла сурков в сыртовой зоне"
+      },
+      {
+        "id": "trees",
+        "text": "Охрана изолированных яблоневых насаждений"
+      }
+    ],
+    "correctAnswerId": "nests",
+    "explanation": "Для бородача рекомендованы охрана и картирование мест гнездования, а также информирование местных жителей. Меры относятся к рекомендациям национального издания 2006 года.",
+    "speciesId": "bearded-vulture",
+    "sourceIds": [
+      "redbook-2006"
+    ],
+    "factPaths": [
+      "conservationMeasures.0"
+    ],
+    "image": null
+  },
+  {
+    "id": "expert-saker-scientific-name",
+    "difficulty": "expert",
+    "question": "Какое научное название соответствует балобану?",
+    "options": [
+      {
+        "id": "falco",
+        "text": "Falco cherrug"
+      },
+      {
+        "id": "aquila",
+        "text": "Aquila chrysaetos"
+      },
+      {
+        "id": "gypaetus",
+        "text": "Gypaetus barbatus"
+      },
+      {
+        "id": "ovis",
+        "text": "Ovis ammon"
+      }
+    ],
+    "correctAnswerId": "falco",
+    "explanation": "Балобан — Falco cherrug. Именно эта принятая запись вида найдена в наборе IUCN, опубликованном через GBIF, и используется в каталоге.",
+    "speciesId": "saker-falcon",
+    "sourceIds": [
+      "decree-170",
+      "iucn-gbif-2026-1"
+    ],
+    "factPaths": [
+      "names.ru",
+      "scientificName"
+    ],
+    "image": null
+  },
+  {
+    "id": "expert-greig-scientific-name",
+    "difficulty": "expert",
+    "question": "Выберите научное название тюльпана Грейга.",
+    "options": [
+      {
+        "id": "greigii",
+        "text": "Tulipa greigii"
+      },
+      {
+        "id": "kaufmanniana",
+        "text": "Tulipa kaufmanniana"
+      },
+      {
+        "id": "sieversii",
+        "text": "Malus sieversii"
+      },
+      {
+        "id": "chrysaetos",
+        "text": "Aquila chrysaetos"
+      }
+    ],
+    "correctAnswerId": "greigii",
+    "explanation": "Тюльпан Грейга — Tulipa greigii. Научное имя подтверждено принятой записью опубликованного набора IUCN в GBIF.",
+    "speciesId": "greigs-tulip",
+    "sourceIds": [
+      "decree-170",
+      "iucn-gbif-2026-1"
+    ],
+    "factPaths": [
+      "names.ru",
+      "scientificName"
+    ],
+    "image": null
+  },
+  {
+    "id": "expert-saker-family",
+    "difficulty": "expert",
+    "question": "К какому семейству относится балобан в таксономии каталога?",
+    "options": [
+      {
+        "id": "falconidae",
+        "text": "Falconidae"
+      },
+      {
+        "id": "accipitridae",
+        "text": "Accipitridae"
+      },
+      {
+        "id": "felidae",
+        "text": "Felidae"
+      },
+      {
+        "id": "liliaceae",
+        "text": "Liliaceae"
+      }
+    ],
+    "correctAnswerId": "falconidae",
+    "explanation": "Балобан относится к семейству Falconidae. Семейство взято из принятой таксономической записи IUCN в GBIF, отдельно от природоохранных категорий.",
+    "speciesId": "saker-falcon",
+    "sourceIds": [
+      "decree-170",
+      "iucn-gbif-2026-1"
+    ],
+    "factPaths": [
+      "names.ru",
+      "taxonomy.family"
+    ],
+    "image": null
+  },
+  {
+    "id": "expert-tulip-family",
+    "difficulty": "expert",
+    "question": "Какое семейство указано в каталоге для тюльпана Кауфмана?",
+    "options": [
+      {
+        "id": "liliaceae",
+        "text": "Liliaceae"
+      },
+      {
+        "id": "rosaceae",
+        "text": "Rosaceae"
+      },
+      {
+        "id": "bovidae",
+        "text": "Bovidae"
+      },
+      {
+        "id": "felidae",
+        "text": "Felidae"
+      }
+    ],
+    "correctAnswerId": "liliaceae",
+    "explanation": "Тюльпан Кауфмана, Tulipa kaufmanniana, относится к Liliaceae. Научное название и семейство подтверждены принятой записью набора IUCN в GBIF.",
+    "speciesId": "kaufmanns-tulip",
+    "sourceIds": [
+      "decree-170",
+      "iucn-gbif-2026-1"
+    ],
+    "factPaths": [
+      "names.ru",
+      "scientificName",
+      "taxonomy.family"
+    ],
+    "image": null
+  },
+  {
+    "id": "expert-apple-reserves",
+    "difficulty": "expert",
+    "question": "В карточке какого вида приведены сведения издания 2006 года об охране в Сары-Челекском, Беш-Аральском и Падыша-Атинском заповедниках?",
+    "options": [
+      {
+        "id": "sievers-apple",
+        "text": "Яблоня Сиверса"
+      },
+      {
+        "id": "greigs-tulip",
+        "text": "Тюльпан Грейга"
+      },
+      {
+        "id": "kaufmanns-tulip",
+        "text": "Тюльпан Кауфмана"
+      },
+      {
+        "id": "manul",
+        "text": "Манул"
+      }
+    ],
+    "correctAnswerId": "sievers-apple",
+    "explanation": "Эти три заповедника перечислены в карточке яблони Сиверса по изданию 2006 года. Датировка важна: вопрос не утверждает, что проведён новый учёт охраны в 2026 году.",
+    "speciesId": "sievers-apple",
+    "sourceIds": [
+      "decree-170",
+      "redbook-2006"
+    ],
+    "factPaths": [
+      "names.ru",
+      "conservationMeasures.0"
+    ],
+    "image": null
+  },
+  {
+    "id": "expert-eagle-order",
+    "difficulty": "expert",
+    "question": "Какой отряд указан для беркута в принятой таксономии каталога?",
+    "options": [
+      {
+        "id": "accipitriformes",
+        "text": "Accipitriformes"
+      },
+      {
+        "id": "falconiformes",
+        "text": "Falconiformes"
+      },
+      {
+        "id": "carnivora",
+        "text": "Carnivora"
+      },
+      {
+        "id": "liliales",
+        "text": "Liliales"
+      }
+    ],
+    "correctAnswerId": "accipitriformes",
+    "explanation": "Для беркута указан отряд Accipitriformes. Эта классификация взята из принятой записи Aquila chrysaetos в опубликованном наборе IUCN в GBIF.",
+    "speciesId": "golden-eagle",
+    "sourceIds": [
+      "decree-170",
+      "iucn-gbif-2026-1"
+    ],
+    "factPaths": [
+      "names.ru",
+      "scientificName",
+      "taxonomy.order"
+    ],
+    "image": null
+  }
+]
