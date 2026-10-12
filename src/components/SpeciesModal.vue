@@ -3,6 +3,7 @@ import { computed, ref, watch } from 'vue'
 import { formatPopulation, groupLabel, localized, nationalStatus, regionNames, speciesName, speciesPhoto, statusDetails } from '../data/presentation.js'
 import { useModalDialog } from '../composables/useModalDialog.js'
 import SpeciesVisualization from './SpeciesVisualization.vue'
+import LessonReferences from './lesson/LessonReferences.vue'
 
 const props = defineProps({ species: { type: Object, required: true } })
 const emit = defineEmits(['close', 'support'])
@@ -61,14 +62,19 @@ watch(() => props.species, () => { activeLanguage.value = 'ru' }, { immediate: t
         <section class="modal-media" aria-label="Фотография и образовательная визуализация">
           <SpeciesVisualization :photo="photo" :name="currentName" />
           <div v-if="photo" class="photo-credit">
-            <p v-if="photo.caption" :lang="contentLanguage(photo.caption)">{{ localized(photo.caption, activeLanguage) }}</p>
-            <p>{{ photo.attribution }}</p>
-            <a :href="photo.originalPage" target="_blank" rel="noopener noreferrer">Источник фото <span class="sr-only">(откроется в новой вкладке)</span></a>
+            <p class="photo-credit-links"><a :href="photo.originalPage" target="_blank" rel="noopener noreferrer">Фото: {{ photo.author }} <span class="sr-only">(оригинальная страница, новая вкладка)</span></a>
             <a :href="photo.licenseUrl" target="_blank" rel="noopener noreferrer">{{ photo.license }} <span class="sr-only">(откроется в новой вкладке)</span></a>
-            <p v-if="photo.modifications?.length">Изменения: {{ photo.modifications.join('; ') }}</p>
+            </p>
+            <details class="modal-disclosure photo-details"><summary>Фотография, авторство и лицензия</summary><div>
+              <p v-if="photo.caption" :lang="contentLanguage(photo.caption)">{{ localized(photo.caption, activeLanguage) }}</p>
+              <p>{{ photo.attribution }}</p>
+              <p v-if="photo.modifications?.length">Изменения: {{ photo.modifications.join('; ') }}</p>
+            </div></details>
           </div>
         </section>
         <div class="modal-information">
+          <section aria-labelledby="basic-information-title">
+          <h3 id="basic-information-title" class="modal-section-title">Основная информация</h3>
           <p class="card-group">{{ groupLabel(species) }}</p>
           <p class="status-badge" :data-category="species.iucn.category">{{ statusDetails(species).label }}</p>
           <p v-if="species.iucn.category && !species.iucn.year" class="media-note">Год индивидуальной оценки IUCN в доступном источнике не указан.</p>
@@ -83,7 +89,6 @@ watch(() => props.species, () => { activeLanguage.value = 'ru' }, { immediate: t
           <p class="species-description" :lang="currentDescription ? contentLanguage(species.habitat?.description) : 'ru'">
             {{ currentDescription || 'Сведения о местообитании пока не подтверждены.' }}
           </p>
-          <div class="support-modal-action"><button class="text-link" type="button" @click="emit('support', species.id)">Помочь сохранить вид <span aria-hidden="true">↗</span></button><p>Познакомиться с концепцией поддержки. Приём пожертвований пока не открыт.</p></div>
           <dl class="species-facts">
             <div>
               <dt>Ареал</dt>
@@ -95,22 +100,24 @@ watch(() => props.species, () => { activeLanguage.value = 'ru' }, { immediate: t
               <dd v-if="species.population.estimate" class="fact-context">{{ species.population.territory }}, {{ species.population.year }} год</dd>
             </div>
           </dl>
+          </section>
+          <details class="modal-disclosure"><summary>Угрозы и охрана</summary><div>
           <section class="information-section" aria-labelledby="threats-title">
             <h3 id="threats-title">Главные угрозы</h3>
-            <ul v-if="species.threats" class="threat-list">
-              <li v-for="(threat, index) in species.threats" :key="index" :lang="contentLanguage(threat.text)">{{ localized(threat.text, activeLanguage) }}</li>
+            <ul v-if="species.threats?.length" class="threat-list">
+              <li v-for="(threat, index) in species.threats" :key="index" :lang="contentLanguage(threat.text)">{{ localized(threat.text, activeLanguage) }} <LessonReferences :species="species" :ids="threat.sourceIds" /></li>
             </ul>
             <p v-else>Сведения пока не подтверждены.</p>
           </section>
           <section class="information-section" aria-labelledby="conservation-title">
             <h3 id="conservation-title">Меры охраны</h3>
-            <ul v-if="species.conservationMeasures" class="threat-list">
-              <li v-for="(measure, index) in species.conservationMeasures" :key="index" :lang="contentLanguage(measure.text)">{{ localized(measure.text, activeLanguage) }}</li>
+            <ul v-if="species.conservationMeasures?.length" class="threat-list">
+              <li v-for="(measure, index) in species.conservationMeasures" :key="index" :lang="contentLanguage(measure.text)">{{ localized(measure.text, activeLanguage) }} <LessonReferences :species="species" :ids="measure.sourceIds" /></li>
             </ul>
             <p v-else>Сведения пока не подтверждены.</p>
           </section>
-          <section class="information-section sources-section" aria-labelledby="sources-title">
-            <h3 id="sources-title">Источники сведений</h3>
+          </div></details>
+          <details class="modal-disclosure"><summary>Научные источники <span class="disclosure-count">{{ species.sources.length }}</span></summary>
             <ol v-if="species.sources.length" class="source-list">
               <li v-for="source in species.sources" :key="source.id">
                 <a :href="source.url" target="_blank" rel="noopener noreferrer">
@@ -119,7 +126,8 @@ watch(() => props.species, () => { activeLanguage.value = 'ru' }, { immediate: t
               </li>
             </ol>
             <p v-else>Подтверждённых источников пока нет.</p>
-          </section>
+          </details>
+          <div class="support-modal-action"><button class="text-link" type="button" @click="emit('support', species.id)">Помочь сохранить вид <span aria-hidden="true">↗</span></button><p>Познакомиться с концепцией поддержки. Приём пожертвований пока не открыт.</p></div>
         </div>
       </div>
     </div>

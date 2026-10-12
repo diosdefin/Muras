@@ -1,5 +1,7 @@
 <script setup>
 import RegionalSpecies from './RegionalSpecies.vue'
+import GroupFilter from '../GroupFilter.vue'
+const groups = [{ value: 'ALL', label: 'Все группы' }, { value: 'mammals', label: 'Млекопитающие' }, { value: 'birds', label: 'Птицы' }, { value: 'plants', label: 'Растения' }]
 defineProps({ region: { type: Object, default: null }, entries: { type: Array, default: () => [] }, group: { type: String, default: 'ALL' }, unfilteredCount: { type: Number, default: 0 } })
 const emit = defineEmits(['open', 'reset', 'group'])
 </script>
@@ -9,12 +11,7 @@ const emit = defineEmits(['open', 'reset', 'group'])
     <p class="eyebrow">Региональные свидетельства</p>
     <h3 id="map-panel-title">{{ region?.name || 'Природа в контексте места' }}</h3>
     <p class="map-panel-intro">{{ region ? 'Область Кыргызстана. Здесь собраны сведения из проверенных публикаций с привязкой к этому региону.' : 'Выберите область, чтобы познакомиться с документальными свидетельствами о видах из нашего каталога.' }}</p>
-    <div class="filter-field">
-      <label for="map-group-filter">Группа видов</label>
-      <select id="map-group-filter" :value="group" @change="emit('group', $event.target.value)">
-        <option value="ALL">Все группы</option><option value="mammals">Млекопитающие</option><option value="birds">Птицы</option><option value="plants">Растения</option>
-      </select>
-    </div>
+    <GroupFilter :model-value="group" :options="groups" label="Группа видов на карте" @update:model-value="emit('group', $event)" />
     <p class="map-panel-status" role="status" aria-live="polite" aria-atomic="true">{{ !region ? 'Область не выбрана' : entries.length ? `${region.name} · записей по источникам: ${entries.length}` : 'Региональные сведения пока уточняются' }}</p>
     <p v-if="region && !entries.length" class="map-empty">{{ unfilteredCount && group !== 'ALL' ? 'Для выбранной группы пока нет документальной привязки в нашей базе.' : 'В нашей базе пока нет документальной привязки видов к этой области.' }} Это не означает, что редкие виды здесь отсутствуют.</p>
     <div v-if="region && entries.length" class="regional-species-list">

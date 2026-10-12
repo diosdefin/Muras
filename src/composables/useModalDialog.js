@@ -9,8 +9,9 @@ export function useModalDialog(dialog, closeButton) {
   const styleKeys = ['position', 'top', 'left', 'right', 'width', 'overflow', 'paddingRight']
 
   function focusableElements() {
-    return [...dialog.value.querySelectorAll('button, a[href], input, select, textarea, [tabindex]')]
-      .filter(element => !element.disabled && element.tabIndex >= 0 && element.getClientRects().length)
+    return [...dialog.value.querySelectorAll('button, a[href], input, select, textarea, summary, [tabindex]')]
+      .filter(element => !element.disabled && element.tabIndex >= 0 && element.getClientRects().length &&
+        !element.closest('details:not([open]) > :not(summary)'))
   }
 
   function trapFocus(event) {

@@ -1,18 +1,21 @@
 <script setup>
-import { computed, nextTick, onMounted, ref } from 'vue'
+import { nextTick, onMounted, ref } from 'vue'
 import SpeciesCard from './components/SpeciesCard.vue'
 import SpeciesModal from './components/SpeciesModal.vue'
 import QuizView from './components/quiz/QuizView.vue'
 import LessonView from './components/lesson/LessonView.vue'
 import MapSection from './components/map/MapSection.vue'
 import SupportView from './components/support/SupportView.vue'
+import CatalogSearch from './components/CatalogSearch.vue'
+import GroupFilter from './components/GroupFilter.vue'
+import { useCatalog } from './composables/useCatalog.js'
+import './components/catalog.css'
 import { validateSpecies } from './data/species-model.js'
 import { validateQuestions } from './data/quiz/model.js'
-import { regionNames, STATUS_DETAILS } from './data/presentation.js'
 
 const species = ref([])
-const selectedStatus = ref('ALL')
-const selectedRegion = ref('ALL')
+const catalog = useCatalog(species)
+const { query, status: selectedStatus, region: selectedRegion, group: selectedGroup, options, results, page, fuzzy, hasFilters } = catalog
 const isLoading = ref(true)
 const errorMessage = ref('')
 const selectedSpecies = ref(null)
@@ -38,6 +41,10 @@ async function showView(view, focusId = view) {
   if (view === 'support') {
     document.getElementById(focusId)?.focus({ preventScroll: true })
     window.scrollTo({ top: 0, behavior: 'instant' })
+  } else if (view === 'catalog') {
+    const target = document.getElementById(focusId)
+    target?.focus({ preventScroll: true })
+    target?.scrollIntoView({ block: 'start', behavior: 'instant' })
   } else document.getElementById(focusId)?.focus()
 }
 
@@ -58,29 +65,12 @@ function studySpecies(id) {
   if (record) openSpecies(record)
 }
 
-const statuses = [
-  { value: 'ALL', label: 'Все виды' },
-  ...Object.entries(STATUS_DETAILS).map(([value, detail]) => ({ value, label: `IUCN ${value} · ${detail.label}` })),
-  { value: 'UNKNOWN', label: 'IUCN · статус неизвестен' },
-]
-
-const regions = computed(() => {
-  const availableRegions = new Set(
-    species.value.flatMap((item) => regionNames(item).length ? regionNames(item) : ['Регион неизвестен']),
-  )
-
-  return ['ALL', ...availableRegions]
-})
-
-const filteredSpecies = computed(() =>
-  species.value.filter((item) => {
-    const regions = regionNames(item)
-    const matchesStatus = selectedStatus.value === 'ALL' || (item.iucn.category || 'UNKNOWN') === selectedStatus.value
-    const matchesRegion = selectedRegion.value === 'ALL' || regions.includes(selectedRegion.value) ||
-      (selectedRegion.value === 'Регион неизвестен' && regions.length === 0)
-    return matchesStatus && matchesRegion
-  }),
-)
+async function showMoreSpecies() {
+  const previousCount = page.value.entries.length
+  catalog.more()
+  await nextTick()
+  document.querySelectorAll('.species-grid .card-open')[previousCount]?.focus()
+}
 
 function openSpecies(speciesItem) {
   selectedSpecies.value = speciesItem
@@ -161,27 +151,33 @@ onMounted(async () => {
         </div>
         <p class="catalog-note">Научные источники и статус проверки<br class="hidden sm:block" /> указаны в каждой записи.</p>
       </div>
+      <div class="catalog-tools">
+        <CatalogSearch v-model="query" :results="results" @open="openSpecies" />
+        <GroupFilter v-model="selectedGroup" :options="options.groups" label="Группа видов каталога" />
       <div class="filter-bar">
         <div class="filter-field">
           <label for="status-filter">Статус IUCN</label>
           <select id="status-filter" v-model="selectedStatus" aria-label="Фильтр по статусу IUCN">
-            <option v-for="status in statuses" :key="status.value" :value="status.value">{{ status.label }}</option>
+            <option v-for="status in options.statuses" :key="status.value" :value="status.value">{{ status.label }}</option>
           </select>
         </div>
         <div class="filter-field">
           <label for="region-filter">Регион</label>
           <select id="region-filter" v-model="selectedRegion" aria-label="Фильтр по региону">
-            <option v-for="region in regions" :key="region" :value="region">{{ region === 'ALL' ? 'Все регионы' : region }}</option>
+            <option v-for="region in options.regions" :key="region" :value="region">{{ region === 'ALL' ? 'Все регионы' : region }}</option>
           </select>
         </div>
-        <p class="result-count" role="status" aria-live="polite">{{ isLoading ? 'Загрузка…' : errorMessage ? 'Каталог недоступен' : `Найдено записей: ${filteredSpecies.length}` }}</p>
+        <button type="button" class="catalog-reset" :disabled="!hasFilters" @click="catalog.reset">Сбросить фильтры</button>
+      </div>
+        <p class="result-count" role="status" aria-live="polite" aria-atomic="true">{{ isLoading ? 'Загрузка…' : errorMessage ? 'Каталог недоступен' : fuzzy ? `Возможные совпадения: ${results.length}. Проверьте название.` : `Найдено записей: ${results.length}` }}</p>
       </div>
       <p v-if="isLoading" class="catalog-message" role="status">Загружаем каталог видов…</p>
       <p v-else-if="errorMessage" class="catalog-message error-message" role="alert">{{ errorMessage }}</p>
-      <p v-else-if="filteredSpecies.length === 0" class="catalog-message">По выбранным фильтрам виды не найдены. Попробуйте изменить статус или регион.</p>
+      <p v-else-if="results.length === 0" class="catalog-message">Виды не найдены. Проверьте название или сбросьте фильтры.</p>
       <div v-else class="species-grid">
-        <SpeciesCard v-for="animal in filteredSpecies" :key="animal.id" :species="animal" @open="openSpecies" />
+        <SpeciesCard v-for="result in page.entries" :key="result.species.id" :species="result.species" @open="openSpecies" />
       </div>
+      <div v-if="page.remaining" class="catalog-more"><button type="button" class="quiz-secondary" @click="showMoreSpecies">Показать ещё {{ Math.min(12, page.remaining) }}</button><p>Показано {{ page.entries.length }} из {{ results.length }}</p></div>
     </section>
     <QuizView v-show="activeView === 'quiz'" :questions="quizQuestions" :species="species" :loading="quizLoading" :error="quizError" :return-to-lesson="quizFromLesson"
       @catalog="showView('catalog')" @study="studySpecies" @lesson="showView('lesson')" />
