@@ -12,7 +12,7 @@
 | scientificName | Латинское имя или null; подтверждение в sources.supports |
 | names | `{ru, ky, en}`, каждое значение строка или null; код кыргызского языка ky |
 | taxonomy | `{kingdom, phylum, class, order, family, genus}`; неизвестные ранги null |
-| group | mammals/birds/plants/fish/reptiles/amphibians/invertebrates/fungi или null |
+| group | mammals/birds/plants/fish/reptiles/amphibians/arthropods/fungi или null; исторический invertebrates сохраняется отдельно |
 | nationalRedBook | `{listed, category, edition, year, sourceIds}`; самостоятельная национальная классификация |
 | iucn | `{category, year, sourceIds}`; глобальная категория EX/EW/CR/EN/VU/NT/LC/DD/NE или null |
 | habitat | `{description: {ru,ky,en}, sourceIds}` или null; краткое подтверждённое описание |
@@ -37,7 +37,7 @@ method:estimate. `unknown`: value/min/max/method:null. Известные зна
 территории, года (1500..текущий), единицы и источников, подтверждающих каждое заполненное
 научное поле. reviewStatus: pending/approved/rejected; только approved допускает
 публикацию известной оценки. Поле verified вида не изменяется вслед за проверкой оценки.
-Все девять текущих видов и два архивных примера остаются unknown. Удалена только пустая
+Все 30 текущих записей и два архивных примера остаются unknown. Удалена только пустая
 обёртка estimate:null; старые данные восстанавливаются из Git, исходные исторические
 числа остаются в неизменённой резервной копии. Полные правила и визуальное поведение:
 [population-visualization.md](population-visualization.md).
@@ -83,7 +83,7 @@ conservationMeasures.0, population.value, population.min, population.type, popul
 Дополнительные поля фото: `caption: {ru,ky,en}` (контекст страны/неволи/культуры),
 `width`/`height` (положительные целые px) и `sha256` (64 hex символа). При наличии
 контрольной суммы генератор сверяет её с локальным файлом **до** изменения результатов.
-Нынешние девять разрешённых WebP имеют все эти поля. Публичный путь меняется,
+Все опубликованные WebP (21 файл) имеют эти поля; девять записей пока используют placeholder. Публичный путь меняется,
 метаданные/контрольная сумма и байты сохраняются. Программа проверяет структуру и
 целостность; лицензию, содержание источника и определение вида проверяет редактор.
 Обработка WebP/CSS/canvas описывается в modifications, атрибуция и лицензия видны
@@ -154,3 +154,14 @@ HTTP(S) URL, совпадающий язык и `verified: true` после пр
 Нельзя получать адрес переводом пути URL или выставлять подтверждение по ответу AI.
 Без подходящей подтверждённой версии интерфейс открывает `source.url`. Оригинальный
 заголовок не выдаётся за перевод. Подробнее: [localization-validation.md](localization-validation.md).
+
+## Пакетный обмен
+
+Импортер добавляет существующую модель v1, не обновляет записи автоматически и не
+повышает verified. В обменном envelope taxonomyEvidence хранит точное принятое имя,
+ранг SPECIES/SUBSPECIES и taxonId. Необязательное sources[].taxonId — строка вида
+gbif:7191393, связывающая идентификатор с источником scientificName. Исторический
+синоним сохраняется в документальных заметках; оценка родительского вида не
+присваивается национальному подвиду. Структура 16 полей вида не меняется.
+Подготовленные пакеты временные; сборка читает только species.source.json.
+Контракт и команды: [bulk-expansion-validation.md](research/bulk-expansion-validation.md).

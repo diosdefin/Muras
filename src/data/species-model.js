@@ -1,10 +1,10 @@
 import { validComposition, validCompositions } from './image-composition.js'
 import { validatePopulation } from './population.js'
 import { validateSourceLocalization } from './localization.js'
+import { isSpeciesGroup } from './species-groups.js'
 
 export const LANGUAGES = ['ru', 'ky', 'en']
 export const IUCN_CATEGORIES = ['EX', 'EW', 'CR', 'EN', 'VU', 'NT', 'LC', 'DD', 'NE']
-const GROUPS = ['mammals', 'birds', 'plants', 'fish', 'reptiles', 'amphibians', 'invertebrates', 'fungi']
 const FIELDS = ['id', 'scientificName', 'names', 'taxonomy', 'group', 'nationalRedBook', 'iucn',
   'habitat', 'regions', 'threats', 'conservationMeasures', 'population', 'images', 'sources',
   'verified', 'lastReviewedAt']
@@ -43,7 +43,7 @@ export function validateSpecies(records, label = 'catalog', { publicData = false
     ids.add(item.id)
     if (!nullableText(item.scientificName)) fail(`${p}.scientificName`, 'ожидается строка или null')
     localized(item.names, `${p}.names`)
-    if (item.group !== null && !GROUPS.includes(item.group)) fail(`${p}.group`, 'неизвестная группа')
+    if (item.group !== null && !isSpeciesGroup(item.group)) fail(`${p}.group`, 'неизвестная группа')
     if (typeof item.verified !== 'boolean') fail(`${p}.verified`, 'ожидается boolean')
     if (item.lastReviewedAt !== null && !date(item.lastReviewedAt)) fail(`${p}.lastReviewedAt`, 'ожидается дата YYYY-MM-DD или null')
     const sourceIds = new Set()

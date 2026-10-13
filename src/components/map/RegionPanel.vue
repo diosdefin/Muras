@@ -1,14 +1,15 @@
 <script setup>
 import { useLocale } from '../../composables/useLocale.js'
 import { computed } from 'vue'
-import { regionLabel } from '../../data/presentation.js'
+import { groupLabel, regionLabel } from '../../data/presentation.js'
+import { availableGroups } from '../../data/species-groups.js'
 import RegionalSpecies from './RegionalSpecies.vue'
 import GroupFilter from '../GroupFilter.vue'
 
 const { t, language } = useLocale()
 
-const groups = computed(() => [{ value: 'ALL', label: t('ui.m140') }, { value: 'mammals', label: t('ui.m141') }, { value: 'birds', label: t('ui.m142') }, { value: 'plants', label: t('ui.m143') }])
-defineProps({ region: { type: Object, default: null }, entries: { type: Array, default: () => [] }, group: { type: String, default: 'ALL' }, unfilteredCount: { type: Number, default: 0 } })
+const props = defineProps({ species: { type: Array, default: () => [] }, region: { type: Object, default: null }, entries: { type: Array, default: () => [] }, group: { type: String, default: 'ALL' }, unfilteredCount: { type: Number, default: 0 } })
+const groups = computed(() => [{ value: 'ALL', label: t('ui.m140') }, ...availableGroups(props.species).map(value => ({ value, label: groupLabel({ group: value }, language.value) }))])
 const emit = defineEmits(['open', 'reset', 'group'])
 </script>
 

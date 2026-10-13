@@ -9,7 +9,7 @@ import { formatPopulation, speciesPhoto } from '../src/data/presentation.js'
 
 const catalog = JSON.parse(await readFile(new URL('../public/data/species.json', import.meta.url), 'utf8'))
 
-test('lesson visits all nine existing species once and wraps in both directions without changing data', () => {
+test('lesson visits all published species once and wraps in both directions without changing data', () => {
   const before = JSON.stringify(catalog)
   const lesson = useLesson(ref(catalog))
   const seen = []
@@ -53,7 +53,9 @@ test('brief information is a verbatim sourced excerpt, not a new scientific clai
     assert.ok(species.habitat.sourceIds.length)
     assert.equal(formatPopulation(species.population), 'Нет подтверждённой оценки численности')
     assert.equal(species.verified, false)
-    assert.ok(speciesPhoto(species).licenseVerified)
+    const photo = speciesPhoto(species)
+    if (photo) assert.equal(photo.licenseVerified, true)
+    else assert.deepEqual(species.images, [])
   }
 })
 

@@ -1,4 +1,5 @@
 import { groupLabel, localized, regionNames, STATUS_DETAILS } from './presentation.js'
+import { availableGroups } from './species-groups.js'
 
 export function normalizeSearch(value) {
   return typeof value === 'string' ? value.normalize('NFC').toLowerCase().replace(/ё/g, 'е')
@@ -98,7 +99,7 @@ export function matchesCatalogFilters(species, { status = 'ALL', region = 'ALL',
 }
 export function catalogOptions(catalog) {
   const presentStatuses = new Set(catalog.map(species => species.iucn?.category || 'UNKNOWN'))
-  const presentGroups = [...new Set(catalog.map(species => species.group))]
+  const presentGroups = availableGroups(catalog)
   return {
     statuses: [{ value: 'ALL', label: 'Все категории' }, ...Object.entries(STATUS_DETAILS).filter(([key]) => presentStatuses.has(key)).map(([value, detail]) => ({ value, label: `IUCN ${value} · ${detail.label}` })), ...(presentStatuses.has('UNKNOWN') ? [{ value: 'UNKNOWN', label: 'IUCN · статус неизвестен' }] : [])],
     groups: [{ value: 'ALL', label: 'Все группы' }, ...presentGroups.map(value => ({ value, label: groupLabel({ group: value }) }))],

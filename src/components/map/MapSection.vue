@@ -49,7 +49,7 @@ onMounted(async () => {
     <ErrorNotice v-else-if="errorMessage" :message="errorMessage"></ErrorNotice>
     <div v-else class="map-layout">
       <RegionMap :geometry="geometry" :selected="selected" @select="selected = $event" />
-      <RegionPanel :region="region" :entries="entries" :group="group" :unfiltered-count="unfilteredCount" @group="group = $event" @reset="reset" @open="emit('open', $event)" />
+      <RegionPanel :species="species" :region="region" :entries="entries" :group="group" :unfiltered-count="unfilteredCount" @group="group = $event" @reset="reset" @open="emit('open', $event)" />
     </div>
     <div class="map-provenance">
       <p>{{ t('ui.m114') }} <a href="https://www.geoboundaries.org/api/current/gbOpen/KGZ/ADM1/" target="_blank" rel="noopener noreferrer">geoBoundaries · gbOpen KGZ ADM1<span class="sr-only"> {{ t('ui.m107') }}</span></a>{{ t('ui.m115') }} <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors<span class="sr-only"> {{ t('ui.m107') }}</span></a> {{ t('ui.m116') }} <a :href="local('ODbL-1.0.txt')">ODbL 1.0</a> · <a :href="local('regions.geojson')" download>{{ t('ui.m117') }}</a> · <a :href="local('map.json')" download>{{ t('ui.m118') }}</a> · <a :href="local('metadata.json')">{{ t('ui.m119') }}</a>.</p>

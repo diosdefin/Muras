@@ -1,6 +1,7 @@
 import { canPublishImage } from './species-model.js'
 import { populationPresentation } from './population.js'
 import { tr } from '../locales/index.js'
+import { groupTranslationKey } from './species-groups.js'
 
 export const STATUS_DETAILS = {
   CR: { label: 'Критическая угроза', classes: 'bg-red-100 text-red-800 ring-red-200' },
@@ -24,11 +25,7 @@ export function speciesName(species, language = 'ru') {
 }
 
 export function groupLabel(species, language = 'ru') {
-  const key = { mammals: 'ui.m141', birds: 'ui.m142', plants: 'ui.m143' }[species.group] || `group.${species.group}`
-  if (language !== 'ru') return tr(language, key === `group.${species.group}` && !['fish','reptiles','amphibians','invertebrates','fungi'].includes(species.group) ? 'group.unknown' : key)
-  return { mammals: 'Млекопитающие', birds: 'Птицы', plants: 'Растения', fish: 'Рыбы',
-    reptiles: 'Пресмыкающиеся', amphibians: 'Земноводные', invertebrates: 'Беспозвоночные',
-    fungi: 'Грибы' }[species.group] || 'Группа не установлена'
+  return tr(language, groupTranslationKey(species.group))
 }
 
 export function nationalStatus(species, language = 'ru') {

@@ -53,7 +53,7 @@ test('admin import → composition edits → persisted draft → export → full
     renderFrame(canvas,scratch,{naturalWidth:original.width,naturalHeight:original.height},1,{width:400,height:300},1,{composition:imageComposition(photo),effect:'unknown'})
     const crop=compositionCrop(original.width,original.height,4/3,compositions.detail)
     assert.deepEqual(ctx.crop,[crop.x,crop.y,crop.width,crop.height])
-    vite=await createServer({server:{middlewareMode:true,hmr:false,watch:null},appType:'custom',logLevel:'error'})
+    vite=await createServer({server:{middlewareMode:true,ws:false,hmr:false,watch:null},appType:'custom',logLevel:'error'})
     for(const [file,view]of [['SpeciesCard.vue','card'],['SpeciesVisualization.vue','detail'],['lesson/LessonPhoto.vue','lesson']]){
       const {default:Component}=await vite.ssrLoadModule(`/src/components/${file}`)
       const html=await renderToString(createSSRApp(Component,{species:publicSpecies,photo,name:'Ирбис',populationType:'unknown',speciesId:'irbis'}))
@@ -76,7 +76,7 @@ test('storage read denial during save is localized and performs no writes or che
 test('initial public render keeps the catalog but does not construct unvisited secondary sections',async()=>{
   const previous=globalThis.document
   globalThis.document={documentElement:{lang:''},head:{appendChild(){}},querySelector:()=>null,querySelectorAll:()=>[],createElement:()=>({setAttribute(){}})}
-  const vite=await createServer({server:{middlewareMode:true,hmr:false,watch:null},appType:'custom',logLevel:'error'})
+  const vite=await createServer({server:{middlewareMode:true,ws:false,hmr:false,watch:null},appType:'custom',logLevel:'error'})
   try{
     const {default:App}=await vite.ssrLoadModule('/src/App.vue')
     const html=await renderToString(createSSRApp(App))
