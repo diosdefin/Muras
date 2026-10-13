@@ -1,9 +1,14 @@
 <script setup>
+import ErrorNotice from '../ErrorNotice.vue'
+import { useLocale } from '../../composables/useLocale.js'
 import { computed, nextTick, onMounted, ref } from 'vue'
 import RegionMap from './RegionMap.vue'
 import RegionPanel from './RegionPanel.vue'
 import { REGIONS, regionalEntries, validateMapGeometry, validateRegionalEvidence } from '../../data/geography/model.js'
 import './map.css'
+
+const { t } = useLocale()
+
 const props = defineProps({ species: { type: Array, default: () => [] }, loading: { type: Boolean, default: false }, error: { type: String, default: '' } })
 const emit = defineEmits(['open'])
 const geometry = ref(null), evidence = ref(null), loadingMap = ref(true), loadError = ref('')
@@ -23,7 +28,7 @@ onMounted(async () => {
   try {
     const [map, records] = await Promise.all(['map.json', 'occurrences.json'].map(async file => {
       const response = await fetch(local(file))
-      if (!response.ok) throw new Error(`Не удалось загрузить ${file}: ${response.status}`)
+      if (!response.ok) throw new Error(`HTTP ${response.status}: data/geography/${file}`)
       return response.json()
     }))
     const errors = validateMapGeometry(map)
@@ -37,20 +42,18 @@ onMounted(async () => {
 <template>
   <section id="map" class="map-section page-container" aria-labelledby="map-title" tabindex="-1" :aria-busy="loadingMap || loading">
     <div class="map-section-heading">
-      <div><p class="eyebrow"><span class="red-rule" aria-hidden="true"></span> География природного наследия</p><h2 id="map-title">Семь областей. Одна природа.</h2></div>
-      <p>На карте — опубликованные региональные свидетельства, а не полные ареалы видов.</p>
+      <div><p class="eyebrow"><span class="red-rule" aria-hidden="true"></span> {{ t('ui.m109') }}</p><h2 id="map-title">{{ t('ui.m110') }}</h2></div>
+      <p>{{ t('ui.m111') }}</p>
     </div>
-    <p v-if="loadingMap || loading" class="catalog-message" role="status">Загружаем локальную карту…</p>
-    <p v-else-if="errorMessage" class="catalog-message error-message" role="alert">Карта недоступна: {{ errorMessage }}</p>
+    <p v-if="loadingMap || loading" class="catalog-message" role="status">{{ t('ui.m112') }}</p>
+    <ErrorNotice v-else-if="errorMessage" :message="errorMessage"></ErrorNotice>
     <div v-else class="map-layout">
       <RegionMap :geometry="geometry" :selected="selected" @select="selected = $event" />
       <RegionPanel :region="region" :entries="entries" :group="group" :unfiltered-count="unfilteredCount" @group="group = $event" @reset="reset" @open="emit('open', $event)" />
     </div>
     <div class="map-provenance">
-      <p>Границы: <a href="https://www.geoboundaries.org/api/current/gbOpen/KGZ/ADM1/" target="_blank" rel="noopener noreferrer">geoBoundaries · gbOpen KGZ ADM1<span class="sr-only"> (новая вкладка)</span></a>, состояние на 2017 год.
-        © <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors<span class="sr-only"> (новая вкладка)</span></a> · Wambacher.
-        Данные доступны по <a :href="local('ODbL-1.0.txt')">ODbL 1.0</a> · <a :href="local('regions.geojson')" download>Скачать GeoJSON</a> · <a :href="local('map.json')" download>SVG-геометрия</a> · <a :href="local('metadata.json')">Метаданные</a>.</p>
-      <p>Бишкек и Ош — города республиканского значения; отдельных городских полигонов в этом наборе нет. Для остальных видов область пока не уточнена. Точные местонахождения не публикуются.</p>
+      <p>{{ t('ui.m114') }} <a href="https://www.geoboundaries.org/api/current/gbOpen/KGZ/ADM1/" target="_blank" rel="noopener noreferrer">geoBoundaries · gbOpen KGZ ADM1<span class="sr-only"> {{ t('ui.m107') }}</span></a>{{ t('ui.m115') }} <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap contributors<span class="sr-only"> {{ t('ui.m107') }}</span></a> {{ t('ui.m116') }} <a :href="local('ODbL-1.0.txt')">ODbL 1.0</a> · <a :href="local('regions.geojson')" download>{{ t('ui.m117') }}</a> · <a :href="local('map.json')" download>{{ t('ui.m118') }}</a> · <a :href="local('metadata.json')">{{ t('ui.m119') }}</a>.</p>
+      <p>{{ t('ui.m120') }}</p>
     </div>
   </section>
 </template>

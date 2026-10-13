@@ -1,9 +1,13 @@
 <script setup>
+import { useLocale } from '../../composables/useLocale.js'
 import { computed, nextTick, onBeforeUnmount, onMounted, ref, toRef, watch } from 'vue'
 import { useSupportWall } from '../../composables/useSupportWall.js'
-import { ALIAS_HINT, WALL_KEY, wallEntries } from '../../data/support/wall.js'
+import { WALL_KEY, wallEntries } from '../../data/support/wall.js'
 import { supportSpecies } from '../../data/support/model.js'
 import { speciesName } from '../../data/presentation.js'
+
+const { t, language, uiMessage } = useLocale()
+
 const props = defineProps({ species: { type: Array, required: true }, speciesId: { type: String, default: null } })
 const wall = useSupportWall(toRef(props, 'species'))
 const { entries, available, hasSavedData, notice, message } = wall
@@ -11,11 +15,11 @@ const scope = ref(props.speciesId ? 'species' : 'all'), alias = ref(''), acknowl
 const input = ref(null), heading = ref(null)
 const selected = computed(() => supportSpecies(props.species, props.speciesId))
 const targetId = computed(() => scope.value === 'species' && selected.value ? selected.value.id : null)
-const targetLabel = computed(() => targetId.value ? speciesName(selected.value) : 'Общая поддержка')
+const targetLabel = computed(() => targetId.value ? speciesName(selected.value, language.value) : t('ui.m301'))
 const visibleEntries = computed(() => wallEntries(entries.value, props.speciesId, scope.value))
 function contextLabel(entry) {
   const record = supportSpecies(props.species, entry.speciesId)
-  return record ? speciesName(record) : 'Общая поддержка'
+  return record ? speciesName(record, language.value) : t('ui.m301')
 }
 watch(() => props.speciesId, id => { scope.value = id ? 'species' : 'all' })
 watch(targetId, () => { alias.value = ''; acknowledged.value = false; formError.value = ''; message.value = '' })
@@ -42,35 +46,35 @@ onBeforeUnmount(() => window.removeEventListener('storage', storageChanged))
 
 <template>
   <section class="support-wall" aria-labelledby="support-wall-title">
-    <header class="support-wall-heading"><div><p class="eyebrow">Демонстрация · только этот браузер</p><h2 id="support-wall-title" ref="heading" tabindex="-1">Стена защитников природы</h2></div><p>Будущий формат признания поддержки. Сейчас это локальный макет, а не список благотворителей.</p></header>
-    <p id="wall-privacy" class="support-privacy">Другие пользователи сайта эти записи не увидят. Список доступен только в этом профиле браузера. Псевдонимы не отправляются на сервер и не подтверждают пожертвование. Очистка данных браузера удалит список.</p>
-    <div class="support-wall-scopes" role="group" aria-label="Область демонстрационной стены">
-      <button class="quiz-secondary" type="button" :disabled="!selected" :aria-pressed="scope === 'species'" @click="scope = 'species'">Для выбранного вида</button>
-      <button class="quiz-secondary" type="button" :aria-pressed="scope === 'all'" @click="scope = 'all'">Общая стена</button>
+    <header class="support-wall-heading"><div><p class="eyebrow">{{ t('ui.m302') }}</p><h2 id="support-wall-title" ref="heading" tabindex="-1">{{ t('ui.m303') }}</h2></div><p>{{ t('ui.m304') }}</p></header>
+    <p id="wall-privacy" class="support-privacy">{{ t('ui.m305') }}</p>
+    <div class="support-wall-scopes" role="group" :aria-label="t('ui.m306')">
+      <button class="quiz-secondary" type="button" :disabled="!selected" :aria-pressed="scope === 'species'" @click="scope = 'species'">{{ t('ui.m307') }}</button>
+      <button class="quiz-secondary" type="button" :aria-pressed="scope === 'all'" @click="scope = 'all'">{{ t('ui.m308') }}</button>
     </div>
-    <p class="support-wall-context" role="status">{{ scope === 'species' && selected ? `Демозаписи для вида: ${speciesName(selected)}` : 'Общая стена: все локальные демозаписи' }}</p>
+    <p class="support-wall-context" role="status">{{ scope === 'species' && selected ? t('ui.m309', { p0: speciesName(selected, language) }) : t('ui.m310') }}</p>
     <div class="support-wall-layout">
       <div class="support-wall-list">
-        <ul v-if="visibleEntries.length" class="support-aliases" aria-label="Локальные демонстрационные записи">
-          <li v-for="entry in visibleEntries" :key="entry.id"><span class="support-entry-mark" aria-hidden="true">↗</span><div><p class="support-alias">{{ entry.alias }}</p><p class="support-entry-context">{{ contextLabel(entry) }} · демозапись</p></div><button class="support-remove" type="button" :aria-label="`Удалить демозапись ${entry.alias} — ${contextLabel(entry)}`" @click="remove(entry.id)">Удалить</button></li>
+        <ul v-if="visibleEntries.length" class="support-aliases" :aria-label="t('ui.m311')">
+          <li v-for="entry in visibleEntries" :key="entry.id"><span class="support-entry-mark" aria-hidden="true">↗</span><div><p class="support-alias" lang="und">{{ entry.alias }}</p><p class="support-entry-context">{{ contextLabel(entry) }} {{ t('ui.m312') }}</p></div><button class="support-remove" type="button" :aria-label="t('ui.m313', { p0: entry.alias, p1: contextLabel(entry) })" @click="remove(entry.id)">{{ t('ui.m314') }}</button></li>
         </ul>
-        <div v-else class="support-empty"><span aria-hidden="true">○</span><h3>Здесь пока нет демозаписей</h3><p>{{ scope === 'species' ? 'Для этого вида ещё не добавлены локальные псевдонимы.' : 'Общая стена пуста. Мы не заполняем её вымышленными пожертвованиями.' }}</p></div>
+        <div v-else class="support-empty"><span aria-hidden="true">○</span><h3>{{ t('ui.m315') }}</h3><p>{{ scope === 'species' ? t('ui.m316') : t('ui.m317') }}</p></div>
       </div>
       <form class="support-demo-form" aria-labelledby="support-form-title" @submit.prevent="add">
-        <p class="eyebrow">Проверить концепцию</p><h3 id="support-form-title">Добавить демопсевдоним</h3>
-        <p>Используйте выдуманный псевдоним. Не вводите настоящее имя, контакты или другие личные сведения.</p>
-        <p class="support-form-context">Привязка записи: <strong>{{ targetLabel }}</strong></p>
-        <label for="support-alias">Псевдоним для демонстрации</label>
-        <input id="support-alias" ref="input" v-model="alias" type="text" required minlength="2" maxlength="32" autocomplete="off" :spellcheck="false" :disabled="!available" :aria-invalid="!!formError" aria-describedby="support-alias-hint wall-privacy support-form-error" placeholder="Например: Друг гор" @input="formError = ''" />
-        <p id="support-alias-hint" class="support-field-hint">{{ ALIAS_HINT }}</p>
-        <label class="support-ack"><input v-model="acknowledged" type="checkbox" required :disabled="!available" /><span>Понимаю: это локальная демозапись, а не пожертвование.</span></label>
-        <p id="support-form-error" class="error-message" :role="formError ? 'alert' : undefined">{{ formError }}</p>
-        <button class="quiz-primary" type="submit" :disabled="!available">Добавить в демосписок</button>
+        <p class="eyebrow">{{ t('ui.m318') }}</p><h3 id="support-form-title">{{ t('ui.m319') }}</h3>
+        <p>{{ t('ui.m320') }}</p>
+        <p class="support-form-context">{{ t('ui.m321') }} <strong>{{ targetLabel }}</strong></p>
+        <label for="support-alias">{{ t('ui.m322') }}</label>
+        <input id="support-alias" ref="input" v-model="alias" type="text" required minlength="2" maxlength="32" autocomplete="off" :spellcheck="false" :disabled="!available" :aria-invalid="!!formError" aria-describedby="support-alias-hint wall-privacy support-form-error" :placeholder="t('ui.m323')" @input="formError = ''" />
+        <p id="support-alias-hint" class="support-field-hint">{{ t('wall.hint') }}</p>
+        <label class="support-ack"><input v-model="acknowledged" type="checkbox" required :disabled="!available" /><span>{{ t('ui.m324') }}</span></label>
+        <p id="support-form-error" class="error-message" :role="formError ? 'alert' : undefined">{{ uiMessage(formError) }}</p>
+        <button class="quiz-primary" type="submit" :disabled="!available">{{ t('ui.m325') }}</button>
       </form>
     </div>
-    <p v-if="!available" class="support-notice" role="status">Локальное хранилище недоступно. Демозаписи добавить нельзя. <button class="text-link" type="button" @click="wall.refresh">Повторить проверку</button></p>
-    <p v-if="notice" class="support-notice" role="status">{{ notice }}</p>
-    <p v-if="message && !formError" class="support-notice" role="status">{{ message }}</p>
-    <div class="support-wall-footer"><p>Записи сохраняются локально в этом браузере. Никаких сумм и рейтингов.</p><button class="quiz-secondary" type="button" :disabled="!hasSavedData" @click="clear">Очистить весь демосписок</button></div>
+    <p v-if="!available" class="support-notice" role="status">{{ t('ui.m326') }} <button class="text-link" type="button" @click="wall.refresh">{{ t('ui.m327') }}</button></p>
+    <p v-if="notice" class="support-notice" role="status">{{ uiMessage(notice) }}</p>
+    <p v-if="message && !formError" class="support-notice" role="status">{{ uiMessage(message) }}</p>
+    <div class="support-wall-footer"><p>{{ t('ui.m328') }}</p><button class="quiz-secondary" type="button" :disabled="!hasSavedData" @click="clear">{{ t('ui.m329') }}</button></div>
   </section>
 </template>

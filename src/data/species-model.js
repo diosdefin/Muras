@@ -1,5 +1,6 @@
 import { validComposition } from './image-composition.js'
 import { validatePopulation } from './population.js'
+import { validateSourceLocalization } from './localization.js'
 
 export const LANGUAGES = ['ru', 'ky', 'en']
 export const IUCN_CATEGORIES = ['EX', 'EW', 'CR', 'EN', 'VU', 'NT', 'LC', 'DD', 'NE']
@@ -51,6 +52,7 @@ export function validateSpecies(records, label = 'catalog', { publicData = false
     else item.sources.forEach((s, n) => {
       const sp = `${p}.sources[${n}]`
       if (!object(s)) { fail(sp, 'ожидается объект'); return }
+      errors.push(...validateSourceLocalization(s, sp))
       if (!text(s.id) || sourceIds.has(s.id)) fail(`${sp}.id`, 'отсутствующий или повторяющийся id источника')
       sourceIds.add(s.id)
       if (!text(s.title) || !text(s.publisher) || !url(s.url) || !date(s.accessedAt)) fail(sp, 'нужны title, publisher, HTTP(S) url и accessedAt')

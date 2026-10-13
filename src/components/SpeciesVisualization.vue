@@ -1,8 +1,12 @@
 <script setup>
+import { useLocale } from '../composables/useLocale.js'
 import { computed, ref, watch } from 'vue'
 import { PLACEHOLDER, publicImageUrl } from '../data/presentation.js'
 import { compositionStyle, imageComposition } from '../data/image-composition.js'
 import { useImageVisualization } from '../composables/useImageVisualization.js'
+
+const { t, uiMessage } = useLocale()
+
 const props = defineProps({ photo: { type: Object, default: null }, name: { type: String, required: true }, populationType: { type: String, default: 'unknown' }, speciesId: { type: String, default: '' } })
 const canvas = ref(null), container = ref(null), failed = ref(false)
 const input = computed(() => ({ path: props.photo ? publicImageUrl(props.photo.path) : null,
@@ -18,26 +22,24 @@ watch(input, () => { failed.value = false })
       <div ref="container" class="visualization-frame" :data-mode="state.mode" :data-effect="state.effect">
         <img :class="{ 'visualization-layout': active }" :aria-hidden="active" :style="photo && !failed ? compositionStyle(photo) : {}"
           :src="failed || !photo ? PLACEHOLDER : input.path" :width="photo?.width || 800" :height="photo?.height || 600" decoding="async"
-          :alt="photo && !failed ? `${name} — чёткая цветная фотография` : 'Условный горный пейзаж; фотография вида недоступна'" @error="failed = true" />
-        <canvas ref="canvas" v-show="active" :style="{ filter: state.effect === 'unknown' && state.grayscaleFallback ? `grayscale(${state.amount})` : 'none' }" role="img" :aria-hidden="!active" :aria-label="`${name} — ${state.effect === 'unknown' ? 'символическое чёрно-белое изображение без потери детализации' : 'условная пикселизация, не подсчёт особей'}`">
-          Условная визуализация фотографии. Можно вернуться к чёткому цветному изображению.
-        </canvas>
+          :alt="photo && !failed ? t('ui.m254', { p0: name }) : t('ui.m079')" @error="failed = true" />
+        <canvas ref="canvas" v-show="active" :style="{ filter: state.effect === 'unknown' && state.grayscaleFallback ? `grayscale(${state.amount})` : 'none' }" role="img" :aria-hidden="!active" :aria-label="`${name} — ${state.effect === 'unknown' ? t('ui.m255') : t('ui.m256')}`"> {{ t('ui.m257') }} </canvas>
       </div>
-      <figcaption>{{ photo && !failed ? 'Фотография вида · редакционная композиция кадра' : 'Условная иллюстрация · не фотография вида' }}<template v-if="active"> · {{ state.effect === 'unknown' ? 'условный чёрно-белый эффект' : 'условная пикселизация' }}</template></figcaption>
+      <figcaption>{{ photo && !failed ? t('ui.m258') : t('ui.m259') }}<template v-if="active"> · {{ state.effect === 'unknown' ? t('ui.m260') : t('ui.m261') }}</template></figcaption>
     </figure>
     <div class="visualization-intro">
-      <p class="eyebrow">Образ и научные данные</p>
-      <h3>{{ state.effect === 'unknown' ? 'Когда данных недостаточно' : 'Как исчезает вид' }}</h3>
-      <p v-if="state.effect === 'unknown'">Цвет исчезает как символ пробела в знаниях. Детали фотографии сохраняются. Отсутствие подтверждённой оценки не означает исчезновение вида.</p>
-      <p v-else>Потеря деталей — художественный образ уязвимости природы, а не прогноз. Пиксели не обозначают особей; научная оценка приведена отдельно.</p>
+      <p class="eyebrow">{{ t('ui.m262') }}</p>
+      <h3>{{ state.effect === 'unknown' ? t('ui.m263') : t('ui.m264') }}</h3>
+      <p v-if="state.effect === 'unknown'">{{ t('ui.m265') }}</p>
+      <p v-else>{{ t('ui.m266') }}</p>
     </div>
     <button class="visualization-button" type="button" :disabled="!state.ready || failed" :aria-pressed="active" @click="active ? restore() : start()">
-      {{ active ? 'Показать чётко' : 'Показать визуализацию' }} <span aria-hidden="true">{{ active ? '↗' : '↘' }}</span>
+      {{ active ? t('ui.m267') : t('ui.m268') }} <span aria-hidden="true">{{ active ? '↗' : '↘' }}</span>
     </button>
-    <p class="media-note">Условная образовательная визуализация. Не отражает фактическую численность вида.</p>
-    <p v-if="state.loading" class="media-note" role="status">Загружаем фотографию…</p>
-    <p v-else-if="!photo" class="media-note" role="status">Фото не опубликовано: лицензия не подтверждена. Для визуализации нужна разрешённая фотография.</p>
-    <p v-else-if="failed || state.error" class="media-note" role="status">{{ state.error || 'Фотография недоступна.' }}</p>
+    <p class="media-note">{{ t('ui.m269') }}</p>
+    <p v-if="state.loading" class="media-note" role="status">{{ t('ui.m270') }}</p>
+    <p v-else-if="!photo" class="media-note" role="status">{{ t('ui.m271') }}</p>
+    <p v-else-if="failed || state.error" class="media-note" role="status">{{ uiMessage(state.error) || t('ui.m080') }}</p>
   </div>
 </template>
 
