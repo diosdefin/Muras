@@ -1,6 +1,7 @@
 import { computed, inject, provide, ref, watch } from 'vue'
 import { messages } from '../locales/index.js'
 import { readLanguage, saveLanguage, translate, validLanguage } from '../data/localization.js'
+import { applyBrandMetadata, brandMetadata } from '../data/brand.js'
 const context = Symbol('content-language')
 const messageKeys = new Map(Object.entries(messages.ru).map(([key, text]) => [text, key]))
 const storage = () => { try { return globalThis.localStorage } catch { return null } }
@@ -18,10 +19,8 @@ export function useLocale(override = null) {
 export function provideContentLanguage(value) {
   provide(context, computed(() => value.value || siteLanguage.value))
 }
-export function syncLocaleMetadata() {
+export function syncLocaleMetadata(options = {}) {
   return watch(siteLanguage, language => {
-    document.documentElement.lang = language
-    document.title = translate(messages, language, 'pageTitle')
-    document.querySelector('meta[name="description"]')?.setAttribute('content', translate(messages, language, 'ui.m018'))
+    applyBrandMetadata(document, brandMetadata(messages, language, options))
   }, { immediate: true })
 }

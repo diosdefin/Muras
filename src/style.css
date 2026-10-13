@@ -34,8 +34,6 @@
   .page-container { width: min(100% - 32px, 1220px); margin-inline: auto; }
   .page-header { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 104px; border-bottom: 1px solid var(--line); }
   .brand { display: flex; flex-shrink: 0; align-items: center; gap: 12px; font-weight: 650; font-size: 22px; line-height: 1.15; text-decoration: none; }
-  .brand-mark { font-family: Georgia, "Times New Roman", serif; font-size: 46px; font-weight: 400; }
-  .brand-mark span { color: var(--red); }
   .brand-caption { display: block; margin-top: 6px; font-size: 13px; font-weight: 400; color: var(--muted); letter-spacing: .06em; }
   .header-link { display: inline-flex; align-items: center; gap: 16px; min-height: 48px; font-size: 15px; text-decoration: none; }
   .header-link:hover, .text-link:hover { text-decoration: underline; text-underline-offset: 5px; }

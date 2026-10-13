@@ -1,5 +1,6 @@
 <script setup>
 import ErrorNotice from './components/ErrorNotice.vue'
+import BrandLogo from './components/BrandLogo.vue'
 import { syncLocaleMetadata, useLocale } from './composables/useLocale.js'
 import { computed, nextTick, onMounted, ref } from 'vue'
 import { searchContentLanguage } from './data/localization.js'
@@ -122,8 +123,7 @@ onMounted(async () => {
   <a class="skip-link" :href="`#${activeView}`">{{ t('ui.m004') }}</a>
   <header class="page-header page-container">
     <a class="brand" href="#" :aria-label="t('ui.m005')" @click.prevent="showHome">
-      <span class="brand-mark" aria-hidden="true">R<span>.</span></span>
-      <span>Redbook<span class="brand-caption">{{ t('ui.m006') }}</span></span>
+      <span><BrandLogo /><span class="brand-caption">{{ t('brand.caption') }}</span></span>
     </a>
     <nav class="main-navigation" :aria-label="t('ui.m007')">
       <a class="header-link" href="#catalog" :aria-label="t('ui.m008')" :aria-current="activeView === 'catalog' ? 'page' : undefined" @click.prevent="showView('catalog')">{{ t('ui.m009') }}</a>
@@ -198,7 +198,7 @@ onMounted(async () => {
       @select="supportSpeciesId = $event" @study="studySpecies" @catalog="showView('catalog')" />
   </main>
   <footer class="page-footer page-container">
-    <p><span class="footer-brand">Redbook</span> {{ t('ui.m041') }}</p>
+    <p><span class="footer-brand">Muras</span> {{ t('ui.m041') }}</p>
     <p>{{ t('ui.m042') }}<br class="hidden sm:block" /> {{ t('ui.m043') }}</p>
   </footer>
   <SpeciesModal v-if="selectedSpecies" :species="selectedSpecies" :content-language="contentLanguage" @close="closeSpecies" @support="openSupport" />
