@@ -84,8 +84,8 @@ test('validator accepts eight sourced groups and legacy IDs, rejects unknown IDs
 })
 
 test('catalog filters include only present groups, expand without empty cards and keep legacy IDs distinct', () => {
-  assert.deepEqual(availableGroups(published), ['mammals', 'birds', 'plants'])
-  assert.deepEqual(catalogOptions(published).groups.map(option => option.value), ['ALL', 'mammals', 'birds', 'plants'])
+  assert.deepEqual(availableGroups(published), ids.filter(id => id !== 'fish'))
+  assert.deepEqual(catalogOptions(published).groups.map(option => option.value), ['ALL', ...ids.filter(id => id !== 'fish')])
   assert.deepEqual(catalogOptions([]).groups.map(option => option.value), ['ALL'])
   const records = [...ids, 'invertebrates'].map(fixture)
   assert.deepEqual(availableGroups([...records, ...records]), [...ids, 'invertebrates'])
@@ -95,7 +95,7 @@ test('catalog filters include only present groups, expand without empty cards an
   }
 })
 
-test('real admin add/update/save restores a draft in each group without publishing it or mutating nine existing species', async () => {
+test('real admin add/update/save restores a draft in each group without publishing it or mutating existing species', async () => {
   const values = new Map()
   const repository = createDraftRepository({ getItem: key => values.get(key) ?? null, setItem: (key, value) => values.set(key, value) })
   const node = type => ({ type, children: [] })
@@ -119,8 +119,8 @@ test('real admin add/update/save restores a draft in each group without publishi
     }
     assert.equal(await editor.save(), true)
     const saved = repository.load().current
-    assert.deepEqual(saved.catalog.slice(9).map(record => record.group), ids)
-    assert.deepEqual(saved.catalog.slice(0, 9), source.catalog)
+    assert.deepEqual(saved.catalog.slice(source.catalog.length).map(record => record.group), ids)
+    assert.deepEqual(saved.catalog.slice(0, source.catalog.length), source.catalog)
     assert.deepEqual(saved.demoArchive, source.demoArchive)
     assert.equal(await editor.exportText(), null) // Incomplete drafts cannot be exported as publishable records.
   } finally { app.unmount(); globalThis.window = oldWindow }
@@ -143,14 +143,14 @@ test('import/export and full generator support all groups without rewriting IDs,
     }
     const result = await generateAllData(root); await generateAllData(root, { check: true })
     assert.deepEqual(validateSource(document), [])
-    assert.deepEqual(result.catalog.slice(0, 9), published)
-    assert.deepEqual(result.catalog.slice(9).map(record => record.group), [...ids, ...LEGACY_GROUPS])
+    assert.deepEqual(result.catalog.slice(0, published.length), published)
+    assert.deepEqual(result.catalog.slice(published.length).map(record => record.group), [...ids, ...LEGACY_GROUPS])
     assert.deepEqual(result.archive, source.demoArchive)
     assert.equal(result.questionCount, 18); assert.equal(result.regionCount, 7); assert.equal(result.occurrenceCount, 2)
     assert.deepEqual(validateQuestions(questions, result.catalog), [])
     assert.deepEqual(validateRegionalEvidence(evidence, result.catalog), [])
     assert.deepEqual(await readFile(join(root, 'public/data/quiz.json')), await readFile(join(PROJECT_ROOT, 'public/data/quiz.json')))
-    for (const record of result.catalog.slice(9)) {
+    for (const record of result.catalog.slice(published.length)) {
       assert.ok(!questions.some(question => question.speciesId === record.id))
       assert.ok(!evidence.records.some(entry => entry.speciesId === record.id))
     }
@@ -187,8 +187,8 @@ test('Vue admin selects and map buttons expose localized available groups withou
       const legacy = await renderToString(createSSRApp(Fields, { species: fixture('invertebrates'), tab: 'basic' }))
       assert.ok(legacy.includes('<select value="invertebrates">'))
       const html = await renderToString(createSSRApp(Panel, { species: published }))
-      for (const group of ['mammals', 'birds', 'plants']) assert.ok(html.includes(groupLabel({ group }, language)))
-      for (const group of ['fish', 'reptiles', 'amphibians', 'arthropods', 'fungi']) assert.ok(!html.includes(groupLabel({ group }, language)))
+      for (const group of ids.filter(id => id !== 'fish')) assert.ok(html.includes(groupLabel({ group }, language)))
+      assert.ok(!html.includes(groupLabel({ group: 'fish' }, language)))
       const expanded = await renderToString(createSSRApp(Panel, { species: ids.map(fixture), group: 'arthropods' }))
       for (const group of ids) assert.ok(expanded.includes(groupLabel({ group }, language)))
       assert.match(expanded, /aria-pressed="true"[^>]*>Членистоногие|aria-pressed="true"[^>]*>Муунак буттуулар|aria-pressed="true"[^>]*>Arthropods/)

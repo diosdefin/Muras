@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "documentType": "research-region-drafts",
+  "notForPublication": true,
+  "note": "Изолировано от occurrences.source.json: documented_pending_review в действующем движке допускается на карте. Эти черновики не передавать генератору карты до независимого редакторского решения.",
+  "records": [
+    {
+      "speciesId": "black-stork",
+      "regionId": "issyk-kul",
+      "observationYear": null,
+      "reviewStatus": "pending",
+      "publicationApproved": false,
+      "localityPrecision": "oblast",
+      "statement": "Английское резюме очерка прямо называет Issyk-Kul oblast.",
+      "sources": [
+        {
+          "id": "book-2006",
+          "title": "Красная книга Кыргызской Республики, 2-е издание (2006), PDF с. 375",
+          "publisher": "Государственное агентство / Биолого-почвенный институт НАН КР / «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=375",
+          "accessedAt": "2026-10-13"
+        }
+      ]
+    },
+    {
+      "speciesId": "black-stork",
+      "regionId": "talas",
+      "observationYear": 1996,
+      "reviewStatus": "pending",
+      "publicationApproved": false,
+      "localityPrecision": "oblast",
+      "statement": "В очерке указано наблюдение в Таласской области в 1996 году.",
+      "sources": [
+        {
+          "id": "book-2006",
+          "title": "Красная книга Кыргызской Республики, 2-е издание (2006), PDF с. 375",
+          "publisher": "Государственное агентство / Биолого-почвенный институт НАН КР / «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=375",
+          "accessedAt": "2026-10-13"
+        }
+      ]
+    }
+  ]
+}

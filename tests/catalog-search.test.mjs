@@ -79,8 +79,8 @@ test('empty query retains original order, species objects, uniqueness and source
 })
 test('filter options contain only categories and groups in the catalog, including unknown values when present', () => {
   const options = catalogOptions(catalog)
-  assert.deepEqual(options.statuses.map(option => option.value), ['ALL', 'EN', 'VU', 'NT', 'LC'])
-  assert.deepEqual(options.groups.map(option => option.value), ['ALL', 'mammals', 'birds', 'plants'])
+  assert.deepEqual(options.statuses.map(option => option.value), ['ALL', 'EN', 'VU', 'NT', 'LC', 'UNKNOWN'])
+  assert.deepEqual(options.groups.map(option => option.value), ['ALL', 'mammals', 'birds', 'plants', 'reptiles', 'amphibians', 'arthropods', 'fungi'])
   assert.deepEqual(options.regions, ['ALL', 'Кыргызстан'])
   const fixture = catalogOptions([{ group: 'fish', iucn: { category: null }, regions: null }])
   assert.deepEqual(fixture.statuses.map(option => option.value), ['ALL', 'UNKNOWN'])
@@ -107,10 +107,10 @@ test('reset clears query and every existing/new filter; index is reused across q
   assert.equal(state.hasFilters.value, true); assert.equal(state.results.value.length, 1)
   state.reset()
   assert.equal(state.query.value, ''); assert.equal(state.status.value, 'ALL'); assert.equal(state.region.value, 'ALL'); assert.equal(state.group.value, 'ALL')
-  assert.equal(state.hasFilters.value, false); assert.equal(state.results.value.length, 9)
+  assert.equal(state.hasFilters.value, false); assert.equal(state.results.value.length, catalog.length)
 })
 test('nine species need no pagination; larger fixture expands by twelve without repetitions', () => {
-  assert.equal(catalogPage(catalog).remaining, 0)
+  assert.equal(catalogPage(catalog.slice(0, 9)).remaining, 0)
   const larger = Array.from({ length: 25 }, (_, n) => ({ ...catalog[n % 9], id: `fixture-${n}` }))
   const state = useCatalog(ref(larger))
   assert.equal(state.page.value.entries.length, 12); assert.equal(state.page.value.remaining, 13)
@@ -125,9 +125,9 @@ test('pagination resets when filters or catalog change; invalid limits cannot hi
   const state = useCatalog(records)
   state.more(); state.group.value = 'plants'; assert.equal(state.page.value.remaining, 0)
   state.reset(); state.more(); records.value = catalog
-  assert.equal(state.page.value.entries.length, 9)
-  assert.equal(catalogPage(records.value, NaN).entries.length, 9)
-  assert.equal(catalogPage(records.value, -1).entries.length, 9)
+  assert.equal(state.page.value.entries.length, 12)
+  assert.equal(catalogPage(records.value, NaN).entries.length, 12)
+  assert.equal(catalogPage(records.value, -1).entries.length, 12)
 })
 test('compact descriptions are unchanged first sentences with honest missing-data fallbacks', () => {
   for (const species of catalog) assert.ok(species.habitat.description.ru.startsWith(briefDescription(species)))

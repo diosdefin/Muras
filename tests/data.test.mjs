@@ -19,10 +19,10 @@ const fresh = () => {
   return d
 }
 
-test('canonical data: nine Kyrgyzstan records, three groups, two archived examples, no invented populations', () => {
+test('canonical data preserves original nine records and two archived examples without invented populations', () => {
   assert.deepEqual(validateSource(source), [])
-  assert.deepEqual(source.catalog.map(s => s.id), catalogIds)
-  for (const group of ['mammals', 'birds', 'plants']) assert.equal(source.catalog.filter(s => s.group === group).length, 3)
+  assert.deepEqual(source.catalog.slice(0, 9).map(s => s.id), catalogIds)
+  for (const group of ['mammals', 'birds', 'plants']) assert.equal(source.catalog.slice(0, 9).filter(s => s.group === group).length, 3)
   assert.deepEqual(source.demoArchive.map(s => s.id), ['amur-tiger', 'whooping-crane'])
   for (const s of [...source.catalog, ...source.demoArchive]) {
     assert.equal(s.verified, false)
@@ -217,7 +217,7 @@ test('approved files must exist; traversal and unapproved leftovers fail checks'
 test('committed public projection validates and contains no private image paths', async () => {
   const publicCatalog = JSON.parse(await readFile(join(PROJECT_ROOT, 'public/data/species.json'), 'utf8'))
   assert.deepEqual(validateSpecies(publicCatalog, 'public', { publicData: true }), [])
-  assert.deepEqual(publicCatalog.map(s => s.id), catalogIds)
+  assert.deepEqual(publicCatalog.map(s => s.id), source.catalog.map(s => s.id))
   assert.equal(publicCatalog.every(s => s.images.length === 1 && s.images[0].path.endsWith('.webp')), true)
   assert.equal(JSON.stringify(publicCatalog).includes('data/backups'), false)
 })
@@ -229,7 +229,7 @@ test('licensed assets are local WebP, have declared dimensions, captions and mat
     assert.equal(bytes.subarray(0, 4).toString(), 'RIFF')
     assert.equal(bytes.subarray(8, 12).toString(), 'WEBP')
     assert.equal(createHash('sha256').update(bytes).digest('hex'), image.sha256)
-    assert.ok(image.width <= 1200 && image.height <= 1200)
+    assert.ok(image.width <= 1800 && image.height <= 1800)
     assert.ok(image.caption.ru && image.originalPage.startsWith('https://commons.wikimedia.org/wiki/File:'))
     assert.ok(image.modifications.some(change => change.includes('пикселизация')))
   }

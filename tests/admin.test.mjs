@@ -48,7 +48,7 @@ test('new and duplicated species are distinct unverified drafts with unique IDs 
 })
 test('deletion requires explicit confirmation and leaves the source/archive untouched',()=>{
  const doc=copy();assert.equal(deleteSpecies(doc,0,false),doc)
- const next=deleteSpecies(doc,0,true);assert.equal(next.catalog.length,8);assert.equal(doc.catalog.length,9);assert.deepEqual(next.demoArchive,doc.demoArchive)
+ const next=deleteSpecies(doc,0,true);assert.equal(next.catalog.length,source.catalog.length-1);assert.equal(doc.catalog.length,source.catalog.length);assert.deepEqual(next.demoArchive,doc.demoArchive)
 })
 test('population transition warns before discarding a range or known number, preserves evidence and uses null for unknown',()=>{
  const p=known().catalog[0].population
@@ -162,13 +162,13 @@ test('Vue editor persists through proxies, resets approval after a change, confi
   editor.update(['population','value'],45);assert.equal(editor.current.value.population.reviewStatus,'pending');assert.equal(editor.dirty.value,true)
   editor.update(['population','reviewStatus'],'approved');assert.equal(await editor.save(true),true);assert.equal(editor.dirty.value,false)
   const before=editor.document.value;assert.equal(await editor.remove(0,false),false);assert.equal(editor.document.value,before)
-  assert.equal(await editor.remove(0,true),true);assert.equal(editor.document.value.catalog.length,8);await editor.save()
-  assert.equal(await editor.restorePrevious(true),true);assert.equal(editor.document.value.catalog.length,9)
+  assert.equal(await editor.remove(0,true),true);assert.equal(editor.document.value.catalog.length,source.catalog.length-1);await editor.save()
+  assert.equal(await editor.restorePrevious(true),true);assert.equal(editor.document.value.catalog.length,source.catalog.length)
   editor.add();assert.equal(editor.current.value.verified,false);editor.update(['names','en'],'Unsourced draft');assert.ok(!editor.validate())
-  assert.equal(editor.reset(false),false);assert.equal(await editor.reset(true),true);assert.equal(editor.document.value.catalog.length,9)
+  assert.equal(editor.reset(false),false);assert.equal(await editor.reset(true),true);assert.equal(editor.document.value.catalog.length,source.catalog.length)
   await nextTick()
  }finally{app.unmount();globalThis.window=oldWindow}
- assert.equal(repository.load().current.catalog.length,9)
+ assert.equal(repository.load().current.catalog.length,source.catalog.length)
 })
 
 test('async persistence serializes saves and never clears newer unsaved edits or replaces an imported document with a late load',async()=>{

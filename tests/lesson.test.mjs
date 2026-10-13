@@ -9,7 +9,7 @@ import { formatPopulation, speciesPhoto } from '../src/data/presentation.js'
 
 const catalog = JSON.parse(await readFile(new URL('../public/data/species.json', import.meta.url), 'utf8'))
 
-test('lesson visits all nine existing species once and wraps in both directions without changing data', () => {
+test('lesson visits all published species once and wraps in both directions without changing data', () => {
   const before = JSON.stringify(catalog)
   const lesson = useLesson(ref(catalog))
   const seen = []
