@@ -2,6 +2,8 @@ import { compositionCrop, DEFAULT_COMPOSITION, validComposition } from '../image
 
 export const ANIMATION_DURATION = 900
 export const AUTO_DELAY = 450
+// Unknown population: retain some original colour; never imply an extinction count.
+export const UNKNOWN_DESATURATION = 0.72
 export function backingSize(width, height, dpr = 1) {
   if (![width, height].every(v => Number.isFinite(v) && v > 0)) return null
   const density = Number.isFinite(dpr) && dpr > 0 ? Math.min(2, dpr) : 1
@@ -21,7 +23,7 @@ export function renderFrame(canvas, scratch, source, amount, size, dpr, { compos
   context.clearRect(0, 0, canvas.width, canvas.height)
   if (supportsFilter) context.filter = 'none'
   if (effect === 'unknown' || progress === 0) {
-    if (supportsFilter) context.filter = effect === 'unknown' ? `grayscale(${progress})` : 'none'
+    if (supportsFilter) context.filter = effect === 'unknown' ? `grayscale(${progress * UNKNOWN_DESATURATION})` : 'none'
     context.imageSmoothingEnabled = true; context.imageSmoothingQuality = 'high'
     context.drawImage(source, crop.x, crop.y, crop.width, crop.height, 0, 0, canvas.width, canvas.height)
     if (supportsFilter) context.filter = 'none'

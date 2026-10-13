@@ -97,6 +97,8 @@
   .modal-shell[open] { display: flex; flex-direction: column; }
   .modal-shell::backdrop { background: #253b3273; }
   .modal-header { display: flex; flex-shrink: 0; align-items: center; justify-content: space-between; gap: 12px; padding: 16px; border-bottom: 1px solid var(--line); }
+  .modal-header-minimal { justify-content: flex-end; padding-bottom: 12px; }
+  .modal-header-actions { display: flex; align-items: center; gap: 10px; }
   .modal-title { min-width: 0; }
   .modal-title .eyebrow { font-size: 12px; }
   .modal-title h2 { margin-top: 4px; font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: clamp(28px, 3vw, 40px); line-height: 1.15; }
@@ -123,6 +125,11 @@
   .photo-credit { margin-top: 20px; font-size: 14px; color: var(--muted); }
   .photo-credit a { display: block; padding-block: 10px; min-height: 44px; text-decoration: underline; text-underline-offset: 3px; }
   .modal-scientific { margin-top: 16px; font-size: 20px; }
+  .modal-species-title { margin: 8px 0 0; font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: clamp(32px, 3vw, 42px); line-height: 1.12; }
+  .modal-meta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+  .modal-summary { padding-bottom: 8px; }
+  .modal-scientific-prominent { margin-top: 10px; font-size: 18px; color: var(--muted); }
+  .information-section-first { margin-top: 8px; }
   .national-status { margin-top: 16px; color: var(--muted); font-size: 14px; }
   .language-switch { display: flex; gap: 8px; padding-block: 20px; }
   .language-switch button { min-width: 52px; min-height: 48px; border: 1px solid #839388; border-radius: 4px; font-size: 14px; font-weight: 600; }

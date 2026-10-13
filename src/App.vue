@@ -3,6 +3,8 @@ import ErrorNotice from './components/ErrorNotice.vue'
 import BrandLogo from './components/BrandLogo.vue'
 import { syncLocaleMetadata, useLocale } from './composables/useLocale.js'
 import { computed, nextTick, onMounted, onUnmounted, ref } from 'vue'
+import { speciesPath, speciesIdFromPath } from './data/species-routes.js'
+import SpeciesPage from './components/SpeciesPage.vue'
 import { searchContentLanguage } from './data/localization.js'
 import { groupLabel, regionFilterLabel, statusDetails } from './data/presentation.js'
 import SpeciesCard from './components/SpeciesCard.vue'
@@ -69,13 +71,38 @@ function statusLabel(value) { return value === 'ALL' ? t('status.all') : statusD
 // /map is a real shareable page; existing quiz, lesson and support views stay intact.
 const isMapPath = () => typeof window !== 'undefined' && window.location.pathname.replace(/\/$/, '') === '/map'
 const readMapRegion = () => typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('region') || '' : ''
-const activeView = ref(isMapPath() ? 'map' : 'catalog')
+const readSpeciesId = () => typeof window !== 'undefined' ? speciesIdFromPath(window.location.pathname) : null
+const speciesRouteId = ref(readSpeciesId())
+const activeView = ref(isMapPath() ? 'map' : speciesRouteId.value ? 'species' : 'catalog')
+const profileSpecies = computed(() => species.value.find(item => item.id === speciesRouteId.value) || null)
 const mapRouteRegion = ref(isMapPath() ? readMapRegion() : '')
 
 function onBrowserNavigation() {
-  activeView.value = isMapPath() ? 'map' : 'catalog'
+  speciesRouteId.value = readSpeciesId()
+  activeView.value = isMapPath() ? 'map' : speciesRouteId.value ? 'species' : 'catalog'
   if (activeView.value === 'map') mapRouteRegion.value = readMapRegion()
+  headerHidden.value = false
   window.scrollTo({ top: 0, behavior: 'instant' })
+}
+function leaveSpeciesUrl() {
+  if (readSpeciesId()) {
+    window.history.pushState({}, '', '/')
+    speciesRouteId.value = null
+  }
+}
+async function openSpeciesPage(id) {
+  if (!species.value.some(item => item.id === id)) return
+  closeSpecies()
+  await nextTick() // Let the dialog release the scroll lock before navigating.
+  if (activeView.value === 'lesson' && await lessonView.value?.exitFullscreen() === false) return
+  const path = speciesPath(id)
+  if (window.location.pathname !== path) window.history.pushState({}, '', path)
+  speciesRouteId.value = id
+  activeView.value = 'species'
+  headerHidden.value = false
+  await nextTick()
+  window.scrollTo({ top: 0, behavior: 'instant' })
+  document.getElementById('profile-heading')?.focus({ preventScroll: true })
 }
 function leaveMapUrl() {
   if (isMapPath()) window.history.pushState({}, '', '/')
@@ -87,6 +114,7 @@ async function showMap(regionId = '') {
   if (regionId) url.searchParams.set('region', regionId)
   window.history.pushState({}, '', url.pathname + url.search)
   mapRouteRegion.value = regionId
+  speciesRouteId.value = null
   activeView.value = 'map'
   nextTick(() => {
     window.scrollTo({ top: 0, behavior: 'instant' })
@@ -121,6 +149,7 @@ async function showView(view, focusId = view) {
   if (activeView.value === 'lesson' && view !== 'lesson' && await lessonView.value?.exitFullscreen() === false) return
   mountedViews.value.add(view)
   if (isMapPath() && view !== 'map') leaveMapUrl()
+  if (readSpeciesId()) leaveSpeciesUrl()
   activeView.value = view
   await nextTick()
   const target = document.getElementById(focusId)
@@ -287,6 +316,7 @@ onUnmounted(() => {
       @catalog="showView('catalog')" @study="studySpecies" @lesson="showView('lesson')" />
     <LessonView v-if="mountedViews.has('lesson')" ref="lessonView" v-show="activeView === 'lesson'" :species="species" :active="activeView === 'lesson'" :loading="isLoading" :error="errorMessage"
       @catalog="showView('catalog')" @quiz="openQuizFromLesson" />
+    <SpeciesPage v-if="activeView === 'species'" :species="profileSpecies" :loading="isLoading" :error="errorMessage" :content-language="contentLanguage" @catalog="showView('catalog')" @support="openSupport" />
     <SupportView v-if="mountedViews.has('support')" v-show="activeView === 'support'" :species="species" :species-id="supportSpeciesId" :loading="isLoading" :error="errorMessage"
       @select="supportSpeciesId = $event" @study="studySpecies" @catalog="showView('catalog')" />
   </main>
@@ -294,5 +324,5 @@ onUnmounted(() => {
     <p><span class="footer-brand">Muras</span> {{ t('ui.m041') }}</p>
     <p>{{ t('ui.m042') }}<br class="hidden sm:block" /> {{ t('ui.m043') }}</p>
   </footer>
-  <SpeciesModal v-if="selectedSpecies" :species="selectedSpecies" :content-language="contentLanguage" @close="closeSpecies" @support="openSupport" />
+  <SpeciesModal v-if="selectedSpecies" :species="selectedSpecies" :content-language="contentLanguage" @close="closeSpecies" @support="openSupport" @details="openSpeciesPage" />
 </template>
