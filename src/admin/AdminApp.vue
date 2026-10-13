@@ -7,7 +7,8 @@ import {loadSpeciesCatalog} from '../data/catalog-repository.js'
 import {createSearchIndex,searchSpecies} from '../data/catalog-search.js'
 import {groupLabel,speciesName} from '../data/presentation.js'
 import {useAdminEditor} from './useAdminEditor.js'
-import {GROUPS,MAX_JSON_BYTES} from './data/model.js'
+import {MAX_JSON_BYTES} from './data/model.js'
+import {editableGroups} from '../data/species-groups.js'
 import {createImageSession} from './data/images.js'
 import SpeciesFields from './components/SpeciesFields.vue'
 import SourcesEditor from './components/SourcesEditor.vue'
@@ -22,6 +23,7 @@ const published=ref([]),loading=ref(true),query=ref(''),group=ref('ALL'),review=
 const tab=ref('basic'),guide=ref(false),confirmation=ref(null),importInput=ref(null),heading=ref(null)
 const session=createImageSession(),revision=ref(0)
 const catalog=computed(()=>source.value?.catalog || published.value)
+const groups=computed(()=>editableGroups(catalog.value))
 const searchIndex=computed(()=>createSearchIndex(catalog.value))
 const indices=computed(()=>new Map(catalog.value.map((record,index)=>[record,index])))
 const rows=computed(()=>searchSpecies(searchIndex.value,query.value).filter(({species:s})=>
@@ -78,7 +80,7 @@ onBeforeUnmount(()=>{session.dispose();resolveConfirmation?.(false)})
         <section v-else class="admin-panel">
           <p v-if="!source" class="admin-notice">{{ t('admin.sourceRequiredHint') }}</p>
           <div class="admin-list-heading"><h2>{{ t('admin.species') }} · {{ catalog.length }}</h2><button class="admin-primary" type="button" :disabled="!source" @click="editor.add();tab='basic'">{{ t('admin.addSpecies') }}</button></div>
-          <div class="admin-list-filters"><label>{{ t('ui.m044') }}<input v-model="query" type="search" :placeholder="t('admin.searchHint')" /></label><label>{{ t('ui.m054') }}<select v-model="group"><option value="ALL">{{ t('ui.m140') }}</option><option v-for="value in GROUPS" :key="value" :value="value">{{ groupLabel({group:value},language) }}</option></select></label><label>{{ t('admin.verification') }}<select v-model="review"><option value="ALL">{{ t('admin.all') }}</option><option value="true">{{ t('ui.m096') }}</option><option value="false">{{ t('ui.m097') }}</option></select></label><label>{{ t('admin.populationType') }}<select v-model="population"><option value="ALL">{{ t('admin.all') }}</option><option v-for="kind in ['exact','approximate','unknown']" :key="kind" :value="kind">{{ t(`admin.population.${kind}`) }}</option></select></label></div>
+          <div class="admin-list-filters"><label>{{ t('ui.m044') }}<input v-model="query" type="search" :placeholder="t('admin.searchHint')" /></label><label>{{ t('ui.m054') }}<select v-model="group"><option value="ALL">{{ t('ui.m140') }}</option><option v-for="value in groups" :key="value" :value="value">{{ groupLabel({group:value},language) }}</option></select></label><label>{{ t('admin.verification') }}<select v-model="review"><option value="ALL">{{ t('admin.all') }}</option><option value="true">{{ t('ui.m096') }}</option><option value="false">{{ t('ui.m097') }}</option></select></label><label>{{ t('admin.populationType') }}<select v-model="population"><option value="ALL">{{ t('admin.all') }}</option><option v-for="kind in ['exact','approximate','unknown']" :key="kind" :value="kind">{{ t(`admin.population.${kind}`) }}</option></select></label></div>
           <p v-if="loading" role="status">{{ t('ui.m032') }}</p><p v-else-if="!rows.length" class="admin-empty">{{ t('admin.noMatches') }}</p>
           <table v-else class="admin-table"><thead><tr><th>{{ t('admin.names') }}</th><th>{{ t('ui.m054') }}</th><th>{{ t('admin.verification') }}</th><th>{{ t('admin.populationType') }}</th><th>{{ t('admin.actions') }}</th></tr></thead><tbody><tr v-for="row in visibleRows" :key="row.index"><td :data-label="t('admin.names')"><strong>{{ speciesName(row.species,language) }}</strong><span lang="la">{{ row.species.scientificName || '—' }}</span><small>{{ row.species.id }}</small></td><td :data-label="t('ui.m054')">{{ groupLabel(row.species,language) }}</td><td :data-label="t('admin.verification')">{{ row.species.verified?t('ui.m096'):t('ui.m097') }}</td><td :data-label="t('admin.populationType')">{{ t(`admin.population.${row.species.population.type}`) }}</td><td :data-label="t('admin.actions')"><div class="admin-row-actions"><button type="button" :disabled="!source" :aria-label="`${t('admin.edit')} — ${speciesName(row.species,language)}`" @click="edit(row.index)">{{ t('admin.edit') }}</button><button type="button" :disabled="!source" :aria-label="`${t('admin.duplicate')} — ${speciesName(row.species,language)}`" @click="editor.duplicate(row.index);tab='basic'">{{ t('admin.duplicate') }}</button><button type="button" :disabled="!source" :aria-label="`${t('admin.delete')} — ${speciesName(row.species,language)}`" @click="remove(row.index)">{{ t('admin.delete') }}</button></div></td></tr></tbody></table>
           <div v-if="rows.length>pageSize" class="admin-actions"><button type="button" :disabled="page===1" @click="page--">{{ t('ui.m101') }}</button><p role="status">{{ t('admin.page') }} {{ page }} / {{ Math.ceil(rows.length/pageSize) }}</p><button type="button" :disabled="page*pageSize>=rows.length" @click="page++">{{ t('ui.m102') }}</button></div>

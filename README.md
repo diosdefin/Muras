@@ -17,6 +17,8 @@
 [docs/manual-qa-checklist.md](docs/manual-qa-checklist.md).
 Настройки Vercel, первая публикация из `main` и откат:
 [docs/vercel-deployment.md](docs/vercel-deployment.md).
+Архитектура восьми групп для постепенного расширения каталога и совместимость старых ID:
+[docs/catalog-expansion.md](docs/catalog-expansion.md).
 
 Vue 3 / Vite / Tailwind. Публичный каталог содержит **9 видов Кыргызстана**:
 по три млекопитающих, птицы и растения, с локальными лицензированными фотографиями.
