@@ -34,7 +34,7 @@ watch(imagePath, () => { imageFailed.value = false })
         <a :href="photo.originalPage" target="_blank" rel="noopener noreferrer">{{ t('ui.m082') }} {{ photo.author }}<span class="sr-only"> {{ t('ui.m230') }}</span></a>
         <a :href="photo.licenseUrl" target="_blank" rel="noopener noreferrer">{{ photo.license }}<span class="sr-only"> {{ t('ui.m231') }}</span></a>
       </div>
-      <button type="button" class="card-open" :aria-label="t('ui.m125', { p0: speciesName(species, language) })"
+      <button type="button" class="card-open" :aria-label="`${t('ui.m232')} — ${t('ui.m125', { p0: speciesName(species, language) })}`"
         aria-haspopup="dialog" @click="emit('open', species)"> {{ t('ui.m232') }} <span aria-hidden="true">↗</span>
       </button>
     </div>
