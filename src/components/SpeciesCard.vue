@@ -18,7 +18,7 @@ watch(imagePath, () => { imageFailed.value = false })
 <template>
   <article class="species-card">
     <div class="card-image">
-      <img v-if="!imageFailed" :src="imagePath" :style="compositionStyle(photo)" :width="photo?.width || 800" :height="photo?.height || 600" loading="lazy" decoding="async"
+      <img v-if="!imageFailed" :src="imagePath" :style="compositionStyle(photo, 'card')" :width="photo?.width || 800" :height="photo?.height || 600" loading="lazy" decoding="async"
         :alt="photo ? t('ui.m078', { p0: speciesName(species, language) }) : t('ui.m227')"
         @error="imageFailed = true" />
       <p v-else class="image-fallback">{{ t('ui.m228') }}</p>

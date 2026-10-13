@@ -1,4 +1,4 @@
-import { validComposition } from './image-composition.js'
+import { validComposition, validCompositions } from './image-composition.js'
 import { validatePopulation } from './population.js'
 import { validateSourceLocalization } from './localization.js'
 
@@ -53,6 +53,8 @@ export function validateSpecies(records, label = 'catalog', { publicData = false
       const sp = `${p}.sources[${n}]`
       if (!object(s)) { fail(sp, 'ожидается объект'); return }
       errors.push(...validateSourceLocalization(s, sp))
+      if (s.authors !== undefined && s.authors !== null && !(text(s.authors) || Array.isArray(s.authors) && s.authors.every(text))) fail(`${sp}.authors`, 'ожидается строка, массив имён или null')
+      if (s.publishedAt !== undefined && s.publishedAt !== null && !date(s.publishedAt)) fail(`${sp}.publishedAt`, 'ожидается дата YYYY-MM-DD или null')
       if (!text(s.id) || sourceIds.has(s.id)) fail(`${sp}.id`, 'отсутствующий или повторяющийся id источника')
       sourceIds.add(s.id)
       if (!text(s.title) || !text(s.publisher) || !url(s.url) || !date(s.accessedAt)) fail(sp, 'нужны title, publisher, HTTP(S) url и accessedAt')
@@ -119,7 +121,8 @@ export function validateSpecies(records, label = 'catalog', { publicData = false
       for (const key of ['path', 'author', 'originalPage', 'license', 'licenseUrl', 'attribution']) if (!nullableText(image[key])) fail(`${ip}.${key}`, 'ожидается строка или null')
       if (typeof image.licenseVerified !== 'boolean') fail(`${ip}.licenseVerified`, 'ожидается boolean')
       if (image.caption !== undefined) localized(image.caption, `${ip}.caption`)
-      if (image.composition !== undefined && !validComposition(image.composition)) fail(`${ip}.composition`, 'нужны x/y в диапазоне 0..1 и zoom в диапазоне 1..1.6; только эти три поля')
+      if (image.composition !== undefined && !validComposition(image.composition)) fail(`${ip}.composition`, 'нужны x/y в диапазоне 0..1 и zoom в диапазоне 1..3; только эти три поля')
+      if (image.compositions !== undefined && !validCompositions(image.compositions)) fail(`${ip}.compositions`, 'допустимы card/detail/lesson с x/y 0..1 и zoom 1..3; Canvas использует detail')
       if (image.sha256 !== undefined && (typeof image.sha256 !== 'string' || !/^[a-f0-9]{64}$/.test(image.sha256))) fail(`${ip}.sha256`, 'ожидается SHA-256 из 64 шестнадцатеричных символов')
       for (const key of ['width', 'height']) if (image[key] !== undefined && (!Number.isInteger(image[key]) || image[key] <= 0)) fail(`${ip}.${key}`, 'ожидается положительный размер в пикселях')
       if (image.modifications !== null && (!Array.isArray(image.modifications) || image.modifications.some(v => !text(v)))) fail(`${ip}.modifications`, 'ожидается массив строк или null')

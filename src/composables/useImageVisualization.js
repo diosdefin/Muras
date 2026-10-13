@@ -17,7 +17,10 @@ export function useImageVisualization(canvas, container, input) {
       resize: controller.resize, motionChanged: controller.motionChanged, visibilityChanged: controller.visibilityChanged })
     controller.load(input.value.path, input.value)
   })
-  watch(input, value => controller?.load(value.path, value), { flush: 'sync' })
+  watch(input, (value, previous) => {
+    if (value.path !== previous?.path || value.type !== previous?.type || value.id !== previous?.id) controller?.load(value.path, value)
+    else controller?.setComposition(value.composition)
+  }, { flush: 'sync' })
   onBeforeUnmount(() => { environment?.dispose(); controller?.dispose() })
   return { state, start: () => controller?.start(), restore: () => controller?.restore() }
 }
