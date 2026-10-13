@@ -7,9 +7,9 @@ import { useImageVisualization } from '../composables/useImageVisualization.js'
 
 const { t, uiMessage } = useLocale()
 
-const props = defineProps({ photo: { type: Object, default: null }, name: { type: String, required: true }, populationType: { type: String, default: 'unknown' }, speciesId: { type: String, default: '' } })
+const props = defineProps({ photo: { type: Object, default: null }, name: { type: String, required: true }, populationType: { type: String, default: 'unknown' }, speciesId: { type: String, default: '' }, previewUrl: { type: String, default: null } })
 const canvas = ref(null), container = ref(null), failed = ref(false)
-const input = computed(() => ({ path: props.photo ? publicImageUrl(props.photo.path) : null,
+const input = computed(() => ({ path: props.previewUrl || (props.photo ? publicImageUrl(props.photo.path) : null),
   composition: imageComposition(props.photo), type: props.populationType, id: props.speciesId }))
 const { state, start, restore } = useImageVisualization(canvas, container, input)
 const active = computed(() => state.value.mode !== 'photo')

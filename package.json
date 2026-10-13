@@ -8,6 +8,7 @@
     "predev": "node scripts/build-data.mjs",
     "prebuild": "node scripts/validate-locales.mjs && node scripts/build-data.mjs",
     "build": "vite build",
+    "postbuild": "node scripts/admin-entry.mjs",
     "preview": "vite preview",
     "data": "node scripts/build-data.mjs",
     "data:generate": "node scripts/build-data.mjs",

@@ -1,4 +1,4 @@
-import { compositionCrop, DEFAULT_COMPOSITION } from '../image-composition.js'
+import { compositionCrop, DEFAULT_COMPOSITION, validComposition } from '../image-composition.js'
 
 export const ANIMATION_DURATION = 900
 export const AUTO_DELAY = 450
@@ -128,6 +128,13 @@ export function createVisualization({ canvas, createCanvas, createImage, request
   }
   return {
     load, start: () => change(1), restore: () => change(0),
+    setComposition(value) {
+      if (disposed || !validComposition(value)) return false
+      if (['x','y','zoom'].every(key => value[key] === composition[key])) return true
+      composition = value
+      if (state.mode !== 'photo') schedule()
+      return true
+    },
     resize() { if (!disposed && state.mode !== 'photo') schedule() },
     motionChanged() { if (transition && reducedMotion()) change(transition.to) },
     visibilityChanged(value) {

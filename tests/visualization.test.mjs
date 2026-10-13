@@ -45,7 +45,7 @@ const source = JSON.parse(await readFile(new URL('../data/species.source.json', 
 test('individual compositions are optional, bounded and validated before data generation', () => {
   assert.deepEqual(validateSource(source), [])
   for (const invalid of [null, { x: 2, y: .5, zoom: 1 }, { x: .5, y: -.2, zoom: 1 },
-    { x: .5, y: .5, zoom: 2 }, { x: .5, y: .5 }, { x: .5, y: .5, zoom: 1, surprise: 4 }]) {
+    { x: .5, y: .5, zoom: 3.1 }, { x: .5, y: .5 }, { x: .5, y: .5, zoom: 1, surprise: 4 }]) {
     const fixture = structuredClone(source); fixture.catalog[0].images[0].composition = invalid
     assert.match(validateSource(fixture).join('\n'), /images\[0\]\.composition/)
   }

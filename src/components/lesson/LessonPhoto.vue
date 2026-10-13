@@ -3,6 +3,7 @@ import ScientificText from "../ScientificText.vue"
 import { useLocale } from '../../composables/useLocale.js'
 import { computed, ref, watch } from 'vue'
 import { PLACEHOLDER, publicImageUrl, speciesName, speciesPhoto } from '../../data/presentation.js'
+import { compositionStyle } from '../../data/image-composition.js'
 
 const { t, language } = useLocale()
 
@@ -14,7 +15,8 @@ watch(() => props.species.id, () => { failed.value = false })
 
 <template>
   <figure class="lesson-photo">
-    <img :src="photo && !failed ? publicImageUrl(photo.path) : PLACEHOLDER"
+    <div v-if="photo?.compositions?.lesson && !failed" class="lesson-composed-frame"><img :src="publicImageUrl(photo.path)" :style="compositionStyle(photo, 'lesson')" :alt="speciesName(species, language)" :width="photo.width" :height="photo.height" decoding="async" @error="failed = true" /></div>
+    <img v-else :src="photo && !failed ? publicImageUrl(photo.path) : PLACEHOLDER"
       :alt="photo && !failed ? t('ui.m078', { p0: speciesName(species, language) }) : t('ui.m079')"
       :width="photo?.width || 800" :height="photo?.height || 600" decoding="async" @error="failed = true" />
     <figcaption>
@@ -27,3 +29,8 @@ watch(() => props.species.id, () => { failed.value = false })
     </figcaption>
   </figure>
 </template>
+
+<style scoped>
+.lesson-composed-frame { width: 100%; aspect-ratio: 4 / 3; overflow: hidden; border-radius: 6px; }
+.lesson-composed-frame img { width: 100%; height: 100%; object-fit: cover; }
+</style>

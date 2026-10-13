@@ -34,7 +34,12 @@ export async function validateMessageReferences(root, keys) {
 }
 export async function checkLocales(root = process.cwd()) {
   const messages = {}
-  for (const language of ['ru','ky','en']) messages[language] = JSON.parse(await readFile(resolve(root, 'src/locales', `${language}.json`), 'utf8'))
+  for (const language of ['ru','ky','en']) {
+    const publicMessages = JSON.parse(await readFile(resolve(root, 'src/locales', `${language}.json`), 'utf8'))
+    const adminMessages = JSON.parse(await readFile(resolve(root, 'src/admin/locales', `${language}.json`), 'utf8'))
+    if (Object.keys(adminMessages).some(key => !key.startsWith('admin.'))) throw new Error('Ключи админки должны начинаться с admin.')
+    messages[language] = { ...publicMessages, ...adminMessages }
+  }
   const errors = [...validateMessages(messages), ...await validateMessageReferences(root, new Set(Object.keys(messages.ru)))]
   if (errors.length) throw new Error(`Некорректные переводы:\n${errors.join('\n')}`)
   return Object.keys(messages.ru).length
