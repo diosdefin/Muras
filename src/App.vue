@@ -2,7 +2,7 @@
 import ErrorNotice from './components/ErrorNotice.vue'
 import BrandLogo from './components/BrandLogo.vue'
 import { syncLocaleMetadata, useLocale } from './composables/useLocale.js'
-import { computed, nextTick, onMounted, ref } from 'vue'
+import { computed, nextTick, onMounted, onUnmounted, ref } from 'vue'
 import { searchContentLanguage } from './data/localization.js'
 import { groupLabel, regionFilterLabel, statusDetails } from './data/presentation.js'
 import SpeciesCard from './components/SpeciesCard.vue'
@@ -16,21 +16,91 @@ import GroupFilter from './components/GroupFilter.vue'
 import { useCatalog } from './composables/useCatalog.js'
 import './components/catalog.css'
 import { loadSpeciesCatalog } from './data/catalog-repository.js'
+import { createSearchIndex, searchSpecies } from './data/catalog-search.js'
 import { validateQuestions } from './data/quiz/model.js'
 
 const { t, language, siteLanguage, setLanguage } = useLocale()
 
 const species = ref([])
 const catalog = useCatalog(species)
+// Header search sees the whole catalogue even when page filters are active.
+const headerSearchIndex = computed(() => createSearchIndex(species.value))
+const headerSearchResults = computed(() => searchSpecies(headerSearchIndex.value, catalog.query.value))
 const { query, status: selectedStatus, region: selectedRegion, group: selectedGroup, options, results, page, fuzzy, hasFilters } = catalog
 const isLoading = ref(true)
 const errorMessage = ref('')
 const selectedSpecies = ref(null)
 const contentLanguage = ref(null)
+
+// Stable page-height reservation for the fixed, scroll-aware navigation.
+const headerElement = ref(null)
+const headerHeight = ref(122)
+const headerCompact = ref(false)
+const headerHidden = ref(false)
+let previousScrollY = 0
+function measureExpandedHeader() {
+  if (!headerElement.value || headerCompact.value) return
+  const measured = Math.ceil(headerElement.value.getBoundingClientRect().height)
+  if (Math.abs(headerHeight.value - measured) > 1) headerHeight.value = measured
+}
+function handlePageScroll() {
+  const y = Math.max(0, window.scrollY)
+  if (y <= 36) {
+    headerCompact.value = false
+    headerHidden.value = false
+    previousScrollY = y
+    return
+  }
+  headerCompact.value = true
+  const delta = y - previousScrollY
+  // Small scroll oscillations must not make the header flicker.
+  if (delta >= 9 && y > 160 && !headerElement.value?.contains(document.activeElement)) {
+    headerHidden.value = true
+  } else if (delta <= -9) {
+    headerHidden.value = false
+  }
+  if (Math.abs(delta) >= 9) previousScrollY = y
+}
+function revealHeaderOnFocus() { headerHidden.value = false }
+const scrollBehavior = () => window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'instant' : 'smooth'
 syncLocaleMetadata()
 const translatedGroups = computed(() => options.value.groups.map(option => ({ ...option, label: option.value === 'ALL' ? t('ui.m140') : groupLabel({ group: option.value }, language.value) })))
 function statusLabel(value) { return value === 'ALL' ? t('status.all') : statusDetails({ iucn: { category: value } }, language.value).label }
-const activeView = ref('catalog')
+// /map is a real shareable page; existing quiz, lesson and support views stay intact.
+const isMapPath = () => typeof window !== 'undefined' && window.location.pathname.replace(/\/$/, '') === '/map'
+const readMapRegion = () => typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('region') || '' : ''
+const activeView = ref(isMapPath() ? 'map' : 'catalog')
+const mapRouteRegion = ref(isMapPath() ? readMapRegion() : '')
+
+function onBrowserNavigation() {
+  activeView.value = isMapPath() ? 'map' : 'catalog'
+  if (activeView.value === 'map') mapRouteRegion.value = readMapRegion()
+  window.scrollTo({ top: 0, behavior: 'instant' })
+}
+function leaveMapUrl() {
+  if (isMapPath()) window.history.pushState({}, '', '/')
+  mapRouteRegion.value = ''
+}
+async function showMap(regionId = '') {
+  if (activeView.value === 'lesson' && await lessonView.value?.exitFullscreen() === false) return
+  const url = new URL('/map', window.location.origin)
+  if (regionId) url.searchParams.set('region', regionId)
+  window.history.pushState({}, '', url.pathname + url.search)
+  mapRouteRegion.value = regionId
+  activeView.value = 'map'
+  nextTick(() => {
+    window.scrollTo({ top: 0, behavior: 'instant' })
+    document.getElementById('map-title')?.focus({ preventScroll: true })
+  })
+}
+function updateMapRegion(regionId) {
+  if (!isMapPath()) return
+  const url = new URL('/map', window.location.origin)
+  if (regionId) url.searchParams.set('region', regionId)
+  window.history.replaceState({}, '', url.pathname + url.search)
+  mapRouteRegion.value = regionId
+}
+
 // Mount secondary sections only when first visited, then retain their session state.
 const mountedViews = ref(new Set(['catalog']))
 const quizQuestions = ref([])
@@ -50,16 +120,19 @@ async function openSupport(id = null) {
 async function showView(view, focusId = view) {
   if (activeView.value === 'lesson' && view !== 'lesson' && await lessonView.value?.exitFullscreen() === false) return
   mountedViews.value.add(view)
+  if (isMapPath() && view !== 'map') leaveMapUrl()
   activeView.value = view
   await nextTick()
-  if (view === 'support') {
-    document.getElementById(focusId)?.focus({ preventScroll: true })
+  const target = document.getElementById(focusId)
+  target?.focus({ preventScroll: true })
+  if (view === 'catalog') {
+    // The catalogue remains an anchor within the homepage.
+    target?.scrollIntoView({ block: 'start', behavior: scrollBehavior() })
+  } else {
+    // Other views replace main content; don't allow focus() to jump the page.
+    headerHidden.value = false
     window.scrollTo({ top: 0, behavior: 'instant' })
-  } else if (view === 'catalog') {
-    const target = document.getElementById(focusId)
-    target?.focus({ preventScroll: true })
-    target?.scrollIntoView({ block: 'start', behavior: 'instant' })
-  } else document.getElementById(focusId)?.focus()
+  }
 }
 
 function openQuizFromLesson() {
@@ -102,6 +175,13 @@ function closeSpecies() {
 }
 
 onMounted(async () => {
+  previousScrollY = Math.max(0, window.scrollY)
+  await nextTick()
+  measureExpandedHeader()
+  window.addEventListener('scroll', handlePageScroll, { passive: true })
+  window.addEventListener('resize', measureExpandedHeader, { passive: true })
+  window.addEventListener('popstate', onBrowserNavigation)
+  handlePageScroll()
   try {
     species.value = await loadSpeciesCatalog()
   } catch (error) {
@@ -120,22 +200,33 @@ onMounted(async () => {
   } catch (error) { quizError.value = error.message }
   finally { quizLoading.value = false }
 })
+onUnmounted(() => {
+  window.removeEventListener('scroll', handlePageScroll)
+  window.removeEventListener('resize', measureExpandedHeader)
+  window.removeEventListener('popstate', onBrowserNavigation)
+})
 </script>
 
 <template>
   <a class="skip-link" :href="`#${activeView}`">{{ t('ui.m004') }}</a>
-  <header class="page-header page-container">
-    <a class="brand" href="#" @click.prevent="showHome">
-      <span><span class="sr-only">MURAS </span><BrandLogo /><span class="brand-caption">{{ t('brand.caption') }}</span><span class="sr-only"> — {{ t('brand.homeAction') }}</span></span>
-    </a>
+  <div class="header-space" aria-hidden="true" :style="{ height: `${headerHeight}px` }"></div>
+  <header ref="headerElement" class="page-header page-container" :class="{ 'header-compact': headerCompact, 'header-hidden': headerHidden }" @focusin="revealHeaderOnFocus">
+    <div class="header-main-row">
+      <a class="brand" href="/" @click.prevent="showHome">
+        <span><span class="sr-only">MURAS </span><BrandLogo /><span class="brand-caption">{{ t('brand.caption') }}</span><span class="sr-only"> — {{ t('brand.homeAction') }}</span></span>
+      </a>
+      <div class="header-search">
+        <CatalogSearch v-model="query" :results="headerSearchResults" @open="openSearchResult" />
+      </div>
+      <label class="site-language"><span class="sr-only">{{ t('chooseLanguage') }}</span><select :value="siteLanguage" :aria-label="t('chooseLanguage')" @change="setLanguage($event.target.value)"><option value="ky" lang="ky">KY</option><option value="ru" lang="ru">RU</option><option value="en" lang="en">EN</option></select></label>
+    </div>
     <nav class="main-navigation" :aria-label="t('ui.m007')">
       <a class="header-link" href="#catalog" :aria-label="`${t('ui.m009')} — ${t('ui.m008')}`" :aria-current="activeView === 'catalog' ? 'page' : undefined" @click.prevent="showView('catalog')">{{ t('ui.m009') }}</a>
-      <a class="header-link" href="#map" @click.prevent="showView('catalog', 'map')">{{ t('ui.m010') }}</a>
+      <a class="header-link" href="/map" :aria-current="activeView === 'map' ? 'page' : undefined" @click.prevent="showMap()">{{ t('ui.m010') }}</a>
       <a class="header-link" href="#quiz" :aria-current="activeView === 'quiz' ? 'page' : undefined" @click.prevent="showView('quiz')">{{ t('ui.m011') }}</a>
       <a class="header-link" href="#lesson" :aria-current="activeView === 'lesson' ? 'page' : undefined" @click.prevent="showView('lesson')">{{ t('ui.m012') }}</a>
       <a class="header-link" href="#support" :aria-current="activeView === 'support' ? 'page' : undefined" @click.prevent="openSupport()">{{ t('ui.m013') }}</a>
     </nav>
-    <label class="site-language"><span class="sr-only">{{ t('chooseLanguage') }}</span><select :value="siteLanguage" :aria-label="t('chooseLanguage')" @change="setLanguage($event.target.value)"><option value="ky" lang="ky">Кыргызча (KY)</option><option value="ru" lang="ru">Русский (RU)</option><option value="en" lang="en">English (EN)</option></select></label>
   </header>
   <main>
     <section v-show="activeView === 'catalog'" class="hero page-container" aria-labelledby="page-title">
@@ -144,7 +235,7 @@ onMounted(async () => {
         <h1 id="page-title">{{ t('ui.m015') }}<br /><span>{{ t('ui.m016') }}</span></h1>
         <p class="hero-description">{{ t('ui.m017') }}</p>
         <p class="hero-intro">{{ t('ui.m018') }}</p>
-        <a class="text-link hero-link" href="#catalog">{{ t('ui.m019') }} <span aria-hidden="true">↓</span></a>
+        <a class="text-link hero-link" href="#catalog" @click.prevent="showView('catalog', 'catalog')">{{ t('ui.m019') }} <span aria-hidden="true">↓</span></a>
       </div>
       <div class="hero-landscape" aria-hidden="true">
         <svg viewBox="0 0 520 340" fill="none">
@@ -156,7 +247,7 @@ onMounted(async () => {
         <p>{{ t('ui.m020') }}<span>{{ t('ui.m021') }}</span></p>
       </div>
     </section>
-    <MapSection v-show="activeView === 'catalog'" :species="species" :loading="isLoading" :error="errorMessage" @open="openSpecies" />
+    <MapSection v-show="activeView === 'catalog' || activeView === 'map'" :mode="activeView === 'map' ? 'full' : 'preview'" :route-region="mapRouteRegion" :species="species" :loading="isLoading" :error="errorMessage" @open="openSpecies" @details="showMap" @regionchange="updateMapRegion" />
     <section v-show="activeView === 'catalog'" id="catalog" class="catalog page-container" aria-labelledby="catalog-title" tabindex="-1" :aria-busy="isLoading">
       <div class="catalog-heading">
         <div>
@@ -166,7 +257,6 @@ onMounted(async () => {
         <p class="catalog-note">{{ t('ui.m023') }}<br class="hidden sm:block" /> {{ t('ui.m024') }}</p>
       </div>
       <div class="catalog-tools">
-        <CatalogSearch v-model="query" :results="results" @open="openSearchResult" />
         <GroupFilter v-model="selectedGroup" :options="translatedGroups" :label="t('ui.m025')" />
       <div class="filter-bar">
         <div class="filter-field">
