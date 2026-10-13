@@ -1,12 +1,15 @@
 <script setup>
 import { useLocale } from '../../composables/useLocale.js'
-import { EMPTY_NAMES, GROUPS, TAXONOMY, textValue } from '../data/model.js'
+import { computed } from 'vue'
+import { EMPTY_NAMES, TAXONOMY, textValue } from '../data/model.js'
+import { editableGroups } from '../../data/species-groups.js'
 import { IUCN_CATEGORIES } from '../../data/species-model.js'
 import { groupLabel } from '../../data/presentation.js'
 import LocalizedFields from './LocalizedFields.vue'
 import SourcePicker from './SourcePicker.vue'
 const props=defineProps({species:{type:Object,required:true},tab:{type:String,required:true}})
 const emit=defineEmits(['change']);const {t,language}=useLocale()
+const groups=computed(()=>editableGroups([props.species]))
 const update=(path,value)=>emit('change',path,value)
 const number=event=>event.target.value === '' ? null : event.target.valueAsNumber
 function habitat(lang,value){update(['habitat'],{...(props.species.habitat || {sourceIds:[]}),description:{...(props.species.habitat?.description || EMPTY_NAMES),[lang]:value}})}
@@ -18,7 +21,7 @@ function remove(field,index){const list=props.species[field].filter((_,i)=>i!==i
     <label>ID<input :value="species.id" type="text" @input="update(['id'],$event.target.value)" /><small>{{ t('admin.idHint') }}</small></label>
     <label>{{ t('admin.scientificName') }}<input :value="species.scientificName || ''" lang="la" type="text" @input="update(['scientificName'],textValue($event.target.value))" /></label>
     <LocalizedFields :label="t('admin.names')" :value="species.names" @change="(lang,value)=>update(['names',lang],value)" />
-    <label>{{ t('ui.m054') }}<select :value="species.group || ''" @change="update(['group'],textValue($event.target.value))"><option value="">{{ t('admin.unknown') }}</option><option v-for="group in GROUPS" :key="group" :value="group">{{ groupLabel({group},language) }}</option></select></label>
+    <label>{{ t('ui.m054') }}<select :value="species.group || ''" @change="update(['group'],textValue($event.target.value))"><option value="">{{ t('admin.unknown') }}</option><option v-for="group in groups" :key="group" :value="group">{{ groupLabel({group},language) }}</option></select></label>
     <label v-for="(rank,i) in TAXONOMY" :key="rank">{{ t(`ui.m${String(55+i).padStart(3,'0')}`) }}<input :value="species.taxonomy[rank] || ''" lang="la" type="text" @input="update(['taxonomy',rank],textValue($event.target.value))" /></label>
     <label class="admin-check"><input type="checkbox" :checked="species.verified" @change="update(['verified'],$event.target.checked)" />{{ t('admin.verified') }}</label>
     <label>{{ t('admin.lastReviewed') }}<input type="date" :value="species.lastReviewedAt || ''" @change="update(['lastReviewedAt'],textValue($event.target.value))" /></label>

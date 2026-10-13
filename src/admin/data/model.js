@@ -5,7 +5,7 @@ import { publicImageUrl } from '../../data/presentation.js'
 
 export const MAX_JSON_BYTES = 2 * 1024 * 1024
 export const EMPTY_NAMES = Object.freeze({ ru: null, ky: null, en: null })
-export const GROUPS = ['mammals','birds','plants','fish','reptiles','amphibians','invertebrates','fungi']
+export { GROUPS } from '../../data/species-groups.js'
 export const TAXONOMY = ['kingdom','phylum','class','order','family','genus']
 export const clone = value => JSON.parse(JSON.stringify(value))
 export const object = value => value !== null && typeof value === 'object' && !Array.isArray(value)

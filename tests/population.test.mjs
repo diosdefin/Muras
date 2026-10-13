@@ -8,7 +8,7 @@ const source = { id: 'test-only', title: 'Synthetic fixture, not scientific evid
   supports: ['type', 'method', 'value', 'min', 'max', 'territory', 'year', 'unit'].map(field => `population.${field}`) }
 const fixture = (changes = {}) => ({ ...UNKNOWN_POPULATION, type: 'exact', value: 17, territory: 'Synthetic territory — not Kyrgyzstan', year: 2020, unit: 'особей', sourceIds: [source.id], reviewStatus: 'approved', method: 'complete-count', ...changes })
 const view = p => populationPresentation(p, [source])
-test('all nine public records and archive remain unknown; no automatic estimates or verification', async () => {
+test('all public records and archive remain unknown; no automatic estimates or verification', async () => {
   const data = JSON.parse(await readFile(new URL('../data/species.source.json', import.meta.url), 'utf8'))
   assert.deepEqual(validateSource(data), [])
   for (const species of [...data.catalog, ...data.demoArchive]) {
