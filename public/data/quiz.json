@@ -35,6 +35,28 @@
     ],
     "image": {
       "speciesImageIndex": 0
+    },
+    "translations": {
+      "ky": {
+        "question": "Сүрөттө кайсы түр көрсөтүлгөн?",
+        "options": {
+          "irbis": "Илбирс",
+          "manul": "Мадыл",
+          "argali": "Кулжа, аркар",
+          "golden-eagle": "Бүркүт"
+        },
+        "explanation": "Бул — илбирс. Каталогдо анын кыргызча аталышы «Илбирс» деп берилген. Commons түпнуска файл барагы сүрөттөгү жаныбарларды илбирстер деп аныктайт; тартылган жери ырасталган эмес."
+      },
+      "en": {
+        "question": "Which species is shown in the photograph?",
+        "options": {
+          "irbis": "Snow Leopard",
+          "manul": "Pallas’s cat",
+          "argali": "Argali",
+          "golden-eagle": "Golden Eagle"
+        },
+        "explanation": "This is a snow leopard. Its Kyrgyz name in the catalog is “Илбирс”. The original Commons file page identifies the animals as snow leopards; the location of the photograph is unconfirmed."
+      }
     }
   },
   {
@@ -72,6 +94,28 @@
     ],
     "image": {
       "speciesImageIndex": 0
+    },
+    "translations": {
+      "ky": {
+        "question": "Сүрөттөгү мышыкты тааныңыз.",
+        "options": {
+          "manul": "Мадыл",
+          "irbis": "Илбирс",
+          "argali": "Кулжа, аркар",
+          "saker-falcon": "Ителги"
+        },
+        "explanation": "Сүрөттө — мадыл. Сүрөт Москва зоопаркында тартылган: ал түрдү көрсөтөт, бирок бул жаныбар Кыргызстанда кездешкенин далилдебейт."
+      },
+      "en": {
+        "question": "Identify the cat in the photograph.",
+        "options": {
+          "manul": "Pallas’s cat",
+          "irbis": "Snow Leopard",
+          "argali": "Argali",
+          "saker-falcon": "Saker Falcon"
+        },
+        "explanation": "This is a Pallas’s cat. The photograph was taken at Moscow Zoo: it illustrates the species and does not establish that this particular animal occurred in Kyrgyzstan."
+      }
     }
   },
   {
@@ -110,6 +154,28 @@
     ],
     "image": {
       "speciesImageIndex": 0
+    },
+    "translations": {
+      "ky": {
+        "question": "Учуп бараткан бул канаттуунун аталышы кандай?",
+        "options": {
+          "golden-eagle": "Бүркүт",
+          "bearded-vulture": "Көк жору, балта жутар",
+          "saker-falcon": "Ителги",
+          "manul": "Мадыл"
+        },
+        "explanation": "Бул — бүркүт. Түрдү аныктоо Commons сүрөт барагы менен ырасталат; тартылган так жери белгиленген эмес."
+      },
+      "en": {
+        "question": "What is this bird in flight called?",
+        "options": {
+          "golden-eagle": "Golden Eagle",
+          "bearded-vulture": "Lammergeier",
+          "saker-falcon": "Saker Falcon",
+          "manul": "Pallas’s cat"
+        },
+        "explanation": "This is a golden eagle, called “Бүркүт” in Kyrgyz. The Commons photo page confirms the identification; the exact location of the photograph is not established."
+      }
     }
   },
   {
@@ -149,6 +215,28 @@
     ],
     "image": {
       "speciesImageIndex": 0
+    },
+    "translations": {
+      "ky": {
+        "question": "Бул сүрөттөгү канаттууну аныктаңыз.",
+        "options": {
+          "bearded-vulture": "Көк жору, балта жутар",
+          "golden-eagle": "Бүркүт",
+          "saker-falcon": "Ителги",
+          "argali": "Кулжа, аркар"
+        },
+        "explanation": "Сүрөттө — көк жору, балта жутар. Түпнуска барак боюнча сүрөт Италиядагы Гран-Парадизодо тартылган. Бул түрдүн сүрөтү; анын Кыргызстанда кездешүүсү каталогдо өзүнчө ырасталат."
+      },
+      "en": {
+        "question": "Identify the bird in this photograph.",
+        "options": {
+          "bearded-vulture": "Lammergeier",
+          "golden-eagle": "Golden Eagle",
+          "saker-falcon": "Saker Falcon",
+          "argali": "Argali"
+        },
+        "explanation": "This is a lammergeier. According to the original page, the photograph was taken in Gran Paradiso, Italy. It illustrates the species; its occurrence in Kyrgyzstan is supported separately in the catalog."
+      }
     }
   },
   {
@@ -183,7 +271,41 @@
       "names.ru",
       "names.ky"
     ],
-    "image": null
+    "image": null,
+    "translations": {
+      "ky": {
+        "question": "Кыргызча «Ителги» кайсы орусча аталышка туура келет?",
+        "options": {
+          "saker-falcon": "Балобан",
+          "golden-eagle": "Беркут",
+          "bearded-vulture": "Бородач",
+          "irbis": "Ирбис"
+        },
+        "explanation": "«Ителги» — орусча «Балобан». Бул аталыштардын жуптугу №170 токтомдун канаттуулар тизмесинде берилген жана каталогдогу аталыштарга негиз болгон.",
+        "optionLanguages": {
+          "saker-falcon": "ru",
+          "golden-eagle": "ru",
+          "bearded-vulture": "ru",
+          "irbis": "ru"
+        }
+      },
+      "en": {
+        "question": "Which Russian name corresponds to the Kyrgyz name “Ителги”?",
+        "options": {
+          "saker-falcon": "Балобан",
+          "golden-eagle": "Беркут",
+          "bearded-vulture": "Бородач",
+          "irbis": "Ирбис"
+        },
+        "explanation": "“Ителги” corresponds to the Russian name “Балобан” (saker falcon). This pair of names is given in the birds list of Resolution No. 170, the basis for the catalog names.",
+        "optionLanguages": {
+          "saker-falcon": "ru",
+          "golden-eagle": "ru",
+          "bearded-vulture": "ru",
+          "irbis": "ru"
+        }
+      }
+    }
   },
   {
     "id": "beginner-greig-kyrgyz-name",
@@ -217,7 +339,29 @@
       "names.ru",
       "names.ky"
     ],
-    "image": null
+    "image": null,
+    "translations": {
+      "ky": {
+        "question": "Кайсы өсүмдүк «Грейг мандалагы» деп аталат?",
+        "options": {
+          "greigs-tulip": "Грейг мандалагы",
+          "kaufmanns-tulip": "Кауфман мандалагы",
+          "sievers-apple": "Кызыл алма",
+          "manul": "Мадыл"
+        },
+        "explanation": "«Грейг мандалагы» — орусча «Тюльпан Грейга». Кыргызча аталыш котормочу тарабынан ойлоп табылган эмес, токтомдун өсүмдүктөр таблицасынан алынган."
+      },
+      "en": {
+        "question": "Which plant is called “Грейг мандалагы”?",
+        "options": {
+          "greigs-tulip": "Greig's Tulip",
+          "kaufmanns-tulip": "Kaufmann’s Tulip",
+          "sievers-apple": "Sievers's Apple-tree",
+          "manul": "Pallas’s cat"
+        },
+        "explanation": "“Грейг мандалагы” is Greig’s tulip. The Kyrgyz name comes from the resolution’s plants table; it was not invented by a translator."
+      }
+    }
   },
   {
     "id": "researcher-manul-habitat",
@@ -250,7 +394,29 @@
     "factPaths": [
       "habitat"
     ],
-    "image": null
+    "image": null,
+    "translations": {
+      "ky": {
+        "question": "Каталогдо мадылдын кайсы бийик тоолуу жашоо чөйрөлөрү сүрөттөлгөн?",
+        "options": {
+          "steppe": "Тянь-Шандын талаалары жана сырттары",
+          "forest": "Жыш токойлор гана",
+          "water": "Көлдөрдүн ачык суу бети",
+          "garden": "Ботаникалык бактар гана"
+        },
+        "explanation": "Тянь-Шань шартында мадыл бийик тоолуу талааларда жана сырттарда жашайт. Сүрөттөөдө таштуу жерлер, аска жаракалары жана суурдун ийиндери да көрсөтүлгөн."
+      },
+      "en": {
+        "question": "Which high-mountain habitats of Pallas’s cat are described in the catalog?",
+        "options": {
+          "steppe": "Steppes and syrts of the Tien Shan",
+          "forest": "Only dense forests",
+          "water": "The open water surface of lakes",
+          "garden": "Only botanical gardens"
+        },
+        "explanation": "In the Tien Shan, Pallas’s cat occupies high-mountain steppes and syrts. The description also mentions rocky areas, rock crevices and marmot burrows."
+      }
+    }
   },
   {
     "id": "researcher-saker-power-lines",
@@ -284,7 +450,29 @@
       "threats.0",
       "threats.1"
     ],
-    "image": null
+    "image": null,
+    "translations": {
+      "ky": {
+        "question": "Тизмедеги ителгиге болгон кайсы коркунуч каталогдо көрсөтүлгөн?",
+        "options": {
+          "power": "Электр берүү линияларынын тирөөчтөрүндө өлүмгө учуроо",
+          "bulbs": "Пияз түптөрүн казып алуу",
+          "wood": "Дарактарды отун үчүн кыюу",
+          "marmots": "Суурларды аңчылык менен кармоо"
+        },
+        "explanation": "Ителги үчүн жашоо чөйрөсүнүн бузулушу жана электр берүү линияларынын тирөөчтөрүндө өлүмгө учуроо көрсөтүлгөн. Карточкадагы дагы бир фактор — балапандарын алуу жана сатуу үчүн кармоо."
+      },
+      "en": {
+        "question": "Which of these threats to the saker falcon is listed in the catalog?",
+        "options": {
+          "power": "Deaths on power-line supports",
+          "bulbs": "Digging up bulbs",
+          "wood": "Felling trees for fuel",
+          "marmots": "Hunting marmots"
+        },
+        "explanation": "Habitat degradation and deaths on power-line supports are listed for the saker falcon. Another factor in its entry is the removal of chicks and capture for sale."
+      }
+    }
   },
   {
     "id": "researcher-greig-protection",
@@ -317,7 +505,29 @@
     "factPaths": [
       "conservationMeasures.0"
     ],
-    "image": null
+    "image": null,
+    "translations": {
+      "ky": {
+        "question": "Грейг мандалагы үчүн 2006-жылкы басылыштын кайсы сунушу берилген?",
+        "options": {
+          "flowers": "Гүлдөрүн жана пияз түптөрүн чогултууга тыюу салуу",
+          "nests": "Уя салган жерлерди картага түшүрүү",
+          "marmots": "Суурларды кармоону токтотуу",
+          "trees": "Өзүнчө дарак өсүндүлөрүн коргоо"
+        },
+        "explanation": "Басылыш Грейг мандалагынын гүлдөрүн жана пияз түптөрүн чогултууга тыюу салууну, гүлдөө учурунда мал жаюуну чектөөнү жана популяцияларга байкоо жүргүзүүнү сунуштайт. Бул — булактын сунуштары, алардын толук аткарылганы жөнүндө билдирүү эмес."
+      },
+      "en": {
+        "question": "Which recommendation from the 2006 edition is given for Greig’s tulip?",
+        "options": {
+          "flowers": "Ban on collecting flowers and bulbs",
+          "nests": "Mapping nesting sites",
+          "marmots": "Ending marmot hunting",
+          "trees": "Protecting isolated stands of trees"
+        },
+        "explanation": "The edition recommends banning the collection of Greig’s tulip flowers and bulbs, limiting grazing during flowering and monitoring populations. These are source recommendations, not a claim that they have all been implemented."
+      }
+    }
   },
   {
     "id": "researcher-apple-threat",
@@ -351,7 +561,29 @@
       "threats.0",
       "threats.1"
     ],
-    "image": null
+    "image": null,
+    "translations": {
+      "ky": {
+        "question": "Кызыл алмага болгон кайсы коркунуч анын карточкасында түз көрсөтүлгөн?",
+        "options": {
+          "wood": "Дарактарды отун үчүн кыюу",
+          "chicks": "Уялардан балапандарды алуу",
+          "power": "Электр линияларынын тирөөчтөрүндө өлүмгө учуроо",
+          "marmots": "Суурларды кармоо"
+        },
+        "explanation": "Кызыл алманын карточкасында дарактарды отун үчүн кыюу жана малды ашыкча жаюу көрсөтүлгөн. Бул коркунучтар 2006-жылкы улуттук Кызыл китептин негизинде баяндалган."
+      },
+      "en": {
+        "question": "Which threat to Sievers’s apple-tree is explicitly listed in its entry?",
+        "options": {
+          "wood": "Felling trees for fuel",
+          "chicks": "Removing chicks from nests",
+          "power": "Deaths on power-line supports",
+          "marmots": "Hunting marmots"
+        },
+        "explanation": "Felling trees for fuel and excessive livestock grazing are listed in the Sievers’s apple-tree entry. These threats are summarized from the 2006 national Red Book."
+      }
+    }
   },
   {
     "id": "researcher-eagle-nests",
@@ -385,7 +617,29 @@
       "threats.1",
       "conservationMeasures.0"
     ],
-    "image": null
+    "image": null,
+    "translations": {
+      "ky": {
+        "question": "Каталогдо бүркүттү тынчсыздандыруунун жана түз таасир этүүнүн кайсы фактору көрсөтүлгөн?",
+        "options": {
+          "chicks": "Уялардан балапандарды алуу",
+          "bulbs": "Пияз түптөрүн казып алуу",
+          "wood": "Отун үчүн кыюу",
+          "flowers": "Гүлдөрдү чогултуу"
+        },
+        "explanation": "Уялардан балапандарды алуу жана тынчсыздандыруу бүркүткө болгон коркунучтардын арасында көрсөтүлгөн. 2006-жылкы басылышта уя салган жерлерди коргоону күчөтүү жана эсепке алуу сунушталган."
+      },
+      "en": {
+        "question": "Which disturbance and direct-impact factor for the golden eagle is listed in the catalog?",
+        "options": {
+          "chicks": "Removing chicks from nests",
+          "bulbs": "Digging up bulbs",
+          "wood": "Felling for fuel",
+          "flowers": "Collecting flowers"
+        },
+        "explanation": "Removing chicks from nests and disturbance are among the threats listed for the golden eagle. The 2006 edition proposes stronger protection of nesting sites and recording them."
+      }
+    }
   },
   {
     "id": "researcher-vulture-protection",
@@ -418,7 +672,29 @@
     "factPaths": [
       "conservationMeasures.0"
     ],
-    "image": null
+    "image": null,
+    "translations": {
+      "ky": {
+        "question": "2006-жылкы басылышта көк жоруну коргоонун кайсы чарасы сунушталган?",
+        "options": {
+          "nests": "Уя салган жерлерди коргоо жана картага түшүрүү",
+          "bulbs": "Пияз түптөрүн чогултууга тыюу салуу",
+          "marmots": "Сырттарда суурларды кармоону токтотуу",
+          "trees": "Өзүнчө алма өсүндүлөрүн коргоо"
+        },
+        "explanation": "Көк жору үчүн уя салган жерлерди коргоо жана картага түшүрүү, ошондой эле жергиликтүү тургундарга маалымат берүү сунушталган. Чаралар 2006-жылкы улуттук басылыштын сунуштарына тиешелүү."
+      },
+      "en": {
+        "question": "Which conservation measure for the lammergeier is recommended in the 2006 edition?",
+        "options": {
+          "nests": "Protecting and mapping nesting sites",
+          "bulbs": "Ban on collecting bulbs",
+          "marmots": "Ending marmot hunting in the syrt zone",
+          "trees": "Protecting isolated apple-tree stands"
+        },
+        "explanation": "Protecting and mapping nesting sites and informing local residents are recommended for the lammergeier. These measures are recommendations of the 2006 national edition."
+      }
+    }
   },
   {
     "id": "expert-saker-scientific-name",
@@ -453,7 +729,29 @@
       "names.ru",
       "scientificName"
     ],
-    "image": null
+    "image": null,
+    "translations": {
+      "ky": {
+        "question": "Ителгиге кайсы илимий аталыш туура келет?",
+        "options": {
+          "falco": "Falco cherrug",
+          "aquila": "Aquila chrysaetos",
+          "gypaetus": "Gypaetus barbatus",
+          "ovis": "Ovis ammon"
+        },
+        "explanation": "Ителги — Falco cherrug. Түрдүн ушул кабыл алынган жазуусу GBIF аркылуу жарыяланган IUCN маалымат топтомунан табылган жана каталогдо колдонулат."
+      },
+      "en": {
+        "question": "Which scientific name corresponds to the saker falcon?",
+        "options": {
+          "falco": "Falco cherrug",
+          "aquila": "Aquila chrysaetos",
+          "gypaetus": "Gypaetus barbatus",
+          "ovis": "Ovis ammon"
+        },
+        "explanation": "The saker falcon is Falco cherrug. This accepted species record was found in the IUCN dataset published through GBIF and is used in the catalog."
+      }
+    }
   },
   {
     "id": "expert-greig-scientific-name",
@@ -488,7 +786,29 @@
       "names.ru",
       "scientificName"
     ],
-    "image": null
+    "image": null,
+    "translations": {
+      "ky": {
+        "question": "Грейг мандалагынын илимий аталышын тандаңыз.",
+        "options": {
+          "greigii": "Tulipa greigii",
+          "kaufmanniana": "Tulipa kaufmanniana",
+          "sieversii": "Malus sieversii",
+          "chrysaetos": "Aquila chrysaetos"
+        },
+        "explanation": "Грейг мандалагы — Tulipa greigii. Илимий аталыш GBIFтеги жарыяланган IUCN топтомунун кабыл алынган жазуусу менен ырасталган."
+      },
+      "en": {
+        "question": "Choose the scientific name of Greig’s tulip.",
+        "options": {
+          "greigii": "Tulipa greigii",
+          "kaufmanniana": "Tulipa kaufmanniana",
+          "sieversii": "Malus sieversii",
+          "chrysaetos": "Aquila chrysaetos"
+        },
+        "explanation": "Greig’s tulip is Tulipa greigii. The scientific name is supported by the accepted record in the published IUCN dataset on GBIF."
+      }
+    }
   },
   {
     "id": "expert-saker-family",
@@ -523,7 +843,29 @@
       "names.ru",
       "taxonomy.family"
     ],
-    "image": null
+    "image": null,
+    "translations": {
+      "ky": {
+        "question": "Каталогдун таксономиясында ителги кайсы тукумга кирет?",
+        "options": {
+          "falconidae": "Falconidae",
+          "accipitridae": "Accipitridae",
+          "felidae": "Felidae",
+          "liliaceae": "Liliaceae"
+        },
+        "explanation": "Ителги Falconidae тукумуна кирет. Тукум GBIFтеги IUCNдин кабыл алынган таксономиялык жазуусунан алынган жана коргоо категорияларынан өзүнчө каралат."
+      },
+      "en": {
+        "question": "Which family does the saker falcon belong to in the catalog taxonomy?",
+        "options": {
+          "falconidae": "Falconidae",
+          "accipitridae": "Accipitridae",
+          "felidae": "Felidae",
+          "liliaceae": "Liliaceae"
+        },
+        "explanation": "The saker falcon belongs to Falconidae. The family comes from the accepted IUCN taxonomic record on GBIF, separately from conservation categories."
+      }
+    }
   },
   {
     "id": "expert-tulip-family",
@@ -559,7 +901,29 @@
       "scientificName",
       "taxonomy.family"
     ],
-    "image": null
+    "image": null,
+    "translations": {
+      "ky": {
+        "question": "Каталогдо Кауфман мандалагы үчүн кайсы тукум көрсөтүлгөн?",
+        "options": {
+          "liliaceae": "Liliaceae",
+          "rosaceae": "Rosaceae",
+          "bovidae": "Bovidae",
+          "felidae": "Felidae"
+        },
+        "explanation": "Кауфман мандалагы, Tulipa kaufmanniana, Liliaceae тукумуна кирет. Илимий аталыш жана тукум GBIFтеги IUCN топтомунун кабыл алынган жазуусу менен ырасталган."
+      },
+      "en": {
+        "question": "Which family is listed in the catalog for Kaufmann’s tulip?",
+        "options": {
+          "liliaceae": "Liliaceae",
+          "rosaceae": "Rosaceae",
+          "bovidae": "Bovidae",
+          "felidae": "Felidae"
+        },
+        "explanation": "Kaufmann’s tulip, Tulipa kaufmanniana, belongs to Liliaceae. The scientific name and family are supported by the accepted record in the IUCN dataset on GBIF."
+      }
+    }
   },
   {
     "id": "expert-apple-reserves",
@@ -594,7 +958,29 @@
       "names.ru",
       "conservationMeasures.0"
     ],
-    "image": null
+    "image": null,
+    "translations": {
+      "ky": {
+        "question": "Кайсы түрдүн карточкасында 2006-жылкы басылыштын Сары-Челек, Беш-Арал жана Падыша-Ата коруктарында корголушу жөнүндө маалымат берилген?",
+        "options": {
+          "sievers-apple": "Кызыл алма",
+          "greigs-tulip": "Грейг мандалагы",
+          "kaufmanns-tulip": "Кауфман мандалагы",
+          "manul": "Мадыл"
+        },
+        "explanation": "Бул үч корук 2006-жылкы басылыш боюнча кызыл алманын карточкасында көрсөтүлгөн. Датасы маанилүү: суроо 2026-жылы коргоо боюнча жаңы эсеп жүргүзүлгөнүн билдирбейт."
+      },
+      "en": {
+        "question": "Which species entry includes information from the 2006 edition about protection in the Sary-Chelek, Besh-Aral and Padysha-Ata reserves?",
+        "options": {
+          "sievers-apple": "Sievers's Apple-tree",
+          "greigs-tulip": "Greig's Tulip",
+          "kaufmanns-tulip": "Kaufmann’s Tulip",
+          "manul": "Pallas’s cat"
+        },
+        "explanation": "These three reserves are listed in the Sievers’s apple-tree entry based on the 2006 edition. The date matters: the question does not claim that a new conservation survey was conducted in 2026."
+      }
+    }
   },
   {
     "id": "expert-eagle-order",
@@ -630,6 +1016,28 @@
       "scientificName",
       "taxonomy.order"
     ],
-    "image": null
+    "image": null,
+    "translations": {
+      "ky": {
+        "question": "Каталогдун кабыл алынган таксономиясында бүркүт үчүн кайсы отряд көрсөтүлгөн?",
+        "options": {
+          "accipitriformes": "Accipitriformes",
+          "falconiformes": "Falconiformes",
+          "carnivora": "Carnivora",
+          "liliales": "Liliales"
+        },
+        "explanation": "Бүркүт үчүн Accipitriformes отряды көрсөтүлгөн. Бул классификация GBIFтеги жарыяланган IUCN топтомунун Aquila chrysaetos боюнча кабыл алынган жазуусунан алынган."
+      },
+      "en": {
+        "question": "Which order is listed for the golden eagle in the accepted catalog taxonomy?",
+        "options": {
+          "accipitriformes": "Accipitriformes",
+          "falconiformes": "Falconiformes",
+          "carnivora": "Carnivora",
+          "liliales": "Liliales"
+        },
+        "explanation": "The golden eagle is listed under Accipitriformes. This classification comes from the accepted Aquila chrysaetos record in the published IUCN dataset on GBIF."
+      }
+    }
   }
 ]

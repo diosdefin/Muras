@@ -81,7 +81,8 @@ export function searchSpecies(index, value) {
     let best = null
     for (const alias of item.aliases) {
       const score = fuzzy ? fuzzyScore(alias, tokens) : directScore(alias, query, tokens) + (alias.transliterated ? 4 : 0)
-      if (Number.isFinite(score) && (!best || score < best.score)) best = { score, species: item.species, order: item.order, matchedName: alias.name, language: alias.language, kind: fuzzy ? 'fuzzy' : alias.transliterated ? 'transliteration' : 'direct' }
+      if (Number.isFinite(score) && (!best || score < best.score)) best = { score, species: item.species, order: item.order, matchedName: alias.name, language: alias.language, matchedLanguages: [alias.language], kind: fuzzy ? 'fuzzy' : alias.transliterated ? 'transliteration' : 'direct' }
+      else if (Number.isFinite(score) && score === best?.score && !best.matchedLanguages.includes(alias.language)) best.matchedLanguages.push(alias.language)
     }
     return best
   }).filter(Boolean).sort((a, b) => a.score - b.score || a.order - b.order)

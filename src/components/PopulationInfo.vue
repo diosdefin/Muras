@@ -1,23 +1,28 @@
 <script setup>
+import SourceLink from "./SourceLink.vue"
+import { useLocale } from '../composables/useLocale.js'
 import { computed } from 'vue'
 import { populationCells, populationPresentation } from '../data/population.js'
+
+const { t, language } = useLocale()
+
 const props = defineProps({ population: { type: Object, default: null }, sources: { type: Array, default: () => [] } })
-const presentation = computed(() => populationPresentation(props.population, props.sources))
+const presentation = computed(() => populationPresentation(props.population, props.sources, language.value))
 const marks = computed(() => populationCells(presentation.value))
 </script>
 <template>
-  <section class="population-info" aria-label="Научные сведения о численности">
-    <h3>Численность</h3>
+  <section class="population-info" :aria-label="t('ui.m157')">
+    <h3>{{ t('ui.m158') }}</h3>
     <p class="population-value">{{ presentation.label }}</p>
     <template v-if="presentation.type !== 'unknown'">
-      <dl><div><dt>Точность</dt><dd>{{ presentation.accuracy }}</dd></div><div><dt>Территория</dt><dd>{{ presentation.territory }}</dd></div><div><dt>Год</dt><dd>{{ presentation.year }}</dd></div><div><dt>Единица учёта</dt><dd>{{ presentation.unit }}</dd></div></dl>
+      <dl><div><dt>{{ t('ui.m159') }}</dt><dd>{{ presentation.accuracy }}</dd></div><div><dt>{{ t('ui.m160') }}</dt><dd>{{ presentation.territory }}</dd></div><div><dt>{{ t('ui.m161') }}</dt><dd>{{ presentation.year }}</dd></div><div><dt>{{ t('ui.m162') }}</dt><dd>{{ presentation.unit }}</dd></div></dl>
       <div v-if="marks.cells.length" class="population-cells" aria-hidden="true"><span v-for="(count, index) in marks.cells" :key="index" :title="`${count} ${presentation.unit}`" :style="{ opacity: 0.35 + 0.65 * count / marks.scale }" /></div>
-      <p v-if="marks.cells.length" class="population-note">{{ marks.scale === 1 ? `Одна ячейка — одна единица учёта (${presentation.unit}); всего ${marks.cells.length}.` : `Одна полная ячейка — ${marks.scale} ${presentation.unit}. Последняя — ${marks.cells.at(-1)}. Это агрегированное представление полного подсчёта.` }}</p>
-      <p v-else class="population-note">Оценочное значение не представлено как точно подсчитанные особи.</p>
-      <ul class="population-sources"><li v-for="source in presentation.sources" :key="source.id"><a :href="source.url" target="_blank" rel="noopener noreferrer">{{ source.title }} <span class="sr-only">(новая вкладка)</span> ↗</a></li></ul>
+      <p v-if="marks.cells.length" class="population-note">{{ marks.scale === 1 ? t('ui.m163', { p0: presentation.unit, p1: marks.cells.length }) : t('ui.m164', { p0: marks.scale, p1: presentation.unit, p2: marks.cells.at(-1) }) }}</p>
+      <p v-else class="population-note">{{ t('ui.m165') }}</p>
+      <ul class="population-sources"><li v-for="source in presentation.sources" :key="source.id"><SourceLink :source="source" /></li></ul>
     </template>
-    <p v-else class="population-note">Отсутствие опубликованной подтверждённой оценки не означает, что вид исчез. Неизвестное значение не равно нулю.</p>
-    <p v-if="presentation.needsReview" class="population-note">Предложенная оценка требует редакторской проверки и пока не опубликована.</p>
+    <p v-else class="population-note">{{ t('ui.m166') }}</p>
+    <p v-if="presentation.needsReview" class="population-note">{{ t('ui.m167') }}</p>
   </section>
 </template>
 <style scoped>

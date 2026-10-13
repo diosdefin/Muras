@@ -1,3 +1,4 @@
+import { tr } from '../locales/index.js'
 // Transport-independent scientific model; an API can supply the same object later.
 export const UNKNOWN_POPULATION = Object.freeze({ type: 'unknown', value: null, min: null, max: null,
   territory: null, year: null, unit: null, sourceIds: Object.freeze([]), reviewStatus: 'pending', method: null })
@@ -48,14 +49,14 @@ export function validatePopulation(population, sources = [], path = 'population'
 }
 
 // Pending/rejected or malformed claims never become published population facts.
-export function populationPresentation(population, sources = []) {
+export function populationPresentation(population, sources = [], language = 'ru') {
   const published = population?.type !== 'unknown' && population?.reviewStatus === 'approved' && !validatePopulation(population, sources).length
   const p = published ? population : UNKNOWN_POPULATION
-  const number = new Intl.NumberFormat('ru-RU', { maximumFractionDigits: 10 })
-  const label = p.type === 'unknown' ? UNKNOWN_LABEL : `${p.type === 'approximate' && p.value !== null ? '≈ ' : ''}${p.value !== null ? number.format(p.value) : `${number.format(p.min)}–${number.format(p.max)}`} ${p.unit}`
+  const number = new Intl.NumberFormat(language, { maximumFractionDigits: 10 })
+  const label = p.type === 'unknown' ? tr(language, 'population.unknown') : `${p.type === 'approximate' && p.value !== null ? '≈ ' : ''}${p.value !== null ? number.format(p.value) : `${number.format(p.min)}–${number.format(p.max)}`} ${p.unit}`
   return { ...p, label, needsReview: population?.type && population.type !== 'unknown' && !published,
     sources: published ? sources.filter(source => p.sourceIds.includes(source.id)) : [],
-    accuracy: { exact: 'Полный подсчёт', approximate: 'Приблизительная оценка', unknown: 'Оценка отсутствует' }[p.type] }
+    accuracy: tr(language, p.type === 'unknown' ? 'population.noEstimate' : `population.${p.type}`) }
 }
 
 // Only exact, approved counts get individual cells. Remainders are labelled explicitly.

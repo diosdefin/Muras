@@ -33,7 +33,7 @@ export function validateQuestions(questions, catalog) {
     const p = `quiz[${index}]`
     if (!q || typeof q !== 'object' || Array.isArray(q)) { fail(p, 'ожидается объект вопроса'); return }
     for (const field of fields) if (!(field in q)) fail(`${p}.${field}`, 'обязательное поле отсутствует')
-    for (const key of Object.keys(q)) if (!fields.includes(key)) fail(`${p}.${key}`, 'неизвестное поле')
+    for (const key of Object.keys(q)) if (![...fields, 'translations'].includes(key)) fail(`${p}.${key}`, 'неизвестное поле')
     if (!text(q.id) || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(q.id) || ids.has(q.id)) fail(`${p}.id`, 'нужен уникальный безопасный id')
     ids.add(q.id)
     if (!DIFFICULTIES.some(level => level.id === q.difficulty)) fail(`${p}.difficulty`, 'неизвестный уровень')
@@ -51,6 +51,21 @@ export function validateQuestions(questions, catalog) {
         optionIds.add(option.id); optionTexts.add(option.text.trim().toLocaleLowerCase('ru'))
       })
       if (!text(q.correctAnswerId) || !optionIds.has(q.correctAnswerId)) fail(`${p}.correctAnswerId`, 'правильный ответ должен быть одним из вариантов')
+    }
+    if (q.translations !== undefined) {
+      if (!q.translations || typeof q.translations !== 'object' || Array.isArray(q.translations)) fail(`${p}.translations`, 'ожидается объект ky/en')
+      else {
+        for (const lang of Object.keys(q.translations)) {
+          const v = q.translations[lang], vp = `${p}.translations.${lang}`
+          if (!['ky','en'].includes(lang) || !v || typeof v !== 'object' || Array.isArray(v)) { fail(vp, 'неизвестный язык или неверная версия'); continue }
+          for (const key of Object.keys(v)) if (!['question','explanation','options','optionLanguages'].includes(key)) fail(`${vp}.${key}`, 'неизвестное поле; идентификаторы и ответы общие для всех языков')
+          if (!text(v.question) || !text(v.explanation)) fail(vp, 'нужны переведённые question и explanation')
+          const ids = (Array.isArray(q.options) ? q.options : []).map(o => o?.id)
+          if (!v.options || typeof v.options !== 'object' || Array.isArray(v.options) || Object.keys(v.options).length !== 4 || ids.some(id => !text(v.options[id])) || Object.keys(v.options).some(id => !ids.includes(id))) fail(`${vp}.options`, 'требуются четыре непустых перевода с исходными id ответов')
+          else if (new Set(Object.values(v.options).map(value => value.trim().toLowerCase())).size !== 4) fail(`${vp}.options`, 'повторяющиеся варианты перевода')
+          if (v.optionLanguages !== undefined && (!v.optionLanguages || typeof v.optionLanguages !== 'object' || Array.isArray(v.optionLanguages) || Object.entries(v.optionLanguages).some(([id, language]) => !ids.includes(id) || !['ky','ru','en','la'].includes(language)))) fail(`${vp}.optionLanguages`, 'неверные id или языки вариантов')
+        }
+      }
     }
     const species = questionSpecies(q, catalog)
     if (!species) { fail(`${p}.speciesId`, 'неизвестный вид национального каталога'); return }
