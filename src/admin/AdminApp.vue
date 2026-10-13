@@ -13,8 +13,9 @@ import SpeciesFields from './components/SpeciesFields.vue'
 import SourcesEditor from './components/SourcesEditor.vue'
 import PopulationEditor from './components/PopulationEditor.vue'
 import PhotoEditor from './components/PhotoEditor.vue'
+import BrandLogo from '../components/BrandLogo.vue'
 import ConfirmDialog from './components/ConfirmDialog.vue'
-const {t,language,siteLanguage,setLanguage}=useLocale();syncLocaleMetadata()
+const {t,language,siteLanguage,setLanguage}=useLocale();syncLocaleMetadata({admin:true})
 const editor=useAdminEditor()
 const {document:source,current,selectedIndex,dirty,saving,message,details,assets}=editor
 const published=ref([]),loading=ref(true),query=ref(''),group=ref('ALL'),review=ref('ALL'),population=ref('ALL')
@@ -54,7 +55,7 @@ onBeforeUnmount(()=>{session.dispose();resolveConfirmation?.(false)})
 <template>
   <div class="admin-app">
     <a class="skip-link" href="#admin-main">{{ t('ui.m004') }}</a>
-    <aside class="admin-sidebar"><a class="admin-brand" :href="publicUrl">Redbook <span>{{ t('admin.title') }}</span></a><nav :aria-label="t('admin.navigation')"><button type="button" :aria-current="!guide?'page':undefined" @click="guide=false;selectedIndex=-1">{{ t('admin.species') }}</button><button type="button" :aria-current="guide?'page':undefined" @click="guide=true">{{ t('admin.guide') }}</button></nav><p>{{ t('admin.localOnly') }}</p></aside>
+    <aside class="admin-sidebar"><a class="admin-brand" :href="publicUrl" aria-label="Muras Admin"><BrandLogo /><span>Admin · {{ t('admin.title') }}</span></a><nav :aria-label="t('admin.navigation')"><button type="button" :aria-current="!guide?'page':undefined" @click="guide=false;selectedIndex=-1">{{ t('admin.species') }}</button><button type="button" :aria-current="guide?'page':undefined" @click="guide=true">{{ t('admin.guide') }}</button></nav><p>{{ t('admin.localOnly') }}</p></aside>
     <div class="admin-workspace">
       <header class="admin-header"><div><strong>{{ t('admin.title') }}</strong><span class="admin-save-status" role="status">{{ !source?t('admin.noDocument'):dirty?t('admin.unsaved'):saving?t('admin.saving'):t('admin.localSaved') }}</span></div><label><span class="sr-only">{{ t('chooseLanguage') }}</span><select :value="siteLanguage" :aria-label="t('chooseLanguage')" @change="setLanguage($event.target.value)"><option value="ky" lang="ky">Кыргызча (KY)</option><option value="ru" lang="ru">Русский (RU)</option><option value="en" lang="en">English (EN)</option></select></label></header>
       <main id="admin-main" class="admin-main">
