@@ -1,0 +1,7 @@
+# Preserve immutable legacy backup bytes, including original line endings.
+data/backups/** -text whitespace=cr-at-eol
+# Preserve the fingerprinted upstream geometry across Windows checkouts.
+data/geography/source/regions.geojson -text
+# Keep upstream licence formatting, including its trailing spaces.
+data/geography/source/ODbL-1.0.txt -text whitespace=-blank-at-eol
+public/data/geography/ODbL-1.0.txt text eol=lf whitespace=-blank-at-eol

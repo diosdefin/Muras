@@ -1,156 +1,123 @@
 <script setup>
-import { computed, nextTick, onBeforeUnmount, onMounted, ref, watch } from 'vue'
+import SourceLink from "./SourceLink.vue"
+import { provideContentLanguage, useLocale } from '../composables/useLocale.js'
+import { computed, ref, toRef } from 'vue'
+import { groupLabel, nationalStatus, regionNames, speciesName, speciesPhoto, statusDetails } from '../data/presentation.js'
+import { populationPresentation } from '../data/population.js'
+import { useModalDialog } from '../composables/useModalDialog.js'
+import { siteLanguage } from '../composables/useLocale.js'
+import ScientificText from './ScientificText.vue'
+import SpeciesVisualization from './SpeciesVisualization.vue'
+import LessonReferences from './lesson/LessonReferences.vue'
+import PopulationInfo from './PopulationInfo.vue'
 
-const props = defineProps({
-  species: { type: Object, required: true },
-})
-const emit = defineEmits(['close'])
-
-const canvas = ref(null)
-const activeLanguage = ref('ru')
-const populationValue = ref(props.species.population)
-const image = new Image()
-
-const imagePath = computed(() =>
-  props.species.image || `/images/processed/${props.species.id}.png`,
-)
-const formattedPopulation = computed(() =>
-  new Intl.NumberFormat('ru-RU').format(populationValue.value),
-)
-const languages = computed(() => [
-  { key: 'ru', label: 'RU', name: props.species.name_ru, description: props.species.description_ru },
-  { key: 'kg', label: 'KG', name: props.species.name_kg, description: props.species.description_kg },
-  { key: 'en', label: 'EN', name: props.species.name_en, description: props.species.description_en },
-])
-const currentLanguage = computed(() =>
-  languages.value.find((language) => language.key === activeLanguage.value) || languages.value[0],
-)
-
-function drawPixelatedImage() {
-  const context = canvas.value?.getContext('2d')
-  if (!context) return
-
-  const width = canvas.value.width
-  const height = canvas.value.height
-  context.clearRect(0, 0, width, height)
-  context.fillStyle = '#064e3b'
-  context.fillRect(0, 0, width, height)
-  if (!image.complete || !image.naturalWidth) {
-    context.fillStyle = '#a7f3d0'
-    context.font = '600 16px system-ui'
-    context.textAlign = 'center'
-    context.fillText('Фото появится после добавления исходного файла', width / 2, height / 2)
-    return
-  }
-
-  const aspectRatio = image.naturalWidth / image.naturalHeight
-  const cols = Math.max(8, Math.min(200, Math.floor((populationValue.value * aspectRatio) ** 0.5)))
-  const rows = Math.max(8, Math.min(200, Math.floor(populationValue.value / cols)))
-  const pixelCanvas = document.createElement('canvas')
-  pixelCanvas.width = cols
-  pixelCanvas.height = rows
-  const pixelContext = pixelCanvas.getContext('2d')
-  pixelContext.imageSmoothingEnabled = false
-  pixelContext.drawImage(image, 0, 0, cols, rows)
-  context.imageSmoothingEnabled = false
-  context.drawImage(pixelCanvas, 0, 0, width, height)
+const props = defineProps({ species: { type: Object, required: true }, contentLanguage: { type: String, default: null } })
+const effectiveLanguage = computed(() => props.contentLanguage || siteLanguage.value)
+const { t, language } = useLocale(effectiveLanguage)
+provideContentLanguage(toRef(props, 'contentLanguage'))
+const emit = defineEmits(['close', 'support'])
+const dialog = ref(null)
+const closeButton = ref(null)
+const photo = computed(() => speciesPhoto(props.species))
+const population = computed(() => populationPresentation(props.species.population, props.species.sources))
+const currentName = computed(() => speciesName(props.species, language.value))
+function contentLanguage(dictionary) {
+  return [language.value, 'ru', 'en', 'ky'].find(key => dictionary?.[key]) || 'ru'
 }
+const nameLanguage = computed(() => Object.values(props.species.names).some(Boolean)
+  ? contentLanguage(props.species.names) : props.species.scientificName ? 'la' : 'ru')
 
-function closeOnEscape(event) {
-  if (event.key === 'Escape') emit('close')
+useModalDialog(dialog, closeButton)
+
+let backdropPointer = false
+function outsideDialog(event) {
+  if (event.target !== dialog.value) return false
+  const bounds = dialog.value.getBoundingClientRect()
+  return event.clientX < bounds.left || event.clientX > bounds.right ||
+    event.clientY < bounds.top || event.clientY > bounds.bottom
 }
-
-watch(() => props.species, () => {
-  populationValue.value = props.species.population
-  activeLanguage.value = 'ru'
-  image.src = imagePath.value
-  image.onload = drawPixelatedImage
-  nextTick(drawPixelatedImage)
-}, { immediate: true })
-
-watch(populationValue, drawPixelatedImage)
-onMounted(() => window.addEventListener('keydown', closeOnEscape))
-onBeforeUnmount(() => window.removeEventListener('keydown', closeOnEscape))
+function beginBackdrop(event) { backdropPointer = outsideDialog(event) }
+function closeFromBackdrop(event) {
+  if (backdropPointer && outsideDialog(event)) emit('close')
+  backdropPointer = false
+}
 </script>
 
 <template>
-  <div class="fixed inset-0 z-50 overflow-y-auto bg-emerald-950/70 p-4 backdrop-blur-sm sm:p-8" @click.self="emit('close')">
-    <div
-      class="mx-auto flex min-h-full max-w-6xl items-center justify-center"
-      role="dialog"
-      aria-modal="true"
-      :aria-label="species.name_ru"
-    >
-      <div class="relative grid w-full overflow-hidden rounded-3xl bg-[#f3f7f1] shadow-2xl lg:grid-cols-2">
-        <button
-          class="absolute right-4 top-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-white/90 text-2xl text-emerald-950 shadow transition hover:bg-white"
-          type="button"
-          aria-label="Закрыть"
-          @click="emit('close')"
-        >
-          ×
-        </button>
-        <div class="bg-emerald-950 p-5 sm:p-8">
-          <div class="overflow-hidden rounded-2xl bg-emerald-900 shadow-inner">
-            <canvas ref="canvas" width="800" height="600" class="block h-auto w-full" />
+  <dialog ref="dialog" class="modal-shell" :lang="language" aria-modal="true" aria-labelledby="species-title"
+    @cancel.prevent="emit('close')" @pointerdown="beginBackdrop" @click="closeFromBackdrop">
+    <header class="modal-header">
+      <div class="modal-title">
+        <p class="eyebrow">{{ t('ui.m236') }}</p>
+        <h2 id="species-title" :lang="nameLanguage">{{ currentName }}</h2>
+      </div>
+      <button ref="closeButton" type="button" class="close-button" :aria-label="t('ui.m237')" autofocus @click="emit('close')">
+        <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="m6 6 12 12M6 18 18 6" />
+        </svg>
+      </button>
+    </header>
+    <div class="modal-scroll">
+      <div class="modal-grid">
+        <section class="modal-media" :aria-label="t('ui.m238')">
+          <SpeciesVisualization :photo="photo" :name="currentName" :population-type="population.type" :species-id="species.id" />
+          <div v-if="photo" class="photo-credit">
+            <p class="photo-credit-links"><a :href="photo.originalPage" target="_blank" rel="noopener noreferrer">{{ t('ui.m082') }} {{ photo.author }} <span class="sr-only">{{ t('ui.m230') }}</span></a>
+            <a :href="photo.licenseUrl" target="_blank" rel="noopener noreferrer">{{ photo.license }} <span class="sr-only">{{ t('ui.m239') }}</span></a>
+            </p>
+            <details class="modal-disclosure photo-details"><summary>{{ t('ui.m240') }}</summary><div>
+              <p v-if="photo.caption"><ScientificText :value="photo.caption" /></p>
+              <p lang="und">{{ photo.attribution }}</p>
+              <p v-if="photo.modifications?.length">{{ t('ui.m241') }} <ScientificText :value="{ru: photo.modifications.join('; ')}" /></p>
+              <p class="language-note">{{ t('originalMetadata') }}</p>
+            </div></details>
           </div>
-          <label class="mt-6 block text-sm font-bold text-emerald-100" for="population-slider">
-            Было / стало: {{ formattedPopulation }} особей
-          </label>
-          <input
-            id="population-slider"
-            v-model.number="populationValue"
-            class="mt-3 w-full accent-emerald-300"
-            type="range"
-            :min="species.population"
-            :max="species.population_history"
-            :step="1"
-          />
-          <div class="mt-2 flex justify-between text-xs text-emerald-200/70">
-            <span>Сейчас: {{ species.population.toLocaleString('ru-RU') }}</span>
-            <span>Исторически: {{ species.population_history.toLocaleString('ru-RU') }}</span>
-          </div>
-        </div>
-        <div class="p-6 sm:p-10">
-          <div class="mb-6 flex items-start justify-between gap-4 pr-10">
+        </section>
+        <div class="modal-information">
+          <section aria-labelledby="basic-information-title">
+          <h3 id="basic-information-title" class="modal-section-title">{{ t('ui.m242') }}</h3>
+          <p class="card-group">{{ groupLabel(species, language) }}</p>
+          <p class="status-badge" :data-category="species.iucn.category">{{ statusDetails(species, language).label }}</p>
+          <p v-if="species.iucn.category && !species.iucn.year" class="media-note">{{ t('ui.m073') }}</p>
+          <p v-if="species.scientificName" class="modal-scientific scientific-name" lang="la">{{ species.scientificName }}</p>
+          <p class="national-status">{{ nationalStatus(species, language) }}.
+            <ScientificText :value="{ru: species.nationalRedBook.edition}" />. {{ species.verified ? t('ui.m062') : t('ui.m243') }}</p>
+          <p class="species-description"><ScientificText :value="species.habitat?.description" /></p>
+          <dl class="species-facts">
             <div>
-              <p class="text-sm font-bold uppercase tracking-[0.2em] text-emerald-700">{{ species.status }}</p>
-              <h2 class="mt-2 text-4xl font-black tracking-tight text-emerald-950">{{ currentLanguage.name }}</h2>
-            </div>
-          </div>
-          <div class="mb-6 flex gap-2 border-b border-emerald-950/10">
-            <button
-              v-for="language in languages"
-              :key="language.key"
-              type="button"
-              class="border-b-2 px-3 py-2 text-sm font-bold transition"
-              :class="activeLanguage === language.key ? 'border-emerald-700 text-emerald-800' : 'border-transparent text-slate-400 hover:text-emerald-700'"
-              @click="activeLanguage = language.key"
-            >
-              {{ language.label }}
-            </button>
-          </div>
-          <p class="min-h-20 leading-7 text-slate-600">{{ currentLanguage.description }}</p>
-          <dl class="mt-8 grid gap-5 border-t border-emerald-950/10 pt-6 sm:grid-cols-2">
-            <div>
-              <dt class="text-xs font-bold uppercase tracking-wider text-emerald-700">Ареал</dt>
-              <dd class="mt-1 font-semibold text-slate-800">{{ species.region }}</dd>
-            </div>
-            <div>
-              <dt class="text-xs font-bold uppercase tracking-wider text-emerald-700">Текущая численность</dt>
-              <dd class="mt-1 font-semibold text-slate-800">{{ species.population.toLocaleString('ru-RU') }} особей</dd>
+              <dt>{{ t('ui.m246') }}</dt>
+              <dd>{{ regionNames(species, language).join(', ') || t('ui.m247') }}</dd>
             </div>
           </dl>
-          <div class="mt-8">
-            <h3 class="text-xs font-bold uppercase tracking-wider text-emerald-700">Главные угрозы</h3>
-            <ul class="mt-3 flex flex-wrap gap-2">
-              <li v-for="threat in species.threats" :key="threat" class="rounded-full bg-white px-3 py-2 text-sm text-slate-700 shadow-sm">
-                {{ threat }}
-              </li>
+          <PopulationInfo :population="species.population" :sources="species.sources" />
+          </section>
+          <details class="modal-disclosure"><summary>{{ t('ui.m248') }}</summary><div>
+          <section class="information-section" aria-labelledby="threats-title">
+            <h3 id="threats-title">{{ t('ui.m249') }}</h3>
+            <ul v-if="species.threats?.length" class="threat-list">
+              <li v-for="(threat, index) in species.threats" :key="index" ><ScientificText :value="threat.text" /> <LessonReferences :species="species" :ids="threat.sourceIds" /></li>
             </ul>
-          </div>
+            <p v-else>{{ t('ui.m066') }}</p>
+          </section>
+          <section class="information-section" aria-labelledby="conservation-title">
+            <h3 id="conservation-title">{{ t('ui.m070') }}</h3>
+            <ul v-if="species.conservationMeasures?.length" class="threat-list">
+              <li v-for="(measure, index) in species.conservationMeasures" :key="index" ><ScientificText :value="measure.text" /> <LessonReferences :species="species" :ids="measure.sourceIds" /></li>
+            </ul>
+            <p v-else>{{ t('ui.m066') }}</p>
+          </section>
+          </div></details>
+          <details class="modal-disclosure"><summary>{{ t('ui.m250') }} <span class="disclosure-count">{{ species.sources.length }}</span></summary>
+            <ol v-if="species.sources.length" class="source-list">
+              <li v-for="source in species.sources" :key="source.id">
+                <SourceLink :source="source" />
+              </li>
+            </ol>
+            <p v-else>{{ t('ui.m251') }}</p>
+          </details>
+          <div class="support-modal-action"><button class="text-link" type="button" @click="emit('support', species.id)">{{ t('ui.m252') }} <span aria-hidden="true">↗</span></button><p>{{ t('ui.m253') }}</p></div>
         </div>
       </div>
     </div>
-  </div>
+  </dialog>
 </template>

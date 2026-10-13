@@ -1,0 +1,143 @@
+[
+  {
+    "id": "amur-tiger",
+    "scientificName": null,
+    "names": {
+      "ru": null,
+      "ky": null,
+      "en": null
+    },
+    "taxonomy": {
+      "kingdom": null,
+      "phylum": null,
+      "class": null,
+      "order": null,
+      "family": null,
+      "genus": null
+    },
+    "group": null,
+    "nationalRedBook": {
+      "listed": null,
+      "category": null,
+      "edition": null,
+      "year": null,
+      "sourceIds": []
+    },
+    "iucn": {
+      "category": null,
+      "year": null,
+      "sourceIds": []
+    },
+    "habitat": null,
+    "regions": null,
+    "threats": null,
+    "conservationMeasures": null,
+    "population": {
+      "type": "unknown",
+      "value": null,
+      "min": null,
+      "max": null,
+      "territory": null,
+      "year": null,
+      "unit": null,
+      "sourceIds": [],
+      "reviewStatus": "pending",
+      "method": null
+    },
+    "images": [
+      {
+        "path": "data/backups/legacy-2026-10-12/images/source/amur-tiger.jpg",
+        "author": null,
+        "originalPage": null,
+        "license": null,
+        "licenseUrl": null,
+        "attribution": null,
+        "modifications": null,
+        "licenseVerified": false
+      }
+    ],
+    "sources": [],
+    "verified": false,
+    "lastReviewedAt": "2026-10-12"
+  },
+  {
+    "id": "whooping-crane",
+    "scientificName": "Grus americana",
+    "names": {
+      "ru": null,
+      "ky": null,
+      "en": "Whooping Crane"
+    },
+    "taxonomy": {
+      "kingdom": null,
+      "phylum": null,
+      "class": "Aves",
+      "order": "Gruiformes",
+      "family": "Gruidae",
+      "genus": null
+    },
+    "group": "birds",
+    "nationalRedBook": {
+      "listed": null,
+      "category": null,
+      "edition": null,
+      "year": null,
+      "sourceIds": []
+    },
+    "iucn": {
+      "category": "EN",
+      "year": null,
+      "sourceIds": [
+        "cms-whooping-crane"
+      ]
+    },
+    "habitat": null,
+    "regions": null,
+    "threats": null,
+    "conservationMeasures": null,
+    "population": {
+      "type": "unknown",
+      "value": null,
+      "min": null,
+      "max": null,
+      "territory": null,
+      "year": null,
+      "unit": null,
+      "sourceIds": [],
+      "reviewStatus": "pending",
+      "method": null
+    },
+    "images": [
+      {
+        "path": "data/backups/legacy-2026-10-12/images/source/whooping-crane.jpg",
+        "author": "jimkruger",
+        "originalPage": null,
+        "license": null,
+        "licenseUrl": null,
+        "attribution": null,
+        "modifications": null,
+        "licenseVerified": false
+      }
+    ],
+    "sources": [
+      {
+        "id": "cms-whooping-crane",
+        "title": "Whooping Crane — Grus americana",
+        "publisher": "Convention on the Conservation of Migratory Species of Wild Animals",
+        "url": "https://www.cms.int/species/grus-americana",
+        "accessedAt": "2026-10-12",
+        "supports": [
+          "scientificName",
+          "names.en",
+          "taxonomy.class",
+          "taxonomy.order",
+          "taxonomy.family",
+          "group",
+          "iucn.category"
+        ]
+      }
+    ],
+    "verified": false,
+    "lastReviewedAt": "2026-10-12"
+  }
+]

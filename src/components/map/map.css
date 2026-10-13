@@ -1,0 +1,44 @@
+.map-section { border-top: 1px solid var(--line); padding-block: 36px 56px; scroll-margin-top: 24px; }
+.map-section-heading { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; align-items: end; margin-bottom: 28px; }
+.map-section-heading h2 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(28px, 3vw, 40px); font-weight: 400; line-height: 1.2; margin-top: 10px; }
+.map-section-heading > p { max-width: 330px; color: var(--muted); font-size: 15px; }
+.map-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; align-items: start; }
+.region-map, .map-panel { min-width: 0; border: 1px solid var(--line); border-radius: 10px; background: white; padding: 20px; }
+.region-map { background: linear-gradient(135deg, #fff, #edf1e8); }
+.map-caption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; color: var(--muted); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; }
+.oblast-map { display: block; width: 100%; height: auto; margin-block: 32px 16px; overflow: visible; }
+.oblast-map path { cursor: pointer; fill: #d8e3d2; stroke: #68816e; stroke-width: 1.2; vector-effect: non-scaling-stroke; transition: fill .2s ease, stroke .2s ease; }
+.oblast-map path:hover { fill: #b4c9ad; stroke: #253b32; }
+.oblast-map path[aria-pressed="true"] { fill: #68816e; stroke: #253b32; stroke-width: 2.5; }
+.oblast-map path:focus-visible { outline: none; stroke: #b94d48; stroke-width: 4; filter: drop-shadow(0 0 2px white); }
+.map-hover-name { min-height: 3.2em; font-size: 16px; font-weight: 600; }
+.map-legend { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13px; color: var(--muted); }
+.map-legend span { display: flex; align-items: center; gap: 8px; }
+.map-legend i { display: inline-block; width: 14px; height: 14px; flex-shrink: 0; background: #d8e3d2; border: 1px solid #68816e; border-radius: 2px; }
+.map-legend i.selected { background: #68816e; border-color: var(--ink); }
+.map-region-select { margin-top: 24px; }
+.map-panel h3 { margin-top: 12px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(26px, 2.3vw, 32px); line-height: 1.2; font-weight: 400; }
+.map-panel-intro, .map-empty { margin-block: 16px 20px; font-size: 15px; color: var(--muted); }
+.map-panel-status { margin-top: 20px; font-size: 15px; font-weight: 600; }
+.map-empty { padding-top: 16px; border-top: 1px solid var(--line); }
+.regional-species { padding-top: 20px; margin-top: 20px; border-top: 1px solid var(--line); font-size: 14px; }
+.regional-species-heading { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+.regional-species-heading > div { min-width: 0; }
+.regional-species-heading img { flex-shrink: 0; width: 80px; height: 80px; object-fit: cover; border-radius: 6px; background: var(--paper); }
+.regional-species-heading h4 { font-size: 18px; line-height: 1.3; font-weight: 600; overflow-wrap: anywhere; }
+.regional-species-heading .scientific-name { font-size: 15px; margin-top: 4px; }
+.map-review { color: var(--muted); margin-top: 10px; }
+.map-photo-caption { color: var(--muted); font-size: 13px; margin-bottom: 14px; }
+.regional-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; margin-top: 10px; }
+.regional-actions a, .map-photo-credit a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: underline; text-underline-offset: 3px; }
+.map-photo-credit { color: var(--muted); margin-top: 8px; }
+.map-photo-credit summary { cursor: pointer; min-height: 44px; padding-block: 10px; }
+.map-photo-credit a { margin-right: 12px; }
+.map-reset { min-height: 48px; padding: 10px 16px; border: 1px solid #839388; border-radius: 5px; margin-top: 20px; }
+.map-reset:hover { background: var(--paper); }
+.map-provenance { margin-top: 20px; color: var(--muted); font-size: 13px; }
+.map-provenance p + p { margin-top: 8px; }
+.map-provenance a { display: inline-block; padding-block: 5px; text-decoration: underline; text-underline-offset: 3px; }
+@media (min-width: 900px) { .map-layout { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); } .region-map, .map-panel { padding: 28px; } .region-map { position: sticky; top: 24px; } }
+@media (max-width: 359px) { .region-map, .map-panel { padding: 16px; } .regional-species-heading { gap: 10px; } .regional-species-heading img { width: 64px; height: 64px; } }
+@media (prefers-reduced-motion: reduce) { .oblast-map path { transition: none; } }
