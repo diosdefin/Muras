@@ -21,7 +21,9 @@ export function createDraftRepository(storage) {
       if (!storage) throw new Error('admin.error.storage')
       const value = JSON.stringify({ ...clone(envelope), version: 1 })
       if (new TextEncoder().encode(value).length > MAX_JSON_BYTES) throw new Error('admin.error.jsonSize')
-      const previous = storage.getItem(DRAFT_KEY), backup = storage.getItem(PREVIOUS_KEY)
+      let previous, backup
+      try { previous = storage.getItem(DRAFT_KEY); backup = storage.getItem(PREVIOUS_KEY) }
+      catch(error) { throw new Error('admin.error.storage', { cause:error }) }
       try {
         if (checkpoint && previous) storage.setItem(PREVIOUS_KEY, previous)
         storage.setItem(DRAFT_KEY, value)

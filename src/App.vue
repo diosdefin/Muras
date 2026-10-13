@@ -31,6 +31,8 @@ syncLocaleMetadata()
 const translatedGroups = computed(() => options.value.groups.map(option => ({ ...option, label: option.value === 'ALL' ? t('ui.m140') : groupLabel({ group: option.value }, language.value) })))
 function statusLabel(value) { return value === 'ALL' ? t('status.all') : statusDetails({ iucn: { category: value } }, language.value).label }
 const activeView = ref('catalog')
+// Mount secondary sections only when first visited, then retain their session state.
+const mountedViews = ref(new Set(['catalog']))
 const quizQuestions = ref([])
 const quizLoading = ref(true)
 const quizError = ref('')
@@ -47,6 +49,7 @@ async function openSupport(id = null) {
 
 async function showView(view, focusId = view) {
   if (activeView.value === 'lesson' && view !== 'lesson' && await lessonView.value?.exitFullscreen() === false) return
+  mountedViews.value.add(view)
   activeView.value = view
   await nextTick()
   if (view === 'support') {
@@ -122,11 +125,11 @@ onMounted(async () => {
 <template>
   <a class="skip-link" :href="`#${activeView}`">{{ t('ui.m004') }}</a>
   <header class="page-header page-container">
-    <a class="brand" href="#" :aria-label="t('ui.m005')" @click.prevent="showHome">
-      <span><BrandLogo /><span class="brand-caption">{{ t('brand.caption') }}</span></span>
+    <a class="brand" href="#" @click.prevent="showHome">
+      <span><span class="sr-only">MURAS </span><BrandLogo /><span class="brand-caption">{{ t('brand.caption') }}</span><span class="sr-only"> — {{ t('brand.homeAction') }}</span></span>
     </a>
     <nav class="main-navigation" :aria-label="t('ui.m007')">
-      <a class="header-link" href="#catalog" :aria-label="t('ui.m008')" :aria-current="activeView === 'catalog' ? 'page' : undefined" @click.prevent="showView('catalog')">{{ t('ui.m009') }}</a>
+      <a class="header-link" href="#catalog" :aria-label="`${t('ui.m009')} — ${t('ui.m008')}`" :aria-current="activeView === 'catalog' ? 'page' : undefined" @click.prevent="showView('catalog')">{{ t('ui.m009') }}</a>
       <a class="header-link" href="#map" @click.prevent="showView('catalog', 'map')">{{ t('ui.m010') }}</a>
       <a class="header-link" href="#quiz" :aria-current="activeView === 'quiz' ? 'page' : undefined" @click.prevent="showView('quiz')">{{ t('ui.m011') }}</a>
       <a class="header-link" href="#lesson" :aria-current="activeView === 'lesson' ? 'page' : undefined" @click.prevent="showView('lesson')">{{ t('ui.m012') }}</a>
@@ -190,11 +193,11 @@ onMounted(async () => {
       </div>
       <div v-if="page.remaining" class="catalog-more"><button type="button" class="quiz-secondary" @click="showMoreSpecies">{{ t('ui.m038') }} {{ Math.min(12, page.remaining) }}</button><p>{{ t('ui.m039') }} {{ page.entries.length }} {{ t('ui.m040') }} {{ results.length }}</p></div>
     </section>
-    <QuizView v-show="activeView === 'quiz'" :questions="quizQuestions" :species="species" :loading="quizLoading" :error="quizError" :return-to-lesson="quizFromLesson"
+    <QuizView v-if="mountedViews.has('quiz')" v-show="activeView === 'quiz'" :questions="quizQuestions" :species="species" :loading="quizLoading" :error="quizError" :return-to-lesson="quizFromLesson"
       @catalog="showView('catalog')" @study="studySpecies" @lesson="showView('lesson')" />
-    <LessonView ref="lessonView" v-show="activeView === 'lesson'" :species="species" :active="activeView === 'lesson'" :loading="isLoading" :error="errorMessage"
+    <LessonView v-if="mountedViews.has('lesson')" ref="lessonView" v-show="activeView === 'lesson'" :species="species" :active="activeView === 'lesson'" :loading="isLoading" :error="errorMessage"
       @catalog="showView('catalog')" @quiz="openQuizFromLesson" />
-    <SupportView v-show="activeView === 'support'" :species="species" :species-id="supportSpeciesId" :loading="isLoading" :error="errorMessage"
+    <SupportView v-if="mountedViews.has('support')" v-show="activeView === 'support'" :species="species" :species-id="supportSpeciesId" :loading="isLoading" :error="errorMessage"
       @select="supportSpeciesId = $event" @study="studySpecies" @catalog="showView('catalog')" />
   </main>
   <footer class="page-footer page-container">
