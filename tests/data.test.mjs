@@ -37,7 +37,7 @@ test('canonical data preserves original nine records and two archived examples w
     assert.ok(s.sources.find(source => s.regions[0].sourceIds.includes(source.id)).url.includes('282.pdf'))
     assert.ok(s.names.ru && s.names.ky && s.names.en)
     assert.equal(s.iucn.year, null) // Dataset publication year is not an assessment year.
-    assert.ok(speciesPhoto(s))
+    if (source.catalog.indexOf(s) < 17) assert.ok(speciesPhoto(s)) // Preserve the first two photographic batches.
   }
   assert.equal(source.catalog.find(s => s.id === 'argali').nationalRedBook.category, null)
   assert.equal(source.catalog[0].nationalRedBook.category, 'III · CR C2a(i): R, C1')
@@ -218,12 +218,12 @@ test('committed public projection validates and contains no private image paths'
   const publicCatalog = JSON.parse(await readFile(join(PROJECT_ROOT, 'public/data/species.json'), 'utf8'))
   assert.deepEqual(validateSpecies(publicCatalog, 'public', { publicData: true }), [])
   assert.deepEqual(publicCatalog.map(s => s.id), source.catalog.map(s => s.id))
-  assert.equal(publicCatalog.every(s => s.images.length === 1 && s.images[0].path.endsWith('.webp')), true)
+  assert.equal(publicCatalog.every(s => s.images.every(image => image.path.endsWith('.webp'))), true)
   assert.equal(JSON.stringify(publicCatalog).includes('data/backups'), false)
 })
 
 test('licensed assets are local WebP, have declared dimensions, captions and matching fingerprints', async () => {
-  for (const s of source.catalog) {
+  for (const s of source.catalog.filter(s => speciesPhoto(s))) {
     const image = speciesPhoto(s)
     const bytes = await readFile(join(PROJECT_ROOT, image.path))
     assert.equal(bytes.subarray(0, 4).toString(), 'RIFF')

@@ -63,6 +63,6 @@ test('selected crops preserve the inspected faces, flower heads and foreground f
     assert.ok(crop.x <= bounds[0] && crop.y <= bounds[1], `${id}: subject start is visible`)
     assert.ok(crop.x + crop.width >= bounds[2] && crop.y + crop.height >= bounds[3], `${id}: subject end is visible`)
   }
-  assert.equal(source.catalog.filter(species => species.images[0].composition).length, 4)
-  for (const species of source.catalog.filter(species => species.group === 'birds')) assert.equal(species.images[0].composition, undefined)
+  assert.equal(source.catalog.filter(species => species.images[0]?.composition).length, 4)
+  for (const species of source.catalog.filter(species => species.group === 'birds')) assert.equal(species.images[0]?.composition, undefined)
 })

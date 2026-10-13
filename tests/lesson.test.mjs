@@ -53,7 +53,9 @@ test('brief information is a verbatim sourced excerpt, not a new scientific clai
     assert.ok(species.habitat.sourceIds.length)
     assert.equal(formatPopulation(species.population), 'Нет подтверждённой оценки численности')
     assert.equal(species.verified, false)
-    assert.ok(speciesPhoto(species).licenseVerified)
+    const photo = speciesPhoto(species)
+    if (photo) assert.equal(photo.licenseVerified, true)
+    else assert.deepEqual(species.images, [])
   }
 })
 

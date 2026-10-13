@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "batchId": "catalog-expansion-2026-10-13",
+  "documentType": "research-batch-selection",
+  "note": "Рецепт импорта из catalog-candidates.json, не вторая база научных записей. Решение о включении не предоставляет verified или редакторского одобрения.",
+  "taxonomyEvidenceFile": "docs/evidence/bulk-expansion-taxonomy.json",
+  "candidates": [
+    { "id": "european-glass-lizard", "decision": "include", "photo": "research", "taxonomyRanks": "iucn", "composition": { "x": 0.5, "y": 0.5, "zoom": 1 } },
+    { "id": "dalmatian-pelican", "decision": "include", "photo": "research" },
+    { "id": "eurasian-lynx", "decision": "include", "photo": "research", "photoNote": "Иллюстрация вида Lynx lynx из шведского зоопарка. Не подтверждает местный подвид L. l. isabellinus." },
+    { "id": "kolpakowskis-tulip", "decision": "include", "photo": "none", "photoNote": "Apache 2.0: полный комплект применимых уведомлений не подготовлен. CC-альтернативы в исследовании подписаны Tulipa altaica. Placeholder." },
+    { "id": "ostrowskis-tulip", "decision": "include", "photo": "research", "composition": { "x": 0.65, "y": 0.5, "zoom": 1 }, "photoNote": "Категория Commons определяет Tulipa ostrowskiana; описание лишь «Wild tulip». Требуется независимая ботаническая проверка." },
+    { "id": "pike-asp", "decision": "include", "photo": "none", "photoNote": "Подходящая лицензированная фотография в исследовании не найдена. Историческая встречаемость; современные находки не подтверждены." },
+    { "id": "turkestan-catfish", "decision": "include", "photo": "none", "photoNote": "В исследовании найдены марки, а не подходящая фотография." },
+    { "id": "christophs-clouded-yellow", "decision": "include", "photo": "none", "photoNote": "Историческая таблица Seitz не используется вместо фотографии этого вида." },
+    { "id": "relict-spider", "decision": "include", "photo": "none", "photoNote": "Подходящая фотография отсутствует; точные места обитания не публикуются." },
+    { "id": "tien-shan-scutiger", "decision": "include", "photo": "none", "selectedTaxonomy": "gbif-selected-taxon", "photoNote": "Подходящая фотография отсутствует; сохраняется связь исторического Scutiger и принятого Albatrellus." },
+    { "id": "menzbiers-marmot", "decision": "include", "photo": "none", "photoNote": "Подходящее фото не найдено. Недатированные числа и недоступный CEPF-отчёт не включаются в численность." },
+    { "id": "semenovs-fir", "decision": "include", "photo": "none", "selectedTaxonomy": "gbif-selected-taxon", "photoNote": "Фото аллеи не определено до национального таксона. Принятое имя — Abies sibirica semenovii, отдельный подвид." },
+    { "id": "great-bustard", "decision": "include", "photo": "none", "selectedTaxonomy": "gbif-selected-taxon", "photoNote": "Национальная запись Otis tarda tarda. Фото Otis tarda не определено до подвида; IUCN EN всего вида не переносится на подвид." },
+    { "id": "issykkul-marinka", "decision": "defer", "reason": "Нет точного соответствия исторического таксона; synonym/accepted parent Schizothorax pseudoaksaiensis требует ихтиолога." },
+    { "id": "issykkul-osman", "decision": "defer", "reason": "Не установлено соответствие lansdelli; подтверждение родительского Gymnodiptychus dybowskii недостаточно." },
+    { "id": "desert-monitor", "decision": "defer", "reason": "Национальный caspius не подтверждён точным таксоном; найденное фото другого подвида griseus." },
+    { "id": "tatary-sand-boa", "decision": "defer", "reason": "Исследование сводит Eryx tataricus к E. miliaris; нужны решение герпетолога и проверка KY-названия." },
+    { "id": "renards-viper", "decision": "defer", "reason": "Связь национального V. ursinii renardi с принятым видом V. renardi требует экспертного решения; KY-название не прочитано." },
+    { "id": "green-toad-complex", "decision": "defer", "reason": "Комплекс зелёных жаб: невозможно автоматически отнести кыргызстанский очерк к европейскому Bufotes viridis." },
+    { "id": "merzbacheri-apollo", "decision": "defer", "reason": "Подвид merzbacheri сводится GBIF к виду; точная связь концепций и соответствующее фото не установлены." },
+    { "id": "crowned-goldenring", "decision": "defer", "reason": "Нет EXACT соответствия Sonjagaster coronatus; связь с Cordulegaster coronata основана на FUZZY и требует одонатолога." },
+    { "id": "netted-stinkhorn", "decision": "defer", "reason": "GBIF сводит национальную Dictyophora duplicata/Phallus duplicatus к P. indusiatus; концепцию и изображение должен проверить миколог." }
+  ]
+}

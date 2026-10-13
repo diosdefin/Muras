@@ -18,7 +18,8 @@ import { regionalEntries } from '../src/data/geography/model.js'
 const read = async p => JSON.parse(await readFile(new URL(`../${p}`, import.meta.url), 'utf8'))
 const source = await read('data/species.source.json'), published = await read('public/data/species.json')
 const research = await read('data/research/catalog-candidates.json')
-const added = source.catalog.slice(9)
+const added = source.catalog.slice(9,17)
+const firstBatchPublished = published.slice(0,17)
 const expected = {
   'central-asian-tortoise': ['Testudo horsfieldii','reptiles','VU'],
   'central-asian-frog': ['Rana asiatica','amphibians','VU'],
@@ -32,15 +33,15 @@ const expected = {
 const digest = value => createHash('sha256').update(JSON.stringify(value)).digest('hex')
 
 test('first batch contains exactly eight documented taxa, preserves original nine and archived bytes logically', () => {
-  assert.equal(source.catalog.length, 17)
+  assert.equal(source.catalog.slice(0,17).length, 17)
   assert.deepEqual(added.map(s=>s.id), Object.keys(expected))
   assert.equal(digest(source.catalog.slice(0,9)), '5b971eac79d862f1a34dda0099daf69ec83c55da71299cec9a4d321f8f5a033b')
   assert.equal(digest(source.demoArchive), 'e5d779d888e80970476120ae8da6e378e2408527d36484e61a083821f4df6a22')
-  assert.equal(new Set(source.catalog.map(s=>s.scientificName)).size, 17)
+  assert.equal(new Set(source.catalog.slice(0,17).map(s=>s.scientificName)).size, 17)
   assert.deepEqual(validateSource(source), [])
   assert.deepEqual(validateSpecies(published,'catalog',{publicData:true}), [])
   for (const s of added) assert.deepEqual([s.scientificName,s.group,s.iucn.category],expected[s.id])
-  assert.deepEqual(Object.fromEntries(availableGroups(published).map(g=>[g,published.filter(s=>s.group===g).length])),
+  assert.deepEqual(Object.fromEntries(availableGroups(firstBatchPublished).map(g=>[g,firstBatchPublished.filter(s=>s.group===g).length])),
     { mammals:4,birds:5,plants:4,reptiles:1,amphibians:1,arthropods:1,fungi:1 })
 })
 
@@ -72,19 +73,19 @@ test('historical national evidence is separate from global IUCN; no invented tra
 
 test('expanded admin import/export is lossless and seven public groups filter real records; names are searchable in four scripts', () => {
   assert.deepEqual(JSON.parse(exportSource(importSource(JSON.stringify(source)))),source)
-  const index = createSearchIndex(published), state = useCatalog(ref(published))
+  const index = createSearchIndex(published), state = useCatalog(ref(firstBatchPublished))
   assert.equal(state.page.value.entries.length,12); assert.equal(state.page.value.remaining,5)
   state.more(); assert.equal(state.page.value.entries.length,17); assert.equal(state.page.value.remaining,0)
-  for (const group of availableGroups(published)) {
+  for (const group of availableGroups(firstBatchPublished)) {
     state.group.value=group
     assert.ok(state.results.value.length>0); assert.ok(state.results.value.every(r=>r.species.group===group))
   }
   for (const s of added) for (const name of [...Object.values(s.names),s.scientificName]) {
     assert.ok(searchSpecies(index,name).some(r=>r.species.id===s.id))
   }
-  const lesson=useLesson(ref(published)), visited=[]
+  const lesson=useLesson(ref(firstBatchPublished)), visited=[]
   for(let n=0;n<17;n++){visited.push(lesson.current.value.id);lesson.next()}
-  assert.deepEqual(visited,published.map(s=>s.id)); assert.equal(lesson.current.value.id,published[0].id)
+  assert.deepEqual(visited,firstBatchPublished.map(s=>s.id)); assert.equal(lesson.current.value.id,published[0].id)
 })
 
 test('regional drafts stay private and never become map results; unchanged quiz still has 18 valid questions', async () => {
@@ -117,14 +118,14 @@ test('eight approved WebP originals have matching local public bytes, fingerprin
 })
 
 test('all eight render card, lesson, modal, sources and an honest Russian scientific fallback in KY/RU/EN', async () => {
-  const vite=await createServer({server:{middlewareMode:true,hmr:false,watch:null},appType:'custom',logLevel:'error'})
+  const vite=await createServer({server:{middlewareMode:true,ws:false,hmr:false,watch:null},appType:'custom',logLevel:'error'})
   try {
     const {siteLanguage}=await vite.ssrLoadModule('/src/composables/useLocale.js')
     const components={}
     for(const file of ['SpeciesCard.vue','SpeciesModal.vue','lesson/LessonPhoto.vue']) components[file]=(await vite.ssrLoadModule(`/src/components/${file}`)).default
     for(const language of ['ky','ru','en']){
       siteLanguage.value=language
-      for(const s of published.slice(9)){
+      for(const s of published.slice(9,17)){
         const card=await renderToString(createSSRApp(components['SpeciesCard.vue'],{species:s}))
         assert.ok(card.includes(s.scientificName));assert.ok(card.includes(s.images[0].path));assert.ok(card.includes('lang="ru"'))
         for(const file of ['SpeciesModal.vue','lesson/LessonPhoto.vue']){

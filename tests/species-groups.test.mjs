@@ -84,8 +84,8 @@ test('validator accepts eight sourced groups and legacy IDs, rejects unknown IDs
 })
 
 test('catalog filters include only present groups, expand without empty cards and keep legacy IDs distinct', () => {
-  assert.deepEqual(availableGroups(published), ids.filter(id => id !== 'fish'))
-  assert.deepEqual(catalogOptions(published).groups.map(option => option.value), ['ALL', ...ids.filter(id => id !== 'fish')])
+  assert.deepEqual(availableGroups(published), ids)
+  assert.deepEqual(catalogOptions(published).groups.map(option => option.value), ['ALL', ...ids])
   assert.deepEqual(catalogOptions([]).groups.map(option => option.value), ['ALL'])
   const records = [...ids, 'invertebrates'].map(fixture)
   assert.deepEqual(availableGroups([...records, ...records]), [...ids, 'invertebrates'])
@@ -169,7 +169,7 @@ test('map filters all groups by documented links and never infers occurrences fo
 })
 
 test('Vue admin selects and map buttons expose localized available groups without hiding imported legacy values', async () => {
-  const vite = await createServer({ server: { middlewareMode: true, hmr: false, watch: null }, appType: 'custom', logLevel: 'error' })
+  const vite = await createServer({ server: { middlewareMode: true, ws: false, hmr: false, watch: null }, appType: 'custom', logLevel: 'error' })
   try {
     await vite.ssrLoadModule('/src/admin/locales/index.js')
     const { siteLanguage } = await vite.ssrLoadModule('/src/composables/useLocale.js')
@@ -187,8 +187,7 @@ test('Vue admin selects and map buttons expose localized available groups withou
       const legacy = await renderToString(createSSRApp(Fields, { species: fixture('invertebrates'), tab: 'basic' }))
       assert.ok(legacy.includes('<select value="invertebrates">'))
       const html = await renderToString(createSSRApp(Panel, { species: published }))
-      for (const group of ids.filter(id => id !== 'fish')) assert.ok(html.includes(groupLabel({ group }, language)))
-      assert.ok(!html.includes(groupLabel({ group: 'fish' }, language)))
+      for (const group of ids) assert.ok(html.includes(groupLabel({ group }, language)))
       const expanded = await renderToString(createSSRApp(Panel, { species: ids.map(fixture), group: 'arthropods' }))
       for (const group of ids) assert.ok(expanded.includes(groupLabel({ group }, language)))
       assert.match(expanded, /aria-pressed="true"[^>]*>Членистоногие|aria-pressed="true"[^>]*>Муунак буттуулар|aria-pressed="true"[^>]*>Arthropods/)

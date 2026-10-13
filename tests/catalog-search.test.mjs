@@ -30,7 +30,7 @@ test('prefix, substring and multiword queries find names only', () => {
   assert.deepEqual(ids('panth'), ['irbis'])
   assert.deepEqual(ids('бирс'), ['irbis'])
   assert.deepEqual(ids('leopard snow'), ['irbis'])
-  assert.equal(ids('тюльпан').length, 2)
+  assert.deepEqual(ids('тюльпан'), ['greigs-tulip','kaufmanns-tulip','kolpakowskis-tulip','ostrowskis-tulip'])
   assert.deepEqual(ids('Браконьерство'), [])
 })
 test('safe Latin transliterations are marked and preserve the original Kyrgyz name', () => {
@@ -80,7 +80,7 @@ test('empty query retains original order, species objects, uniqueness and source
 test('filter options contain only categories and groups in the catalog, including unknown values when present', () => {
   const options = catalogOptions(catalog)
   assert.deepEqual(options.statuses.map(option => option.value), ['ALL', 'EN', 'VU', 'NT', 'LC', 'UNKNOWN'])
-  assert.deepEqual(options.groups.map(option => option.value), ['ALL', 'mammals', 'birds', 'plants', 'reptiles', 'amphibians', 'arthropods', 'fungi'])
+  assert.deepEqual(options.groups.map(option => option.value), ['ALL', 'mammals', 'birds', 'plants', 'fish', 'reptiles', 'amphibians', 'arthropods', 'fungi'])
   assert.deepEqual(options.regions, ['ALL', 'Кыргызстан'])
   const fixture = catalogOptions([{ group: 'fish', iucn: { category: null }, regions: null }])
   assert.deepEqual(fixture.statuses.map(option => option.value), ['ALL', 'UNKNOWN'])
@@ -89,7 +89,7 @@ test('filter options contain only categories and groups in the catalog, includin
 })
 test('search, IUCN, group and geographic filters intersect without overriding one another', () => {
   const filtered = filters => searchSpecies(index, 'тюльпан').filter(result => matchesCatalogFilters(result.species, filters)).map(result => result.species.id)
-  assert.deepEqual(filtered({ status: 'NT', group: 'plants', region: 'Кыргызстан' }), ['kaufmanns-tulip'])
+  assert.deepEqual(filtered({ status: 'NT', group: 'plants', region: 'Кыргызстан' }), ['kaufmanns-tulip','kolpakowskis-tulip','ostrowskis-tulip'])
   assert.deepEqual(filtered({ status: 'VU' }), [])
   assert.deepEqual(filtered({ group: 'mammals' }), [])
   assert.deepEqual(filtered({ region: 'unknown' }), [])

@@ -14,6 +14,9 @@
     "data:generate": "node scripts/build-data.mjs",
     "data:validate": "node scripts/validate-locales.mjs && node scripts/build-data.mjs --check",
     "data:images": "python scripts/process_data.py",
+    "data:batch:prepare": "node scripts/prepare-research-batch.mjs",
+    "data:batch:photos": "node scripts/prepare-batch-images.mjs",
+    "data:batch:import": "node scripts/import-species-batch.mjs",
     "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {

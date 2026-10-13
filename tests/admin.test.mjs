@@ -189,7 +189,7 @@ test('async persistence serializes saves and never clears newer unsaved edits or
 })
 
 test('all editor panels render real Vue templates with imported fields and image previews outside the browser',async()=>{
- const vite=await createServer({server:{middlewareMode:true,hmr:false,watch:null},appType:'custom',logLevel:'error'})
+ const vite=await createServer({server:{middlewareMode:true,ws:false,hmr:false,watch:null},appType:'custom',logLevel:'error'})
  try{
   await vite.ssrLoadModule('/src/admin/locales/index.js')
   const {siteLanguage}=await vite.ssrLoadModule('/src/composables/useLocale.js');siteLanguage.value='ru'
