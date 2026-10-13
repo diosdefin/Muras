@@ -15,6 +15,8 @@
 [docs/release-readiness.md](docs/release-readiness.md).
 Ручная проверка устройств, хостинга и полного цикла админки:
 [docs/manual-qa-checklist.md](docs/manual-qa-checklist.md).
+Настройки Vercel, первая публикация из `main` и откат:
+[docs/vercel-deployment.md](docs/vercel-deployment.md).
 
 Vue 3 / Vite / Tailwind. Публичный каталог содержит **9 видов Кыргызстана**:
 по три млекопитающих, птицы и растения, с локальными лицензированными фотографиями.

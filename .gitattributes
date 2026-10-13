@@ -5,3 +5,8 @@ data/geography/source/regions.geojson -text
 # Keep upstream licence formatting, including its trailing spaces.
 data/geography/source/ODbL-1.0.txt -text whitespace=-blank-at-eol
 public/data/geography/ODbL-1.0.txt text eol=lf whitespace=-blank-at-eol
+# Generators write UTF-8 with LF. Keep their tracked outputs identical on Windows.
+data/archive/*.generated.json text eol=lf
+public/data/*.json text eol=lf
+public/data/geography/*.json text eol=lf
+public/data/geography/*.geojson text eol=lf
