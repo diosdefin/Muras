@@ -1,0 +1,204 @@
+{
+  "date": "2026-10-14",
+  "origin": "http://127.0.0.1:4190",
+  "browser": "Codex in-app browser",
+  "build": "production preview",
+  "checks": [
+    {
+      "view": "catalog",
+      "columns": "273px",
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "view": "catalog",
+      "columns": "328px",
+      "scroll": 360,
+      "width": 375
+    },
+    {
+      "view": "catalog",
+      "columns": "332.5px 332.5px",
+      "scroll": 753,
+      "width": 768
+    },
+    {
+      "view": "catalog",
+      "columns": "299px 299px 299px",
+      "scroll": 1009,
+      "width": 1024
+    },
+    {
+      "view": "catalog",
+      "columns": "390.664px 390.664px 390.664px",
+      "scroll": 1425,
+      "width": 1440
+    },
+    {
+      "view": "catalog",
+      "columns": "390.664px 390.664px 390.664px",
+      "scroll": 1905,
+      "width": 1920
+    },
+    {
+      "view": "modal",
+      "dialogClient": 279,
+      "dialogScroll": 279,
+      "dialogWidth": 296,
+      "scroll": 320,
+      "width": 320
+    },
+    {
+      "view": "modal",
+      "dialogClient": 334,
+      "dialogScroll": 334,
+      "dialogWidth": 351,
+      "scroll": 375,
+      "width": 375
+    },
+    {
+      "view": "modal",
+      "dialogClient": 703,
+      "dialogScroll": 703,
+      "dialogWidth": 720,
+      "scroll": 768,
+      "width": 768
+    },
+    {
+      "view": "modal",
+      "dialogClient": 959,
+      "dialogScroll": 959,
+      "dialogWidth": 976,
+      "scroll": 1024,
+      "width": 1024
+    },
+    {
+      "view": "modal",
+      "dialogClient": 1103,
+      "dialogScroll": 1103,
+      "dialogWidth": 1120,
+      "scroll": 1440,
+      "width": 1440
+    },
+    {
+      "view": "modal",
+      "dialogClient": 1103,
+      "dialogScroll": 1103,
+      "dialogWidth": 1120,
+      "scroll": 1920,
+      "width": 1920
+    },
+    {
+      "view": "profile-irbis",
+      "contentScroll": 273,
+      "contentWidth": 273,
+      "paragraphs": 2,
+      "ruText": 8,
+      "scroll": 305,
+      "width": 320
+    },
+    {
+      "view": "profile-irbis",
+      "contentScroll": 328,
+      "contentWidth": 328,
+      "paragraphs": 2,
+      "ruText": 8,
+      "scroll": 360,
+      "width": 375
+    },
+    {
+      "view": "profile-irbis",
+      "contentScroll": 379,
+      "contentWidth": 379,
+      "paragraphs": 2,
+      "ruText": 8,
+      "scroll": 753,
+      "width": 768
+    },
+    {
+      "view": "profile-irbis",
+      "contentScroll": 520,
+      "contentWidth": 520,
+      "paragraphs": 2,
+      "ruText": 8,
+      "scroll": 1009,
+      "width": 1024
+    },
+    {
+      "view": "profile-irbis",
+      "contentScroll": 668,
+      "contentWidth": 668,
+      "paragraphs": 2,
+      "ruText": 8,
+      "scroll": 1425,
+      "width": 1440
+    },
+    {
+      "view": "profile-irbis",
+      "contentScroll": 660,
+      "contentWidth": 660,
+      "paragraphs": 2,
+      "ruText": 8,
+      "scroll": 1905,
+      "width": 1920
+    },
+    {
+      "view": "profile-turkestan-catfish",
+      "content": 273,
+      "contentScroll": 273,
+      "overview": 2,
+      "scroll": 305,
+      "width": 320
+    }
+  ],
+  "all30Cards": {
+    "count": 30,
+    "emptyDescriptions": 0,
+    "lineClamp": "3"
+  },
+  "languageChecks": [
+    {
+      "cardLang": "ky",
+      "cards": 30,
+      "firstText": "Калың темгилдүү жүндүү, жазы тамандуу жана узун куйруктуу тоо мышыгы. Аскалардын арасында жашыруун аңчылык кылат; негизги олжосунун арасында жапайы туяктуулар бар.",
+      "htmlLang": "ky",
+      "scroll": 360,
+      "width": 375
+    },
+    {
+      "cardLang": "uz",
+      "cards": 30,
+      "firstText": "Qalin dogʻli moʻyna, keng panjalar va uzun dumga ega togʻ mushuksimon hayvoni. Qoyalar orasida yashirin ov qiladi; oʻljasining muhim qismi yovvoyi tuyoqlilardir.",
+      "htmlLang": "uz",
+      "scroll": 360,
+      "width": 375
+    },
+    {
+      "cardLang": "en",
+      "cards": 30,
+      "firstText": "A mountain cat with a thick spotted coat, broad paws and a long tail. It hunts discreetly among rocks, with wild ungulates forming an important part of its prey.",
+      "htmlLang": "en",
+      "scroll": 360,
+      "width": 375
+    },
+    {
+      "cardLang": "ru",
+      "cards": 30,
+      "firstText": "Горная кошка с густым пятнистым мехом, широкими лапами и длинным хвостом. Скрытно охотится среди скал; важную часть её добычи составляют дикие копытные.",
+      "htmlLang": "ru",
+      "scroll": 360,
+      "width": 375
+    }
+  ],
+  "consoleErrors": 0,
+  "limitations": [
+    "Measured Chromium-family in-app browser only; no Safari or physical-device verification.",
+    "Desktop source grid has three columns in baseline c17ad66 and remains unchanged."
+  ],
+  "screenshots": [
+    "content-irbis-desktop.jpg",
+    "content-irbis-mobile.jpg",
+    "content-catfish-mobile.jpg",
+    "content-irbis-dialog-mobile.jpg"
+  ]
+}

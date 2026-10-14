@@ -3,7 +3,7 @@ import ScientificText from './ScientificText.vue'
 import { useLocale } from '../composables/useLocale.js'
 import { computed, ref, watch } from 'vue'
 import { compositionStyle } from '../data/image-composition.js'
-import { groupLabel, publicImageUrl, speciesName, speciesPhoto, statusDetails } from '../data/presentation.js'
+import { groupLabel, publicImageUrl, speciesName, speciesNameLanguage, speciesPhoto, statusDetails } from '../data/presentation.js'
 
 const { t, language } = useLocale()
 
@@ -32,8 +32,8 @@ watch(imagePath, () => { imageFailed.value = false })
       </div>
     </div>
     <div class="card-body">
-      <h3>{{ speciesName(species, language) }}</h3>
-      <p class="card-description"><ScientificText :value="species.habitat?.description" /></p>
+      <h3 :lang="speciesNameLanguage(species, language)">{{ speciesName(species, language) }}</h3>
+      <p class="card-description"><ScientificText :value="species.content?.shortDescription?.text" /></p>
       <button type="button" class="card-open"
         :aria-label="`${t('ui.m232')} — ${t('ui.m125', { p0: speciesName(species, language) })}`"
         aria-haspopup="dialog" @click="emit('open', species)">

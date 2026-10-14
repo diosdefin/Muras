@@ -19,21 +19,53 @@ async function request(url){
 export function checkCommonsMetadata(candidate,page){
   const expected=candidate.photoResearch?.photo,info=page?.imageinfo?.[0],wikitext=page?.revisions?.[0]?.slots?.main?.['*']||''
   if(!expected?.rightsConfirmed||!expected.originalPageRead||!expected.eligibleForNextEditorialStage)throw new Error('Нет предварительного документального допуска фотографии')
+  const fileTitle=url=>{
+    const parsed=new URL(url)
+    if(parsed.protocol!=='https:'||parsed.hostname!=='commons.wikimedia.org')throw new Error('Оригинальная страница должна принадлежать Wikimedia Commons')
+    return decodeURIComponent(parsed.pathname).replaceAll('_',' ')
+  }
+  if(!info?.descriptionurl||fileTitle(info.descriptionurl)!==fileTitle(expected.originalPage))throw new Error('Оригинальная страница не совпадает с проверенным файлом')
   const license=info?.extmetadata?.LicenseShortName?.value,author=stripHtml(info?.extmetadata?.Artist?.value)
   if(license!==expected.license||!author||!author.includes(expected.author.replace(/ \(.*\)$/,'')))throw new Error('Автор/лицензия не совпадают с проверенным исследованием')
-  if(!/^(CC BY(?:-SA)? [234]\.0|CC0|Public domain)$/.test(license))throw new Error('Лицензия требует отдельной обработки уведомлений; placeholder')
+  if(!/^(CC BY(?:-SA)? [234]\.0|CC0|Public domain|Apache License 2\.0)$/.test(license))throw new Error('Лицензия требует отдельной обработки уведомлений; placeholder')
   if(license==='Public domain'&&!/\{\{PD-self(?:\||\}\})/i.test(wikitext))throw new Error('Public domain без документированного PD-self не принимается автоматически')
+  let licenseUrl=license==='Public domain'?'https://commons.wikimedia.org/wiki/Template:PD-self':info.extmetadata.LicenseUrl?.value
+  const cc=/^CC BY(-SA)? ([234]\.0)$/.exec(license)
+  if(cc&&!new RegExp(`^https?://creativecommons\\.org/licenses/by${cc[1]?'-sa':''}/${cc[2].replace('.','\\.')}/?$`).test(licenseUrl||''))throw new Error('URL не соответствует заявленной лицензии CC')
+  if(license==='CC0'){
+    // Commons may link the official translated deed rather than its canonical URL.
+    if(!/^https?:\/\/creativecommons\.org\/publicdomain\/zero\/1\.0(?:\/deed\.[a-z]{2}(?:-[A-Z]{2})?|\/)?$/.test(licenseUrl||''))throw new Error('URL не соответствует CC0')
+    licenseUrl='https://creativecommons.org/publicdomain/zero/1.0/'
+  }
+  if(license==='Apache License 2.0'){
+    if(!/^https?:\/\/(?:www\.)?apache\.org\/licenses\/LICENSE-2\.0\/?$/.test(licenseUrl||''))throw new Error('URL не соответствует Apache 2.0')
+    licenseUrl='https://www.apache.org/licenses/LICENSE-2.0'
+    const artifacts=expected.licenseArtifacts,permission=stripHtml(info.extmetadata.Permission?.value)
+    if(!artifacts?.copyrightNotice||!permission.includes(artifacts.copyrightNotice)||
+      !['licensePath','noticePath'].every(key=>/^public\/licenses\/photos\/[a-zA-Z0-9.-]+\.txt$/.test(artifacts[key]||''))||
+      !['licenseSha256','noticeSha256'].every(key=>/^[a-f0-9]{64}$/.test(artifacts[key]||'')))
+      throw new Error('Apache требует проверенные локальные LICENSE/NOTICE и исходное copyright-уведомление')
+  }
   const subject=candidate.photoResearch.photo.subjectAsDocumented
   const plain=stripHtml(info.extmetadata.ImageDescription?.value),categories=info.extmetadata.Categories?.value||''
   if(![plain,categories,wikitext.match(/\[\[Category:[^\]]+\]\]/g)?.join(' ')||''].some(t=>t.replaceAll('_',' ').includes(subject.replace(/ по .*$/,''))))
     throw new Error('Описание/категория не содержит проверяемое определение таксона')
-  return {license,author:expected.author,artistStatementSha256:digest(Buffer.from(author)),licenseUrl:license==='Public domain'?'https://commons.wikimedia.org/wiki/Template:PD-self':info.extmetadata.LicenseUrl?.value,
-    originalPage:info.descriptionurl,revisionId:page.revisions[0].revid,width:info.width,height:info.height,description:plain}
+  return {license,author:expected.author,artistStatementSha256:digest(Buffer.from(author)),licenseUrl,
+    originalPage:info.descriptionurl,revisionId:page.revisions[0].revid,width:info.width,height:info.height,description:plain,
+    ...(license==='Apache License 2.0'?{licenseArtifacts:expected.licenseArtifacts}:{})}
 }
 
-export async function prepareBatchImages(selection,{python='python',output='.generated/bulk-images.json'}={}){
+export async function prepareBatchImages(selection,{python='python',output='.generated/bulk-images.json',researchPath='data/research/catalog-candidates.json'}={}){
   if(selection?.schemaVersion!==1||selection.documentType!=='research-batch-selection'||!Array.isArray(selection.candidates))throw new Error('Некорректный рецепт фотографий')
-  const research=JSON.parse(await readFile(resolve(PROJECT_ROOT,'data/research/catalog-candidates.json'),'utf8'))
+  // An editorial photo-only packet may supplement prior research without changing it.
+  const research=JSON.parse(await readFile(confined(researchPath),'utf8'))
+  const verifyArtifacts=async photo=>{
+    if(photo?.license!=='Apache License 2.0')return
+    for(const [path,checksum] of [['licensePath','licenseSha256'],['noticePath','noticeSha256']]){
+      const bytes=await readFile(confined(photo.licenseArtifacts?.[path]||''))
+      if(digest(bytes)!==photo.licenseArtifacts?.[checksum])throw new Error('LICENSE/NOTICE отсутствуют или изменены')
+    }
+  }
   const previous=JSON.parse(await readFile(confined(output),'utf8').catch(error=>{if(error.code==='ENOENT')return '{}';throw error}))
   const receipts=[]
   for(const item of selection.candidates.filter(c=>c.decision==='include')){
@@ -41,6 +73,7 @@ export async function prepareBatchImages(selection,{python='python',output='.gen
     if(saved){
       const candidate=research.candidates.find(c=>c.id===item.id),expected=candidate?.photoResearch?.photo
       if(!expected?.rightsConfirmed||!expected.eligibleForNextEditorialStage||saved.image.license!==expected.license||saved.image.author!==expected.author)throw new Error(`${item.id}: квитанция не соответствует актуальному исследовательскому допуску`)
+      await verifyArtifacts(expected)
       const bytes=await readFile(confined(saved.image.path))
       if(digest(bytes)!==saved.image.sha256)throw new Error(`${item.id}: сохранённая фотография изменилась; повторная загрузка отменена`)
       receipts.push(saved);continue
@@ -56,6 +89,7 @@ export async function prepareBatchImages(selection,{python='python',output='.gen
       api.search=new URLSearchParams({action:'query',format:'json',titles:title,prop:'imageinfo|revisions',iiprop:'url|size|extmetadata',rvprop:'ids|content',rvslots:'main'})
       const data=await (await request(api)).json(),page=Object.values(data.query?.pages||{})[0]
       const metadata=checkCommonsMetadata(c,page)
+      await verifyArtifacts(p)
       const original=confined(`.generated/bulk-originals/${item.id}.jpg`)
       await mkdir(dirname(original),{recursive:true})
       const response=await request(page.imageinfo[0].url)
@@ -70,7 +104,7 @@ export async function prepareBatchImages(selection,{python='python',output='.gen
       Object.assign(result,{status:'prepared',reason:null,metadata:{...metadata,metadataUrl:String(api),accessedAt:new Date().toISOString().slice(0,10),originalSha256:digest(bytes)},
         image:{path,width:optimized.width,height:optimized.height,sha256:optimized.sha256,author:metadata.author,
           originalPage:metadata.originalPage,license:metadata.license,licenseUrl:metadata.licenseUrl,
-          attribution:`${page.title.replace(/^File:/,'')} — ${metadata.author}, ${metadata.license}; Wikimedia Commons.${metadata.license.includes('SA')?' Производные изображения распространяются под той же лицензией.':''}`,
+          attribution:`${page.title.replace(/^File:/,'')} — ${metadata.author}, ${metadata.license}; Wikimedia Commons.${metadata.license.includes('SA')?' Производные изображения распространяются под той же лицензией.':''}${metadata.license==='Apache License 2.0'?` ${metadata.licenseArtifacts.copyrightNotice}. LICENSE: ${metadata.licenseArtifacts.licensePath.replace(/^public/,'')}; NOTICE: ${metadata.licenseArtifacts.noticePath.replace(/^public/,'')}.`:''}`,
           modifications:['Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.','CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность.'],
           licenseVerified:true,caption:{ru:[p.context,item.photoNote].filter(Boolean).join(' '),ky:null,en:null}}})
       console.error(`${item.id}: подготовлен WebP ${optimized.bytes} байт; нужен визуальный просмотр`)
@@ -84,7 +118,7 @@ export async function prepareBatchImages(selection,{python='python',output='.gen
 if(process.argv[1]&&import.meta.url===pathToFileURL(resolve(process.argv[1])).href){
   try{const args=process.argv.slice(2),arg=k=>args[args.indexOf(k)+1];if(!args.includes('--selection'))throw new Error('Нужен --selection; необязательно --python и --output')
     const selection=JSON.parse(await readFile(confined(arg('--selection')),'utf8'))
-    const result=await prepareBatchImages(selection,{python:args.includes('--python')?arg('--python'):'python',output:args.includes('--output')?arg('--output'):'.generated/bulk-images.json'})
+    const result=await prepareBatchImages(selection,{python:args.includes('--python')?arg('--python'):'python',output:args.includes('--output')?arg('--output'):'.generated/bulk-images.json',researchPath:args.includes('--research')?arg('--research'):'data/research/catalog-candidates.json'})
     console.log(`Фото подготовлены: ${result.filter(r=>r.status==='prepared').length}; placeholders: ${result.filter(r=>r.status==='placeholder').length}`)
   }catch(error){console.error(error.message);process.exitCode=1}
 }

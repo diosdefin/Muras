@@ -1,13 +1,14 @@
 <script setup>
 import { computed, toRef } from 'vue'
 import { provideContentLanguage, siteLanguage, useLocale } from '../composables/useLocale.js'
-import { groupLabel, nationalStatus, regionNames, speciesName, speciesPhoto, statusDetails } from '../data/presentation.js'
+import { groupLabel, nationalStatus, regionNames, speciesName, speciesNameLanguage, speciesPhoto, statusDetails } from '../data/presentation.js'
 import { populationPresentation } from '../data/population.js'
 import ScientificText from './ScientificText.vue'
 import SpeciesVisualization from './SpeciesVisualization.vue'
 import PopulationInfo from './PopulationInfo.vue'
 import LessonReferences from './lesson/LessonReferences.vue'
 import SourceLink from './SourceLink.vue'
+import { contentParagraphs } from '../data/species-content.js'
 
 const props = defineProps({
   species: { type: Object, default: null },
@@ -38,7 +39,7 @@ const population = computed(() => props.species ? populationPresentation(props.s
     <template v-else>
       <header class="profile-hero">
         <p class="profile-eyebrow">{{ groupLabel(species, language) }} <span aria-hidden="true">·</span> {{ status.label }}</p>
-        <h1 id="profile-heading" tabindex="-1">{{ name }}</h1>
+        <h1 id="profile-heading" tabindex="-1" :lang="speciesNameLanguage(species, language)">{{ name }}</h1>
         <p v-if="species.scientificName" class="profile-latin" lang="la">{{ species.scientificName }}</p>
       </header>
       <div class="profile-layout">
@@ -49,23 +50,40 @@ const population = computed(() => props.species ? populationPresentation(props.s
             <summary>{{ t('ui.m240') }}</summary>
             <p><a :href="photo.originalPage" target="_blank" rel="noopener noreferrer">{{ t('ui.m082') }} {{ photo.author }}</a> · <a :href="photo.licenseUrl" target="_blank" rel="noopener noreferrer">{{ photo.license }}</a></p>
             <p v-if="photo.caption"><ScientificText :value="photo.caption" /></p>
-            <p>{{ photo.attribution }}</p>
-            <p v-if="photo.modifications?.length">{{ t('ui.m241') }} {{ photo.modifications.join('; ') }}</p>
+            <p lang="und">{{ photo.attribution }}</p>
+            <p v-if="photo.modifications?.length">{{ t('ui.m241') }} <ScientificText :value="{ ru: photo.modifications.join('; ') }" /></p>
           </details>
         </aside>
         <div class="profile-content">
           <section class="profile-section" aria-labelledby="profile-about">
             <h2 id="profile-about">{{ t('speciesProfile.overview') }}</h2>
-            <p><ScientificText :value="species.habitat?.description" /></p>
+            <template v-if="species.content?.overview">
+              <p v-for="(paragraph, index) in contentParagraphs(species.content.overview, language)" :key="index"><ScientificText :value="paragraph" /></p>
+              <LessonReferences :species="species" :ids="species.content.overview.sourceIds" />
+            </template>
+            <p v-else>{{ t('ui.m066') }}</p>
+          </section>
+          <section v-for="field in ['appearance', 'ecology', 'diet', 'reproduction']" v-show="field !== 'diet' || !['plants', 'fungi'].includes(species.group) || species.content?.diet" :key="field" class="profile-section" :aria-labelledby="`profile-${field}`">
+            <h2 :id="`profile-${field}`">{{ t(`content.${field}`) }}</h2>
+            <template v-if="species.content?.[field]">
+              <p v-for="(paragraph, index) in contentParagraphs(species.content[field], language)" :key="index"><ScientificText :value="paragraph" /></p>
+              <LessonReferences :species="species" :ids="species.content[field].sourceIds" />
+            </template>
+            <p v-else class="profile-note">{{ t('ui.m066') }}</p>
+          </section>
+          <section class="profile-section" aria-labelledby="profile-habitat">
+            <h2 id="profile-habitat">{{ t('ui.m065') }}</h2>
+            <p><ScientificText :value="species.habitat?.description" /> <LessonReferences :species="species" :ids="species.habitat?.sourceIds" /></p>
           </section>
           <section class="profile-section" aria-labelledby="profile-regions">
             <h2 id="profile-regions">{{ t('ui.m246') }}</h2>
             <p>{{ locations.join(', ') || t('ui.m247') }}</p>
+            <template v-if="species.content?.distribution">
+              <p v-for="(paragraph, index) in contentParagraphs(species.content.distribution, language)" :key="index"><ScientificText :value="paragraph" /></p>
+              <LessonReferences :species="species" :ids="species.content.distribution.sourceIds" />
+            </template>
+            <p v-else class="profile-note">{{ t('ui.m066') }}</p>
             <p class="profile-note">{{ t('speciesProfile.regionNote') }}</p>
-          </section>
-          <section class="profile-section" aria-labelledby="profile-diet">
-            <h2 id="profile-diet">{{ t('speciesProfile.dietAndBehavior') }}</h2>
-            <p class="profile-note">{{ t('speciesProfile.dietPending') }}</p>
           </section>
           <section class="profile-section" aria-labelledby="profile-threats">
             <h2 id="profile-threats">{{ t('ui.m249') }}</h2>

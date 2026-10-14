@@ -1,0 +1,618 @@
+{
+  "schemaVersion": 1,
+  "batchId": "catalog-40-batch-1",
+  "dataset": {
+    "key": "19491596-35ae-4a91-9a98-85cf505f1bd3",
+    "installationKey": "fb5e4c2a-579c-434b-a446-3a665dd732ad",
+    "publishingOrganizationKey": "d44af9a3-e779-40c0-a186-79e7717c6d2b",
+    "doi": "10.15468/0qnb58",
+    "external": false,
+    "numConstituents": 0,
+    "type": "CHECKLIST",
+    "title": "The IUCN Red List of Threatened Species",
+    "description": "<p>Established in 1964, the International Union for Conservation of Nature’s Red List of Threatened Species has evolved to become the world’s most comprehensive information source on the global extinction risk status of animal, fungus and plant species.</p><p>The IUCN Red List is a critical indicator of the health of the world’s biodiversity. Far more than a list of species and their status, it is a powerful tool to inform and catalyse action for biodiversity conservation and policy change, critical to protecting the natural resources we need to survive. It provides information about range, population size, habitat and ecology, use and/or trade, threats, and conservation actions that will help inform necessary conservation decisions.</p><p>The IUCN Red List is used by government agencies, wildlife departments, conservation-related non-governmental organisations (NGOs), natural resource planners, educational organisations, students, and the business community. The Red List process has become a massive enterprise involving the IUCN Global Species Program staff, partner organisations and experts in the IUCN Species Survival Commission and partner networks who compile the species information to make The IUCN Red List the indispensable product it is today.</p>",
+    "language": "eng",
+    "homepage": "https://www.iucnredlist.org/",
+    "logoUrl": "https://raw.githubusercontent.com/mdoering/checklist_builder/master/src/main/resources/iucn/IUCN_Red_List.svg",
+    "citation": {
+      "text": "IUCN (2026). The IUCN Red List of Threatened Species. Version 2026-1. https://www.iucnredlist.org. Downloaded on 2026-07-28. https://doi.org/10.15468/0qnb58 accessed via GBIF.org on 2026-10-14.",
+      "citationProvidedBySource": true
+    },
+    "contactsCitation": [],
+    "lockedForAutoUpdate": false,
+    "createdBy": "registry-migration.gbif.org",
+    "modifiedBy": "crawler.gbif.org",
+    "created": "2011-07-18T12:35:28.000+00:00",
+    "modified": "2026-07-30T02:30:35.334+00:00",
+    "contacts": [
+      {
+        "key": 7094395,
+        "type": "ORIGINATOR",
+        "primary": true,
+        "userId": [],
+        "lastName": "International Union for Conservation of Nature",
+        "position": [],
+        "email": [],
+        "phone": [],
+        "homepage": [
+          "https://www.iucn.org/"
+        ],
+        "organization": "International Union for Conservation of Nature",
+        "address": [],
+        "createdBy": "crawler.gbif.org",
+        "modifiedBy": "crawler.gbif.org",
+        "created": "2026-07-30T02:30:35.308+00:00",
+        "modified": "2026-07-30T02:30:35.308+00:00"
+      },
+      {
+        "key": 7094396,
+        "type": "METADATA_AUTHOR",
+        "primary": true,
+        "userId": [
+          "https://orcid.org/0000-0003-0623-6682"
+        ],
+        "firstName": "Matthew",
+        "lastName": "Blissett",
+        "position": [
+          "Software Developer"
+        ],
+        "email": [
+          "mblissett@gbif.org"
+        ],
+        "phone": [],
+        "homepage": [],
+        "organization": "GBIF",
+        "address": [],
+        "createdBy": "crawler.gbif.org",
+        "modifiedBy": "crawler.gbif.org",
+        "created": "2026-07-30T02:30:35.310+00:00",
+        "modified": "2026-07-30T02:30:35.310+00:00"
+      },
+      {
+        "key": 7094397,
+        "type": "TECHNICAL_POINT_OF_CONTACT",
+        "primary": false,
+        "userId": [],
+        "firstName": "Simon",
+        "lastName": "Tarr",
+        "position": [
+          "Biodiversity Systems Manager"
+        ],
+        "email": [
+          "Simon.TARR@iucn.org"
+        ],
+        "phone": [],
+        "homepage": [],
+        "organization": "International Union for Conservation of Nature",
+        "address": [],
+        "createdBy": "crawler.gbif.org",
+        "modifiedBy": "crawler.gbif.org",
+        "created": "2026-07-30T02:30:35.311+00:00",
+        "modified": "2026-07-30T02:30:35.311+00:00"
+      },
+      {
+        "key": 7094398,
+        "type": "PROGRAMMER",
+        "primary": false,
+        "userId": [
+          "https://orcid.org/0000-0003-0623-6682"
+        ],
+        "firstName": "Matthew",
+        "lastName": "Blissett",
+        "position": [
+          "Software Developer"
+        ],
+        "email": [
+          "mblissett@gbif.org"
+        ],
+        "phone": [],
+        "homepage": [],
+        "organization": "GBIF",
+        "address": [],
+        "createdBy": "crawler.gbif.org",
+        "modifiedBy": "crawler.gbif.org",
+        "created": "2026-07-30T02:30:35.313+00:00",
+        "modified": "2026-07-30T02:30:35.313+00:00"
+      },
+      {
+        "key": 7094399,
+        "type": "ADMINISTRATIVE_POINT_OF_CONTACT",
+        "primary": true,
+        "userId": [],
+        "firstName": "Craig",
+        "lastName": "Hilton-Taylor",
+        "position": [],
+        "email": [
+          "Craig.HILTON-TAYLOR@iucn.org"
+        ],
+        "phone": [],
+        "homepage": [],
+        "organization": "International Union for Conservation of Nature",
+        "address": [],
+        "createdBy": "crawler.gbif.org",
+        "modifiedBy": "crawler.gbif.org",
+        "created": "2026-07-30T02:30:35.314+00:00",
+        "modified": "2026-07-30T02:30:35.314+00:00"
+      }
+    ],
+    "endpoints": [
+      {
+        "key": 1294697,
+        "type": "DWC_ARCHIVE",
+        "url": "https://hosted-datasets.gbif.org/datasets/iucn/iucn-latest.zip",
+        "createdBy": "MattBlissett",
+        "modifiedBy": "MattBlissett",
+        "created": "2026-06-09T11:13:43.800+00:00",
+        "modified": "2026-06-09T11:13:43.800+00:00",
+        "machineTags": []
+      }
+    ],
+    "machineTags": [
+      {
+        "key": 33193554,
+        "namespace": "crawler.gbif.org",
+        "name": "crawl_attempt",
+        "value": "423",
+        "createdBy": "crawler.gbif.org",
+        "created": "2026-10-13T15:20:00.143+00:00"
+      }
+    ],
+    "tags": [],
+    "identifiers": [
+      {
+        "key": 436650,
+        "type": "CLB_DATASET_KEY",
+        "identifier": "53131",
+        "createdBy": "clb-bot",
+        "created": "2025-02-21T11:21:46.961+00:00",
+        "primary": false
+      },
+      {
+        "key": 11549,
+        "type": "GBIF_PORTAL",
+        "identifier": "13623",
+        "createdBy": "registry-migration.gbif.org",
+        "created": "2012-09-05T14:04:22.000+00:00",
+        "primary": false
+      }
+    ],
+    "comments": [
+      {
+        "key": 35448,
+        "content": "[2023-11-20, ah] changed technical contact on request from IUCN contact (helpdesk email: 17.11. via Andrew R.)",
+        "createdBy": "andrea",
+        "modifiedBy": "andrea",
+        "created": "2023-11-20T08:02:07.607+00:00",
+        "modified": "2023-11-20T08:02:07.607+00:00"
+      },
+      {
+        "key": 35445,
+        "content": "[2023-11-17, ah] License update from CC BY-NC to CC BY on consultation with IUCN contact (helpdesk email: 17.11.23, via Andrew R.)",
+        "createdBy": "andrea",
+        "modifiedBy": "andrea",
+        "created": "2023-11-17T08:36:51.837+00:00",
+        "modified": "2023-11-17T08:36:51.837+00:00"
+      }
+    ],
+    "bibliographicCitations": [],
+    "curatorialUnits": [],
+    "taxonomicCoverages": [],
+    "geographicCoverages": [],
+    "temporalCoverages": [],
+    "keywordCollections": [],
+    "countryCoverage": [],
+    "collections": [],
+    "dataDescriptions": [],
+    "dataLanguage": "eng",
+    "pubDate": "2026-07-28T00:00:00.000+00:00",
+    "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+    "dwca": {
+      "coreType": "http://rs.tdwg.org/dwc/terms/Taxon",
+      "extensions": [
+        "http://rs.gbif.org/terms/1.0/Distribution",
+        "http://rs.gbif.org/terms/1.0/VernacularName"
+      ],
+      "modified": "2026-10-13T15:20:09.763+00:00"
+    },
+    "approximateCounts": {
+      "occurrenceCount": 0,
+      "nameUsageCount": 338085
+    }
+  },
+  "evidence": [
+    {
+      "id": "said-alievs-toad-agama",
+      "bookPage": 333,
+      "gbifUrl": "https://api.gbif.org/v1/species/match?strict=true&name=Phrynocephalus%20saidalievi",
+      "gbif": {
+        "usageKey": 10782470,
+        "scientificName": "Phrynocephalus saidalievi Sattorov, 1981",
+        "canonicalName": "Phrynocephalus saidalievi",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "confidence": 99,
+        "matchType": "EXACT",
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "family": "Agamidae",
+        "genus": "Phrynocephalus",
+        "species": "Phrynocephalus saidalievi",
+        "kingdomKey": 1,
+        "phylumKey": 44,
+        "classKey": 11592253,
+        "familyKey": 9199,
+        "genusKey": 2466296,
+        "speciesKey": 10782470,
+        "class": "Squamata"
+      },
+      "iucnSearchUrl": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Phrynocephalus+saidalievi&limit=10",
+      "iucnSearch": {
+        "offset": 0,
+        "limit": 10,
+        "endOfRecords": true,
+        "count": 2,
+        "results": [
+          {
+            "key": 176718708,
+            "datasetKey": "19491596-35ae-4a91-9a98-85cf505f1bd3",
+            "nubKey": 10782470,
+            "parentKey": 340216593,
+            "parent": "Phrynocephalus",
+            "kingdom": "ANIMALIA",
+            "phylum": "CHORDATA",
+            "order": "SQUAMATA",
+            "family": "AGAMIDAE",
+            "genus": "Phrynocephalus",
+            "species": "Phrynocephalus saidalievi",
+            "kingdomKey": 340214027,
+            "phylumKey": 340214214,
+            "classKey": 340214376,
+            "orderKey": 340214785,
+            "familyKey": 340216520,
+            "genusKey": 340216593,
+            "speciesKey": 176718708,
+            "scientificName": "Phrynocephalus saidalievi Sattorov, 1981",
+            "canonicalName": "Phrynocephalus saidalievi",
+            "authorship": "Sattorov, 1981",
+            "nameType": "SCIENTIFIC",
+            "taxonomicStatus": "ACCEPTED",
+            "rank": "SPECIES",
+            "origin": "SOURCE",
+            "numDescendants": 0,
+            "numOccurrences": 0,
+            "taxonID": "48836207",
+            "habitats": [],
+            "nomenclaturalStatus": [],
+            "threatStatuses": [
+              "VULNERABLE"
+            ],
+            "descriptions": [],
+            "vernacularNames": [],
+            "synonym": false,
+            "higherClassificationMap": {
+              "340214027": "ANIMALIA",
+              "340214214": "CHORDATA",
+              "340214376": "REPTILIA",
+              "340214785": "SQUAMATA",
+              "340216520": "AGAMIDAE",
+              "340216593": "Phrynocephalus"
+            },
+            "class": "REPTILIA"
+          },
+          {
+            "key": 176718711,
+            "datasetKey": "19491596-35ae-4a91-9a98-85cf505f1bd3",
+            "nubKey": 6160155,
+            "parentKey": 312034,
+            "parent": "Phrynocephalus",
+            "acceptedKey": 176718708,
+            "accepted": "Phrynocephalus saidalievi Sattorov, 1981",
+            "kingdom": "ANIMALIA",
+            "phylum": "CHORDATA",
+            "order": "SQUAMATA",
+            "family": "AGAMIDAE",
+            "genus": "Phrynocephalus",
+            "species": "Phrynocephalus saidalievi",
+            "kingdomKey": 340214027,
+            "phylumKey": 340214214,
+            "classKey": 340214376,
+            "orderKey": 340214785,
+            "familyKey": 340216520,
+            "genusKey": 340216593,
+            "speciesKey": 176718708,
+            "scientificName": "Phrynocephalus helioscopus ssp. saidalievi Sattorov, 1981",
+            "canonicalName": "Phrynocephalus helioscopus saidalievi",
+            "nameType": "SCIENTIFIC",
+            "taxonomicStatus": "SYNONYM",
+            "origin": "SOURCE",
+            "numDescendants": 0,
+            "numOccurrences": 0,
+            "taxonID": "48836207_1",
+            "habitats": [],
+            "nomenclaturalStatus": [],
+            "threatStatuses": [],
+            "descriptions": [],
+            "vernacularNames": [],
+            "synonym": true,
+            "higherClassificationMap": {
+              "312034": "Phrynocephalus",
+              "176718708": "Phrynocephalus saidalievi",
+              "340214027": "ANIMALIA",
+              "340214214": "CHORDATA",
+              "340214376": "REPTILIA",
+              "340214785": "SQUAMATA",
+              "340216520": "AGAMIDAE",
+              "340216593": "Phrynocephalus"
+            },
+            "class": "REPTILIA"
+          }
+        ],
+        "facets": []
+      },
+      "selectedIucnKey": 176718708,
+      "reviewedAt": "2026-10-14"
+    },
+    {
+      "id": "vigorous-ground-beetle",
+      "bookPage": 259,
+      "gbifUrl": "https://api.gbif.org/v1/species/match?strict=true&name=Carabus%20validus",
+      "gbif": {
+        "usageKey": 8881643,
+        "scientificName": "Carabus validus (Kraatz, 1884)",
+        "canonicalName": "Carabus validus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "confidence": 99,
+        "matchType": "EXACT",
+        "kingdom": "Animalia",
+        "phylum": "Arthropoda",
+        "order": "Coleoptera",
+        "family": "Carabidae",
+        "genus": "Carabus",
+        "species": "Carabus validus",
+        "kingdomKey": 1,
+        "phylumKey": 54,
+        "classKey": 216,
+        "orderKey": 1470,
+        "familyKey": 3792,
+        "genusKey": 1036775,
+        "speciesKey": 8881643,
+        "class": "Insecta"
+      },
+      "iucnSearchUrl": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Carabus+validus&limit=10",
+      "iucnSearch": {
+        "offset": 0,
+        "limit": 10,
+        "endOfRecords": true,
+        "count": 0,
+        "results": [],
+        "facets": []
+      },
+      "selectedIucnKey": null,
+      "reviewedAt": "2026-10-14"
+    },
+    {
+      "id": "pskem-onion",
+      "bookPage": 71,
+      "gbifUrl": "https://api.gbif.org/v1/species/match?strict=true&name=Allium%20pskemense",
+      "gbif": {
+        "usageKey": 2856107,
+        "scientificName": "Allium pskemense B.Fedtsch.",
+        "canonicalName": "Allium pskemense",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "confidence": 99,
+        "matchType": "EXACT",
+        "kingdom": "Plantae",
+        "phylum": "Tracheophyta",
+        "order": "Asparagales",
+        "family": "Amaryllidaceae",
+        "genus": "Allium",
+        "species": "Allium pskemense",
+        "kingdomKey": 6,
+        "phylumKey": 7707728,
+        "classKey": 196,
+        "orderKey": 1169,
+        "familyKey": 7682,
+        "genusKey": 9624496,
+        "speciesKey": 2856107,
+        "class": "Liliopsida"
+      },
+      "iucnSearchUrl": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Allium+pskemense&limit=10",
+      "iucnSearch": {
+        "offset": 0,
+        "limit": 10,
+        "endOfRecords": true,
+        "count": 1,
+        "results": [
+          {
+            "key": 176769887,
+            "datasetKey": "19491596-35ae-4a91-9a98-85cf505f1bd3",
+            "nubKey": 2856107,
+            "parentKey": 340240751,
+            "parent": "Allium",
+            "kingdom": "PLANTAE",
+            "phylum": "TRACHEOPHYTA",
+            "order": "ASPARAGALES",
+            "family": "AMARYLLIDACEAE",
+            "genus": "Allium",
+            "species": "Allium pskemense",
+            "kingdomKey": 340231984,
+            "phylumKey": 340233373,
+            "classKey": 340240262,
+            "orderKey": 340240342,
+            "familyKey": 340240717,
+            "genusKey": 340240751,
+            "speciesKey": 176769887,
+            "scientificName": "Allium pskemense B.Fedtsch.",
+            "canonicalName": "Allium pskemense",
+            "authorship": "B.Fedtsch.",
+            "nameType": "SCIENTIFIC",
+            "taxonomicStatus": "ACCEPTED",
+            "rank": "SPECIES",
+            "origin": "SOURCE",
+            "numDescendants": 0,
+            "numOccurrences": 0,
+            "taxonID": "20666130",
+            "habitats": [],
+            "nomenclaturalStatus": [],
+            "threatStatuses": [
+              "DATA_DEFICIENT"
+            ],
+            "descriptions": [],
+            "vernacularNames": [
+              {
+                "vernacularName": "luk pskemskij",
+                "language": "rus"
+              }
+            ],
+            "synonym": false,
+            "higherClassificationMap": {
+              "340231984": "PLANTAE",
+              "340233373": "TRACHEOPHYTA",
+              "340240262": "LILIOPSIDA",
+              "340240342": "ASPARAGALES",
+              "340240717": "AMARYLLIDACEAE",
+              "340240751": "Allium"
+            },
+            "class": "LILIOPSIDA"
+          }
+        ],
+        "facets": []
+      },
+      "selectedIucnKey": 176769887,
+      "reviewedAt": "2026-10-14"
+    },
+    {
+      "id": "kostychevs-pasque-flower",
+      "bookPage": 113,
+      "gbifUrl": "https://api.gbif.org/v1/species/match?strict=true&name=Pulsatilla%20kostyczewii",
+      "gbif": {
+        "usageKey": 3929258,
+        "scientificName": "Pulsatilla kostyczewii (Korsh.) Juz.",
+        "canonicalName": "Pulsatilla kostyczewii",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "confidence": 99,
+        "matchType": "EXACT",
+        "kingdom": "Plantae",
+        "phylum": "Tracheophyta",
+        "order": "Ranunculales",
+        "family": "Ranunculaceae",
+        "genus": "Pulsatilla",
+        "species": "Pulsatilla kostyczewii",
+        "kingdomKey": 6,
+        "phylumKey": 7707728,
+        "classKey": 220,
+        "orderKey": 399,
+        "familyKey": 2410,
+        "genusKey": 3033620,
+        "speciesKey": 3929258,
+        "class": "Magnoliopsida"
+      },
+      "iucnSearchUrl": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Pulsatilla+kostyczewii&limit=10",
+      "iucnSearch": {
+        "offset": 0,
+        "limit": 10,
+        "endOfRecords": true,
+        "count": 0,
+        "results": [],
+        "facets": []
+      },
+      "selectedIucnKey": null,
+      "reviewedAt": "2026-10-14"
+    },
+    {
+      "id": "indian-crested-porcupine",
+      "bookPage": 521,
+      "gbifUrl": "https://api.gbif.org/v1/species/match?strict=true&name=Hystrix%20indica",
+      "gbif": {
+        "usageKey": 5219884,
+        "scientificName": "Hystrix indica Kerr, 1792",
+        "canonicalName": "Hystrix indica",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "confidence": 99,
+        "matchType": "EXACT",
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "order": "Rodentia",
+        "family": "Hystricidae",
+        "genus": "Hystrix",
+        "species": "Hystrix indica",
+        "kingdomKey": 1,
+        "phylumKey": 44,
+        "classKey": 359,
+        "orderKey": 1459,
+        "familyKey": 9705,
+        "genusKey": 2311276,
+        "speciesKey": 5219884,
+        "class": "Mammalia"
+      },
+      "iucnSearchUrl": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Hystrix+indica&limit=10",
+      "iucnSearch": {
+        "offset": 0,
+        "limit": 10,
+        "endOfRecords": true,
+        "count": 1,
+        "results": [
+          {
+            "key": 176672520,
+            "datasetKey": "19491596-35ae-4a91-9a98-85cf505f1bd3",
+            "nubKey": 5219884,
+            "parentKey": 340224611,
+            "parent": "Hystrix",
+            "kingdom": "ANIMALIA",
+            "phylum": "CHORDATA",
+            "order": "RODENTIA",
+            "family": "HYSTRICIDAE",
+            "genus": "Hystrix",
+            "species": "Hystrix indica",
+            "kingdomKey": 340214027,
+            "phylumKey": 340214214,
+            "classKey": 340221458,
+            "orderKey": 340223387,
+            "familyKey": 340224607,
+            "genusKey": 340224611,
+            "speciesKey": 176672520,
+            "scientificName": "Hystrix indica Kerr, 1792",
+            "canonicalName": "Hystrix indica",
+            "authorship": "Kerr, 1792",
+            "nameType": "SCIENTIFIC",
+            "taxonomicStatus": "ACCEPTED",
+            "rank": "SPECIES",
+            "origin": "SOURCE",
+            "numDescendants": 0,
+            "numOccurrences": 0,
+            "taxonID": "10751",
+            "habitats": [],
+            "nomenclaturalStatus": [],
+            "threatStatuses": [
+              "LEAST_CONCERN"
+            ],
+            "descriptions": [],
+            "vernacularNames": [
+              {
+                "vernacularName": "Indian Crested Porcupine",
+                "language": "eng"
+              }
+            ],
+            "synonym": false,
+            "higherClassificationMap": {
+              "340214027": "ANIMALIA",
+              "340214214": "CHORDATA",
+              "340221458": "MAMMALIA",
+              "340223387": "RODENTIA",
+              "340224607": "HYSTRICIDAE",
+              "340224611": "Hystrix"
+            },
+            "class": "MAMMALIA"
+          }
+        ],
+        "facets": []
+      },
+      "selectedIucnKey": 176672520,
+      "reviewedAt": "2026-10-14"
+    }
+  ]
+}

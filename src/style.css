@@ -520,3 +520,129 @@
   .page-header .header-main-row, .page-header .header-link,
   .page-header .main-navigation { transition: none; }
 }
+
+/* MURAS 40: narrowly scoped header, search, paging, navigation and footer polish. */
+/* Consistent logo dimensions before and after the scroll-aware header compacts. */
+.page-header .brand-logo { width: 142px; height: 35px; max-width: 100%; }
+.page-header.header-compact .brand-logo { width: 128px; height: 32px; }
+.page-header .brand { overflow: hidden; }
+
+/* Custom language menu: identical on desktop and touchscreens, not a native select. */
+.page-header .site-language { position: relative; z-index: 18; }
+.page-header .language-trigger {
+  display: flex; align-items: center; justify-content: center; gap: 6px;
+  width: 68px; min-height: 44px; padding: 6px 7px;
+  border: 1px solid var(--line); border-radius: 9px;
+  background: #fff; color: var(--ink); font-size: 13px; font-weight: 700;
+  letter-spacing: .045em; transition: border-color .18s ease, background .18s ease;
+}
+.page-header .language-trigger:hover, .page-header .language-trigger[aria-expanded="true"] { background: #edf2ec; border-color: #879b89; }
+.page-header .language-trigger svg { flex-shrink: 0; transition: transform .2s ease; }
+.page-header .language-trigger[aria-expanded="true"] svg { transform: rotate(180deg); }
+.page-header .language-options {
+  position: absolute; z-index: 120; top: calc(100% + 9px); right: 0;
+  width: 188px; padding: 6px; border: 1px solid var(--line);
+  border-radius: 13px; background: #fff; box-shadow: 0 18px 42px #253b3228;
+}
+.page-header .language-options button {
+  display: grid; grid-template-columns: 29px 1fr 17px; align-items: center; gap: 8px;
+  width: 100%; min-height: 44px; padding: 9px 10px; border-radius: 8px;
+  color: var(--ink); text-align: left; font-size: 13px;
+}
+.page-header .language-options button:hover, .page-header .language-options button:focus-visible { background: #eef2ec; }
+.page-header .language-options button[aria-checked="true"] { background: #e9f0e7; font-weight: 650; }
+.language-code { font-size: 11px; font-weight: 700; letter-spacing: .06em; color: var(--muted); }
+.language-name { white-space: nowrap; }
+
+/* Expand search as an overlay: no header height change or document reflow. */
+.page-header .header-main-row { position: relative; }
+.page-header .header-search { position: relative; z-index: 20; transition: max-width .28s cubic-bezier(.2,.75,.25,1), width .28s cubic-bezier(.2,.75,.25,1); }
+.page-header .header-search:focus-within { z-index: 24; }
+.page-header .header-main-row:has(.header-search:focus-within) .header-search {
+  position: absolute; top: 50%; left: 50%; grid-column: auto;
+  transform: translate(-50%, -50%);
+  width: min(780px, calc(100% - 16px)); max-width: none;
+}
+.page-header .header-search .search-input-row { transition: box-shadow .22s ease, border-color .22s ease; }
+.page-header .header-search .search-input-row:focus-within {
+  border-color: var(--red); outline: 1px solid var(--red); outline-offset: 0;
+  box-shadow: 0 10px 28px #253b321c;
+}
+.page-header .header-search .search-popup {
+  width: 100%; max-height: min(420px, 55dvh);
+  box-shadow: 0 18px 46px #253b3228;
+}
+@media (max-width: 1050px) {
+  .page-header .header-main-row:has(.header-search:focus-within) > .brand,
+  .page-header .header-main-row:has(.header-search:focus-within) > .site-language {
+    opacity: .12; pointer-events: none;
+  }
+}
+@media (max-width: 767px) {
+  .page-header .brand-logo, .page-header.header-compact .brand-logo { width: 98px; height: 27px; }
+  .page-header .language-trigger { width: 52px; min-height: 42px; padding: 5px 2px; gap: 2px; font-size: 12px; }
+  .page-header .language-trigger svg { width: 11px; height: 11px; }
+  .page-header .header-main-row:has(.header-search:focus-within) .header-search {
+    top: 50%; left: 50%; width: 100%;
+  }
+  .page-header .header-search .search-popup { max-height: min(410px, 60dvh); }
+}
+@media (max-width: 390px) {
+  .page-header .brand-logo, .page-header.header-compact .brand-logo { width: 90px; height: 25px; }
+  .page-header .language-trigger { width: 48px; }
+}
+
+/* Soft sage navigation, with one quick restrained glint on hover. */
+.page-header .main-navigation {
+  border-radius: 6px 6px 0 0;
+  background-image: linear-gradient(110deg, transparent 38%, #ffffffa8 49%, transparent 60%), linear-gradient(105deg, #e7ede5, #f1f4ef 48%, #e5ece3);
+  background-size: 240% 100%, 100% 100%;
+  background-position: 140% 0, center;
+}
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .page-header .main-navigation:hover { animation: muras-nav-glint .7s ease-out 1; }
+}
+@keyframes muras-nav-glint { from { background-position: 140% 0, center; } to { background-position: -80% 0, center; } }
+
+/* Minimal pagination: one catalog page contains exactly 24 records. */
+.catalog-pagination {
+  display: flex; flex-wrap: wrap; gap: 6px; align-items: center; justify-content: center;
+  padding-block: 26px 6px; margin-top: 18px;
+}
+.catalog-pagination button {
+  display: grid; place-items: center; min-width: 44px; min-height: 44px;
+  padding: 0 10px; border: 1px solid transparent; border-radius: 9px;
+  color: var(--ink); font-size: 15px; font-weight: 550;
+  transition: background .18s ease, border-color .18s ease;
+}
+.catalog-pagination button:hover:not(:disabled) { background: #e7eee5; }
+.catalog-pagination .page-number[aria-current="page"] { background: var(--ink); color: #fff; border-color: var(--ink); }
+.catalog-pagination .page-arrow { border-color: var(--line); background: #fff; font-size: 19px; }
+.catalog-pagination button:disabled { opacity: .35; cursor: default; }
+.catalog-pagination .page-ellipsis { display: inline-grid; place-items: center; min-width: 22px; color: var(--muted); }
+#catalog-title:focus { outline: none; }
+
+/* Full-bleed subdued editorial footer, without changing page content widths. */
+.page-footer {
+  width: 100%; margin-top: 64px; padding: 0;
+  background: linear-gradient(120deg, #253d33, #30483c 65%, #354b3e);
+  border-top: 2px solid #748f77; color: #e1e8df;
+}
+.page-footer .footer-inner {
+  display: flex; align-items: start; justify-content: space-between; flex-wrap: wrap;
+  gap: 24px 64px; padding-block: 40px 46px;
+}
+.page-footer .footer-brand { display: inline-block; margin-right: 8px; color: #fff; font-weight: 750; letter-spacing: .075em; }
+.page-footer .footer-note { max-width: 375px; color: #c1d0c3; }
+@media (max-width: 600px) {
+  .page-footer .footer-inner { padding-block: 32px 38px; gap: 18px; }
+  .page-footer .footer-note { max-width: 100%; }
+}
+@media (forced-colors: active) {
+  .catalog-pagination .page-number[aria-current="page"] { outline: 2px solid Highlight; }
+  .page-header .language-options button[aria-checked="true"] { outline: 1px solid Highlight; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .page-header .header-search, .page-header .header-search .search-input-row,
+  .page-header .language-trigger, .page-header .language-trigger svg { transition: none; }
+}

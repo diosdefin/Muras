@@ -2,7 +2,7 @@
 import ErrorNotice from './components/ErrorNotice.vue'
 import BrandLogo from './components/BrandLogo.vue'
 import { syncLocaleMetadata, useLocale } from './composables/useLocale.js'
-import { computed, nextTick, onMounted, onUnmounted, ref } from 'vue'
+import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { speciesPath, speciesIdFromPath } from './data/species-routes.js'
 import SpeciesPage from './components/SpeciesPage.vue'
 import { searchContentLanguage } from './data/localization.js'
@@ -14,6 +14,8 @@ import LessonView from './components/lesson/LessonView.vue'
 import MapSection from './components/map/MapSection.vue'
 import SupportView from './components/support/SupportView.vue'
 import CatalogSearch from './components/CatalogSearch.vue'
+import LanguageMenu from './components/LanguageMenu.vue'
+import { paginateCatalog, pageNumbers } from './data/catalog-pagination.js'
 import GroupFilter from './components/GroupFilter.vue'
 import { useCatalog } from './composables/useCatalog.js'
 import './components/catalog.css'
@@ -28,7 +30,11 @@ const catalog = useCatalog(species)
 // Header search sees the whole catalogue even when page filters are active.
 const headerSearchIndex = computed(() => createSearchIndex(species.value))
 const headerSearchResults = computed(() => searchSpecies(headerSearchIndex.value, catalog.query.value))
-const { query, status: selectedStatus, region: selectedRegion, group: selectedGroup, options, results, page, fuzzy, hasFilters } = catalog
+const { query, status: selectedStatus, region: selectedRegion, group: selectedGroup, options, results, fuzzy, hasFilters } = catalog
+const catalogPageNumber = ref(1)
+const catalogPagination = computed(() => paginateCatalog(results.value, catalogPageNumber.value))
+const paginationButtons = computed(() => pageNumbers(catalogPagination.value.current, catalogPagination.value.totalPages))
+watch([query, selectedStatus, selectedRegion, selectedGroup, species], () => { catalogPageNumber.value = 1 }, { flush: 'sync' })
 const isLoading = ref(true)
 const errorMessage = ref('')
 const selectedSpecies = ref(null)
@@ -181,11 +187,14 @@ function studySpecies(id) {
   if (record) openSpecies(record)
 }
 
-async function showMoreSpecies() {
-  const previousCount = page.value.entries.length
-  catalog.more()
+async function changeCatalogPage(number) {
+  const target = Math.min(catalogPagination.value.totalPages, Math.max(1, number))
+  if (target === catalogPageNumber.value) return
+  catalogPageNumber.value = target
   await nextTick()
-  document.querySelectorAll('.species-grid .card-open')[previousCount]?.focus()
+  const heading = document.getElementById('catalog-title')
+  document.getElementById('catalog')?.scrollIntoView({ block: 'start', behavior: scrollBehavior() })
+  heading?.focus({ preventScroll: true })
 }
 
 function openSpecies(speciesItem) {
@@ -247,7 +256,7 @@ onUnmounted(() => {
       <div class="header-search">
         <CatalogSearch v-model="query" :results="headerSearchResults" @open="openSearchResult" />
       </div>
-      <label class="site-language"><span class="sr-only">{{ t('chooseLanguage') }}</span><select :value="siteLanguage" :aria-label="t('chooseLanguage')" @change="setLanguage($event.target.value)"><option value="ky" lang="ky">KY</option><option value="ru" lang="ru">RU</option><option value="en" lang="en">EN</option></select></label>
+      <LanguageMenu :model-value="siteLanguage" :label="t('chooseLanguage')" @change="setLanguage" />
     </div>
     <nav class="main-navigation" :aria-label="t('ui.m007')">
       <a class="header-link" href="#catalog" :aria-label="`${t('ui.m009')} — ${t('ui.m008')}`" :aria-current="activeView === 'catalog' ? 'page' : undefined" @click.prevent="showView('catalog')">{{ t('ui.m009') }}</a>
@@ -281,7 +290,7 @@ onUnmounted(() => {
       <div class="catalog-heading">
         <div>
           <p class="eyebrow">{{ t('ui.m008') }}</p>
-          <h2 id="catalog-title">{{ t('ui.m022') }}</h2>
+          <h2 id="catalog-title" tabindex="-1">{{ t('ui.m022') }}</h2>
         </div>
         <p class="catalog-note">{{ t('ui.m023') }}<br class="hidden sm:block" /> {{ t('ui.m024') }}</p>
       </div>
@@ -308,9 +317,16 @@ onUnmounted(() => {
       <ErrorNotice v-else-if="errorMessage" :message="errorMessage"></ErrorNotice>
       <p v-else-if="results.length === 0" class="catalog-message">{{ t('ui.m037') }}</p>
       <div v-else class="species-grid">
-        <SpeciesCard v-for="result in page.entries" :key="result.species.id" :species="result.species" @open="openSearchResult(result)" />
+        <SpeciesCard v-for="result in catalogPagination.entries" :key="result.species.id" :species="result.species" @open="openSearchResult(result)" />
       </div>
-      <div v-if="page.remaining" class="catalog-more"><button type="button" class="quiz-secondary" @click="showMoreSpecies">{{ t('ui.m038') }} {{ Math.min(12, page.remaining) }}</button><p>{{ t('ui.m039') }} {{ page.entries.length }} {{ t('ui.m040') }} {{ results.length }}</p></div>
+      <nav v-if="!isLoading && !errorMessage && catalogPagination.totalPages > 1" class="catalog-pagination" :aria-label="t('catalog.pagination.label')">
+        <button class="page-arrow" type="button" :disabled="catalogPagination.current === 1" :aria-label="t('catalog.pagination.previous')" @click="changeCatalogPage(catalogPagination.current - 1)"><span aria-hidden="true">←</span></button>
+        <template v-for="(number, index) in paginationButtons" :key="`${number}-${index}`">
+          <span v-if="number === '…'" class="page-ellipsis" aria-hidden="true">…</span>
+          <button v-else class="page-number" type="button" :aria-label="t('catalog.pagination.page', { p0: number })" :aria-current="catalogPagination.current === number ? 'page' : undefined" @click="changeCatalogPage(number)">{{ number }}</button>
+        </template>
+        <button class="page-arrow" type="button" :disabled="catalogPagination.current === catalogPagination.totalPages" :aria-label="t('catalog.pagination.next')" @click="changeCatalogPage(catalogPagination.current + 1)"><span aria-hidden="true">→</span></button>
+      </nav>
     </section>
     <QuizView v-if="mountedViews.has('quiz')" v-show="activeView === 'quiz'" :questions="quizQuestions" :species="species" :loading="quizLoading" :error="quizError" :return-to-lesson="quizFromLesson"
       @catalog="showView('catalog')" @study="studySpecies" @lesson="showView('lesson')" />
@@ -320,9 +336,11 @@ onUnmounted(() => {
     <SupportView v-if="mountedViews.has('support')" v-show="activeView === 'support'" :species="species" :species-id="supportSpeciesId" :loading="isLoading" :error="errorMessage"
       @select="supportSpeciesId = $event" @study="studySpecies" @catalog="showView('catalog')" />
   </main>
-  <footer class="page-footer page-container">
-    <p><span class="footer-brand">Muras</span> {{ t('ui.m041') }}</p>
-    <p>{{ t('ui.m042') }}<br class="hidden sm:block" /> {{ t('ui.m043') }}</p>
+  <footer class="page-footer">
+    <div class="page-container footer-inner">
+      <p><span class="footer-brand">MURAS</span> {{ t('ui.m041') }}</p>
+      <p class="footer-note">{{ t('ui.m042') }}<br class="hidden sm:block" /> {{ t('ui.m043') }}</p>
+    </div>
   </footer>
   <SpeciesModal v-if="selectedSpecies" :species="selectedSpecies" :content-language="contentLanguage" @close="closeSpecies" @support="openSupport" @details="openSpeciesPage" />
 </template>
