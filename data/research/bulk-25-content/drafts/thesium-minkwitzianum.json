@@ -1,0 +1,242 @@
+{
+  "id": "thesium-minkwitzianum",
+  "scientificName": "Chrysothesium minkwitzianum",
+  "names": {
+    "ru": "Ленец Минквица",
+    "ky": null,
+    "uz": null,
+    "en": null
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Santalales",
+    "family": "Thesiaceae",
+    "genus": "Chrysothesium"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "CR",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Thesium minkwitzianum",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Каменистые склоны.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Строительство и разработка полезных ископаемых на территории местообитаний.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По изданию 2006 года охранялся в Беш-Аральском заповеднике Кыргызстана и Чаткальском заповеднике Узбекистана.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Авторы рекомендуют сделать вид одним из главных объектов охраны Беш-Арала и проводить поиск и учёт популяций.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=103",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "conservationMeasures.1",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 26",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Thesium minkwitzianum",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/3788694",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview"
+      ],
+      "taxonId": "gbif:3788694"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Редкое многолетнее растение каменистых склонов хребта Кумбель с кожистыми сизыми листьями. Национальная книга отмечает угрозы от строительства и добычи ископаемых.",
+        "ky": "Күмбел тоо кыркасынын таштуу беттеринде өскөн сейрек көп жылдык өсүмдүк. Жалбырактары бозомук, калың. Улуттук китепте курулуш жана кен казуу коркунучу белгиленген.",
+        "uz": "Kumbel tizmasining toshli yonbagʻirlarida oʻsadigan kamyob koʻp yillik oʻsimlik. Barglari koʻkimtir, qalin. Milliy kitobda qurilish va kon qazish xavfi qayd etilgan.",
+        "en": "A rare perennial of stony slopes in the Kumbel Range, with leathery greyish leaves. The national book identifies construction and mining as threats."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Ленец Минквица в Красной книге 2006 года приведён как Thesium minkwitzianum. Точная таксономическая сверка GBIF принимает Chrysothesium minkwitzianum; национальные биологические сведения сохранены с исходным именем. Это редкое реликтовое многолетнее растение с толстым многоглавым корнем и многочисленными ребристыми стеблями. Кожистые тёмно-сизые листья имеют беловатую кайму. Желтоватые цветки собраны в многоцветковые кисти, а плоды представляют собой ребристые орешки с заметной сетью жилок.\n\nВ пределах Кыргызстана статья указывает только хребет Кумбель в системе Чаткальского хребта; за пределами страны назван Чаткальский заповедник Узбекистана. Местообитания — каменистые склоны. Русский текст сообщает о цветении и плодоношении в мае и семенном размножении, тогда как английское резюме считает биологию малоизвестной. Эти различия отмечены для редактора.\n\nСтроительство и разработка полезных ископаемых названы угрозами. Источник сообщает об охране в Беш-Аральском и Чаткальском заповедниках и рекомендует целевые исследования популяций. Приведённые старые числа растений не имеют даты учёта и не перенесены в поле численности. Категория CR относится к исторической национальной оценке.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Многочисленные голые ребристые стебли до 40 см, густо облиственные. Листья тёмно-сизые, кожистые, широколанцетные, с беловатой каймой. Желтоватый околоцветник длиной 12–15 мм с пятилопастным отгибом. Плоды эллиптические, ребристые и ячеистые орешки.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Редкое реликтовое многолетнее растение каменистых склонов. Национальная статья не описывает механизм питания и не подтверждает паразитизм; признаки других представителей рода на этот таксон не переносятся.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Русская часть национальной статьи: цветение и плодоношение в мае, размножение семенами. Английское резюме указывает отсутствие подробностей биологии. Условия прорастания и опылители неизвестны.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В Кыргызстане национальная статья указывает хребет Кумбель системы Чаткальского хребта и Беш-Аральский заповедник; вне страны — Чаткальский заповедник Узбекистана. Современное присутствие не подтверждено.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

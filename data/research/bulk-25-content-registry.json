@@ -2136,8 +2136,8 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Tulipa zenaidae",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -2181,7 +2181,20 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "threats.1",
+            "conservationMeasures.0",
+            "conservationMeasures.1",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -2204,7 +2217,14 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview"
           ],
           "taxonId": "gbif:5299646"
         }
@@ -2223,6 +2243,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/bulk-25-content/block-3-facts.json",
+          "sha256": "d43e6df0f56b87eac68df31201b6cce0f02097d4af3d07726ccc459f3938d56c"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-3-accounts.json",
+          "sha256": "148471b65199676a49f59786d3dc055c23ff56ca2f027c698a222a10e86faa4c"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-3-images.json",
+          "sha256": "2f78a86d2fdfd2be871f40e1546c2d8159d1b307bb8d7926970751269c373a48"
         }
       ],
       "draft": null,
@@ -2251,59 +2283,64 @@
         "resolution": "exact_documented_synonym_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Названия KY/UZ/EN не подтверждены: используется научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
       "preparation": {
-        "status": "pending",
-        "sourceMasterId": "tulipa-zenaidae"
+        "status": "prepared",
+        "sourceMasterId": "tulipa-zenaidae",
+        "factsFingerprint": "6699fe9d346ff519ab20da464253575053f0746a129bb8e64930ce226abbe8df",
+        "draftSha256": "e7dd49b45bca702c1da57d751fb12064902d836957a6e8f6c517fa470bb371e5"
       },
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "tulipa-zenaidae",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "6c067df7a8195650e4914265d1ba5d85e30d40c58581470a9b12a925a3e0763e",
+        "fingerprint": "b943d5522a64c3118ee74cb58e89b16fcafc68ec88d70ac93f8935d599e0bf99",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
             "uz",
-            "ru",
             "en"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "6c067df7a8195650e4914265d1ba5d85e30d40c58581470a9b12a925a3e0763e"
+      "checkedFingerprint": "b943d5522a64c3118ee74cb58e89b16fcafc68ec88d70ac93f8935d599e0bf99",
+      "draftFile": "data/research/bulk-25-content/drafts/tulipa-zenaidae.json",
+      "editorialNotes": [
+        "Tulipa zenaidae → Tulipa lehmanniana: подтверждённая GBIF синонимия того же ранга. Национальная оценка не распространена на весь широкий принятый таксон."
+      ],
+      "missingFacts": [
+        "Датированная численность",
+        "Современный охват национального концепта",
+        "Плодоношение в природе"
+      ],
+      "incidentalPopulationEvidence": []
     },
     {
       "originalScientificName": "Juno orchioides",
@@ -2312,8 +2349,8 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Juno orchioides",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -2357,7 +2394,20 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "threats.1",
+            "conservationMeasures.0",
+            "conservationMeasures.1",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -2380,7 +2430,14 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview"
           ],
           "taxonId": "gbif:5298228"
         }
@@ -2399,6 +2456,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/bulk-25-content/block-3-facts.json",
+          "sha256": "d43e6df0f56b87eac68df31201b6cce0f02097d4af3d07726ccc459f3938d56c"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-3-accounts.json",
+          "sha256": "148471b65199676a49f59786d3dc055c23ff56ca2f027c698a222a10e86faa4c"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-3-images.json",
+          "sha256": "2f78a86d2fdfd2be871f40e1546c2d8159d1b307bb8d7926970751269c373a48"
         }
       ],
       "draft": null,
@@ -2427,59 +2496,63 @@
         "resolution": "exact_documented_synonym_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Названия KY/UZ/EN не подтверждены: используется научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
       "preparation": {
-        "status": "pending",
-        "sourceMasterId": "juno-orchioides"
+        "status": "prepared",
+        "sourceMasterId": "juno-orchioides",
+        "factsFingerprint": "cd367a64d2ebe810c94da0637ff3d562dcc724e3664002ccf9feecd0fc405a9a",
+        "draftSha256": "e27e8d43b5e21abe8b023becdb34fd5b13c610b921a43fb5590e98b25933ff81"
       },
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "juno-orchioides",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "44f1d391a4217a704fd6354c7d3401c51e69af3b1048aad55d44115c20b5128f",
+        "fingerprint": "a86785f1ed691404c39189e31b09677f5ce0229b4d0ba99a1d6e5e1cb177b1dc",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
             "uz",
-            "ru",
             "en"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "44f1d391a4217a704fd6354c7d3401c51e69af3b1048aad55d44115c20b5128f"
+      "checkedFingerprint": "a86785f1ed691404c39189e31b09677f5ce0229b4d0ba99a1d6e5e1cb177b1dc",
+      "draftFile": "data/research/bulk-25-content/drafts/juno-orchioides.json",
+      "editorialNotes": [
+        "Juno orchioides → Iris orchioides: точная синонимия того же ранга; сохранены национальное имя и источник биологии."
+      ],
+      "missingFacts": [
+        "Численность",
+        "Современные наблюдения и действующая правовая редакция"
+      ],
+      "incidentalPopulationEvidence": []
     },
     {
       "originalScientificName": "Iridodictyum kolpakowskianum",
@@ -2488,8 +2561,8 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Iridodictyum kolpakowskianum",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -2533,7 +2606,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -2556,9 +2640,27 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview"
           ],
           "taxonId": "gbif:5299049"
+        },
+        {
+          "id": "photo-commons",
+          "title": "Late march, Zhetyzhol mountain range, Kazakhstan",
+          "publisher": "Wikimedia Commons; chernoburko",
+          "url": "https://commons.wikimedia.org/wiki/File:Iridodictyum_kolpakowskianum.jpg",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en"
         }
       ],
       "contradictions": [],
@@ -2575,6 +2677,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/bulk-25-content/block-3-facts.json",
+          "sha256": "d43e6df0f56b87eac68df31201b6cce0f02097d4af3d07726ccc459f3938d56c"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-3-accounts.json",
+          "sha256": "148471b65199676a49f59786d3dc055c23ff56ca2f027c698a222a10e86faa4c"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-3-images.json",
+          "sha256": "2f78a86d2fdfd2be871f40e1546c2d8159d1b307bb8d7926970751269c373a48"
         }
       ],
       "draft": null,
@@ -2603,59 +2717,61 @@
         "resolution": "exact_documented_synonym_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Названия KY/UZ/EN не подтверждены: используется научное имя"
       ],
       "verified": false,
       "priority": "next_account_research",
       "preparation": {
-        "status": "pending",
-        "sourceMasterId": "iridodictyum-kolpakowskianum"
+        "status": "prepared",
+        "sourceMasterId": "iridodictyum-kolpakowskianum",
+        "factsFingerprint": "e59e5fea76de9816a3d7164dc43ad6209d307477c8f65a7c97e10e533e85f279",
+        "draftSha256": "cab2cf07d20e0635a9d4e5b836900060ff3fe4e520be6f20d5dbf59fc291d6be"
       },
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "iridodictyum-kolpakowskianum",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "418cf73b745365e00ff3ccb1c63267ed6e60305073980b734c448dbcc95663a0",
+        "fingerprint": "23ea359f493942967d432cc4358aec3b2f6f6bddeaf93cc594da1befafa3048f",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
             "uz",
-            "ru",
             "en"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "418cf73b745365e00ff3ccb1c63267ed6e60305073980b734c448dbcc95663a0"
+      "checkedFingerprint": "23ea359f493942967d432cc4358aec3b2f6f6bddeaf93cc594da1befafa3048f",
+      "draftFile": "data/research/bulk-25-content/drafts/iridodictyum-kolpakowskianum.json",
+      "editorialNotes": [
+        "Iridodictyum kolpakowskianum → Iris kolpakowskiana: подтверждённая синонимия того же ранга. Фотография документирована под принятым именем в категории Commons."
+      ],
+      "missingFacts": [
+        "Численность",
+        "Проверка указания Ферганского хребта",
+        "Современное состояние местообитаний"
+      ],
+      "incidentalPopulationEvidence": []
     },
     {
       "originalScientificName": "Thesium minkwitzianum",
@@ -2664,8 +2780,8 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "CR",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Thesium minkwitzianum",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -2709,7 +2825,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "conservationMeasures.1",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -2732,7 +2860,14 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview"
           ],
           "taxonId": "gbif:3788694"
         }
@@ -2751,6 +2886,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/bulk-25-content/block-3-facts.json",
+          "sha256": "d43e6df0f56b87eac68df31201b6cce0f02097d4af3d07726ccc459f3938d56c"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-3-accounts.json",
+          "sha256": "148471b65199676a49f59786d3dc055c23ff56ca2f027c698a222a10e86faa4c"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-3-images.json",
+          "sha256": "2f78a86d2fdfd2be871f40e1546c2d8159d1b307bb8d7926970751269c373a48"
         }
       ],
       "draft": null,
@@ -2779,59 +2926,76 @@
         "resolution": "exact_documented_synonym_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Названия KY/UZ/EN не подтверждены: используется научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
       "preparation": {
-        "status": "pending",
-        "sourceMasterId": "thesium-minkwitzianum"
+        "status": "prepared",
+        "sourceMasterId": "thesium-minkwitzianum",
+        "factsFingerprint": "a980f27c751f2c47881b87c175bb0111b38bae0d433eea1922a1f204afdf0956",
+        "draftSha256": "6af8bd2849aa2f947a793387a634984a49ce0b49f68410fa98b9b13b691bc63c"
       },
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "thesium-minkwitzianum",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "c92b620c19249a46b9311a5604f546448023a9efa9a87dcabdab06f3519d7738",
+        "fingerprint": "f2407f6180b4353b57d2bc2a936a95e2130bfd78c16e1b21c95fe718a1cb1750",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
             "uz",
-            "ru",
             "en"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "c92b620c19249a46b9311a5604f546448023a9efa9a87dcabdab06f3519d7738"
+      "checkedFingerprint": "f2407f6180b4353b57d2bc2a936a95e2130bfd78c16e1b21c95fe718a1cb1750",
+      "draftFile": "data/research/bulk-25-content/drafts/thesium-minkwitzianum.json",
+      "editorialNotes": [
+        "Thesium minkwitzianum → Chrysothesium minkwitzianum: GBIF подтверждает точную синонимию того же ранга.",
+        "Сроки биологии приведены по RU; EN называет её неизвестной. Требует специалиста, неподтверждённые детали не добавлены."
+      ],
+      "missingFacts": [
+        "Год исторического учёта",
+        "Современная численность",
+        "Подробная биология",
+        "Культивирование"
+      ],
+      "incidentalPopulationEvidence": [
+        {
+          "sourceId": "national-book",
+          "sourcePage": 103,
+          "year": null,
+          "territory": "Беш-Аральский заповедник, Кыргызстан",
+          "reportedText": "20–30 растений",
+          "usableForPopulation": false,
+          "reason": "Год учёта отсутствует; отдельная историческая исследовательская заметка."
+        }
+      ]
     },
     {
       "originalScientificName": "Delphinium knorringianum",
@@ -2840,7 +3004,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -2885,7 +3049,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -2908,7 +3083,13 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:3930642"
         }
@@ -2927,6 +3108,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/bulk-25-content/block-3-facts.json",
+          "sha256": "d43e6df0f56b87eac68df31201b6cce0f02097d4af3d07726ccc459f3938d56c"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-3-accounts.json",
+          "sha256": "148471b65199676a49f59786d3dc055c23ff56ca2f027c698a222a10e86faa4c"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-3-images.json",
+          "sha256": "2f78a86d2fdfd2be871f40e1546c2d8159d1b307bb8d7926970751269c373a48"
         }
       ],
       "draft": null,
@@ -2955,59 +3148,63 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Названия KY/UZ/EN не подтверждены: используется научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
       "preparation": {
-        "status": "pending",
-        "sourceMasterId": "delphinium-knorringianum"
+        "status": "prepared",
+        "sourceMasterId": "delphinium-knorringianum",
+        "factsFingerprint": "a17c5d68f630390bed5b26eff2d0c45009a3ee99788d4c82edce796a5fd3609f",
+        "draftSha256": "1717a9cb093a6bffdc889b7c7143b1438dda6f8c94c0d49c8f77384313422b82"
       },
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "delphinium-knorringianum",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "65e8c0aff83054bc730796a979c400252b371bb9f68d74f9cb281417036ece1b",
+        "fingerprint": "c64710dce66f695a71e8546cb24a6f02285d95449b95d627f98f83c07b0c9636",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
             "uz",
-            "ru",
             "en"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "65e8c0aff83054bc730796a979c400252b371bb9f68d74f9cb281417036ece1b"
+      "checkedFingerprint": "c64710dce66f695a71e8546cb24a6f02285d95449b95d627f98f83c07b0c9636",
+      "draftFile": "data/research/bulk-25-content/drafts/delphinium-knorringianum.json",
+      "editorialNotes": [],
+      "missingFacts": [
+        "Численность",
+        "Плодоношение",
+        "Культивирование",
+        "Современные меры охраны"
+      ],
+      "incidentalPopulationEvidence": []
     },
     {
       "originalScientificName": "Urocerus sah",

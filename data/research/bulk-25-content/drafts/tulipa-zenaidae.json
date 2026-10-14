@@ -1,0 +1,254 @@
+{
+  "id": "tulipa-zenaidae",
+  "scientificName": "Tulipa lehmanniana",
+  "names": {
+    "ru": "Тюльпан Зинаиды",
+    "ky": null,
+    "uz": null,
+    "en": null
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Liliopsida",
+    "order": "Liliales",
+    "family": "Liliaceae",
+    "genus": "Tulipa"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Tulipa zenaidae",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Мелкоземистые и щебнистые склоны нижнего горного пояса среди разнотравно-типчаковых степей и кустарников.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Нерегулируемый весенний выпас.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Массовый сбор цветов и выкапывание луковиц.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически включён в Красную книгу Киргизской ССР 1985 года.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендации 2006 года: ботанические заказники, мониторинг и ограничения сбора и выпаса.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=97",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "conservationMeasures.1",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 20",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Tulipa zenaidae",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/5299646",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview"
+      ],
+      "taxonId": "gbif:5299646"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Тюльпан Кыргызского хребта с коротким стеблем, жёлтым цветком и чёрным звёздчатым центром. В национальном описании растёт среди степного разнотравья и кустарников.",
+        "ky": "Кыргыз тоо кыркасынын жоогазыны: сабагы кыска, гүлү сары, ортосу кара жылдыз сымал. Кызыл китепте талаа чөптөрүнүн жана бадалдардын арасында өсөрү сүрөттөлгөн.",
+        "uz": "Qirgʻiz tizmasining lolasi: poyasi kalta, guli sariq, markazi qora yulduzsimon. Milliy kitobda dasht oʻtlari va butalar orasida oʻsishi tasvirlangan.",
+        "en": "A tulip of the Kyrgyz Range with a short stem, yellow flower and black star-shaped centre. The national account describes it in forb steppes and scrub."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Тюльпан Зинаиды описан в Красной книге 2006 года под именем Tulipa zenaidae. Точная сверка GBIF рассматривает это имя как синоним Tulipa lehmanniana. Биология и география ниже относятся к национальному концепту zenaidae, а не автоматически ко всем популяциям принятого вида. Растение выделяется коротким стеблем и почти сидячим одиночным цветком. Внутри цветок жёлтый, снаружи красный; его основание образует чёрный звёздчатый рисунок. Три крупных сизоватых листа имеют хорошо заметные жилки.\n\nНациональная статья указывает Кыргызский хребет и прилегающую часть Южного Казахстана. Растение занимает мелкоземистые и щебнистые склоны нижнего пояса среди разнотравно-типчаковых степей и кустарников. Цветение приходится на апрель–май, размножение семенное. Попытки интродукции описаны как трудные: растения быстро выпадали из посадок, а в Бишкеке образовывали мало семян.\n\nНерегулируемый весенний выпас, сбор цветков и выкапывание луковиц названы угрозами. Авторы рекомендовали заказники, мониторинг и ограничение изъятия растений. Указание на ограниченные природные запасы не содержит численного учёта. Категория VU историческая; современный охват национального включения требует экспертной проверки.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Луковица до 3 см, с чёрными или чёрно-бурыми оболочками. Стебель обычно 10–15 см, в затенении до 40 см. Три крупных продолговатых листа сизо-бледно-зелёные. Одиночный цветок длиной до 5 см жёлтый внутри, красный снаружи, с чёрным звёздчатым центром.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический национальный концепт связан с мелкоземистыми и щебнистыми склонами нижнего пояса, разнотравно-типчаковыми степями и кустарниками. В культуре в Бишкеке отмечалось быстрое выпадение из посадок и слабое образование семян.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная статья указывает семенное размножение в природе и культуре и цветение в апреле–мае. Для Бишкекской культуры отдельно приведены середина апреля и продолжительность 8–10 дней; эти сроки не перенесены на все дикие популяции.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Историческая запись Tulipa zenaidae относится к Кыргызскому хребту в Кыргызстане и Южном Казахстане. Общий современный ареал Tulipa lehmanniana здесь не реконструируется.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}
