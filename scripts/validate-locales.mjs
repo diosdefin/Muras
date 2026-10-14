@@ -1,10 +1,11 @@
 import { readFile, readdir } from 'node:fs/promises'
 import { resolve } from 'node:path'
 import { pathToFileURL } from 'node:url'
+import { LANGUAGES } from '../src/data/localization.js'
 export function validateMessages(messages) {
   const errors = [], keys = Object.keys(messages.ru || {}).sort()
   const slots = text => [...text.matchAll(/\{(\w+)\}/g)].map(match => match[1]).sort().join(',')
-  for (const lang of ['ru','ky','en']) {
+  for (const lang of LANGUAGES) {
     const dict = messages[lang]
     if (!dict || typeof dict !== 'object' || Array.isArray(dict)) { errors.push(`${lang}: ожидается словарь`); continue }
     if (JSON.stringify(Object.keys(dict).sort()) !== JSON.stringify(keys)) errors.push(`${lang}: набор ключей отличается от ru`)
@@ -34,7 +35,7 @@ export async function validateMessageReferences(root, keys) {
 }
 export async function checkLocales(root = process.cwd()) {
   const messages = {}
-  for (const language of ['ru','ky','en']) {
+  for (const language of LANGUAGES) {
     const publicMessages = JSON.parse(await readFile(resolve(root, 'src/locales', `${language}.json`), 'utf8'))
     const adminMessages = JSON.parse(await readFile(resolve(root, 'src/admin/locales', `${language}.json`), 'utf8'))
     if (Object.keys(adminMessages).some(key => !key.startsWith('admin.'))) throw new Error('Ключи админки должны начинаться с admin.')
@@ -45,6 +46,6 @@ export async function checkLocales(root = process.cwd()) {
   return Object.keys(messages.ru).length
 }
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
-  try { console.log(`Переводы проверены: ${await checkLocales()} ключей × 3 языка.`) }
+  try { console.log(`Переводы проверены: ${await checkLocales()} ключей × ${LANGUAGES.length} языка.`) }
   catch(error) { console.error(error.message); process.exitCode = 1 }
 }

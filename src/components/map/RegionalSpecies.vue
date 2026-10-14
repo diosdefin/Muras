@@ -3,7 +3,7 @@ import ScientificText from "../ScientificText.vue"
 import SourceLink from '../SourceLink.vue'
 import { useLocale } from '../../composables/useLocale.js'
 import { computed, ref } from 'vue'
-import { publicImageUrl, speciesName, speciesPhoto, PLACEHOLDER } from '../../data/presentation.js'
+import { publicImageUrl, speciesName, speciesNameLanguage, speciesPhoto, PLACEHOLDER } from '../../data/presentation.js'
 
 const { t, language } = useLocale()
 
@@ -18,7 +18,7 @@ const photo = computed(() => speciesPhoto(props.entry.species))
     <div class="regional-species-heading">
       <img :src="failed ? PLACEHOLDER : publicImageUrl(photo?.path)" width="96" height="96" loading="lazy" decoding="async"
         :alt="photo && !failed ? t('ui.m078', { p0: speciesName(entry.species, language) }) : t('ui.m121')" @error="failed = true" />
-      <div><h4>{{ speciesName(entry.species, language) }}</h4><p class="scientific-name" lang="la">{{ entry.species.scientificName }}</p></div>
+      <div><h4 :lang="speciesNameLanguage(entry.species, language)">{{ speciesName(entry.species, language) }}</h4><p class="scientific-name" lang="la">{{ entry.species.scientificName }}</p></div>
     </div>
     <p v-if="photo" class="map-photo-caption"><ScientificText :value="photo.caption" /> {{ t('ui.m122') }}</p>
     <p><ScientificText :value="{ru: entry.evidence.evidence}" /></p>

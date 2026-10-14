@@ -2,9 +2,10 @@ import { validateSource } from '../../data/species-model.js'
 import { UNKNOWN_POPULATION } from '../../data/population.js'
 import { imageComposition, validComposition } from '../../data/image-composition.js'
 import { publicImageUrl } from '../../data/presentation.js'
+import { LANGUAGES } from '../../data/localization.js'
 
 export const MAX_JSON_BYTES = 2 * 1024 * 1024
-export const EMPTY_NAMES = Object.freeze({ ru: null, ky: null, en: null })
+export const EMPTY_NAMES = Object.freeze({ ru: null, ky: null, en: null, uz: null })
 export { GROUPS } from '../../data/species-groups.js'
 export const TAXONOMY = ['kingdom','phylum','class','order','family','genus']
 export const clone = value => JSON.parse(JSON.stringify(value))
@@ -47,7 +48,7 @@ export function exportSource(document, assets = []) {
   return JSON.stringify(document, null, 2) + '\n'
 }
 export function editableShape(document) {
-  const dict = value => object(value) && ['ru','ky','en'].every(k => nullableText(value[k]))
+  const dict = value => object(value) && LANGUAGES.every(k => nullableText(value[k]))
   const refs = value => Array.isArray(value) && value.every(v => typeof v === 'string')
   const statements = value => value === null || Array.isArray(value) && value.every(e => object(e) && dict(e.text) && refs(e.sourceIds))
   return object(document) && document.schemaVersion === 1 && Array.isArray(document.catalog) && Array.isArray(document.demoArchive) && jsonSafe(document) && document.catalog.every(s =>
@@ -110,7 +111,7 @@ export function previewUrl(species, index, published) {
   return match ? publicImageUrl(match.path) : null
 }
 export function claimPaths(species) {
-  const paths = ['scientificName','group',...['ru','ky','en'].map(k=>`names.${k}`),...TAXONOMY.map(k=>`taxonomy.${k}`)]
+  const paths = ['scientificName','group',...LANGUAGES.map(k=>`names.${k}`),...TAXONOMY.map(k=>`taxonomy.${k}`)]
   for(const field of ['nationalRedBook','iucn'])for(const k of Object.keys(species[field]))if(k !== 'sourceIds')paths.push(`${field}.${k}`)
   if(species.habitat)paths.push('habitat')
   for(const field of ['regions','threats','conservationMeasures'])species[field]?.forEach((_,i)=>paths.push(`${field}.${i}`))

@@ -117,20 +117,21 @@ test('eight approved WebP originals have matching local public bytes, fingerprin
   }
 })
 
-test('all eight render card, lesson, modal, sources and an honest Russian scientific fallback in KY/RU/EN', async () => {
+test('all eight render card, lesson, modal, sources and an honest Russian scientific fallback in KY/UZ/RU/EN', async () => {
   const vite=await createServer({server:{middlewareMode:true,ws:false,hmr:false,watch:null},appType:'custom',logLevel:'error'})
   try {
     const {siteLanguage}=await vite.ssrLoadModule('/src/composables/useLocale.js')
     const components={}
     for(const file of ['SpeciesCard.vue','SpeciesModal.vue','lesson/LessonPhoto.vue']) components[file]=(await vite.ssrLoadModule(`/src/components/${file}`)).default
-    for(const language of ['ky','ru','en']){
+    for(const language of ['ky','uz','ru','en']){
       siteLanguage.value=language
       for(const s of published.slice(9,17)){
         const card=await renderToString(createSSRApp(components['SpeciesCard.vue'],{species:s}))
-        assert.ok(card.includes(s.scientificName));assert.ok(card.includes(s.images[0].path));assert.ok(card.includes('lang="ru"'))
+        assert.ok(card.includes(s.names[language] || s.names.ru));assert.ok(card.includes(s.images[0].path));assert.ok(card.includes('lang="ru"'))
         for(const file of ['SpeciesModal.vue','lesson/LessonPhoto.vue']){
           const html=await renderToString(createSSRApp(components[file],{species:s}))
           assert.ok(html.includes(s.images[0].license));assert.ok(html.includes(s.images[0].author));assert.ok(html.includes(s.images[0].path))
+          if(file==='SpeciesModal.vue')assert.ok(html.includes(s.scientificName))
         }
       }
     }

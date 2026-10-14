@@ -176,17 +176,18 @@ test('all 30 names are searchable and lazy pagination yields 12/24/30 without du
   for(const group of GROUPS){catalog.group.value=group;assert.ok(catalog.results.value.length>0);assert.ok(catalog.results.value.every(r=>r.species.group===group))}
 })
 
-test('all 13 new records render in KY/RU/EN with licensed local photos or honest placeholders and a working modal/lesson',async()=>{
+test('all 13 new records render in KY/UZ/RU/EN with licensed local photos or honest placeholders and a working modal/lesson',async()=>{
   const vite=await createServer({server:{middlewareMode:true,ws:false,hmr:false,watch:null},appType:'custom',logLevel:'error'})
   try{
     const {siteLanguage}=await vite.ssrLoadModule('/src/composables/useLocale.js'),components={}
     for(const name of ['SpeciesCard.vue','SpeciesModal.vue','lesson/LessonPhoto.vue'])components[name]=(await vite.ssrLoadModule(`/src/components/${name}`)).default
-    for(const language of ['ky','ru','en']){
+    for(const language of ['ky','uz','ru','en']){
       siteLanguage.value=language
       for(const s of published.slice(17))for(const [file,Component]of Object.entries(components)){
         const html=await renderToString(createSSRApp(Component,{species:s}))
         assert.ok(html.includes(s.images[0]?.path||'placeholder.svg'),`${file}: ${s.id}`)
-        if(s.images.length){assert.ok(html.includes(s.images[0].license));assert.ok(html.includes(s.images[0].author))}
+        // Compact cards keep credits in the modal; lesson and modal must retain them.
+        if(s.images.length && file!=='SpeciesCard.vue'){assert.ok(html.includes(s.images[0].license));assert.ok(html.includes(s.images[0].author))}
         if(file==='SpeciesModal.vue')assert.ok(html.includes(s.scientificName))
         if(file==='SpeciesCard.vue')assert.ok(html.includes('loading="lazy"'))
         if(file!=='lesson/LessonPhoto.vue'||s.images.length)assert.ok(html.includes('lang="ru"'))

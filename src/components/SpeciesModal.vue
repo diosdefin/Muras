@@ -24,7 +24,7 @@ const currentName = computed(() => speciesName(props.species, language.value))
 const currentStatus = computed(() => statusDetails(props.species, language.value))
 const knownRegions = computed(() => regionNames(props.species, language.value))
 function preferredLanguage(dictionary) {
-  return [language.value, 'ru', 'en', 'ky'].find(key => dictionary?.[key]) || 'ru'
+  return [language.value, 'ru', 'en', 'ky', 'uz'].find(key => dictionary?.[key]) || 'ru'
 }
 const nameLanguage = computed(() => Object.values(props.species.names || {}).some(Boolean)
   ? preferredLanguage(props.species.names) : props.species.scientificName ? 'la' : 'ru')

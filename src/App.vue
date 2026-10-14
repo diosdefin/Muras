@@ -247,7 +247,7 @@ onUnmounted(() => {
       <div class="header-search">
         <CatalogSearch v-model="query" :results="headerSearchResults" @open="openSearchResult" />
       </div>
-      <label class="site-language"><span class="sr-only">{{ t('chooseLanguage') }}</span><select :value="siteLanguage" :aria-label="t('chooseLanguage')" @change="setLanguage($event.target.value)"><option value="ky" lang="ky">KY</option><option value="ru" lang="ru">RU</option><option value="en" lang="en">EN</option></select></label>
+      <label class="site-language"><span class="sr-only">{{ t('chooseLanguage') }}</span><select :value="siteLanguage" :aria-label="t('chooseLanguage')" @change="setLanguage($event.target.value)"><option value="ky" lang="ky">KY</option><option value="uz" lang="uz">UZ</option><option value="ru" lang="ru">RU</option><option value="en" lang="en">EN</option></select></label>
     </div>
     <nav class="main-navigation" :aria-label="t('ui.m007')">
       <a class="header-link" href="#catalog" :aria-label="`${t('ui.m009')} — ${t('ui.m008')}`" :aria-current="activeView === 'catalog' ? 'page' : undefined" @click.prevent="showView('catalog')">{{ t('ui.m009') }}</a>

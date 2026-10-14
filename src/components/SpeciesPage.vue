@@ -1,7 +1,7 @@
 <script setup>
 import { computed, toRef } from 'vue'
 import { provideContentLanguage, siteLanguage, useLocale } from '../composables/useLocale.js'
-import { groupLabel, nationalStatus, regionNames, speciesName, speciesPhoto, statusDetails } from '../data/presentation.js'
+import { groupLabel, nationalStatus, regionNames, speciesName, speciesNameLanguage, speciesPhoto, statusDetails } from '../data/presentation.js'
 import { populationPresentation } from '../data/population.js'
 import ScientificText from './ScientificText.vue'
 import SpeciesVisualization from './SpeciesVisualization.vue'
@@ -38,7 +38,7 @@ const population = computed(() => props.species ? populationPresentation(props.s
     <template v-else>
       <header class="profile-hero">
         <p class="profile-eyebrow">{{ groupLabel(species, language) }} <span aria-hidden="true">·</span> {{ status.label }}</p>
-        <h1 id="profile-heading" tabindex="-1">{{ name }}</h1>
+        <h1 id="profile-heading" tabindex="-1" :lang="speciesNameLanguage(species, language)">{{ name }}</h1>
         <p v-if="species.scientificName" class="profile-latin" lang="la">{{ species.scientificName }}</p>
       </header>
       <div class="profile-layout">
@@ -49,8 +49,8 @@ const population = computed(() => props.species ? populationPresentation(props.s
             <summary>{{ t('ui.m240') }}</summary>
             <p><a :href="photo.originalPage" target="_blank" rel="noopener noreferrer">{{ t('ui.m082') }} {{ photo.author }}</a> · <a :href="photo.licenseUrl" target="_blank" rel="noopener noreferrer">{{ photo.license }}</a></p>
             <p v-if="photo.caption"><ScientificText :value="photo.caption" /></p>
-            <p>{{ photo.attribution }}</p>
-            <p v-if="photo.modifications?.length">{{ t('ui.m241') }} {{ photo.modifications.join('; ') }}</p>
+            <p lang="und">{{ photo.attribution }}</p>
+            <p v-if="photo.modifications?.length">{{ t('ui.m241') }} <ScientificText :value="{ ru: photo.modifications.join('; ') }" /></p>
           </details>
         </aside>
         <div class="profile-content">

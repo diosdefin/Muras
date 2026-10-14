@@ -10,7 +10,7 @@ import LessonReferences from './LessonReferences.vue'
 import { useLesson } from '../../composables/useLesson.js'
 import { useLessonFullscreen } from '../../composables/useLessonFullscreen.js'
 import { lessonKey, lessonTabTarget } from '../../data/lesson.js'
-import { groupLabel, nationalStatus, regionNames, speciesName, statusDetails } from '../../data/presentation.js'
+import { groupLabel, nationalStatus, regionNames, speciesName, speciesNameLanguage, statusDetails } from '../../data/presentation.js'
 
 const { t, language, uiMessage } = useLocale()
 
@@ -64,7 +64,7 @@ defineExpose({ exitFullscreen: exit })
       <div class="lesson-tools">
         <label class="sr-only" for="lesson-species">{{ t('ui.m089') }}</label>
         <select id="lesson-species" :value="selectedId || ''" :disabled="!current" @change="select($event.target.value)">
-          <option v-for="record in species" :key="record.id" :value="record.id">{{ speciesName(record, language) }}</option>
+          <option v-for="record in species" :key="record.id" :value="record.id" :lang="speciesNameLanguage(record, language)">{{ speciesName(record, language) }}</option>
         </select>
         <button class="quiz-secondary" type="button" :aria-pressed="isFullscreen" @click="toggle">{{ isFullscreen ? t('ui.m090') : t('ui.m091') }}</button>
       </div>
@@ -78,7 +78,7 @@ defineExpose({ exitFullscreen: exit })
         <LessonPhoto :species="current" />
         <div class="lesson-content">
           <p class="lesson-group">{{ groupLabel(current, language) }} · {{ regionNames(current, language).join(', ') || t('ui.m094') }}</p>
-          <h2 id="lesson-species-title">{{ speciesName(current, language) }}</h2>
+          <h2 id="lesson-species-title" :lang="speciesNameLanguage(current, language)">{{ speciesName(current, language) }}</h2>
           <p class="lesson-names"><span lang="ru">{{ current.names.ru }}</span><span lang="ky">{{ current.names.ky || t('ui.m095') }}</span><span class="scientific-name" lang="la">{{ current.scientificName || '—' }}</span></p>
           <p class="lesson-editorial">{{ current.verified ? t('ui.m096') : t('ui.m097') }}</p>
           <div class="lesson-brief-facts">

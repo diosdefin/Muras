@@ -3,7 +3,7 @@ import { availableGroups } from './species-groups.js'
 
 export function normalizeSearch(value) {
   return typeof value === 'string' ? value.normalize('NFC').toLowerCase().replace(/ё/g, 'е')
-    .replace(/[’‘']/g, "'").trim().replace(/\s+/g, ' ') : ''
+    .replace(/[’‘ʻʼ`']/g, "'").trim().replace(/\s+/g, ' ') : ''
 }
 
 // Latin aliases only. Original Kyrgyz Cyrillic remains distinct (ө/о, ү/у, ң/н).

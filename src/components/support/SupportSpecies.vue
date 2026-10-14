@@ -4,7 +4,7 @@ import { useLocale } from '../../composables/useLocale.js'
 import { computed } from 'vue'
 import LessonPhoto from '../lesson/LessonPhoto.vue'
 import LessonReferences from '../lesson/LessonReferences.vue'
-import { groupLabel, speciesName } from '../../data/presentation.js'
+import { groupLabel, speciesName, speciesNameLanguage } from '../../data/presentation.js'
 import { sourcedStatements } from '../../data/support/model.js'
 
 const { t, language } = useLocale()
@@ -20,7 +20,7 @@ const measures = computed(() => sourcedStatements(props.species, 'conservationMe
     <LessonPhoto :species="species" />
     <div class="support-species-copy">
       <p class="eyebrow">{{ groupLabel(species, language) }} {{ t('ui.m272') }}</p>
-      <h2 id="support-species-title">{{ speciesName(species, language) }}</h2>
+      <h2 id="support-species-title" :lang="speciesNameLanguage(species, language)">{{ speciesName(species, language) }}</h2>
       <p class="support-names"><span v-if="species.names.ky" lang="ky">{{ species.names.ky }}</span><span v-if="species.names.en" lang="en">{{ species.names.en }}</span><span v-if="species.scientificName" class="scientific-name" lang="la">{{ species.scientificName }}</span></p>
       <p class="support-editorial">{{ species.verified ? t('ui.m062') : t('ui.m273') }}</p>
       <div class="support-facts">
