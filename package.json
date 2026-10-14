@@ -17,6 +17,13 @@
     "data:batch:prepare": "node scripts/prepare-research-batch.mjs",
     "data:batch:photos": "node scripts/prepare-batch-images.mjs",
     "data:batch:import": "node scripts/import-species-batch.mjs",
+    "data:bulk:prepare": "node scripts/bulk-pipeline.mjs init",
+    "data:bulk:check": "node scripts/bulk-pipeline.mjs check",
+    "data:bulk:report": "node scripts/bulk-pipeline.mjs report",
+    "data:bulk:resume": "node scripts/bulk-pipeline.mjs resume",
+    "data:bulk:approve": "node scripts/bulk-pipeline.mjs approve",
+    "data:bulk:reject": "node scripts/bulk-pipeline.mjs reject",
+    "data:bulk:apply": "node scripts/bulk-pipeline.mjs apply",
     "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {
