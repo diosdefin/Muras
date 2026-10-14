@@ -7,12 +7,17 @@ import { IUCN_CATEGORIES } from '../../data/species-model.js'
 import { groupLabel } from '../../data/presentation.js'
 import LocalizedFields from './LocalizedFields.vue'
 import SourcePicker from './SourcePicker.vue'
+import { CONTENT_FIELDS, emptyContent } from '../../data/species-content.js'
 const props=defineProps({species:{type:Object,required:true},tab:{type:String,required:true}})
 const emit=defineEmits(['change']);const {t,language}=useLocale()
 const groups=computed(()=>editableGroups([props.species]))
 const update=(path,value)=>emit('change',path,value)
 const number=event=>event.target.value === '' ? null : event.target.valueAsNumber
 function habitat(lang,value){update(['habitat'],{...(props.species.habitat || {sourceIds:[]}),description:{...(props.species.habitat?.description || EMPTY_NAMES),[lang]:value}})}
+function content(field,lang,value){
+  const previous=props.species.content?.[field],text={...(previous?.text || EMPTY_NAMES),[lang]:value}
+  update(['content'],{...emptyContent(),...props.species.content,[field]:Object.values(text).some(Boolean)?{text,sourceIds:previous?.sourceIds || []}:null})
+}
 function add(field){const value=field==='regions'?{code:null,type:'country',names:{...EMPTY_NAMES},sourceIds:[]}:{text:{...EMPTY_NAMES},sourceIds:[]};update([field],[...(props.species[field]||[]),value])}
 function remove(field,index){const list=props.species[field].filter((_,i)=>i!==index);update([field],list.length?list:null)}
 </script>
@@ -28,6 +33,10 @@ function remove(field,index){const list=props.species[field].filter((_,i)=>i!==i
     <p class="admin-hint admin-span">{{ t('admin.reviewHint') }}</p>
   </section>
   <section v-else-if="tab === 'description'" class="admin-description">
+    <section v-for="field in CONTENT_FIELDS" :key="field" class="admin-repeater">
+      <LocalizedFields :label="t(`content.${field}`)" :value="species.content?.[field]?.text" multiline @change="(lang,value)=>content(field,lang,value)" />
+      <SourcePicker v-if="species.content?.[field]" :sources="species.sources" :value="species.content[field].sourceIds" @change="update(['content',field,'sourceIds'],$event)" />
+    </section>
     <LocalizedFields :label="t('ui.m065')" :value="species.habitat?.description" multiline @change="habitat" />
     <SourcePicker v-if="species.habitat" :sources="species.sources" :value="species.habitat.sourceIds" @change="update(['habitat','sourceIds'],$event)" />
     <section v-for="field in ['regions','threats','conservationMeasures']" :key="field" class="admin-repeater">

@@ -145,7 +145,7 @@ test('decode failure and cancellation revoke object URLs; sessions release repla
  assert.throws(()=>session.put('b',{url:'blob:large',size:20}),/sessionSize/);session.retain([]);assert.equal(session.get('a'),null);session.dispose();assert.ok(revoked.includes('blob:1')&&revoked.includes('blob:2')&&revoked.includes('blob:large'))
 })
 test('admin messages have complete parity and are kept separate from public dictionaries',async()=>{
- const messages={};for(const language of ['ru','ky','en'])messages[language]=JSON.parse(await readFile(new URL(`../src/admin/locales/${language}.json`,import.meta.url),'utf8'))
+ const messages={};for(const language of ['ky','uz','ru','en'])messages[language]=JSON.parse(await readFile(new URL(`../src/admin/locales/${language}.json`,import.meta.url),'utf8'))
  assert.deepEqual(validateMessages(messages),[]);assert.ok(Object.keys(messages.ru).every(key=>key.startsWith('admin.')))
  assert.ok(Object.keys(messages.ru).length>=160)
 })

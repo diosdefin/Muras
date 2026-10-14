@@ -1,0 +1,86 @@
+{
+  "schemaVersion": 1,
+  "batchId": "catalog-40-batch-1",
+  "beforeCount": 30,
+  "afterCount": 35,
+  "counts": {
+    "processed": 5,
+    "added": 5,
+    "unchanged": 0,
+    "rejected": 0
+  },
+  "results": [
+    {
+      "index": 0,
+      "candidateId": "said-alievs-toad-agama",
+      "status": "added",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "summary": {
+        "id": "said-alievs-toad-agama",
+        "scientificName": "Phrynocephalus saidalievi",
+        "group": "reptiles",
+        "imageCount": 0
+      }
+    },
+    {
+      "index": 1,
+      "candidateId": "vigorous-ground-beetle",
+      "status": "added",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "summary": {
+        "id": "vigorous-ground-beetle",
+        "scientificName": "Carabus validus",
+        "group": "arthropods",
+        "imageCount": 0
+      }
+    },
+    {
+      "index": 2,
+      "candidateId": "pskem-onion",
+      "status": "added",
+      "errors": [],
+      "warnings": [],
+      "summary": {
+        "id": "pskem-onion",
+        "scientificName": "Allium pskemense",
+        "group": "plants",
+        "imageCount": 1
+      }
+    },
+    {
+      "index": 3,
+      "candidateId": "kostychevs-pasque-flower",
+      "status": "added",
+      "errors": [],
+      "warnings": [],
+      "summary": {
+        "id": "kostychevs-pasque-flower",
+        "scientificName": "Pulsatilla kostyczewii",
+        "group": "plants",
+        "imageCount": 1
+      }
+    },
+    {
+      "index": 4,
+      "candidateId": "indian-crested-porcupine",
+      "status": "added",
+      "errors": [],
+      "warnings": [],
+      "summary": {
+        "id": "indian-crested-porcupine",
+        "scientificName": "Hystrix indica",
+        "group": "mammals",
+        "imageCount": 1
+      }
+    }
+  ],
+  "sourceSha256": "a1b0ee3dad5f443fb1e99a713f8022d2971052d6b0b7882e0bc7dbe99b9f8e6d",
+  "mode": "preview",
+  "applied": false
+}

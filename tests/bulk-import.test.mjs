@@ -18,10 +18,12 @@ import { useCatalog } from '../src/composables/useCatalog.js'
 import { createSearchIndex,searchSpecies } from '../src/data/catalog-search.js'
 import { scientificContent } from '../src/data/localization.js'
 import { importSource,exportSource } from '../src/admin/data/model.js'
+import { legacyScientificSource } from './helpers/legacy-scientific-source.mjs'
 
 const read=async path=>JSON.parse(await readFile(join(PROJECT_ROOT,path),'utf8'))
 const source=await read('data/species.source.json'),published=await read('public/data/species.json')
-const baseline={...source,catalog:source.catalog.slice(0,17)}
+const historicalSource=legacyScientificSource({...source,catalog:source.catalog.slice(0,30)})
+const baseline={...historicalSource,catalog:historicalSource.catalog.slice(0,17)}
 const research=await read('data/research/catalog-candidates.json'),selection=await read('data/research/bulk-expansion-selection.json')
 const tax=await read('docs/evidence/bulk-expansion-taxonomy.json'),photos=await read('docs/evidence/bulk-expansion-images.json')
 const packet=prepareResearchBatch(research,selection,{taxonomyEvidence:tax,imageEvidence:photos})
@@ -35,25 +37,25 @@ test('research recipe prepares 13 supported records and separately rejects nine 
   assert.equal(packet.records.filter(r=>r.deferredReason).length,9)
   assert.equal(JSON.stringify(research),before)
   assert.deepEqual(validateSource(source),[])
-  assert.equal(hash(source.catalog.slice(0,17)),'625b3a11bfd48a49b48925244060b44dd2a991a3df3cca49c49242d99cd4caf3')
-  assert.equal(source.catalog.length,30)
+  assert.equal(hash(historicalSource.catalog.slice(0,17)),'625b3a11bfd48a49b48925244060b44dd2a991a3df3cca49c49242d99cd4caf3')
+  assert.ok(source.catalog.length>=30)
   assert.deepEqual(availableGroups(published),GROUPS)
-  assert.deepEqual(Object.fromEntries(GROUPS.map(g=>[g,published.filter(s=>s.group===g).length])),{mammals:6,birds:7,plants:7,fish:2,reptiles:2,amphibians:1,arthropods:3,fungi:2})
+  assert.deepEqual(Object.fromEntries(GROUPS.map(g=>[g,published.slice(0,30).filter(s=>s.group===g).length])),{mammals:6,birds:7,plants:7,fish:2,reptiles:2,amphibians:1,arthropods:3,fungi:2})
 })
 
 test('real batch dry-run produces the committed catalogue, then repeated import is lossless and adds zero records',async()=>{
   const before=JSON.stringify(baseline),input=JSON.stringify(packet)
   const plan=await planBatchImport(baseline,packet,{validateAssets:s=>inspectAssets(PROJECT_ROOT,s)})
   assert.deepEqual(plan.counts,{processed:22,added:13,unchanged:0,rejected:9})
-  assert.deepEqual(plan.proposedSource,source)
+  assert.deepEqual(plan.proposedSource,historicalSource)
   assert.deepEqual(plan.proposedSource.demoArchive,baseline.demoArchive)
   assert.equal(JSON.stringify(baseline),before);assert.equal(JSON.stringify(packet),input)
   const repeated=await planBatchImport(plan.proposedSource,packet,{validateAssets:s=>inspectAssets(PROJECT_ROOT,s)})
   assert.deepEqual(repeated.counts,{processed:22,added:0,unchanged:13,rejected:9})
-  assert.deepEqual(repeated.proposedSource,source)
+  assert.deepEqual(repeated.proposedSource,historicalSource)
   // Object key order is transport formatting, not a reason to overwrite an existing record.
   const reordered=item('pike-asp');reordered.species=Object.fromEntries(Object.entries(reordered.species).reverse())
-  assert.equal((await planBatchImport(source,batch([reordered]))).results[0].status,'unchanged')
+  assert.equal((await planBatchImport(historicalSource,batch([reordered]))).results[0].status,'unchanged')
 })
 
 test('errors and asset failures are isolated per candidate; unknown groups and misleading taxonomy cannot enter the catalogue',async()=>{
@@ -152,8 +154,10 @@ test('local asset verification checks real WebP dimensions, fingerprint and meta
 })
 
 test('new records preserve unknown populations and scientific language fallbacks; parent IUCN/photo never become subspecies facts',()=>{
-  const added=source.catalog.slice(17)
-  assert.equal(added.length,13);assert.equal(added.filter(s=>s.images.length).length,4);assert.equal(added.filter(s=>!s.images.length).length,9)
+  const added=source.catalog.slice(17,30)
+  assert.equal(added.length,13)
+  const originalAdded=historicalSource.catalog.slice(17)
+  assert.equal(originalAdded.filter(s=>s.images.length).length,4);assert.equal(originalAdded.filter(s=>!s.images.length).length,9)
   for(const s of added){
     assert.equal(s.verified,false);assert.equal(s.lastReviewedAt,null);assert.equal(s.population.type,'unknown');assert.equal(s.population.reviewStatus,'pending');assert.equal(s.population.value,null)
     assert.equal(s.nationalRedBook.year,2006);assert.match(s.nationalRedBook.edition,/историческая/)
@@ -161,14 +165,16 @@ test('new records preserve unknown populations and scientific language fallbacks
     for(const lang of ['ky','en'])assert.deepEqual(scientificContent(s.habitat.description,lang),{text:s.habitat.description.ru,language:'ru',fallback:true})
   }
   const bustard=added.find(s=>s.id==='great-bustard')
-  assert.equal(bustard.scientificName,'Otis tarda tarda');assert.equal(bustard.iucn.category,null);assert.deepEqual(bustard.images,[])
+  assert.equal(bustard.scientificName,'Otis tarda tarda');assert.equal(bustard.iucn.category,null)
+  assert.deepEqual(originalAdded.find(s=>s.id==='great-bustard').images,[])
+  assert.ok(bustard.images.every(image=>decodeURIComponent(image.originalPage).includes('Otis_tarda_tarda')),'a parent-species-only image must not become a subspecies fact')
   const fir=added.find(s=>s.id==='semenovs-fir');assert.equal(fir.scientificName,'Abies sibirica semenovii');assert.equal(fir.iucn.category,'LC');assert.deepEqual(fir.iucn.sourceIds,['iucn-subspecies'])
   assert.equal(added.find(s=>s.id==='tien-shan-scutiger').scientificName,'Albatrellus tianschanicus')
   assert.deepEqual(JSON.parse(exportSource(importSource(JSON.stringify(source)))),source)
 })
 
 test('all 30 names are searchable and lazy pagination yields 12/24/30 without duplicates across eight groups',()=>{
-  const index=createSearchIndex(published),catalog=useCatalog(ref(published))
+  const index=createSearchIndex(published),catalog=useCatalog(ref(published.slice(0,30)))
   for(const s of published)for(const name of [...Object.values(s.names),s.scientificName].filter(Boolean))assert.ok(searchSpecies(index,name).some(r=>r.species.id===s.id),name)
   assert.equal(catalog.page.value.entries.length,12);assert.equal(catalog.page.value.remaining,18)
   catalog.more();assert.equal(catalog.page.value.entries.length,24);catalog.more();assert.equal(catalog.page.value.entries.length,30)
@@ -176,20 +182,22 @@ test('all 30 names are searchable and lazy pagination yields 12/24/30 without du
   for(const group of GROUPS){catalog.group.value=group;assert.ok(catalog.results.value.length>0);assert.ok(catalog.results.value.every(r=>r.species.group===group))}
 })
 
-test('all 13 new records render in KY/RU/EN with licensed local photos or honest placeholders and a working modal/lesson',async()=>{
+test('all 13 new records render in KY/UZ/RU/EN with licensed local photos or honest placeholders and a working modal/lesson',async()=>{
   const vite=await createServer({server:{middlewareMode:true,ws:false,hmr:false,watch:null},appType:'custom',logLevel:'error'})
   try{
     const {siteLanguage}=await vite.ssrLoadModule('/src/composables/useLocale.js'),components={}
     for(const name of ['SpeciesCard.vue','SpeciesModal.vue','lesson/LessonPhoto.vue'])components[name]=(await vite.ssrLoadModule(`/src/components/${name}`)).default
-    for(const language of ['ky','ru','en']){
+    for(const language of ['ky','uz','ru','en']){
       siteLanguage.value=language
       for(const s of published.slice(17))for(const [file,Component]of Object.entries(components)){
         const html=await renderToString(createSSRApp(Component,{species:s}))
         assert.ok(html.includes(s.images[0]?.path||'placeholder.svg'),`${file}: ${s.id}`)
-        if(s.images.length){assert.ok(html.includes(s.images[0].license));assert.ok(html.includes(s.images[0].author))}
+        // Compact cards keep credits in the modal; lesson and modal must retain them.
+        if(s.images.length && file!=='SpeciesCard.vue'){assert.ok(html.includes(s.images[0].license));assert.ok(html.includes(s.images[0].author))}
         if(file==='SpeciesModal.vue')assert.ok(html.includes(s.scientificName))
         if(file==='SpeciesCard.vue')assert.ok(html.includes('loading="lazy"'))
-        if(file!=='lesson/LessonPhoto.vue'||s.images.length)assert.ok(html.includes('lang="ru"'))
+        if(file==='SpeciesCard.vue' && s.content?.shortDescription)assert.ok(html.includes(`lang="${scientificContent(s.content.shortDescription.text,language).language}"`))
+        if(file==='SpeciesModal.vue'||file==='lesson/LessonPhoto.vue'&&s.images.length)assert.ok(html.includes('lang="ru"'))
       }
     }
   }finally{await vite.close()}

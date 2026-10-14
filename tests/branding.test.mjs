@@ -19,7 +19,7 @@ function headDocument() {
 const meta=(doc,attribute,key)=>doc.querySelector(`meta[${attribute}="${key}"]`)?.attributes.content
 
 test('Muras branding is localized without renaming the thematic Red Book catalog',()=>{
-  for(const language of ['ky','ru','en']) {
+  for(const language of ['ky','uz','ru','en']) {
     const value=brandMetadata(messages,language)
     assert.ok(value.title.startsWith('Muras — '));assert.ok(value.description.length>60)
     assert.equal(value.siteName,'Muras');assert.equal(value.themeColor,'#F7F8F4')
@@ -34,7 +34,7 @@ test('Muras branding is localized without renaming the thematic Red Book catalog
 
 test('all localized metadata updates consistently, including repeated switches and admin, without duplicate OG locales',()=>{
   const doc=headDocument()
-  for(const language of ['ky','en','ru','ky']) for(const admin of [false,true]) {
+  for(const language of ['ky','uz','en','ru','ky']) for(const admin of [false,true]) {
     const value=brandMetadata(messages,language,{admin});applyBrandMetadata(doc,value)
     assert.equal(doc.title,value.title);assert.equal(doc.documentElement.lang,language)
     assert.equal(meta(doc,'name','description'),value.description)
@@ -43,7 +43,7 @@ test('all localized metadata updates consistently, including repeated switches a
     assert.equal(meta(doc,'property','og:site_name'),'Muras')
     assert.equal(meta(doc,'property','og:locale'),value.locale)
     const alternate=doc.querySelectorAll('meta[property="og:locale:alternate"]').map(e=>e.attributes.content)
-    assert.equal(new Set(alternate).size,2);assert.ok(!alternate.includes(value.locale))
+    assert.equal(new Set(alternate).size,3);assert.ok(!alternate.includes(value.locale))
     assert.equal(doc.querySelectorAll('meta[property="og:title"]').length,1)
     assert.equal(meta(doc,'property','og:url'),undefined);assert.equal(meta(doc,'property','og:image'),undefined)
   }

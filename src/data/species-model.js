@@ -2,8 +2,10 @@ import { validComposition, validCompositions } from './image-composition.js'
 import { validatePopulation } from './population.js'
 import { validateSourceLocalization } from './localization.js'
 import { isSpeciesGroup } from './species-groups.js'
+import { validateContent } from './species-content.js'
 
-export const LANGUAGES = ['ru', 'ky', 'en']
+export { LANGUAGES } from './localization.js'
+import { LANGUAGES } from './localization.js'
 export const IUCN_CATEGORIES = ['EX', 'EW', 'CR', 'EN', 'VU', 'NT', 'LC', 'DD', 'NE']
 const FIELDS = ['id', 'scientificName', 'names', 'taxonomy', 'group', 'nationalRedBook', 'iucn',
   'habitat', 'regions', 'threats', 'conservationMeasures', 'population', 'images', 'sources',
@@ -27,8 +29,9 @@ export function validateSpecies(records, label = 'catalog', { publicData = false
   const year = (value) => value === null || (Number.isInteger(value) && value >= 1500 && value <= 2100)
   const url = (value) => { try { return ['https:', 'http:'].includes(new URL(value).protocol) } catch { return false } }
   const localized = (value, path) => {
-    if (!object(value)) { fail(path, 'ожидается объект ru/ky/en'); return }
-    for (const lang of LANGUAGES) if (!nullableText(value[lang])) fail(`${path}.${lang}`, 'ожидается строка или null')
+    if (!object(value)) { fail(path, 'ожидается объект ru/ky/en с необязательным uz'); return }
+    // Older sources and archives remain lossless; a supplied UZ field must be valid.
+    for (const lang of LANGUAGES) if (!(lang === 'uz' && !Object.hasOwn(value, lang)) && !nullableText(value[lang])) fail(`${path}.${lang}`, 'ожидается строка или null')
     for (const key of Object.keys(value)) if (!LANGUAGES.includes(key)) fail(`${path}.${key}`, 'неизвестный язык; используйте ky, не kg')
   }
   if (!Array.isArray(records)) return [`${label}: ожидается массив видов`]
@@ -37,7 +40,7 @@ export function validateSpecies(records, label = 'catalog', { publicData = false
     const p = `${label}[${index}]`
     if (!object(item)) { fail(p, 'ожидается объект вида'); return }
     for (const key of FIELDS) if (!(key in item)) fail(`${p}.${key}`, 'обязательное поле отсутствует')
-    for (const key of Object.keys(item)) if (!FIELDS.includes(key)) fail(`${p}.${key}`, 'неизвестное поле')
+    for (const key of Object.keys(item)) if (!FIELDS.includes(key) && key !== 'content') fail(`${p}.${key}`, 'неизвестное поле')
     if (!text(item.id) || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.id)) fail(`${p}.id`, 'ожидается безопасный slug')
     if (ids.has(item.id)) fail(`${p}.id`, 'повторяющийся id')
     ids.add(item.id)
@@ -61,6 +64,7 @@ export function validateSpecies(records, label = 'catalog', { publicData = false
       if (!Array.isArray(s.supports) || !s.supports.length || s.supports.some(v => !text(v))) fail(`${sp}.supports`, 'перечислите подтверждаемые поля')
       else s.supports.forEach(v => supported.add(v))
     })
+    errors.push(...validateContent(item.content, item.sources, `${p}.content`))
     const claim = (path, value) => {
       if (value !== null && value !== undefined && !supported.has(path)) fail(`${p}.${path}`, 'нет источника, подтверждающего это поле (sources.supports)')
     }

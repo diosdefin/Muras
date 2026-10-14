@@ -1,4 +1,4 @@
-export const LANGUAGES = ['ky', 'ru', 'en']
+export const LANGUAGES = ['ky', 'uz', 'ru', 'en']
 export const LOCALE_STORAGE_KEY = 'redbook.locale.v1'
 export const validLanguage = value => LANGUAGES.includes(value)
 export function readLanguage(storage) {
@@ -13,7 +13,7 @@ export function translate(messages, language, key, values = {}) {
   return text.replace(/\{(\w+)\}/g, (match, name) => values[name] == null ? match : String(values[name]))
 }
 export function scientificContent(value, language) {
-  const actual = [language, 'ru', 'en', 'ky'].find(code => typeof value?.[code] === 'string' && value[code].trim())
+  const actual = [language, 'ru', 'en', 'ky', 'uz'].find(code => typeof value?.[code] === 'string' && value[code].trim())
   return { text: actual ? value[actual] : null, language: actual || 'und', fallback: Boolean(actual && actual !== language) }
 }
 export function searchContentLanguage(result, siteLanguage) {
@@ -33,7 +33,7 @@ export function validateSourceLocalization(source, path = 'source') {
   const errors = []
   const text = value => typeof value === 'string' && Boolean(value.trim())
   const url = value => { try { return ['http:', 'https:'].includes(new URL(value).protocol) } catch { return false } }
-  if (source.language !== undefined && source.language !== null && !validLanguage(source.language)) errors.push(`${path}.language: используйте ky/ru/en или null`)
+  if (source.language !== undefined && source.language !== null && !validLanguage(source.language)) errors.push(`${path}.language: используйте ky/uz/ru/en или null`)
   if (source.versions !== undefined) {
     if (!source.versions || typeof source.versions !== 'object' || Array.isArray(source.versions)) errors.push(`${path}.versions: ожидается объект языковых версий`)
     else for (const [lang, version] of Object.entries(source.versions)) {

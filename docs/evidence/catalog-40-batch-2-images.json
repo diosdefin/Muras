@@ -1,0 +1,191 @@
+{
+  "schemaVersion": 1,
+  "batchId": "catalog-40-batch-2",
+  "receipts": [
+    {
+      "candidateId": "fergana-ground-beetle",
+      "status": "placeholder",
+      "reason": "Точная фотография с подтверждённой свободной лицензией не найдена; сохраняется placeholder."
+    },
+    {
+      "candidateId": "giant-robber-fly",
+      "status": "prepared",
+      "reason": null,
+      "metadata": {
+        "provider": "iNaturalist Open Data",
+        "metadataUrl": "https://api.inaturalist.org/v1/observations/66293295",
+        "originalPage": "https://www.inaturalist.org/photos/106836074",
+        "author": "Иван Пристрем",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "originalSha256": "ca6d265461087f0a7fe5001929befc4084ac8f8fa4efd045bd9e12a0b318b1c0",
+        "width": 2048,
+        "height": 1140,
+        "accessedAt": "2026-10-14",
+        "rightsEvidence": "docs/evidence/catalog-40-robber-fly-rights.json"
+      },
+      "image": {
+        "path": "assets/images/species/giant-robber-fly.webp",
+        "width": 1800,
+        "height": 1002,
+        "sha256": "ba4728fc48f629e504924b139890693fcf08f590baa31626280db96e3c6fe650",
+        "author": "Иван Пристрем",
+        "originalPage": "https://www.inaturalist.org/photos/106836074",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Satanas gigas — © Иван Пристрем, CC BY 4.0; iNaturalist photo 106836074, observation 66293295.",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+          "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Фотография наблюдения iNaturalist из Казахстана; способ съёмки не уточнён. Не является свидетельством встречаемости в Кыргызстане.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "date": "2026-10-14",
+        "method": "Просмотр локального WebP и контактного листа; определение сопоставлено с исходной страницей и авторским API для ктыря. Независимая научная проверка не выполнена."
+      }
+    },
+    {
+      "candidateId": "korzhinskys-pear",
+      "status": "prepared",
+      "reason": null,
+      "metadata": {
+        "license": "CC BY-SA 4.0",
+        "author": "Mike Shaw",
+        "artistStatementSha256": "235079dc85a3611d2e28648309e655c7a4e7093b84a61430e14d98fc73ed52be",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Pyrus_korshinskyi_(Kazakh_Pear)_in_blossom.jpg",
+        "revisionId": 699713091,
+        "width": 5179,
+        "height": 3999,
+        "description": "Photo of Pyrus korshinskyi (Kazakh Pear) in blossom at the Royal Botanic Garden Edinburgh, Scotland. The plant label on the tree states that it is \"UK & Ireland Champion Tree Girth & Height\". The tree is critically endangered. An informational sign next to the tree states that the tree is dedicated to the memory of Ann Deans.",
+        "metadataUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=File%3APyrus+korshinskyi+%28Kazakh+Pear%29+in+blossom.jpg&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids%7Ccontent&rvslots=main",
+        "accessedAt": "2026-10-14",
+        "originalSha256": "b052ebbfb782996f4e08bdf62b5440d968640d8e3d302c2a2163f4ae457d5bdc"
+      },
+      "image": {
+        "path": "assets/images/species/korzhinskys-pear.webp",
+        "width": 1800,
+        "height": 1390,
+        "sha256": "0773e5979b56a68e712c3ff9a8e45cc8c67d545e129ee6cea366a0b007405338",
+        "author": "Mike Shaw",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Pyrus_korshinskyi_(Kazakh_Pear)_in_blossom.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": "Pyrus korshinskyi (Kazakh Pear) in blossom.jpg — Mike Shaw, CC BY-SA 4.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+          "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Дерево в Королевском ботаническом саду Эдинбурга, Шотландия; культивируемый экземпляр.",
+          "ky": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "date": "2026-10-14",
+        "method": "Просмотр локального WebP и контактного листа; определение сопоставлено с исходной страницей и авторским API для ктыря. Независимая научная проверка не выполнена."
+      }
+    },
+    {
+      "candidateId": "cinereous-vulture",
+      "status": "prepared",
+      "reason": null,
+      "metadata": {
+        "license": "CC BY-SA 4.0",
+        "author": "Tisha Mukherjee",
+        "artistStatementSha256": "dae7c517e0d9a7d2c64fafe83d1409d408dcc7b2e7ac15af884fd0bfe8d70578",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Cinereous_Vulture_in_Jodbeed_Gadhwala_Conservation_Reserve_November_2025_by_Tisha_Mukherjee_01.jpg",
+        "revisionId": 1183438255,
+        "width": 3679,
+        "height": 2628,
+        "description": "Cinereous Vulture (Aegypius monachus, Accipitridae, Accipitriformes) in Jodbeed Gadhwala Conservation Reserve, Rajasthan, India.",
+        "metadataUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=File%3ACinereous+Vulture+in+Jodbeed+Gadhwala+Conservation+Reserve+November+2025+by+Tisha+Mukherjee+01.jpg&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids%7Ccontent&rvslots=main",
+        "accessedAt": "2026-10-14",
+        "originalSha256": "916f4c3846e4360d347bbe6c6598225eb810c6f7cdb49245fc935d3dba77a44b"
+      },
+      "image": {
+        "path": "assets/images/species/cinereous-vulture.webp",
+        "width": 1800,
+        "height": 1286,
+        "sha256": "dd32de6437931ca037bf0dde283aaed1bc29ac37d6bdb2dc6ef36e0fe5172761",
+        "author": "Tisha Mukherjee",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Cinereous_Vulture_in_Jodbeed_Gadhwala_Conservation_Reserve_November_2025_by_Tisha_Mukherjee_01.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": "Cinereous Vulture in Jodbeed Gadhwala Conservation Reserve November 2025 by Tisha Mukherjee 01.jpg — Tisha Mukherjee, CC BY-SA 4.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+          "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Птица в Jodbeed Gadhwala Conservation Reserve, Индия; не свидетельство встречаемости в Кыргызстане.",
+          "ky": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "date": "2026-10-14",
+        "method": "Просмотр локального WebP и контактного листа; определение сопоставлено с исходной страницей и авторским API для ктыря. Независимая научная проверка не выполнена."
+      }
+    },
+    {
+      "candidateId": "egyptian-vulture",
+      "status": "prepared",
+      "reason": null,
+      "metadata": {
+        "license": "CC BY-SA 4.0",
+        "author": "Artemy Voikhansky",
+        "artistStatementSha256": "df865ee8003ce2c71cfb8c58d606ca6e844a99783867d5c5e909c24b924e2351",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Neophron-1.jpg",
+        "revisionId": 984513582,
+        "width": 3840,
+        "height": 2160,
+        "description": "Egyptian vulture in flight at Gamla Nature Reserve (Israel), bringing some food to its nest.",
+        "metadataUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=File%3ANeophron-1.jpg&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids%7Ccontent&rvslots=main",
+        "accessedAt": "2026-10-14",
+        "originalSha256": "a573439a5207fbde93d28544d26bdd77f627f79e1d283d6672cc446ef7a3d661"
+      },
+      "image": {
+        "path": "assets/images/species/egyptian-vulture.webp",
+        "width": 1800,
+        "height": 1013,
+        "sha256": "c316177c52699ceeedeade6643652c086422caa869fb1b46a8f0ec778da2fbe4",
+        "author": "Artemy Voikhansky",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Neophron-1.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "attribution": "Neophron-1.jpg — Artemy Voikhansky, CC BY-SA 4.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+          "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Птица в заповеднике Гамла, Израиль; не свидетельство встречаемости в Кыргызстане.",
+          "ky": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "date": "2026-10-14",
+        "method": "Просмотр локального WebP и контактного листа; определение сопоставлено с исходной страницей и авторским API для ктыря. Независимая научная проверка не выполнена."
+      }
+    }
+  ]
+}

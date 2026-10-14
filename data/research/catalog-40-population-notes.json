@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "documentType": "population-research-notes",
+  "reviewStatus": "pending",
+  "notes": "Historical encounters and route counts, not current population estimates. No entry is imported into species.population or the map. Observation year is never inferred from the book publication year.",
+  "records": [
+    {
+      "speciesId": "said-alievs-toad-agama", "value": null, "min": 6, "max": 9, "year": null,
+      "territory": "Предгорья Тахтобоза, Кыргызстан", "unit": "встреченные особи за час поиска",
+      "method": "Поиск на трансекте длиной 3 км и шириной 2 м, по очерку",
+      "source": "https://macrolepidoptera.ru/lnk/282.pdf#page=333",
+      "limitations": "Год учёта не указан. Локальный показатель встречаемости, не оценка популяции; первичная ссылка [20] требует проверки."
+    },
+    {
+      "speciesId": "vigorous-ground-beetle", "value": null, "min": 3, "max": 4, "year": null,
+      "territory": "Местообитания Ферганской горной системы, Кыргызстан; участок учёта не уточнён",
+      "unit": "взрослые жуки за день поиска", "method": "Целенаправленный поиск, по очерку",
+      "source": "https://macrolepidoptera.ru/lnk/282.pdf#page=259",
+      "limitations": "Год, усилие поиска и точный участок не установлены; нельзя экстраполировать на общую численность."
+    },
+    {
+      "speciesId": "fergana-ground-beetle", "value": null, "min": 3, "max": 6, "year": null,
+      "territory": "Местообитания Ферганского хребта, Кыргызстан; маршрут не уточнён",
+      "unit": "взрослые жуки на маршруте 10 км за день", "method": "Маршрутный учёт, по очерку",
+      "source": "https://macrolepidoptera.ru/lnk/282.pdf#page=257",
+      "limitations": "Год не указан; повторный маршрут в источнике не дал находок. Показатель встречаемости, не общая популяция."
+    },
+    {
+      "speciesId": "cinereous-vulture", "value": 21, "min": null, "max": null, "year": 1992,
+      "territory": "10 из 44 обследованных урочищ Кыргызстана", "unit": "учтённые птицы",
+      "method": "Обследование 44 урочищ экспедицией; русский очерк даёт интервал 17 августа — 16 октября",
+      "source": "https://macrolepidoptera.ru/lnk/282.pdf#page=411",
+      "limitations": "Не сплошной учёт страны. Английская версия сокращает период до августа–сентября; первичная ссылка [16] и риск повторного учёта требуют проверки."
+    },
+    {
+      "speciesId": "cinereous-vulture", "value": null, "min": 0.02, "max": 0.04, "year": null,
+      "territory": "Альпийский пояс Восточного Прииссыккулья, Кыргызстан", "unit": "особи/км²", "method": null,
+      "source": "https://macrolepidoptera.ru/lnk/282.pdf#page=411",
+      "limitations": "Год и метод не установлены. Локальная плотность, не абсолютная численность; ссылка [31] требует проверки."
+    },
+    {
+      "speciesId": "egyptian-vulture", "value": 20, "min": null, "max": null, "year": 1955,
+      "territory": "Окрестности Балыкчы, Кыргызстан", "unit": "птицы в одной стае", "method": "Разовое наблюдение 20 марта 1955 года",
+      "source": "https://macrolepidoptera.ru/lnk/282.pdf#page=405",
+      "limitations": "Историческая встреча стаи, не оценка популяции; первичная ссылка [2] требует проверки."
+    },
+    {
+      "speciesId": "egyptian-vulture", "value": 3, "min": null, "max": null, "year": 1992,
+      "territory": "Бассейн реки Араван, Кыргызстан", "unit": "наблюдавшиеся птицы (два взрослых и один слёток)",
+      "method": "Разовое наблюдение 15 сентября 1992 года",
+      "source": "https://macrolepidoptera.ru/lnk/282.pdf#page=405",
+      "limitations": "Одна семейная группа, не численность региона или страны. Точное место гнездования и координаты здесь не публикуются; ссылка [16] требует проверки."
+    },
+    {
+      "speciesId": "egyptian-vulture", "value": 2, "min": null, "max": null, "year": 2005,
+      "territory": "Район между Ошем и Ноокатом, Кыргызстан", "unit": "птицы при одной встрече", "method": "Разовая встреча весной 2005 года",
+      "source": "https://macrolepidoptera.ru/lnk/282.pdf#page=405",
+      "limitations": "Не популяционная оценка. Точная дата и подробности метода не приведены; ссылка [48] требует проверки."
+    },
+    {
+      "speciesId": "egyptian-vulture", "value": 0.002, "min": null, "max": null, "year": null,
+      "territory": "Арчовые стланики Восточного Прииссыккулья, Кыргызстан", "unit": "особи/км²", "method": null,
+      "source": "https://macrolepidoptera.ru/lnk/282.pdf#page=405",
+      "limitations": "Год и метод не установлены. Локальная плотность, не абсолютная численность; ссылка [31] требует проверки."
+    }
+  ]
+}

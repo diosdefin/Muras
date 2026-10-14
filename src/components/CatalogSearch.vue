@@ -17,7 +17,8 @@ watch(() => props.modelValue, value => { draft.value = value; active.value = -1 
 watch(suggestions, () => { active.value = -1 })
 function update(event) {
   draft.value = event.target.value
-  if (composing.value || event.isComposing) return
+  // Some mobile keyboards keep composing until Space/blur. Search should still
+  // update for every real input event, without waiting for compositionend.
   active.value = -1; expanded.value = true; emit('update:modelValue', draft.value)
 }
 function select(result) { expanded.value = false; active.value = -1; emit('open', result) }

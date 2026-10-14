@@ -79,7 +79,8 @@ test('empty query retains original order, species objects, uniqueness and source
 })
 test('filter options contain only categories and groups in the catalog, including unknown values when present', () => {
   const options = catalogOptions(catalog)
-  assert.deepEqual(options.statuses.map(option => option.value), ['ALL', 'EN', 'VU', 'NT', 'LC', 'UNKNOWN'])
+  assert.deepEqual(catalogOptions(catalog.slice(0,30)).statuses.map(option => option.value), ['ALL', 'EN', 'VU', 'NT', 'LC', 'UNKNOWN'])
+  assert.deepEqual(new Set(options.statuses.map(option => option.value)), new Set(['ALL', ...catalog.map(species => species.iucn.category || 'UNKNOWN')]))
   assert.deepEqual(options.groups.map(option => option.value), ['ALL', 'mammals', 'birds', 'plants', 'fish', 'reptiles', 'amphibians', 'arthropods', 'fungi'])
   assert.deepEqual(options.regions, ['ALL', 'Кыргызстан'])
   const fixture = catalogOptions([{ group: 'fish', iucn: { category: null }, regions: null }])
@@ -130,6 +131,6 @@ test('pagination resets when filters or catalog change; invalid limits cannot hi
   assert.equal(catalogPage(records.value, -1).entries.length, 12)
 })
 test('compact descriptions are unchanged first sentences with honest missing-data fallbacks', () => {
-  for (const species of catalog) assert.ok(species.habitat.description.ru.startsWith(briefDescription(species)))
+  for (const species of catalog) assert.ok((species.content?.shortDescription?.text.ru || species.habitat.description.ru).startsWith(briefDescription(species)))
   assert.match(briefDescription({ habitat: null }), /не подтверждены/)
 })

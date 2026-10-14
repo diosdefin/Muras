@@ -3,7 +3,7 @@ import { availableGroups } from './species-groups.js'
 
 export function normalizeSearch(value) {
   return typeof value === 'string' ? value.normalize('NFC').toLowerCase().replace(/ё/g, 'е')
-    .replace(/[’‘']/g, "'").trim().replace(/\s+/g, ' ') : ''
+    .replace(/[’‘ʻʼ`']/g, "'").trim().replace(/\s+/g, ' ') : ''
 }
 
 // Latin aliases only. Original Kyrgyz Cyrillic remains distinct (ө/о, ү/у, ң/н).
@@ -111,7 +111,7 @@ export function catalogPage(results, limit = PAGE_SIZE) {
   const count = Number.isFinite(limit) ? Math.max(PAGE_SIZE, Math.floor(limit)) : PAGE_SIZE
   return { entries: results.slice(0, count), remaining: Math.max(0, results.length - count) }
 }
-export function briefDescription(species) {
-  const text = localized(species.habitat?.description)
+export function briefDescription(species, language = 'ru') {
+  const text = localized(species.content?.shortDescription?.text, language) || localized(species.habitat?.description, language)
   return text ? text.split(/(?<=[.!?])\s+/u)[0] : 'Сведения о местообитании пока не подтверждены.'
 }

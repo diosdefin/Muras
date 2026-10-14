@@ -21,7 +21,7 @@ const lastResult = difficulty => history.value.filter(r => r.difficulty === diff
 
 watch(() => `${stage.value}:${currentQuestion.value?.id}`, async () => {
   await nextTick()
-  content.value?.querySelector('[data-quiz-focus]')?.focus()
+  content.value?.querySelector('[data-quiz-focus]')?.focus({ preventScroll: true })
 })
 </script>
 

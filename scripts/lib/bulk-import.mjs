@@ -57,6 +57,8 @@ export async function planBatchImport(source, batch, { validateAssets = async ()
       }
       const duplicate = names.get(nameKey) || taxonIds.get(e.taxonId)
       if (duplicate) { result.errors.push(`Таксон уже представлен записью ${duplicate}`); continue }
+      const overlapping = [...names].find(([name]) => name.startsWith(`${nameKey} `) || nameKey.startsWith(`${name} `))
+      if (overlapping) { result.errors.push(`Конфликт вида/подвида с записью ${overlapping[1]}; требуется отдельное разрешение таксономического концепта`); continue }
       if (!s.images.length) result.warnings.push('Разрешённая фотография отсутствует: используется существующий placeholder')
       proposedSource.catalog.push(structuredClone(s));ids.set(s.id,s);names.set(nameKey,s.id);taxonIds.set(e.taxonId,s.id)
       result.status='added'

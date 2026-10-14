@@ -2,7 +2,7 @@ import { LANGUAGES, translate, validLanguage } from './localization.js'
 
 export const BRAND_NAME = 'Muras'
 export const THEME_COLOR = '#F7F8F4'
-export const OG_LOCALES = Object.freeze({ ky:'ky_KG', ru:'ru_RU', en:'en_GB' })
+export const OG_LOCALES = Object.freeze({ ky:'ky_KG', uz:'uz_UZ', ru:'ru_RU', en:'en_GB' })
 
 export function brandMetadata(messages, language, { admin = false } = {}) {
   const locale = validLanguage(language) ? language : 'ky'

@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { ANIMATION_DURATION, AUTO_DELAY, backingSize, createVisualization, renderFrame } from '../src/data/visualization/engine.js'
+import { ANIMATION_DURATION, AUTO_DELAY, UNKNOWN_DESATURATION, backingSize, createVisualization, renderFrame } from '../src/data/visualization/engine.js'
 import { compositionCrop } from '../src/data/image-composition.js'
 
 function fakeCanvas() {
@@ -32,9 +32,9 @@ test('clear photo appears first; automatic transition waits for the short pause'
   h.pause(); h.tick(0); h.tick(ANIMATION_DURATION)
   assert.equal(h.state.mode, 'active'); assert.equal(h.state.amount, 1); assert.equal(h.frames.size, 0)
 })
-test('unknown removes colour without pixelation or reducing sampled resolution', () => {
+test('unknown partially desaturates without pixelation or reducing sampled resolution', () => {
   const h = harness(); h.load(); h.pause(); h.tick(0); h.tick(450); h.tick(900)
-  assert.deepEqual(h.canvas.context.filters, ['grayscale(0)', 'grayscale(0.5)', 'grayscale(1)'])
+  assert.deepEqual(h.canvas.context.filters, ['grayscale(0)', `grayscale(${UNKNOWN_DESATURATION / 2})`, `grayscale(${UNKNOWN_DESATURATION})`])
   assert.equal(h.scratch.context.calls.length, 0)
   assert.ok(h.canvas.context.calls.every(call => call[0] === h.images[0]))
   assert.equal(h.canvas.context.imageSmoothingEnabled, true)

@@ -53,17 +53,17 @@ export function validateQuestions(questions, catalog) {
       if (!text(q.correctAnswerId) || !optionIds.has(q.correctAnswerId)) fail(`${p}.correctAnswerId`, 'правильный ответ должен быть одним из вариантов')
     }
     if (q.translations !== undefined) {
-      if (!q.translations || typeof q.translations !== 'object' || Array.isArray(q.translations)) fail(`${p}.translations`, 'ожидается объект ky/en')
+      if (!q.translations || typeof q.translations !== 'object' || Array.isArray(q.translations)) fail(`${p}.translations`, 'ожидается объект ky/uz/en')
       else {
         for (const lang of Object.keys(q.translations)) {
           const v = q.translations[lang], vp = `${p}.translations.${lang}`
-          if (!['ky','en'].includes(lang) || !v || typeof v !== 'object' || Array.isArray(v)) { fail(vp, 'неизвестный язык или неверная версия'); continue }
+          if (!['ky','uz','en'].includes(lang) || !v || typeof v !== 'object' || Array.isArray(v)) { fail(vp, 'неизвестный язык или неверная версия'); continue }
           for (const key of Object.keys(v)) if (!['question','explanation','options','optionLanguages'].includes(key)) fail(`${vp}.${key}`, 'неизвестное поле; идентификаторы и ответы общие для всех языков')
           if (!text(v.question) || !text(v.explanation)) fail(vp, 'нужны переведённые question и explanation')
           const ids = (Array.isArray(q.options) ? q.options : []).map(o => o?.id)
           if (!v.options || typeof v.options !== 'object' || Array.isArray(v.options) || Object.keys(v.options).length !== 4 || ids.some(id => !text(v.options[id])) || Object.keys(v.options).some(id => !ids.includes(id))) fail(`${vp}.options`, 'требуются четыре непустых перевода с исходными id ответов')
           else if (new Set(Object.values(v.options).map(value => value.trim().toLowerCase())).size !== 4) fail(`${vp}.options`, 'повторяющиеся варианты перевода')
-          if (v.optionLanguages !== undefined && (!v.optionLanguages || typeof v.optionLanguages !== 'object' || Array.isArray(v.optionLanguages) || Object.entries(v.optionLanguages).some(([id, language]) => !ids.includes(id) || !['ky','ru','en','la'].includes(language)))) fail(`${vp}.optionLanguages`, 'неверные id или языки вариантов')
+          if (v.optionLanguages !== undefined && (!v.optionLanguages || typeof v.optionLanguages !== 'object' || Array.isArray(v.optionLanguages) || Object.entries(v.optionLanguages).some(([id, language]) => !ids.includes(id) || !['ky','uz','ru','en','la'].includes(language)))) fail(`${vp}.optionLanguages`, 'неверные id или языки вариантов')
         }
       }
     }

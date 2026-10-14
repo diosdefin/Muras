@@ -42,3 +42,74 @@
 @media (min-width: 900px) { .map-layout { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); } .region-map, .map-panel { padding: 28px; } .region-map { position: sticky; top: 24px; } }
 @media (max-width: 359px) { .region-map, .map-panel { padding: 16px; } .regional-species-heading { gap: 10px; } .regional-species-heading img { width: 64px; height: 64px; } }
 @media (prefers-reduced-motion: reduce) { .oblast-map path { transition: none; } }
+
+/* MURAS homepage map preview: same geometry and evidence as the full map. */
+.map-preview .map-layout { align-items: stretch; }
+.map-preview .region-map { position: static; display: flex; flex-direction: column; min-height: 345px; }
+.map-preview .oblast-map { flex: 1; margin-block: 20px 10px; min-height: 0; }
+.map-preview .map-hover-name { min-height: 1.6em; font-size: 14px; color: var(--muted); }
+.map-preview .map-provenance-compact { font-size: 12px; margin-top: 10px; }
+.map-full { min-height: 75vh; }
+.map-overview { min-width: 0; min-height: 345px; padding: clamp(20px, 2.5vw, 30px); display: flex; flex-direction: column; justify-content: space-between; background: #fff; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.map-overview-content { min-width: 0; }
+.map-overview-eyebrow { color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.map-fact-slide { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+.map-fact-number { margin-block: 16px 0; color: var(--red); font-family: Georgia, "Times New Roman", serif; font-size: clamp(60px, 6vw, 96px); font-weight: 400; line-height: 1; font-variant-numeric: tabular-nums; }
+.map-fact-slide h3 { margin-top: 10px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(23px, 2.5vw, 32px); line-height: 1.2; font-weight: 400; }
+.map-fact-track { height: 5px; margin-top: 20px; overflow: hidden; border-radius: 4px; background: #e9efea; }
+.map-fact-track span { display: block; height: 100%; border-radius: inherit; background: var(--green); transition: width .3s ease; }
+.map-fact-description { margin-top: 16px; color: var(--muted); font-size: 13px; max-width: 42ch; }
+.map-fact-controls { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: 20px; }
+.map-fact-dots { display: flex; gap: 6px; align-items: center; }
+.map-fact-dots i { display: block; width: 7px; height: 7px; border-radius: 8px; background: var(--line); transition: width .2s ease; }
+.map-fact-dots i.active { width: 23px; background: var(--green); }
+.map-fact-arrows { display: flex; gap: 8px; }
+.map-fact-arrows button, .map-overview-clear { min-height: 44px; min-width: 44px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; background: white; font-size: 18px; }
+.map-fact-arrows button:hover, .map-overview-clear:hover { background: var(--paper); }
+.map-overview-topline { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.map-region-summary h3 { margin-top: 10px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(26px, 3vw, 37px); font-weight: 400; line-height: 1.15; }
+.map-region-count { font-size: 16px; margin-top: 14px; font-weight: 600; }
+.map-region-empty { color: var(--muted); font-size: 14px; margin-top: 20px; }
+.map-region-gallery { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+.map-region-thumb { display: flex; flex-direction: column; align-items: center; width: 88px; gap: 6px; text-align: center; }
+.map-region-thumb img { display: block; width: 60px; height: 60px; border-radius: 50%; border: 2px solid var(--line); background: var(--paper); object-fit: cover; }
+.map-region-thumb span { font-size: 12px; line-height: 1.3; overflow-wrap: anywhere; }
+.map-overview-credits { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 11px; color: var(--muted); margin-top: 10px; }
+.map-overview-credits a { text-decoration: underline; text-underline-offset: 2px; }
+.map-region-review { font-size: 12px; color: var(--muted); margin-top: 14px; }
+.map-overview-action { display: flex; justify-content: space-between; align-items: center; gap: 16px; width: 100%; min-height: 48px; text-align: left; padding: 12px 14px; border: 1px solid var(--ink); border-radius: 6px; font-size: 14px; font-weight: 650; margin-top: 18px; }
+.map-overview-action:hover { background: var(--paper); }
+.overview-fade-enter-active, .overview-fade-leave-active { transition: opacity .18s ease, transform .18s ease; }
+.overview-fade-enter-from { opacity: 0; transform: translateY(4px); }
+.overview-fade-leave-to { opacity: 0; transform: translateY(-4px); }
+@media (min-width: 900px) { .map-preview .map-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+@media (max-width: 479px) { .map-preview .region-map, .map-overview { min-height: 300px; padding: 16px; } .map-preview .oblast-map { margin-block: 14px 8px; } }
+@media (prefers-reduced-motion: reduce) { .map-fact-track span, .map-fact-dots i, .overview-fade-enter-active, .overview-fade-leave-active { transition: none; } }
+
+
+/* MURAS UI v2: keep both preview cards the same height in every state. */
+.map-preview .map-layout { align-items: stretch; }
+.map-preview .region-map,
+.map-preview .map-overview { height: 420px; min-height: 0; max-height: 420px; }
+.map-preview .region-map { overflow: hidden; }
+.map-preview .oblast-map { flex: 1 1 auto; min-height: 0; max-height: calc(100% - 95px); }
+.map-preview .map-overview { overflow: hidden; justify-content: flex-start; }
+.map-preview .map-overview-content { flex: 1 1 auto; min-height: 0; }
+.map-preview .map-region-summary { overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; padding-right: 3px; }
+.map-preview .map-fact-slide { justify-content: center; }
+.map-preview .map-fact-controls { flex: 0 0 auto; }
+/* SVG pointer focus should not render a rectangular browser outline.
+   Keyboard focus remains visible as a stronger red region boundary. */
+.oblast-map path:focus { outline: none !important; }
+.oblast-map path[aria-pressed="true"] { stroke: var(--red); stroke-width: 3; }
+.oblast-map path[aria-pressed="true"]:hover { stroke: var(--red); stroke-width: 3.4; }
+.oblast-map path:focus-visible { outline: none !important; stroke: var(--red); stroke-width: 4; filter: drop-shadow(0 0 2px white); }
+@media (max-width: 899px) {
+  .map-preview .region-map,
+  .map-preview .map-overview { height: 370px; max-height: 370px; }
+}
+@media (max-width: 479px) {
+  .map-preview .region-map,
+  .map-preview .map-overview { height: 340px; max-height: 340px; }
+  .map-preview .map-region-gallery { gap: 6px; }
+}

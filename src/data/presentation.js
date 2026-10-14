@@ -2,6 +2,7 @@ import { canPublishImage } from './species-model.js'
 import { populationPresentation } from './population.js'
 import { tr } from '../locales/index.js'
 import { groupTranslationKey } from './species-groups.js'
+import { scientificContent } from './localization.js'
 
 export const STATUS_DETAILS = {
   CR: { label: 'Критическая угроза', classes: 'bg-red-100 text-red-800 ring-red-200' },
@@ -17,11 +18,16 @@ export const STATUS_DETAILS = {
 export const PLACEHOLDER = `${import.meta.env?.BASE_URL || '/'}images/placeholder.svg`
 
 export function localized(value, language = 'ru') {
-  return value?.[language] || value?.ru || value?.en || value?.ky || null
+  return value?.[language] || value?.ru || value?.en || value?.ky || value?.uz || null
 }
 
 export function speciesName(species, language = 'ru') {
   return localized(species.names, language) || species.scientificName || species.id
+}
+
+export function speciesNameLanguage(species, language = 'ru') {
+  const content = scientificContent(species.names, language)
+  return content.text ? content.language : species.scientificName ? 'la' : 'und'
 }
 
 export function groupLabel(species, language = 'ru') {

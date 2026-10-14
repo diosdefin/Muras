@@ -1,0 +1,609 @@
+{
+  "schemaVersion": 1,
+  "batchId": "catalog-40-batch-2",
+  "dataset": {
+    "key": "19491596-35ae-4a91-9a98-85cf505f1bd3",
+    "installationKey": "fb5e4c2a-579c-434b-a446-3a665dd732ad",
+    "publishingOrganizationKey": "d44af9a3-e779-40c0-a186-79e7717c6d2b",
+    "doi": "10.15468/0qnb58",
+    "external": false,
+    "numConstituents": 0,
+    "type": "CHECKLIST",
+    "title": "The IUCN Red List of Threatened Species",
+    "description": "<p>Established in 1964, the International Union for Conservation of Nature’s Red List of Threatened Species has evolved to become the world’s most comprehensive information source on the global extinction risk status of animal, fungus and plant species.</p><p>The IUCN Red List is a critical indicator of the health of the world’s biodiversity. Far more than a list of species and their status, it is a powerful tool to inform and catalyse action for biodiversity conservation and policy change, critical to protecting the natural resources we need to survive. It provides information about range, population size, habitat and ecology, use and/or trade, threats, and conservation actions that will help inform necessary conservation decisions.</p><p>The IUCN Red List is used by government agencies, wildlife departments, conservation-related non-governmental organisations (NGOs), natural resource planners, educational organisations, students, and the business community. The Red List process has become a massive enterprise involving the IUCN Global Species Program staff, partner organisations and experts in the IUCN Species Survival Commission and partner networks who compile the species information to make The IUCN Red List the indispensable product it is today.</p>",
+    "language": "eng",
+    "homepage": "https://www.iucnredlist.org/",
+    "logoUrl": "https://raw.githubusercontent.com/mdoering/checklist_builder/master/src/main/resources/iucn/IUCN_Red_List.svg",
+    "citation": {
+      "text": "IUCN (2026). The IUCN Red List of Threatened Species. Version 2026-1. https://www.iucnredlist.org. Downloaded on 2026-07-28. https://doi.org/10.15468/0qnb58 accessed via GBIF.org on 2026-10-14.",
+      "citationProvidedBySource": true
+    },
+    "contactsCitation": [],
+    "lockedForAutoUpdate": false,
+    "createdBy": "registry-migration.gbif.org",
+    "modifiedBy": "crawler.gbif.org",
+    "created": "2011-07-18T12:35:28.000+00:00",
+    "modified": "2026-07-30T02:30:35.334+00:00",
+    "contacts": [
+      {
+        "key": 7094395,
+        "type": "ORIGINATOR",
+        "primary": true,
+        "userId": [],
+        "lastName": "International Union for Conservation of Nature",
+        "position": [],
+        "email": [],
+        "phone": [],
+        "homepage": [
+          "https://www.iucn.org/"
+        ],
+        "organization": "International Union for Conservation of Nature",
+        "address": [],
+        "createdBy": "crawler.gbif.org",
+        "modifiedBy": "crawler.gbif.org",
+        "created": "2026-07-30T02:30:35.308+00:00",
+        "modified": "2026-07-30T02:30:35.308+00:00"
+      },
+      {
+        "key": 7094396,
+        "type": "METADATA_AUTHOR",
+        "primary": true,
+        "userId": [
+          "https://orcid.org/0000-0003-0623-6682"
+        ],
+        "firstName": "Matthew",
+        "lastName": "Blissett",
+        "position": [
+          "Software Developer"
+        ],
+        "email": [
+          "mblissett@gbif.org"
+        ],
+        "phone": [],
+        "homepage": [],
+        "organization": "GBIF",
+        "address": [],
+        "createdBy": "crawler.gbif.org",
+        "modifiedBy": "crawler.gbif.org",
+        "created": "2026-07-30T02:30:35.310+00:00",
+        "modified": "2026-07-30T02:30:35.310+00:00"
+      },
+      {
+        "key": 7094397,
+        "type": "TECHNICAL_POINT_OF_CONTACT",
+        "primary": false,
+        "userId": [],
+        "firstName": "Simon",
+        "lastName": "Tarr",
+        "position": [
+          "Biodiversity Systems Manager"
+        ],
+        "email": [
+          "Simon.TARR@iucn.org"
+        ],
+        "phone": [],
+        "homepage": [],
+        "organization": "International Union for Conservation of Nature",
+        "address": [],
+        "createdBy": "crawler.gbif.org",
+        "modifiedBy": "crawler.gbif.org",
+        "created": "2026-07-30T02:30:35.311+00:00",
+        "modified": "2026-07-30T02:30:35.311+00:00"
+      },
+      {
+        "key": 7094398,
+        "type": "PROGRAMMER",
+        "primary": false,
+        "userId": [
+          "https://orcid.org/0000-0003-0623-6682"
+        ],
+        "firstName": "Matthew",
+        "lastName": "Blissett",
+        "position": [
+          "Software Developer"
+        ],
+        "email": [
+          "mblissett@gbif.org"
+        ],
+        "phone": [],
+        "homepage": [],
+        "organization": "GBIF",
+        "address": [],
+        "createdBy": "crawler.gbif.org",
+        "modifiedBy": "crawler.gbif.org",
+        "created": "2026-07-30T02:30:35.313+00:00",
+        "modified": "2026-07-30T02:30:35.313+00:00"
+      },
+      {
+        "key": 7094399,
+        "type": "ADMINISTRATIVE_POINT_OF_CONTACT",
+        "primary": true,
+        "userId": [],
+        "firstName": "Craig",
+        "lastName": "Hilton-Taylor",
+        "position": [],
+        "email": [
+          "Craig.HILTON-TAYLOR@iucn.org"
+        ],
+        "phone": [],
+        "homepage": [],
+        "organization": "International Union for Conservation of Nature",
+        "address": [],
+        "createdBy": "crawler.gbif.org",
+        "modifiedBy": "crawler.gbif.org",
+        "created": "2026-07-30T02:30:35.314+00:00",
+        "modified": "2026-07-30T02:30:35.314+00:00"
+      }
+    ],
+    "endpoints": [
+      {
+        "key": 1294697,
+        "type": "DWC_ARCHIVE",
+        "url": "https://hosted-datasets.gbif.org/datasets/iucn/iucn-latest.zip",
+        "createdBy": "MattBlissett",
+        "modifiedBy": "MattBlissett",
+        "created": "2026-06-09T11:13:43.800+00:00",
+        "modified": "2026-06-09T11:13:43.800+00:00",
+        "machineTags": []
+      }
+    ],
+    "machineTags": [
+      {
+        "key": 33193554,
+        "namespace": "crawler.gbif.org",
+        "name": "crawl_attempt",
+        "value": "423",
+        "createdBy": "crawler.gbif.org",
+        "created": "2026-10-13T15:20:00.143+00:00"
+      }
+    ],
+    "tags": [],
+    "identifiers": [
+      {
+        "key": 436650,
+        "type": "CLB_DATASET_KEY",
+        "identifier": "53131",
+        "createdBy": "clb-bot",
+        "created": "2025-02-21T11:21:46.961+00:00",
+        "primary": false
+      },
+      {
+        "key": 11549,
+        "type": "GBIF_PORTAL",
+        "identifier": "13623",
+        "createdBy": "registry-migration.gbif.org",
+        "created": "2012-09-05T14:04:22.000+00:00",
+        "primary": false
+      }
+    ],
+    "comments": [
+      {
+        "key": 35448,
+        "content": "[2023-11-20, ah] changed technical contact on request from IUCN contact (helpdesk email: 17.11. via Andrew R.)",
+        "createdBy": "andrea",
+        "modifiedBy": "andrea",
+        "created": "2023-11-20T08:02:07.607+00:00",
+        "modified": "2023-11-20T08:02:07.607+00:00"
+      },
+      {
+        "key": 35445,
+        "content": "[2023-11-17, ah] License update from CC BY-NC to CC BY on consultation with IUCN contact (helpdesk email: 17.11.23, via Andrew R.)",
+        "createdBy": "andrea",
+        "modifiedBy": "andrea",
+        "created": "2023-11-17T08:36:51.837+00:00",
+        "modified": "2023-11-17T08:36:51.837+00:00"
+      }
+    ],
+    "bibliographicCitations": [],
+    "curatorialUnits": [],
+    "taxonomicCoverages": [],
+    "geographicCoverages": [],
+    "temporalCoverages": [],
+    "keywordCollections": [],
+    "countryCoverage": [],
+    "collections": [],
+    "dataDescriptions": [],
+    "dataLanguage": "eng",
+    "pubDate": "2026-07-28T00:00:00.000+00:00",
+    "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+    "dwca": {
+      "coreType": "http://rs.tdwg.org/dwc/terms/Taxon",
+      "extensions": [
+        "http://rs.gbif.org/terms/1.0/Distribution",
+        "http://rs.gbif.org/terms/1.0/VernacularName"
+      ],
+      "modified": "2026-10-13T15:20:09.763+00:00"
+    },
+    "approximateCounts": {
+      "occurrenceCount": 0,
+      "nameUsageCount": 338085
+    }
+  },
+  "evidence": [
+    {
+      "id": "fergana-ground-beetle",
+      "bookPage": 257,
+      "gbifUrl": "https://api.gbif.org/v1/species/match?strict=true&name=Carabus%20ferghanicus",
+      "gbif": {
+        "usageKey": 7630772,
+        "scientificName": "Carabus ferghanicus Breuning, 1933",
+        "canonicalName": "Carabus ferghanicus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "confidence": 99,
+        "matchType": "EXACT",
+        "kingdom": "Animalia",
+        "phylum": "Arthropoda",
+        "order": "Coleoptera",
+        "family": "Carabidae",
+        "genus": "Carabus",
+        "species": "Carabus ferghanicus",
+        "kingdomKey": 1,
+        "phylumKey": 54,
+        "classKey": 216,
+        "orderKey": 1470,
+        "familyKey": 3792,
+        "genusKey": 1036775,
+        "speciesKey": 7630772,
+        "class": "Insecta"
+      },
+      "iucnSearchUrl": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Carabus+ferghanicus&limit=10",
+      "iucnSearch": {
+        "offset": 0,
+        "limit": 10,
+        "endOfRecords": true,
+        "count": 0,
+        "results": [],
+        "facets": []
+      },
+      "selectedIucnKey": null,
+      "reviewedAt": "2026-10-14"
+    },
+    {
+      "id": "giant-robber-fly",
+      "bookPage": 273,
+      "gbifUrl": "https://api.gbif.org/v1/species/match?strict=true&name=Satanas%20gigas",
+      "gbif": {
+        "usageKey": 1661565,
+        "scientificName": "Satanas gigas (Eversmann, 1855)",
+        "canonicalName": "Satanas gigas",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "confidence": 99,
+        "matchType": "EXACT",
+        "kingdom": "Animalia",
+        "phylum": "Arthropoda",
+        "order": "Diptera",
+        "family": "Asilidae",
+        "genus": "Satanas",
+        "species": "Satanas gigas",
+        "kingdomKey": 1,
+        "phylumKey": 54,
+        "classKey": 216,
+        "orderKey": 811,
+        "familyKey": 7275,
+        "genusKey": 1661558,
+        "speciesKey": 1661565,
+        "class": "Insecta"
+      },
+      "iucnSearchUrl": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Satanas+gigas&limit=10",
+      "iucnSearch": {
+        "offset": 0,
+        "limit": 10,
+        "endOfRecords": true,
+        "count": 0,
+        "results": [],
+        "facets": []
+      },
+      "selectedIucnKey": null,
+      "reviewedAt": "2026-10-14"
+    },
+    {
+      "id": "korzhinskys-pear",
+      "bookPage": 133,
+      "gbifUrl": "https://api.gbif.org/v1/species/match?strict=true&name=Pyrus%20korshinskyi",
+      "gbif": {
+        "usageKey": 5363093,
+        "scientificName": "Pyrus korshinskyi Litv.",
+        "canonicalName": "Pyrus korshinskyi",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "confidence": 98,
+        "matchType": "EXACT",
+        "kingdom": "Plantae",
+        "phylum": "Tracheophyta",
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Pyrus",
+        "species": "Pyrus korshinskyi",
+        "kingdomKey": 6,
+        "phylumKey": 7707728,
+        "classKey": 220,
+        "orderKey": 691,
+        "familyKey": 5015,
+        "genusKey": 2986532,
+        "speciesKey": 5363093,
+        "class": "Magnoliopsida"
+      },
+      "iucnSearchUrl": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Pyrus+korshinskyi&limit=10",
+      "iucnSearch": {
+        "offset": 0,
+        "limit": 10,
+        "endOfRecords": true,
+        "count": 1,
+        "results": [
+          {
+            "key": 176784661,
+            "datasetKey": "19491596-35ae-4a91-9a98-85cf505f1bd3",
+            "nubKey": 5363093,
+            "parentKey": 340237492,
+            "parent": "Pyrus",
+            "kingdom": "PLANTAE",
+            "phylum": "TRACHEOPHYTA",
+            "order": "ROSALES",
+            "family": "ROSACEAE",
+            "genus": "Pyrus",
+            "species": "Pyrus korshinskyi",
+            "kingdomKey": 340231984,
+            "phylumKey": 340233373,
+            "classKey": 340233498,
+            "orderKey": 340237430,
+            "familyKey": 340237467,
+            "genusKey": 340237492,
+            "speciesKey": 176784661,
+            "scientificName": "Pyrus korshinskyi Litv.",
+            "canonicalName": "Pyrus korshinskyi",
+            "authorship": "Litv.",
+            "nameType": "SCIENTIFIC",
+            "taxonomicStatus": "ACCEPTED",
+            "rank": "SPECIES",
+            "origin": "SOURCE",
+            "numDescendants": 0,
+            "numOccurrences": 0,
+            "taxonID": "63482",
+            "habitats": [],
+            "nomenclaturalStatus": [],
+            "threatStatuses": [
+              "CRITICALLY_ENDANGERED"
+            ],
+            "descriptions": [],
+            "vernacularNames": [],
+            "synonym": false,
+            "higherClassificationMap": {
+              "340231984": "PLANTAE",
+              "340233373": "TRACHEOPHYTA",
+              "340233498": "MAGNOLIOPSIDA",
+              "340237430": "ROSALES",
+              "340237467": "ROSACEAE",
+              "340237492": "Pyrus"
+            },
+            "class": "MAGNOLIOPSIDA"
+          }
+        ],
+        "facets": []
+      },
+      "selectedIucnKey": 176784661,
+      "reviewedAt": "2026-10-14"
+    },
+    {
+      "id": "cinereous-vulture",
+      "bookPage": 411,
+      "gbifUrl": "https://api.gbif.org/v1/species/match?strict=true&name=Aegypius%20monachus",
+      "gbif": {
+        "usageKey": 5229165,
+        "scientificName": "Aegypius monachus (Linnaeus, 1766)",
+        "canonicalName": "Aegypius monachus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "confidence": 99,
+        "matchType": "EXACT",
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Aegypius",
+        "species": "Aegypius monachus",
+        "kingdomKey": 1,
+        "phylumKey": 44,
+        "classKey": 212,
+        "orderKey": 7191147,
+        "familyKey": 2877,
+        "genusKey": 2480441,
+        "speciesKey": 5229165,
+        "class": "Aves"
+      },
+      "iucnSearchUrl": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Aegypius+monachus&limit=10",
+      "iucnSearch": {
+        "offset": 0,
+        "limit": 10,
+        "endOfRecords": true,
+        "count": 1,
+        "results": [
+          {
+            "key": 176612934,
+            "datasetKey": "19491596-35ae-4a91-9a98-85cf505f1bd3",
+            "nubKey": 5229165,
+            "parentKey": 340222974,
+            "parent": "Aegypius",
+            "kingdom": "ANIMALIA",
+            "phylum": "CHORDATA",
+            "order": "ACCIPITRIFORMES",
+            "family": "ACCIPITRIDAE",
+            "genus": "Aegypius",
+            "species": "Aegypius monachus",
+            "kingdomKey": 340214027,
+            "phylumKey": 340214214,
+            "classKey": 340221887,
+            "orderKey": 340222924,
+            "familyKey": 340222933,
+            "genusKey": 340222974,
+            "speciesKey": 176612934,
+            "scientificName": "Aegypius monachus (Linnaeus, 1766)",
+            "canonicalName": "Aegypius monachus",
+            "authorship": "(Linnaeus, 1766)",
+            "nameType": "SCIENTIFIC",
+            "taxonomicStatus": "ACCEPTED",
+            "rank": "SPECIES",
+            "origin": "SOURCE",
+            "numDescendants": 0,
+            "numOccurrences": 0,
+            "taxonID": "22695231",
+            "habitats": [],
+            "nomenclaturalStatus": [],
+            "threatStatuses": [
+              "NEAR_THREATENED"
+            ],
+            "descriptions": [],
+            "vernacularNames": [
+              {
+                "vernacularName": "Black Vulture",
+                "language": "eng"
+              },
+              {
+                "vernacularName": "Cinereous Vulture",
+                "language": "eng"
+              },
+              {
+                "vernacularName": "Eurasian Black Vulture",
+                "language": "eng"
+              },
+              {
+                "vernacularName": "Vautour Moine",
+                "language": "fra"
+              },
+              {
+                "vernacularName": "Buitre Negro",
+                "language": "spa"
+              }
+            ],
+            "synonym": false,
+            "higherClassificationMap": {
+              "340214027": "ANIMALIA",
+              "340214214": "CHORDATA",
+              "340221887": "AVES",
+              "340222924": "ACCIPITRIFORMES",
+              "340222933": "ACCIPITRIDAE",
+              "340222974": "Aegypius"
+            },
+            "class": "AVES"
+          }
+        ],
+        "facets": []
+      },
+      "selectedIucnKey": 176612934,
+      "reviewedAt": "2026-10-14"
+    },
+    {
+      "id": "egyptian-vulture",
+      "bookPage": 405,
+      "gbifUrl": "https://api.gbif.org/v1/species/match?strict=true&name=Neophron%20percnopterus",
+      "gbif": {
+        "usageKey": 2480696,
+        "scientificName": "Neophron percnopterus (Linnaeus, 1758)",
+        "canonicalName": "Neophron percnopterus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "confidence": 99,
+        "matchType": "EXACT",
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Neophron",
+        "species": "Neophron percnopterus",
+        "kingdomKey": 1,
+        "phylumKey": 44,
+        "classKey": 212,
+        "orderKey": 7191147,
+        "familyKey": 2877,
+        "genusKey": 2480695,
+        "speciesKey": 2480696,
+        "class": "Aves"
+      },
+      "iucnSearchUrl": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Neophron+percnopterus&limit=10",
+      "iucnSearch": {
+        "offset": 0,
+        "limit": 10,
+        "endOfRecords": true,
+        "count": 1,
+        "results": [
+          {
+            "key": 176612981,
+            "datasetKey": "19491596-35ae-4a91-9a98-85cf505f1bd3",
+            "nubKey": 2480696,
+            "parentKey": 340222995,
+            "parent": "Neophron",
+            "kingdom": "ANIMALIA",
+            "phylum": "CHORDATA",
+            "order": "ACCIPITRIFORMES",
+            "family": "ACCIPITRIDAE",
+            "genus": "Neophron",
+            "species": "Neophron percnopterus",
+            "kingdomKey": 340214027,
+            "phylumKey": 340214214,
+            "classKey": 340221887,
+            "orderKey": 340222924,
+            "familyKey": 340222933,
+            "genusKey": 340222995,
+            "speciesKey": 176612981,
+            "scientificName": "Neophron percnopterus (Linnaeus, 1758)",
+            "canonicalName": "Neophron percnopterus",
+            "authorship": "(Linnaeus, 1758)",
+            "nameType": "SCIENTIFIC",
+            "taxonomicStatus": "ACCEPTED",
+            "rank": "SPECIES",
+            "origin": "SOURCE",
+            "numDescendants": 0,
+            "numOccurrences": 0,
+            "taxonID": "22695180",
+            "habitats": [],
+            "nomenclaturalStatus": [],
+            "threatStatuses": [
+              "ENDANGERED"
+            ],
+            "descriptions": [],
+            "vernacularNames": [
+              {
+                "vernacularName": "الرخمة, الرخمة المصرية",
+                "language": "ara"
+              },
+              {
+                "vernacularName": "Egyptian Eagle",
+                "language": "eng"
+              },
+              {
+                "vernacularName": "Egyptian Vulture",
+                "language": "eng"
+              },
+              {
+                "vernacularName": "Vautour Percnoptère",
+                "language": "fra"
+              },
+              {
+                "vernacularName": "Alimoche Común",
+                "language": "spa"
+              },
+              {
+                "vernacularName": "Küçük Akbaba",
+                "language": "tur"
+              }
+            ],
+            "synonym": false,
+            "higherClassificationMap": {
+              "340214027": "ANIMALIA",
+              "340214214": "CHORDATA",
+              "340221887": "AVES",
+              "340222924": "ACCIPITRIFORMES",
+              "340222933": "ACCIPITRIDAE",
+              "340222995": "Neophron"
+            },
+            "class": "AVES"
+          }
+        ],
+        "facets": []
+      },
+      "selectedIucnKey": 176612981,
+      "reviewedAt": "2026-10-14"
+    }
+  ]
+}

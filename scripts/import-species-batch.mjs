@@ -8,6 +8,8 @@ import { canPublishImage } from '../src/data/species-model.js'
 import { PROJECT_ROOT } from './build-data.mjs'
 
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex')
+export const IMPORT_BRANCHES = ['feature/catalog-expansion', 'feature/species-content']
+export const canApplyOnBranch = branch => IMPORT_BRANCHES.includes(branch)
 const confined=(root,path)=>{const target=resolve(root,path),rel=relative(root,target);if(!rel||rel.startsWith('..')||rel.includes(':'))throw new Error(`Путь вне проекта: ${path}`);return target}
 export function webpMetadata(bytes){
   if(bytes.length<20||bytes.subarray(0,4).toString()!=='RIFF'||bytes.subarray(8,12).toString()!=='WEBP'||bytes.readUInt32LE(4)+8!==bytes.length)throw new Error('Повреждённый контейнер WebP')
@@ -70,7 +72,7 @@ if(process.argv[1]&&import.meta.url===pathToFileURL(resolve(process.argv[1])).hr
   try{
     const args=process.argv.slice(2),arg=name=>args[args.indexOf(name)+1]
     if(!args.includes('--input'))throw new Error('Использование: node scripts/import-species-batch.mjs --input пакет.json [--apply] [--report отчёт.json]. Без --apply только просмотр.')
-    if(args.includes('--apply')&&execFileSync('git',['branch','--show-current'],{cwd:PROJECT_ROOT,encoding:'utf8'}).trim()!=='feature/catalog-expansion')throw new Error('Запись разрешена только в feature/catalog-expansion')
+    if(args.includes('--apply')&&!canApplyOnBranch(execFileSync('git',['branch','--show-current'],{cwd:PROJECT_ROOT,encoding:'utf8'}).trim()))throw new Error(`Запись разрешена только в ${IMPORT_BRANCHES.join(' / ')}`)
     const report=await importBatchFile(PROJECT_ROOT,arg('--input'),{apply:args.includes('--apply')})
     if(args.includes('--report')){const p=confined(PROJECT_ROOT,arg('--report'));await mkdir(dirname(p),{recursive:true});await writeFile(p,JSON.stringify(report,null,2)+'\n')}
     console.log(JSON.stringify(report,null,2))

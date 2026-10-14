@@ -2,9 +2,11 @@ import { validateSource } from '../../data/species-model.js'
 import { UNKNOWN_POPULATION } from '../../data/population.js'
 import { imageComposition, validComposition } from '../../data/image-composition.js'
 import { publicImageUrl } from '../../data/presentation.js'
+import { LANGUAGES } from '../../data/localization.js'
+import { CONTENT_FIELDS } from '../../data/species-content.js'
 
 export const MAX_JSON_BYTES = 2 * 1024 * 1024
-export const EMPTY_NAMES = Object.freeze({ ru: null, ky: null, en: null })
+export const EMPTY_NAMES = Object.freeze({ ru: null, ky: null, en: null, uz: null })
 export { GROUPS } from '../../data/species-groups.js'
 export const TAXONOMY = ['kingdom','phylum','class','order','family','genus']
 export const clone = value => JSON.parse(JSON.stringify(value))
@@ -47,12 +49,14 @@ export function exportSource(document, assets = []) {
   return JSON.stringify(document, null, 2) + '\n'
 }
 export function editableShape(document) {
-  const dict = value => object(value) && ['ru','ky','en'].every(k => nullableText(value[k]))
+  const dict = value => object(value) && LANGUAGES.every(k => nullableText(value[k]))
   const refs = value => Array.isArray(value) && value.every(v => typeof v === 'string')
   const statements = value => value === null || Array.isArray(value) && value.every(e => object(e) && dict(e.text) && refs(e.sourceIds))
+  const content = value => value == null || object(value) && Object.keys(value).every(k => CONTENT_FIELDS.includes(k)) &&
+    CONTENT_FIELDS.every(k => value[k] === null || object(value[k]) && dict(value[k].text) && refs(value[k].sourceIds))
   return object(document) && document.schemaVersion === 1 && Array.isArray(document.catalog) && Array.isArray(document.demoArchive) && jsonSafe(document) && document.catalog.every(s =>
     object(s) && typeof s.id === 'string' && nullableText(s.scientificName) && nullableText(s.group) && typeof s.verified==='boolean' && dict(s.names) && object(s.taxonomy) && TAXONOMY.every(k=>nullableText(s.taxonomy[k])) &&
-    object(s.nationalRedBook) && refs(s.nationalRedBook.sourceIds) && object(s.iucn) && refs(s.iucn.sourceIds) &&
+    content(s.content) && object(s.nationalRedBook) && refs(s.nationalRedBook.sourceIds) && object(s.iucn) && refs(s.iucn.sourceIds) &&
     (s.habitat === null || object(s.habitat) && dict(s.habitat.description) && refs(s.habitat.sourceIds)) &&
     (s.regions === null || Array.isArray(s.regions) && s.regions.every(r => object(r) && dict(r.names) && refs(r.sourceIds))) &&
     statements(s.threats) && statements(s.conservationMeasures) &&
@@ -72,7 +76,7 @@ export function emptySpecies(id) {
   return { id, scientificName: null, names: clone(EMPTY_NAMES), taxonomy: Object.fromEntries(TAXONOMY.map(k => [k,null])), group: null,
     nationalRedBook: { listed: null, category: null, edition: null, year: null, sourceIds: [] },
     iucn: { category: null, year: null, sourceIds: [] }, habitat: null, regions: null, threats: null, conservationMeasures: null,
-    population: clone(UNKNOWN_POPULATION), images: [], sources: [], verified: false, lastReviewedAt: null }
+    population: clone(UNKNOWN_POPULATION), images: [], sources: [], verified: false, lastReviewedAt: null, content: null }
 }
 export function uniqueId(document, base = 'species-draft') {
   const used = new Set([...document.catalog,...document.demoArchive].map(s => s.id))
@@ -110,7 +114,8 @@ export function previewUrl(species, index, published) {
   return match ? publicImageUrl(match.path) : null
 }
 export function claimPaths(species) {
-  const paths = ['scientificName','group',...['ru','ky','en'].map(k=>`names.${k}`),...TAXONOMY.map(k=>`taxonomy.${k}`)]
+  const paths = ['scientificName','group',...LANGUAGES.map(k=>`names.${k}`),...TAXONOMY.map(k=>`taxonomy.${k}`)]
+  paths.push(...CONTENT_FIELDS.map(k => `content.${k}`))
   for(const field of ['nationalRedBook','iucn'])for(const k of Object.keys(species[field]))if(k !== 'sourceIds')paths.push(`${field}.${k}`)
   if(species.habitat)paths.push('habitat')
   for(const field of ['regions','threats','conservationMeasures'])species[field]?.forEach((_,i)=>paths.push(`${field}.${i}`))
