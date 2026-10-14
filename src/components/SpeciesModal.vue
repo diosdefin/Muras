@@ -10,6 +10,7 @@ import ScientificText from './ScientificText.vue'
 import SpeciesVisualization from './SpeciesVisualization.vue'
 import LessonReferences from './lesson/LessonReferences.vue'
 import PopulationInfo from './PopulationInfo.vue'
+import { overviewPreview } from '../data/species-content.js'
 
 const props = defineProps({ species: { type: Object, required: true }, contentLanguage: { type: String, default: null } })
 const effectiveLanguage = computed(() => props.contentLanguage || siteLanguage.value)
@@ -90,7 +91,7 @@ function closeFromBackdrop(event) {
           <h2 id="species-title" class="modal-profile-name" :lang="nameLanguage">{{ currentName }}</h2>
           <section class="species-introduction" :aria-label="t('speciesProfile.overview')">
             <h3>{{ t('speciesProfile.overview') }}</h3>
-            <p class="species-description"><ScientificText :value="species.habitat?.description" /></p>
+            <p class="species-description"><ScientificText :value="overviewPreview(species)" /> <LessonReferences :species="species" :ids="species.content?.overview?.sourceIds" /></p>
           </section>
           <section class="species-facts" :aria-label="t('ui.m246')">
             <div>

@@ -14,6 +14,7 @@ import { useCatalog } from '../src/composables/useCatalog.js'
 import { useLesson } from '../src/composables/useLesson.js'
 import { validateQuestions } from '../src/data/quiz/model.js'
 import { regionalEntries } from '../src/data/geography/model.js'
+import { legacyScientificSource } from './helpers/legacy-scientific-source.mjs'
 
 const read = async p => JSON.parse(await readFile(new URL(`../${p}`, import.meta.url), 'utf8'))
 const source = await read('data/species.source.json'), published = await read('public/data/species.json')
@@ -35,7 +36,7 @@ const digest = value => createHash('sha256').update(JSON.stringify(value)).diges
 test('first batch contains exactly eight documented taxa, preserves original nine and archived bytes logically', () => {
   assert.equal(source.catalog.slice(0,17).length, 17)
   assert.deepEqual(added.map(s=>s.id), Object.keys(expected))
-  assert.equal(digest(source.catalog.slice(0,9)), '5b971eac79d862f1a34dda0099daf69ec83c55da71299cec9a4d321f8f5a033b')
+  assert.equal(digest(legacyScientificSource(source).catalog.slice(0,9)), '5b971eac79d862f1a34dda0099daf69ec83c55da71299cec9a4d321f8f5a033b')
   assert.equal(digest(source.demoArchive), 'e5d779d888e80970476120ae8da6e378e2408527d36484e61a083821f4df6a22')
   assert.equal(new Set(source.catalog.slice(0,17).map(s=>s.scientificName)).size, 17)
   assert.deepEqual(validateSource(source), [])
@@ -127,7 +128,8 @@ test('all eight render card, lesson, modal, sources and an honest Russian scient
       siteLanguage.value=language
       for(const s of published.slice(9,17)){
         const card=await renderToString(createSSRApp(components['SpeciesCard.vue'],{species:s}))
-        assert.ok(card.includes(s.names[language] || s.names.ru));assert.ok(card.includes(s.images[0].path));assert.ok(card.includes('lang="ru"'))
+        assert.ok(card.includes(s.names[language] || s.names.ru));assert.ok(card.includes(s.images[0].path))
+        if(s.content?.shortDescription)assert.ok(card.includes(`lang="${scientificContent(s.content.shortDescription.text,language).language}"`))
         for(const file of ['SpeciesModal.vue','lesson/LessonPhoto.vue']){
           const html=await renderToString(createSSRApp(components[file],{species:s}))
           assert.ok(html.includes(s.images[0].license));assert.ok(html.includes(s.images[0].author));assert.ok(html.includes(s.images[0].path))

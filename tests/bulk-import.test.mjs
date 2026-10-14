@@ -18,10 +18,12 @@ import { useCatalog } from '../src/composables/useCatalog.js'
 import { createSearchIndex,searchSpecies } from '../src/data/catalog-search.js'
 import { scientificContent } from '../src/data/localization.js'
 import { importSource,exportSource } from '../src/admin/data/model.js'
+import { legacyScientificSource } from './helpers/legacy-scientific-source.mjs'
 
 const read=async path=>JSON.parse(await readFile(join(PROJECT_ROOT,path),'utf8'))
 const source=await read('data/species.source.json'),published=await read('public/data/species.json')
-const baseline={...source,catalog:source.catalog.slice(0,17)}
+const historicalSource=legacyScientificSource(source)
+const baseline={...historicalSource,catalog:historicalSource.catalog.slice(0,17)}
 const research=await read('data/research/catalog-candidates.json'),selection=await read('data/research/bulk-expansion-selection.json')
 const tax=await read('docs/evidence/bulk-expansion-taxonomy.json'),photos=await read('docs/evidence/bulk-expansion-images.json')
 const packet=prepareResearchBatch(research,selection,{taxonomyEvidence:tax,imageEvidence:photos})
@@ -35,7 +37,7 @@ test('research recipe prepares 13 supported records and separately rejects nine 
   assert.equal(packet.records.filter(r=>r.deferredReason).length,9)
   assert.equal(JSON.stringify(research),before)
   assert.deepEqual(validateSource(source),[])
-  assert.equal(hash(source.catalog.slice(0,17)),'625b3a11bfd48a49b48925244060b44dd2a991a3df3cca49c49242d99cd4caf3')
+  assert.equal(hash(historicalSource.catalog.slice(0,17)),'625b3a11bfd48a49b48925244060b44dd2a991a3df3cca49c49242d99cd4caf3')
   assert.equal(source.catalog.length,30)
   assert.deepEqual(availableGroups(published),GROUPS)
   assert.deepEqual(Object.fromEntries(GROUPS.map(g=>[g,published.filter(s=>s.group===g).length])),{mammals:6,birds:7,plants:7,fish:2,reptiles:2,amphibians:1,arthropods:3,fungi:2})
@@ -45,15 +47,15 @@ test('real batch dry-run produces the committed catalogue, then repeated import 
   const before=JSON.stringify(baseline),input=JSON.stringify(packet)
   const plan=await planBatchImport(baseline,packet,{validateAssets:s=>inspectAssets(PROJECT_ROOT,s)})
   assert.deepEqual(plan.counts,{processed:22,added:13,unchanged:0,rejected:9})
-  assert.deepEqual(plan.proposedSource,source)
+  assert.deepEqual(plan.proposedSource,historicalSource)
   assert.deepEqual(plan.proposedSource.demoArchive,baseline.demoArchive)
   assert.equal(JSON.stringify(baseline),before);assert.equal(JSON.stringify(packet),input)
   const repeated=await planBatchImport(plan.proposedSource,packet,{validateAssets:s=>inspectAssets(PROJECT_ROOT,s)})
   assert.deepEqual(repeated.counts,{processed:22,added:0,unchanged:13,rejected:9})
-  assert.deepEqual(repeated.proposedSource,source)
+  assert.deepEqual(repeated.proposedSource,historicalSource)
   // Object key order is transport formatting, not a reason to overwrite an existing record.
   const reordered=item('pike-asp');reordered.species=Object.fromEntries(Object.entries(reordered.species).reverse())
-  assert.equal((await planBatchImport(source,batch([reordered]))).results[0].status,'unchanged')
+  assert.equal((await planBatchImport(historicalSource,batch([reordered]))).results[0].status,'unchanged')
 })
 
 test('errors and asset failures are isolated per candidate; unknown groups and misleading taxonomy cannot enter the catalogue',async()=>{
@@ -190,7 +192,8 @@ test('all 13 new records render in KY/UZ/RU/EN with licensed local photos or hon
         if(s.images.length && file!=='SpeciesCard.vue'){assert.ok(html.includes(s.images[0].license));assert.ok(html.includes(s.images[0].author))}
         if(file==='SpeciesModal.vue')assert.ok(html.includes(s.scientificName))
         if(file==='SpeciesCard.vue')assert.ok(html.includes('loading="lazy"'))
-        if(file!=='lesson/LessonPhoto.vue'||s.images.length)assert.ok(html.includes('lang="ru"'))
+        if(file==='SpeciesCard.vue' && s.content?.shortDescription)assert.ok(html.includes(`lang="${scientificContent(s.content.shortDescription.text,language).language}"`))
+        if(file==='SpeciesModal.vue'||file==='lesson/LessonPhoto.vue'&&s.images.length)assert.ok(html.includes('lang="ru"'))
       }
     }
   }finally{await vite.close()}

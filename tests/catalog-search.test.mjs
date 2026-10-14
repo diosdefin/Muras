@@ -130,6 +130,6 @@ test('pagination resets when filters or catalog change; invalid limits cannot hi
   assert.equal(catalogPage(records.value, -1).entries.length, 12)
 })
 test('compact descriptions are unchanged first sentences with honest missing-data fallbacks', () => {
-  for (const species of catalog) assert.ok(species.habitat.description.ru.startsWith(briefDescription(species)))
+  for (const species of catalog) assert.ok((species.content?.shortDescription?.text.ru || species.habitat.description.ru).startsWith(briefDescription(species)))
   assert.match(briefDescription({ habitat: null }), /не подтверждены/)
 })

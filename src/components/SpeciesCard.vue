@@ -33,7 +33,7 @@ watch(imagePath, () => { imageFailed.value = false })
     </div>
     <div class="card-body">
       <h3 :lang="speciesNameLanguage(species, language)">{{ speciesName(species, language) }}</h3>
-      <p class="card-description"><ScientificText :value="species.habitat?.description" /></p>
+      <p class="card-description"><ScientificText :value="species.content?.shortDescription?.text" /></p>
       <button type="button" class="card-open"
         :aria-label="`${t('ui.m232')} — ${t('ui.m125', { p0: speciesName(species, language) })}`"
         aria-haspopup="dialog" @click="emit('open', species)">

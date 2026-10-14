@@ -2,6 +2,7 @@ import { validComposition, validCompositions } from './image-composition.js'
 import { validatePopulation } from './population.js'
 import { validateSourceLocalization } from './localization.js'
 import { isSpeciesGroup } from './species-groups.js'
+import { validateContent } from './species-content.js'
 
 export { LANGUAGES } from './localization.js'
 import { LANGUAGES } from './localization.js'
@@ -39,7 +40,7 @@ export function validateSpecies(records, label = 'catalog', { publicData = false
     const p = `${label}[${index}]`
     if (!object(item)) { fail(p, 'ожидается объект вида'); return }
     for (const key of FIELDS) if (!(key in item)) fail(`${p}.${key}`, 'обязательное поле отсутствует')
-    for (const key of Object.keys(item)) if (!FIELDS.includes(key)) fail(`${p}.${key}`, 'неизвестное поле')
+    for (const key of Object.keys(item)) if (!FIELDS.includes(key) && key !== 'content') fail(`${p}.${key}`, 'неизвестное поле')
     if (!text(item.id) || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.id)) fail(`${p}.id`, 'ожидается безопасный slug')
     if (ids.has(item.id)) fail(`${p}.id`, 'повторяющийся id')
     ids.add(item.id)
@@ -63,6 +64,7 @@ export function validateSpecies(records, label = 'catalog', { publicData = false
       if (!Array.isArray(s.supports) || !s.supports.length || s.supports.some(v => !text(v))) fail(`${sp}.supports`, 'перечислите подтверждаемые поля')
       else s.supports.forEach(v => supported.add(v))
     })
+    errors.push(...validateContent(item.content, item.sources, `${p}.content`))
     const claim = (path, value) => {
       if (value !== null && value !== undefined && !supported.has(path)) fail(`${p}.${path}`, 'нет источника, подтверждающего это поле (sources.supports)')
     }
