@@ -1,0 +1,271 @@
+{
+  "id": "varanus-griseus-caspius",
+  "scientificName": "Varanus griseus caspius",
+  "names": {
+    "ru": "Серый варан",
+    "ky": null,
+    "uz": null,
+    "en": null
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Squamata",
+    "order": null,
+    "family": "Varanidae",
+    "genus": "Varanus"
+  },
+  "group": "reptiles",
+  "nationalRedBook": {
+    "listed": true,
+    "category": null,
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Пустыни, полупустыни и адыры предгорий Приферганья; исторический ареал подвида caspius.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Распашка и выпас в полупустынях и адырах, расширение поселений и горнодобывающая деятельность.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Преследование и добыча человеком; исторически также заготовка шкур.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические рекомендации 2006 года: специальный заказник в Ферганской долине, контроль отлова, просвещение и разработка методов разведения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/varanus-griseus-caspius.webp",
+      "width": 1800,
+      "height": 1350,
+      "sha256": "0b1c99d07a193d6c5dcd5cc7cee91306f3c832e1ca3a648801bd2b3bb356d6a0",
+      "author": "Alexander A. Fomichev",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Varanus_griseus_caspius_Kattakum2_(1).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Varanus griseus caspius Kattakum2 (1).jpg — Alexander A. Fomichev, CC BY-SA 4.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+        "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Голова Varanus griseus caspius, Каттакум, Узбекистан, 2025; подвид указан в исходном описании; не наблюдение в Кыргызстане.",
+        "ky": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=335",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 5, строка 5",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=12",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Varanus griseus caspius",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Varanus%20griseus%20caspius",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:9553489"
+    },
+    {
+      "id": "photo-commons",
+      "title": "Head of Varanus griseus caspius, lateral. Uzbekistan, Surxondaryo Region, Kattakum Desert, sandy desert.",
+      "publisher": "Wikimedia Commons; Alexander A. Fomichev",
+      "url": "https://commons.wikimedia.org/wiki/File:Varanus_griseus_caspius_Kattakum2_(1).jpg",
+      "accessedAt": "2026-10-14",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Дневной хищный варан пустынь и полупустынь Приферганья. Использует и расширяет норы других животных; национальная запись относится к подвиду caspius.",
+        "ky": "Фергана аймагынын чөлдөрүндө жана жарым чөлдөрүндө жашаган күндүзгү жырткыч варан. Башка жаныбарлардын ийиндерин кеңейтип пайдаланат; китепте caspius түрчөсү берилген.",
+        "uz": "Fargʻona atrofi choʻl va chala choʻllarining kunduzgi yirtqich varani. Boshqa hayvonlarning inlarini kengaytirib foydalanadi; milliy qayd caspius kenja turiga tegishli.",
+        "en": "A diurnal predatory monitor of Fergana-region deserts and semi-deserts. It enlarges other animals' burrows; the national record concerns subspecies caspius."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная запись серого варана относится к подвиду Varanus griseus caspius, и этот ранг сохранён в черновике. Видовой снимок без определения caspius не заменяет фотографию нужного таксона. Книга описывает его как дневного хищника пустынь и полупустынь Приферганья, активного с апреля до октября. Укрытиями служат расширенные норы грызунов, птиц и черепах, а также собственные норы длиной до трёх метров.\n\nПища включает мелких позвоночных, яйца и беспозвоночных. Самки откладывают шесть–двадцать яиц в июне или начале июля; в национальном описании инкубация длится до трёх месяцев. География книги включает старые находки в предгорной зоне Приферганья и отдельные датированные сообщения, которые не используются как современные наблюдения. Количественный размер популяции остаётся неизвестным.\n\nОсновные угрозы связаны с сельскохозяйственным освоением полупустынь, расширением поселений, горнодобывающей деятельностью и преследованием животного. Авторы рекомендовали специальный заказник, контроль отлова и разработку разведения. Русская статья и английское резюме дают разные категории угрозы, поэтому единая категория оставлена пустой. Сведения о запретах и международных списках в книге исторические и не подтверждают действующую правовую редакцию 2026 года.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Дневной хищник, по национальному описанию активный в апреле–октябре. Расширяет чужие норы и роет собственные, до 3 м длиной. Источник отмечает сокращение пригодных пустынных и полупустынных местообитаний; наблюдение в необычном кустарниковом биотопе не превращено в типичное предпочтение.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По статье 2006 года питается грызунами, ящерицами, птицами, черепахами, змеями и их яйцами, насекомыми и другими беспозвоночными. Утверждение о токсичной слюне из старой книги требует отдельной современной проверки и в научное описание не включено.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная статья: половая зрелость на третьем году, кладка из 6–20 яиц в июне–начале июля, инкубация до трёх месяцев. Молодые после выхода из яиц уходят на зимовку и появляются на поверхности следующей весной; локальные современные данные отсутствуют.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Историческая национальная статья связывает подвид прежде всего с предгорьями Приферганья. Старые упоминания Чуйской и Таласской долин не подтверждают нынешнее присутствие. Сообщения 1985, 1992 и 2005 годов сохранены в первоисточнике, но не преобразованы в новые точки карты.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

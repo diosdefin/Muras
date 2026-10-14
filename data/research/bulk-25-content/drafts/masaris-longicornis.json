@@ -1,0 +1,251 @@
+{
+  "id": "masaris-longicornis",
+  "scientificName": "Masaris longicornis",
+  "names": {
+    "ru": "Оса Мазарис длинноусая",
+    "ky": null,
+    "uz": null,
+    "en": null
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Masaridae",
+    "genus": "Masaris"
+  },
+  "group": "arthropods",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "III (LR-nt), историческая национальная категория",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Сухие опустыненные и остепнённые горные участки с открытыми склонами или глинистыми обрывами; высоты 1800–3100 м в историческом описании.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В книге потенциальными факторами названы перевыпас, распашка, мелиорация и инсектициды; степень их воздействия на конкретные местонахождения не измерена.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Естественные враги, болезни и изоляция локальных популяций обсуждаются как ограничивающие факторы.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В 2006 году рекомендованы два микрозаказника с минимальным регламентированным выпасом и ограниченным сенокошением, а также изучение биологии, конкурентов и обитателей гнёзд.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=281",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 4, строка 16",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=11",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Masaris longicornis",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Masaris%20longicornis",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:1312316"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Редкая чёрно-жёлтая оса сухих горных склонов. Строит гнёзда в почве и кормит личинок смесью нектара и пыльцы; в национальном описании имеет одно поколение в год.",
+        "ky": "Кургак тоо беттеринде жашаган сейрек кара-сары аары. Топуракта уя куруп, личинкаларын шире менен чаңчанын аралашмасы менен азыктандырат; жылына бир муун берет.",
+        "uz": "Quruq togʻ yonbagʻirlarining kamyob qora-sariq arisi. Tuproqda uya qurib, lichinkalarini nektar va gulchangi aralashmasi bilan boqadi; yiliga bir avlod beradi.",
+        "en": "A rare black-and-yellow wasp of dry mountain slopes. It nests in soil and feeds larvae a nectar-and-pollen mixture; the national account describes one generation a year."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Мазарис длинноусый — небольшая чёрно-жёлтая оса с выраженными различиями между полами. Самцы отличаются особенно длинными усиками с длинной булавой; у самок усики заметно короче. Национальное описание даёт длину тела 10,5–12 мм и размах крыльев 20–22,5 мм. Растительноядное питание личинок выделяет эту осу среди привычных представлений о хищных осах: потомство получает смесь нектара и пыльцы, которую самка переносит в зобике.\n\nВид занимает сухие участки горных склонов и глинистые обрывы, от древесно-кустарникового пояса до субальпийских лугов, на высотах 1800–3100 м. В книге приведены разрозненные сведения из Таласского, Алайского и Терскейского районов, причём часть иссык-кульских записей требует проверки синонимии. Взрослые встречаются с июня до августа, гнёзда устраиваются в лёгкой лёссовидной почве; указано одно поколение в год.\n\nПеревыпас, распашка, мелиорация и инсектициды названы потенциальными угрозами, наряду с естественными врагами и изоляцией популяций. Авторы предлагали микрозаказники с регулируемым использованием пастбищ и сенокосов и дальнейшее изучение биологии. Историческая категория III, LR-nt не перенесена в глобальное поле IUCN.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Длина тела 10,5–12 мм, размах крыльев 20–22,5 мм. Окраска чёрная с жёлтым рисунком, крылья желтоватые с затемнением на вершине. Усики самки короткие, булавовидные, 12-члениковые; у самца по длине сопоставимы с передним крылом и имеют длинную булаву.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Обитает на участках с сухим микроклиматом, открытыми склонами и глинистыми обрывами. Имаго встречаются с середины июня до конца августа. Самцы особенно активны около полудня; самки перед входом в гнездо обычно ненадолго садятся поблизости, по наблюдениям национальной статьи.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Личинок кормят смесью нектара и пыльцы, переносимой самкой в зобике. Источник отмечает посещение Sympegma regelii, Dracocephalum integrifolium, D. stamineum и растений рода Thymus; точная доля каждого пищевого источника неизвестна.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Строит гнездовые норки в почве, предпочитая лёгкую лёссовидную. В национальной статье одно поколение в год. Размер кладки и длительность личиночного развития не приведены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная статья приводит разрозненные записи для Таласского и Алайского хребтов. Терскейские и южно-иссык-кульские сведения связаны с предположением о синонимии M. tianshanicus и требуют независимого уточнения; как новые подтверждённые находки не используются.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

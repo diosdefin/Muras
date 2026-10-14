@@ -3213,7 +3213,7 @@
       "group": "arthropods",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "III (LR-nt), историческая национальная категория",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -3258,7 +3258,20 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "conservationMeasures.1",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -3281,7 +3294,13 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:4492202"
         }
@@ -3300,6 +3319,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/bulk-25-content/block-4-facts.json",
+          "sha256": "8cf53bf38cff1606e1bc730b8e8a2f8fffb58b6b965e4b2bc4a48414847ae87e"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-4-accounts.json",
+          "sha256": "72cd8d4c69f76d6da8e39d8fe7ab99bf44fea782739a8b9bd065b4987d248851"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-4-images.json",
+          "sha256": "94e26ebb11e96331ffc2944f25b423a23e9db51b795de5c1bf421d9cbed9ec86"
         }
       ],
       "draft": null,
@@ -3328,59 +3359,64 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Названия KY/UZ/EN не подтверждены: используется научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
       "preparation": {
-        "status": "pending",
-        "sourceMasterId": "urocerus-sah"
+        "status": "prepared",
+        "sourceMasterId": "urocerus-sah",
+        "factsFingerprint": "a08c16b35a7281aa4ef26997a84f491e7ecf41a7d6fa6ede72b4c817991eb21c",
+        "draftSha256": "5bbd1814fcd44b7caf6383fb7979bba0a5a2878e121f45e56521f33ed94ec70f"
       },
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "urocerus-sah",
         "batchNumber": 4,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "056c39fdb7c7c09b3c60d8c49f65f43268de6b81cc87dffe96cd5b3859a004ae",
+        "fingerprint": "bf850f5ab289d5ce802364ce9724ec6d4791500849bd3a7e162d1c6f71682bfb",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
             "uz",
-            "ru",
             "en"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "056c39fdb7c7c09b3c60d8c49f65f43268de6b81cc87dffe96cd5b3859a004ae"
+      "checkedFingerprint": "bf850f5ab289d5ce802364ce9724ec6d4791500849bd3a7e162d1c6f71682bfb",
+      "draftFile": "data/research/bulk-25-content/drafts/urocerus-sah.json",
+      "editorialNotes": [
+        "Видовой ранг подтверждён точным принятым таксоном GBIF. Обсуждавшееся в книге понижение до подвида U. augur не применено."
+      ],
+      "missingFacts": [
+        "Датированная численность",
+        "Питание взрослых и болезни",
+        "Современное состояние лесных местообитаний"
+      ],
+      "incidentalPopulationEvidence": []
     },
     {
       "originalScientificName": "Masaris longicornis",
@@ -3389,7 +3425,7 @@
       "group": "arthropods",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "III (LR-nt), историческая национальная категория",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -3434,7 +3470,20 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "threats.1",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -3457,7 +3506,13 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:1312316"
         }
@@ -3476,6 +3531,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/bulk-25-content/block-4-facts.json",
+          "sha256": "8cf53bf38cff1606e1bc730b8e8a2f8fffb58b6b965e4b2bc4a48414847ae87e"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-4-accounts.json",
+          "sha256": "72cd8d4c69f76d6da8e39d8fe7ab99bf44fea782739a8b9bd065b4987d248851"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-4-images.json",
+          "sha256": "94e26ebb11e96331ffc2944f25b423a23e9db51b795de5c1bf421d9cbed9ec86"
         }
       ],
       "draft": null,
@@ -3504,59 +3571,65 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Названия KY/UZ/EN не подтверждены: используется научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
       "preparation": {
-        "status": "pending",
-        "sourceMasterId": "masaris-longicornis"
+        "status": "prepared",
+        "sourceMasterId": "masaris-longicornis",
+        "factsFingerprint": "7ffc011d374116d748b5918b44c3f959f8c4436a2fb79f496524dd5c7afc1de8",
+        "draftSha256": "5d4dbf4a3659a61d03d28c77962cc3d1eb624214b1095d63f3826a229bd08713"
       },
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "masaris-longicornis",
         "batchNumber": 4,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "f8e1c753ac69e8e4ad795bd677dde8f9a797999f4665b0bf021895218e7a5e9b",
+        "fingerprint": "d7dac7f5cdfd7d4f502fe0ffbd5af914f680c826a7e84b84669d6151fefa9ca4",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
             "uz",
-            "ru",
             "en"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "f8e1c753ac69e8e4ad795bd677dde8f9a797999f4665b0bf021895218e7a5e9b"
+      "checkedFingerprint": "d7dac7f5cdfd7d4f502fe0ffbd5af914f680c826a7e84b84669d6151fefa9ca4",
+      "draftFile": "data/research/bulk-25-content/drafts/masaris-longicornis.json",
+      "editorialNotes": [
+        "Часть иссык-кульского ареала в первоисточнике опирается на предполагаемый синоним M. tianshanicus, а не на окончательно подтверждённую идентификацию; не использована для картографирования."
+      ],
+      "missingFacts": [
+        "Датированная численность",
+        "Размер кладки",
+        "Уточнение локальной синонимии и географии",
+        "Современные меры охраны"
+      ],
+      "incidentalPopulationEvidence": []
     },
     {
       "originalScientificName": "Varanus griseus caspius",
@@ -3610,7 +3683,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "threats.1",
+            "conservationMeasures.0"
           ]
         },
         {
@@ -3633,9 +3717,25 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:9553489"
+        },
+        {
+          "id": "photo-commons",
+          "title": "Head of Varanus griseus caspius, lateral. Uzbekistan, Surxondaryo Region, Kattakum Desert, sandy desert.",
+          "publisher": "Wikimedia Commons; Alexander A. Fomichev",
+          "url": "https://commons.wikimedia.org/wiki/File:Varanus_griseus_caspius_Kattakum2_(1).jpg",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en"
         }
       ],
       "contradictions": [],
@@ -3652,6 +3752,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/bulk-25-content/block-4-facts.json",
+          "sha256": "8cf53bf38cff1606e1bc730b8e8a2f8fffb58b6b965e4b2bc4a48414847ae87e"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-4-accounts.json",
+          "sha256": "72cd8d4c69f76d6da8e39d8fe7ab99bf44fea782739a8b9bd065b4987d248851"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-4-images.json",
+          "sha256": "94e26ebb11e96331ffc2944f25b423a23e9db51b795de5c1bf421d9cbed9ec86"
         }
       ],
       "draft": null,
@@ -3680,59 +3792,64 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Названия KY/UZ/EN не подтверждены: используется научное имя"
       ],
       "verified": false,
       "priority": "next_account_research",
       "preparation": {
-        "status": "pending",
-        "sourceMasterId": "varanus-griseus-caspius"
+        "status": "prepared",
+        "sourceMasterId": "varanus-griseus-caspius",
+        "factsFingerprint": "3f895b945ceabc84b223cc05381c7a28d3b280a55a74191dbb190b88f65b809c",
+        "draftSha256": "c7dcc6cdd9f9c925d83c07cdb704b06bd5e022b1835395051ac7734bfda5348a"
       },
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "varanus-griseus-caspius",
         "batchNumber": 4,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "ccaf4283e5dd66cb7c8d0e832d8808de4ee3eaf0edb33cd5ce018de0287b72d8",
+        "fingerprint": "399b10760d583d386a56a81896ce4be2421fc55529653a8d498da659061b5e59",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
             "uz",
-            "ru",
             "en"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "ccaf4283e5dd66cb7c8d0e832d8808de4ee3eaf0edb33cd5ce018de0287b72d8"
+      "checkedFingerprint": "399b10760d583d386a56a81896ce4be2421fc55529653a8d498da659061b5e59",
+      "draftFile": "data/research/bulk-25-content/drafts/varanus-griseus-caspius.json",
+      "editorialNotes": [
+        "Ранг SUBSPECIES и точный таксон gbif сохранены, родительский вид отдельно не добавлен.",
+        "RU: CR A4bc; E; EN: EN A4bc; E. nationalRedBook.category:null до независимой проверки. Старые CITES и запреты не выдаются за проверенное действующее право."
+      ],
+      "missingFacts": [
+        "Описание внешности именно подвида",
+        "Численность",
+        "Современное присутствие",
+        "Разрешение расхождения национальных категорий",
+        "Актуальная правовая редакция"
+      ],
+      "incidentalPopulationEvidence": []
     },
     {
       "originalScientificName": "Eryx tataricus",
@@ -3741,8 +3858,8 @@
       "group": "reptiles",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "NT",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Eryx tataricus",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -3786,7 +3903,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "threats.1",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -3809,9 +3938,26 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview"
           ],
           "taxonId": "gbif:2465319"
+        },
+        {
+          "id": "photo-commons",
+          "title": "Reptilium Landau",
+          "publisher": "Wikimedia Commons; Vincent Malloy",
+          "url": "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Sandboa_(Eryx_tataricus).JPG",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en"
         }
       ],
       "contradictions": [],
@@ -3828,6 +3974,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/bulk-25-content/block-4-facts.json",
+          "sha256": "8cf53bf38cff1606e1bc730b8e8a2f8fffb58b6b965e4b2bc4a48414847ae87e"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-4-accounts.json",
+          "sha256": "72cd8d4c69f76d6da8e39d8fe7ab99bf44fea782739a8b9bd065b4987d248851"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-4-images.json",
+          "sha256": "94e26ebb11e96331ffc2944f25b423a23e9db51b795de5c1bf421d9cbed9ec86"
         }
       ],
       "draft": null,
@@ -3856,59 +4014,72 @@
         "resolution": "exact_documented_synonym_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Названия KY/UZ/EN не подтверждены: используется научное имя"
       ],
       "verified": false,
       "priority": "next_account_research",
       "preparation": {
-        "status": "pending",
-        "sourceMasterId": "eryx-tataricus"
+        "status": "prepared",
+        "sourceMasterId": "eryx-tataricus",
+        "factsFingerprint": "78ba4d265896f405361a9d3a141973a2cc44b53e321e750c06950cf4fe11c4be",
+        "draftSha256": "89a5d90bd549d4906b451afabb8f3ddd4e20fdb10f1f4361030c4df26e901b1d"
       },
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "eryx-tataricus",
         "batchNumber": 4,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "2dc3970536f2f0ee521aad0dbffaa798abe4bd480c9c15e4e54e3058f05cf53e",
+        "fingerprint": "0d0e7e5225cd504b9394376dc0fa15c12516298138b089e09aa21e16cdd782c1",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
             "uz",
-            "ru",
             "en"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "2dc3970536f2f0ee521aad0dbffaa798abe4bd480c9c15e4e54e3058f05cf53e"
+      "checkedFingerprint": "0d0e7e5225cd504b9394376dc0fa15c12516298138b089e09aa21e16cdd782c1",
+      "draftFile": "data/research/bulk-25-content/drafts/eryx-tataricus.json",
+      "editorialNotes": [
+        "Eryx tataricus → Eryx miliaris: точная синонимия того же ранга по GBIF.",
+        "Предполагаемая популяция Токмакского заказника не признана подтверждённой: RU пишет «возможно», EN — как факт. Действующие CITES-ограничения не проверялись и не заявляются."
+      ],
+      "missingFacts": [
+        "Описание внешности национального концепта",
+        "Датированная численность",
+        "Современный охват таксона и охрана"
+      ],
+      "incidentalPopulationEvidence": [
+        {
+          "sourceId": "national-book",
+          "sourcePage": 341,
+          "year": null,
+          "territory": "Чуйская долина",
+          "reportedText": "До 2 особей на трансекте 10 км × 4 м",
+          "usableForPopulation": false,
+          "reason": "Год отсутствует; маршрутное обнаружение не равно численности популяции."
+        }
+      ]
     },
     {
       "originalScientificName": "Lyrurus tetrix",
@@ -3917,7 +4088,7 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VI; Near Threatened: R (издание 2006)",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -3962,7 +4133,20 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "threats.1",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -3985,9 +4169,26 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:2473682"
+        },
+        {
+          "id": "photo-commons",
+          "title": "Birkhahn in der Lüneburger Heide.",
+          "publisher": "Wikimedia Commons; Vnp at de.wikipedia",
+          "url": "https://commons.wikimedia.org/wiki/File:Birkhahn.jpg",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en"
         }
       ],
       "contradictions": [],
@@ -4004,6 +4205,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/bulk-25-content/block-4-facts.json",
+          "sha256": "8cf53bf38cff1606e1bc730b8e8a2f8fffb58b6b965e4b2bc4a48414847ae87e"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-4-accounts.json",
+          "sha256": "72cd8d4c69f76d6da8e39d8fe7ab99bf44fea782739a8b9bd065b4987d248851"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-4-images.json",
+          "sha256": "94e26ebb11e96331ffc2944f25b423a23e9db51b795de5c1bf421d9cbed9ec86"
         }
       ],
       "draft": null,
@@ -4032,59 +4245,71 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Названия KY/UZ/EN не подтверждены: используется научное имя"
       ],
       "verified": false,
       "priority": "next_account_research",
       "preparation": {
-        "status": "pending",
-        "sourceMasterId": "lyrurus-tetrix"
+        "status": "prepared",
+        "sourceMasterId": "lyrurus-tetrix",
+        "factsFingerprint": "a2e86c6add58cdec8c3b1d5a949c2bf85f5706f9c85bebac0c3b5089ead8d135",
+        "draftSha256": "f8f0b9d61ad19589f1b5dab26bd0bc1a88c9292b647361c260e2fde45b8569e2"
       },
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "lyrurus-tetrix",
         "batchNumber": 4,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "cc1e2ce06a561e128a79ecbfd390191f1def381a08595f464c3a44d512602e0e",
+        "fingerprint": "344380e961050de2b1c82aa21b1b0917767ad4ddcadbdea0db19968ad27fa52e",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
             "uz",
-            "ru",
             "en"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "cc1e2ce06a561e128a79ecbfd390191f1def381a08595f464c3a44d512602e0e"
+      "checkedFingerprint": "344380e961050de2b1c82aa21b1b0917767ad4ddcadbdea0db19968ad27fa52e",
+      "draftFile": "data/research/bulk-25-content/drafts/lyrurus-tetrix.json",
+      "editorialNotes": [
+        "Вид SPECIES Lyrurus tetrix выбран по национальной записи. Сведения о mongolicus и фото вида не являются независимым подтверждением подвида."
+      ],
+      "missingFacts": [
+        "Современная численность и динамика",
+        "Подробная диагностика местного подвида",
+        "Обновлённые меры охраны"
+      ],
+      "incidentalPopulationEvidence": [
+        {
+          "sourceId": "national-book",
+          "sourcePage": 359,
+          "year": 2003,
+          "territory": "Восточные отроги Кунгей Ала-Тоо",
+          "reportedText": "Май 2003: 3 самца и 1 самка на маршруте 2,5 км",
+          "usableForPopulation": false,
+          "reason": "Отдельное датированное наблюдение, не оценка популяции; сохранено для будущей задачи."
+        }
+      ]
     },
     {
       "originalScientificName": "Cygnus cygnus",

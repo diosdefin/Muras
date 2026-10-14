@@ -1,0 +1,274 @@
+{
+  "id": "eryx-tataricus",
+  "scientificName": "Eryx miliaris",
+  "names": {
+    "ru": "Восточный удавчик",
+    "ky": null,
+    "uz": null,
+    "en": null
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Squamata",
+    "order": null,
+    "family": "Boidae",
+    "genus": "Eryx"
+  },
+  "group": "reptiles",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "NT",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Eryx tataricus",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Глинистые и лёссовые остепнённые полупустыни равнин, склонов и речных долин; глинистые и щебнистые пустыни и полупустыни. Исторический высотный предел — до 1500 м.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Распашка и интенсивный выпас, сокращающие пригодные местообитания.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Прямое уничтожение людьми и возможный коммерческий отлов.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная статья 2006 года рекомендует просвещение, ограничение коммерческого отлова и информационные материалы для таможенных служб.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/eryx-tataricus.webp",
+      "width": 1800,
+      "height": 1200,
+      "sha256": "7349129d7637e82aa10bda8c1cf6e56dd70869c548abc238a91896296087e577",
+      "author": "Vincent Malloy",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Sandboa_(Eryx_tataricus).JPG",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Große Sandboa (Eryx tataricus).JPG — Vincent Malloy, CC BY-SA 3.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+        "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Удавчик в Reptilium Landau, Германия: файл подписан Eryx tataricus и отнесён Commons к Eryx miliaris; не дикая находка в Кыргызстане.",
+        "ky": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=341",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 5, строка 10",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=12",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Eryx tataricus",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/2465319",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview"
+      ],
+      "taxonId": "gbif:2465319"
+    },
+    {
+      "id": "photo-commons",
+      "title": "Reptilium Landau",
+      "publisher": "Wikimedia Commons; Vincent Malloy",
+      "url": "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Sandboa_(Eryx_tataricus).JPG",
+      "accessedAt": "2026-10-14",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Скрытная змея степных полупустынь, активная в сумерках и ночью. Охотится на мелких животных, удушая добычу кольцами тела; молодые появляются летом и осенью.",
+        "ky": "Талаалуу жарым чөлдөрдүн жашыруун жүргөн жыланы. Күүгүмдө жана түндө активдүү; майда жаныбарларды денеси менен ороп кармайт. Балдары жайында жана күзүндө туулат.",
+        "uz": "Dashtli chala choʻllarda yashaydigan yashirin hayotli ilon. Oqshom va tunda faol; oʻljasini tanasi bilan oʻrab boʻgʻadi. Bolalari yoz va kuzda paydo boʻladi.",
+        "en": "A secretive snake of steppe semi-deserts, active at dusk and at night. It constricts small animal prey; young appear during summer and autumn."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Восточный удавчик приведён в национальной книге как Eryx tataricus; сохранённая точная сверка GBIF относит это имя к синонимам Eryx miliaris. Описание относится к исторической национальной записи. Это скрытная змея сухих степных полупустынь, активная в сумеречное и ночное время. Она использует норы и полости под камнями, корнями кустарников и обрывами. Добычу, главным образом мелких позвоночных, удерживает и душит кольцами тела.\n\nВ Кыргызстане книга указывает Чуйскую и запад Таласской долины, предгорья Кыргызского хребта, Кетмень-Тюбинскую котловину и северо-восток Баткенского района. Описаны глинистые, лёссовые и щебнистые местообитания; в горы змея поднимается до 1500 м. Весеннее пробуждение в Чуйской и Таласской долинах приходится на апрель. После спаривания в апреле–мае молодые появляются с конца июля до сентября.\n\nРаспашка, интенсивный выпас, прямое уничтожение и возможный коммерческий отлов названы угрозами. Авторы рекомендовали просвещение и ограничение коммерческого изъятия. Старый маршрутный учёт не имеет года и не служит оценкой общей численности. Категория NT национальная и историческая; современный таксономический охват и состояние популяций требуют проверки.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Сумеречная и ночная активность. Укрытия — различные норы и полости под камнями, обрывами и корнями кустарников. Перед заморозками зарывается на зимовку; источник указывает глубину 0,9–2,5 м в зависимости от плотности грунта.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Основная добыча в национальной статье — мелкие пресмыкающиеся и млекопитающие, реже птицы и насекомые. Добычу удавчик душит, обвивая кольцами тела; доли пищевых групп не приведены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальном описании яйцеживородящий. Спаривание в апреле–мае; число молодых 6–34. Для Кыргызстана появление молодых указано с конца июля до сентября, в зависимости от условий.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Историческая запись Eryx tataricus: Чуйская долина и предгорья Кыргызского хребта до Токмака, запад Таласской долины, Кетмень-Тюбинская котловина и северо-восточная часть Баткенской области. Это не современная карта всего принятого Eryx miliaris.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

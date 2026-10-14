@@ -1,0 +1,251 @@
+{
+  "id": "urocerus-sah",
+  "scientificName": "Urocerus sah",
+  "names": {
+    "ru": "Рогохвост арчёвый",
+    "ky": null,
+    "uz": null,
+    "en": null
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Siricidae",
+    "genus": "Urocerus"
+  },
+  "group": "arthropods",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "III (LR-nt), историческая национальная категория",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Нижний и средний пояса арчёвых лесов, 1200–2300 м над уровнем моря.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Сокращение площади арчёвых массивов и уменьшение доступности ослабленных и мёртвых деревьев.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге 2006 года местообитания охранялись в Сары-Челекском, Беш-Аральском заповедниках и ГПНП Кыргыз-Ата.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Авторы рекомендуют сохранять лесные участки с ослабленными, сухостойными и поваленными деревьями; это рекомендация, а не подтверждение выполненных работ.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=275",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "conservationMeasures.1",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 4, строка 13",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=11",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Urocerus sah",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Urocerus%20sah",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:4492202"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Крупное перепончатокрылое арчевых лесов: личинки развиваются в древесине ослабленных деревьев. Сохранение старой арчи и естественной мёртвой древесины важно для вида.",
+        "ky": "Арча токойлорунда жашаган ири жаргак канаттуу курт-кумурска. Личинкалары алсыраган дарактын жыгачында өсөт; эски арчаларды жана куураган жыгачты сактоо маанилүү.",
+        "uz": "Archazorlarda yashaydigan yirik pardaqanotli hasharot. Lichinkalari zaiflashgan daraxt yogʻochida rivojlanadi; keksa archalar va tabiiy qurigan yogʻochni saqlash muhim.",
+        "en": "A large woodwasp of juniper forests; larvae develop in weakened trees. Retaining old junipers and naturally dead wood is important for this species."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Арчёвый рогохвост — крупное перепончатокрылое, жизненный цикл которого связан с древесиной арчи. В национальном описании самка достигает 20–40 мм без яйцеклада и имеет размах крыльев 40–52 мм; самец заметно мельче. Чёрная окраска тела сочетается с жёлтыми или красновато-жёлтыми участками. Для самок характерен длинный яйцеклад, используемый при откладке яиц в древесину.\n\nВ Кыргызстане вид описан в арчёвых лесах нижнего и среднего поясов на высотах 1200–2300 м. Национальная статья перечисляет Чаткальский, Ферганский, Туркестанский и Алайский хребты. Личинки заселяют сильно ослабленные, отмирающие и свежесрубленные деревья, а также пни. Указание на личиночное развитие в тополе авторы считают ошибочным.\n\nИсточник сообщает об одном поколении в год и летней–осенней активности взрослых насекомых, различающейся по высотным зонам. Главная природоохранная задача связана с сохранением арчёвых массивов и участков с ослабленными и мёртвыми деревьями. Исторически местообитания охранялись в Сары-Челекском, Беш-Аральском заповедниках и парке Кыргыз-Ата. Категория III, LR-nt отражает национальную оценку 2006 года, а не современный глобальный статус IUCN.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Длина самки без яйцеклада 20–40 мм, размах крыльев 40–52 мм; самец примерно в полтора раза мельче. Тело чёрное с жёлтыми или красно-жёлтыми участками. У самки усики и ноги красновато-жёлтые, крылья рыжевато-жёлтые; у самца крылья серовато-затемнённые.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Личиночные местообитания — сильно ослабленные, отмирающие и свежесрубленные арчи Juniperus semiglobosa, J. turkestanica и J. seravschanica, а также пни. Лёт в нижней зоне начинается в конце июня и длится до сентября; в средней зоне — с конца июля до октября, по статье 2006 года.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный источник связывает личинок с древесиной арчи и описывает ходы, заполненные буровой мукой. Детали пищевого состава и питание взрослых не установлены; развитие в тополе источник прямо отвергает.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальной статье одно поколение в год. Самки откладывают яйца после полудня в солнечную безветренную погоду, преимущественно с затенённой стороны ствола. Кладки из двух–трёх яиц находятся на глубине 10–14 мм; эмбриональная стадия длится 12–15 дней.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически указан в Беш-Аральском и Сары-Челекском заповедниках, на северных склонах Туркестанского и Алайского хребтов, в ущелье Кыргыз-Ата и северной части Ферганского хребта. Это перечень 2006 года, без подтверждения современного присутствия.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}
