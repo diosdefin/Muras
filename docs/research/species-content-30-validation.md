@@ -2,7 +2,7 @@
 
 Дата работы: 14 октября 2026 года. Ветка `feature/species-content`, исходный коммит
 `c17ad66`, первоначальное рабочее дерево чистое. Merge, push и deployment не выполняются.
-Состояние первого этапа: наполнены 10/30 записей; две последующие партии ещё не обработаны.
+Состояние после второй партии: наполнены 20/30 записей; последняя партия ещё не обработана.
 
 ## Контракт и интеграция
 
@@ -79,6 +79,40 @@ SHA-256 исходной научной модели:
 ожидание исправлено на фактически доступный язык, исходный habitat не менялся.
 Хеши промежуточных коммитов будут добавлены после их создания.
 
+Первая партия сохранена коммитом `239cc8e`. Вторая партия: `npm run data`,
+`npm run data:validate` и **234/234** теста прошли; изменения касаются только
+следующих десяти content-записей и их ссылок. Обзоры имеют 162–170 слов.
+
+## Источники и ограничения второй партии
+
+Национальные страницы 329, 253, 43, 503, 375, 443, 75, 337, 383 и 509 прочитаны
+для соответствующих записей. Дополнительно использованы пять источников:
+
+- University of Michigan, ADW:
+  [Vormela peregusna](https://animaldiversity.org/accounts/Vormela_peregusna/),
+  [Ciconia nigra](https://animaldiversity.org/accounts/Ciconia_nigra/),
+  [Lynx lynx](https://animaldiversity.org/accounts/Lynx_lynx/).
+- Shrestha & Lakhey, *Banko Janakari* 10(1),
+  [A survey of Ibisbill (Ibidorhyncha struthersii) in the Rapti river](https://nepjol.info/index.php/BANKO/article/view/17645/14323).
+  Первые две страницы скана прочитаны визуально (текстовый слой отсутствует).
+  Использована внешняя диагностика вида с первой страницы; непальские количества,
+  угрозы, маршруты и старая классификация семейства не переносятся.
+  Полная дата публикации не установлена и оставлена null.
+- [Pseudopus apodus, The Reptile Database](https://reptile-database.reptarium.cz/front.front/species?genus=pseudopus&species=apodus),
+  видовые Diagnosis и Limb morphology. Прочитаны открытые признаки; недоступные
+  материалы базы не запрашивались. Подвидовые координаты не используются.
+
+Итого после двух партий — **12 новых источников**. Прочитанные страницы ISPRA и BTO
+о пеликане не содержат нужной подробной внешней диагностики и не добавлены ради
+увеличения числа ссылок. Внешность лягушки, дыбки и пеликана остаётся null.
+Биология Mutinus caninus в национальной книге указана как неизученная: сохранены
+морфология плодового тела, спор и субстрат, но не придуманы переносчики спор или
+функциональная роль. Сообщение о редких самцах Saga pedo требует современной
+специализированной проверки. Для рыси национальная статья о местной форме
+отделена от общевидовых внешних признаков. Для пеликана гнездовой цикл не объявлен
+доказательством гнездования в Кыргызстане. Отмечены расхождения описаний суточной
+активности перевязки. Питание не заполняется у растений и грибов автоматически.
+
 ## Научные ограничения
 
 Рассказ не является независимым научным утверждением редакции: все verified остаются
@@ -98,26 +132,26 @@ fallback. «Ожидает» означает, что запись ещё не �
 
 | № | ID / научное имя | Партия | Готовые тексты | Пробелы / качество |
 | --- | --- | --- | --- | --- |
-| 1 | irbis / Panthera uncia | 1 | S, O, A, E, D, R, G | Национальная + университетская база; независимая проверка |
-| 2 | argali / Ovis ammon | 1 | S, O, A, E, D, R, G | Национальная + университетская база; независимая проверка |
-| 3 | manul / Otocolobus manul | 1 | S, O, A, E, D, R, G | Национальная + университетская база; независимая проверка |
-| 4 | golden-eagle / Aquila chrysaetos | 1 | S, O, A, E, D, R, G | Национальная + университетская база; независимая проверка |
-| 5 | bearded-vulture / Gypaetus barbatus | 1 | S, O, A, E, D, R, G | Национальная + университетская база; независимая проверка |
-| 6 | saker-falcon / Falco cherrug | 1 | S, O, A, E, D, R, G | Национальная + университетская база; независимая проверка |
-| 7 | greigs-tulip / Tulipa greigii | 1 | S, O, A, E, R, G | Питание неприменимо; национальная база |
-| 8 | kaufmanns-tulip / Tulipa kaufmanniana | 1 | S, O, A, E, R, G | Питание неприменимо; национальная база |
-| 9 | sievers-apple / Malus sieversii | 1 | S, O, A, E, R, G | Питание неприменимо; национальная база |
-| 10 | central-asian-tortoise / Testudo horsfieldii | 1 | S, O, E, D, R, G | Нет внешности; национальная + рецензируемая база |
-| 11 | central-asian-frog / Rana asiatica | 2 | Ожидает | Не обработана |
-| 12 | predatory-bush-cricket / Saga pedo | 2 | Ожидает | Не обработана |
-| 13 | dog-stinkhorn / Mutinus caninus | 2 | Ожидает | Не обработана |
-| 14 | marbled-polecat / Vormela peregusna | 2 | Ожидает | Не обработана |
-| 15 | black-stork / Ciconia nigra | 2 | Ожидает | Не обработана |
-| 16 | ibisbill / Ibidorhyncha struthersii | 2 | Ожидает | Не обработана |
-| 17 | eduards-fritillary / Fritillaria eduardii | 2 | Ожидает | Не обработана |
-| 18 | european-glass-lizard / Pseudopus apodus | 2 | Ожидает | Не обработана |
-| 19 | dalmatian-pelican / Pelecanus crispus | 2 | Ожидает | Не обработана |
-| 20 | eurasian-lynx / Lynx lynx | 2 | Ожидает | Не обработана |
+| 1 | irbis / Panthera uncia | 1 | S, O, A, E, D, R, G | Все разделы RU; независимая проверка |
+| 2 | argali / Ovis ammon | 1 | S, O, A, E, D, R, G | Все разделы RU; независимая проверка |
+| 3 | manul / Otocolobus manul | 1 | S, O, A, E, D, R, G | Все разделы RU; независимая проверка |
+| 4 | golden-eagle / Aquila chrysaetos | 1 | S, O, A, E, D, R, G | Все разделы RU; независимая проверка |
+| 5 | bearded-vulture / Gypaetus barbatus | 1 | S, O, A, E, D, R, G | Все разделы RU; независимая проверка |
+| 6 | saker-falcon / Falco cherrug | 1 | S, O, A, E, D, R, G | Все разделы RU; независимая проверка |
+| 7 | greigs-tulip / Tulipa greigii | 1 | S, O, A, E, R, G | Пусто: diet; независимая проверка |
+| 8 | kaufmanns-tulip / Tulipa kaufmanniana | 1 | S, O, A, E, R, G | Пусто: diet; независимая проверка |
+| 9 | sievers-apple / Malus sieversii | 1 | S, O, A, E, R, G | Пусто: diet; независимая проверка |
+| 10 | central-asian-tortoise / Testudo horsfieldii | 1 | S, O, E, D, R, G | Пусто: appearance; независимая проверка |
+| 11 | central-asian-frog / Rana asiatica | 2 | S, O, E, D, R, G | Пусто: appearance; независимая проверка |
+| 12 | predatory-bush-cricket / Saga pedo | 2 | S, O, E, D, R, G | Пусто: appearance; независимая проверка |
+| 13 | dog-stinkhorn / Mutinus caninus | 2 | S, O, A, E, R, G | Пусто: diet; независимая проверка |
+| 14 | marbled-polecat / Vormela peregusna | 2 | S, O, A, E, D, R, G | Все разделы RU; независимая проверка |
+| 15 | black-stork / Ciconia nigra | 2 | S, O, A, E, D, R, G | Все разделы RU; независимая проверка |
+| 16 | ibisbill / Ibidorhyncha struthersii | 2 | S, O, A, E, D, R, G | Все разделы RU; независимая проверка |
+| 17 | eduards-fritillary / Fritillaria eduardii | 2 | S, O, A, E, R, G | Пусто: diet; независимая проверка |
+| 18 | european-glass-lizard / Pseudopus apodus | 2 | S, O, A, E, D, R, G | Все разделы RU; независимая проверка |
+| 19 | dalmatian-pelican / Pelecanus crispus | 2 | S, O, E, D, R, G | Пусто: appearance; независимая проверка |
+| 20 | eurasian-lynx / Lynx lynx | 2 | S, O, A, E, D, R, G | Все разделы RU; независимая проверка |
 | 21 | kolpakowskis-tulip / Tulipa kolpakowskiana | 3 | Ожидает | Не обработана |
 | 22 | ostrowskis-tulip / Tulipa ostrowskiana | 3 | Ожидает | Не обработана |
 | 23 | pike-asp / Aspiolucius esocinus | 3 | Ожидает | Не обработана |
