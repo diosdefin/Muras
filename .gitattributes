@@ -15,3 +15,7 @@ public/licenses/photos/*.txt -text
 # Keep the master registry's shared research materials byte-stable on Windows.
 data/research/redbook-master-*.json text eol=lf
 docs/evidence/redbook-master-*.json text eol=lf
+# Fingerprinted unpublished bulk-25 drafts and evidence.
+data/research/bulk-25*.json text eol=lf
+data/research/bulk-25-content/**/*.json text eol=lf
+docs/evidence/bulk-25*.json text eol=lf

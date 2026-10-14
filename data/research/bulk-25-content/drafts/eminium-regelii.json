@@ -1,0 +1,284 @@
+{
+  "id": "eminium-regelii",
+  "scientificName": "Eminium regelii",
+  "names": {
+    "ru": "Эминиум Регеля",
+    "ky": null,
+    "uz": null,
+    "en": null
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Liliopsida",
+    "order": "Alismatales",
+    "family": "Araceae",
+    "genus": "Eminium"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": null,
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Лёссовые, реже мелкоземистые и щебнистые почвы предгорий и нижнего горного пояса; по описанию 2006 года.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Освоение предгорий под богарные культуры.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Чрезмерный ранневесенний выпас на местообитаниях.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Издание 2006 года рекомендует охрану местообитаний и мониторинг популяций.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Историческая рекомендация: интродукция в ботанический сад.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/eminium-regelii.webp",
+      "width": 1318,
+      "height": 1800,
+      "sha256": "2443bc7d68476b5c8223d302b273a0dfb4907d72858b7ffe78b6ff5bb8ebd7df",
+      "author": "Arkadiusz Nowak, Marcin Nobis, Sylwia Nowak, Agnieszka Nobis, Anna Wróbel, Sebastian Świerszcz, Ewelina Klichowska, Iwona Dembicz & Grzegorz Kusza",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Eminium_regelii_(Flora_of_Tajikistan).png",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Eminium regelii (Flora of Tajikistan).png — Arkadiusz Nowak, Marcin Nobis, Sylwia Nowak, Agnieszka Nobis, Anna Wróbel, Sebastian Świerszcz, Ewelina Klichowska, Iwona Dembicz & Grzegorz Kusza, CC BY 4.0; Wikimedia Commons.",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+        "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Eminium regelii: изображение из флоры Таджикистана, 2020; не наблюдение в Кыргызстане.",
+        "ky": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=63",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "conservationMeasures.1"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 2",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Eminium regelii",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Eminium%20regelii",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:2867729"
+    },
+    {
+      "id": "photo-commons",
+      "title": "Eminium regelii, Tajikistan.",
+      "publisher": "Wikimedia Commons; Arkadiusz Nowak, Marcin Nobis, Sylwia Nowak, Agnieszka Nobis, Anna Wróbel, Sebastian Świerszcz, Ewelina Klichowska, Iwona Dembicz & Grzegorz Kusza",
+      "url": "https://commons.wikimedia.org/wiki/File:Eminium_regelii_(Flora_of_Tajikistan).png",
+      "accessedAt": "2026-10-14",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Клубневое растение предгорий Западного Тянь-Шаня с тёмным покрывалом соцветия. Цветёт весной; освоение земель и ранний выпас угрожают его местообитаниям.",
+        "ky": "Батыш Тянь-Шандын тоо этектеринде өскөн түймөктүү өсүмдүк. Гүл тобунун жабуусу кара кочкул; жазында гүлдөйт. Жер иштетүү жана эрте мал жаюу коркунуч туудурат.",
+        "uz": "Gʻarbiy Tyanshan etaklarida oʻsadigan tuganakli oʻsimlik. Toʻpgul qoplamasi toʻq rangli; bahorda gullaydi. Yerlarni oʻzlashtirish va erta chorva boqish unga xavf soladi.",
+        "en": "A tuberous plant of Western Tien Shan foothills with a dark spathe. It flowers in spring; dryland cultivation and early grazing threaten its habitat."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Эминиум Регеля — невысокое многолетнее растение, описанное в Красной книге Кыргызстана как редкий представитель флоры Западного Тянь-Шаня. Его подземный клубень имеет приплюснутую шаровидную форму, а светло-зелёные листья располагаются у основания. Наиболее заметная особенность — тёмное бархатистое покрывало, окружающее початок. Мелкие цветки лишены околоцветника; женские и мужские цветки занимают разные части одного соцветия.\n\nРастение связано с предгорьями и нижним горным поясом, прежде всего с лёссовыми почвами. В национальной статье названы Ферганский, Чаткальский и Ат-Ойнокский хребты; общий ареал также включает Северный Памиро-Алай. Цветение приходится на апрель и май. Указано семенное размножение, но сроки плодоношения и сведения о выращивании в культуре отсутствуют.\n\nОсвоение предгорий под богарное земледелие и чрезмерный ранневесенний выпас названы основными угрозами. Авторы предлагали охранять местообитания, наблюдать за популяциями и вводить растение в ботанический сад. Качественное указание на редкость не заменяет учёта численности. Эти сведения относятся к изданию 2006 года и требуют проверки современного состояния.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Высота растения 20–40 см; толщина приплюснутого клубня достигает 3 см. Листья прикорневые, продолговатые или продолговато-ланцетные. Покрывало длиной 8–18 см изнутри бархатистое, чёрно-фиолетовое. Початок завершается булавовидным придатком длиной 5–9 см.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальном описании растение связано с лёссовыми, реже мелкоземистыми и щебнистыми почвами предгорий и нижнего пояса. Переустройство этих участков и ранневесеннее использование пастбищ названы факторами сокращения местообитаний.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Цветение наблюдается в апреле–мае. Источник указывает размножение семенами, но не сообщает сроки плодоношения; сведения об опылителях отсутствуют.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический национальный источник указывает предгорья и нижний пояс Ферганского, Чаткальского и Ат-Ойнокского хребтов. Общий ареал описан как Западный Тянь-Шань и Северный Памиро-Алай. Современные точки присутствия не подтверждены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

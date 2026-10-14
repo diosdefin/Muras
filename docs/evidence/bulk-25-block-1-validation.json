@@ -1,0 +1,559 @@
+{
+  "schemaVersion": 1,
+  "documentType": "unpublished-content-quality-report",
+  "preservedFiles": 153,
+  "sourceCatalogCount": 40,
+  "pipeline": {
+    "schemaVersion": 1,
+    "registryId": "bulk-25-content",
+    "catalogFingerprint": "6ffd82165fd7f2ce9a24f38ca2aae9a885e0fe8e1d672a8630725ac5b36b5cf0",
+    "counts": {
+      "processed": 5,
+      "accepted": 5,
+      "deferred": 0,
+      "rejected": 0
+    },
+    "states": {
+      "pending": 0,
+      "needs_evidence": 0,
+      "research_ready": 0,
+      "needs_photo": 0,
+      "ready_for_review": 5,
+      "approved_for_import": 0,
+      "imported": 0,
+      "rejected": 0
+    },
+    "results": [
+      {
+        "candidateId": "eminium-regelii",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "5c2fe0dd8a7ed40cf33e971a045885137d4d3855b32bb94f9f95a40259afb66a",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "eremurus-zenaidae",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "22caf85d10dc897e14a546681bc77ffba091e464da455c3d88245d0d6d169754",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "eremurus-zoae",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "58bc0c12d492615bf1275f4cbe7d104e136960b08315fac8fd11e613dd013793",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "allium-dodecadontum",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "9828a5ed13256b386bfbea9c611601a272429e3d83fe137d966dd958399112cf",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "allium-semenovii",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "5d8d83d6d59bcc76acee78f2406741e15fa9b6c4ece25a426e606a5759e736dc",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      }
+    ]
+  },
+  "quality": [
+    {
+      "candidateId": "eminium-regelii",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          62,
+          63
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Eminium regelii",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2867729",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=63"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Eminium%20regelii"
+        },
+        {
+          "id": "photo-commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Eminium_regelii_(Flora_of_Tajikistan).png"
+        }
+      ],
+      "shortLengthRu": 153,
+      "overviewWordsRu": 144,
+      "languages": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz",
+          "en"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Датированная численность и современное состояние популяций",
+        "Сроки плодоношения",
+        "Опылители",
+        "Современный правовой статус"
+      ],
+      "editorialNotes": [
+        "Русский и кыргызский тексты дают VU, английское резюме — EN. nationalRedBook.category оставлена null до независимого разрешения расхождения; это не глобальная категория IUCN."
+      ],
+      "technicalErrors": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "eremurus-zenaidae",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          64,
+          65
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Eremurus zenaidae",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2778824",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=65"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Eremurus%20zenaidae"
+        }
+      ],
+      "shortLengthRu": 162,
+      "overviewWordsRu": 149,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz",
+          "en"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Численность",
+        "Способ размножения и опылители",
+        "Данные о культивировании",
+        "Современные местонахождения и правовой статус"
+      ],
+      "editorialNotes": [],
+      "technicalErrors": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "eremurus-zoae",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          66,
+          67
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Eremurus zoae",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2778815",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=67"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Eremurus%20zoae"
+        }
+      ],
+      "shortLengthRu": 157,
+      "overviewWordsRu": 149,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz",
+          "en"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Численность",
+        "Уточнённая локальная география",
+        "Размножение и культивирование",
+        "Современный правовой статус"
+      ],
+      "editorialNotes": [
+        "RU: между Иссык-Атой и Кегети; EN: Иссык-Ата и Боом. В карточке оставлен только общий Кыргызский хребет; требует редакторского разрешения."
+      ],
+      "technicalErrors": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "allium-dodecadontum",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          68,
+          69
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Allium dodecadontum",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2857164",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=69"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Allium%20dodecadontum"
+        }
+      ],
+      "shortLengthRu": 160,
+      "overviewWordsRu": 152,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz",
+          "en"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Численность",
+        "Детали размножения",
+        "Культивирование",
+        "Современное состояние охраны"
+      ],
+      "editorialNotes": [],
+      "technicalErrors": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "allium-semenovii",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          72,
+          73
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Allium semenovii",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2857114",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=73"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Allium%20semenovii"
+        }
+      ],
+      "shortLengthRu": 149,
+      "overviewWordsRu": 144,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz",
+          "en"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Численность",
+        "Способ размножения",
+        "Культивирование",
+        "Современное присутствие и правовой статус"
+      ],
+      "editorialNotes": [
+        "Характеристика эндемизма в книге историческая; не распространяется автоматически на современный расширенный ареал принятого таксона GBIF."
+      ],
+      "technicalErrors": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    }
+  ]
+}

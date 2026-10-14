@@ -32,6 +32,7 @@ export function checkCommonsMetadata(candidate,page){
   let licenseUrl=license==='Public domain'?'https://commons.wikimedia.org/wiki/Template:PD-self':info.extmetadata.LicenseUrl?.value
   const cc=/^CC BY(-SA)? ([234]\.0)$/.exec(license)
   if(cc&&!new RegExp(`^https?://creativecommons\\.org/licenses/by${cc[1]?'-sa':''}/${cc[2].replace('.','\\.')}/?$`).test(licenseUrl||''))throw new Error('URL не соответствует заявленной лицензии CC')
+  if(cc)licenseUrl=`https://creativecommons.org/licenses/by${cc[1]?'-sa':''}/${cc[2]}/`
   if(license==='CC0'){
     // Commons may link the official translated deed rather than its canonical URL.
     if(!/^https?:\/\/creativecommons\.org\/publicdomain\/zero\/1\.0(?:\/deed\.[a-z]{2}(?:-[A-Z]{2})?|\/)?$/.test(licenseUrl||''))throw new Error('URL не соответствует CC0')

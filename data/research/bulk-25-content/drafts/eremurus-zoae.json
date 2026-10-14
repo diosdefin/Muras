@@ -1,0 +1,240 @@
+{
+  "id": "eremurus-zoae",
+  "scientificName": "Eremurus zoae",
+  "names": {
+    "ru": "Эремурус Зои",
+    "ky": null,
+    "uz": null,
+    "en": null
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Liliopsida",
+    "order": "Asparagales",
+    "family": "Asphodelaceae",
+    "genus": "Eremurus"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Гипсоносные склоны нижнего горного пояса Кыргызского хребта.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Весенний выпас на склонах с растением.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Сбор цветков и выкапывание корневищ.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В издании 2006 года рекомендованы ботанические заказники и мониторинг популяций.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=67",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 6",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Eremurus zoae",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Eremurus%20zoae",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:2778815"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Невысокий эремурус Кыргызского хребта с жёлтыми колокольчатыми цветками. Растёт на гипсоносных склонах; выпас и выкапывание корневищ угрожают этому эндемику.",
+        "ky": "Кыргыз тоо кыркасында өскөн жапыз чыраш, гүлдөрү сары коңгуроо сымал. Гипстүү топурактуу беттерде өсөт; мал жаюу жана тамыр сабагын казуу ага коркунуч туудурат.",
+        "uz": "Qirgʻiz tizmasining past boʻyli eremurusi, gullari sariq va qoʻngʻiroqsimon. Gipsli yonbagʻirlarda oʻsadi; chorva boqish va ildizpoyani qazish unga xavf soladi.",
+        "en": "A small eremurus of the Kyrgyz Range with yellow bell-shaped flowers. It grows on gypsum-bearing slopes; grazing and rootstock digging threaten this endemic."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Эремурус Зои — растение с жёлтыми цветками, которое Красная книга 2006 года характеризует как узкий эндемик Кыргызского хребта. Его голый стебель достигает 25–40 см, поэтому он заметно ниже многих других эремурусов. Узкие заострённые листья сочетаются с цилиндрическим многоцветковым соцветием. Листочки околоцветника образуют колокольчатый цветок с хорошо выраженными жилками; после цветения развивается гладкая шаровидная коробочка.\n\nВид описан с гипсоносных склонов нижнего горного пояса. Короткий сезон развития включает цветение в апреле–мае и плодоношение в мае. Данные о численности и выращивании в культуре в статье отсутствуют. Русское и английское описания расходятся в перечислении отдельных ущелий, поэтому здесь сохранена только согласованная география на уровне хребта.\n\nВесенний выпас, сбор цветков и выкапывание корневищ отнесены авторами к основным угрозам. Рекомендованы ботанические заказники и наблюдение за состоянием популяций; подтверждений выполнения этих мер в современный период в использованных материалах нет. Историческая категория VU и национальное включение не служат доказательством актуальной численности или юридического статуса в 2026 году.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Голый стебель высотой 25–40 см. Линейные заострённые листья шириной 5–6 мм. Соцветие цилиндрическое, многоцветковое; прицветники длиной 1,5–2 см превышают цветоножки. Жёлтые колокольчатые цветки имеют околоцветник длиной 15–16 мм с выраженными жилками.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Коротковегетирующее многолетнее растение гипсоносных склонов нижнего пояса Кыргызского хребта. Данных о количественной зависимости от почвенных условий в национальном описании нет.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Цветёт в апреле–мае, плодоносит в мае. Детальные сведения о размножении и опылителях не приведены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Обе языковые версии национальной статьи связывают вид с Кыргызским хребтом. Перечень ущелий между версиями различается и в черновик как подтверждённая точная география не переносится.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "schemaVersion": 1,
+  "documentType": "bulk-25-content-manifest",
+  "sourceCommit": "006235532cc14e3ec26ccd9c56c9e6fd083f30e9",
+  "masterRegistryFingerprint": "dce90285100e1502c2250bc486f7448c1e1ab0790fada5a5445638a2f7577ad5",
+  "registryId": "bulk-25-content",
+  "batchSize": 5,
+  "candidateIds": [
+    "eminium-regelii",
+    "eremurus-zenaidae",
+    "eremurus-zoae",
+    "allium-dodecadontum",
+    "allium-semenovii",
+    "tulipa-affinis",
+    "tulipa-anadroma",
+    "tulipa-korolkowii",
+    "tulipa-platystemon",
+    "tulipa-tetraphylla",
+    "tulipa-zenaidae",
+    "juno-orchioides",
+    "iridodictyum-kolpakowskianum",
+    "thesium-minkwitzianum",
+    "delphinium-knorringianum",
+    "urocerus-sah",
+    "masaris-longicornis",
+    "varanus-griseus-caspius",
+    "eryx-tataricus",
+    "lyrurus-tetrix",
+    "cygnus-cygnus",
+    "aythya-nyroca",
+    "mergus-serrator",
+    "oxyura-leucocephala",
+    "gavia-arctica"
+  ],
+  "blocks": [
+    {
+      "number": 1,
+      "batchId": "bulk-25-content-1",
+      "candidateIds": [
+        "eminium-regelii",
+        "eremurus-zenaidae",
+        "eremurus-zoae",
+        "allium-dodecadontum",
+        "allium-semenovii"
+      ],
+      "status": "ready_for_independent_review",
+      "commit": null,
+      "preparedCount": 5,
+      "photoCount": 1
+    },
+    {
+      "number": 2,
+      "batchId": "bulk-25-content-2",
+      "candidateIds": [
+        "tulipa-affinis",
+        "tulipa-anadroma",
+        "tulipa-korolkowii",
+        "tulipa-platystemon",
+        "tulipa-tetraphylla"
+      ],
+      "status": "pending",
+      "commit": null
+    },
+    {
+      "number": 3,
+      "batchId": "bulk-25-content-3",
+      "candidateIds": [
+        "tulipa-zenaidae",
+        "juno-orchioides",
+        "iridodictyum-kolpakowskianum",
+        "thesium-minkwitzianum",
+        "delphinium-knorringianum"
+      ],
+      "status": "pending",
+      "commit": null
+    },
+    {
+      "number": 4,
+      "batchId": "bulk-25-content-4",
+      "candidateIds": [
+        "urocerus-sah",
+        "masaris-longicornis",
+        "varanus-griseus-caspius",
+        "eryx-tataricus",
+        "lyrurus-tetrix"
+      ],
+      "status": "pending",
+      "commit": null
+    },
+    {
+      "number": 5,
+      "batchId": "bulk-25-content-5",
+      "candidateIds": [
+        "cygnus-cygnus",
+        "aythya-nyroca",
+        "mergus-serrator",
+        "oxyura-leucocephala",
+        "gavia-arctica"
+      ],
+      "status": "pending",
+      "commit": null
+    }
+  ],
+  "publicationAllowed": false
+}

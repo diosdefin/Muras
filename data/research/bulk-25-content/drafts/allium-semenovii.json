@@ -1,0 +1,240 @@
+{
+  "id": "allium-semenovii",
+  "scientificName": "Allium semenovii",
+  "names": {
+    "ru": "Лук Семенова",
+    "ky": null,
+    "uz": null,
+    "en": null
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Liliopsida",
+    "order": "Asparagales",
+    "family": "Amaryllidaceae",
+    "genus": "Allium"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Альпийские луга высокогорного пояса, седловины и задернованные склоны западной и северной экспозиции.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Весенний выпас скота.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Сбор цветков и выкапывание луковиц.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендации издания 2006 года: ботанические заказники, мониторинг и ограничение выпаса и выкапывания луковиц.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=73",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 8",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Allium semenovii",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Allium%20semenovii",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:2857114"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Высокогорный лук Тянь-Шаня с золотисто-жёлтыми, позднее краснеющими цветками. Растёт на альпийских лугах и задернованных склонах; цветёт в июне–июле.",
+        "ky": "Тянь-Шандын бийик тоолорунда өскөн пияз. Гүлдөрү алтындай сары болуп, кийин кызарат. Альпы шалбааларында жана чөптүү беттерде өсөт; июнь–июлда гүлдөйт.",
+        "uz": "Tyanshan baland togʻlarining piyozi; gullari oltinsariq boʻlib, keyin qizaradi. Alp oʻtloqlari va chimli yonbagʻirlarda oʻsadi; iyun–iyulda gullaydi.",
+        "en": "A high-mountain onion of the Tien Shan with golden-yellow flowers that later redden. It grows in alpine meadows and on turf slopes, flowering in June–July."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Лук Семенова отличается золотисто-жёлтым околоцветником, который позднее приобретает красноватую окраску. В Красной книге Кыргызстана он описан как многолетнее луковичное растение Внутреннего и Центрального Тянь-Шаня. Цилиндрические, сравнительно слабо выраженные луковицы расположены на корневище. Стебли невысокие, до 40 см, с гладкими листовыми влагалищами. Два или три широколинейных листа плоские и желобчатые, а плотное головчатое соцветие напоминает шар или яйцо.\n\nМестообитания вида связаны с высокогорным поясом: альпийскими лугами, седловинами и задернованными склонами северной и западной экспозиции. Цветение наблюдается в июне–июле, плодоношение — в августе. Эти сроки известны, но способ размножения, численность и результаты культивирования в использованной статье не описаны.\n\nАвторы выделяют весенний выпас, сбор цветов и выкапывание луковиц как факторы риска. В 2006 году специальные меры охраны считались неразработанными; были предложены ботанические заказники, мониторинг и ограничения изъятия растений. Историческая национальная категория VU не переносится в поле глобального статуса IUCN. Современное распространение и эффективность охраны предстоит проверить независимо.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Стебель высотой 10–40 см. Цилиндрические луковицы толщиной до 1 см, с буроватыми почти сетчатыми оболочками. Два–три листа шириной 5–15 мм; соцветие головчатое, шаровидно-яйцевидное. Колокольчатые листочки околоцветника длиной 10–15 мм золотисто-жёлтые, позднее краснеют.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Геофит высокогорных альпийских лугов. Для местообитаний названы седловины и задернованные склоны западной и северной экспозиции; конкретные высоты и почвенные измерения не приведены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Цветёт в июне–июле, плодоносит в августе. Способ размножения в национальном источнике не установлен; наличие луковиц само по себе не подтверждает вегетативное размножение.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная статья указывает Внутренний и Центральный Тянь-Шань. Это историческое описание ареала, без подтверждения современных точек присутствия.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}
