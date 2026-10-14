@@ -50,15 +50,15 @@ test('text length limits bound cards and imports without forcing unsubstantiated
   assert.ok(validateContent({...emptyContent(),overview:section('x'.repeat(20001))},refs).length)
   assert.deepEqual(validateContent({...emptyContent(),overview:section('Краткий подтверждённый факт.')},refs),[])
 })
-test('all completed batch records have real introductions, sourced overview and unchanged old scientific facts',()=>{
-  assert.equal(source.catalog.length,30);assert.ok([10,20,30].includes(prepared.length))
+test('all thirty records have real introductions, sourced overview and unchanged old scientific facts',()=>{
+  assert.equal(source.catalog.length,30);assert.equal(prepared.length,30)
   assert.deepEqual(prepared.map(s=>s.id),source.catalog.slice(0,prepared.length).map(s=>s.id))
   assert.equal(hash(legacyScientificSource(source)),'52e69ac766a536e158d5b3ea0780db66c25f02944644de0871a9383fe85e2fb0')
   assert.deepEqual(validateSource(source),[]);assert.deepEqual(validateSpecies(published,'public',{publicData:true}),[])
   for(const s of prepared){
     assert.deepEqual(Object.keys(s.content),CONTENT_FIELDS)
-    assert.ok(s.content.overview.text.ru.split(/\s+/u).length>=60,s.id)
-    for(const language of LANGUAGES){const value=s.content.shortDescription.text[language];assert.equal(typeof value,'string');assert.ok(value.length>=100&&value.length<=220,`${s.id}.${language}: ${value.length}`)}
+    assert.ok(s.content.overview.text.ru.split(/\s+/u).length>=130,s.id)
+    for(const language of LANGUAGES){const value=s.content.shortDescription.text[language];assert.equal(typeof value,'string');assert.ok(value.length>=120&&value.length<=180,`${s.id}.${language}: ${value.length}`)}
     assert.notEqual(s.content.shortDescription.text.ru,s.habitat?.description.ru,s.id)
     assert.equal(s.verified,false);assert.equal(s.population.type,'unknown')
     assert.deepEqual(validateContent(s.content,s.sources,s.id),[])
@@ -67,6 +67,31 @@ test('all completed batch records have real introductions, sourced overview and 
     const projected=published.find(item=>item.id===s.id)
     assert.deepEqual(projected.content,s.content)
   }
+})
+test('all thirty records have honest four-language short texts and marked fallback for every longer section',()=>{
+  for(const species of prepared){
+    for(const language of LANGUAGES){
+      const short=scientificContent(species.content.shortDescription.text,language)
+      assert.equal(short.language,language);assert.equal(short.fallback,false)
+      for(const field of CONTENT_FIELDS.filter(field=>field!=='shortDescription')){
+        const section=species.content[field]
+        if(!section)continue
+        assert.equal(section.text[language],language==='ru'?section.text.ru:null)
+        const selected=scientificContent(section.text,language)
+        assert.equal(selected.language,'ru');assert.equal(selected.fallback,language!=='ru')
+      }
+    }
+  }
+})
+test('poorly studied biology stays unknown rather than acquiring generic animal or fungal facts',()=>{
+  const spider=prepared.find(s=>s.id==='relict-spider'),fungus=prepared.find(s=>s.id==='tien-shan-scutiger')
+  assert.equal(spider.content.diet,null);assert.equal(spider.content.reproduction,null)
+  assert.match(spider.content.overview.text.ru,/предположительно/)
+  assert.equal(fungus.content.diet,null)
+  assert.match(fungus.content.ecology.text.ru,/неизученной/)
+  assert.match(fungus.content.reproduction.text.ru,/не описаны/)
+  for(const s of prepared.filter(s=>['plants','fungi'].includes(s.group)))assert.equal(s.content.diet,null)
+  for(const s of prepared.filter(s=>['central-asian-tortoise','central-asian-frog','predatory-bush-cricket','dalmatian-pelican','menzbiers-marmot','great-bustard'].includes(s.id)))assert.equal(s.content.appearance,null)
 })
 test('preview is the first overview paragraph, full page preserves both paragraphs and true fallback language',()=>{
   const s=prepared[0]
