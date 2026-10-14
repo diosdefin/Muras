@@ -52,6 +52,10 @@ for (const f of facts.records) {
     ...(f.threats || []).map((_, i) => `threats.${i}`), ...(f.conservation || []).map((_, i) => `conservationMeasures.${i}`))
   const gbif = sources.find(s => s.id === c.taxonomyEvidence.sourceId)
   gbif.supports.push(...Object.keys(taxonomy).filter(k => taxonomy[k]).map(k => `taxonomy.${k}`))
+  if (c.originalScientificName !== c.acceptedScientificName) {
+    gbif.supports.push('content.overview')
+    content.overview.sourceIds.push(gbif.id)
+  }
   // Detailed historic accounts remain tied to the name used in 2006, not all
   // populations of a subsequently enlarged accepted species concept.
   const nationalRedBook = structuredClone(original.nationalRedBook)

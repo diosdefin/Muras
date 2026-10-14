@@ -1,0 +1,230 @@
+{
+  "id": "tulipa-platystemon",
+  "scientificName": "Tulipa platystemon",
+  "names": {
+    "ru": "Тюльпан широкотычиночный",
+    "ky": null,
+    "uz": null,
+    "en": null
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Liliopsida",
+    "order": "Liliales",
+    "family": "Liliaceae",
+    "genus": "Tulipa"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": null,
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Весенний выпас скота.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Сбор цветов и выкапывание луковиц.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная книга рекомендует ботанические заказники, мониторинг и запрет сбора цветов, выкапывания луковиц и выпаса.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=91",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 21",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Tulipa platystemon",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Tulipa%20platystemon",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:5299510"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Небольшой жёлтоцветковый тюльпан, известный по Красной книге с перевала Сары-Бия Алайского хребта. Цветёт в июне; численность и условия местообитания неизвестны.",
+        "ky": "Кызыл китепте Алай тоо кыркасындагы Сары-Бия ашуусунан белгилүү болгон жапыз, сары гүлдүү жоогазын. Июнда гүлдөйт; саны жана өсүү шарттары боюнча маалымат жок.",
+        "uz": "Qizil kitobda Oloy tizmasining Sari-Biya dovonidan qayd etilgan kichik, sariq gulli lola. Iyun oyida gullaydi; soni va yashash sharoitlari nomaʼlum.",
+        "en": "A small yellow-flowered tulip recorded in the Red Book from Sary-Biya Pass in the Alai Range. It blooms in June; population size and habitat details are unknown."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Тюльпан широкотычиночный описан в национальной Красной книге как узкий эндемик Алайского хребта. Единственная приведённая локальная привязка — перевал Сары-Бия. Это многолетнее растение с коротким периодом вегетации и яйцевидной луковицей диаметром до 2 см. Голый стебель вместе с цветоножкой достигает около 17 см. В описанном экземпляре четыре расставленных листа и два жёлтых цветка; наружные листочки околоцветника с внешней стороны имеют фиолетовый оттенок.\n\nДля вида указан июньский срок цветения. Сведения о плодоношении, местообитании, численности и культивировании прямо обозначены в книге как отсутствующие. Поэтому принадлежность перевалу не преобразована в точные высоты, тип растительности, почвенную характеристику или координаты. Данные о размножении за пределами срока цветения также остаются неизвестными.\n\nВ перечне угроз авторы называют весенний выпас, сбор цветков и выкапывание луковиц. Рекомендуются ботанические заказники в местах концентрации растения, мониторинг и ограничения изъятия и выпаса. Подтверждения реализации этих мер не приведены. Историческая категория VU документирует оценку издания 2006 года, но не является новой оценкой современного состояния вида.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Луковица яйцевидная, до 2 см. Голый стебель с цветоножкой около 17 см. Четыре расставленных листа, нижние отогнуты; нижний линейно-ланцетный, шириной 2 см. В описании два жёлтых цветка с листочками околоцветника длиной около 4 см. Тычиночные нити расширены выше середины.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Источник характеризует растение как коротковегетирующий луковичный геофит, но не сообщает условия местообитания. Экологические предпочтения по расположению перевала не выводятся.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Цветение — июнь. Плодоношение и способы размножения в доступной национальной статье не описаны.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Историческая запись 2006 года: Алайский хребет, перевал Сары-Бия. Точное положение популяций и современное присутствие не подтверждены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

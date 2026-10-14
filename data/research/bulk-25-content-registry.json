@@ -1076,8 +1076,8 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Tulipa affinis",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -1121,7 +1121,20 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "threats.1",
+            "conservationMeasures.0",
+            "conservationMeasures.1",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -1144,7 +1157,14 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview"
           ],
           "taxonId": "gbif:5299364"
         }
@@ -1163,6 +1183,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/bulk-25-content/block-2-facts.json",
+          "sha256": "86d43f4d0576f7216733f486026fe5d8bebf18a49db9e3b6c25a8bf87640047c"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-2-accounts.json",
+          "sha256": "b3a60eee06e1023a7b466464b31ff36fdcbd067c4fb1b2eef3b9e1e458a3284c"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-2-images.json",
+          "sha256": "a5b9c66ed5209a63bb898c045ed5871d1ad29a03eab7c32a68e7eb6ba1fe781a"
         }
       ],
       "draft": null,
@@ -1191,59 +1223,64 @@
         "resolution": "exact_documented_synonym_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Названия KY/UZ/EN не подтверждены: используется научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
       "preparation": {
-        "status": "pending",
-        "sourceMasterId": "tulipa-affinis"
+        "status": "prepared",
+        "sourceMasterId": "tulipa-affinis",
+        "factsFingerprint": "da967ecc2bee064f90e1bb4880886ff01a6c995fda45d3caff37823d6f23f8a0",
+        "draftSha256": "ff0741e2cd9dbfd8a9025e9a3b765bfb491f78510e91e571ef167109c46a2bee"
       },
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "tulipa-affinis",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "316a1b89c99b14628e926fe17f712da482d7219a63a95c982b2ace0379e8fc35",
+        "fingerprint": "cac3eb7a709f5d7585c2eee70a2f7f0d8847dd86511501dcf255ad3b80fc7543",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
             "uz",
-            "ru",
             "en"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "316a1b89c99b14628e926fe17f712da482d7219a63a95c982b2ace0379e8fc35"
+      "checkedFingerprint": "cac3eb7a709f5d7585c2eee70a2f7f0d8847dd86511501dcf255ad3b80fc7543",
+      "draftFile": "data/research/bulk-25-content/drafts/tulipa-affinis.json",
+      "editorialNotes": [
+        "Tulipa affinis → Tulipa fosteriana: точный синоним того же ранга по GBIF. Историческая категория и ареал относятся к национальному концепту affinis; охват широкого принятого вида требует специалиста."
+      ],
+      "missingFacts": [
+        "Учёт численности",
+        "Плодоношение",
+        "Современная география национального таксономического концепта"
+      ],
+      "incidentalPopulationEvidence": []
     },
     {
       "originalScientificName": "Tulipa anadroma",
@@ -1252,8 +1289,8 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Tulipa anadroma",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -1297,7 +1334,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "threats.1",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -1320,7 +1369,14 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview"
           ],
           "taxonId": "gbif:5299666"
         }
@@ -1339,6 +1395,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/bulk-25-content/block-2-facts.json",
+          "sha256": "86d43f4d0576f7216733f486026fe5d8bebf18a49db9e3b6c25a8bf87640047c"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-2-accounts.json",
+          "sha256": "b3a60eee06e1023a7b466464b31ff36fdcbd067c4fb1b2eef3b9e1e458a3284c"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-2-images.json",
+          "sha256": "a5b9c66ed5209a63bb898c045ed5871d1ad29a03eab7c32a68e7eb6ba1fe781a"
         }
       ],
       "draft": null,
@@ -1367,59 +1435,64 @@
         "resolution": "exact_documented_synonym_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Названия KY/UZ/EN не подтверждены: используется научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
       "preparation": {
-        "status": "pending",
-        "sourceMasterId": "tulipa-anadroma"
+        "status": "prepared",
+        "sourceMasterId": "tulipa-anadroma",
+        "factsFingerprint": "4d96c89414e67d13a8bb52683e9a92119a9c029837e4998d8cf59d6347cc9324",
+        "draftSha256": "6ad25336f203dc07f54c7adfb7f26f57d564c4fbb465f61c77c42e5fc739cfcf"
       },
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "tulipa-anadroma",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "cda2bbc47dfe8b25305287196c0b503d816edc86e2bae1005abed7833aef85a1",
+        "fingerprint": "689b9a8961dd108331bc28aee19aa7132dd8a206cf95f0753b52ef0d2b72482c",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
             "uz",
-            "ru",
             "en"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "cda2bbc47dfe8b25305287196c0b503d816edc86e2bae1005abed7833aef85a1"
+      "checkedFingerprint": "689b9a8961dd108331bc28aee19aa7132dd8a206cf95f0753b52ef0d2b72482c",
+      "draftFile": "data/research/bulk-25-content/drafts/tulipa-anadroma.json",
+      "editorialNotes": [
+        "Tulipa anadroma → Tulipa tschimganica: GBIF подтверждает точную синонимию того же ранга. Русское название и биология сохранены для исторической национальной записи."
+      ],
+      "missingFacts": [
+        "Датированная численность",
+        "Плодоношение",
+        "Современный таксономический охват национального включения"
+      ],
+      "incidentalPopulationEvidence": []
     },
     {
       "originalScientificName": "Tulipa korolkowii",
@@ -1428,7 +1501,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -1473,7 +1546,20 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "threats.1",
+            "conservationMeasures.0",
+            "conservationMeasures.1",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -1496,7 +1582,13 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:5299568"
         }
@@ -1515,6 +1607,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/bulk-25-content/block-2-facts.json",
+          "sha256": "86d43f4d0576f7216733f486026fe5d8bebf18a49db9e3b6c25a8bf87640047c"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-2-accounts.json",
+          "sha256": "b3a60eee06e1023a7b466464b31ff36fdcbd067c4fb1b2eef3b9e1e458a3284c"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-2-images.json",
+          "sha256": "a5b9c66ed5209a63bb898c045ed5871d1ad29a03eab7c32a68e7eb6ba1fe781a"
         }
       ],
       "draft": null,
@@ -1543,59 +1647,64 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Названия KY/UZ/EN не подтверждены: используется научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
       "preparation": {
-        "status": "pending",
-        "sourceMasterId": "tulipa-korolkowii"
+        "status": "prepared",
+        "sourceMasterId": "tulipa-korolkowii",
+        "factsFingerprint": "625eadc59435a66cba48f62ab96afc12149c8a86f90b1a68d1e019a8da2501c2",
+        "draftSha256": "e0582351d5e14e166ad28deb1c457025f2cda3a4006953473fd05958aa50340c"
       },
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "tulipa-korolkowii",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "e7fed7bb2338555148b0d3247b6865b78ed3abdf5bd8c6e1890d263ea42b6be3",
+        "fingerprint": "2a1b3908b77aa385db92ea209a7ff84ced3bb4d0097176d3b25ceccf53ee73ed",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
             "uz",
-            "ru",
             "en"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "e7fed7bb2338555148b0d3247b6865b78ed3abdf5bd8c6e1890d263ea42b6be3"
+      "checkedFingerprint": "2a1b3908b77aa385db92ea209a7ff84ced3bb4d0097176d3b25ceccf53ee73ed",
+      "draftFile": "data/research/bulk-25-content/drafts/tulipa-korolkowii.json",
+      "editorialNotes": [
+        "Фенология RU и EN различается по ширине интервала; сведения не усреднялись."
+      ],
+      "missingFacts": [
+        "Численность",
+        "Современные местонахождения",
+        "Региональное уточнение фенологии"
+      ],
+      "incidentalPopulationEvidence": []
     },
     {
       "originalScientificName": "Tulipa platystemon",
@@ -1604,7 +1713,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -1649,7 +1758,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "threats.1",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -1672,7 +1793,13 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:5299510"
         }
@@ -1691,6 +1818,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/bulk-25-content/block-2-facts.json",
+          "sha256": "86d43f4d0576f7216733f486026fe5d8bebf18a49db9e3b6c25a8bf87640047c"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-2-accounts.json",
+          "sha256": "b3a60eee06e1023a7b466464b31ff36fdcbd067c4fb1b2eef3b9e1e458a3284c"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-2-images.json",
+          "sha256": "a5b9c66ed5209a63bb898c045ed5871d1ad29a03eab7c32a68e7eb6ba1fe781a"
         }
       ],
       "draft": null,
@@ -1719,59 +1858,66 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Названия KY/UZ/EN не подтверждены: используется научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
       "preparation": {
-        "status": "pending",
-        "sourceMasterId": "tulipa-platystemon"
+        "status": "prepared",
+        "sourceMasterId": "tulipa-platystemon",
+        "factsFingerprint": "eaa6f691e7581a12a860b6de05b72543ade4e936ebe3eb9a5aa3aca14c8f048f",
+        "draftSha256": "a97d89a3beb78eff11c56b045fd7d603f353dfbbda74b0b68ce011d486176d84"
       },
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "tulipa-platystemon",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "49136d3820109d8ee08747f5b4684f5e78fff332a0c4ef3ecffe7b847071dedc",
+        "fingerprint": "da329486c7eb84475f77ffa3e08df9cb9c3c3d6afebba12fbbf1920bdf684c6f",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
             "uz",
-            "ru",
             "en"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "49136d3820109d8ee08747f5b4684f5e78fff332a0c4ef3ecffe7b847071dedc"
+      "checkedFingerprint": "da329486c7eb84475f77ffa3e08df9cb9c3c3d6afebba12fbbf1920bdf684c6f",
+      "draftFile": "data/research/bulk-25-content/drafts/tulipa-platystemon.json",
+      "editorialNotes": [
+        "habitat:null соответствует прямому отсутствию данных в первоисточнике; техническая готовность не означает достаточность экологической изученности."
+      ],
+      "missingFacts": [
+        "Условия местообитания",
+        "Плодоношение и размножение",
+        "Численность",
+        "Культивирование",
+        "Современное присутствие"
+      ],
+      "incidentalPopulationEvidence": []
     },
     {
       "originalScientificName": "Tulipa tetraphylla",
@@ -1780,7 +1926,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -1825,7 +1971,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "threats.1",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -1848,7 +2006,13 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:5299660"
         }
@@ -1867,6 +2031,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/bulk-25-content/block-2-facts.json",
+          "sha256": "86d43f4d0576f7216733f486026fe5d8bebf18a49db9e3b6c25a8bf87640047c"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-2-accounts.json",
+          "sha256": "b3a60eee06e1023a7b466464b31ff36fdcbd067c4fb1b2eef3b9e1e458a3284c"
+        },
+        {
+          "path": "docs/evidence/bulk-25-block-2-images.json",
+          "sha256": "a5b9c66ed5209a63bb898c045ed5871d1ad29a03eab7c32a68e7eb6ba1fe781a"
         }
       ],
       "draft": null,
@@ -1895,59 +2071,63 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Названия KY/UZ/EN не подтверждены: используется научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
       "preparation": {
-        "status": "pending",
-        "sourceMasterId": "tulipa-tetraphylla"
+        "status": "prepared",
+        "sourceMasterId": "tulipa-tetraphylla",
+        "factsFingerprint": "9a5263ec17ec434e0c577a41b417c98ae1c3cb4d88b30aade336bd81f2c450c2",
+        "draftSha256": "9a1566ec2e29e129070531c1705b6cabd23a775cf5b001277768664e4115c61b"
       },
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "tulipa-tetraphylla",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "84a13729eb411a941e3ee45bafb725462f524b39a6cf270fb319f98c1c56eaa1",
+        "fingerprint": "4efef7eae0b98b988f1485e7555db5085a517c3b71a0e0b0bbff20268a9b1335",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
             "uz",
-            "ru",
             "en"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "84a13729eb411a941e3ee45bafb725462f524b39a6cf270fb319f98c1c56eaa1"
+      "checkedFingerprint": "4efef7eae0b98b988f1485e7555db5085a517c3b71a0e0b0bbff20268a9b1335",
+      "draftFile": "data/research/bulk-25-content/drafts/tulipa-tetraphylla.json",
+      "editorialNotes": [],
+      "missingFacts": [
+        "Численность",
+        "Плодоношение и способы размножения",
+        "Культивирование",
+        "Современное присутствие"
+      ],
+      "incidentalPopulationEvidence": []
     },
     {
       "originalScientificName": "Tulipa zenaidae",

@@ -1,0 +1,242 @@
+{
+  "id": "tulipa-anadroma",
+  "scientificName": "Tulipa tschimganica",
+  "names": {
+    "ru": "Тюльпан вверхстремящийся",
+    "ky": null,
+    "uz": null,
+    "en": null
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Liliopsida",
+    "order": "Liliales",
+    "family": "Liliaceae",
+    "genus": "Tulipa"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Tulipa anadroma",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Мелкоземистые и лёссово-щебнистые склоны в ореховых лесах.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Хозяйственное использование лесных угодий и массовый сбор цветов.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В статье отмечено весеннее поедание луковиц дикими животными.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная книга 2006 года рекомендует мониторинг, охрану местообитаний в Сары-Челекском заповеднике и запрет сбора и выкапывания луковиц.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=79",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 12",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Tulipa anadroma",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/5299666",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview"
+      ],
+      "taxonId": "gbif:5299666"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Жёлтоцветковый тюльпан ореховых лесов Чаткальского хребта. Цветёт весной, размножается семенами; сбор цветов и хозяйственное использование лесов угрожают ему.",
+        "ky": "Чаткал тоо кыркасындагы жаңгак токойлорунда өскөн сары гүлдүү жоогазын. Жазында гүлдөп, урук аркылуу көбөйөт; гүл терүү жана токойду чарбага колдонуу зыян келтирет.",
+        "uz": "Chatqol tizmasining yongʻoq oʻrmonlarida oʻsadigan sariq gulli lola. Bahorda gullab, urugʻdan koʻpayadi; gul terish va oʻrmonlardan xoʻjalikda foydalanish unga xavf soladi.",
+        "en": "A yellow-flowered tulip of Chatkal walnut forests. It flowers in spring and reproduces by seed; flower picking and economic use of forest land threaten it."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Тюльпан вверхстремящийся включён в национальную книгу под именем Tulipa anadroma. В сохранённой сверке GBIF это точный синоним Tulipa tschimganica того же видового ранга. Описание ниже сохраняет географию и признаки национального концепта 2006 года. Растение достигает 30 см, имеет узколанцетные листья, направленные вверх и прижатые к стеблю. Одиночный светло-жёлтый цветок лилейной формы несёт более тёмное пятно у основания; наружные листочки околоцветника с внешней стороны имеют малиновую полосу.\n\nВ статье названы ореховые леса Чаткальского хребта Кыргызстана и Узбекистана, с мелкоземистыми и лёссово-щебнистыми склонами. Цветение в природе начинается в начале мая и длится две–три недели; для культуры в Бишкеке приведена середина апреля. Размножение семенное, сроки плодоношения неизвестны.\n\nХозяйственное использование лесов и массовый сбор цветков ограничивают сохранение растения. Авторы также отмечают весеннее поедание луковиц дикими животными. Предложены мониторинг и полная охрана природных местообитаний в Сары-Челекском заповеднике, запрет сбора и выкапывания. Количественных сведений о популяции нет. Историческая категория VU требует отдельной оценки применимости к современному таксону.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Луковица до 3,5 см, стебель до 30 см, сверху пушистый. Три–четыре острых сизоватых листа направлены вверх. Одиночный светло-жёлтый цветок имеет тёмно-жёлтое основание и малиновые участки на спинке наружных листочков околоцветника; коробочка узко-трёхгранная, до 5 см.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальном описании вид растёт на мелкоземистых и лёссово-щебнистых склонах в ореховых лесах. В культуре отмечены двухцветковые растения с восемью листочками околоцветника; эти изменения не перенесены в описание дикой формы.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Размножается семенами. Цветение в природе — начало мая, продолжительность две–три недели; в культуре Бишкекского ботанического сада — середина апреля. Сроки плодоношения в статье не установлены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Историческая национальная статья под именем Tulipa anadroma указывает Чаткальский хребет Кыргызстана и Узбекистана, а также обсуждает охрану в Сары-Челекском заповеднике. Новые точки присутствия не добавлены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

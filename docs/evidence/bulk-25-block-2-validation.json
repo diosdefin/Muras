@@ -1,0 +1,557 @@
+{
+  "schemaVersion": 1,
+  "documentType": "unpublished-content-quality-report",
+  "preservedFiles": 153,
+  "sourceCatalogCount": 40,
+  "pipeline": {
+    "schemaVersion": 1,
+    "registryId": "bulk-25-content",
+    "catalogFingerprint": "6ffd82165fd7f2ce9a24f38ca2aae9a885e0fe8e1d672a8630725ac5b36b5cf0",
+    "counts": {
+      "processed": 5,
+      "accepted": 5,
+      "deferred": 0,
+      "rejected": 0
+    },
+    "states": {
+      "pending": 0,
+      "needs_evidence": 0,
+      "research_ready": 0,
+      "needs_photo": 0,
+      "ready_for_review": 5,
+      "approved_for_import": 0,
+      "imported": 0,
+      "rejected": 0
+    },
+    "results": [
+      {
+        "candidateId": "tulipa-affinis",
+        "batchNumber": 2,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "cac3eb7a709f5d7585c2eee70a2f7f0d8847dd86511501dcf255ad3b80fc7543",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "tulipa-anadroma",
+        "batchNumber": 2,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "689b9a8961dd108331bc28aee19aa7132dd8a206cf95f0753b52ef0d2b72482c",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "tulipa-korolkowii",
+        "batchNumber": 2,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "2a1b3908b77aa385db92ea209a7ff84ced3bb4d0097176d3b25ceccf53ee73ed",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "tulipa-platystemon",
+        "batchNumber": 2,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "da329486c7eb84475f77ffa3e08df9cb9c3c3d6afebba12fbbf1920bdf684c6f",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "tulipa-tetraphylla",
+        "batchNumber": 2,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "4efef7eae0b98b988f1485e7555db5085a517c3b71a0e0b0bbff20268a9b1335",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      }
+    ]
+  },
+  "quality": [
+    {
+      "candidateId": "tulipa-affinis",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          76,
+          77
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Tulipa fosteriana",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5299364",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=77"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/5299364"
+        }
+      ],
+      "shortLengthRu": 152,
+      "overviewWordsRu": 149,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz",
+          "en"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Учёт численности",
+        "Плодоношение",
+        "Современная география национального таксономического концепта"
+      ],
+      "editorialNotes": [
+        "Tulipa affinis → Tulipa fosteriana: точный синоним того же ранга по GBIF. Историческая категория и ареал относятся к национальному концепту affinis; охват широкого принятого вида требует специалиста."
+      ],
+      "technicalErrors": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "tulipa-anadroma",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          78,
+          79
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Tulipa tschimganica",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5299666",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=79"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/5299666"
+        }
+      ],
+      "shortLengthRu": 158,
+      "overviewWordsRu": 151,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz",
+          "en"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Датированная численность",
+        "Плодоношение",
+        "Современный таксономический охват национального включения"
+      ],
+      "editorialNotes": [
+        "Tulipa anadroma → Tulipa tschimganica: GBIF подтверждает точную синонимию того же ранга. Русское название и биология сохранены для исторической национальной записи."
+      ],
+      "technicalErrors": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "tulipa-korolkowii",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          86,
+          87
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Tulipa korolkowii",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5299568",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=87"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Tulipa%20korolkowii"
+        }
+      ],
+      "shortLengthRu": 162,
+      "overviewWordsRu": 146,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz",
+          "en"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Численность",
+        "Современные местонахождения",
+        "Региональное уточнение фенологии"
+      ],
+      "editorialNotes": [
+        "Фенология RU и EN различается по ширине интервала; сведения не усреднялись."
+      ],
+      "technicalErrors": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "tulipa-platystemon",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          90,
+          91
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Tulipa platystemon",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5299510",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=91"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Tulipa%20platystemon"
+        }
+      ],
+      "shortLengthRu": 161,
+      "overviewWordsRu": 151,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz",
+          "en"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Условия местообитания",
+        "Плодоношение и размножение",
+        "Численность",
+        "Культивирование",
+        "Современное присутствие"
+      ],
+      "editorialNotes": [
+        "habitat:null соответствует прямому отсутствию данных в первоисточнике; техническая готовность не означает достаточность экологической изученности."
+      ],
+      "technicalErrors": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "tulipa-tetraphylla",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          94,
+          95
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Tulipa tetraphylla",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5299660",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=95"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Tulipa%20tetraphylla"
+        }
+      ],
+      "shortLengthRu": 160,
+      "overviewWordsRu": 150,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz",
+          "en"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Численность",
+        "Плодоношение и способы размножения",
+        "Культивирование",
+        "Современное присутствие"
+      ],
+      "editorialNotes": [],
+      "technicalErrors": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    }
+  ]
+}

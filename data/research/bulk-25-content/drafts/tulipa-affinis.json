@@ -1,0 +1,254 @@
+{
+  "id": "tulipa-affinis",
+  "scientificName": "Tulipa fosteriana",
+  "names": {
+    "ru": "Тюльпан родственный",
+    "ky": null,
+    "uz": null,
+    "en": null
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Liliopsida",
+    "order": "Liliales",
+    "family": "Liliaceae",
+    "genus": "Tulipa"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Tulipa affinis",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Каменисто-мелкоземистые почвы среди арчевников; по национальному описанию Tulipa affinis.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Хозяйственное освоение местообитаний.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Сбор цветов и выкапывание луковиц.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически внесён в Красную книгу Киргизской ССР 1985 года.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В 2006 году рекомендованы ботанические заказники, мониторинг и запрет сбора, продажи цветов и выкапывания луковиц.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=77",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "conservationMeasures.1",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 16",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Tulipa affinis",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/5299364",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview"
+      ],
+      "taxonId": "gbif:5299364"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Тюльпан с крупным красным цветком и широкими сизо-зелёными листьями. В Красной книге описан с каменистых склонов среди арчевников Туркестанского хребта.",
+        "ky": "Чоң кызыл гүлдүү, жазы бозомук жашыл жалбырактуу жоогазын. Кызыл китепте Түркстан тоо кыркасындагы арчалардын арасындагы таштуу беттерде өсөрү көрсөтүлгөн.",
+        "uz": "Yirik qizil gulli, keng koʻkimtir-yashil bargli lola. Qizil kitobda Turkiston tizmasidagi archazorlar orasining toshli yonbagʻirlarida qayd etilgan.",
+        "en": "A tulip with a large red flower and broad grey-green leaves. The national Red Book describes it on stony slopes among junipers in the Turkestan Range."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В Красной книге 2006 года тюльпан родственный приведён под именем Tulipa affinis. Сохранённая точная таксономическая сверка GBIF относит это имя к синонимам Tulipa fosteriana. Здесь описывается именно историческая национальная запись, а не весь современный ареал принятого вида. Растение имеет яйцевидную луковицу диаметром до 4 см, стебель до 30 см и несколько широких сизо-зелёных листьев с опушением. Одиночный крупный цветок красный, с тёмным пятном и узким жёлтым окаймлением у основания листочков околоцветника.\n\nВ Кыргызстане статья указывает Туркестанский хребет, бассейн Ак-Суу и горы восточнее Сулюкты. Места произрастания — каменистые мелкоземистые почвы среди арчевников. Указано семенное размножение; английское резюме датирует цветение апрелем–маем. Учёты численности не проводились.\n\nСбор цветов и выкапывание луковиц, вместе с хозяйственным освоением местообитаний, названы угрозами. Опыт выращивания в Бишкеке оценён как недостаточно изученный: растения быстро выпадали из посадок. Рекомендации авторов включают ботанические заказники, контроль популяций и запрет сбора и торговли. Категория VU сохранена только как характеристика исторической национальной записи.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Луковица яйцевидная, до 4 см в диаметре; стебель до 30 см, сверху пушистый. Три–четыре широколанцетных листа до 25 см, сизо-зелёные, опушённые. Крупный одиночный цветок красный или малиново-красный, с чёрным пятном у основания и узким ярко-жёлтым окаймлением.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический таксон Tulipa affinis описан на каменисто-мелкоземистых почвах среди арчевников. Сведения о культивировании ограничены неблагополучным опытом посадок в Бишкеке; это не измерение жизнеспособности в природе.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная статья указывает размножение семенами; английское резюме — цветение в апреле–мае. Сроки плодоношения и данные о прорастании не приведены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная запись под именем Tulipa affinis: Туркестанский хребет, бассейн Ак-Суу, урочище Туе-Джайлоо и горы восточнее Сулюкты. Общая география статьи включает также Нуратау и северный макросклон Туркестанского хребта за пределами Кыргызстана.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

@@ -1,0 +1,1285 @@
+{
+  "schemaVersion": 1,
+  "documentType": "research-draft-batch",
+  "batchId": "bulk-25-content-2",
+  "records": [
+    {
+      "candidateId": "tulipa-affinis",
+      "species": {
+        "verified": false,
+        "lastReviewedAt": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "id": "tulipa-affinis",
+        "scientificName": "Tulipa fosteriana",
+        "names": {
+          "ru": "Тюльпан родственный",
+          "ky": null,
+          "uz": null,
+          "en": null
+        },
+        "taxonomy": {
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "class": "Liliopsida",
+          "order": "Liliales",
+          "family": "Liliaceae",
+          "genus": "Tulipa"
+        },
+        "group": "plants",
+        "nationalRedBook": {
+          "listed": true,
+          "category": "VU",
+          "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Tulipa affinis",
+          "year": 2006,
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": {
+          "description": {
+            "ky": null,
+            "uz": null,
+            "ru": "Каменисто-мелкоземистые почвы среди арчевников; по национальному описанию Tulipa affinis.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "regions": [
+          {
+            "type": "country",
+            "code": "KG",
+            "names": {
+              "ru": "Кыргызстан",
+              "ky": "Кыргызстан",
+              "uz": "Qirgʻiziston",
+              "en": "Kyrgyzstan"
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "threats": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Хозяйственное освоение местообитаний.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Сбор цветов и выкапывание луковиц.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "conservationMeasures": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Исторически внесён в Красную книгу Киргизской ССР 1985 года.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "В 2006 году рекомендованы ботанические заказники, мониторинг и запрет сбора, продажи цветов и выкапывания луковиц.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "images": [],
+        "sources": [
+          {
+            "id": "national-book",
+            "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+            "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=77",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalRedBook.edition",
+              "nationalRedBook.year",
+              "group",
+              "regions.0",
+              "originalScientificName",
+              "names.ru",
+              "habitat",
+              "content.shortDescription",
+              "content.overview",
+              "content.appearance",
+              "content.ecology",
+              "content.reproduction",
+              "content.distribution",
+              "threats.0",
+              "threats.1",
+              "conservationMeasures.0",
+              "conservationMeasures.1",
+              "nationalRedBook.category"
+            ]
+          },
+          {
+            "id": "national-list-1",
+            "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 16",
+            "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalSourceRecords"
+            ]
+          },
+          {
+            "id": "gbif-taxonomy",
+            "title": "GBIF Backbone: Tulipa affinis",
+            "publisher": "GBIF",
+            "url": "https://api.gbif.org/v1/species/5299364",
+            "accessedAt": "2026-10-14",
+            "language": "en",
+            "supports": [
+              "scientificName",
+              "taxonomy.kingdom",
+              "taxonomy.phylum",
+              "taxonomy.class",
+              "taxonomy.order",
+              "taxonomy.family",
+              "taxonomy.genus",
+              "content.overview"
+            ],
+            "taxonId": "gbif:5299364"
+          }
+        ],
+        "content": {
+          "shortDescription": {
+            "text": {
+              "ru": "Тюльпан с крупным красным цветком и широкими сизо-зелёными листьями. В Красной книге описан с каменистых склонов среди арчевников Туркестанского хребта.",
+              "ky": "Чоң кызыл гүлдүү, жазы бозомук жашыл жалбырактуу жоогазын. Кызыл китепте Түркстан тоо кыркасындагы арчалардын арасындагы таштуу беттерде өсөрү көрсөтүлгөн.",
+              "uz": "Yirik qizil gulli, keng koʻkimtir-yashil bargli lola. Qizil kitobda Turkiston tizmasidagi archazorlar orasining toshli yonbagʻirlarida qayd etilgan.",
+              "en": "A tulip with a large red flower and broad grey-green leaves. The national Red Book describes it on stony slopes among junipers in the Turkestan Range."
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "overview": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "В Красной книге 2006 года тюльпан родственный приведён под именем Tulipa affinis. Сохранённая точная таксономическая сверка GBIF относит это имя к синонимам Tulipa fosteriana. Здесь описывается именно историческая национальная запись, а не весь современный ареал принятого вида. Растение имеет яйцевидную луковицу диаметром до 4 см, стебель до 30 см и несколько широких сизо-зелёных листьев с опушением. Одиночный крупный цветок красный, с тёмным пятном и узким жёлтым окаймлением у основания листочков околоцветника.\n\nВ Кыргызстане статья указывает Туркестанский хребет, бассейн Ак-Суу и горы восточнее Сулюкты. Места произрастания — каменистые мелкоземистые почвы среди арчевников. Указано семенное размножение; английское резюме датирует цветение апрелем–маем. Учёты численности не проводились.\n\nСбор цветов и выкапывание луковиц, вместе с хозяйственным освоением местообитаний, названы угрозами. Опыт выращивания в Бишкеке оценён как недостаточно изученный: растения быстро выпадали из посадок. Рекомендации авторов включают ботанические заказники, контроль популяций и запрет сбора и торговли. Категория VU сохранена только как характеристика исторической национальной записи.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book",
+              "gbif-taxonomy"
+            ]
+          },
+          "appearance": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Луковица яйцевидная, до 4 см в диаметре; стебель до 30 см, сверху пушистый. Три–четыре широколанцетных листа до 25 см, сизо-зелёные, опушённые. Крупный одиночный цветок красный или малиново-красный, с чёрным пятном у основания и узким ярко-жёлтым окаймлением.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "ecology": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Исторический таксон Tulipa affinis описан на каменисто-мелкоземистых почвах среди арчевников. Сведения о культивировании ограничены неблагополучным опытом посадок в Бишкеке; это не измерение жизнеспособности в природе.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "diet": null,
+          "reproduction": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Национальная статья указывает размножение семенами; английское резюме — цветение в апреле–мае. Сроки плодоношения и данные о прорастании не приведены.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "distribution": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Национальная запись под именем Tulipa affinis: Туркестанский хребет, бассейн Ак-Суу, урочище Туе-Джайлоо и горы восточнее Сулюкты. Общая география статьи включает также Нуратау и северный макросклон Туркестанского хребта за пределами Кыргызстана.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        }
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Tulipa fosteriana",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5299364",
+        "sourceId": "gbif-taxonomy"
+      },
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "tulipa-anadroma",
+      "species": {
+        "verified": false,
+        "lastReviewedAt": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "id": "tulipa-anadroma",
+        "scientificName": "Tulipa tschimganica",
+        "names": {
+          "ru": "Тюльпан вверхстремящийся",
+          "ky": null,
+          "uz": null,
+          "en": null
+        },
+        "taxonomy": {
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "class": "Liliopsida",
+          "order": "Liliales",
+          "family": "Liliaceae",
+          "genus": "Tulipa"
+        },
+        "group": "plants",
+        "nationalRedBook": {
+          "listed": true,
+          "category": "VU",
+          "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Tulipa anadroma",
+          "year": 2006,
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": {
+          "description": {
+            "ky": null,
+            "uz": null,
+            "ru": "Мелкоземистые и лёссово-щебнистые склоны в ореховых лесах.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "regions": [
+          {
+            "type": "country",
+            "code": "KG",
+            "names": {
+              "ru": "Кыргызстан",
+              "ky": "Кыргызстан",
+              "uz": "Qirgʻiziston",
+              "en": "Kyrgyzstan"
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "threats": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Хозяйственное использование лесных угодий и массовый сбор цветов.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "В статье отмечено весеннее поедание луковиц дикими животными.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "conservationMeasures": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Национальная книга 2006 года рекомендует мониторинг, охрану местообитаний в Сары-Челекском заповеднике и запрет сбора и выкапывания луковиц.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "images": [],
+        "sources": [
+          {
+            "id": "national-book",
+            "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+            "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=79",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalRedBook.edition",
+              "nationalRedBook.year",
+              "group",
+              "regions.0",
+              "originalScientificName",
+              "names.ru",
+              "habitat",
+              "content.shortDescription",
+              "content.overview",
+              "content.appearance",
+              "content.ecology",
+              "content.reproduction",
+              "content.distribution",
+              "threats.0",
+              "threats.1",
+              "conservationMeasures.0",
+              "nationalRedBook.category"
+            ]
+          },
+          {
+            "id": "national-list-1",
+            "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 12",
+            "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalSourceRecords"
+            ]
+          },
+          {
+            "id": "gbif-taxonomy",
+            "title": "GBIF Backbone: Tulipa anadroma",
+            "publisher": "GBIF",
+            "url": "https://api.gbif.org/v1/species/5299666",
+            "accessedAt": "2026-10-14",
+            "language": "en",
+            "supports": [
+              "scientificName",
+              "taxonomy.kingdom",
+              "taxonomy.phylum",
+              "taxonomy.class",
+              "taxonomy.order",
+              "taxonomy.family",
+              "taxonomy.genus",
+              "content.overview"
+            ],
+            "taxonId": "gbif:5299666"
+          }
+        ],
+        "content": {
+          "shortDescription": {
+            "text": {
+              "ru": "Жёлтоцветковый тюльпан ореховых лесов Чаткальского хребта. Цветёт весной, размножается семенами; сбор цветов и хозяйственное использование лесов угрожают ему.",
+              "ky": "Чаткал тоо кыркасындагы жаңгак токойлорунда өскөн сары гүлдүү жоогазын. Жазында гүлдөп, урук аркылуу көбөйөт; гүл терүү жана токойду чарбага колдонуу зыян келтирет.",
+              "uz": "Chatqol tizmasining yongʻoq oʻrmonlarida oʻsadigan sariq gulli lola. Bahorda gullab, urugʻdan koʻpayadi; gul terish va oʻrmonlardan xoʻjalikda foydalanish unga xavf soladi.",
+              "en": "A yellow-flowered tulip of Chatkal walnut forests. It flowers in spring and reproduces by seed; flower picking and economic use of forest land threaten it."
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "overview": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Тюльпан вверхстремящийся включён в национальную книгу под именем Tulipa anadroma. В сохранённой сверке GBIF это точный синоним Tulipa tschimganica того же видового ранга. Описание ниже сохраняет географию и признаки национального концепта 2006 года. Растение достигает 30 см, имеет узколанцетные листья, направленные вверх и прижатые к стеблю. Одиночный светло-жёлтый цветок лилейной формы несёт более тёмное пятно у основания; наружные листочки околоцветника с внешней стороны имеют малиновую полосу.\n\nВ статье названы ореховые леса Чаткальского хребта Кыргызстана и Узбекистана, с мелкоземистыми и лёссово-щебнистыми склонами. Цветение в природе начинается в начале мая и длится две–три недели; для культуры в Бишкеке приведена середина апреля. Размножение семенное, сроки плодоношения неизвестны.\n\nХозяйственное использование лесов и массовый сбор цветков ограничивают сохранение растения. Авторы также отмечают весеннее поедание луковиц дикими животными. Предложены мониторинг и полная охрана природных местообитаний в Сары-Челекском заповеднике, запрет сбора и выкапывания. Количественных сведений о популяции нет. Историческая категория VU требует отдельной оценки применимости к современному таксону.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book",
+              "gbif-taxonomy"
+            ]
+          },
+          "appearance": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Луковица до 3,5 см, стебель до 30 см, сверху пушистый. Три–четыре острых сизоватых листа направлены вверх. Одиночный светло-жёлтый цветок имеет тёмно-жёлтое основание и малиновые участки на спинке наружных листочков околоцветника; коробочка узко-трёхгранная, до 5 см.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "ecology": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "В национальном описании вид растёт на мелкоземистых и лёссово-щебнистых склонах в ореховых лесах. В культуре отмечены двухцветковые растения с восемью листочками околоцветника; эти изменения не перенесены в описание дикой формы.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "diet": null,
+          "reproduction": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Размножается семенами. Цветение в природе — начало мая, продолжительность две–три недели; в культуре Бишкекского ботанического сада — середина апреля. Сроки плодоношения в статье не установлены.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "distribution": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Историческая национальная статья под именем Tulipa anadroma указывает Чаткальский хребет Кыргызстана и Узбекистана, а также обсуждает охрану в Сары-Челекском заповеднике. Новые точки присутствия не добавлены.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        }
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Tulipa tschimganica",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5299666",
+        "sourceId": "gbif-taxonomy"
+      },
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "tulipa-korolkowii",
+      "species": {
+        "verified": false,
+        "lastReviewedAt": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "id": "tulipa-korolkowii",
+        "scientificName": "Tulipa korolkowii",
+        "names": {
+          "ru": "Тюльпан Королькова",
+          "ky": null,
+          "uz": null,
+          "en": null
+        },
+        "taxonomy": {
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "class": "Liliopsida",
+          "order": "Liliales",
+          "family": "Liliaceae",
+          "genus": "Tulipa"
+        },
+        "group": "plants",
+        "nationalRedBook": {
+          "listed": true,
+          "category": "VU",
+          "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+          "year": 2006,
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": {
+          "description": {
+            "ky": null,
+            "uz": null,
+            "ru": "Песчаные, щебнистые и каменистые склоны предгорий.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "regions": [
+          {
+            "type": "country",
+            "code": "KG",
+            "names": {
+              "ru": "Кыргызстан",
+              "ky": "Кыргызстан",
+              "uz": "Qirgʻiziston",
+              "en": "Kyrgyzstan"
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "threats": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Массовый сбор цветов на букеты.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Распашка и неумеренный выпас скота.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "conservationMeasures": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Издание 2006 года рекомендует ботанические заказники и мониторинг популяций.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Историческая рекомендация: запрет сбора цветов и луковиц, ограничение выпаса до обсеменения.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "images": [],
+        "sources": [
+          {
+            "id": "national-book",
+            "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+            "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=87",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalRedBook.edition",
+              "nationalRedBook.year",
+              "group",
+              "regions.0",
+              "originalScientificName",
+              "names.ru",
+              "habitat",
+              "content.shortDescription",
+              "content.overview",
+              "content.appearance",
+              "content.ecology",
+              "content.reproduction",
+              "content.distribution",
+              "threats.0",
+              "threats.1",
+              "conservationMeasures.0",
+              "conservationMeasures.1",
+              "nationalRedBook.category"
+            ]
+          },
+          {
+            "id": "national-list-1",
+            "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 17",
+            "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalSourceRecords"
+            ]
+          },
+          {
+            "id": "gbif-taxonomy",
+            "title": "GBIF Backbone: Tulipa korolkowii",
+            "publisher": "GBIF",
+            "url": "https://api.gbif.org/v1/species/match?strict=true&name=Tulipa%20korolkowii",
+            "accessedAt": "2026-10-14",
+            "language": "en",
+            "supports": [
+              "scientificName",
+              "taxonomy.kingdom",
+              "taxonomy.phylum",
+              "taxonomy.class",
+              "taxonomy.order",
+              "taxonomy.family",
+              "taxonomy.genus"
+            ],
+            "taxonId": "gbif:5299568"
+          }
+        ],
+        "content": {
+          "shortDescription": {
+            "text": {
+              "ru": "Невысокий тюльпан с ярко-красным одиночным цветком и курчавыми сизыми листьями. В Кыргызстане описан на предгорных склонах северной стороны Туркестанского хребта.",
+              "ky": "Жапыз жоогазын, жалгыз гүлү ачык кызыл, жалбырактары бозомук жана толкундуу. Кыргызстанда Түркстан тоо кыркасынын түндүк тарабындагы тоо этектеринде сүрөттөлгөн.",
+              "uz": "Past boʻyli lola; yakka guli yorqin qizil, barglari koʻkimtir va jingalak. Qirgʻizistonda Turkiston tizmasining shimoliy etaklaridagi yonbagʻirlarda qayd etilgan.",
+              "en": "A low tulip with a single bright red flower and wavy greyish leaves. In Kyrgyzstan it is described on foothill slopes of the northern Turkestan Range."
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "overview": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Тюльпан Королькова — яркоцветущее луковичное растение, национальная статья которого связывает основной ареал с Узбекистаном и Таджикистаном. В Кыргызстане он описан на северном макросклоне Туркестанского хребта. Небольшой стебель обычно достигает 10–20 см, иногда 30 см. Три сизых листа отличаются сильно курчавыми краями. Одиночный цветок ярко-красный, блестящий изнутри, с небольшим чёрным пятном у основания; в бутоне он поникает.\n\nРастение занимает песчаные, щебнистые и каменистые склоны предгорий. Русская часть книги указывает цветение в марте–апреле и плодоношение в июне–июле, а также семенное размножение. Английское резюме сужает цветение до апреля, поэтому календарные сроки требуют региональной проверки. Численность в природе не установлена.\n\nДекоративность делает вид уязвимым к сбору на букеты. Распашка и неумеренный выпас дополнительно повреждают местообитания. В статье приведён исторический опыт выращивания в ботанических садах Ташкента и Душанбе. Рекомендации включают заказники, мониторинг, запрет сбора цветов и луковиц и ограничение выпаса до образования семян. Национальная категория VU относится к изданию 2006 года.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "appearance": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Яйцевидная луковица диаметром 1,5–2,5 см с чёрными кожистыми оболочками. Стебель 10–20, иногда 30 см. Три сизых листа с сильно курчавыми краями. Цветок одиночный, ярко-красный, высотой до 6 см, с небольшим чёрным пятном у основания; пыльники жёлтые.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "ecology": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Предгорные песчаные, щебнистые и каменистые склоны. Национальный источник отмечает уязвимость местообитаний к распашке и неумеренному выпасу, а самих растений — к сбору на букеты.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "diet": null,
+          "reproduction": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Русская статья: цветение март–апрель, плодоношение июнь–июль, размножение семенами. Английское резюме указывает цветение в апреле; точный местный календарь требует полевого уточнения.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "distribution": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "В Кыргызстане исторически указан северный макросклон Туркестанского хребта. Общий ареал в статье — Юго-Западный Тянь-Шань и Памиро-Алай, с основной частью в Узбекистане и Таджикистане.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        }
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Tulipa korolkowii",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5299568",
+        "sourceId": "gbif-taxonomy"
+      },
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "tulipa-platystemon",
+      "species": {
+        "verified": false,
+        "lastReviewedAt": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "id": "tulipa-platystemon",
+        "scientificName": "Tulipa platystemon",
+        "names": {
+          "ru": "Тюльпан широкотычиночный",
+          "ky": null,
+          "uz": null,
+          "en": null
+        },
+        "taxonomy": {
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "class": "Liliopsida",
+          "order": "Liliales",
+          "family": "Liliaceae",
+          "genus": "Tulipa"
+        },
+        "group": "plants",
+        "nationalRedBook": {
+          "listed": true,
+          "category": "VU",
+          "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+          "year": 2006,
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": null,
+        "regions": [
+          {
+            "type": "country",
+            "code": "KG",
+            "names": {
+              "ru": "Кыргызстан",
+              "ky": "Кыргызстан",
+              "uz": "Qirgʻiziston",
+              "en": "Kyrgyzstan"
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "threats": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Весенний выпас скота.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Сбор цветов и выкапывание луковиц.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "conservationMeasures": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Национальная книга рекомендует ботанические заказники, мониторинг и запрет сбора цветов, выкапывания луковиц и выпаса.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "images": [],
+        "sources": [
+          {
+            "id": "national-book",
+            "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+            "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=91",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalRedBook.edition",
+              "nationalRedBook.year",
+              "group",
+              "regions.0",
+              "originalScientificName",
+              "names.ru",
+              "habitat",
+              "content.shortDescription",
+              "content.overview",
+              "content.appearance",
+              "content.ecology",
+              "content.reproduction",
+              "content.distribution",
+              "threats.0",
+              "threats.1",
+              "conservationMeasures.0",
+              "nationalRedBook.category"
+            ]
+          },
+          {
+            "id": "national-list-1",
+            "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 21",
+            "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalSourceRecords"
+            ]
+          },
+          {
+            "id": "gbif-taxonomy",
+            "title": "GBIF Backbone: Tulipa platystemon",
+            "publisher": "GBIF",
+            "url": "https://api.gbif.org/v1/species/match?strict=true&name=Tulipa%20platystemon",
+            "accessedAt": "2026-10-14",
+            "language": "en",
+            "supports": [
+              "scientificName",
+              "taxonomy.kingdom",
+              "taxonomy.phylum",
+              "taxonomy.class",
+              "taxonomy.order",
+              "taxonomy.family",
+              "taxonomy.genus"
+            ],
+            "taxonId": "gbif:5299510"
+          }
+        ],
+        "content": {
+          "shortDescription": {
+            "text": {
+              "ru": "Небольшой жёлтоцветковый тюльпан, известный по Красной книге с перевала Сары-Бия Алайского хребта. Цветёт в июне; численность и условия местообитания неизвестны.",
+              "ky": "Кызыл китепте Алай тоо кыркасындагы Сары-Бия ашуусунан белгилүү болгон жапыз, сары гүлдүү жоогазын. Июнда гүлдөйт; саны жана өсүү шарттары боюнча маалымат жок.",
+              "uz": "Qizil kitobda Oloy tizmasining Sari-Biya dovonidan qayd etilgan kichik, sariq gulli lola. Iyun oyida gullaydi; soni va yashash sharoitlari nomaʼlum.",
+              "en": "A small yellow-flowered tulip recorded in the Red Book from Sary-Biya Pass in the Alai Range. It blooms in June; population size and habitat details are unknown."
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "overview": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Тюльпан широкотычиночный описан в национальной Красной книге как узкий эндемик Алайского хребта. Единственная приведённая локальная привязка — перевал Сары-Бия. Это многолетнее растение с коротким периодом вегетации и яйцевидной луковицей диаметром до 2 см. Голый стебель вместе с цветоножкой достигает около 17 см. В описанном экземпляре четыре расставленных листа и два жёлтых цветка; наружные листочки околоцветника с внешней стороны имеют фиолетовый оттенок.\n\nДля вида указан июньский срок цветения. Сведения о плодоношении, местообитании, численности и культивировании прямо обозначены в книге как отсутствующие. Поэтому принадлежность перевалу не преобразована в точные высоты, тип растительности, почвенную характеристику или координаты. Данные о размножении за пределами срока цветения также остаются неизвестными.\n\nВ перечне угроз авторы называют весенний выпас, сбор цветков и выкапывание луковиц. Рекомендуются ботанические заказники в местах концентрации растения, мониторинг и ограничения изъятия и выпаса. Подтверждения реализации этих мер не приведены. Историческая категория VU документирует оценку издания 2006 года, но не является новой оценкой современного состояния вида.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "appearance": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Луковица яйцевидная, до 2 см. Голый стебель с цветоножкой около 17 см. Четыре расставленных листа, нижние отогнуты; нижний линейно-ланцетный, шириной 2 см. В описании два жёлтых цветка с листочками околоцветника длиной около 4 см. Тычиночные нити расширены выше середины.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "ecology": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Источник характеризует растение как коротковегетирующий луковичный геофит, но не сообщает условия местообитания. Экологические предпочтения по расположению перевала не выводятся.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "diet": null,
+          "reproduction": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Цветение — июнь. Плодоношение и способы размножения в доступной национальной статье не описаны.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "distribution": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Историческая запись 2006 года: Алайский хребет, перевал Сары-Бия. Точное положение популяций и современное присутствие не подтверждены.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        }
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Tulipa platystemon",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5299510",
+        "sourceId": "gbif-taxonomy"
+      },
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "tulipa-tetraphylla",
+      "species": {
+        "verified": false,
+        "lastReviewedAt": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "id": "tulipa-tetraphylla",
+        "scientificName": "Tulipa tetraphylla",
+        "names": {
+          "ru": "Тюльпан четырёхлистный",
+          "ky": null,
+          "uz": null,
+          "en": null
+        },
+        "taxonomy": {
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "class": "Liliopsida",
+          "order": "Liliales",
+          "family": "Liliaceae",
+          "genus": "Tulipa"
+        },
+        "group": "plants",
+        "nationalRedBook": {
+          "listed": true,
+          "category": "VU",
+          "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+          "year": 2006,
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": {
+          "description": {
+            "ky": null,
+            "uz": null,
+            "ru": "Каменистые склоны; по национальному описанию 2006 года.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "regions": [
+          {
+            "type": "country",
+            "code": "KG",
+            "names": {
+              "ru": "Кыргызстан",
+              "ky": "Кыргызстан",
+              "uz": "Qirgʻiziston",
+              "en": "Kyrgyzstan"
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "threats": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Весенний выпас скота.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Сбор цветов и выкапывание луковиц.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "conservationMeasures": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Исторические рекомендации: ботанические заказники, мониторинг и запрет сбора цветов, выкапывания луковиц и выпаса.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "images": [],
+        "sources": [
+          {
+            "id": "national-book",
+            "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+            "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=95",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalRedBook.edition",
+              "nationalRedBook.year",
+              "group",
+              "regions.0",
+              "originalScientificName",
+              "names.ru",
+              "habitat",
+              "content.shortDescription",
+              "content.overview",
+              "content.appearance",
+              "content.ecology",
+              "content.reproduction",
+              "content.distribution",
+              "threats.0",
+              "threats.1",
+              "conservationMeasures.0",
+              "nationalRedBook.category"
+            ]
+          },
+          {
+            "id": "national-list-1",
+            "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 22",
+            "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalSourceRecords"
+            ]
+          },
+          {
+            "id": "gbif-taxonomy",
+            "title": "GBIF Backbone: Tulipa tetraphylla",
+            "publisher": "GBIF",
+            "url": "https://api.gbif.org/v1/species/match?strict=true&name=Tulipa%20tetraphylla",
+            "accessedAt": "2026-10-14",
+            "language": "en",
+            "supports": [
+              "scientificName",
+              "taxonomy.kingdom",
+              "taxonomy.phylum",
+              "taxonomy.class",
+              "taxonomy.order",
+              "taxonomy.family",
+              "taxonomy.genus"
+            ],
+            "taxonId": "gbif:5299660"
+          }
+        ],
+        "content": {
+          "shortDescription": {
+            "text": {
+              "ru": "Низкорослый тюльпан Внутреннего Тянь-Шаня с жёлтыми цветками и сизыми серповидными листьями. Растёт на каменистых склонах, цветёт в мае; численность неизвестна.",
+              "ky": "Ички Тянь-Шанда өскөн жапыз жоогазын. Гүлдөрү сары, жалбырактары бозомук, орок сымал. Таштуу беттерде өсүп, майда гүлдөйт; жаратылыштагы саны белгисиз.",
+              "uz": "Ichki Tyanshanning past boʻyli lolasi. Gullari sariq, barglari koʻkimtir va oʻroqsimon. Toshli yonbagʻirlarda oʻsadi, may oyida gullaydi; tabiatdagi soni nomaʼlum.",
+              "en": "A low tulip of the Inner Tien Shan with yellow flowers and greyish, sickle-shaped leaves. It grows on stony slopes and blooms in May; population size is unknown."
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "overview": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Тюльпан четырёхлистный представлен в Красной книге 2006 года как эндемик Внутреннего Тянь-Шаня. Несмотря на русское название, национальное описание допускает от трёх до семи листьев. Они сизые, серповидные, желобчатые, нередко курчавые, с белым краем. Голый стебель достигает 3–25 см. На растении бывает от одного до четырёх жёлтых цветков, поникающих в бутоне; снаружи листочки околоцветника имеют зелёные участки и жилку.\n\nВид описан на каменистых склонах. Его короткий вегетационный сезон включает цветение в мае. В статье приводится строение коробочки, однако срок плодоношения прямо отмечен как неизвестный. Нет количественного учёта популяций и сведений о культивировании. Наличие морфологического описания плода не даёт основания приписывать ему точный сезон созревания.\n\nОсновные угрозы — весенний выпас, сбор цветков и выкапывание луковиц. Специальные меры охраны в момент подготовки книги считались неразработанными. Авторы рекомендовали ботанические заказники, мониторинг и запрет изъятия растений и выпаса на участках произрастания. Национальная категория VU сохраняет привязку к историческому изданию и не подменяет актуальную оценку состояния.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "appearance": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Луковица широкояйцевидная, 1,5–3 см, с жёсткими коричневато-чёрными оболочками. Стебель 3–25 см. Листьев три–семь, сизые, серповидные и желобчатые. Цветков один–четыре, жёлтые; внешняя поверхность околоцветника имеет жёлто-зелёные или зелёные пятна и центральную зелёную жилку.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "ecology": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Луковичный эфемероид каменистых склонов Внутреннего Тянь-Шаня. Подробные высотные пределы и почвенные характеристики в национальной статье не указаны.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "diet": null,
+          "reproduction": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Цветёт в мае. Сроки плодоношения не установлены, способы размножения в статье не описаны.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "distribution": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Историческая национальная география: Внутренний Тянь-Шань. Подтверждённых современных точек наблюдения в используемых материалах нет.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        }
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Tulipa tetraphylla",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5299660",
+        "sourceId": "gbif-taxonomy"
+      },
+      "state": "ready_for_review"
+    }
+  ]
+}
