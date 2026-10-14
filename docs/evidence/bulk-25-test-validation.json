@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "documentType": "bulk-25-command-validation",
+  "validatedContentCommit": "139a62c934d24ef8b2ab653feffe5177a051e855",
+  "commands": [
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "tests": 274,
+      "passed": 274,
+      "failed": 0,
+      "log": ".generated/bulk-25/full-tests.log",
+      "logSha256": "838e043eccf38f87fa0d00b11d5c82ab87fc92d53e7434af7df72345bf5813e2"
+    },
+    {
+      "command": "npm run data",
+      "exitCode": 0,
+      "catalog": 40,
+      "archive": 2,
+      "quiz": 18,
+      "regions": 7,
+      "regionalEvidence": 2
+    },
+    {
+      "command": "npm run data:validate",
+      "exitCode": 0,
+      "localeKeys": 614,
+      "languages": 4
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "modules": 102,
+      "log": ".generated/bulk-25/build.log",
+      "logSha256": "91130e4f1d147efe0949c20118d6205d81564bdb30917c966d2ce2228f1fc9c5"
+    },
+    {
+      "command": "node --test tests/bulk-25-content.test.mjs",
+      "exitCode": 0,
+      "tests": 4,
+      "passed": 4,
+      "failed": 0
+    }
+  ],
+  "preservation": "bulk-25-preservation.json",
+  "remainingBlockers": [],
+  "independentlyReviewed": false
+}
