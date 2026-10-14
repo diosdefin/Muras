@@ -1186,7 +1186,7 @@
         },
         {
           "path": "data/research/bulk-25-content/block-2-facts.json",
-          "sha256": "181b7da72f042c43b5d591385d2efa4ba9ab53d07825ca1c1e0ad2325a580c5e"
+          "sha256": "e9db167acff60292d3f60e837b4ce39e7e41263552821cec2580851e7b2a9b3d"
         },
         {
           "path": "docs/evidence/bulk-25-block-2-accounts.json",
@@ -1245,7 +1245,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "44ccce27750345a6f24ea5728c38cc02d77da497cb9d1a3075c17c16c5c0ce96",
+        "fingerprint": "388bd5135b24ff522f7ad87aa01e0a29c0d14c9a966d93272d0b2de52324632e",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -1270,7 +1270,7 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "44ccce27750345a6f24ea5728c38cc02d77da497cb9d1a3075c17c16c5c0ce96",
+      "checkedFingerprint": "388bd5135b24ff522f7ad87aa01e0a29c0d14c9a966d93272d0b2de52324632e",
       "draftFile": "data/research/bulk-25-content/drafts/tulipa-affinis.json",
       "editorialNotes": [
         "Tulipa affinis → Tulipa fosteriana: точный синоним того же ранга по GBIF. Историческая категория и ареал относятся к национальному концепту affinis; охват широкого принятого вида требует специалиста."
@@ -1381,7 +1381,9 @@
           "taxonId": "gbif:5299666"
         }
       ],
-      "contradictions": [],
+      "contradictions": [
+        "Аудит 22.4: GBIF scientificName содержит Tulipa ×tschimganica Botschantz. и Tulipa × anadroma Botschantz.; canonicalName скрывает ×. Национальная статья Tulipa anadroma не устанавливает гибридный статус. Требуется решение ботаника о соответствии концепта и сохранении маркера."
+      ],
       "missingData": [],
       "materials": [
         {
@@ -1398,7 +1400,7 @@
         },
         {
           "path": "data/research/bulk-25-content/block-2-facts.json",
-          "sha256": "181b7da72f042c43b5d591385d2efa4ba9ab53d07825ca1c1e0ad2325a580c5e"
+          "sha256": "e9db167acff60292d3f60e837b4ce39e7e41263552821cec2580851e7b2a9b3d"
         },
         {
           "path": "docs/evidence/bulk-25-block-2-accounts.json",
@@ -1444,20 +1446,20 @@
       "preparation": {
         "status": "prepared",
         "sourceMasterId": "tulipa-anadroma",
-        "factsFingerprint": "4d96c89414e67d13a8bb52683e9a92119a9c029837e4998d8cf59d6347cc9324",
-        "draftSha256": "6ad25336f203dc07f54c7adfb7f26f57d564c4fbb465f61c77c42e5fc739cfcf"
+        "factsFingerprint": "3bbb4bdfb42f2fd8314e6efee674528bb49efdd3a6aa84e63f8209e03207ce59",
+        "draftSha256": "a9df98bca06523d072b6f57a82979be5098d36f2bb87613c1463c981d68215ed"
       },
-      "state": "ready_for_review",
+      "state": "needs_evidence",
       "approval": null,
       "diagnostics": {
         "candidateId": "tulipa-anadroma",
         "batchNumber": 2,
-        "state": "ready_for_review",
-        "errors": [],
-        "warnings": [
-          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        "state": "needs_evidence",
+        "errors": [
+          "Есть нерешённые противоречия или обязательные пробелы"
         ],
-        "fingerprint": "a61f7857a308d3104eb803840c24af588385e53b8c7155dfdca55f2e426f8f92",
+        "warnings": [],
+        "fingerprint": "7ffd9162637590f9e58364c9c931fbcb2be7a44c87f5d54ed5ece20f86c1d222",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -1482,15 +1484,17 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "a61f7857a308d3104eb803840c24af588385e53b8c7155dfdca55f2e426f8f92",
+      "checkedFingerprint": "7ffd9162637590f9e58364c9c931fbcb2be7a44c87f5d54ed5ece20f86c1d222",
       "draftFile": "data/research/bulk-25-content/drafts/tulipa-anadroma.json",
       "editorialNotes": [
-        "Tulipa anadroma → Tulipa tschimganica: GBIF подтверждает точную синонимию того же ранга. Русское название и биология сохранены для исторической национальной записи."
+        "Tulipa anadroma → Tulipa tschimganica: предложение на основе canonicalName GBIF того же ранга; исходные полные имена содержат ×. Соответствие национальному концепту не установлено, биология сохранена только для исторической записи.",
+        "Аудит 22.4: GBIF scientificName содержит Tulipa ×tschimganica Botschantz. и Tulipa × anadroma Botschantz.; canonicalName скрывает ×. Национальная статья Tulipa anadroma не устанавливает гибридный статус. Требуется решение ботаника о соответствии концепта и сохранении маркера."
       ],
       "missingFacts": [
         "Датированная численность",
         "Плодоношение",
-        "Современный таксономический охват национального включения"
+        "Современный таксономический охват национального включения",
+        "Соответствие национального концепта гибридному обозначению GBIF"
       ],
       "incidentalPopulationEvidence": []
     },
@@ -1611,7 +1615,7 @@
         },
         {
           "path": "data/research/bulk-25-content/block-2-facts.json",
-          "sha256": "181b7da72f042c43b5d591385d2efa4ba9ab53d07825ca1c1e0ad2325a580c5e"
+          "sha256": "e9db167acff60292d3f60e837b4ce39e7e41263552821cec2580851e7b2a9b3d"
         },
         {
           "path": "docs/evidence/bulk-25-block-2-accounts.json",
@@ -1657,7 +1661,7 @@
       "preparation": {
         "status": "prepared",
         "sourceMasterId": "tulipa-korolkowii",
-        "factsFingerprint": "8dffa0d94ebeaaa3bc1d6515dd3586ea00b1412a904e4138cf23f03e25749efe",
+        "factsFingerprint": "5cef1ebe342c15ad8c4306b8c48f301559dad5b8b4f50a865c6f707996731b78",
         "draftSha256": "e06194973c0096c55476518911c1da33a2774c2a8151d160a35ce87b9d4053b6"
       },
       "state": "ready_for_review",
@@ -1670,7 +1674,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "f1230f77da24627a5186399d5a04f51b104817003578d04e570193618b6dae65",
+        "fingerprint": "e71d21fd453cce70f44f010d7a316e0d612ddfaa801d36874892e3cd4a304279",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -1694,10 +1698,11 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "f1230f77da24627a5186399d5a04f51b104817003578d04e570193618b6dae65",
+      "checkedFingerprint": "e71d21fd453cce70f44f010d7a316e0d612ddfaa801d36874892e3cd4a304279",
       "draftFile": "data/research/bulk-25-content/drafts/tulipa-korolkowii.json",
       "editorialNotes": [
-        "Фенология RU и EN различается по ширине интервала; сведения не усреднялись."
+        "Фенология RU и EN различается по ширине интервала; сведения не усреднялись.",
+        "Перечень 2009 года называет Tulipa nitida (приложение 1, строка 17); очерк 2006 года прямо приводит T. nitida Th. Hoog при Tulipa korolkowii Regel. Связь перечня с карточкой основана на альтернативном имени в том же очерке, а не на буквальном совпадении названий."
       ],
       "missingFacts": [
         "Численность",
@@ -1760,7 +1765,6 @@
             "regions.0",
             "originalScientificName",
             "names.ru",
-            "habitat",
             "content.shortDescription",
             "content.overview",
             "content.appearance",
@@ -1822,7 +1826,7 @@
         },
         {
           "path": "data/research/bulk-25-content/block-2-facts.json",
-          "sha256": "181b7da72f042c43b5d591385d2efa4ba9ab53d07825ca1c1e0ad2325a580c5e"
+          "sha256": "e9db167acff60292d3f60e837b4ce39e7e41263552821cec2580851e7b2a9b3d"
         },
         {
           "path": "docs/evidence/bulk-25-block-2-accounts.json",
@@ -1869,7 +1873,7 @@
         "status": "prepared",
         "sourceMasterId": "tulipa-platystemon",
         "factsFingerprint": "c674fc2d84f29f86cd2c4693464281c684402dd0b16aa28d643f88c9cbabf6ff",
-        "draftSha256": "c7bda4a0503e44cfbe6fc3f8b13f1666be349a061b56ac2f238801640b4b35c5"
+        "draftSha256": "7809ca724da102937206fc4c534ad9bf12dc67751c1acf4cfc2cf54387f86de5"
       },
       "state": "ready_for_review",
       "approval": null,
@@ -1881,7 +1885,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "0cb4adb35aaf80292b291c06f7e779a60e68d5ff0abbddad99aa2a765353ffc4",
+        "fingerprint": "59cb16a5f675ab9591b5f14605efed85306f0104a9e0a63149c9a3ef0f0ed1a9",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -1905,7 +1909,7 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "0cb4adb35aaf80292b291c06f7e779a60e68d5ff0abbddad99aa2a765353ffc4",
+      "checkedFingerprint": "59cb16a5f675ab9591b5f14605efed85306f0104a9e0a63149c9a3ef0f0ed1a9",
       "draftFile": "data/research/bulk-25-content/drafts/tulipa-platystemon.json",
       "editorialNotes": [
         "habitat:null соответствует прямому отсутствию данных в первоисточнике; техническая готовность не означает достаточность экологической изученности."
@@ -2035,7 +2039,7 @@
         },
         {
           "path": "data/research/bulk-25-content/block-2-facts.json",
-          "sha256": "181b7da72f042c43b5d591385d2efa4ba9ab53d07825ca1c1e0ad2325a580c5e"
+          "sha256": "e9db167acff60292d3f60e837b4ce39e7e41263552821cec2580851e7b2a9b3d"
         },
         {
           "path": "docs/evidence/bulk-25-block-2-accounts.json",
@@ -2094,7 +2098,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "e0d291fd534eb8d2b0565387cb8e2de6cc9d26d58da9137ae06c8c478b416fb3",
+        "fingerprint": "4f0f046507c860edf89f545a5a5adfab4edca2bbfabb4a95a9c608ab75613c47",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -2118,7 +2122,7 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "e0d291fd534eb8d2b0565387cb8e2de6cc9d26d58da9137ae06c8c478b416fb3",
+      "checkedFingerprint": "4f0f046507c860edf89f545a5a5adfab4edca2bbfabb4a95a9c608ab75613c47",
       "draftFile": "data/research/bulk-25-content/drafts/tulipa-tetraphylla.json",
       "editorialNotes": [],
       "missingFacts": [
@@ -2246,7 +2250,7 @@
         },
         {
           "path": "data/research/bulk-25-content/block-3-facts.json",
-          "sha256": "b481416b4ce163fd2f45ea65b1b640905829d1b1391bab00178bd122d1d87579"
+          "sha256": "263d3d5e893f31d7bb207326c31c3fa5b9181183e42a9f330cf6b44d32bb2dfb"
         },
         {
           "path": "docs/evidence/bulk-25-block-3-accounts.json",
@@ -2305,7 +2309,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "1389e972a4541e8ce83ffab2e1716931fae2f35a54ab589d8645deb535d09bbf",
+        "fingerprint": "c9a7c0025e2bd7341f17e964ecbacc91f81409d41cfa7894cfc3cb5cb2c35acd",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -2330,7 +2334,7 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "1389e972a4541e8ce83ffab2e1716931fae2f35a54ab589d8645deb535d09bbf",
+      "checkedFingerprint": "c9a7c0025e2bd7341f17e964ecbacc91f81409d41cfa7894cfc3cb5cb2c35acd",
       "draftFile": "data/research/bulk-25-content/drafts/tulipa-zenaidae.json",
       "editorialNotes": [
         "Tulipa zenaidae → Tulipa lehmanniana: подтверждённая GBIF синонимия того же ранга. Национальная оценка не распространена на весь широкий принятый таксон."
@@ -2459,7 +2463,7 @@
         },
         {
           "path": "data/research/bulk-25-content/block-3-facts.json",
-          "sha256": "b481416b4ce163fd2f45ea65b1b640905829d1b1391bab00178bd122d1d87579"
+          "sha256": "263d3d5e893f31d7bb207326c31c3fa5b9181183e42a9f330cf6b44d32bb2dfb"
         },
         {
           "path": "docs/evidence/bulk-25-block-3-accounts.json",
@@ -2518,7 +2522,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "b7cd3bce2cff3128ec2bb628922f271c75ae1b5093777f446405e7f48a839dda",
+        "fingerprint": "3f28b4988490687279e947b1a46165dd2a393290f6946818df06495fece02fba",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -2543,7 +2547,7 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "b7cd3bce2cff3128ec2bb628922f271c75ae1b5093777f446405e7f48a839dda",
+      "checkedFingerprint": "3f28b4988490687279e947b1a46165dd2a393290f6946818df06495fece02fba",
       "draftFile": "data/research/bulk-25-content/drafts/juno-orchioides.json",
       "editorialNotes": [
         "Juno orchioides → Iris orchioides: точная синонимия того же ранга; сохранены национальное имя и источник биологии."
@@ -2680,7 +2684,7 @@
         },
         {
           "path": "data/research/bulk-25-content/block-3-facts.json",
-          "sha256": "b481416b4ce163fd2f45ea65b1b640905829d1b1391bab00178bd122d1d87579"
+          "sha256": "263d3d5e893f31d7bb207326c31c3fa5b9181183e42a9f330cf6b44d32bb2dfb"
         },
         {
           "path": "docs/evidence/bulk-25-block-3-accounts.json",
@@ -2736,7 +2740,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "d40214db0595b9901653f1b5fe7c7ebac6c90fe26b300d62a5c6dcf878f87add",
+        "fingerprint": "4b6232afac7cdc65523749f52c3872cd88bba2600f952d771cfaacb8877a6c6a",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -2761,7 +2765,7 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "d40214db0595b9901653f1b5fe7c7ebac6c90fe26b300d62a5c6dcf878f87add",
+      "checkedFingerprint": "4b6232afac7cdc65523749f52c3872cd88bba2600f952d771cfaacb8877a6c6a",
       "draftFile": "data/research/bulk-25-content/drafts/iridodictyum-kolpakowskianum.json",
       "editorialNotes": [
         "Iridodictyum kolpakowskianum → Iris kolpakowskiana: подтверждённая синонимия того же ранга. Фотография документирована под принятым именем в категории Commons."
@@ -2889,7 +2893,7 @@
         },
         {
           "path": "data/research/bulk-25-content/block-3-facts.json",
-          "sha256": "b481416b4ce163fd2f45ea65b1b640905829d1b1391bab00178bd122d1d87579"
+          "sha256": "263d3d5e893f31d7bb207326c31c3fa5b9181183e42a9f330cf6b44d32bb2dfb"
         },
         {
           "path": "docs/evidence/bulk-25-block-3-accounts.json",
@@ -2948,7 +2952,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "64ffc5dee75164ecf03cbe9ed13de46a12b92c2a799da615ab86e27c76f74abd",
+        "fingerprint": "1d11600435a739cd4f8efc06a8d20f33302bbb2d6656be1ca8b4df5135c72e88",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -2973,7 +2977,7 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "64ffc5dee75164ecf03cbe9ed13de46a12b92c2a799da615ab86e27c76f74abd",
+      "checkedFingerprint": "1d11600435a739cd4f8efc06a8d20f33302bbb2d6656be1ca8b4df5135c72e88",
       "draftFile": "data/research/bulk-25-content/drafts/thesium-minkwitzianum.json",
       "editorialNotes": [
         "Thesium minkwitzianum → Chrysothesium minkwitzianum: GBIF подтверждает точную синонимию того же ранга.",
@@ -3112,7 +3116,7 @@
         },
         {
           "path": "data/research/bulk-25-content/block-3-facts.json",
-          "sha256": "b481416b4ce163fd2f45ea65b1b640905829d1b1391bab00178bd122d1d87579"
+          "sha256": "263d3d5e893f31d7bb207326c31c3fa5b9181183e42a9f330cf6b44d32bb2dfb"
         },
         {
           "path": "docs/evidence/bulk-25-block-3-accounts.json",
@@ -3158,8 +3162,8 @@
       "preparation": {
         "status": "prepared",
         "sourceMasterId": "delphinium-knorringianum",
-        "factsFingerprint": "92cb0ab1a68814133d06a0ac334e212e5ed6f69e0ec4bdefb7b7410e1752934a",
-        "draftSha256": "c3678a30fc53301b85ce0bcd23f2dd49988cc7e7370397cfed4324c9c78eda75"
+        "factsFingerprint": "cdec3dc564ef98e67fcdd7b3595afc2cabea20e7eaf16475bcb3211ba0090271",
+        "draftSha256": "70a3a331faa366132c45571ffa00e11eeda94737eef8808a0924ed1c0dfd44c6"
       },
       "state": "ready_for_review",
       "approval": null,
@@ -3171,7 +3175,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "8d045926b9c67c5c5bc7890cce63a959f53e6ec532a3468ef3e9cfd8c470aae2",
+        "fingerprint": "b153192328b5aaaf51f7753b7a0450b1596f0cccbe99c824cb4369f95ea23c9d",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -3195,9 +3199,11 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "8d045926b9c67c5c5bc7890cce63a959f53e6ec532a3468ef3e9cfd8c470aae2",
+      "checkedFingerprint": "b153192328b5aaaf51f7753b7a0450b1596f0cccbe99c824cb4369f95ea23c9d",
       "draftFile": "data/research/bulk-25-content/drafts/delphinium-knorringianum.json",
-      "editorialNotes": [],
+      "editorialNotes": [
+        "Аудит 22.4: термин «тепкичи» заменён на «текөөрчөсү» по KY-статье, PDF с. 108; старые шрифтовые ё/ъ нормализованы в ө/ү. Пять долей листа также прямо описаны в первоисточнике."
+      ],
       "missingFacts": [
         "Численность",
         "Плодоношение",
@@ -3323,7 +3329,7 @@
         },
         {
           "path": "data/research/bulk-25-content/block-4-facts.json",
-          "sha256": "ea45dcb0e18a67bc7f8a5c3d8fa4379e655c21f7905c747e6b4a031666807174"
+          "sha256": "f80a3a2ac7a7f760faecc5c01c089140d70fd8f09c67763c6d6acc66eeee93d4"
         },
         {
           "path": "docs/evidence/bulk-25-block-4-accounts.json",
@@ -3331,7 +3337,7 @@
         },
         {
           "path": "docs/evidence/bulk-25-block-4-images.json",
-          "sha256": "94e26ebb11e96331ffc2944f25b423a23e9db51b795de5c1bf421d9cbed9ec86"
+          "sha256": "0103462c842dfe66e37193dfc04b0e41278d8ec1d29f9f082f0a54684bc1c98e"
         }
       ],
       "draft": null,
@@ -3382,7 +3388,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "5d1ee3531b6659e7ead15020f44706c766b7cab9c887749bbd62e324dd261d31",
+        "fingerprint": "abcadb2d596b636828b2164e2cfd979af8aaa2d71819f11f4f196a5999053548",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -3406,7 +3412,7 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "5d1ee3531b6659e7ead15020f44706c766b7cab9c887749bbd62e324dd261d31",
+      "checkedFingerprint": "abcadb2d596b636828b2164e2cfd979af8aaa2d71819f11f4f196a5999053548",
       "draftFile": "data/research/bulk-25-content/drafts/urocerus-sah.json",
       "editorialNotes": [
         "Видовой ранг подтверждён точным принятым таксоном GBIF. Обсуждавшееся в книге понижение до подвида U. augur не применено."
@@ -3535,7 +3541,7 @@
         },
         {
           "path": "data/research/bulk-25-content/block-4-facts.json",
-          "sha256": "ea45dcb0e18a67bc7f8a5c3d8fa4379e655c21f7905c747e6b4a031666807174"
+          "sha256": "f80a3a2ac7a7f760faecc5c01c089140d70fd8f09c67763c6d6acc66eeee93d4"
         },
         {
           "path": "docs/evidence/bulk-25-block-4-accounts.json",
@@ -3543,7 +3549,7 @@
         },
         {
           "path": "docs/evidence/bulk-25-block-4-images.json",
-          "sha256": "94e26ebb11e96331ffc2944f25b423a23e9db51b795de5c1bf421d9cbed9ec86"
+          "sha256": "0103462c842dfe66e37193dfc04b0e41278d8ec1d29f9f082f0a54684bc1c98e"
         }
       ],
       "draft": null,
@@ -3594,7 +3600,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "fb513940442406ca1f3725555303b8720d629e7c8f0ad54d4a5df2020d54f752",
+        "fingerprint": "161255ab160b09d519a7b1ce71977bfdc6d24151e7daae53cc666c208e6cc172",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -3618,7 +3624,7 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "fb513940442406ca1f3725555303b8720d629e7c8f0ad54d4a5df2020d54f752",
+      "checkedFingerprint": "161255ab160b09d519a7b1ce71977bfdc6d24151e7daae53cc666c208e6cc172",
       "draftFile": "data/research/bulk-25-content/drafts/masaris-longicornis.json",
       "editorialNotes": [
         "Часть иссык-кульского ареала в первоисточнике опирается на предполагаемый синоним M. tianshanicus, а не на окончательно подтверждённую идентификацию; не использована для картографирования."
@@ -3706,7 +3712,6 @@
           "accessedAt": "2026-10-14",
           "language": "ru",
           "supports": [
-            "nationalRedBook.listed",
             "nationalSourceRecords"
           ]
         },
@@ -3756,7 +3761,7 @@
         },
         {
           "path": "data/research/bulk-25-content/block-4-facts.json",
-          "sha256": "ea45dcb0e18a67bc7f8a5c3d8fa4379e655c21f7905c747e6b4a031666807174"
+          "sha256": "f80a3a2ac7a7f760faecc5c01c089140d70fd8f09c67763c6d6acc66eeee93d4"
         },
         {
           "path": "docs/evidence/bulk-25-block-4-accounts.json",
@@ -3764,7 +3769,7 @@
         },
         {
           "path": "docs/evidence/bulk-25-block-4-images.json",
-          "sha256": "94e26ebb11e96331ffc2944f25b423a23e9db51b795de5c1bf421d9cbed9ec86"
+          "sha256": "0103462c842dfe66e37193dfc04b0e41278d8ec1d29f9f082f0a54684bc1c98e"
         }
       ],
       "draft": null,
@@ -3801,8 +3806,8 @@
       "preparation": {
         "status": "prepared",
         "sourceMasterId": "varanus-griseus-caspius",
-        "factsFingerprint": "4a964bbc49930d63128c7668ff3602f52f7e95c279db43a3737fad8fb85a99ee",
-        "draftSha256": "ecd6739ea47de313d3057917245699935e8b4baa21f5c37e8af547c9acd0f43c"
+        "factsFingerprint": "508abe60311476b61f91b17d8ad101a261e55bcb14fa3a501b1a9cec64789c3a",
+        "draftSha256": "6b0b1aa2f61a928e27443c5ae1586a8b459a884e128b99876033e00bdfa9ca0c"
       },
       "state": "ready_for_review",
       "approval": null,
@@ -3812,7 +3817,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "089f149a75caa0a48dde84fca486dca138829200b7f69bc8cddc0a38a8b89ee7",
+        "fingerprint": "057ccb48e2414081f38896a718ee42c1299a8e7de1ebf3accbcafb4cfcd2967d",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -3836,11 +3841,12 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "089f149a75caa0a48dde84fca486dca138829200b7f69bc8cddc0a38a8b89ee7",
+      "checkedFingerprint": "057ccb48e2414081f38896a718ee42c1299a8e7de1ebf3accbcafb4cfcd2967d",
       "draftFile": "data/research/bulk-25-content/drafts/varanus-griseus-caspius.json",
       "editorialNotes": [
         "Ранг SUBSPECIES и точный таксон gbif сохранены, родительский вид отдельно не добавлен.",
-        "RU: CR A4bc; E; EN: EN A4bc; E. nationalRedBook.category:null до независимой проверки. Старые CITES и запреты не выдаются за проверенное действующее право."
+        "RU: CR A4bc; E; EN: EN A4bc; E. nationalRedBook.category:null до независимой проверки. Старые CITES и запреты не выдаются за проверенное действующее право.",
+        "Перечень 2009 года указывает только родительский вид Varanus griseus (приложение 5, строка 5). Включение именно подвида caspius подтверждено очерком Красной книги 2006 года; родительский перечень сам по себе не доказывает включение подвида."
       ],
       "missingFacts": [
         "Описание внешности именно подвида",
@@ -3949,6 +3955,17 @@
           "taxonId": "gbif:2465319"
         },
         {
+          "id": "gbif-national-name-match",
+          "title": "GBIF: сохранённый match Eryx tataricus с авторством Tzarevsky, 1915",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Eryx%20tataricus",
+          "accessedAt": "2026-10-14",
+          "language": "en",
+          "supports": [
+            "content.overview"
+          ]
+        },
+        {
           "id": "photo-commons",
           "title": "Reptilium Landau",
           "publisher": "Wikimedia Commons; Vincent Malloy",
@@ -3957,10 +3974,12 @@
           "supports": [
             "images.0.caption"
           ],
-          "language": "en"
+          "language": null
         }
       ],
-      "contradictions": [],
+      "contradictions": [
+        "Аудит 22.4: национальная статья Eryx tataricus (Lichtenstein, 1823), но GBIF match вернул Eryx tataricus Tzarevsky, 1915 → Eryx miliaris. Совпадение canonicalName не подтверждает одинаковый национальный таксон; прежние материалы также отмечают отличие концепта IUCN. Требуется решение герпетолога, подмена принятого имени не выполнялась."
+      ],
       "missingData": [],
       "materials": [
         {
@@ -3977,7 +3996,7 @@
         },
         {
           "path": "data/research/bulk-25-content/block-4-facts.json",
-          "sha256": "ea45dcb0e18a67bc7f8a5c3d8fa4379e655c21f7905c747e6b4a031666807174"
+          "sha256": "f80a3a2ac7a7f760faecc5c01c089140d70fd8f09c67763c6d6acc66eeee93d4"
         },
         {
           "path": "docs/evidence/bulk-25-block-4-accounts.json",
@@ -3985,7 +4004,7 @@
         },
         {
           "path": "docs/evidence/bulk-25-block-4-images.json",
-          "sha256": "94e26ebb11e96331ffc2944f25b423a23e9db51b795de5c1bf421d9cbed9ec86"
+          "sha256": "0103462c842dfe66e37193dfc04b0e41278d8ec1d29f9f082f0a54684bc1c98e"
         }
       ],
       "draft": null,
@@ -4022,21 +4041,23 @@
       "preparation": {
         "status": "prepared",
         "sourceMasterId": "eryx-tataricus",
-        "factsFingerprint": "78ba4d265896f405361a9d3a141973a2cc44b53e321e750c06950cf4fe11c4be",
-        "draftSha256": "89a5d90bd549d4906b451afabb8f3ddd4e20fdb10f1f4361030c4df26e901b1d"
+        "factsFingerprint": "26b10b3b7046bfc6e68eeb4e64e2462fccfb0a333d9e26b4ceb4b931a29d68e7",
+        "draftSha256": "1bc97925cb7a18eecef14799015ddc583d3f598676f9ece49e0c6d6fe7787788"
       },
-      "state": "ready_for_review",
+      "state": "needs_evidence",
       "approval": null,
       "diagnostics": {
         "candidateId": "eryx-tataricus",
         "batchNumber": 4,
-        "state": "ready_for_review",
-        "errors": [],
+        "state": "needs_evidence",
+        "errors": [
+          "Есть нерешённые противоречия или обязательные пробелы"
+        ],
         "warnings": [],
-        "fingerprint": "fd1c493c1a6434ea8b5deadf5e04e4c7b4bfc7e3d9290db5b3b4e4e64be88886",
+        "fingerprint": "a0b2d61fbc99ad3c4a190862ddda5904d7236e901f04bba5b1109676a44d435a",
         "readiness": {
           "photo": "prepared",
-          "photoCheck": "passed",
+          "photoCheck": "not_run",
           "shortDescriptions": {
             "ky": true,
             "uz": true,
@@ -4058,16 +4079,17 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "fd1c493c1a6434ea8b5deadf5e04e4c7b4bfc7e3d9290db5b3b4e4e64be88886",
+      "checkedFingerprint": "a0b2d61fbc99ad3c4a190862ddda5904d7236e901f04bba5b1109676a44d435a",
       "draftFile": "data/research/bulk-25-content/drafts/eryx-tataricus.json",
       "editorialNotes": [
-        "Eryx tataricus → Eryx miliaris: точная синонимия того же ранга по GBIF.",
-        "Предполагаемая популяция Токмакского заказника не признана подтверждённой: RU пишет «возможно», EN — как факт. Действующие CITES-ограничения не проверялись и не заявляются."
+        "Предполагаемая популяция Токмакского заказника не признана подтверждённой: RU пишет «возможно», EN — как факт. Действующие CITES-ограничения не проверялись и не заявляются.",
+        "Аудит 22.4: национальная статья Eryx tataricus (Lichtenstein, 1823), но GBIF match вернул Eryx tataricus Tzarevsky, 1915 → Eryx miliaris. Совпадение canonicalName не подтверждает одинаковый национальный таксон; прежние материалы также отмечают отличие концепта IUCN. Требуется решение герпетолога, подмена принятого имени не выполнялась."
       ],
       "missingFacts": [
         "Описание внешности национального концепта",
         "Датированная численность",
-        "Современный охват таксона и охрана"
+        "Современный охват таксона и охрана",
+        "Авторство и соответствие национального Eryx tataricus предложенному Eryx miliaris"
       ],
       "incidentalPopulationEvidence": [
         {
@@ -4189,7 +4211,7 @@
           "supports": [
             "images.0.caption"
           ],
-          "language": "en"
+          "language": null
         }
       ],
       "contradictions": [],
@@ -4209,7 +4231,7 @@
         },
         {
           "path": "data/research/bulk-25-content/block-4-facts.json",
-          "sha256": "ea45dcb0e18a67bc7f8a5c3d8fa4379e655c21f7905c747e6b4a031666807174"
+          "sha256": "f80a3a2ac7a7f760faecc5c01c089140d70fd8f09c67763c6d6acc66eeee93d4"
         },
         {
           "path": "docs/evidence/bulk-25-block-4-accounts.json",
@@ -4217,7 +4239,7 @@
         },
         {
           "path": "docs/evidence/bulk-25-block-4-images.json",
-          "sha256": "94e26ebb11e96331ffc2944f25b423a23e9db51b795de5c1bf421d9cbed9ec86"
+          "sha256": "0103462c842dfe66e37193dfc04b0e41278d8ec1d29f9f082f0a54684bc1c98e"
         }
       ],
       "draft": null,
@@ -4255,7 +4277,7 @@
         "status": "prepared",
         "sourceMasterId": "lyrurus-tetrix",
         "factsFingerprint": "f310dda7f461f02db2e3748b994e4f92498385533870f2656936beaf96ecbbdb",
-        "draftSha256": "1b34c3c90c40fee0f2bb0e0347a9a35c404b73b5d20b22723e0e2158f92ecd15"
+        "draftSha256": "7e9ae132b21f8759919497fd3f6b7f7b7ca5e28be5550a3186e8552317632908"
       },
       "state": "ready_for_review",
       "approval": null,
@@ -4265,7 +4287,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "e856801b42094967905545fb070bd02aa857d3b44a1b42076fb261162f5b805f",
+        "fingerprint": "e732d3596f0b82599b57ed1a58bac9cdbacfca04c6879dbadfa7ff47f5545b05",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -4289,7 +4311,7 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "e856801b42094967905545fb070bd02aa857d3b44a1b42076fb261162f5b805f",
+      "checkedFingerprint": "e732d3596f0b82599b57ed1a58bac9cdbacfca04c6879dbadfa7ff47f5545b05",
       "draftFile": "data/research/bulk-25-content/drafts/lyrurus-tetrix.json",
       "editorialNotes": [
         "Вид SPECIES Lyrurus tetrix выбран по национальной записи. Сведения о mongolicus и фото вида не являются независимым подтверждением подвида.",
@@ -4452,7 +4474,7 @@
         },
         {
           "path": "data/research/bulk-25-content/block-5-facts.json",
-          "sha256": "dac0fcbffcd1477572c54eed69e1f7fce4ca1998bb953ab1ee4508decf978b5b"
+          "sha256": "5fd48164e51d71c02d6c4e34b7f02c741ae18a746cc406873f658e0ca7703f0a"
         },
         {
           "path": "docs/evidence/bulk-25-block-5-accounts.json",
@@ -4460,7 +4482,7 @@
         },
         {
           "path": "docs/evidence/bulk-25-block-5-images.json",
-          "sha256": "a55c753803b0ac61bbed9d9f528e436970e207be5a0fde3e9d7ac52bda34e707"
+          "sha256": "42daa32345b7d1e3ac2745b920cd24da3bc0dd78ba2c5a177bed178fc729594b"
         },
         {
           "path": "docs/evidence/bulk-25-block-5-biology.json",
@@ -4512,7 +4534,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "b49a20628504e4f25d229972dddac1a188b61db2ab200781c5502e847a665fd5",
+        "fingerprint": "109c3ac39cdcba587fa703e732718d0c977100561ae3e749f64539bc51b91c13",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -4536,7 +4558,7 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "b49a20628504e4f25d229972dddac1a188b61db2ab200781c5502e847a665fd5",
+      "checkedFingerprint": "109c3ac39cdcba587fa703e732718d0c977100561ae3e749f64539bc51b91c13",
       "draftFile": "data/research/bulk-25-content/drafts/cygnus-cygnus.json",
       "editorialNotes": [
         "Ретроспективное гнездование Сон-Куля не заявлено текущим. Расхождение старого числа пар сохранено отдельно; современная глобальная категория IUCN не устанавливалась."
@@ -4677,7 +4699,7 @@
           "supports": [
             "images.0.caption"
           ],
-          "language": "en"
+          "language": null
         }
       ],
       "contradictions": [],
@@ -4697,7 +4719,7 @@
         },
         {
           "path": "data/research/bulk-25-content/block-5-facts.json",
-          "sha256": "dac0fcbffcd1477572c54eed69e1f7fce4ca1998bb953ab1ee4508decf978b5b"
+          "sha256": "5fd48164e51d71c02d6c4e34b7f02c741ae18a746cc406873f658e0ca7703f0a"
         },
         {
           "path": "docs/evidence/bulk-25-block-5-accounts.json",
@@ -4705,7 +4727,7 @@
         },
         {
           "path": "docs/evidence/bulk-25-block-5-images.json",
-          "sha256": "a55c753803b0ac61bbed9d9f528e436970e207be5a0fde3e9d7ac52bda34e707"
+          "sha256": "42daa32345b7d1e3ac2745b920cd24da3bc0dd78ba2c5a177bed178fc729594b"
         },
         {
           "path": "docs/evidence/bulk-25-block-5-biology.json",
@@ -4747,7 +4769,7 @@
         "status": "prepared",
         "sourceMasterId": "aythya-nyroca",
         "factsFingerprint": "67cd3f0b81e2e1c2a0810745e7864fa81a8bc747461ab58342d3df51d8984377",
-        "draftSha256": "37789d4cdb949a94f6f5a37e0a36c05aafb92ae78ec35cbad511dc463f3c1cbb"
+        "draftSha256": "3dce980d082ab15eaa9fdc04df19a13cde5c474a9f087821ace05d8236333481"
       },
       "state": "ready_for_review",
       "approval": null,
@@ -4757,7 +4779,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "e0daf58e5cdf7fbf6d34aaa238989a9fde7a735d98b131d00112e297b1700849",
+        "fingerprint": "524239f146547d2f6fb591255f80442df16fd007c2bb2ea72191f98c1aef633d",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -4781,7 +4803,7 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "e0daf58e5cdf7fbf6d34aaa238989a9fde7a735d98b131d00112e297b1700849",
+      "checkedFingerprint": "524239f146547d2f6fb591255f80442df16fd007c2bb2ea72191f98c1aef633d",
       "draftFile": "data/research/bulk-25-content/drafts/aythya-nyroca.json",
       "editorialNotes": [
         "Музейный источник на испанском: language:null, поскольку модель метаданных поддерживает только KY/UZ/RU/EN; исходный язык es сохранён в исследовательском свидетельстве.",
@@ -4934,7 +4956,7 @@
         },
         {
           "path": "data/research/bulk-25-content/block-5-facts.json",
-          "sha256": "dac0fcbffcd1477572c54eed69e1f7fce4ca1998bb953ab1ee4508decf978b5b"
+          "sha256": "5fd48164e51d71c02d6c4e34b7f02c741ae18a746cc406873f658e0ca7703f0a"
         },
         {
           "path": "docs/evidence/bulk-25-block-5-accounts.json",
@@ -4942,7 +4964,7 @@
         },
         {
           "path": "docs/evidence/bulk-25-block-5-images.json",
-          "sha256": "a55c753803b0ac61bbed9d9f528e436970e207be5a0fde3e9d7ac52bda34e707"
+          "sha256": "42daa32345b7d1e3ac2745b920cd24da3bc0dd78ba2c5a177bed178fc729594b"
         },
         {
           "path": "docs/evidence/bulk-25-block-5-biology.json",
@@ -4983,8 +5005,8 @@
       "preparation": {
         "status": "prepared",
         "sourceMasterId": "mergus-serrator",
-        "factsFingerprint": "9bf27896d8a7bc673af22687197eb1e2f82fff436fd3d9edef53a6015d5d8c17",
-        "draftSha256": "860e71a31a79f91dd7a92ed6f26aa05bc676e2fda45dd9705ffd4fdcf062d7a6"
+        "factsFingerprint": "f332ffe28cf7d39283557a51d35898bac3ae90ee5e46c24ee2ec7fca2f90a9ba",
+        "draftSha256": "868606d4c735d80345cc45de2f23019f493eb1d953390edf1118caa6d85c0962"
       },
       "state": "ready_for_review",
       "approval": null,
@@ -4994,7 +5016,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "43ccae60aca7137e0e840033e3c8178e8c9eaf9ef9be571304f96bb4a9048b8d",
+        "fingerprint": "c4346da13ffd70488d85e554eea20cc276ad6e2ba983bede4f882495502dbf0b",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -5018,9 +5040,11 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "43ccae60aca7137e0e840033e3c8178e8c9eaf9ef9be571304f96bb4a9048b8d",
+      "checkedFingerprint": "c4346da13ffd70488d85e554eea20cc276ad6e2ba983bede4f882495502dbf0b",
       "draftFile": "data/research/bulk-25-content/drafts/mergus-serrator.json",
-      "editorialNotes": [],
+      "editorialNotes": [
+        "Аудит 22.4: во всех четырёх коротких версиях явно указан источник 2006 года; историческое гнездование не подаётся как подтверждённое в 2026 году."
+      ],
       "missingFacts": [
         "Современное гнездование",
         "Год старой оценки численности",
@@ -5159,7 +5183,7 @@
           "supports": [
             "images.0.caption"
           ],
-          "language": "en"
+          "language": null
         }
       ],
       "contradictions": [],
@@ -5179,7 +5203,7 @@
         },
         {
           "path": "data/research/bulk-25-content/block-5-facts.json",
-          "sha256": "dac0fcbffcd1477572c54eed69e1f7fce4ca1998bb953ab1ee4508decf978b5b"
+          "sha256": "5fd48164e51d71c02d6c4e34b7f02c741ae18a746cc406873f658e0ca7703f0a"
         },
         {
           "path": "docs/evidence/bulk-25-block-5-accounts.json",
@@ -5187,7 +5211,7 @@
         },
         {
           "path": "docs/evidence/bulk-25-block-5-images.json",
-          "sha256": "a55c753803b0ac61bbed9d9f528e436970e207be5a0fde3e9d7ac52bda34e707"
+          "sha256": "42daa32345b7d1e3ac2745b920cd24da3bc0dd78ba2c5a177bed178fc729594b"
         },
         {
           "path": "docs/evidence/bulk-25-block-5-biology.json",
@@ -5229,7 +5253,7 @@
         "status": "prepared",
         "sourceMasterId": "oxyura-leucocephala",
         "factsFingerprint": "ad5d83212d528521cee12e3b82eff1ca10504b77462ce04bb867e2a20720ebbe",
-        "draftSha256": "b8c44237866a64338173540935b5cccfd5b72f85a26e2b2bc6ae9907ca4a91e9"
+        "draftSha256": "50cf5255554c0ce5693a49821c2d0fa618cdfaf460cb1a4de340b3119a0425d0"
       },
       "state": "ready_for_review",
       "approval": null,
@@ -5239,7 +5263,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "4fb166a9027c54bc100ba41683734f4be93d7e9aab7cf20c902f9bbe22228623",
+        "fingerprint": "e67b1693d11993462c461b3220c296251474e7cd1bbe57c2da6863fc0dc57d4e",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -5263,7 +5287,7 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "4fb166a9027c54bc100ba41683734f4be93d7e9aab7cf20c902f9bbe22228623",
+      "checkedFingerprint": "e67b1693d11993462c461b3220c296251474e7cd1bbe57c2da6863fc0dc57d4e",
       "draftFile": "data/research/bulk-25-content/drafts/oxyura-leucocephala.json",
       "editorialNotes": [
         "Числа 100–4500 из национальной статьи не имеют ясного территориального охвата и не записаны как популяция Кыргызстана. Размножение в справочнике общевидовое, не подтверждение местного гнездования."
@@ -5415,7 +5439,7 @@
         },
         {
           "path": "data/research/bulk-25-content/block-5-facts.json",
-          "sha256": "dac0fcbffcd1477572c54eed69e1f7fce4ca1998bb953ab1ee4508decf978b5b"
+          "sha256": "5fd48164e51d71c02d6c4e34b7f02c741ae18a746cc406873f658e0ca7703f0a"
         },
         {
           "path": "docs/evidence/bulk-25-block-5-accounts.json",
@@ -5423,7 +5447,7 @@
         },
         {
           "path": "docs/evidence/bulk-25-block-5-images.json",
-          "sha256": "a55c753803b0ac61bbed9d9f528e436970e207be5a0fde3e9d7ac52bda34e707"
+          "sha256": "42daa32345b7d1e3ac2745b920cd24da3bc0dd78ba2c5a177bed178fc729594b"
         },
         {
           "path": "docs/evidence/bulk-25-block-5-biology.json",
@@ -5475,7 +5499,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "99bb2636c0e221c5c26e1bf7bef067c92e8056b19d08b5a91c2f0a115ffff5f3",
+        "fingerprint": "43cb8be38549ed70936372ac3d450f64da9dab37f49f72d173c3e1a27a99fcb1",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -5499,7 +5523,7 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "99bb2636c0e221c5c26e1bf7bef067c92e8056b19d08b5a91c2f0a115ffff5f3",
+      "checkedFingerprint": "43cb8be38549ed70936372ac3d450f64da9dab37f49f72d173c3e1a27a99fcb1",
       "draftFile": "data/research/bulk-25-content/drafts/gavia-arctica.json",
       "editorialNotes": [
         "Национальная категория CR: R относится к Кыргызстану в издании 2006 года. Глобальная IUCN-категория не выводилась из неё. Фото гнездящейся птицы не подтверждает гнездование на Иссык-Куле."

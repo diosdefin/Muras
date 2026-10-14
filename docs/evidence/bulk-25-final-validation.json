@@ -9,16 +9,16 @@
     "catalogFingerprint": "6ffd82165fd7f2ce9a24f38ca2aae9a885e0fe8e1d672a8630725ac5b36b5cf0",
     "counts": {
       "processed": 25,
-      "accepted": 25,
-      "deferred": 0,
+      "accepted": 23,
+      "deferred": 2,
       "rejected": 0
     },
     "states": {
       "pending": 0,
-      "needs_evidence": 0,
+      "needs_evidence": 2,
       "research_ready": 0,
       "needs_photo": 0,
-      "ready_for_review": 25,
+      "ready_for_review": 23,
       "approved_for_import": 0,
       "imported": 0,
       "rejected": 0
@@ -190,7 +190,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "44ccce27750345a6f24ea5728c38cc02d77da497cb9d1a3075c17c16c5c0ce96",
+        "fingerprint": "388bd5135b24ff522f7ad87aa01e0a29c0d14c9a966d93272d0b2de52324632e",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -218,12 +218,12 @@
       {
         "candidateId": "tulipa-anadroma",
         "batchNumber": 2,
-        "state": "ready_for_review",
-        "errors": [],
-        "warnings": [
-          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        "state": "needs_evidence",
+        "errors": [
+          "Есть нерешённые противоречия или обязательные пробелы"
         ],
-        "fingerprint": "a61f7857a308d3104eb803840c24af588385e53b8c7155dfdca55f2e426f8f92",
+        "warnings": [],
+        "fingerprint": "7ffd9162637590f9e58364c9c931fbcb2be7a44c87f5d54ed5ece20f86c1d222",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -256,7 +256,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "f1230f77da24627a5186399d5a04f51b104817003578d04e570193618b6dae65",
+        "fingerprint": "e71d21fd453cce70f44f010d7a316e0d612ddfaa801d36874892e3cd4a304279",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -288,7 +288,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "0cb4adb35aaf80292b291c06f7e779a60e68d5ff0abbddad99aa2a765353ffc4",
+        "fingerprint": "59cb16a5f675ab9591b5f14605efed85306f0104a9e0a63149c9a3ef0f0ed1a9",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -320,7 +320,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "e0d291fd534eb8d2b0565387cb8e2de6cc9d26d58da9137ae06c8c478b416fb3",
+        "fingerprint": "4f0f046507c860edf89f545a5a5adfab4edca2bbfabb4a95a9c608ab75613c47",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -352,7 +352,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "1389e972a4541e8ce83ffab2e1716931fae2f35a54ab589d8645deb535d09bbf",
+        "fingerprint": "c9a7c0025e2bd7341f17e964ecbacc91f81409d41cfa7894cfc3cb5cb2c35acd",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -385,7 +385,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "b7cd3bce2cff3128ec2bb628922f271c75ae1b5093777f446405e7f48a839dda",
+        "fingerprint": "3f28b4988490687279e947b1a46165dd2a393290f6946818df06495fece02fba",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -416,7 +416,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "d40214db0595b9901653f1b5fe7c7ebac6c90fe26b300d62a5c6dcf878f87add",
+        "fingerprint": "4b6232afac7cdc65523749f52c3872cd88bba2600f952d771cfaacb8877a6c6a",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -449,7 +449,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "64ffc5dee75164ecf03cbe9ed13de46a12b92c2a799da615ab86e27c76f74abd",
+        "fingerprint": "1d11600435a739cd4f8efc06a8d20f33302bbb2d6656be1ca8b4df5135c72e88",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -482,7 +482,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "8d045926b9c67c5c5bc7890cce63a959f53e6ec532a3468ef3e9cfd8c470aae2",
+        "fingerprint": "b153192328b5aaaf51f7753b7a0450b1596f0cccbe99c824cb4369f95ea23c9d",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -514,7 +514,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "5d1ee3531b6659e7ead15020f44706c766b7cab9c887749bbd62e324dd261d31",
+        "fingerprint": "abcadb2d596b636828b2164e2cfd979af8aaa2d71819f11f4f196a5999053548",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -546,7 +546,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "fb513940442406ca1f3725555303b8720d629e7c8f0ad54d4a5df2020d54f752",
+        "fingerprint": "161255ab160b09d519a7b1ce71977bfdc6d24151e7daae53cc666c208e6cc172",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -576,7 +576,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "089f149a75caa0a48dde84fca486dca138829200b7f69bc8cddc0a38a8b89ee7",
+        "fingerprint": "057ccb48e2414081f38896a718ee42c1299a8e7de1ebf3accbcafb4cfcd2967d",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -603,13 +603,15 @@
       {
         "candidateId": "eryx-tataricus",
         "batchNumber": 4,
-        "state": "ready_for_review",
-        "errors": [],
+        "state": "needs_evidence",
+        "errors": [
+          "Есть нерешённые противоречия или обязательные пробелы"
+        ],
         "warnings": [],
-        "fingerprint": "fd1c493c1a6434ea8b5deadf5e04e4c7b4bfc7e3d9290db5b3b4e4e64be88886",
+        "fingerprint": "a0b2d61fbc99ad3c4a190862ddda5904d7236e901f04bba5b1109676a44d435a",
         "readiness": {
           "photo": "prepared",
-          "photoCheck": "passed",
+          "photoCheck": "not_run",
           "shortDescriptions": {
             "ky": true,
             "uz": true,
@@ -637,7 +639,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "e856801b42094967905545fb070bd02aa857d3b44a1b42076fb261162f5b805f",
+        "fingerprint": "e732d3596f0b82599b57ed1a58bac9cdbacfca04c6879dbadfa7ff47f5545b05",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -667,7 +669,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "b49a20628504e4f25d229972dddac1a188b61db2ab200781c5502e847a665fd5",
+        "fingerprint": "109c3ac39cdcba587fa703e732718d0c977100561ae3e749f64539bc51b91c13",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -697,7 +699,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "e0daf58e5cdf7fbf6d34aaa238989a9fde7a735d98b131d00112e297b1700849",
+        "fingerprint": "524239f146547d2f6fb591255f80442df16fd007c2bb2ea72191f98c1aef633d",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -727,7 +729,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "43ccae60aca7137e0e840033e3c8178e8c9eaf9ef9be571304f96bb4a9048b8d",
+        "fingerprint": "c4346da13ffd70488d85e554eea20cc276ad6e2ba983bede4f882495502dbf0b",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -757,7 +759,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "4fb166a9027c54bc100ba41683734f4be93d7e9aab7cf20c902f9bbe22228623",
+        "fingerprint": "e67b1693d11993462c461b3220c296251474e7cd1bbe57c2da6863fc0dc57d4e",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -787,7 +789,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "99bb2636c0e221c5c26e1bf7bef067c92e8056b19d08b5a91c2f0a115ffff5f3",
+        "fingerprint": "43cb8be38549ed70936372ac3d450f64da9dab37f49f72d173c3e1a27a99fcb1",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -886,6 +888,7 @@
         "Русский и кыргызский тексты дают VU, английское резюме — EN. nationalRedBook.category оставлена null до независимого разрешения расхождения; это не глобальная категория IUCN."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -956,6 +959,7 @@
       ],
       "editorialNotes": [],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -1028,6 +1032,7 @@
         "RU: между Иссык-Атой и Кегети; EN: Иссык-Ата и Боом. В карточке оставлен только общий Кыргызский хребет; требует редакторского разрешения."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -1098,6 +1103,7 @@
       ],
       "editorialNotes": [],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -1170,6 +1176,7 @@
         "Характеристика эндемизма в книге историческая; не распространяется автоматически на современный расширенный ареал принятого таксона GBIF."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -1242,6 +1249,7 @@
         "Tulipa affinis → Tulipa fosteriana: точный синоним того же ранга по GBIF. Историческая категория и ареал относятся к национальному концепту affinis; охват широкого принятого вида требует специалиста."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -1281,7 +1289,7 @@
         }
       ],
       "shortLengthRu": 158,
-      "overviewWordsRu": 151,
+      "overviewWordsRu": 170,
       "languages": {
         "photo": "placeholder",
         "photoCheck": "placeholder_allowed",
@@ -1308,15 +1316,20 @@
       "missingFacts": [
         "Датированная численность",
         "Плодоношение",
-        "Современный таксономический охват национального включения"
+        "Современный таксономический охват национального включения",
+        "Соответствие национального концепта гибридному обозначению GBIF"
       ],
       "editorialNotes": [
-        "Tulipa anadroma → Tulipa tschimganica: GBIF подтверждает точную синонимию того же ранга. Русское название и биология сохранены для исторической национальной записи."
+        "Tulipa anadroma → Tulipa tschimganica: предложение на основе canonicalName GBIF того же ранга; исходные полные имена содержат ×. Соответствие национальному концепту не установлено, биология сохранена только для исторической записи.",
+        "Аудит 22.4: GBIF scientificName содержит Tulipa ×tschimganica Botschantz. и Tulipa × anadroma Botschantz.; canonicalName скрывает ×. Национальная статья Tulipa anadroma не устанавливает гибридный статус. Требуется решение ботаника о соответствии концепта и сохранении маркера."
       ],
       "technicalErrors": [],
-      "independentReview": "pending",
+      "scientificBlockers": [
+        "Аудит 22.4: GBIF scientificName содержит Tulipa ×tschimganica Botschantz. и Tulipa × anadroma Botschantz.; canonicalName скрывает ×. Национальная статья Tulipa anadroma не устанавливает гибридный статус. Требуется решение ботаника о соответствии концепта и сохранении маркера."
+      ],
+      "independentReview": "requires_specialist_resolution",
       "importPermission": "absent",
-      "state": "ready_for_review"
+      "state": "needs_evidence"
     },
     {
       "candidateId": "tulipa-korolkowii",
@@ -1382,9 +1395,11 @@
         "Региональное уточнение фенологии"
       ],
       "editorialNotes": [
-        "Фенология RU и EN различается по ширине интервала; сведения не усреднялись."
+        "Фенология RU и EN различается по ширине интервала; сведения не усреднялись.",
+        "Перечень 2009 года называет Tulipa nitida (приложение 1, строка 17); очерк 2006 года прямо приводит T. nitida Th. Hoog при Tulipa korolkowii Regel. Связь перечня с карточкой основана на альтернативном имени в том же очерке, а не на буквальном совпадении названий."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -1458,6 +1473,7 @@
         "habitat:null соответствует прямому отсутствию данных в первоисточнике; техническая готовность не означает достаточность экологической изученности."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -1528,6 +1544,7 @@
       ],
       "editorialNotes": [],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -1600,6 +1617,7 @@
         "Tulipa zenaidae → Tulipa lehmanniana: подтверждённая GBIF синонимия того же ранга. Национальная оценка не распространена на весь широкий принятый таксон."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -1671,6 +1689,7 @@
         "Juno orchioides → Iris orchioides: точная синонимия того же ранга; сохранены национальное имя и источник биологии."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -1747,6 +1766,7 @@
         "Iridodictyum kolpakowskianum → Iris kolpakowskiana: подтверждённая синонимия того же ранга. Фотография документирована под принятым именем в категории Commons."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -1821,6 +1841,7 @@
         "Сроки биологии приведены по RU; EN называет её неизвестной. Требует специалиста, неподтверждённые детали не добавлены."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -1889,8 +1910,11 @@
         "Культивирование",
         "Современные меры охраны"
       ],
-      "editorialNotes": [],
+      "editorialNotes": [
+        "Аудит 22.4: термин «тепкичи» заменён на «текөөрчөсү» по KY-статье, PDF с. 108; старые шрифтовые ё/ъ нормализованы в ө/ү. Пять долей листа также прямо описаны в первоисточнике."
+      ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -1962,6 +1986,7 @@
         "Видовой ранг подтверждён точным принятым таксоном GBIF. Обсуждавшееся в книге понижение до подвида U. augur не применено."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -2034,6 +2059,7 @@
         "Часть иссык-кульского ареала в первоисточнике опирается на предполагаемый синоним M. tianshanicus, а не на окончательно подтверждённую идентификацию; не использована для картографирования."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -2109,9 +2135,11 @@
       ],
       "editorialNotes": [
         "Ранг SUBSPECIES и точный таксон gbif сохранены, родительский вид отдельно не добавлен.",
-        "RU: CR A4bc; E; EN: EN A4bc; E. nationalRedBook.category:null до независимой проверки. Старые CITES и запреты не выдаются за проверенное действующее право."
+        "RU: CR A4bc; E; EN: EN A4bc; E. nationalRedBook.category:null до независимой проверки. Старые CITES и запреты не выдаются за проверенное действующее право.",
+        "Перечень 2009 года указывает только родительский вид Varanus griseus (приложение 5, строка 5). Включение именно подвида caspius подтверждено очерком Красной книги 2006 года; родительский перечень сам по себе не доказывает включение подвида."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -2150,15 +2178,19 @@
           "url": "https://api.gbif.org/v1/species/2465319"
         },
         {
+          "id": "gbif-national-name-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Eryx%20tataricus"
+        },
+        {
           "id": "photo-commons",
           "url": "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Sandboa_(Eryx_tataricus).JPG"
         }
       ],
       "shortLengthRu": 156,
-      "overviewWordsRu": 154,
+      "overviewWordsRu": 173,
       "languages": {
         "photo": "prepared",
-        "photoCheck": "passed",
+        "photoCheck": "not_run",
         "shortDescriptions": {
           "ky": true,
           "uz": true,
@@ -2182,16 +2214,20 @@
       "missingFacts": [
         "Описание внешности национального концепта",
         "Датированная численность",
-        "Современный охват таксона и охрана"
+        "Современный охват таксона и охрана",
+        "Авторство и соответствие национального Eryx tataricus предложенному Eryx miliaris"
       ],
       "editorialNotes": [
-        "Eryx tataricus → Eryx miliaris: точная синонимия того же ранга по GBIF.",
-        "Предполагаемая популяция Токмакского заказника не признана подтверждённой: RU пишет «возможно», EN — как факт. Действующие CITES-ограничения не проверялись и не заявляются."
+        "Предполагаемая популяция Токмакского заказника не признана подтверждённой: RU пишет «возможно», EN — как факт. Действующие CITES-ограничения не проверялись и не заявляются.",
+        "Аудит 22.4: национальная статья Eryx tataricus (Lichtenstein, 1823), но GBIF match вернул Eryx tataricus Tzarevsky, 1915 → Eryx miliaris. Совпадение canonicalName не подтверждает одинаковый национальный таксон; прежние материалы также отмечают отличие концепта IUCN. Требуется решение герпетолога, подмена принятого имени не выполнялась."
       ],
       "technicalErrors": [],
-      "independentReview": "pending",
+      "scientificBlockers": [
+        "Аудит 22.4: национальная статья Eryx tataricus (Lichtenstein, 1823), но GBIF match вернул Eryx tataricus Tzarevsky, 1915 → Eryx miliaris. Совпадение canonicalName не подтверждает одинаковый национальный таксон; прежние материалы также отмечают отличие концепта IUCN. Требуется решение герпетолога, подмена принятого имени не выполнялась."
+      ],
+      "independentReview": "requires_specialist_resolution",
       "importPermission": "absent",
-      "state": "ready_for_review"
+      "state": "needs_evidence"
     },
     {
       "candidateId": "lyrurus-tetrix",
@@ -2265,6 +2301,7 @@
         "English name Black Grous в книге нормализовано до Black Grouse; форма Black Grouse также присутствует в сохранённых описаниях Commons того же вида."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -2343,6 +2380,7 @@
         "Ретроспективное гнездование Сон-Куля не заявлено текущим. Расхождение старого числа пар сохранено отдельно; современная глобальная категория IUCN не устанавливалась."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -2423,6 +2461,7 @@
         "Возможное гнездование не переведено в подтверждённое; текущий охотничий статус не устанавливался."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -2469,7 +2508,7 @@
           "url": "https://commons.wikimedia.org/wiki/File:Mergus_serrator_-New_Jersey_-USA_-winter-8.jpg"
         }
       ],
-      "shortLengthRu": 164,
+      "shortLengthRu": 156,
       "overviewWordsRu": 158,
       "languages": {
         "photo": "prepared",
@@ -2498,8 +2537,11 @@
         "Год старой оценки численности",
         "Данные о содержании в неволе"
       ],
-      "editorialNotes": [],
+      "editorialNotes": [
+        "Аудит 22.4: во всех четырёх коротких версиях явно указан источник 2006 года; историческое гнездование не подаётся как подтверждённое в 2026 году."
+      ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -2579,6 +2621,7 @@
         "Числа 100–4500 из национальной статьи не имеют ясного территориального охвата и не записаны как популяция Кыргызстана. Размножение в справочнике общевидовое, не подтверждение местного гнездования."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -2658,6 +2701,7 @@
         "Национальная категория CR: R относится к Кыргызстану в издании 2006 года. Глобальная IUCN-категория не выводилась из неё. Фото гнездящейся птицы не подтверждает гнездование на Иссык-Куле."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"

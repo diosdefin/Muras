@@ -32,7 +32,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "1389e972a4541e8ce83ffab2e1716931fae2f35a54ab589d8645deb535d09bbf",
+        "fingerprint": "c9a7c0025e2bd7341f17e964ecbacc91f81409d41cfa7894cfc3cb5cb2c35acd",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -65,7 +65,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "b7cd3bce2cff3128ec2bb628922f271c75ae1b5093777f446405e7f48a839dda",
+        "fingerprint": "3f28b4988490687279e947b1a46165dd2a393290f6946818df06495fece02fba",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -96,7 +96,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "d40214db0595b9901653f1b5fe7c7ebac6c90fe26b300d62a5c6dcf878f87add",
+        "fingerprint": "4b6232afac7cdc65523749f52c3872cd88bba2600f952d771cfaacb8877a6c6a",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -129,7 +129,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "64ffc5dee75164ecf03cbe9ed13de46a12b92c2a799da615ab86e27c76f74abd",
+        "fingerprint": "1d11600435a739cd4f8efc06a8d20f33302bbb2d6656be1ca8b4df5135c72e88",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -162,7 +162,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "8d045926b9c67c5c5bc7890cce63a959f53e6ec532a3468ef3e9cfd8c470aae2",
+        "fingerprint": "b153192328b5aaaf51f7753b7a0450b1596f0cccbe99c824cb4369f95ea23c9d",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -257,6 +257,7 @@
         "Tulipa zenaidae → Tulipa lehmanniana: подтверждённая GBIF синонимия того же ранга. Национальная оценка не распространена на весь широкий принятый таксон."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -328,6 +329,7 @@
         "Juno orchioides → Iris orchioides: точная синонимия того же ранга; сохранены национальное имя и источник биологии."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -404,6 +406,7 @@
         "Iridodictyum kolpakowskianum → Iris kolpakowskiana: подтверждённая синонимия того же ранга. Фотография документирована под принятым именем в категории Commons."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -478,6 +481,7 @@
         "Сроки биологии приведены по RU; EN называет её неизвестной. Требует специалиста, неподтверждённые детали не добавлены."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -546,8 +550,11 @@
         "Культивирование",
         "Современные меры охраны"
       ],
-      "editorialNotes": [],
+      "editorialNotes": [
+        "Аудит 22.4: термин «тепкичи» заменён на «текөөрчөсү» по KY-статье, PDF с. 108; старые шрифтовые ё/ъ нормализованы в ө/ү. Пять долей листа также прямо описаны в первоисточнике."
+      ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"

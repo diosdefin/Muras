@@ -46,7 +46,9 @@
       "status": "ready_for_independent_review",
       "commit": "7e0b5585c67b18e8bc8476c77602844fa660ec71",
       "preparedCount": 5,
-      "photoCount": 1
+      "photoCount": 1,
+      "readyForReviewCount": 5,
+      "blockedCount": 0
     },
     {
       "number": 2,
@@ -58,10 +60,12 @@
         "tulipa-platystemon",
         "tulipa-tetraphylla"
       ],
-      "status": "ready_for_independent_review",
+      "status": "audited_with_scientific_blockers",
       "commit": "0000c731ad10f923de813740b7f55ef3eceb2311",
       "preparedCount": 5,
-      "photoCount": 0
+      "photoCount": 0,
+      "readyForReviewCount": 4,
+      "blockedCount": 1
     },
     {
       "number": 3,
@@ -76,7 +80,9 @@
       "status": "ready_for_independent_review",
       "commit": "ced98aa67690b252cbce29f08ca7d3a63e241e2b",
       "preparedCount": 5,
-      "photoCount": 1
+      "photoCount": 1,
+      "readyForReviewCount": 5,
+      "blockedCount": 0
     },
     {
       "number": 4,
@@ -88,10 +94,12 @@
         "eryx-tataricus",
         "lyrurus-tetrix"
       ],
-      "status": "ready_for_independent_review",
+      "status": "audited_with_scientific_blockers",
       "commit": "c491e47de8c4ac76344e982e04546b4a8bc2f018",
       "preparedCount": 5,
-      "photoCount": 3
+      "photoCount": 3,
+      "readyForReviewCount": 4,
+      "blockedCount": 1
     },
     {
       "number": 5,
@@ -106,8 +114,11 @@
       "status": "ready_for_independent_review",
       "commit": "139a62c934d24ef8b2ab653feffe5177a051e855",
       "preparedCount": 5,
-      "photoCount": 5
+      "photoCount": 5,
+      "readyForReviewCount": 5,
+      "blockedCount": 0
     }
   ],
-  "publicationAllowed": false
+  "publicationAllowed": false,
+  "releaseAudit": "docs/research/bulk-25-release-audit.md"
 }

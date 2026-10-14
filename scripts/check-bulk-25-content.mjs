@@ -21,8 +21,9 @@ const quality = []
 for (const c of selected) {
   assert.equal(c.approval, null)
   const result = checked.report.results.find(r => r.candidateId === c.id)
-  assert.equal(result.state, 'ready_for_review', `${c.id}: ${result.errors.join('; ')}`)
-  assert.deepEqual(result.errors, [])
+  const evidenceDeferred = Boolean(c.contradictions.length || c.missingData.length)
+  assert.equal(result.state, evidenceDeferred ? 'needs_evidence' : 'ready_for_review', `${c.id}: ${result.errors.join('; ')}`)
+  assert.deepEqual(result.errors, evidenceDeferred ? ['Есть нерешённые противоречия или обязательные пробелы'] : [])
   const s = await read(c.draftFile)
   assert.equal(s.verified, false)
   assert.equal(s.lastReviewedAt, null)
@@ -41,10 +42,12 @@ for (const c of selected) {
   if (s.group === 'plants') assert.equal(s.content.diet, null)
   assert.ok(s.sources.every(s => s.url.startsWith('https://') && s.supports.length))
   for (const image of s.images) assert.ok(image.path.startsWith('assets/images/species/'))
+  assert.deepEqual(await inspectPipelineAssets(process.cwd(), s), [])
   quality.push({ candidateId: c.id, nationalEvidence: c.nationalConfirmation, taxonomyEvidence: c.taxonomyEvidence,
     scientificSources: s.sources.map(r => ({ id: r.id, url: r.url })), shortLengthRu: s.content.shortDescription.text.ru.length,
     overviewWordsRu: words, languages: result.readiness, missingFacts: c.missingFacts, editorialNotes: c.editorialNotes,
-    technicalErrors: result.errors, independentReview: 'pending', importPermission: 'absent', state: result.state })
+    technicalErrors: [], scientificBlockers: evidenceDeferred ? [...c.contradictions, ...c.missingData] : [],
+    independentReview: evidenceDeferred ? 'requires_specialist_resolution' : 'pending', importPermission: 'absent', state: result.state })
 }
 const report = { schemaVersion: 1, documentType: 'unpublished-content-quality-report',
   preservedFiles: Object.keys(preservation).length, sourceCatalogCount: source.catalog.length,
@@ -52,4 +55,5 @@ const report = { schemaVersion: 1, documentType: 'unpublished-content-quality-re
 const path = `docs/evidence/bulk-25-${n ? `block-${n}` : 'final'}-validation.json`
 await writeFile(path, JSON.stringify(report, null, 2) + '\n')
 for (const batch of checked.batches) await writeFile(`data/research/bulk-25-content/block-${batch.number}-drafts.json`, JSON.stringify(batch.drafts, null, 2) + '\n')
-console.log(JSON.stringify({ report: path, readyForReview: quality.length, preservedFiles: report.preservedFiles, approved: 0, imported: 0 }))
+console.log(JSON.stringify({ report: path, prepared: quality.length, readyForReview: quality.filter(q => q.state === 'ready_for_review').length,
+  needsEvidence: quality.filter(q => q.state === 'needs_evidence').length, preservedFiles: report.preservedFiles, approved: 0, imported: 0 }))

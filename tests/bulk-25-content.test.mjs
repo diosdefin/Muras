@@ -9,6 +9,7 @@ import { checkCommonsMetadata } from '../scripts/prepare-batch-images.mjs'
 import { validateSpecies } from '../src/data/species-model.js'
 import { scientificContent } from '../src/data/localization.js'
 import { speciesName, speciesNameLanguage } from '../src/data/presentation.js'
+import { auditBulk25 } from '../scripts/audit-bulk-25-release.mjs'
 const read = async p => JSON.parse(await readFile(`${PROJECT_ROOT}/${p}`, 'utf8'))
 const registry = await read('data/research/bulk-25-content-registry.json')
 const manifest = await read('data/research/bulk-25-content-manifest.json')
@@ -29,11 +30,13 @@ test('bulk-25 keeps stable accepted taxon order, the master registry and public 
   }
 })
 
-test('all 25 drafts pass importer planning but cannot publish without independent decisions', async () => {
+test('all 25 drafts are structurally valid; two documented taxon conflicts cannot enter review or publication packets', async () => {
   const before = fingerprint(source)
   const checked = await checkRegistry(registry, source, options())
-  assert.equal(checked.report.counts.accepted, 25)
-  assert.equal(checked.report.states.ready_for_review, 25)
+  assert.equal(checked.report.counts.accepted, 23)
+  assert.equal(checked.report.states.ready_for_review, 23)
+  assert.equal(checked.report.states.needs_evidence, 2)
+  assert.deepEqual(checked.report.results.filter(r => r.state === 'needs_evidence').map(r => r.candidateId), ['tulipa-anadroma', 'eryx-tataricus'])
   assert.equal(checked.report.states.approved_for_import, 0)
   assert.equal(checked.report.states.imported, 0)
   for (const batch of checked.batches) {
@@ -42,7 +45,11 @@ test('all 25 drafts pass importer planning but cannot publish without independen
     assert.deepEqual(saved, batch.drafts)
     await assert.rejects(planBatchImport(source, saved), /species-import-batch/)
     // Pure planning is used solely to verify compatibility, without file writes.
-    const plan = await planBatchImport(source, { ...saved, documentType: 'species-import-batch' }, {
+    const records = await Promise.all(registry.candidates.slice((batch.number - 1) * 5, batch.number * 5).map(async c => ({ candidateId: c.id,
+      species: await read(c.draftFile), taxonomyEvidence: c.taxonomyEvidence })))
+    // This structural-only plan includes the original draft files. Research errors
+    // above still prevent the two conflicting concepts from approval/application.
+    const plan = await planBatchImport(source, { ...saved, documentType: 'species-import-batch', records }, {
       validateAssets: s => inspectPipelineAssets(PROJECT_ROOT, s) })
     assert.equal(plan.counts.added, 5)
     assert.equal(plan.counts.rejected, 0)
@@ -99,11 +106,49 @@ test('repeat checks preserve fingerprints; tampered evidence fails and canonical
   const bad = await checkRegistry(modified, source, options())
   assert.equal(bad.report.results[0].state, 'needs_evidence')
   assert.match(bad.report.results[0].errors.join(' '), /Материал изменён/)
-  assert.equal(bad.report.states.ready_for_review, 24)
+  assert.equal(bad.report.states.ready_for_review, 22)
   const research = await read('data/research/bulk-25-content/block-1-photos.json')
   const candidate = research.candidates.find(c => c.id === 'eminium-regelii')
   const search = await read('docs/evidence/bulk-25-photo-search.json')
   const page = Object.values(search.records.find(r => r.candidateId === candidate.id).queries[0].data.query.pages)[0]
   const metadata = checkCommonsMetadata(candidate, page)
   assert.equal(metadata.licenseUrl, 'https://creativecommons.org/licenses/by/4.0/')
+})
+
+test('release review manifest withholds ambiguous scientific concepts and checks all other queues without publication', async () => {
+  const { audit, reviewManifest } = await auditBulk25()
+  assert.deepEqual(audit.counts, { technically_ready: 23, needs_correction: 0, blocked: 2 })
+  assert.deepEqual(reviewManifest, await read('data/research/bulk-25-release-review-manifest.json'))
+  assert.equal(reviewManifest.publicationAllowed, false)
+  assert.equal(reviewManifest.approval, null)
+  assert.equal(audit.otherMasterCandidatesChecked, 35)
+  assert.equal(audit.legacyAliasCount, 2)
+  assert.equal(audit.dryRun.writePerformed, false)
+  assert.equal(audit.dryRun.repeatedPlan.unchanged, 25)
+  assert.equal(audit.dryRun.duplicateCopyRejected, true)
+  const hybrid = audit.results.find(r => r.candidateId === 'tulipa-anadroma')
+  assert.match(hybrid.taxonomy.acceptedScientificNameAsReturned, /×/)
+  assert.equal(hybrid.eligibleForIndependentApprovalReview, false)
+  const boa = audit.results.find(r => r.candidateId === 'eryx-tataricus')
+  assert.match(boa.nationalEvidence.headingAsPrinted.join(' '), /Lichtenstein/)
+  assert.match(boa.taxonomy.requestedScientificName, /Tzarevsky/)
+  assert.equal(boa.eligibleForIndependentApprovalReview, false)
+})
+
+test('historic evidence scope and documented source languages remain honest in the derived drafts', async () => {
+  const monitor = await read('data/research/bulk-25-content/drafts/varanus-griseus-caspius.json')
+  assert.equal(monitor.taxonomy.genus, 'Varanus')
+  assert.ok(monitor.sources.find(s => s.id === 'national-book').supports.includes('nationalRedBook.listed'))
+  assert.ok(!monitor.sources.find(s => s.id === 'national-list-1').supports.includes('nationalRedBook.listed'))
+  const tulip = await read('data/research/bulk-25-content/drafts/tulipa-platystemon.json')
+  assert.equal(tulip.habitat, null)
+  assert.ok(!tulip.sources.find(s => s.id === 'national-book').supports.includes('habitat'))
+  for (const id of ['eryx-tataricus', 'lyrurus-tetrix', 'aythya-nyroca', 'oxyura-leucocephala']) {
+    const s = await read(`data/research/bulk-25-content/drafts/${id}.json`)
+    assert.equal(s.sources.find(s => s.id === 'photo-commons').language, null)
+  }
+  const merganser = await read('data/research/bulk-25-content/drafts/mergus-serrator.json')
+  for (const text of Object.values(merganser.content.shortDescription.text)) assert.match(text, /2006/)
+  const delphinium = await read('data/research/bulk-25-content/drafts/delphinium-knorringianum.json')
+  assert.match(delphinium.content.shortDescription.text.ky, /текөөрчөсү/)
 })

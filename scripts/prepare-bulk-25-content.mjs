@@ -50,8 +50,13 @@ for (const f of facts.records) {
   const section = key => f[key] ? { text: key === 'shortDescription' ? f[key] : local(f[key]), sourceIds: f.sectionSourceIds?.[key] || ['national-book'] } : null
   const content = Object.fromEntries(['shortDescription', 'overview', 'appearance', 'ecology', 'diet', 'reproduction', 'distribution'].map(k => [k, section(k)]))
   const sources = structuredClone(original.sources)
+  for (const [id, supports] of Object.entries(f.sourceSupportOverrides || {})) {
+    const source = sources.find(s => s.id === id)
+    if (!source) throw new Error(`${c.id}: unknown source override ${id}`)
+    source.supports = supports
+  }
   const national = sources.find(s => s.id === 'national-book')
-  national.supports.push('names.ru', 'habitat', ...Object.keys(content).filter(k => content[k]?.sourceIds.includes(national.id)).map(k => `content.${k}`),
+  national.supports.push('names.ru', ...(f.habitat ? ['habitat'] : []), ...Object.keys(content).filter(k => content[k]?.sourceIds.includes(national.id)).map(k => `content.${k}`),
     ...(f.threats || []).map((_, i) => `threats.${i}`), ...(f.conservation || []).map((_, i) => `conservationMeasures.${i}`))
   if (f.nameEn) national.supports.push('names.en')
   const gbif = sources.find(s => s.id === c.taxonomyEvidence.sourceId)
@@ -74,7 +79,7 @@ for (const f of facts.records) {
   if (image && receipt.visualReview?.reviewed !== true) throw new Error(`${c.id}: visual image review pending`)
   if (image) sources.push({ id: 'photo-commons', title: receipt.metadata.description || c.acceptedScientificName,
     publisher: 'Wikimedia Commons; ' + image.author, url: image.originalPage, accessedAt: '2026-10-14',
-    supports: ['images.0.caption'], language: 'en' })
+    supports: ['images.0.caption'], language: Object.hasOwn(receipt.metadata, 'sourceLanguage') ? receipt.metadata.sourceLanguage : 'en' })
   const species = { id: c.id, scientificName: c.acceptedScientificName, names: { ru: f.nameRu, ky: null, uz: null, en: f.nameEn || null },
     taxonomy, group: c.group, nationalRedBook: publishedNational, iucn: { category: null, year: null, sourceIds: [] },
     habitat: f.habitat ? { description: local(f.habitat), sourceIds: ['national-book'] } : null,
@@ -91,6 +96,7 @@ for (const f of facts.records) {
     publicationGaps: ['Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют',
       `Неподтверждённые названия: ${f.nameEn ? 'KY/UZ' : 'KY/UZ/EN'}; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя`, ...(image ? [] : ['Фото: placeholder'])],
     editorialNotes: f.editorialNotes || [], missingFacts: f.missingFacts || [], incidentalPopulationEvidence: f.populationEvidence || [],
+    contradictions: f.contradictions || [],
     preparation: { status: 'prepared', sourceMasterId: c.id, factsFingerprint: fingerprint(f), draftSha256: digest(await readFile(path)) } })
   } catch (error) {
     failures.push({ candidateId: f.id, error: error.message })

@@ -9,16 +9,16 @@
     "catalogFingerprint": "6ffd82165fd7f2ce9a24f38ca2aae9a885e0fe8e1d672a8630725ac5b36b5cf0",
     "counts": {
       "processed": 5,
-      "accepted": 5,
-      "deferred": 0,
+      "accepted": 4,
+      "deferred": 1,
       "rejected": 0
     },
     "states": {
       "pending": 0,
-      "needs_evidence": 0,
+      "needs_evidence": 1,
       "research_ready": 0,
       "needs_photo": 0,
-      "ready_for_review": 5,
+      "ready_for_review": 4,
       "approved_for_import": 0,
       "imported": 0,
       "rejected": 0
@@ -32,7 +32,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "5d1ee3531b6659e7ead15020f44706c766b7cab9c887749bbd62e324dd261d31",
+        "fingerprint": "abcadb2d596b636828b2164e2cfd979af8aaa2d71819f11f4f196a5999053548",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -64,7 +64,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "fb513940442406ca1f3725555303b8720d629e7c8f0ad54d4a5df2020d54f752",
+        "fingerprint": "161255ab160b09d519a7b1ce71977bfdc6d24151e7daae53cc666c208e6cc172",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -94,7 +94,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "089f149a75caa0a48dde84fca486dca138829200b7f69bc8cddc0a38a8b89ee7",
+        "fingerprint": "057ccb48e2414081f38896a718ee42c1299a8e7de1ebf3accbcafb4cfcd2967d",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -121,13 +121,15 @@
       {
         "candidateId": "eryx-tataricus",
         "batchNumber": 4,
-        "state": "ready_for_review",
-        "errors": [],
+        "state": "needs_evidence",
+        "errors": [
+          "Есть нерешённые противоречия или обязательные пробелы"
+        ],
         "warnings": [],
-        "fingerprint": "fd1c493c1a6434ea8b5deadf5e04e4c7b4bfc7e3d9290db5b3b4e4e64be88886",
+        "fingerprint": "a0b2d61fbc99ad3c4a190862ddda5904d7236e901f04bba5b1109676a44d435a",
         "readiness": {
           "photo": "prepared",
-          "photoCheck": "passed",
+          "photoCheck": "not_run",
           "shortDescriptions": {
             "ky": true,
             "uz": true,
@@ -155,7 +157,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "e856801b42094967905545fb070bd02aa857d3b44a1b42076fb261162f5b805f",
+        "fingerprint": "e732d3596f0b82599b57ed1a58bac9cdbacfca04c6879dbadfa7ff47f5545b05",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -249,6 +251,7 @@
         "Видовой ранг подтверждён точным принятым таксоном GBIF. Обсуждавшееся в книге понижение до подвида U. augur не применено."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -321,6 +324,7 @@
         "Часть иссык-кульского ареала в первоисточнике опирается на предполагаемый синоним M. tianshanicus, а не на окончательно подтверждённую идентификацию; не использована для картографирования."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -396,9 +400,11 @@
       ],
       "editorialNotes": [
         "Ранг SUBSPECIES и точный таксон gbif сохранены, родительский вид отдельно не добавлен.",
-        "RU: CR A4bc; E; EN: EN A4bc; E. nationalRedBook.category:null до независимой проверки. Старые CITES и запреты не выдаются за проверенное действующее право."
+        "RU: CR A4bc; E; EN: EN A4bc; E. nationalRedBook.category:null до независимой проверки. Старые CITES и запреты не выдаются за проверенное действующее право.",
+        "Перечень 2009 года указывает только родительский вид Varanus griseus (приложение 5, строка 5). Включение именно подвида caspius подтверждено очерком Красной книги 2006 года; родительский перечень сам по себе не доказывает включение подвида."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
@@ -437,15 +443,19 @@
           "url": "https://api.gbif.org/v1/species/2465319"
         },
         {
+          "id": "gbif-national-name-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Eryx%20tataricus"
+        },
+        {
           "id": "photo-commons",
           "url": "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Sandboa_(Eryx_tataricus).JPG"
         }
       ],
       "shortLengthRu": 156,
-      "overviewWordsRu": 154,
+      "overviewWordsRu": 173,
       "languages": {
         "photo": "prepared",
-        "photoCheck": "passed",
+        "photoCheck": "not_run",
         "shortDescriptions": {
           "ky": true,
           "uz": true,
@@ -469,16 +479,20 @@
       "missingFacts": [
         "Описание внешности национального концепта",
         "Датированная численность",
-        "Современный охват таксона и охрана"
+        "Современный охват таксона и охрана",
+        "Авторство и соответствие национального Eryx tataricus предложенному Eryx miliaris"
       ],
       "editorialNotes": [
-        "Eryx tataricus → Eryx miliaris: точная синонимия того же ранга по GBIF.",
-        "Предполагаемая популяция Токмакского заказника не признана подтверждённой: RU пишет «возможно», EN — как факт. Действующие CITES-ограничения не проверялись и не заявляются."
+        "Предполагаемая популяция Токмакского заказника не признана подтверждённой: RU пишет «возможно», EN — как факт. Действующие CITES-ограничения не проверялись и не заявляются.",
+        "Аудит 22.4: национальная статья Eryx tataricus (Lichtenstein, 1823), но GBIF match вернул Eryx tataricus Tzarevsky, 1915 → Eryx miliaris. Совпадение canonicalName не подтверждает одинаковый национальный таксон; прежние материалы также отмечают отличие концепта IUCN. Требуется решение герпетолога, подмена принятого имени не выполнялась."
       ],
       "technicalErrors": [],
-      "independentReview": "pending",
+      "scientificBlockers": [
+        "Аудит 22.4: национальная статья Eryx tataricus (Lichtenstein, 1823), но GBIF match вернул Eryx tataricus Tzarevsky, 1915 → Eryx miliaris. Совпадение canonicalName не подтверждает одинаковый национальный таксон; прежние материалы также отмечают отличие концепта IUCN. Требуется решение герпетолога, подмена принятого имени не выполнялась."
+      ],
+      "independentReview": "requires_specialist_resolution",
       "importPermission": "absent",
-      "state": "ready_for_review"
+      "state": "needs_evidence"
     },
     {
       "candidateId": "lyrurus-tetrix",
@@ -552,6 +566,7 @@
         "English name Black Grous в книге нормализовано до Black Grouse; форма Black Grouse также присутствует в сохранённых описаниях Commons того же вида."
       ],
       "technicalErrors": [],
+      "scientificBlockers": [],
       "independentReview": "pending",
       "importPermission": "absent",
       "state": "ready_for_review"
