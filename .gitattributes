@@ -12,3 +12,6 @@ public/data/geography/*.json text eol=lf
 public/data/geography/*.geojson text eol=lf
 # Preserve exact bytes of checksum-verified photo licence/notice artifacts.
 public/licenses/photos/*.txt -text
+# Keep the master registry's shared research materials byte-stable on Windows.
+data/research/redbook-master-*.json text eol=lf
+docs/evidence/redbook-master-*.json text eol=lf
