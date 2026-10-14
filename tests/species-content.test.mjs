@@ -51,9 +51,9 @@ test('text length limits bound cards and imports without forcing unsubstantiated
   assert.deepEqual(validateContent({...emptyContent(),overview:section('Краткий подтверждённый факт.')},refs),[])
 })
 test('all thirty records have real introductions, sourced overview and unchanged old scientific facts',()=>{
-  assert.equal(source.catalog.length,30);assert.equal(prepared.length,30)
+  assert.ok(source.catalog.length>=30);assert.equal(prepared.length,source.catalog.length)
   assert.deepEqual(prepared.map(s=>s.id),source.catalog.slice(0,prepared.length).map(s=>s.id))
-  assert.equal(hash(legacyScientificSource(source)),'52e69ac766a536e158d5b3ea0780db66c25f02944644de0871a9383fe85e2fb0')
+  assert.equal(hash(legacyScientificSource({...source,catalog:source.catalog.slice(0,30)})),'52e69ac766a536e158d5b3ea0780db66c25f02944644de0871a9383fe85e2fb0')
   assert.deepEqual(validateSource(source),[]);assert.deepEqual(validateSpecies(published,'public',{publicData:true}),[])
   for(const s of prepared){
     assert.deepEqual(Object.keys(s.content),CONTENT_FIELDS)
@@ -107,7 +107,7 @@ test('preview is the first overview paragraph, full page preserves both paragrap
   assert.deepEqual(contentParagraphs(null,'uz'),[])
 })
 test('admin imports and exports enriched and legacy sources losslessly and edits only the chosen content path',()=>{
-  for(const data of [source,legacyScientificSource(source)]){
+  for(const data of [source,legacyScientificSource({...source,catalog:source.catalog.slice(0,30)})]){
     const imported=importSource(JSON.stringify(data));assert.equal(editableShape(imported),true)
     assert.deepEqual(JSON.parse(exportSource(imported)),data)
   }

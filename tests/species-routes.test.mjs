@@ -7,7 +7,7 @@ const config = JSON.parse(readFileSync(new URL('../vercel.json', import.meta.url
 
 test('every published species receives a stable shareable URL and decodes back to its id', () => {
   const catalog = JSON.parse(readFileSync(new URL('../data/species.source.json', import.meta.url))).catalog
-  assert.equal(catalog.length, 30)
+  assert.ok(catalog.length >= 30)
   for (const { id } of catalog) {
     assert.equal(speciesIdFromPath(speciesPath(id)), id)
     assert.equal(speciesIdFromPath(`${speciesPath(id)}/`), id)

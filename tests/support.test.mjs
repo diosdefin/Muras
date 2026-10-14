@@ -26,7 +26,7 @@ test('support selects the exact catalog record and never substitutes a species f
 
 test('all support facts are unchanged catalog excerpts with existing supporting references', () => {
   for (const species of catalog) for (const field of ['threats', 'conservationMeasures']) {
-    assert.deepEqual(sourcedStatements(species, field), species[field])
+    assert.deepEqual(sourcedStatements(species, field), species[field] || [])
     assert.equal(species.verified, false)
   }
 })

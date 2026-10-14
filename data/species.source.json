@@ -8355,6 +8355,1246 @@
           ]
         }
       }
+    },
+    {
+      "id": "said-alievs-toad-agama",
+      "scientificName": "Phrynocephalus saidalievi",
+      "names": {
+        "ru": "Круглоголовка Саид-Алиева",
+        "ky": "Саид-Алиевдин жумуру баш кескелдириги",
+        "uz": null,
+        "en": "Said-Aliev’s Toad Agama"
+      },
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Reptilia",
+        "order": "Squamata",
+        "family": "Agamidae",
+        "genus": "Phrynocephalus"
+      },
+      "group": "reptiles",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "VU B1ab(iii)",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "book-2006"
+        ]
+      },
+      "iucn": {
+        "category": "VU",
+        "year": null,
+        "sourceIds": [
+          "iucn-checklist"
+        ]
+      },
+      "habitat": {
+        "description": {
+          "ru": "Глинистые и мелкощебнистые почвы с редкой растительностью, сухие русла и полупустыни предгорий; русский очерк указывает высоты 500–1100 м.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        },
+        "sourceIds": [
+          "book-2006"
+        ]
+      },
+      "regions": [
+        {
+          "code": "KG",
+          "type": "country",
+          "names": {
+            "ru": "Кыргызстан",
+            "ky": "Кыргызстан",
+            "uz": null,
+            "en": "Kyrgyzstan"
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "text": {
+            "ru": "В очерке 2006 года названы освоение местообитаний, интенсивный выпас скота и увеличение количества собак.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "conservationMeasures": [
+        {
+          "text": {
+            "ru": "Рекомендации издания 2006 года: регулировать пастбищное использование и применение инсектицидов, создавать микрорезерваты в местах размножения и зимовки.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "population": {
+        "type": "unknown",
+        "value": null,
+        "min": null,
+        "max": null,
+        "territory": null,
+        "year": null,
+        "unit": null,
+        "sourceIds": [],
+        "reviewStatus": "pending",
+        "method": null
+      },
+      "images": [],
+      "sources": [
+        {
+          "id": "book-2006",
+          "title": "Красная книга Кыргызской Республики, 2-е издание (2006), PDF с. 333",
+          "publisher": "Государственное агентство / Биолого-почвенный институт НАН КР / «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=333",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "names.ru",
+            "names.en",
+            "group",
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "habitat",
+            "regions.0",
+            "threats.0",
+            "conservationMeasures.0",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution"
+          ],
+          "language": "ru",
+          "notes": "Исторический очерк прочитан полностью. Не подтверждает актуальный правовой статус, современную численность или выполнение мер охраны. Краткие тексты — редакционные переводы; независимая научная и языковая проверка необходима."
+        },
+        {
+          "id": "book-2006-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби (2006), PDF с. 332",
+          "publisher": "Кыргыз Республикасынын мамлекеттик агенттиги / КР УИА",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=332",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "names.ky"
+          ],
+          "language": "ky",
+          "notes": "Название взято из кыргызского очерка с восстановлением букв legacy-шрифта; новое народное название не придумано."
+        },
+        {
+          "id": "gbif-match",
+          "title": "GBIF Backbone: exact accepted species — Phrynocephalus saidalievi",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Phrynocephalus%20saidalievi",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.family",
+            "taxonomy.genus"
+          ],
+          "language": "en",
+          "taxonId": "gbif:10782470"
+        },
+        {
+          "id": "iucn-checklist",
+          "title": "IUCN Red List / GBIF: Phrynocephalus saidalievi",
+          "publisher": "IUCN (набор, опубликованный в GBIF 28.07.2026)",
+          "url": "https://api.gbif.org/v1/species/176718708",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "iucn.category",
+            "taxonomy.class",
+            "taxonomy.order"
+          ],
+          "language": "en",
+          "notes": "Точное принятое имя и ранг SPECIES; IUCN taxonID 48836207. Дата публикации набора не является годом оценки: iucn.year остаётся null."
+        }
+      ],
+      "verified": false,
+      "lastReviewedAt": null,
+      "content": {
+        "shortDescription": {
+          "text": {
+            "ru": "Небольшая ящерица глинистых полупустынь западной Ферганы. В Кыргызстане отмечена в северной части Баткенского региона; питается насекомыми.",
+            "ky": "Батыш Фергананын чополуу жарым чөлдөрүндө жашаган кескелдирик. Кыргызстанда Баткен аймагынын түндүгүндө катталган; майда курт-кумурскалар менен азыктанат.",
+            "uz": "Farg‘onaning g‘arbiy qismidagi gilli chala cho‘llarda yashaydigan kaltakesak. Qirg‘izistonda Batken hududining shimolida qayd etilgan; hasharotlar bilan oziqlanadi.",
+            "en": "A lizard of clay semi-deserts in western Fergana. In Kyrgyzstan it is recorded in the northern Batken area and feeds on small insects and arachnids."
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "overview": {
+          "text": {
+            "ru": "Круглоголовка Саид-Алиева — ящерица семейства агамовых, описанная в национальной Красной книге как узкоареальный вид западной части Ферганской долины. В кыргызстанском очерке названы северные приграничные участки Баткенского региона и предгорья между реками Козу-Баглан и Шахимардан. Эти сведения относятся к изданию 2006 года: они подтверждают историческое распространение, но не заменяют современного обследования. Для вида характерны плотные глинистые и мелкощебнистые почвы с редким растительным покровом, сухие русла и солоноватые полупустынные участки. Русский очерк указывает высоты 500–1100 м.\n\nВ издании активность описана с марта по октябрь. Ящерицы охотятся на небольших насекомых и паукообразных, используют собственные норки как укрытия. В мае–июне самки откладывают яйца, молодые появляются в июне–июле. Однако жизненный цикл охарактеризован как недостаточно изученный; расхождение месяцев спаривания в русской и английской версиях не переносится в описание. Главными неблагоприятными факторами названы освоение местообитаний, интенсивный выпас и рост количества собак. В качестве рекомендаций предложены регулирование пастбищного использования и применения инсектицидов, а также создание микрорезерватов в местах размножения и зимовки. Это рекомендации исторического очерка, а не утверждение, что такие меры уже действуют. Датированная оценка всей популяции Кыргызстана не установлена.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "appearance": null,
+        "ecology": {
+          "text": {
+            "ru": "По русскому очерку ящерицы активны с марта по октябрь, для укрытия роют собственные норки. Биология вида изучена недостаточно; современные сроки активности требуют полевого уточнения.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "diet": {
+          "text": {
+            "ru": "Небольшие насекомые и паукообразные. Эти сведения приведены в национальном очерке; количественный состав рациона не установлен.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "reproduction": {
+          "text": {
+            "ru": "Русский очерк сообщает о кладках в мае–июне и появлении молодых в июне–июле. Месяцы спаривания в русской и английской версиях расходятся и здесь не утверждаются.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "distribution": {
+          "text": {
+            "ru": "В издании 2006 года указаны северная приграничная часть Баткенского региона и предгорья западной Ферганской долины. Исторические сведения не являются современными точками наблюдений.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vigorous-ground-beetle",
+      "scientificName": "Carabus validus",
+      "names": {
+        "ru": "Брызгун могучий",
+        "ky": "Кара алп бүркөкчү",
+        "uz": null,
+        "en": "Vigorous Ground Beetle"
+      },
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Coleoptera",
+        "family": "Carabidae",
+        "genus": "Carabus"
+      },
+      "group": "arthropods",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "II / VU B1b(iii)+2b(iii,iv); C2b",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "book-2006"
+        ]
+      },
+      "iucn": {
+        "category": null,
+        "year": null,
+        "sourceIds": []
+      },
+      "habitat": {
+        "description": {
+          "ru": "Опушки и открытые поляны лесного пояса, орехово-плодовые леса, арчовые и кустарниковые сообщества, каменистые ложбины; высоты 1400–2500 м по русскому очерку.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        },
+        "sourceIds": [
+          "book-2006"
+        ]
+      },
+      "regions": [
+        {
+          "code": "KG",
+          "type": "country",
+          "names": {
+            "ru": "Кыргызстан",
+            "ky": "Кыргызстан",
+            "uz": null,
+            "en": "Kyrgyzstan"
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "text": {
+            "ru": "Окультуривание лесных полян и кустарниковых участков, применение пестицидов; в издании также отмечено отсутствие жуков на интенсивно используемых пастбищах.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "conservationMeasures": [
+        {
+          "text": {
+            "ru": "Рекомендации издания 2006 года: сохранять естественные местообитания, создавать микрозаказники, снижать хозяйственную нагрузку и организовать мониторинг.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "population": {
+        "type": "unknown",
+        "value": null,
+        "min": null,
+        "max": null,
+        "territory": null,
+        "year": null,
+        "unit": null,
+        "sourceIds": [],
+        "reviewStatus": "pending",
+        "method": null
+      },
+      "images": [],
+      "sources": [
+        {
+          "id": "book-2006",
+          "title": "Красная книга Кыргызской Республики, 2-е издание (2006), PDF с. 259",
+          "publisher": "Государственное агентство / Биолого-почвенный институт НАН КР / «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=259",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "names.ru",
+            "names.en",
+            "group",
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "habitat",
+            "regions.0",
+            "threats.0",
+            "conservationMeasures.0",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.diet",
+            "content.distribution"
+          ],
+          "language": "ru",
+          "notes": "Исторический очерк прочитан полностью. Не подтверждает актуальный правовой статус, современную численность или выполнение мер охраны. Краткие тексты — редакционные переводы; независимая научная и языковая проверка необходима."
+        },
+        {
+          "id": "book-2006-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби (2006), PDF с. 258",
+          "publisher": "Кыргыз Республикасынын мамлекеттик агенттиги / КР УИА",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=258",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "names.ky"
+          ],
+          "language": "ky",
+          "notes": "Название взято из кыргызского очерка с восстановлением букв legacy-шрифта; новое народное название не придумано."
+        },
+        {
+          "id": "gbif-match",
+          "title": "GBIF Backbone: exact accepted species — Carabus validus",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Carabus%20validus",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
+          ],
+          "language": "en",
+          "taxonId": "gbif:8881643"
+        }
+      ],
+      "verified": false,
+      "lastReviewedAt": null,
+      "content": {
+        "shortDescription": {
+          "text": {
+            "ru": "Чёрный хищный жук Ферганской горной системы. Обитает на лесных опушках и полянах, часто возле водотоков; сохранение местообитаний важно для его охраны.",
+            "ky": "Фергана тоо системасында кездешкен кара жырткыч коңуз. Токой четинде жана ачык жерлерде, көбүнчө суунун жанында жашайт; жашаган чөйрөсүн сактоо маанилүү.",
+            "uz": "Farg‘ona tog‘ tizimida uchraydigan qora yirtqich qo‘ng‘iz. O‘rmon chetlari va ochiq maydonlarda, ko‘pincha suv bo‘yida yashaydi; yashash joylarini asrash muhim.",
+            "en": "A black predatory beetle of the Fergana mountain system. It inhabits forest edges and clearings, often near water; habitat preservation is important."
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "overview": {
+          "text": {
+            "ru": "Брызгун могучий — крупная чёрная жужелица, включённая во второе издание Красной книги Кыргызской Республики. Видовое имя Carabus validus соответствует точному принятому таксону GBIF; указанное в книге Pseudotribax является подродом, а не дополнительной частью видового имени. По национальному очерку длина взрослого жука составляет 25–36 мм. Для него характерны утолщённая голова и относительно гладкие, слабо блестящие надкрылья с мелкими ямками. Описанное распространение охватывает среднюю часть Ферганского хребта и его северо-восточные отроги. Это исторические сведения издания, а не карта современных находок.\n\nЖук предпочитает опушки и поляны лесного пояса, орехово-плодовые леса, арчовые и кустарниковые сообщества на высотах 1400–2500 м. В нижней кустарниковой зоне находки связаны с водотоками и родниками; выше жуков отмечали в каменистых ложбинах. Взрослые особи встречаются в мае–июне, наблюдения охоты приведены для вечернего времени и пасмурных дней. Очерк характеризует их как наземных неспециализированных хищников, но подчёркивает недостаточную изученность жизненного цикла. Окультуривание лесных полян и использование пестицидов рассматриваются как угрозы местообитаниям. Для охраны рекомендованы сохранение естественных участков, снижение хозяйственной нагрузки, уточнение ареала и мониторинг. Эти предложения не следует принимать за уже выполненную программу. Достоверной датированной оценки общей численности в Кыргызстане в использованных материалах нет.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "appearance": {
+          "text": {
+            "ru": "Чёрный жук длиной 25–36 мм с утолщённой головой. Надкрылья относительно гладкие, слабо блестящие, с небольшими ямками; половой диморфизм в очерке назван слабым.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "ecology": {
+          "text": {
+            "ru": "Лесные опушки, поляны и кустарники Ферганской горной системы. Взрослые жуки отмечены в мае–июне, охота наблюдалась вечером и в пасмурную погоду. Жизненный цикл изучен недостаточно.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "diet": {
+          "text": {
+            "ru": "В национальном очерке личинки и взрослые жуки названы наземными неспециализированными хищниками. Детальный состав добычи не приведён.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "reproduction": null,
+        "distribution": {
+          "text": {
+            "ru": "Средняя часть Ферганского хребта, хребты Кокерим и Ак-Шийрак-Западный, включая Чаарташ, по очерку 2006 года. Административные области из этих названий не выводятся.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      }
+    },
+    {
+      "id": "pskem-onion",
+      "scientificName": "Allium pskemense",
+      "names": {
+        "ru": "Лук пскемский",
+        "ky": "Пскем пиязы",
+        "uz": null,
+        "en": "Pskem Onion"
+      },
+      "taxonomy": {
+        "kingdom": "Plantae",
+        "phylum": "Tracheophyta",
+        "class": "Liliopsida",
+        "order": "Asparagales",
+        "family": "Amaryllidaceae",
+        "genus": "Allium"
+      },
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "EN",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "book-2006"
+        ]
+      },
+      "iucn": {
+        "category": "DD",
+        "year": null,
+        "sourceIds": [
+          "iucn-checklist"
+        ]
+      },
+      "habitat": {
+        "description": {
+          "ru": "Трещины скал и каменистые склоны среднего горного пояса.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        },
+        "sourceIds": [
+          "book-2006"
+        ]
+      },
+      "regions": [
+        {
+          "code": "KG",
+          "type": "country",
+          "names": {
+            "ru": "Кыргызстан",
+            "ky": "Кыргызстан",
+            "uz": null,
+            "en": "Kyrgyzstan"
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "text": {
+            "ru": "Использование растения в пищу и ухудшение условий произрастания вследствие хозяйственного освоения территории, по изданию 2006 года.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "conservationMeasures": [
+        {
+          "text": {
+            "ru": "В издании 2006 года рекомендованы запрет выкапывания луковиц и введение в культуру; сообщается о выращивании в ботаническом саду НАН КР.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "population": {
+        "type": "unknown",
+        "value": null,
+        "min": null,
+        "max": null,
+        "territory": null,
+        "year": null,
+        "unit": null,
+        "sourceIds": [],
+        "reviewStatus": "pending",
+        "method": null
+      },
+      "images": [
+        {
+          "path": "assets/images/species/pskem-onion.webp",
+          "width": 1440,
+          "height": 1800,
+          "sha256": "ffcb628f76c771ca18ddc43fd37f0f4d6b247ea1db57164301a3955289ad541e",
+          "author": "Krzysztof Ziarnek, Kenraiz",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Allium_pskemense_kz02.jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "attribution": "Allium pskemense kz02.jpg — Krzysztof Ziarnek, Kenraiz, CC BY-SA 4.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+          "modifications": [
+            "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+            "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+          ],
+          "licenseVerified": true,
+          "caption": {
+            "ru": "Растение в ботаническом саду Гёттингена, Германия; культивируемый экземпляр.",
+            "ky": null,
+            "en": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "book-2006",
+          "title": "Красная книга Кыргызской Республики, 2-е издание (2006), PDF с. 71",
+          "publisher": "Государственное агентство / Биолого-почвенный институт НАН КР / «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=71",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "names.ru",
+            "names.en",
+            "group",
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "habitat",
+            "regions.0",
+            "threats.0",
+            "conservationMeasures.0",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution"
+          ],
+          "language": "ru",
+          "notes": "Исторический очерк прочитан полностью. Не подтверждает актуальный правовой статус, современную численность или выполнение мер охраны. Краткие тексты — редакционные переводы; независимая научная и языковая проверка необходима."
+        },
+        {
+          "id": "book-2006-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби (2006), PDF с. 70",
+          "publisher": "Кыргыз Республикасынын мамлекеттик агенттиги / КР УИА",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=70",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "names.ky"
+          ],
+          "language": "ky",
+          "notes": "Название взято из кыргызского очерка с восстановлением букв legacy-шрифта; новое народное название не придумано."
+        },
+        {
+          "id": "gbif-match",
+          "title": "GBIF Backbone: exact accepted species — Allium pskemense",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Allium%20pskemense",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
+          ],
+          "language": "en",
+          "taxonId": "gbif:2856107"
+        },
+        {
+          "id": "iucn-checklist",
+          "title": "IUCN Red List / GBIF: Allium pskemense",
+          "publisher": "IUCN (набор, опубликованный в GBIF 28.07.2026)",
+          "url": "https://api.gbif.org/v1/species/176769887",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "iucn.category"
+          ],
+          "language": "en",
+          "notes": "Точное принятое имя и ранг SPECIES; IUCN taxonID 20666130. Дата публикации набора не является годом оценки: iucn.year остаётся null."
+        }
+      ],
+      "verified": false,
+      "lastReviewedAt": null,
+      "content": {
+        "shortDescription": {
+          "text": {
+            "ru": "Многолетний лук Западного Тянь-Шаня с белыми цветками. В Кыргызстане указан для Чаткальского хребта; сбор луковиц и изменение склонов угрожают его местообитаниям.",
+            "ky": "Батыш Тянь-Шандын ак гүлдүү көп жылдык пиязы. Кыргызстанда Чаткал кырка тоосунда катталган; пияз түбүн казып алуу жана жерди өздөштүрүү ага коркунуч жаратат.",
+            "uz": "G‘arbiy Tyanshanning oq gulli ko‘p yillik piyozi. Qirg‘izistonda Chatqol tizmasida qayd etilgan; piyozboshlarini yig‘ish va yerlarni o‘zlashtirish unga tahdid soladi.",
+            "en": "A perennial onion with white flowers from the western Tien Shan. Recorded on Kyrgyzstan’s Chatkal Range, it is threatened by bulb collection and habitat change."
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "overview": {
+          "text": {
+            "ru": "Лук пскемский — многолетнее луковичное растение Западного Тянь-Шаня. В национальном очерке 2006 года для Кыргызстана указан Чаткальский хребет. Растение поселяется в трещинах скал и на каменистых склонах среднего горного пояса. Описанная высота стеблей составляет 40–80 см. Несколько луковиц располагаются на коротком корневище; их наружные оболочки тёмно-бурые. Листья цилиндрические, полые внутри, короче стебля. Белые цветки собраны в шаровидное соцветие. Очерк отличает этот вид от лука Ошанина по деталям околоцветника и тычиночных нитей; одна фотография не заменяет ботанического определения.\n\nСогласно русской версии очерка растение цветёт в июне и плодоносит в июле, размножаясь семенами. Эти сроки относятся к описанию в историческом издании и могут зависеть от условий конкретного местообитания. Национальный источник отмечает использование растения местными жителями в пищу и ухудшение условий произрастания при хозяйственном освоении территории. Выкапывание луковиц затрагивает сам многолетний организм, поэтому авторы рекомендуют запретить их сбор и развивать культивирование. Книга сообщает об успешном выращивании растений в ботаническом саду НАН КР, однако не описывает современного состояния этой работы. Включение в национальную Красную книгу не тождественно глобальной категории IUCN: классификации показаны отдельно. Количественной оценки популяции с подтверждённым годом и территорией для публикации не установлено.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "appearance": {
+          "text": {
+            "ru": "Растение высотой 40–80 см с несколькими луковицами на коротком корневище, полыми цилиндрическими листьями и шаровидным соцветием белых цветков.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "ecology": {
+          "text": {
+            "ru": "Каменистые склоны и трещины скал среднего пояса гор Западного Тянь-Шаня. Национальный очерк для Кыргызстана указывает Чаткальский хребет.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "diet": null,
+        "reproduction": {
+          "text": {
+            "ru": "По русскому очерку цветение происходит в июне, плодоношение — в июле; размножение семенное. Это сроки издания 2006 года, а не результат нового фенологического обследования.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "distribution": {
+          "text": {
+            "ru": "Западный Тянь-Шань; в Кыргызстане — Чаткальский хребет, согласно русскому очерку 2006 года. Новые региональные точки не создаются.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      }
+    },
+    {
+      "id": "kostychevs-pasque-flower",
+      "scientificName": "Pulsatilla kostyczewii",
+      "names": {
+        "ru": "Прострел Костычева",
+        "ky": "Костычев кундуз гүлү",
+        "uz": null,
+        "en": "Kostychev’s Pasque Flower"
+      },
+      "taxonomy": {
+        "kingdom": "Plantae",
+        "phylum": "Tracheophyta",
+        "class": "Magnoliopsida",
+        "order": "Ranunculales",
+        "family": "Ranunculaceae",
+        "genus": "Pulsatilla"
+      },
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "book-2006"
+        ]
+      },
+      "iucn": {
+        "category": null,
+        "year": null,
+        "sourceIds": []
+      },
+      "habitat": {
+        "description": {
+          "ru": "Каменистые склоны и скалы среднего и верхнего горных поясов.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        },
+        "sourceIds": [
+          "book-2006"
+        ]
+      },
+      "regions": [
+        {
+          "code": "KG",
+          "type": "country",
+          "names": {
+            "ru": "Кыргызстан",
+            "ky": "Кыргызстан",
+            "uz": null,
+            "en": "Kyrgyzstan"
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "threats": null,
+      "conservationMeasures": [
+        {
+          "text": {
+            "ru": "Историческая рекомендация: организовать ботанический заказник и стационар по введению в культуру в Алайской долине; выполнение не подтверждено.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "population": {
+        "type": "unknown",
+        "value": null,
+        "min": null,
+        "max": null,
+        "territory": null,
+        "year": null,
+        "unit": null,
+        "sourceIds": [],
+        "reviewStatus": "pending",
+        "method": null
+      },
+      "images": [
+        {
+          "path": "assets/images/species/kostychevs-pasque-flower.webp",
+          "width": 1800,
+          "height": 1350,
+          "sha256": "ddc39cc9eff90f74a1194840d9d54e76b2e97f169e34feca8a383b7e1d05b366",
+          "author": "nurdjen",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Pulsatilla_kostyczewii.JPG",
+          "license": "Public domain",
+          "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-self",
+          "attribution": "Pulsatilla kostyczewii.JPG — nurdjen, Public domain; Wikimedia Commons.",
+          "modifications": [
+            "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+            "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+          ],
+          "licenseVerified": true,
+          "caption": {
+            "ru": "Растение в Алайской долине, Кыргызстан; место указано автором фотографии.",
+            "ky": null,
+            "en": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "book-2006",
+          "title": "Красная книга Кыргызской Республики, 2-е издание (2006), PDF с. 113",
+          "publisher": "Государственное агентство / Биолого-почвенный институт НАН КР / «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=113",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "names.ru",
+            "names.en",
+            "group",
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "habitat",
+            "regions.0",
+            "conservationMeasures.0",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution"
+          ],
+          "language": "ru",
+          "notes": "Исторический очерк прочитан полностью. Не подтверждает актуальный правовой статус, современную численность или выполнение мер охраны. Краткие тексты — редакционные переводы; независимая научная и языковая проверка необходима."
+        },
+        {
+          "id": "book-2006-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби (2006), PDF с. 112",
+          "publisher": "Кыргыз Республикасынын мамлекеттик агенттиги / КР УИА",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=112",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "names.ky"
+          ],
+          "language": "ky",
+          "notes": "Название взято из кыргызского очерка с восстановлением букв legacy-шрифта; новое народное название не придумано."
+        },
+        {
+          "id": "gbif-match",
+          "title": "GBIF Backbone: exact accepted species — Pulsatilla kostyczewii",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Pulsatilla%20kostyczewii",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
+          ],
+          "language": "en",
+          "taxonId": "gbif:3929258"
+        }
+      ],
+      "verified": false,
+      "lastReviewedAt": null,
+      "content": {
+        "shortDescription": {
+          "text": {
+            "ru": "Многолетнее растение с розовыми цветками и густым белым опушением. В Кыргызстане известно из Алайской долины; растёт на каменистых горных склонах.",
+            "ky": "Кызгылтым гүлдүү, жыш ак түктүү көп жылдык өсүмдүк. Кыргызстанда Алай өрөөнүндө белгилүү; тоолордун таштуу беттеринде жана аскалуу жерлеринде өсөт.",
+            "uz": "Pushti gulli, zich oq tuklar bilan qoplangan ko‘p yillik o‘simlik. Qirg‘izistonda Oloy vodiysidan ma’lum; tog‘larning toshloq yonbag‘irlarida o‘sadi.",
+            "en": "A perennial with pink flowers and dense white hairs, known in Kyrgyzstan from the Alay Valley. It grows on rocky slopes in the middle and upper mountain belts."
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "overview": {
+          "text": {
+            "ru": "Прострел Костычева — многолетнее растение, национальный очерк которого посвящён узко распространённому представителю флоры Памиро-Алая. В Кыргызстане издание 2006 года указывает Алайскую долину. Его местообитания описаны как каменистые склоны и скалы среднего и верхнего горных поясов. Растение имеет мощное корневище с остатками отмерших листьев у верхней части. Высота по русскому описанию составляет 12–26 см. Все части покрыты густыми мягкими белыми волосками, а прикорневые листья рассечены на узкие доли. Крупные открытые розовые цветки расположены прямо; снаружи околоцветник опушён. Эти признаки приведены для знакомства с видом, а не как универсальный ключ определения по фотографии.\n\nРусский очерк относит цветение к июню–июлю, а плодоношение — к июлю–августу. Плоды имеют перистую ость; другие подробности жизненного цикла в использованном источнике ограничены. Численность названа невыясненной. Сведений о лимитирующих факторах и культивировании русская версия не даёт, поэтому конкретные угрозы в записи не выдумываются. Важно различать отсутствие данных и отсутствие угроз: первое не доказывает второе. В качестве охранной рекомендации предложено организовать ботанический заказник и работу по введению растения в культуру в Алайской долине. Издание не подтверждает выполнение этой рекомендации. Для современного решения необходимы обследование местообитаний и независимая ботаническая проверка. Национальная категория VU здесь относится к историческому изданию, а глобальная оценка IUCN не установлена.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "appearance": {
+          "text": {
+            "ru": "Многолетнее растение высотой 12–26 см, густо покрытое мягкими белыми волосками. Листья рассечены на узкие доли; крупные прямостоячие цветки розовые, околоцветник снаружи опушён.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "ecology": {
+          "text": {
+            "ru": "Каменистые склоны и скалы среднего и верхнего горных поясов. Сведения о конкретных лимитирующих факторах в русской версии очерка отсутствуют.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "diet": null,
+        "reproduction": {
+          "text": {
+            "ru": "По русскому очерку цветёт в июне–июле и плодоносит в июле–августе; плодики снабжены перистой остью. Более подробное описание размножения не приведено.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "distribution": {
+          "text": {
+            "ru": "В Кыргызстане — Алайская долина; общий ареал очерка включает Памир и хребты Памиро-Алая. Сведения относятся к изданию 2006 года.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      }
+    },
+    {
+      "id": "indian-crested-porcupine",
+      "scientificName": "Hystrix indica",
+      "names": {
+        "ru": "Дикобраз индийский",
+        "ky": "Жейре, чүткөр",
+        "uz": null,
+        "en": "Indian Crested Porcupine"
+      },
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Rodentia",
+        "family": "Hystricidae",
+        "genus": "Hystrix"
+      },
+      "group": "mammals",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "VII / LR/lc",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "book-2006"
+        ]
+      },
+      "iucn": {
+        "category": "LC",
+        "year": null,
+        "sourceIds": [
+          "iucn-checklist"
+        ]
+      },
+      "habitat": {
+        "description": {
+          "ru": "Расчленённые предгорья и среднегорья до 2300 м, густые кустарники возле ручьёв и других источников воды; также участки с мягким грунтом и тростником.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        },
+        "sourceIds": [
+          "book-2006"
+        ]
+      },
+      "regions": [
+        {
+          "code": "KG",
+          "type": "country",
+          "names": {
+            "ru": "Кыргызстан",
+            "ky": "Кыргызстан",
+            "uz": null,
+            "en": "Kyrgyzstan"
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "text": {
+            "ru": "В издании 2006 года названы браконьерство и гибель от голода в годы с глубоким снегом и сильным промерзанием грунта.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "conservationMeasures": [
+        {
+          "text": {
+            "ru": "Книга 2006 года сообщает об охране в заповедниках Сары-Челек, Падыша-Ата, Беш-Арал и национальных парках; рекомендует создавать зоологические заказники. Современное выполнение не проверено.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "population": {
+        "type": "unknown",
+        "value": null,
+        "min": null,
+        "max": null,
+        "territory": null,
+        "year": null,
+        "unit": null,
+        "sourceIds": [],
+        "reviewStatus": "pending",
+        "method": null
+      },
+      "images": [
+        {
+          "path": "assets/images/species/indian-crested-porcupine.webp",
+          "width": 1600,
+          "height": 1067,
+          "sha256": "3aaf49bfd0b37dfe0535a139efffa54d45448685c8e7c853fc1851260e2486e2",
+          "author": "sunnyjosef",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Hystrix_indica_365302751.jpg",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+          "attribution": "Hystrix indica 365302751.jpg — sunnyjosef, CC BY 4.0; Wikimedia Commons.",
+          "modifications": [
+            "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+            "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+          ],
+          "licenseVerified": true,
+          "caption": {
+            "ru": "Дикобраз в Индии; не свидетельство встречаемости в Кыргызстане.",
+            "ky": null,
+            "en": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "book-2006",
+          "title": "Красная книга Кыргызской Республики, 2-е издание (2006), PDF с. 521",
+          "publisher": "Государственное агентство / Биолого-почвенный институт НАН КР / «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=521",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "names.ru",
+            "names.en",
+            "group",
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "habitat",
+            "regions.0",
+            "threats.0",
+            "conservationMeasures.0",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution"
+          ],
+          "language": "ru",
+          "notes": "Исторический очерк прочитан полностью. Не подтверждает актуальный правовой статус, современную численность или выполнение мер охраны. Краткие тексты — редакционные переводы; независимая научная и языковая проверка необходима."
+        },
+        {
+          "id": "book-2006-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби (2006), PDF с. 520",
+          "publisher": "Кыргыз Республикасынын мамлекеттик агенттиги / КР УИА",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=520",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "names.ky"
+          ],
+          "language": "ky",
+          "notes": "Название взято из кыргызского очерка с восстановлением букв legacy-шрифта; новое народное название не придумано."
+        },
+        {
+          "id": "gbif-match",
+          "title": "GBIF Backbone: exact accepted species — Hystrix indica",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Hystrix%20indica",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
+          ],
+          "language": "en",
+          "taxonId": "gbif:5219884"
+        },
+        {
+          "id": "iucn-checklist",
+          "title": "IUCN Red List / GBIF: Hystrix indica",
+          "publisher": "IUCN (набор, опубликованный в GBIF 28.07.2026)",
+          "url": "https://api.gbif.org/v1/species/176672520",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "iucn.category"
+          ],
+          "language": "en",
+          "notes": "Точное принятое имя и ранг SPECIES; IUCN taxonID 10751. Дата публикации набора не является годом оценки: iucn.year остаётся null."
+        }
+      ],
+      "verified": false,
+      "lastReviewedAt": null,
+      "content": {
+        "shortDescription": {
+          "text": {
+            "ru": "Ночной грызун предгорий и среднегорий Кыргызстана. Роет норы и питается растительной пищей; национальный очерк отмечает браконьерство как угрозу.",
+            "ky": "Кыргызстандын тоо этегинде жана орто тоолорунда жашаган түнкү кемирүүчү. Ийин казып, өсүмдүктөр менен азыктанат; мыйзамсыз аңчылык ага коркунуч жаратат.",
+            "uz": "Qirg‘izistonning tog‘ etaklari va o‘rta tog‘larida yashaydigan tungi kemiruvchi. In qaziydi va o‘simliklar bilan oziqlanadi; noqonuniy ov unga tahdid soladi.",
+            "en": "A nocturnal rodent of Kyrgyzstan’s foothills and middle mountains. It digs burrows and eats plant foods; poaching is a threat noted in the national account."
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "overview": {
+          "text": {
+            "ru": "Индийский дикобраз — грызун, включённый в историческое второе издание Красной книги Кыргызской Республики как малоизученный вид. Его национальная категория VII / LR/lc сохраняется в формулировке этого издания и не используется как современная юридическая оценка. В очерке названы Кыргызский, Таласский, Чаткальский и Ферганский хребты, а также сведения о встречах в Чон-Кемине и Боомском ущелье. Предпочитаемые местообитания связаны с расчленённым рельефом предгорий и среднегорий, густыми кустарниками и участками возле источников воды. Указанная верхняя граница встреч составляет 2300 м. Эти исторические описания не преобразуются автоматически в новые точки карты.\n\nДикобраз ведёт ночной образ жизни и самостоятельно роет норы. Национальный очерк различает постоянные норы с несколькими выходами и кормовые укрытия с одним выходом. Летом в рационе названы зелёные части растений, плоды, ягоды и семена; зимой — кора, ветки и корневища. Вид может заходить в сады и огороды. Размножение происходит раз в год, но русская и английская версии расходятся в месяце появления детёнышей, поэтому точный месяц здесь не утверждается. Среди неблагоприятных факторов указаны браконьерство и голод при глубоком снеге и промерзании почвы. Книга перечисляет охрану в нескольких заповедниках и национальных парках и рекомендует создавать зоологические заказники. Современное выполнение мер отдельно не проверено. Точных данных о численности в Кыргызстане источник не приводит.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "appearance": null,
+        "ecology": {
+          "text": {
+            "ru": "Ночной образ жизни. Самостоятельно роет постоянные норы с несколькими выходами и кормовые норы с одним выходом. Зимой менее активен, согласно очерку 2006 года.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "diet": {
+          "text": {
+            "ru": "Летом — зелёные части растений, плоды, ягоды и семена; зимой — кора молодых деревьев, ветки и корневища травянистых растений.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "reproduction": {
+          "text": {
+            "ru": "Очерк указывает размножение один раз в год и 2–5 детёнышей. Русская версия называет апрель, английская — июль; точный месяц из-за расхождения не утверждается.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "distribution": {
+          "text": {
+            "ru": "По очерку 2006 года: Кыргызский, Таласский, Чаткальский и Ферганский хребты; имеются сведения о встречах в Чон-Кемине и Боомском ущелье. Современные точки не добавляются.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      }
     }
   ],
   "demoArchive": [

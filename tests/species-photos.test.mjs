@@ -23,7 +23,7 @@ test('photo audit preserves all original 21 photos and adds only four formerly e
   assert.equal(baseline.rows.filter(r=>r.realPhoto).length,21)
   assert.ok(baseline.rows.filter(r=>r.realPhoto).every(r=>r.fileExists&&r.shaMatches&&r.licenseAccepted))
   assert.equal(added.length,4);assert.equal(new Set(added.map(r=>r.candidateId)).size,4)
-  assert.equal(source.catalog.filter(s=>speciesPhoto(s)).length,25)
+  assert.equal(source.catalog.slice(0,30).filter(s=>speciesPhoto(s)).length,25)
   for(const row of baseline.photos){
     const current=source.catalog.find(s=>s.id===row.id)
     if(row.images.length)assert.deepEqual(current.images,row.images,row.id)
@@ -84,7 +84,7 @@ test('Apache image requires published unaltered license and original copyright n
 })
 test('remaining five empty arrays and unverified image metadata safely select placeholders',()=>{
   const missing=['pike-asp','turkestan-catfish','relict-spider','tien-shan-scutiger','menzbiers-marmot']
-  assert.deepEqual(published.filter(s=>!speciesPhoto(s)).map(s=>s.id),missing)
+  assert.deepEqual(published.slice(0,30).filter(s=>!speciesPhoto(s)).map(s=>s.id),missing)
   for(const s of published.filter(s=>missing.includes(s.id))){assert.equal(speciesPhoto(s),null);assert.equal(publicImageUrl(speciesPhoto(s)?.path),PLACEHOLDER)}
   const example=added[0].image
   for(const key of ['path','author','originalPage','license','licenseUrl','attribution'])assert.equal(canPublishImage({...example,[key]:null}),false)

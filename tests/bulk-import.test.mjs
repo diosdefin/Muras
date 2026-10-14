@@ -22,7 +22,7 @@ import { legacyScientificSource } from './helpers/legacy-scientific-source.mjs'
 
 const read=async path=>JSON.parse(await readFile(join(PROJECT_ROOT,path),'utf8'))
 const source=await read('data/species.source.json'),published=await read('public/data/species.json')
-const historicalSource=legacyScientificSource(source)
+const historicalSource=legacyScientificSource({...source,catalog:source.catalog.slice(0,30)})
 const baseline={...historicalSource,catalog:historicalSource.catalog.slice(0,17)}
 const research=await read('data/research/catalog-candidates.json'),selection=await read('data/research/bulk-expansion-selection.json')
 const tax=await read('docs/evidence/bulk-expansion-taxonomy.json'),photos=await read('docs/evidence/bulk-expansion-images.json')
@@ -38,9 +38,9 @@ test('research recipe prepares 13 supported records and separately rejects nine 
   assert.equal(JSON.stringify(research),before)
   assert.deepEqual(validateSource(source),[])
   assert.equal(hash(historicalSource.catalog.slice(0,17)),'625b3a11bfd48a49b48925244060b44dd2a991a3df3cca49c49242d99cd4caf3')
-  assert.equal(source.catalog.length,30)
+  assert.ok(source.catalog.length>=30)
   assert.deepEqual(availableGroups(published),GROUPS)
-  assert.deepEqual(Object.fromEntries(GROUPS.map(g=>[g,published.filter(s=>s.group===g).length])),{mammals:6,birds:7,plants:7,fish:2,reptiles:2,amphibians:1,arthropods:3,fungi:2})
+  assert.deepEqual(Object.fromEntries(GROUPS.map(g=>[g,published.slice(0,30).filter(s=>s.group===g).length])),{mammals:6,birds:7,plants:7,fish:2,reptiles:2,amphibians:1,arthropods:3,fungi:2})
 })
 
 test('real batch dry-run produces the committed catalogue, then repeated import is lossless and adds zero records',async()=>{
@@ -154,7 +154,7 @@ test('local asset verification checks real WebP dimensions, fingerprint and meta
 })
 
 test('new records preserve unknown populations and scientific language fallbacks; parent IUCN/photo never become subspecies facts',()=>{
-  const added=source.catalog.slice(17)
+  const added=source.catalog.slice(17,30)
   assert.equal(added.length,13)
   const originalAdded=historicalSource.catalog.slice(17)
   assert.equal(originalAdded.filter(s=>s.images.length).length,4);assert.equal(originalAdded.filter(s=>!s.images.length).length,9)
@@ -174,7 +174,7 @@ test('new records preserve unknown populations and scientific language fallbacks
 })
 
 test('all 30 names are searchable and lazy pagination yields 12/24/30 without duplicates across eight groups',()=>{
-  const index=createSearchIndex(published),catalog=useCatalog(ref(published))
+  const index=createSearchIndex(published),catalog=useCatalog(ref(published.slice(0,30)))
   for(const s of published)for(const name of [...Object.values(s.names),s.scientificName].filter(Boolean))assert.ok(searchSpecies(index,name).some(r=>r.species.id===s.id),name)
   assert.equal(catalog.page.value.entries.length,12);assert.equal(catalog.page.value.remaining,18)
   catalog.more();assert.equal(catalog.page.value.entries.length,24);catalog.more();assert.equal(catalog.page.value.entries.length,30)
