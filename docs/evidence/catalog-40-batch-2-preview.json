@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "batchId": "catalog-40-batch-2",
+  "beforeCount": 35,
+  "afterCount": 40,
+  "counts": {
+    "processed": 5,
+    "added": 5,
+    "unchanged": 0,
+    "rejected": 0
+  },
+  "results": [
+    {
+      "index": 0,
+      "candidateId": "fergana-ground-beetle",
+      "status": "added",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "summary": {
+        "id": "fergana-ground-beetle",
+        "scientificName": "Carabus ferghanicus",
+        "group": "arthropods",
+        "imageCount": 0
+      }
+    },
+    {
+      "index": 1,
+      "candidateId": "giant-robber-fly",
+      "status": "added",
+      "errors": [],
+      "warnings": [],
+      "summary": {
+        "id": "giant-robber-fly",
+        "scientificName": "Satanas gigas",
+        "group": "arthropods",
+        "imageCount": 1
+      }
+    },
+    {
+      "index": 2,
+      "candidateId": "korzhinskys-pear",
+      "status": "added",
+      "errors": [],
+      "warnings": [],
+      "summary": {
+        "id": "korzhinskys-pear",
+        "scientificName": "Pyrus korshinskyi",
+        "group": "plants",
+        "imageCount": 1
+      }
+    },
+    {
+      "index": 3,
+      "candidateId": "cinereous-vulture",
+      "status": "added",
+      "errors": [],
+      "warnings": [],
+      "summary": {
+        "id": "cinereous-vulture",
+        "scientificName": "Aegypius monachus",
+        "group": "birds",
+        "imageCount": 1
+      }
+    },
+    {
+      "index": 4,
+      "candidateId": "egyptian-vulture",
+      "status": "added",
+      "errors": [],
+      "warnings": [],
+      "summary": {
+        "id": "egyptian-vulture",
+        "scientificName": "Neophron percnopterus",
+        "group": "birds",
+        "imageCount": 1
+      }
+    }
+  ],
+  "sourceSha256": "82b40fd8618d719c9d6f7c4139aa9841fd2a16f5622188383c4df2e7643bd407",
+  "mode": "preview",
+  "applied": false
+}

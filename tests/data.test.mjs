@@ -232,7 +232,8 @@ test('licensed assets are local WebP, have declared dimensions, captions and mat
     assert.ok(image.width <= 1800 && image.height <= 1800)
     assert.ok(image.caption.ru)
     assert.ok(image.originalPage.startsWith('https://commons.wikimedia.org/wiki/File:') ||
-      image.originalPage === 'https://plant.depo.msu.ru/open/public/en/item/MW0895964')
+      image.originalPage === 'https://plant.depo.msu.ru/open/public/en/item/MW0895964' ||
+      image.originalPage === 'https://www.inaturalist.org/photos/106836074')
     assert.ok(image.modifications.some(change => change.includes('пикселизация')))
   }
 })

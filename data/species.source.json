@@ -8507,7 +8507,8 @@
             "taxonomy.kingdom",
             "taxonomy.phylum",
             "taxonomy.family",
-            "taxonomy.genus"
+            "taxonomy.genus",
+            "content.overview"
           ],
           "language": "en",
           "taxonId": "gbif:10782470"
@@ -8516,15 +8517,16 @@
           "id": "iucn-checklist",
           "title": "IUCN Red List / GBIF: Phrynocephalus saidalievi",
           "publisher": "IUCN (набор, опубликованный в GBIF 28.07.2026)",
-          "url": "https://api.gbif.org/v1/species/176718708",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Phrynocephalus+saidalievi&limit=10",
           "accessedAt": "2026-10-14",
           "supports": [
             "iucn.category",
             "taxonomy.class",
-            "taxonomy.order"
+            "taxonomy.order",
+            "content.overview"
           ],
           "language": "en",
-          "notes": "Точное принятое имя и ранг SPECIES; IUCN taxonID 48836207. Дата публикации набора не является годом оценки: iucn.year остаётся null."
+          "notes": "Точное принятое имя и ранг SPECIES; IUCN taxonID 48836207. Дата публикации набора не является годом оценки: iucn.year остаётся null. Ответ search содержит threatStatuses; одиночный endpoint species/key этого поля не возвращает."
         }
       ],
       "verified": false,
@@ -8549,7 +8551,9 @@
             "en": null
           },
           "sourceIds": [
-            "book-2006"
+            "book-2006",
+            "gbif-match",
+            "iucn-checklist"
           ]
         },
         "appearance": null,
@@ -8750,7 +8754,8 @@
             "taxonomy.class",
             "taxonomy.order",
             "taxonomy.family",
-            "taxonomy.genus"
+            "taxonomy.genus",
+            "content.overview"
           ],
           "language": "en",
           "taxonId": "gbif:8881643"
@@ -8778,7 +8783,8 @@
             "en": null
           },
           "sourceIds": [
-            "book-2006"
+            "book-2006",
+            "gbif-match"
           ]
         },
         "appearance": {
@@ -9003,7 +9009,8 @@
             "taxonomy.class",
             "taxonomy.order",
             "taxonomy.family",
-            "taxonomy.genus"
+            "taxonomy.genus",
+            "content.overview"
           ],
           "language": "en",
           "taxonId": "gbif:2856107"
@@ -9012,13 +9019,14 @@
           "id": "iucn-checklist",
           "title": "IUCN Red List / GBIF: Allium pskemense",
           "publisher": "IUCN (набор, опубликованный в GBIF 28.07.2026)",
-          "url": "https://api.gbif.org/v1/species/176769887",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Allium+pskemense&limit=10",
           "accessedAt": "2026-10-14",
           "supports": [
-            "iucn.category"
+            "iucn.category",
+            "content.overview"
           ],
           "language": "en",
-          "notes": "Точное принятое имя и ранг SPECIES; IUCN taxonID 20666130. Дата публикации набора не является годом оценки: iucn.year остаётся null."
+          "notes": "Точное принятое имя и ранг SPECIES; IUCN taxonID 20666130. Дата публикации набора не является годом оценки: iucn.year остаётся null. Ответ search содержит threatStatuses; одиночный endpoint species/key этого поля не возвращает."
         }
       ],
       "verified": false,
@@ -9043,7 +9051,9 @@
             "en": null
           },
           "sourceIds": [
-            "book-2006"
+            "book-2006",
+            "gbif-match",
+            "iucn-checklist"
           ]
         },
         "appearance": {
@@ -9253,7 +9263,8 @@
             "taxonomy.class",
             "taxonomy.order",
             "taxonomy.family",
-            "taxonomy.genus"
+            "taxonomy.genus",
+            "content.overview"
           ],
           "language": "en",
           "taxonId": "gbif:3929258"
@@ -9281,7 +9292,8 @@
             "en": null
           },
           "sourceIds": [
-            "book-2006"
+            "book-2006",
+            "gbif-match"
           ]
         },
         "appearance": {
@@ -9506,7 +9518,8 @@
             "taxonomy.class",
             "taxonomy.order",
             "taxonomy.family",
-            "taxonomy.genus"
+            "taxonomy.genus",
+            "content.overview"
           ],
           "language": "en",
           "taxonId": "gbif:5219884"
@@ -9515,13 +9528,14 @@
           "id": "iucn-checklist",
           "title": "IUCN Red List / GBIF: Hystrix indica",
           "publisher": "IUCN (набор, опубликованный в GBIF 28.07.2026)",
-          "url": "https://api.gbif.org/v1/species/176672520",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Hystrix+indica&limit=10",
           "accessedAt": "2026-10-14",
           "supports": [
-            "iucn.category"
+            "iucn.category",
+            "content.overview"
           ],
           "language": "en",
-          "notes": "Точное принятое имя и ранг SPECIES; IUCN taxonID 10751. Дата публикации набора не является годом оценки: iucn.year остаётся null."
+          "notes": "Точное принятое имя и ранг SPECIES; IUCN taxonID 10751. Дата публикации набора не является годом оценки: iucn.year остаётся null. Ответ search содержит threatStatuses; одиночный endpoint species/key этого поля не возвращает."
         }
       ],
       "verified": false,
@@ -9546,7 +9560,9 @@
             "en": null
           },
           "sourceIds": [
-            "book-2006"
+            "book-2006",
+            "gbif-match",
+            "iucn-checklist"
           ]
         },
         "appearance": null,
@@ -9586,6 +9602,1309 @@
         "distribution": {
           "text": {
             "ru": "По очерку 2006 года: Кыргызский, Таласский, Чаткальский и Ферганский хребты; имеются сведения о встречах в Чон-Кемине и Боомском ущелье. Современные точки не добавляются.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      }
+    },
+    {
+      "id": "fergana-ground-beetle",
+      "scientificName": "Carabus ferghanicus",
+      "names": {
+        "ru": "Брызгун ферганский",
+        "ky": "Фергана бүркөкчү",
+        "uz": null,
+        "en": "Fergana Ground Beetle"
+      },
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Coleoptera",
+        "family": "Carabidae",
+        "genus": "Carabus"
+      },
+      "group": "arthropods",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "II / VU B1ab(iii)+2ab(iii)c(iii,iv); C2b",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "book-2006"
+        ]
+      },
+      "iucn": {
+        "category": null,
+        "year": null,
+        "sourceIds": []
+      },
+      "habitat": {
+        "description": {
+          "ru": "Опушки, лесо-луговые участки, каменистые осыпи и участки под скалами орехово-плодового лесного пояса; высоты 1200–2500 м по русскому очерку.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        },
+        "sourceIds": [
+          "book-2006"
+        ]
+      },
+      "regions": [
+        {
+          "code": "KG",
+          "type": "country",
+          "names": {
+            "ru": "Кыргызстан",
+            "ky": "Кыргызстан",
+            "uz": null,
+            "en": "Kyrgyzstan"
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "text": {
+            "ru": "Хозяйственное преобразование орехово-плодовых лесов, пестициды, интенсивный выпас и лесозаготовки, согласно национальному очерку 2006 года.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "conservationMeasures": [
+        {
+          "text": {
+            "ru": "Рекомендовано сохранять орехово-плодовые леса с минимальной лесозаготовительной и животноводческой нагрузкой, изучать личинок и возможности восстановления вида.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "population": {
+        "type": "unknown",
+        "value": null,
+        "min": null,
+        "max": null,
+        "territory": null,
+        "year": null,
+        "unit": null,
+        "sourceIds": [],
+        "reviewStatus": "pending",
+        "method": null
+      },
+      "images": [],
+      "sources": [
+        {
+          "id": "book-2006",
+          "title": "Красная книга Кыргызской Республики, 2-е издание (2006), PDF с. 257",
+          "publisher": "Государственное агентство / Биолого-почвенный институт НАН КР / «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=257",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "names.ru",
+            "names.en",
+            "group",
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "habitat",
+            "regions.0",
+            "threats.0",
+            "conservationMeasures.0",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.diet",
+            "content.distribution"
+          ],
+          "language": "ru",
+          "notes": "Исторический очерк прочитан полностью. Не подтверждает актуальный правовой статус, современную численность или выполнение мер охраны. Краткие тексты — редакционные переводы; независимая научная и языковая проверка необходима."
+        },
+        {
+          "id": "book-2006-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби (2006), PDF с. 256",
+          "publisher": "Кыргыз Республикасынын мамлекеттик агенттиги / КР УИА",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=256",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "names.ky"
+          ],
+          "language": "ky",
+          "notes": "Название взято из кыргызского очерка с восстановлением букв legacy-шрифта; новое народное название не придумано."
+        },
+        {
+          "id": "gbif-match",
+          "title": "GBIF Backbone: exact accepted species — Carabus ferghanicus",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Carabus%20ferghanicus",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview"
+          ],
+          "language": "en",
+          "taxonId": "gbif:7630772"
+        }
+      ],
+      "verified": false,
+      "lastReviewedAt": null,
+      "content": {
+        "shortDescription": {
+          "text": {
+            "ru": "Чёрная хищная жужелица Ферганского хребта. Живёт в орехово-плодовых лесах, на опушках и каменистых участках; вырубка и интенсивный выпас угрожают её среде.",
+            "ky": "Фергана кырка тоосунун кара жырткыч коңузу. Жаңгак-мөмө токойлорунда, токой четинде жана таштуу жерлерде жашайт; бак кыюу жана ашыкча мал жаюу коркунуч жаратат.",
+            "uz": "Farg‘ona tizmasining qora yirtqich qo‘ng‘izi. Yong‘oq-mevali o‘rmonlar, o‘rmon chetlari va toshloq joylarda yashaydi; daraxt kesish va kuchli chorva bosimi xavf tug‘diradi.",
+            "en": "A black predatory ground beetle of the Fergana Range. It inhabits walnut-fruit forests, edges and rocky sites; tree cutting and heavy grazing threaten its habitat."
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "overview": {
+          "text": {
+            "ru": "Брызгун ферганский — жужелица, чей национальный очерк описывает узкий ареал на юго-западном склоне северной части Ферганского хребта. Издание 2006 года связывает распространение с участком от района Жалал-Абада до озера Карасу. Такая историческая привязка не используется как новая точка карты или как автоматически установленная административная область. Взрослый жук полностью чёрный, слабо блестящий, длиной 27–33 мм. Его надкрылья имеют многочисленные крупные ямки, расположенные продольными рядами. Это отличает описанный внешний облик от относительно гладких надкрылий брызгуна могучего, но определение экземпляра всё равно требует специалиста.\n\nМестообитания находятся в поясе орехово-плодовых лесов: опушки, лесные каменистые осыпи и участки под скалами. Русский очерк указывает диапазон высот 1200–2500 м и находки в зарослях шиповника выше лесного пояса. Взрослых жуков отмечают с мая по август; личинки и имаго названы наземными неспециализированными хищниками. Жизненный цикл изучен недостаточно, а годичное поколение в книге приведено как предположение, поэтому здесь не утверждается как установленный факт. Среди угроз описаны хозяйственное преобразование лесов, применение пестицидов, интенсивный выпас и лесозаготовки. Для сохранения предложено уменьшить нагрузку на орехово-плодовые леса, изучить личиночную биологию и возможность восстановления вида в изменённых местообитаниях. Выполнение этих исторических рекомендаций не подтверждено. Датированная оценка общей популяции отсутствует.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006",
+            "gbif-match"
+          ]
+        },
+        "appearance": {
+          "text": {
+            "ru": "Чёрный слабо блестящий жук длиной 27–33 мм. У надкрылий продольные ряды крупных глубоких ямок; половой диморфизм в национальном очерке назван слабым.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "ecology": {
+          "text": {
+            "ru": "Лесо-луговые участки в орехово-плодовых лесах; взрослые жуки встречаются с мая по август. Жизненный цикл описан как недостаточно изученный.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "diet": {
+          "text": {
+            "ru": "В русском очерке личинки и имаго названы наземными неспециализированными хищниками. Подробный перечень кормовых организмов не приведён.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "reproduction": null,
+        "distribution": {
+          "text": {
+            "ru": "Юго-западный склон северной части Ферганского хребта, от района Жалал-Абада до озера Карасу, по очерку 2006 года. Области и современные точки из описания не выводятся.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      }
+    },
+    {
+      "id": "giant-robber-fly",
+      "scientificName": "Satanas gigas",
+      "names": {
+        "ru": "Ктырь гигантский",
+        "ky": "Дөө шер чымыны",
+        "uz": null,
+        "en": "Eversmann’s Giant Robber-fly"
+      },
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Diptera",
+        "family": "Asilidae",
+        "genus": "Satanas"
+      },
+      "group": "arthropods",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "III / LR-nt",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "book-2006"
+        ]
+      },
+      "iucn": {
+        "category": null,
+        "year": null,
+        "sourceIds": []
+      },
+      "habitat": {
+        "description": {
+          "ru": "Целинные степи, пустоши и разреженные кустарники на холмах и в предгорьях, до 1900 м по национальному очерку.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        },
+        "sourceIds": [
+          "book-2006"
+        ]
+      },
+      "regions": [
+        {
+          "code": "KG",
+          "type": "country",
+          "names": {
+            "ru": "Кыргызстан",
+            "ky": "Кыргызстан",
+            "uz": null,
+            "en": "Kyrgyzstan"
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "text": {
+            "ru": "Освоение и распашка степных массивов, применение инсектицидов, согласно изданию 2006 года.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "conservationMeasures": [
+        {
+          "text": {
+            "ru": "Рекомендации 2006 года: изучить распространение и экологию, затем создавать микрорезерваты с запретом распашки и применения инсектицидов.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "population": {
+        "type": "unknown",
+        "value": null,
+        "min": null,
+        "max": null,
+        "territory": null,
+        "year": null,
+        "unit": null,
+        "sourceIds": [],
+        "reviewStatus": "pending",
+        "method": null
+      },
+      "images": [
+        {
+          "path": "assets/images/species/giant-robber-fly.webp",
+          "width": 1800,
+          "height": 1002,
+          "sha256": "ba4728fc48f629e504924b139890693fcf08f590baa31626280db96e3c6fe650",
+          "author": "Иван Пристрем",
+          "originalPage": "https://www.inaturalist.org/photos/106836074",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "attribution": "Satanas gigas — © Иван Пристрем, CC BY 4.0; iNaturalist photo 106836074, observation 66293295.",
+          "modifications": [
+            "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+            "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+          ],
+          "licenseVerified": true,
+          "caption": {
+            "ru": "Фотография наблюдения iNaturalist из Казахстана; способ съёмки не уточнён. Не является свидетельством встречаемости в Кыргызстане.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "book-2006",
+          "title": "Красная книга Кыргызской Республики, 2-е издание (2006), PDF с. 273",
+          "publisher": "Государственное агентство / Биолого-почвенный институт НАН КР / «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=273",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "names.ru",
+            "names.en",
+            "group",
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "habitat",
+            "regions.0",
+            "threats.0",
+            "conservationMeasures.0",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution"
+          ],
+          "language": "ru",
+          "notes": "Исторический очерк прочитан полностью. Не подтверждает актуальный правовой статус, современную численность или выполнение мер охраны. Краткие тексты — редакционные переводы; независимая научная и языковая проверка необходима."
+        },
+        {
+          "id": "book-2006-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби (2006), PDF с. 272",
+          "publisher": "Кыргыз Республикасынын мамлекеттик агенттиги / КР УИА",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=272",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "names.ky"
+          ],
+          "language": "ky",
+          "notes": "Название взято из кыргызского очерка с восстановлением букв legacy-шрифта; новое народное название не придумано."
+        },
+        {
+          "id": "gbif-match",
+          "title": "GBIF Backbone: exact accepted species — Satanas gigas",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Satanas%20gigas",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview"
+          ],
+          "language": "en",
+          "taxonId": "gbif:1661565"
+        }
+      ],
+      "verified": false,
+      "lastReviewedAt": null,
+      "content": {
+        "shortDescription": {
+          "text": {
+            "ru": "Крупная хищная муха степей и предгорий. В Кыргызстане описана из нескольких долин; питается другими насекомыми, а распашка и инсектициды угрожают её среде.",
+            "ky": "Талааларда жана тоо этектеринде жашаган ири жырткыч чымын. Кыргызстандагы бир нече өрөөндөн белгилүү; курт-кумурскалар менен азыктанат, жер айдоо ага коркунучтуу.",
+            "uz": "Dasht va tog‘ etaklarida yashaydigan yirik yirtqich pashsha. Qirg‘izistonning bir necha vodiysidan ma’lum; boshqa hasharotlarni yeydi, yer haydash unga tahdid soladi.",
+            "en": "A large predatory fly of steppe and foothill habitats, recorded in several Kyrgyz valleys. It eats other insects; ploughing and insecticides threaten its habitat."
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "overview": {
+          "text": {
+            "ru": "Гигантский ктырь — крупная хищная муха, включённая в национальное издание 2006 года с исторической категорией III / LR-nt. В книге указана длина тела 38–50 мм и переднего крыла до 26 мм. Тело стройное, покрыто серым налётом; грудь массивная, глаза большие и выступающие, ноги длинные, с волосками и щетинками. Удлинённый хоботок и прозрачные крылья входят в описание внешнего облика, однако фотография не заменяет определения по морфологическим признакам. GBIF принимает точный биномен Satanas gigas; расхождение года авторства между книгой и Backbone отмечено в исследовательском отчёте.\n\nНациональный очерк перечисляет находки в долинах Таласа, Чаткала и Узун-Ахмата, в Чуйской долине, западной части Иссык-Кульской котловины и других районах. Местообитания описаны как целинные степи, пустоши и разреженные кустарники на холмах и в предгорьях до 1900 м. Взрослые особи и личинки питаются другими насекомыми; в качестве добычи в очерке названы саранча и слепни. Личинки развиваются в почве или разлагающейся древесине. Лёт взрослых мух наблюдается с конца июня до середины сентября. Главными ограничивающими факторами названы распашка степных массивов и применение инсектицидов. Для охраны авторы предлагают изучить распространение и экологию, а затем создавать микрорезерваты без распашки и инсектицидных обработок. Современное выполнение предложений и общая численность Кыргызстана не установлены.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006",
+            "gbif-match"
+          ]
+        },
+        "appearance": {
+          "text": {
+            "ru": "Стройная муха длиной 38–50 мм с серым налётом, массивной грудью, большими выступающими глазами, длинными опушёнными ногами и прозрачными крыльями.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "ecology": {
+          "text": {
+            "ru": "Взрослые особи летают с конца июня до середины сентября. Личинки развиваются в почве или разлагающейся древесине; эти сведения приведены в национальном очерке.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "diet": {
+          "text": {
+            "ru": "Взрослые ктыри и личинки — хищники, питающиеся другими насекомыми. Очерк упоминает мароккскую саранчу и слепней в составе добычи взрослых мух.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "reproduction": {
+          "text": {
+            "ru": "В очерке 2006 года развитие описано как однолетнее; личинки живут в почве или разлагающейся древесине. Подробности яйцекладки в использованном материале не приведены.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "distribution": {
+          "text": {
+            "ru": "Исторические находки перечислены для долин Таласа, Чаткала, Узун-Ахмата и Чу, западной части Иссык-Кульской котловины, Внутреннего Тянь-Шаня и Приферганья. Новые точки не создаются.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      }
+    },
+    {
+      "id": "korzhinskys-pear",
+      "scientificName": "Pyrus korshinskyi",
+      "names": {
+        "ru": "Груша Коржинского",
+        "ky": "Коржинский алмуруту",
+        "uz": null,
+        "en": "Korzhinski’s Pear"
+      },
+      "taxonomy": {
+        "kingdom": "Plantae",
+        "phylum": "Tracheophyta",
+        "class": "Magnoliopsida",
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Pyrus"
+      },
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "book-2006"
+        ]
+      },
+      "iucn": {
+        "category": "CR",
+        "year": null,
+        "sourceIds": [
+          "iucn-checklist"
+        ]
+      },
+      "habitat": {
+        "description": {
+          "ru": "Сухие щебнистые, щебнисто-каменистые и мелкоземистые склоны, берега саев; нижний и средний горные пояса, 1200–1700 м.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        },
+        "sourceIds": [
+          "book-2006"
+        ]
+      },
+      "regions": [
+        {
+          "code": "KG",
+          "type": "country",
+          "names": {
+            "ru": "Кыргызстан",
+            "ky": "Кыргызстан",
+            "uz": null,
+            "en": "Kyrgyzstan"
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "text": {
+            "ru": "Рубка плодоносящих деревьев и отсутствие семенного возобновления, по национальному очерку 2006 года.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "conservationMeasures": [
+        {
+          "text": {
+            "ru": "Издание 2006 года рекомендует контролировать состояние вида и взять выявленные деревья под охрану; сообщает о выращивании в ботаническом саду НАН КР.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "population": {
+        "type": "unknown",
+        "value": null,
+        "min": null,
+        "max": null,
+        "territory": null,
+        "year": null,
+        "unit": null,
+        "sourceIds": [],
+        "reviewStatus": "pending",
+        "method": null
+      },
+      "images": [
+        {
+          "path": "assets/images/species/korzhinskys-pear.webp",
+          "width": 1800,
+          "height": 1390,
+          "sha256": "0773e5979b56a68e712c3ff9a8e45cc8c67d545e129ee6cea366a0b007405338",
+          "author": "Mike Shaw",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Pyrus_korshinskyi_(Kazakh_Pear)_in_blossom.jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "attribution": "Pyrus korshinskyi (Kazakh Pear) in blossom.jpg — Mike Shaw, CC BY-SA 4.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+          "modifications": [
+            "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+            "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+          ],
+          "licenseVerified": true,
+          "caption": {
+            "ru": "Дерево в Королевском ботаническом саду Эдинбурга, Шотландия; культивируемый экземпляр.",
+            "ky": null,
+            "en": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "book-2006",
+          "title": "Красная книга Кыргызской Республики, 2-е издание (2006), PDF с. 133",
+          "publisher": "Государственное агентство / Биолого-почвенный институт НАН КР / «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=133",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "names.ru",
+            "names.en",
+            "group",
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "habitat",
+            "regions.0",
+            "threats.0",
+            "conservationMeasures.0",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution"
+          ],
+          "language": "ru",
+          "notes": "Исторический очерк прочитан полностью. Не подтверждает актуальный правовой статус, современную численность или выполнение мер охраны. Краткие тексты — редакционные переводы; независимая научная и языковая проверка необходима."
+        },
+        {
+          "id": "book-2006-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби (2006), PDF с. 132",
+          "publisher": "Кыргыз Республикасынын мамлекеттик агенттиги / КР УИА",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=132",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "names.ky"
+          ],
+          "language": "ky",
+          "notes": "Название взято из кыргызского очерка с восстановлением букв legacy-шрифта; новое народное название не придумано."
+        },
+        {
+          "id": "gbif-match",
+          "title": "GBIF Backbone: exact accepted species — Pyrus korshinskyi",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Pyrus%20korshinskyi",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview"
+          ],
+          "language": "en",
+          "taxonId": "gbif:5363093"
+        },
+        {
+          "id": "iucn-checklist",
+          "title": "IUCN Red List / GBIF: Pyrus korshinskyi",
+          "publisher": "IUCN (набор, опубликованный в GBIF 28.07.2026)",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Pyrus+korshinskyi&limit=10",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "iucn.category",
+            "content.overview"
+          ],
+          "language": "en",
+          "notes": "Точное принятое имя и ранг SPECIES; GBIF key 176784661; IUCN taxonID 63482. Ответ search содержит threatStatuses; одиночный endpoint species/key этого поля не возвращает. Дата публикации набора не является годом оценки: iucn.year остаётся null."
+        }
+      ],
+      "verified": false,
+      "lastReviewedAt": null,
+      "content": {
+        "shortDescription": {
+          "text": {
+            "ru": "Дикорастущая груша с белыми цветками. В Кыргызстане указана для Чаткальского и Ферганского хребтов; рубка плодоносящих деревьев угрожает сохранению вида.",
+            "ky": "Ак гүлдүү жапайы алмурут. Кыргызстанда Чаткал жана Фергана кырка тоолорунда катталган; мөмө берген дарактарды кыюу түрдүн сакталышына коркунуч жаратат.",
+            "uz": "Oq gulli yovvoyi nok. Qirg‘izistonda Chatqol va Farg‘ona tizmalarida qayd etilgan; meva beruvchi daraxtlarni kesish turning saqlanishiga tahdid soladi.",
+            "en": "A wild pear with white flowers, recorded in Kyrgyzstan on the Chatkal and Fergana ranges. Felling fruit-bearing trees threatens the conservation of this species."
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "overview": {
+          "text": {
+            "ru": "Груша Коржинского — дикорастущее плодовое дерево, национальный очерк которого указывает Чаткальский и Ферганский хребты Кыргызстана. В издании 2006 года вид отнесён к исторической национальной категории VU. Это отдельная классификация: глобальная категория IUCN не подменяет национальную и сопровождается собственным источником. По описанию дерево достигает 10–12 м, имеет шаровидно-раскидистую или вытянутую крону, тёмно-коричневые побеги и удлинённые листья с пильчатым краем. Цветки белые; плоды широко-грушевидные, зеленовато-жёлтые, сочные и слегка вяжущие. Названные признаки помогают познакомиться с растением, но не заменяют проверки гербарного материала.\n\nМестообитания описаны как сухие щебнистые, каменистые и мелкоземистые склоны, берега саев в нижнем и среднем горном поясе на высотах 1200–1700 м. Растение размножается семенами и корневой порослью. В естественных условиях, согласно очерку, цветёт в мае, а плодоносит в конце августа–сентябре. Книга подчёркивает ценность вида для селекции засухоустойчивых сортов. Основными ограничивающими факторами названы рубка плодоносящих деревьев и отсутствие семенного возобновления. Исторический источник сообщает о выращивании в ботаническом саду НАН КР из семян, собранных на Ферганском хребте; современный результат этой работы отдельно не проверен. Авторы рекомендуют контролировать состояние вида и охранять все выявленные деревья. Датированная количественная оценка всей природной популяции Кыргызстана не найдена, поэтому численность остаётся неизвестной.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006",
+            "gbif-match",
+            "iucn-checklist"
+          ]
+        },
+        "appearance": {
+          "text": {
+            "ru": "Дерево до 10–12 м с раскидистой или вытянутой кроной, удлинёнными пильчатыми листьями, белыми цветками и зеленовато-жёлтыми грушевидными плодами.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "ecology": {
+          "text": {
+            "ru": "Сухие щебнистые, каменистые и мелкоземистые склоны, берега саев в нижнем и среднем поясе гор, на высотах 1200–1700 м по национальному очерку.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "diet": null,
+        "reproduction": {
+          "text": {
+            "ru": "Размножение семенами и корневой порослью. По очерку 2006 года цветение в естественных условиях приходится на май, плодоношение — на конец августа–сентябрь.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "distribution": {
+          "text": {
+            "ru": "В Кыргызстане — Чаткальский и Ферганский хребты; сведения издания 2006 года. Актуальные административные свидетельства и точки требуют отдельной проверки.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      }
+    },
+    {
+      "id": "cinereous-vulture",
+      "scientificName": "Aegypius monachus",
+      "names": {
+        "ru": "Чёрный гриф",
+        "ky": "Таз кара",
+        "uz": null,
+        "en": "Cinereous Vulture"
+      },
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Aegypius"
+      },
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "VI / NT",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "book-2006"
+        ]
+      },
+      "iucn": {
+        "category": "NT",
+        "year": null,
+        "sourceIds": [
+          "iucn-checklist"
+        ]
+      },
+      "habitat": {
+        "description": {
+          "ru": "Субальпийский и альпийский пояса Тянь-Шаня в местах обитания диких копытных и скопления домашних животных; отдельные наблюдения описаны ниже этих поясов.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        },
+        "sourceIds": [
+          "book-2006"
+        ]
+      },
+      "regions": [
+        {
+          "code": "KG",
+          "type": "country",
+          "names": {
+            "ru": "Кыргызстан",
+            "ky": "Кыргызстан",
+            "uz": null,
+            "en": "Kyrgyzstan"
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "text": {
+            "ru": "Снижение численности диких копытных и отстрел, согласно национальному очерку 2006 года.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "conservationMeasures": [
+        {
+          "text": {
+            "ru": "Исторические рекомендации: выявить и охранять гнездовья, создавать минизаказники, изучать гнездовую биологию и вовлекать местные сообщества в охрану.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "population": {
+        "type": "unknown",
+        "value": null,
+        "min": null,
+        "max": null,
+        "territory": null,
+        "year": null,
+        "unit": null,
+        "sourceIds": [],
+        "reviewStatus": "pending",
+        "method": null
+      },
+      "images": [
+        {
+          "path": "assets/images/species/cinereous-vulture.webp",
+          "width": 1800,
+          "height": 1286,
+          "sha256": "dd32de6437931ca037bf0dde283aaed1bc29ac37d6bdb2dc6ef36e0fe5172761",
+          "author": "Tisha Mukherjee",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Cinereous_Vulture_in_Jodbeed_Gadhwala_Conservation_Reserve_November_2025_by_Tisha_Mukherjee_01.jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "attribution": "Cinereous Vulture in Jodbeed Gadhwala Conservation Reserve November 2025 by Tisha Mukherjee 01.jpg — Tisha Mukherjee, CC BY-SA 4.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+          "modifications": [
+            "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+            "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+          ],
+          "licenseVerified": true,
+          "caption": {
+            "ru": "Птица в Jodbeed Gadhwala Conservation Reserve, Индия; не свидетельство встречаемости в Кыргызстане.",
+            "ky": null,
+            "en": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "book-2006",
+          "title": "Красная книга Кыргызской Республики, 2-е издание (2006), PDF с. 411",
+          "publisher": "Государственное агентство / Биолого-почвенный институт НАН КР / «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=411",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "names.ru",
+            "names.en",
+            "group",
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "habitat",
+            "regions.0",
+            "threats.0",
+            "conservationMeasures.0",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution"
+          ],
+          "language": "ru",
+          "notes": "Исторический очерк прочитан полностью. Не подтверждает актуальный правовой статус, современную численность или выполнение мер охраны. Краткие тексты — редакционные переводы; независимая научная и языковая проверка необходима."
+        },
+        {
+          "id": "book-2006-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби (2006), PDF с. 410",
+          "publisher": "Кыргыз Республикасынын мамлекеттик агенттиги / КР УИА",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=410",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "names.ky"
+          ],
+          "language": "ky",
+          "notes": "Название взято из кыргызского очерка с восстановлением букв legacy-шрифта; новое народное название не придумано."
+        },
+        {
+          "id": "gbif-match",
+          "title": "GBIF Backbone: exact accepted species — Aegypius monachus",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Aegypius%20monachus",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview"
+          ],
+          "language": "en",
+          "taxonId": "gbif:5229165"
+        },
+        {
+          "id": "iucn-checklist",
+          "title": "IUCN Red List / GBIF: Aegypius monachus",
+          "publisher": "IUCN (набор, опубликованный в GBIF 28.07.2026)",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Aegypius+monachus&limit=10",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "iucn.category",
+            "content.overview"
+          ],
+          "language": "en",
+          "notes": "Точное принятое имя и ранг SPECIES; GBIF key 176612934; IUCN taxonID 22695231. Ответ search содержит threatStatuses; одиночный endpoint species/key этого поля не возвращает. Дата публикации набора не является годом оценки: iucn.year остаётся null."
+        }
+      ],
+      "verified": false,
+      "lastReviewedAt": null,
+      "content": {
+        "shortDescription": {
+          "text": {
+            "ru": "Оседлая птица горных поясов Кыргызстана, строящая гнёзда на деревьях и скалах. Исторический очерк отмечает отстрел и сокращение диких копытных как угрозы.",
+            "ky": "Кыргызстандын тоолорунда жашаган отуруктуу куш. Дарактарга жана аскаларга уя салат; тарыхый очеркте атып өлтүрүү жана жапайы туяктуулардын азайышы коркунуч деп берилген.",
+            "uz": "Qirg‘iziston tog‘larida yashaydigan o‘troq qush. Daraxtlar va qoyalarga uya quradi; tarixiy manbada otish va yovvoyi tuyoqlilarning kamayishi tahdid sifatida qayd etilgan.",
+            "en": "A resident bird of Kyrgyzstan’s mountain belts, nesting on trees and rocks. The historical national account names shooting and declining wild ungulates as threats."
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "overview": {
+          "text": {
+            "ru": "Чёрный гриф — птица, представленная во втором издании Красной книги Кыргызской Республики отдельным видовым очерком. В исторической национальной классификации указаны категория VI и обозначение NT. Современная международная категория показана отдельно по точно сопоставленной записи набора IUCN. Национальный очерк описывает гнездование на территории Кыргызстана и связь местообитаний с субальпийским и альпийским поясами Тянь-Шаня. В южной части страны приведены также наблюдения на меньших высотах. Обобщённые сведения о распространении не являются новыми географическими точками и не доказывают присутствия во всех районах сегодня.\n\nВ книге вид назван оседлым. Гнёзда он строит на деревьях, чаще на арче, реже на скалах. Для постройки используются ветки, а лоток выстилается шерстью горных козлов и домашних овец. Описана ранняя кладка: первые яйца появляются в феврале–марте, обычно в кладке одно яйцо. По очерку птенцы появляются в апреле–мае и начинают летать в августе–сентябре. Сведения о наблюдениях над падалью и рядом со скоплениями копытных показывают связь с кормовыми ресурсами, но не дают количественного описания рациона. Сокращение диких копытных и отстрел названы неблагоприятными факторами. Для охраны рекомендованы выявление и защита гнездовий, создание минизаказников и изучение гнездовой биологии. Исторические наблюдения не превращаются в оценку современной общей численности. Выполнение предложенных мер и текущая популяция требуют отдельного исследования.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006",
+            "gbif-match",
+            "iucn-checklist"
+          ]
+        },
+        "appearance": null,
+        "ecology": {
+          "text": {
+            "ru": "В национальном очерке описан как оседлый вид субальпийского и альпийского поясов; наблюдался в смешанных стаях с гималайским грифом. Гнёзда располагаются на деревьях, чаще на арче, реже в скалах.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "diet": {
+          "text": {
+            "ru": "Очерк описывает наблюдение птицы над трупом лошади и рекомендует использование падали домашнего скота на специальных местах прикорма. Подробный количественный состав рациона не установлен.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "reproduction": {
+          "text": {
+            "ru": "По очерку 2006 года первые яйца откладываются в феврале–марте, обычно одно яйцо. Птенцы появляются в апреле–мае, становятся способными к полёту в августе–сентябре.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "distribution": {
+          "text": {
+            "ru": "Гнездование описано на территории Кыргызстана, преимущественно в горных поясах Тянь-Шаня; приведены отдельные наблюдения в южных среднегорьях. Актуальные точки требуют отдельной проверки.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      }
+    },
+    {
+      "id": "egyptian-vulture",
+      "scientificName": "Neophron percnopterus",
+      "names": {
+        "ru": "Стервятник",
+        "ky": "Журтчу, тарпчы",
+        "uz": null,
+        "en": "Egyptian Vulture"
+      },
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Aves",
+        "order": "Accipitriformes",
+        "family": "Accipitridae",
+        "genus": "Neophron"
+      },
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "V / VU: R",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "book-2006"
+        ]
+      },
+      "iucn": {
+        "category": "EN",
+        "year": null,
+        "sourceIds": [
+          "iucn-checklist"
+        ]
+      },
+      "habitat": {
+        "description": {
+          "ru": "Пустынные предгорья и среднегорья с резко расчленённым рельефом, преимущественно открытые участки; реже субальпийский пояс.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        },
+        "sourceIds": [
+          "book-2006"
+        ]
+      },
+      "regions": [
+        {
+          "code": "KG",
+          "type": "country",
+          "names": {
+            "ru": "Кыргызстан",
+            "ky": "Кыргызстан",
+            "uz": null,
+            "en": "Kyrgyzstan"
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "text": {
+            "ru": "Сокращение кормовой базы вследствие уменьшения численности диких копытных и отстрел, по национальному очерку 2006 года.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "conservationMeasures": [
+        {
+          "text": {
+            "ru": "Рекомендации 2006 года: защищать гнездовья от беспокойства, создавать минизаказники, проводить разъяснительную работу и сотрудничать с орнитологами стран зимовки.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        }
+      ],
+      "population": {
+        "type": "unknown",
+        "value": null,
+        "min": null,
+        "max": null,
+        "territory": null,
+        "year": null,
+        "unit": null,
+        "sourceIds": [],
+        "reviewStatus": "pending",
+        "method": null
+      },
+      "images": [
+        {
+          "path": "assets/images/species/egyptian-vulture.webp",
+          "width": 1800,
+          "height": 1013,
+          "sha256": "c316177c52699ceeedeade6643652c086422caa869fb1b46a8f0ec778da2fbe4",
+          "author": "Artemy Voikhansky",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Neophron-1.jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+          "attribution": "Neophron-1.jpg — Artemy Voikhansky, CC BY-SA 4.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+          "modifications": [
+            "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+            "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+          ],
+          "licenseVerified": true,
+          "caption": {
+            "ru": "Птица в заповеднике Гамла, Израиль; не свидетельство встречаемости в Кыргызстане.",
+            "ky": null,
+            "en": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "book-2006",
+          "title": "Красная книга Кыргызской Республики, 2-е издание (2006), PDF с. 405",
+          "publisher": "Государственное агентство / Биолого-почвенный институт НАН КР / «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=405",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "names.ru",
+            "names.en",
+            "group",
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "habitat",
+            "regions.0",
+            "threats.0",
+            "conservationMeasures.0",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution"
+          ],
+          "language": "ru",
+          "notes": "Исторический очерк прочитан полностью. Не подтверждает актуальный правовой статус, современную численность или выполнение мер охраны. Краткие тексты — редакционные переводы; независимая научная и языковая проверка необходима."
+        },
+        {
+          "id": "book-2006-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби (2006), PDF с. 404",
+          "publisher": "Кыргыз Республикасынын мамлекеттик агенттиги / КР УИА",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=404",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "names.ky"
+          ],
+          "language": "ky",
+          "notes": "Название взято из кыргызского очерка с восстановлением букв legacy-шрифта; новое народное название не придумано."
+        },
+        {
+          "id": "gbif-match",
+          "title": "GBIF Backbone: exact accepted species — Neophron percnopterus",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Neophron%20percnopterus",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview"
+          ],
+          "language": "en",
+          "taxonId": "gbif:2480696"
+        },
+        {
+          "id": "iucn-checklist",
+          "title": "IUCN Red List / GBIF: Neophron percnopterus",
+          "publisher": "IUCN (набор, опубликованный в GBIF 28.07.2026)",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Neophron+percnopterus&limit=10",
+          "accessedAt": "2026-10-14",
+          "supports": [
+            "iucn.category",
+            "content.overview"
+          ],
+          "language": "en",
+          "notes": "Точное принятое имя и ранг SPECIES; GBIF key 176612981; IUCN taxonID 22695180. Ответ search содержит threatStatuses; одиночный endpoint species/key этого поля не возвращает. Дата публикации набора не является годом оценки: iucn.year остаётся null."
+        }
+      ],
+      "verified": false,
+      "lastReviewedAt": null,
+      "content": {
+        "shortDescription": {
+          "text": {
+            "ru": "Перелётная птица-падальщик предгорий и среднегорий Кыргызстана. Строит гнёзда в скалах; уменьшение кормовой базы и отстрел названы угрозами в национальном очерке.",
+            "ky": "Кыргызстандын тоо этегинде жана орто тоолорунда жашаган келгин куш. Тарп менен азыктанып, аскага уя салат; азыктын азайышы жана атып өлтүрүү ага коркунучтуу.",
+            "uz": "Qirg‘izistonning tog‘ etaklari va o‘rta tog‘laridagi ko‘chmanchi, o‘limtikxo‘r qush. Qoyalarga uya quradi; oziqa kamayishi va otish manbada tahdid sifatida ko‘rsatilgan.",
+            "en": "A migratory scavenger of Kyrgyzstan’s foothills and middle mountains. It nests on rocks; reduced food resources and shooting are threats in the national account."
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "overview": {
+          "text": {
+            "ru": "Стервятник — перелётная птица-падальщик, включённая в историческую национальную Красную книгу с категорией V / VU: R. Русский очерк посвящён виду Neophron percnopterus и уточняет, что в Кыргызстане обитает номинативный подвид. Здесь сохраняется видовой ранг: международная оценка относится к точно сопоставленному виду, а не заимствуется у другого подвида. Национальный источник характеризует Кыргызстан как северо-восточную окраину общего ареала. Основные местообитания — пустынные предгорья и среднегорья с сильно расчленённым рельефом; в субальпийский пояс птица залетает реже. Она предпочитает открытые участки и может встречаться в культурных ландшафтах.\n\nВ очерке стервятник назван полезным падальщиком. Гнёзда устраиваются в скалах либо на искусственных возвышенностях старых сооружений; для постройки используются сухие прутья, шерсть и другие материалы. В кладке описаны два яйца, оба родителя участвуют в заботе о потомстве. Эти сведения не являются новым наблюдением, а пересказывают исторический научный источник. Снижение кормовой базы вследствие сокращения диких копытных и отстрел названы основными угрозами. Авторы рекомендуют выявлять гнездовья, исключать беспокойство в период размножения, организовывать минизаказники и работать с местными жителями. Отдельно предложено сотрудничество с орнитологами стран зимовки для охраны на гнездовании, пролёте и зимовках. Наличие этих рекомендаций не подтверждает их выполнение. Отдельные старые наблюдения сохраняются в исследовательских заметках, но не публикуются как современная оценка численности Кыргызстана.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006",
+            "gbif-match",
+            "iucn-checklist"
+          ]
+        },
+        "appearance": null,
+        "ecology": {
+          "text": {
+            "ru": "Перелётный падальщик открытых предгорных и среднегорных участков. Очерк отмечает связь с культурными ландшафтами и редкие залёты в субальпийский пояс.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "diet": {
+          "text": {
+            "ru": "В национальном очерке вид охарактеризован как падальщик; сокращение диких копытных связывается с уменьшением кормовой базы. Детальный состав рациона не приведён.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "reproduction": {
+          "text": {
+            "ru": "Строит гнёзда в скалах или на искусственных возвышенностях старых сооружений. Очерк сообщает о двух яйцах и участии обоих родителей в заботе о кладке и выводке.",
+            "ky": null,
+            "uz": null,
+            "en": null
+          },
+          "sourceIds": [
+            "book-2006"
+          ]
+        },
+        "distribution": {
+          "text": {
+            "ru": "Кыргызстан расположен на северо-восточной окраине ареала по очерку 2006 года. Исторические наблюдения приведены для северных и южных участков страны; новые точки не добавляются.",
             "ky": null,
             "uz": null,
             "en": null

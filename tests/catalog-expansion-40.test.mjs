@@ -39,8 +39,8 @@ test('expansion preserves every byte-logical old account, all 25 photo metadata 
  assert.equal(hash(source.demoArchive),baseline.archiveSha256)
  assert.equal(source.catalog.slice(0,30).filter(speciesPhoto).length,25)
 })
-test('only the documented five or ten exact accepted national species are appended, without taxonomic duplicates',()=>{
- assert.ok([5,10].includes(added.length));assert.equal(source.catalog.length,30+proofs.length)
+test('only the documented ten exact accepted national species are appended, without taxonomic duplicates',()=>{
+ assert.equal(added.length,10);assert.equal(source.catalog.length,40);assert.equal(source.catalog.length,30+proofs.length)
  assert.deepEqual(added.map(s=>s.id),proofs.map(s=>s.id));assert.equal(new Set(source.catalog.map(s=>s.id)).size,source.catalog.length)
  const allNames=source.catalog.map(s=>taxonNameKey(s.scientificName));assert.equal(new Set(allNames).size,allNames.length)
  for(const s of added){
@@ -62,12 +62,26 @@ test('new scientific claims retain real citations, unknown population and countr
   for(const field of CONTENT_FIELDS){const section=s.content[field];if(section)assert.ok(section.sourceIds.every(id=>s.sources.some(r=>r.id===id&&r.supports.includes(`content.${field}`))))}
   assert.equal(s.iucn.year,null)
   const proof=proofs.find(p=>p.id===s.id),matched=proof.iucnSearch.results.find(r=>r.key===proof.selectedIucnKey)
-  if(s.iucn.category){assert.equal(matched.canonicalName,s.scientificName);assert.equal(matched.taxonomicStatus,'ACCEPTED');assert.equal(matched.rank,'SPECIES')}
+  if(s.iucn.category){
+   assert.equal(matched.canonicalName,s.scientificName);assert.equal(matched.taxonomicStatus,'ACCEPTED');assert.equal(matched.rank,'SPECIES');assert.equal(s.sources.find(r=>r.id==='iucn-checklist').url,proof.iucnSearchUrl)
+   assert.equal(s.iucn.category,({VULNERABLE:'VU',DATA_DEFICIENT:'DD',CRITICALLY_ENDANGERED:'CR',NEAR_THREATENED:'NT',ENDANGERED:'EN',LEAST_CONCERN:'LC'})[matched.threatStatuses[0]])
+  }
   else assert.deepEqual(s.iucn.sourceIds,[])
  }
  assert.equal(added.find(s=>s.id==='kostychevs-pasque-flower').threats,null)
  assert.equal(added.find(s=>s.id==='vigorous-ground-beetle').content.reproduction,null)
  const reptile=added.find(s=>s.id==='said-alievs-toad-agama');assert.equal(reptile.taxonomy.class,'Reptilia');assert.equal(reptile.taxonomy.order,'Squamata')
+})
+test('research encounter counts remain separate from public population values and never acquire an invented observation year',async()=>{
+ const notes=await read('data/research/catalog-40-population-notes.json')
+ assert.equal(notes.reviewStatus,'pending');assert.equal(notes.records.length,9)
+ for(const row of notes.records){
+  assert.ok(added.some(s=>s.id===row.speciesId));assert.ok(row.limitations&&row.territory&&row.unit)
+  assert.equal(source.catalog.find(s=>s.id===row.speciesId).population.type,'unknown')
+  assert.equal(published.find(s=>s.id===row.speciesId).population.type,'unknown')
+ }
+ const dated=notes.records.filter(r=>r.year!==null);assert.deepEqual(dated.map(r=>r.year),[1992,1955,1992,2005])
+ assert.ok(!notes.records.some(r=>r.year===2006))
 })
 test('four short translations, full Russian accounts and missing vernacular names use explicit honest fallbacks',()=>{
  for(const s of added){
@@ -99,7 +113,14 @@ test('new reviewed photos retain exact provenance and their local/public WebP ha
   if(!s.images.length){assert.equal(receipt.status,'placeholder');assert.equal(speciesPhoto(publicSpecies),null);assert.equal(publicImageUrl(null),PLACEHOLDER);continue}
   assert.equal(receipt.visualReview.reviewed,true);assert.deepEqual(s.images[0],receipt.image)
   const reviewed=photos.candidates.find(r=>r.id===s.id),page=photos.commonsPages.find(r=>r.candidateId===s.id).page
-  const meta=checkCommonsMetadata(reviewed,page);assert.equal(meta.author,s.images[0].author);assert.equal(meta.license,s.images[0].license)
+  if(s.id==='giant-robber-fly'){
+   const rights=await read('docs/evidence/catalog-40-robber-fly-rights.json')
+   assert.equal(rights.observation.taxon.name,s.scientificName);assert.equal(rights.observation.photo.license_code,'cc-by')
+   assert.equal(rights.occurrence.media[0].license,'http://creativecommons.org/licenses/by/4.0/')
+   assert.equal(s.images[0].author,rights.occurrence.media[0].creator);assert.equal(s.images[0].license,'CC BY 4.0')
+   assert.equal(s.images[0].originalPage,'https://www.inaturalist.org/photos/106836074')
+   assert.throws(()=>checkCommonsMetadata(reviewed,page),/допуска/)
+  }else{const meta=checkCommonsMetadata(reviewed,page);assert.equal(meta.author,s.images[0].author);assert.equal(meta.license,s.images[0].license)}
   for(const image of s.images){
    assert.equal(canPublishImage(image),true);const bytes=await readFile(new URL('../'+image.path,import.meta.url))
    assert.equal(digest(bytes),image.sha256);assert.deepEqual(webpMetadata(bytes),{width:image.width,height:image.height,privateMetadata:false})
@@ -127,7 +148,11 @@ test('import blocks parent/subspecies collisions and main, but permits the expli
  const plan=await planBatchImport(source,batch([parent]));assert.equal(plan.counts.rejected,1);assert.match(plan.results[0].errors.join(' '),/вида\/подвида/);assert.deepEqual(plan.proposedSource,source)
 })
 test('CC0 official deed is accepted and canonicalized; wrong hosts and unrelated permission links are rejected',()=>{
- const candidate=photos.candidates.find(c=>c.id==='giant-robber-fly'),page=photos.commonsPages.find(r=>r.candidateId===candidate.id).page
+ // Test URL normalization independently of editorial approval; the actual Commons
+ // candidate is rejected because its author source carries a different licence.
+ const candidate=structuredClone(photos.candidates.find(c=>c.id==='giant-robber-fly'))
+ candidate.photoResearch.photo.rightsConfirmed=true;candidate.photoResearch.photo.eligibleForNextEditorialStage=true
+ const page=photos.commonsPages.find(r=>r.candidateId===candidate.id).page
  assert.equal(checkCommonsMetadata(candidate,page).licenseUrl,'https://creativecommons.org/publicdomain/zero/1.0/')
  for(const url of ['https://example.org/publicdomain/zero/1.0/','https://creativecommons.org/licenses/by-nc/4.0/','https://creativecommons.org/publicdomain/zero/1.0/deed.en/evil']){
   const bad=structuredClone(page);bad.imageinfo[0].extmetadata.LicenseUrl.value=url;assert.throws(()=>checkCommonsMetadata(candidate,bad),/CC0/)

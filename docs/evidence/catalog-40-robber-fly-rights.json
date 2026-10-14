@@ -1,0 +1,49 @@
+{
+  "retrievedAt": "2026-10-14",
+  "gbifUrl": "https://api.gbif.org/v1/occurrence/4507844429",
+  "inaturalistUrl": "https://api.inaturalist.org/v1/observations/66293295",
+  "occurrence": {
+    "occurrenceID": "https://www.inaturalist.org/observations/66293295",
+    "scientificName": "Satanas gigas (Eversmann, 1855)",
+    "basisOfRecord": "HUMAN_OBSERVATION",
+    "country": "Kazakhstan",
+    "recordedBy": "Иван Пристрем",
+    "identifiedBy": "Chris Cohen",
+    "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+    "media": [
+      {
+        "type": "StillImage",
+        "format": "image/jpeg",
+        "references": "https://www.inaturalist.org/photos/106836074",
+        "created": "2017-06-05T06:22:00.000+00:00",
+        "creator": "Иван Пристрем",
+        "publisher": "iNaturalist",
+        "license": "http://creativecommons.org/licenses/by/4.0/",
+        "rightsHolder": "Иван Пристрем",
+        "identifier": "https://inaturalist-open-data.s3.amazonaws.com/photos/106836074/original.jpg"
+      }
+    ]
+  },
+  "observation": {
+    "id": 66293295,
+    "taxon": {
+      "id": 856423,
+      "name": "Satanas gigas",
+      "rank": "species"
+    },
+    "photo": {
+      "id": 106836074,
+      "license_code": "cc-by",
+      "original_dimensions": {
+        "width": 2048,
+        "height": 1140
+      },
+      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/106836074/square.jpg",
+      "attribution": "(c) Иван Пристрем, some rights reserved (CC BY)",
+      "flags": [],
+      "moderator_actions": [],
+      "hidden": false
+    }
+  },
+  "decision": "Commons CC0 rejected due to conflict with author source. Original downloaded from iNaturalist Open Data; publish under author CC BY 4.0 with attribution."
+}
