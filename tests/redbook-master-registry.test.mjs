@@ -12,7 +12,8 @@ const lists = await read('data/research/redbook-master-national-lists.json')
 const registry = await read('data/research/redbook-master-registry.json')
 const candidates = await read('data/research/redbook-master-candidates.json')
 const reconciliation = await read('data/research/redbook-master-reconciliation.json')
-const source = await read('data/species.source.json')
+// Reconciliation was made before provisional publication; retain that exact input.
+const source = await read('data/backups/bulk-25-provisional/species.source.json')
 const taxonomy = await read('docs/evidence/redbook-master-taxonomy.json')
 const selection = await read('data/research/redbook-master-selection.json')
 

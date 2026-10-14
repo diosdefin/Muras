@@ -18,21 +18,24 @@ const priorHead = '1a213f4cb8f38a70e20129b1011b7fb1d698dd26'
 const read = async (root, p) => JSON.parse((await readFile(resolve(root, p), 'utf8')).replace(/^\uFEFF/, ''))
 const fileTitle = uri => decodeURIComponent(new URL(uri).pathname.split('/wiki/')[1]).replaceAll('_', ' ')
 
-export async function auditBulk25(root = PROJECT_ROOT) {
+export async function auditBulk25(root = PROJECT_ROOT, { historical = false } = {}) {
+  const baselinePath = p => historical ? ({ 'data/species.source.json': 'data/backups/bulk-25-provisional/species.source.json',
+    'public/data/species.json': 'data/backups/bulk-25-provisional/public-species.json',
+    'src/data/species-model.js': 'data/backups/bulk-25-provisional/species-model.js' }[p] || p) : p
   const [registry, manifest, master, source, national, taxonomy, legacy, selection, preserved] = await Promise.all([
     'data/research/bulk-25-content-registry.json', 'data/research/bulk-25-content-manifest.json',
     'data/research/redbook-master-registry.json', 'data/species.source.json',
     'data/research/redbook-master-national-lists.json', 'docs/evidence/redbook-master-taxonomy.json',
     'data/research/catalog-candidates.json', 'data/research/bulk-expansion-selection.json',
     'docs/evidence/bulk-25-preservation.json'
-  ].map(p => read(root, p)))
+  ].map(p => read(root, baselinePath(p))))
   const sourceBefore = fingerprint(source), registryBytesBefore = await readFile(resolve(root, 'data/research/bulk-25-content-registry.json'))
   assert.equal(source.catalog.length, 40)
   assert.equal(source.demoArchive.length, 2)
   assert.equal(fingerprint(master), manifest.masterRegistryFingerprint)
   assert.deepEqual(registry.candidates.map(c => c.id), manifest.candidateIds)
   assert.equal(manifest.candidateIds.length, 25)
-  for (const [p, sha] of Object.entries(preserved)) assert.equal(digest(await readFile(resolve(root, p))), sha, p)
+  for (const [p, sha] of Object.entries(preserved)) assert.equal(digest(await readFile(resolve(root, baselinePath(p)))), sha, p)
   const sourceRecords = new Map(national.lists.flatMap(l => l.records).map(r => [r.recordId, r]))
   const selectedIds = new Set(manifest.candidateIds)
   const remaining = master.candidates.filter(c => !selectedIds.has(c.id))
@@ -188,7 +191,7 @@ export async function auditBulk25(root = PROJECT_ROOT) {
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
-  const result = await auditBulk25()
+  const result = await auditBulk25(PROJECT_ROOT, { historical: process.argv.includes('--historical') })
   for (const [p, value] of [['docs/evidence/bulk-25-release-audit.json', result.audit],
     ['data/research/bulk-25-release-review-manifest.json', result.reviewManifest]]) {
     await mkdir(dirname(resolve(PROJECT_ROOT, p)), { recursive: true })

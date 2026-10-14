@@ -7,6 +7,7 @@ import { PROJECT_ROOT } from './build-data.mjs'
 import { importBatchFile, canApplyOnBranch } from './import-species-batch.mjs'
 import { createRegistry, parseCsv, validateRegistry, checkRegistry, createTaxonIndex, createQueueConflicts, validDate, validApproval, digest } from './lib/research-pipeline.mjs'
 import { createLocalAdapter, confined, readLocal, parseJson, decodeUtf8, inspectPipelineAssets } from './lib/local-research-adapter.mjs'
+import { prepareProvisionalPublication } from './lib/provisional-publication.mjs'
 
 const help = `Локальный конвейер MURAS (без сетевых запросов):
   init --input список.json|csv --registry data/research/queue.json [--id queue] [--batch-size 25]
@@ -15,11 +16,12 @@ const help = `Локальный конвейер MURAS (без сетевых �
   approve --registry data/research/queue.json --candidate ID --reviewer Имя --date YYYY-MM-DD --reason Причина
   reject --registry data/research/queue.json --candidate ID --reason Причина
   apply --registry data/research/queue.json [--batch 1]
+  provisional --registry data/research/queue.json --manifest data/research/review.json --mode dry-run|apply --owner-role project_owner --decision-id ID --date YYYY-MM-DD --reason Основание
 check/report — dry-run; resume — сохранение диагностики и черновиков; apply — только одобренные записи.`
 
 function options(args) {
   const command = args[0], opts = {}
-  const allowed = ['input', 'registry', 'id', 'batch-size', 'batch', 'report', 'candidate', 'reviewer', 'date', 'reason']
+  const allowed = ['input', 'registry', 'id', 'batch-size', 'batch', 'report', 'candidate', 'reviewer', 'date', 'reason', 'manifest', 'mode', 'owner-role', 'decision-id']
   for (let i = 1; i < args.length; i += 2) {
     const name = args[i]?.replace(/^--/, '')
     if (!args[i]?.startsWith('--') || !allowed.includes(name) || !args[i + 1] || args[i + 1].startsWith('--') || opts[name] !== undefined) throw new Error('Некорректный/повторяющийся аргумент CLI')
@@ -70,16 +72,18 @@ async function atomicJson(root, path, value, { expected, exclusive = false } = {
 export async function runPipeline(root, args) {
   const { command, opts } = options(args)
   if (!command || command === '--help' || command === 'help') return { help }
-  if (!['init', 'check', 'report', 'resume', 'approve', 'reject', 'apply'].includes(command)) throw new Error(help)
+  if (!['init', 'check', 'report', 'resume', 'approve', 'reject', 'apply', 'provisional'].includes(command)) throw new Error(help)
   const commandOptions = { init: ['input', 'registry', 'id', 'batch-size'], check: ['registry', 'batch', 'report'],
     report: ['registry', 'batch', 'report'], resume: ['registry', 'report'],
-    approve: ['registry', 'candidate', 'reviewer', 'date', 'reason'], reject: ['registry', 'candidate', 'reason'], apply: ['registry', 'batch', 'report'] }
+    approve: ['registry', 'candidate', 'reviewer', 'date', 'reason'], reject: ['registry', 'candidate', 'reason'], apply: ['registry', 'batch', 'report'],
+    provisional: ['registry', 'manifest', 'mode', 'owner-role', 'decision-id', 'date', 'reason', 'report'] }
   for (const name of Object.keys(opts)) if (!commandOptions[command].includes(name)) throw new Error(`--${name} не поддерживается командой ${command}`)
   registryPath(root, opts.registry)
+  if (command === 'provisional') registryPath(root, opts.manifest)
   if (opts.report) generatedPath(root, opts.report)
   // Branch guard precedes all catalog writes, even when an approved subset is empty.
-  if (command === 'apply' && !canApplyOnBranch(execFileSync('git', ['branch', '--show-current'], { cwd: root, encoding: 'utf8' }).trim())) throw new Error('Запись каталога запрещена на этой ветке (включая main)')
-  const mutates = ['init', 'resume', 'approve', 'reject', 'apply'].includes(command)
+  if ((command === 'apply' || command === 'provisional' && opts.mode === 'apply') && !canApplyOnBranch(execFileSync('git', ['branch', '--show-current'], { cwd: root, encoding: 'utf8' }).trim())) throw new Error('Запись каталога запрещена на этой ветке (включая main)')
+  const mutates = ['init', 'resume', 'approve', 'reject', 'apply'].includes(command) || command === 'provisional' && opts.mode === 'apply'
   let lock, expected
   const lockPath = `${registryPath(root, opts.registry)}.pipeline.lock`
   try {
@@ -104,6 +108,28 @@ export async function runPipeline(root, args) {
     expected = digest(bytes); validateRegistry(registry)
     const save = async value => { await atomicJson(root, opts.registry, value, { expected }); expected = digest(await readFile(registryPath(root, opts.registry))) }
     const source = parseJson(await readLocal(root, 'data/species.source.json'))
+    if (command === 'provisional') {
+      const { packet, decision, plan } = await prepareProvisionalPublication(root, registry, source, opts)
+      let application
+      if (opts.mode === 'apply') {
+        if (digest(await readLocal(root, opts.registry)) !== expected ||
+          digest(await readLocal(root, opts.manifest)) !== decision.manifestSha256) throw new Error('Реестр или manifest изменился после dry-run; публикация отменена')
+        // Durable intent before the catalog rename; reruns require this same decision.
+        const journalPath = `data/research/publication-decisions/${decision.decisionId}.json`
+        const old = await readLocal(root, journalPath).catch(e => { if (e.code !== 'ENOENT') throw e; return null })
+        if (old && digest(old) !== digest(JSON.stringify(decision, null, 2) + '\n')) throw new Error('ID решения уже занят другим разрешением; переиспользование отменено')
+        if (!old) await atomicJson(root, journalPath, decision, { exclusive: true })
+        const packetPath = `.generated/bulk-pipeline/${registry.registryId}/provisional-${decision.decisionId}.json`
+        await atomicJson(root, packetPath, packet)
+        application = await importBatchFile(root, packetPath, { apply: true,
+          expectedBatchSha256: digest(JSON.stringify(packet, null, 2) + '\n'), requireAllValid: true })
+      }
+      const report = { schemaVersion: 1, mode: opts.mode, publicationStatus: 'provisional', decisionId: decision.decisionId,
+        counts: application?.counts || plan.counts, results: application?.results || plan.results,
+        applied: application?.applied || false, scientificApproval: null, registryChanged: false }
+      if (opts.report) await atomicJson(root, opts.report, report)
+      return report
+    }
     const catalogIndex = createTaxonIndex(source), queueConflicts = createQueueConflicts(registry)
     const adapter = createLocalAdapter(root), start = performance.now(), cpu = process.cpuUsage()
     const check = (value, currentSource = source, batchNumber) => checkRegistry(value, currentSource, { adapter,

@@ -18,7 +18,8 @@ import {PROJECT_ROOT} from '../scripts/build-data.mjs'
 import {checkCommonsMetadata} from '../scripts/prepare-batch-images.mjs'
 
 const read=path=>readFile(new URL('../'+path,import.meta.url),'utf8').then(JSON.parse)
-const source=await read('data/species.source.json'),published=await read('public/data/species.json')
+// Historical 30 -> 40 release; the 40 -> 63 release has its own preservation tests.
+const source=await read('data/backups/bulk-25-provisional/species.source.json'),published=await read('data/backups/bulk-25-provisional/public-species.json')
 const baseline=await read('docs/evidence/catalog-40-baseline.json'),photos=await read('docs/evidence/catalog-40-photo-research.json')
 const proofs=[],receipts=[]
 for(const batch of [1,2]){

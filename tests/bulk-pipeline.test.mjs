@@ -13,7 +13,8 @@ import { planBatchImport } from '../scripts/lib/bulk-import.mjs'
 import { scientificContent } from '../src/data/localization.js'
 import { syntheticCandidate } from './helpers/synthetic-bulk-candidates.mjs'
 
-const sourceBytes = await readFile(new URL('../data/species.source.json', import.meta.url))
+// Keep the synthetic pipeline scenarios anchored to their original 40-record base.
+const sourceBytes = await readFile(new URL('../data/backups/bulk-25-provisional/species.source.json', import.meta.url))
 const source = JSON.parse(sourceBytes)
 const json = (root, path, value) => writeFile(join(root, path), JSON.stringify(value, null, 2) + '\n')
 const registryArgs = ['--registry', 'data/research/queue.json']

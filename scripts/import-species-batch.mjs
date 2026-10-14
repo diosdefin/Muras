@@ -43,7 +43,7 @@ export async function inspectAssets(root,species) {
   return errors
 }
 
-export async function importBatchFile(root,batchPath,{apply=false,expectedBatchSha256}={}){
+export async function importBatchFile(root,batchPath,{apply=false,expectedBatchSha256,requireAllValid=false}={}){
   const path=confined(root,'data/species.source.json'), lockPath=`${path}.import.lock`
   let lock,tempPath
   try{
@@ -53,6 +53,7 @@ export async function importBatchFile(root,batchPath,{apply=false,expectedBatchS
     if(expectedBatchSha256!==undefined&&hash(batchBytes)!==expectedBatchSha256)throw new Error('Пакет изменился после редакторской проверки; запись отменена')
     const batch=JSON.parse(batchBytes.toString('utf8').replace(/^\uFEFF/,''))
     const plan=await planBatchImport(JSON.parse(before.toString('utf8')),batch,{validateAssets:s=>inspectAssets(root,s)})
+    if(requireAllValid&&plan.counts.rejected)throw new Error(`Весь пакет отменён: ${plan.results.filter(r=>r.status==='rejected').map(r=>`${r.candidateId}: ${r.errors.join('; ')}`).join('\n')}`)
     const report={...plan,sourceSha256:hash(before),mode:apply?'apply':'preview',applied:false};delete report.proposedSource
     if(apply&&plan.counts.added){
       const backup=confined(root,`.generated/import-backups/${batch.batchId}-${hash(before).slice(0,16)}.json`)

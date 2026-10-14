@@ -188,6 +188,7 @@ export async function checkRegistry(registry, source, { adapter, validateAssets 
     if (batchNumber !== undefined && number !== batchNumber) continue
     const packet = { schemaVersion: 1, documentType: 'species-import-batch', batchId: `${registry.registryId}-${number}`, records: [] }
     const batchResults = []
+    const importedIds = new Set()
     for (const c of all.slice(offset, offset + registry.batchSize)) {
       const result = { candidateId: c.id, batchNumber: number, state: 'needs_evidence', errors: [], warnings: [], fingerprint: null }
       batchResults.push(result); results.push(result)
@@ -198,14 +199,17 @@ export async function checkRegistry(registry, source, { adapter, validateAssets 
         result.fingerprint = candidateFingerprint(c, loaded)
         result.readiness = languagePhotoReport(species)
         const existing = index.ids.get(c.id)
-        const alreadyImported = c.importedFingerprint === result.fingerprint && existing && isDeepStrictEqual(existing, species)
+        const provisional = existing?.publication?.status === 'provisional' && existing.publication.researchFingerprint === result.fingerprint
+        const compared = provisional ? Object.fromEntries(Object.entries(existing).filter(([k]) => k !== 'publication')) : existing
+        const alreadyImported = (c.importedFingerprint === result.fingerprint || provisional) && existing && isDeepStrictEqual(compared, species)
         result.errors.push(...(alreadyImported ? [] : duplicates(c, index)), ...(conflicts.get(c.id) || []))
         if (result.errors.length) { result.state = 'rejected'; continue }
         result.errors.push(...researchErrors(c, species))
         if (result.errors.length) continue
         result.state = 'research_ready'
         if (!species) { result.errors.push('Не подготовлен публикационный черновик draft/draftFile'); continue }
-        packet.records.push({ candidateId: c.id, species, taxonomyEvidence: c.taxonomyEvidence })
+        if (alreadyImported) importedIds.add(c.id)
+        packet.records.push({ candidateId: c.id, species: alreadyImported ? existing : species, taxonomyEvidence: c.taxonomyEvidence })
       } catch (error) { result.errors.push(`Ошибка кандидата: ${error.message}`) }
     }
     const assetChecks = new Map()
@@ -218,7 +222,7 @@ export async function checkRegistry(registry, source, { adapter, validateAssets 
       if (r.readiness.photo === 'prepared' && assetChecks.has(c.id)) r.readiness.photoCheck = assetChecks.get(c.id).length ? 'failed' : 'passed'
       if (validation.status === 'rejected') r.state = assetChecks.get(c.id)?.length ||
         validation.errors.some(e => /images|Фото|лицензи|WebP|SHA-256|LICENSE|NOTICE|EXIF|XMP/i.test(e)) ? 'needs_photo' : 'research_ready'
-      else if (c.importedFingerprint === r.fingerprint && validation.status === 'unchanged') r.state = 'imported'
+      else if (importedIds.has(c.id) && validation.status === 'unchanged') r.state = 'imported'
       else r.state = validApproval(c, r.fingerprint) ? 'approved_for_import' : 'ready_for_review'
       if (c.approval && !validApproval(c, r.fingerprint)) r.warnings.push('Одобрение отсутствует/устарело: требуется новое решение редактора')
     }

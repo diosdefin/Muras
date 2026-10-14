@@ -24,6 +24,7 @@
     "data:bulk:approve": "node scripts/bulk-pipeline.mjs approve",
     "data:bulk:reject": "node scripts/bulk-pipeline.mjs reject",
     "data:bulk:apply": "node scripts/bulk-pipeline.mjs apply",
+    "data:bulk:provisional": "node scripts/bulk-pipeline.mjs provisional",
     "test": "node --test tests/*.test.mjs"
   },
   "dependencies": {

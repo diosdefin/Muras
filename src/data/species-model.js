@@ -40,7 +40,7 @@ export function validateSpecies(records, label = 'catalog', { publicData = false
     const p = `${label}[${index}]`
     if (!object(item)) { fail(p, 'ожидается объект вида'); return }
     for (const key of FIELDS) if (!(key in item)) fail(`${p}.${key}`, 'обязательное поле отсутствует')
-    for (const key of Object.keys(item)) if (!FIELDS.includes(key) && key !== 'content') fail(`${p}.${key}`, 'неизвестное поле')
+    for (const key of Object.keys(item)) if (!FIELDS.includes(key) && !['content', 'publication'].includes(key)) fail(`${p}.${key}`, 'неизвестное поле')
     if (!text(item.id) || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(item.id)) fail(`${p}.id`, 'ожидается безопасный slug')
     if (ids.has(item.id)) fail(`${p}.id`, 'повторяющийся id')
     ids.add(item.id)
@@ -49,6 +49,15 @@ export function validateSpecies(records, label = 'catalog', { publicData = false
     if (item.group !== null && !isSpeciesGroup(item.group)) fail(`${p}.group`, 'неизвестная группа')
     if (typeof item.verified !== 'boolean') fail(`${p}.verified`, 'ожидается boolean')
     if (item.lastReviewedAt !== null && !date(item.lastReviewedAt)) fail(`${p}.lastReviewedAt`, 'ожидается дата YYYY-MM-DD или null')
+    if (item.publication !== undefined) {
+      const publication = item.publication
+      const keys = ['status', 'scientificReviewStatus', 'independentReviewer', 'decisionId', 'publishedAt', 'researchFingerprint']
+      if (!object(publication) || Object.keys(publication).length !== keys.length || Object.keys(publication).some(k => !keys.includes(k)) ||
+        publication.status !== 'provisional' || publication.scientificReviewStatus !== 'pending' || publication.independentReviewer !== null ||
+        !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(publication.decisionId || '') || !date(publication.publishedAt) ||
+        !/^[a-f0-9]{64}$/.test(publication.researchFingerprint || '') || item.verified !== false || item.lastReviewedAt !== null ||
+        item.population?.reviewStatus !== 'pending') fail(`${p}.publication`, 'предварительная публикация требует явное решение, fingerprint и независимую проверку pending без имени редактора')
+    }
     const sourceIds = new Set()
     const supported = new Set()
     if (!Array.isArray(item.sources)) fail(`${p}.sources`, 'ожидается массив источников')

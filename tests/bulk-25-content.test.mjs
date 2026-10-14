@@ -13,7 +13,9 @@ import { auditBulk25 } from '../scripts/audit-bulk-25-release.mjs'
 const read = async p => JSON.parse(await readFile(`${PROJECT_ROOT}/${p}`, 'utf8'))
 const registry = await read('data/research/bulk-25-content-registry.json')
 const manifest = await read('data/research/bulk-25-content-manifest.json')
-const source = await read('data/species.source.json')
+// Reproduce the 22.4 pre-import audit against its immutable 40-record snapshot.
+// Current 63-record behavior is checked independently in provisional-catalog.test.
+const source = await read('data/backups/bulk-25-provisional/species.source.json')
 const master = await read('data/research/redbook-master-registry.json')
 const options = () => ({ adapter: createLocalAdapter(PROJECT_ROOT), validateAssets: s => inspectPipelineAssets(PROJECT_ROOT, s) })
 
@@ -26,7 +28,10 @@ test('bulk-25 keeps stable accepted taxon order, the master registry and public 
   assert.equal(registry.candidates.filter(c => c.rank === 'SUBSPECIES').length, 1)
   assert.equal(registry.candidates.find(c => c.rank === 'SUBSPECIES').id, 'varanus-griseus-caspius')
   for (const [path, sha] of Object.entries(await read('docs/evidence/bulk-25-preservation.json'))) {
-    assert.equal(digest(await readFile(`${PROJECT_ROOT}/${path}`)), sha, path)
+    const baselinePath = ({ 'data/species.source.json': 'data/backups/bulk-25-provisional/species.source.json',
+      'public/data/species.json': 'data/backups/bulk-25-provisional/public-species.json',
+      'src/data/species-model.js': 'data/backups/bulk-25-provisional/species-model.js' })[path] || path
+    assert.equal(digest(await readFile(`${PROJECT_ROOT}/${baselinePath}`)), sha, path)
   }
 })
 
@@ -116,7 +121,7 @@ test('repeat checks preserve fingerprints; tampered evidence fails and canonical
 })
 
 test('release review manifest withholds ambiguous scientific concepts and checks all other queues without publication', async () => {
-  const { audit, reviewManifest } = await auditBulk25()
+  const { audit, reviewManifest } = await auditBulk25(PROJECT_ROOT, { historical: true })
   assert.deepEqual(audit.counts, { technically_ready: 23, needs_correction: 0, blocked: 2 })
   assert.deepEqual(reviewManifest, await read('data/research/bulk-25-release-review-manifest.json'))
   assert.equal(reviewManifest.publicationAllowed, false)
