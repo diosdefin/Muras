@@ -1,0 +1,287 @@
+{
+  "id": "aythya-nyroca",
+  "scientificName": "Aythya nyroca",
+  "names": {
+    "ru": "Белоглазая чернеть",
+    "ky": null,
+    "uz": null,
+    "en": "Ferruginous Duck"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "genus": "Aythya"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VI; NT (издание 2006)",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Озёра, водохранилища и пруды с богатой водной растительностью и мелкими водными животными.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Усиливающаяся рекреационная и хозяйственная нагрузка на водоёмах линьки и кормёжки.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В 2006 году рекомендованы целевые меры охраны, разъяснительная работа и регулярные учёты пролётных популяций.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исключение из списка охотничьих уток — рекомендация старого источника, не подтверждение действующего запрета 2026 года.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/aythya-nyroca.webp",
+      "width": 1800,
+      "height": 1442,
+      "sha256": "369c049d90ae87fd30775fafc91cc6d7c2edc0cfb172b3c29c029989d6c8c54e",
+      "author": "Dr. Raju Kasambe",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Ferruginous_Pochard_Aythya_nyroca_Male_by_Dr._Raju_Kasambe_DSCN2746_(12).jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Ferruginous Pochard Aythya nyroca Male by Dr. Raju Kasambe DSCN2746 (12).jpg — Dr. Raju Kasambe, CC BY-SA 4.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+        "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Самец белоглазой чернети, национальный парк Кеоладео, Индия; не наблюдение в Кыргызстане.",
+        "ky": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=365",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "conservationMeasures.1",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 3, строка 18",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Aythya nyroca",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Aythya%20nyroca",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:2498259"
+    },
+    {
+      "id": "biology-museum",
+      "title": "Amat, J. A.; Salvador, A. (2023). Porrón pardo — Aythya nyroca: Identificación",
+      "publisher": "Museo Nacional de Ciencias Naturales, Madrid; Enciclopedia Virtual de los Vertebrados Españoles",
+      "url": "https://www.vertebradosibericos.org/aves/identificacion/aytnyrid.html",
+      "accessedAt": "2026-10-14",
+      "language": null,
+      "publishedAt": "2023-12-27",
+      "supports": [
+        "content.appearance",
+        "content.overview"
+      ]
+    },
+    {
+      "id": "photo-commons",
+      "title": "मराठी नाव: नयनसरी बदक",
+      "publisher": "Wikimedia Commons; Dr. Raju Kasambe",
+      "url": "https://commons.wikimedia.org/wiki/File:Ferruginous_Pochard_Aythya_nyroca_Male_by_Dr._Raju_Kasambe_DSCN2746_(12).jpg",
+      "accessedAt": "2026-10-14",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Перелётная утка озёр и прудов с богатой водной растительностью. В Кыргызстане описана на пролёте и летней линьке; местное гнездование требует подтверждения.",
+        "ky": "Суу өсүмдүгү мол көлдөрдө жана көлмөлөрдө жашаган келгин өрдөк. Кыргызстанда учуп өтүүдө жана жайкы түлөөдө сүрөттөлгөн; бул жерде уялары ырастала элек.",
+        "uz": "Suv oʻsimliklariga boy koʻl va hovuzlarning koʻchmanchi oʻrdagi. Qirgʻizistonda uchib oʻtish va yozgi tullashda qayd etilgan; mahalliy uya qurishi tasdiqlanishi kerak.",
+        "en": "A migratory duck of lakes and ponds rich in aquatic vegetation. Recorded in Kyrgyzstan on passage and during summer moult; local breeding needs confirmation."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Белоглазая чернеть — нырковая утка, у взрослого самца которой красновато-бурое оперение и белая радужина. Самка окрашена более тускло и имеет бурые глаза; белое подхвостье и белая полоса крыла важны для определения. Эти признаки подтверждены научной энциклопедией Национального музея естественных наук Испании. Они помогают отличать вид от похожих чернетей, но самостоятельное определение гибридных птиц требует специалиста.\n\nКрасная книга 2006 года описывает пролёт через Чуйскую долину, Прииссыккулье и сыртовые озёра Внутреннего Тянь-Шаня. Весеннее появление приходится на апрель, осенняя миграция — на сентябрь–октябрь. Летом на высокогорных озёрах встречались линяющие птицы. В рационе преобладают части водных растений и семена; реже отмечены водные беспозвоночные и мелкая рыба.\n\nРост рекреационной и хозяйственной нагрузки на кормовые и линные водоёмы назван основной угрозой. Авторы рекомендовали целевые меры охраны, просвещение и регулярные учёты пролётных птиц. Возможное гнездование в северном Кыргызстане обсуждалось как направление поиска, а не установленный факт. Сезонные размеры стай не превращены в национальную численность; категория VI, NT сохраняет историческую привязку.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "biology-museum"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Самец в брачном оперении красновато-бурый, с белой радужиной; самка тусклее и менее рыжая, радужина бурая. У обоих полов белые подхвостье и полоса крыла. Музейный справочник предупреждает о сложности определения молодых и гибридных птиц.",
+        "en": null
+      },
+      "sourceIds": [
+        "biology-museum"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Мигрирующий вид. По национальной книге первые весенние птицы появляются в апреле, осенние миграции проходят в сентябре–октябре. На высокогорных озёрах летом отмечались линяющие птицы. Для отдыха и кормёжки предпочитает водоёмы с богатой водной растительностью.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный источник перечисляет вегетативные части водных растений и семена, реже ручейников и их личинок, моллюсков и мелкую рыбу. Указания на конкретные кормовые семейства не преобразованы в количественные доли рациона.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": null,
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически на пролёте в Чуйской долине, Прииссыккулье и на сыртовых озёрах Внутреннего Тянь-Шаня, в том числе Сон-Куле и Чатыр-Куле. Местное гнездование национальная статья рассматривает только как возможное.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

@@ -1,0 +1,301 @@
+{
+  "id": "oxyura-leucocephala",
+  "scientificName": "Oxyura leucocephala",
+  "names": {
+    "ru": "Савка",
+    "ky": null,
+    "uz": null,
+    "en": "White-headed Duck"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "genus": "Oxyura"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "IV; EN, 2bcde (издание 2006)",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "На пролёте — водоёмы с берегами, поросшими тростником и рогозом; исторически отмечены также водохранилища.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Ухудшение местообитаний, рыболовство и выжигание тростников.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Охота.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный источник 2006 года рекомендует запрет весенней охоты на водоёмах Чуйской долины и Прииссыккулья, где возможен пролёт; действующее право 2026 года этим не подтверждается.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/oxyura-leucocephala.webp",
+      "width": 1736,
+      "height": 1180,
+      "sha256": "7630668650650cadf43e9b23c8c5196adfda70e702c8e278335afb5a78020326",
+      "author": "Ferran Pestaña from Barcelona, España",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Oxyura_leucocephala,_Clot-de-Galvany,_Alicante_16.jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Oxyura leucocephala, Clot-de-Galvany, Alicante 16.jpg — Ferran Pestaña from Barcelona, España, CC BY-SA 2.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+        "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Самец савки, Клот-де-Гальвани, Испания; не наблюдение в Кыргызстане.",
+        "ky": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=369",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 3, строка 1",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Oxyura leucocephala",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Oxyura%20leucocephala",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:2498302"
+    },
+    {
+      "id": "biology-adw",
+      "title": "Oxyura leucocephala — Animal Diversity Web: Physical Description, Food Habits, Reproduction",
+      "publisher": "University of Michigan, Animal Diversity Web",
+      "url": "https://animaldiversity.org/accounts/Oxyura_leucocephala/",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "content.appearance",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.overview"
+      ]
+    },
+    {
+      "id": "photo-commons",
+      "title": "Malvasía cabeciblanca - Ànec cap-blanc - White-headed Duck - Oxyura leucocephala, male, Clot-de-Galvany, Alicante, España",
+      "publisher": "Wikimedia Commons; Ferran Pestaña from Barcelona, España",
+      "url": "https://commons.wikimedia.org/wiki/File:Oxyura_leucocephala,_Clot-de-Galvany,_Alicante_16.jpg",
+      "accessedAt": "2026-10-14",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Редкая пролётная утка водоёмов с тростниковыми берегами. В Кыргызстане описана на весеннем и осеннем пролёте; выжигание зарослей и охота названы угрозами.",
+        "ky": "Камыштуу жээктери бар көлдөрдө токтогон сейрек келгин өрдөк. Кыргызстанда жазгы жана күзгү учуп өтүүдө сүрөттөлгөн; камышты өрттөө жана аңчылык коркунуч туудурат.",
+        "uz": "Qamishli sohillari bor suv havzalarida toʻxtaydigan kamyob koʻchmanchi oʻrdak. Qirgʻizistonda bahor va kuzgi uchib oʻtishda qayd etilgan; qamish yoqish va ov xavf tugʻdiradi.",
+        "en": "A rare passage duck of waters with reed-fringed shores. Recorded in Kyrgyzstan during spring and autumn migration; reed burning and hunting are cited threats."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Савка — нырковая утка, узнаваемая по облику самца: белой голове с тёмной шапочкой и голубому клюву с утолщённым основанием. Самка имеет более тёмный рисунок лица. Общая внешность, питание и размножение подтверждены университетским справочником Animal Diversity Web; эти сведения не доказывают гнездования в Кыргызстане. Национальная Красная книга характеризует савку в стране как редкий пролётный вид.\n\nВо время миграций птица может останавливаться на водоёмах с тростником и рогозом. Историческая статья обсуждает Чуйскую, Иссык-Кульскую и Ферганскую долины. Общевидовой рацион включает личинок водных насекомых и семена водных растений. Для размножающихся популяций справочник приводит кладки из четырёх–девяти яиц и насиживание около двадцати двух–двадцати четырёх дней; локальные данные о размножении отсутствуют.\n\nУхудшение водных местообитаний, выжигание тростника, рыболовство и охота названы в национальном источнике угрозами. Авторы рекомендовали ограничить весеннюю охоту на возможных пролётных участках. Крупные числа мигрирующих савок, процитированные в старой статье без ясной территории, не отнесены к численности Кыргызстана. Категория IV, EN отражает издание 2006 года; современные правовые ограничения и глобальная оценка здесь не устанавливались.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "biology-adw"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Самец имеет белую голову с чёрной шапочкой и голубой клюв, расширенный у основания; у самки беловатое лицо с тёмной шапочкой и полосой на щеке. Тело каштаново-бурое, длина 43–48 см по Animal Diversity Web.",
+        "en": null
+      },
+      "sourceIds": [
+        "biology-adw"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В Кыргызстане исторически редкий пролётный вид, отдыхающий на водоёмах весной и осенью. Общевидовой университетский справочник описывает ныряние как способ добывания корма. Гнездование в стране не заявлено.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "biology-adw"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По Animal Diversity Web важные корма — личинки хирономид и семена водных растений; также употребляются ракообразные и зелёные части растений. Это общевидовые сведения, не анализ рациона из Кыргызстана.",
+        "en": null
+      },
+      "sourceIds": [
+        "biology-adw"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Общевидовой справочник приводит кладки из 4–9 яиц и инкубацию 22–24 дня. Данные относятся к размножающимся популяциям ареала; национальный источник не подтверждает гнездование в Кыргызстане.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "biology-adw"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная статья описывает редкий пролёт через водоёмы Иссык-Кульской, Чуйской и Ферганской долин. Предположения на основе встреч в соседнем Казахстане не превращены в новые подтверждённые местные наблюдения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}
