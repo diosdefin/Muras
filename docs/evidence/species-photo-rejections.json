@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "researchedAt": "2026-10-14",
+  "notAnAssertionOfGlobalAbsence": true,
+  "records": [
+    {
+      "id": "pike-asp",
+      "decision": "placeholder",
+      "reason": "Commons results are stamps/covers, not organism photographs. No eligible photographic record in the checked iNaturalist query. No original photo page with reusable rights was established.",
+      "sources": ["https://commons.wikimedia.org/wiki/Category:Aspiolucius_esocinus", "https://api.inaturalist.org/v1/observations?taxon_name=Aspiolucius+esocinus&photos=true&quality_grade=research&photo_license=cc0%2Ccc-by%2Ccc-by-sa&per_page=5"]
+    },
+    {
+      "id": "turkestan-catfish",
+      "decision": "placeholder",
+      "reason": "Commons has stamps and a historical illustration. The checked research-grade iNaturalist record has all rights reserved; other records have NC restrictions and need identification. FishBase lists photographers but a reusable image licence was not established.",
+      "sources": ["https://commons.wikimedia.org/wiki/Category:Glyptosternon_reticulatum", "https://api.inaturalist.org/v1/observations?taxon_id=128461&photos=true&per_page=10", "https://www.inaturalist.org/observations/19930146", "https://fishbase.se/photos/ThumbnailsSummary.php?ID=13367"]
+    },
+    {
+      "id": "relict-spider",
+      "decision": "placeholder",
+      "reason": "No eligible real photograph with verified rights found in checked Commons/iNaturalist/primary collection searches. Open photographs of Tricholathys relictoides and other congeners are different taxa, not replacements.",
+      "sources": ["https://wsc.nmbe.ch/spec-data/16055", "https://www.sciencedirect.com/org/science/article/pii/S1313298923001829", "https://api.inaturalist.org/v1/observations?taxon_name=Tricholathys+relicta&photos=true&quality_grade=research&photo_license=cc0%2Ccc-by%2Ccc-by-sa&per_page=5"]
+    },
+    {
+      "id": "tien-shan-scutiger",
+      "decision": "placeholder",
+      "reason": "No eligible media in checked Commons/iNaturalist results. Fungi.su has a species page with an image, but the individual photographer, provenance and permissive image licence were not established; it was not copied.",
+      "sources": ["https://fungi.su/articles.php?article_id=835", "https://api.inaturalist.org/v1/observations?taxon_name=Albatrellus+tianschanicus&photos=true&quality_grade=research&photo_license=cc0%2Ccc-by%2Ccc-by-sa&per_page=5"]
+    },
+    {
+      "id": "menzbiers-marmot",
+      "decision": "placeholder",
+      "reason": "Commons category contains stamps. All five photographic iNaturalist observations returned by the checked unfiltered query carry CC BY-NC, outside the freely reusable image policy. Alternative university page explicitly has no public-domain photograph.",
+      "sources": ["https://commons.wikimedia.org/wiki/Category:Marmota_menzbieri", "https://api.inaturalist.org/v1/observations?taxon_id=46081&photos=true&per_page=10", "https://www.marmotburrow.ucla.edu/menz.html"]
+    }
+  ],
+  "otherRejectedCandidates": [
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Tulipa_kolpakowskiana.jpg",
+      "reason": "Description/title differs from structured depicts/category Tulipa altaica; not accepted as Tulipa kolpakowskiana. Same problem in several numbered Ghislain118 files."
+    },
+    {
+      "source": "https://www.flickr.com/photos/111574386@N06/53357021276",
+      "reason": "Colias christophi photograph by Ian Lawson has All rights reserved; the presence of all licence models in the page JavaScript is not a licence for this image."
+    },
+    {
+      "source": "https://mczbase.mcz.harvard.edu/media/1327980",
+      "reason": "Photograph of Colias christophi is explicitly CC BY-NC-SA 4.0. The Apache header concerns website software, not the photograph; rejected."
+    },
+    {
+      "source": "https://www.plantarium.ru/page/image/id/885562.html",
+      "reason": "Abies semenovii image says permission only/all rights reserved. Other checked images 759972 and 602991 likewise; 677949 has CC BY-NC."
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:D%C3%A9vav%C3%A1nya,_Hungary_%E2%80%93_Great_bustard_01.jpg",
+      "reason": "A previous species-level candidate does not explicitly identify Otis tarda tarda. A file explicitly labelled with the required subspecies was chosen instead."
+    }
+  ]
+}

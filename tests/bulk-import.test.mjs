@@ -155,7 +155,9 @@ test('local asset verification checks real WebP dimensions, fingerprint and meta
 
 test('new records preserve unknown populations and scientific language fallbacks; parent IUCN/photo never become subspecies facts',()=>{
   const added=source.catalog.slice(17)
-  assert.equal(added.length,13);assert.equal(added.filter(s=>s.images.length).length,4);assert.equal(added.filter(s=>!s.images.length).length,9)
+  assert.equal(added.length,13)
+  const originalAdded=historicalSource.catalog.slice(17)
+  assert.equal(originalAdded.filter(s=>s.images.length).length,4);assert.equal(originalAdded.filter(s=>!s.images.length).length,9)
   for(const s of added){
     assert.equal(s.verified,false);assert.equal(s.lastReviewedAt,null);assert.equal(s.population.type,'unknown');assert.equal(s.population.reviewStatus,'pending');assert.equal(s.population.value,null)
     assert.equal(s.nationalRedBook.year,2006);assert.match(s.nationalRedBook.edition,/историческая/)
@@ -163,7 +165,9 @@ test('new records preserve unknown populations and scientific language fallbacks
     for(const lang of ['ky','en'])assert.deepEqual(scientificContent(s.habitat.description,lang),{text:s.habitat.description.ru,language:'ru',fallback:true})
   }
   const bustard=added.find(s=>s.id==='great-bustard')
-  assert.equal(bustard.scientificName,'Otis tarda tarda');assert.equal(bustard.iucn.category,null);assert.deepEqual(bustard.images,[])
+  assert.equal(bustard.scientificName,'Otis tarda tarda');assert.equal(bustard.iucn.category,null)
+  assert.deepEqual(originalAdded.find(s=>s.id==='great-bustard').images,[])
+  assert.ok(bustard.images.every(image=>decodeURIComponent(image.originalPage).includes('Otis_tarda_tarda')),'a parent-species-only image must not become a subspecies fact')
   const fir=added.find(s=>s.id==='semenovs-fir');assert.equal(fir.scientificName,'Abies sibirica semenovii');assert.equal(fir.iucn.category,'LC');assert.deepEqual(fir.iucn.sourceIds,['iucn-subspecies'])
   assert.equal(added.find(s=>s.id==='tien-shan-scutiger').scientificName,'Albatrellus tianschanicus')
   assert.deepEqual(JSON.parse(exportSource(importSource(JSON.stringify(source)))),source)

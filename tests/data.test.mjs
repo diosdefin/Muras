@@ -230,7 +230,9 @@ test('licensed assets are local WebP, have declared dimensions, captions and mat
     assert.equal(bytes.subarray(8, 12).toString(), 'WEBP')
     assert.equal(createHash('sha256').update(bytes).digest('hex'), image.sha256)
     assert.ok(image.width <= 1800 && image.height <= 1800)
-    assert.ok(image.caption.ru && image.originalPage.startsWith('https://commons.wikimedia.org/wiki/File:'))
+    assert.ok(image.caption.ru)
+    assert.ok(image.originalPage.startsWith('https://commons.wikimedia.org/wiki/File:') ||
+      image.originalPage === 'https://plant.depo.msu.ru/open/public/en/item/MW0895964')
     assert.ok(image.modifications.some(change => change.includes('пикселизация')))
   }
 })
