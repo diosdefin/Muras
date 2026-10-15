@@ -67,7 +67,10 @@ const t = tax.records.find(r => r.nationalRecordId === c.taxonomyResearch.eviden
   gbif.supports.push(...Object.keys(taxonomy).filter(k => taxonomy[k]).map(k => `taxonomy.${k}`))
   if (c.originalScientificName !== c.acceptedScientificName) {
     gbif.supports.push('content.overview')
-    content.overview.sourceIds.push(gbif.id)
+    if (!content.overview.sourceIds.includes(gbif.id)) content.overview.sourceIds.push(gbif.id)
+  }
+  for (const [key, value] of Object.entries(content)) {
+    if (value?.sourceIds.includes(gbif.id) && !gbif.supports.includes(`content.${key}`)) gbif.supports.push(`content.${key}`)
   }
   // Detailed historic accounts remain tied to the name used in 2006, not all
   // populations of a subsequently enlarged accepted species concept.
@@ -98,6 +101,7 @@ const t = tax.records.find(r => r.nationalRecordId === c.taxonomyResearch.eviden
   if (await saveUnchanged(path, species)) prepared++; else reused++
   const materials = await Promise.all([factsPath, evidencePath, receiptsPath, ...(facts.additionalMaterials || [])].map(async path => ({ path, sha256: digest(await readFile(path)) })))
   Object.assign(c, { sources, nationalRedBook, draft: null, draftFile: path, materials: [...original.materials, ...materials],
+    nationalSourceRecords: f.nationalSourceRecords || original.nationalSourceRecords,
     publicationGaps: ['Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют',
       `Неподтверждённые названия: ${f.nameEn ? 'KY/UZ' : 'KY/UZ/EN'}; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя`, ...(image ? [] : ['Фото: placeholder'])],
     editorialNotes: f.editorialNotes || [], missingFacts: f.missingFacts || [], incidentalPopulationEvidence: f.populationEvidence || [],

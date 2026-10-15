@@ -3,20 +3,25 @@ import assert from 'node:assert/strict'
 import { checkRegistry, digest, fingerprint } from './lib/research-pipeline.mjs'
 import { createLocalAdapter, inspectPipelineAssets } from './lib/local-research-adapter.mjs'
 const read = async p => JSON.parse(await readFile(p, 'utf8'))
-const n = process.argv[2] ? Number(process.argv[2]) : undefined
-const manifest = await read('data/research/bulk-25-content-manifest.json')
+const n = /^\d+$/.test(process.argv[2] || '') ? Number(process.argv[2]) : undefined
+const manifestOption = process.argv.indexOf('--manifest')
+const manifest = await read(manifestOption < 0 ? 'data/research/bulk-25-content-manifest.json' : process.argv[manifestOption + 1])
+const contentDirectory = manifest.contentDirectory || 'data/research/bulk-25-content'
+const evidencePrefix = manifest.evidencePrefix || 'bulk-25'
 const master = await read('data/research/redbook-master-registry.json')
-const registry = await read('data/research/bulk-25-content-registry.json')
+const registry = await read(manifest.registryFile || 'data/research/bulk-25-content-registry.json')
 const source = await read('data/species.source.json')
-assert.equal(source.catalog.length, 40)
+assert.equal(source.catalog.length, manifest.baselineCatalogCount || 40)
 assert.equal(fingerprint(master), manifest.masterRegistryFingerprint)
 assert.deepEqual(registry.candidates.map(c => c.id), manifest.candidateIds)
-assert.deepEqual(manifest.candidateIds, master.candidates.filter(c => c.state === 'research_ready').slice(0, 25).map(c => c.id))
-const preservation = await read('docs/evidence/bulk-25-preservation.json')
+const eligible = master.candidates.filter(c => c.state === 'research_ready' &&
+  (!manifest.excludePublished || !source.catalog.some(s => s.id === c.id)) && !(manifest.excludedIds || []).includes(c.id))
+assert.deepEqual(manifest.candidateIds, eligible.slice(0, manifest.selectionLimit || 25).map(c => c.id))
+const preservation = await read(`docs/evidence/${evidencePrefix}-preservation.json`)
 for (const [path, sha] of Object.entries(preservation)) assert.equal(digest(await readFile(path)), sha, `${path}: baseline changed`)
 const checked = await checkRegistry(registry, source, { adapter: createLocalAdapter(process.cwd()),
   validateAssets: s => inspectPipelineAssets(process.cwd(), s), batchNumber: n })
-const selected = n ? registry.candidates.slice((n - 1) * 5, n * 5) : registry.candidates
+const selected = n ? registry.candidates.slice((n - 1) * registry.batchSize, n * registry.batchSize) : registry.candidates
 const quality = []
 for (const c of selected) {
   assert.equal(c.approval, null)
@@ -52,8 +57,8 @@ for (const c of selected) {
 const report = { schemaVersion: 1, documentType: 'unpublished-content-quality-report',
   preservedFiles: Object.keys(preservation).length, sourceCatalogCount: source.catalog.length,
   pipeline: checked.report, quality }
-const path = `docs/evidence/bulk-25-${n ? `block-${n}` : 'final'}-validation.json`
+const path = `docs/evidence/${evidencePrefix}-${n ? `block-${n}` : 'final'}-validation.json`
 await writeFile(path, JSON.stringify(report, null, 2) + '\n')
-for (const batch of checked.batches) await writeFile(`data/research/bulk-25-content/block-${batch.number}-drafts.json`, JSON.stringify(batch.drafts, null, 2) + '\n')
+for (const batch of checked.batches) await writeFile(`${contentDirectory}/block-${batch.number}-drafts.json`, JSON.stringify(batch.drafts, null, 2) + '\n')
 console.log(JSON.stringify({ report: path, prepared: quality.length, readyForReview: quality.filter(q => q.state === 'ready_for_review').length,
   needsEvidence: quality.filter(q => q.state === 'needs_evidence').length, preservedFiles: report.preservedFiles, approved: 0, imported: 0 }))

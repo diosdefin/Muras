@@ -1,0 +1,196 @@
+{
+  "id": "lutra-lutra",
+  "scientificName": "Lutra lutra",
+  "names": {
+    "ru": "Среднеазиатская выдра",
+    "ky": null,
+    "uz": null,
+    "en": "Common Otter"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Mustelidae",
+    "genus": "Lutra"
+  },
+  "group": "mammals",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "III (CR: R, C1), историческая национальная оценка популяций 2006 года",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); национальный очерк популяций, отнесённых к seistanica; не глобальная оценка Lutra lutra",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Берега рек и озёр с пойменными деревьями и кустарниками либо обломками скальных пород; в очерке отмечена обеспеченность водоёмов рыбой.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Истребление человеком и истощение рыбных запасов.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книга рекомендует охраняемую территорию в Алайской долине и обследование предполагаемых местообитаний.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=505",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 2, строка 21",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=8",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Lutra lutra",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Lutra%20lutra",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:2433753"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "В книге 2006 года местные выдры связаны с берегами рек и озёр с пойменной растительностью. Истребление и истощение рыбных запасов опасны; численность не установлена.",
+        "ky": "2006-жылкы китепте жергиликтүү кундуздардын жашоосу жайылма өсүмдүктүү дарыя-көл жээктери менен байланышкан. Кырып жок кылуу жана балыктын азайышы коркунучтуу; саны белгисиз.",
+        "uz": "2006-yilgi kitobda bu sutemizuvchi qayir oʻsimliklari bor daryo va koʻl qirgʻoqlari bilan bogʻlangan. Qirib tashlash va baliq zaxiralarining kamayishi xavfli; soni nomaʼlum.",
+        "en": "The 2006 book associates local otters with river and lake shores with floodplain vegetation. Killing and depleted fish stocks are threats; population size is unknown."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Среднеазиатская выдра приведена в национальной книге 2006 года под видом Lutra lutra с указанием местного подвида seistanica. Историческая национальная категория относится к этому локальному концепту и не означает критической угрозы всем популяциям вида в мире. Карточка сохраняет принятый видовой ранг, а отдельный подвид не добавляется как второй таксон.\n\nОчерк описывает прежнее обитание в водоёмах нескольких бассейнов Кыргызстана. Для времени подготовки книги названо присутствие в Алайской долине; сохранение в других бассейнах предполагалось. Эти сообщения не используются как подтверждённое присутствие сегодня. Местообитания связаны с берегами рек и озёр, пойменными деревьями и кустарниками либо скальными обломками.\n\nБиология в условиях страны в статье названа неизученной. Подробная внешность, прямое описание питания и размножение поэтому оставлены неизвестными. Русская версия не даёт численности, а краткое английское предположение о нескольких парах не принято за оценку. Истребление и истощение рыбных запасов названы угрозами. Авторы рекомендуют обследовать предполагаемые местообитания и создать охраняемую территорию в Алайской долине. Эти рекомендации и исторический запрет охоты не заменяют проверки современного состояния охраны.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": null,
+    "diet": null,
+    "reproduction": null,
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически бассейны Иссык-Куля, Чаткала, Нарына и Алайская долина. Указания книги о возможном сохранении в других бассейнах не приняты за подтверждённые современные находки.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

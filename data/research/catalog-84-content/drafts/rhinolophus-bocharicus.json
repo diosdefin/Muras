@@ -1,0 +1,243 @@
+{
+  "id": "rhinolophus-bocharicus",
+  "scientificName": "Rhinolophus bocharicus",
+  "names": {
+    "ru": "Бухарский подковонос",
+    "ky": null,
+    "uz": null,
+    "en": "Bokhara Horseshoe Bat"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Chiroptera",
+    "family": "Rhinolophidae",
+    "genus": "Rhinolophus"
+  },
+  "group": "mammals",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VI (NT: R), историческая национальная категория 2006 года",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Засушливые низкие предгорья; убежища — тёплые влажные пещеры, поблизости реки и каналы.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Беспокойство из-за посещения пещер людьми; после посещений зверьки покидают убежища.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книга рекомендует защищать местообитания и убежища от бесконтрольного посещения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=487",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Rhinolophus bocharicus",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Rhinolophus%20bocharicus",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview"
+      ],
+      "taxonId": "gbif:4266846"
+    },
+    {
+      "id": "national-list-orthography",
+      "title": "Перечень 2009: приложение 2, строка 5, печатное Rinolophus bocharicus",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=8",
+      "accessedAt": "2026-10-15",
+      "language": "ru",
+      "supports": [
+        "nationalSourceRecords",
+        "content.overview"
+      ]
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "По книге 2006 года бухарский подковонос живёт в тёплых влажных пещерах юга Кыргызстана. Ночью ловит насекомых; бесконтрольное посещение убежищ вынуждает зверьков уходить.",
+        "ky": "2006-жылкы китепте Кыргызстандын түштүгүндөгү жылуу, нымдуу үңкүрлөрдө жашары берилген. Түнкүсүн курт-кумурскаларды кармайт; адамдардын тынчын алышы баш калкалоочу жайларын таштоого түртөт.",
+        "uz": "2006-yilgi kitobda Qirgʻiziston janubidagi iliq va nam gʻorlarda yashashi berilgan. Tunda hasharot tutadi; odamlarning bezovta qilishi boshpanasini tark etishga majbur qiladi.",
+        "en": "The 2006 book records this bat in warm, humid caves of southern Kyrgyzstan. It hunts insects at night; uncontrolled human visits can drive bats from their roosts."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Бухарский подковонос описан в Красной книге Кыргызстана 2006 года как Rhinolophus bocharicus. В сохранённой сверке GBIF подтверждены биномен, видовой ранг и авторство Kastschenko и Akimov, 1917. Исторические национальные находки относятся к предгорьям Алайского и Туркестанского хребтов. Широкий зарубежный ареал, приведённый в статье, не переносится на современный таксономический концепт автоматически.\n\nВ качестве убежищ используются тёплые влажные пещеры засушливых предгорий. По очерку зверьки днём остаются в убежищах, вылетают вечером и перед рассветом, охотятся над полями, речными поймами и каналами. Основной корм составляют насекомые с мягкими покровами, включая двукрылых, бабочек и жуков. Размножение в источнике отнесено к концу мая–началу июня.\n\nПосещение пещер людьми приводит к оставлению убежищ; авторы рекомендуют ограничивать бесконтрольные визиты и охранять места обитания. Старые сведения о небольших скоплениях не представляют современной оценки численности. В перечне 2009 года сохранена орфографическая форма Rinolophus bocharicus: она отдельно задокументирована, не выдана за буквальное совпадение и не используется вместо прямого подтверждения книги.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy",
+        "national-list-orthography"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В английском резюме национального очерка указана длина тела 52–60 мм; подробная диагностическая характеристика не приведена.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Ночной образ жизни, дневное пребывание в убежищах; вечерний и предрассветный вылеты по книге 2006 года.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Преимущественно насекомые с мягкими покровами: двукрылые, бабочки-совки, жуки и осы-блестянки по национальной статье.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальному очерку период размножения приходится на конец мая–начало июня; величина выводка не установлена этим источником.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические национальные находки в северных предгорьях Алайского и Туркестанского хребтов. Широкий мировой ареал книги не утверждается для современного концепта.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

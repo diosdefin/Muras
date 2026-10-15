@@ -2957,7 +2957,7 @@
       "group": "mammals",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VI (NT: R), историческая национальная категория 2006 года",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -3002,7 +3002,20 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -3013,9 +3026,28 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview"
           ],
           "taxonId": "gbif:4266846"
+        },
+        {
+          "id": "national-list-orthography",
+          "title": "Перечень 2009: приложение 2, строка 5, печатное Rinolophus bocharicus",
+          "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=8",
+          "accessedAt": "2026-10-15",
+          "language": "ru",
+          "supports": [
+            "nationalSourceRecords",
+            "content.overview"
+          ]
         }
       ],
       "contradictions": [],
@@ -3032,12 +3064,25 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-84-content/block-3-facts.json",
+          "sha256": "67b4c35448a3ce0cfc9f6a3b980df3b1dee444ab44ca77a0ec7094261469cd8a"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-3-accounts.json",
+          "sha256": "91949596582976181d1d1fdf5da0aa98236c8a51a19151cd2bcc38ee462358f5"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-3-images.json",
+          "sha256": "a24ed9c3146e88f9ed658ddc816e9e8fe42e1817be5f236fcc939466117cdcd6"
         }
       ],
       "draft": null,
       "id": "rhinolophus-bocharicus",
       "nationalSourceRecords": [
-        "book-2006-486"
+        "book-2006-486",
+        "decree-170-2009-2-5"
       ],
       "nationalConfirmation": {
         "confirmed": true,
@@ -3059,55 +3104,64 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "rhinolophus-bocharicus",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "f95522179ff332eff2e9325ecdd2d1b5a2b9d4407b8a6e625c00dddd10747c85",
+        "fingerprint": "c5ac8df998801e869a759673fdbac0240221f529e654e105aff1ee09d89980e1",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "f95522179ff332eff2e9325ecdd2d1b5a2b9d4407b8a6e625c00dddd10747c85"
+      "checkedFingerprint": "c5ac8df998801e869a759673fdbac0240221f529e654e105aff1ee09d89980e1",
+      "draftFile": "data/research/catalog-84-content/drafts/rhinolophus-bocharicus.json",
+      "editorialNotes": [
+        "Прямое включение и национальная биология подтверждаются книгой 2006 года. Перечень 2009: приложение 2, строка 5, печатное Rinolophus bocharicus; родовая орфография отличается. Этот документ добавлен как свидетельство национальной записи с сохранением печатной формы, не как независимое точное таксономическое подтверждение."
+      ],
+      "missingFacts": [
+        "Современная численность и состояние убежищ",
+        "Подробная диагностика",
+        "Современная проверка зарубежного ареала",
+        "Размер выводка"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "rhinolophus-bocharicus",
+        "factsFingerprint": "c25602f80412673a8c721f0131a3347ff7c87befe0a9f925d6b8e99b7e6d8f9a",
+        "draftSha256": "014e9dbca16998afa489c3526a0cc4e4a47e97cb6312d3e5a99ae1d786a5752b"
+      }
     },
     {
       "originalScientificName": "Barbastella leucomelas",
@@ -3116,7 +3170,7 @@
       "group": "mammals",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VI (NT: R), историческая национальная категория 2006 года",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -3161,7 +3215,16 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.distribution",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -3184,7 +3247,13 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:2432581"
         }
@@ -3203,6 +3272,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-84-content/block-3-facts.json",
+          "sha256": "67b4c35448a3ce0cfc9f6a3b980df3b1dee444ab44ca77a0ec7094261469cd8a"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-3-accounts.json",
+          "sha256": "91949596582976181d1d1fdf5da0aa98236c8a51a19151cd2bcc38ee462358f5"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-3-images.json",
+          "sha256": "a24ed9c3146e88f9ed658ddc816e9e8fe42e1817be5f236fcc939466117cdcd6"
         }
       ],
       "draft": null,
@@ -3231,55 +3312,65 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "barbastella-leucomelas",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "de4ddb36abc768dea3a0fabaa1cd2816685a28e556dbfab65e83f441815d3d95",
+        "fingerprint": "cb8bf0db3da89ec8cd18f6a0520a3470818cf5b1aa2a70a15e70ca6d7c6dfd3e",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "de4ddb36abc768dea3a0fabaa1cd2816685a28e556dbfab65e83f441815d3d95"
+      "checkedFingerprint": "cb8bf0db3da89ec8cd18f6a0520a3470818cf5b1aa2a70a15e70ca6d7c6dfd3e",
+      "draftFile": "data/research/catalog-84-content/drafts/barbastella-leucomelas.json",
+      "editorialNotes": [
+        "Выбран ранее сохранённый EXACT-ответ для requestedName Barbastella leucomelas, а не первый NONE-ответ для Barbestella. Оба исходных ответа сохранены. Паразиты упомянуты в книге, но их роль как лимитирующего фактора не доказана; threats:null."
+      ],
+      "missingFacts": [
+        "Питание и размножение в Кыргызстане",
+        "Лимитирующие факторы",
+        "Современная численность",
+        "Подробная внешность",
+        "Применимость старого зарубежного ареала"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "barbastella-leucomelas",
+        "factsFingerprint": "5a433440b977889f79856a2364e627e3b624a6039fecfeeff68f723cefb30fb3",
+        "draftSha256": "c7241e22c09ea91a03310665c906801f3da625dca250f85a2a020aaafc103389"
+      }
     },
     {
       "originalScientificName": "Tadarida teniotis",
@@ -3288,7 +3379,7 @@
       "group": "mammals",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VII (LR/lc), историческая национальная категория 2006 года",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -3333,7 +3424,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -3356,7 +3458,13 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:2433009"
         }
@@ -3375,6 +3483,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-84-content/block-3-facts.json",
+          "sha256": "67b4c35448a3ce0cfc9f6a3b980df3b1dee444ab44ca77a0ec7094261469cd8a"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-3-accounts.json",
+          "sha256": "91949596582976181d1d1fdf5da0aa98236c8a51a19151cd2bcc38ee462358f5"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-3-images.json",
+          "sha256": "a24ed9c3146e88f9ed658ddc816e9e8fe42e1817be5f236fcc939466117cdcd6"
         }
       ],
       "draft": null,
@@ -3403,55 +3523,64 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "tadarida-teniotis",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "8bea69c5081dd572cb5168a25d0ccdf6da653baf7cb8e9a0984ee762b6aa7e06",
+        "fingerprint": "0671e6131ed5e50553fabd2dea18e279ad0c93a903fe22c309655c73a7d43114",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "8bea69c5081dd572cb5168a25d0ccdf6da653baf7cb8e9a0984ee762b6aa7e06"
+      "checkedFingerprint": "0671e6131ed5e50553fabd2dea18e279ad0c93a903fe22c309655c73a7d43114",
+      "draftFile": "data/research/catalog-84-content/drafts/tadarida-teniotis.json",
+      "editorialNotes": [
+        "Выводок RU — один детёныш, EN — 1–2; точное значение не выбрано, reproduction:null. RU называет реку Арашан, EN — Aravan для старого наблюдения: эта точка не локализуется и не переносится на карту."
+      ],
+      "missingFacts": [
+        "Современная численность и сезонные перемещения",
+        "Согласованная величина выводка",
+        "Подробная внешность",
+        "Подтверждение воздействия химикатов"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "tadarida-teniotis",
+        "factsFingerprint": "87486599d7dd292cc4d511a7ba02d00bad8288c3d98a6c80fea60d8983e665f3",
+        "draftSha256": "2278eb70f84fe4d95b02c0bfbe651156c5800f0bdfa8bcbe07940a97bccab35c"
+      }
     },
     {
       "originalScientificName": "Ursus arctos",
@@ -3460,8 +3589,8 @@
       "group": "mammals",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "VII (LR/lc), историческая национальная категория местных популяций 2006 года",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); национальный очерк популяций, отнесённых в книге к isabellinus; не оценка всех популяций Ursus arctos",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -3505,7 +3634,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -3528,7 +3668,13 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:2433433"
         }
@@ -3547,6 +3693,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-84-content/block-3-facts.json",
+          "sha256": "67b4c35448a3ce0cfc9f6a3b980df3b1dee444ab44ca77a0ec7094261469cd8a"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-3-accounts.json",
+          "sha256": "91949596582976181d1d1fdf5da0aa98236c8a51a19151cd2bcc38ee462358f5"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-3-images.json",
+          "sha256": "a24ed9c3146e88f9ed658ddc816e9e8fe42e1817be5f236fcc939466117cdcd6"
         }
       ],
       "draft": null,
@@ -3575,55 +3733,65 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "ursus-arctos",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "c6f5ec8f5af5a4c7b16416ef39ad5ddde51ec5ee04e8b6eb157da0d7d7df099b",
+        "fingerprint": "cb13a5bbe7ce38febf575ecd411928c727a4c2a807a25744ac8fec34b21f41d8",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "c6f5ec8f5af5a4c7b16416ef39ad5ddde51ec5ee04e8b6eb157da0d7d7df099b"
+      "checkedFingerprint": "cb13a5bbe7ce38febf575ecd411928c727a4c2a807a25744ac8fec34b21f41d8",
+      "draftFile": "data/research/catalog-84-content/drafts/ursus-arctos.json",
+      "editorialNotes": [
+        "Рождение детёнышей: RU — конец декабря–начало января, EN — февраль. Дата не выбрана. Категория книги относится к национальному концепту isabellinus, а не к глобальному статусу Ursus arctos."
+      ],
+      "missingFacts": [
+        "Современная численность",
+        "Прямое описание рациона",
+        "Подробная внешность",
+        "Согласованные месяцы рождения",
+        "Текущее состояние местных популяций"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "ursus-arctos",
+        "factsFingerprint": "a824c2c13b00f752b66e40a0159c973fbe0d136a07699004325310d3f98ce221",
+        "draftSha256": "f3c1a73a61e8980e3789b674200ae4d56c4084307eb8d79e8c432c05e19c8820"
+      }
     },
     {
       "originalScientificName": "Martes foina",
@@ -3632,7 +3800,7 @@
       "group": "mammals",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VII (LR/lc), историческая национальная категория 2006 года",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -3677,7 +3845,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -3700,7 +3880,13 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:5218887"
         }
@@ -3719,6 +3905,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-84-content/block-3-facts.json",
+          "sha256": "67b4c35448a3ce0cfc9f6a3b980df3b1dee444ab44ca77a0ec7094261469cd8a"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-3-accounts.json",
+          "sha256": "91949596582976181d1d1fdf5da0aa98236c8a51a19151cd2bcc38ee462358f5"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-3-images.json",
+          "sha256": "a24ed9c3146e88f9ed658ddc816e9e8fe42e1817be5f236fcc939466117cdcd6"
         }
       ],
       "draft": null,
@@ -3747,55 +3945,64 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "martes-foina",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "e607282dd70c4956a790690d38f93e1fc2007bba7f1f2aafe46312571a8225a5",
+        "fingerprint": "52c63bdee84b690224f34bec9d1956ea196bb135f1b03c433447ddbb5803158f",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "e607282dd70c4956a790690d38f93e1fc2007bba7f1f2aafe46312571a8225a5"
+      "checkedFingerprint": "52c63bdee84b690224f34bec9d1956ea196bb135f1b03c433447ddbb5803158f",
+      "draftFile": "data/research/catalog-84-content/drafts/martes-foina.json",
+      "editorialNotes": [
+        "Печатное Ezxleben в книге сохранено в исходном очерке; GBIF даёт Erxleben, 1777, при том же биномене и годе. Авторское написание в публичном имени не приводится. Предполагаемые причины не выданы за количественно доказанные факторы."
+      ],
+      "missingFacts": [
+        "Современная численность",
+        "Подробная внешность и диагностика подвида",
+        "Подтверждение вклада ограничивающих факторов",
+        "Актуальные меры охраны"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "martes-foina",
+        "factsFingerprint": "bc5527827f06de280ef371e9ad071597c50c9ef2a733c4a2c3456f97a98afec8",
+        "draftSha256": "1201341ca593a078246dd300f3e9800b012bcbfd1662be1a0fd458a2f84ed42e"
+      }
     },
     {
       "originalScientificName": "Lutra lutra",
@@ -3804,8 +4011,8 @@
       "group": "mammals",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "III (CR: R, C1), историческая национальная оценка популяций 2006 года",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); национальный очерк популяций, отнесённых к seistanica; не глобальная оценка Lutra lutra",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -3849,7 +4056,16 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -3872,7 +4088,13 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:2433753"
         }
@@ -3891,6 +4113,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-84-content/block-3-facts.json",
+          "sha256": "67b4c35448a3ce0cfc9f6a3b980df3b1dee444ab44ca77a0ec7094261469cd8a"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-3-accounts.json",
+          "sha256": "91949596582976181d1d1fdf5da0aa98236c8a51a19151cd2bcc38ee462358f5"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-3-images.json",
+          "sha256": "a24ed9c3146e88f9ed658ddc816e9e8fe42e1817be5f236fcc939466117cdcd6"
         }
       ],
       "draft": null,
@@ -3919,55 +4153,64 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "lutra-lutra",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "60714835d1d6fc89adfc31193d14e3583cb54eece476e534c21f9c0427e09342",
+        "fingerprint": "7013db81c4c3869051a4da8a5b0a2f0e22ea668b6988f4d24a8eb7ad3828143e",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "60714835d1d6fc89adfc31193d14e3583cb54eece476e534c21f9c0427e09342"
+      "checkedFingerprint": "7013db81c4c3869051a4da8a5b0a2f0e22ea668b6988f4d24a8eb7ad3828143e",
+      "draftFile": "data/research/catalog-84-content/drafts/lutra-lutra.json",
+      "editorialNotes": [
+        "RU сообщает об отсутствии сведений о численности, EN упоминает несколько пар. Оценка не выбрана. Биология в первоисточнике прямо не изучена; сведения не заполнены по общевидовой аналогии. Национальный концепт seistanica не распространяется на всю мировую популяцию вида."
+      ],
+      "missingFacts": [
+        "Современная численность и присутствие",
+        "Подробная внешность",
+        "Местные питание, экология и размножение",
+        "Современное состояние охраны"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "lutra-lutra",
+        "factsFingerprint": "2dba2a4429a672b42ea069571db6f556b978d4e7b7d62f754d6545f15e3a8c89",
+        "draftSha256": "3cc33f9857cde9e7bfecf4c314cf31ed366ccff6bfe20f3267779f78d66cfc9f"
+      }
     },
     {
       "originalScientificName": "Allactaga elater",
@@ -3976,7 +4219,7 @@
       "group": "mammals",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VII (LR/lc), историческая национальная категория 2006 года",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -4021,7 +4264,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -4044,7 +4299,13 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:2439489"
         }
@@ -4063,6 +4324,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-84-content/block-3-facts.json",
+          "sha256": "67b4c35448a3ce0cfc9f6a3b980df3b1dee444ab44ca77a0ec7094261469cd8a"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-3-accounts.json",
+          "sha256": "91949596582976181d1d1fdf5da0aa98236c8a51a19151cd2bcc38ee462358f5"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-3-images.json",
+          "sha256": "a24ed9c3146e88f9ed658ddc816e9e8fe42e1817be5f236fcc939466117cdcd6"
         }
       ],
       "draft": null,
@@ -4091,55 +4364,64 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "allactaga-elater",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "28e87f4294de94f8736cf40ea45b31460e4071bdabfe8745897520812b2c46a1",
+        "fingerprint": "6d2b12def317d7558f417316ac8ade8ccec86533f4e8f7a6130acc836f32b031",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "28e87f4294de94f8736cf40ea45b31460e4071bdabfe8745897520812b2c46a1"
+      "checkedFingerprint": "6d2b12def317d7558f417316ac8ade8ccec86533f4e8f7a6130acc836f32b031",
+      "draftFile": "data/research/catalog-84-content/drafts/allactaga-elater.json",
+      "editorialNotes": [
+        "В очерке Lichtenstein, 1825, в сохранённом GBIF Lichtenstein, 1828; биномен, автор и видовой ранг совпадают. Дата авторства не включена в научное имя карточки. Ошибочный английский пересчёт высоты 2200 m в 2200 feet не используется. Старые маршрутные встречи не преобразованы в популяционную оценку."
+      ],
+      "missingFacts": [
+        "Современная численность",
+        "Подробная внешность и диагностика подвида",
+        "Номенклатурная дата авторства",
+        "Актуальное состояние местообитаний"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "allactaga-elater",
+        "factsFingerprint": "352098169a71c250e50d6277909fce14c39182191753a51e553ff03efb3f0954",
+        "draftSha256": "c44f658ea33e43386ca4937e585704208fae3cec4bbdaf4182e74e207ec87549"
+      }
     }
   ]
 }

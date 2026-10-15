@@ -70,9 +70,16 @@
         "lutra-lutra",
         "allactaga-elater"
       ],
-      "status": "pending"
+      "status": "prepared_for_check"
     }
   ],
   "publicationAllowed": false,
-  "ownerAuthorization": "pending_for_concrete_manifest"
+  "ownerAuthorization": "pending_for_concrete_manifest",
+  "baselineCatalogCount": 63,
+  "excludePublished": true,
+  "excludedIds": [
+    "tulipa-anadroma",
+    "eryx-tataricus"
+  ],
+  "selectionLimit": 21
 }
