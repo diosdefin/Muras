@@ -1,0 +1,229 @@
+{
+  "id": "gyps-himalayensis",
+  "scientificName": "Gyps himalayensis",
+  "names": {
+    "ru": "Гималайский гриф",
+    "ky": null,
+    "uz": null,
+    "en": "Himalayan Griffon"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "genus": "Gyps"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VII (LC), историческая национальная категория 2006 года",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Субальпийский и альпийский пояса с дикими копытными и домашними животными; для гнездования — скальные обнажения.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Снижение доступности падали, отравленные приманки для волков и прямое уничтожение.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книга рекомендует охранять гнездовые колонии и организовывать наблюдения с участием местных жителей без беспокойства птиц.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=407",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 3, строка 42",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Gyps himalayensis",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Gyps%20himalayensis",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:9561629"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Гималайский гриф по книге 2006 года населяет высокогорья Тянь-Шаня и питается падалью. Опасны отравленные приманки; старые маршрутные наблюдения не оценивают всю популяцию.",
+        "ky": "2006-жылкы китепте Теңир-Тоонун бийик тоолорунда жашап, тарп менен азыктанары берилген. Ууланган жемдер коркунучтуу; эски байкоолор бүт популяциянын санын билдирбейт.",
+        "uz": "2006-yilgi kitobda Tyan-Shan baland togʻlarida yashashi va oʻlimtik bilan oziqlanishi berilgan. Zaharlangan yemlar xavfli; eski kuzatuvlar jami populyatsiya bahosi emas.",
+        "en": "The 2006 book records this carrion-feeding vulture in the Tien Shan highlands. Poisoned baits are a threat; old route observations are not a national population estimate."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Гималайский гриф представлен в книге Кыргызстана 2006 года под именем Gyps himalayensis. Исторические сведения относятся к высокогорным поясам Тянь-Шаня и Памиро-Алая. Важны субальпийские и альпийские местообитания, где встречаются дикие копытные и домашние животные. Для гнездования в статье названы скальные обнажения.\n\nЭто оседлая птица, питающаяся падалью. Очерк описывает отдельные пары и гнездовые колонии, начало насиживания в марте и наблюдения гнезда с одним яйцом. Авторы прямо подчёркивают скудность сведений о размножении. Датированные маршрутные учёты и скопление птиц в урочище Ак-Джилга характеризуют обследованные места; они не являются оценкой всей национальной популяции.\n\nСокращение доступности падали и поедание отравленных приманок для волков названы угрозами, наряду с прямым уничтожением. Рекомендована охрана колоний и организация наблюдений без беспокойства птиц. Предложения об искусственном прикорме остаются рекомендациями источника, а не объявленной современной программой. Вопросы контакта с белоголовым сипом и возможной гибридизации в книге оставлены для изучения; эти два точных принятых вида не объединяются автоматически.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Оседлая птица; по историческому очерку гнездится отдельными парами и колониями, собирается у падали.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Питается падалью; доступность трупов диких и домашних животных имеет значение по национальной статье.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В книге сообщается о начале насиживания в марте и находке одного яйца в мае; местная биология размножения изучена недостаточно.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически хребты Тянь-Шаня и Алайской системы, перечисленные в национальном очерке; современная карта не создавалась.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

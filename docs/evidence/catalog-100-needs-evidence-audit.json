@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "documentType": "needs-evidence-reassessment",
+  "date": "2026-10-15",
+  "sourceRegistry": "data/research/redbook-master-registry.json",
+  "sourceFingerprint": "dce90285100e1502c2250bc486f7448c1e1ab0790fada5a5445638a2f7577ad5",
+  "policy": "Предыдущие fingerprint-bound реестры сохраняются; решения применяются в новой производной очереди, без изменения разрешений прошлых пакетов.",
+  "records": [
+    {
+      "id": "dictyocephalus-attenuatus",
+      "previousState": "needs_evidence",
+      "decision": "research_ready_in_catalog_100_queue",
+      "reason": "Исправление окончания родового имени: в книге 2006 Dictyocephalus, в перечне 2009 Dictyocephalos; эпитет и авторы Peck, Long & Plunkett совпадают. Species Fungorum 286084 подтверждает принятое имя; GBIF даёт EXACT. Национальная статья не используется для утверждения современной монотипности рода.",
+      "nationalSourceRecords": [
+        "book-2006-38"
+      ]
+    },
+    {
+      "id": "dictyophora-duplicata",
+      "previousState": "needs_evidence",
+      "decision": "deferred_not_selected",
+      "reason": "Конфликт Phallus duplicatus / P. indusiatus и границ комплекса сохраняется; не выбран.",
+      "nationalSourceRecords": [
+        "book-2006-40"
+      ]
+    },
+    {
+      "id": "sonjagaster-coronatus",
+      "previousState": "needs_evidence",
+      "decision": "deferred_not_selected",
+      "reason": "Сохранённый NONE; уточняющие запросы Sonjagaster coronata / Thecagaster coronata также NONE. Не найдено точного принятого таксона для Morton 1916; не подменяется близким видом.",
+      "nationalSourceRecords": [
+        "book-2006-250"
+      ]
+    },
+    {
+      "id": "prionus-tschitscherini",
+      "previousState": "needs_evidence",
+      "decision": "research_ready_in_catalog_100_queue",
+      "reason": "Таксономическая работа Danilevsky и Shapovalov 2017 перечисляет Prionus (Pogonarthron) tschitscherini из национального очерка среди прежних комбинаций Pogonarthron tschitscherini. Ранг SPECIES сохранён. GBIF печатает год Semenov 1890, национальная книга и работа 2017 — 1889; дата авторства в публичном имени не утверждается, библиографическое расхождение сохранено.",
+      "nationalSourceRecords": [
+        "book-2006-260",
+        "decree-170-2009-4-6"
+      ]
+    },
+    {
+      "id": "schizothorax-issykkuli",
+      "previousState": "needs_evidence",
+      "decision": "deferred_not_selected",
+      "reason": "Eschmeyer 2026 относит историческое Schizothorax pseudoaksaiensis issykkuli к синонимам S. pseudoaksaiensis; отдельный национальный вид нельзя автоматически расширить до принятого вида. https://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=48193",
+      "nationalSourceRecords": [
+        "book-2006-308",
+        "decree-170-2009-6-1"
+      ]
+    },
+    {
+      "id": "diptychus-dybowskii-lansdelli",
+      "previousState": "needs_evidence",
+      "decision": "deferred_not_selected",
+      "reason": "Подвид не найден точным запросом; исправленный вариант lansdellii тоже NONE. Повышение до родительского вида не выполнялось.",
+      "nationalSourceRecords": [
+        "book-2006-310",
+        "decree-170-2009-6-4"
+      ]
+    },
+    {
+      "id": "bufo-viridis",
+      "previousState": "needs_evidence",
+      "decision": "deferred_not_selected",
+      "reason": "Национальный исторический комплекс Bufo viridis не разрешён до современного Bufotes viridis s.str.; прежнее сомнение AMNH сохраняется.",
+      "nationalSourceRecords": [
+        "book-2006-326",
+        "decree-170-2009-5-1"
+      ]
+    },
+    {
+      "id": "novoeumeces-schneideri-princeps",
+      "previousState": "needs_evidence",
+      "decision": "deferred_not_selected",
+      "reason": "EXACT Eumeces schneiderii princeps и номинальная связь найдены, но Reptile Database отмечает парафилию princeps и спорное историческое деление; применимость к кыргызстанским популяциям требует специалиста. Не выбран. https://reptile-database.reptarium.cz/Eumeces/schneiderii",
+      "nationalSourceRecords": [
+        "book-2006-338"
+      ]
+    },
+    {
+      "id": "spalerosophis-diadema-schiraziana",
+      "previousState": "needs_evidence",
+      "decision": "deferred_not_selected",
+      "reason": "Уточнённый запрос schirazianus даёт EXACT SUBSPECIES, но специализированная база сохраняет альтернативные видовые/подвидовые трактовки и синонимизацию. Не выбран без концептуальной сверки.",
+      "nationalSourceRecords": [
+        "book-2006-342"
+      ]
+    },
+    {
+      "id": "anser-indica",
+      "previousState": "needs_evidence",
+      "decision": "deferred_not_selected",
+      "reason": "Точное исправленное имя Anser indicus найдено; приоритет отдан подтверждённым недопредставленным группам. Национальная связь и полный очерк для нового пакета не дорабатывались; это не отрицание валидности Anser indicus.",
+      "nationalSourceRecords": [
+        "book-2006-360"
+      ]
+    },
+    {
+      "id": "falco-peregrinus",
+      "previousState": "needs_evidence",
+      "decision": "deferred_not_selected",
+      "reason": "Не снято пересечение национального видового концепта с Falco pelegrinoides / F. peregrinus pelegrinoides в очереди.",
+      "nationalSourceRecords": [
+        "book-2006-392",
+        "decree-170-2009-3-2"
+      ]
+    },
+    {
+      "id": "falco-pelegrinoides",
+      "previousState": "needs_evidence",
+      "decision": "deferred_not_selected",
+      "reason": "Сохраняется изменение ранга SPECIES→SUBSPECIES и пересечение с Falco peregrinus.",
+      "nationalSourceRecords": [
+        "book-2006-394",
+        "decree-170-2009-3-37"
+      ]
+    },
+    {
+      "id": "otonycteris-hemprichi",
+      "previousState": "needs_evidence",
+      "decision": "deferred_not_selected",
+      "reason": "Исправленный запрос Otonycteris hemprichii даёт EXACT; соответствие национального концепта современным разделениям рода не проверено. Млекопитающие не добавлялись для выполнения квоты.",
+      "nationalSourceRecords": [
+        "book-2006-492",
+        "decree-170-2009-2-2"
+      ]
+    },
+    {
+      "id": "allactaga-saltator",
+      "previousState": "needs_evidence",
+      "decision": "deferred_not_selected",
+      "reason": "Прямое имя остаётся NONE; изменения рода/синонимии и два национальных подвида не разрешены в пределах быстрой проверки.",
+      "nationalSourceRecords": [
+        "book-2006-524",
+        "decree-170-2009-2-25"
+      ]
+    }
+  ]
+}

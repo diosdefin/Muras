@@ -1,0 +1,728 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-15",
+  "scope": "Local production preview: direct SPA route HTTP responses and image bytes. Species content, four-language search and pagination are separately verified by Vue SSR/unit integration tests.",
+  "routes": [
+    {
+      "id": "irbis",
+      "path": "/species/irbis",
+      "status": 200
+    },
+    {
+      "id": "argali",
+      "path": "/species/argali",
+      "status": 200
+    },
+    {
+      "id": "manul",
+      "path": "/species/manul",
+      "status": 200
+    },
+    {
+      "id": "golden-eagle",
+      "path": "/species/golden-eagle",
+      "status": 200
+    },
+    {
+      "id": "bearded-vulture",
+      "path": "/species/bearded-vulture",
+      "status": 200
+    },
+    {
+      "id": "saker-falcon",
+      "path": "/species/saker-falcon",
+      "status": 200
+    },
+    {
+      "id": "greigs-tulip",
+      "path": "/species/greigs-tulip",
+      "status": 200
+    },
+    {
+      "id": "kaufmanns-tulip",
+      "path": "/species/kaufmanns-tulip",
+      "status": 200
+    },
+    {
+      "id": "sievers-apple",
+      "path": "/species/sievers-apple",
+      "status": 200
+    },
+    {
+      "id": "central-asian-tortoise",
+      "path": "/species/central-asian-tortoise",
+      "status": 200
+    },
+    {
+      "id": "central-asian-frog",
+      "path": "/species/central-asian-frog",
+      "status": 200
+    },
+    {
+      "id": "predatory-bush-cricket",
+      "path": "/species/predatory-bush-cricket",
+      "status": 200
+    },
+    {
+      "id": "dog-stinkhorn",
+      "path": "/species/dog-stinkhorn",
+      "status": 200
+    },
+    {
+      "id": "marbled-polecat",
+      "path": "/species/marbled-polecat",
+      "status": 200
+    },
+    {
+      "id": "black-stork",
+      "path": "/species/black-stork",
+      "status": 200
+    },
+    {
+      "id": "ibisbill",
+      "path": "/species/ibisbill",
+      "status": 200
+    },
+    {
+      "id": "eduards-fritillary",
+      "path": "/species/eduards-fritillary",
+      "status": 200
+    },
+    {
+      "id": "european-glass-lizard",
+      "path": "/species/european-glass-lizard",
+      "status": 200
+    },
+    {
+      "id": "dalmatian-pelican",
+      "path": "/species/dalmatian-pelican",
+      "status": 200
+    },
+    {
+      "id": "eurasian-lynx",
+      "path": "/species/eurasian-lynx",
+      "status": 200
+    },
+    {
+      "id": "kolpakowskis-tulip",
+      "path": "/species/kolpakowskis-tulip",
+      "status": 200
+    },
+    {
+      "id": "ostrowskis-tulip",
+      "path": "/species/ostrowskis-tulip",
+      "status": 200
+    },
+    {
+      "id": "pike-asp",
+      "path": "/species/pike-asp",
+      "status": 200
+    },
+    {
+      "id": "turkestan-catfish",
+      "path": "/species/turkestan-catfish",
+      "status": 200
+    },
+    {
+      "id": "christophs-clouded-yellow",
+      "path": "/species/christophs-clouded-yellow",
+      "status": 200
+    },
+    {
+      "id": "relict-spider",
+      "path": "/species/relict-spider",
+      "status": 200
+    },
+    {
+      "id": "tien-shan-scutiger",
+      "path": "/species/tien-shan-scutiger",
+      "status": 200
+    },
+    {
+      "id": "menzbiers-marmot",
+      "path": "/species/menzbiers-marmot",
+      "status": 200
+    },
+    {
+      "id": "semenovs-fir",
+      "path": "/species/semenovs-fir",
+      "status": 200
+    },
+    {
+      "id": "great-bustard",
+      "path": "/species/great-bustard",
+      "status": 200
+    },
+    {
+      "id": "said-alievs-toad-agama",
+      "path": "/species/said-alievs-toad-agama",
+      "status": 200
+    },
+    {
+      "id": "vigorous-ground-beetle",
+      "path": "/species/vigorous-ground-beetle",
+      "status": 200
+    },
+    {
+      "id": "pskem-onion",
+      "path": "/species/pskem-onion",
+      "status": 200
+    },
+    {
+      "id": "kostychevs-pasque-flower",
+      "path": "/species/kostychevs-pasque-flower",
+      "status": 200
+    },
+    {
+      "id": "indian-crested-porcupine",
+      "path": "/species/indian-crested-porcupine",
+      "status": 200
+    },
+    {
+      "id": "fergana-ground-beetle",
+      "path": "/species/fergana-ground-beetle",
+      "status": 200
+    },
+    {
+      "id": "giant-robber-fly",
+      "path": "/species/giant-robber-fly",
+      "status": 200
+    },
+    {
+      "id": "korzhinskys-pear",
+      "path": "/species/korzhinskys-pear",
+      "status": 200
+    },
+    {
+      "id": "cinereous-vulture",
+      "path": "/species/cinereous-vulture",
+      "status": 200
+    },
+    {
+      "id": "egyptian-vulture",
+      "path": "/species/egyptian-vulture",
+      "status": 200
+    },
+    {
+      "id": "eminium-regelii",
+      "path": "/species/eminium-regelii",
+      "status": 200
+    },
+    {
+      "id": "eremurus-zenaidae",
+      "path": "/species/eremurus-zenaidae",
+      "status": 200
+    },
+    {
+      "id": "eremurus-zoae",
+      "path": "/species/eremurus-zoae",
+      "status": 200
+    },
+    {
+      "id": "allium-dodecadontum",
+      "path": "/species/allium-dodecadontum",
+      "status": 200
+    },
+    {
+      "id": "allium-semenovii",
+      "path": "/species/allium-semenovii",
+      "status": 200
+    },
+    {
+      "id": "tulipa-affinis",
+      "path": "/species/tulipa-affinis",
+      "status": 200
+    },
+    {
+      "id": "tulipa-korolkowii",
+      "path": "/species/tulipa-korolkowii",
+      "status": 200
+    },
+    {
+      "id": "tulipa-platystemon",
+      "path": "/species/tulipa-platystemon",
+      "status": 200
+    },
+    {
+      "id": "tulipa-tetraphylla",
+      "path": "/species/tulipa-tetraphylla",
+      "status": 200
+    },
+    {
+      "id": "tulipa-zenaidae",
+      "path": "/species/tulipa-zenaidae",
+      "status": 200
+    },
+    {
+      "id": "juno-orchioides",
+      "path": "/species/juno-orchioides",
+      "status": 200
+    },
+    {
+      "id": "iridodictyum-kolpakowskianum",
+      "path": "/species/iridodictyum-kolpakowskianum",
+      "status": 200
+    },
+    {
+      "id": "thesium-minkwitzianum",
+      "path": "/species/thesium-minkwitzianum",
+      "status": 200
+    },
+    {
+      "id": "delphinium-knorringianum",
+      "path": "/species/delphinium-knorringianum",
+      "status": 200
+    },
+    {
+      "id": "urocerus-sah",
+      "path": "/species/urocerus-sah",
+      "status": 200
+    },
+    {
+      "id": "masaris-longicornis",
+      "path": "/species/masaris-longicornis",
+      "status": 200
+    },
+    {
+      "id": "varanus-griseus-caspius",
+      "path": "/species/varanus-griseus-caspius",
+      "status": 200
+    },
+    {
+      "id": "lyrurus-tetrix",
+      "path": "/species/lyrurus-tetrix",
+      "status": 200
+    },
+    {
+      "id": "cygnus-cygnus",
+      "path": "/species/cygnus-cygnus",
+      "status": 200
+    },
+    {
+      "id": "aythya-nyroca",
+      "path": "/species/aythya-nyroca",
+      "status": 200
+    },
+    {
+      "id": "mergus-serrator",
+      "path": "/species/mergus-serrator",
+      "status": 200
+    },
+    {
+      "id": "oxyura-leucocephala",
+      "path": "/species/oxyura-leucocephala",
+      "status": 200
+    },
+    {
+      "id": "gavia-arctica",
+      "path": "/species/gavia-arctica",
+      "status": 200
+    },
+    {
+      "id": "ciconia-ciconia",
+      "path": "/species/ciconia-ciconia",
+      "status": 200
+    },
+    {
+      "id": "platalea-leucorodia",
+      "path": "/species/platalea-leucorodia",
+      "status": 200
+    },
+    {
+      "id": "pelecanus-onocrotalus",
+      "path": "/species/pelecanus-onocrotalus",
+      "status": 200
+    },
+    {
+      "id": "phalacrocorax-pygmaeus",
+      "path": "/species/phalacrocorax-pygmaeus",
+      "status": 200
+    },
+    {
+      "id": "falco-naumanni",
+      "path": "/species/falco-naumanni",
+      "status": 200
+    },
+    {
+      "id": "falco-rusticolus",
+      "path": "/species/falco-rusticolus",
+      "status": 200
+    },
+    {
+      "id": "pandion-haliaetus",
+      "path": "/species/pandion-haliaetus",
+      "status": 200
+    },
+    {
+      "id": "haliaeetus-leucoryphus",
+      "path": "/species/haliaeetus-leucoryphus",
+      "status": 200
+    },
+    {
+      "id": "haliaeetus-albicilla",
+      "path": "/species/haliaeetus-albicilla",
+      "status": 200
+    },
+    {
+      "id": "gyps-himalayensis",
+      "path": "/species/gyps-himalayensis",
+      "status": 200
+    },
+    {
+      "id": "gyps-fulvus",
+      "path": "/species/gyps-fulvus",
+      "status": 200
+    },
+    {
+      "id": "circaetus-gallicus",
+      "path": "/species/circaetus-gallicus",
+      "status": 200
+    },
+    {
+      "id": "circus-macrourus",
+      "path": "/species/circus-macrourus",
+      "status": 200
+    },
+    {
+      "id": "neomys-fodiens",
+      "path": "/species/neomys-fodiens",
+      "status": 200
+    },
+    {
+      "id": "rhinolophus-bocharicus",
+      "path": "/species/rhinolophus-bocharicus",
+      "status": 200
+    },
+    {
+      "id": "barbastella-leucomelas",
+      "path": "/species/barbastella-leucomelas",
+      "status": 200
+    },
+    {
+      "id": "tadarida-teniotis",
+      "path": "/species/tadarida-teniotis",
+      "status": 200
+    },
+    {
+      "id": "ursus-arctos",
+      "path": "/species/ursus-arctos",
+      "status": 200
+    },
+    {
+      "id": "martes-foina",
+      "path": "/species/martes-foina",
+      "status": 200
+    },
+    {
+      "id": "lutra-lutra",
+      "path": "/species/lutra-lutra",
+      "status": 200
+    },
+    {
+      "id": "allactaga-elater",
+      "path": "/species/allactaga-elater",
+      "status": 200
+    },
+    {
+      "id": "dictyocephalus-attenuatus",
+      "path": "/species/dictyocephalus-attenuatus",
+      "status": 200
+    },
+    {
+      "id": "prionus-tschitscherini",
+      "path": "/species/prionus-tschitscherini",
+      "status": 200
+    },
+    {
+      "id": "rossomyrmex-proformicarum",
+      "path": "/species/rossomyrmex-proformicarum",
+      "status": 200
+    },
+    {
+      "id": "barbus-brachycephalus",
+      "path": "/species/barbus-brachycephalus",
+      "status": 200
+    },
+    {
+      "id": "allochrusa-gypsophiloides",
+      "path": "/species/allochrusa-gypsophiloides",
+      "status": 200
+    },
+    {
+      "id": "corydalis-pseudoadunca",
+      "path": "/species/corydalis-pseudoadunca",
+      "status": 200
+    },
+    {
+      "id": "fumariola-turkestanica",
+      "path": "/species/fumariola-turkestanica",
+      "status": 200
+    },
+    {
+      "id": "rhodiola-litwinowii",
+      "path": "/species/rhodiola-litwinowii",
+      "status": 200
+    },
+    {
+      "id": "sibiraea-tianschanica",
+      "path": "/species/sibiraea-tianschanica",
+      "status": 200
+    },
+    {
+      "id": "crataegus-knorringiana",
+      "path": "/species/crataegus-knorringiana",
+      "status": 200
+    },
+    {
+      "id": "ammopiptanthus-nanus",
+      "path": "/species/ammopiptanthus-nanus",
+      "status": 200
+    },
+    {
+      "id": "colutea-brachyptera",
+      "path": "/species/colutea-brachyptera",
+      "status": 200
+    },
+    {
+      "id": "primula-eugeniae",
+      "path": "/species/primula-eugeniae",
+      "status": 200
+    },
+    {
+      "id": "physochlaina-alaica",
+      "path": "/species/physochlaina-alaica",
+      "status": 200
+    },
+    {
+      "id": "incarvillea-olgae",
+      "path": "/species/incarvillea-olgae",
+      "status": 200
+    },
+    {
+      "id": "saussurea-involucrata",
+      "path": "/species/saussurea-involucrata",
+      "status": 200
+    }
+  ],
+  "images": [
+    {
+      "path": "/images/approved/irbis-1.webp",
+      "sha256": "250c124488aa1008011eecff378bf31a3397978918403408ce977b4b4c5748dd",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/argali-1.webp",
+      "sha256": "05cd846a1cd67d1401d6b08b50b6c57505bbd26552494f2fe3f7680b503739dd",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/manul-1.webp",
+      "sha256": "f5f0c8394805636748d0da7709f69becc961e51cb8b2fbfd17bc8051113d54b1",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/golden-eagle-1.webp",
+      "sha256": "d8c618e27182eb9fddb4cdff7e58aa4f42bc8cc5a192390e598ef81be197c1fa",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/bearded-vulture-1.webp",
+      "sha256": "d46960f9a9244255c91b2a96b78d579491c97f42fd6a2e99e8ef58309dd67922",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/saker-falcon-1.webp",
+      "sha256": "c8755f98c96ebb2d88929b7ceefa882b3f622b2c3da5373aa3474a370ac9c9a7",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/greigs-tulip-1.webp",
+      "sha256": "e86e885c1857def6585336cf554b73ed80532d39c4594c2cb7c458a856a84b2e",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/kaufmanns-tulip-1.webp",
+      "sha256": "ca1bb2eecc5c3e3e7b2246b611fff9157b7bdcaf577fb04254f998097c347a7d",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/sievers-apple-1.webp",
+      "sha256": "273f73a29bb105f970b1d70d526418eadbd743676da38ba2af7b36cf72b91e88",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/central-asian-tortoise-1.webp",
+      "sha256": "d37b5f8eedf3d9a96b0f07097689b0537f1dde7096ee07c049f6768dc07c0795",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/central-asian-frog-1.webp",
+      "sha256": "9e68faf61fe4b14224cce2706bd2d5c8e11f5dcefe86fdea3c8b3f3219b54e18",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/predatory-bush-cricket-1.webp",
+      "sha256": "3e8dbf107742d44384832ce07d7a7332f5a693aab893f505b869e4bb62519e12",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/dog-stinkhorn-1.webp",
+      "sha256": "98af1ec652407ce317722ddb77df7ffa9816c54d018cfb89ded7f461a17f830f",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/marbled-polecat-1.webp",
+      "sha256": "dab719e3fd431506df3969d1d6f42ce166b15c07f86dc8e8dc2abaefb2359b7c",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/black-stork-1.webp",
+      "sha256": "cf027d88081ac71d5079987af5d40d0bc256d559891f9405245c659b7f809687",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/ibisbill-1.webp",
+      "sha256": "1e13016f52bbcbb3ef5ddb95c1e35494d87e0912dde92e1ddc7f608baedf852d",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/eduards-fritillary-1.webp",
+      "sha256": "8c0664bf42afe98e7de029f6ac4fc35382a885e40f86851fa90586401c259abe",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/european-glass-lizard-1.webp",
+      "sha256": "196f274ee1309b36402d030cd80aafa8221fa3482cd3bb46a3b9d13b575e9801",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/dalmatian-pelican-1.webp",
+      "sha256": "1e0182e145dfbc89402535446c4e9db987dd5689fea9881c4f33d36356f4bc20",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/eurasian-lynx-1.webp",
+      "sha256": "27961ddf57c1f5c5d19d0c56d3ed8ca0413b2c53a654da590c8fc3a6ef72b31d",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/kolpakowskis-tulip-1.webp",
+      "sha256": "9c39ebf9886db953639088f3ec4d9768e4786ca345ba1c8778beb639f03b35ad",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/ostrowskis-tulip-1.webp",
+      "sha256": "bde6fad74185b66b65d21d9f9b8a9c72a22484ae5fc2e94e8381c2da24fc97c4",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/christophs-clouded-yellow-1.webp",
+      "sha256": "e3bba6988ffa3850d717e2e8fb9c68975cee2648148d8ff6d08db4886ffef425",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/semenovs-fir-1.webp",
+      "sha256": "e7574a5e8fc3f261c8484474695b36517bc5535bd731a1a3d1633d2e5596b4ef",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/great-bustard-1.webp",
+      "sha256": "394f1bf720a1bab1459f1326aeef082ca2b40ef3f2ca673714ab541fd86f2924",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/pskem-onion-1.webp",
+      "sha256": "ffcb628f76c771ca18ddc43fd37f0f4d6b247ea1db57164301a3955289ad541e",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/kostychevs-pasque-flower-1.webp",
+      "sha256": "ddc39cc9eff90f74a1194840d9d54e76b2e97f169e34feca8a383b7e1d05b366",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/indian-crested-porcupine-1.webp",
+      "sha256": "3aaf49bfd0b37dfe0535a139efffa54d45448685c8e7c853fc1851260e2486e2",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/giant-robber-fly-1.webp",
+      "sha256": "ba4728fc48f629e504924b139890693fcf08f590baa31626280db96e3c6fe650",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/korzhinskys-pear-1.webp",
+      "sha256": "0773e5979b56a68e712c3ff9a8e45cc8c67d545e129ee6cea366a0b007405338",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/cinereous-vulture-1.webp",
+      "sha256": "dd32de6437931ca037bf0dde283aaed1bc29ac37d6bdb2dc6ef36e0fe5172761",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/egyptian-vulture-1.webp",
+      "sha256": "c316177c52699ceeedeade6643652c086422caa869fb1b46a8f0ec778da2fbe4",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/eminium-regelii-1.webp",
+      "sha256": "2443bc7d68476b5c8223d302b273a0dfb4907d72858b7ffe78b6ff5bb8ebd7df",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/iridodictyum-kolpakowskianum-1.webp",
+      "sha256": "a473358b2097c103a64cfc2366c7fcf469c1b83ca43c1a359405eb0b773039aa",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/varanus-griseus-caspius-1.webp",
+      "sha256": "0b1c99d07a193d6c5dcd5cc7cee91306f3c832e1ca3a648801bd2b3bb356d6a0",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/lyrurus-tetrix-1.webp",
+      "sha256": "c161d75ef1478e7f9cfdba7a30b8b84dd73a84fadb957df50bea684f82431360",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/cygnus-cygnus-1.webp",
+      "sha256": "1cc4fd4c5a86bfbd98c7374b3784158fdb734419202d96dbd9ec394aeb84871e",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/aythya-nyroca-1.webp",
+      "sha256": "369c049d90ae87fd30775fafc91cc6d7c2edc0cfb172b3c29c029989d6c8c54e",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/mergus-serrator-1.webp",
+      "sha256": "9d85633340e60994021d1d3b41ca9641e96ece515318419895f69dc85358af41",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/oxyura-leucocephala-1.webp",
+      "sha256": "7630668650650cadf43e9b23c8c5196adfda70e702c8e278335afb5a78020326",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/gavia-arctica-1.webp",
+      "sha256": "afca282d2bf1ceb0466e05dd84ea58291bbaffe81a044a5533c017b268dd46fe",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/dictyocephalus-attenuatus-1.webp",
+      "sha256": "0a109660a2caa346b47d3ee630dc5e370b8a0eff22c60e1d30b20f41029a045e",
+      "status": 200
+    },
+    {
+      "path": "/images/approved/incarvillea-olgae-1.webp",
+      "sha256": "1dd50724bba68446224d21bf249399c6cdc10e1ef92990517fccf1ab82472c42",
+      "status": 200
+    }
+  ],
+  "placeholder": {
+    "path": "/images/placeholder.svg",
+    "status": 200
+  }
+}

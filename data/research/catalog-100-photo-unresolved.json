@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-15",
+  "records": [
+    {
+      "id": "pike-asp",
+      "scientificName": "Aspiolucius esocinus",
+      "status": "unresolved",
+      "reason": "Найдены почтовое изображение и страница музейного журнала, не фотография рыбы.",
+      "candidates": [
+        {
+          "page": "https://www.gbif.org/occurrence/1057512046",
+          "originalUrl": "https://data.nhm.ac.uk/media/57e50805-f29f-4535-99bc-1189582a95ab",
+          "documentedName": "Aspius esocinus Kessler, 1874",
+          "license": "http://creativecommons.org/licenses/by/4.0/",
+          "note": "Zoology Accessions Register: Reptiles & Fishes: 1893 - 1903: page 158"
+        },
+        {
+          "page": "https://commons.wikimedia.org/wiki/File:Aspiolucius_esocinus.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/87/Aspiolucius_esocinus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "documentedName": "File:Aspiolucius esocinus.jpg",
+          "license": "Public domain",
+          "note": "Поисковый кандидат, не допуск; проверить подпись и сюжет."
+        },
+        {
+          "page": "https://commons.wikimedia.org/wiki/File:Aspiolucius_esocinus_2021_cover_of_Kyrgyzstan.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Aspiolucius_esocinus_2021_cover_of_Kyrgyzstan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "documentedName": "File:Aspiolucius esocinus 2021 cover of Kyrgyzstan.jpg",
+          "license": "Public domain",
+          "note": "Поисковый кандидат, не допуск; проверить подпись и сюжет."
+        }
+      ],
+      "query": "https://api.gbif.org/v1/occurrence/search?taxonKey=2363766&mediaType=StillImage&limit=3"
+    },
+    {
+      "id": "turkestan-catfish",
+      "scientificName": "Glyptosternon reticulatum",
+      "status": "unresolved",
+      "reason": "Свободные фото GBIF исходно определены как Glyptosternon oschanini; в Commons также найден рисунок Exostoma stoliczkae. Подмена Glyptosternon reticulatum не допускается без подтверждения специалиста.",
+      "candidates": [
+        {
+          "page": "https://www.inaturalist.org/photos/379818708",
+          "originalUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/379818708/original.jpeg",
+          "documentedName": "Glyptosternon oschanini (Herzenstein, 1889)",
+          "license": "http://creativecommons.org/licenses/by/4.0/",
+          "note": "См. первичное определение и лицензию конкретного файла"
+        },
+        {
+          "page": "https://www.inaturalist.org/photos/379818743",
+          "originalUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/379818743/original.jpeg",
+          "documentedName": "Glyptosternon oschanini (Herzenstein, 1889)",
+          "license": "http://creativecommons.org/licenses/by/4.0/",
+          "note": "См. первичное определение и лицензию конкретного файла"
+        },
+        {
+          "page": "https://www.inaturalist.org/photos/379818781",
+          "originalUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/379818781/original.jpeg",
+          "documentedName": "Glyptosternon oschanini (Herzenstein, 1889)",
+          "license": "http://creativecommons.org/licenses/by/4.0/",
+          "note": "См. первичное определение и лицензию конкретного файла"
+        },
+        {
+          "page": "https://www.inaturalist.org/photos/426239666",
+          "originalUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/426239666/original.jpeg",
+          "documentedName": "Glyptosternon oschanini (Herzenstein, 1889)",
+          "license": "http://creativecommons.org/licenses/by-nc/4.0/",
+          "note": "См. первичное определение и лицензию конкретного файла"
+        },
+        {
+          "page": "https://www.gbif.org/occurrence/74498",
+          "originalUrl": "https://media-service.nrm.se/images?dataset=fish&id=Full_size/NRM40236.jpg",
+          "documentedName": "Glyptosternon reticulatum McClelland, 1842",
+          "license": null,
+          "note": "См. первичное определение и лицензию конкретного файла"
+        }
+      ],
+      "query": "https://api.gbif.org/v1/occurrence/search?taxonKey=2341221&mediaType=StillImage&limit=3"
+    },
+    {
+      "id": "relict-spider",
+      "scientificName": "Tricholathys relicta",
+      "status": "unresolved",
+      "reason": "Подходящий точно определённый фотокандидат не найден в ограниченном поиске.",
+      "candidates": [],
+      "query": "https://api.gbif.org/v1/occurrence/search?taxonKey=2144820&mediaType=StillImage&limit=3"
+    },
+    {
+      "id": "tien-shan-scutiger",
+      "scientificName": "Albatrellus tianschanicus",
+      "status": "unresolved",
+      "reason": "Точно определённая фотография Albatrellus tianschanicus с подтверждёнными правами не найдена.",
+      "candidates": [],
+      "query": "https://api.gbif.org/v1/occurrence/search?taxonKey=2551839&mediaType=StillImage&limit=3"
+    },
+    {
+      "id": "menzbiers-marmot",
+      "scientificName": "Marmota menzbieri",
+      "status": "unresolved",
+      "reason": "Найденные фотографии iNaturalist имеют CC BY-NC; марки не заменяют фотографию животного.",
+      "candidates": [
+        {
+          "page": "https://www.inaturalist.org/photos/531815648",
+          "originalUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/531815648/original.jpg",
+          "documentedName": "Marmota menzbieri (Kashkarov, 1925)",
+          "license": "http://creativecommons.org/licenses/by-nc/4.0/",
+          "note": "См. первичное определение и лицензию конкретного файла"
+        },
+        {
+          "page": "https://www.inaturalist.org/photos/395629308",
+          "originalUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/395629308/original.jpeg",
+          "documentedName": "Marmota menzbieri (Kashkarov, 1925)",
+          "license": "http://creativecommons.org/licenses/by-nc/4.0/",
+          "note": "См. первичное определение и лицензию конкретного файла"
+        },
+        {
+          "page": "https://www.inaturalist.org/photos/347458480",
+          "originalUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/347458480/original.jpg",
+          "documentedName": "Marmota menzbieri (Kashkarov, 1925)",
+          "license": "http://creativecommons.org/licenses/by-nc/4.0/",
+          "note": "См. первичное определение и лицензию конкретного файла"
+        },
+        {
+          "page": "https://commons.wikimedia.org/wiki/File:1987_CPA_5828.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1b/1987_CPA_5828.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "documentedName": "File:1987 CPA 5828.jpg",
+          "license": "Public domain",
+          "note": "Поисковый кандидат, не допуск; проверить подпись и сюжет."
+        },
+        {
+          "page": "https://commons.wikimedia.org/wiki/File:Stamps_of_Uzbekistan,_2012-64.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Stamps_of_Uzbekistan%2C_2012-64.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "documentedName": "File:Stamps of Uzbekistan, 2012-64.jpg",
+          "license": "Public domain",
+          "note": "Поисковый кандидат, не допуск; проверить подпись и сюжет."
+        }
+      ],
+      "query": "https://api.gbif.org/v1/occurrence/search?taxonKey=2437367&mediaType=StillImage&limit=3"
+    },
+    {
+      "id": "said-alievs-toad-agama",
+      "scientificName": "Phrynocephalus saidalievi",
+      "status": "unresolved",
+      "reason": "Фотографии точного таксона с проверенной лицензией не найдены; родственные агамы не используются.",
+      "candidates": [],
+      "query": "https://api.gbif.org/v1/occurrence/search?taxonKey=10782470&mediaType=StillImage&limit=3"
+    },
+    {
+      "id": "vigorous-ground-beetle",
+      "scientificName": "Carabus validus",
+      "status": "unresolved",
+      "reason": "Нет подходящей фотографии точно определённого Carabus validus.",
+      "candidates": [],
+      "query": "https://api.gbif.org/v1/occurrence/search?taxonKey=8881643&mediaType=StillImage&limit=3"
+    },
+    {
+      "id": "fergana-ground-beetle",
+      "scientificName": "Carabus ferghanicus",
+      "status": "unresolved",
+      "reason": "Нет подходящей фотографии точно определённого Carabus ferghanicus.",
+      "candidates": [],
+      "query": "https://api.gbif.org/v1/occurrence/search?taxonKey=7630772&mediaType=StillImage&limit=3"
+    },
+    {
+      "id": "tulipa-zenaidae",
+      "scientificName": "Tulipa lehmanniana",
+      "status": "unresolved",
+      "reason": "Названия/категории Commons и агрегированный GBIF taxon могут указывать Tulipa lehmanniana, тогда как исходные определения ряда наблюдений — Tulipa behmiana. Требуется проверка ботаника; автоматически не отождествляются.",
+      "candidates": [
+        {
+          "page": "https://www.inaturalist.org/photos/628215659",
+          "originalUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/628215659/original.jpg",
+          "documentedName": "Tulipa lehmanniana Merckl.",
+          "license": "http://creativecommons.org/licenses/by-nc/4.0/",
+          "note": "См. первичное определение и лицензию конкретного файла"
+        },
+        {
+          "page": "https://www.inaturalist.org/photos/633691757",
+          "originalUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/633691757/original.jpg",
+          "documentedName": "Tulipa zenaidae Vved.",
+          "license": "http://creativecommons.org/licenses/by-nc/4.0/",
+          "note": "См. первичное определение и лицензию конкретного файла"
+        },
+        {
+          "page": "https://www.inaturalist.org/photos/633691799",
+          "originalUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/633691799/original.jpg",
+          "documentedName": "Tulipa zenaidae Vved.",
+          "license": "http://creativecommons.org/licenses/by-nc/4.0/",
+          "note": "См. первичное определение и лицензию конкретного файла"
+        },
+        {
+          "page": "https://www.inaturalist.org/photos/636374441",
+          "originalUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/636374441/original.jpg",
+          "documentedName": "Tulipa behmiana Regel",
+          "license": "http://creativecommons.org/licenses/by-nc/4.0/",
+          "note": "См. первичное определение и лицензию конкретного файла"
+        },
+        {
+          "page": "https://commons.wikimedia.org/wiki/File:Stamps_of_Uzbekistan,_2010-69.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Stamps_of_Uzbekistan%2C_2010-69.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "documentedName": "File:Stamps of Uzbekistan, 2010-69.jpg",
+          "license": "Public domain",
+          "note": "Поисковый кандидат, не допуск; проверить подпись и сюжет."
+        },
+        {
+          "page": "https://commons.wikimedia.org/wiki/File:Tulipa_lehmanniana.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/22/Tulipa_lehmanniana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "documentedName": "File:Tulipa lehmanniana.jpg",
+          "license": "CC BY 2.0",
+          "note": "Поисковый кандидат, не допуск; проверить подпись и сюжет."
+        }
+      ],
+      "query": "https://api.gbif.org/v1/occurrence/search?taxonKey=5299646&mediaType=StillImage&limit=3"
+    },
+    {
+      "id": "delphinium-knorringianum",
+      "scientificName": "Delphinium knorringianum",
+      "status": "unresolved",
+      "reason": "Подходящая фотография точного таксона с подтверждёнными правами не найдена.",
+      "candidates": [],
+      "query": "https://api.gbif.org/v1/occurrence/search?taxonKey=3930642&mediaType=StillImage&limit=3"
+    },
+    {
+      "id": "masaris-longicornis",
+      "scientificName": "Masaris longicornis",
+      "status": "unresolved",
+      "reason": "Подходящая фотография не найдена; дополнительный запрос категории Commons остановлен после HTTP 429 без обхода ограничения.",
+      "candidates": [],
+      "query": "https://api.gbif.org/v1/occurrence/search?taxonKey=1312316&mediaType=StillImage&limit=3"
+    },
+    {
+      "id": "barbastella-leucomelas",
+      "scientificName": "Barbastella leucomelas",
+      "status": "unresolved",
+      "reason": "Найдены спектрограмма с NC и музейные журналы CC0, но не фотография самой летучей мыши. Подвид/популяция не подменяются.",
+      "candidates": [
+        {
+          "page": "https://www.gbif.org/occurrence/4155636538",
+          "originalUrl": "https://xeno-canto.org/sounds/spectrograms/BATZCVUEMZ/805944/colour.png",
+          "documentedName": "Barbastella leucomelas (Cretzschmar, 1826)",
+          "license": "http://creativecommons.org/licenses/by-nc-sa/4.0/",
+          "note": "Spectrogram and oscillogram of the first two minutes of the sound recording"
+        },
+        {
+          "page": "https://www.gbif.org/occurrence/1319535445",
+          "originalUrl": "https://collections.nmnh.si.edu/media/?i=13940814&h=2000",
+          "documentedName": "Barbastella leucomelas (Cretzschmar, 1826)",
+          "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "note": "Ledger Volume 134: USNM 574301-574325"
+        },
+        {
+          "page": "https://www.gbif.org/occurrence/1321871552",
+          "originalUrl": "https://collections.nmnh.si.edu/media/?i=14531710&h=2000",
+          "documentedName": "Barbastella leucomelas (Cretzschmar, 1826)",
+          "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "note": "Ledger Volume 69: USNM 353151-353175"
+        },
+        {
+          "page": "https://commons.wikimedia.org/wiki/File:Vespertilio_leucomelas.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Vespertilio_leucomelas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "documentedName": "File:Vespertilio leucomelas.jpg",
+          "license": "Public domain",
+          "note": "Поисковый кандидат, не допуск; проверить подпись и сюжет."
+        },
+        {
+          "page": "https://commons.wikimedia.org/wiki/File:Vespertilio_leucomelas_2.jpg",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Vespertilio_leucomelas_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "documentedName": "File:Vespertilio leucomelas 2.jpg",
+          "license": "Public domain",
+          "note": "Поисковый кандидат, не допуск; проверить подпись и сюжет."
+        }
+      ],
+      "query": "https://api.gbif.org/v1/occurrence/search?taxonKey=2432581&mediaType=StillImage&limit=3"
+    },
+    {
+      "id": "prionus-tschitscherini",
+      "scientificName": "Pogonarthron tschitscherini",
+      "status": "unresolved",
+      "reason": "Фотография Pogonarthron tschitscherini имеет CC BY-NC. Портрет энтомолога из Commons отклонён.",
+      "candidates": [
+        {
+          "page": "https://www.inaturalist.org/photos/219882251",
+          "originalUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/219882251/original.jpeg",
+          "documentedName": "Pogonarthron tschitscherini (Semenov, 1890)",
+          "license": "http://creativecommons.org/licenses/by-nc/4.0/",
+          "note": "См. первичное определение и лицензию конкретного файла"
+        },
+        {
+          "page": "https://commons.wikimedia.org/wiki/File:Tschitscherin.png",
+          "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Tschitscherin.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "documentedName": "File:Tschitscherin.png",
+          "license": "Public domain",
+          "note": "Поисковый кандидат, не допуск; проверить подпись и сюжет."
+        }
+      ],
+      "query": "https://api.gbif.org/v1/occurrence/search?taxonKey=1147213&mediaType=StillImage&limit=3"
+    },
+    {
+      "id": "crataegus-knorringiana",
+      "scientificName": "Crataegus knorringiana",
+      "status": "unresolved",
+      "reason": "Найденная фотография iNaturalist имеет CC BY-NC 4.0.",
+      "candidates": [
+        {
+          "page": "https://www.inaturalist.org/photos/310934409",
+          "originalUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/310934409/original.jpeg",
+          "documentedName": "Crataegus knorringiana Pojark.",
+          "license": "http://creativecommons.org/licenses/by-nc/4.0/",
+          "note": "См. первичное определение и лицензию конкретного файла"
+        }
+      ],
+      "query": "https://api.gbif.org/v1/occurrence/search?taxonKey=3015001&mediaType=StillImage&limit=3"
+    },
+    {
+      "id": "primula-eugeniae",
+      "scientificName": "Primula eugeniae",
+      "status": "unresolved",
+      "reason": "Гербарный фотокандидат C.542927 имеет CC BY-SA 4.0, но в записи media отсутствуют автор и правообладатель; нужна проверка атрибуции и этикетки.",
+      "candidates": [
+        {
+          "page": "https://www.gbif.org/occurrence/3440006443",
+          "originalUrl": "https://id.digitarium.fi/api/C.542927/Preview001.jpg",
+          "documentedName": "Primula eugeniae Fed.",
+          "license": "http://creativecommons.org/licenses/by-sa/4.0/",
+          "note": "См. первичное определение и лицензию конкретного файла"
+        }
+      ],
+      "query": "https://api.gbif.org/v1/occurrence/search?taxonKey=5640822&mediaType=StillImage&limit=3"
+    }
+  ]
+}

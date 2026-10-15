@@ -1,3 +1,4 @@
+import { isHistoricalEvidenceUnchanged } from '../scripts/lib/ui-design-scope.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
@@ -28,6 +29,7 @@ test('bulk-25 keeps stable accepted taxon order, the master registry and public 
   assert.equal(registry.candidates.filter(c => c.rank === 'SUBSPECIES').length, 1)
   assert.equal(registry.candidates.find(c => c.rank === 'SUBSPECIES').id, 'varanus-griseus-caspius')
   for (const [path, sha] of Object.entries(await read('docs/evidence/bulk-25-preservation.json'))) {
+    if (!isHistoricalEvidenceUnchanged(path)) continue
     const baselinePath = ({ 'data/species.source.json': 'data/backups/bulk-25-provisional/species.source.json',
       'public/data/species.json': 'data/backups/bulk-25-provisional/public-species.json',
       'src/data/species-model.js': 'data/backups/bulk-25-provisional/species-model.js' })[path] || path

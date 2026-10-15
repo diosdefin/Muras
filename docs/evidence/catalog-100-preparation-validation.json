@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-15",
+  "branch": "feature/bulk-import-next",
+  "startCommit": "635c40e1fec3352a762e8a58c39d7fc202eeddea",
+  "publicCount": 84,
+  "preparedCount": 16,
+  "technicallyReady": 16,
+  "needsCorrection": 0,
+  "blockedSelected": 0,
+  "otherMasterNeedsEvidence": 12,
+  "previousWithheldIds": [
+    "tulipa-anadroma",
+    "eryx-tataricus"
+  ],
+  "groups": {
+    "fungi": 1,
+    "arthropods": 2,
+    "fish": 1,
+    "plants": 12
+  },
+  "photoCount": 2,
+  "placeholderCount": 14,
+  "preservationHashesVerified": 318,
+  "previous84AndArchiveUnchanged": true,
+  "manifest": "data/research/catalog-100-review-manifest.json",
+  "manifestSha256": "592f264f91bb1628d7ff6e84925395dfd6894517348fc6df07eb16870b9ac74b",
+  "registryFingerprint": "199bf605537d623a9de0f975a42483ef4b3e4b0b0fafabc122e41da0f4252c32",
+  "structuralDryRun": {
+    "processed": 16,
+    "added": 16,
+    "unchanged": 0,
+    "rejected": 0
+  },
+  "inMemoryRepeat": {
+    "processed": 16,
+    "added": 0,
+    "unchanged": 16,
+    "rejected": 0
+  },
+  "pipelineStates": {
+    "pending": 0,
+    "needs_evidence": 0,
+    "research_ready": 0,
+    "needs_photo": 0,
+    "ready_for_review": 16,
+    "approved_for_import": 0,
+    "imported": 0,
+    "rejected": 0
+  },
+  "publicationApplied": false,
+  "ownerAuthorization": null,
+  "scientificApproval": null,
+  "verified": false,
+  "scientificReview": "pending",
+  "tests": {
+    "total": 294,
+    "passed": 294,
+    "failed": 0,
+    "skipped": 0
+  },
+  "data": "passed: 84 catalog, 2 archive, 18 quiz, 7 regions, 2 regional evidence",
+  "build": "passed: 102 modules",
+  "previewValidation": "Four-language short texts/fallback/search and Vue SSR for all 16 unpublished cards, modals and profiles; private photo paths or placeholder; route identity and hypothetical 100-entry pagination 24/24/24/24/4. Existing public catalog stays 84.",
+  "testEnvironment": "TEMP/TMP in isolated D: directory because C: had insufficient free space in the previous task; npm test command unchanged.",
+  "checkpointCommits": [
+    "346c597c7488266a8c3b5ebebd0075cae158347c",
+    "f71af1ab5e52e482df827e1922dcfdc66eeb5b97"
+  ]
+}

@@ -17,3 +17,11 @@ export function pageNumbers(current, totalPages) {
   })
   return result
 }
+
+/** Stable photo-first ordering for the temporary catalog display policy. */
+export function prioritizeIllustratedResults(results, hasPhoto) {
+  if (!Array.isArray(results) || typeof hasPhoto !== 'function') return results
+  const illustrated = [], missing = []
+  for (const result of results) (hasPhoto(result) ? illustrated : missing).push(result)
+  return illustrated.concat(missing)
+}

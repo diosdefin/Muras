@@ -1,0 +1,231 @@
+{
+  "id": "allochrusa-gypsophiloides",
+  "scientificName": "Acanthophyllum gypsophiloides",
+  "names": {
+    "ru": "Колючелистник качимовидный",
+    "ky": null,
+    "uz": null,
+    "en": "Gypsophila-like Allochrusa"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Caryophyllales",
+    "family": "Caryophyllaceae",
+    "genus": "Acanthophyllum"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU, историческая национальная категория 2006 года",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Allochrusa gypsophiloides",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Саванноидная растительность в исторически указанных горных районах.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Хозяйственное освоение местообитаний и сбор корней.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книга отмечает историческую охрану в Беш-Аральском заповеднике и рекомендует усилить внимание к виду, а также ввести его в культуру.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=107",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 27",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Allochrusa gypsophiloides",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/7267544",
+      "accessedAt": "2026-10-15",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview"
+      ],
+      "taxonId": "gbif:7267544"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Многолетнее растение саванноидов из книги 2006 года. Ветвистые стебли образуют округлые куртины; сбор корней и хозяйственное освоение сокращают местообитания.",
+        "ky": "2006-жылкы китептеги саванна сымал жерлердин көп жылдык өсүмдүгү. Бутактуу сабактары тегерек түп түзөт; тамырын казуу жана жер өздөштүрүү өскөн жерлерин кыскартат.",
+        "uz": "2006-yilgi kitobdagi savannasimon joylarning koʻp yillik oʻsimligi. Shoxlangan poyalari yumaloq tup hosil qiladi; ildiz yigʻish va yer oʻzlashtirish yashash joylarini qisqartiradi.",
+        "en": "A perennial of savanna-like vegetation described in the 2006 book. Branched stems form rounded clumps; root harvesting and land development reduce its habitat."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Колючелистник качимовидный включён в национальную книгу 2006 года как Allochrusa gypsophiloides, причём Acanthophyllum gypsophiloides приведено там же как альтернативное название. Перечень 2009 года использует Acanthophyllum; это принятое имя подтверждено точным синонимическим ответом GBIF. Связь названий не требует переноса сведений с внешне похожего растения.\n\nМноголетник имеет толстый вертикальный корень и сильно ветвящиеся стебли, образующие округлые куртины. Узкие листья сочетаются с многоцветковыми метёлками; лепестки белые или розоватые. В национальном очерке местообитания названы саванноидами. Исторические сведения в Кыргызстане относятся к Чаткальскому, Таласскому и Пскемскому хребтам. Цветение указано с июня по август, плодоношение — в августе и сентябре; размножение семенное.\n\nГлавные отмеченные угрозы — хозяйственное освоение территории и заготовка корней. Книга связывает использование растения с содержащимися в корнях сапонинами, однако карточка не превращает это в рекомендацию по сбору или медицинскому применению. Авторы предлагают усилить охрану в Беш-Аральском заповеднике и изучить введение в культуру. Современной количественной оценки популяций в пакете нет.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Многолетник с толстым вертикальным корнем; ветвистые цветоносные стебли высотой до 70 см часто образуют округлые куртины. Листья узкие, соцветия метельчатые, лепестки белые или розоватые.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге это многолетнее растение с округлыми разветвлёнными куртинами; дополнительные сведения о взаимодействиях с другими организмами не приведены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальному очерку цветёт в июне–августе, плодоносит в августе–сентябре и размножается семенами.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В издании 2006 года для Кыргызстана указаны Чаткальский, Таласский и Пскемский хребты; актуальные наблюдения не добавлялись.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

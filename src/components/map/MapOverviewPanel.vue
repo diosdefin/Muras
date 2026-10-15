@@ -27,7 +27,7 @@ const slides = computed(() => [
   { key: 'largest', eyebrow: t('mapPreview.largestGroup'), value: largest.value[1], label: largest.value[0] ? groupLabel({ group: largest.value[0] }, language.value) : t('mapPreview.records'), detail: t('mapPreview.shareOfCatalog', { p0: props.species.length ? Math.round(largest.value[1] / props.species.length * 100) : 0 }), ratio: props.species.length ? largest.value[1] / props.species.length * 100 : 0 },
 ])
 const current = computed(() => slides.value[slide.value] || slides.value[0])
-const previewEntries = computed(() => props.entries.slice(0, 4))
+const previewEntries = computed(() => props.entries.slice(0, 2))
 
 function next(direction = 1) { slide.value = (slide.value + direction + slides.value.length) % slides.value.length }
 let rotation
@@ -59,12 +59,14 @@ onUnmounted(() => window.clearInterval(rotation))
             <span>{{ speciesName(entry.species, language) }}</span>
           </div>
         </div>
-        <div v-if="previewEntries.some(entry => speciesPhoto(entry.species))" class="map-overview-credits">
-          <span>{{ t('mapPreview.photoSources') }}:</span>
-          <template v-for="entry in previewEntries" :key="entry.species.id">
-            <a v-if="speciesPhoto(entry.species)" :href="speciesPhoto(entry.species).originalPage" target="_blank" rel="noopener noreferrer">{{ speciesPhoto(entry.species).author }} · {{ speciesPhoto(entry.species).license }}</a>
-          </template>
-        </div>
+        <details v-if="previewEntries.some(entry => speciesPhoto(entry.species))" class="map-overview-credits">
+          <summary>{{ t('mapPreview.photoSources') }} ↗</summary>
+          <div class="map-overview-credit-links">
+            <template v-for="entry in previewEntries" :key="entry.species.id">
+              <a v-if="speciesPhoto(entry.species)" :href="speciesPhoto(entry.species).originalPage" target="_blank" rel="noopener noreferrer">{{ speciesPhoto(entry.species).author }} · {{ speciesPhoto(entry.species).license }}</a>
+            </template>
+          </div>
+        </details>
         <p class="map-region-review">{{ t('mapPreview.regionReview') }}</p>
         <button type="button" class="map-overview-action" @click="emit('details')">{{ t('mapPreview.details') }} <span aria-hidden="true">↗</span></button>
       </div>

@@ -1,0 +1,194 @@
+{
+  "id": "barbastella-leucomelas",
+  "scientificName": "Barbastella leucomelas",
+  "names": {
+    "ru": "Азиатская широкоушка",
+    "ky": null,
+    "uz": null,
+    "en": "Asian Barbastelle"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Chiroptera",
+    "family": "Vespertilionidae",
+    "genus": "Barbastella"
+  },
+  "group": "mammals",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VI (NT: R), историческая национальная категория 2006 года",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Каменные и лёссовые пещеры засушливых предгорий; зимние убежища — также заброшенные штольни.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": null,
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальной статье рекомендована охрана местообитаний и убежищ.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=491",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.distribution",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 2, строка 1",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=8",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Barbastella leucomelas",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Barbastella%20leucomelas",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:2432581"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Азиатская широкоушка по книге 2006 года использует пещеры и старые штольни Кыргызстана. Совершает высотные сезонные перемещения; местные питание и размножение не изучены.",
+        "ky": "2006-жылкы китепте Кыргызстандын үңкүрлөрүн жана эски штольняларын пайдаланары берилген. Мезгилге жараша бийиктик боюнча көчөт; жергиликтүү азыктануусу жана көбөйүшү изилденген эмес.",
+        "uz": "2006-yilgi kitobda Qirgʻizistondagi gʻorlar va eski kon yoʻlaklaridan foydalanishi berilgan. Mavsumiy balandlik koʻchishlari bor; mahalliy oziqlanish va koʻpayish oʻrganilmagan.",
+        "en": "The 2006 book records this bat in caves and old mine galleries in Kyrgyzstan. It makes seasonal movements between elevations; local feeding and breeding remain unstudied."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Азиатская широкоушка представлена в национальной книге 2006 года под именем Barbastella leucomelas. Очерк описывает редкую летучую мышь, использующую подземные убежища в засушливых горных районах. Сведения относятся к историческому национальному концепту; современное присутствие в названных местах требует отдельного обследования.\n\nИсторические местонахождения связаны с засушливыми предгорьями Туркестанского, Алайского и Ферганского хребтов; упомянут и Внутренний Тянь-Шань. Зверьки используют каменные и лёссовые пещеры, а для зимовок особенно отмечены заброшенные штольни. В книге описаны сезонные перемещения: зимой пещеры предгорного пояса, летом более высокие участки гор.\n\nНебольшие группы в убежищах не позволяют установить общую численность. Авторы прямо сообщают, что питание и размножение в условиях Кыргызстана не изучены; эти сведения оставлены неизвестными. Лимитирующие факторы также не установлены, поэтому наличие клещей и блох не превращено в доказанную угрозу. Рекомендована охрана местообитаний и убежищ. Зарубежный ареал исторического очерка не переносится на современное понимание вида без отдельной проверки; никаких новых географических точек не создано.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По очерку совершает высотные сезонные перемещения; зимовку покидает в марте–апреле, летом поднимается в горы.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": null,
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические находки на юге Кыргызстана в предгорьях Туркестанского, Алайского и Ферганского хребтов, также во Внутреннем Тянь-Шане.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

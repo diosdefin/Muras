@@ -1,0 +1,207 @@
+{
+  "id": "falco-rusticolus",
+  "scientificName": "Falco rusticolus",
+  "names": {
+    "ru": "Кречет",
+    "ky": null,
+    "uz": null,
+    "en": "Gyrfalcon"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Falconiformes",
+    "family": "Falconidae",
+    "genus": "Falco"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VII (LC), историческая национальная категория 2006 года",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Для Кыргызстана в книге названы высокогорные районы и предгорные долины.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Разорение гнёзд и отлов для соколиной охоты, как перечислено в национальном очерке.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книга рекомендует разъяснять необходимость охраны хищных птиц и охранять выявленные гнездовья.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=391",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 3, строка 5",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Falco rusticolus",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Falco%20rusticolus",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:8069880"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "В книге 2006 года кречет описан как редкий зимний посетитель Кыргызстана. Указаны горы и предгорные долины; отлов для соколиной охоты назван одной из угроз.",
+        "ky": "2006-жылкы китепте Кыргызстанга кышында сейрек учуп келери жазылган. Тоолордо жана тоо этегиндеги өрөөндөрдө кездешкен; аңчылык үчүн кармоо коркунуч катары аталган.",
+        "uz": "2006-yilgi kitobda Qirgʻizistonga kam uchib keladigan qishlovchi qush sifatida berilgan. Togʻlar va togʻoldi vodiylari qayd etilgan; ov uchun tutish xavf soladi.",
+        "en": "The 2006 book describes a rare winter visitor to Kyrgyzstan, recorded in mountains and foothill valleys. Capture for falconry is one of the listed threats."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Кречет приведён в Красной книге Кыргызстана 2006 года под именем Falco rusticolus. Национальный очерк описывает его как редкого зимнего посетителя, с историческими встречами в Чуйской долине, Прииссыккулье и Нарынском регионе. В качестве мест пребывания в стране названы высокогорные районы и предгорные долины. Приведённый в статье арктический гнездовой ареал не переносится на территорию Кыргызстана.\n\nИсточник сообщает об одной встрече в ущелье Байбиче-Тоо в ноябре 2002 года, но национальной численности не устанавливает. Подробности кладки, насиживания и развития птенцов изложены как общая биология вида. Они не доказывают местное гнездование, которое в рекомендациях книги ещё предлагается искать. Питание и диагностическая внешность в использованном очерке отдельно не описаны и оставлены неизвестными.\n\nОтлов для соколиной охоты и разорение гнёзд названы ограничивающими факторами. Авторы предлагают разъяснительную работу и охрану выявленных мест размножения. Эти предложения не превращены в сведения о выполненных программах. Историческая национальная категория Least Concern не является современной глобальной оценкой IUCN и не отменяет редкости зимних встреч в стране.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальному очерку в отдельные зимы прилетает на зимовку; местное гнездование не подтверждено этим пакетом.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": null,
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические встречи в Чуйской долине, Прииссыккулье и Байбиче-Тоо; современное присутствие не устанавливалось.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

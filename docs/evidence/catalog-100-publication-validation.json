@@ -1,0 +1,93 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-15",
+  "branch": "feature/bulk-import-next",
+  "startCommit": "3e645572daf6dd22aaa36568aa327dc098813b4a",
+  "manifest": "data/research/catalog-100-review-manifest.json",
+  "manifestSha256": "592f264f91bb1628d7ff6e84925395dfd6894517348fc6df07eb16870b9ac74b",
+  "registryFingerprint": "199bf605537d623a9de0f975a42483ef4b3e4b0b0fafabc122e41da0f4252c32",
+  "decision": "data/research/publication-decisions/muras-22-7-owner-provisional.json",
+  "beforeCount": 84,
+  "afterCount": 100,
+  "addedIds": [
+    "dictyocephalus-attenuatus",
+    "prionus-tschitscherini",
+    "rossomyrmex-proformicarum",
+    "barbus-brachycephalus",
+    "allochrusa-gypsophiloides",
+    "corydalis-pseudoadunca",
+    "fumariola-turkestanica",
+    "rhodiola-litwinowii",
+    "sibiraea-tianschanica",
+    "crataegus-knorringiana",
+    "ammopiptanthus-nanus",
+    "colutea-brachyptera",
+    "primula-eugeniae",
+    "physochlaina-alaica",
+    "incarvillea-olgae",
+    "saussurea-involucrata"
+  ],
+  "addedGroups": {
+    "fungi": 1,
+    "arthropods": 2,
+    "fish": 1,
+    "plants": 12
+  },
+  "newImages": 2,
+  "newPlaceholders": 14,
+  "old84SourceUnchanged": true,
+  "old84PublicUnchanged": true,
+  "oldArchiveUnchanged": true,
+  "preservationHashesVerified": 318,
+  "allOriginalImagesAndSourcesUnchanged": true,
+  "verified": false,
+  "scientificReview": "pending",
+  "independentReviewer": null,
+  "scientificApproval": null,
+  "repeatDryRun": {
+    "processed": 16,
+    "added": 0,
+    "unchanged": 16,
+    "rejected": 0
+  },
+  "tests": {
+    "total": 297,
+    "passed": 297,
+    "failed": 0,
+    "skipped": 0
+  },
+  "data": {
+    "runs": 2,
+    "byteIdentical": true,
+    "catalog": 100,
+    "archive": 2,
+    "quiz": 18,
+    "regions": 7,
+    "regionalEvidence": 2
+  },
+  "build": {
+    "status": "passed",
+    "modules": 102
+  },
+  "http": {
+    "routes": 100,
+    "images": 43,
+    "placeholderStatus": 200
+  },
+  "pagination": [
+    24,
+    24,
+    24,
+    24,
+    4
+  ],
+  "searchLanguages": [
+    "ky",
+    "uz",
+    "ru",
+    "en"
+  ],
+  "sourceSha256": "0ae786ae29548029297ab28e0562cac660780b45f041e6022702f68408fcea17",
+  "publicSha256": "0d718eaf134d09b2dd4cca9ded689c0054ca59a80bc69c249a82a4cfcf093cfc",
+  "testEnvironment": "Isolated TEMP/TMP on D:; npm test command unchanged."
+}

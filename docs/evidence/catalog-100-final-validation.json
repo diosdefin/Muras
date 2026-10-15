@@ -1,0 +1,1730 @@
+{
+  "schemaVersion": 1,
+  "documentType": "unpublished-content-quality-report",
+  "preservedFiles": 318,
+  "sourceCatalogCount": 84,
+  "pipeline": {
+    "schemaVersion": 1,
+    "registryId": "catalog-100-content",
+    "catalogFingerprint": "c54dc438f1c9819ee21cc4c2f21ff40216c77ed533f9560fb3606426193c7ad9",
+    "counts": {
+      "processed": 16,
+      "accepted": 16,
+      "deferred": 0,
+      "rejected": 0
+    },
+    "states": {
+      "pending": 0,
+      "needs_evidence": 0,
+      "research_ready": 0,
+      "needs_photo": 0,
+      "ready_for_review": 16,
+      "approved_for_import": 0,
+      "imported": 0,
+      "rejected": 0
+    },
+    "results": [
+      {
+        "candidateId": "dictyocephalus-attenuatus",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "54a7d991d0f6e38c2dcab78df0ff76cc352dba148fca382ed8009f9b19aef6a2",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "prionus-tschitscherini",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "231b5028ae7c49154cbc468b67c2ef88675b581cb7fe26c0a5577674ed37ba27",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "rossomyrmex-proformicarum",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "5bff570503e5b9dd1e8ea4ed989f11bf191c285fca50fde5f8593bbab77d5a17",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "barbus-brachycephalus",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "ca1c13286340c60fcabcb54fa4d487c501f79868667309b9d5beb9b6fb5815d2",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "allochrusa-gypsophiloides",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "feffd6a6b51f38596a0e89e15042f9d612d27cb66113f83007eb1f06bd3cb756",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "corydalis-pseudoadunca",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "b25ff21398b5b2967caac365cf0b701bb69f85ced843f6035687375571a2dec7",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "fumariola-turkestanica",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "309e59ba39817f839e352d6fab6346c5b118c44885493a3cf8c380d27c9f0437",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "rhodiola-litwinowii",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "6e21f3a7847d0c26b34abe50a4c59535c1dd56154a787e2ef02400b67e58c63b",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "sibiraea-tianschanica",
+        "batchNumber": 2,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "b3e694aab5463a0e1cfd0d3bc53c5f9d250427e5f0706f62cde2c6d9a1ae18b9",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "crataegus-knorringiana",
+        "batchNumber": 2,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "ecf1141ff1ddd9ae5a6ad9472c3d0359e88662883cff5013c460f07cfed79b0a",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "ammopiptanthus-nanus",
+        "batchNumber": 2,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "9a7fd302886b19bfb34ff0b27c984407b5d58cb9539185eb3096e24af050f6b6",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "colutea-brachyptera",
+        "batchNumber": 2,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "792576043636d7076d3151b233f448d0d3d349d4d06d2194c1bb5704f60f8ae5",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "primula-eugeniae",
+        "batchNumber": 2,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "ccd31c21161c327697de038c4aa63f45551c43385e5319b1ea19efaf35b04d49",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "physochlaina-alaica",
+        "batchNumber": 2,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "a5adbe812d960e3d1d2c55ece84c3d80b8a9ec377d9cfd8419f1f83329cf5ffc",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "incarvillea-olgae",
+        "batchNumber": 2,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "0779874ed2697c276733bc3940e2f52088bb408c696c466ec2bc66aa3d556b55",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "saussurea-involucrata",
+        "batchNumber": 2,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "cc46db57851bb309d39edb57f52179327c1ddddaf9f1a7391739696f068d1207",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      }
+    ]
+  },
+  "quality": [
+    {
+      "candidateId": "dictyocephalus-attenuatus",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          38,
+          39
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Dictyocephalos attenuatus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2530276",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=39"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Dictyocephalos%20attenuatus"
+        },
+        {
+          "id": "taxonomy-bridge",
+          "url": "https://www.speciesfungorum.org/names/NamesRecord.asp?RecordId=286084"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6"
+        },
+        {
+          "id": "photo-commons",
+          "url": "https://commons.wikimedia.org/wiki/File:StalkdPuffb_0012.jpg"
+        }
+      ],
+      "shortLengthRu": 157,
+      "overviewWordsRu": 146,
+      "languages": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Современная численность и состояние находок",
+        "Лимитирующие факторы",
+        "Тип питания и жизненный цикл",
+        "Согласованный период плодоношения",
+        "Актуальный правовой статус"
+      ],
+      "editorialNotes": [
+        "В RU плодоношение VII–VIII, в EN July–September; интервал не выбран. Монотипность рода из книги не утверждается: современная литература описывает другие виды. Исторический вариант Dictyocephalus сохранён в ID и источнике, принятое имя Dictyocephalos подтверждено отдельно."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "prionus-tschitscherini",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          260,
+          261
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Pogonarthron tschitscherini",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:1147213",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=261"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=11"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Pogonarthron%20tschitscherini"
+        },
+        {
+          "id": "taxonomy-bridge",
+          "url": "https://www.zin.ru/Animalia/Coleoptera/pdf/Almanac_Humanity_Space_2017_Vol_6_No_5.pdf"
+        }
+      ],
+      "shortLengthRu": 160,
+      "overviewWordsRu": 145,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Современная численность",
+        "Полный жизненный цикл",
+        "Подтверждённая биология самок",
+        "Согласование библиографического года авторства",
+        "Актуальный правовой статус"
+      ],
+      "editorialNotes": [
+        "Semenov 1889 в книге и работе 2017, Semenov 1890 в GBIF; автор и эпитет совпадают, новая таксономическая работа прямо связывает прежнюю комбинацию. Предположения о бескрылости самок и развитии более года не утверждаются."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "rossomyrmex-proformicarum",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          282,
+          283
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Rossomyrmex proformicarum",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:1319076",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=283"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=11"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Rossomyrmex%20proformicarum"
+        }
+      ],
+      "shortLengthRu": 160,
+      "overviewWordsRu": 146,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Современные находки и численность",
+        "Полный рацион",
+        "Биология размножения и расселения",
+        "Суточная активность",
+        "Актуальный правовой статус"
+      ],
+      "editorialNotes": [
+        "Число видов рода и сведения о глобальном IUCN из очерка не представлены как актуальные. Ночная активность в книге предположительна, поэтому не утверждается."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "barbus-brachycephalus",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          304,
+          305
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Luciobarbus brachycephalus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2363090",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=305"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=13"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/2363090"
+        }
+      ],
+      "shortLengthRu": 162,
+      "overviewWordsRu": 148,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Современное присутствие",
+        "Современная численность",
+        "Современное местное размножение",
+        "Результаты предложенной реакклиматизации",
+        "Актуальный правовой статус"
+      ],
+      "editorialNotes": [
+        "EN называет аральскую форму подвидом, RU-заголовок имеет видовой биномен; публичный принятый таксон соответствует точному документированному синониму, национальные сведения ограничены исторической аральской формой. Пищевой список первоисточника не расширяется. Никакие современные наблюдения, точки карты и данные численности не создаются."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "allochrusa-gypsophiloides",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          106,
+          107
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Acanthophyllum gypsophiloides",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:7267544",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=107"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/7267544"
+        }
+      ],
+      "shortLengthRu": 158,
+      "overviewWordsRu": 146,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Современная численность и площадь местообитаний",
+        "Результаты культивирования",
+        "Актуальный режим охраны"
+      ],
+      "editorialNotes": [
+        "Оба научных названия приведены в одном национальном очерке; принято Acanthophyllum gypsophiloides по EXACT SYNONYM того же ранга. Наличие исторической записи в заповеднике не означает независимой проверки нынешнего состояния."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "corydalis-pseudoadunca",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          116,
+          117
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Corydalis pseudoadunca",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5531646",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=117"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Corydalis%20pseudoadunca"
+        }
+      ],
+      "shortLengthRu": 164,
+      "overviewWordsRu": 150,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Численность",
+        "Подтверждённые лимитирующие факторы",
+        "Культивирование",
+        "Подробные экологические взаимодействия",
+        "Современное состояние популяций"
+      ],
+      "editorialNotes": [
+        "Отсутствие угроз в книге не означает их отсутствия в природе: поле оставлено null. Смешение латинских и кириллических букв в печатном заголовке нормализовано по латинскому указателю и точному GBIF, исходный текст сохранён."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "fumariola-turkestanica",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          118,
+          119
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Fumariola turkestanica",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3602966",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=119"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=7"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Fumariola%20turkestanica"
+        }
+      ],
+      "shortLengthRu": 164,
+      "overviewWordsRu": 146,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Современная численность и число сохранившихся участков",
+        "Согласованные сроки цветения и плодоношения",
+        "Результаты культивирования",
+        "Современные меры охраны"
+      ],
+      "editorialNotes": [
+        "RU: цветение конец V–VII, плодоношение VII–VIII; EN: конец мая–июнь и июль. Сроки не усреднялись. Указанные в статье старые пять участков и локальная плотность не являются современной оценкой численности."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "rhodiola-litwinowii",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          122,
+          123
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Rhodiola litwinowii",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:7552101",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=123"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Rhodiola%20litwinowii"
+        }
+      ],
+      "shortLengthRu": 164,
+      "overviewWordsRu": 147,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Современная численность",
+        "Конкретизация хозяйственных воздействий",
+        "Культивирование",
+        "Подробные экологические взаимодействия",
+        "Актуальный национальный и глобальный статус"
+      ],
+      "editorialNotes": [
+        "LC — буквальная категория исторического национального очерка. Она не исключает документально подтверждённого включения в книгу и не переносится в поле iucn.category."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "sibiraea-tianschanica",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          124,
+          125
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Sibiraea tianschanica",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3032448",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=125"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Sibiraea%20tianschanica"
+        }
+      ],
+      "shortLengthRu": 165,
+      "overviewWordsRu": 149,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Современная численность",
+        "Состояние природного возобновления",
+        "Действующие меры охраны",
+        "Корректная единица ширины листа"
+      ],
+      "editorialNotes": [
+        "RU печатает ширину листа 4–8 см при длине 2–6 см. Не исправляется догадкой на миллиметры: числовая ширина исключена. Условия культивирования описаны только как исторический опыт."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "crataegus-knorringiana",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          138,
+          139
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Crataegus knorringiana",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3015001",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=139"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Crataegus%20knorringiana"
+        }
+      ],
+      "shortLengthRu": 159,
+      "overviewWordsRu": 149,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Современная численность и возрастная структура",
+        "Согласованные сведения о культивировании",
+        "Фактические современные меры охраны"
+      ],
+      "editorialNotes": [
+        "RU: о культивировании сведений нет; EN сообщает о выращивании в Бишкеке с 1958 года без семенного возобновления. Одна версия не выбрана как окончательная."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "ammopiptanthus-nanus",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          146,
+          147
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Ammopiptanthus nanus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2943139",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=147"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Ammopiptanthus%20nanus"
+        }
+      ],
+      "shortLengthRu": 161,
+      "overviewWordsRu": 147,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Современная численность",
+        "Современный режим охраны на Минкуше",
+        "Результаты новых испытаний культивирования",
+        "Подробные экологические взаимодействия"
+      ],
+      "editorialNotes": [
+        "Оценка 15000 растений относится к 1979 году и не перенесена в population. RU предлагает создать заказник, EN утверждает охрану и расширение территории: наличие действующего режима требует документальной проверки. Медицинские свойства не пересказываются как доказанное лечебное действие."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "colutea-brachyptera",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          148,
+          149
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Colutea brachyptera",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2956464",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=149"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Colutea%20brachyptera"
+        }
+      ],
+      "shortLengthRu": 162,
+      "overviewWordsRu": 148,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Численность",
+        "Культивирование",
+        "Современное состояние местообитаний",
+        "Подробные экологические взаимодействия",
+        "Действующие меры охраны"
+      ],
+      "editorialNotes": [
+        "Указание редкости не преобразовано в численную оценку. Вегетативное размножение описано как очень редкое, а не равнозначное семенному."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "primula-eugeniae",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          178,
+          179
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Primula eugeniae",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5640822",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=179"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Primula%20eugeniae"
+        }
+      ],
+      "shortLengthRu": 166,
+      "overviewWordsRu": 144,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Современная численность",
+        "Природное возобновление",
+        "Подтверждённый срок цветения",
+        "Корректные размеры цветков",
+        "Результаты культивирования и охраны"
+      ],
+      "editorialNotes": [
+        "RU печатает 20 см диаметра отгиба и 15–20 см длины цветков; значения исключены без исправления единиц по догадке. EN: flowering probably in June — месяц не утверждается. Формулировка EN critically endangered не перенесена в категорию: буквальная национальная категория VU сохранена с годом."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "physochlaina-alaica",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          198,
+          199
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Physochlaina alaica",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3799874",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=199"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Physochlaina%20alaica"
+        }
+      ],
+      "shortLengthRu": 166,
+      "overviewWordsRu": 149,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Современная численность",
+        "Подробные экологические взаимодействия",
+        "Согласованные сведения о культивировании",
+        "Современный режим охраны"
+      ],
+      "editorialNotes": [
+        "RU: о культивировании сведений нет; EN утверждает неудачные попытки интродукции. Медицинские и токсикологические сведения не выводятся из семейства и не добавляются без источника."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "incarvillea-olgae",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          204,
+          205
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Incarvillea olgae",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:4091178",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=205"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Incarvillea%20olgae"
+        },
+        {
+          "id": "photo-commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Incarvillea_olgae_Inkarwilla_Olgi_2020-07-22_02.jpg"
+        }
+      ],
+      "shortLengthRu": 168,
+      "overviewWordsRu": 142,
+      "languages": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Современная численность и площадь местообитаний",
+        "Согласованный интервал плодоношения",
+        "Фактическая эффективность охраны",
+        "Результаты современного культивирования"
+      ],
+      "editorialNotes": [
+        "RU: плодоношение VIII–IX, EN: August; интервал не выбран. Иллюстрация Commons — культивируемое растение Вроцлавского ботанического сада, а не кыргызстанская полевая находка. Старое утверждение о формальной охране в Хайдаркане не обозначает проверенный современный режим."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "saussurea-involucrata",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          212,
+          213
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Saussurea involucrata",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5404194",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=213"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Saussurea%20involucrata"
+        }
+      ],
+      "shortLengthRu": 158,
+      "overviewWordsRu": 147,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Современная численность",
+        "Культивирование",
+        "Детальные экологические взаимодействия",
+        "Современная интенсивность выпаса и туристической нагрузки",
+        "Эффективность охраны"
+      ],
+      "editorialNotes": [
+        "Широкое зарубежное распространение из старой статьи не переносится автоматически на современный принятый таксон. Утверждения о лечебном применении не добавлялись. Историческая национальная VU не переносится в глобальное поле IUCN."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    }
+  ]
+}

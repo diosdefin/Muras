@@ -1,0 +1,241 @@
+{
+  "id": "ciconia-ciconia",
+  "scientificName": "Ciconia ciconia",
+  "names": {
+    "ru": "Белый аист",
+    "ky": null,
+    "uz": null,
+    "en": "White Stork"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Ciconiiformes",
+    "family": "Ciconiidae",
+    "genus": "Ciconia"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "IV (EN: R), историческая национальная категория 2006 года",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Исторически — равнинные и предгорные речные долины в культурном ландшафте, в том числе старые поселения.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Осушение болот и преобразование кормовых участков, применение ядохимикатов.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Гибель на ЛЭП, разрушение гнёзд и прямое преследование.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Авторы книги рекомендуют выявлять и охранять гнездовья и объяснять местным жителям необходимость охраны птиц.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=377",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 3, строка 20",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Ciconia ciconia",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Ciconia%20ciconia",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:2481912"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "По книге 2006 года аист гнездился у поселений юга Кыргызстана, в том числе на опорах ЛЭП. Питается мелкими животными; опасны осушение угодий и разрушение гнёзд.",
+        "ky": "2006-жылкы китепте Кыргызстандын түштүгүндөгү айылдарда, анын ичинде электр мамыларында уялаганы жазылган. Майда жаныбарлар менен азыктанат; уяларды бузуу коркунучтуу.",
+        "uz": "2006-yilgi kitobda Qirgʻiziston janubidagi aholi punktlari va elektr ustunlarida uya qurgani qayd etilgan. Mayda hayvonlar bilan oziqlanadi; uyalarni buzish xavf tugʻdiradi.",
+        "en": "The 2006 book records nesting near settlements in southern Kyrgyzstan, including on power poles. It eats small animals; wetland drainage and nest destruction are threats."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Белый аист включён в Красную книгу Кыргызстана 2006 года под именем Ciconia ciconia. Очерк связывает его с предгорными и равнинными речными долинами в освоенном человеком ландшафте. Исторические сведения о южных поселениях и колониях на опорах линий электропередачи относятся к времени подготовки книги, а не к современной переписи. Указания на исчезновение из западной части Чуйской долины также являются ретроспективными.\n\nПтицы устраивают гнёзда на зданиях, старых деревьях и инженерных сооружениях. В статье описана кладка из двух–пяти яиц, которую насиживают оба родителя. В корме перечислены земноводные, пресмыкающиеся, мелкая рыба, крупные насекомые и грызуны. Осенний отлёт указан для августа–сентября.\n\nОсушение болот, преобразование кормовых участков, ядохимикаты и уничтожение гнёзд названы угрозами. Авторы предлагают выявлять и охранять гнездовья и вести разъяснительную работу. Старые приблизительные числа не используются как оценка популяции страны. Русская и английская версии расходятся в обозначении подвида; эта карточка сохраняет только видовой ранг и не утверждает подвидовую принадлежность.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По очерку весеннее появление приходится на начало марта, отлёт — на август–сентябрь. Гнёзда устраивались на зданиях, деревьях и опорах ЛЭП.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Земноводные, ящерицы, змеи, мелкая рыба, крупные насекомые, паукообразные и грызуны перечислены в очерке 2006 года.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В кладке 2–5 яиц; насиживают самец и самка. По книге птенцы покидают гнездо через 70–72 дня.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические сведения относятся к Приферганью юга Кыргызстана; отдельные пролётные встречи известны с Иссык-Куля. Современное присутствие не обновлялось.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

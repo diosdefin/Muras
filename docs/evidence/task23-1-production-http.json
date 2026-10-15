@@ -1,0 +1,109 @@
+{
+  "date": "2026-10-15",
+  "catalogCount": 100,
+  "targetRoutes": [
+    {
+      "id": "pike-asp",
+      "path": "/species/pike-asp",
+      "status": 200
+    },
+    {
+      "id": "turkestan-catfish",
+      "path": "/species/turkestan-catfish",
+      "status": 200
+    },
+    {
+      "id": "relict-spider",
+      "path": "/species/relict-spider",
+      "status": 200
+    },
+    {
+      "id": "tien-shan-scutiger",
+      "path": "/species/tien-shan-scutiger",
+      "status": 200
+    },
+    {
+      "id": "menzbiers-marmot",
+      "path": "/species/menzbiers-marmot",
+      "status": 200
+    },
+    {
+      "id": "said-alievs-toad-agama",
+      "path": "/species/said-alievs-toad-agama",
+      "status": 200
+    },
+    {
+      "id": "vigorous-ground-beetle",
+      "path": "/species/vigorous-ground-beetle",
+      "status": 200
+    },
+    {
+      "id": "fergana-ground-beetle",
+      "path": "/species/fergana-ground-beetle",
+      "status": 200
+    },
+    {
+      "id": "tulipa-zenaidae",
+      "path": "/species/tulipa-zenaidae",
+      "status": 200
+    },
+    {
+      "id": "delphinium-knorringianum",
+      "path": "/species/delphinium-knorringianum",
+      "status": 200
+    },
+    {
+      "id": "masaris-longicornis",
+      "path": "/species/masaris-longicornis",
+      "status": 200
+    },
+    {
+      "id": "barbastella-leucomelas",
+      "path": "/species/barbastella-leucomelas",
+      "status": 200
+    },
+    {
+      "id": "prionus-tschitscherini",
+      "path": "/species/prionus-tschitscherini",
+      "status": 200
+    },
+    {
+      "id": "crataegus-knorringiana",
+      "path": "/species/crataegus-knorringiana",
+      "status": 200
+    },
+    {
+      "id": "primula-eugeniae",
+      "path": "/species/primula-eugeniae",
+      "status": 200
+    }
+  ],
+  "images": [
+    {
+      "id": "said-alievs-toad-agama",
+      "path": "/images/approved/said-alievs-toad-agama-1.webp",
+      "status": 200,
+      "sha256": "e71d3343f5c6dd59b91f1cd912e243627228a82ef3db5007cf638d246b3a0816"
+    },
+    {
+      "id": "tulipa-zenaidae",
+      "path": "/images/approved/tulipa-zenaidae-1.webp",
+      "status": 200,
+      "sha256": "b891d7eb9093c066909e09715aa2a9c419e43378c222ab3d8208e0ea15865c6b"
+    },
+    {
+      "id": "barbastella-leucomelas",
+      "path": "/images/approved/barbastella-leucomelas-1.webp",
+      "status": 200,
+      "sha256": "0108cccdc7845c3202e41135ade5dadf5e6cb9b45ef4a49b00e9847db17c20ba"
+    }
+  ],
+  "placeholderStatus": 200,
+  "sourceAndDistDataIdentical": true,
+  "componentRendering": "Все 15 карточек, модальных окон и страниц видов: Vue SSR, KY/UZ/RU/EN; всего 304 теста прошли.",
+  "browser": {
+    "status": "unavailable",
+    "error": "failed to write kernel assets: Системе не удается найти указанный путь. (os error 3)"
+  },
+  "failures": []
+}
