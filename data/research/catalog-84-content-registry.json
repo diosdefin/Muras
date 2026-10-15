@@ -1484,7 +1484,7 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "V (VU, C1), историческая национальная категория 2006 года",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -1529,7 +1529,17 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -1552,7 +1562,13 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:2480453"
         }
@@ -1571,6 +1587,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-84-content/block-2-facts.json",
+          "sha256": "bc3f0d61fa73c5b25574450d55b5cc73db44a4f7918d247d89c63dfb8149745b"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-2-accounts.json",
+          "sha256": "d1d7fdfa3248582e98c3e2b61209469dc28152800af71d74fb07dbeab7a7df2f"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-2-images.json",
+          "sha256": "be41fbea6f8371113269e1dfc044fe59cc55df3b296c3ea5e9cf81df2860d158"
         }
       ],
       "draft": null,
@@ -1599,55 +1627,64 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "haliaeetus-leucoryphus",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "9caa2b99dddbf353bb016617b12ec5e967a3d249732290871b2f658710c32400",
+        "fingerprint": "6896aebabf5f5451cbccc0b80ee3ba0ce5c266d6de0e21de57fa834b6b5679c7",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "9caa2b99dddbf353bb016617b12ec5e967a3d249732290871b2f658710c32400"
+      "checkedFingerprint": "6896aebabf5f5451cbccc0b80ee3ba0ce5c266d6de0e21de57fa834b6b5679c7",
+      "draftFile": "data/research/catalog-84-content/drafts/haliaeetus-leucoryphus.json",
+      "editorialNotes": [
+        "Летняя встреча не заменяет доказательства гнездования. Международные охранные приложения из книги не проверялись на актуальность и не перенесены как действующее право."
+      ],
+      "missingFacts": [
+        "Численность и текущие зимовки",
+        "Размножение в Кыргызстане",
+        "Подробная внешность и рацион",
+        "Актуальные правовые ограничения"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "haliaeetus-leucoryphus",
+        "factsFingerprint": "62f1409ddacd2ef217576dbd104a53c52449f3681440d2652d1a8dda6a5585d4",
+        "draftSha256": "7588ccd588cf37f07b68f56fc9f2f946053c2d60ec81dd84570441ec210d68a9"
+      }
     },
     {
       "originalScientificName": "Haliaeetus albicilla",
@@ -1656,7 +1693,7 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VI (NT), историческая национальная категория 2006 года",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -1701,7 +1738,17 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -1724,7 +1771,13 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:2480449"
         }
@@ -1743,6 +1796,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-84-content/block-2-facts.json",
+          "sha256": "bc3f0d61fa73c5b25574450d55b5cc73db44a4f7918d247d89c63dfb8149745b"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-2-accounts.json",
+          "sha256": "d1d7fdfa3248582e98c3e2b61209469dc28152800af71d74fb07dbeab7a7df2f"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-2-images.json",
+          "sha256": "be41fbea6f8371113269e1dfc044fe59cc55df3b296c3ea5e9cf81df2860d158"
         }
       ],
       "draft": null,
@@ -1771,55 +1836,64 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "haliaeetus-albicilla",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "008c9e8aea3dd377dd7b6008720edb3445736565910b358ad04e2251bdbb3dbd",
+        "fingerprint": "d0b571cd539bc61c6ad62f8256d2653d631da2968ec2becc4543b66a05a9f28b",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "008c9e8aea3dd377dd7b6008720edb3445736565910b358ad04e2251bdbb3dbd"
+      "checkedFingerprint": "d0b571cd539bc61c6ad62f8256d2653d631da2968ec2becc4543b66a05a9f28b",
+      "draftFile": "data/research/catalog-84-content/drafts/haliaeetus-albicilla.json",
+      "editorialNotes": [
+        "RU: 25–30 зимующих особей; EN: 10–15. Ни одна цифра не выбрана и не усреднена. Общевидовое размножение не локализовано в Кыргызстане."
+      ],
+      "missingFacts": [
+        "Год и величина подтверждённой национальной оценки",
+        "Современные зимовки",
+        "Местное размножение",
+        "Подробная внешность и рацион"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "haliaeetus-albicilla",
+        "factsFingerprint": "1ff6eded21d0aae65005bca795deacf896283054a9961c283bcf4983a780678b",
+        "draftSha256": "7c659b3e2697ebc68a0535569d08994a4dda1ed10ff751e18b12609badc3a8f0"
+      }
     },
     {
       "originalScientificName": "Gyps himalayensis",
@@ -1828,7 +1902,7 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VII (LC), историческая национальная категория 2006 года",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -1873,7 +1947,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -1896,7 +1982,13 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:9561629"
         }
@@ -1915,6 +2007,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-84-content/block-2-facts.json",
+          "sha256": "bc3f0d61fa73c5b25574450d55b5cc73db44a4f7918d247d89c63dfb8149745b"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-2-accounts.json",
+          "sha256": "d1d7fdfa3248582e98c3e2b61209469dc28152800af71d74fb07dbeab7a7df2f"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-2-images.json",
+          "sha256": "be41fbea6f8371113269e1dfc044fe59cc55df3b296c3ea5e9cf81df2860d158"
         }
       ],
       "draft": null,
@@ -1943,55 +2047,64 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "gyps-himalayensis",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "dc372f7c1edfa83409df488c9d50df762964e385edc2c880d6c45065cdc7b66b",
+        "fingerprint": "f2dde3c84f94dd04d0de4de86c285872b3237c89095f6d8c10981e11d1b73952",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "dc372f7c1edfa83409df488c9d50df762964e385edc2c880d6c45065cdc7b66b"
+      "checkedFingerprint": "f2dde3c84f94dd04d0de4de86c285872b3237c89095f6d8c10981e11d1b73952",
+      "draftFile": "data/research/catalog-84-content/drafts/gyps-himalayensis.json",
+      "editorialNotes": [
+        "Наблюдения 1992 года и локальные плотности не преобразованы в национальную численность. Возможная гибридизация в книге — вопрос для изучения, не подтверждённый факт и не основание синонимизировать два принятых вида."
+      ],
+      "missingFacts": [
+        "Современная национальная численность",
+        "Полная гнездовая биология",
+        "Подробная внешность",
+        "Характер контакта с Gyps fulvus"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "gyps-himalayensis",
+        "factsFingerprint": "b6e0f79dd9e122b5f9ff094cd7e583137640df2972ebb8960f2986fffc53c67d",
+        "draftSha256": "a9195dfc4312482bdf45fe9ccd3581ca06def538a0faefe12c450d1e35edf6ca"
+      }
     },
     {
       "originalScientificName": "Gyps fulvus",
@@ -2000,7 +2113,7 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VI (NT: R), историческая национальная категория 2006 года",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -2045,7 +2158,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -2068,7 +2193,13 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:2480389"
         }
@@ -2087,6 +2218,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-84-content/block-2-facts.json",
+          "sha256": "bc3f0d61fa73c5b25574450d55b5cc73db44a4f7918d247d89c63dfb8149745b"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-2-accounts.json",
+          "sha256": "d1d7fdfa3248582e98c3e2b61209469dc28152800af71d74fb07dbeab7a7df2f"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-2-images.json",
+          "sha256": "be41fbea6f8371113269e1dfc044fe59cc55df3b296c3ea5e9cf81df2860d158"
         }
       ],
       "draft": null,
@@ -2115,55 +2258,64 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "gyps-fulvus",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "47fb5259d1fc9f0ca8f030cc41465e48d5329683564354f4a930da0e835f3aca",
+        "fingerprint": "0bbc580f5e3343f66752eca324d6b97405536f43d74457319952ba252a3be9ef",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "47fb5259d1fc9f0ca8f030cc41465e48d5329683564354f4a930da0e835f3aca"
+      "checkedFingerprint": "0bbc580f5e3343f66752eca324d6b97405536f43d74457319952ba252a3be9ef",
+      "draftFile": "data/research/catalog-84-content/drafts/gyps-fulvus.json",
+      "editorialNotes": [
+        "Ранги и точные принятые таксоны Gyps fulvus и G. himalayensis подтверждены отдельно; сведения о зонах контакта не заменяют исследования их взаимоотношений."
+      ],
+      "missingFacts": [
+        "Современная численность",
+        "Подробная внешность",
+        "Состояние гнездовых колоний",
+        "Современная оценка контакта с гималайским грифом"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "gyps-fulvus",
+        "factsFingerprint": "444ae7775cb4f07727f2315b1858fe7a3c7352a431fed5fe8e15c85c2ddcf288",
+        "draftSha256": "bcf882af25b89b250f6106425802f9f28a81ecebd922d734d76e5f0264a79d67"
+      }
     },
     {
       "originalScientificName": "Circaetus gallicus",
@@ -2172,7 +2324,7 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "V (VU: R), историческая национальная категория 2006 года",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -2217,7 +2369,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -2240,7 +2404,13 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:2480666"
         }
@@ -2259,6 +2429,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-84-content/block-2-facts.json",
+          "sha256": "bc3f0d61fa73c5b25574450d55b5cc73db44a4f7918d247d89c63dfb8149745b"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-2-accounts.json",
+          "sha256": "d1d7fdfa3248582e98c3e2b61209469dc28152800af71d74fb07dbeab7a7df2f"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-2-images.json",
+          "sha256": "be41fbea6f8371113269e1dfc044fe59cc55df3b296c3ea5e9cf81df2860d158"
         }
       ],
       "draft": null,
@@ -2287,55 +2469,64 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "circaetus-gallicus",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "bf459c6eab0267a746b291b86aeb93a41f2706d564f08a4e5674730b47468bbb",
+        "fingerprint": "9d8ae0d2d49765eb2654813592183855a9d41397ef3be272d971a165db957925",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "bf459c6eab0267a746b291b86aeb93a41f2706d564f08a4e5674730b47468bbb"
+      "checkedFingerprint": "9d8ae0d2d49765eb2654813592183855a9d41397ef3be272d971a165db957925",
+      "draftFile": "data/research/catalog-84-content/drafts/circaetus-gallicus.json",
+      "editorialNotes": [
+        "Насиживание RU — около полутора месяцев, EN — около месяца. Эти сроки не объединены и не выбраны произвольно."
+      ],
+      "missingFacts": [
+        "Современная численность",
+        "Согласованная длительность насиживания",
+        "Подробная внешность",
+        "Текущее состояние местообитаний"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "circaetus-gallicus",
+        "factsFingerprint": "dec434625203c2688c7539187588205855c66fd8c84c6a6d899dbbc67e12844e",
+        "draftSha256": "36416206a31e54a21320131c28b209436071a78e502759ed8296704a208587f2"
+      }
     },
     {
       "originalScientificName": "Circus macrourus",
@@ -2344,7 +2535,7 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VI (NT), историческая национальная категория 2006 года",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -2389,7 +2580,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -2412,7 +2614,13 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:2480491"
         }
@@ -2431,6 +2639,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-84-content/block-2-facts.json",
+          "sha256": "bc3f0d61fa73c5b25574450d55b5cc73db44a4f7918d247d89c63dfb8149745b"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-2-accounts.json",
+          "sha256": "d1d7fdfa3248582e98c3e2b61209469dc28152800af71d74fb07dbeab7a7df2f"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-2-images.json",
+          "sha256": "be41fbea6f8371113269e1dfc044fe59cc55df3b296c3ea5e9cf81df2860d158"
         }
       ],
       "draft": null,
@@ -2459,55 +2679,65 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "circus-macrourus",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "46a23194071b3a67c3e73b8945000be4d246431096af409ed138d926ac917bf4",
+        "fingerprint": "539d910199cc2649ff48eaae40103c4f1240577d37099b0a89cd26eb37433d66",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "46a23194071b3a67c3e73b8945000be4d246431096af409ed138d926ac917bf4"
+      "checkedFingerprint": "539d910199cc2649ff48eaae40103c4f1240577d37099b0a89cd26eb37433d66",
+      "draftFile": "data/research/catalog-84-content/drafts/circus-macrourus.json",
+      "editorialNotes": [
+        "В очерке S.G. Gmelin, 1771, в сохранённом GBIF S.G.Gmelin, 1770. Биномен, автор и видовой ранг совпадают; авторская дата в карточке не утверждается, первоисточники не исправлялись. Это библиографическое расхождение оставлено для редакторской вычитки.",
+        "RU: возможно гнездящийся; EN: nesting bird. reproduction:null сохраняет неопределённость."
+      ],
+      "missingFacts": [
+        "Подтверждённое местное размножение",
+        "Современная численность",
+        "Подробная внешность",
+        "Номенклатурная дата авторства"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "circus-macrourus",
+        "factsFingerprint": "3abf6636f80358b9eebecec112992cbcf42053bc06567613b10bdb5f285fedab",
+        "draftSha256": "d8a0ef2137a24faf3e4808166eb07e0562a894e06a7368b3f5002978d9b3c862"
+      }
     },
     {
       "originalScientificName": "Neomys fodiens",
@@ -2516,7 +2746,7 @@
       "group": "mammals",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VI (NT: R), историческая национальная категория 2006 года",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -2561,7 +2791,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -2584,7 +2826,13 @@
           "accessedAt": "2026-10-14",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:2435767"
         }
@@ -2603,6 +2851,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-84-content/block-2-facts.json",
+          "sha256": "bc3f0d61fa73c5b25574450d55b5cc73db44a4f7918d247d89c63dfb8149745b"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-2-accounts.json",
+          "sha256": "d1d7fdfa3248582e98c3e2b61209469dc28152800af71d74fb07dbeab7a7df2f"
+        },
+        {
+          "path": "docs/evidence/catalog-84-block-2-images.json",
+          "sha256": "be41fbea6f8371113269e1dfc044fe59cc55df3b296c3ea5e9cf81df2860d158"
         }
       ],
       "draft": null,
@@ -2631,55 +2891,64 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "neomys-fodiens",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "43dc69dacea27f2b39c2455c1fd904f593fd988eeea6d3faa9ac0fd60c6f1dcf",
+        "fingerprint": "4800486848171be1f6f5b94f94ddfed72127782544d8319f40cbe6590b9f4246",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "43dc69dacea27f2b39c2455c1fd904f593fd988eeea6d3faa9ac0fd60c6f1dcf"
+      "checkedFingerprint": "4800486848171be1f6f5b94f94ddfed72127782544d8319f40cbe6590b9f4246",
+      "draftFile": "data/research/catalog-84-content/drafts/neomys-fodiens.json",
+      "editorialNotes": [
+        "В очерке Pennant, 1774, в сохранённом GBIF Pennant, 1771. Совпадают биномен, автор и видовой ранг; авторская дата не включена в название карточки. Уловы в цилиндро-сутках не преобразованы в численность популяции."
+      ],
+      "missingFacts": [
+        "Современная численность",
+        "Подробная внешность",
+        "Детальный местный рацион",
+        "Номенклатурная дата авторства"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "neomys-fodiens",
+        "factsFingerprint": "d7d1522fc39789c37072ffa8bfa5575d6f04189dbeb48e0d252e6fe019f3f88d",
+        "draftSha256": "c235881c98228d695fe469281ca64a04b49ecf3b65652645d528e0bd30d3d78c"
+      }
     },
     {
       "originalScientificName": "Rhinolophus bocharicus",
