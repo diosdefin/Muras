@@ -15,6 +15,7 @@ import { createSearchIndex, searchSpecies, matchesCatalogFilters } from '../src/
 import { paginateCatalog, CATALOG_PAGE_SIZE } from '../src/data/catalog-pagination.js'
 import { speciesPath, speciesIdFromPath } from '../src/data/species-routes.js'
 import { tr } from '../src/locales/index.js'
+import { historicalPipeline } from './helpers/historical-pipeline.mjs'
 const read = async p => JSON.parse(await readFile(`${PROJECT_ROOT}/${p}`, 'utf8'))
 // The 22.5B regression checks its immutable 63-record release; catalog-84 tests
 // separately validate the current publication and preservation of all these records.
@@ -86,9 +87,10 @@ test('repeat provisional dry-run adds zero and the old pipeline still has no sci
   const args = ['provisional', '--registry', journal.registry, '--manifest', journal.manifest, '--mode', 'dry-run',
     '--owner-role', 'project_owner', '--decision-id', journal.decisionId, '--date', journal.records[0].date, '--reason', journal.records[0].reason]
   const before = digest(await readFile(`${PROJECT_ROOT}/data/species.source.json`))
-  const repeat = await runPipeline(PROJECT_ROOT, args)
+  const { repeat, checked } = await historicalPipeline(source, async root => ({
+    repeat: await runPipeline(root, args), checked: await runPipeline(root, ['check', '--registry', journal.registry])
+  }))
   assert.deepEqual(repeat.counts, { processed: 23, added: 0, unchanged: 23, rejected: 0 })
-  const checked = await runPipeline(PROJECT_ROOT, ['check', '--registry', journal.registry])
   assert.equal(checked.states.imported, 23); assert.equal(checked.states.approved_for_import, 0)
   assert.equal(checked.states.needs_evidence, 2)
   assert.equal(digest(await readFile(`${PROJECT_ROOT}/data/species.source.json`)), before)

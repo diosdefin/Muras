@@ -5,6 +5,7 @@ import { PROJECT_ROOT } from '../scripts/build-data.mjs'
 import { digest, fingerprint } from '../scripts/lib/research-pipeline.mjs'
 import { runPipeline } from '../scripts/bulk-pipeline.mjs'
 import { validateSource, validateSpecies } from '../src/data/species-model.js'
+import { historicalPipeline } from './helpers/historical-pipeline.mjs'
 
 const read = async p => JSON.parse(await readFile(`${PROJECT_ROOT}/${p}`, 'utf8'))
 // Preserve the complete 84-record release as a regression fixture. The catalog-100
@@ -52,12 +53,11 @@ test('catalog 84 preserves all previous 63 records and binds the 21 additions to
 
 test('repeat of the exact authorized package adds zero, preserves source bytes and grants no scientific approvals', async () => {
   const hashBefore = digest(await readFile(`${PROJECT_ROOT}/data/species.source.json`))
-  const repeat = await runPipeline(PROJECT_ROOT, ['provisional', '--registry', journal.registry, '--manifest', journal.manifest,
+  const { repeat, checked } = await historicalPipeline(source, async root => ({ repeat: await runPipeline(root, ['provisional', '--registry', journal.registry, '--manifest', journal.manifest,
     '--mode', 'dry-run', '--owner-role', 'project_owner', '--decision-id', journal.decisionId,
-    '--date', journal.records[0].date, '--reason', journal.records[0].reason])
+    '--date', journal.records[0].date, '--reason', journal.records[0].reason]), checked: await runPipeline(root, ['check', '--registry', journal.registry]) }))
   assert.deepEqual(repeat.counts, { processed: 21, added: 0, unchanged: 21, rejected: 0 })
   assert.equal(repeat.applied, false); assert.equal(repeat.scientificApproval, null)
-  const checked = await runPipeline(PROJECT_ROOT, ['check', '--registry', journal.registry])
   assert.equal(checked.states.imported, 21); assert.equal(checked.states.approved_for_import, 0)
   assert.ok(checked.results.every(r => r.errors.length === 0))
   assert.equal(digest(await readFile(`${PROJECT_ROOT}/data/species.source.json`)), hashBefore)

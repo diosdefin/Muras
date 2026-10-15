@@ -224,6 +224,7 @@ test('committed public projection validates and contains no private image paths'
 })
 
 test('licensed assets are local WebP, have declared dimensions, captions and matching fingerprints', async () => {
+  const restoration = JSON.parse(await readFile(join(PROJECT_ROOT, 'data/research/catalog-100-photo-updates.json'), 'utf8'))
   for (const s of source.catalog.filter(s => speciesPhoto(s))) {
     const image = speciesPhoto(s)
     const bytes = await readFile(join(PROJECT_ROOT, image.path))
@@ -234,8 +235,9 @@ test('licensed assets are local WebP, have declared dimensions, captions and mat
     assert.ok(image.caption.ru)
     assert.ok(image.originalPage.startsWith('https://commons.wikimedia.org/wiki/File:') ||
       image.originalPage === 'https://plant.depo.msu.ru/open/public/en/item/MW0895964' ||
-      image.originalPage === 'https://www.inaturalist.org/photos/106836074')
-    assert.ok(image.modifications.some(change => change.includes('пикселизация')))
+      image.originalPage === 'https://www.inaturalist.org/photos/106836074' ||
+      restoration.records.some(r => r.id === s.id && r.image.originalPage === image.originalPage && r.sha256 === image.sha256))
+    assert.ok(image.modifications.some(change => /WebP|пикселизация/.test(change)))
   }
 })
 

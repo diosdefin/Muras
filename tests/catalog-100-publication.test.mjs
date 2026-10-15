@@ -10,9 +10,12 @@ import { speciesName } from '../src/data/presentation.js'
 import { createSearchIndex, searchSpecies, matchesCatalogFilters } from '../src/data/catalog-search.js'
 import { paginateCatalog } from '../src/data/catalog-pagination.js'
 import { speciesIdFromPath, speciesPath } from '../src/data/species-routes.js'
+import { historicalPipeline } from './helpers/historical-pipeline.mjs'
 
 const read = async p => JSON.parse(await readFile(`${PROJECT_ROOT}/${p}`, 'utf8'))
-const source = await read('data/species.source.json'), published = await read('public/data/species.json')
+// Immutable release before task 23 photo-only amendments; current photos are
+// independently checked in catalog-100-photos.test.mjs.
+const source = await read('data/backups/catalog-100-photos/species.source.json'), published = await read('data/backups/catalog-100-photos/public-species.json')
 const before = await read('data/backups/catalog-100/species.source.json')
 const beforePublic = await read('data/backups/catalog-100/public-species.json')
 const manifestPath = 'data/research/catalog-100-review-manifest.json'
@@ -71,12 +74,11 @@ test('all 100 route identities and four-language searches work, filters retain a
 
 test('repeat authorized provisional dry-run adds zero, preserves source bytes and never produces scientific approval', async () => {
   const beforeHash = digest(await readFile(`${PROJECT_ROOT}/data/species.source.json`))
-  const repeat = await runPipeline(PROJECT_ROOT, ['provisional', '--registry', journal.registry, '--manifest', journal.manifest,
+  const { repeat, checked } = await historicalPipeline(source, async root => ({ repeat: await runPipeline(root, ['provisional', '--registry', journal.registry, '--manifest', journal.manifest,
     '--mode', 'dry-run', '--owner-role', 'project_owner', '--decision-id', journal.decisionId,
-    '--date', journal.records[0].date, '--reason', journal.records[0].reason])
+    '--date', journal.records[0].date, '--reason', journal.records[0].reason]), checked: await runPipeline(root, ['check', '--registry', journal.registry]) }))
   assert.deepEqual(repeat.counts, { processed: 16, added: 0, unchanged: 16, rejected: 0 })
   assert.equal(repeat.applied, false); assert.equal(repeat.scientificApproval, null)
-  const checked = await runPipeline(PROJECT_ROOT, ['check', '--registry', journal.registry])
   assert.equal(checked.states.imported, 16); assert.equal(checked.states.approved_for_import, 0)
   assert.ok(checked.results.every(r => r.errors.length === 0))
   assert.equal(digest(await readFile(`${PROJECT_ROOT}/data/species.source.json`)), beforeHash)

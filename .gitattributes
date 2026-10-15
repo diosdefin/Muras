@@ -29,3 +29,6 @@ docs/evidence/catalog-84*.json text eol=lf
 data/research/catalog-100*.json text eol=lf
 data/research/catalog-100-content/**/*.json text eol=lf
 docs/evidence/catalog-100*.json text eol=lf
+# Photo evidence and recipes retain byte-stable UTF-8/LF on Windows.
+docs/evidence/task23-*.json text eol=lf
+data/research/task23-*.json text eol=lf
