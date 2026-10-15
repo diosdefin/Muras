@@ -118,7 +118,7 @@
           "title": "the mighty Dictyocephalos attenuatus, or stalked puffball, at at height of 12 inches. elysian park, los angeles, california, july 2012",
           "publisher": "Wikimedia Commons; Fizzy+lifting",
           "url": "https://commons.wikimedia.org/wiki/File:StalkdPuffb_0012.jpg",
-          "accessedAt": "2026-10-14",
+          "accessedAt": "2026-10-15",
           "supports": [
             "images.0.caption"
           ],
@@ -206,7 +206,7 @@
         "status": "prepared",
         "sourceMasterId": "dictyocephalus-attenuatus",
         "factsFingerprint": "3521f6c214a06c5b4acb5288848d9c8aee0d900a51a966c79c91fbc16d06a83a",
-        "draftSha256": "f99f5296e59f8be1751753390352e57d33e31fd2e40ad7810c4bdbb3657a9bb4"
+        "draftSha256": "d48d53f904a7872427bffef5f12ee6922eb7816708cb92ad92e4560366e4d1cd"
       },
       "diagnostics": {
         "candidateId": "dictyocephalus-attenuatus",
@@ -214,7 +214,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "52665e2dc79a20244233dce70526f9c4b99af4c4a0ed3493938b32ab3778b1c9",
+        "fingerprint": "54a7d991d0f6e38c2dcab78df0ff76cc352dba148fca382ed8009f9b19aef6a2",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -238,7 +238,7 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "52665e2dc79a20244233dce70526f9c4b99af4c4a0ed3493938b32ab3778b1c9"
+      "checkedFingerprint": "54a7d991d0f6e38c2dcab78df0ff76cc352dba148fca382ed8009f9b19aef6a2"
     },
     {
       "originalScientificName": "Prionus tschitscherini",
@@ -1768,7 +1768,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "CR, историческая национальная категория 2006 года",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -1813,7 +1813,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -1836,7 +1848,13 @@
           "accessedAt": "2026-10-15",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:3032448"
         }
@@ -1859,6 +1877,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-100-content/block-2-facts.json",
+          "sha256": "4a3ed7c3bd769555ce79cab71fe131dd2e5c64b12e80e076550d5f306d3a0311"
+        },
+        {
+          "path": "docs/evidence/catalog-100-block-2-accounts.json",
+          "sha256": "baa735618f9362c541defdbb5853c80aac88126e2ee83509a740fda09c0a82a7"
+        },
+        {
+          "path": "docs/evidence/catalog-100-block-2-images.json",
+          "sha256": "aa6d0c05b3099480c3d0e18845dff58d2511af83d83b37f46d36cae533ae62ac"
         }
       ],
       "draft": null,
@@ -1887,55 +1917,64 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "sibiraea-tianschanica",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "4bc4bf8508e66360bd3ff84dd59f09b05dbcf75a457ec5b36c757b6a6b5211fd",
+        "fingerprint": "b3e694aab5463a0e1cfd0d3bc53c5f9d250427e5f0706f62cde2c6d9a1ae18b9",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "4bc4bf8508e66360bd3ff84dd59f09b05dbcf75a457ec5b36c757b6a6b5211fd"
+      "checkedFingerprint": "b3e694aab5463a0e1cfd0d3bc53c5f9d250427e5f0706f62cde2c6d9a1ae18b9",
+      "draftFile": "data/research/catalog-100-content/drafts/sibiraea-tianschanica.json",
+      "editorialNotes": [
+        "RU печатает ширину листа 4–8 см при длине 2–6 см. Не исправляется догадкой на миллиметры: числовая ширина исключена. Условия культивирования описаны только как исторический опыт."
+      ],
+      "missingFacts": [
+        "Современная численность",
+        "Состояние природного возобновления",
+        "Действующие меры охраны",
+        "Корректная единица ширины листа"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "sibiraea-tianschanica",
+        "factsFingerprint": "cfcd66f19426a6ff05d8201610aed6fd4e19024dc0c50c795d6cfda9df0df6c8",
+        "draftSha256": "de94f373b5ad5ad87e5d48eecf0cc06448fb1f763f6a66ec276fa990e983c651"
+      }
     },
     {
       "originalScientificName": "Crataegus knorringiana",
@@ -1944,7 +1983,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU, историческая национальная категория 2006 года",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -1989,7 +2028,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -2012,7 +2063,13 @@
           "accessedAt": "2026-10-15",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:3015001"
         }
@@ -2035,6 +2092,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-100-content/block-2-facts.json",
+          "sha256": "4a3ed7c3bd769555ce79cab71fe131dd2e5c64b12e80e076550d5f306d3a0311"
+        },
+        {
+          "path": "docs/evidence/catalog-100-block-2-accounts.json",
+          "sha256": "baa735618f9362c541defdbb5853c80aac88126e2ee83509a740fda09c0a82a7"
+        },
+        {
+          "path": "docs/evidence/catalog-100-block-2-images.json",
+          "sha256": "aa6d0c05b3099480c3d0e18845dff58d2511af83d83b37f46d36cae533ae62ac"
         }
       ],
       "draft": null,
@@ -2063,55 +2132,63 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "crataegus-knorringiana",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "d603c09f88ea0157f08ab23f1d92d43823ab4521422c47866c93b7b002724471",
+        "fingerprint": "ecf1141ff1ddd9ae5a6ad9472c3d0359e88662883cff5013c460f07cfed79b0a",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "d603c09f88ea0157f08ab23f1d92d43823ab4521422c47866c93b7b002724471"
+      "checkedFingerprint": "ecf1141ff1ddd9ae5a6ad9472c3d0359e88662883cff5013c460f07cfed79b0a",
+      "draftFile": "data/research/catalog-100-content/drafts/crataegus-knorringiana.json",
+      "editorialNotes": [
+        "RU: о культивировании сведений нет; EN сообщает о выращивании в Бишкеке с 1958 года без семенного возобновления. Одна версия не выбрана как окончательная."
+      ],
+      "missingFacts": [
+        "Современная численность и возрастная структура",
+        "Согласованные сведения о культивировании",
+        "Фактические современные меры охраны"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "crataegus-knorringiana",
+        "factsFingerprint": "a0471d96e8a3c6227b6e16673f726354c690b43f4dd70525804b405de9fcb90c",
+        "draftSha256": "f282f6c5158bd9a017ae74a5e87fd525fde1d961113a119f1ef0298a5d27917c"
+      }
     },
     {
       "originalScientificName": "Ammopiptanthus nanus",
@@ -2120,7 +2197,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "EN, историческая национальная категория 2006 года",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -2165,7 +2242,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -2188,7 +2276,13 @@
           "accessedAt": "2026-10-15",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:2943139"
         }
@@ -2211,6 +2305,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-100-content/block-2-facts.json",
+          "sha256": "4a3ed7c3bd769555ce79cab71fe131dd2e5c64b12e80e076550d5f306d3a0311"
+        },
+        {
+          "path": "docs/evidence/catalog-100-block-2-accounts.json",
+          "sha256": "baa735618f9362c541defdbb5853c80aac88126e2ee83509a740fda09c0a82a7"
+        },
+        {
+          "path": "docs/evidence/catalog-100-block-2-images.json",
+          "sha256": "aa6d0c05b3099480c3d0e18845dff58d2511af83d83b37f46d36cae533ae62ac"
         }
       ],
       "draft": null,
@@ -2239,55 +2345,64 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "ammopiptanthus-nanus",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "7c701c02372ee78e105248a7d1e1eeedb5672eca0736f8a84dae9e6e843c62f0",
+        "fingerprint": "9a7fd302886b19bfb34ff0b27c984407b5d58cb9539185eb3096e24af050f6b6",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "7c701c02372ee78e105248a7d1e1eeedb5672eca0736f8a84dae9e6e843c62f0"
+      "checkedFingerprint": "9a7fd302886b19bfb34ff0b27c984407b5d58cb9539185eb3096e24af050f6b6",
+      "draftFile": "data/research/catalog-100-content/drafts/ammopiptanthus-nanus.json",
+      "editorialNotes": [
+        "Оценка 15000 растений относится к 1979 году и не перенесена в population. RU предлагает создать заказник, EN утверждает охрану и расширение территории: наличие действующего режима требует документальной проверки. Медицинские свойства не пересказываются как доказанное лечебное действие."
+      ],
+      "missingFacts": [
+        "Современная численность",
+        "Современный режим охраны на Минкуше",
+        "Результаты новых испытаний культивирования",
+        "Подробные экологические взаимодействия"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "ammopiptanthus-nanus",
+        "factsFingerprint": "cf00df9da6b0de4fab528a4b5ab9232b7d90369a05a3b26da066e9b211e598e4",
+        "draftSha256": "885ad88cc6774be215a892f6f1a9e58b1931372997dc7e9b3a0dfd73dbccbcf0"
+      }
     },
     {
       "originalScientificName": "Colutea brachyptera",
@@ -2296,7 +2411,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU, историческая национальная категория 2006 года",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -2341,7 +2456,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -2364,7 +2490,13 @@
           "accessedAt": "2026-10-15",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:2956464"
         }
@@ -2387,6 +2519,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-100-content/block-2-facts.json",
+          "sha256": "4a3ed7c3bd769555ce79cab71fe131dd2e5c64b12e80e076550d5f306d3a0311"
+        },
+        {
+          "path": "docs/evidence/catalog-100-block-2-accounts.json",
+          "sha256": "baa735618f9362c541defdbb5853c80aac88126e2ee83509a740fda09c0a82a7"
+        },
+        {
+          "path": "docs/evidence/catalog-100-block-2-images.json",
+          "sha256": "aa6d0c05b3099480c3d0e18845dff58d2511af83d83b37f46d36cae533ae62ac"
         }
       ],
       "draft": null,
@@ -2415,55 +2559,65 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "colutea-brachyptera",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "63b39eef48490d478f7c49eca9f96985e1f5f159114f689afa754c0ca5f1cc97",
+        "fingerprint": "792576043636d7076d3151b233f448d0d3d349d4d06d2194c1bb5704f60f8ae5",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "63b39eef48490d478f7c49eca9f96985e1f5f159114f689afa754c0ca5f1cc97"
+      "checkedFingerprint": "792576043636d7076d3151b233f448d0d3d349d4d06d2194c1bb5704f60f8ae5",
+      "draftFile": "data/research/catalog-100-content/drafts/colutea-brachyptera.json",
+      "editorialNotes": [
+        "Указание редкости не преобразовано в численную оценку. Вегетативное размножение описано как очень редкое, а не равнозначное семенному."
+      ],
+      "missingFacts": [
+        "Численность",
+        "Культивирование",
+        "Современное состояние местообитаний",
+        "Подробные экологические взаимодействия",
+        "Действующие меры охраны"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "colutea-brachyptera",
+        "factsFingerprint": "b6a95751b2632049bef82225ba99d9d8d5cd7cddd13eb64ceeee7325e0b15ec0",
+        "draftSha256": "506fe89aac49bc7ee964ef411f60bb091e6180def420331363f580d48b686d1e"
+      }
     },
     {
       "originalScientificName": "Primula eugeniae",
@@ -2472,7 +2626,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU, историческая национальная категория 2006 года",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -2517,7 +2671,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -2540,7 +2705,13 @@
           "accessedAt": "2026-10-15",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:5640822"
         }
@@ -2563,6 +2734,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-100-content/block-2-facts.json",
+          "sha256": "4a3ed7c3bd769555ce79cab71fe131dd2e5c64b12e80e076550d5f306d3a0311"
+        },
+        {
+          "path": "docs/evidence/catalog-100-block-2-accounts.json",
+          "sha256": "baa735618f9362c541defdbb5853c80aac88126e2ee83509a740fda09c0a82a7"
+        },
+        {
+          "path": "docs/evidence/catalog-100-block-2-images.json",
+          "sha256": "aa6d0c05b3099480c3d0e18845dff58d2511af83d83b37f46d36cae533ae62ac"
         }
       ],
       "draft": null,
@@ -2591,55 +2774,65 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "primula-eugeniae",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "6470a6c00cc94365ff2ef1cc2a54be25e6c890700fc7ae87cc4d4d77e096300c",
+        "fingerprint": "ccd31c21161c327697de038c4aa63f45551c43385e5319b1ea19efaf35b04d49",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "6470a6c00cc94365ff2ef1cc2a54be25e6c890700fc7ae87cc4d4d77e096300c"
+      "checkedFingerprint": "ccd31c21161c327697de038c4aa63f45551c43385e5319b1ea19efaf35b04d49",
+      "draftFile": "data/research/catalog-100-content/drafts/primula-eugeniae.json",
+      "editorialNotes": [
+        "RU печатает 20 см диаметра отгиба и 15–20 см длины цветков; значения исключены без исправления единиц по догадке. EN: flowering probably in June — месяц не утверждается. Формулировка EN critically endangered не перенесена в категорию: буквальная национальная категория VU сохранена с годом."
+      ],
+      "missingFacts": [
+        "Современная численность",
+        "Природное возобновление",
+        "Подтверждённый срок цветения",
+        "Корректные размеры цветков",
+        "Результаты культивирования и охраны"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "primula-eugeniae",
+        "factsFingerprint": "06a1f74492f88b587fc9c848659d7c360e2009a4adbbe5007753497f65d1345a",
+        "draftSha256": "1557448c6e04694c3e9bd45ff6b42a60cf0305cfc41ef79cb05cd2220e93b114"
+      }
     },
     {
       "originalScientificName": "Physochlaina alaica",
@@ -2648,7 +2841,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU, историческая национальная категория 2006 года",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -2693,7 +2886,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -2716,7 +2920,13 @@
           "accessedAt": "2026-10-15",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:3799874"
         }
@@ -2739,6 +2949,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-100-content/block-2-facts.json",
+          "sha256": "4a3ed7c3bd769555ce79cab71fe131dd2e5c64b12e80e076550d5f306d3a0311"
+        },
+        {
+          "path": "docs/evidence/catalog-100-block-2-accounts.json",
+          "sha256": "baa735618f9362c541defdbb5853c80aac88126e2ee83509a740fda09c0a82a7"
+        },
+        {
+          "path": "docs/evidence/catalog-100-block-2-images.json",
+          "sha256": "aa6d0c05b3099480c3d0e18845dff58d2511af83d83b37f46d36cae533ae62ac"
         }
       ],
       "draft": null,
@@ -2767,55 +2989,64 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "physochlaina-alaica",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "b6e79490de4e79b3bcd2938d60eca35cdfe2a383d061f195cee854391f2edadd",
+        "fingerprint": "a5adbe812d960e3d1d2c55ece84c3d80b8a9ec377d9cfd8419f1f83329cf5ffc",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "b6e79490de4e79b3bcd2938d60eca35cdfe2a383d061f195cee854391f2edadd"
+      "checkedFingerprint": "a5adbe812d960e3d1d2c55ece84c3d80b8a9ec377d9cfd8419f1f83329cf5ffc",
+      "draftFile": "data/research/catalog-100-content/drafts/physochlaina-alaica.json",
+      "editorialNotes": [
+        "RU: о культивировании сведений нет; EN утверждает неудачные попытки интродукции. Медицинские и токсикологические сведения не выводятся из семейства и не добавляются без источника."
+      ],
+      "missingFacts": [
+        "Современная численность",
+        "Подробные экологические взаимодействия",
+        "Согласованные сведения о культивировании",
+        "Современный режим охраны"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "physochlaina-alaica",
+        "factsFingerprint": "1c0a30f7e73a28b4ae5286f571d6147bc50a0143f69a7b1c2c6e8aeccaf9c9c1",
+        "draftSha256": "cd3f1de4c31a75e201015befa27b96877d8a00309ff1072c48b91541df290390"
+      }
     },
     {
       "originalScientificName": "Incarvillea olgae",
@@ -2824,7 +3055,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "CR B2ab(iii), историческая национальная категория 2006 года",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -2869,7 +3100,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -2892,9 +3135,26 @@
           "accessedAt": "2026-10-15",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:4091178"
+        },
+        {
+          "id": "photo-commons",
+          "title": "Incarvillea olgae flowering plant cultivated in Wrocław University Botanical Garden, Wrocław, Poland.",
+          "publisher": "Wikimedia Commons; Agnieszka Kwiecień, Nova",
+          "url": "https://commons.wikimedia.org/wiki/File:Incarvillea_olgae_Inkarwilla_Olgi_2020-07-22_02.jpg",
+          "accessedAt": "2026-10-15",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en"
         }
       ],
       "contradictions": [],
@@ -2915,6 +3175,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-100-content/block-2-facts.json",
+          "sha256": "4a3ed7c3bd769555ce79cab71fe131dd2e5c64b12e80e076550d5f306d3a0311"
+        },
+        {
+          "path": "docs/evidence/catalog-100-block-2-accounts.json",
+          "sha256": "baa735618f9362c541defdbb5853c80aac88126e2ee83509a740fda09c0a82a7"
+        },
+        {
+          "path": "docs/evidence/catalog-100-block-2-images.json",
+          "sha256": "aa6d0c05b3099480c3d0e18845dff58d2511af83d83b37f46d36cae533ae62ac"
         }
       ],
       "draft": null,
@@ -2943,55 +3215,61 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "incarvillea-olgae",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "92546df2fa21a1eb0a6cd08dc9dd7ec16ab81e402170d59623739db9b981be52",
+        "fingerprint": "0779874ed2697c276733bc3940e2f52088bb408c696c466ec2bc66aa3d556b55",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "92546df2fa21a1eb0a6cd08dc9dd7ec16ab81e402170d59623739db9b981be52"
+      "checkedFingerprint": "0779874ed2697c276733bc3940e2f52088bb408c696c466ec2bc66aa3d556b55",
+      "draftFile": "data/research/catalog-100-content/drafts/incarvillea-olgae.json",
+      "editorialNotes": [
+        "RU: плодоношение VIII–IX, EN: August; интервал не выбран. Иллюстрация Commons — культивируемое растение Вроцлавского ботанического сада, а не кыргызстанская полевая находка. Старое утверждение о формальной охране в Хайдаркане не обозначает проверенный современный режим."
+      ],
+      "missingFacts": [
+        "Современная численность и площадь местообитаний",
+        "Согласованный интервал плодоношения",
+        "Фактическая эффективность охраны",
+        "Результаты современного культивирования"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "incarvillea-olgae",
+        "factsFingerprint": "0cdaf0bf5d8e4e0f0a6decb69dd7c05779e79fd788742e47d28e58291df48485",
+        "draftSha256": "b4980e998de2f323600fdb986b548a437a4218b7efbdd47c83d83f6f84c62c11"
+      }
     },
     {
       "originalScientificName": "Saussurea involucrata",
@@ -3000,7 +3278,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU, историческая национальная категория 2006 года",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -3045,7 +3323,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -3068,7 +3357,13 @@
           "accessedAt": "2026-10-15",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
           ],
           "taxonId": "gbif:5404194"
         }
@@ -3091,6 +3386,18 @@
         {
           "path": "docs/evidence/redbook-master-sources.json",
           "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        },
+        {
+          "path": "data/research/catalog-100-content/block-2-facts.json",
+          "sha256": "4a3ed7c3bd769555ce79cab71fe131dd2e5c64b12e80e076550d5f306d3a0311"
+        },
+        {
+          "path": "docs/evidence/catalog-100-block-2-accounts.json",
+          "sha256": "baa735618f9362c541defdbb5853c80aac88126e2ee83509a740fda09c0a82a7"
+        },
+        {
+          "path": "docs/evidence/catalog-100-block-2-images.json",
+          "sha256": "aa6d0c05b3099480c3d0e18845dff58d2511af83d83b37f46d36cae533ae62ac"
         }
       ],
       "draft": null,
@@ -3119,55 +3426,65 @@
         "resolution": "exact_accepted_same_rank"
       },
       "publicationGaps": [
-        "Публикационный черновик не подготовлен",
-        "Описания KY/UZ/RU/EN не подготовлены",
-        "Нужен независимый научный и редакторский просмотр",
-        "Фотография не исследовалась; возможен placeholder"
+        "Независимая научная/редакторская проверка и отдельное разрешение на импорт отсутствуют",
+        "Неподтверждённые названия: KY/UZ; существующий fallback показывает RU с языковой маркировкой; при отсутствии всех названий — научное имя",
+        "Фото: placeholder"
       ],
       "verified": false,
       "priority": "next_account_research",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "saussurea-involucrata",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "b220446b4e4506e3dd048d4c526654d97c8f35508b8cf5320bebe245b17bc20b",
+        "fingerprint": "cc46db57851bb309d39edb57f52179327c1ddddaf9f1a7391739696f068d1207",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
           "missingNames": [
             "ky",
-            "uz",
-            "ru",
-            "en"
+            "uz"
           ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "b220446b4e4506e3dd048d4c526654d97c8f35508b8cf5320bebe245b17bc20b"
+      "checkedFingerprint": "cc46db57851bb309d39edb57f52179327c1ddddaf9f1a7391739696f068d1207",
+      "draftFile": "data/research/catalog-100-content/drafts/saussurea-involucrata.json",
+      "editorialNotes": [
+        "Широкое зарубежное распространение из старой статьи не переносится автоматически на современный принятый таксон. Утверждения о лечебном применении не добавлялись. Историческая национальная VU не переносится в глобальное поле IUCN."
+      ],
+      "missingFacts": [
+        "Современная численность",
+        "Культивирование",
+        "Детальные экологические взаимодействия",
+        "Современная интенсивность выпаса и туристической нагрузки",
+        "Эффективность охраны"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "saussurea-involucrata",
+        "factsFingerprint": "dea5bd04acf1030bf72fcc32b48ed2bbc15303be2de315af9b7753fc7ee2b589",
+        "draftSha256": "9f20395a44c2ed76a09c9158438bb39f771ec01326aedba77ce0f1515a37dca6"
+      }
     }
   ]
 }

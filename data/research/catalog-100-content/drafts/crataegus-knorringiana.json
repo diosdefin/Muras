@@ -1,0 +1,229 @@
+{
+  "id": "crataegus-knorringiana",
+  "scientificName": "Crataegus knorringiana",
+  "names": {
+    "ru": "Боярышник Кнорринг",
+    "ky": null,
+    "uz": null,
+    "en": "Knorring’s Haw-tree"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Rosales",
+    "family": "Rosaceae",
+    "genus": "Crataegus"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU, историческая национальная категория 2006 года",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Древесно-кустарниковые сообщества речных долин, каменистые и мелкоземистые склоны нижнего и среднего поясов гор.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Хозяйственное освоение местообитаний, рубка на топливо и слабое возобновление.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальной книге рекомендована защита оставшихся деревьев и молодняка от рубки и потравы скотом, в том числе в Тоскоул-Атинском и Кара-Алминском лесхозах.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=139",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 37",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Crataegus knorringiana",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Crataegus%20knorringiana",
+      "accessedAt": "2026-10-15",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:3015001"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Дерево с мелкими жёлтыми плодами из национальной книги 2006 года. Встречается в горных долинах и на склонах; рубки и освоение земель угрожают редким растениям.",
+        "ky": "2006-жылкы улуттук китептеги майда сары мөмөлүү дарак. Тоо өрөөндөрүндө жана беттеринде өсөт; дарак кыюу менен жер өздөштүрүү сейрек өсүмдүктөргө коркунуч туудурат.",
+        "uz": "2006-yilgi milliy kitobdagi mayda sariq mevali daraxt. Togʻ vodiylari va yonbagʻirlarida oʻsadi; daraxt kesish va yer oʻzlashtirish kamyob oʻsimliklarga tahdid soladi.",
+        "en": "A tree with small yellow fruit described in the 2006 national book. It grows in mountain valleys and on slopes; felling and land development threaten scattered plants."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Боярышник Кнорринг представлен в книге 2006 года и перечне 2009 года под именем Crataegus knorringiana. Принятое видовое имя подтверждено точным ответом GBIF. Национальный очерк называет вид узкоэндемичным и отмечает отдельные растения в нескольких горных районах Кыргызстана. Эти сведения сохранены как историческое описание, без новых координат и численных оценок.\n\nЭто небольшое дерево с узкоэллиптическими или яйцевидными, слаболопастными листьями. Мелкие жёлтые плоды содержат пять выраженно ямчатых косточек. Местообитания связаны с древесно-кустарниковой растительностью речных долин, каменистыми и мелкоземистыми склонами нижнего и среднего поясов гор. Цветение приходится на конец апреля и начало мая, созревание плодов — на сентябрь; размножение описано как семенное.\n\nГлавные отмеченные угрозы — хозяйственное освоение участков, использование деревьев на топливо и слабое возобновление. Авторы рекомендуют защищать оставшиеся растения от порубок и повреждения молодняка скотом. Русская и английская версии расходятся по наличию данных о культивировании; успешное выращивание не утверждается. Современная численность, состояние молодых растений и фактическое исполнение старых рекомендаций требуют обследования.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По очерку дерево высотой до 5–6 м с узкоэллиптическими или яйцевидными слаболопастными листьями. Плоды мелкие, жёлтые, с пятью сильно ямчатыми косточками.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книга отмечает одиночные растения и очень слабое возобновление.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге цветёт в конце апреля — начале мая, плоды созревают в сентябре; размножение семенное, возобновление слабое.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически указаны долина Чичкана, Чаткальский, Ферганский и Алайский хребты; текущие наблюдения не подтверждены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

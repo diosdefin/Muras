@@ -86,7 +86,7 @@ const t = tax.records.find(r => r.nationalRecordId === c.taxonomyResearch.eviden
   const image = receipt.status === 'prepared' ? receipt.image : null
   if (image && receipt.visualReview?.reviewed !== true) throw new Error(`${c.id}: visual image review pending`)
   if (image) sources.push({ id: 'photo-commons', title: receipt.metadata.description || c.acceptedScientificName,
-    publisher: 'Wikimedia Commons; ' + image.author, url: image.originalPage, accessedAt: '2026-10-14',
+    publisher: 'Wikimedia Commons; ' + image.author, url: image.originalPage, accessedAt: receipt.metadata.accessedAt || '2026-10-14',
     supports: ['images.0.caption'], language: Object.hasOwn(receipt.metadata, 'sourceLanguage') ? receipt.metadata.sourceLanguage : 'en' })
   const species = { id: c.id, scientificName: c.acceptedScientificName, names: { ru: f.nameRu, ky: null, uz: null, en: f.nameEn || null },
     taxonomy, group: c.group, nationalRedBook: publishedNational, iucn: { category: null, year: null, sourceIds: [] },

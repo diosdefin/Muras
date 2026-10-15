@@ -1,0 +1,262 @@
+{
+  "id": "incarvillea-olgae",
+  "scientificName": "Incarvillea olgae",
+  "names": {
+    "ru": "Инкарвиллея Ольги",
+    "ky": null,
+    "uz": null,
+    "en": "Olga’s Chinese Trumpet-creeper"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Lamiales",
+    "family": "Bignoniaceae",
+    "genus": "Incarvillea"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "CR B2ab(iii), историческая национальная категория 2006 года",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Галечниковые поймы рек, конусы выноса каменистых и глинистых склонов; в старом очерке диапазон 700–2500 м.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Обламывание цветков при сборе и геологические разработки в местообитаниях.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книга рекомендует инвентаризацию популяций, создание дополнительных ботанических заказников и возобновление культивирования.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/incarvillea-olgae.webp",
+      "width": 1350,
+      "height": 1800,
+      "sha256": "1dd50724bba68446224d21bf249399c6cdc10e1ef92990517fccf1ab82472c42",
+      "author": "Agnieszka Kwiecień, Nova",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Incarvillea_olgae_Inkarwilla_Olgi_2020-07-22_02.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Incarvillea olgae Inkarwilla Olgi 2020-07-22 02.jpg — Agnieszka Kwiecień, Nova, CC BY-SA 4.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+        "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Культивируемое растение, ботанический сад Вроцлавского университета, Польша, 2020; не наблюдение из Кыргызстана. Иллюстрация документированного таксона, без подтверждения современного распространения в KG.",
+        "ky": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=205",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 77",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Incarvillea olgae",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Incarvillea%20olgae",
+      "accessedAt": "2026-10-15",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:4091178"
+    },
+    {
+      "id": "photo-commons",
+      "title": "Incarvillea olgae flowering plant cultivated in Wrocław University Botanical Garden, Wrocław, Poland.",
+      "publisher": "Wikimedia Commons; Agnieszka Kwiecień, Nova",
+      "url": "https://commons.wikimedia.org/wiki/File:Incarvillea_olgae_Inkarwilla_Olgi_2020-07-22_02.jpg",
+      "accessedAt": "2026-10-15",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Многолетнее растение с крупными розово-пурпурными цветками из книги 2006 года. Обитает на галечниках и горных склонах; сбор цветков и разработки нарушают местообитания.",
+        "ky": "2006-жылкы китептеги ири кызгылт-кочкул гүлдүү көп жылдык өсүмдүк. Шагылдуу жерлерде жана тоо беттеринде өсөт; гүл чогултуу менен кен иштери жашоо жерлерин бузат.",
+        "uz": "2006-yilgi kitobdagi yirik pushti-binafsha gulli koʻp yillik oʻsimlik. Shagʻalli joylar va togʻ yonbagʻirlarida oʻsadi; gul yigʻish hamda kon ishlari yashash joylarini buzadi.",
+        "en": "A perennial with large pink-purple flowers described in the 2006 book. It grows on gravel and mountain slopes; flower collection and extraction disturb its habitat."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Инкарвиллея Ольги приведена в национальной книге 2006 года и перечне 2009 года как Incarvillea olgae. Это принятое имя подтверждено точным ответом GBIF. Исторический очерк связывает местонахождения в Кыргызстане с северным склоном Алайского хребта, междуречьем Шахимардана и Соха. Ни новые наблюдения, ни подтверждение актуального состояния отдельных популяций не добавлены.\n\nРастение многолетнее, с рассечёнными листьями и рыхлым верхушечным соцветием. Крупные цветки преимущественно розово-пурпурные, реже белые; плод — удлинённая многосемянная коробочка. В книге указаны галечниковые поймы рек и каменистые либо глинистые склоны. Цветение отмечено в июне–июле, размножение семенное. Различие языковых версий по окончанию плодоношения не устранено предположением.\n\nУгрозы связаны со сбором декоративных цветков и геологическими разработками. Авторы сообщают о прежнем успешном выращивании в ботаническом саду и непереносимости затенения. Рекомендованы инвентаризация популяций, дополнительные ботанические заказники и возобновление культивирования. Фотография показывает культивируемое растение в Польше и служит иллюстрацией вида; она не доказывает присутствия или численности в Кыргызстане.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге многолетник высотой до 1 м с перисто рассечёнными листьями, рыхлым верхушечным соцветием и крупными розово-пурпурными, реже белыми цветками; плод — удлинённая многосемянная коробочка.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальному очерку растение не переносит затенения; прежние испытания выращивания в ботаническом саду описаны как успешные.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге размножается семенами и цветёт в июне–июле. Точный интервал плодоношения не выбран из расходящихся RU/EN формулировок.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически в Кыргызстане указано междуречье Шахимардана и Соха на северном склоне Алайского хребта; новые точки отсутствуют.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}
