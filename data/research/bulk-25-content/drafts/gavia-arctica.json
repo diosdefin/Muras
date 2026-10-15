@@ -1,0 +1,309 @@
+{
+  "id": "gavia-arctica",
+  "scientificName": "Gavia arctica",
+  "names": {
+    "ru": "Чернозобая гагара",
+    "ky": null,
+    "uz": null,
+    "en": "Black-throated Loon"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Gaviiformes",
+    "family": "Gaviidae",
+    "genus": "Gavia"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "III; CR: R (издание 2006)",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Крупный водоём Иссык-Куль; исторические гнездовые участки в Тюпском и Джергаланском заливах, зимнее использование других частей озера.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Гибель в рыболовных сетях.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Разрушение местообитаний, в том числе в прилегающих государствах, по национальной статье.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге 2006 года охранялась в Иссык-Кульском заповеднике.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические рекомендации: выяснение состояния популяции и запрет сетевого промысла в местах концентрации.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/gavia-arctica.webp",
+      "width": 1200,
+      "height": 800,
+      "sha256": "afca282d2bf1ceb0466e05dd84ea58291bbaffe81a044a5533c017b268dd46fe",
+      "author": "Åsa Berndtsson",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Gavia_arctica_(Black-throated_Loon_or_Black-throated_Diver)_on_nest.jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Gavia arctica (Black-throated Loon or Black-throated Diver) on nest.jpg — Åsa Berndtsson, CC BY 2.0; Wikimedia Commons.",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+        "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Чернозобая гагара на гнезде; фотография Åsa Berndtsson из Commons, не подтверждение гнездования в Кыргызстане.",
+        "ky": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=371",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "conservationMeasures.1",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 3, строка 52",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Gavia arctica",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Gavia%20arctica",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:2481959"
+    },
+    {
+      "id": "biology-adw",
+      "title": "Gavia arctica — Animal Diversity Web: Physical Description",
+      "publisher": "University of Michigan, Animal Diversity Web",
+      "url": "https://animaldiversity.org/accounts/Gavia_arctica/",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "content.appearance",
+        "content.overview"
+      ]
+    },
+    {
+      "id": "photo-commons",
+      "title": "An adult of \"Gavia arctica\" nesting on the ground among vegetation. The nest is circular and made of dry vegetation, built close to a body of water.",
+      "publisher": "Wikimedia Commons; Åsa Berndtsson",
+      "url": "https://commons.wikimedia.org/wiki/File:Gavia_arctica_(Black-throated_Loon_or_Black-throated_Diver)_on_nest.jpg",
+      "accessedAt": "2026-10-14",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Рыбоядная водоплавающая птица Иссык-Куля. В национальной книге прежнее гнездование отделено от зимних встреч; современная численность и гнездование неизвестны.",
+        "ky": "Ысык-Көлдө кездешкен, балык менен азыктанган суу кушу. Улуттук китепте мурдагы уялоо кышкы жолугушуулардан бөлүнгөн; азыркы саны жана уялоосу белгисиз.",
+        "uz": "Issiqkoʻlda uchraydigan, baliq bilan oziqlanadigan suv qushi. Milliy kitobda eski uya qurish qishki uchrashuvlardan ajratilgan; hozirgi soni va uya qurishi nomaʼlum.",
+        "en": "A fish-eating waterbird of Issyk-Kul. The national book separates former breeding from winter records; current population size and breeding are unknown."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Чернозобая гагара — водоплавающая птица, национальная оценка которой в Красной книге 2006 года подчёркивает опасность исчезновения местного гнездования. В брачном оперении у вида серые голова и задняя часть шеи, чёрное горло с белыми боковыми полосами и чёрная спина с белым рисунком. Общевидовые признаки подтверждены Animal Diversity Web. Национальный текст связывает кыргызстанские птицы с номинативным подвидом, но черновик сохраняет видовой ранг Gavia arctica.\n\nИсторическое гнездование описано в Тюпском и Джергаланском заливах Иссык-Куля. Книга прямо сообщает об отсутствии современной на тот момент подтверждённой численности и сомнении в сохранении гнездования; зимой птицы могли встречаться по всему озеру. Рыба и водные беспозвоночные составляют указанную пищу. В статье половая зрелость датирована трёхлетним возрастом, начало гнездования — серединой апреля, обычная кладка — двумя яйцами.\n\nГибель в рыболовных сетях и разрушение местообитаний названы угрозами. Авторы рекомендовали выяснить состояние популяции и ограничить сетевой промысел в местах концентрации птиц. Старое число гнездящихся пар не имеет года учёта и сохранено отдельно. Категория III, CR: R относится к национальной исторической оценке, а не глобальному статусу вида.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "biology-adw"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В брачном оперении голова и задняя часть шеи серые; горло чёрное, по бокам с белыми вертикальными полосами. Спина чёрная, с белыми пятнами и линиями. Описание по Animal Diversity Web общевидовое; зимнее оперение отдельно не уточнено.",
+        "en": null
+      },
+      "sourceIds": [
+        "biology-adw"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная книга отличает прежнее гнездование на Иссык-Куле от зимних встреч. Отсутствие подтверждения гнездования в книге не превращено в доказательство полного исчезновения вида из страны.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальной статье питается рыбой и водными беспозвоночными. Размеры добычи и доли компонентов рациона не указаны.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальном описании половая зрелость на третьем году, начало гнездования с середины апреля, обычная кладка из двух яиц. Это биологическая характеристика источника; актуальное гнездование в Кыргызстане не подтверждено.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически в Кыргызстане указан Иссык-Куль: прежнее гнездование в Тюпском и Джергаланском заливах и возможные зимние встречи по всему озеру. Новые точки и современное гнездование не добавлены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

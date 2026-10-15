@@ -1,0 +1,581 @@
+{
+  "schemaVersion": 1,
+  "documentType": "unpublished-content-quality-report",
+  "preservedFiles": 153,
+  "sourceCatalogCount": 40,
+  "pipeline": {
+    "schemaVersion": 1,
+    "registryId": "bulk-25-content",
+    "catalogFingerprint": "6ffd82165fd7f2ce9a24f38ca2aae9a885e0fe8e1d672a8630725ac5b36b5cf0",
+    "counts": {
+      "processed": 5,
+      "accepted": 5,
+      "deferred": 0,
+      "rejected": 0
+    },
+    "states": {
+      "pending": 0,
+      "needs_evidence": 0,
+      "research_ready": 0,
+      "needs_photo": 0,
+      "ready_for_review": 5,
+      "approved_for_import": 0,
+      "imported": 0,
+      "rejected": 0
+    },
+    "results": [
+      {
+        "candidateId": "cygnus-cygnus",
+        "batchNumber": 5,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "109c3ac39cdcba587fa703e732718d0c977100561ae3e749f64539bc51b91c13",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "aythya-nyroca",
+        "batchNumber": 5,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "524239f146547d2f6fb591255f80442df16fd007c2bb2ea72191f98c1aef633d",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "mergus-serrator",
+        "batchNumber": 5,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "c4346da13ffd70488d85e554eea20cc276ad6e2ba983bede4f882495502dbf0b",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "oxyura-leucocephala",
+        "batchNumber": 5,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "e67b1693d11993462c461b3220c296251474e7cd1bbe57c2da6863fc0dc57d4e",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "gavia-arctica",
+        "batchNumber": 5,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "43cb8be38549ed70936372ac3d450f64da9dab37f49f72d173c3e1a27a99fcb1",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      }
+    ]
+  },
+  "quality": [
+    {
+      "candidateId": "cygnus-cygnus",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          362,
+          363
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Cygnus cygnus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2498347",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=363"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Cygnus%20cygnus"
+        },
+        {
+          "id": "biology-adw",
+          "url": "https://animaldiversity.org/accounts/Cygnus_cygnus/"
+        },
+        {
+          "id": "photo-commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Cygnus_cygnus_070416_IOL.jpg"
+        }
+      ],
+      "shortLengthRu": 167,
+      "overviewWordsRu": 158,
+      "languages": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Современное гнездование и численность",
+        "Точные годы старых сезонных учётов"
+      ],
+      "editorialNotes": [
+        "Ретроспективное гнездование Сон-Куля не заявлено текущим. Расхождение старого числа пар сохранено отдельно; современная глобальная категория IUCN не устанавливалась."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "aythya-nyroca",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          364,
+          365
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Aythya nyroca",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2498259",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=365"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Aythya%20nyroca"
+        },
+        {
+          "id": "biology-museum",
+          "url": "https://www.vertebradosibericos.org/aves/identificacion/aytnyrid.html"
+        },
+        {
+          "id": "photo-commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Ferruginous_Pochard_Aythya_nyroca_Male_by_Dr._Raju_Kasambe_DSCN2746_(12).jpg"
+        }
+      ],
+      "shortLengthRu": 156,
+      "overviewWordsRu": 153,
+      "languages": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Подтверждение гнездования в Кыргызстане",
+        "Подробная биология размножения",
+        "Датированные учёты и современная численность"
+      ],
+      "editorialNotes": [
+        "Музейный источник на испанском: language:null, поскольку модель метаданных поддерживает только KY/UZ/RU/EN; исходный язык es сохранён в исследовательском свидетельстве.",
+        "Возможное гнездование не переведено в подтверждённое; текущий охотничий статус не устанавливался."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "mergus-serrator",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          366,
+          367
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Mergus serrator",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2498375",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=367"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Mergus%20serrator"
+        },
+        {
+          "id": "biology-adw",
+          "url": "https://animaldiversity.org/accounts/Mergus_serrator/"
+        },
+        {
+          "id": "photo-commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Mergus_serrator_-New_Jersey_-USA_-winter-8.jpg"
+        }
+      ],
+      "shortLengthRu": 156,
+      "overviewWordsRu": 158,
+      "languages": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Современное гнездование",
+        "Год старой оценки численности",
+        "Данные о содержании в неволе"
+      ],
+      "editorialNotes": [
+        "Аудит 22.4: во всех четырёх коротких версиях явно указан источник 2006 года; историческое гнездование не подаётся как подтверждённое в 2026 году."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "oxyura-leucocephala",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          368,
+          369
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Oxyura leucocephala",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2498302",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=369"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Oxyura%20leucocephala"
+        },
+        {
+          "id": "biology-adw",
+          "url": "https://animaldiversity.org/accounts/Oxyura_leucocephala/"
+        },
+        {
+          "id": "photo-commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Oxyura_leucocephala,_Clot-de-Galvany,_Alicante_16.jpg"
+        }
+      ],
+      "shortLengthRu": 154,
+      "overviewWordsRu": 159,
+      "languages": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Современный пролёт и численность в Кыргызстане",
+        "Локальная биология",
+        "Территориальная применимость старых больших чисел"
+      ],
+      "editorialNotes": [
+        "Числа 100–4500 из национальной статьи не имеют ясного территориального охвата и не записаны как популяция Кыргызстана. Размножение в справочнике общевидовое, не подтверждение местного гнездования."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "gavia-arctica",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          370,
+          371
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Gavia arctica",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2481959",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=371"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Gavia%20arctica"
+        },
+        {
+          "id": "biology-adw",
+          "url": "https://animaldiversity.org/accounts/Gavia_arctica/"
+        },
+        {
+          "id": "photo-commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Gavia_arctica_(Black-throated_Loon_or_Black-throated_Diver)_on_nest.jpg"
+        }
+      ],
+      "shortLengthRu": 159,
+      "overviewWordsRu": 165,
+      "languages": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Современное гнездование и численность",
+        "Год прежнего учёта",
+        "Зимняя диагностика и локальная биология"
+      ],
+      "editorialNotes": [
+        "Национальная категория CR: R относится к Кыргызстану в издании 2006 года. Глобальная IUCN-категория не выводилась из неё. Фото гнездящейся птицы не подтверждает гнездование на Иссык-Куле."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    }
+  ]
+}

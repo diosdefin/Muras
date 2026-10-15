@@ -189,7 +189,7 @@ test('all 13 new records render in KY/UZ/RU/EN with licensed local photos or hon
     for(const name of ['SpeciesCard.vue','SpeciesModal.vue','lesson/LessonPhoto.vue'])components[name]=(await vite.ssrLoadModule(`/src/components/${name}`)).default
     for(const language of ['ky','uz','ru','en']){
       siteLanguage.value=language
-      for(const s of published.slice(17))for(const [file,Component]of Object.entries(components)){
+      for(const s of published.slice(17,30))for(const [file,Component]of Object.entries(components)){
         const html=await renderToString(createSSRApp(Component,{species:s}))
         assert.ok(html.includes(s.images[0]?.path||'placeholder.svg'),`${file}: ${s.id}`)
         // Compact cards keep credits in the modal; lesson and modal must retain them.

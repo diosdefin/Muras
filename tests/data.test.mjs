@@ -35,7 +35,8 @@ test('canonical data preserves original nine records and two archived examples w
     assert.equal(s.nationalRedBook.listed, true)
     assert.equal(s.regions[0].code, 'KG')
     assert.ok(s.sources.find(source => s.regions[0].sourceIds.includes(source.id)).url.includes('282.pdf'))
-    assert.ok(s.names.ru && s.names.ky && s.names.en)
+    if (source.catalog.indexOf(s) < 40) assert.ok(s.names.ru && s.names.ky && s.names.en)
+    else { assert.ok(s.names.ru); assert.equal(s.names.ky, null); assert.equal(s.names.uz, null) }
     assert.equal(s.iucn.year, null) // Dataset publication year is not an assessment year.
     if (source.catalog.indexOf(s) < 17) assert.ok(speciesPhoto(s)) // Preserve the first two photographic batches.
   }

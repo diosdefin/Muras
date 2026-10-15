@@ -1,0 +1,241 @@
+{
+  "id": "eremurus-zenaidae",
+  "scientificName": "Eremurus zenaidae",
+  "names": {
+    "ru": "Эремурус Зинаиды",
+    "ky": null,
+    "uz": null,
+    "en": "Zenaida’s Foxtail Lily"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Liliopsida",
+    "order": "Asparagales",
+    "family": "Asphodelaceae",
+    "genus": "Eremurus"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Мелкоземистые и щебнистые склоны нижнего и среднего горных поясов.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Весенний выпас в местах произрастания.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Сбор цветов и выкапывание корневищ.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Историческая рекомендация 2006 года: ботанические заказники в местах концентрации вида и мониторинг популяций.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=65",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 5",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Eremurus zenaidae",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Eremurus%20zenaidae",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:2778824"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Эремурус Ферганского и Алайского хребтов с розеткой сизоватых листьев и бледными цветками. Цветёт в июне; страдает от выпаса, сбора цветов и выкапывания корневищ.",
+        "ky": "Фергана жана Алай тоолорунда өскөн чыраш. Жалбырактары бозомук, гүлдөрү агыш келет. Июнда гүлдөйт; мал жаюу, гүлүн үзүү жана тамыр сабагын казуу зыян келтирет.",
+        "uz": "Fargʻona va Oloy tizmalarining eremurusi; barglari koʻkimtir, gullari och rangli. Iyun oyida gullaydi. Chorva boqish, gul terish va ildizpoyani qazish unga zarar yetkazadi.",
+        "en": "An eremurus of the Fergana and Alai ranges, with greyish leaves and pale flowers. It blooms in June; grazing, flower picking and rootstock digging are threats."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Эремурус Зинаиды в национальной Красной книге представлен как эндемик Ферганского и Алайского хребтов. Это травянистое растение с коротким периодом вегетации и подземными органами, включающими корневище и утолщённые корни. Голый стебель достигает 50–80 см. Широколинейные листья собраны в розетку, имеют желобчатую поверхность и сизоватую окраску. Цветки отличаются сочетанием фиолетово-коричневой спинки листочков околоцветника и очень светлых, почти белых краёв.\n\nДля вида описаны мелкоземистые и щебнистые склоны нижнего и среднего горных поясов. Цветение приходится на июнь, а плодоношение — на июль. Плод представляет собой гладкую шаровидную коробочку. В доступной статье нет количественного учёта популяций, сведений о культивировании или подробного описания способов размножения.\n\nОсновные угрозы связаны с хозяйственной деятельностью в местах произрастания: весенним выпасом, сбором цветков и выкапыванием корневищ. В 2006 году авторы считали специальные меры охраны неразработанными и рекомендовали ботанические заказники вместе с мониторингом. Национальная категория VU относится именно к этому историческому изданию; современное правовое положение и сохранность местонахождений требуют отдельной проверки.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Стебель голый, высотой 50–80 см; утолщённые корни имеют толщину 6–7 мм. Наружные листья шириной 6–30 мм, сизоватые, килеватые и желобчатые. Листочки околоцветника около 10 мм, с фиолетово-коричневой спинкой и почти белыми краями; коробочка гладкая, шаровидная, шириной 7–8 мм.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Коротковегетирующий геофит нижнего и среднего поясов гор. Источник описывает мелкоземистые и щебнистые склоны; детальные требования к влажности и почвенному составу не измерены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По изданию 2006 года цветёт в июне и плодоносит в июле. Сведения об опылении, прорастании и вегетативном размножении не приведены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальной статье названы Ферганский и Алайский хребты. Описание ареала историческое, без подтверждённых современных координат.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

@@ -1,0 +1,285 @@
+{
+  "id": "lyrurus-tetrix",
+  "scientificName": "Lyrurus tetrix",
+  "names": {
+    "ru": "Тетерев",
+    "ky": null,
+    "uz": null,
+    "en": "Black Grouse"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Galliformes",
+    "family": "Phasianidae",
+    "genus": "Lyrurus"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VI; Near Threatened: R (издание 2006)",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Горные ельники с кустарниковым подлеском, перемежающиеся открытыми полянами.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Выпас скота в зоне ельников.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Браконьерство.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По изданию 2006 года охранялся в ГПНП Каракол и Чон-Кемин, включён в Красную книгу Киргизской ССР 1985 года.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/lyrurus-tetrix.webp",
+      "width": 1800,
+      "height": 1200,
+      "sha256": "c161d75ef1478e7f9cfdba7a30b8b84dd73a84fadb957df50bea684f82431360",
+      "author": "Vnp at de.wikipedia",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Birkhahn.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Birkhahn.jpg — Vnp at de.wikipedia, CC BY-SA 3.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+        "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Тетерев в Люнебургской пустоши, Германия. Фото вида Lyrurus tetrix; не определение кыргызстанского подвида mongolicus и не местное наблюдение.",
+        "ky": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=359",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 3, строка 13",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Lyrurus tetrix",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Lyrurus%20tetrix",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:2473682"
+    },
+    {
+      "id": "photo-commons",
+      "title": "Birkhahn in der Lüneburger Heide.",
+      "publisher": "Wikimedia Commons; Vnp at de.wikipedia",
+      "url": "https://commons.wikimedia.org/wiki/File:Birkhahn.jpg",
+      "accessedAt": "2026-10-14",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": null
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Оседлая птица горных ельников с кустарниковым подлеском и открытыми полянами. Весной самцы собираются на тока; выпас в лесах и браконьерство названы угрозами.",
+        "ky": "Бадалдуу жана ачык аянттуу тоо карагай токойлорунун отурукташкан кушу. Жазында эркектери жупташуу оюнуна чогулат; токойдо мал жаюу жана мыйзамсыз аңчылык зыян келтирет.",
+        "uz": "Butazorli va ochiq maydonli togʻ qoraqaragʻayzorlarining oʻtroq qushi. Bahorda erkaklari juftlashuv namoyishiga yigʻiladi; chorva boqish va brakonyerlik xavf tugʻdiradi.",
+        "en": "A resident bird of mountain spruce forests with scrub and open clearings. Males gather at spring leks; forest grazing and poaching are identified as threats."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Тетерев — крупная оседлая птица куриного облика с выраженными различиями между полами. Национальная статья сохраняет видовую запись Lyrurus tetrix и отдельно отмечает тянь-шаньский подвид mongolicus. Подвид не добавлен как самостоятельный кандидат. В Кыргызстане описаны еловые леса Чон-Кемина и восточной части Иссык-Кульской котловины, где кустарниковый подлесок чередуется с открытыми полянами.\n\nРазмножение связано с весенними токами: в апреле–мае самцы собираются на закустаренных склонах и демонстрируют брачное поведение. Самцы не участвуют в насиживании и уходе за потомством; обычная кладка в источнике — семь–девять яиц. Питание включает насекомых, листья и семена трав, плоды и ягоды; зимой книга указывает хвою.\n\nВыпас в зоне ельников и браконьерство названы угрозами. Источник сообщает об исторической охране в национальных парках Каракол и Чон-Кемин. Датированное маршрутное наблюдение 2003 года сохранено отдельно: оно не позволяет оценить численность всей страны или нынешнюю динамику. Национальная категория VI с обозначением Near Threatened: R относится к изданию 2006 года. Фотография европейского тетерева иллюстрирует вид, но не определяет местный подвид.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная статья характеризует тетерева как крупную птицу типичного куриного облика с хорошо выраженным половым диморфизмом. Размеры и подробный диагностический рисунок оперения в этой статье не приведены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Оседлая птица горных ельников с подлеском из рябины, барбариса и других кустарников, чередующихся с полянами. В брачный период самцы образуют тока на южных закустаренных склонах.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальной статье питается насекомыми, листьями и семенами трав, плодами и ягодами; зимой — хвоей. Возрастные различия рациона и доли кормов не приведены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Токование в апреле–мае; самцы полигамны, не участвуют в насиживании и воспитании потомства. Самки достигают половой зрелости к концу первого года жизни. Обычная кладка по источнику — 7–9 яиц.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически в Кыргызстане указан в еловых лесах Чон-Кемина и восточной части Иссык-Кульской котловины. Национальный текст связывает эти популяции с подвидом mongolicus; современное присутствие не обновлялось.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

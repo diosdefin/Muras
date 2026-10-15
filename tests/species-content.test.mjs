@@ -14,7 +14,8 @@ import {prepareResearchBatch} from '../scripts/prepare-research-batch.mjs'
 import {legacyScientificSource} from './helpers/legacy-scientific-source.mjs'
 
 const read=path=>readFile(new URL('../'+path,import.meta.url),'utf8').then(JSON.parse)
-const source=await read('data/species.source.json'),published=await read('public/data/species.json')
+// Regression of the earlier encyclopedia release against its retained 40-record base.
+const source=await read('data/backups/bulk-25-provisional/species.source.json'),published=await read('data/backups/bulk-25-provisional/public-species.json')
 const prepared=source.catalog.filter(s=>s.content)
 const hash=value=>createHash('sha256').update(JSON.stringify(value)).digest('hex')
 const text=ru=>({ru,ky:null,uz:null,en:null})

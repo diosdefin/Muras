@@ -1,0 +1,3266 @@
+{
+  "schemaVersion": 1,
+  "documentType": "bulk-25-release-audit",
+  "auditedFromCommit": "1a213f4cb8f38a70e20129b1011b7fb1d698dd26",
+  "auditedAt": "2026-10-14",
+  "independentlyApproved": false,
+  "counts": {
+    "technically_ready": 23,
+    "needs_correction": 0,
+    "blocked": 2
+  },
+  "structuralChecksPassed": 25,
+  "approvalReviewEligible": 23,
+  "sourceCatalogCount": 40,
+  "archiveCount": 2,
+  "preservedFileCount": 153,
+  "sourceCatalogFingerprint": "6ffd82165fd7f2ce9a24f38ca2aae9a885e0fe8e1d672a8630725ac5b36b5cf0",
+  "unchangedCatalogAndRegistryDuringDryRun": true,
+  "otherMasterCandidatesChecked": 35,
+  "crossRegistryConflicts": [],
+  "legacyAliasCount": 2,
+  "images": {
+    "licensedPrivateDrafts": 10,
+    "includedInReviewPackets": 9
+  },
+  "pipeline": {
+    "schemaVersion": 1,
+    "registryId": "bulk-25-content",
+    "catalogFingerprint": "6ffd82165fd7f2ce9a24f38ca2aae9a885e0fe8e1d672a8630725ac5b36b5cf0",
+    "counts": {
+      "processed": 25,
+      "accepted": 23,
+      "deferred": 2,
+      "rejected": 0
+    },
+    "states": {
+      "pending": 0,
+      "needs_evidence": 2,
+      "research_ready": 0,
+      "needs_photo": 0,
+      "ready_for_review": 23,
+      "approved_for_import": 0,
+      "imported": 0,
+      "rejected": 0
+    },
+    "results": [
+      {
+        "candidateId": "eminium-regelii",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "75d6be7ac52e65d0deff686bf00c66d41fbfe44a6fb9fbad966221ed5a92e4e5",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "eremurus-zenaidae",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "5d01120649f12a1a6e7120d4a7fd5abb8cc4360bf58d1449cc80efc7b4ea619b",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "eremurus-zoae",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "162d56c707929caed1e3ffed027169abb72f7abf13df56a22c6c07bc4379a91d",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "allium-dodecadontum",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "65196cd9bbcb0a2932aafb36ed93e56a86253fa39421fa9f6cc7ef6c85e33967",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "allium-semenovii",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "676c984b881644422c455989887217aa4c8ceacd4ff98c5c3241a07810af5901",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "tulipa-affinis",
+        "batchNumber": 2,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "388bd5135b24ff522f7ad87aa01e0a29c0d14c9a966d93272d0b2de52324632e",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "tulipa-anadroma",
+        "batchNumber": 2,
+        "state": "needs_evidence",
+        "errors": [
+          "Есть нерешённые противоречия или обязательные пробелы"
+        ],
+        "warnings": [],
+        "fingerprint": "7ffd9162637590f9e58364c9c931fbcb2be7a44c87f5d54ed5ece20f86c1d222",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "tulipa-korolkowii",
+        "batchNumber": 2,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "e71d21fd453cce70f44f010d7a316e0d612ddfaa801d36874892e3cd4a304279",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "tulipa-platystemon",
+        "batchNumber": 2,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "59cb16a5f675ab9591b5f14605efed85306f0104a9e0a63149c9a3ef0f0ed1a9",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "tulipa-tetraphylla",
+        "batchNumber": 2,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "4f0f046507c860edf89f545a5a5adfab4edca2bbfabb4a95a9c608ab75613c47",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "tulipa-zenaidae",
+        "batchNumber": 3,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "c9a7c0025e2bd7341f17e964ecbacc91f81409d41cfa7894cfc3cb5cb2c35acd",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "juno-orchioides",
+        "batchNumber": 3,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "3f28b4988490687279e947b1a46165dd2a393290f6946818df06495fece02fba",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "iridodictyum-kolpakowskianum",
+        "batchNumber": 3,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "4b6232afac7cdc65523749f52c3872cd88bba2600f952d771cfaacb8877a6c6a",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "thesium-minkwitzianum",
+        "batchNumber": 3,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "1d11600435a739cd4f8efc06a8d20f33302bbb2d6656be1ca8b4df5135c72e88",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "delphinium-knorringianum",
+        "batchNumber": 3,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "b153192328b5aaaf51f7753b7a0450b1596f0cccbe99c824cb4369f95ea23c9d",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "urocerus-sah",
+        "batchNumber": 4,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "abcadb2d596b636828b2164e2cfd979af8aaa2d71819f11f4f196a5999053548",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "masaris-longicornis",
+        "batchNumber": 4,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "161255ab160b09d519a7b1ce71977bfdc6d24151e7daae53cc666c208e6cc172",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "varanus-griseus-caspius",
+        "batchNumber": 4,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "057ccb48e2414081f38896a718ee42c1299a8e7de1ebf3accbcafb4cfcd2967d",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "eryx-tataricus",
+        "batchNumber": 4,
+        "state": "needs_evidence",
+        "errors": [
+          "Есть нерешённые противоречия или обязательные пробелы"
+        ],
+        "warnings": [],
+        "fingerprint": "a0b2d61fbc99ad3c4a190862ddda5904d7236e901f04bba5b1109676a44d435a",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "not_run",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "lyrurus-tetrix",
+        "batchNumber": 4,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "e732d3596f0b82599b57ed1a58bac9cdbacfca04c6879dbadfa7ff47f5545b05",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "cygnus-cygnus",
+        "batchNumber": 5,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "109c3ac39cdcba587fa703e732718d0c977100561ae3e749f64539bc51b91c13",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "aythya-nyroca",
+        "batchNumber": 5,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "524239f146547d2f6fb591255f80442df16fd007c2bb2ea72191f98c1aef633d",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "mergus-serrator",
+        "batchNumber": 5,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "c4346da13ffd70488d85e554eea20cc276ad6e2ba983bede4f882495502dbf0b",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "oxyura-leucocephala",
+        "batchNumber": 5,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "e67b1693d11993462c461b3220c296251474e7cd1bbe57c2da6863fc0dc57d4e",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "gavia-arctica",
+        "batchNumber": 5,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "43cb8be38549ed70936372ac3d450f64da9dab37f49f72d173c3e1a27a99fcb1",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      }
+    ]
+  },
+  "dryRun": {
+    "writePerformed": false,
+    "structuralPlan": {
+      "processed": 25,
+      "added": 25,
+      "unchanged": 0,
+      "rejected": 0
+    },
+    "repeatedPlan": {
+      "processed": 25,
+      "added": 0,
+      "unchanged": 25,
+      "rejected": 0
+    },
+    "duplicateCopyRejected": true,
+    "sourcePrefix40Unchanged": true,
+    "approvedPacketRecords": 0,
+    "repeatResearchCheckIdentical": true
+  },
+  "results": [
+    {
+      "candidateId": "eminium-regelii",
+      "scientificName": "Eminium regelii",
+      "nationalName": "Eminium regelii",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "75d6be7ac52e65d0deff686bf00c66d41fbfe44a6fb9fbad966221ed5a92e4e5",
+      "draftFile": "data/research/bulk-25-content/drafts/eminium-regelii.json",
+      "draftSha256": "1dd08898763edb59a3e6cad88c0681c22faea8a7ae5c4a4624b743e366fc4290",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-62",
+        "pdfPages": [
+          62,
+          63
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=63",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          " Eminium regelii Vved."
+        ],
+        "decreeRecord": "decree-170-2009-1-2",
+        "annex": 1,
+        "row": 2,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Eminium regelii",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Eminium regelii",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2867729",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Eminium regelii Vved.",
+        "acceptedScientificNameAsReturned": "Eminium regelii Vved.",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy",
+        "photo-commons"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=63",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+        "https://api.gbif.org/v1/species/match?strict=true&name=Eminium%20regelii",
+        "https://commons.wikimedia.org/wiki/File:Eminium_regelii_(Flora_of_Tajikistan).png"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 153,
+        "overviewWordsRu": 144,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru",
+          "en"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "licensed_private_draft",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Eminium_regelii_(Flora_of_Tajikistan).png",
+        "path": "assets/images/species/eminium-regelii.webp",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "author": "Arkadiusz Nowak, Marcin Nobis, Sylwia Nowak, Agnieszka Nobis, Anna Wróbel, Sebastian Świerszcz, Ewelina Klichowska, Iwona Dembicz & Grzegorz Kusza",
+        "revisionId": 1219363869,
+        "cachedRightsCheckPassed": true,
+        "includedInReviewPacket": true
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Датированная численность и современное состояние популяций",
+        "Сроки плодоношения",
+        "Опылители",
+        "Современный правовой статус"
+      ],
+      "editorialNotes": [
+        "Русский и кыргызский тексты дают VU, английское резюме — EN. nationalRedBook.category оставлена null до независимого разрешения расхождения; это не глобальная категория IUCN."
+      ],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "eremurus-zenaidae",
+      "scientificName": "Eremurus zenaidae",
+      "nationalName": "Eremurus zenaidae",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "5d01120649f12a1a6e7120d4a7fd5abb8cc4360bf58d1449cc80efc7b4ea619b",
+      "draftFile": "data/research/bulk-25-content/drafts/eremurus-zenaidae.json",
+      "draftSha256": "0be68ab42546099684faa6c3aa1c1464a66fffa8c0ace6690f68872eb929b9c9",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-64",
+        "pdfPages": [
+          64,
+          65
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=65",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Eremurus zenaidae  Vved. ex (E. Nikit.)",
+          "ийиктей-жоон, калыьдыгы 6-7 мм. Сабагы тъксъз, бийиктиги 50-80 см. Жалбырактары тамыр"
+        ],
+        "decreeRecord": "decree-170-2009-1-5",
+        "annex": 1,
+        "row": 5,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Eremurus zenaidae",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Eremurus zenaidae",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2778824",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Eremurus zenaidae Vved.",
+        "acceptedScientificNameAsReturned": "Eremurus zenaidae Vved.",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=65",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+        "https://api.gbif.org/v1/species/match?strict=true&name=Eremurus%20zenaidae"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 162,
+        "overviewWordsRu": 149,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru",
+          "en"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "placeholder",
+        "reason": "Точный поиск Commons не обнаружил подходящего файла; placeholder."
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Численность",
+        "Способ размножения и опылители",
+        "Данные о культивировании",
+        "Современные местонахождения и правовой статус"
+      ],
+      "editorialNotes": [],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "eremurus-zoae",
+      "scientificName": "Eremurus zoae",
+      "nationalName": "Eremurus zoae",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "162d56c707929caed1e3ffed027169abb72f7abf13df56a22c6c07bc4379a91d",
+      "draftFile": "data/research/bulk-25-content/drafts/eremurus-zoae.json",
+      "draftSha256": "409a65cbe3c0854c9903c4e1bfa900c1f71b28a05bbd8e8fa1dfdced91cad00b",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-66",
+        "pdfPages": [
+          66,
+          67
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=67",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Eremurus zoae  Vved.",
+          "Сабагы, тъксъз, бийиктиги 25-40 см. Жалбырактары сызгычтай, шуштугуй, туурасы 5-6 мм. Гъл"
+        ],
+        "decreeRecord": "decree-170-2009-1-6",
+        "annex": 1,
+        "row": 6,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Eremurus zoae",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Eremurus zoae",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2778815",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Eremurus zoae Vved.",
+        "acceptedScientificNameAsReturned": "Eremurus zoae Vved.",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=67",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+        "https://api.gbif.org/v1/species/match?strict=true&name=Eremurus%20zoae"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 157,
+        "overviewWordsRu": 149,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru",
+          "en"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "placeholder",
+        "reason": "Точный поиск Commons не обнаружил подходящего файла; placeholder."
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Численность",
+        "Уточнённая локальная география",
+        "Размножение и культивирование",
+        "Современный правовой статус"
+      ],
+      "editorialNotes": [
+        "RU: между Иссык-Атой и Кегети; EN: Иссык-Ата и Боом. В карточке оставлен только общий Кыргызский хребет; требует редакторского разрешения."
+      ],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "allium-dodecadontum",
+      "scientificName": "Allium dodecadontum",
+      "nationalName": "Allium dodecadontum",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "65196cd9bbcb0a2932aafb36ed93e56a86253fa39421fa9f6cc7ef6c85e33967",
+      "draftFile": "data/research/bulk-25-content/drafts/allium-dodecadontum.json",
+      "draftSha256": "6ac525c12f54046a39a1ebd34cd8d2dbec244fc93112f73c8b57367f1a8ec603",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-68",
+        "pdfPages": [
+          68,
+          69
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=69",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Allium dodecadontum  Vved."
+        ],
+        "decreeRecord": "decree-170-2009-1-9",
+        "annex": 1,
+        "row": 9,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Allium dodecadontum",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Allium dodecadontum",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2857164",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Allium dodecadontum Vved.",
+        "acceptedScientificNameAsReturned": "Allium dodecadontum Vved.",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=69",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+        "https://api.gbif.org/v1/species/match?strict=true&name=Allium%20dodecadontum"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 160,
+        "overviewWordsRu": 152,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru",
+          "en"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "placeholder",
+        "reason": "Точный поиск Commons не обнаружил подходящего файла; placeholder."
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Численность",
+        "Детали размножения",
+        "Культивирование",
+        "Современное состояние охраны"
+      ],
+      "editorialNotes": [],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "allium-semenovii",
+      "scientificName": "Allium semenovii",
+      "nationalName": "Allium semenovii",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "676c984b881644422c455989887217aa4c8ceacd4ff98c5c3241a07810af5901",
+      "draftFile": "data/research/bulk-25-content/drafts/allium-semenovii.json",
+      "draftSha256": "09a710174095558f09cae5b776e4035aa4f823a74d7539c29f3a16ce33877990",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-72",
+        "pdfPages": [
+          72,
+          73
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=73",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Allium semenovii  Regel",
+          "Мънёздёмё.  Кёп жылдык пияз тъптъъ чёп ёсъмдък, геофит, ксеромезофит. Тамыр сабагында"
+        ],
+        "decreeRecord": "decree-170-2009-1-8",
+        "annex": 1,
+        "row": 8,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Allium semenovii",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Allium semenovii",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2857114",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Allium semenovii Regel",
+        "acceptedScientificNameAsReturned": "Allium semenovii Regel",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=73",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+        "https://api.gbif.org/v1/species/match?strict=true&name=Allium%20semenovii"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 149,
+        "overviewWordsRu": 144,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru",
+          "en"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "placeholder",
+        "reason": "Файл целый, но светлые головки соцветий не согласуются с описанными в национальном источнике золотисто-жёлтыми цветками. Идентификация требует специалиста; изображение отклонено для карточки."
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Численность",
+        "Способ размножения",
+        "Культивирование",
+        "Современное присутствие и правовой статус"
+      ],
+      "editorialNotes": [
+        "Характеристика эндемизма в книге историческая; не распространяется автоматически на современный расширенный ареал принятого таксона GBIF."
+      ],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "tulipa-affinis",
+      "scientificName": "Tulipa fosteriana",
+      "nationalName": "Tulipa affinis",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "388bd5135b24ff522f7ad87aa01e0a29c0d14c9a966d93272d0b2de52324632e",
+      "draftFile": "data/research/bulk-25-content/drafts/tulipa-affinis.json",
+      "draftSha256": "ff0741e2cd9dbfd8a9025e9a3b765bfb491f78510e91e571ef167109c46a2bee",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-76",
+        "pdfPages": [
+          76,
+          77
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=77",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Tulipa affinis Z. Botsch.",
+          "кърёь, калыь, кээде узун, ичинен сейрек, узун, алтын сымал сары тъктъъ. Сабагы 30 см ге чейин"
+        ],
+        "decreeRecord": "decree-170-2009-1-16",
+        "annex": 1,
+        "row": 16,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Tulipa affinis",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Tulipa fosteriana",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5299364",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Tulipa affinis Botschantz.",
+        "acceptedScientificNameAsReturned": "Tulipa fosteriana W.Irving",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=77",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+        "https://api.gbif.org/v1/species/5299364"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 152,
+        "overviewWordsRu": 149,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "placeholder",
+        "reason": "Найдены снимки принятого широкого таксона Tulipa fosteriana и садовых сортов; соответствие национальному концепту Tulipa affinis не подтверждено."
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Учёт численности",
+        "Плодоношение",
+        "Современная география национального таксономического концепта"
+      ],
+      "editorialNotes": [
+        "Tulipa affinis → Tulipa fosteriana: точный синоним того же ранга по GBIF. Историческая категория и ареал относятся к национальному концепту affinis; охват широкого принятого вида требует специалиста."
+      ],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "tulipa-anadroma",
+      "scientificName": "Tulipa tschimganica",
+      "nationalName": "Tulipa anadroma",
+      "disposition": "blocked",
+      "pipelineState": "needs_evidence",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": false,
+      "approval": null,
+      "fingerprint": "7ffd9162637590f9e58364c9c931fbcb2be7a44c87f5d54ed5ece20f86c1d222",
+      "draftFile": "data/research/bulk-25-content/drafts/tulipa-anadroma.json",
+      "draftSha256": "a9df98bca06523d072b6f57a82979be5098d36f2bb87613c1463c981d68215ed",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-78",
+        "pdfPages": [
+          78,
+          79
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=79",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Tulipa anadroma  Z. Botsch.",
+          "Статусу:  VU. Саны азайып бара жаткан Чаткал тоо кыркасынын эндем търъ. Кыргызстанда"
+        ],
+        "decreeRecord": "decree-170-2009-1-12",
+        "annex": 1,
+        "row": 12,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Tulipa anadroma",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Tulipa tschimganica",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5299666",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Tulipa × anadroma Botschantz.",
+        "acceptedScientificNameAsReturned": "Tulipa ×tschimganica Botschantz.",
+        "acceptedNameIsProposal": true
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=79",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+        "https://api.gbif.org/v1/species/5299666"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 158,
+        "overviewWordsRu": 170,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "placeholder",
+        "reason": "Найдены садовые экземпляры Tulipa tschimganica; соответствие историческому Tulipa anadroma не подтверждено."
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [
+        "Аудит 22.4: GBIF scientificName содержит Tulipa ×tschimganica Botschantz. и Tulipa × anadroma Botschantz.; canonicalName скрывает ×. Национальная статья Tulipa anadroma не устанавливает гибридный статус. Требуется решение ботаника о соответствии концепта и сохранении маркера."
+      ],
+      "missingFacts": [
+        "Датированная численность",
+        "Плодоношение",
+        "Современный таксономический охват национального включения",
+        "Соответствие национального концепта гибридному обозначению GBIF"
+      ],
+      "editorialNotes": [
+        "Tulipa anadroma → Tulipa tschimganica: предложение на основе canonicalName GBIF того же ранга; исходные полные имена содержат ×. Соответствие национальному концепту не установлено, биология сохранена только для исторической записи.",
+        "Аудит 22.4: GBIF scientificName содержит Tulipa ×tschimganica Botschantz. и Tulipa × anadroma Botschantz.; canonicalName скрывает ×. Национальная статья Tulipa anadroma не устанавливает гибридный статус. Требуется решение ботаника о соответствии концепта и сохранении маркера."
+      ],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "tulipa-korolkowii",
+      "scientificName": "Tulipa korolkowii",
+      "nationalName": "Tulipa korolkowii",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "e71d21fd453cce70f44f010d7a316e0d612ddfaa801d36874892e3cd4a304279",
+      "draftFile": "data/research/bulk-25-content/drafts/tulipa-korolkowii.json",
+      "draftSha256": "e06194973c0096c55476518911c1da33a2774c2a8151d160a35ce87b9d4053b6",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-86",
+        "pdfPages": [
+          86,
+          87
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=87",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Статусу:  VU. Орто Азиянын эндеми, негизги ареалдары Ёзбекстан жана Тажикстан (Батыш",
+          "жогору жагынын ичи кийиз-чачтай тъктъъ. Сабагынын бийиктиги 10-20 (30)  см, тъксъз."
+        ],
+        "decreeRecord": "decree-170-2009-1-17",
+        "annex": 1,
+        "row": 17,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Tulipa nitida",
+        "decreeRelationship": "same_account_alternative",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Tulipa korolkowii",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5299568",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Tulipa korolkowii Regel",
+        "acceptedScientificNameAsReturned": "Tulipa korolkowii Regel",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=87",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+        "https://api.gbif.org/v1/species/match?strict=true&name=Tulipa%20korolkowii"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 162,
+        "overviewWordsRu": 146,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru",
+          "en"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "placeholder",
+        "reason": "Найден файл Beautyy.jpg с общей подписью Jizzakh, Forish; независимая идентификация пока отсутствует."
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Численность",
+        "Современные местонахождения",
+        "Региональное уточнение фенологии"
+      ],
+      "editorialNotes": [
+        "Фенология RU и EN различается по ширине интервала; сведения не усреднялись.",
+        "Перечень 2009 года называет Tulipa nitida (приложение 1, строка 17); очерк 2006 года прямо приводит T. nitida Th. Hoog при Tulipa korolkowii Regel. Связь перечня с карточкой основана на альтернативном имени в том же очерке, а не на буквальном совпадении названий."
+      ],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "tulipa-platystemon",
+      "scientificName": "Tulipa platystemon",
+      "nationalName": "Tulipa platystemon",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "59cb16a5f675ab9591b5f14605efed85306f0104a9e0a63149c9a3ef0f0ed1a9",
+      "draftFile": "data/research/bulk-25-content/drafts/tulipa-platystemon.json",
+      "draftSha256": "7809ca724da102937206fc4c534ad9bf12dc67751c1acf4cfc2cf54387f86de5",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-90",
+        "pdfPages": [
+          90,
+          91
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=91",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Tulipa platystemon Vved.",
+          "учунда жана тъбъндё нык жапырылган тъктъъ. Сабагынын гъл сабы менен кошо бийиктиги 17"
+        ],
+        "decreeRecord": "decree-170-2009-1-21",
+        "annex": 1,
+        "row": 21,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Tulipa platystemon",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Tulipa platystemon",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5299510",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Tulipa platystemon Vved.",
+        "acceptedScientificNameAsReturned": "Tulipa platystemon Vved.",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=91",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+        "https://api.gbif.org/v1/species/match?strict=true&name=Tulipa%20platystemon"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 161,
+        "overviewWordsRu": 151,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru",
+          "en"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "placeholder",
+        "reason": "Точный поиск Commons не дал подходящего файла."
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Условия местообитания",
+        "Плодоношение и размножение",
+        "Численность",
+        "Культивирование",
+        "Современное присутствие"
+      ],
+      "editorialNotes": [
+        "habitat:null соответствует прямому отсутствию данных в первоисточнике; техническая готовность не означает достаточность экологической изученности."
+      ],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "tulipa-tetraphylla",
+      "scientificName": "Tulipa tetraphylla",
+      "nationalName": "Tulipa tetraphylla",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "4f0f046507c860edf89f545a5a5adfab4edca2bbfabb4a95a9c608ab75613c47",
+      "draftFile": "data/research/bulk-25-content/drafts/tulipa-tetraphylla.json",
+      "draftSha256": "684584f366712f802613b04e5fe28f671eacf61efae993d7defcf47b78ede853",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-94",
+        "pdfPages": [
+          94,
+          95
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=95",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Tulipa tetraphylla Regel",
+          "см, кара-кърёь, катуу, калыь кабыктуу. Сабагынын бийиктиги 3-25 см, тъксъз."
+        ],
+        "decreeRecord": "decree-170-2009-1-22",
+        "annex": 1,
+        "row": 22,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Tulipa tetraphylla",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Tulipa tetraphylla",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5299660",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Tulipa tetraphylla Regel",
+        "acceptedScientificNameAsReturned": "Tulipa tetraphylla Regel",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=95",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+        "https://api.gbif.org/v1/species/match?strict=true&name=Tulipa%20tetraphylla"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 160,
+        "overviewWordsRu": 150,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru",
+          "en"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "placeholder",
+        "reason": "Найдена иллюстрация 1884 года, не фотография; PD-1923 требует отдельного правового допуска и не поддерживается автоматической процедурой."
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Численность",
+        "Плодоношение и способы размножения",
+        "Культивирование",
+        "Современное присутствие"
+      ],
+      "editorialNotes": [],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "tulipa-zenaidae",
+      "scientificName": "Tulipa lehmanniana",
+      "nationalName": "Tulipa zenaidae",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "c9a7c0025e2bd7341f17e964ecbacc91f81409d41cfa7894cfc3cb5cb2c35acd",
+      "draftFile": "data/research/bulk-25-content/drafts/tulipa-zenaidae.json",
+      "draftSha256": "e7dd49b45bca702c1da57d751fb12064902d836957a6e8f6c517fa470bb371e5",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-96",
+        "pdfPages": [
+          96,
+          97
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=97",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Tulipa zenaidae Vved.",
+          "кёрънёт. Сабагы кызгылт кёк сымал, узундугу 10-15 см, жарык аз тийген кёлёкё жерлерде 40"
+        ],
+        "decreeRecord": "decree-170-2009-1-20",
+        "annex": 1,
+        "row": 20,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Tulipa zenaidae",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Tulipa lehmanniana",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5299646",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Tulipa zenaidae Vved.",
+        "acceptedScientificNameAsReturned": "Tulipa lehmanniana Merckl.",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=97",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+        "https://api.gbif.org/v1/species/5299646"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 163,
+        "overviewWordsRu": 149,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "placeholder",
+        "reason": "Фото принятого широкого Tulipa lehmanniana не подтверждает национальную форму Tulipa zenaidae; один файл имеет противоречивую подпись behmiana."
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Датированная численность",
+        "Современный охват национального концепта",
+        "Плодоношение в природе"
+      ],
+      "editorialNotes": [
+        "Tulipa zenaidae → Tulipa lehmanniana: подтверждённая GBIF синонимия того же ранга. Национальная оценка не распространена на весь широкий принятый таксон."
+      ],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "juno-orchioides",
+      "scientificName": "Iris orchioides",
+      "nationalName": "Juno orchioides",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "3f28b4988490687279e947b1a46165dd2a393290f6946818df06495fece02fba",
+      "draftFile": "data/research/bulk-25-content/drafts/juno-orchioides.json",
+      "draftSha256": "e27e8d43b5e21abe8b023becdb34fd5b13c610b921a43fb5590e98b25933ff81",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-98",
+        "pdfPages": [
+          98,
+          99
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=99",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Juno orchioides  (Carr.) Vved.",
+          "кийин дагы сакталат. Сабагынын бийиктиги 10-30 см, тъз, гълдёё мезгилинде муун аралыктары"
+        ],
+        "decreeRecord": "decree-170-2009-1-24",
+        "annex": 1,
+        "row": 24,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Juno orchioides",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Iris orchioides",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5298228",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Juno orchioides (Carrière) Vved.",
+        "acceptedScientificNameAsReturned": "Iris orchioides Carrière",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=99",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+        "https://api.gbif.org/v1/species/5298228"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 166,
+        "overviewWordsRu": 154,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "placeholder",
+        "reason": "Поиск дал исторические PDF и небольшой файл с общей подписью; надёжность идентификации и качество требуют проверки."
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Численность",
+        "Современные наблюдения и действующая правовая редакция"
+      ],
+      "editorialNotes": [
+        "Juno orchioides → Iris orchioides: точная синонимия того же ранга; сохранены национальное имя и источник биологии."
+      ],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "iridodictyum-kolpakowskianum",
+      "scientificName": "Iris kolpakowskiana",
+      "nationalName": "Iridodictyum kolpakowskianum",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "4b6232afac7cdc65523749f52c3872cd88bba2600f952d771cfaacb8877a6c6a",
+      "draftFile": "data/research/bulk-25-content/drafts/iridodictyum-kolpakowskianum.json",
+      "draftSha256": "cab2cf07d20e0635a9d4e5b836900060ff3fe4e520be6f20d5dbf59fc291d6be",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-100",
+        "pdfPages": [
+          100,
+          101
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=101",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Iridodictyum kolpakowskianum (Regel) Rodionenko",
+          "(Iris kolpakowskiana Regel)"
+        ],
+        "decreeRecord": "decree-170-2009-1-25",
+        "annex": 1,
+        "row": 25,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Iridodictyum kolpakowskianum",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Iris kolpakowskiana",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5299049",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Iridodictyum kolpakowskianum (Regel) Rodion.",
+        "acceptedScientificNameAsReturned": "Iris kolpakowskiana Regel",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy",
+        "photo-commons"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=101",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+        "https://api.gbif.org/v1/species/5299049",
+        "https://commons.wikimedia.org/wiki/File:Iridodictyum_kolpakowskianum.jpg"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 150,
+        "overviewWordsRu": 150,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "licensed_private_draft",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Iridodictyum_kolpakowskianum.jpg",
+        "path": "assets/images/species/iridodictyum-kolpakowskianum.webp",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "author": "chernoburko",
+        "revisionId": 1221390967,
+        "cachedRightsCheckPassed": true,
+        "includedInReviewPacket": true
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Численность",
+        "Проверка указания Ферганского хребта",
+        "Современное состояние местообитаний"
+      ],
+      "editorialNotes": [
+        "Iridodictyum kolpakowskianum → Iris kolpakowskiana: подтверждённая синонимия того же ранга. Фотография документирована под принятым именем в категории Commons."
+      ],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "thesium-minkwitzianum",
+      "scientificName": "Chrysothesium minkwitzianum",
+      "nationalName": "Thesium minkwitzianum",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "1d11600435a739cd4f8efc06a8d20f33302bbb2d6656be1ca8b4df5135c72e88",
+      "draftFile": "data/research/bulk-25-content/drafts/thesium-minkwitzianum.json",
+      "draftSha256": "6af8bd2849aa2f947a793387a634984a49ce0b49f68410fa98b9b13b691bc63c",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-102",
+        "pdfPages": [
+          102,
+          103
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=103",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Thesium minkwitzianum B. Fedtsch.",
+          "Статусу:  CR. Субэндем. Жоголуп кетъъ коркунучунун алдында турган, ётё эле аз кездешкен"
+        ],
+        "decreeRecord": "decree-170-2009-1-26",
+        "annex": 1,
+        "row": 26,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Thesium minkwitzianum",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Chrysothesium minkwitzianum",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3788694",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Thesium minkwitzianum B.Fedtsch.",
+        "acceptedScientificNameAsReturned": "Chrysothesium minkwitzianum (B.Fedtsch.) Hendrych",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=103",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+        "https://api.gbif.org/v1/species/3788694"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 163,
+        "overviewWordsRu": 149,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "placeholder",
+        "reason": "Точные поиски принятого и национального имени не дали пригодных файлов."
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Год исторического учёта",
+        "Современная численность",
+        "Подробная биология",
+        "Культивирование"
+      ],
+      "editorialNotes": [
+        "Thesium minkwitzianum → Chrysothesium minkwitzianum: GBIF подтверждает точную синонимию того же ранга.",
+        "Сроки биологии приведены по RU; EN называет её неизвестной. Требует специалиста, неподтверждённые детали не добавлены."
+      ],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "delphinium-knorringianum",
+      "scientificName": "Delphinium knorringianum",
+      "nationalName": "Delphinium knorringianum",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "b153192328b5aaaf51f7753b7a0450b1596f0cccbe99c824cb4369f95ea23c9d",
+      "draftFile": "data/research/bulk-25-content/drafts/delphinium-knorringianum.json",
+      "draftSha256": "70a3a331faa366132c45571ffa00e11eeda94737eef8808a0924ed1c0dfd44c6",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-108",
+        "pdfPages": [
+          108,
+          109
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=109",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Delphinium knorringianum  B. Fedtsch.",
+          "Статусу: VU. Сейрек кездешкен, реликт, ъзгълтъктъъ ареалдуу, Кыргызстандын декративдъъ"
+        ],
+        "decreeRecord": "decree-170-2009-1-31",
+        "annex": 1,
+        "row": 31,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Delphinium knorringianum",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Delphinium knorringianum",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3930642",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Delphinium knorringianum B.Fedtsch.",
+        "acceptedScientificNameAsReturned": "Delphinium knorringianum B.Fedtsch.",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=109",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+        "https://api.gbif.org/v1/species/match?strict=true&name=Delphinium%20knorringianum"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 160,
+        "overviewWordsRu": 150,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru",
+          "en"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "placeholder",
+        "reason": "Точный поиск не дал пригодного файла."
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Численность",
+        "Плодоношение",
+        "Культивирование",
+        "Современные меры охраны"
+      ],
+      "editorialNotes": [
+        "Аудит 22.4: термин «тепкичи» заменён на «текөөрчөсү» по KY-статье, PDF с. 108; старые шрифтовые ё/ъ нормализованы в ө/ү. Пять долей листа также прямо описаны в первоисточнике."
+      ],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "urocerus-sah",
+      "scientificName": "Urocerus sah",
+      "nationalName": "Urocerus sah",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "abcadb2d596b636828b2164e2cfd979af8aaa2d71819f11f4f196a5999053548",
+      "draftFile": "data/research/bulk-25-content/drafts/urocerus-sah.json",
+      "draftSha256": "51584a4aa67531543f317a3195f2a47e93aabdbdbfcf61b0b0a4f74adfc298b3",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-274",
+        "pdfPages": [
+          274,
+          275
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=275",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Urocerus sah  (Mocsary, 1881)",
+          "U. sah  тын статусун U. augur  (Klug, 1803) търчёсънън рангасына тёмёндётълъшъ"
+        ],
+        "decreeRecord": "decree-170-2009-4-13",
+        "annex": 4,
+        "row": 13,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=11",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Urocerus sah",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Urocerus sah",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:4492202",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Urocerus sah (Mocsáry, 1881)",
+        "acceptedScientificNameAsReturned": "Urocerus sah (Mocsáry, 1881)",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=275",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=11",
+        "https://api.gbif.org/v1/species/match?strict=true&name=Urocerus%20sah"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 166,
+        "overviewWordsRu": 149,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru",
+          "en"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "placeholder",
+        "reason": "Фотография нужного вида не найдена; placeholder."
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Датированная численность",
+        "Питание взрослых и болезни",
+        "Современное состояние лесных местообитаний"
+      ],
+      "editorialNotes": [
+        "Видовой ранг подтверждён точным принятым таксоном GBIF. Обсуждавшееся в книге понижение до подвида U. augur не применено."
+      ],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "masaris-longicornis",
+      "scientificName": "Masaris longicornis",
+      "nationalName": "Masaris longicornis",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "161255ab160b09d519a7b1ce71977bfdc6d24151e7daae53cc666c208e6cc172",
+      "draftFile": "data/research/bulk-25-content/drafts/masaris-longicornis.json",
+      "draftSha256": "ed59558b6e6fc7a3a15ab547c9f3213949d241143c6f6ea50bdb0df9d006f7d1",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-280",
+        "pdfPages": [
+          280,
+          281
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=281",
+        "sourceYear": 2006,
+        "headingAsPrinted": [],
+        "decreeRecord": "decree-170-2009-4-16",
+        "annex": 4,
+        "row": 16,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=11",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Masaris longicornis",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Masaris longicornis",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:1312316",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Masaris longicornis Kuzn., 1923",
+        "acceptedScientificNameAsReturned": "Masaris longicornis Kuzn., 1923",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=281",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=11",
+        "https://api.gbif.org/v1/species/match?strict=true&name=Masaris%20longicornis"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 161,
+        "overviewWordsRu": 151,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru",
+          "en"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "placeholder",
+        "reason": "Фотография нужного вида не найдена; placeholder."
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Датированная численность",
+        "Размер кладки",
+        "Уточнение локальной синонимии и географии",
+        "Современные меры охраны"
+      ],
+      "editorialNotes": [
+        "Часть иссык-кульского ареала в первоисточнике опирается на предполагаемый синоним M. tianshanicus, а не на окончательно подтверждённую идентификацию; не использована для картографирования."
+      ],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "varanus-griseus-caspius",
+      "scientificName": "Varanus griseus caspius",
+      "nationalName": "Varanus griseus caspius",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "057ccb48e2414081f38896a718ee42c1299a8e7de1ebf3accbcafb4cfcd2967d",
+      "draftFile": "data/research/bulk-25-content/drafts/varanus-griseus-caspius.json",
+      "draftSha256": "6b0b1aa2f61a928e27443c5ae1586a8b459a884e128b99876033e00bdfa9ca0c",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-334",
+        "pdfPages": [
+          334,
+          335
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=335",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Varanus griseus (Daudin, 1803) ssp. caspius  (Eichwald, 1831)"
+        ],
+        "decreeRecord": "decree-170-2009-5-5",
+        "annex": 5,
+        "row": 5,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=12",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Varanus griseus",
+        "decreeRelationship": "parent_species_only",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Varanus griseus caspius",
+        "rank": "SUBSPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:9553489",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Varanus griseus caspius (Eichwald, 1831)",
+        "acceptedScientificNameAsReturned": "Varanus griseus caspius (Eichwald, 1831)",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy",
+        "photo-commons"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=335",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=12",
+        "https://api.gbif.org/v1/species/match?strict=true&name=Varanus%20griseus%20caspius",
+        "https://commons.wikimedia.org/wiki/File:Varanus_griseus_caspius_Kattakum2_(1).jpg"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 149,
+        "overviewWordsRu": 159,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru",
+          "en"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "licensed_private_draft",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Varanus_griseus_caspius_Kattakum2_(1).jpg",
+        "path": "assets/images/species/varanus-griseus-caspius.webp",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "author": "Alexander A. Fomichev",
+        "revisionId": 1225347256,
+        "cachedRightsCheckPassed": true,
+        "includedInReviewPacket": true
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Описание внешности именно подвида",
+        "Численность",
+        "Современное присутствие",
+        "Разрешение расхождения национальных категорий",
+        "Актуальная правовая редакция"
+      ],
+      "editorialNotes": [
+        "Ранг SUBSPECIES и точный таксон gbif сохранены, родительский вид отдельно не добавлен.",
+        "RU: CR A4bc; E; EN: EN A4bc; E. nationalRedBook.category:null до независимой проверки. Старые CITES и запреты не выдаются за проверенное действующее право.",
+        "Перечень 2009 года указывает только родительский вид Varanus griseus (приложение 5, строка 5). Включение именно подвида caspius подтверждено очерком Красной книги 2006 года; родительский перечень сам по себе не доказывает включение подвида."
+      ],
+      "legacyAliases": [
+        {
+          "id": "desert-monitor",
+          "scientificName": "Varanus griseus caspius",
+          "decision": "defer",
+          "publicationApproved": false,
+          "alreadyPublic": false,
+          "gaps": [
+            "На одной странице RU даёт CR A4bc; E, EN — EN A4bc; E. Единую национальную категорию не выбираем. Найденное фото V. g. griseus из Саудовской Аравии не подтверждает caspius.",
+            "Не установлены современная правовая редакция национального перечня и полноценная текущая популяционная оценка. Независимая научная и визуальная редактура обязательна."
+          ]
+        }
+      ]
+    },
+    {
+      "candidateId": "eryx-tataricus",
+      "scientificName": "Eryx miliaris",
+      "nationalName": "Eryx tataricus",
+      "disposition": "blocked",
+      "pipelineState": "needs_evidence",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": false,
+      "approval": null,
+      "fingerprint": "a0b2d61fbc99ad3c4a190862ddda5904d7236e901f04bba5b1109676a44d435a",
+      "draftFile": "data/research/bulk-25-content/drafts/eryx-tataricus.json",
+      "draftSha256": "1bc97925cb7a18eecef14799015ddc583d3f598676f9ece49e0c6d6fe7787788",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-340",
+        "pdfPages": [
+          340,
+          341
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=341",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Eryx tataricus  (Lichtenstein, 1823)",
+          "Статусу: NT категория. Тукумдун майда ёкълдёрън камтыган уруудагы 10 търдън бирёёсъ, бардык"
+        ],
+        "decreeRecord": "decree-170-2009-5-10",
+        "annex": 5,
+        "row": 10,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=12",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Eryx tataricus",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Eryx miliaris",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2465319",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Eryx tataricus Tzarevsky, 1915",
+        "acceptedScientificNameAsReturned": "Eryx miliaris (Pallas, 1773)",
+        "acceptedNameIsProposal": true
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy",
+        "gbif-national-name-match",
+        "photo-commons"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=341",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=12",
+        "https://api.gbif.org/v1/species/2465319",
+        "https://api.gbif.org/v1/species/match?strict=true&name=Eryx%20tataricus",
+        "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Sandboa_(Eryx_tataricus).JPG"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 156,
+        "overviewWordsRu": 173,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "licensed_private_draft",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Gro%C3%9Fe_Sandboa_(Eryx_tataricus).JPG",
+        "path": "assets/images/species/eryx-tataricus.webp",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "author": "Vincent Malloy",
+        "revisionId": 1286059754,
+        "cachedRightsCheckPassed": true,
+        "includedInReviewPacket": false
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [
+        "Аудит 22.4: национальная статья Eryx tataricus (Lichtenstein, 1823), но GBIF match вернул Eryx tataricus Tzarevsky, 1915 → Eryx miliaris. Совпадение canonicalName не подтверждает одинаковый национальный таксон; прежние материалы также отмечают отличие концепта IUCN. Требуется решение герпетолога, подмена принятого имени не выполнялась."
+      ],
+      "missingFacts": [
+        "Описание внешности национального концепта",
+        "Датированная численность",
+        "Современный охват таксона и охрана",
+        "Авторство и соответствие национального Eryx tataricus предложенному Eryx miliaris"
+      ],
+      "editorialNotes": [
+        "Предполагаемая популяция Токмакского заказника не признана подтверждённой: RU пишет «возможно», EN — как факт. Действующие CITES-ограничения не проверялись и не заявляются.",
+        "Аудит 22.4: национальная статья Eryx tataricus (Lichtenstein, 1823), но GBIF match вернул Eryx tataricus Tzarevsky, 1915 → Eryx miliaris. Совпадение canonicalName не подтверждает одинаковый национальный таксон; прежние материалы также отмечают отличие концепта IUCN. Требуется решение герпетолога, подмена принятого имени не выполнялась."
+      ],
+      "legacyAliases": [
+        {
+          "id": "tatary-sand-boa",
+          "scientificName": "Eryx tataricus",
+          "decision": "defer",
+          "publicationApproved": false,
+          "alreadyPublic": false,
+          "gaps": [
+            "GBIF Backbone синонимизирует E. tataricus с E. miliaris, тогда как набор IUCN принимает E. tataricus. Фото E. miliaris не допускается к этой карточке до решения специалиста; чтение кыргызского названия требует проверки.",
+            "Не установлены современная правовая редакция национального перечня и полноценная текущая популяционная оценка. Независимая научная и визуальная редактура обязательна."
+          ]
+        }
+      ]
+    },
+    {
+      "candidateId": "lyrurus-tetrix",
+      "scientificName": "Lyrurus tetrix",
+      "nationalName": "Lyrurus tetrix",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "e732d3596f0b82599b57ed1a58bac9cdbacfca04c6879dbadfa7ff47f5545b05",
+      "draftFile": "data/research/bulk-25-content/drafts/lyrurus-tetrix.json",
+      "draftSha256": "7e9ae132b21f8759919497fd3f6b7f7b7ca5e28be5550a3186e8552317632908",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-358",
+        "pdfPages": [
+          358,
+          359
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=359",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Lyrurus tetrix (Linnaeus, 1758)",
+          "Жашаган аймактары.  Карагайлуу токойлор, бёръ карагаттар жана башка бадалдардын арасында,"
+        ],
+        "decreeRecord": "decree-170-2009-3-13",
+        "annex": 3,
+        "row": 13,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Lyrurus tetrix",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Lyrurus tetrix",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2473682",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Lyrurus tetrix (Linnaeus, 1758)",
+        "acceptedScientificNameAsReturned": "Lyrurus tetrix (Linnaeus, 1758)",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy",
+        "photo-commons"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=359",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9",
+        "https://api.gbif.org/v1/species/match?strict=true&name=Lyrurus%20tetrix",
+        "https://commons.wikimedia.org/wiki/File:Birkhahn.jpg"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 158,
+        "overviewWordsRu": 154,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru",
+          "en"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "licensed_private_draft",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Birkhahn.jpg",
+        "path": "assets/images/species/lyrurus-tetrix.webp",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "author": "Vnp at de.wikipedia",
+        "revisionId": 1173184297,
+        "cachedRightsCheckPassed": true,
+        "includedInReviewPacket": true
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Современная численность и динамика",
+        "Подробная диагностика местного подвида",
+        "Обновлённые меры охраны"
+      ],
+      "editorialNotes": [
+        "Вид SPECIES Lyrurus tetrix выбран по национальной записи. Сведения о mongolicus и фото вида не являются независимым подтверждением подвида.",
+        "English name Black Grous в книге нормализовано до Black Grouse; форма Black Grouse также присутствует в сохранённых описаниях Commons того же вида."
+      ],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "cygnus-cygnus",
+      "scientificName": "Cygnus cygnus",
+      "nationalName": "Cygnus cygnus",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "109c3ac39cdcba587fa703e732718d0c977100561ae3e749f64539bc51b91c13",
+      "draftFile": "data/research/bulk-25-content/drafts/cygnus-cygnus.json",
+      "draftSha256": "778abef2f8e6befd7c503da97852a34b4b3591a8852bf4fd89de63998097df81",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-362",
+        "pdfPages": [
+          362,
+          363
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=363",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Cygnus cygnus Linnaeus, 1758",
+          "Статусу:  VII категория, Least Concern, LC. Монотиптъъ тър.Дъйнёлък фаунанын уруусунун 7"
+        ],
+        "decreeRecord": "decree-170-2009-3-33",
+        "annex": 3,
+        "row": 33,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Cygnus cygnus",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Cygnus cygnus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2498347",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Cygnus cygnus (Linnaeus, 1758)",
+        "acceptedScientificNameAsReturned": "Cygnus cygnus (Linnaeus, 1758)",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy",
+        "biology-adw",
+        "photo-commons"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=363",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10",
+        "https://api.gbif.org/v1/species/match?strict=true&name=Cygnus%20cygnus",
+        "https://animaldiversity.org/accounts/Cygnus_cygnus/",
+        "https://commons.wikimedia.org/wiki/File:Cygnus_cygnus_070416_IOL.jpg"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 167,
+        "overviewWordsRu": 158,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru",
+          "en"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "licensed_private_draft",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Cygnus_cygnus_070416_IOL.jpg",
+        "path": "assets/images/species/cygnus-cygnus.webp",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "author": "Pascal Aleixandre",
+        "revisionId": 1247763309,
+        "cachedRightsCheckPassed": true,
+        "includedInReviewPacket": true
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Современное гнездование и численность",
+        "Точные годы старых сезонных учётов"
+      ],
+      "editorialNotes": [
+        "Ретроспективное гнездование Сон-Куля не заявлено текущим. Расхождение старого числа пар сохранено отдельно; современная глобальная категория IUCN не устанавливалась."
+      ],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "aythya-nyroca",
+      "scientificName": "Aythya nyroca",
+      "nationalName": "Aythya nyroca",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "524239f146547d2f6fb591255f80442df16fd007c2bb2ea72191f98c1aef633d",
+      "draftFile": "data/research/bulk-25-content/drafts/aythya-nyroca.json",
+      "draftSha256": "3dce980d082ab15eaa9fdc04df19a13cde5c474a9f087821ace05d8236333481",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-364",
+        "pdfPages": [
+          364,
+          365
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=365",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Aythya nyroca (Guldenstadt, 1770)",
+          "Статусу: VI категория. Near Threatened, NT. Кыргызстандын фаунасында уруунун 4 търдън бирёё."
+        ],
+        "decreeRecord": "decree-170-2009-3-18",
+        "annex": 3,
+        "row": 18,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Aythya nyroca",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Aythya nyroca",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2498259",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Aythya nyroca (Güldenstädt, 1770)",
+        "acceptedScientificNameAsReturned": "Aythya nyroca (Güldenstädt, 1770)",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy",
+        "biology-museum",
+        "photo-commons"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=365",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9",
+        "https://api.gbif.org/v1/species/match?strict=true&name=Aythya%20nyroca",
+        "https://www.vertebradosibericos.org/aves/identificacion/aytnyrid.html",
+        "https://commons.wikimedia.org/wiki/File:Ferruginous_Pochard_Aythya_nyroca_Male_by_Dr._Raju_Kasambe_DSCN2746_(12).jpg"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 156,
+        "overviewWordsRu": 153,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru",
+          "en"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "licensed_private_draft",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Ferruginous_Pochard_Aythya_nyroca_Male_by_Dr._Raju_Kasambe_DSCN2746_(12).jpg",
+        "path": "assets/images/species/aythya-nyroca.webp",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "author": "Dr. Raju Kasambe",
+        "revisionId": 1251470049,
+        "cachedRightsCheckPassed": true,
+        "includedInReviewPacket": true
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Подтверждение гнездования в Кыргызстане",
+        "Подробная биология размножения",
+        "Датированные учёты и современная численность"
+      ],
+      "editorialNotes": [
+        "Музейный источник на испанском: language:null, поскольку модель метаданных поддерживает только KY/UZ/RU/EN; исходный язык es сохранён в исследовательском свидетельстве.",
+        "Возможное гнездование не переведено в подтверждённое; текущий охотничий статус не устанавливался."
+      ],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "mergus-serrator",
+      "scientificName": "Mergus serrator",
+      "nationalName": "Mergus serrator",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "c4346da13ffd70488d85e554eea20cc276ad6e2ba983bede4f882495502dbf0b",
+      "draftFile": "data/research/bulk-25-content/drafts/mergus-serrator.json",
+      "draftSha256": "868606d4c735d80345cc45de2f23019f493eb1d953390edf1118caa6d85c0962",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-366",
+        "pdfPages": [
+          366,
+          367
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=367",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Mergus serrator Linnaeus, 1758",
+          "Республикабызда Ысыккёл ойдуьунда уялайт. Мурда Ысыккёлдён башка дагы майда кёлдёрдё"
+        ],
+        "decreeRecord": "decree-170-2009-3-28",
+        "annex": 3,
+        "row": 28,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Mergus serrator",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Mergus serrator",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2498375",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Mergus serrator Linnaeus, 1758",
+        "acceptedScientificNameAsReturned": "Mergus serrator Linnaeus, 1758",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy",
+        "biology-adw",
+        "photo-commons"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=367",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10",
+        "https://api.gbif.org/v1/species/match?strict=true&name=Mergus%20serrator",
+        "https://animaldiversity.org/accounts/Mergus_serrator/",
+        "https://commons.wikimedia.org/wiki/File:Mergus_serrator_-New_Jersey_-USA_-winter-8.jpg"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 156,
+        "overviewWordsRu": 158,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru",
+          "en"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "licensed_private_draft",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Mergus_serrator_-New_Jersey_-USA_-winter-8.jpg",
+        "path": "assets/images/species/mergus-serrator.webp",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "author": "Peter Massas",
+        "revisionId": 1166517806,
+        "cachedRightsCheckPassed": true,
+        "includedInReviewPacket": true
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Современное гнездование",
+        "Год старой оценки численности",
+        "Данные о содержании в неволе"
+      ],
+      "editorialNotes": [
+        "Аудит 22.4: во всех четырёх коротких версиях явно указан источник 2006 года; историческое гнездование не подаётся как подтверждённое в 2026 году."
+      ],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "oxyura-leucocephala",
+      "scientificName": "Oxyura leucocephala",
+      "nationalName": "Oxyura leucocephala",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "e67b1693d11993462c461b3220c296251474e7cd1bbe57c2da6863fc0dc57d4e",
+      "draftFile": "data/research/bulk-25-content/drafts/oxyura-leucocephala.json",
+      "draftSha256": "50cf5255554c0ce5693a49821c2d0fa618cdfaf460cb1a4de340b3119a0425d0",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-368",
+        "pdfPages": [
+          368,
+          369
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=369",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Oxyura leucocephala (Scopoli, 1769 )",
+          "Казакстанда, Тъштък Сибирде уялайт. Иранда, Пакистанда, Индияда жана Жер Ортолук деьизде"
+        ],
+        "decreeRecord": "decree-170-2009-3-1",
+        "annex": 3,
+        "row": 1,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Oxyura leucocephala",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Oxyura leucocephala",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2498302",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Oxyura leucocephala (Scopoli, 1769)",
+        "acceptedScientificNameAsReturned": "Oxyura leucocephala (Scopoli, 1769)",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy",
+        "biology-adw",
+        "photo-commons"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=369",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9",
+        "https://api.gbif.org/v1/species/match?strict=true&name=Oxyura%20leucocephala",
+        "https://animaldiversity.org/accounts/Oxyura_leucocephala/",
+        "https://commons.wikimedia.org/wiki/File:Oxyura_leucocephala,_Clot-de-Galvany,_Alicante_16.jpg"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 154,
+        "overviewWordsRu": 159,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru",
+          "en"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "licensed_private_draft",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Oxyura_leucocephala,_Clot-de-Galvany,_Alicante_16.jpg",
+        "path": "assets/images/species/oxyura-leucocephala.webp",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "author": "Ferran Pestaña from Barcelona, España",
+        "revisionId": 1155666367,
+        "cachedRightsCheckPassed": true,
+        "includedInReviewPacket": true
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Современный пролёт и численность в Кыргызстане",
+        "Локальная биология",
+        "Территориальная применимость старых больших чисел"
+      ],
+      "editorialNotes": [
+        "Числа 100–4500 из национальной статьи не имеют ясного территориального охвата и не записаны как популяция Кыргызстана. Размножение в справочнике общевидовое, не подтверждение местного гнездования."
+      ],
+      "legacyAliases": []
+    },
+    {
+      "candidateId": "gavia-arctica",
+      "scientificName": "Gavia arctica",
+      "nationalName": "Gavia arctica",
+      "disposition": "technically_ready",
+      "pipelineState": "ready_for_review",
+      "structuralChecksPassed": true,
+      "independentScientificReviewRequired": true,
+      "eligibleForIndependentApprovalReview": true,
+      "approval": null,
+      "fingerprint": "43cb8be38549ed70936372ac3d450f64da9dab37f49f72d173c3e1a27a99fcb1",
+      "draftFile": "data/research/bulk-25-content/drafts/gavia-arctica.json",
+      "draftSha256": "f658181bc5527d1dce5e098d506e8e367fe9ab48a3fe329328b43e31bc9afdea",
+      "nationalEvidence": {
+        "bookRecord": "book-2006-370",
+        "pdfPages": [
+          370,
+          371
+        ],
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=371",
+        "sourceYear": 2006,
+        "headingAsPrinted": [
+          "Gavia arctica  (Linnaeus, 1758)",
+          "Польшанын, европалык Россиянын тъндък бёлъгънън ири кёлмёлёръндё тараган. Уралдан ары"
+        ],
+        "decreeRecord": "decree-170-2009-3-52",
+        "annex": 3,
+        "row": 52,
+        "decreeUrl": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10",
+        "decreeYear": 2009,
+        "decreeNameAsPrinted": "Gavia arctica",
+        "decreeRelationship": "same_name",
+        "currentLegalStatus": null
+      },
+      "taxonomy": {
+        "canonicalName": "Gavia arctica",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2481959",
+        "sourceId": "gbif-taxonomy",
+        "requestedScientificName": "Gavia arctica (Linnaeus, 1758)",
+        "acceptedScientificNameAsReturned": "Gavia arctica (Linnaeus, 1758)",
+        "acceptedNameIsProposal": false
+      },
+      "sourceIds": [
+        "national-book",
+        "national-list-1",
+        "gbif-taxonomy",
+        "biology-adw",
+        "photo-commons"
+      ],
+      "sourceUrls": [
+        "https://macrolepidoptera.ru/lnk/282.pdf#page=371",
+        "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10",
+        "https://api.gbif.org/v1/species/match?strict=true&name=Gavia%20arctica",
+        "https://animaldiversity.org/accounts/Gavia_arctica/",
+        "https://commons.wikimedia.org/wiki/File:Gavia_arctica_(Black-throated_Loon_or_Black-throated_Diver)_on_nest.jpg"
+      ],
+      "texts": {
+        "shortLanguages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "shortCharsRu": 159,
+        "overviewWordsRu": 165,
+        "fullLanguages": [
+          "ru"
+        ],
+        "fullFallbackLanguage": "ru",
+        "nameLanguages": [
+          "ru",
+          "en"
+        ],
+        "nameLanguageForKy": "ru",
+        "translationsIndependentlyReviewed": false
+      },
+      "photo": {
+        "status": "licensed_private_draft",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Gavia_arctica_(Black-throated_Loon_or_Black-throated_Diver)_on_nest.jpg",
+        "path": "assets/images/species/gavia-arctica.webp",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "author": "Åsa Berndtsson",
+        "revisionId": 1109210799,
+        "cachedRightsCheckPassed": true,
+        "includedInReviewPacket": true
+      },
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "missingFacts": [
+        "Современное гнездование и численность",
+        "Год прежнего учёта",
+        "Зимняя диагностика и локальная биология"
+      ],
+      "editorialNotes": [
+        "Национальная категория CR: R относится к Кыргызстану в издании 2006 года. Глобальная IUCN-категория не выводилась из неё. Фото гнездящейся птицы не подтверждает гнездование на Иссык-Куле."
+      ],
+      "legacyAliases": []
+    }
+  ]
+}

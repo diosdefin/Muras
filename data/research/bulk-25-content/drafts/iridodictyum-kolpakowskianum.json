@@ -1,0 +1,263 @@
+{
+  "id": "iridodictyum-kolpakowskianum",
+  "scientificName": "Iris kolpakowskiana",
+  "names": {
+    "ru": "Иридодиктиум Колпаковского",
+    "ky": null,
+    "uz": null,
+    "en": null
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Liliopsida",
+    "order": "Asparagales",
+    "family": "Iridaceae",
+    "genus": "Iris"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Iridodictyum kolpakowskianum",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Лёссовые, мелкоземистые и каменистые склоны предгорий и нижнего горного пояса.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Массовый сбор растений на букеты и выкапывание подземных органов.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В издании 2006 года рекомендованы оценка запасов, рациональное использование пастбищ, ботанический заказник и полный запрет сбора и продажи цветов.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/iridodictyum-kolpakowskianum.webp",
+      "width": 1200,
+      "height": 1800,
+      "sha256": "a473358b2097c103a64cfc2366c7fcf469c1b83ca43c1a359405eb0b773039aa",
+      "author": "chernoburko",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Iridodictyum_kolpakowskianum.jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Iridodictyum kolpakowskianum.jpg — chernoburko, CC BY 2.0; Wikimedia Commons.",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+        "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Iris kolpakowskiana (в Commons: Iridodictyum kolpakowskianum), хребет Жетыжол, Казахстан; не наблюдение в Кыргызстане.",
+        "ky": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=101",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 25",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Iridodictyum kolpakowskianum",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/5299049",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview"
+      ],
+      "taxonId": "gbif:5299049"
+    },
+    {
+      "id": "photo-commons",
+      "title": "Late march, Zhetyzhol mountain range, Kazakhstan",
+      "publisher": "Wikimedia Commons; chernoburko",
+      "url": "https://commons.wikimedia.org/wiki/File:Iridodictyum_kolpakowskianum.jpg",
+      "accessedAt": "2026-10-14",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Ранневесенний луковичный ирис с фиолетовым цветком, белым пятном и жёлтым гребнем. В Кыргызстане описан в предгорьях Таласского и Кыргызского хребтов.",
+        "ky": "Эрте жазда гүлдөгөн пияз түптүү ирис. Гүлү кызгылт көк, ак тактуу жана сары кырдуу. Кыргызстанда Талас жана Кыргыз тоо кыркаларынын этектеринде сүрөттөлгөн.",
+        "uz": "Erta bahorda gullaydigan piyozli iris; guli binafsha, oq dogʻli va sariq qirrali. Qirgʻizistonda Talas va Qirgʻiz tizmalarining etaklarida qayd etilgan.",
+        "en": "An early-spring bulbous iris with a violet flower, white patch and yellow crest. In Kyrgyzstan it is recorded from the foothills of the Talas and Kyrgyz ranges."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Иридодиктиум Колпаковского известен также как Iris kolpakowskiana: оба имени приведены в национальной книге, а сохранённая сверка GBIF подтверждает принятие второго. Растение невысокое, с яйцевидной луковицей в сетчато-волокнистых оболочках. Одноцветковый стебель лишён листьев; три прикорневых листа у основания объединены общим влагалищем. Фиолетовый цветок отличается белым пятном на наружных долях околоцветника и жёлтым гребнем.\n\nВ Кыргызстане надёжно указаны предгорья Таласского и Кыргызского хребтов. Упоминание Ферганского хребта сами авторы считают требующим проверки, поэтому оно не использовано как подтверждённое присутствие. Растение занимает лёссовые, мелкоземистые и каменистые склоны предгорий и нижнего пояса. Цветение приходится на март–апрель, плодоношение — на май–июнь; размножение семенное.\n\nИсточник отмечает сокращение мест произрастания около населённых пунктов и зон отдыха, массовый сбор на букеты и выкапывание подземных органов. Рекомендованы оценка природных запасов, рациональное использование пастбищ, ботанический заказник и запрет сбора и продажи цветов. Историческая категория VU не заменяет актуальную оценку. Фотография из Казахстана служит иллюстрацией вида, а не доказательством находки в Кыргызстане.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Луковица яйцевидная, толщиной 1–1,5 см, с сетчато-волокнистыми оболочками. Стебель 8–20 см, безлистный, одноцветковый; три прикорневых листа. Цветок фиолетовый, длиной 4–6 см, с белым пятном на наружных долях и жёлтым гребнем. Плод — ребристая трёхгнёздная коробочка.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Ранневесенний эфемероид лёссовых, мелкоземистых и каменистых склонов. Книга отмечает сокращение участков произрастания возле населённых пунктов и зон отдыха; количественный размер этого сокращения не установлен.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная статья указывает семенное размножение, цветение в марте–апреле и плодоношение в мае–июне. В культуре Бишкекского ботанического сада цветёт в первой половине апреля.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически подтверждены предгорья Таласского и Кыргызского хребтов. Нахождение в Ферганском хребте первоисточник считает непроверенным; оно не включено в подтверждённую географию.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

@@ -1,0 +1,309 @@
+{
+  "id": "cygnus-cygnus",
+  "scientificName": "Cygnus cygnus",
+  "names": {
+    "ru": "Лебедь-кликун",
+    "ky": null,
+    "uz": null,
+    "en": "Whooper Swan"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "genus": "Cygnus"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VII; LC (издание 2006)",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Мелководья крупных водоёмов с подводной и надводной растительностью; исторические зимовки на мелководьях Иссык-Куля.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Голодание при сильных морозах и замерзании кормовых мелководий.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Браконьерство.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальной книге 2006 года охранялся в Иссык-Кульском заповеднике.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические рекомендации: охрана зимовок, ООПТ западного Сон-Куля и регулярный мониторинг гнездования и зимовок.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/cygnus-cygnus.webp",
+      "width": 1555,
+      "height": 1555,
+      "sha256": "1cc4fd4c5a86bfbd98c7374b3784158fdb734419202d96dbd9ec394aeb84871e",
+      "author": "Pascal Aleixandre",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Cygnus_cygnus_070416_IOL.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Cygnus cygnus 070416 IOL.jpg — Pascal Aleixandre, CC BY-SA 3.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+        "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Лебедь-кликун на острове Олерон, Франция; не наблюдение в Кыргызстане.",
+        "ky": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=363",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "conservationMeasures.1",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 3, строка 33",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Cygnus cygnus",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Cygnus%20cygnus",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:2498347"
+    },
+    {
+      "id": "biology-adw",
+      "title": "Cygnus cygnus — Animal Diversity Web: Physical Description",
+      "publisher": "University of Michigan, Animal Diversity Web",
+      "url": "https://animaldiversity.org/accounts/Cygnus_cygnus/",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "content.appearance",
+        "content.overview"
+      ]
+    },
+    {
+      "id": "photo-commons",
+      "title": "Whooper Swan (Cygnus cygnus) - Photographed in the Island of Oleron, France",
+      "publisher": "Wikimedia Commons; Pascal Aleixandre",
+      "url": "https://commons.wikimedia.org/wiki/File:Cygnus_cygnus_070416_IOL.jpg",
+      "accessedAt": "2026-10-14",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Лебедь водоёмов с богатой растительностью. В национальной книге описаны зимовки на Иссык-Куле и прежнее гнездование на Сон-Куле; холод и браконьерство угрожают птицам.",
+        "ky": "Өсүмдүгү мол көлдөрдө жашаган ак куу. Улуттук китепте Ысык-Көлдө кышташы жана мурда Соң-Көлдө уялашы көрсөтүлгөн; катуу суук жана мыйзамсыз аңчылык коркунуч туудурат.",
+        "uz": "Oʻsimliklarga boy suv havzalarining oqqushi. Milliy kitobda Issiqkoʻlda qishlashi va ilgari Soʻngkoʻlda uya qurgani qayd etilgan; sovuq va brakonyerlik xavf tugʻdiradi.",
+        "en": "A swan of waters rich in vegetation. The national book records wintering at Issyk-Kul and former breeding at Song-Kul; severe cold and poaching threaten it."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Лебедь-кликун — крупная водоплавающая птица с белым взрослым оперением и жёлто-чёрным клювом. Общие признаки внешности подтверждены университетским справочником Animal Diversity Web, а сведения о Кыргызстане взяты отдельно из национальной Красной книги. В издании 2006 года он характеризуется как редкий гнездящийся вид, обычный во время миграций и зимовки. Исторические сообщения о гнездовании на Сон-Куле не подтверждают его сохранение в наши дни.\n\nКликун использует мелководья крупных водоёмов, богатые подводной растительностью. Для прежних сон-кульских мест гнездования отмечены заросли осоки, для зимовки — мелководья Иссык-Куля. Питание в национальной статье растительное: водные и прибрежные растения. Половая зрелость указана на четвёртом году жизни, кладка включает до семи яиц; о потомстве заботятся оба родителя.\n\nСильные морозы и образование льда на кормовых мелководьях могут приводить к голоданию зимующих птиц. Браконьерство также названо угрозой. Авторы рекомендовали усиливать охрану зимовок, создать охраняемую территорию на западном берегу Сон-Куля и проводить регулярный мониторинг. Старые сезонные числа птиц не перенесены в общую численность. Категория VII, LC относится к исторической национальной оценке.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "biology-adw"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Взрослые птицы белые, с чёрными ногами; основание клюва жёлтое, кончик чёрный. Молодые серовато-бурые, с розоватым клювом и чёрным кончиком. Эти общевидовые признаки приведены по Animal Diversity Web, без отдельной диагностики кыргызстанских популяций.",
+        "en": null
+      },
+      "sourceIds": [
+        "biology-adw"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальном описании обычен на сезонных миграциях и зимовке. Использует богатые растительностью мелководья; замерзание кормовых участков Иссык-Куля при сильных морозах названо причиной зимнего голодания.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальной статье питается водными и прибрежными растениями. Состав рациона по видам растений и сезонные доли кормов не приведены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В книге 2006 года половая зрелость на четвёртом году жизни, кладка до семи яиц. Для гнезда используются обширные мелководья с надводной растительностью. Птенцов воспитывают оба родителя. Современное гнездование в Кыргызстане не подтверждено.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Историческое гнездование на Сон-Куле, пролёт на крупных водоёмах республики, зимовки на Иссык-Куле. Текущие места гнездования и новые наблюдения не добавлены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

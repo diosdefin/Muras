@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "documentType": "bulk-25-release-test-validation",
+  "auditedFromCommit": "1a213f4cb8f38a70e20129b1011b7fb1d698dd26",
+  "commands": [
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "logSha256": "1bc023d79c53d3241ae4e394f4cf5aedb22948abb20de5748d925b97dad6f1f6",
+      "localLog": ".generated/bulk-25-release/npm-test.log",
+      "tests": 276,
+      "passed": 276,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "command": "npm run data",
+      "exitCode": 0,
+      "logSha256": "64087e196ab2d19e0a4de75e73d304b5ae29d708963a93de50671edf681f9492",
+      "localLog": ".generated/bulk-25-release/npm-data.log"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "logSha256": "8a4f7786a849185d97b5119b2a0997464a33200ab868c3ebe62238e2775213bd",
+      "localLog": ".generated/bulk-25-release/npm-build.log"
+    }
+  ],
+  "newRegressionTests": 2,
+  "previousTestCount": 274,
+  "catalogCount": 40,
+  "archiveCount": 2,
+  "preservedBaselineFiles": 153,
+  "independentlyApproved": false,
+  "approvedForImport": 0,
+  "imported": 0
+}

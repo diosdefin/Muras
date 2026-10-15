@@ -8,7 +8,7 @@ import { canPublishImage } from '../src/data/species-model.js'
 import { PROJECT_ROOT } from './build-data.mjs'
 
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex')
-export const IMPORT_BRANCHES = ['feature/catalog-expansion', 'feature/species-content']
+export const IMPORT_BRANCHES = ['feature/catalog-expansion', 'feature/species-content', 'feature/bulk-import']
 export const canApplyOnBranch = branch => IMPORT_BRANCHES.includes(branch)
 const confined=(root,path)=>{const target=resolve(root,path),rel=relative(root,target);if(!rel||rel.startsWith('..')||rel.includes(':'))throw new Error(`Путь вне проекта: ${path}`);return target}
 export function webpMetadata(bytes){
@@ -43,15 +43,17 @@ export async function inspectAssets(root,species) {
   return errors
 }
 
-export async function importBatchFile(root,batchPath,{apply=false}={}){
+export async function importBatchFile(root,batchPath,{apply=false,expectedBatchSha256,requireAllValid=false}={}){
   const path=confined(root,'data/species.source.json'), lockPath=`${path}.import.lock`
   let lock,tempPath
   try{
     if(apply)lock=await open(lockPath,'wx')
     const before=await readFile(path), batchBytes=await readFile(confined(root,batchPath))
     if(batchBytes.length>16*1024*1024)throw new Error('Пакет превышает 16 MiB')
+    if(expectedBatchSha256!==undefined&&hash(batchBytes)!==expectedBatchSha256)throw new Error('Пакет изменился после редакторской проверки; запись отменена')
     const batch=JSON.parse(batchBytes.toString('utf8').replace(/^\uFEFF/,''))
     const plan=await planBatchImport(JSON.parse(before.toString('utf8')),batch,{validateAssets:s=>inspectAssets(root,s)})
+    if(requireAllValid&&plan.counts.rejected)throw new Error(`Весь пакет отменён: ${plan.results.filter(r=>r.status==='rejected').map(r=>`${r.candidateId}: ${r.errors.join('; ')}`).join('\n')}`)
     const report={...plan,sourceSha256:hash(before),mode:apply?'apply':'preview',applied:false};delete report.proposedSource
     if(apply&&plan.counts.added){
       const backup=confined(root,`.generated/import-backups/${batch.batchId}-${hash(before).slice(0,16)}.json`)

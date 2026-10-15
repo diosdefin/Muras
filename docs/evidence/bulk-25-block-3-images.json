@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "batchId": "bulk-25-content-3",
+  "receipts": [
+    {
+      "candidateId": "tulipa-zenaidae",
+      "status": "placeholder",
+      "reason": "Фото принятого широкого Tulipa lehmanniana не подтверждает национальную форму Tulipa zenaidae; один файл имеет противоречивую подпись behmiana."
+    },
+    {
+      "candidateId": "juno-orchioides",
+      "status": "placeholder",
+      "reason": "Поиск дал исторические PDF и небольшой файл с общей подписью; надёжность идентификации и качество требуют проверки."
+    },
+    {
+      "candidateId": "iridodictyum-kolpakowskianum",
+      "status": "prepared",
+      "reason": null,
+      "metadata": {
+        "license": "CC BY 2.0",
+        "author": "chernoburko",
+        "artistStatementSha256": "7368e3813b9e9a5c3ece2570067015ee9f938d0fcfc33f017e35a251072f35ae",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Iridodictyum_kolpakowskianum.jpg",
+        "revisionId": 1221390967,
+        "width": 1800,
+        "height": 2700,
+        "description": "Late march, Zhetyzhol mountain range, Kazakhstan",
+        "metadataUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=File%3AIridodictyum+kolpakowskianum.jpg&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids%7Ccontent&rvslots=main",
+        "accessedAt": "2026-10-14",
+        "originalSha256": "8a48e6a57a0b5bd5ea5cad6ae909c5a04ced7db176e6c62cc1caaf3d5969dad6"
+      },
+      "image": {
+        "path": "assets/images/species/iridodictyum-kolpakowskianum.webp",
+        "width": 1200,
+        "height": 1800,
+        "sha256": "a473358b2097c103a64cfc2366c7fcf469c1b83ca43c1a359405eb0b773039aa",
+        "author": "chernoburko",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Iridodictyum_kolpakowskianum.jpg",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "attribution": "Iridodictyum kolpakowskianum.jpg — chernoburko, CC BY 2.0; Wikimedia Commons.",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+          "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Iris kolpakowskiana (в Commons: Iridodictyum kolpakowskianum), хребет Жетыжол, Казахстан; не наблюдение в Кыргызстане.",
+          "ky": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-14",
+        "reviewer": "Codex: технический визуальный просмотр",
+        "independentTaxonomicApproval": false,
+        "note": "Файл целый; фиолетовый цветок, белое пятно и жёлтый гребень согласуются с национальным описанием. Категория Commons определяет принятый вид Iris kolpakowskiana, ранг SPECIES."
+      }
+    },
+    {
+      "candidateId": "thesium-minkwitzianum",
+      "status": "placeholder",
+      "reason": "Точные поиски принятого и национального имени не дали пригодных файлов."
+    },
+    {
+      "candidateId": "delphinium-knorringianum",
+      "status": "placeholder",
+      "reason": "Точный поиск не дал пригодного файла."
+    }
+  ]
+}

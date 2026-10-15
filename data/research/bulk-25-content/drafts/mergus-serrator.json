@@ -1,0 +1,309 @@
+{
+  "id": "mergus-serrator",
+  "scientificName": "Mergus serrator",
+  "names": {
+    "ru": "Длинноносый крохаль",
+    "ky": null,
+    "uz": null,
+    "en": "Red-breasted Merganser"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "genus": "Mergus"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VII; LC (издание 2006)",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Водоёмы с прибрежными кустарниками и растительностью, где наземные гнёзда могут быть укрыты.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Гибель в рыболовных сетях во время ныряния.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Уничтожение прибрежной растительности и беспокойство.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге 2006 года охранялся на участках Иссык-Кульского государственного заповедника.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические рекомендации: ограничение сетевого лова в Тюпском заливе в период выведения птенцов, мониторинг и учёт.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/mergus-serrator.webp",
+      "width": 1800,
+      "height": 1111,
+      "sha256": "9d85633340e60994021d1d3b41ca9641e96ece515318419895f69dc85358af41",
+      "author": "Peter Massas",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Mergus_serrator_-New_Jersey_-USA_-winter-8.jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Mergus serrator -New Jersey -USA -winter-8.jpg — Peter Massas, CC BY-SA 2.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+        "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Самец длинноносого крохаля зимой в Нью-Джерси, США; не наблюдение в Кыргызстане.",
+        "ky": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=367",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "conservationMeasures.1",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 3, строка 28",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Mergus serrator",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Mergus%20serrator",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:2498375"
+    },
+    {
+      "id": "biology-adw",
+      "title": "Mergus serrator — Animal Diversity Web: Physical Description",
+      "publisher": "University of Michigan, Animal Diversity Web",
+      "url": "https://animaldiversity.org/accounts/Mergus_serrator/",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "content.appearance",
+        "content.overview"
+      ]
+    },
+    {
+      "id": "photo-commons",
+      "title": "A male Red-breasted Merganser at Browns Point Marina, Keyport, New Jersey, USA in winter.",
+      "publisher": "Wikimedia Commons; Peter Massas",
+      "url": "https://commons.wikimedia.org/wiki/File:Mergus_serrator_-New_Jersey_-USA_-winter-8.jpg",
+      "accessedAt": "2026-10-14",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "По книге 2006 года крохаль Иссык-Куля питается мелкой рыбой и беспозвоночными, гнездится в прибрежных зарослях. Основная названная угроза — рыболовные сети.",
+        "ky": "2006-жылкы китепте Ысык-Көлдөгү чумкуучу өрдөк катары сүрөттөлгөн. Майда балык жана омурткасыздар менен азыктанып, жээктеги өсүмдүктөрдө уялайт; балык торлору коркунуч туудурат.",
+        "uz": "2006-yilgi kitobda Issiqkoʻldan qayd etilgan shoʻngʻuvchi oʻrdak. Mayda baliq va umurtqasizlar bilan oziqlanib, sohil oʻsimliklarida uya quradi; baliq toʻrlari xavf tugʻdiradi.",
+        "en": "The 2006 national book records this diving duck at Issyk-Kul, eating small fish and invertebrates and nesting in shoreline vegetation. Fishing nets are the main cited threat."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Длинноносый крохаль — ныряющая утка с длинным тонким клювом, края которого помогают удерживать рыбную добычу. Университетский справочник описывает выраженные различия полов: у самца в брачном оперении тёмно-зелёная голова, белый ошейник и пестроватая грудь. Эти общие признаки внешности отделены от национальных сведений о распространении. Красная книга 2006 года связывает гнездование в Кыргызстане с Иссык-Кульской котловиной, прежде всего восточной частью озера.\n\nГнёзда устраиваются на земле в прибрежных зарослях и выстилаются пухом. Национальный текст указывает гнездование в мае–июне и кладки из восьми–десяти яиц. Иногда наблюдаются объединённые выводки с одной самкой, однако причины этого явления авторы не считают окончательно выясненными. Пища включает мелкую рыбу и водных беспозвоночных.\n\nГлавная указанная угроза — гибель в рыболовных сетях при нырянии. Уничтожение прибрежной растительности и беспокойство также могут вредить птицам. В книге рекомендованы сезонное ограничение сетевого лова в Тюпском заливе, мониторинг и учёты. Предположение о десяти–пятнадцати гнездящихся парах не имеет года и не перенесено в поле численности. Категория VII, LC историческая, а нынешнее гнездование требует проверки.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "biology-adw"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По Animal Diversity Web длина тела 51–64 см; клюв длинный, тонкий, с зубчатыми краями. Самец в брачном оперении имеет тёмно-зелёную голову, белый ошейник, пестроватую грудь и серые бока. Общевидовые признаки не заменяют локальных наблюдений.",
+        "en": null
+      },
+      "sourceIds": [
+        "biology-adw"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная статья описывает гнездование в прибрежных кустарниках и предполагает зимовку значительной части птиц на Иссык-Куле. Птицы ныряют за пищей, что делает их уязвимыми к сетям; предполагаемая зимняя оседлость не объявлена установленной для всех особей.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальной книге питается мелкой рыбой и водными беспозвоночными. Доли кормов и конкретные виды добычи не приведены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Гнездование по национальному источнику — май–июнь. Гнёзда на земле среди прибрежной растительности, выстланы пухом; кладка 8–10 яиц. Объединённые выводки отмечены, но их происхождение в статье не установлено.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В издании 2006 года в Кыргызстане указан в Иссык-Кульской котловине; сохранившееся гнездование связывалось с востоком озера. Современное присутствие и гнездовые участки не обновлялись.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

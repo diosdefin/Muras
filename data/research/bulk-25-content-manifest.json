@@ -1,0 +1,124 @@
+{
+  "schemaVersion": 1,
+  "documentType": "bulk-25-content-manifest",
+  "sourceCommit": "006235532cc14e3ec26ccd9c56c9e6fd083f30e9",
+  "masterRegistryFingerprint": "dce90285100e1502c2250bc486f7448c1e1ab0790fada5a5445638a2f7577ad5",
+  "registryId": "bulk-25-content",
+  "batchSize": 5,
+  "candidateIds": [
+    "eminium-regelii",
+    "eremurus-zenaidae",
+    "eremurus-zoae",
+    "allium-dodecadontum",
+    "allium-semenovii",
+    "tulipa-affinis",
+    "tulipa-anadroma",
+    "tulipa-korolkowii",
+    "tulipa-platystemon",
+    "tulipa-tetraphylla",
+    "tulipa-zenaidae",
+    "juno-orchioides",
+    "iridodictyum-kolpakowskianum",
+    "thesium-minkwitzianum",
+    "delphinium-knorringianum",
+    "urocerus-sah",
+    "masaris-longicornis",
+    "varanus-griseus-caspius",
+    "eryx-tataricus",
+    "lyrurus-tetrix",
+    "cygnus-cygnus",
+    "aythya-nyroca",
+    "mergus-serrator",
+    "oxyura-leucocephala",
+    "gavia-arctica"
+  ],
+  "blocks": [
+    {
+      "number": 1,
+      "batchId": "bulk-25-content-1",
+      "candidateIds": [
+        "eminium-regelii",
+        "eremurus-zenaidae",
+        "eremurus-zoae",
+        "allium-dodecadontum",
+        "allium-semenovii"
+      ],
+      "status": "ready_for_independent_review",
+      "commit": "7e0b5585c67b18e8bc8476c77602844fa660ec71",
+      "preparedCount": 5,
+      "photoCount": 1,
+      "readyForReviewCount": 5,
+      "blockedCount": 0
+    },
+    {
+      "number": 2,
+      "batchId": "bulk-25-content-2",
+      "candidateIds": [
+        "tulipa-affinis",
+        "tulipa-anadroma",
+        "tulipa-korolkowii",
+        "tulipa-platystemon",
+        "tulipa-tetraphylla"
+      ],
+      "status": "audited_with_scientific_blockers",
+      "commit": "0000c731ad10f923de813740b7f55ef3eceb2311",
+      "preparedCount": 5,
+      "photoCount": 0,
+      "readyForReviewCount": 4,
+      "blockedCount": 1
+    },
+    {
+      "number": 3,
+      "batchId": "bulk-25-content-3",
+      "candidateIds": [
+        "tulipa-zenaidae",
+        "juno-orchioides",
+        "iridodictyum-kolpakowskianum",
+        "thesium-minkwitzianum",
+        "delphinium-knorringianum"
+      ],
+      "status": "ready_for_independent_review",
+      "commit": "ced98aa67690b252cbce29f08ca7d3a63e241e2b",
+      "preparedCount": 5,
+      "photoCount": 1,
+      "readyForReviewCount": 5,
+      "blockedCount": 0
+    },
+    {
+      "number": 4,
+      "batchId": "bulk-25-content-4",
+      "candidateIds": [
+        "urocerus-sah",
+        "masaris-longicornis",
+        "varanus-griseus-caspius",
+        "eryx-tataricus",
+        "lyrurus-tetrix"
+      ],
+      "status": "audited_with_scientific_blockers",
+      "commit": "c491e47de8c4ac76344e982e04546b4a8bc2f018",
+      "preparedCount": 5,
+      "photoCount": 3,
+      "readyForReviewCount": 4,
+      "blockedCount": 1
+    },
+    {
+      "number": 5,
+      "batchId": "bulk-25-content-5",
+      "candidateIds": [
+        "cygnus-cygnus",
+        "aythya-nyroca",
+        "mergus-serrator",
+        "oxyura-leucocephala",
+        "gavia-arctica"
+      ],
+      "status": "ready_for_independent_review",
+      "commit": "139a62c934d24ef8b2ab653feffe5177a051e855",
+      "preparedCount": 5,
+      "photoCount": 5,
+      "readyForReviewCount": 5,
+      "blockedCount": 0
+    }
+  ],
+  "publicationAllowed": false,
+  "releaseAudit": "docs/research/bulk-25-release-audit.md"
+}

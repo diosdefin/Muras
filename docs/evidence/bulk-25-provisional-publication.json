@@ -1,0 +1,1134 @@
+{
+  "schemaVersion": 1,
+  "documentType": "provisional-publication-validation",
+  "task": "22.5B",
+  "startedAtCommit": "e5afd9445fe61479674b6fb1686b9643a161a37c",
+  "branch": "feature/bulk-import",
+  "initialWorkingTreeClean": true,
+  "catalogBefore": 40,
+  "catalogAfter": 63,
+  "archiveCount": 2,
+  "addedIds": [
+    "eminium-regelii",
+    "eremurus-zenaidae",
+    "eremurus-zoae",
+    "allium-dodecadontum",
+    "allium-semenovii",
+    "tulipa-affinis",
+    "tulipa-korolkowii",
+    "tulipa-platystemon",
+    "tulipa-tetraphylla",
+    "tulipa-zenaidae",
+    "juno-orchioides",
+    "iridodictyum-kolpakowskianum",
+    "thesium-minkwitzianum",
+    "delphinium-knorringianum",
+    "urocerus-sah",
+    "masaris-longicornis",
+    "varanus-griseus-caspius",
+    "lyrurus-tetrix",
+    "cygnus-cygnus",
+    "aythya-nyroca",
+    "mergus-serrator",
+    "oxyura-leucocephala",
+    "gavia-arctica"
+  ],
+  "decisionFile": "data/research/publication-decisions/muras-22-5b-owner-provisional.json",
+  "scientificApproval": null,
+  "independentlyVerifiedNewRecords": 0,
+  "independentReviewer": null,
+  "approvedForImport": 0,
+  "newImageCount": 9,
+  "newPlaceholders": 14,
+  "totalCatalogImageFiles": 42,
+  "excludedIds": [
+    "tulipa-anadroma",
+    "eryx-tataricus"
+  ],
+  "beforeCatalogFingerprint": "1c8f7694ddf7358661e32736dffa68e63b7da493f1684f24485d23fb2d625434",
+  "existingCatalogFingerprint": "1c8f7694ddf7358661e32736dffa68e63b7da493f1684f24485d23fb2d625434",
+  "existingPublicProjectionUnchanged": true,
+  "archiveUnchanged": true,
+  "newScienceEqualsAuditedDrafts": true,
+  "registryAndManifestUnchanged": true,
+  "priorBaselineFilesUnchanged": [
+    "data/archive/demo-species.generated.json",
+    "data/backups/legacy-2026-10-12/README.md",
+    "data/backups/legacy-2026-10-12/images/processed/amur-tiger.png",
+    "data/backups/legacy-2026-10-12/images/processed/irbis.png",
+    "data/backups/legacy-2026-10-12/images/processed/whooping-crane.png",
+    "data/backups/legacy-2026-10-12/images/source/amur-tiger.jpg",
+    "data/backups/legacy-2026-10-12/images/source/irbis.jpg",
+    "data/backups/legacy-2026-10-12/images/source/whooping-crane.jpg",
+    "data/backups/legacy-2026-10-12/manifest.json",
+    "data/backups/legacy-2026-10-12/process_data.py",
+    "data/backups/legacy-2026-10-12/species.json",
+    "data/geography/occurrences.source.json",
+    "data/geography/source/ODbL-1.0.txt",
+    "data/geography/source/metadata.json",
+    "data/geography/source/regions.geojson",
+    "data/research/bulk-expansion-selection.json",
+    "data/research/catalog-40-population-notes.json",
+    "data/research/catalog-candidates.json",
+    "data/research/first-batch-regions.json",
+    "public/data/geography/ODbL-1.0.txt",
+    "public/data/geography/map.json",
+    "public/data/geography/metadata.json",
+    "public/data/geography/occurrences.json",
+    "public/data/geography/regions.geojson",
+    "public/data/quiz.json",
+    "public/favicon.svg",
+    "public/images/approved/argali-1.webp",
+    "public/images/approved/bearded-vulture-1.webp",
+    "public/images/approved/black-stork-1.webp",
+    "public/images/approved/central-asian-frog-1.webp",
+    "public/images/approved/central-asian-tortoise-1.webp",
+    "public/images/approved/christophs-clouded-yellow-1.webp",
+    "public/images/approved/cinereous-vulture-1.webp",
+    "public/images/approved/dalmatian-pelican-1.webp",
+    "public/images/approved/dog-stinkhorn-1.webp",
+    "public/images/approved/eduards-fritillary-1.webp",
+    "public/images/approved/egyptian-vulture-1.webp",
+    "public/images/approved/eurasian-lynx-1.webp",
+    "public/images/approved/european-glass-lizard-1.webp",
+    "public/images/approved/giant-robber-fly-1.webp",
+    "public/images/approved/golden-eagle-1.webp",
+    "public/images/approved/great-bustard-1.webp",
+    "public/images/approved/greigs-tulip-1.webp",
+    "public/images/approved/ibisbill-1.webp",
+    "public/images/approved/indian-crested-porcupine-1.webp",
+    "public/images/approved/irbis-1.webp",
+    "public/images/approved/kaufmanns-tulip-1.webp",
+    "public/images/approved/kolpakowskis-tulip-1.webp",
+    "public/images/approved/korzhinskys-pear-1.webp",
+    "public/images/approved/kostychevs-pasque-flower-1.webp",
+    "public/images/approved/manul-1.webp",
+    "public/images/approved/marbled-polecat-1.webp",
+    "public/images/approved/ostrowskis-tulip-1.webp",
+    "public/images/approved/predatory-bush-cricket-1.webp",
+    "public/images/approved/pskem-onion-1.webp",
+    "public/images/approved/saker-falcon-1.webp",
+    "public/images/approved/semenovs-fir-1.webp",
+    "public/images/approved/sievers-apple-1.webp",
+    "public/images/placeholder.svg",
+    "public/images/processed/.gitkeep",
+    "public/images/source/.gitkeep",
+    "public/licenses/photos/Apache-2.0.txt",
+    "public/licenses/photos/kolpakowskis-tulip-NOTICE.txt",
+    "public/robots.txt",
+    "src/App.vue",
+    "src/admin/AdminApp.vue",
+    "src/admin/admin.css",
+    "src/admin/components/ConfirmDialog.vue",
+    "src/admin/components/LocalizedFields.vue",
+    "src/admin/components/PhotoEditor.vue",
+    "src/admin/components/PopulationEditor.vue",
+    "src/admin/components/SourcePicker.vue",
+    "src/admin/components/SourcesEditor.vue",
+    "src/admin/components/SpeciesFields.vue",
+    "src/admin/data/images.js",
+    "src/admin/data/model.js",
+    "src/admin/data/repository.js",
+    "src/admin/locales/en.json",
+    "src/admin/locales/index.js",
+    "src/admin/locales/ky.json",
+    "src/admin/locales/ru.json",
+    "src/admin/locales/uz.json",
+    "src/admin/useAdminEditor.js",
+    "src/components/BrandLogo.vue",
+    "src/components/CatalogSearch.vue",
+    "src/components/ErrorNotice.vue",
+    "src/components/GroupFilter.vue",
+    "src/components/LanguageMenu.vue",
+    "src/components/PopulationInfo.vue",
+    "src/components/ScientificText.vue",
+    "src/components/SourceLink.vue",
+    "src/components/SpeciesCard.vue",
+    "src/components/SpeciesModal.vue",
+    "src/components/SpeciesPage.vue",
+    "src/components/SpeciesVisualization.vue",
+    "src/components/catalog.css",
+    "src/components/lesson/LessonDetails.vue",
+    "src/components/lesson/LessonPhoto.vue",
+    "src/components/lesson/LessonReferences.vue",
+    "src/components/lesson/LessonView.vue",
+    "src/components/map/MapOverviewPanel.vue",
+    "src/components/map/MapSection.vue",
+    "src/components/map/RegionMap.vue",
+    "src/components/map/RegionPanel.vue",
+    "src/components/map/RegionalSpecies.vue",
+    "src/components/map/map.css",
+    "src/components/quiz/QuizQuestion.vue",
+    "src/components/quiz/QuizResult.vue",
+    "src/components/quiz/QuizView.vue",
+    "src/components/support/SupportSpecies.vue",
+    "src/components/support/SupportView.vue",
+    "src/components/support/SupportWall.vue",
+    "src/components/support/support.css",
+    "src/composables/useCatalog.js",
+    "src/composables/useImageVisualization.js",
+    "src/composables/useLesson.js",
+    "src/composables/useLessonFullscreen.js",
+    "src/composables/useLocale.js",
+    "src/composables/useModalDialog.js",
+    "src/composables/useQuiz.js",
+    "src/composables/useSupportWall.js",
+    "src/data/brand.js",
+    "src/data/catalog-pagination.js",
+    "src/data/catalog-repository.js",
+    "src/data/catalog-search.js",
+    "src/data/geography/model.js",
+    "src/data/image-composition.js",
+    "src/data/lesson.js",
+    "src/data/localization.js",
+    "src/data/population.js",
+    "src/data/presentation.js",
+    "src/data/quiz/engine.js",
+    "src/data/quiz/history.js",
+    "src/data/quiz/model.js",
+    "src/data/quiz/questions.json",
+    "src/data/species-content.js",
+    "src/data/species-groups.js",
+    "src/data/species-routes.js",
+    "src/data/support/model.js",
+    "src/data/support/wall.js",
+    "src/data/visualization/engine.js",
+    "src/data/visualization/environment.js",
+    "src/locales/en.json",
+    "src/locales/index.js",
+    "src/locales/ky.json",
+    "src/locales/ru.json",
+    "src/locales/uz.json",
+    "src/main.js",
+    "src/style.css",
+    "data/research/redbook-master-registry.json"
+  ],
+  "intentionallyChangedBaselineFiles": [
+    "data/species.source.json",
+    "public/data/species.json",
+    "src/data/species-model.js"
+  ],
+  "dryRun": {
+    "schemaVersion": 1,
+    "mode": "dry-run",
+    "publicationStatus": "provisional",
+    "decisionId": "muras-22-5b-owner-provisional",
+    "counts": {
+      "processed": 23,
+      "added": 23,
+      "unchanged": 0,
+      "rejected": 0
+    },
+    "results": [
+      {
+        "index": 0,
+        "candidateId": "eminium-regelii",
+        "status": "added",
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "id": "eminium-regelii",
+          "scientificName": "Eminium regelii",
+          "group": "plants",
+          "imageCount": 1
+        }
+      },
+      {
+        "index": 1,
+        "candidateId": "eremurus-zenaidae",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "eremurus-zenaidae",
+          "scientificName": "Eremurus zenaidae",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 2,
+        "candidateId": "eremurus-zoae",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "eremurus-zoae",
+          "scientificName": "Eremurus zoae",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 3,
+        "candidateId": "allium-dodecadontum",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "allium-dodecadontum",
+          "scientificName": "Allium dodecadontum",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 4,
+        "candidateId": "allium-semenovii",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "allium-semenovii",
+          "scientificName": "Allium semenovii",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 5,
+        "candidateId": "tulipa-affinis",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "tulipa-affinis",
+          "scientificName": "Tulipa fosteriana",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 6,
+        "candidateId": "tulipa-korolkowii",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "tulipa-korolkowii",
+          "scientificName": "Tulipa korolkowii",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 7,
+        "candidateId": "tulipa-platystemon",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "tulipa-platystemon",
+          "scientificName": "Tulipa platystemon",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 8,
+        "candidateId": "tulipa-tetraphylla",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "tulipa-tetraphylla",
+          "scientificName": "Tulipa tetraphylla",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 9,
+        "candidateId": "tulipa-zenaidae",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "tulipa-zenaidae",
+          "scientificName": "Tulipa lehmanniana",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 10,
+        "candidateId": "juno-orchioides",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "juno-orchioides",
+          "scientificName": "Iris orchioides",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 11,
+        "candidateId": "iridodictyum-kolpakowskianum",
+        "status": "added",
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "id": "iridodictyum-kolpakowskianum",
+          "scientificName": "Iris kolpakowskiana",
+          "group": "plants",
+          "imageCount": 1
+        }
+      },
+      {
+        "index": 12,
+        "candidateId": "thesium-minkwitzianum",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "thesium-minkwitzianum",
+          "scientificName": "Chrysothesium minkwitzianum",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 13,
+        "candidateId": "delphinium-knorringianum",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "delphinium-knorringianum",
+          "scientificName": "Delphinium knorringianum",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 14,
+        "candidateId": "urocerus-sah",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "urocerus-sah",
+          "scientificName": "Urocerus sah",
+          "group": "arthropods",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 15,
+        "candidateId": "masaris-longicornis",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "masaris-longicornis",
+          "scientificName": "Masaris longicornis",
+          "group": "arthropods",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 16,
+        "candidateId": "varanus-griseus-caspius",
+        "status": "added",
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "id": "varanus-griseus-caspius",
+          "scientificName": "Varanus griseus caspius",
+          "group": "reptiles",
+          "imageCount": 1
+        }
+      },
+      {
+        "index": 17,
+        "candidateId": "lyrurus-tetrix",
+        "status": "added",
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "id": "lyrurus-tetrix",
+          "scientificName": "Lyrurus tetrix",
+          "group": "birds",
+          "imageCount": 1
+        }
+      },
+      {
+        "index": 18,
+        "candidateId": "cygnus-cygnus",
+        "status": "added",
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "id": "cygnus-cygnus",
+          "scientificName": "Cygnus cygnus",
+          "group": "birds",
+          "imageCount": 1
+        }
+      },
+      {
+        "index": 19,
+        "candidateId": "aythya-nyroca",
+        "status": "added",
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "id": "aythya-nyroca",
+          "scientificName": "Aythya nyroca",
+          "group": "birds",
+          "imageCount": 1
+        }
+      },
+      {
+        "index": 20,
+        "candidateId": "mergus-serrator",
+        "status": "added",
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "id": "mergus-serrator",
+          "scientificName": "Mergus serrator",
+          "group": "birds",
+          "imageCount": 1
+        }
+      },
+      {
+        "index": 21,
+        "candidateId": "oxyura-leucocephala",
+        "status": "added",
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "id": "oxyura-leucocephala",
+          "scientificName": "Oxyura leucocephala",
+          "group": "birds",
+          "imageCount": 1
+        }
+      },
+      {
+        "index": 22,
+        "candidateId": "gavia-arctica",
+        "status": "added",
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "id": "gavia-arctica",
+          "scientificName": "Gavia arctica",
+          "group": "birds",
+          "imageCount": 1
+        }
+      }
+    ],
+    "applied": false,
+    "scientificApproval": null,
+    "registryChanged": false
+  },
+  "application": {
+    "schemaVersion": 1,
+    "mode": "apply",
+    "publicationStatus": "provisional",
+    "decisionId": "muras-22-5b-owner-provisional",
+    "counts": {
+      "processed": 23,
+      "added": 23,
+      "unchanged": 0,
+      "rejected": 0
+    },
+    "results": [
+      {
+        "index": 0,
+        "candidateId": "eminium-regelii",
+        "status": "added",
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "id": "eminium-regelii",
+          "scientificName": "Eminium regelii",
+          "group": "plants",
+          "imageCount": 1
+        }
+      },
+      {
+        "index": 1,
+        "candidateId": "eremurus-zenaidae",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "eremurus-zenaidae",
+          "scientificName": "Eremurus zenaidae",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 2,
+        "candidateId": "eremurus-zoae",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "eremurus-zoae",
+          "scientificName": "Eremurus zoae",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 3,
+        "candidateId": "allium-dodecadontum",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "allium-dodecadontum",
+          "scientificName": "Allium dodecadontum",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 4,
+        "candidateId": "allium-semenovii",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "allium-semenovii",
+          "scientificName": "Allium semenovii",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 5,
+        "candidateId": "tulipa-affinis",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "tulipa-affinis",
+          "scientificName": "Tulipa fosteriana",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 6,
+        "candidateId": "tulipa-korolkowii",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "tulipa-korolkowii",
+          "scientificName": "Tulipa korolkowii",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 7,
+        "candidateId": "tulipa-platystemon",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "tulipa-platystemon",
+          "scientificName": "Tulipa platystemon",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 8,
+        "candidateId": "tulipa-tetraphylla",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "tulipa-tetraphylla",
+          "scientificName": "Tulipa tetraphylla",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 9,
+        "candidateId": "tulipa-zenaidae",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "tulipa-zenaidae",
+          "scientificName": "Tulipa lehmanniana",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 10,
+        "candidateId": "juno-orchioides",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "juno-orchioides",
+          "scientificName": "Iris orchioides",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 11,
+        "candidateId": "iridodictyum-kolpakowskianum",
+        "status": "added",
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "id": "iridodictyum-kolpakowskianum",
+          "scientificName": "Iris kolpakowskiana",
+          "group": "plants",
+          "imageCount": 1
+        }
+      },
+      {
+        "index": 12,
+        "candidateId": "thesium-minkwitzianum",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "thesium-minkwitzianum",
+          "scientificName": "Chrysothesium minkwitzianum",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 13,
+        "candidateId": "delphinium-knorringianum",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "delphinium-knorringianum",
+          "scientificName": "Delphinium knorringianum",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 14,
+        "candidateId": "urocerus-sah",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "urocerus-sah",
+          "scientificName": "Urocerus sah",
+          "group": "arthropods",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 15,
+        "candidateId": "masaris-longicornis",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "masaris-longicornis",
+          "scientificName": "Masaris longicornis",
+          "group": "arthropods",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 16,
+        "candidateId": "varanus-griseus-caspius",
+        "status": "added",
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "id": "varanus-griseus-caspius",
+          "scientificName": "Varanus griseus caspius",
+          "group": "reptiles",
+          "imageCount": 1
+        }
+      },
+      {
+        "index": 17,
+        "candidateId": "lyrurus-tetrix",
+        "status": "added",
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "id": "lyrurus-tetrix",
+          "scientificName": "Lyrurus tetrix",
+          "group": "birds",
+          "imageCount": 1
+        }
+      },
+      {
+        "index": 18,
+        "candidateId": "cygnus-cygnus",
+        "status": "added",
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "id": "cygnus-cygnus",
+          "scientificName": "Cygnus cygnus",
+          "group": "birds",
+          "imageCount": 1
+        }
+      },
+      {
+        "index": 19,
+        "candidateId": "aythya-nyroca",
+        "status": "added",
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "id": "aythya-nyroca",
+          "scientificName": "Aythya nyroca",
+          "group": "birds",
+          "imageCount": 1
+        }
+      },
+      {
+        "index": 20,
+        "candidateId": "mergus-serrator",
+        "status": "added",
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "id": "mergus-serrator",
+          "scientificName": "Mergus serrator",
+          "group": "birds",
+          "imageCount": 1
+        }
+      },
+      {
+        "index": 21,
+        "candidateId": "oxyura-leucocephala",
+        "status": "added",
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "id": "oxyura-leucocephala",
+          "scientificName": "Oxyura leucocephala",
+          "group": "birds",
+          "imageCount": 1
+        }
+      },
+      {
+        "index": 22,
+        "candidateId": "gavia-arctica",
+        "status": "added",
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "id": "gavia-arctica",
+          "scientificName": "Gavia arctica",
+          "group": "birds",
+          "imageCount": 1
+        }
+      }
+    ],
+    "applied": true,
+    "scientificApproval": null,
+    "registryChanged": false
+  },
+  "repeatedDryRun": {
+    "schemaVersion": 1,
+    "mode": "dry-run",
+    "publicationStatus": "provisional",
+    "decisionId": "muras-22-5b-owner-provisional",
+    "counts": {
+      "processed": 23,
+      "added": 0,
+      "unchanged": 23,
+      "rejected": 0
+    },
+    "results": [
+      {
+        "index": 0,
+        "candidateId": "eminium-regelii",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 1,
+        "candidateId": "eremurus-zenaidae",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 2,
+        "candidateId": "eremurus-zoae",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 3,
+        "candidateId": "allium-dodecadontum",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 4,
+        "candidateId": "allium-semenovii",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 5,
+        "candidateId": "tulipa-affinis",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 6,
+        "candidateId": "tulipa-korolkowii",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 7,
+        "candidateId": "tulipa-platystemon",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 8,
+        "candidateId": "tulipa-tetraphylla",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 9,
+        "candidateId": "tulipa-zenaidae",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 10,
+        "candidateId": "juno-orchioides",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 11,
+        "candidateId": "iridodictyum-kolpakowskianum",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 12,
+        "candidateId": "thesium-minkwitzianum",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 13,
+        "candidateId": "delphinium-knorringianum",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 14,
+        "candidateId": "urocerus-sah",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 15,
+        "candidateId": "masaris-longicornis",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 16,
+        "candidateId": "varanus-griseus-caspius",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 17,
+        "candidateId": "lyrurus-tetrix",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 18,
+        "candidateId": "cygnus-cygnus",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 19,
+        "candidateId": "aythya-nyroca",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 20,
+        "candidateId": "mergus-serrator",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 21,
+        "candidateId": "oxyura-leucocephala",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 22,
+        "candidateId": "gavia-arctica",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      }
+    ],
+    "applied": false,
+    "scientificApproval": null,
+    "registryChanged": false
+  },
+  "tests": {
+    "total": 284,
+    "passed": 284,
+    "failed": 0,
+    "skipped": 0,
+    "newSafetyAndCatalogTests": 8
+  },
+  "dataGenerationRepeatedByteIdentically": true,
+  "outputHashes": {
+    "public/data/species.json": "158dc93ab7e41d064958a0828db16d05f77e28d55d97c9c8218dfe3a56c4fb05",
+    "data/archive/demo-species.generated.json": "9741b9905ccae70935268bfe41daa790f23674417bfc69451a06e35c68eeb5e0"
+  },
+  "build": {
+    "passed": true,
+    "modules": 102,
+    "postbuild": true
+  },
+  "ui": {
+    "languageChecks": [
+      "ky",
+      "uz",
+      "ru",
+      "en"
+    ],
+    "newProfilesRendered": 23,
+    "cardsModalsLessonsChecked": true,
+    "searchAndFiltersPassed": true,
+    "pagination": [
+      24,
+      24,
+      15
+    ],
+    "existingEditorialNoteUsed": true,
+    "designChanged": false
+  },
+  "evidenceLogs": [
+    {
+      "path": ".generated/bulk-25-provisional/npm-test.log",
+      "sha256": "a93b81023d0f0a58ddddcdfa5cf20d7a23e9719b8d1aac8f62b2e5a54ee538e1",
+      "exitCode": 0
+    },
+    {
+      "path": ".generated/bulk-25-provisional/npm-data-1.log",
+      "sha256": "94b0db3c1a238cbbb6ecea660b914aeade2f53cde0fa93384192a414f69db757",
+      "exitCode": 0
+    },
+    {
+      "path": ".generated/bulk-25-provisional/npm-data-2.log",
+      "sha256": "94b0db3c1a238cbbb6ecea660b914aeade2f53cde0fa93384192a414f69db757",
+      "exitCode": 0
+    },
+    {
+      "path": ".generated/bulk-25-provisional/npm-build.log",
+      "sha256": "7a6d003f03513cceb5afde1f4aa4edcb6199a1d7ebf8402524ed442d46054aa8",
+      "exitCode": 0
+    }
+  ]
+}

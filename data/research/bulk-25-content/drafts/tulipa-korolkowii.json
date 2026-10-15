@@ -1,0 +1,253 @@
+{
+  "id": "tulipa-korolkowii",
+  "scientificName": "Tulipa korolkowii",
+  "names": {
+    "ru": "Тюльпан Королькова",
+    "ky": null,
+    "uz": null,
+    "en": "Korolkov’s Tulip"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Liliopsida",
+    "order": "Liliales",
+    "family": "Liliaceae",
+    "genus": "Tulipa"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Песчаные, щебнистые и каменистые склоны предгорий.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Массовый сбор цветов на букеты.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Распашка и неумеренный выпас скота.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Издание 2006 года рекомендует ботанические заказники и мониторинг популяций.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Историческая рекомендация: запрет сбора цветов и луковиц, ограничение выпаса до обсеменения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=87",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "conservationMeasures.1",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 17",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Tulipa korolkowii",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Tulipa%20korolkowii",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:5299568"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Невысокий тюльпан с ярко-красным одиночным цветком и курчавыми сизыми листьями. В Кыргызстане описан на предгорных склонах северной стороны Туркестанского хребта.",
+        "ky": "Жапыз жоогазын, жалгыз гүлү ачык кызыл, жалбырактары бозомук жана толкундуу. Кыргызстанда Түркстан тоо кыркасынын түндүк тарабындагы тоо этектеринде сүрөттөлгөн.",
+        "uz": "Past boʻyli lola; yakka guli yorqin qizil, barglari koʻkimtir va jingalak. Qirgʻizistonda Turkiston tizmasining shimoliy etaklaridagi yonbagʻirlarda qayd etilgan.",
+        "en": "A low tulip with a single bright red flower and wavy greyish leaves. In Kyrgyzstan it is described on foothill slopes of the northern Turkestan Range."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Тюльпан Королькова — яркоцветущее луковичное растение, национальная статья которого связывает основной ареал с Узбекистаном и Таджикистаном. В Кыргызстане он описан на северном макросклоне Туркестанского хребта. Небольшой стебель обычно достигает 10–20 см, иногда 30 см. Три сизых листа отличаются сильно курчавыми краями. Одиночный цветок ярко-красный, блестящий изнутри, с небольшим чёрным пятном у основания; в бутоне он поникает.\n\nРастение занимает песчаные, щебнистые и каменистые склоны предгорий. Русская часть книги указывает цветение в марте–апреле и плодоношение в июне–июле, а также семенное размножение. Английское резюме сужает цветение до апреля, поэтому календарные сроки требуют региональной проверки. Численность в природе не установлена.\n\nДекоративность делает вид уязвимым к сбору на букеты. Распашка и неумеренный выпас дополнительно повреждают местообитания. В статье приведён исторический опыт выращивания в ботанических садах Ташкента и Душанбе. Рекомендации включают заказники, мониторинг, запрет сбора цветов и луковиц и ограничение выпаса до образования семян. Национальная категория VU относится к изданию 2006 года.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Яйцевидная луковица диаметром 1,5–2,5 см с чёрными кожистыми оболочками. Стебель 10–20, иногда 30 см. Три сизых листа с сильно курчавыми краями. Цветок одиночный, ярко-красный, высотой до 6 см, с небольшим чёрным пятном у основания; пыльники жёлтые.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Предгорные песчаные, щебнистые и каменистые склоны. Национальный источник отмечает уязвимость местообитаний к распашке и неумеренному выпасу, а самих растений — к сбору на букеты.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Русская статья: цветение март–апрель, плодоношение июнь–июль, размножение семенами. Английское резюме указывает цветение в апреле; точный местный календарь требует полевого уточнения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В Кыргызстане исторически указан северный макросклон Туркестанского хребта. Общий ареал в статье — Юго-Западный Тянь-Шань и Памиро-Алай, с основной частью в Узбекистане и Таджикистане.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}
