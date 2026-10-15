@@ -18,7 +18,9 @@ import { speciesIdFromPath, speciesPath } from '../src/data/species-routes.js'
 const read = async p => JSON.parse(await readFile(`${PROJECT_ROOT}/${p}`, 'utf8'))
 const before = await read('data/backups/catalog-100-photos/species.source.json')
 const beforePublic = await read('data/backups/catalog-100-photos/public-species.json')
-const source = await read('data/species.source.json'), published = await read('public/data/species.json')
+// Task 23's immutable 85-image release; task 23.1 additions have their own audit.
+const source = await read('data/backups/catalog-100-photo-final/species.source.json')
+const published = await read('data/backups/catalog-100-photo-final/public-species.json')
 const journal = await read('data/research/catalog-100-photo-updates.json')
 const withoutImages = doc => ({ ...doc, catalog: doc.catalog.map(({ images, ...rest }) => rest) })
 const escape = s => s.replaceAll('&', '&amp;').replaceAll('"', '&quot;').replaceAll('<', '&lt;').replaceAll('>', '&gt;').replaceAll("'", '&#39;')
@@ -50,7 +52,8 @@ test('new photos have auditable per-file rights, precise source determinations a
     files.push(im.path.split('/').pop())
   }
   assert.equal(hashes.size, 85)
-  assert.deepEqual((await readdir(`${PROJECT_ROOT}/public/images/approved`)).sort(), files.sort())
+  const live = await read('public/data/species.json')
+  assert.deepEqual((await readdir(`${PROJECT_ROOT}/public/images/approved`)).sort(), live.flatMap(s => s.images.map(im => im.path.split('/').pop())).sort())
   for (const row of journal.records) {
     const { images, ...science } = source.catalog.find(s => s.id === row.id)
     assert.deepEqual(images, [row.image]); assert.equal(row.scientificFingerprint, fingerprint(science))

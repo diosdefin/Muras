@@ -225,6 +225,8 @@ test('committed public projection validates and contains no private image paths'
 
 test('licensed assets are local WebP, have declared dimensions, captions and matching fingerprints', async () => {
   const restoration = JSON.parse(await readFile(join(PROJECT_ROOT, 'data/research/catalog-100-photo-updates.json'), 'utf8'))
+  const finalPhotos = JSON.parse(await readFile(join(PROJECT_ROOT, 'data/research/catalog-100-photo-final-updates.json'), 'utf8'))
+  restoration.records.push(...finalPhotos.records.filter(r => r.status === 'published'))
   for (const s of source.catalog.filter(s => speciesPhoto(s))) {
     const image = speciesPhoto(s)
     const bytes = await readFile(join(PROJECT_ROOT, image.path))

@@ -1,0 +1,234 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-15",
+  "baselineCommit": "60151b53fe655ca46b5539751e2e4a4912037429",
+  "records": [
+    {
+      "id": "tulipa-zenaidae",
+      "scientificName": "Tulipa lehmanniana",
+      "kind": "herbarium_photograph",
+      "status": "published",
+      "sourcePlatform": "GBIF / Royal Botanic Gardens, Kew",
+      "sourcePage": "https://www.gbif.org/occurrence/5132706682",
+      "originalImageUrl": "https://d2jcv3kl45hlgi.cloudfront.net/3fdc424c529d13318fb9468f8bf103b5.jpg",
+      "originalSha256": "e7542f49066f7d891b35ee0f6cf9877a6d9e854263331d8652142e83a6e8100d",
+      "originalDimensions": {
+        "width": 8736,
+        "height": 11648
+      },
+      "privateOriginalPath": "D:/Muras-task-23-1-originals-01a13a83/tulipa-zenaidae.jpg",
+      "author": "Royal Botanic Gardens, Kew",
+      "creditRole": "rightsHolder; photographer unknown",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "identification": {
+        "documentedName": "Tulipa zenaidae Vved.",
+        "catalogNumber": "K003946675",
+        "basis": "Точное историческое имя Tulipa zenaidae в гербарной записи; синонимия с Tulipa lehmanniana уже сохранена в проекте.",
+        "independentDetermination": false
+      },
+      "evidence": {
+        "path": "docs/evidence/task23-1-gbif-expanded.json",
+        "occurrenceKey": 5132706682,
+        "mediaIndex": 0,
+        "primaryPageEvidence": null
+      },
+      "image": {
+        "path": "assets/images/species/tulipa-zenaidae-final.webp",
+        "width": 1350,
+        "height": 1800,
+        "sha256": "b891d7eb9093c066909e09715aa2a9c419e43378c222ab3d8208e0ea15865c6b",
+        "author": "Royal Botanic Gardens, Kew",
+        "originalPage": "https://www.gbif.org/occurrence/5132706682",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Royal Botanic Gardens, Kew (правообладатель; фотограф не указан). K003946675. CC BY 4.0.",
+        "modifications": [
+          "WebP: до 1800 px без апскейла, quality 82; EXIF/XMP удалены."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Гербарий Kew, K003946675: Tulipa zenaidae (в каталоге Tulipa lehmanniana). Культурный образец; не новое наблюдение в Кыргызстане.",
+          "ky": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "date": "2026-10-15",
+        "scope": "Просмотрен WebP, сверены сюжет, подпись и номер образца/наблюдения; независимое определение не заявляется."
+      },
+      "scientificFingerprint": "2bf1ebb5ca0ae48db4ab2313efe80ef53c78d6a654c493848433f4bc48f05ab7",
+      "sha256": "b891d7eb9093c066909e09715aa2a9c419e43378c222ab3d8208e0ea15865c6b"
+    },
+    {
+      "id": "barbastella-leucomelas",
+      "scientificName": "Barbastella leucomelas",
+      "kind": "museum_photograph",
+      "status": "unresolved",
+      "sourcePlatform": "GBIF / Naturalis Biodiversity Center",
+      "sourcePage": "https://www.gbif.org/occurrence/2432518020",
+      "originalImageUrl": "https://medialib.naturalis.nl/file/id/RMNH.MAM.35739_pos2/format/large",
+      "originalSha256": "55e7deb2ae015500058373720df26df4ef6a95eaa56956db9fb6b6f71e7b4484",
+      "originalDimensions": {
+        "width": 1920,
+        "height": 1277
+      },
+      "privateOriginalPath": "D:/Muras-task-23-1-originals-01a13a83/barbastella-leucomelas.jpg",
+      "author": "Naturalis Biodiversity Center",
+      "creditRole": "rightsHolder; photographer unknown",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "identification": {
+        "documentedName": "Barbastella leucomelas (Cretzschmar, 1826)",
+        "catalogNumber": "RMNH.MAM.35739",
+        "basis": "Исходное имя коллекционного экземпляра подтверждено RDF Naturalis. Изображение не заявлено как местная популяция исторического национального концепта.",
+        "independentDetermination": false
+      },
+      "evidence": {
+        "path": "docs/evidence/task23-1-gbif-expanded.json",
+        "occurrenceKey": 2432518020,
+        "mediaIndex": 2,
+        "primaryPageEvidence": "docs/evidence/task23-1-specimen-pages.json"
+      },
+      "image": {
+        "path": "assets/images/species/barbastella-leucomelas-final.webp",
+        "width": 1800,
+        "height": 1197,
+        "sha256": "a065a5a2e80efd950cc22ada7dfbf92a1ba9d1eccd38f7fe75b8162851f03730",
+        "author": "Naturalis Biodiversity Center",
+        "originalPage": "https://www.gbif.org/occurrence/2432518020",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Barbastella leucomelas; Barbastella leucomelas (Cretzschmar, 1826); Naturalis Biodiversity Center (правообладатель коллекции; фотограф не указан). RMNH.MAM.35739. CC0; https://www.gbif.org/occurrence/2432518020.",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP. Исходный лист/образец и пропорции сохранены."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Музейная шкурка Barbastella leucomelas, RMNH.MAM.35739, Naturalis Biodiversity Center; Египет, коллекция Рюппеля. Иллюстрирует номинальный таксон, а не кыргызстанскую популяцию; соответствие исторического национального концепта современным видам требует отдельной научной проверки.",
+          "ky": null,
+          "en": null
+        }
+      },
+      "rejectionReason": "На видимой старой этикетке Barbastella barbastellus, в RDF/GBIF — B. leucomelas; первичная подпись требует уточнения куратором. Снимок шкурки не публикуется.",
+      "rejectedFilePrivatePath": ".generated/task23-1/rejected/barbastella-leucomelas-museum.webp",
+      "sha256": "a065a5a2e80efd950cc22ada7dfbf92a1ba9d1eccd38f7fe75b8162851f03730"
+    },
+    {
+      "id": "barbastella-leucomelas",
+      "scientificName": "Barbastella leucomelas",
+      "kind": "scientific_illustration",
+      "status": "published",
+      "sourcePlatform": "Biodiversity Heritage Library / Wikimedia Commons",
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Vespertilio_leucomelas.jpg",
+      "primaryPage": "https://www.biodiversitylibrary.org/page/37140688",
+      "originalImageUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Vespertilio_leucomelas.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalSha256": "153404d3b7c6bb613cb386dc8a4e041db3c0fbb9a25ea41e046365db156ed9c9",
+      "originalDimensions": {
+        "width": 1471,
+        "height": 871
+      },
+      "privateOriginalPath": "D:/Muras-task-23-1-originals-01a13a83/barbastella-1826.jpg",
+      "author": "Cretzschmar, Philipp Jakob; Heyden, Carl Heinrich Georg von; Leuckart, F. S.; Rüppell, Eduard; Senckenbergische Naturforschende Gesellschaft.",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "identification": {
+        "documentedName": "Vespertilio leucomelas = Barbastella leucomelas",
+        "basis": "Подпись источника BHL и фрагмента таблицы; современный таксон указан в Commons. Не иллюстрация кыргызстанской популяции.",
+        "independentDetermination": false
+      },
+      "evidence": {
+        "path": "docs/evidence/task23-1-discovery.json",
+        "fileTitle": "File:Vespertilio leucomelas.jpg",
+        "revision": 976253275,
+        "rightsBasis": "Явный шаблон CC-BY-2.0 на странице конкретного файла. Расчёт срока PD не используется вместо лицензии."
+      },
+      "image": {
+        "path": "assets/images/species/barbastella-leucomelas-illustration.webp",
+        "width": 1471,
+        "height": 871,
+        "sha256": "0108cccdc7845c3202e41135ade5dadf5e6cb9b45ef4a49b00e9847db17c20ba",
+        "author": "Cretzschmar, Philipp Jakob; Heyden, Carl Heinrich Georg von; Leuckart, F. S.; Rüppell, Eduard; Senckenbergische Naturforschende Gesellschaft.",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Vespertilio_leucomelas.jpg",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "attribution": "Cretzschmar, Philipp Jakob; Heyden, Carl Heinrich Georg von; Leuckart, F. S.; Rüppell, Eduard; Senckenbergische Naturforschende Gesellschaft. BHL / Field Museum Library, Atlas zu der Reise im nördlichen Afrika, Taf. 28b. CC BY 2.0.",
+        "modifications": [
+          "WebP: до 1800 px без апскейла, quality 82; EXIF/XMP удалены."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Историческая научная иллюстрация Vespertilio leucomelas (=Barbastella leucomelas), табл. 28b, 1826–1828. Это не фотография и не изображение кыргызстанской популяции; национальный концепт требует проверки.",
+          "ky": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "date": "2026-10-15",
+        "scope": "Сопоставлена полная таблица 28 и фрагмент b с подписью Vespertilio leucomelas; не научное одобрение национального концепта."
+      },
+      "scientificFingerprint": "fa589dfb858d84656a9f07559e59697818d2eb18ecae85a684173f75ac4de3bc",
+      "sha256": "0108cccdc7845c3202e41135ade5dadf5e6cb9b45ef4a49b00e9847db17c20ba"
+    },
+    {
+      "id": "said-alievs-toad-agama",
+      "scientificName": "Phrynocephalus saidalievi",
+      "kind": "live_photograph",
+      "status": "published",
+      "sourcePlatform": "iNaturalist / GBIF",
+      "sourcePage": "https://www.inaturalist.org/photos/321386964",
+      "originalImageUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/321386964/original.jpg",
+      "originalSha256": "3dca1c27211d019e1b3633472a130920636d80fabbf8bd794895443c423d85d8",
+      "originalDimensions": {
+        "width": 2000,
+        "height": 1333
+      },
+      "privateOriginalPath": "D:/Muras-task-23-1-originals-01a13a83/saidalievi-inaturalist.jpg",
+      "author": "Вячеслав Юсупов",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "identification": {
+        "documentedName": "Phrynocephalus helioscopus saidalievi Sattorov, 1981",
+        "basis": "Точное сочетание Phrynocephalus helioscopus saidalievi — синоним Phrynocephalus saidalievi по Reptile Database и научным публикациям, не просто родительский helioscopus из GBIF. iNaturalist research grade; независимое переопределение не заявляется.",
+        "independentDetermination": false
+      },
+      "evidence": {
+        "path": "docs/evidence/task23-1-saIdalievi-sources.json",
+        "occurrenceKey": 5936193417,
+        "mediaIndex": 0,
+        "synonymSource": "https://reptile-database.reptarium.cz/Phrynocephalus/saidalievi",
+        "synonymLiterature": "https://doi.org/10.3390/d15020149",
+        "individualPhotoApi": "docs/evidence/task23-1-inaturalist.json"
+      },
+      "image": {
+        "path": "assets/images/species/said-alievs-toad-agama-final.webp",
+        "width": 1800,
+        "height": 1200,
+        "sha256": "e71d3343f5c6dd59b91f1cd912e243627228a82ef3db5007cf638d246b3a0816",
+        "author": "Вячеслав Юсупов",
+        "originalPage": "https://www.inaturalist.org/photos/321386964",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Вячеслав Юсупов, iNaturalist 184143965 / фото 321386964. CC BY 4.0.",
+        "modifications": [
+          "WebP: до 1800 px без апскейла, quality 82; EXIF/XMP удалены."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Phrynocephalus saidalievi (в источнике Ph. helioscopus saidalievi). Фото Вячеслава Юсупова, iNaturalist 184143965; не новое наблюдение в Кыргызстане. Местный подвид не установлен.",
+          "ky": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "date": "2026-10-15",
+        "scope": "Просмотрен WebP, сверены сюжет, подпись и номер образца/наблюдения; независимое определение не заявляется."
+      },
+      "scientificFingerprint": "3787c242d067149a2430127e4db69f12534423469b1b17afbbb753eb6d6ea57c",
+      "sha256": "e71d3343f5c6dd59b91f1cd912e243627228a82ef3db5007cf638d246b3a0816"
+    }
+  ]
+}
