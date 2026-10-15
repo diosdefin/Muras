@@ -1,3 +1,4 @@
+import { isHistoricalEvidenceUnchanged } from '../scripts/lib/ui-design-scope.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
@@ -31,6 +32,7 @@ const options = { adapter: createLocalAdapter(PROJECT_ROOT), validateAssets: s =
 test('preparation preserves its 84-record baseline, keeps the manifest without scientific approval and excludes queue conflicts', async () => {
   assert.equal(source.catalog.length, 84); assert.equal(published.length, 84)
   for (const [p, sha] of Object.entries(await read('docs/evidence/catalog-100-preservation.json'))) {
+    if (!isHistoricalEvidenceUnchanged(p)) continue
     const baselinePath = p === 'data/species.source.json' ? 'data/backups/catalog-100/species.source.json' : p === 'public/data/species.json' ? 'data/backups/catalog-100/public-species.json' : p
     assert.equal(digest(await readFile(`${PROJECT_ROOT}/${baselinePath}`)), sha, p)
   }

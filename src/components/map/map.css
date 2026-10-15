@@ -113,3 +113,42 @@
   .map-preview .map-overview { height: 340px; max-height: 340px; }
   .map-preview .map-region-gallery { gap: 6px; }
 }
+
+/* MURAS 100: fixed dimensions, with natural page scroll rather than an inner
+   scrollbar that traps touch / trackpad gestures. */
+.map-preview .map-region-summary { overflow: hidden; overflow-y: hidden; overscroll-behavior: auto; scrollbar-width: none; padding-right: 0; }
+.map-preview .map-region-gallery { margin-top: 12px; }
+.map-preview .map-region-review { margin-top: 9px; font-size: 12px; }
+.map-preview .map-overview-action { margin-top: auto; min-height: 44px; flex-shrink: 0; }
+.map-preview .map-overview-content { display: flex; flex-direction: column; }
+.map-preview .map-region-summary .map-overview-topline { flex-shrink: 0; }
+.map-preview .map-region-count, .map-preview .map-region-empty { margin-top: 10px; }
+.map-mobile-pager { display: none; }
+@media (max-width: 767px) {
+  .map-preview .map-layout { display: block; position: relative; }
+  .map-preview .map-layout > .region-map,
+  .map-preview .map-layout > .map-overview { width: 100%; height: 340px; min-height: 340px; max-height: 340px; }
+  .map-preview .map-mobile-show-map > .map-overview,
+  .map-preview .map-mobile-show-info > .region-map { display: none; }
+  .map-preview .map-overview h3 { font-size: clamp(25px, 6.5vw, 33px); }
+  .map-preview .map-overview-eyebrow { font-size: 11px; }
+  .map-preview .map-region-gallery { margin-top: 8px; gap: 6px; }
+  .map-preview .map-region-thumb { width: 78px; gap: 2px; }
+  .map-preview .map-region-thumb img { width: 48px; height: 48px; }
+  .map-preview .map-region-thumb span { font-size: 10px; line-height: 1.25; }
+  .map-preview .map-region-review { margin-top: 6px; }
+  .map-preview .map-overview-credits { font-size: 10px; }
+  .map-preview .map-overview-action { font-size: 13px; }
+  .map-mobile-pager { display: flex; justify-content: center; align-items: center; gap: 4px; margin-top: 12px; }
+  .map-mobile-pager button { width: 36px; height: 28px; display: grid; place-items: center; }
+  .map-mobile-pager button::after { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #b6c4b9; transition: background .2s, width .2s; }
+  .map-mobile-pager button[aria-pressed="true"]::after { width: 19px; border-radius: 10px; background: var(--ink); }
+}
+@media (prefers-reduced-motion: reduce) { .map-mobile-pager button::after { transition: none; } }
+
+/* Attribution remains accessible on demand, without changing the preview height. */
+.map-preview .map-region-summary { position: relative; }
+.map-preview .map-overview-credits { position: relative; flex: 0 0 auto; margin-top: 6px; }
+.map-preview .map-overview-credits summary { cursor: pointer; width: fit-content; min-height: 24px; text-decoration: underline; text-underline-offset: 3px; }
+.map-preview .map-overview-credit-links { position: absolute; bottom: 100%; left: 0; z-index: 3; width: min(300px, 80vw); max-height: 126px; padding: 12px; display: flex; flex-direction: column; gap: 5px; overflow-y: auto; background: white; border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 6px 24px #253b3222; }
+.map-preview .map-overview-credits:not([open]) .map-overview-credit-links { display: none; }
