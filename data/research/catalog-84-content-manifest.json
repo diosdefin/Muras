@@ -42,7 +42,7 @@
         "falco-rusticolus",
         "pandion-haliaetus"
       ],
-      "status": "prepared_for_check"
+      "status": "ready_for_owner_authorization"
     },
     {
       "number": 2,
@@ -56,7 +56,7 @@
         "circus-macrourus",
         "neomys-fodiens"
       ],
-      "status": "prepared_for_check"
+      "status": "ready_for_owner_authorization"
     },
     {
       "number": 3,
@@ -70,7 +70,7 @@
         "lutra-lutra",
         "allactaga-elater"
       ],
-      "status": "prepared_for_check"
+      "status": "ready_for_owner_authorization"
     }
   ],
   "publicationAllowed": false,
@@ -81,5 +81,7 @@
     "tulipa-anadroma",
     "eryx-tataricus"
   ],
-  "selectionLimit": 21
+  "selectionLimit": 21,
+  "readyCount": 21,
+  "reviewManifest": "data/research/catalog-84-review-manifest.json"
 }

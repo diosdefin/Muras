@@ -16,7 +16,9 @@ import { paginateCatalog, CATALOG_PAGE_SIZE } from '../src/data/catalog-paginati
 import { speciesPath, speciesIdFromPath } from '../src/data/species-routes.js'
 import { tr } from '../src/locales/index.js'
 const read = async p => JSON.parse(await readFile(`${PROJECT_ROOT}/${p}`, 'utf8'))
-const source = await read('data/species.source.json'), published = await read('public/data/species.json')
+// The 22.5B regression checks its immutable 63-record release; catalog-84 tests
+// separately validate the current publication and preservation of all these records.
+const source = await read('data/backups/catalog-84/species.source.json'), published = await read('data/backups/catalog-84/public-species.json')
 const baseline = await read('data/backups/bulk-25-provisional/species.source.json')
 const beforePublic = await read('data/backups/bulk-25-provisional/public-species.json')
 const manifest = await read('data/research/bulk-25-release-review-manifest.json')
