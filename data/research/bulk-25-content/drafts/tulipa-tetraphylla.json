@@ -1,0 +1,241 @@
+{
+  "id": "tulipa-tetraphylla",
+  "scientificName": "Tulipa tetraphylla",
+  "names": {
+    "ru": "Тюльпан четырёхлистный",
+    "ky": null,
+    "uz": null,
+    "en": "Quadrifolious Tulip"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Liliopsida",
+    "order": "Liliales",
+    "family": "Liliaceae",
+    "genus": "Tulipa"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Каменистые склоны; по национальному описанию 2006 года.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Весенний выпас скота.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Сбор цветов и выкапывание луковиц.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические рекомендации: ботанические заказники, мониторинг и запрет сбора цветов, выкапывания луковиц и выпаса.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=95",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 22",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Tulipa tetraphylla",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Tulipa%20tetraphylla",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:5299660"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Низкорослый тюльпан Внутреннего Тянь-Шаня с жёлтыми цветками и сизыми серповидными листьями. Растёт на каменистых склонах, цветёт в мае; численность неизвестна.",
+        "ky": "Ички Тянь-Шанда өскөн жапыз жоогазын. Гүлдөрү сары, жалбырактары бозомук, орок сымал. Таштуу беттерде өсүп, майда гүлдөйт; жаратылыштагы саны белгисиз.",
+        "uz": "Ichki Tyanshanning past boʻyli lolasi. Gullari sariq, barglari koʻkimtir va oʻroqsimon. Toshli yonbagʻirlarda oʻsadi, may oyida gullaydi; tabiatdagi soni nomaʼlum.",
+        "en": "A low tulip of the Inner Tien Shan with yellow flowers and greyish, sickle-shaped leaves. It grows on stony slopes and blooms in May; population size is unknown."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Тюльпан четырёхлистный представлен в Красной книге 2006 года как эндемик Внутреннего Тянь-Шаня. Несмотря на русское название, национальное описание допускает от трёх до семи листьев. Они сизые, серповидные, желобчатые, нередко курчавые, с белым краем. Голый стебель достигает 3–25 см. На растении бывает от одного до четырёх жёлтых цветков, поникающих в бутоне; снаружи листочки околоцветника имеют зелёные участки и жилку.\n\nВид описан на каменистых склонах. Его короткий вегетационный сезон включает цветение в мае. В статье приводится строение коробочки, однако срок плодоношения прямо отмечен как неизвестный. Нет количественного учёта популяций и сведений о культивировании. Наличие морфологического описания плода не даёт основания приписывать ему точный сезон созревания.\n\nОсновные угрозы — весенний выпас, сбор цветков и выкапывание луковиц. Специальные меры охраны в момент подготовки книги считались неразработанными. Авторы рекомендовали ботанические заказники, мониторинг и запрет изъятия растений и выпаса на участках произрастания. Национальная категория VU сохраняет привязку к историческому изданию и не подменяет актуальную оценку состояния.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Луковица широкояйцевидная, 1,5–3 см, с жёсткими коричневато-чёрными оболочками. Стебель 3–25 см. Листьев три–семь, сизые, серповидные и желобчатые. Цветков один–четыре, жёлтые; внешняя поверхность околоцветника имеет жёлто-зелёные или зелёные пятна и центральную зелёную жилку.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Луковичный эфемероид каменистых склонов Внутреннего Тянь-Шаня. Подробные высотные пределы и почвенные характеристики в национальной статье не указаны.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Цветёт в мае. Сроки плодоношения не установлены, способы размножения в статье не описаны.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Историческая национальная география: Внутренний Тянь-Шань. Подтверждённых современных точек наблюдения в используемых материалах нет.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

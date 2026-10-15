@@ -1,0 +1,254 @@
+{
+  "id": "juno-orchioides",
+  "scientificName": "Iris orchioides",
+  "names": {
+    "ru": "Юнона орхидная",
+    "ky": null,
+    "uz": null,
+    "en": null
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Liliopsida",
+    "order": "Asparagales",
+    "family": "Iridaceae",
+    "genus": "Iris"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Juno orchioides",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Мелкоземистые, глинистые, каменистые и щебнистые склоны от предгорий до среднего горного пояса.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Сбор цветов на букеты и выкапывание луковиц.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Вытаптывание скотом.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Статья 2006 года сообщает об охране с 1975 года по постановлению Совета Министров Киргизской ССР; актуальная правовая редакция не подтверждена.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендуются рациональное использование пастбищ, запрет сбора цветов, семян и луковиц и ботанический заказник.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=99",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "conservationMeasures.1",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 24",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Juno orchioides",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/5298228",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview"
+      ],
+      "taxonId": "gbif:5298228"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Весеннее луковичное растение с жёлтыми цветками и мясистыми корнями. В книге описано с Кыргызского и Таласского хребтов; размножается семенами и дочерними луковицами.",
+        "ky": "Сары гүлдүү, эттүү тамырлуу жазгы пияз түптүү өсүмдүк. Китепте Кыргыз жана Талас тоо кыркаларынан көрсөтүлгөн; уругу жана жаңы пияз түптөрү аркылуу көбөйөт.",
+        "uz": "Sariq gulli, etdor ildizli bahorgi piyozli oʻsimlik. Kitobda Qirgʻiz va Talas tizmalaridan qayd etilgan; urugʻlar va yangi piyozchalar orqali koʻpayadi.",
+        "en": "A spring bulbous plant with yellow flowers and fleshy roots. Recorded from the Kyrgyz and Talas ranges, it reproduces by seed and by forming new bulbs."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Юнона орхидная в национальной книге названа Juno orchioides; сохранённая точная сверка GBIF принимает название Iris orchioides. Это многолетнее весеннее растение с луковицей около 2 см и мясистыми шнуровидными корнями. Корни сохраняются после отмирания надземной части. Светло-зелёные серповидные листья имеют беловатый край. Цветки меняются от бледно-жёлтых до ярко-жёлтых и несут более тёмное пятно на наружных долях околоцветника.\n\nВ Кыргызстане статья указывает Кыргызский и Таласский хребты. Подходящие участки описаны как мелкоземистые, глинистые, каменистые и щебнистые склоны от предгорий до среднего пояса. Отрастание начинается во второй половине марта; цветение с середины апреля продолжается одну–две недели, а в июне созревают семена и надземная часть засыхает. Растение размножается семенами и образованием новых луковиц; сеянцы зацветают на четвёртый–пятый год.\n\nСбор на букеты, выкапывание луковиц и вытаптывание скотом названы угрозами. Книга сообщает о многолетнем успешном культивировании в ботаническом саду НАН КР и исторической охране с 1975 года. Рекомендуются разумное использование пастбищ, запрет изъятия растений и ботанический заказник. Современная численность не подтверждена.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Стебель 10–30 см с одним, чаще тремя–пятью цветками. Луковица около 2 см, с плотными бурыми оболочками; корни мясистые. Светло-зелёные листья серповидные, с белым краем. Цветки длиной 4,4–6 см, от бледно-жёлтых до ярко-жёлтых, с тёмным пятном на наружных долях.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Весенний луковичный многолетник предгорий и среднего горного пояса. Национальная статья отмечает сохранение мясистых корней после засыхания надземной части и успешную культуру в ботаническом саду НАН КР в течение более 40 лет к моменту издания книги.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Отрастает во второй половине марта; цветёт с середины апреля одну–две недели. Семена созревают в июне, после чего надземная часть засыхает. Размножение семенное и вегетативное, с образованием группы разновозрастных луковиц. Сеянцы зацветают на четвёртый–пятый год.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Кыргызский и Таласский хребты по национальному описанию 2006 года. Источник характеризует общий ареал как Западный и Северный Тянь-Шань; современные наблюдения не добавлены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

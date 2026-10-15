@@ -1,0 +1,4741 @@
+{
+  "schemaVersion": 1,
+  "documentType": "redbook-master-reconciliation",
+  "notForPublication": true,
+  "researchedAt": "2026-10-14",
+  "existing": [
+    {
+      "speciesId": "irbis",
+      "scientificName": "Panthera uncia",
+      "nationalRecordId": "book-2006-510",
+      "nationalName": "Uncia uncia",
+      "group": "mammals",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=511",
+      "relationship": "documented_historical_name_bridge",
+      "bridgeEvidence": [
+        {
+          "id": "iucn-gbif-2026-1",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Panthera+uncia&limit=5"
+        },
+        {
+          "id": "catsg-snow-leopard",
+          "url": "https://www.catsg.org/living-species-snowleopard"
+        }
+      ]
+    },
+    {
+      "speciesId": "argali",
+      "scientificName": "Ovis ammon",
+      "nationalRecordId": "book-2006-516",
+      "nationalName": "Ovis ammon",
+      "group": "mammals",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=517",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "iucn-gbif-2026-1",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Ovis+ammon&limit=5"
+        }
+      ]
+    },
+    {
+      "speciesId": "manul",
+      "scientificName": "Otocolobus manul",
+      "nationalRecordId": "book-2006-506",
+      "nationalName": "Otocolobus manul",
+      "group": "mammals",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=507",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "iucn-gbif-2026-1",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Otocolobus+manul&limit=5"
+        }
+      ]
+    },
+    {
+      "speciesId": "golden-eagle",
+      "scientificName": "Aquila chrysaetos",
+      "nationalRecordId": "book-2006-424",
+      "nationalName": "Aquila chrysaetos",
+      "group": "birds",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=425",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "iucn-gbif-2026-1",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Aquila+chrysaetos&limit=5"
+        }
+      ]
+    },
+    {
+      "speciesId": "bearded-vulture",
+      "scientificName": "Gypaetus barbatus",
+      "nationalRecordId": "book-2006-402",
+      "nationalName": "Gypaetus barbatus",
+      "group": "birds",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=403",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "iucn-gbif-2026-1",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Gypaetus+barbatus&limit=5"
+        }
+      ]
+    },
+    {
+      "speciesId": "saker-falcon",
+      "scientificName": "Falco cherrug",
+      "nationalRecordId": "book-2006-388",
+      "nationalName": "Falco cherrug",
+      "group": "birds",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=389",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "iucn-gbif-2026-1",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Falco+cherrug&limit=5"
+        }
+      ]
+    },
+    {
+      "speciesId": "greigs-tulip",
+      "scientificName": "Tulipa greigii",
+      "nationalRecordId": "book-2006-80",
+      "nationalName": "Tulipa greigii",
+      "group": "plants",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=81",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "iucn-gbif-2026-1",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Tulipa+greigii&limit=5"
+        }
+      ]
+    },
+    {
+      "speciesId": "kaufmanns-tulip",
+      "scientificName": "Tulipa kaufmanniana",
+      "nationalRecordId": "book-2006-82",
+      "nationalName": "Tulipa kaufmanniana",
+      "group": "plants",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=83",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "iucn-gbif-2026-1",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Tulipa+kaufmanniana&limit=5"
+        }
+      ]
+    },
+    {
+      "speciesId": "sievers-apple",
+      "scientificName": "Malus sieversii",
+      "nationalRecordId": "book-2006-136",
+      "nationalName": "Malus sieversii",
+      "group": "plants",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=137",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "iucn-gbif-2026-1",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Malus+sieversii&limit=5"
+        }
+      ]
+    },
+    {
+      "speciesId": "central-asian-tortoise",
+      "scientificName": "Testudo horsfieldii",
+      "nationalRecordId": "book-2006-330",
+      "nationalName": "Agrionemys horsfieldi",
+      "group": "reptiles",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=331",
+      "relationship": "documented_historical_name_bridge",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Testudo%20horsfieldii"
+        },
+        {
+          "id": "taxonomy-alternative-1",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Agrionemys%20horsfieldii"
+        }
+      ]
+    },
+    {
+      "speciesId": "central-asian-frog",
+      "scientificName": "Rana asiatica",
+      "nationalRecordId": "book-2006-328",
+      "nationalName": "Rana asiatica",
+      "group": "amphibians",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=329",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Rana%20asiatica"
+        }
+      ]
+    },
+    {
+      "speciesId": "predatory-bush-cricket",
+      "scientificName": "Saga pedo",
+      "nationalRecordId": "book-2006-252",
+      "nationalName": "Saga pedo",
+      "group": "arthropods",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=253",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Saga%20pedo"
+        }
+      ]
+    },
+    {
+      "speciesId": "dog-stinkhorn",
+      "scientificName": "Mutinus caninus",
+      "nationalRecordId": "book-2006-42",
+      "nationalName": "Mutinus caninus",
+      "group": "fungi",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=43",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Mutinus%20caninus"
+        }
+      ]
+    },
+    {
+      "speciesId": "marbled-polecat",
+      "scientificName": "Vormela peregusna",
+      "nationalRecordId": "book-2006-502",
+      "nationalName": "Vormela peregusna",
+      "group": "mammals",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=503",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Vormela%20peregusna"
+        }
+      ]
+    },
+    {
+      "speciesId": "black-stork",
+      "scientificName": "Ciconia nigra",
+      "nationalRecordId": "book-2006-374",
+      "nationalName": "Ciconia nigra",
+      "group": "birds",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=375",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Ciconia%20nigra"
+        }
+      ]
+    },
+    {
+      "speciesId": "ibisbill",
+      "scientificName": "Ibidorhyncha struthersii",
+      "nationalRecordId": "book-2006-442",
+      "nationalName": "Ibidorhyncha struthersii",
+      "group": "birds",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=443",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Ibidorhyncha%20struthersii"
+        }
+      ]
+    },
+    {
+      "speciesId": "eduards-fritillary",
+      "scientificName": "Fritillaria eduardii",
+      "nationalRecordId": "book-2006-74",
+      "nationalName": "Fritillaria eduardii",
+      "group": "plants",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=75",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Fritillaria%20eduardii"
+        }
+      ]
+    },
+    {
+      "speciesId": "european-glass-lizard",
+      "scientificName": "Pseudopus apodus",
+      "nationalRecordId": "book-2006-336",
+      "nationalName": "Pseudopus apodus",
+      "group": "reptiles",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=337",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Pseudopus%20apodus"
+        }
+      ]
+    },
+    {
+      "speciesId": "dalmatian-pelican",
+      "scientificName": "Pelecanus crispus",
+      "nationalRecordId": "book-2006-382",
+      "nationalName": "Pelecanus crispus",
+      "group": "birds",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=383",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Pelecanus%20crispus"
+        }
+      ]
+    },
+    {
+      "speciesId": "eurasian-lynx",
+      "scientificName": "Lynx lynx",
+      "nationalRecordId": "book-2006-508",
+      "nationalName": "Lynx lynx",
+      "group": "mammals",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=509",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Lynx%20lynx"
+        }
+      ]
+    },
+    {
+      "speciesId": "kolpakowskis-tulip",
+      "scientificName": "Tulipa kolpakowskiana",
+      "nationalRecordId": "book-2006-84",
+      "nationalName": "Tulipa kolpakowskiana",
+      "group": "plants",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=85",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Tulipa%20kolpakowskiana"
+        }
+      ]
+    },
+    {
+      "speciesId": "ostrowskis-tulip",
+      "scientificName": "Tulipa ostrowskiana",
+      "nationalRecordId": "book-2006-88",
+      "nationalName": "Tulipa ostrowskiana",
+      "group": "plants",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=89",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Tulipa%20ostrowskiana"
+        }
+      ]
+    },
+    {
+      "speciesId": "pike-asp",
+      "scientificName": "Aspiolucius esocinus",
+      "nationalRecordId": "book-2006-300",
+      "nationalName": "Aspiolucius esocinus",
+      "group": "fish",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=301",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Aspiolucius%20esocinus"
+        }
+      ]
+    },
+    {
+      "speciesId": "turkestan-catfish",
+      "scientificName": "Glyptosternon reticulatum",
+      "nationalRecordId": "book-2006-312",
+      "nationalName": "Glyptosternum reticulatum",
+      "group": "fish",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=313",
+      "relationship": "documented_historical_name_bridge",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Glyptosternon%20reticulatum"
+        }
+      ]
+    },
+    {
+      "speciesId": "christophs-clouded-yellow",
+      "scientificName": "Colias christophi",
+      "nationalRecordId": "book-2006-264",
+      "nationalName": "Colias christophi",
+      "group": "arthropods",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=265",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Colias%20christophi"
+        }
+      ]
+    },
+    {
+      "speciesId": "relict-spider",
+      "scientificName": "Tricholathys relicta",
+      "nationalRecordId": "book-2006-248",
+      "nationalName": "Tricholathys relicta",
+      "group": "arthropods",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=249",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Tricholathys%20relicta"
+        }
+      ]
+    },
+    {
+      "speciesId": "tien-shan-scutiger",
+      "scientificName": "Albatrellus tianschanicus",
+      "nationalRecordId": "book-2006-44",
+      "nationalName": "Scutiger tianschanicus",
+      "group": "fungi",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=45",
+      "relationship": "documented_historical_name_bridge",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-selected-taxon",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Albatrellus%20tianschanicus"
+        }
+      ]
+    },
+    {
+      "speciesId": "menzbiers-marmot",
+      "scientificName": "Marmota menzbieri",
+      "nationalRecordId": "book-2006-518",
+      "nationalName": "Marmota menzbieri",
+      "group": "mammals",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=519",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Marmota%20menzbieri"
+        }
+      ]
+    },
+    {
+      "speciesId": "semenovs-fir",
+      "scientificName": "Abies sibirica semenovii",
+      "nationalRecordId": "book-2006-60",
+      "nationalName": "Abies semenovii",
+      "group": "plants",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=61",
+      "relationship": "national_species_existing_subspecies_concept_overlap",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-selected-taxon",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Abies%20sibirica%20subsp.%20semenovii"
+        }
+      ]
+    },
+    {
+      "speciesId": "great-bustard",
+      "scientificName": "Otis tarda tarda",
+      "nationalRecordId": "book-2006-430",
+      "nationalName": "Otis tarda",
+      "group": "birds",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=431",
+      "relationship": "national_species_existing_subspecies_concept_overlap",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-selected-taxon",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Otis%20tarda%20tarda"
+        }
+      ]
+    },
+    {
+      "speciesId": "said-alievs-toad-agama",
+      "scientificName": "Phrynocephalus saidalievi",
+      "nationalRecordId": "book-2006-332",
+      "nationalName": "Phrynocephalus saidalievi",
+      "group": "reptiles",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=333",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Phrynocephalus%20saidalievi"
+        }
+      ]
+    },
+    {
+      "speciesId": "vigorous-ground-beetle",
+      "scientificName": "Carabus validus",
+      "nationalRecordId": "book-2006-258",
+      "nationalName": "Carabus validus",
+      "group": "arthropods",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=259",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Carabus%20validus"
+        }
+      ]
+    },
+    {
+      "speciesId": "pskem-onion",
+      "scientificName": "Allium pskemense",
+      "nationalRecordId": "book-2006-70",
+      "nationalName": "Allium pskemense",
+      "group": "plants",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=71",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Allium%20pskemense"
+        }
+      ]
+    },
+    {
+      "speciesId": "kostychevs-pasque-flower",
+      "scientificName": "Pulsatilla kostyczewii",
+      "nationalRecordId": "book-2006-112",
+      "nationalName": "Pulsatilla kostyczewii",
+      "group": "plants",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=113",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Pulsatilla%20kostyczewii"
+        }
+      ]
+    },
+    {
+      "speciesId": "indian-crested-porcupine",
+      "scientificName": "Hystrix indica",
+      "nationalRecordId": "book-2006-520",
+      "nationalName": "Hystrix indica",
+      "group": "mammals",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=521",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Hystrix%20indica"
+        }
+      ]
+    },
+    {
+      "speciesId": "fergana-ground-beetle",
+      "scientificName": "Carabus ferghanicus",
+      "nationalRecordId": "book-2006-256",
+      "nationalName": "Carabus ferghanicus",
+      "group": "arthropods",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=257",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Carabus%20ferghanicus"
+        }
+      ]
+    },
+    {
+      "speciesId": "giant-robber-fly",
+      "scientificName": "Satanas gigas",
+      "nationalRecordId": "book-2006-272",
+      "nationalName": "Satanas gigas",
+      "group": "arthropods",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=273",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Satanas%20gigas"
+        }
+      ]
+    },
+    {
+      "speciesId": "korzhinskys-pear",
+      "scientificName": "Pyrus korshinskyi",
+      "nationalRecordId": "book-2006-132",
+      "nationalName": "Pyrus korshinskyi",
+      "group": "plants",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=133",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Pyrus%20korshinskyi"
+        }
+      ]
+    },
+    {
+      "speciesId": "cinereous-vulture",
+      "scientificName": "Aegypius monachus",
+      "nationalRecordId": "book-2006-410",
+      "nationalName": "Aegypius monachus",
+      "group": "birds",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=411",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Aegypius%20monachus"
+        }
+      ]
+    },
+    {
+      "speciesId": "egyptian-vulture",
+      "scientificName": "Neophron percnopterus",
+      "nationalRecordId": "book-2006-404",
+      "nationalName": "Neophron percnopterus",
+      "group": "birds",
+      "sourceUrl": "https://macrolepidoptera.ru/lnk/282.pdf#page=405",
+      "relationship": "same_scientific_name",
+      "bridgeEvidence": [
+        {
+          "id": "gbif-match",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Neophron%20percnopterus"
+        }
+      ]
+    }
+  ],
+  "bookPositions": [
+    {
+      "nationalRecordId": "book-2006-38",
+      "scientificName": "Dictyocephalus attenuatus",
+      "group": "fungi",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "dictyocephalus-attenuatus"
+    },
+    {
+      "nationalRecordId": "book-2006-40",
+      "scientificName": "Dictyophora duplicata",
+      "group": "fungi",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "dictyophora-duplicata"
+    },
+    {
+      "nationalRecordId": "book-2006-42",
+      "scientificName": "Mutinus caninus",
+      "group": "fungi",
+      "status": "represented_in_muras",
+      "existingId": "dog-stinkhorn",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-44",
+      "scientificName": "Scutiger tianschanicus",
+      "group": "fungi",
+      "status": "represented_in_muras",
+      "existingId": "tien-shan-scutiger",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-60",
+      "scientificName": "Abies semenovii",
+      "group": "plants",
+      "status": "represented_in_muras",
+      "existingId": "semenovs-fir",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-62",
+      "scientificName": "Eminium regelii",
+      "group": "plants",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "eminium-regelii"
+    },
+    {
+      "nationalRecordId": "book-2006-64",
+      "scientificName": "Eremurus zenaidae",
+      "group": "plants",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "eremurus-zenaidae"
+    },
+    {
+      "nationalRecordId": "book-2006-66",
+      "scientificName": "Eremurus zoae",
+      "group": "plants",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "eremurus-zoae"
+    },
+    {
+      "nationalRecordId": "book-2006-68",
+      "scientificName": "Allium dodecadontum",
+      "group": "plants",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "allium-dodecadontum"
+    },
+    {
+      "nationalRecordId": "book-2006-70",
+      "scientificName": "Allium pskemense",
+      "group": "plants",
+      "status": "represented_in_muras",
+      "existingId": "pskem-onion",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-72",
+      "scientificName": "Allium semenovii",
+      "group": "plants",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "allium-semenovii"
+    },
+    {
+      "nationalRecordId": "book-2006-74",
+      "scientificName": "Fritillaria eduardii",
+      "group": "plants",
+      "status": "represented_in_muras",
+      "existingId": "eduards-fritillary",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-76",
+      "scientificName": "Tulipa affinis",
+      "group": "plants",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "tulipa-affinis"
+    },
+    {
+      "nationalRecordId": "book-2006-78",
+      "scientificName": "Tulipa anadroma",
+      "group": "plants",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "tulipa-anadroma"
+    },
+    {
+      "nationalRecordId": "book-2006-80",
+      "scientificName": "Tulipa greigii",
+      "group": "plants",
+      "status": "represented_in_muras",
+      "existingId": "greigs-tulip",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-82",
+      "scientificName": "Tulipa kaufmanniana",
+      "group": "plants",
+      "status": "represented_in_muras",
+      "existingId": "kaufmanns-tulip",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-84",
+      "scientificName": "Tulipa kolpakowskiana",
+      "group": "plants",
+      "status": "represented_in_muras",
+      "existingId": "kolpakowskis-tulip",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-86",
+      "scientificName": "Tulipa korolkowii",
+      "group": "plants",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "tulipa-korolkowii"
+    },
+    {
+      "nationalRecordId": "book-2006-88",
+      "scientificName": "Tulipa ostrowskiana",
+      "group": "plants",
+      "status": "represented_in_muras",
+      "existingId": "ostrowskis-tulip",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-90",
+      "scientificName": "Tulipa platystemon",
+      "group": "plants",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "tulipa-platystemon"
+    },
+    {
+      "nationalRecordId": "book-2006-92",
+      "scientificName": "Tulipa rosea",
+      "group": "plants",
+      "status": "confirmed_synonym_of_selected_candidate",
+      "existingId": null,
+      "candidateId": null,
+      "synonymOfCandidate": "tulipa-korolkowii",
+      "evidence": "docs/evidence/redbook-master-taxonomy.json: book-2006-92 -> gbif:5299568"
+    },
+    {
+      "nationalRecordId": "book-2006-94",
+      "scientificName": "Tulipa tetraphylla",
+      "group": "plants",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "tulipa-tetraphylla"
+    },
+    {
+      "nationalRecordId": "book-2006-96",
+      "scientificName": "Tulipa zenaidae",
+      "group": "plants",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "tulipa-zenaidae"
+    },
+    {
+      "nationalRecordId": "book-2006-98",
+      "scientificName": "Juno orchioides",
+      "group": "plants",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "juno-orchioides"
+    },
+    {
+      "nationalRecordId": "book-2006-100",
+      "scientificName": "Iridodictyum kolpakowskianum",
+      "group": "plants",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "iridodictyum-kolpakowskianum"
+    },
+    {
+      "nationalRecordId": "book-2006-102",
+      "scientificName": "Thesium minkwitzianum",
+      "group": "plants",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "thesium-minkwitzianum"
+    },
+    {
+      "nationalRecordId": "book-2006-104",
+      "scientificName": "Silene sussamyrica",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-106",
+      "scientificName": "Allochrusa gypsophiloides",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-108",
+      "scientificName": "Delphinium knorringianum",
+      "group": "plants",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "delphinium-knorringianum"
+    },
+    {
+      "nationalRecordId": "book-2006-110",
+      "scientificName": "Anemone obtusiloba",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-112",
+      "scientificName": "Pulsatilla kostyczewii",
+      "group": "plants",
+      "status": "represented_in_muras",
+      "existingId": "kostychevs-pasque-flower",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-114",
+      "scientificName": "Berberis kaschgarica",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-116",
+      "scientificName": "Corydalis pseudoadunca",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-118",
+      "scientificName": "Fumariola turkestanica",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-120",
+      "scientificName": "Iskandera alaica",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-122",
+      "scientificName": "Rhodiola litwinowii",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-124",
+      "scientificName": "Sibiraea tianschanica",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-126",
+      "scientificName": "Sorbaria olgae",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-128",
+      "scientificName": "Spiraeanthus schrenkianus",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-130",
+      "scientificName": "Pyrus asiae-mediae",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-132",
+      "scientificName": "Pyrus korshinskyi",
+      "group": "plants",
+      "status": "represented_in_muras",
+      "existingId": "korzhinskys-pear",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-134",
+      "scientificName": "Malus niedzwetzkyana",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-136",
+      "scientificName": "Malus sieversii",
+      "group": "plants",
+      "status": "represented_in_muras",
+      "existingId": "sievers-apple",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-138",
+      "scientificName": "Crataegus knorringiana",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-140",
+      "scientificName": "Sorbus persica",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-142",
+      "scientificName": "Amygdalus petunnikowii",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-144",
+      "scientificName": "Sophora griffithii korolkowii",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-146",
+      "scientificName": "Ammopiptanthus nanus",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-148",
+      "scientificName": "Colutea brachyptera",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-150",
+      "scientificName": "Chesneya villosa",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-152",
+      "scientificName": "Hedysarum chaitocarpum",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-154",
+      "scientificName": "Zygophyllum kaschgaricum",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-156",
+      "scientificName": "Vitis usunachmatica",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-158",
+      "scientificName": "Sclerotiaria pentaceros",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-160",
+      "scientificName": "Kosopoljanskia hebecarpa",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-162",
+      "scientificName": "Kosopoljanskia turkestanica",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-164",
+      "scientificName": "Bupleurum rosulare",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-166",
+      "scientificName": "Hyalolaena intermedia",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-168",
+      "scientificName": "Seseli eryngioides",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-170",
+      "scientificName": "Seseli korshinskyi",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-172",
+      "scientificName": "Cnidiocarpa alaica",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-174",
+      "scientificName": "Dorema microcarpum",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-176",
+      "scientificName": "Pastinacopsis glacialis",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-178",
+      "scientificName": "Primula eugeniae",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-180",
+      "scientificName": "Primula macrocalyx",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-182",
+      "scientificName": "Kaufmannia semenovii",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-184",
+      "scientificName": "Acantholimon compactum",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-186",
+      "scientificName": "Scutellaria andrachnoides",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-188",
+      "scientificName": "Scutellaria nepetoides",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-190",
+      "scientificName": "Alajja anomala",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-192",
+      "scientificName": "Otostegia schennikovii",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-194",
+      "scientificName": "Salvia korolkowii",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-196",
+      "scientificName": "Salvia vvedenskyi",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-198",
+      "scientificName": "Physochlaina alaica",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-200",
+      "scientificName": "Tianschaniella umbellifera",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-202",
+      "scientificName": "Nathaliella alaica",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-204",
+      "scientificName": "Incarvillea olgae",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-206",
+      "scientificName": "Lonicera paradoxa",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-208",
+      "scientificName": "Campanula eugeniae",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-210",
+      "scientificName": "Lamyropappus schakaptaricus",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-212",
+      "scientificName": "Saussurea involucrata",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-214",
+      "scientificName": "Stemmacantha aulieatensis",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-216",
+      "scientificName": "Centaurea alaica",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-218",
+      "scientificName": "Trichanthemis aulieatensis",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-220",
+      "scientificName": "Trichanthemis aurea",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-222",
+      "scientificName": "Pyrethrum leontopodium",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-224",
+      "scientificName": "Lepidolopha komarowii",
+      "group": "plants",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-248",
+      "scientificName": "Tricholathys relicta",
+      "group": "arthropods",
+      "status": "represented_in_muras",
+      "existingId": "relict-spider",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-250",
+      "scientificName": "Sonjagaster coronatus",
+      "group": "arthropods",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "sonjagaster-coronatus"
+    },
+    {
+      "nationalRecordId": "book-2006-252",
+      "scientificName": "Saga pedo",
+      "group": "arthropods",
+      "status": "represented_in_muras",
+      "existingId": "predatory-bush-cricket",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-254",
+      "scientificName": "Cephalota galatea",
+      "group": "arthropods",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-256",
+      "scientificName": "Carabus ferghanicus",
+      "group": "arthropods",
+      "status": "represented_in_muras",
+      "existingId": "fergana-ground-beetle",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-258",
+      "scientificName": "Carabus validus",
+      "group": "arthropods",
+      "status": "represented_in_muras",
+      "existingId": "vigorous-ground-beetle",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-260",
+      "scientificName": "Prionus tschitscherini",
+      "group": "arthropods",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "prionus-tschitscherini"
+    },
+    {
+      "nationalRecordId": "book-2006-262",
+      "scientificName": "Kirgisobia bohnei",
+      "group": "arthropods",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-264",
+      "scientificName": "Colias christophi",
+      "group": "arthropods",
+      "status": "represented_in_muras",
+      "existingId": "christophs-clouded-yellow",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-266",
+      "scientificName": "Parnassius loxias tashkorensis",
+      "group": "arthropods",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-268",
+      "scientificName": "Parnassius apollo merzbacheri",
+      "group": "arthropods",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-270",
+      "scientificName": "Papilio alexanor voldemar",
+      "group": "arthropods",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-272",
+      "scientificName": "Satanas gigas",
+      "group": "arthropods",
+      "status": "represented_in_muras",
+      "existingId": "giant-robber-fly",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-274",
+      "scientificName": "Urocerus sah",
+      "group": "arthropods",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "urocerus-sah"
+    },
+    {
+      "nationalRecordId": "book-2006-276",
+      "scientificName": "Megalodontes kuznetzovi",
+      "group": "arthropods",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-278",
+      "scientificName": "Polochrum pamirepandum",
+      "group": "arthropods",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-280",
+      "scientificName": "Masaris longicornis",
+      "group": "arthropods",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "masaris-longicornis"
+    },
+    {
+      "nationalRecordId": "book-2006-282",
+      "scientificName": "Rossomyrmex proformicarum",
+      "group": "arthropods",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-300",
+      "scientificName": "Aspiolucius esocinus",
+      "group": "fish",
+      "status": "represented_in_muras",
+      "existingId": "pike-asp",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-302",
+      "scientificName": "Capoetobrama kuschakewitschi orientalis",
+      "group": "fish",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-304",
+      "scientificName": "Barbus brachycephalus",
+      "group": "fish",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-306",
+      "scientificName": "Barbus capito conocephalus",
+      "group": "fish",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-308",
+      "scientificName": "Schizothorax issykkuli",
+      "group": "fish",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "schizothorax-issykkuli"
+    },
+    {
+      "nationalRecordId": "book-2006-310",
+      "scientificName": "Diptychus dybowskii lansdelli",
+      "group": "fish",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "diptychus-dybowskii-lansdelli"
+    },
+    {
+      "nationalRecordId": "book-2006-312",
+      "scientificName": "Glyptosternum reticulatum",
+      "group": "fish",
+      "status": "represented_in_muras",
+      "existingId": "turkestan-catfish",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-326",
+      "scientificName": "Bufo viridis",
+      "group": "amphibians",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "bufo-viridis"
+    },
+    {
+      "nationalRecordId": "book-2006-328",
+      "scientificName": "Rana asiatica",
+      "group": "amphibians",
+      "status": "represented_in_muras",
+      "existingId": "central-asian-frog",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-330",
+      "scientificName": "Agrionemys horsfieldi",
+      "group": "reptiles",
+      "status": "represented_in_muras",
+      "existingId": "central-asian-tortoise",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-332",
+      "scientificName": "Phrynocephalus saidalievi",
+      "group": "reptiles",
+      "status": "represented_in_muras",
+      "existingId": "said-alievs-toad-agama",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-334",
+      "scientificName": "Varanus griseus caspius",
+      "group": "reptiles",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "varanus-griseus-caspius"
+    },
+    {
+      "nationalRecordId": "book-2006-336",
+      "scientificName": "Pseudopus apodus",
+      "group": "reptiles",
+      "status": "represented_in_muras",
+      "existingId": "european-glass-lizard",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-338",
+      "scientificName": "Novoeumeces schneideri princeps",
+      "group": "reptiles",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "novoeumeces-schneideri-princeps"
+    },
+    {
+      "nationalRecordId": "book-2006-340",
+      "scientificName": "Eryx tataricus",
+      "group": "reptiles",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "eryx-tataricus"
+    },
+    {
+      "nationalRecordId": "book-2006-342",
+      "scientificName": "Spalerosophis diadema schiraziana",
+      "group": "reptiles",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "spalerosophis-diadema-schiraziana"
+    },
+    {
+      "nationalRecordId": "book-2006-344",
+      "scientificName": "Vipera ursinii renardi",
+      "group": "reptiles",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-358",
+      "scientificName": "Lyrurus tetrix",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "lyrurus-tetrix"
+    },
+    {
+      "nationalRecordId": "book-2006-360",
+      "scientificName": "Anser indica",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "anser-indica"
+    },
+    {
+      "nationalRecordId": "book-2006-362",
+      "scientificName": "Cygnus cygnus",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "cygnus-cygnus"
+    },
+    {
+      "nationalRecordId": "book-2006-364",
+      "scientificName": "Aythya nyroca",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "aythya-nyroca"
+    },
+    {
+      "nationalRecordId": "book-2006-366",
+      "scientificName": "Mergus serrator",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "mergus-serrator"
+    },
+    {
+      "nationalRecordId": "book-2006-368",
+      "scientificName": "Oxyura leucocephala",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "oxyura-leucocephala"
+    },
+    {
+      "nationalRecordId": "book-2006-370",
+      "scientificName": "Gavia arctica",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "gavia-arctica"
+    },
+    {
+      "nationalRecordId": "book-2006-372",
+      "scientificName": "Phoenicopterus ruber",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-374",
+      "scientificName": "Ciconia nigra",
+      "group": "birds",
+      "status": "represented_in_muras",
+      "existingId": "black-stork",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-376",
+      "scientificName": "Ciconia ciconia",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "ciconia-ciconia"
+    },
+    {
+      "nationalRecordId": "book-2006-378",
+      "scientificName": "Platalea leucorodia",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "platalea-leucorodia"
+    },
+    {
+      "nationalRecordId": "book-2006-380",
+      "scientificName": "Pelecanus onocrotalus",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "pelecanus-onocrotalus"
+    },
+    {
+      "nationalRecordId": "book-2006-382",
+      "scientificName": "Pelecanus crispus",
+      "group": "birds",
+      "status": "represented_in_muras",
+      "existingId": "dalmatian-pelican",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-384",
+      "scientificName": "Phalacrocorax pygmaeus",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "phalacrocorax-pygmaeus"
+    },
+    {
+      "nationalRecordId": "book-2006-386",
+      "scientificName": "Falco naumanni",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "falco-naumanni"
+    },
+    {
+      "nationalRecordId": "book-2006-388",
+      "scientificName": "Falco cherrug",
+      "group": "birds",
+      "status": "represented_in_muras",
+      "existingId": "saker-falcon",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-390",
+      "scientificName": "Falco rusticolus",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "falco-rusticolus"
+    },
+    {
+      "nationalRecordId": "book-2006-392",
+      "scientificName": "Falco peregrinus",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "falco-peregrinus"
+    },
+    {
+      "nationalRecordId": "book-2006-394",
+      "scientificName": "Falco pelegrinoides",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "falco-pelegrinoides"
+    },
+    {
+      "nationalRecordId": "book-2006-396",
+      "scientificName": "Pandion haliaetus",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "pandion-haliaetus"
+    },
+    {
+      "nationalRecordId": "book-2006-398",
+      "scientificName": "Haliaeetus leucoryphus",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "haliaeetus-leucoryphus"
+    },
+    {
+      "nationalRecordId": "book-2006-400",
+      "scientificName": "Haliaeetus albicilla",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "haliaeetus-albicilla"
+    },
+    {
+      "nationalRecordId": "book-2006-402",
+      "scientificName": "Gypaetus barbatus",
+      "group": "birds",
+      "status": "represented_in_muras",
+      "existingId": "bearded-vulture",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-404",
+      "scientificName": "Neophron percnopterus",
+      "group": "birds",
+      "status": "represented_in_muras",
+      "existingId": "egyptian-vulture",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-406",
+      "scientificName": "Gyps himalayensis",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "gyps-himalayensis"
+    },
+    {
+      "nationalRecordId": "book-2006-408",
+      "scientificName": "Gyps fulvus",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "gyps-fulvus"
+    },
+    {
+      "nationalRecordId": "book-2006-410",
+      "scientificName": "Aegypius monachus",
+      "group": "birds",
+      "status": "represented_in_muras",
+      "existingId": "cinereous-vulture",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-412",
+      "scientificName": "Circaetus gallicus",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "circaetus-gallicus"
+    },
+    {
+      "nationalRecordId": "book-2006-414",
+      "scientificName": "Circus macrourus",
+      "group": "birds",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "circus-macrourus"
+    },
+    {
+      "nationalRecordId": "book-2006-416",
+      "scientificName": "Accipiter badius",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-418",
+      "scientificName": "Aquila clanga",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-420",
+      "scientificName": "Aquila nipalensis",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-422",
+      "scientificName": "Aquila heliaca",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-424",
+      "scientificName": "Aquila chrysaetos",
+      "group": "birds",
+      "status": "represented_in_muras",
+      "existingId": "golden-eagle",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-426",
+      "scientificName": "Hieraaetus fasciatus",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-428",
+      "scientificName": "Hieraaetus pennatus",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-430",
+      "scientificName": "Otis tarda",
+      "group": "birds",
+      "status": "represented_in_muras",
+      "existingId": "great-bustard",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-432",
+      "scientificName": "Chlamydotis undulata",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-434",
+      "scientificName": "Tetrax tetrax",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-436",
+      "scientificName": "Crex crex",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-438",
+      "scientificName": "Anthropoides virgo",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-440",
+      "scientificName": "Burhinus oedicnemus",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-442",
+      "scientificName": "Ibidorhyncha struthersii",
+      "group": "birds",
+      "status": "represented_in_muras",
+      "existingId": "ibisbill",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-444",
+      "scientificName": "Vanellus gregarius",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-446",
+      "scientificName": "Numenius tenuirostris",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-448",
+      "scientificName": "Glareola nordmanni",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-450",
+      "scientificName": "Larus ichtyaetus",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-452",
+      "scientificName": "Syrrhaptes paradoxus",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-454",
+      "scientificName": "Pterocles alchata",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-456",
+      "scientificName": "Pterocles orientalis",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-458",
+      "scientificName": "Columba leuconota",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-460",
+      "scientificName": "Columba eversmanni",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-462",
+      "scientificName": "Bubo bubo",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-464",
+      "scientificName": "Strix aluco",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-466",
+      "scientificName": "Dendrocopos leucopterus",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-468",
+      "scientificName": "Dendrocopos major",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-470",
+      "scientificName": "Terpsiphone paradisi",
+      "group": "birds",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-482",
+      "scientificName": "Hemiechinus hypomelas",
+      "group": "mammals",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-484",
+      "scientificName": "Neomys fodiens",
+      "group": "mammals",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "neomys-fodiens"
+    },
+    {
+      "nationalRecordId": "book-2006-486",
+      "scientificName": "Rhinolophus bocharicus",
+      "group": "mammals",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "rhinolophus-bocharicus"
+    },
+    {
+      "nationalRecordId": "book-2006-488",
+      "scientificName": "Phinolophus hipposideros",
+      "group": "mammals",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-490",
+      "scientificName": "Barbastella leucomelas",
+      "group": "mammals",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "barbastella-leucomelas"
+    },
+    {
+      "nationalRecordId": "book-2006-492",
+      "scientificName": "Otonycteris hemprichi",
+      "group": "mammals",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "otonycteris-hemprichi"
+    },
+    {
+      "nationalRecordId": "book-2006-494",
+      "scientificName": "Tadarida teniotis",
+      "group": "mammals",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "tadarida-teniotis"
+    },
+    {
+      "nationalRecordId": "book-2006-496",
+      "scientificName": "Cuon alpinus",
+      "group": "mammals",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-498",
+      "scientificName": "Ursus arctos",
+      "group": "mammals",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "ursus-arctos"
+    },
+    {
+      "nationalRecordId": "book-2006-500",
+      "scientificName": "Martes foina",
+      "group": "mammals",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "martes-foina"
+    },
+    {
+      "nationalRecordId": "book-2006-502",
+      "scientificName": "Vormela peregusna",
+      "group": "mammals",
+      "status": "represented_in_muras",
+      "existingId": "marbled-polecat",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-504",
+      "scientificName": "Lutra lutra",
+      "group": "mammals",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "lutra-lutra"
+    },
+    {
+      "nationalRecordId": "book-2006-506",
+      "scientificName": "Otocolobus manul",
+      "group": "mammals",
+      "status": "represented_in_muras",
+      "existingId": "manul",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-508",
+      "scientificName": "Lynx lynx",
+      "group": "mammals",
+      "status": "represented_in_muras",
+      "existingId": "eurasian-lynx",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-510",
+      "scientificName": "Uncia uncia",
+      "group": "mammals",
+      "status": "represented_in_muras",
+      "existingId": "irbis",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-512",
+      "scientificName": "Cervus elaphus asiaticus",
+      "group": "mammals",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-514",
+      "scientificName": "Gazella subgutturoza",
+      "group": "mammals",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-516",
+      "scientificName": "Ovis ammon",
+      "group": "mammals",
+      "status": "represented_in_muras",
+      "existingId": "argali",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-518",
+      "scientificName": "Marmota menzbieri",
+      "group": "mammals",
+      "status": "represented_in_muras",
+      "existingId": "menzbiers-marmot",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-520",
+      "scientificName": "Hystrix indica",
+      "group": "mammals",
+      "status": "represented_in_muras",
+      "existingId": "indian-crested-porcupine",
+      "candidateId": null
+    },
+    {
+      "nationalRecordId": "book-2006-522",
+      "scientificName": "Allactaga elater",
+      "group": "mammals",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "allactaga-elater"
+    },
+    {
+      "nationalRecordId": "book-2006-524",
+      "scientificName": "Allactaga saltator",
+      "group": "mammals",
+      "status": "selected_candidate",
+      "existingId": null,
+      "candidateId": "allactaga-saltator"
+    },
+    {
+      "nationalRecordId": "book-2006-526",
+      "scientificName": "Allactaga severtzovi",
+      "group": "mammals",
+      "status": "requires_research",
+      "existingId": null,
+      "candidateId": null
+    }
+  ],
+  "sourceComparison": [
+    {
+      "bookRecordId": "book-2006-38",
+      "decreeRecordIds": [],
+      "state": "needs_spelling_or_concept_reconciliation"
+    },
+    {
+      "bookRecordId": "book-2006-40",
+      "decreeRecordIds": [],
+      "state": "needs_spelling_or_concept_reconciliation"
+    },
+    {
+      "bookRecordId": "book-2006-42",
+      "decreeRecordIds": [
+        "decree-170-2009-1-92"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-44",
+      "decreeRecordIds": [
+        "decree-170-2009-1-90"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-60",
+      "decreeRecordIds": [
+        "decree-170-2009-1-1"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-62",
+      "decreeRecordIds": [
+        "decree-170-2009-1-2"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-64",
+      "decreeRecordIds": [
+        "decree-170-2009-1-5"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-66",
+      "decreeRecordIds": [
+        "decree-170-2009-1-6"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-68",
+      "decreeRecordIds": [
+        "decree-170-2009-1-9"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-70",
+      "decreeRecordIds": [
+        "decree-170-2009-1-7"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-72",
+      "decreeRecordIds": [
+        "decree-170-2009-1-8"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-74",
+      "decreeRecordIds": [
+        "decree-170-2009-1-11"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-76",
+      "decreeRecordIds": [
+        "decree-170-2009-1-16"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-78",
+      "decreeRecordIds": [
+        "decree-170-2009-1-12"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-80",
+      "decreeRecordIds": [
+        "decree-170-2009-1-13"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-82",
+      "decreeRecordIds": [
+        "decree-170-2009-1-14"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-84",
+      "decreeRecordIds": [
+        "decree-170-2009-1-15"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-86",
+      "decreeRecordIds": [
+        "decree-170-2009-1-17"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-88",
+      "decreeRecordIds": [
+        "decree-170-2009-1-18"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-90",
+      "decreeRecordIds": [
+        "decree-170-2009-1-21"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-92",
+      "decreeRecordIds": [
+        "decree-170-2009-1-19"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-94",
+      "decreeRecordIds": [
+        "decree-170-2009-1-22"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-96",
+      "decreeRecordIds": [
+        "decree-170-2009-1-20"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-98",
+      "decreeRecordIds": [
+        "decree-170-2009-1-24"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-100",
+      "decreeRecordIds": [
+        "decree-170-2009-1-25"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-102",
+      "decreeRecordIds": [
+        "decree-170-2009-1-26"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-104",
+      "decreeRecordIds": [],
+      "state": "needs_spelling_or_concept_reconciliation"
+    },
+    {
+      "bookRecordId": "book-2006-106",
+      "decreeRecordIds": [
+        "decree-170-2009-1-27"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-108",
+      "decreeRecordIds": [
+        "decree-170-2009-1-31"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-110",
+      "decreeRecordIds": [
+        "decree-170-2009-1-29"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-112",
+      "decreeRecordIds": [
+        "decree-170-2009-1-30"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-114",
+      "decreeRecordIds": [
+        "decree-170-2009-1-32"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-116",
+      "decreeRecordIds": [
+        "decree-170-2009-1-33"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-118",
+      "decreeRecordIds": [
+        "decree-170-2009-1-96"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-120",
+      "decreeRecordIds": [
+        "decree-170-2009-1-34"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-122",
+      "decreeRecordIds": [
+        "decree-170-2009-1-36"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-124",
+      "decreeRecordIds": [
+        "decree-170-2009-1-41"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-126",
+      "decreeRecordIds": [
+        "decree-170-2009-1-42"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-128",
+      "decreeRecordIds": [
+        "decree-170-2009-1-44"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-130",
+      "decreeRecordIds": [
+        "decree-170-2009-1-39"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-132",
+      "decreeRecordIds": [
+        "decree-170-2009-1-40"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-134",
+      "decreeRecordIds": [
+        "decree-170-2009-1-38"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-136",
+      "decreeRecordIds": [
+        "decree-170-2009-1-97"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-138",
+      "decreeRecordIds": [
+        "decree-170-2009-1-37"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-140",
+      "decreeRecordIds": [
+        "decree-170-2009-1-43"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-142",
+      "decreeRecordIds": [
+        "decree-170-2009-1-45"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-144",
+      "decreeRecordIds": [],
+      "state": "needs_spelling_or_concept_reconciliation"
+    },
+    {
+      "bookRecordId": "book-2006-146",
+      "decreeRecordIds": [
+        "decree-170-2009-1-47"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-148",
+      "decreeRecordIds": [
+        "decree-170-2009-1-49"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-150",
+      "decreeRecordIds": [
+        "decree-170-2009-1-48"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-152",
+      "decreeRecordIds": [
+        "decree-170-2009-1-51"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-154",
+      "decreeRecordIds": [
+        "decree-170-2009-1-52"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-156",
+      "decreeRecordIds": [
+        "decree-170-2009-1-54"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-158",
+      "decreeRecordIds": [
+        "decree-170-2009-1-98"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-160",
+      "decreeRecordIds": [
+        "decree-170-2009-1-63"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-162",
+      "decreeRecordIds": [
+        "decree-170-2009-1-55"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-164",
+      "decreeRecordIds": [
+        "decree-170-2009-1-56"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-166",
+      "decreeRecordIds": [
+        "decree-170-2009-1-57"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-168",
+      "decreeRecordIds": [
+        "decree-170-2009-1-59"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-170",
+      "decreeRecordIds": [
+        "decree-170-2009-1-58"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-172",
+      "decreeRecordIds": [
+        "decree-170-2009-1-61"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-174",
+      "decreeRecordIds": [
+        "decree-170-2009-1-64"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-176",
+      "decreeRecordIds": [
+        "decree-170-2009-1-62"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-178",
+      "decreeRecordIds": [
+        "decree-170-2009-1-66"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-180",
+      "decreeRecordIds": [
+        "decree-170-2009-1-65"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-182",
+      "decreeRecordIds": [
+        "decree-170-2009-1-67"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-184",
+      "decreeRecordIds": [
+        "decree-170-2009-1-68"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-186",
+      "decreeRecordIds": [
+        "decree-170-2009-1-73"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-188",
+      "decreeRecordIds": [
+        "decree-170-2009-1-74"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-190",
+      "decreeRecordIds": [
+        "decree-170-2009-1-69"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-192",
+      "decreeRecordIds": [
+        "decree-170-2009-1-70"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-194",
+      "decreeRecordIds": [
+        "decree-170-2009-1-71"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-196",
+      "decreeRecordIds": [
+        "decree-170-2009-1-72"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-198",
+      "decreeRecordIds": [
+        "decree-170-2009-1-75"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-200",
+      "decreeRecordIds": [
+        "decree-170-2009-1-76"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-202",
+      "decreeRecordIds": [
+        "decree-170-2009-1-99"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-204",
+      "decreeRecordIds": [
+        "decree-170-2009-1-77"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-206",
+      "decreeRecordIds": [
+        "decree-170-2009-1-78"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-208",
+      "decreeRecordIds": [
+        "decree-170-2009-1-79"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-210",
+      "decreeRecordIds": [
+        "decree-170-2009-1-84"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-212",
+      "decreeRecordIds": [
+        "decree-170-2009-1-81"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-214",
+      "decreeRecordIds": [
+        "decree-170-2009-1-86"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-216",
+      "decreeRecordIds": [
+        "decree-170-2009-1-87"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-218",
+      "decreeRecordIds": [
+        "decree-170-2009-1-82"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-220",
+      "decreeRecordIds": [
+        "decree-170-2009-1-83"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-222",
+      "decreeRecordIds": [
+        "decree-170-2009-1-89"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-224",
+      "decreeRecordIds": [
+        "decree-170-2009-1-85"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-248",
+      "decreeRecordIds": [
+        "decree-170-2009-4-18"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-250",
+      "decreeRecordIds": [],
+      "state": "needs_spelling_or_concept_reconciliation"
+    },
+    {
+      "bookRecordId": "book-2006-252",
+      "decreeRecordIds": [
+        "decree-170-2009-4-2"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-254",
+      "decreeRecordIds": [],
+      "state": "needs_spelling_or_concept_reconciliation"
+    },
+    {
+      "bookRecordId": "book-2006-256",
+      "decreeRecordIds": [
+        "decree-170-2009-4-4"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-258",
+      "decreeRecordIds": [
+        "decree-170-2009-4-5"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-260",
+      "decreeRecordIds": [
+        "decree-170-2009-4-6"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-262",
+      "decreeRecordIds": [
+        "decree-170-2009-4-7"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-264",
+      "decreeRecordIds": [
+        "decree-170-2009-4-8"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-266",
+      "decreeRecordIds": [
+        "decree-170-2009-4-9"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-268",
+      "decreeRecordIds": [
+        "decree-170-2009-4-10"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-270",
+      "decreeRecordIds": [],
+      "state": "needs_spelling_or_concept_reconciliation"
+    },
+    {
+      "bookRecordId": "book-2006-272",
+      "decreeRecordIds": [
+        "decree-170-2009-4-12"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-274",
+      "decreeRecordIds": [
+        "decree-170-2009-4-13"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-276",
+      "decreeRecordIds": [
+        "decree-170-2009-4-14"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-278",
+      "decreeRecordIds": [
+        "decree-170-2009-4-15"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-280",
+      "decreeRecordIds": [
+        "decree-170-2009-4-16"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-282",
+      "decreeRecordIds": [
+        "decree-170-2009-4-17"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-300",
+      "decreeRecordIds": [
+        "decree-170-2009-6-2"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-302",
+      "decreeRecordIds": [
+        "decree-170-2009-6-5"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-304",
+      "decreeRecordIds": [
+        "decree-170-2009-6-6"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-306",
+      "decreeRecordIds": [
+        "decree-170-2009-6-7"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-308",
+      "decreeRecordIds": [
+        "decree-170-2009-6-1"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-310",
+      "decreeRecordIds": [
+        "decree-170-2009-6-4"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-312",
+      "decreeRecordIds": [
+        "decree-170-2009-6-3"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-326",
+      "decreeRecordIds": [
+        "decree-170-2009-5-1"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-328",
+      "decreeRecordIds": [
+        "decree-170-2009-5-2"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-330",
+      "decreeRecordIds": [
+        "decree-170-2009-5-3"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-332",
+      "decreeRecordIds": [
+        "decree-170-2009-5-6"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-334",
+      "decreeRecordIds": [
+        "decree-170-2009-5-5"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-336",
+      "decreeRecordIds": [
+        "decree-170-2009-5-4"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-338",
+      "decreeRecordIds": [],
+      "state": "needs_spelling_or_concept_reconciliation"
+    },
+    {
+      "bookRecordId": "book-2006-340",
+      "decreeRecordIds": [
+        "decree-170-2009-5-10"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-342",
+      "decreeRecordIds": [],
+      "state": "needs_spelling_or_concept_reconciliation"
+    },
+    {
+      "bookRecordId": "book-2006-344",
+      "decreeRecordIds": [],
+      "state": "needs_spelling_or_concept_reconciliation"
+    },
+    {
+      "bookRecordId": "book-2006-358",
+      "decreeRecordIds": [
+        "decree-170-2009-3-13"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-360",
+      "decreeRecordIds": [],
+      "state": "needs_spelling_or_concept_reconciliation"
+    },
+    {
+      "bookRecordId": "book-2006-362",
+      "decreeRecordIds": [
+        "decree-170-2009-3-33"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-364",
+      "decreeRecordIds": [
+        "decree-170-2009-3-18"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-366",
+      "decreeRecordIds": [
+        "decree-170-2009-3-28"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-368",
+      "decreeRecordIds": [
+        "decree-170-2009-3-1"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-370",
+      "decreeRecordIds": [
+        "decree-170-2009-3-52"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-372",
+      "decreeRecordIds": [],
+      "state": "needs_spelling_or_concept_reconciliation"
+    },
+    {
+      "bookRecordId": "book-2006-374",
+      "decreeRecordIds": [
+        "decree-170-2009-3-50"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-376",
+      "decreeRecordIds": [
+        "decree-170-2009-3-20"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-378",
+      "decreeRecordIds": [
+        "decree-170-2009-3-4"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-380",
+      "decreeRecordIds": [
+        "decree-170-2009-3-35"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-382",
+      "decreeRecordIds": [
+        "decree-170-2009-3-7"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-384",
+      "decreeRecordIds": [
+        "decree-170-2009-3-54"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-386",
+      "decreeRecordIds": [
+        "decree-170-2009-3-43"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-388",
+      "decreeRecordIds": [
+        "decree-170-2009-3-16"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-390",
+      "decreeRecordIds": [
+        "decree-170-2009-3-5"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-392",
+      "decreeRecordIds": [
+        "decree-170-2009-3-2"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-394",
+      "decreeRecordIds": [
+        "decree-170-2009-3-37"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-396",
+      "decreeRecordIds": [
+        "decree-170-2009-3-41"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-398",
+      "decreeRecordIds": [
+        "decree-170-2009-3-12"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-400",
+      "decreeRecordIds": [
+        "decree-170-2009-3-11"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-402",
+      "decreeRecordIds": [
+        "decree-170-2009-3-22"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-404",
+      "decreeRecordIds": [
+        "decree-170-2009-3-45"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-406",
+      "decreeRecordIds": [
+        "decree-170-2009-3-42"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-408",
+      "decreeRecordIds": [
+        "decree-170-2009-3-17"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-410",
+      "decreeRecordIds": [
+        "decree-170-2009-3-51"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-412",
+      "decreeRecordIds": [
+        "decree-170-2009-3-32"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-414",
+      "decreeRecordIds": [
+        "decree-170-2009-3-55"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-416",
+      "decreeRecordIds": [
+        "decree-170-2009-3-14"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-418",
+      "decreeRecordIds": [
+        "decree-170-2009-3-56"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-420",
+      "decreeRecordIds": [],
+      "state": "needs_spelling_or_concept_reconciliation"
+    },
+    {
+      "bookRecordId": "book-2006-422",
+      "decreeRecordIds": [
+        "decree-170-2009-3-8"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-424",
+      "decreeRecordIds": [
+        "decree-170-2009-3-21"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-426",
+      "decreeRecordIds": [
+        "decree-170-2009-3-53"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-428",
+      "decreeRecordIds": [
+        "decree-170-2009-3-10"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-430",
+      "decreeRecordIds": [
+        "decree-170-2009-3-29"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-432",
+      "decreeRecordIds": [
+        "decree-170-2009-3-30"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-434",
+      "decreeRecordIds": [
+        "decree-170-2009-3-46"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-436",
+      "decreeRecordIds": [
+        "decree-170-2009-3-57"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-438",
+      "decreeRecordIds": [
+        "decree-170-2009-3-31"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-440",
+      "decreeRecordIds": [
+        "decree-170-2009-3-15"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-442",
+      "decreeRecordIds": [
+        "decree-170-2009-3-38"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-444",
+      "decreeRecordIds": [],
+      "state": "needs_spelling_or_concept_reconciliation"
+    },
+    {
+      "bookRecordId": "book-2006-446",
+      "decreeRecordIds": [
+        "decree-170-2009-3-58"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-448",
+      "decreeRecordIds": [
+        "decree-170-2009-3-59"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-450",
+      "decreeRecordIds": [],
+      "state": "needs_spelling_or_concept_reconciliation"
+    },
+    {
+      "bookRecordId": "book-2006-452",
+      "decreeRecordIds": [
+        "decree-170-2009-3-39"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-454",
+      "decreeRecordIds": [
+        "decree-170-2009-3-23"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-456",
+      "decreeRecordIds": [
+        "decree-170-2009-3-48"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-458",
+      "decreeRecordIds": [
+        "decree-170-2009-3-24"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-460",
+      "decreeRecordIds": [
+        "decree-170-2009-3-26"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-462",
+      "decreeRecordIds": [
+        "decree-170-2009-3-47"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-464",
+      "decreeRecordIds": [
+        "decree-170-2009-3-40"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-466",
+      "decreeRecordIds": [
+        "decree-170-2009-3-19"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-468",
+      "decreeRecordIds": [
+        "decree-170-2009-3-25"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-470",
+      "decreeRecordIds": [
+        "decree-170-2009-3-36"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-482",
+      "decreeRecordIds": [
+        "decree-170-2009-2-8"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-484",
+      "decreeRecordIds": [
+        "decree-170-2009-2-18"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-486",
+      "decreeRecordIds": [],
+      "state": "needs_spelling_or_concept_reconciliation"
+    },
+    {
+      "bookRecordId": "book-2006-488",
+      "decreeRecordIds": [],
+      "state": "needs_spelling_or_concept_reconciliation"
+    },
+    {
+      "bookRecordId": "book-2006-490",
+      "decreeRecordIds": [
+        "decree-170-2009-2-1"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-492",
+      "decreeRecordIds": [
+        "decree-170-2009-2-2"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-494",
+      "decreeRecordIds": [
+        "decree-170-2009-2-26"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-496",
+      "decreeRecordIds": [
+        "decree-170-2009-2-14"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-498",
+      "decreeRecordIds": [
+        "decree-170-2009-2-4"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-500",
+      "decreeRecordIds": [
+        "decree-170-2009-2-12"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-502",
+      "decreeRecordIds": [
+        "decree-170-2009-2-20"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-504",
+      "decreeRecordIds": [
+        "decree-170-2009-2-21"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-506",
+      "decreeRecordIds": [],
+      "state": "needs_spelling_or_concept_reconciliation"
+    },
+    {
+      "bookRecordId": "book-2006-508",
+      "decreeRecordIds": [
+        "decree-170-2009-2-19"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-510",
+      "decreeRecordIds": [
+        "decree-170-2009-2-11"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-512",
+      "decreeRecordIds": [
+        "decree-170-2009-2-3"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-514",
+      "decreeRecordIds": [],
+      "state": "needs_spelling_or_concept_reconciliation"
+    },
+    {
+      "bookRecordId": "book-2006-516",
+      "decreeRecordIds": [
+        "decree-170-2009-2-6"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-518",
+      "decreeRecordIds": [
+        "decree-170-2009-2-22"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-520",
+      "decreeRecordIds": [
+        "decree-170-2009-2-10"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-522",
+      "decreeRecordIds": [
+        "decree-170-2009-2-16"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-524",
+      "decreeRecordIds": [
+        "decree-170-2009-2-25"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    },
+    {
+      "bookRecordId": "book-2006-526",
+      "decreeRecordIds": [
+        "decree-170-2009-2-24"
+      ],
+      "state": "same_name_or_same_account_alternative"
+    }
+  ],
+  "groups": [
+    {
+      "group": "mammals",
+      "nationalBookPositions": 23,
+      "national2009ListedPositions": 23,
+      "existing": 7,
+      "selected": 10,
+      "taxonomyResolved": 8
+    },
+    {
+      "group": "birds",
+      "nationalBookPositions": 57,
+      "national2009ListedPositions": 57,
+      "existing": 9,
+      "selected": 22,
+      "taxonomyResolved": 19
+    },
+    {
+      "group": "reptiles",
+      "nationalBookPositions": 8,
+      "national2009ListedPositions": 8,
+      "existing": 3,
+      "selected": 4,
+      "taxonomyResolved": 2
+    },
+    {
+      "group": "amphibians",
+      "nationalBookPositions": 2,
+      "national2009ListedPositions": 2,
+      "existing": 1,
+      "selected": 1,
+      "taxonomyResolved": 0
+    },
+    {
+      "group": "fish",
+      "nationalBookPositions": 7,
+      "national2009ListedPositions": 7,
+      "existing": 2,
+      "selected": 2,
+      "taxonomyResolved": 0
+    },
+    {
+      "group": "arthropods",
+      "nationalBookPositions": 18,
+      "national2009ListedPositions": 18,
+      "existing": 6,
+      "selected": 4,
+      "taxonomyResolved": 2
+    },
+    {
+      "group": "plants",
+      "nationalBookPositions": 83,
+      "national2009ListedPositions": 83,
+      "existing": 10,
+      "selected": 15,
+      "taxonomyResolved": 15
+    },
+    {
+      "group": "fungi",
+      "nationalBookPositions": 4,
+      "national2009ListedPositions": 4,
+      "existing": 2,
+      "selected": 2,
+      "taxonomyResolved": 0
+    }
+  ],
+  "counts": {
+    "bookPositions": 202,
+    "existingRecords": 40,
+    "nationalPositionsOutsideMuras": 162,
+    "selectedCandidates": 60,
+    "taxonomyResolved": 46,
+    "taxonomyNeedsReview": 14,
+    "outsideSelectedQueue": 102,
+    "confirmedSynonymOutsideQueue": 1
+  },
+  "batches": [
+    {
+      "batchId": "redbook-master-60-1",
+      "number": 1,
+      "candidates": [
+        {
+          "id": "eminium-regelii",
+          "originalScientificName": "Eminium regelii",
+          "acceptedScientificName": "Eminium regelii",
+          "nationalSourceRecords": [
+            "book-2006-62",
+            "decree-170-2009-1-2"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "eremurus-zenaidae",
+          "originalScientificName": "Eremurus zenaidae",
+          "acceptedScientificName": "Eremurus zenaidae",
+          "nationalSourceRecords": [
+            "book-2006-64",
+            "decree-170-2009-1-5"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "eremurus-zoae",
+          "originalScientificName": "Eremurus zoae",
+          "acceptedScientificName": "Eremurus zoae",
+          "nationalSourceRecords": [
+            "book-2006-66",
+            "decree-170-2009-1-6"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "allium-dodecadontum",
+          "originalScientificName": "Allium dodecadontum",
+          "acceptedScientificName": "Allium dodecadontum",
+          "nationalSourceRecords": [
+            "book-2006-68",
+            "decree-170-2009-1-9"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "allium-semenovii",
+          "originalScientificName": "Allium semenovii",
+          "acceptedScientificName": "Allium semenovii",
+          "nationalSourceRecords": [
+            "book-2006-72",
+            "decree-170-2009-1-8"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "tulipa-affinis",
+          "originalScientificName": "Tulipa affinis",
+          "acceptedScientificName": "Tulipa fosteriana",
+          "nationalSourceRecords": [
+            "book-2006-76",
+            "decree-170-2009-1-16"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "tulipa-anadroma",
+          "originalScientificName": "Tulipa anadroma",
+          "acceptedScientificName": "Tulipa tschimganica",
+          "nationalSourceRecords": [
+            "book-2006-78",
+            "decree-170-2009-1-12"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "tulipa-korolkowii",
+          "originalScientificName": "Tulipa korolkowii",
+          "acceptedScientificName": "Tulipa korolkowii",
+          "nationalSourceRecords": [
+            "book-2006-86",
+            "decree-170-2009-1-17"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "tulipa-platystemon",
+          "originalScientificName": "Tulipa platystemon",
+          "acceptedScientificName": "Tulipa platystemon",
+          "nationalSourceRecords": [
+            "book-2006-90",
+            "decree-170-2009-1-21"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "tulipa-tetraphylla",
+          "originalScientificName": "Tulipa tetraphylla",
+          "acceptedScientificName": "Tulipa tetraphylla",
+          "nationalSourceRecords": [
+            "book-2006-94",
+            "decree-170-2009-1-22"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "tulipa-zenaidae",
+          "originalScientificName": "Tulipa zenaidae",
+          "acceptedScientificName": "Tulipa lehmanniana",
+          "nationalSourceRecords": [
+            "book-2006-96",
+            "decree-170-2009-1-20"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "juno-orchioides",
+          "originalScientificName": "Juno orchioides",
+          "acceptedScientificName": "Iris orchioides",
+          "nationalSourceRecords": [
+            "book-2006-98",
+            "decree-170-2009-1-24"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "iridodictyum-kolpakowskianum",
+          "originalScientificName": "Iridodictyum kolpakowskianum",
+          "acceptedScientificName": "Iris kolpakowskiana",
+          "nationalSourceRecords": [
+            "book-2006-100",
+            "decree-170-2009-1-25"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "thesium-minkwitzianum",
+          "originalScientificName": "Thesium minkwitzianum",
+          "acceptedScientificName": "Chrysothesium minkwitzianum",
+          "nationalSourceRecords": [
+            "book-2006-102",
+            "decree-170-2009-1-26"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "delphinium-knorringianum",
+          "originalScientificName": "Delphinium knorringianum",
+          "acceptedScientificName": "Delphinium knorringianum",
+          "nationalSourceRecords": [
+            "book-2006-108",
+            "decree-170-2009-1-31"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "urocerus-sah",
+          "originalScientificName": "Urocerus sah",
+          "acceptedScientificName": "Urocerus sah",
+          "nationalSourceRecords": [
+            "book-2006-274",
+            "decree-170-2009-4-13"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "masaris-longicornis",
+          "originalScientificName": "Masaris longicornis",
+          "acceptedScientificName": "Masaris longicornis",
+          "nationalSourceRecords": [
+            "book-2006-280",
+            "decree-170-2009-4-16"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "varanus-griseus-caspius",
+          "originalScientificName": "Varanus griseus caspius",
+          "acceptedScientificName": "Varanus griseus caspius",
+          "nationalSourceRecords": [
+            "book-2006-334",
+            "decree-170-2009-5-5"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "eryx-tataricus",
+          "originalScientificName": "Eryx tataricus",
+          "acceptedScientificName": "Eryx miliaris",
+          "nationalSourceRecords": [
+            "book-2006-340",
+            "decree-170-2009-5-10"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "lyrurus-tetrix",
+          "originalScientificName": "Lyrurus tetrix",
+          "acceptedScientificName": "Lyrurus tetrix",
+          "nationalSourceRecords": [
+            "book-2006-358",
+            "decree-170-2009-3-13"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "cygnus-cygnus",
+          "originalScientificName": "Cygnus cygnus",
+          "acceptedScientificName": "Cygnus cygnus",
+          "nationalSourceRecords": [
+            "book-2006-362",
+            "decree-170-2009-3-33"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "aythya-nyroca",
+          "originalScientificName": "Aythya nyroca",
+          "acceptedScientificName": "Aythya nyroca",
+          "nationalSourceRecords": [
+            "book-2006-364",
+            "decree-170-2009-3-18"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "mergus-serrator",
+          "originalScientificName": "Mergus serrator",
+          "acceptedScientificName": "Mergus serrator",
+          "nationalSourceRecords": [
+            "book-2006-366",
+            "decree-170-2009-3-28"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "oxyura-leucocephala",
+          "originalScientificName": "Oxyura leucocephala",
+          "acceptedScientificName": "Oxyura leucocephala",
+          "nationalSourceRecords": [
+            "book-2006-368",
+            "decree-170-2009-3-1"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "gavia-arctica",
+          "originalScientificName": "Gavia arctica",
+          "acceptedScientificName": "Gavia arctica",
+          "nationalSourceRecords": [
+            "book-2006-370",
+            "decree-170-2009-3-52"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        }
+      ]
+    },
+    {
+      "batchId": "redbook-master-60-2",
+      "number": 2,
+      "candidates": [
+        {
+          "id": "ciconia-ciconia",
+          "originalScientificName": "Ciconia ciconia",
+          "acceptedScientificName": "Ciconia ciconia",
+          "nationalSourceRecords": [
+            "book-2006-376",
+            "decree-170-2009-3-20"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "platalea-leucorodia",
+          "originalScientificName": "Platalea leucorodia",
+          "acceptedScientificName": "Platalea leucorodia",
+          "nationalSourceRecords": [
+            "book-2006-378",
+            "decree-170-2009-3-4"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "pelecanus-onocrotalus",
+          "originalScientificName": "Pelecanus onocrotalus",
+          "acceptedScientificName": "Pelecanus onocrotalus",
+          "nationalSourceRecords": [
+            "book-2006-380",
+            "decree-170-2009-3-35"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "phalacrocorax-pygmaeus",
+          "originalScientificName": "Phalacrocorax pygmaeus",
+          "acceptedScientificName": "Microcarbo pygmaeus",
+          "nationalSourceRecords": [
+            "book-2006-384",
+            "decree-170-2009-3-54"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "falco-naumanni",
+          "originalScientificName": "Falco naumanni",
+          "acceptedScientificName": "Falco naumanni",
+          "nationalSourceRecords": [
+            "book-2006-386",
+            "decree-170-2009-3-43"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "falco-rusticolus",
+          "originalScientificName": "Falco rusticolus",
+          "acceptedScientificName": "Falco rusticolus",
+          "nationalSourceRecords": [
+            "book-2006-390",
+            "decree-170-2009-3-5"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "pandion-haliaetus",
+          "originalScientificName": "Pandion haliaetus",
+          "acceptedScientificName": "Pandion haliaetus",
+          "nationalSourceRecords": [
+            "book-2006-396",
+            "decree-170-2009-3-41"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "haliaeetus-leucoryphus",
+          "originalScientificName": "Haliaeetus leucoryphus",
+          "acceptedScientificName": "Haliaeetus leucoryphus",
+          "nationalSourceRecords": [
+            "book-2006-398",
+            "decree-170-2009-3-12"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "haliaeetus-albicilla",
+          "originalScientificName": "Haliaeetus albicilla",
+          "acceptedScientificName": "Haliaeetus albicilla",
+          "nationalSourceRecords": [
+            "book-2006-400",
+            "decree-170-2009-3-11"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "gyps-himalayensis",
+          "originalScientificName": "Gyps himalayensis",
+          "acceptedScientificName": "Gyps himalayensis",
+          "nationalSourceRecords": [
+            "book-2006-406",
+            "decree-170-2009-3-42"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "gyps-fulvus",
+          "originalScientificName": "Gyps fulvus",
+          "acceptedScientificName": "Gyps fulvus",
+          "nationalSourceRecords": [
+            "book-2006-408",
+            "decree-170-2009-3-17"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "circaetus-gallicus",
+          "originalScientificName": "Circaetus gallicus",
+          "acceptedScientificName": "Circaetus gallicus",
+          "nationalSourceRecords": [
+            "book-2006-412",
+            "decree-170-2009-3-32"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "circus-macrourus",
+          "originalScientificName": "Circus macrourus",
+          "acceptedScientificName": "Circus macrourus",
+          "nationalSourceRecords": [
+            "book-2006-414",
+            "decree-170-2009-3-55"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "neomys-fodiens",
+          "originalScientificName": "Neomys fodiens",
+          "acceptedScientificName": "Neomys fodiens",
+          "nationalSourceRecords": [
+            "book-2006-484",
+            "decree-170-2009-2-18"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "rhinolophus-bocharicus",
+          "originalScientificName": "Rhinolophus bocharicus",
+          "acceptedScientificName": "Rhinolophus bocharicus",
+          "nationalSourceRecords": [
+            "book-2006-486"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "barbastella-leucomelas",
+          "originalScientificName": "Barbastella leucomelas",
+          "acceptedScientificName": "Barbastella leucomelas",
+          "nationalSourceRecords": [
+            "book-2006-490",
+            "decree-170-2009-2-1"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "tadarida-teniotis",
+          "originalScientificName": "Tadarida teniotis",
+          "acceptedScientificName": "Tadarida teniotis",
+          "nationalSourceRecords": [
+            "book-2006-494",
+            "decree-170-2009-2-26"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "ursus-arctos",
+          "originalScientificName": "Ursus arctos",
+          "acceptedScientificName": "Ursus arctos",
+          "nationalSourceRecords": [
+            "book-2006-498",
+            "decree-170-2009-2-4"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "martes-foina",
+          "originalScientificName": "Martes foina",
+          "acceptedScientificName": "Martes foina",
+          "nationalSourceRecords": [
+            "book-2006-500",
+            "decree-170-2009-2-12"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "lutra-lutra",
+          "originalScientificName": "Lutra lutra",
+          "acceptedScientificName": "Lutra lutra",
+          "nationalSourceRecords": [
+            "book-2006-504",
+            "decree-170-2009-2-21"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "allactaga-elater",
+          "originalScientificName": "Allactaga elater",
+          "acceptedScientificName": "Allactaga elater",
+          "nationalSourceRecords": [
+            "book-2006-522",
+            "decree-170-2009-2-16"
+          ],
+          "degreeOfReadiness": "scientific_evidence_collected_no_draft",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "dictyocephalus-attenuatus",
+          "originalScientificName": "Dictyocephalus attenuatus",
+          "acceptedScientificName": null,
+          "nationalSourceRecords": [
+            "book-2006-38"
+          ],
+          "degreeOfReadiness": "needs_taxonomic_evidence",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Точное принятое имя и национальная таксономическая концепция требуют сверки; FUZZY/NONE и изменение ранга не приняты автоматически",
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "dictyophora-duplicata",
+          "originalScientificName": "Dictyophora duplicata",
+          "acceptedScientificName": null,
+          "nationalSourceRecords": [
+            "book-2006-40"
+          ],
+          "degreeOfReadiness": "needs_taxonomic_evidence",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Точное принятое имя и национальная таксономическая концепция требуют сверки; FUZZY/NONE и изменение ранга не приняты автоматически",
+            "GBIF объединяет Dictyophora duplicata с Phallus indusiatus; микологические публикации обсуждают отдельный P. duplicatus и комплекс P. indusiatus s.l. Требуется специализированная сверка национального очерка.",
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "sonjagaster-coronatus",
+          "originalScientificName": "Sonjagaster coronatus",
+          "acceptedScientificName": null,
+          "nationalSourceRecords": [
+            "book-2006-250"
+          ],
+          "degreeOfReadiness": "needs_taxonomic_evidence",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Точное принятое имя и национальная таксономическая концепция требуют сверки; FUZZY/NONE и изменение ранга не приняты автоматически",
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "prionus-tschitscherini",
+          "originalScientificName": "Prionus tschitscherini",
+          "acceptedScientificName": null,
+          "nationalSourceRecords": [
+            "book-2006-260",
+            "decree-170-2009-4-6"
+          ],
+          "degreeOfReadiness": "needs_taxonomic_evidence",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Точное принятое имя и национальная таксономическая концепция требуют сверки; FUZZY/NONE и изменение ранга не приняты автоматически",
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        }
+      ]
+    },
+    {
+      "batchId": "redbook-master-60-3",
+      "number": 3,
+      "candidates": [
+        {
+          "id": "schizothorax-issykkuli",
+          "originalScientificName": "Schizothorax issykkuli",
+          "acceptedScientificName": null,
+          "nationalSourceRecords": [
+            "book-2006-308",
+            "decree-170-2009-6-1"
+          ],
+          "degreeOfReadiness": "needs_taxonomic_evidence",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Точное принятое имя и национальная таксономическая концепция требуют сверки; FUZZY/NONE и изменение ранга не приняты автоматически",
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "diptychus-dybowskii-lansdelli",
+          "originalScientificName": "Diptychus dybowskii lansdelli",
+          "acceptedScientificName": null,
+          "nationalSourceRecords": [
+            "book-2006-310",
+            "decree-170-2009-6-4"
+          ],
+          "degreeOfReadiness": "needs_taxonomic_evidence",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Точное принятое имя и национальная таксономическая концепция требуют сверки; FUZZY/NONE и изменение ранга не приняты автоматически",
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "bufo-viridis",
+          "originalScientificName": "Bufo viridis",
+          "acceptedScientificName": null,
+          "nationalSourceRecords": [
+            "book-2006-326",
+            "decree-170-2009-5-1"
+          ],
+          "degreeOfReadiness": "needs_taxonomic_evidence",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Точное принятое имя и национальная таксономическая концепция требуют сверки; FUZZY/NONE и изменение ранга не приняты автоматически",
+            "Bufo viridis в национальном источнике — исторический комплекс; AMNH отмечает присутствие Bufotes viridis s.str. в KG как вероятное/спорное. Не подменять национальный концепт современным видом.",
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "novoeumeces-schneideri-princeps",
+          "originalScientificName": "Novoeumeces schneideri princeps",
+          "acceptedScientificName": null,
+          "nationalSourceRecords": [
+            "book-2006-338"
+          ],
+          "degreeOfReadiness": "needs_taxonomic_evidence",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Точное принятое имя и национальная таксономическая концепция требуют сверки; FUZZY/NONE и изменение ранга не приняты автоматически",
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "spalerosophis-diadema-schiraziana",
+          "originalScientificName": "Spalerosophis diadema schiraziana",
+          "acceptedScientificName": null,
+          "nationalSourceRecords": [
+            "book-2006-342"
+          ],
+          "degreeOfReadiness": "needs_taxonomic_evidence",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Точное принятое имя и национальная таксономическая концепция требуют сверки; FUZZY/NONE и изменение ранга не приняты автоматически",
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "anser-indica",
+          "originalScientificName": "Anser indica",
+          "acceptedScientificName": null,
+          "nationalSourceRecords": [
+            "book-2006-360"
+          ],
+          "degreeOfReadiness": "needs_taxonomic_evidence",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Точное принятое имя и национальная таксономическая концепция требуют сверки; FUZZY/NONE и изменение ранга не приняты автоматически",
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "falco-peregrinus",
+          "originalScientificName": "Falco peregrinus",
+          "acceptedScientificName": null,
+          "nationalSourceRecords": [
+            "book-2006-392",
+            "decree-170-2009-3-2"
+          ],
+          "degreeOfReadiness": "needs_taxonomic_evidence",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Точное принятое имя и национальная таксономическая концепция требуют сверки; FUZZY/NONE и изменение ранга не приняты автоматически",
+            "В очереди также Falco pelegrinoides, который GBIF относит к Falco peregrinus pelegrinoides. Национальные два очерка нельзя автоматически импортировать как независимые непересекающиеся современные таксоны.",
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "falco-pelegrinoides",
+          "originalScientificName": "Falco pelegrinoides",
+          "acceptedScientificName": null,
+          "nationalSourceRecords": [
+            "book-2006-394",
+            "decree-170-2009-3-37"
+          ],
+          "degreeOfReadiness": "needs_taxonomic_evidence",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Точное принятое имя и национальная таксономическая концепция требуют сверки; FUZZY/NONE и изменение ранга не приняты автоматически",
+            "GBIF принимает Falco peregrinus pelegrinoides в ранге SUBSPECIES, национальный заголовок Falco pelegrinoides имеет ранг SPECIES; требуется разрешить пересечение с Falco peregrinus.",
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "otonycteris-hemprichi",
+          "originalScientificName": "Otonycteris hemprichi",
+          "acceptedScientificName": null,
+          "nationalSourceRecords": [
+            "book-2006-492",
+            "decree-170-2009-2-2"
+          ],
+          "degreeOfReadiness": "needs_taxonomic_evidence",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Точное принятое имя и национальная таксономическая концепция требуют сверки; FUZZY/NONE и изменение ранга не приняты автоматически",
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        },
+        {
+          "id": "allactaga-saltator",
+          "originalScientificName": "Allactaga saltator",
+          "acceptedScientificName": null,
+          "nationalSourceRecords": [
+            "book-2006-524",
+            "decree-170-2009-2-25"
+          ],
+          "degreeOfReadiness": "needs_taxonomic_evidence",
+          "duplicateCheck": "no_catalog_archive_or_queue_duplicate",
+          "gaps": [
+            "Точное принятое имя и национальная таксономическая концепция требуют сверки; FUZZY/NONE и изменение ранга не приняты автоматически",
+            "Публикационный черновик не подготовлен",
+            "Описания KY/UZ/RU/EN не подготовлены",
+            "Нужен независимый научный и редакторский просмотр",
+            "Фотография не исследовалась; возможен placeholder"
+          ]
+        }
+      ]
+    }
+  ]
+}

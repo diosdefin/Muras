@@ -30,7 +30,7 @@ test('prefix, substring and multiword queries find names only', () => {
   assert.deepEqual(ids('panth'), ['irbis'])
   assert.deepEqual(ids('бирс'), ['irbis'])
   assert.deepEqual(ids('leopard snow'), ['irbis'])
-  assert.deepEqual(ids('тюльпан'), ['greigs-tulip','kaufmanns-tulip','kolpakowskis-tulip','ostrowskis-tulip'])
+  assert.deepEqual(ids('тюльпан'), catalog.filter(s => s.names.ru?.toLowerCase().includes('тюльпан')).map(s => s.id))
   assert.deepEqual(ids('Браконьерство'), [])
 })
 test('safe Latin transliterations are marked and preserve the original Kyrgyz name', () => {

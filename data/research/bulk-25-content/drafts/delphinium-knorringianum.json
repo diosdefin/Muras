@@ -1,0 +1,229 @@
+{
+  "id": "delphinium-knorringianum",
+  "scientificName": "Delphinium knorringianum",
+  "names": {
+    "ru": "Живокость Кнорринг",
+    "ky": null,
+    "uz": null,
+    "en": "Knorring’s Larkspur"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Ranunculales",
+    "family": "Ranunculaceae",
+    "genus": "Delphinium"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Горные склоны и скалы нижнего и среднего горных поясов.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Бессистемный выпас с чрезмерной нагрузкой на пастбища.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Издание 2006 года рекомендует выяснить состояние популяций в границах ареала; подтверждённые современные специальные меры отсутствуют.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=109",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 31",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Delphinium knorringianum",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Delphinium%20knorringianum",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:3930642"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Редкая живокость Кыргызстана с рассечёнными листьями и длинным раздвоенным шпорцем. Растёт на горных склонах и скалах; чрезмерный выпас угрожает местообитаниям.",
+        "ky": "Кыргызстандагы сейрек өсүмдүк. Жалбырагы беш бөлүктүү, гүлүнүн узун текөөрчөсүнүн учу ачаланган. Тоо беттеринде жана аскаларда өсөт; ашыкча мал жаюу зыян келтирет.",
+        "uz": "Qirgʻizistonning kamyob oʻsimligi; barglari boʻlingan, gulining uzun pixi uchida ikkiga ajralgan. Togʻ yonbagʻirlari va qoyalarda oʻsadi; ortiqcha chorva boqish xavf tugʻdiradi.",
+        "en": "A rare Kyrgyzstan larkspur with divided leaves and a long, fork-tipped spur. It grows on mountain slopes and rocks; excessive grazing threatens its habitat."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Живокость Кнорринг описана в национальной Красной книге как редкий реликтовый вид с разобщённым ареалом в Кыргызстане. Стебли достигают 35–45 см и в нижней части покрыты отстоящими волосками. Листья сосредоточены снизу; их пластинки разделены на пять долей, которые дополнительно надрезаны на лопасти. Верхняя часть стебля ветвится и несёт два–четыре цветка на очень длинных цветоножках. Характерный признак цветка — тонкий цилиндрический шпорец, раздвоенный на конце.\n\nИсточник указывает северный склон Ат-Ойнокского хребта, северные отроги Туркестанского и северный макросклон Алайского хребта. Растение встречается на горных склонах и скалах нижнего и среднего поясов. Цветёт в июне и размножается семенами; сроки плодоношения и сведения о культивировании отсутствуют.\n\nОсновной ограничивающий фактор в статье — бессистемный выпас с чрезмерной нагрузкой на пастбища. Специальные меры охраны в 2006 году не были разработаны, и авторы рекомендовали выяснить состояние популяций во всём ареале. Определение «очень редко» не преобразовано в численную оценку. Категория VU остаётся исторической национальной характеристикой, требующей проверки современного состояния.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Стебли 35–45 см, внизу отстояще-волосистые. Листья на длинных черешках, пальчато рассечены на пять долей, каждая надрезана на три лопасти. Два–четыре цветка на длинных цветоножках; шпорец тонкий, цилиндрический, раздвоенный на конце. Нектарники и стаминодии светло-фиолетовые.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Горные склоны и скалы нижнего и среднего поясов. Источник характеризует ареал как дизъюнктивный; влияние чрезмерного выпаса названо главным фактором риска.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Цветение — июнь, размножение семенное. Плодоношение, опылители и условия прорастания в национальной статье не указаны.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальному описанию: северный склон Ат-Ойнокского хребта, северные отроги Туркестанского и северный макросклон Алайского хребта. Новые точки наблюдения не добавлены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

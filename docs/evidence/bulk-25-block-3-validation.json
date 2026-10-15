@@ -1,0 +1,563 @@
+{
+  "schemaVersion": 1,
+  "documentType": "unpublished-content-quality-report",
+  "preservedFiles": 153,
+  "sourceCatalogCount": 40,
+  "pipeline": {
+    "schemaVersion": 1,
+    "registryId": "bulk-25-content",
+    "catalogFingerprint": "6ffd82165fd7f2ce9a24f38ca2aae9a885e0fe8e1d672a8630725ac5b36b5cf0",
+    "counts": {
+      "processed": 5,
+      "accepted": 5,
+      "deferred": 0,
+      "rejected": 0
+    },
+    "states": {
+      "pending": 0,
+      "needs_evidence": 0,
+      "research_ready": 0,
+      "needs_photo": 0,
+      "ready_for_review": 5,
+      "approved_for_import": 0,
+      "imported": 0,
+      "rejected": 0
+    },
+    "results": [
+      {
+        "candidateId": "tulipa-zenaidae",
+        "batchNumber": 3,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "c9a7c0025e2bd7341f17e964ecbacc91f81409d41cfa7894cfc3cb5cb2c35acd",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "juno-orchioides",
+        "batchNumber": 3,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "3f28b4988490687279e947b1a46165dd2a393290f6946818df06495fece02fba",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "iridodictyum-kolpakowskianum",
+        "batchNumber": 3,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "4b6232afac7cdc65523749f52c3872cd88bba2600f952d771cfaacb8877a6c6a",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "thesium-minkwitzianum",
+        "batchNumber": 3,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "1d11600435a739cd4f8efc06a8d20f33302bbb2d6656be1ca8b4df5135c72e88",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "en"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      {
+        "candidateId": "delphinium-knorringianum",
+        "batchNumber": 3,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "b153192328b5aaaf51f7753b7a0450b1596f0cccbe99c824cb4369f95ea23c9d",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz"
+          ],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      }
+    ]
+  },
+  "quality": [
+    {
+      "candidateId": "tulipa-zenaidae",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          96,
+          97
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Tulipa lehmanniana",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5299646",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=97"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/5299646"
+        }
+      ],
+      "shortLengthRu": 163,
+      "overviewWordsRu": 149,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz",
+          "en"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Датированная численность",
+        "Современный охват национального концепта",
+        "Плодоношение в природе"
+      ],
+      "editorialNotes": [
+        "Tulipa zenaidae → Tulipa lehmanniana: подтверждённая GBIF синонимия того же ранга. Национальная оценка не распространена на весь широкий принятый таксон."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "juno-orchioides",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          98,
+          99
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Iris orchioides",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5298228",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=99"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/5298228"
+        }
+      ],
+      "shortLengthRu": 166,
+      "overviewWordsRu": 154,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz",
+          "en"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Численность",
+        "Современные наблюдения и действующая правовая редакция"
+      ],
+      "editorialNotes": [
+        "Juno orchioides → Iris orchioides: точная синонимия того же ранга; сохранены национальное имя и источник биологии."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "iridodictyum-kolpakowskianum",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          100,
+          101
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Iris kolpakowskiana",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5299049",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=101"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/5299049"
+        },
+        {
+          "id": "photo-commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Iridodictyum_kolpakowskianum.jpg"
+        }
+      ],
+      "shortLengthRu": 150,
+      "overviewWordsRu": 150,
+      "languages": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz",
+          "en"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Численность",
+        "Проверка указания Ферганского хребта",
+        "Современное состояние местообитаний"
+      ],
+      "editorialNotes": [
+        "Iridodictyum kolpakowskianum → Iris kolpakowskiana: подтверждённая синонимия того же ранга. Фотография документирована под принятым именем в категории Commons."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "thesium-minkwitzianum",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          102,
+          103
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Chrysothesium minkwitzianum",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3788694",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=103"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/3788694"
+        }
+      ],
+      "shortLengthRu": 163,
+      "overviewWordsRu": 149,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz",
+          "en"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Год исторического учёта",
+        "Современная численность",
+        "Подробная биология",
+        "Культивирование"
+      ],
+      "editorialNotes": [
+        "Thesium minkwitzianum → Chrysothesium minkwitzianum: GBIF подтверждает точную синонимию того же ранга.",
+        "Сроки биологии приведены по RU; EN называет её неизвестной. Требует специалиста, неподтверждённые детали не добавлены."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "delphinium-knorringianum",
+      "nationalEvidence": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          108,
+          109
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Delphinium knorringianum",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3930642",
+        "sourceId": "gbif-taxonomy"
+      },
+      "scientificSources": [
+        {
+          "id": "national-book",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=109"
+        },
+        {
+          "id": "national-list-1",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3"
+        },
+        {
+          "id": "gbif-taxonomy",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Delphinium%20knorringianum"
+        }
+      ],
+      "shortLengthRu": 160,
+      "overviewWordsRu": 150,
+      "languages": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [
+          "ky",
+          "uz"
+        ],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      },
+      "missingFacts": [
+        "Численность",
+        "Плодоношение",
+        "Культивирование",
+        "Современные меры охраны"
+      ],
+      "editorialNotes": [
+        "Аудит 22.4: термин «тепкичи» заменён на «текөөрчөсү» по KY-статье, PDF с. 108; старые шрифтовые ё/ъ нормализованы в ө/ү. Пять долей листа также прямо описаны в первоисточнике."
+      ],
+      "technicalErrors": [],
+      "scientificBlockers": [],
+      "independentReview": "pending",
+      "importPermission": "absent",
+      "state": "ready_for_review"
+    }
+  ]
+}

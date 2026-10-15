@@ -1,0 +1,253 @@
+{
+  "id": "allium-dodecadontum",
+  "scientificName": "Allium dodecadontum",
+  "names": {
+    "ru": "Лук двенадцатизубый",
+    "ky": null,
+    "uz": null,
+    "en": "Twelve-dentate Onion"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Liliopsida",
+    "order": "Asparagales",
+    "family": "Amaryllidaceae",
+    "genus": "Allium"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Заросли кустарников и опушки леса среднего горного пояса.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Весенний выпас скота.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Сбор цветков и выкапывание луковиц.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По статье 2006 года охранялся в Сары-Челекском заповеднике.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Авторы рекомендовали ботанические заказники, мониторинг и запрет выкапывания луковиц и выпаса в местах произрастания.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=69",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "conservationMeasures.1",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 9",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Allium dodecadontum",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Allium%20dodecadontum",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:2857164"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Луковичное растение Чаткальского хребта с плотными розово-фиолетовыми соцветиями. Живёт среди кустарников и на опушках; цветение и плодоношение идут в мае–июне.",
+        "ky": "Чаткал тоо кыркасында өскөн пияз түптүү өсүмдүк. Гүл тобу жыш, кызгылт көк. Бадалдардын арасында жана токой четинде өсөт; май–июнда гүлдөп, мөмөлөйт.",
+        "uz": "Chatqol tizmasining piyozli oʻsimligi; toʻpguli zich, pushti-binafsha rangli. Butalar orasida va oʻrmon chetlarida oʻsadi; may–iyunda gullab, meva beradi.",
+        "en": "A bulbous plant of the Chatkal Range with dense pink-violet flower heads. It grows among shrubs and at forest edges, flowering and fruiting in May–June."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Лук двенадцатизубый в национальном описании представлен как узкий эндемик Чаткальского хребта. Это многолетний геофит с небольшой округлой луковицей и высоким ребристым стеблем. Два плоских узких листа имеют шероховатые края. На верхушке стебля расположено плотное соцветие, близкое по форме к полушарию или шару. Розово-фиолетовые цветки звёздчатые; после цветения листочки околоцветника отгибаются и скручиваются.\n\nВ отличие от видов открытых высокогорных лугов, этот лук описан среди кустарников и на лесных опушках среднего горного пояса. Цветение и плодоношение приходятся на май и июнь. Национальная статья не содержит численного учёта, сведений о культуре или подробностей опыления. Поэтому оценивать размер популяции по самому наличию растения в Красной книге нельзя.\n\nИсточник 2006 года сообщает об охране вида в Сары-Челекском заповеднике. Дополнительно авторы рекомендовали ботанические заказники, мониторинг и ограничение выкапывания луковиц и выпаса. Весеннее пастбищное использование, сбор цветков и изъятие подземных органов названы угрозами. Эти исторические сведения не подтверждают нынешнее состояние охраны; категория VU сохранена с явной привязкой к изданию.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Одиночная округлая луковица диаметром 8–10, иногда 12 мм; стебель 60–80 см. Два плоских листа шириной 2,5–6 мм. Плотный многоцветковый зонтик полушаровидный или почти округлый, цветки розово-фиолетовые. Нити тычинок двузубчатые и реснитчатые у основания.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Многолетний луковичный геофит кустарниковых зарослей и лесных опушек среднего пояса гор. Уничтожение растений при сборе и повреждение мест произрастания выпасом отмечены в национальном источнике.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальном описании цветение и плодоношение датированы маем–июнем. Опылители, условия прорастания и способы вегетативного размножения не описаны.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В издании 2006 года ареал указан в пределах Чаткальского хребта; упомянут Сары-Челекский заповедник. Современные находки и координаты не добавлены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}
