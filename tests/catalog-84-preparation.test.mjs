@@ -102,7 +102,7 @@ test('existing dry-run accepts 21, repeats unchanged and rejects a duplicate cop
 })
 
 test('published search, routes, filters, 24-record pagination and all new Vue profiles work in four languages with placeholders', async () => {
-  const preview = await read('public/data/species.json'), index = createSearchIndex(preview)
+  const preview = await read('data/backups/catalog-100/public-species.json'), index = createSearchIndex(preview)
   const released = preview.filter(s => manifest.candidateIds.includes(s.id))
   assert.equal(preview.length, 84); assert.equal(released.length, 21)
   for (const s of released) {

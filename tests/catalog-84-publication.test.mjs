@@ -7,7 +7,9 @@ import { runPipeline } from '../scripts/bulk-pipeline.mjs'
 import { validateSource, validateSpecies } from '../src/data/species-model.js'
 
 const read = async p => JSON.parse(await readFile(`${PROJECT_ROOT}/${p}`, 'utf8'))
-const source = await read('data/species.source.json'), published = await read('public/data/species.json')
+// Preserve the complete 84-record release as a regression fixture. The catalog-100
+// publication tests validate the current catalog and all 84 original records.
+const source = await read('data/backups/catalog-100/species.source.json'), published = await read('data/backups/catalog-100/public-species.json')
 const before = await read('data/backups/catalog-84/species.source.json')
 const beforePublic = await read('data/backups/catalog-84/public-species.json')
 const manifestPath = 'data/research/catalog-84-review-manifest.json'

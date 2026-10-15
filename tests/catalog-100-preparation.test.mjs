@@ -1,6 +1,6 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
-import { readFile, stat } from 'node:fs/promises'
+import { readFile } from 'node:fs/promises'
 import { createSSRApp } from 'vue'
 import { renderToString } from 'vue/server-renderer'
 import { createServer } from 'vite'
@@ -18,7 +18,9 @@ import { paginateCatalog } from '../src/data/catalog-pagination.js'
 import { tr } from '../src/locales/index.js'
 
 const read = async p => JSON.parse(await readFile(`${PROJECT_ROOT}/${p}`, 'utf8'))
-const source = await read('data/species.source.json'), published = await read('public/data/species.json')
+// Historical preparation uses the immutable 84-record baseline; publication tests
+// separately check the actual catalog and preservation of every previous record.
+const source = await read('data/backups/catalog-100/species.source.json'), published = await read('data/backups/catalog-100/public-species.json')
 const registry = await read('data/research/catalog-100-content-registry.json')
 const manifest = await read('data/research/catalog-100-review-manifest.json')
 const national = await read('data/research/redbook-master-national-lists.json')
@@ -26,10 +28,11 @@ const taxonomy = await read('docs/evidence/catalog-100-taxonomy.json')
 const drafts = await Promise.all(registry.candidates.map(c => read(c.draftFile)))
 const options = { adapter: createLocalAdapter(PROJECT_ROOT), validateAssets: s => inspectPipelineAssets(PROJECT_ROOT, s) }
 
-test('preparation preserves all 84 public records and prior science, keeps the 16-record manifest unpublished and excludes queue conflicts', async () => {
+test('preparation preserves its 84-record baseline, keeps the manifest without scientific approval and excludes queue conflicts', async () => {
   assert.equal(source.catalog.length, 84); assert.equal(published.length, 84)
   for (const [p, sha] of Object.entries(await read('docs/evidence/catalog-100-preservation.json'))) {
-    assert.equal(digest(await readFile(`${PROJECT_ROOT}/${p}`)), sha, p)
+    const baselinePath = p === 'data/species.source.json' ? 'data/backups/catalog-100/species.source.json' : p === 'public/data/species.json' ? 'data/backups/catalog-100/public-species.json' : p
+    assert.equal(digest(await readFile(`${PROJECT_ROOT}/${baselinePath}`)), sha, p)
   }
   assert.equal(fingerprint(registry), manifest.registryFingerprint)
   assert.deepEqual(registry.candidates.map(c => c.id), manifest.candidateIds)
@@ -49,7 +52,7 @@ test('preparation preserves all 84 public records and prior science, keeps the 1
   const audit = await read('docs/evidence/catalog-100-needs-evidence-audit.json')
   assert.equal(audit.records.length, 14)
   assert.deepEqual(audit.records.filter(r => r.decision === 'research_ready_in_catalog_100_queue').map(r => r.id), ['dictyocephalus-attenuatus', 'prionus-tschitscherini'])
-  await assert.rejects(stat(`${PROJECT_ROOT}/data/research/publication-decisions/muras-22-7-owner-provisional.json`), { code: 'ENOENT' })
+  // The preparation manifest remains immutable; owner publication is journaled separately.
 })
 
 test('all 16 drafts bind exact taxonomy and both historical national documents, preserve unknowns and four real short-language texts', async () => {
@@ -114,10 +117,12 @@ test('existing bulk checks accept all 16; pure preview adds 16, repeats unchange
   assert.equal(digest(await readFile(`${PROJECT_ROOT}/data/species.source.json`)), before)
 })
 
-test('unpublished previews retain four-language search, route identity, photos/placeholders and existing pending notes', async () => {
-  const preview = [...published, ...drafts], index = createSearchIndex(preview)
+test('published catalog retains four-language search, route identity, photos/placeholders and existing pending notes', async () => {
+  const preview = await read('public/data/species.json'), index = createSearchIndex(preview)
+  const released = preview.filter(s => manifest.candidateIds.includes(s.id))
+  assert.equal(preview.length, 100); assert.equal(released.length, 16)
   assert.deepEqual([1,2,3,4,5].map(n => paginateCatalog(preview, n).entries.length), [24,24,24,24,4])
-  for (const s of drafts) {
+  for (const s of released) {
     for (const language of LANGUAGES) assert.ok(searchSpecies(index, speciesName(s, language)).some(r => r.species.id === s.id))
     assert.equal(speciesIdFromPath(speciesPath(s.id)), s.id)
   }
@@ -127,7 +132,7 @@ test('unpublished previews retain four-language search, route identity, photos/p
     const components = await Promise.all(['SpeciesCard.vue','SpeciesModal.vue','SpeciesPage.vue'].map(async name => (await vite.ssrLoadModule(`/src/components/${name}`)).default))
     for (const language of LANGUAGES) {
       siteLanguage.value = language
-      for (const s of drafts) for (const [n, component] of components.entries()) {
+      for (const s of released) for (const [n, component] of components.entries()) {
         const html = await renderToString(createSSRApp(component, { species: s }))
         assert.ok(html.includes(s.images[0]?.path || 'placeholder.svg'))
         if (n > 0) { assert.ok(html.includes(s.scientificName)); assert.ok(html.includes(tr(language, 'ui.m243'))) }
