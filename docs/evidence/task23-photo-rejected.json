@@ -1,0 +1,107 @@
+{
+  "date": "2026-10-15",
+  "records": [
+    {
+      "candidateId": "tadarida-teniotis",
+      "status": "prepared",
+      "reason": "Спектрограмма звука, не фотография животного",
+      "metadata": {
+        "sourcePlatform": "GBIF → iNaturalist",
+        "sourceRecord": "https://www.gbif.org/occurrence/6413105607",
+        "sourcePage": "https://www.gbif.org/occurrence/6413105607",
+        "originalUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/681698146/original.jpg",
+        "originalPage": "https://www.inaturalist.org/photos/681698146",
+        "metadataCache": "docs/evidence/task23-gbif-license-search.json",
+        "occurrenceKey": 6413105607,
+        "mediaIndex": 0,
+        "documentedName": "Tadarida teniotis (Rafinesque, 1814)",
+        "identificationBasis": "Исходное определение occurrence.scientificName; не только агрегированное GBIF species. Лицензия, автор/правообладатель проверены по конкретному media.",
+        "catalogNumber": "373031428",
+        "specimen": false,
+        "creditRole": "creator",
+        "photographer": "S.R.",
+        "rightsHolder": "S.R.",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "author": "S.R.",
+        "width": 1022,
+        "height": 624,
+        "accessedAt": "2026-10-15",
+        "originalSha256": "6b71406a2c6074856a88bc5693847e32280231837cd8d85e284da7f0639e590e"
+      },
+      "image": {
+        "path": "assets/images/species/tadarida-teniotis.webp",
+        "width": 1022,
+        "height": 624,
+        "sha256": "a6331376c7cfb8aef2c0e35a1cf262e10bd676bb1b501027a1017114f28c2f94",
+        "author": "S.R.",
+        "originalPage": "https://www.gbif.org/occurrence/6413105607",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Tadarida teniotis — S.R.; CC BY 4.0. iNaturalist; GBIF 6413105607; 373031428. https://www.inaturalist.org/photos/681698146",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+          "Исходный сюжет и пропорции сохранены."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Tadarida teniotis — иллюстрация вида по определению коллекции/наблюдения. Это не новое наблюдение из Кыргызстана; подвид и принадлежность к национальной популяции по фотографии не устанавливаются.",
+          "ky": null,
+          "en": null
+        }
+      },
+      "decision": "rejected"
+    },
+    {
+      "candidateId": "ursus-arctos",
+      "status": "prepared",
+      "reason": "След лапы, не фотография животного",
+      "metadata": {
+        "sourcePlatform": "GBIF → iNaturalist",
+        "sourceRecord": "https://www.gbif.org/occurrence/6185711610",
+        "sourcePage": "https://www.gbif.org/occurrence/6185711610",
+        "originalUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/625721481/original.jpg",
+        "originalPage": "https://www.inaturalist.org/photos/625721481",
+        "metadataCache": "docs/evidence/task23-gbif-license-search.json",
+        "occurrenceKey": 6185711610,
+        "mediaIndex": 0,
+        "documentedName": "Ursus arctos Linnaeus, 1758",
+        "identificationBasis": "Исходное определение occurrence.scientificName; не только агрегированное GBIF species. Лицензия, автор/правообладатель проверены по конкретному media.",
+        "catalogNumber": "343496096",
+        "specimen": false,
+        "creditRole": "creator",
+        "photographer": "Anne Heckmann",
+        "rightsHolder": "Anne Heckmann",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "author": "Anne Heckmann",
+        "width": 2048,
+        "height": 1536,
+        "accessedAt": "2026-10-15",
+        "originalSha256": "ff9762157eaadc0947ae397c5041eb62377e02525e85b2c61718371b45f07509"
+      },
+      "image": {
+        "path": "assets/images/species/ursus-arctos.webp",
+        "width": 1800,
+        "height": 1350,
+        "sha256": "6bba3fa9848827e50d46c000332a83a19acca67c0fbbc543fb629dc2ec036194",
+        "author": "Anne Heckmann",
+        "originalPage": "https://www.gbif.org/occurrence/6185711610",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Ursus arctos — Anne Heckmann; CC BY 4.0. iNaturalist; GBIF 6185711610; 343496096. https://www.inaturalist.org/photos/625721481",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+          "Исходный сюжет и пропорции сохранены."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Ursus arctos — иллюстрация вида по определению коллекции/наблюдения. Это не новое наблюдение из Кыргызстана; подвид и принадлежность к национальной популяции по фотографии не устанавливаются.",
+          "ky": null,
+          "en": null
+        }
+      },
+      "decision": "rejected"
+    }
+  ]
+}
