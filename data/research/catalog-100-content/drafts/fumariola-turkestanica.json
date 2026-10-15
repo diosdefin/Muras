@@ -1,0 +1,229 @@
+{
+  "id": "fumariola-turkestanica",
+  "scientificName": "Fumariola turkestanica",
+  "names": {
+    "ru": "Дымяночка туркестанская",
+    "ky": null,
+    "uz": null,
+    "en": "Microfumitory"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Ranunculales",
+    "family": "Papaveraceae",
+    "genus": "Fumariola"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "EN B1ab(iii,iv), историческая национальная категория 2006 года",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Трещины круто наклонённых и отвесных известковых скал, преимущественно северо-восточной экспозиции, реже подножия скал; в старом очерке 1050–1500 м.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Нарушение малых участков скального биотопа при горных работах и дорожном строительстве.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендованы регулярный контроль, поиск новых популяций, испытание выращивания из семян в ботаническом саду и сохранение местообитаний с участием местного населения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=119",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 96",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=7",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Fumariola turkestanica",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Fumariola%20turkestanica",
+      "accessedAt": "2026-10-15",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:3602966"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Небольшой однолетник известковых скал северо-запада Алайского хребта. В книге 2006 года отмечена уязвимость его небольших местообитаний к дорожным и горным работам.",
+        "ky": "Алай кырка тоосунун түндүк-батышындагы акиташ аскаларда өскөн майда бир жылдык өсүмдүк. 2006-жылкы китепте жол жана кен иштери анын чакан жашоо жерлерине коркунуч туудурары белгиленген.",
+        "uz": "Oloy tizmasining shimoli-gʻarbidagi ohaktosh qoyalarida oʻsadigan mayda bir yillik oʻsimlik. 2006-yilgi kitob yoʻl va kon ishlari uning kichik yashash joylariga xavf tugʻdirishini qayd etadi.",
+        "en": "A small annual of limestone cliffs in the north-western Alai. The 2006 book notes that its small habitat patches are vulnerable to road building and mining."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Дымяночка туркестанская включена в книгу 2006 года и перечень 2009 года как Fumariola turkestanica. Принятое видовое имя подтверждено точным ответом GBIF. Национальная статья связывает исторические местонахождения с предгорьями северо-западной части Алайского хребта, в бассейнах Шахимардана и Исфайрамсая. Непроверенные современные точки распространения к этим сведениям не добавлены.\n\nРастение однолетнее, невысокое, с рассечёнными листьями на тонких черешках и небольшими соцветиями жёлтых цветков. Плод описан как односеменной орешек, темнеющий при созревании. Местообитания — трещины крутых известковых скал, преимущественно северо-восточной экспозиции. Очерк отмечает отсутствие вегетативного размножения, но разные языковые версии расходятся по точным срокам цветения и плодоношения; единый календарь не назначен.\n\nМалые размеры участков и узкая приуроченность к биотопу делают популяции уязвимыми к нарушению скал при дорожном строительстве и горных работах. Авторы рекомендуют мониторинг, поиск дополнительных местонахождений, испытание выращивания из семян и сохранение биотопов. Старые локальные подсчёты не преобразованы в текущую общую численность. Лекарственные свойства и эффективность культивирования не утверждаются.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Однолетнее растение высотой 6–10 см с рассечёнными листьями на тонких черешках, жёлтыми цветками и односеменными орешками, которые чернеют при созревании.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальной статье отмечены узкая приуроченность к местообитанию и низкая конкурентоспособность; подробная биология изучена недостаточно.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Однолетник размножается семенами; вегетативное размножение в статье отсутствует. Точные сроки не выбраны из расходящихся RU/EN версий.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические сведения относятся к бассейнам и междуречью Шахимардана и Исфайрамсая в Кыргызстане и анклаве Узбекистана; ошибочное указание Таджикистана авторы отвергают.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

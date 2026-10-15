@@ -13,7 +13,7 @@ const manifest = await read(manifestPath)
 if (!Number.isInteger(n) || n < 1 || n > manifest.blocks.length) throw new Error('Нужен существующий номер блока manifest')
 const contentDirectory = manifest.contentDirectory || 'data/research/bulk-25-content'
 const evidencePrefix = manifest.evidencePrefix || 'bulk-25'
-const master = await read('data/research/redbook-master-registry.json')
+const master = await read(manifest.masterRegistryFile || 'data/research/redbook-master-registry.json')
 if (fingerprint(master) !== manifest.masterRegistryFingerprint) throw new Error('Исходный мастер-реестр изменился')
 const registryPath = manifest.registryFile || 'data/research/bulk-25-content-registry.json'
 const registry = await read(registryPath)
@@ -21,7 +21,7 @@ const block = manifest.blocks[n - 1]
 const factsPath = `${contentDirectory}/block-${n}-facts.json`
 const facts = await read(factsPath)
 if (JSON.stringify(facts.records.map(f => f.id)) !== JSON.stringify(block.candidateIds)) throw new Error('Порядок фактов не совпадает с manifest')
-const tax = await read('docs/evidence/redbook-master-taxonomy.json')
+const tax = await read(manifest.taxonomyFile || 'docs/evidence/redbook-master-taxonomy.json')
 const evidencePath = `docs/evidence/${evidencePrefix}-block-${n}-accounts.json`
 const savedAccounts = await read(evidencePath).catch(error => { if (error.code !== 'ENOENT') throw error; return null })
 const pages = savedAccounts ? savedAccounts.records.flatMap(r => r.pages) : await read('.generated/research/redbook-pages.json')

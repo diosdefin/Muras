@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "documentType": "bulk-content-manifest",
+  "sourceCommit": "635c40e1fec3352a762e8a58c39d7fc202eeddea",
+  "masterRegistryFile": "data/research/catalog-100-research-registry.json",
+  "masterRegistryFingerprint": "a30583689c889d3fee1184dc588987ed61c62cdfbcc55d1bcdea5047fcadf0fd",
+  "taxonomyFile": "docs/evidence/catalog-100-taxonomy.json",
+  "registryFile": "data/research/catalog-100-content-registry.json",
+  "contentDirectory": "data/research/catalog-100-content",
+  "evidencePrefix": "catalog-100",
+  "candidateIds": [
+    "dictyocephalus-attenuatus",
+    "prionus-tschitscherini",
+    "rossomyrmex-proformicarum",
+    "barbus-brachycephalus",
+    "allochrusa-gypsophiloides",
+    "corydalis-pseudoadunca",
+    "fumariola-turkestanica",
+    "rhodiola-litwinowii",
+    "sibiraea-tianschanica",
+    "crataegus-knorringiana",
+    "ammopiptanthus-nanus",
+    "colutea-brachyptera",
+    "primula-eugeniae",
+    "physochlaina-alaica",
+    "incarvillea-olgae",
+    "saussurea-involucrata"
+  ],
+  "blocks": [
+    {
+      "number": 1,
+      "batchId": "catalog-100-1",
+      "candidateIds": [
+        "dictyocephalus-attenuatus",
+        "prionus-tschitscherini",
+        "rossomyrmex-proformicarum",
+        "barbus-brachycephalus",
+        "allochrusa-gypsophiloides",
+        "corydalis-pseudoadunca",
+        "fumariola-turkestanica",
+        "rhodiola-litwinowii"
+      ],
+      "status": "prepared_for_check"
+    },
+    {
+      "number": 2,
+      "batchId": "catalog-100-2",
+      "candidateIds": [
+        "sibiraea-tianschanica",
+        "crataegus-knorringiana",
+        "ammopiptanthus-nanus",
+        "colutea-brachyptera",
+        "primula-eugeniae",
+        "physochlaina-alaica",
+        "incarvillea-olgae",
+        "saussurea-involucrata"
+      ],
+      "status": "pending"
+    }
+  ],
+  "publicationAllowed": false,
+  "ownerAuthorization": "absent_requires_specific_review_manifest",
+  "baselineCatalogCount": 84,
+  "excludePublished": true,
+  "excludedIds": [
+    "tulipa-anadroma",
+    "eryx-tataricus"
+  ],
+  "selectionLimit": 16
+}

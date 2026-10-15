@@ -8,7 +8,7 @@ const manifestOption = process.argv.indexOf('--manifest')
 const manifest = await read(manifestOption < 0 ? 'data/research/bulk-25-content-manifest.json' : process.argv[manifestOption + 1])
 const contentDirectory = manifest.contentDirectory || 'data/research/bulk-25-content'
 const evidencePrefix = manifest.evidencePrefix || 'bulk-25'
-const master = await read('data/research/redbook-master-registry.json')
+const master = await read(manifest.masterRegistryFile || 'data/research/redbook-master-registry.json')
 const registry = await read(manifest.registryFile || 'data/research/bulk-25-content-registry.json')
 const source = await read('data/species.source.json')
 assert.equal(source.catalog.length, manifest.baselineCatalogCount || 40)
