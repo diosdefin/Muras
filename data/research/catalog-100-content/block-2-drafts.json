@@ -1,0 +1,1913 @@
+{
+  "schemaVersion": 1,
+  "documentType": "research-draft-batch",
+  "batchId": "catalog-100-content-2",
+  "records": [
+    {
+      "candidateId": "sibiraea-tianschanica",
+      "species": {
+        "verified": false,
+        "lastReviewedAt": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "id": "sibiraea-tianschanica",
+        "scientificName": "Sibiraea tianschanica",
+        "names": {
+          "ru": "Сибирка тяньшанская",
+          "ky": null,
+          "uz": null,
+          "en": "Tien Shan Sibiraea"
+        },
+        "taxonomy": {
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "class": "Magnoliopsida",
+          "order": "Rosales",
+          "family": "Rosaceae",
+          "genus": "Sibiraea"
+        },
+        "group": "plants",
+        "nationalRedBook": {
+          "listed": true,
+          "category": "CR, историческая национальная категория 2006 года",
+          "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+          "year": 2006,
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": {
+          "description": {
+            "ky": null,
+            "uz": null,
+            "ru": "Верхний пояс гор: кустарники и стланиковые можжевельники, поляны в разреженных ельниках, субальпийские и альпийские луга.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "regions": [
+          {
+            "type": "country",
+            "code": "KG",
+            "names": {
+              "ru": "Кыргызстан",
+              "ky": "Кыргызстан",
+              "uz": "Qirgʻiziston",
+              "en": "Kyrgyzstan"
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "threats": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Чрезмерная пастбищная нагрузка, связанная в очерке с почти отсутствующим подростом.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "conservationMeasures": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Авторы рекомендуют ботанический заказник в верховьях Кёк-Джара и контроль остальных популяций.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "images": [],
+        "sources": [
+          {
+            "id": "national-book",
+            "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+            "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=125",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalRedBook.edition",
+              "nationalRedBook.year",
+              "group",
+              "regions.0",
+              "originalScientificName",
+              "names.ru",
+              "habitat",
+              "content.shortDescription",
+              "content.overview",
+              "content.appearance",
+              "content.ecology",
+              "content.reproduction",
+              "content.distribution",
+              "threats.0",
+              "conservationMeasures.0",
+              "names.en",
+              "nationalRedBook.category"
+            ]
+          },
+          {
+            "id": "national-list-1",
+            "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 41",
+            "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalSourceRecords"
+            ]
+          },
+          {
+            "id": "gbif-taxonomy",
+            "title": "GBIF Backbone: Sibiraea tianschanica",
+            "publisher": "GBIF",
+            "url": "https://api.gbif.org/v1/species/match?strict=true&name=Sibiraea%20tianschanica",
+            "accessedAt": "2026-10-15",
+            "language": "en",
+            "supports": [
+              "scientificName",
+              "taxonomy.kingdom",
+              "taxonomy.phylum",
+              "taxonomy.class",
+              "taxonomy.order",
+              "taxonomy.family",
+              "taxonomy.genus"
+            ],
+            "taxonId": "gbif:3032448"
+          }
+        ],
+        "content": {
+          "shortDescription": {
+            "text": {
+              "ru": "Низкий кустарник верхнего пояса Северного Тянь-Шаня, включённый в книгу 2006 года. Растёт среди кустарников и на горных лугах; чрезмерный выпас мешает возобновлению.",
+              "ky": "2006-жылкы китепке кирген Түндүк Тянь-Шандын бийик алкагындагы жапыз бадал. Бадалдардын арасында жана тоо шалбааларында өсөт; ашыкча мал жаюу жаңылануусуна тоскоол болот.",
+              "uz": "2006-yilgi kitobga kiritilgan Shimoliy Tyanshanning yuqori mintaqasidagi past buta. Butazor va togʻ oʻtloqlarida oʻsadi; ortiqcha chorva boqish tabiiy tiklanishga toʻsqinlik qiladi.",
+              "en": "A low shrub of the upper Northern Tien Shan listed in the 2006 book. It grows among shrubs and in mountain meadows; excessive grazing impedes regeneration."
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "overview": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Сибирка тяньшанская включена в книгу 2006 года и перечень 2009 года как Sibiraea tianschanica. Это имя имеет точное принятое соответствие в сохранённом ответе GBIF. Национальный очерк характеризует растение как редкий северотяньшанский кустарник; историческая категория CR не представлена как новая оценка состояния или современный глобальный статус.\n\nКустарник невысокий, с тёмно-бурыми стеблями и узколанцетными сидячими листьями. Мелкие цветки образуют кисти, объединённые в метёлку. Очерк указывает верхний пояс гор: заросли кустарников и стланикового можжевельника, поляны разреженных ельников, субальпийские и альпийские луга. В Кыргызстане исторически названы участки Кюнгей и Терскей Ала-Тоо.\n\nВ книге отмечены семенное и вегетативное размножение, цветение в июне и плодоношение в августе. При этом всходы и молодые растения в природе почти отсутствовали, что авторы связывали с чрезмерной пастбищной нагрузкой. Прежние испытания выращивания в ботаническом саду сопровождались гибелью сеянцев в жарких сухих условиях. Рекомендованы охраняемый участок и контроль популяций. Современная численность неизвестна; сомнительная единица ширины листа из печатного описания не перенесена.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "appearance": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Низкий кустарник высотой до 0,5 м с толстыми тёмно-бурыми стеблями и узколанцетными сидячими листьями. Мелкие цветки собраны в кисти и метёлки.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "ecology": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "В очерке отмечено одиночное и небольшими группами произрастание, слабое возобновление при высокой пастбищной нагрузке.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "diet": null,
+          "reproduction": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "По книге размножается семенами и вегетативно, цветёт в июне и плодоносит в августе; природное возобновление описано как слабое.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "distribution": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Исторически в Кыргызстане указаны верховья Кёк-Джара в Терскей Ала-Тоо и Сюттю-Булака в Кюнгей Ала-Тоо. Новые наблюдения не добавлены.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        }
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Sibiraea tianschanica",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3032448",
+        "sourceId": "gbif-taxonomy"
+      },
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "crataegus-knorringiana",
+      "species": {
+        "verified": false,
+        "lastReviewedAt": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "id": "crataegus-knorringiana",
+        "scientificName": "Crataegus knorringiana",
+        "names": {
+          "ru": "Боярышник Кнорринг",
+          "ky": null,
+          "uz": null,
+          "en": "Knorring’s Haw-tree"
+        },
+        "taxonomy": {
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "class": "Magnoliopsida",
+          "order": "Rosales",
+          "family": "Rosaceae",
+          "genus": "Crataegus"
+        },
+        "group": "plants",
+        "nationalRedBook": {
+          "listed": true,
+          "category": "VU, историческая национальная категория 2006 года",
+          "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+          "year": 2006,
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": {
+          "description": {
+            "ky": null,
+            "uz": null,
+            "ru": "Древесно-кустарниковые сообщества речных долин, каменистые и мелкоземистые склоны нижнего и среднего поясов гор.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "regions": [
+          {
+            "type": "country",
+            "code": "KG",
+            "names": {
+              "ru": "Кыргызстан",
+              "ky": "Кыргызстан",
+              "uz": "Qirgʻiziston",
+              "en": "Kyrgyzstan"
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "threats": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Хозяйственное освоение местообитаний, рубка на топливо и слабое возобновление.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "conservationMeasures": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "В национальной книге рекомендована защита оставшихся деревьев и молодняка от рубки и потравы скотом, в том числе в Тоскоул-Атинском и Кара-Алминском лесхозах.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "images": [],
+        "sources": [
+          {
+            "id": "national-book",
+            "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+            "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=139",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalRedBook.edition",
+              "nationalRedBook.year",
+              "group",
+              "regions.0",
+              "originalScientificName",
+              "names.ru",
+              "habitat",
+              "content.shortDescription",
+              "content.overview",
+              "content.appearance",
+              "content.ecology",
+              "content.reproduction",
+              "content.distribution",
+              "threats.0",
+              "conservationMeasures.0",
+              "names.en",
+              "nationalRedBook.category"
+            ]
+          },
+          {
+            "id": "national-list-1",
+            "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 37",
+            "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalSourceRecords"
+            ]
+          },
+          {
+            "id": "gbif-taxonomy",
+            "title": "GBIF Backbone: Crataegus knorringiana",
+            "publisher": "GBIF",
+            "url": "https://api.gbif.org/v1/species/match?strict=true&name=Crataegus%20knorringiana",
+            "accessedAt": "2026-10-15",
+            "language": "en",
+            "supports": [
+              "scientificName",
+              "taxonomy.kingdom",
+              "taxonomy.phylum",
+              "taxonomy.class",
+              "taxonomy.order",
+              "taxonomy.family",
+              "taxonomy.genus"
+            ],
+            "taxonId": "gbif:3015001"
+          }
+        ],
+        "content": {
+          "shortDescription": {
+            "text": {
+              "ru": "Дерево с мелкими жёлтыми плодами из национальной книги 2006 года. Встречается в горных долинах и на склонах; рубки и освоение земель угрожают редким растениям.",
+              "ky": "2006-жылкы улуттук китептеги майда сары мөмөлүү дарак. Тоо өрөөндөрүндө жана беттеринде өсөт; дарак кыюу менен жер өздөштүрүү сейрек өсүмдүктөргө коркунуч туудурат.",
+              "uz": "2006-yilgi milliy kitobdagi mayda sariq mevali daraxt. Togʻ vodiylari va yonbagʻirlarida oʻsadi; daraxt kesish va yer oʻzlashtirish kamyob oʻsimliklarga tahdid soladi.",
+              "en": "A tree with small yellow fruit described in the 2006 national book. It grows in mountain valleys and on slopes; felling and land development threaten scattered plants."
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "overview": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Боярышник Кнорринг представлен в книге 2006 года и перечне 2009 года под именем Crataegus knorringiana. Принятое видовое имя подтверждено точным ответом GBIF. Национальный очерк называет вид узкоэндемичным и отмечает отдельные растения в нескольких горных районах Кыргызстана. Эти сведения сохранены как историческое описание, без новых координат и численных оценок.\n\nЭто небольшое дерево с узкоэллиптическими или яйцевидными, слаболопастными листьями. Мелкие жёлтые плоды содержат пять выраженно ямчатых косточек. Местообитания связаны с древесно-кустарниковой растительностью речных долин, каменистыми и мелкоземистыми склонами нижнего и среднего поясов гор. Цветение приходится на конец апреля и начало мая, созревание плодов — на сентябрь; размножение описано как семенное.\n\nГлавные отмеченные угрозы — хозяйственное освоение участков, использование деревьев на топливо и слабое возобновление. Авторы рекомендуют защищать оставшиеся растения от порубок и повреждения молодняка скотом. Русская и английская версии расходятся по наличию данных о культивировании; успешное выращивание не утверждается. Современная численность, состояние молодых растений и фактическое исполнение старых рекомендаций требуют обследования.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "appearance": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "По очерку дерево высотой до 5–6 м с узкоэллиптическими или яйцевидными слаболопастными листьями. Плоды мелкие, жёлтые, с пятью сильно ямчатыми косточками.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "ecology": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Книга отмечает одиночные растения и очень слабое возобновление.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "diet": null,
+          "reproduction": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "По книге цветёт в конце апреля — начале мая, плоды созревают в сентябре; размножение семенное, возобновление слабое.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "distribution": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Исторически указаны долина Чичкана, Чаткальский, Ферганский и Алайский хребты; текущие наблюдения не подтверждены.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        }
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Crataegus knorringiana",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3015001",
+        "sourceId": "gbif-taxonomy"
+      },
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "ammopiptanthus-nanus",
+      "species": {
+        "verified": false,
+        "lastReviewedAt": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "id": "ammopiptanthus-nanus",
+        "scientificName": "Ammopiptanthus nanus",
+        "names": {
+          "ru": "Аммопиптант карликовый",
+          "ky": null,
+          "uz": null,
+          "en": "Dwarf Ammopiptanth"
+        },
+        "taxonomy": {
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "class": "Magnoliopsida",
+          "order": "Fabales",
+          "family": "Fabaceae",
+          "genus": "Ammopiptanthus"
+        },
+        "group": "plants",
+        "nationalRedBook": {
+          "listed": true,
+          "category": "EN, историческая национальная категория 2006 года",
+          "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+          "year": 2006,
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": {
+          "description": {
+            "ky": null,
+            "uz": null,
+            "ru": "Склоны пестроцветных толщ в исторически указанных горных районах бассейна Кокомерена.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "regions": [
+          {
+            "type": "country",
+            "code": "KG",
+            "names": {
+              "ru": "Кыргызстан",
+              "ky": "Кыргызстан",
+              "uz": "Qirgʻiziston",
+              "en": "Kyrgyzstan"
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "threats": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Сбор растений, хозяйственная деятельность и смыв селевыми потоками указаны национальным очерком.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "conservationMeasures": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Книга рекомендует охрану местообитаний на Минкуше совместно с другими редкими и эндемичными видами; существование и современный режим конкретного заказника здесь не подтверждаются.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "images": [],
+        "sources": [
+          {
+            "id": "national-book",
+            "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+            "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=147",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalRedBook.edition",
+              "nationalRedBook.year",
+              "group",
+              "regions.0",
+              "originalScientificName",
+              "names.ru",
+              "habitat",
+              "content.shortDescription",
+              "content.overview",
+              "content.appearance",
+              "content.reproduction",
+              "content.distribution",
+              "threats.0",
+              "conservationMeasures.0",
+              "names.en",
+              "nationalRedBook.category"
+            ]
+          },
+          {
+            "id": "national-list-1",
+            "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 47",
+            "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalSourceRecords"
+            ]
+          },
+          {
+            "id": "gbif-taxonomy",
+            "title": "GBIF Backbone: Ammopiptanthus nanus",
+            "publisher": "GBIF",
+            "url": "https://api.gbif.org/v1/species/match?strict=true&name=Ammopiptanthus%20nanus",
+            "accessedAt": "2026-10-15",
+            "language": "en",
+            "supports": [
+              "scientificName",
+              "taxonomy.kingdom",
+              "taxonomy.phylum",
+              "taxonomy.class",
+              "taxonomy.order",
+              "taxonomy.family",
+              "taxonomy.genus"
+            ],
+            "taxonId": "gbif:2943139"
+          }
+        ],
+        "content": {
+          "shortDescription": {
+            "text": {
+              "ru": "Вечнозелёный кустарник бассейна Кокомерена, описанный в книге 2006 года. Серебристые листья и жёлтые цветки делают его заметным; сбор и нарушение склонов опасны.",
+              "ky": "2006-жылкы китепте сүрөттөлгөн Көкөмерен алабынын дайыма жашыл бадалы. Күмүш түстүү жалбырактары жана сары гүлдөрү бар; чогултуу жана беттерди бузуу коркунуч туудурат.",
+              "uz": "2006-yilgi kitobda tasvirlangan Koʻkoʻmeren havzasining doim yashil butasi. Barglari kumushrang, gullari sariq; yigʻish va yonbagʻirlarni buzish xavf tugʻdiradi.",
+              "en": "An evergreen shrub of the Kokomeren basin described in the 2006 book. It has silvery leaves and yellow flowers; collection and slope disturbance pose threats."
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "overview": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Аммопиптант карликовый включён в национальную книгу 2006 года и перечень 2009 года как Ammopiptanthus nanus. Его принятое имя подтверждено точным ответом GBIF. Исторические местные сведения относятся к бассейну Кокомерена, горам Кавак-Тоо и Джумгал-Тоо. Подсчёт, упомянутый в статье за 1979 год, не использован как современная оценка численности.\n\nЭто вечнозелёный кустарник с извилистыми ветвями, серебристо опушёнными листьями и жёлтыми цветками в густых кистях. Плоды — продолговатые бобы. Национальный очерк связывает произрастание со склонами пестроцветных толщ. Цветение описано в июне–июле, плодоношение в июле–августе; размножение возможно семенами и вегетативно. Исторические испытания в ботаническом саду были неудачными: молодые растения плохо переносили последующую зимовку.\n\nВ книге названы сбор растений, хозяйственная деятельность и смыв селевыми потоками. Современное влияние каждого фактора отдельно не оценивалось. Русская версия рекомендует заказник на Минкуше, английская уже говорит об охране там; фактический режим не выбран по предположению. Карточка сохраняет рекомендации охранять местообитания, а нынешние численность и правовой статус оставляет неизвестными.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "appearance": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "По книге вечнозелёный кустарник до 1,5 м высотой с извилистыми ветвями, серебристо опушёнными широкоэллиптическими листьями, жёлтыми цветками в густых кистях и продолговатыми бобами.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "ecology": null,
+          "diet": null,
+          "reproduction": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "По национальному очерку цветёт в июне–июле, плодоносит в июле–августе; размножается семенами и вегетативно.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "distribution": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Исторический национальный очерк указывает Кавак-Тоо и Джумгал-Тоо в бассейне Кокомерена; современные наблюдения не создавались.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        }
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Ammopiptanthus nanus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2943139",
+        "sourceId": "gbif-taxonomy"
+      },
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "colutea-brachyptera",
+      "species": {
+        "verified": false,
+        "lastReviewedAt": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "id": "colutea-brachyptera",
+        "scientificName": "Colutea brachyptera",
+        "names": {
+          "ru": "Пузырник короткокрылый",
+          "ky": null,
+          "uz": null,
+          "en": "Short-winged Bladder-senna"
+        },
+        "taxonomy": {
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "class": "Magnoliopsida",
+          "order": "Fabales",
+          "family": "Fabaceae",
+          "genus": "Colutea"
+        },
+        "group": "plants",
+        "nationalRedBook": {
+          "listed": true,
+          "category": "VU, историческая национальная категория 2006 года",
+          "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+          "year": 2006,
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": {
+          "description": {
+            "ky": null,
+            "uz": null,
+            "ru": "Продукты разрушения красных песчаников и конгломератов, каменисто-щебнистые и скалистые склоны ущелий в предгорьях и нижнем поясе гор.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "regions": [
+          {
+            "type": "country",
+            "code": "KG",
+            "names": {
+              "ru": "Кыргызстан",
+              "ky": "Кыргызстан",
+              "uz": "Qirgʻiziston",
+              "en": "Kyrgyzstan"
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "threats": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Хозяйственные работы в местообитаниях и массовый сбор цветущих растений.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "conservationMeasures": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Национальный очерк рекомендует учёт численности и организацию ботанических заказников в местах наиболее крупных скоплений.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "images": [],
+        "sources": [
+          {
+            "id": "national-book",
+            "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+            "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=149",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalRedBook.edition",
+              "nationalRedBook.year",
+              "group",
+              "regions.0",
+              "originalScientificName",
+              "names.ru",
+              "habitat",
+              "content.shortDescription",
+              "content.overview",
+              "content.appearance",
+              "content.reproduction",
+              "content.distribution",
+              "threats.0",
+              "conservationMeasures.0",
+              "names.en",
+              "nationalRedBook.category"
+            ]
+          },
+          {
+            "id": "national-list-1",
+            "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 49",
+            "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalSourceRecords"
+            ]
+          },
+          {
+            "id": "gbif-taxonomy",
+            "title": "GBIF Backbone: Colutea brachyptera",
+            "publisher": "GBIF",
+            "url": "https://api.gbif.org/v1/species/match?strict=true&name=Colutea%20brachyptera",
+            "accessedAt": "2026-10-15",
+            "language": "en",
+            "supports": [
+              "scientificName",
+              "taxonomy.kingdom",
+              "taxonomy.phylum",
+              "taxonomy.class",
+              "taxonomy.order",
+              "taxonomy.family",
+              "taxonomy.genus"
+            ],
+            "taxonId": "gbif:2956464"
+          }
+        ],
+        "content": {
+          "shortDescription": {
+            "text": {
+              "ru": "Листопадный кустарник Ферганского и Алайского хребтов из книги 2006 года. Имеет жёлтые цветки и перепончатые бобы; освоение склонов и сбор растений угрожают виду.",
+              "ky": "2006-жылкы китептеги Фергана жана Алай кырка тоолорунун жалбырагын түшүрүүчү бадалы. Гүлү сары, мөмөсү жука кабыктуу; жер өздөштүрүү жана чогултуу коркунуч туудурат.",
+              "uz": "2006-yilgi kitobdagi Fargʻona va Oloy tizmalarining barg toʻkuvchi butasi. Gullari sariq, dukkaklari yupqa qobiqli; yonbagʻirlarni oʻzlashtirish va oʻsimlik yigʻish tahdid soladi.",
+              "en": "A deciduous shrub of the Fergana and Alai ranges described in the 2006 book. It has yellow flowers and membranous pods; land development and collection threaten it."
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "overview": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Пузырник короткокрылый назван в национальной книге 2006 года и перечне 2009 года как Colutea brachyptera. Это же принятое имя подтверждено точным таксономическим ответом GBIF. Исторический очерк относит растение к Ферганскому и Алайскому хребтам, без современной оценки сохранившихся участков или размеров популяций.\n\nКустарник листопадный и невысокий. Серые старые ветви отличаются от белокорых однолетних побегов; листья состоят из нескольких пар округлых листочков. Жёлтые цветки собраны в поникающие кисти, зрелые плоды представляют собой крупные перепончатые бобы. Местообитания связаны с продуктами разрушения красных песчаников и конгломератов, каменистыми склонами и скалистыми ущельями предгорий и нижнего пояса гор.\n\nВ книге цветение указано в мае–июне, плодоношение — в июне–июле; размножение преимущественно семенное, вегетативное отмечено как редкое. Количественных данных о численности и сведений о культивировании нет. Угрозами названы хозяйственные работы и массовый сбор цветущих растений. Рекомендованы учёт популяций и ботанические заказники в местах концентрации. Старое включение в охранные перечни не представлено как независимая проверка действующего режима.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "appearance": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Листопадный кустарник до 1 м высотой с парными округлыми листочками, жёлтыми цветками в поникающих кистях и эллиптическими перепончатыми бобами до 5 см длиной.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "ecology": null,
+          "diet": null,
+          "reproduction": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "По книге цветёт в мае–июне, плодоносит в июне–июле; размножается семенами и очень редко вегетативно.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "distribution": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Историческое распространение охватывает Ферганский и Алайский хребты Кыргызстана и Узбекистана; новых точек нет.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        }
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Colutea brachyptera",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2956464",
+        "sourceId": "gbif-taxonomy"
+      },
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "primula-eugeniae",
+      "species": {
+        "verified": false,
+        "lastReviewedAt": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "id": "primula-eugeniae",
+        "scientificName": "Primula eugeniae",
+        "names": {
+          "ru": "Первоцвет Евгении",
+          "ky": null,
+          "uz": null,
+          "en": "Eugenia’s Primrose"
+        },
+        "taxonomy": {
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "class": "Magnoliopsida",
+          "order": "Ericales",
+          "family": "Primulaceae",
+          "genus": "Primula"
+        },
+        "group": "plants",
+        "nationalRedBook": {
+          "listed": true,
+          "category": "VU, историческая национальная категория 2006 года",
+          "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+          "year": 2006,
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": {
+          "description": {
+            "ky": null,
+            "uz": null,
+            "ru": "Трещины скал в альпийском и нивальном поясах.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "regions": [
+          {
+            "type": "country",
+            "code": "KG",
+            "names": {
+              "ru": "Кыргызстан",
+              "ky": "Кыргызстан",
+              "uz": "Qirgʻiziston",
+              "en": "Kyrgyzstan"
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "threats": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "В статье указана интенсивная хозяйственная деятельность без более подробного перечня воздействий.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "conservationMeasures": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Рекомендованы ботанический заказник в месте концентрации и испытание введения в культуру.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "images": [],
+        "sources": [
+          {
+            "id": "national-book",
+            "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+            "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=179",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalRedBook.edition",
+              "nationalRedBook.year",
+              "group",
+              "regions.0",
+              "originalScientificName",
+              "names.ru",
+              "habitat",
+              "content.shortDescription",
+              "content.overview",
+              "content.appearance",
+              "content.reproduction",
+              "content.distribution",
+              "threats.0",
+              "conservationMeasures.0",
+              "names.en",
+              "nationalRedBook.category"
+            ]
+          },
+          {
+            "id": "national-list-1",
+            "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 66",
+            "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalSourceRecords"
+            ]
+          },
+          {
+            "id": "gbif-taxonomy",
+            "title": "GBIF Backbone: Primula eugeniae",
+            "publisher": "GBIF",
+            "url": "https://api.gbif.org/v1/species/match?strict=true&name=Primula%20eugeniae",
+            "accessedAt": "2026-10-15",
+            "language": "en",
+            "supports": [
+              "scientificName",
+              "taxonomy.kingdom",
+              "taxonomy.phylum",
+              "taxonomy.class",
+              "taxonomy.order",
+              "taxonomy.family",
+              "taxonomy.genus"
+            ],
+            "taxonId": "gbif:5640822"
+          }
+        ],
+        "content": {
+          "shortDescription": {
+            "text": {
+              "ru": "Многолетний первоцвет скальных трещин Ферганского хребта, включённый в книгу 2006 года. У него светло-жёлтые цветки; состояние естественного возобновления неизвестно.",
+              "ky": "2006-жылкы китепке кирген Фергана кырка тоосунун аска жаракаларында өскөн көп жылдык өсүмдүк. Гүлдөрү ачык сары; табигый жаңылануусунун абалы белгисиз.",
+              "uz": "2006-yilgi kitobga kiritilgan Fargʻona tizmasi qoya yoriqlaridagi koʻp yillik oʻsimlik. Gullari och sariq; tabiiy tiklanishining holati nomaʼlum.",
+              "en": "A perennial primrose of rock crevices in the Fergana Range listed in the 2006 book. Its flowers are pale yellow; the state of natural regeneration is unknown."
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "overview": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Первоцвет Евгении включён в национальное издание 2006 года и перечень 2009 года как Primula eugeniae. Принятое видовое имя имеет точное подтверждение GBIF. В очерке растение названо редким узкоэндемичным видом западной части Ферганского хребта, известным из гор Баубаш-Ата. Это историческая национальная привязка, без утверждения нынешнего присутствия на каждом участке.\n\nРастение многолетнее, корневищное, с широкими зубчатыми листьями на длинных черешках. Светло-жёлтые цветки образуют зонтиковидное соцветие. Местообитания — трещины скал альпийского и нивального поясов. Числовые размеры цветка в печатной статье выглядят сомнительно по единицам и не перенесены в карточку. Их нельзя незаметно исправлять, заменяя сантиметры миллиметрами.\n\nКнига указывает семенное размножение и плодоношение в августе, а возобновление в природе признаёт неизученным. Предположительный месяц цветения из английского текста также не принят за установленный. Лимитирующим фактором названа интенсивная хозяйственная деятельность. Авторы предлагают ботанический заказник и введение декоративного растения в культуру. Современные численность, успешность культивирования и исполнение этих мер остаются неизвестными.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "appearance": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Многолетнее корневищное растение с широкоэллиптическими зубчатыми листьями на длинных черешках и светло-жёлтыми цветками в зонтиковидном соцветии. Сомнительные размеры цветков из печатного описания опущены.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "ecology": null,
+          "diet": null,
+          "reproduction": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "По национальному очерку размножается семенами и плодоносит в августе; естественное возобновление не изучено, срок цветения не установлен.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "distribution": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Исторический очерк указывает западную часть Ферганского хребта, горы Баубаш-Ата; новых наблюдений нет.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        }
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Primula eugeniae",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5640822",
+        "sourceId": "gbif-taxonomy"
+      },
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "physochlaina-alaica",
+      "species": {
+        "verified": false,
+        "lastReviewedAt": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "id": "physochlaina-alaica",
+        "scientificName": "Physochlaina alaica",
+        "names": {
+          "ru": "Пузырница алайская",
+          "ky": null,
+          "uz": null,
+          "en": "Alai Physochlaina"
+        },
+        "taxonomy": {
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "class": "Magnoliopsida",
+          "order": "Solanales",
+          "family": "Solanaceae",
+          "genus": "Physochlaina"
+        },
+        "group": "plants",
+        "nationalRedBook": {
+          "listed": true,
+          "category": "VU, историческая национальная категория 2006 года",
+          "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+          "year": 2006,
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": {
+          "description": {
+            "ky": null,
+            "uz": null,
+            "ru": "Тень скал, участки под кустарниками и открытые поляны в можжевеловых сообществах.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "regions": [
+          {
+            "type": "country",
+            "code": "KG",
+            "names": {
+              "ru": "Кыргызстан",
+              "ky": "Кыргызстан",
+              "uz": "Qirgʻiziston",
+              "en": "Kyrgyzstan"
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "threats": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Повреждение скотом при нерегулируемом выпасе и уничтожение при мелиорации пастбищ.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "conservationMeasures": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Авторы рекомендуют создание ботанических заказников в урочищах Селик и Кичик.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "images": [],
+        "sources": [
+          {
+            "id": "national-book",
+            "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+            "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=199",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalRedBook.edition",
+              "nationalRedBook.year",
+              "group",
+              "regions.0",
+              "originalScientificName",
+              "names.ru",
+              "habitat",
+              "content.shortDescription",
+              "content.overview",
+              "content.appearance",
+              "content.reproduction",
+              "content.distribution",
+              "threats.0",
+              "conservationMeasures.0",
+              "names.en",
+              "nationalRedBook.category"
+            ]
+          },
+          {
+            "id": "national-list-1",
+            "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 75",
+            "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalSourceRecords"
+            ]
+          },
+          {
+            "id": "gbif-taxonomy",
+            "title": "GBIF Backbone: Physochlaina alaica",
+            "publisher": "GBIF",
+            "url": "https://api.gbif.org/v1/species/match?strict=true&name=Physochlaina%20alaica",
+            "accessedAt": "2026-10-15",
+            "language": "en",
+            "supports": [
+              "scientificName",
+              "taxonomy.kingdom",
+              "taxonomy.phylum",
+              "taxonomy.class",
+              "taxonomy.order",
+              "taxonomy.family",
+              "taxonomy.genus"
+            ],
+            "taxonId": "gbif:3799874"
+          }
+        ],
+        "content": {
+          "shortDescription": {
+            "text": {
+              "ru": "Редкий многолетник Алайского и Туркестанского хребтов из книги 2006 года. Растёт в тени скал, под кустарниками и на полянах; нерегулируемый выпас повреждает растения.",
+              "ky": "2006-жылкы китептеги Алай жана Түркстан кырка тоолорунун сейрек көп жылдык өсүмдүгү. Аска көлөкөсүндө, бадал алдында жана ачык жерлерде өсөт; көзөмөлсүз мал жаюудан жабыркайт.",
+              "uz": "2006-yilgi kitobdagi Oloy va Turkiston tizmalarining kamyob koʻp yillik oʻsimligi. Qoya soyasida, butalar ostida va ochiq maydonlarda oʻsadi; nazoratsiz chorva boqish uni shikastlaydi.",
+              "en": "A rare perennial of the Alai and Turkestan ranges described in the 2006 book. It grows in rock shade, under shrubs and in glades; uncontrolled grazing damages plants."
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "overview": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Пузырница алайская включена в Красную книгу Кыргызстана 2006 года под именем Physochlaina alaica; то же имя присутствует в перечне 2009 года и подтверждено точным ответом GBIF. Национальный очерк относит растение к редким узколокальным видам Алайского и Туркестанского хребтов. Исторические сведения не превращены в новые географические наблюдения.\n\nМноголетник образует несколько прямостоячих опушённых стеблей с широкояйцевидными листьями. Грязно-кремовые цветки отмечены тёмными пятнами; при плодах чашечка становится кожистой. Вид описан в тени скал, под кустарниками и на открытых полянах в можжевеловых сообществах. Размножение семенное, цветение приходится на май–июнь, созревание плодов — на конец июля.\n\nНациональная статья связывает повреждение растений с нерегулируемым выпасом и мелиорацией пастбищ. Авторы рекомендуют охраняемые ботанические участки в местах произрастания. Количественная оценка численности не приведена. Русская версия не содержит сведений о культивировании, английская упоминает неудачное введение в культуру; определённый результат не выбран. Токсичность, лекарственное применение и иные свойства, не описанные в проверенном очерке, по принадлежности к семейству не домысливаются.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "appearance": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "По книге многолетнее растение с прямостоячими опушёнными и железистыми стеблями до 50 см, широкояйцевидными листьями и грязно-кремовыми цветками с тёмными пятнами; чашечка при плодах кожистая.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "ecology": null,
+          "diet": null,
+          "reproduction": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "В национальном очерке указаны семенное размножение, цветение в мае–июне и созревание плодов в конце июля.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "distribution": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Исторически приведены Туркестанский и Алайский хребты, долины Исфары, Соха и Шахимардана в Кыргызстане и Таджикистане.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        }
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Physochlaina alaica",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3799874",
+        "sourceId": "gbif-taxonomy"
+      },
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "incarvillea-olgae",
+      "species": {
+        "verified": false,
+        "lastReviewedAt": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "id": "incarvillea-olgae",
+        "scientificName": "Incarvillea olgae",
+        "names": {
+          "ru": "Инкарвиллея Ольги",
+          "ky": null,
+          "uz": null,
+          "en": "Olga’s Chinese Trumpet-creeper"
+        },
+        "taxonomy": {
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "class": "Magnoliopsida",
+          "order": "Lamiales",
+          "family": "Bignoniaceae",
+          "genus": "Incarvillea"
+        },
+        "group": "plants",
+        "nationalRedBook": {
+          "listed": true,
+          "category": "CR B2ab(iii), историческая национальная категория 2006 года",
+          "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+          "year": 2006,
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": {
+          "description": {
+            "ky": null,
+            "uz": null,
+            "ru": "Галечниковые поймы рек, конусы выноса каменистых и глинистых склонов; в старом очерке диапазон 700–2500 м.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "regions": [
+          {
+            "type": "country",
+            "code": "KG",
+            "names": {
+              "ru": "Кыргызстан",
+              "ky": "Кыргызстан",
+              "uz": "Qirgʻiziston",
+              "en": "Kyrgyzstan"
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "threats": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Обламывание цветков при сборе и геологические разработки в местообитаниях.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "conservationMeasures": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Книга рекомендует инвентаризацию популяций, создание дополнительных ботанических заказников и возобновление культивирования.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "images": [
+          {
+            "path": "assets/images/species/incarvillea-olgae.webp",
+            "width": 1350,
+            "height": 1800,
+            "sha256": "1dd50724bba68446224d21bf249399c6cdc10e1ef92990517fccf1ab82472c42",
+            "author": "Agnieszka Kwiecień, Nova",
+            "originalPage": "https://commons.wikimedia.org/wiki/File:Incarvillea_olgae_Inkarwilla_Olgi_2020-07-22_02.jpg",
+            "license": "CC BY-SA 4.0",
+            "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+            "attribution": "Incarvillea olgae Inkarwilla Olgi 2020-07-22 02.jpg — Agnieszka Kwiecień, Nova, CC BY-SA 4.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+            "modifications": [
+              "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+              "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+            ],
+            "licenseVerified": true,
+            "caption": {
+              "ru": "Культивируемое растение, ботанический сад Вроцлавского университета, Польша, 2020; не наблюдение из Кыргызстана. Иллюстрация документированного таксона, без подтверждения современного распространения в KG.",
+              "ky": null,
+              "en": null
+            }
+          }
+        ],
+        "sources": [
+          {
+            "id": "national-book",
+            "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+            "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=205",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalRedBook.edition",
+              "nationalRedBook.year",
+              "group",
+              "regions.0",
+              "originalScientificName",
+              "names.ru",
+              "habitat",
+              "content.shortDescription",
+              "content.overview",
+              "content.appearance",
+              "content.ecology",
+              "content.reproduction",
+              "content.distribution",
+              "threats.0",
+              "conservationMeasures.0",
+              "names.en",
+              "nationalRedBook.category"
+            ]
+          },
+          {
+            "id": "national-list-1",
+            "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 77",
+            "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalSourceRecords"
+            ]
+          },
+          {
+            "id": "gbif-taxonomy",
+            "title": "GBIF Backbone: Incarvillea olgae",
+            "publisher": "GBIF",
+            "url": "https://api.gbif.org/v1/species/match?strict=true&name=Incarvillea%20olgae",
+            "accessedAt": "2026-10-15",
+            "language": "en",
+            "supports": [
+              "scientificName",
+              "taxonomy.kingdom",
+              "taxonomy.phylum",
+              "taxonomy.class",
+              "taxonomy.order",
+              "taxonomy.family",
+              "taxonomy.genus"
+            ],
+            "taxonId": "gbif:4091178"
+          },
+          {
+            "id": "photo-commons",
+            "title": "Incarvillea olgae flowering plant cultivated in Wrocław University Botanical Garden, Wrocław, Poland.",
+            "publisher": "Wikimedia Commons; Agnieszka Kwiecień, Nova",
+            "url": "https://commons.wikimedia.org/wiki/File:Incarvillea_olgae_Inkarwilla_Olgi_2020-07-22_02.jpg",
+            "accessedAt": "2026-10-15",
+            "supports": [
+              "images.0.caption"
+            ],
+            "language": "en"
+          }
+        ],
+        "content": {
+          "shortDescription": {
+            "text": {
+              "ru": "Многолетнее растение с крупными розово-пурпурными цветками из книги 2006 года. Обитает на галечниках и горных склонах; сбор цветков и разработки нарушают местообитания.",
+              "ky": "2006-жылкы китептеги ири кызгылт-кочкул гүлдүү көп жылдык өсүмдүк. Шагылдуу жерлерде жана тоо беттеринде өсөт; гүл чогултуу менен кен иштери жашоо жерлерин бузат.",
+              "uz": "2006-yilgi kitobdagi yirik pushti-binafsha gulli koʻp yillik oʻsimlik. Shagʻalli joylar va togʻ yonbagʻirlarida oʻsadi; gul yigʻish hamda kon ishlari yashash joylarini buzadi.",
+              "en": "A perennial with large pink-purple flowers described in the 2006 book. It grows on gravel and mountain slopes; flower collection and extraction disturb its habitat."
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "overview": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Инкарвиллея Ольги приведена в национальной книге 2006 года и перечне 2009 года как Incarvillea olgae. Это принятое имя подтверждено точным ответом GBIF. Исторический очерк связывает местонахождения в Кыргызстане с северным склоном Алайского хребта, междуречьем Шахимардана и Соха. Ни новые наблюдения, ни подтверждение актуального состояния отдельных популяций не добавлены.\n\nРастение многолетнее, с рассечёнными листьями и рыхлым верхушечным соцветием. Крупные цветки преимущественно розово-пурпурные, реже белые; плод — удлинённая многосемянная коробочка. В книге указаны галечниковые поймы рек и каменистые либо глинистые склоны. Цветение отмечено в июне–июле, размножение семенное. Различие языковых версий по окончанию плодоношения не устранено предположением.\n\nУгрозы связаны со сбором декоративных цветков и геологическими разработками. Авторы сообщают о прежнем успешном выращивании в ботаническом саду и непереносимости затенения. Рекомендованы инвентаризация популяций, дополнительные ботанические заказники и возобновление культивирования. Фотография показывает культивируемое растение в Польше и служит иллюстрацией вида; она не доказывает присутствия или численности в Кыргызстане.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "appearance": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "По книге многолетник высотой до 1 м с перисто рассечёнными листьями, рыхлым верхушечным соцветием и крупными розово-пурпурными, реже белыми цветками; плод — удлинённая многосемянная коробочка.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "ecology": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "По национальному очерку растение не переносит затенения; прежние испытания выращивания в ботаническом саду описаны как успешные.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "diet": null,
+          "reproduction": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "По книге размножается семенами и цветёт в июне–июле. Точный интервал плодоношения не выбран из расходящихся RU/EN формулировок.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "distribution": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Исторически в Кыргызстане указано междуречье Шахимардана и Соха на северном склоне Алайского хребта; новые точки отсутствуют.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        }
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Incarvillea olgae",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:4091178",
+        "sourceId": "gbif-taxonomy"
+      },
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "saussurea-involucrata",
+      "species": {
+        "verified": false,
+        "lastReviewedAt": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "id": "saussurea-involucrata",
+        "scientificName": "Saussurea involucrata",
+        "names": {
+          "ru": "Соссюрея обёрнутая",
+          "ky": null,
+          "uz": null,
+          "en": "Wrapped Alpine Saw-wort"
+        },
+        "taxonomy": {
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "class": "Magnoliopsida",
+          "order": "Asterales",
+          "family": "Asteraceae",
+          "genus": "Saussurea"
+        },
+        "group": "plants",
+        "nationalRedBook": {
+          "listed": true,
+          "category": "VU, историческая национальная категория 2006 года",
+          "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+          "year": 2006,
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": {
+          "description": {
+            "ky": null,
+            "uz": null,
+            "ru": "Скалистые склоны, каменистые россыпи и морены альпийского и нивального поясов.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "regions": [
+          {
+            "type": "country",
+            "code": "KG",
+            "names": {
+              "ru": "Кыргызстан",
+              "ky": "Кыргызстан",
+              "uz": "Qirgʻiziston",
+              "en": "Kyrgyzstan"
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "threats": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Интенсивный летний выпас и неорганизованный туризм; английское резюме очерка дополнительно отмечает сбор цветков.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "conservationMeasures": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Рекомендованы сохранение местообитаний и ботанические заказники в местах наибольшей концентрации популяций.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "images": [],
+        "sources": [
+          {
+            "id": "national-book",
+            "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+            "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=213",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalRedBook.edition",
+              "nationalRedBook.year",
+              "group",
+              "regions.0",
+              "originalScientificName",
+              "names.ru",
+              "habitat",
+              "content.shortDescription",
+              "content.overview",
+              "content.appearance",
+              "content.reproduction",
+              "content.distribution",
+              "threats.0",
+              "conservationMeasures.0",
+              "names.en",
+              "nationalRedBook.category"
+            ]
+          },
+          {
+            "id": "national-list-1",
+            "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 81",
+            "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalSourceRecords"
+            ]
+          },
+          {
+            "id": "gbif-taxonomy",
+            "title": "GBIF Backbone: Saussurea involucrata",
+            "publisher": "GBIF",
+            "url": "https://api.gbif.org/v1/species/match?strict=true&name=Saussurea%20involucrata",
+            "accessedAt": "2026-10-15",
+            "language": "en",
+            "supports": [
+              "scientificName",
+              "taxonomy.kingdom",
+              "taxonomy.phylum",
+              "taxonomy.class",
+              "taxonomy.order",
+              "taxonomy.family",
+              "taxonomy.genus"
+            ],
+            "taxonId": "gbif:5404194"
+          }
+        ],
+        "content": {
+          "shortDescription": {
+            "text": {
+              "ru": "Высокогорный многолетник каменистых склонов и морен из книги 2006 года. Соцветия окружены крупными светлыми листьями; летний перевыпас и туризм угрожают виду.",
+              "ky": "2006-жылкы китептеги бийик тоолордун таштуу беттеринде жана мореналарында өскөн көп жылдык өсүмдүк. Гүл тобун ири ачык жалбырактар курчайт; ашыкча мал жаюу жана туризм коркунуч туудурат.",
+              "uz": "2006-yilgi kitobdagi baland togʻlarning toshli yonbagʻirlari va morenalaridagi koʻp yillik oʻsimlik. Toʻpgulini yirik och rangli barglar oʻraydi; ortiqcha yaylov bosimi va turizm xavf tugʻdiradi.",
+              "en": "A high-mountain perennial of rocky slopes and moraines described in the 2006 book. Large pale leaves surround its flower heads; overgrazing and tourism threaten it."
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "overview": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Соссюрея обёрнутая включена в национальную книгу 2006 года и перечень 2009 года как Saussurea involucrata. Принятое имя подтверждено точным таксономическим ответом GBIF. Очерк рассматривает растение как редкий вид у границы ареала в Кыргызстане; старое качественное описание не преобразовано в текущую количественную оценку.\n\nЭто высокогорный многолетник с коротким или выраженным простым стеблем. Несколько корзинок с трубчатыми фиолетовыми цветками собраны в плотное соцветие и окружены крупными светлыми прицветными листьями. Национальная статья связывает местообитания со скалистыми склонами, россыпями камней и моренами альпийского и нивального поясов. В Кыргызстане исторически отмечены районы Северного и Центрального Тянь-Шаня; современная география отдельно не проверялась.\n\nВ книге цветение указано в июне–июле, плодоношение — в августе, размножение семенное. Данных о культивировании нет. Лимитирующими факторами названы интенсивный летний выпас и неорганизованный туризм; английский текст уточняет сбор цветков. Авторы рекомендуют сохранять местообитания и организовывать ботанические заказники. Пищевые, лекарственные и иные свойства, не подтверждённые проверенным очерком, в карточку не включены.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "appearance": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "По книге многолетник высотой 15–35 см с коротким или простым стеблем, волосистыми листьями и трубчатыми фиолетовыми цветками. Корзинки собраны в плотное соцветие, окружённое крупными светлыми прицветными листьями.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "ecology": null,
+          "diet": null,
+          "reproduction": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "По национальному очерку цветёт в июне–июле, плодоносит в августе; размножается семенами.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "distribution": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Исторический очерк указывает Кюнгей и Терскей Ала-Тоо, Ак-Шыйрак и верхние части бассейнов Сары-Джаза, Иныльчека и Куйлю. Новых наблюдений нет.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        }
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Saussurea involucrata",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5404194",
+        "sourceId": "gbif-taxonomy"
+      },
+      "state": "ready_for_review"
+    }
+  ]
+}

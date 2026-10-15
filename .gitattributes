@@ -21,3 +21,14 @@ data/research/bulk-25-content/**/*.json text eol=lf
 docs/evidence/bulk-25*.json text eol=lf
 # Owner publication decisions are compared byte-for-byte on replay.
 data/research/publication-decisions/*.json text eol=lf
+# Private next-batch content and checksums must survive Windows checkout unchanged.
+data/research/catalog-84*.json text eol=lf
+data/research/catalog-84-content/**/*.json text eol=lf
+docs/evidence/catalog-84*.json text eol=lf
+# Keep the new preparation manifest, drafts and evidence bound to their exact hashes.
+data/research/catalog-100*.json text eol=lf
+data/research/catalog-100-content/**/*.json text eol=lf
+docs/evidence/catalog-100*.json text eol=lf
+# Photo evidence and recipes retain byte-stable UTF-8/LF on Windows.
+docs/evidence/task23-*.json text eol=lf
+data/research/task23-*.json text eol=lf

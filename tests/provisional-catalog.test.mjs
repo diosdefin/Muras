@@ -1,3 +1,4 @@
+import { isHistoricalEvidenceUnchanged } from '../scripts/lib/ui-design-scope.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
@@ -15,8 +16,11 @@ import { createSearchIndex, searchSpecies, matchesCatalogFilters } from '../src/
 import { paginateCatalog, CATALOG_PAGE_SIZE } from '../src/data/catalog-pagination.js'
 import { speciesPath, speciesIdFromPath } from '../src/data/species-routes.js'
 import { tr } from '../src/locales/index.js'
+import { historicalPipeline } from './helpers/historical-pipeline.mjs'
 const read = async p => JSON.parse(await readFile(`${PROJECT_ROOT}/${p}`, 'utf8'))
-const source = await read('data/species.source.json'), published = await read('public/data/species.json')
+// The 22.5B regression checks its immutable 63-record release; catalog-84 tests
+// separately validate the current publication and preservation of all these records.
+const source = await read('data/backups/catalog-84/species.source.json'), published = await read('data/backups/catalog-84/public-species.json')
 const baseline = await read('data/backups/bulk-25-provisional/species.source.json')
 const beforePublic = await read('data/backups/bulk-25-provisional/public-species.json')
 const manifest = await read('data/research/bulk-25-release-review-manifest.json')
@@ -34,7 +38,7 @@ test('provisional release appends exactly the 23 manifest IDs and preserves all 
   assert.equal(new Set(source.catalog.map(s => s.id)).size, 63)
   const changed = new Set(['data/species.source.json', 'public/data/species.json', 'src/data/species-model.js'])
   const preservation = await read('docs/evidence/bulk-25-preservation.json')
-  for (const [p, sha] of Object.entries(preservation)) if (!changed.has(p)) assert.equal(digest(await readFile(`${PROJECT_ROOT}/${p}`)), sha, p)
+  for (const [p, sha] of Object.entries(preservation)) if (!changed.has(p) && isHistoricalEvidenceUnchanged(p)) assert.equal(digest(await readFile(`${PROJECT_ROOT}/${p}`)), sha, p)
   assert.equal(digest(await readFile(`${PROJECT_ROOT}/data/backups/bulk-25-provisional/species.source.json`)), preservation['data/species.source.json'])
   assert.equal(digest(await readFile(`${PROJECT_ROOT}/data/backups/bulk-25-provisional/public-species.json`)), preservation['public/data/species.json'])
   assert.equal(fingerprint(registry), manifest.registryFingerprint)
@@ -84,9 +88,10 @@ test('repeat provisional dry-run adds zero and the old pipeline still has no sci
   const args = ['provisional', '--registry', journal.registry, '--manifest', journal.manifest, '--mode', 'dry-run',
     '--owner-role', 'project_owner', '--decision-id', journal.decisionId, '--date', journal.records[0].date, '--reason', journal.records[0].reason]
   const before = digest(await readFile(`${PROJECT_ROOT}/data/species.source.json`))
-  const repeat = await runPipeline(PROJECT_ROOT, args)
+  const { repeat, checked } = await historicalPipeline(source, async root => ({
+    repeat: await runPipeline(root, args), checked: await runPipeline(root, ['check', '--registry', journal.registry])
+  }))
   assert.deepEqual(repeat.counts, { processed: 23, added: 0, unchanged: 23, rejected: 0 })
-  const checked = await runPipeline(PROJECT_ROOT, ['check', '--registry', journal.registry])
   assert.equal(checked.states.imported, 23); assert.equal(checked.states.approved_for_import, 0)
   assert.equal(checked.states.needs_evidence, 2)
   assert.equal(digest(await readFile(`${PROJECT_ROOT}/data/species.source.json`)), before)

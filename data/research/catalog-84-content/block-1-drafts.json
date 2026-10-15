@@ -1,0 +1,1644 @@
+{
+  "schemaVersion": 1,
+  "documentType": "research-draft-batch",
+  "batchId": "catalog-84-1",
+  "records": [
+    {
+      "candidateId": "ciconia-ciconia",
+      "species": {
+        "verified": false,
+        "lastReviewedAt": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "id": "ciconia-ciconia",
+        "scientificName": "Ciconia ciconia",
+        "names": {
+          "ru": "Белый аист",
+          "ky": null,
+          "uz": null,
+          "en": "White Stork"
+        },
+        "taxonomy": {
+          "kingdom": "Animalia",
+          "phylum": "Chordata",
+          "class": "Aves",
+          "order": "Ciconiiformes",
+          "family": "Ciconiidae",
+          "genus": "Ciconia"
+        },
+        "group": "birds",
+        "nationalRedBook": {
+          "listed": true,
+          "category": "IV (EN: R), историческая национальная категория 2006 года",
+          "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+          "year": 2006,
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": {
+          "description": {
+            "ky": null,
+            "uz": null,
+            "ru": "Исторически — равнинные и предгорные речные долины в культурном ландшафте, в том числе старые поселения.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "regions": [
+          {
+            "type": "country",
+            "code": "KG",
+            "names": {
+              "ru": "Кыргызстан",
+              "ky": "Кыргызстан",
+              "uz": "Qirgʻiziston",
+              "en": "Kyrgyzstan"
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "threats": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Осушение болот и преобразование кормовых участков, применение ядохимикатов.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Гибель на ЛЭП, разрушение гнёзд и прямое преследование.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "conservationMeasures": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Авторы книги рекомендуют выявлять и охранять гнездовья и объяснять местным жителям необходимость охраны птиц.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "images": [],
+        "sources": [
+          {
+            "id": "national-book",
+            "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+            "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=377",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalRedBook.edition",
+              "nationalRedBook.year",
+              "group",
+              "regions.0",
+              "originalScientificName",
+              "names.ru",
+              "habitat",
+              "content.shortDescription",
+              "content.overview",
+              "content.ecology",
+              "content.diet",
+              "content.reproduction",
+              "content.distribution",
+              "threats.0",
+              "threats.1",
+              "conservationMeasures.0",
+              "names.en",
+              "nationalRedBook.category"
+            ]
+          },
+          {
+            "id": "national-list-1",
+            "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 3, строка 20",
+            "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalSourceRecords"
+            ]
+          },
+          {
+            "id": "gbif-taxonomy",
+            "title": "GBIF Backbone: Ciconia ciconia",
+            "publisher": "GBIF",
+            "url": "https://api.gbif.org/v1/species/match?strict=true&name=Ciconia%20ciconia",
+            "accessedAt": "2026-10-14",
+            "language": "en",
+            "supports": [
+              "scientificName",
+              "taxonomy.kingdom",
+              "taxonomy.phylum",
+              "taxonomy.class",
+              "taxonomy.order",
+              "taxonomy.family",
+              "taxonomy.genus"
+            ],
+            "taxonId": "gbif:2481912"
+          }
+        ],
+        "content": {
+          "shortDescription": {
+            "text": {
+              "ru": "По книге 2006 года аист гнездился у поселений юга Кыргызстана, в том числе на опорах ЛЭП. Питается мелкими животными; опасны осушение угодий и разрушение гнёзд.",
+              "ky": "2006-жылкы китепте Кыргызстандын түштүгүндөгү айылдарда, анын ичинде электр мамыларында уялаганы жазылган. Майда жаныбарлар менен азыктанат; уяларды бузуу коркунучтуу.",
+              "uz": "2006-yilgi kitobda Qirgʻiziston janubidagi aholi punktlari va elektr ustunlarida uya qurgani qayd etilgan. Mayda hayvonlar bilan oziqlanadi; uyalarni buzish xavf tugʻdiradi.",
+              "en": "The 2006 book records nesting near settlements in southern Kyrgyzstan, including on power poles. It eats small animals; wetland drainage and nest destruction are threats."
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "overview": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Белый аист включён в Красную книгу Кыргызстана 2006 года под именем Ciconia ciconia. Очерк связывает его с предгорными и равнинными речными долинами в освоенном человеком ландшафте. Исторические сведения о южных поселениях и колониях на опорах линий электропередачи относятся к времени подготовки книги, а не к современной переписи. Указания на исчезновение из западной части Чуйской долины также являются ретроспективными.\n\nПтицы устраивают гнёзда на зданиях, старых деревьях и инженерных сооружениях. В статье описана кладка из двух–пяти яиц, которую насиживают оба родителя. В корме перечислены земноводные, пресмыкающиеся, мелкая рыба, крупные насекомые и грызуны. Осенний отлёт указан для августа–сентября.\n\nОсушение болот, преобразование кормовых участков, ядохимикаты и уничтожение гнёзд названы угрозами. Авторы предлагают выявлять и охранять гнездовья и вести разъяснительную работу. Старые приблизительные числа не используются как оценка популяции страны. Русская и английская версии расходятся в обозначении подвида; эта карточка сохраняет только видовой ранг и не утверждает подвидовую принадлежность.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "appearance": null,
+          "ecology": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "По очерку весеннее появление приходится на начало марта, отлёт — на август–сентябрь. Гнёзда устраивались на зданиях, деревьях и опорах ЛЭП.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "diet": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Земноводные, ящерицы, змеи, мелкая рыба, крупные насекомые, паукообразные и грызуны перечислены в очерке 2006 года.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "reproduction": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "В кладке 2–5 яиц; насиживают самец и самка. По книге птенцы покидают гнездо через 70–72 дня.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "distribution": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Исторические сведения относятся к Приферганью юга Кыргызстана; отдельные пролётные встречи известны с Иссык-Куля. Современное присутствие не обновлялось.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        }
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Ciconia ciconia",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2481912",
+        "sourceId": "gbif-taxonomy"
+      },
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "platalea-leucorodia",
+      "species": {
+        "verified": false,
+        "lastReviewedAt": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "id": "platalea-leucorodia",
+        "scientificName": "Platalea leucorodia",
+        "names": {
+          "ru": "Колпица",
+          "ky": null,
+          "uz": null,
+          "en": "Eurasian Spoonbill"
+        },
+        "taxonomy": {
+          "kingdom": "Animalia",
+          "phylum": "Chordata",
+          "class": "Aves",
+          "order": "Pelecaniformes",
+          "family": "Threskiornithidae",
+          "genus": "Platalea"
+        },
+        "group": "birds",
+        "nationalRedBook": {
+          "listed": true,
+          "category": "VI (NT: R), историческая национальная категория 2006 года",
+          "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+          "year": 2006,
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": {
+          "description": {
+            "ky": null,
+            "uz": null,
+            "ru": "Водно-болотные угодья, преимущественно низовья рек и водоёмы с илистыми берегами.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "regions": [
+          {
+            "type": "country",
+            "code": "KG",
+            "names": {
+              "ru": "Кыргызстан",
+              "ky": "Кыргызстан",
+              "uz": "Qirgʻiziston",
+              "en": "Kyrgyzstan"
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "threats": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Осушение водно-болотных угодий; незаконный отстрел.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "conservationMeasures": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Книга рекомендует сохранять водно-болотные угодья и не вырубать близлежащие деревья.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "images": [],
+        "sources": [
+          {
+            "id": "national-book",
+            "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+            "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=379",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalRedBook.edition",
+              "nationalRedBook.year",
+              "group",
+              "regions.0",
+              "originalScientificName",
+              "names.ru",
+              "habitat",
+              "content.shortDescription",
+              "content.overview",
+              "content.ecology",
+              "content.diet",
+              "content.distribution",
+              "threats.0",
+              "conservationMeasures.0",
+              "names.en",
+              "nationalRedBook.category"
+            ]
+          },
+          {
+            "id": "national-list-1",
+            "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 3, строка 4",
+            "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalSourceRecords"
+            ]
+          },
+          {
+            "id": "gbif-taxonomy",
+            "title": "GBIF Backbone: Platalea leucorodia",
+            "publisher": "GBIF",
+            "url": "https://api.gbif.org/v1/species/match?strict=true&name=Platalea%20leucorodia",
+            "accessedAt": "2026-10-14",
+            "language": "en",
+            "supports": [
+              "scientificName",
+              "taxonomy.kingdom",
+              "taxonomy.phylum",
+              "taxonomy.class",
+              "taxonomy.order",
+              "taxonomy.family",
+              "taxonomy.genus"
+            ],
+            "taxonId": "gbif:2480801"
+          }
+        ],
+        "content": {
+          "shortDescription": {
+            "text": {
+              "ru": "В книге 2006 года колпица описана как редкая пролётная и зимующая птица. Кормится на мелководье; осушение водно-болотных угодий лишает её мест отдыха и питания.",
+              "ky": "2006-жылкы китепте сейрек учуп өтүүчү жана кыштоочу куш катары берилген. Тайыз сууда азыктанат; саздак жерлерди кургатуу анын эс алуу жана азыктануу жайларын жок кылат.",
+              "uz": "2006-yilgi kitobda kam uchraydigan koʻchib oʻtuvchi va qishlovchi qush sifatida tasvirlangan. Sayoz suvda oziqlanadi; botqoqlarni quritish dam olish joylarini yoʻqotadi.",
+              "en": "The 2006 book describes a rare migrant and winter visitor. It feeds in shallow water; wetland drainage removes feeding and resting places."
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "overview": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Колпица приведена в национальном издании 2006 года как Platalea leucorodia. Исторический очерк сообщает о редких встречах на пролёте и зимовке в Чуйской долине, Иссык-Кульской котловине и на высокогорных озёрах. Предположение о прежнем гнездовании на западе Иссык-Куля не превращается в подтверждение нынешнего размножения. Систематических данных о численности источник не приводит.\n\nДля колпицы важны водно-болотные угодья и водоёмы с илистыми берегами. Корм собирается на мелководье движениями клюва из стороны в сторону; статья перечисляет головастиков, моллюсков, лягушек, водных насекомых и растительную пищу. Описания массивных гнёзд на деревьях и кладки из четырёх яиц относятся к биологии вида, а не к доказанному местному гнездованию.\n\nОсновная отмеченная угроза — осушение пригодных для отдыха и размножения мест ради сельского хозяйства. Также упомянут незаконный отстрел. Рекомендации книги состоят в сохранении водно-болотных угодий и прибрежных деревьев. Структурированное поле местного размножения оставлено неизвестным; историческая национальная категория не подменяет глобальный статус IUCN.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "appearance": null,
+          "ecology": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "По книге кормится на мелководье преимущественно утром и вечером, поводя головой и клювом из стороны в сторону.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "diet": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "В национальной статье перечислены головастики, моллюски, лягушки, водные насекомые и, реже, растительная пища.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "reproduction": null,
+          "distribution": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Исторически редкий пролёт и зимовка в Чуйской долине, Иссык-Кульской котловине и на озёрах Внутреннего Тянь-Шаня; старое гнездование предположительно.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        }
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Platalea leucorodia",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2480801",
+        "sourceId": "gbif-taxonomy"
+      },
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "pelecanus-onocrotalus",
+      "species": {
+        "verified": false,
+        "lastReviewedAt": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "id": "pelecanus-onocrotalus",
+        "scientificName": "Pelecanus onocrotalus",
+        "names": {
+          "ru": "Розовый пеликан",
+          "ky": null,
+          "uz": null,
+          "en": "Great White Pelican"
+        },
+        "taxonomy": {
+          "kingdom": "Animalia",
+          "phylum": "Chordata",
+          "class": "Aves",
+          "order": "Pelecaniformes",
+          "family": "Pelecanidae",
+          "genus": "Pelecanus"
+        },
+        "group": "birds",
+        "nationalRedBook": {
+          "listed": true,
+          "category": "VI (NT: R), историческая национальная категория 2006 года",
+          "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+          "year": 2006,
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": {
+          "description": {
+            "ky": null,
+            "uz": null,
+            "ru": "Крупные водоёмы с густыми зарослями тростника.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "regions": [
+          {
+            "type": "country",
+            "code": "KG",
+            "names": {
+              "ru": "Кыргызстан",
+              "ky": "Кыргызстан",
+              "uz": "Qirgʻiziston",
+              "en": "Kyrgyzstan"
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "threats": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Недостаток мест отдыха на пролёте, изменение водного режима, загрязнение и выжигание тростника.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Сокращение рыбных запасов и браконьерство.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "conservationMeasures": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Авторы рекомендуют создание сезонных заказников и ключевых орнитологических территорий.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "images": [],
+        "sources": [
+          {
+            "id": "national-book",
+            "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+            "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=381",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalRedBook.edition",
+              "nationalRedBook.year",
+              "group",
+              "regions.0",
+              "originalScientificName",
+              "names.ru",
+              "habitat",
+              "content.shortDescription",
+              "content.overview",
+              "content.ecology",
+              "content.diet",
+              "content.distribution",
+              "threats.0",
+              "threats.1",
+              "conservationMeasures.0",
+              "names.en",
+              "nationalRedBook.category"
+            ]
+          },
+          {
+            "id": "national-list-1",
+            "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 3, строка 35",
+            "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalSourceRecords"
+            ]
+          },
+          {
+            "id": "gbif-taxonomy",
+            "title": "GBIF Backbone: Pelecanus onocrotalus",
+            "publisher": "GBIF",
+            "url": "https://api.gbif.org/v1/species/match?strict=true&name=Pelecanus%20onocrotalus",
+            "accessedAt": "2026-10-14",
+            "language": "en",
+            "supports": [
+              "scientificName",
+              "taxonomy.kingdom",
+              "taxonomy.phylum",
+              "taxonomy.class",
+              "taxonomy.order",
+              "taxonomy.family",
+              "taxonomy.genus"
+            ],
+            "taxonId": "gbif:2480350"
+          }
+        ],
+        "content": {
+          "shortDescription": {
+            "text": {
+              "ru": "По книге 2006 года розовый пеликан изредка встречался на осеннем пролёте в Чуйской долине. Питается рыбой; нуждается в крупных водоёмах для отдыха и кормления.",
+              "ky": "2006-жылкы китепте Чүй өрөөнүндө күзгү учуп өтүүдө сейрек кездешкени жазылган. Балык менен азыктанат; эс алуу жана азыктануу үчүн чоң көлмөлөр керек.",
+              "uz": "2006-yilgi kitobda Chuy vodiysida kuzgi koʻchish paytida kam uchragani qayd etilgan. Baliq bilan oziqlanadi; dam olish va oziqlanish uchun yirik suv havzalari zarur.",
+              "en": "The 2006 book records rare autumn migrants in the Chuy Valley. This fish-eating pelican needs large waters for feeding and resting."
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "overview": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Розовый пеликан включён в Красную книгу Кыргызстана 2006 года как Pelecanus onocrotalus. Очерк характеризует его как изредка мигрирующий через страну вид: для Чуйской долины приведены осенние встречи и случаи зимовки. Эти исторические сообщения не задают современную численность или подтверждённый нынешний ареал. На пролёте наблюдались одиночные птицы.\n\nВ качестве местообитаний описаны крупные водоёмы с густыми зарослями тростника. Питание рыбное. В статье также изложена общая колониальная гнездовая биология: гнёзда на островах и заломах тростника, небольшие кладки и продолжительное насиживание. Эти сведения не служат свидетельством гнездования в Кыргызстане, поэтому локальное размножение не заполнено.\n\nВо время миграции существенна доступность крупных водоёмов для отдыха. Среди угроз названы изменение водного режима, загрязнение, выжигание тростников, сокращение рыбных запасов и браконьерство. Авторы предлагают сезонную охрану важных участков и выделение ключевых орнитологических территорий. Наличие такой рекомендации не означает, что соответствующие территории уже созданы. Национальная оценка Near Threatened сохраняется с датой исторического издания и не переносится в глобальное поле IUCN.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "appearance": null,
+          "ecology": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Для Кыргызстана в книге описан редкий осенний пролёт через Чуйскую долину и отдельные случаи зимовки.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "diet": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "В национальном очерке питание прямо охарактеризовано как рыбное.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "reproduction": null,
+          "distribution": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Исторические национальные сведения относятся к осеннему пролёту в Чуйской долине; современное распределение не установлено этим пакетом.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        }
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Pelecanus onocrotalus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2480350",
+        "sourceId": "gbif-taxonomy"
+      },
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "phalacrocorax-pygmaeus",
+      "species": {
+        "verified": false,
+        "lastReviewedAt": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "id": "phalacrocorax-pygmaeus",
+        "scientificName": "Microcarbo pygmaeus",
+        "names": {
+          "ru": "Малый баклан",
+          "ky": null,
+          "uz": null,
+          "en": "Pygmy Cormorant"
+        },
+        "taxonomy": {
+          "kingdom": "Animalia",
+          "phylum": "Chordata",
+          "class": "Aves",
+          "order": "Suliformes",
+          "family": "Phalacrocoracidae",
+          "genus": "Microcarbo"
+        },
+        "group": "birds",
+        "nationalRedBook": {
+          "listed": true,
+          "category": "VI (NT), историческая национальная категория 2006 года",
+          "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Phalacrocorax pygmaeus",
+          "year": 2006,
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": {
+          "description": {
+            "ky": null,
+            "uz": null,
+            "ru": "Водно-болотные угодья, богатые рыбой.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "regions": [
+          {
+            "type": "country",
+            "code": "KG",
+            "names": {
+              "ru": "Кыргызстан",
+              "ky": "Кыргызстан",
+              "uz": "Qirgʻiziston",
+              "en": "Kyrgyzstan"
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "threats": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Сокращение рыбных запасов рек и водоёмов; прямое уничтожение птиц.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "conservationMeasures": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Книга рекомендует охранять участки кормления и отдыха.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "images": [],
+        "sources": [
+          {
+            "id": "national-book",
+            "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+            "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=385",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalRedBook.edition",
+              "nationalRedBook.year",
+              "group",
+              "regions.0",
+              "originalScientificName",
+              "names.ru",
+              "habitat",
+              "content.shortDescription",
+              "content.overview",
+              "content.ecology",
+              "content.diet",
+              "content.distribution",
+              "threats.0",
+              "conservationMeasures.0",
+              "names.en",
+              "nationalRedBook.category"
+            ]
+          },
+          {
+            "id": "national-list-1",
+            "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 3, строка 54",
+            "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalSourceRecords"
+            ]
+          },
+          {
+            "id": "gbif-taxonomy",
+            "title": "GBIF Backbone: Phalacrocorax pygmaeus",
+            "publisher": "GBIF",
+            "url": "https://api.gbif.org/v1/species/10095118",
+            "accessedAt": "2026-10-14",
+            "language": "en",
+            "supports": [
+              "scientificName",
+              "taxonomy.kingdom",
+              "taxonomy.phylum",
+              "taxonomy.class",
+              "taxonomy.order",
+              "taxonomy.family",
+              "taxonomy.genus",
+              "content.overview"
+            ],
+            "taxonId": "gbif:10095118"
+          }
+        ],
+        "content": {
+          "shortDescription": {
+            "text": {
+              "ru": "Малый баклан в книге 2006 года отмечен на пролёте и зимовке в Чуйской долине. Ловит рыбу под водой; сохранение рыбных водоёмов важно для его кормления и отдыха.",
+              "ky": "2006-жылкы китепте Чүй өрөөнүндө учуп өткөнү жана кыштаганы белгиленген. Суу астынан балык кармайт; балыкка бай көлмөлөрдү сактоо анын азыктануусу үчүн маанилүү.",
+              "uz": "2006-yilgi kitobda Chuy vodiysida koʻchib oʻtishi va qishlashi qayd etilgan. Suv ostida baliq tutadi; baliqqa boy suv havzalarini saqlash muhim.",
+              "en": "The 2006 book records passage and winter visits in the Chuy Valley. It catches fish underwater; fish-rich wetlands provide feeding and resting sites."
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "overview": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Малый баклан внесён в книгу 2006 года под именем Phalacrocorax pygmaeus. Сохранённый ответ GBIF подтверждает его синонимию с принятым Microcarbo pygmaeus того же видового ранга и с тем же авторством. В карточке используется принятое имя, тогда как национальное включение и описания сохраняют связь с историческим названием.\n\nВ очерке сообщается о пролёте преимущественно через Чуйскую долину и зимних наблюдениях возле Бишкека. Возможное гнездование в западном Прииссыккулье осталось предположением. Важны богатые рыбой водно-болотные угодья: корм добывается нырянием и плаванием под водой. Упомянуты совместная охота и отдых с расправленными для просушки крыльями.\n\nНаблюдения стай в 2005 году и двух птиц в январе 2006 года документируют встречи, но не оценивают всю популяцию. Основные угрозы по книге — сокращение рыбных запасов и прямое уничтожение. Рекомендуется охрана кормовых участков и мест отдыха. Общевидовое описание гнёзд и кладки не использовано как доказательство местного размножения. Старое упоминание IUCN в очерке не превращено в актуальный глобальный статус.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book",
+              "gbif-taxonomy"
+            ]
+          },
+          "appearance": null,
+          "ecology": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "По национальному очерку мигрирует и зимует; может ловить рыбу группами, отдыхает на берегу с расправленными крыльями.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "diet": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Источник указывает питание рыбой, добываемой нырянием и плаванием под водой.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "reproduction": null,
+          "distribution": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Исторически преимущественно Чуйская долина; гнездование на западе Иссык-Куля только предполагалось.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        }
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Microcarbo pygmaeus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:10095118",
+        "sourceId": "gbif-taxonomy"
+      },
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "falco-naumanni",
+      "species": {
+        "verified": false,
+        "lastReviewedAt": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "id": "falco-naumanni",
+        "scientificName": "Falco naumanni",
+        "names": {
+          "ru": "Степная пустельга",
+          "ky": null,
+          "uz": null,
+          "en": "Lesser Kestrel"
+        },
+        "taxonomy": {
+          "kingdom": "Animalia",
+          "phylum": "Chordata",
+          "class": "Aves",
+          "order": "Falconiformes",
+          "family": "Falconidae",
+          "genus": "Falco"
+        },
+        "group": "birds",
+        "nationalRedBook": {
+          "listed": true,
+          "category": "V (VU, C1), историческая национальная категория 2006 года",
+          "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+          "year": 2006,
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": {
+          "description": {
+            "ky": null,
+            "uz": null,
+            "ru": "Низко- и среднегорные пояса с древесно-кустарниковой растительностью в поймах и на склонах; также культурные ландшафты.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "regions": [
+          {
+            "type": "country",
+            "code": "KG",
+            "names": {
+              "ru": "Кыргызстан",
+              "ky": "Кыргызстан",
+              "uz": "Qirgʻiziston",
+              "en": "Kyrgyzstan"
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "threats": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Разорение гнёзд и незаконный отстрел.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "conservationMeasures": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Авторы рекомендуют выявлять и охранять гнездовья, организовать мониторинг и информировать местных жителей.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "images": [],
+        "sources": [
+          {
+            "id": "national-book",
+            "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+            "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=387",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalRedBook.edition",
+              "nationalRedBook.year",
+              "group",
+              "regions.0",
+              "originalScientificName",
+              "names.ru",
+              "habitat",
+              "content.shortDescription",
+              "content.overview",
+              "content.ecology",
+              "content.diet",
+              "content.distribution",
+              "threats.0",
+              "conservationMeasures.0",
+              "names.en",
+              "nationalRedBook.category"
+            ]
+          },
+          {
+            "id": "national-list-1",
+            "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 3, строка 43",
+            "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalSourceRecords"
+            ]
+          },
+          {
+            "id": "gbif-taxonomy",
+            "title": "GBIF Backbone: Falco naumanni",
+            "publisher": "GBIF",
+            "url": "https://api.gbif.org/v1/species/match?strict=true&name=Falco%20naumanni",
+            "accessedAt": "2026-10-14",
+            "language": "en",
+            "supports": [
+              "scientificName",
+              "taxonomy.kingdom",
+              "taxonomy.phylum",
+              "taxonomy.class",
+              "taxonomy.order",
+              "taxonomy.family",
+              "taxonomy.genus"
+            ],
+            "taxonId": "gbif:9584698"
+          }
+        ],
+        "content": {
+          "shortDescription": {
+            "text": {
+              "ru": "Степная пустельга в книге 2006 года связана с низко- и среднегорьем Кыргызстана. Питается грызунами, ящерицами и насекомыми; биология местного гнездования неизвестна.",
+              "ky": "2006-жылкы китепте Кыргызстандын жапыз жана орто тоолорунда кездешкени берилген. Кемирүүчүлөр, кескелдириктер жана курт-кумурскалар менен азыктанат; уялоосу аз изилденген.",
+              "uz": "2006-yilgi kitobda Qirgʻizistonning past va oʻrta togʻlarida qayd etilgan. Kemiruvchilar, kaltakesaklar va hasharotlar bilan oziqlanadi; mahalliy uya biologiyasi nomaʼlum.",
+              "en": "The 2006 book records this kestrel in low and middle mountain belts of Kyrgyzstan. It eats rodents, lizards and insects; local breeding biology remains unknown."
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "overview": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Степная пустельга представлена в национальном издании 2006 года как Falco naumanni. Очерк относит её к низко- и среднегорным поясам и отмечает встречи на юго-западе страны, в Иссык-Кульской котловине и некоторых внутренних долинах. Предпочтение древесно-кустарниковой растительности в речных поймах и на склонах не исключает культурные ландшафты.\n\nПо источнику в корм входят мышевидные грызуны, ящерицы и крупные насекомые, в частности жуки. При этом сведений о гнездовой биологии в Кыргызстане авторы не приводят. Датированное наблюдение молодых птиц в Боомском ущелье и старое локальное значение плотности не дают современной оценки всей популяции. Размножение и численность остаются неизвестными структурированными полями.\n\nСреди угроз названы разрушение гнёзд и незаконный отстрел. Возможная конкуренция с обыкновенной пустельгой в книге предположительна и не утверждается здесь как установленный механизм сокращения. Рекомендованы поиск и охрана гнездовий, местные охраняемые участки, ежегодные наблюдения и информирование жителей. Национальная категория Vulnerable датирована 2006 годом; современный глобальный статус не выводится из неё.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "appearance": null,
+          "ecology": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Исторический очерк отмечает встречи до 2500 м; местная гнездовая биология не описана.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "diet": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Мышевидные грызуны, ящерицы и крупные насекомые, в частности жуки.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "reproduction": null,
+          "distribution": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Исторические встречи в районе Арстанбапа, на Каркыре, в пойме Нарына и Иссык-Кульской котловине; современный ареал не обновлялся.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        }
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Falco naumanni",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:9584698",
+        "sourceId": "gbif-taxonomy"
+      },
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "falco-rusticolus",
+      "species": {
+        "verified": false,
+        "lastReviewedAt": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "id": "falco-rusticolus",
+        "scientificName": "Falco rusticolus",
+        "names": {
+          "ru": "Кречет",
+          "ky": null,
+          "uz": null,
+          "en": "Gyrfalcon"
+        },
+        "taxonomy": {
+          "kingdom": "Animalia",
+          "phylum": "Chordata",
+          "class": "Aves",
+          "order": "Falconiformes",
+          "family": "Falconidae",
+          "genus": "Falco"
+        },
+        "group": "birds",
+        "nationalRedBook": {
+          "listed": true,
+          "category": "VII (LC), историческая национальная категория 2006 года",
+          "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+          "year": 2006,
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": {
+          "description": {
+            "ky": null,
+            "uz": null,
+            "ru": "Для Кыргызстана в книге названы высокогорные районы и предгорные долины.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "regions": [
+          {
+            "type": "country",
+            "code": "KG",
+            "names": {
+              "ru": "Кыргызстан",
+              "ky": "Кыргызстан",
+              "uz": "Qirgʻiziston",
+              "en": "Kyrgyzstan"
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "threats": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Разорение гнёзд и отлов для соколиной охоты, как перечислено в национальном очерке.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "conservationMeasures": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Книга рекомендует разъяснять необходимость охраны хищных птиц и охранять выявленные гнездовья.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "images": [],
+        "sources": [
+          {
+            "id": "national-book",
+            "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+            "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=391",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalRedBook.edition",
+              "nationalRedBook.year",
+              "group",
+              "regions.0",
+              "originalScientificName",
+              "names.ru",
+              "habitat",
+              "content.shortDescription",
+              "content.overview",
+              "content.ecology",
+              "content.distribution",
+              "threats.0",
+              "conservationMeasures.0",
+              "names.en",
+              "nationalRedBook.category"
+            ]
+          },
+          {
+            "id": "national-list-1",
+            "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 3, строка 5",
+            "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalSourceRecords"
+            ]
+          },
+          {
+            "id": "gbif-taxonomy",
+            "title": "GBIF Backbone: Falco rusticolus",
+            "publisher": "GBIF",
+            "url": "https://api.gbif.org/v1/species/match?strict=true&name=Falco%20rusticolus",
+            "accessedAt": "2026-10-14",
+            "language": "en",
+            "supports": [
+              "scientificName",
+              "taxonomy.kingdom",
+              "taxonomy.phylum",
+              "taxonomy.class",
+              "taxonomy.order",
+              "taxonomy.family",
+              "taxonomy.genus"
+            ],
+            "taxonId": "gbif:8069880"
+          }
+        ],
+        "content": {
+          "shortDescription": {
+            "text": {
+              "ru": "В книге 2006 года кречет описан как редкий зимний посетитель Кыргызстана. Указаны горы и предгорные долины; отлов для соколиной охоты назван одной из угроз.",
+              "ky": "2006-жылкы китепте Кыргызстанга кышында сейрек учуп келери жазылган. Тоолордо жана тоо этегиндеги өрөөндөрдө кездешкен; аңчылык үчүн кармоо коркунуч катары аталган.",
+              "uz": "2006-yilgi kitobda Qirgʻizistonga kam uchib keladigan qishlovchi qush sifatida berilgan. Togʻlar va togʻoldi vodiylari qayd etilgan; ov uchun tutish xavf soladi.",
+              "en": "The 2006 book describes a rare winter visitor to Kyrgyzstan, recorded in mountains and foothill valleys. Capture for falconry is one of the listed threats."
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "overview": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Кречет приведён в Красной книге Кыргызстана 2006 года под именем Falco rusticolus. Национальный очерк описывает его как редкого зимнего посетителя, с историческими встречами в Чуйской долине, Прииссыккулье и Нарынском регионе. В качестве мест пребывания в стране названы высокогорные районы и предгорные долины. Приведённый в статье арктический гнездовой ареал не переносится на территорию Кыргызстана.\n\nИсточник сообщает об одной встрече в ущелье Байбиче-Тоо в ноябре 2002 года, но национальной численности не устанавливает. Подробности кладки, насиживания и развития птенцов изложены как общая биология вида. Они не доказывают местное гнездование, которое в рекомендациях книги ещё предлагается искать. Питание и диагностическая внешность в использованном очерке отдельно не описаны и оставлены неизвестными.\n\nОтлов для соколиной охоты и разорение гнёзд названы ограничивающими факторами. Авторы предлагают разъяснительную работу и охрану выявленных мест размножения. Эти предложения не превращены в сведения о выполненных программах. Историческая национальная категория Least Concern не является современной глобальной оценкой IUCN и не отменяет редкости зимних встреч в стране.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "appearance": null,
+          "ecology": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "По национальному очерку в отдельные зимы прилетает на зимовку; местное гнездование не подтверждено этим пакетом.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "diet": null,
+          "reproduction": null,
+          "distribution": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Исторические встречи в Чуйской долине, Прииссыккулье и Байбиче-Тоо; современное присутствие не устанавливалось.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        }
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Falco rusticolus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:8069880",
+        "sourceId": "gbif-taxonomy"
+      },
+      "state": "ready_for_review"
+    },
+    {
+      "candidateId": "pandion-haliaetus",
+      "species": {
+        "verified": false,
+        "lastReviewedAt": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "id": "pandion-haliaetus",
+        "scientificName": "Pandion haliaetus",
+        "names": {
+          "ru": "Скопа",
+          "ky": null,
+          "uz": null,
+          "en": "Osprey"
+        },
+        "taxonomy": {
+          "kingdom": "Animalia",
+          "phylum": "Chordata",
+          "class": "Aves",
+          "order": "Accipitriformes",
+          "family": "Pandionidae",
+          "genus": "Pandion"
+        },
+        "group": "birds",
+        "nationalRedBook": {
+          "listed": true,
+          "category": "VII (LC), историческая национальная категория 2006 года",
+          "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+          "year": 2006,
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": {
+          "description": {
+            "ky": null,
+            "uz": null,
+            "ru": "Прозрачные водоёмы, богатые рыбой, с облесёнными берегами.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "regions": [
+          {
+            "type": "country",
+            "code": "KG",
+            "names": {
+              "ru": "Кыргызстан",
+              "ky": "Кыргызстан",
+              "uz": "Qirgʻiziston",
+              "en": "Kyrgyzstan"
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "threats": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Освоение водоёмов, вырубка прибрежных лесов, сокращение рыбных запасов.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Разорение гнёзд, прямое уничтожение и беспокойство.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "conservationMeasures": [
+          {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Книга рекомендует учёты, уточнение и охрану гнездовий, изучение биологии и использование искусственных гнездовий.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        ],
+        "images": [],
+        "sources": [
+          {
+            "id": "national-book",
+            "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+            "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=397",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalRedBook.edition",
+              "nationalRedBook.year",
+              "group",
+              "regions.0",
+              "originalScientificName",
+              "names.ru",
+              "habitat",
+              "content.shortDescription",
+              "content.overview",
+              "content.ecology",
+              "content.distribution",
+              "threats.0",
+              "threats.1",
+              "conservationMeasures.0",
+              "names.en",
+              "nationalRedBook.category"
+            ]
+          },
+          {
+            "id": "national-list-1",
+            "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 3, строка 41",
+            "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10",
+            "accessedAt": "2026-10-14",
+            "language": "ru",
+            "supports": [
+              "nationalRedBook.listed",
+              "nationalSourceRecords"
+            ]
+          },
+          {
+            "id": "gbif-taxonomy",
+            "title": "GBIF Backbone: Pandion haliaetus",
+            "publisher": "GBIF",
+            "url": "https://api.gbif.org/v1/species/match?strict=true&name=Pandion%20haliaetus",
+            "accessedAt": "2026-10-14",
+            "language": "en",
+            "supports": [
+              "scientificName",
+              "taxonomy.kingdom",
+              "taxonomy.phylum",
+              "taxonomy.class",
+              "taxonomy.order",
+              "taxonomy.family",
+              "taxonomy.genus"
+            ],
+            "taxonId": "gbif:2480726"
+          }
+        ],
+        "content": {
+          "shortDescription": {
+            "text": {
+              "ru": "По книге 2006 года скопа встречалась на миграции у водоёмов Кыргызстана. Ей важны прозрачные воды и лесистые берега; современное гнездование требует подтверждения.",
+              "ky": "2006-жылкы китепте Кыргызстандын көлмөлөрүндө учуп өтүүдө кездешкени берилген. Тунук суу жана токойлуу жээктер маанилүү; азыркы уялоосун ырастоо керек.",
+              "uz": "2006-yilgi kitobda Qirgʻiziston suv havzalarida koʻchish vaqtida qayd etilgan. Tiniq suv va daraxtli qirgʻoqlar muhim; hozirgi uya qurishi tasdiqlanishi kerak.",
+              "en": "The 2006 book records migration visits to waters in Kyrgyzstan. Clear water and wooded shores are important; present-day nesting needs confirmation."
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "overview": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Скопа включена в национальную книгу 2006 года как Pandion haliaetus. Очерк объединяет исторические встречи у водоёмов Чуйской долины, Иссык-Куля и вдоль реки Ат-Баши. Для вида указаны прозрачные водоёмы, богатые рыбой, с облесёнными берегами. Эти сведения описывают условия использования территории, не заменяя современной проверки присутствия.\n\nВ источнике приведены старые наблюдения пар в гнездовое время и находки гнёзд у Сары-Челека. Годы находок в кыргызской и русской версиях расходятся, а современное гнездование не обследовано в рамках этой партии. По этой причине локальное размножение не утверждается. Весеннее появление в книге отнесено к марту–апрелю, осенняя миграция — к периоду от конца августа до октября.\n\nХозяйственное освоение водоёмов, вырубка прибрежных деревьев, сокращение рыбных запасов, беспокойство и уничтожение гнёзд названы угрозами. Авторы предлагают проводить учёты, уточнять гнездовья и охранять их, а также изучать возможность искусственных гнездовий. Прямое описание рациона и подробная диагностика в использованном очерке отсутствуют: соответствующие поля не заполнены по общеизвестным представлениям о виде.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "appearance": null,
+          "ecology": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "В историческом очерке прилёт отнесён к марту–апрелю, осенняя миграция — к периоду от третьей декады августа до октября.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          },
+          "diet": null,
+          "reproduction": null,
+          "distribution": {
+            "text": {
+              "ky": null,
+              "uz": null,
+              "ru": "Исторические встречи в Чуйской долине, на Иссык-Куле, вдоль Ат-Баши и у Сары-Челека. Нынешнее гнездование не подтверждено.",
+              "en": null
+            },
+            "sourceIds": [
+              "national-book"
+            ]
+          }
+        }
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Pandion haliaetus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2480726",
+        "sourceId": "gbif-taxonomy"
+      },
+      "state": "ready_for_review"
+    }
+  ]
+}

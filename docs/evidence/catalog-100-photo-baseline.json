@@ -1,0 +1,759 @@
+{
+  "date": "2026-10-15",
+  "sourceCommit": "d7b5d56e4cab493b6db0b0f97cbc479b6b4baf6f",
+  "sourceSha256": "0ae786ae29548029297ab28e0562cac660780b45f041e6022702f68408fcea17",
+  "publicSha256": "0d718eaf134d09b2dd4cca9ded689c0054ca59a80bc69c249a82a4cfcf093cfc",
+  "sourceCount": 100,
+  "publicCount": 100,
+  "existingImages": 43,
+  "withPhotos": 43,
+  "placeholders": 57,
+  "missing": [
+    {
+      "id": "pike-asp",
+      "scientificName": "Aspiolucius esocinus",
+      "group": "fish",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Aspiolucius%20esocinus",
+          "taxonId": "gbif:2363766"
+        }
+      ]
+    },
+    {
+      "id": "turkestan-catfish",
+      "scientificName": "Glyptosternon reticulatum",
+      "group": "fish",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Glyptosternon%20reticulatum",
+          "taxonId": "gbif:2341221"
+        }
+      ]
+    },
+    {
+      "id": "relict-spider",
+      "scientificName": "Tricholathys relicta",
+      "group": "arthropods",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Tricholathys%20relicta",
+          "taxonId": "gbif:2144820"
+        }
+      ]
+    },
+    {
+      "id": "tien-shan-scutiger",
+      "scientificName": "Albatrellus tianschanicus",
+      "group": "fungi",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Albatrellus%20tianschanicus",
+          "taxonId": "gbif:2551839"
+        }
+      ]
+    },
+    {
+      "id": "menzbiers-marmot",
+      "scientificName": "Marmota menzbieri",
+      "group": "mammals",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Marmota%20menzbieri",
+          "taxonId": "gbif:2437367"
+        }
+      ]
+    },
+    {
+      "id": "said-alievs-toad-agama",
+      "scientificName": "Phrynocephalus saidalievi",
+      "group": "reptiles",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Phrynocephalus%20saidalievi",
+          "taxonId": "gbif:10782470"
+        }
+      ]
+    },
+    {
+      "id": "vigorous-ground-beetle",
+      "scientificName": "Carabus validus",
+      "group": "arthropods",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Carabus%20validus",
+          "taxonId": "gbif:8881643"
+        }
+      ]
+    },
+    {
+      "id": "fergana-ground-beetle",
+      "scientificName": "Carabus ferghanicus",
+      "group": "arthropods",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Carabus%20ferghanicus",
+          "taxonId": "gbif:7630772"
+        }
+      ]
+    },
+    {
+      "id": "eremurus-zenaidae",
+      "scientificName": "Eremurus zenaidae",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Eremurus%20zenaidae",
+          "taxonId": "gbif:2778824"
+        }
+      ]
+    },
+    {
+      "id": "eremurus-zoae",
+      "scientificName": "Eremurus zoae",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Eremurus%20zoae",
+          "taxonId": "gbif:2778815"
+        }
+      ]
+    },
+    {
+      "id": "allium-dodecadontum",
+      "scientificName": "Allium dodecadontum",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Allium%20dodecadontum",
+          "taxonId": "gbif:2857164"
+        }
+      ]
+    },
+    {
+      "id": "allium-semenovii",
+      "scientificName": "Allium semenovii",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Allium%20semenovii",
+          "taxonId": "gbif:2857114"
+        }
+      ]
+    },
+    {
+      "id": "tulipa-affinis",
+      "scientificName": "Tulipa fosteriana",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/5299364",
+          "taxonId": "gbif:5299364"
+        }
+      ]
+    },
+    {
+      "id": "tulipa-korolkowii",
+      "scientificName": "Tulipa korolkowii",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Tulipa%20korolkowii",
+          "taxonId": "gbif:5299568"
+        }
+      ]
+    },
+    {
+      "id": "tulipa-platystemon",
+      "scientificName": "Tulipa platystemon",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Tulipa%20platystemon",
+          "taxonId": "gbif:5299510"
+        }
+      ]
+    },
+    {
+      "id": "tulipa-tetraphylla",
+      "scientificName": "Tulipa tetraphylla",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Tulipa%20tetraphylla",
+          "taxonId": "gbif:5299660"
+        }
+      ]
+    },
+    {
+      "id": "tulipa-zenaidae",
+      "scientificName": "Tulipa lehmanniana",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/5299646",
+          "taxonId": "gbif:5299646"
+        }
+      ]
+    },
+    {
+      "id": "juno-orchioides",
+      "scientificName": "Iris orchioides",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/5298228",
+          "taxonId": "gbif:5298228"
+        }
+      ]
+    },
+    {
+      "id": "thesium-minkwitzianum",
+      "scientificName": "Chrysothesium minkwitzianum",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/3788694",
+          "taxonId": "gbif:3788694"
+        }
+      ]
+    },
+    {
+      "id": "delphinium-knorringianum",
+      "scientificName": "Delphinium knorringianum",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Delphinium%20knorringianum",
+          "taxonId": "gbif:3930642"
+        }
+      ]
+    },
+    {
+      "id": "urocerus-sah",
+      "scientificName": "Urocerus sah",
+      "group": "arthropods",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Urocerus%20sah",
+          "taxonId": "gbif:4492202"
+        }
+      ]
+    },
+    {
+      "id": "masaris-longicornis",
+      "scientificName": "Masaris longicornis",
+      "group": "arthropods",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Masaris%20longicornis",
+          "taxonId": "gbif:1312316"
+        }
+      ]
+    },
+    {
+      "id": "ciconia-ciconia",
+      "scientificName": "Ciconia ciconia",
+      "group": "birds",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Ciconia%20ciconia",
+          "taxonId": "gbif:2481912"
+        }
+      ]
+    },
+    {
+      "id": "platalea-leucorodia",
+      "scientificName": "Platalea leucorodia",
+      "group": "birds",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Platalea%20leucorodia",
+          "taxonId": "gbif:2480801"
+        }
+      ]
+    },
+    {
+      "id": "pelecanus-onocrotalus",
+      "scientificName": "Pelecanus onocrotalus",
+      "group": "birds",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Pelecanus%20onocrotalus",
+          "taxonId": "gbif:2480350"
+        }
+      ]
+    },
+    {
+      "id": "phalacrocorax-pygmaeus",
+      "scientificName": "Microcarbo pygmaeus",
+      "group": "birds",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/10095118",
+          "taxonId": "gbif:10095118"
+        }
+      ]
+    },
+    {
+      "id": "falco-naumanni",
+      "scientificName": "Falco naumanni",
+      "group": "birds",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Falco%20naumanni",
+          "taxonId": "gbif:9584698"
+        }
+      ]
+    },
+    {
+      "id": "falco-rusticolus",
+      "scientificName": "Falco rusticolus",
+      "group": "birds",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Falco%20rusticolus",
+          "taxonId": "gbif:8069880"
+        }
+      ]
+    },
+    {
+      "id": "pandion-haliaetus",
+      "scientificName": "Pandion haliaetus",
+      "group": "birds",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Pandion%20haliaetus",
+          "taxonId": "gbif:2480726"
+        }
+      ]
+    },
+    {
+      "id": "haliaeetus-leucoryphus",
+      "scientificName": "Haliaeetus leucoryphus",
+      "group": "birds",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Haliaeetus%20leucoryphus",
+          "taxonId": "gbif:2480453"
+        }
+      ]
+    },
+    {
+      "id": "haliaeetus-albicilla",
+      "scientificName": "Haliaeetus albicilla",
+      "group": "birds",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Haliaeetus%20albicilla",
+          "taxonId": "gbif:2480449"
+        }
+      ]
+    },
+    {
+      "id": "gyps-himalayensis",
+      "scientificName": "Gyps himalayensis",
+      "group": "birds",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Gyps%20himalayensis",
+          "taxonId": "gbif:9561629"
+        }
+      ]
+    },
+    {
+      "id": "gyps-fulvus",
+      "scientificName": "Gyps fulvus",
+      "group": "birds",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Gyps%20fulvus",
+          "taxonId": "gbif:2480389"
+        }
+      ]
+    },
+    {
+      "id": "circaetus-gallicus",
+      "scientificName": "Circaetus gallicus",
+      "group": "birds",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Circaetus%20gallicus",
+          "taxonId": "gbif:2480666"
+        }
+      ]
+    },
+    {
+      "id": "circus-macrourus",
+      "scientificName": "Circus macrourus",
+      "group": "birds",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Circus%20macrourus",
+          "taxonId": "gbif:2480491"
+        }
+      ]
+    },
+    {
+      "id": "neomys-fodiens",
+      "scientificName": "Neomys fodiens",
+      "group": "mammals",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Neomys%20fodiens",
+          "taxonId": "gbif:2435767"
+        }
+      ]
+    },
+    {
+      "id": "rhinolophus-bocharicus",
+      "scientificName": "Rhinolophus bocharicus",
+      "group": "mammals",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Rhinolophus%20bocharicus",
+          "taxonId": "gbif:4266846"
+        }
+      ]
+    },
+    {
+      "id": "barbastella-leucomelas",
+      "scientificName": "Barbastella leucomelas",
+      "group": "mammals",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Barbastella%20leucomelas",
+          "taxonId": "gbif:2432581"
+        }
+      ]
+    },
+    {
+      "id": "tadarida-teniotis",
+      "scientificName": "Tadarida teniotis",
+      "group": "mammals",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Tadarida%20teniotis",
+          "taxonId": "gbif:2433009"
+        }
+      ]
+    },
+    {
+      "id": "ursus-arctos",
+      "scientificName": "Ursus arctos",
+      "group": "mammals",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Ursus%20arctos",
+          "taxonId": "gbif:2433433"
+        }
+      ]
+    },
+    {
+      "id": "martes-foina",
+      "scientificName": "Martes foina",
+      "group": "mammals",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Martes%20foina",
+          "taxonId": "gbif:5218887"
+        }
+      ]
+    },
+    {
+      "id": "lutra-lutra",
+      "scientificName": "Lutra lutra",
+      "group": "mammals",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Lutra%20lutra",
+          "taxonId": "gbif:2433753"
+        }
+      ]
+    },
+    {
+      "id": "allactaga-elater",
+      "scientificName": "Allactaga elater",
+      "group": "mammals",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Allactaga%20elater",
+          "taxonId": "gbif:2439489"
+        }
+      ]
+    },
+    {
+      "id": "prionus-tschitscherini",
+      "scientificName": "Pogonarthron tschitscherini",
+      "group": "arthropods",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Pogonarthron%20tschitscherini",
+          "taxonId": "gbif:1147213"
+        },
+        {
+          "url": "https://www.zin.ru/Animalia/Coleoptera/pdf/Almanac_Humanity_Space_2017_Vol_6_No_5.pdf"
+        }
+      ]
+    },
+    {
+      "id": "rossomyrmex-proformicarum",
+      "scientificName": "Rossomyrmex proformicarum",
+      "group": "arthropods",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Rossomyrmex%20proformicarum",
+          "taxonId": "gbif:1319076"
+        }
+      ]
+    },
+    {
+      "id": "barbus-brachycephalus",
+      "scientificName": "Luciobarbus brachycephalus",
+      "group": "fish",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/2363090",
+          "taxonId": "gbif:2363090"
+        }
+      ]
+    },
+    {
+      "id": "allochrusa-gypsophiloides",
+      "scientificName": "Acanthophyllum gypsophiloides",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/7267544",
+          "taxonId": "gbif:7267544"
+        }
+      ]
+    },
+    {
+      "id": "corydalis-pseudoadunca",
+      "scientificName": "Corydalis pseudoadunca",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Corydalis%20pseudoadunca",
+          "taxonId": "gbif:5531646"
+        }
+      ]
+    },
+    {
+      "id": "fumariola-turkestanica",
+      "scientificName": "Fumariola turkestanica",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Fumariola%20turkestanica",
+          "taxonId": "gbif:3602966"
+        }
+      ]
+    },
+    {
+      "id": "rhodiola-litwinowii",
+      "scientificName": "Rhodiola litwinowii",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Rhodiola%20litwinowii",
+          "taxonId": "gbif:7552101"
+        }
+      ]
+    },
+    {
+      "id": "sibiraea-tianschanica",
+      "scientificName": "Sibiraea tianschanica",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Sibiraea%20tianschanica",
+          "taxonId": "gbif:3032448"
+        }
+      ]
+    },
+    {
+      "id": "crataegus-knorringiana",
+      "scientificName": "Crataegus knorringiana",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Crataegus%20knorringiana",
+          "taxonId": "gbif:3015001"
+        }
+      ]
+    },
+    {
+      "id": "ammopiptanthus-nanus",
+      "scientificName": "Ammopiptanthus nanus",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Ammopiptanthus%20nanus",
+          "taxonId": "gbif:2943139"
+        }
+      ]
+    },
+    {
+      "id": "colutea-brachyptera",
+      "scientificName": "Colutea brachyptera",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Colutea%20brachyptera",
+          "taxonId": "gbif:2956464"
+        }
+      ]
+    },
+    {
+      "id": "primula-eugeniae",
+      "scientificName": "Primula eugeniae",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Primula%20eugeniae",
+          "taxonId": "gbif:5640822"
+        }
+      ]
+    },
+    {
+      "id": "physochlaina-alaica",
+      "scientificName": "Physochlaina alaica",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Physochlaina%20alaica",
+          "taxonId": "gbif:3799874"
+        }
+      ]
+    },
+    {
+      "id": "saussurea-involucrata",
+      "scientificName": "Saussurea involucrata",
+      "group": "plants",
+      "sourceImageCount": 0,
+      "source": [
+        {
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Saussurea%20involucrata",
+          "taxonId": "gbif:5404194"
+        }
+      ]
+    }
+  ],
+  "bad": [],
+  "duplicateSha": [],
+  "imageHashes": {
+    "assets/images/species/irbis.webp": "250c124488aa1008011eecff378bf31a3397978918403408ce977b4b4c5748dd",
+    "data/backups/legacy-2026-10-12/images/source/irbis.jpg": "6e0523366e694b95e6c8aa190b5beacbd6a96fd1a707e16bed82926f5df88c83",
+    "assets/images/species/argali.webp": "05cd846a1cd67d1401d6b08b50b6c57505bbd26552494f2fe3f7680b503739dd",
+    "assets/images/species/manul.webp": "f5f0c8394805636748d0da7709f69becc961e51cb8b2fbfd17bc8051113d54b1",
+    "assets/images/species/golden-eagle.webp": "d8c618e27182eb9fddb4cdff7e58aa4f42bc8cc5a192390e598ef81be197c1fa",
+    "assets/images/species/bearded-vulture.webp": "d46960f9a9244255c91b2a96b78d579491c97f42fd6a2e99e8ef58309dd67922",
+    "assets/images/species/saker-falcon.webp": "c8755f98c96ebb2d88929b7ceefa882b3f622b2c3da5373aa3474a370ac9c9a7",
+    "assets/images/species/greigs-tulip.webp": "e86e885c1857def6585336cf554b73ed80532d39c4594c2cb7c458a856a84b2e",
+    "assets/images/species/kaufmanns-tulip.webp": "ca1bb2eecc5c3e3e7b2246b611fff9157b7bdcaf577fb04254f998097c347a7d",
+    "assets/images/species/sievers-apple.webp": "273f73a29bb105f970b1d70d526418eadbd743676da38ba2af7b36cf72b91e88",
+    "assets/images/species/central-asian-tortoise.webp": "d37b5f8eedf3d9a96b0f07097689b0537f1dde7096ee07c049f6768dc07c0795",
+    "assets/images/species/central-asian-frog.webp": "9e68faf61fe4b14224cce2706bd2d5c8e11f5dcefe86fdea3c8b3f3219b54e18",
+    "assets/images/species/predatory-bush-cricket.webp": "3e8dbf107742d44384832ce07d7a7332f5a693aab893f505b869e4bb62519e12",
+    "assets/images/species/dog-stinkhorn.webp": "98af1ec652407ce317722ddb77df7ffa9816c54d018cfb89ded7f461a17f830f",
+    "assets/images/species/marbled-polecat.webp": "dab719e3fd431506df3969d1d6f42ce166b15c07f86dc8e8dc2abaefb2359b7c",
+    "assets/images/species/black-stork.webp": "cf027d88081ac71d5079987af5d40d0bc256d559891f9405245c659b7f809687",
+    "assets/images/species/ibisbill.webp": "1e13016f52bbcbb3ef5ddb95c1e35494d87e0912dde92e1ddc7f608baedf852d",
+    "assets/images/species/eduards-fritillary.webp": "8c0664bf42afe98e7de029f6ac4fc35382a885e40f86851fa90586401c259abe",
+    "assets/images/species/european-glass-lizard.webp": "196f274ee1309b36402d030cd80aafa8221fa3482cd3bb46a3b9d13b575e9801",
+    "assets/images/species/dalmatian-pelican.webp": "1e0182e145dfbc89402535446c4e9db987dd5689fea9881c4f33d36356f4bc20",
+    "assets/images/species/eurasian-lynx.webp": "27961ddf57c1f5c5d19d0c56d3ed8ca0413b2c53a654da590c8fc3a6ef72b31d",
+    "assets/images/species/kolpakowskis-tulip.webp": "9c39ebf9886db953639088f3ec4d9768e4786ca345ba1c8778beb639f03b35ad",
+    "assets/images/species/ostrowskis-tulip.webp": "bde6fad74185b66b65d21d9f9b8a9c72a22484ae5fc2e94e8381c2da24fc97c4",
+    "assets/images/species/christophs-clouded-yellow.webp": "e3bba6988ffa3850d717e2e8fb9c68975cee2648148d8ff6d08db4886ffef425",
+    "assets/images/species/semenovs-fir.webp": "e7574a5e8fc3f261c8484474695b36517bc5535bd731a1a3d1633d2e5596b4ef",
+    "assets/images/species/great-bustard.webp": "394f1bf720a1bab1459f1326aeef082ca2b40ef3f2ca673714ab541fd86f2924",
+    "assets/images/species/pskem-onion.webp": "ffcb628f76c771ca18ddc43fd37f0f4d6b247ea1db57164301a3955289ad541e",
+    "assets/images/species/kostychevs-pasque-flower.webp": "ddc39cc9eff90f74a1194840d9d54e76b2e97f169e34feca8a383b7e1d05b366",
+    "assets/images/species/indian-crested-porcupine.webp": "3aaf49bfd0b37dfe0535a139efffa54d45448685c8e7c853fc1851260e2486e2",
+    "assets/images/species/giant-robber-fly.webp": "ba4728fc48f629e504924b139890693fcf08f590baa31626280db96e3c6fe650",
+    "assets/images/species/korzhinskys-pear.webp": "0773e5979b56a68e712c3ff9a8e45cc8c67d545e129ee6cea366a0b007405338",
+    "assets/images/species/cinereous-vulture.webp": "dd32de6437931ca037bf0dde283aaed1bc29ac37d6bdb2dc6ef36e0fe5172761",
+    "assets/images/species/egyptian-vulture.webp": "c316177c52699ceeedeade6643652c086422caa869fb1b46a8f0ec778da2fbe4",
+    "assets/images/species/eminium-regelii.webp": "2443bc7d68476b5c8223d302b273a0dfb4907d72858b7ffe78b6ff5bb8ebd7df",
+    "assets/images/species/iridodictyum-kolpakowskianum.webp": "a473358b2097c103a64cfc2366c7fcf469c1b83ca43c1a359405eb0b773039aa",
+    "assets/images/species/varanus-griseus-caspius.webp": "0b1c99d07a193d6c5dcd5cc7cee91306f3c832e1ca3a648801bd2b3bb356d6a0",
+    "assets/images/species/lyrurus-tetrix.webp": "c161d75ef1478e7f9cfdba7a30b8b84dd73a84fadb957df50bea684f82431360",
+    "assets/images/species/cygnus-cygnus.webp": "1cc4fd4c5a86bfbd98c7374b3784158fdb734419202d96dbd9ec394aeb84871e",
+    "assets/images/species/aythya-nyroca.webp": "369c049d90ae87fd30775fafc91cc6d7c2edc0cfb172b3c29c029989d6c8c54e",
+    "assets/images/species/mergus-serrator.webp": "9d85633340e60994021d1d3b41ca9641e96ece515318419895f69dc85358af41",
+    "assets/images/species/oxyura-leucocephala.webp": "7630668650650cadf43e9b23c8c5196adfda70e702c8e278335afb5a78020326",
+    "assets/images/species/gavia-arctica.webp": "afca282d2bf1ceb0466e05dd84ea58291bbaffe81a044a5533c017b268dd46fe",
+    "assets/images/species/dictyocephalus-attenuatus.webp": "0a109660a2caa346b47d3ee630dc5e370b8a0eff22c60e1d30b20f41029a045e",
+    "assets/images/species/incarvillea-olgae.webp": "1dd50724bba68446224d21bf249399c6cdc10e1ef92990517fccf1ab82472c42"
+  },
+  "sizes": {
+    "assets": 11171580,
+    "dist": 12565924
+  },
+  "legacyReferences": [
+    [
+      "irbis",
+      "data/backups/legacy-2026-10-12/images/source/irbis.jpg",
+      "sha_mismatch"
+    ]
+  ]
+}

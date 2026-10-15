@@ -1,0 +1,218 @@
+{
+  "id": "physochlaina-alaica",
+  "scientificName": "Physochlaina alaica",
+  "names": {
+    "ru": "Пузырница алайская",
+    "ky": null,
+    "uz": null,
+    "en": "Alai Physochlaina"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Solanales",
+    "family": "Solanaceae",
+    "genus": "Physochlaina"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU, историческая национальная категория 2006 года",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Тень скал, участки под кустарниками и открытые поляны в можжевеловых сообществах.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Повреждение скотом при нерегулируемом выпасе и уничтожение при мелиорации пастбищ.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Авторы рекомендуют создание ботанических заказников в урочищах Селик и Кичик.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=199",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 75",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Physochlaina alaica",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Physochlaina%20alaica",
+      "accessedAt": "2026-10-15",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:3799874"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Редкий многолетник Алайского и Туркестанского хребтов из книги 2006 года. Растёт в тени скал, под кустарниками и на полянах; нерегулируемый выпас повреждает растения.",
+        "ky": "2006-жылкы китептеги Алай жана Түркстан кырка тоолорунун сейрек көп жылдык өсүмдүгү. Аска көлөкөсүндө, бадал алдында жана ачык жерлерде өсөт; көзөмөлсүз мал жаюудан жабыркайт.",
+        "uz": "2006-yilgi kitobdagi Oloy va Turkiston tizmalarining kamyob koʻp yillik oʻsimligi. Qoya soyasida, butalar ostida va ochiq maydonlarda oʻsadi; nazoratsiz chorva boqish uni shikastlaydi.",
+        "en": "A rare perennial of the Alai and Turkestan ranges described in the 2006 book. It grows in rock shade, under shrubs and in glades; uncontrolled grazing damages plants."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Пузырница алайская включена в Красную книгу Кыргызстана 2006 года под именем Physochlaina alaica; то же имя присутствует в перечне 2009 года и подтверждено точным ответом GBIF. Национальный очерк относит растение к редким узколокальным видам Алайского и Туркестанского хребтов. Исторические сведения не превращены в новые географические наблюдения.\n\nМноголетник образует несколько прямостоячих опушённых стеблей с широкояйцевидными листьями. Грязно-кремовые цветки отмечены тёмными пятнами; при плодах чашечка становится кожистой. Вид описан в тени скал, под кустарниками и на открытых полянах в можжевеловых сообществах. Размножение семенное, цветение приходится на май–июнь, созревание плодов — на конец июля.\n\nНациональная статья связывает повреждение растений с нерегулируемым выпасом и мелиорацией пастбищ. Авторы рекомендуют охраняемые ботанические участки в местах произрастания. Количественная оценка численности не приведена. Русская версия не содержит сведений о культивировании, английская упоминает неудачное введение в культуру; определённый результат не выбран. Токсичность, лекарственное применение и иные свойства, не описанные в проверенном очерке, по принадлежности к семейству не домысливаются.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге многолетнее растение с прямостоячими опушёнными и железистыми стеблями до 50 см, широкояйцевидными листьями и грязно-кремовыми цветками с тёмными пятнами; чашечка при плодах кожистая.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": null,
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальном очерке указаны семенное размножение, цветение в мае–июне и созревание плодов в конце июля.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически приведены Туркестанский и Алайский хребты, долины Исфары, Соха и Шахимардана в Кыргызстане и Таджикистане.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "id": "haliaeetus-leucoryphus",
+  "scientificName": "Haliaeetus leucoryphus",
+  "names": {
+    "ru": "Орлан-долгохвост",
+    "ky": null,
+    "uz": null,
+    "en": "Pallas’s Fish Eagle"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "genus": "Haliaeetus"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "V (VU, C1), историческая национальная категория 2006 года",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Водоёмы с тростниковыми зарослями и поймы рек с тополево-ивовыми лесами.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Прямое уничтожение и сокращение пригодных местообитаний.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Авторы рекомендуют охрану мест зимовки, учёты, изучение ограничивающих факторов и разъяснительную работу.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=399",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 3, строка 12",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Haliaeetus leucoryphus",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Haliaeetus%20leucoryphus",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:2480453"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "В книге 2006 года орлан-долгохвост описан как редкая пролётная и зимующая птица Кыргызстана. Для него важны водоёмы с тростником и пойменные леса; численность неизвестна.",
+        "ky": "2006-жылкы китепте Кыргызстанда сейрек учуп өтүүчү жана кыштоочу куш катары берилген. Камыштуу көлмөлөр жана жайылма токойлор маанилүү; саны белгисиз.",
+        "uz": "2006-yilgi kitobda Qirgʻizistonda kam uchraydigan koʻchib oʻtuvchi va qishlovchi qush deb berilgan. Qamishli suv havzalari va qayir oʻrmonlari muhim; soni nomaʼlum.",
+        "en": "The 2006 book describes a rare migrant and winter visitor to Kyrgyzstan. Reed-fringed waters and floodplain forests are important; population size is unknown."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Орлан-долгохвост представлен в Красной книге Кыргызстана 2006 года под именем Haliaeetus leucoryphus. В национальном очерке он охарактеризован как редкая пролётная и зимующая птица. Старые литературные сообщения о летних встречах не подтверждают размножение и не дают оснований отмечать современное гнездование. Предлагаемая карточка сохраняет это различие между встречей птицы и установленным гнездовым населением.\n\nВ качестве местообитаний названы водоёмы с обширными зарослями тростника и речные поймы с тополями и ивами. Достоверных данных о численности авторы не приводят: специальные учёты не проводились. Подробная внешность, состав рациона и местная биология размножения в использованной статье не раскрыты, поэтому соответствующие поля остаются пустыми.\n\nГлавными угрозами названы прямое уничтожение и сокращение пригодных мест обитания. Рекомендованы охрана зимовочных участков, определение численности, изучение ограничивающих факторов и информирование жителей. Предложение о питомнике передаётся как историческая рекомендация, а не как действующая программа. Национальная категория Vulnerable относится к книге 2006 года; прежние упоминания международных соглашений не объявляются проверенным правовым статусом на сегодняшний день.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге — редкий пролётный и зимующий вид; старые литературные летние встречи не подтверждают гнездование.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": null,
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический национальный очерк описывает пролёт и зимовку в Кыргызстане, без обновления нынешних мест пребывания.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

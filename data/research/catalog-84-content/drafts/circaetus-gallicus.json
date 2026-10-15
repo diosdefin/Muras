@@ -1,0 +1,229 @@
+{
+  "id": "circaetus-gallicus",
+  "scientificName": "Circaetus gallicus",
+  "names": {
+    "ru": "Змееяд",
+    "ky": null,
+    "uz": null,
+    "en": "Short-toed Eagle"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "genus": "Circaetus"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "V (VU: R), историческая национальная категория 2006 года",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Сухие предгорья и пустынные горы; в очерке также названы орехово-плодовые леса на высотах 1500–2200 м.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Прямое уничтожение, разрушение гнёзд, беспокойство и сокращение кормовой базы.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Авторы рекомендуют уточнение численности, изучение биологии и кормовой базы, проверку возможности искусственных гнездовий.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=413",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 3, строка 32",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Circaetus gallicus",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Circaetus%20gallicus",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:2480666"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Змееяд в книге 2006 года связан с сухими предгорьями и горными склонами Кыргызстана. Питается преимущественно рептилиями; опасны уничтожение птиц и разорение гнёзд.",
+        "ky": "2006-жылкы китепте Кыргызстандын кургак тоо этектеринде жана капталдарында кездешкени берилген. Негизинен сойлоочулар менен азыктанат; уяларды бузуу коркунучтуу.",
+        "uz": "2006-yilgi kitobda Qirgʻizistonning quruq togʻoldi hududlari va yonbagʻirlarida qayd etilgan. Asosan sudralib yuruvchilar bilan oziqlanadi; uyalarni buzish xavf tugʻdiradi.",
+        "en": "The 2006 book records this eagle in dry foothills and mountain slopes of Kyrgyzstan. It feeds mainly on reptiles; killing birds and destroying nests are threats."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Змееяд приведён в Красной книге Кыргызстана 2006 года под именем Circaetus gallicus. Исторический очерк указывает встречи в Чуйской и Таласской долинах, Прииссыккулье и южных районах, а гнездовья — на нескольких хребтах. Основные местообитания описаны как сухие предгорья, пустынные горы и участки орехово-плодовых лесов.\n\nПо источнику весеннее появление относится к началу апреля, начало гнездования — к маю. В кладке чаще одно яйцо. Русский и английский тексты различаются в продолжительности насиживания, поэтому этот срок не выбран и не усреднён. Основную пищу составляют рептилии. Разрозненные старые встречи не позволяют оценивать нынешнюю численность национальной популяции.\n\nПрямое уничтожение, разорение гнёзд, беспокойство и сокращение кормовой базы при освоении угодий названы угрозами. Авторы рекомендуют уточнять численность, изучать биологию и состояние кормовых ресурсов, проверять возможность привлечения к искусственным гнездовьям. Указание на историческую охрану в Сары-Челеке не заменяет современной проверки режима территории. Подвид heptneri упомянут только как национальное описание: отдельная подвидовая карточка или самостоятельная оценка для него не создаётся.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальному очерку появляется в начале апреля, приступает к гнездованию в мае.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Преимущественно рептилии по национальной статье.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В книге для кладки чаще указано одно яйцо; срок насиживания из-за расхождения версий не выбран.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические сведения о долинах и хребтах Кыргызстана сохранены как ретроспективные; современное присутствие не обследовано.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

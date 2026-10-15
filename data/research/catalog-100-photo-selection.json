@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "documentType": "catalog-photo-restoration-selection",
+  "date": "2026-10-15",
+  "sourceCommit": "d7b5d56e4cab493b6db0b0f97cbc479b6b4baf6f",
+  "blocks": [
+    {
+      "number": 1,
+      "candidateIds": [
+        "ciconia-ciconia",
+        "platalea-leucorodia",
+        "pelecanus-onocrotalus",
+        "phalacrocorax-pygmaeus",
+        "falco-naumanni",
+        "falco-rusticolus",
+        "pandion-haliaetus",
+        "haliaeetus-leucoryphus",
+        "haliaeetus-albicilla",
+        "gyps-himalayensis",
+        "gyps-fulvus",
+        "circaetus-gallicus"
+      ],
+      "status": "completed",
+      "added": [
+        "ciconia-ciconia",
+        "platalea-leucorodia",
+        "pelecanus-onocrotalus",
+        "phalacrocorax-pygmaeus",
+        "falco-naumanni",
+        "falco-rusticolus",
+        "pandion-haliaetus",
+        "haliaeetus-leucoryphus",
+        "haliaeetus-albicilla",
+        "gyps-himalayensis",
+        "gyps-fulvus",
+        "circaetus-gallicus"
+      ],
+      "unresolved": []
+    },
+    {
+      "number": 2,
+      "candidateIds": [
+        "circus-macrourus",
+        "menzbiers-marmot",
+        "neomys-fodiens",
+        "rhinolophus-bocharicus",
+        "barbastella-leucomelas",
+        "tadarida-teniotis",
+        "ursus-arctos",
+        "martes-foina",
+        "lutra-lutra",
+        "allactaga-elater",
+        "eremurus-zenaidae",
+        "eremurus-zoae"
+      ],
+      "status": "completed",
+      "added": [
+        "circus-macrourus",
+        "neomys-fodiens",
+        "rhinolophus-bocharicus",
+        "martes-foina",
+        "lutra-lutra",
+        "eremurus-zenaidae",
+        "eremurus-zoae",
+        "tadarida-teniotis",
+        "ursus-arctos",
+        "allactaga-elater"
+      ],
+      "unresolved": [
+        {
+          "id": "menzbiers-marmot",
+          "reason": "Найденные фотографии iNaturalist имеют CC BY-NC; марки не заменяют фотографию животного."
+        },
+        {
+          "id": "barbastella-leucomelas",
+          "reason": "Найдены спектрограмма с NC и музейные журналы CC0, но не фотография самой летучей мыши. Подвид/популяция не подменяются."
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "candidateIds": [
+        "allium-dodecadontum",
+        "allium-semenovii",
+        "tulipa-affinis",
+        "tulipa-korolkowii",
+        "tulipa-platystemon",
+        "tulipa-tetraphylla",
+        "tulipa-zenaidae",
+        "juno-orchioides",
+        "thesium-minkwitzianum",
+        "delphinium-knorringianum",
+        "allochrusa-gypsophiloides"
+      ],
+      "status": "completed",
+      "added": [
+        "allium-dodecadontum",
+        "allium-semenovii",
+        "tulipa-affinis",
+        "tulipa-korolkowii",
+        "tulipa-platystemon",
+        "tulipa-tetraphylla",
+        "juno-orchioides",
+        "thesium-minkwitzianum",
+        "allochrusa-gypsophiloides"
+      ],
+      "unresolved": [
+        {
+          "id": "tulipa-zenaidae",
+          "reason": "Названия/категории Commons и агрегированный GBIF taxon могут указывать Tulipa lehmanniana, тогда как исходные определения ряда наблюдений — Tulipa behmiana. Требуется проверка ботаника; автоматически не отождествляются."
+        },
+        {
+          "id": "delphinium-knorringianum",
+          "reason": "Подходящая фотография точного таксона с подтверждёнными правами не найдена."
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "candidateIds": [
+        "corydalis-pseudoadunca",
+        "fumariola-turkestanica",
+        "rhodiola-litwinowii",
+        "sibiraea-tianschanica",
+        "crataegus-knorringiana",
+        "ammopiptanthus-nanus",
+        "colutea-brachyptera",
+        "primula-eugeniae",
+        "physochlaina-alaica",
+        "saussurea-involucrata",
+        "pike-asp"
+      ],
+      "status": "completed",
+      "added": [
+        "corydalis-pseudoadunca",
+        "fumariola-turkestanica",
+        "rhodiola-litwinowii",
+        "sibiraea-tianschanica",
+        "ammopiptanthus-nanus",
+        "colutea-brachyptera",
+        "physochlaina-alaica",
+        "saussurea-involucrata"
+      ],
+      "unresolved": [
+        {
+          "id": "crataegus-knorringiana",
+          "reason": "Найденная фотография iNaturalist имеет CC BY-NC 4.0."
+        },
+        {
+          "id": "primula-eugeniae",
+          "reason": "Гербарный фотокандидат C.542927 имеет CC BY-SA 4.0, но в записи media отсутствуют автор и правообладатель; нужна проверка атрибуции и этикетки."
+        },
+        {
+          "id": "pike-asp",
+          "reason": "Найдены почтовое изображение и страница музейного журнала, не фотография рыбы."
+        }
+      ]
+    },
+    {
+      "number": 5,
+      "candidateIds": [
+        "turkestan-catfish",
+        "barbus-brachycephalus",
+        "said-alievs-toad-agama",
+        "relict-spider",
+        "vigorous-ground-beetle",
+        "fergana-ground-beetle",
+        "urocerus-sah",
+        "masaris-longicornis",
+        "prionus-tschitscherini",
+        "rossomyrmex-proformicarum",
+        "tien-shan-scutiger"
+      ],
+      "status": "completed",
+      "added": [
+        "urocerus-sah",
+        "barbus-brachycephalus",
+        "rossomyrmex-proformicarum"
+      ],
+      "unresolved": [
+        {
+          "id": "turkestan-catfish",
+          "reason": "Свободные фото GBIF исходно определены как Glyptosternon oschanini; в Commons также найден рисунок Exostoma stoliczkae. Подмена Glyptosternon reticulatum не допускается без подтверждения специалиста."
+        },
+        {
+          "id": "said-alievs-toad-agama",
+          "reason": "Фотографии точного таксона с проверенной лицензией не найдены; родственные агамы не используются."
+        },
+        {
+          "id": "relict-spider",
+          "reason": "Подходящий точно определённый фотокандидат не найден в ограниченном поиске."
+        },
+        {
+          "id": "vigorous-ground-beetle",
+          "reason": "Нет подходящей фотографии точно определённого Carabus validus."
+        },
+        {
+          "id": "fergana-ground-beetle",
+          "reason": "Нет подходящей фотографии точно определённого Carabus ferghanicus."
+        },
+        {
+          "id": "masaris-longicornis",
+          "reason": "Подходящая фотография не найдена; дополнительный запрос категории Commons остановлен после HTTP 429 без обхода ограничения."
+        },
+        {
+          "id": "prionus-tschitscherini",
+          "reason": "Фотография Pogonarthron tschitscherini имеет CC BY-NC. Портрет энтомолога из Commons отклонён."
+        },
+        {
+          "id": "tien-shan-scutiger",
+          "reason": "Точно определённая фотография Albatrellus tianschanicus с подтверждёнными правами не найдена."
+        }
+      ]
+    }
+  ]
+}

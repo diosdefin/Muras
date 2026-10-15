@@ -1,0 +1,229 @@
+{
+  "id": "sibiraea-tianschanica",
+  "scientificName": "Sibiraea tianschanica",
+  "names": {
+    "ru": "Сибирка тяньшанская",
+    "ky": null,
+    "uz": null,
+    "en": "Tien Shan Sibiraea"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Rosales",
+    "family": "Rosaceae",
+    "genus": "Sibiraea"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "CR, историческая национальная категория 2006 года",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Верхний пояс гор: кустарники и стланиковые можжевельники, поляны в разреженных ельниках, субальпийские и альпийские луга.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Чрезмерная пастбищная нагрузка, связанная в очерке с почти отсутствующим подростом.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Авторы рекомендуют ботанический заказник в верховьях Кёк-Джара и контроль остальных популяций.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=125",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 41",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Sibiraea tianschanica",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Sibiraea%20tianschanica",
+      "accessedAt": "2026-10-15",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:3032448"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Низкий кустарник верхнего пояса Северного Тянь-Шаня, включённый в книгу 2006 года. Растёт среди кустарников и на горных лугах; чрезмерный выпас мешает возобновлению.",
+        "ky": "2006-жылкы китепке кирген Түндүк Тянь-Шандын бийик алкагындагы жапыз бадал. Бадалдардын арасында жана тоо шалбааларында өсөт; ашыкча мал жаюу жаңылануусуна тоскоол болот.",
+        "uz": "2006-yilgi kitobga kiritilgan Shimoliy Tyanshanning yuqori mintaqasidagi past buta. Butazor va togʻ oʻtloqlarida oʻsadi; ortiqcha chorva boqish tabiiy tiklanishga toʻsqinlik qiladi.",
+        "en": "A low shrub of the upper Northern Tien Shan listed in the 2006 book. It grows among shrubs and in mountain meadows; excessive grazing impedes regeneration."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Сибирка тяньшанская включена в книгу 2006 года и перечень 2009 года как Sibiraea tianschanica. Это имя имеет точное принятое соответствие в сохранённом ответе GBIF. Национальный очерк характеризует растение как редкий северотяньшанский кустарник; историческая категория CR не представлена как новая оценка состояния или современный глобальный статус.\n\nКустарник невысокий, с тёмно-бурыми стеблями и узколанцетными сидячими листьями. Мелкие цветки образуют кисти, объединённые в метёлку. Очерк указывает верхний пояс гор: заросли кустарников и стланикового можжевельника, поляны разреженных ельников, субальпийские и альпийские луга. В Кыргызстане исторически названы участки Кюнгей и Терскей Ала-Тоо.\n\nВ книге отмечены семенное и вегетативное размножение, цветение в июне и плодоношение в августе. При этом всходы и молодые растения в природе почти отсутствовали, что авторы связывали с чрезмерной пастбищной нагрузкой. Прежние испытания выращивания в ботаническом саду сопровождались гибелью сеянцев в жарких сухих условиях. Рекомендованы охраняемый участок и контроль популяций. Современная численность неизвестна; сомнительная единица ширины листа из печатного описания не перенесена.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Низкий кустарник высотой до 0,5 м с толстыми тёмно-бурыми стеблями и узколанцетными сидячими листьями. Мелкие цветки собраны в кисти и метёлки.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В очерке отмечено одиночное и небольшими группами произрастание, слабое возобновление при высокой пастбищной нагрузке.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге размножается семенами и вегетативно, цветёт в июне и плодоносит в августе; природное возобновление описано как слабое.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически в Кыргызстане указаны верховья Кёк-Джара в Терскей Ала-Тоо и Сюттю-Булака в Кюнгей Ала-Тоо. Новые наблюдения не добавлены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

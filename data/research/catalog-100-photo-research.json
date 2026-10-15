@@ -1,0 +1,2874 @@
+{
+  "schemaVersion": 1,
+  "documentType": "bulk-research-registry",
+  "registryId": "catalog-100-research",
+  "batchSize": 8,
+  "candidates": [
+    {
+      "originalScientificName": "Dictyocephalus attenuatus",
+      "acceptedScientificName": "Dictyocephalos attenuatus",
+      "rank": "SPECIES",
+      "group": "fungi",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "taxonConcept": "name_as_used_in_national_source",
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Dictyocephalos attenuatus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2530276",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=39",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ]
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Dictyocephalos attenuatus",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Dictyocephalos%20attenuatus",
+          "accessedAt": "2026-10-15",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:2530276"
+        },
+        {
+          "id": "taxonomy-bridge",
+          "title": "Документальная связь исторического и принятого имени: Dictyocephalos attenuatus",
+          "publisher": "Species Fungorum / Index Fungorum",
+          "url": "https://www.speciesfungorum.org/names/NamesRecord.asp?RecordId=286084",
+          "accessedAt": "2026-10-15",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "originalScientificName",
+            "content.overview"
+          ]
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление №170: редакция 2009, приложение 1, строка 91 (Dictyocephalos attenuatus)",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6",
+          "accessedAt": "2026-10-15",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ]
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-100-taxonomy.json",
+          "sha256": "044d50ed1f46b74df8baef5e346cf40038491dadcb9f26d7a747c15e43dee6d2"
+        },
+        {
+          "path": "docs/evidence/catalog-100-needs-evidence-audit.json",
+          "sha256": "70cdd4d1af3cbd2b4e29312b01bbfc9f0b90d78b6f8e98e671abb07921469a83"
+        },
+        {
+          "path": "docs/evidence/redbook-master-sources.json",
+          "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        }
+      ],
+      "draft": null,
+      "id": "dictyocephalus-attenuatus",
+      "nationalSourceRecords": [
+        "book-2006-38",
+        "decree-170-2009-1-91"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          38,
+          39
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-38",
+        "requestedName": "Dictyocephalos attenuatus",
+        "matchType": "EXACT",
+        "status": "ACCEPTED",
+        "proposedAcceptedName": "Dictyocephalos attenuatus",
+        "proposedRank": "SPECIES",
+        "resolution": "documented_historical_name_bridge"
+      },
+      "publicationGaps": [
+        "Публикационный черновик не подготовлен",
+        "Описания KY/UZ/RU/EN не подготовлены",
+        "Нужен независимый научный и редакторский просмотр",
+        "Фотография не исследовалась; возможен placeholder"
+      ],
+      "verified": false,
+      "priority": "next_account_research",
+      "state": "research_ready",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "dictyocephalus-attenuatus",
+        "batchNumber": 1,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "785b4c6008ec8305e8abf224a635c27209b884b3430040eb4b26f88283e94156",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "785b4c6008ec8305e8abf224a635c27209b884b3430040eb4b26f88283e94156",
+      "photoResearch": {
+        "photo": {
+          "rightsConfirmed": true,
+          "originalPageRead": true,
+          "eligibleForNextEditorialStage": true,
+          "originalPage": "https://commons.wikimedia.org/wiki/File:StalkdPuffb_0012.jpg",
+          "license": "CC BY-SA 3.0",
+          "author": "Fizzy+lifting",
+          "subjectAsDocumented": "Dictyocephalos attenuatus",
+          "context": "Иллюстрация вида: Elysian Park, Лос-Анджелес, США, 2012; не наблюдение из Кыргызстана."
+        }
+      }
+    },
+    {
+      "originalScientificName": "Prionus tschitscherini",
+      "acceptedScientificName": "Pogonarthron tschitscherini",
+      "rank": "SPECIES",
+      "group": "arthropods",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "taxonConcept": "name_as_used_in_national_source",
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Pogonarthron tschitscherini",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:1147213",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=261",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ]
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 4, строка 6",
+          "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=11",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ]
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Pogonarthron tschitscherini",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Pogonarthron%20tschitscherini",
+          "accessedAt": "2026-10-15",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:1147213"
+        },
+        {
+          "id": "taxonomy-bridge",
+          "title": "Документальная связь исторического и принятого имени: Pogonarthron tschitscherini",
+          "publisher": "Humanity Space / Зоологический институт РАН, размещение научного издания",
+          "url": "https://www.zin.ru/Animalia/Coleoptera/pdf/Almanac_Humanity_Space_2017_Vol_6_No_5.pdf",
+          "accessedAt": "2026-10-15",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "originalScientificName",
+            "content.overview"
+          ]
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-100-taxonomy.json",
+          "sha256": "044d50ed1f46b74df8baef5e346cf40038491dadcb9f26d7a747c15e43dee6d2"
+        },
+        {
+          "path": "docs/evidence/catalog-100-needs-evidence-audit.json",
+          "sha256": "70cdd4d1af3cbd2b4e29312b01bbfc9f0b90d78b6f8e98e671abb07921469a83"
+        },
+        {
+          "path": "docs/evidence/redbook-master-sources.json",
+          "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        }
+      ],
+      "draft": null,
+      "id": "prionus-tschitscherini",
+      "nationalSourceRecords": [
+        "book-2006-260",
+        "decree-170-2009-4-6"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          260,
+          261
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-260",
+        "requestedName": "Pogonarthron tschitscherini",
+        "matchType": "EXACT",
+        "status": "ACCEPTED",
+        "proposedAcceptedName": "Pogonarthron tschitscherini",
+        "proposedRank": "SPECIES",
+        "resolution": "documented_historical_name_bridge"
+      },
+      "publicationGaps": [
+        "Публикационный черновик не подготовлен",
+        "Описания KY/UZ/RU/EN не подготовлены",
+        "Нужен независимый научный и редакторский просмотр",
+        "Фотография не исследовалась; возможен placeholder"
+      ],
+      "verified": false,
+      "priority": "next_account_research",
+      "state": "research_ready",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "prionus-tschitscherini",
+        "batchNumber": 1,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "8e1ffcd8ce99cf6502aec3152bca1a5a4cb5168c335e541fffe04907feee4f7a",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "8e1ffcd8ce99cf6502aec3152bca1a5a4cb5168c335e541fffe04907feee4f7a"
+    },
+    {
+      "originalScientificName": "Rossomyrmex proformicarum",
+      "acceptedScientificName": "Rossomyrmex proformicarum",
+      "rank": "SPECIES",
+      "group": "arthropods",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "taxonConcept": "name_as_used_in_national_source",
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Rossomyrmex proformicarum",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:1319076",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=283",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ]
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 4, строка 17",
+          "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=11",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ]
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Rossomyrmex proformicarum",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Rossomyrmex%20proformicarum",
+          "accessedAt": "2026-10-15",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:1319076"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-100-taxonomy.json",
+          "sha256": "044d50ed1f46b74df8baef5e346cf40038491dadcb9f26d7a747c15e43dee6d2"
+        },
+        {
+          "path": "docs/evidence/catalog-100-needs-evidence-audit.json",
+          "sha256": "70cdd4d1af3cbd2b4e29312b01bbfc9f0b90d78b6f8e98e671abb07921469a83"
+        },
+        {
+          "path": "docs/evidence/redbook-master-sources.json",
+          "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        }
+      ],
+      "draft": null,
+      "id": "rossomyrmex-proformicarum",
+      "nationalSourceRecords": [
+        "book-2006-282",
+        "decree-170-2009-4-17"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          282,
+          283
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-282",
+        "requestedName": "Rossomyrmex proformicarum",
+        "matchType": "EXACT",
+        "status": "ACCEPTED",
+        "proposedAcceptedName": "Rossomyrmex proformicarum",
+        "proposedRank": "SPECIES",
+        "resolution": "exact_accepted_same_rank"
+      },
+      "publicationGaps": [
+        "Публикационный черновик не подготовлен",
+        "Описания KY/UZ/RU/EN не подготовлены",
+        "Нужен независимый научный и редакторский просмотр",
+        "Фотография не исследовалась; возможен placeholder"
+      ],
+      "verified": false,
+      "priority": "next_account_research",
+      "state": "research_ready",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "rossomyrmex-proformicarum",
+        "batchNumber": 1,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "28a8f25b36c0868d72b8ec7693591d6482614e73548d6c03e907cca6ec537d08",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "28a8f25b36c0868d72b8ec7693591d6482614e73548d6c03e907cca6ec537d08"
+    },
+    {
+      "originalScientificName": "Barbus brachycephalus",
+      "acceptedScientificName": "Luciobarbus brachycephalus",
+      "rank": "SPECIES",
+      "group": "fish",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "taxonConcept": "name_as_used_in_national_source",
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Luciobarbus brachycephalus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2363090",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=305",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ]
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 6, строка 6",
+          "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=13",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ]
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Barbus brachycephalus",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/2363090",
+          "accessedAt": "2026-10-15",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:2363090"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-100-taxonomy.json",
+          "sha256": "044d50ed1f46b74df8baef5e346cf40038491dadcb9f26d7a747c15e43dee6d2"
+        },
+        {
+          "path": "docs/evidence/catalog-100-needs-evidence-audit.json",
+          "sha256": "70cdd4d1af3cbd2b4e29312b01bbfc9f0b90d78b6f8e98e671abb07921469a83"
+        },
+        {
+          "path": "docs/evidence/redbook-master-sources.json",
+          "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        }
+      ],
+      "draft": null,
+      "id": "barbus-brachycephalus",
+      "nationalSourceRecords": [
+        "book-2006-304",
+        "decree-170-2009-6-6"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          304,
+          305
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-304",
+        "requestedName": "Barbus brachycephalus",
+        "matchType": "EXACT",
+        "status": "SYNONYM",
+        "proposedAcceptedName": "Luciobarbus brachycephalus",
+        "proposedRank": "SPECIES",
+        "resolution": "exact_documented_synonym_same_rank"
+      },
+      "publicationGaps": [
+        "Публикационный черновик не подготовлен",
+        "Описания KY/UZ/RU/EN не подготовлены",
+        "Нужен независимый научный и редакторский просмотр",
+        "Фотография не исследовалась; возможен placeholder"
+      ],
+      "verified": false,
+      "priority": "next_account_research",
+      "state": "research_ready",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "barbus-brachycephalus",
+        "batchNumber": 1,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "2ff78db89925e624c764786ed3b0c4a3667c2c6daa6c06bf5b559ac792fabb25",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "2ff78db89925e624c764786ed3b0c4a3667c2c6daa6c06bf5b559ac792fabb25"
+    },
+    {
+      "originalScientificName": "Allochrusa gypsophiloides",
+      "acceptedScientificName": "Acanthophyllum gypsophiloides",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "taxonConcept": "name_as_used_in_national_source",
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Acanthophyllum gypsophiloides",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:7267544",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=107",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ]
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 27",
+          "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ]
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Allochrusa gypsophiloides",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/7267544",
+          "accessedAt": "2026-10-15",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:7267544"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-100-taxonomy.json",
+          "sha256": "044d50ed1f46b74df8baef5e346cf40038491dadcb9f26d7a747c15e43dee6d2"
+        },
+        {
+          "path": "docs/evidence/catalog-100-needs-evidence-audit.json",
+          "sha256": "70cdd4d1af3cbd2b4e29312b01bbfc9f0b90d78b6f8e98e671abb07921469a83"
+        },
+        {
+          "path": "docs/evidence/redbook-master-sources.json",
+          "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        }
+      ],
+      "draft": null,
+      "id": "allochrusa-gypsophiloides",
+      "nationalSourceRecords": [
+        "book-2006-106",
+        "decree-170-2009-1-27"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          106,
+          107
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-106",
+        "requestedName": "Allochrusa gypsophiloides",
+        "matchType": "EXACT",
+        "status": "SYNONYM",
+        "proposedAcceptedName": "Acanthophyllum gypsophiloides",
+        "proposedRank": "SPECIES",
+        "resolution": "exact_documented_synonym_same_rank"
+      },
+      "publicationGaps": [
+        "Публикационный черновик не подготовлен",
+        "Описания KY/UZ/RU/EN не подготовлены",
+        "Нужен независимый научный и редакторский просмотр",
+        "Фотография не исследовалась; возможен placeholder"
+      ],
+      "verified": false,
+      "priority": "next_account_research",
+      "state": "research_ready",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "allochrusa-gypsophiloides",
+        "batchNumber": 1,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "20081378ce4be7b10f96d383720e55f5eeffbdc92f5aceb47f8e96141f44f8c0",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "20081378ce4be7b10f96d383720e55f5eeffbdc92f5aceb47f8e96141f44f8c0"
+    },
+    {
+      "originalScientificName": "Corydalis pseudoadunca",
+      "acceptedScientificName": "Corydalis pseudoadunca",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "taxonConcept": "name_as_used_in_national_source",
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Corydalis pseudoadunca",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5531646",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=117",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ]
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 33",
+          "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ]
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Corydalis pseudoadunca",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Corydalis%20pseudoadunca",
+          "accessedAt": "2026-10-15",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:5531646"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-100-taxonomy.json",
+          "sha256": "044d50ed1f46b74df8baef5e346cf40038491dadcb9f26d7a747c15e43dee6d2"
+        },
+        {
+          "path": "docs/evidence/catalog-100-needs-evidence-audit.json",
+          "sha256": "70cdd4d1af3cbd2b4e29312b01bbfc9f0b90d78b6f8e98e671abb07921469a83"
+        },
+        {
+          "path": "docs/evidence/redbook-master-sources.json",
+          "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        }
+      ],
+      "draft": null,
+      "id": "corydalis-pseudoadunca",
+      "nationalSourceRecords": [
+        "book-2006-116",
+        "decree-170-2009-1-33"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          116,
+          117
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-116",
+        "requestedName": "Corydalis pseudoadunca",
+        "matchType": "EXACT",
+        "status": "ACCEPTED",
+        "proposedAcceptedName": "Corydalis pseudoadunca",
+        "proposedRank": "SPECIES",
+        "resolution": "exact_accepted_same_rank"
+      },
+      "publicationGaps": [
+        "Публикационный черновик не подготовлен",
+        "Описания KY/UZ/RU/EN не подготовлены",
+        "Нужен независимый научный и редакторский просмотр",
+        "Фотография не исследовалась; возможен placeholder"
+      ],
+      "verified": false,
+      "priority": "next_account_research",
+      "state": "research_ready",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "corydalis-pseudoadunca",
+        "batchNumber": 1,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "c9eaf5eb17c62b7bb56d2b6fd518efe6ff1444296ac0bead928e0e330dc3643f",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "c9eaf5eb17c62b7bb56d2b6fd518efe6ff1444296ac0bead928e0e330dc3643f"
+    },
+    {
+      "originalScientificName": "Fumariola turkestanica",
+      "acceptedScientificName": "Fumariola turkestanica",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "taxonConcept": "name_as_used_in_national_source",
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Fumariola turkestanica",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3602966",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=119",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ]
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 96",
+          "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=7",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ]
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Fumariola turkestanica",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Fumariola%20turkestanica",
+          "accessedAt": "2026-10-15",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:3602966"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-100-taxonomy.json",
+          "sha256": "044d50ed1f46b74df8baef5e346cf40038491dadcb9f26d7a747c15e43dee6d2"
+        },
+        {
+          "path": "docs/evidence/catalog-100-needs-evidence-audit.json",
+          "sha256": "70cdd4d1af3cbd2b4e29312b01bbfc9f0b90d78b6f8e98e671abb07921469a83"
+        },
+        {
+          "path": "docs/evidence/redbook-master-sources.json",
+          "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        }
+      ],
+      "draft": null,
+      "id": "fumariola-turkestanica",
+      "nationalSourceRecords": [
+        "book-2006-118",
+        "decree-170-2009-1-96"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          118,
+          119
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-118",
+        "requestedName": "Fumariola turkestanica",
+        "matchType": "EXACT",
+        "status": "ACCEPTED",
+        "proposedAcceptedName": "Fumariola turkestanica",
+        "proposedRank": "SPECIES",
+        "resolution": "exact_accepted_same_rank"
+      },
+      "publicationGaps": [
+        "Публикационный черновик не подготовлен",
+        "Описания KY/UZ/RU/EN не подготовлены",
+        "Нужен независимый научный и редакторский просмотр",
+        "Фотография не исследовалась; возможен placeholder"
+      ],
+      "verified": false,
+      "priority": "next_account_research",
+      "state": "research_ready",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "fumariola-turkestanica",
+        "batchNumber": 1,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "1b73fe680d567aae9ff98089a7216fc68c1c59878e45c6bbf3d27c8d34bc5d07",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "1b73fe680d567aae9ff98089a7216fc68c1c59878e45c6bbf3d27c8d34bc5d07"
+    },
+    {
+      "originalScientificName": "Rhodiola litwinowii",
+      "acceptedScientificName": "Rhodiola litwinowii",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "taxonConcept": "name_as_used_in_national_source",
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Rhodiola litwinowii",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:7552101",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=123",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ]
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 36",
+          "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ]
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Rhodiola litwinowii",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Rhodiola%20litwinowii",
+          "accessedAt": "2026-10-15",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:7552101"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-100-taxonomy.json",
+          "sha256": "044d50ed1f46b74df8baef5e346cf40038491dadcb9f26d7a747c15e43dee6d2"
+        },
+        {
+          "path": "docs/evidence/catalog-100-needs-evidence-audit.json",
+          "sha256": "70cdd4d1af3cbd2b4e29312b01bbfc9f0b90d78b6f8e98e671abb07921469a83"
+        },
+        {
+          "path": "docs/evidence/redbook-master-sources.json",
+          "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        }
+      ],
+      "draft": null,
+      "id": "rhodiola-litwinowii",
+      "nationalSourceRecords": [
+        "book-2006-122",
+        "decree-170-2009-1-36"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          122,
+          123
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-122",
+        "requestedName": "Rhodiola litwinowii",
+        "matchType": "EXACT",
+        "status": "ACCEPTED",
+        "proposedAcceptedName": "Rhodiola litwinowii",
+        "proposedRank": "SPECIES",
+        "resolution": "exact_accepted_same_rank"
+      },
+      "publicationGaps": [
+        "Публикационный черновик не подготовлен",
+        "Описания KY/UZ/RU/EN не подготовлены",
+        "Нужен независимый научный и редакторский просмотр",
+        "Фотография не исследовалась; возможен placeholder"
+      ],
+      "verified": false,
+      "priority": "next_account_research",
+      "state": "research_ready",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "rhodiola-litwinowii",
+        "batchNumber": 1,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "6bd99a7000457d3727cb3a8f7b5d9df11cfdf1ef03315d8162b65b698e9aa729",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "6bd99a7000457d3727cb3a8f7b5d9df11cfdf1ef03315d8162b65b698e9aa729"
+    },
+    {
+      "originalScientificName": "Sibiraea tianschanica",
+      "acceptedScientificName": "Sibiraea tianschanica",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "taxonConcept": "name_as_used_in_national_source",
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Sibiraea tianschanica",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3032448",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=125",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ]
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 41",
+          "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ]
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Sibiraea tianschanica",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Sibiraea%20tianschanica",
+          "accessedAt": "2026-10-15",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:3032448"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-100-taxonomy.json",
+          "sha256": "044d50ed1f46b74df8baef5e346cf40038491dadcb9f26d7a747c15e43dee6d2"
+        },
+        {
+          "path": "docs/evidence/catalog-100-needs-evidence-audit.json",
+          "sha256": "70cdd4d1af3cbd2b4e29312b01bbfc9f0b90d78b6f8e98e671abb07921469a83"
+        },
+        {
+          "path": "docs/evidence/redbook-master-sources.json",
+          "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        }
+      ],
+      "draft": null,
+      "id": "sibiraea-tianschanica",
+      "nationalSourceRecords": [
+        "book-2006-124",
+        "decree-170-2009-1-41"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          124,
+          125
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-124",
+        "requestedName": "Sibiraea tianschanica",
+        "matchType": "EXACT",
+        "status": "ACCEPTED",
+        "proposedAcceptedName": "Sibiraea tianschanica",
+        "proposedRank": "SPECIES",
+        "resolution": "exact_accepted_same_rank"
+      },
+      "publicationGaps": [
+        "Публикационный черновик не подготовлен",
+        "Описания KY/UZ/RU/EN не подготовлены",
+        "Нужен независимый научный и редакторский просмотр",
+        "Фотография не исследовалась; возможен placeholder"
+      ],
+      "verified": false,
+      "priority": "next_account_research",
+      "state": "research_ready",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "sibiraea-tianschanica",
+        "batchNumber": 2,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "4bc4bf8508e66360bd3ff84dd59f09b05dbcf75a457ec5b36c757b6a6b5211fd",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "4bc4bf8508e66360bd3ff84dd59f09b05dbcf75a457ec5b36c757b6a6b5211fd"
+    },
+    {
+      "originalScientificName": "Crataegus knorringiana",
+      "acceptedScientificName": "Crataegus knorringiana",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "taxonConcept": "name_as_used_in_national_source",
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Crataegus knorringiana",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3015001",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=139",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ]
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 37",
+          "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ]
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Crataegus knorringiana",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Crataegus%20knorringiana",
+          "accessedAt": "2026-10-15",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:3015001"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-100-taxonomy.json",
+          "sha256": "044d50ed1f46b74df8baef5e346cf40038491dadcb9f26d7a747c15e43dee6d2"
+        },
+        {
+          "path": "docs/evidence/catalog-100-needs-evidence-audit.json",
+          "sha256": "70cdd4d1af3cbd2b4e29312b01bbfc9f0b90d78b6f8e98e671abb07921469a83"
+        },
+        {
+          "path": "docs/evidence/redbook-master-sources.json",
+          "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        }
+      ],
+      "draft": null,
+      "id": "crataegus-knorringiana",
+      "nationalSourceRecords": [
+        "book-2006-138",
+        "decree-170-2009-1-37"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          138,
+          139
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-138",
+        "requestedName": "Crataegus knorringiana",
+        "matchType": "EXACT",
+        "status": "ACCEPTED",
+        "proposedAcceptedName": "Crataegus knorringiana",
+        "proposedRank": "SPECIES",
+        "resolution": "exact_accepted_same_rank"
+      },
+      "publicationGaps": [
+        "Публикационный черновик не подготовлен",
+        "Описания KY/UZ/RU/EN не подготовлены",
+        "Нужен независимый научный и редакторский просмотр",
+        "Фотография не исследовалась; возможен placeholder"
+      ],
+      "verified": false,
+      "priority": "next_account_research",
+      "state": "research_ready",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "crataegus-knorringiana",
+        "batchNumber": 2,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "d603c09f88ea0157f08ab23f1d92d43823ab4521422c47866c93b7b002724471",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "d603c09f88ea0157f08ab23f1d92d43823ab4521422c47866c93b7b002724471"
+    },
+    {
+      "originalScientificName": "Ammopiptanthus nanus",
+      "acceptedScientificName": "Ammopiptanthus nanus",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "taxonConcept": "name_as_used_in_national_source",
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Ammopiptanthus nanus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2943139",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=147",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ]
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 47",
+          "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ]
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Ammopiptanthus nanus",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Ammopiptanthus%20nanus",
+          "accessedAt": "2026-10-15",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:2943139"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-100-taxonomy.json",
+          "sha256": "044d50ed1f46b74df8baef5e346cf40038491dadcb9f26d7a747c15e43dee6d2"
+        },
+        {
+          "path": "docs/evidence/catalog-100-needs-evidence-audit.json",
+          "sha256": "70cdd4d1af3cbd2b4e29312b01bbfc9f0b90d78b6f8e98e671abb07921469a83"
+        },
+        {
+          "path": "docs/evidence/redbook-master-sources.json",
+          "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        }
+      ],
+      "draft": null,
+      "id": "ammopiptanthus-nanus",
+      "nationalSourceRecords": [
+        "book-2006-146",
+        "decree-170-2009-1-47"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          146,
+          147
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-146",
+        "requestedName": "Ammopiptanthus nanus",
+        "matchType": "EXACT",
+        "status": "ACCEPTED",
+        "proposedAcceptedName": "Ammopiptanthus nanus",
+        "proposedRank": "SPECIES",
+        "resolution": "exact_accepted_same_rank"
+      },
+      "publicationGaps": [
+        "Публикационный черновик не подготовлен",
+        "Описания KY/UZ/RU/EN не подготовлены",
+        "Нужен независимый научный и редакторский просмотр",
+        "Фотография не исследовалась; возможен placeholder"
+      ],
+      "verified": false,
+      "priority": "next_account_research",
+      "state": "research_ready",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "ammopiptanthus-nanus",
+        "batchNumber": 2,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "7c701c02372ee78e105248a7d1e1eeedb5672eca0736f8a84dae9e6e843c62f0",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "7c701c02372ee78e105248a7d1e1eeedb5672eca0736f8a84dae9e6e843c62f0"
+    },
+    {
+      "originalScientificName": "Colutea brachyptera",
+      "acceptedScientificName": "Colutea brachyptera",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "taxonConcept": "name_as_used_in_national_source",
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Colutea brachyptera",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2956464",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=149",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ]
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 49",
+          "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ]
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Colutea brachyptera",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Colutea%20brachyptera",
+          "accessedAt": "2026-10-15",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:2956464"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-100-taxonomy.json",
+          "sha256": "044d50ed1f46b74df8baef5e346cf40038491dadcb9f26d7a747c15e43dee6d2"
+        },
+        {
+          "path": "docs/evidence/catalog-100-needs-evidence-audit.json",
+          "sha256": "70cdd4d1af3cbd2b4e29312b01bbfc9f0b90d78b6f8e98e671abb07921469a83"
+        },
+        {
+          "path": "docs/evidence/redbook-master-sources.json",
+          "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        }
+      ],
+      "draft": null,
+      "id": "colutea-brachyptera",
+      "nationalSourceRecords": [
+        "book-2006-148",
+        "decree-170-2009-1-49"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          148,
+          149
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-148",
+        "requestedName": "Colutea brachyptera",
+        "matchType": "EXACT",
+        "status": "ACCEPTED",
+        "proposedAcceptedName": "Colutea brachyptera",
+        "proposedRank": "SPECIES",
+        "resolution": "exact_accepted_same_rank"
+      },
+      "publicationGaps": [
+        "Публикационный черновик не подготовлен",
+        "Описания KY/UZ/RU/EN не подготовлены",
+        "Нужен независимый научный и редакторский просмотр",
+        "Фотография не исследовалась; возможен placeholder"
+      ],
+      "verified": false,
+      "priority": "next_account_research",
+      "state": "research_ready",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "colutea-brachyptera",
+        "batchNumber": 2,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "63b39eef48490d478f7c49eca9f96985e1f5f159114f689afa754c0ca5f1cc97",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "63b39eef48490d478f7c49eca9f96985e1f5f159114f689afa754c0ca5f1cc97"
+    },
+    {
+      "originalScientificName": "Primula eugeniae",
+      "acceptedScientificName": "Primula eugeniae",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "taxonConcept": "name_as_used_in_national_source",
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Primula eugeniae",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5640822",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=179",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ]
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 66",
+          "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ]
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Primula eugeniae",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Primula%20eugeniae",
+          "accessedAt": "2026-10-15",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:5640822"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-100-taxonomy.json",
+          "sha256": "044d50ed1f46b74df8baef5e346cf40038491dadcb9f26d7a747c15e43dee6d2"
+        },
+        {
+          "path": "docs/evidence/catalog-100-needs-evidence-audit.json",
+          "sha256": "70cdd4d1af3cbd2b4e29312b01bbfc9f0b90d78b6f8e98e671abb07921469a83"
+        },
+        {
+          "path": "docs/evidence/redbook-master-sources.json",
+          "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        }
+      ],
+      "draft": null,
+      "id": "primula-eugeniae",
+      "nationalSourceRecords": [
+        "book-2006-178",
+        "decree-170-2009-1-66"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          178,
+          179
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-178",
+        "requestedName": "Primula eugeniae",
+        "matchType": "EXACT",
+        "status": "ACCEPTED",
+        "proposedAcceptedName": "Primula eugeniae",
+        "proposedRank": "SPECIES",
+        "resolution": "exact_accepted_same_rank"
+      },
+      "publicationGaps": [
+        "Публикационный черновик не подготовлен",
+        "Описания KY/UZ/RU/EN не подготовлены",
+        "Нужен независимый научный и редакторский просмотр",
+        "Фотография не исследовалась; возможен placeholder"
+      ],
+      "verified": false,
+      "priority": "next_account_research",
+      "state": "research_ready",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "primula-eugeniae",
+        "batchNumber": 2,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "6470a6c00cc94365ff2ef1cc2a54be25e6c890700fc7ae87cc4d4d77e096300c",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "6470a6c00cc94365ff2ef1cc2a54be25e6c890700fc7ae87cc4d4d77e096300c"
+    },
+    {
+      "originalScientificName": "Physochlaina alaica",
+      "acceptedScientificName": "Physochlaina alaica",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "taxonConcept": "name_as_used_in_national_source",
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Physochlaina alaica",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3799874",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=199",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ]
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 75",
+          "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ]
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Physochlaina alaica",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Physochlaina%20alaica",
+          "accessedAt": "2026-10-15",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:3799874"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-100-taxonomy.json",
+          "sha256": "044d50ed1f46b74df8baef5e346cf40038491dadcb9f26d7a747c15e43dee6d2"
+        },
+        {
+          "path": "docs/evidence/catalog-100-needs-evidence-audit.json",
+          "sha256": "70cdd4d1af3cbd2b4e29312b01bbfc9f0b90d78b6f8e98e671abb07921469a83"
+        },
+        {
+          "path": "docs/evidence/redbook-master-sources.json",
+          "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        }
+      ],
+      "draft": null,
+      "id": "physochlaina-alaica",
+      "nationalSourceRecords": [
+        "book-2006-198",
+        "decree-170-2009-1-75"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          198,
+          199
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-198",
+        "requestedName": "Physochlaina alaica",
+        "matchType": "EXACT",
+        "status": "ACCEPTED",
+        "proposedAcceptedName": "Physochlaina alaica",
+        "proposedRank": "SPECIES",
+        "resolution": "exact_accepted_same_rank"
+      },
+      "publicationGaps": [
+        "Публикационный черновик не подготовлен",
+        "Описания KY/UZ/RU/EN не подготовлены",
+        "Нужен независимый научный и редакторский просмотр",
+        "Фотография не исследовалась; возможен placeholder"
+      ],
+      "verified": false,
+      "priority": "next_account_research",
+      "state": "research_ready",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "physochlaina-alaica",
+        "batchNumber": 2,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "b6e79490de4e79b3bcd2938d60eca35cdfe2a383d061f195cee854391f2edadd",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "b6e79490de4e79b3bcd2938d60eca35cdfe2a383d061f195cee854391f2edadd"
+    },
+    {
+      "originalScientificName": "Incarvillea olgae",
+      "acceptedScientificName": "Incarvillea olgae",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "taxonConcept": "name_as_used_in_national_source",
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Incarvillea olgae",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:4091178",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=205",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ]
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 77",
+          "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ]
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Incarvillea olgae",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Incarvillea%20olgae",
+          "accessedAt": "2026-10-15",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:4091178"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-100-taxonomy.json",
+          "sha256": "044d50ed1f46b74df8baef5e346cf40038491dadcb9f26d7a747c15e43dee6d2"
+        },
+        {
+          "path": "docs/evidence/catalog-100-needs-evidence-audit.json",
+          "sha256": "70cdd4d1af3cbd2b4e29312b01bbfc9f0b90d78b6f8e98e671abb07921469a83"
+        },
+        {
+          "path": "docs/evidence/redbook-master-sources.json",
+          "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        }
+      ],
+      "draft": null,
+      "id": "incarvillea-olgae",
+      "nationalSourceRecords": [
+        "book-2006-204",
+        "decree-170-2009-1-77"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          204,
+          205
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-204",
+        "requestedName": "Incarvillea olgae",
+        "matchType": "EXACT",
+        "status": "ACCEPTED",
+        "proposedAcceptedName": "Incarvillea olgae",
+        "proposedRank": "SPECIES",
+        "resolution": "exact_accepted_same_rank"
+      },
+      "publicationGaps": [
+        "Публикационный черновик не подготовлен",
+        "Описания KY/UZ/RU/EN не подготовлены",
+        "Нужен независимый научный и редакторский просмотр",
+        "Фотография не исследовалась; возможен placeholder"
+      ],
+      "verified": false,
+      "priority": "next_account_research",
+      "state": "research_ready",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "incarvillea-olgae",
+        "batchNumber": 2,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "92546df2fa21a1eb0a6cd08dc9dd7ec16ab81e402170d59623739db9b981be52",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "92546df2fa21a1eb0a6cd08dc9dd7ec16ab81e402170d59623739db9b981be52",
+      "photoResearch": {
+        "photo": {
+          "rightsConfirmed": true,
+          "originalPageRead": true,
+          "eligibleForNextEditorialStage": true,
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Incarvillea_olgae_Inkarwilla_Olgi_2020-07-22_02.jpg",
+          "license": "CC BY-SA 4.0",
+          "author": "Agnieszka Kwiecień, Nova",
+          "subjectAsDocumented": "Incarvillea olgae",
+          "context": "Культивируемое растение, ботанический сад Вроцлавского университета, Польша, 2020; не наблюдение из Кыргызстана."
+        }
+      }
+    },
+    {
+      "originalScientificName": "Saussurea involucrata",
+      "acceptedScientificName": "Saussurea involucrata",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "taxonConcept": "name_as_used_in_national_source",
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Saussurea involucrata",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5404194",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=213",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ]
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 81",
+          "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6",
+          "accessedAt": "2026-10-14",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ]
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Saussurea involucrata",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Saussurea%20involucrata",
+          "accessedAt": "2026-10-15",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:5404194"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-100-taxonomy.json",
+          "sha256": "044d50ed1f46b74df8baef5e346cf40038491dadcb9f26d7a747c15e43dee6d2"
+        },
+        {
+          "path": "docs/evidence/catalog-100-needs-evidence-audit.json",
+          "sha256": "70cdd4d1af3cbd2b4e29312b01bbfc9f0b90d78b6f8e98e671abb07921469a83"
+        },
+        {
+          "path": "docs/evidence/redbook-master-sources.json",
+          "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+        }
+      ],
+      "draft": null,
+      "id": "saussurea-involucrata",
+      "nationalSourceRecords": [
+        "book-2006-212",
+        "decree-170-2009-1-81"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          212,
+          213
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-212",
+        "requestedName": "Saussurea involucrata",
+        "matchType": "EXACT",
+        "status": "ACCEPTED",
+        "proposedAcceptedName": "Saussurea involucrata",
+        "proposedRank": "SPECIES",
+        "resolution": "exact_accepted_same_rank"
+      },
+      "publicationGaps": [
+        "Публикационный черновик не подготовлен",
+        "Описания KY/UZ/RU/EN не подготовлены",
+        "Нужен независимый научный и редакторский просмотр",
+        "Фотография не исследовалась; возможен placeholder"
+      ],
+      "verified": false,
+      "priority": "next_account_research",
+      "state": "research_ready",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "saussurea-involucrata",
+        "batchNumber": 2,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "b220446b4e4506e3dd048d4c526654d97c8f35508b8cf5320bebe245b17bc20b",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "b220446b4e4506e3dd048d4c526654d97c8f35508b8cf5320bebe245b17bc20b"
+    }
+  ]
+}

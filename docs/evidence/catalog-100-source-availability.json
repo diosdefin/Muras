@@ -1,0 +1,53 @@
+{
+  "date": "2026-10-15",
+  "records": [
+    {
+      "id": "book-2006",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf",
+      "httpStatus": 206,
+      "contentType": "application/pdf",
+      "bytesRead": 1024,
+      "sha256": "469f45b10641ea73f57c4553471eca8b875fd1d0521b5319e6e9241843fb4941",
+      "digestScope": "partial_http_response_not_full_document"
+    },
+    {
+      "id": "decree-2009",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf",
+      "httpStatus": 206,
+      "contentType": "application/pdf",
+      "bytesRead": 1024,
+      "sha256": "ddf44c94c7365fc4d93c11047a12e74c7bdb60f6cecea6068b1cd7ad4cb9194c",
+      "digestScope": "partial_http_response_not_full_document"
+    },
+    {
+      "id": "fungorum",
+      "url": "https://www.speciesfungorum.org/names/NamesRecord.asp?RecordId=286084",
+      "httpStatus": 200,
+      "contentType": "text/html; Charset=utf-8",
+      "bytesRead": 9908,
+      "sha256": "8907cd97768fb57abbbe48139e150f3271a11652a10c33a14bef89ac87f94b9d",
+      "digestScope": "http_response_bytes"
+    },
+    {
+      "id": "prionus-2017",
+      "url": "https://www.zin.ru/Animalia/Coleoptera/pdf/Almanac_Humanity_Space_2017_Vol_6_No_5.pdf",
+      "httpStatus": 206,
+      "contentType": "application/pdf",
+      "bytesRead": 1024,
+      "sha256": "5b3c4f67a6740b9a75aa24d524cb5616ff062c03a74afa0f6095dd2fcb17aa64",
+      "digestScope": "partial_http_response_not_full_document"
+    }
+  ],
+  "cachedNationalDocuments": [
+    {
+      "path": ".generated/task22-master/book-2006.pdf",
+      "sha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8",
+      "expectedMatched": true
+    },
+    {
+      "path": ".generated/task22-master/decree-170-2009.pdf",
+      "sha256": "1e47f07208cf45d90096f0b9775fd625dd2102e06b42cf69610a49cc57f21be4",
+      "expectedMatched": true
+    }
+  ]
+}

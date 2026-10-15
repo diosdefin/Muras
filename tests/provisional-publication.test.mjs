@@ -10,6 +10,7 @@ import { createLocalAdapter } from '../scripts/lib/local-research-adapter.mjs'
 import { syntheticCandidate } from './helpers/synthetic-bulk-candidates.mjs'
 import { validateSpecies } from '../src/data/species-model.js'
 import { importBatchFile } from '../scripts/import-species-batch.mjs'
+import { canApplyOnBranch } from '../scripts/import-species-batch.mjs'
 
 const read = async p => JSON.parse(await readFile(p, 'utf8'))
 const source = await read(new URL('../data/backups/bulk-25-provisional/species.source.json', import.meta.url))
@@ -80,6 +81,7 @@ test('owner publication adds one whole package, journals the decision, preserves
 }))
 
 test('missing owner decision, main, stale fingerprints and a blocked concept cannot use provisional publication', async () => fixture(async (root, registry, manifest) => {
+  assert.equal(canApplyOnBranch('feature/bulk-import-next'), true)
   const before = await readFile(join(root, 'data/species.source.json'))
   await assert.rejects(runPipeline(root, args.filter((_, i) => ![args.indexOf('--reason'), args.indexOf('--reason') + 1].includes(i))), /явным разрешением/)
   await assert.rejects(runPipeline(root, [...args, '--reviewer', 'Invented']), /не поддерживается/)

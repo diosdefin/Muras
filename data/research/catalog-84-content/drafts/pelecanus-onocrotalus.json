@@ -1,0 +1,230 @@
+{
+  "id": "pelecanus-onocrotalus",
+  "scientificName": "Pelecanus onocrotalus",
+  "names": {
+    "ru": "Розовый пеликан",
+    "ky": null,
+    "uz": null,
+    "en": "Great White Pelican"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Pelecaniformes",
+    "family": "Pelecanidae",
+    "genus": "Pelecanus"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VI (NT: R), историческая национальная категория 2006 года",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Крупные водоёмы с густыми зарослями тростника.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Недостаток мест отдыха на пролёте, изменение водного режима, загрязнение и выжигание тростника.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Сокращение рыбных запасов и браконьерство.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Авторы рекомендуют создание сезонных заказников и ключевых орнитологических территорий.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=381",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 3, строка 35",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Pelecanus onocrotalus",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Pelecanus%20onocrotalus",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:2480350"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "По книге 2006 года розовый пеликан изредка встречался на осеннем пролёте в Чуйской долине. Питается рыбой; нуждается в крупных водоёмах для отдыха и кормления.",
+        "ky": "2006-жылкы китепте Чүй өрөөнүндө күзгү учуп өтүүдө сейрек кездешкени жазылган. Балык менен азыктанат; эс алуу жана азыктануу үчүн чоң көлмөлөр керек.",
+        "uz": "2006-yilgi kitobda Chuy vodiysida kuzgi koʻchish paytida kam uchragani qayd etilgan. Baliq bilan oziqlanadi; dam olish va oziqlanish uchun yirik suv havzalari zarur.",
+        "en": "The 2006 book records rare autumn migrants in the Chuy Valley. This fish-eating pelican needs large waters for feeding and resting."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Розовый пеликан включён в Красную книгу Кыргызстана 2006 года как Pelecanus onocrotalus. Очерк характеризует его как изредка мигрирующий через страну вид: для Чуйской долины приведены осенние встречи и случаи зимовки. Эти исторические сообщения не задают современную численность или подтверждённый нынешний ареал. На пролёте наблюдались одиночные птицы.\n\nВ качестве местообитаний описаны крупные водоёмы с густыми зарослями тростника. Питание рыбное. В статье также изложена общая колониальная гнездовая биология: гнёзда на островах и заломах тростника, небольшие кладки и продолжительное насиживание. Эти сведения не служат свидетельством гнездования в Кыргызстане, поэтому локальное размножение не заполнено.\n\nВо время миграции существенна доступность крупных водоёмов для отдыха. Среди угроз названы изменение водного режима, загрязнение, выжигание тростников, сокращение рыбных запасов и браконьерство. Авторы предлагают сезонную охрану важных участков и выделение ключевых орнитологических территорий. Наличие такой рекомендации не означает, что соответствующие территории уже созданы. Национальная оценка Near Threatened сохраняется с датой исторического издания и не переносится в глобальное поле IUCN.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Для Кыргызстана в книге описан редкий осенний пролёт через Чуйскую долину и отдельные случаи зимовки.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальном очерке питание прямо охарактеризовано как рыбное.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": null,
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические национальные сведения относятся к осеннему пролёту в Чуйской долине; современное распределение не установлено этим пакетом.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

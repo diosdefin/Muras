@@ -1,12 +1,14 @@
 // Read-only remote research. Image processing remains prepare-batch-images.mjs.
 import { readFile, writeFile, mkdir } from 'node:fs/promises'
-const registry = JSON.parse(await readFile('data/research/bulk-25-content-registry.json', 'utf8'))
-const path = 'docs/evidence/bulk-25-photo-search.json'
+const args = process.argv.slice(2)
+const option = (name, fallback) => args.includes(name) ? args[args.indexOf(name) + 1] : fallback
+const registry = JSON.parse(await readFile(option('--registry', 'data/research/bulk-25-content-registry.json'), 'utf8'))
+const path = option('--output', 'docs/evidence/bulk-25-photo-search.json')
 const evidence = JSON.parse(await readFile(path, 'utf8').catch(() => '{"schemaVersion":1,"records":[]}'))
 evidence.documentType = 'unpublished-photo-search-evidence'
 for (const c of registry.candidates) {
   if (evidence.records.some(r => r.candidateId === c.id && r.complete)) continue
-  const r = { candidateId: c.id, accessedAt: '2026-10-14', queries: [], complete: false }
+  const r = { candidateId: c.id, accessedAt: new Date().toISOString().slice(0, 10), queries: [], complete: false }
   for (const name of new Set([c.acceptedScientificName, c.originalScientificName])) {
     const url = new URL('https://commons.wikimedia.org/w/api.php')
     url.search = new URLSearchParams({ action: 'query', format: 'json', generator: 'search',

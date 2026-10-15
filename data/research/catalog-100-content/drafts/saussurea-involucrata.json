@@ -1,0 +1,218 @@
+{
+  "id": "saussurea-involucrata",
+  "scientificName": "Saussurea involucrata",
+  "names": {
+    "ru": "Соссюрея обёрнутая",
+    "ky": null,
+    "uz": null,
+    "en": "Wrapped Alpine Saw-wort"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Asterales",
+    "family": "Asteraceae",
+    "genus": "Saussurea"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU, историческая национальная категория 2006 года",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Скалистые склоны, каменистые россыпи и морены альпийского и нивального поясов.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Интенсивный летний выпас и неорганизованный туризм; английское резюме очерка дополнительно отмечает сбор цветков.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендованы сохранение местообитаний и ботанические заказники в местах наибольшей концентрации популяций.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=213",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 81",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Saussurea involucrata",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Saussurea%20involucrata",
+      "accessedAt": "2026-10-15",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:5404194"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Высокогорный многолетник каменистых склонов и морен из книги 2006 года. Соцветия окружены крупными светлыми листьями; летний перевыпас и туризм угрожают виду.",
+        "ky": "2006-жылкы китептеги бийик тоолордун таштуу беттеринде жана мореналарында өскөн көп жылдык өсүмдүк. Гүл тобун ири ачык жалбырактар курчайт; ашыкча мал жаюу жана туризм коркунуч туудурат.",
+        "uz": "2006-yilgi kitobdagi baland togʻlarning toshli yonbagʻirlari va morenalaridagi koʻp yillik oʻsimlik. Toʻpgulini yirik och rangli barglar oʻraydi; ortiqcha yaylov bosimi va turizm xavf tugʻdiradi.",
+        "en": "A high-mountain perennial of rocky slopes and moraines described in the 2006 book. Large pale leaves surround its flower heads; overgrazing and tourism threaten it."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Соссюрея обёрнутая включена в национальную книгу 2006 года и перечень 2009 года как Saussurea involucrata. Принятое имя подтверждено точным таксономическим ответом GBIF. Очерк рассматривает растение как редкий вид у границы ареала в Кыргызстане; старое качественное описание не преобразовано в текущую количественную оценку.\n\nЭто высокогорный многолетник с коротким или выраженным простым стеблем. Несколько корзинок с трубчатыми фиолетовыми цветками собраны в плотное соцветие и окружены крупными светлыми прицветными листьями. Национальная статья связывает местообитания со скалистыми склонами, россыпями камней и моренами альпийского и нивального поясов. В Кыргызстане исторически отмечены районы Северного и Центрального Тянь-Шаня; современная география отдельно не проверялась.\n\nВ книге цветение указано в июне–июле, плодоношение — в августе, размножение семенное. Данных о культивировании нет. Лимитирующими факторами названы интенсивный летний выпас и неорганизованный туризм; английский текст уточняет сбор цветков. Авторы рекомендуют сохранять местообитания и организовывать ботанические заказники. Пищевые, лекарственные и иные свойства, не подтверждённые проверенным очерком, в карточку не включены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге многолетник высотой 15–35 см с коротким или простым стеблем, волосистыми листьями и трубчатыми фиолетовыми цветками. Корзинки собраны в плотное соцветие, окружённое крупными светлыми прицветными листьями.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": null,
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальному очерку цветёт в июне–июле, плодоносит в августе; размножается семенами.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический очерк указывает Кюнгей и Терскей Ала-Тоо, Ак-Шыйрак и верхние части бассейнов Сары-Джаза, Иныльчека и Куйлю. Новых наблюдений нет.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

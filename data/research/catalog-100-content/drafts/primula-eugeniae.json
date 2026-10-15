@@ -1,0 +1,218 @@
+{
+  "id": "primula-eugeniae",
+  "scientificName": "Primula eugeniae",
+  "names": {
+    "ru": "Первоцвет Евгении",
+    "ky": null,
+    "uz": null,
+    "en": "Eugenia’s Primrose"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Ericales",
+    "family": "Primulaceae",
+    "genus": "Primula"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU, историческая национальная категория 2006 года",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Трещины скал в альпийском и нивальном поясах.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В статье указана интенсивная хозяйственная деятельность без более подробного перечня воздействий.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендованы ботанический заказник в месте концентрации и испытание введения в культуру.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=179",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 1, строка 66",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Primula eugeniae",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Primula%20eugeniae",
+      "accessedAt": "2026-10-15",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:5640822"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Многолетний первоцвет скальных трещин Ферганского хребта, включённый в книгу 2006 года. У него светло-жёлтые цветки; состояние естественного возобновления неизвестно.",
+        "ky": "2006-жылкы китепке кирген Фергана кырка тоосунун аска жаракаларында өскөн көп жылдык өсүмдүк. Гүлдөрү ачык сары; табигый жаңылануусунун абалы белгисиз.",
+        "uz": "2006-yilgi kitobga kiritilgan Fargʻona tizmasi qoya yoriqlaridagi koʻp yillik oʻsimlik. Gullari och sariq; tabiiy tiklanishining holati nomaʼlum.",
+        "en": "A perennial primrose of rock crevices in the Fergana Range listed in the 2006 book. Its flowers are pale yellow; the state of natural regeneration is unknown."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Первоцвет Евгении включён в национальное издание 2006 года и перечень 2009 года как Primula eugeniae. Принятое видовое имя имеет точное подтверждение GBIF. В очерке растение названо редким узкоэндемичным видом западной части Ферганского хребта, известным из гор Баубаш-Ата. Это историческая национальная привязка, без утверждения нынешнего присутствия на каждом участке.\n\nРастение многолетнее, корневищное, с широкими зубчатыми листьями на длинных черешках. Светло-жёлтые цветки образуют зонтиковидное соцветие. Местообитания — трещины скал альпийского и нивального поясов. Числовые размеры цветка в печатной статье выглядят сомнительно по единицам и не перенесены в карточку. Их нельзя незаметно исправлять, заменяя сантиметры миллиметрами.\n\nКнига указывает семенное размножение и плодоношение в августе, а возобновление в природе признаёт неизученным. Предположительный месяц цветения из английского текста также не принят за установленный. Лимитирующим фактором названа интенсивная хозяйственная деятельность. Авторы предлагают ботанический заказник и введение декоративного растения в культуру. Современные численность, успешность культивирования и исполнение этих мер остаются неизвестными.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Многолетнее корневищное растение с широкоэллиптическими зубчатыми листьями на длинных черешках и светло-жёлтыми цветками в зонтиковидном соцветии. Сомнительные размеры цветков из печатного описания опущены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": null,
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальному очерку размножается семенами и плодоносит в августе; естественное возобновление не изучено, срок цветения не установлен.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический очерк указывает западную часть Ферганского хребта, горы Баубаш-Ата; новых наблюдений нет.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "id": "falco-naumanni",
+  "scientificName": "Falco naumanni",
+  "names": {
+    "ru": "Степная пустельга",
+    "ky": null,
+    "uz": null,
+    "en": "Lesser Kestrel"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Falconiformes",
+    "family": "Falconidae",
+    "genus": "Falco"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "V (VU, C1), историческая национальная категория 2006 года",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Низко- и среднегорные пояса с древесно-кустарниковой растительностью в поймах и на склонах; также культурные ландшафты.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Разорение гнёзд и незаконный отстрел.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Авторы рекомендуют выявлять и охранять гнездовья, организовать мониторинг и информировать местных жителей.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=387",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 3, строка 43",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Falco naumanni",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Falco%20naumanni",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:9584698"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Степная пустельга в книге 2006 года связана с низко- и среднегорьем Кыргызстана. Питается грызунами, ящерицами и насекомыми; биология местного гнездования неизвестна.",
+        "ky": "2006-жылкы китепте Кыргызстандын жапыз жана орто тоолорунда кездешкени берилген. Кемирүүчүлөр, кескелдириктер жана курт-кумурскалар менен азыктанат; уялоосу аз изилденген.",
+        "uz": "2006-yilgi kitobda Qirgʻizistonning past va oʻrta togʻlarida qayd etilgan. Kemiruvchilar, kaltakesaklar va hasharotlar bilan oziqlanadi; mahalliy uya biologiyasi nomaʼlum.",
+        "en": "The 2006 book records this kestrel in low and middle mountain belts of Kyrgyzstan. It eats rodents, lizards and insects; local breeding biology remains unknown."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Степная пустельга представлена в национальном издании 2006 года как Falco naumanni. Очерк относит её к низко- и среднегорным поясам и отмечает встречи на юго-западе страны, в Иссык-Кульской котловине и некоторых внутренних долинах. Предпочтение древесно-кустарниковой растительности в речных поймах и на склонах не исключает культурные ландшафты.\n\nПо источнику в корм входят мышевидные грызуны, ящерицы и крупные насекомые, в частности жуки. При этом сведений о гнездовой биологии в Кыргызстане авторы не приводят. Датированное наблюдение молодых птиц в Боомском ущелье и старое локальное значение плотности не дают современной оценки всей популяции. Размножение и численность остаются неизвестными структурированными полями.\n\nСреди угроз названы разрушение гнёзд и незаконный отстрел. Возможная конкуренция с обыкновенной пустельгой в книге предположительна и не утверждается здесь как установленный механизм сокращения. Рекомендованы поиск и охрана гнездовий, местные охраняемые участки, ежегодные наблюдения и информирование жителей. Национальная категория Vulnerable датирована 2006 годом; современный глобальный статус не выводится из неё.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический очерк отмечает встречи до 2500 м; местная гнездовая биология не описана.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Мышевидные грызуны, ящерицы и крупные насекомые, в частности жуки.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": null,
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические встречи в районе Арстанбапа, на Каркыре, в пойме Нарына и Иссык-Кульской котловине; современный ареал не обновлялся.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

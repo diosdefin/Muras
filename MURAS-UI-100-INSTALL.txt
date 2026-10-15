@@ -1,0 +1,30 @@
+MURAS 100 — УСТАНОВКА ОБНОВЛЕНИЯ ДИЗАЙНА
+
+Исходный архив: muras-100-design.zip, коммит ed553890326fc9ae40a33dd0fbb94c5b4f21a90b.
+Версия содержит только UI-код, переводы интерфейса и тесты; научный каталог 100 видов не менялся.
+
+ВАРИАНТ А — небольшой архив muras-100-ui-patch.zip:
+1. Убедись, что работаешь в feature/bulk-import-next и рабочее дерево чистое.
+2. Создай дополнительный бэкап текущей ветки: git branch backup/muras-100-before-ui
+3. Скопируй ZIP в C:\Users\Asus\Desktop\Redbook
+4. В PowerShell в Redbook:
+   Expand-Archive -Path .\muras-100-ui-patch.zip -DestinationPath . -Force
+5. Удали ZIP или оставь его вне репозитория.
+
+ВАРИАНТ Б — полный исходный архив muras-100-ui-complete.zip:
+Распакуй в ОТДЕЛЬНУЮ папку и сравни/скопируй исправленные файлы. Не разархивируй весь проект поверх Git-репозитория без резервной копии.
+
+Проверка после установки:
+  npm ci                    (только если node_modules отсутствует)
+  npm test
+  npm run data:validate
+  npm run build
+  git status --short
+
+Если всё работает и нравится:
+  git add src tests scripts docs/ui
+  git commit -m "feat(ui): polish MURAS 100 responsive catalog, map and hero"
+
+Не делать merge/push/deploy без финального визуального осмотра.
+
+Файлы подробнее: docs/ui/muras-100-design-revision.md

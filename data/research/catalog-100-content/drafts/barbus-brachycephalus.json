@@ -1,0 +1,241 @@
+{
+  "id": "barbus-brachycephalus",
+  "scientificName": "Luciobarbus brachycephalus",
+  "names": {
+    "ru": "Аральский усач",
+    "ky": null,
+    "uz": null,
+    "en": "Aral Barbel"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": null,
+    "order": "Cypriniformes",
+    "family": "Cyprinidae",
+    "genus": "Luciobarbus"
+  },
+  "group": "fish",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "2 [CR: C], историческая национальная категория 2006 года",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); исторический национальный очерк аральской формы, без переноса на каспийские таксоны и без подтверждения современного присутствия; запись под именем Barbus brachycephalus",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Исторически равнинные участки рек, низовья Чу, протоки и проточные озёра.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический очерк связывает исчезновение с возведением плотины Ташаткульского водохранилища и ловом в нерестовый период.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Авторы книги предлагают подготовить биологическое обоснование возможной реакклиматизации в водоёмах Чуйской долины; выполнение такой программы не подтверждено.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=305",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 6, строка 6",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=13",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Barbus brachycephalus",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/2363090",
+      "accessedAt": "2026-10-15",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview"
+      ],
+      "taxonId": "gbif:2363090"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Крупная рыба равнинных рек, исторически известная из Чу. Книга 2006 года сообщает об исчезновении в Кыргызстане; современное присутствие отдельно не подтверждено.",
+        "ky": "Түздүктөгү дарыялардын ири балыгы, мурда Чүйдөн белгилүү болгон. 2006-жылкы китеп Кыргызстанда жоголгонун билдирет; азыркы кездешүүсү өзүнчө ырасталган эмес.",
+        "uz": "Tekislik daryolarining yirik baligʻi, ilgari Chu daryosidan maʼlum. 2006-yilgi kitob Qirgʻizistonda yoʻqolganini bildiradi; hozirgi mavjudligi alohida tasdiqlanmagan.",
+        "en": "A large lowland-river fish historically known from the Chu. The 2006 book reports its disappearance in Kyrgyzstan; present occurrence has not been independently confirmed."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Аральский усач представлен в национальной книге 2006 года под именем Barbus brachycephalus, а принятое сочетание Luciobarbus brachycephalus подтверждено точным синонимическим ответом GBIF. Вид также назван в перечне 2009 года. Книга сообщает о его исчезновении в пределах Кыргызстана; это историческое заключение источника, а не новая оценка состояния на текущий год.\n\nОчерк описывает крупную серебристую рыбу с более тёмной спиной и серыми парными плавниками. Исторические местные сведения относятся к равнинным участкам Чу и связанным протокам. Усач использовал донную пищу; в статье перечислены моллюски, личинки насекомых и молодь рыб. Нерест описан с конца апреля до начала июня. Эти биологические сведения не означают подтверждённого современного размножения в реке.\n\nСреди причин исчезновения авторы указывают плотину Ташаткульского водохранилища и лов в нерестовый период. Предложение о реакклиматизации требует биологического обоснования и не превращено в совет выпускать рыб. Современная численность оставлена unknown. Историческая национальная категория, принятая номенклатура и нынешнее присутствие различаются по основаниям и сохранены раздельно.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальному очерку тело серебристое с тёмной спиной и плавным переходом окраски к брюху; парные плавники серые, длина достигает 90 см.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книга описывает прежние нерестовые перемещения по Чу и последующий скат в низовья; современная встречаемость не подтверждена.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный очерк перечисляет донных беспозвоночных, включая моллюсков и личинок насекомых, а также молодь рыб.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В книге 2006 года нерест указан с конца апреля до начала июня, половозрелость — с четырёх лет. Это сведения старого очерка, не свидетельство нынешнего нереста в Кыргызстане.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически в Кыргызстане известен из Чу; книга 2006 года сообщает об исчезновении. Актуальное присутствие не установлено.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

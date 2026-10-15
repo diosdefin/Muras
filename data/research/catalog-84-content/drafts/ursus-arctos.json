@@ -1,0 +1,218 @@
+{
+  "id": "ursus-arctos",
+  "scientificName": "Ursus arctos",
+  "names": {
+    "ru": "Бурый медведь",
+    "ky": null,
+    "uz": null,
+    "en": "Brown Bear"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Ursidae",
+    "genus": "Ursus"
+  },
+  "group": "mammals",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VII (LR/lc), историческая национальная категория местных популяций 2006 года",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); национальный очерк популяций, отнесённых в книге к isabellinus; не оценка всех популяций Ursus arctos",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "По национальному очерку преимущественно горные районы; зимние убежища часто расположены в скальных расщелинах.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Браконьерство и сокращение пригодных местообитаний.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книга рекомендует новые охраняемые участки в местах концентрации, борьбу с браконьерством, информирование населения и изучение местных популяций.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=499",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 от 28.04.2005, редакция №471 от 25.07.2009: приложение 2, строка 4",
+      "publisher": "Правительство Кыргызской Республики; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=8",
+      "accessedAt": "2026-10-14",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Ursus arctos",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Ursus%20arctos",
+      "accessedAt": "2026-10-14",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "taxonId": "gbif:2433433"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "В книге 2006 года бурый медведь Кыргызстана связан преимущественно с горными районами. Зимние убежища устраивает в скалах; браконьерство и утрата местообитаний опасны.",
+        "ky": "2006-жылкы китепте Кыргызстандын күрөң аюусу негизинен тоолуу аймактарда жашары берилген. Кышкы баш калкалоочу жайларын аскаларда түзөт; браконьерлик жана жашоо жерлеринин азайышы коркунучтуу.",
+        "uz": "2006-yilgi kitobda Qirgʻiziston qoʻngʻir ayigʻi asosan togʻli hududlar bilan bogʻlangan. Qishki boshpanalarini qoyalarda quradi; brakonerlik va yashash joylarini yoʻqotish xavfli.",
+        "en": "The 2006 book associates Kyrgyzstan’s brown bears mainly with mountain areas. Winter dens are often in rock crevices; poaching and habitat loss are threats."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Бурый медведь приведён в национальной книге 2006 года как Ursus arctos. Очерк описывает прежде всего местные популяции, отнесённые авторами к подвиду isabellinus. Историческая национальная оценка не распространяется автоматически на всех бурых медведей мира. Карточка сохраняет видовой ранг и принятую в реестре идентичность, не создавая дополнительной подвидовой записи.\n\nВ Кыргызстане источник связывает медведя преимущественно с горными районами и перечисляет ряд хребтов. На кормёжку звери чаще выходят утром и вечером, в поисках пищи могут временно перемещаться. Описаны зимняя спячка и устройство убежищ в скальных расщелинах. Самка приносит детёнышей в берлоге; конкретные месяцы рождения в русской и английской версиях не согласованы и здесь не выбираются. Состав рациона использованная статья не раскрывает.\n\nСтарые локальные плотности и учёты относятся к прошлым десятилетиям, а не к нынешней численности. Среди угроз названы браконьерство и сокращение пригодных территорий. Авторы предлагают создавать охраняемые участки в местах концентрации, усиливать борьбу с браконьерством и изучать местные популяции. Сообщение о прежних запретах охоты остаётся историческим, без утверждения актуального правового режима.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге активность кормления чаще утренняя и вечерняя; описаны зимняя спячка и временные перемещения при поиске пищи или преследовании.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В историческом очерке самка приносит в берлоге обычно двух, реже трёх детёнышей; точные месяцы рождения из-за расхождения версий не выбраны.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические сведения о горных районах Кыргызстана относятся к национальным популяциям isabellinus; карта современного присутствия не создавалась.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

@@ -14,6 +14,7 @@ const props = defineProps({ species: { type: Array, default: () => [] }, loading
 const emit = defineEmits(['open', 'details', 'regionchange'])
 const geometry = ref(null), evidence = ref(null), loadingMap = ref(true), loadError = ref('')
 const selected = ref(''), group = ref('ALL')
+const mobilePreviewSlide = ref('map')
 const region = computed(() => REGIONS.find(r => r.id === selected.value) || null)
 const validationError = computed(() => !props.loading && evidence.value ? validateRegionalEvidence(evidence.value, props.species)[0] || '' : '')
 const errorMessage = computed(() => props.error || loadError.value || validationError.value)
@@ -25,8 +26,9 @@ watch(() => props.routeRegion, id => {
 function selectRegion(id) {
   selected.value = selected.value === id ? '' : id
   if (props.mode === 'full') emit('regionchange', selected.value)
+  else if (selected.value) mobilePreviewSlide.value = 'info'
 }
-function dismissPreview() { selected.value = '' }
+function dismissPreview() { selected.value = ''; mobilePreviewSlide.value = 'map' }
 const local = file => `${import.meta.env.BASE_URL}data/geography/${file}`
 async function reset() {
   selected.value = ''; group.value = 'ALL'; emit('regionchange', '')
@@ -56,10 +58,14 @@ onMounted(async () => {
     </div>
     <p v-if="loadingMap || loading" class="catalog-message" role="status">{{ t('ui.m112') }}</p>
     <ErrorNotice v-else-if="errorMessage" :message="errorMessage"></ErrorNotice>
-    <div v-else class="map-layout">
+    <div v-else class="map-layout" :class="{ 'map-mobile-show-info': mode === 'preview' && mobilePreviewSlide === 'info', 'map-mobile-show-map': mode === 'preview' && mobilePreviewSlide === 'map' }">
       <RegionMap :geometry="geometry" :selected="selected" :preview="mode === 'preview'" :panel-id="mode === 'preview' ? 'map-overview-panel' : 'map-region-panel'" @select="selectRegion" />
       <MapOverviewPanel v-if="mode === 'preview'" :species="species" :region="region" :entries="regionalEntries(evidence, species, selected)" @clear="dismissPreview" @details="emit('details', selected)" />
       <RegionPanel v-else :species="species" :region="region" :entries="entries" :group="group" :unfiltered-count="unfilteredCount" @group="group = $event" @reset="reset" @open="emit('open', $event)" />
+    </div>
+    <div v-if="mode === 'preview' && !loadingMap && !errorMessage" class="map-mobile-pager" role="group" :aria-label="t('mapUI.pager')">
+      <button type="button" :aria-label="t('mapUI.map')" :aria-pressed="mobilePreviewSlide === 'map'" @click="mobilePreviewSlide = 'map'"></button>
+      <button type="button" :aria-label="t('mapUI.details')" :aria-pressed="mobilePreviewSlide === 'info'" @click="mobilePreviewSlide = 'info'"></button>
     </div>
     <div v-if="mode === 'preview' && !loadingMap && !errorMessage" class="map-provenance map-provenance-compact">
       {{ t('mapPreview.mapAttribution') }} <a href="https://www.geoboundaries.org/api/current/gbOpen/KGZ/ADM1/" target="_blank" rel="noopener noreferrer">geoBoundaries</a> · <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> · <a :href="local('ODbL-1.0.txt')">ODbL 1.0</a>.
