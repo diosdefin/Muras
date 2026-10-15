@@ -270,11 +270,6 @@
       }
     },
     {
-      "candidateId": "allactaga-elater",
-      "status": "placeholder",
-      "reason": "Нет подходящей фотографии с одновременно подтверждёнными определением, авторством и разрешённой лицензией."
-    },
-    {
       "candidateId": "eremurus-zenaidae",
       "status": "prepared",
       "reason": null,
@@ -486,6 +481,51 @@
         "licenseVerified": true,
         "caption": {
           "ru": "Ursus arctos — иллюстрация вида по определению коллекции/наблюдения. Это не новое наблюдение из Кыргызстана; подвид и принадлежность к национальной популяции по фотографии не устанавливаются.",
+          "ky": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "date": "2026-10-15",
+        "scope": "Технический визуальный просмотр: файл декодируется, сюжет соответствует документированной подписи источника; независимое определение вида не заявляется."
+      }
+    },
+    {
+      "candidateId": "allactaga-elater",
+      "status": "prepared",
+      "reason": null,
+      "metadata": {
+        "license": "CC BY-SA 3.0",
+        "author": "Николай Усик / http://paradoxusik.livejournal.com/",
+        "artistStatementSha256": "adf3c791d80787b34c11928ea293e16e559363a349a06d4c0e951133105e8bc9",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Allactaga_elater_Plzen_zoo_02.2011.jpg",
+        "revisionId": 789235820,
+        "width": 500,
+        "height": 375,
+        "description": "Малый тушканчик (Allactaga elater ), Пльзенский зоопарк (Zoological and Botanical Garden Plzen), февраль 2011 года",
+        "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/3/3c/Allactaga_elater_Plzen_zoo_02.2011.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "privateOriginalPath": "D:/Muras-task-23-originals-01a13a83/allactaga-elater-commons.jpg",
+        "originalSha256": "04bca10ccc6a3e5c2b05de6b1842aa33c78b719f9c8c64e9a74b28e1a4041bb2",
+        "accessedAt": "2026-10-15"
+      },
+      "image": {
+        "path": "assets/images/species/allactaga-elater.webp",
+        "width": 500,
+        "height": 375,
+        "sha256": "a2a5ce7ecf6684539aa91449321d1cff08782980b41ef3317de5c1ce10d0e340",
+        "author": "Николай Усик / http://paradoxusik.livejournal.com/",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Allactaga_elater_Plzen_zoo_02.2011.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "attribution": "File:Allactaga elater Plzen zoo 02.2011.jpg — Николай Усик / http://paradoxusik.livejournal.com/; CC BY-SA 3.0; Wikimedia Commons. Производное WebP распространяется под той же лицензией.",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Allactaga elater — животное в зоопарке Пльзеня; не наблюдение в Кыргызстане, подвид не установлен.",
           "ky": null,
           "en": null
         }
