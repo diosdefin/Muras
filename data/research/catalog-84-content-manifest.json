@@ -1,0 +1,78 @@
+{
+  "schemaVersion": 1,
+  "documentType": "bulk-content-manifest",
+  "sourceCommit": "94ab2cd7bb6f7a35c0c26c284624f47751bc5940",
+  "masterRegistryFingerprint": "dce90285100e1502c2250bc486f7448c1e1ab0790fada5a5445638a2f7577ad5",
+  "registryFile": "data/research/catalog-84-content-registry.json",
+  "contentDirectory": "data/research/catalog-84-content",
+  "evidencePrefix": "catalog-84",
+  "candidateIds": [
+    "ciconia-ciconia",
+    "platalea-leucorodia",
+    "pelecanus-onocrotalus",
+    "phalacrocorax-pygmaeus",
+    "falco-naumanni",
+    "falco-rusticolus",
+    "pandion-haliaetus",
+    "haliaeetus-leucoryphus",
+    "haliaeetus-albicilla",
+    "gyps-himalayensis",
+    "gyps-fulvus",
+    "circaetus-gallicus",
+    "circus-macrourus",
+    "neomys-fodiens",
+    "rhinolophus-bocharicus",
+    "barbastella-leucomelas",
+    "tadarida-teniotis",
+    "ursus-arctos",
+    "martes-foina",
+    "lutra-lutra",
+    "allactaga-elater"
+  ],
+  "blocks": [
+    {
+      "number": 1,
+      "batchId": "catalog-84-1",
+      "candidateIds": [
+        "ciconia-ciconia",
+        "platalea-leucorodia",
+        "pelecanus-onocrotalus",
+        "phalacrocorax-pygmaeus",
+        "falco-naumanni",
+        "falco-rusticolus",
+        "pandion-haliaetus"
+      ],
+      "status": "prepared_for_check"
+    },
+    {
+      "number": 2,
+      "batchId": "catalog-84-2",
+      "candidateIds": [
+        "haliaeetus-leucoryphus",
+        "haliaeetus-albicilla",
+        "gyps-himalayensis",
+        "gyps-fulvus",
+        "circaetus-gallicus",
+        "circus-macrourus",
+        "neomys-fodiens"
+      ],
+      "status": "pending"
+    },
+    {
+      "number": 3,
+      "batchId": "catalog-84-3",
+      "candidateIds": [
+        "rhinolophus-bocharicus",
+        "barbastella-leucomelas",
+        "tadarida-teniotis",
+        "ursus-arctos",
+        "martes-foina",
+        "lutra-lutra",
+        "allactaga-elater"
+      ],
+      "status": "pending"
+    }
+  ],
+  "publicationAllowed": false,
+  "ownerAuthorization": "pending_for_concrete_manifest"
+}

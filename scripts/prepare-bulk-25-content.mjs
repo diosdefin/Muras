@@ -7,21 +7,25 @@ import { UNKNOWN_POPULATION } from '../src/data/population.js'
 const read = async p => JSON.parse(await readFile(p, 'utf8'))
 const save = async (p, v) => { await mkdir(dirname(p), { recursive: true }); await writeFile(p, JSON.stringify(v, null, 2) + '\n') }
 const n = Number(process.argv[2])
-if (!Number.isInteger(n) || n < 1 || n > 5) throw new Error('Нужен номер блока 1..5')
-const manifest = await read('data/research/bulk-25-content-manifest.json')
+const manifestOption = process.argv.indexOf('--manifest')
+const manifestPath = manifestOption < 0 ? 'data/research/bulk-25-content-manifest.json' : process.argv[manifestOption + 1]
+const manifest = await read(manifestPath)
+if (!Number.isInteger(n) || n < 1 || n > manifest.blocks.length) throw new Error('Нужен существующий номер блока manifest')
+const contentDirectory = manifest.contentDirectory || 'data/research/bulk-25-content'
+const evidencePrefix = manifest.evidencePrefix || 'bulk-25'
 const master = await read('data/research/redbook-master-registry.json')
 if (fingerprint(master) !== manifest.masterRegistryFingerprint) throw new Error('Исходный мастер-реестр изменился')
-const registryPath = 'data/research/bulk-25-content-registry.json'
+const registryPath = manifest.registryFile || 'data/research/bulk-25-content-registry.json'
 const registry = await read(registryPath)
 const block = manifest.blocks[n - 1]
-const factsPath = `data/research/bulk-25-content/block-${n}-facts.json`
+const factsPath = `${contentDirectory}/block-${n}-facts.json`
 const facts = await read(factsPath)
 if (JSON.stringify(facts.records.map(f => f.id)) !== JSON.stringify(block.candidateIds)) throw new Error('Порядок фактов не совпадает с manifest')
 const tax = await read('docs/evidence/redbook-master-taxonomy.json')
-const evidencePath = `docs/evidence/bulk-25-block-${n}-accounts.json`
+const evidencePath = `docs/evidence/${evidencePrefix}-block-${n}-accounts.json`
 const savedAccounts = await read(evidencePath).catch(error => { if (error.code !== 'ENOENT') throw error; return null })
 const pages = savedAccounts ? savedAccounts.records.flatMap(r => r.pages) : await read('.generated/research/redbook-pages.json')
-const receiptsPath = `docs/evidence/bulk-25-block-${n}-images.json`
+const receiptsPath = `docs/evidence/${evidencePrefix}-block-${n}-images.json`
 const receipts = await read(receiptsPath)
 const local = ru => ({ ky: null, uz: null, ru, en: null })
 const accounts = { schemaVersion: 1, documentType: 'cached-national-accounts', publicationAllowed: false,
@@ -43,7 +47,7 @@ for (const f of facts.records) {
   try {
   const c = registry.candidates.find(c => c.id === f.id)
   const original = master.candidates.find(c => c.id === f.id)
-  const t = tax.records.find(r => r.nationalRecordId === c.taxonomyResearch.evidenceRecordId)
+const t = tax.records.find(r => r.nationalRecordId === c.taxonomyResearch.evidenceRecordId && r.requestedName === c.taxonomyResearch.requestedName)
   const classification = t?.accepted?.data || t?.match?.data
   if (!classification || classification.canonicalName !== c.acceptedScientificName) throw new Error(`${c.id}: cached accepted taxonomy missing`)
   const taxonomy = Object.fromEntries(['kingdom', 'phylum', 'class', 'order', 'family', 'genus'].map(k => [k, classification[k] || null]))
@@ -68,6 +72,7 @@ for (const f of facts.records) {
   // Detailed historic accounts remain tied to the name used in 2006, not all
   // populations of a subsequently enlarged accepted species concept.
   const nationalRedBook = structuredClone(original.nationalRedBook)
+  if (f.nationalConcept) nationalRedBook.edition += `; ${f.nationalConcept}`
   if (c.originalScientificName !== c.acceptedScientificName) nationalRedBook.edition += `; запись под именем ${c.originalScientificName}`
   nationalRedBook.category = f.category || null
   if (f.category) national.supports.push('nationalRedBook.category')
@@ -89,7 +94,7 @@ for (const f of facts.records) {
     population: structuredClone(UNKNOWN_POPULATION), images: image ? [image] : [], sources, verified: false, lastReviewedAt: null, content }
   const errors = validateSpecies([species])
   if (errors.length) throw new Error(`${c.id}: ${errors.join('; ')}`)
-  const path = `data/research/bulk-25-content/drafts/${c.id}.json`
+  const path = `${contentDirectory}/drafts/${c.id}.json`
   if (await saveUnchanged(path, species)) prepared++; else reused++
   const materials = await Promise.all([factsPath, evidencePath, receiptsPath, ...(facts.additionalMaterials || [])].map(async path => ({ path, sha256: digest(await readFile(path)) })))
   Object.assign(c, { sources, nationalRedBook, draft: null, draftFile: path, materials: [...original.materials, ...materials],
@@ -106,6 +111,6 @@ for (const f of facts.records) {
 if (failures.length) block.status = 'partial_requires_check'
 else if (prepared || block.status === 'pending') block.status = 'prepared_for_check'
 await save(registryPath, registry)
-await save('data/research/bulk-25-content-manifest.json', manifest)
+await save(manifestPath, manifest)
 console.log(JSON.stringify({ block: n, newlyWritten: prepared, reused, failures, approvalChanged: false, catalogChanged: false }))
 if (failures.length) process.exitCode = 1
