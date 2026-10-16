@@ -19,6 +19,14 @@ const args = ['provisional', '--registry', 'data/research/queue.json', '--manife
   '--mode', 'dry-run', '--owner-role', 'project_owner', '--decision-id', 'synthetic-owner-decision',
   '--date', '2026-10-14', '--reason', 'Synthetic owner authorization; no scientific review']
 const mode = value => args.map((v, i) => args[i - 1] === '--mode' ? value : v)
+
+test('catalog-150 is explicitly allowed while main and unrelated feature branches remain blocked', () => {
+  assert.equal(canApplyOnBranch('feature/catalog-150'), true)
+  for (const branch of ['main', 'master', 'feature/catalog-151', 'feature/unrelated', '']) {
+    assert.equal(canApplyOnBranch(branch), false, branch)
+  }
+})
+
 async function fixture(fn) {
   const root = await mkdtemp(join(tmpdir(), 'muras-provisional-'))
   try {
