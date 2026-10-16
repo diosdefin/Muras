@@ -1,4 +1,65 @@
-# MURAS — подготовка каталога 150, задача 24.3
+# MURAS — подготовка каталога 150, задача 24.3B
+
+16.10.2026: единый пакет содержит **25 ready_for_review**, **22 изображения**, **3 placeholder**. Фактический каталог остаётся на **125 записях** в source/public/dist; архив — 2. Импорт не выполнялся. После отдельного разрешённого импорта прогнозируется 150 записей.
+
+В начале задачи подтверждены ветка feature/catalog-150, HEAD **7f9027170b2eb0962ca1b0c3c180f04d699ff10f** и чистое рабочее дерево. Изучены предыдущий отчёт, manifest и причины исключения спорных кандидатов. Прежние 23 черновика, их индивидуальные fingerprints, исходные реестр и manifest сохранены побайтно. Новый реестр объединяет их с двумя дополнениями; старые файлы пакета не перезаписаны.
+
+## Два дополнения
+
+| ID | Принятое имя | Ранг / GBIF | Национальные документы |
+|---|---|---|---|
+| gazella-subgutturosa | Gazella subgutturosa | SPECIES / 5220146 | КК 2006, с.514–515; постановление №170, редакция 2009, приложение 2, строка 7, PDF с.8 |
+| dendrocopos-leucopterus | Dendrocopos leucopterus | SPECIES / 2478035 | КК 2006, с.466–467; тот же перечень, приложение 3, строка 19, PDF с.9 |
+
+Джейран добавляет представителя млекопитающих. Написание **Gazella subgutturoza** в книге сверено с **Gazella subgutturosa** в национальной строке о том же джейране; совпадают видовое понятие и авторство 1780 года. Это документальная орфографическая сверка, а не принятие fuzzy match. Сохранены EXACT ACCEPTED SPECIES GBIF, [современная запись Mammal Diversity Database](https://www.mammaldiversity.org/taxon/1006154/) и ответ GBIF о синониме Antilope subgutturosa. MDD отделяет G. marica; неподтверждённый местный подвид не назначен.
+
+Достоверно подтверждено историческое национальное включение джейрана. Его **современное присутствие и численность в Кыргызстане не установлены**. Исторические сведения 1930–1970-х годов не объявлены современными находками. [Сообщение университета «Манас» о семинаре 18.03.2026](https://manas.edu.kg/en/natural_sciences/biology/news/7608) подтверждает обсуждение восстановления, но не успешную реинтродукцию и не результат учёта.
+
+Для белокрылого дятла совпадают видовые имена национального очерка, перечня, GBIF и [валидной записи ITIS 554050](https://www.itis.gov/ITISWebService/jsonservice/getFullRecordFromTSN?tsn=554050). В книге авторство датировано 1870, в GBIF/ITIS — 1871; библиографическое разночтение сохранено в evidence и не превращено в отдельный таксон. GBIF не вернул синонимов. Локальная плотность из старого очерка не экстраполируется на всю страну.
+
+Подготовлены краткие тексты KY/UZ/RU/EN и русские энциклопедические обзоры. Имена KY прочитаны на оригинальных страницах: «Жейрен», «Акканаттуу тоңкулдак»; в поле UZ сохранено принятое научное имя. Переводы требуют редакторской проверки. Неподтверждённые признаки и параметры оставлены null; численность unknown, verified false, lastReviewedAt null, независимая научная проверка pending. Современный юридический статус и новые координаты не назначены.
+
+Ранее исключённые спорные таксоны не возвращены. Дополнительные проверки Capoetobrama kuschakewitschi orientalis, Parnassius loxias tashkorensis, P. apollo merzbacheri и Papilio alexanor voldemar не дали основания заменить национальный подвид родительским видом. Polochrum pamirepandum не получил точного принятого определения GBIF. Для Hemiechinus hypomelas / Paraechinus hypomelas и Allactaga severtzovi современное перечисление стран MDD не подтвердило Кыргызстан; при наличии более согласованных альтернатив они не выбраны. Отсутствие страны в базе и нулевой ответ GBIF не считаются доказательством отсутствия животного.
+
+[Решения отбора](C:/Users/Asus/Desktop/Redbook/docs/evidence/catalog-150b-selection-decisions.json), [таксономические ответы](C:/Users/Asus/Desktop/Redbook/docs/evidence/catalog-150b-taxonomy.json), [синонимы](C:/Users/Asus/Desktop/Redbook/docs/evidence/catalog-150b-synonyms.json), [квитанции научных источников](C:/Users/Asus/Desktop/Redbook/docs/evidence/catalog-150b-source-receipts.json), [сохранённые национальные очерки](C:/Users/Asus/Desktop/Redbook/docs/evidence/catalog-150b-block-1-accounts.json).
+
+## Изображения дополнений
+
+- Джейран: Elşad İbrahimov, **CC BY-SA 4.0**, [оригинальная страница Commons](https://commons.wikimedia.org/wiki/File:Female_goitered_gazelle,_Shirvan_National_Park,_Azerbaijan.jpg). Самка в Ширванском национальном парке, Азербайджан; снимок не выдаётся за находку в Кыргызстане. WebP 1800×1353, 200 668 байт; условие ShareAlike сохранено в атрибуции.
+- Белокрылый дятел: Griha Hasanov, **CC BY 4.0**, [оригинальная страница Commons](https://commons.wikimedia.org/wiki/File:Dendrocopos_leucopterus_258242098.jpg). По описанию источника — Кыргызстан, 27.02.2023; фото не является оценкой численности. WebP 1800×1329, 264 458 байт.
+
+Оба WebP просмотрены; авторы, лицензии, страницы, ревизии, прямые URL, SHA оригиналов и производных, подписи и обработка сохранены в [квитанциях](C:/Users/Asus/Desktop/Redbook/docs/evidence/catalog-150b-block-1-images.json). EXIF/XMP удалены. Полный [ответ Commons](C:/Users/Asus/Desktop/Redbook/docs/evidence/catalog-150b-photo-search.json) связан контрольной суммой с новыми кандидатами. Независимое определение изображений специалистом остаётся pending. Всего в едином пакете 22 изображения, 2 889 954 байта, и 3 прежних placeholder; изображения кандидатов не экспортированы в public/dist.
+
+## Единый manifest и проверки
+
+- Registry: **data/research/catalog-150-unified-registry.json** — [открыть](C:/Users/Asus/Desktop/Redbook/data/research/catalog-150-unified-registry.json).
+- Manifest: **data/research/catalog-150-unified-review-manifest.json** — [открыть](C:/Users/Asus/Desktop/Redbook/data/research/catalog-150-unified-review-manifest.json).
+- SHA-256 manifest: **e1b61981b42be0f9885eeb97a0f32b4b13aa931a4a87ceb22e11409e77e47b27**.
+- registryFingerprint: **69acb83ebcc96c30bc378b80a60db3b2199cd48220f874593ba28067932014d0**.
+- [Объединённый отбор](C:/Users/Asus/Desktop/Redbook/data/research/catalog-150-unified-selection.json): 23 прежних + 2 новых, блоки 5/5/5/5/5. Группы: 21 птица, 1 млекопитающее, 1 рыба, 1 рептилия, 1 членистоногое.
+- Check/resume: **25 ready_for_review**, 0 deferred/rejected/approved/imported. Все 25 draftSha256 и checkedFingerprint совпали; проверены 411 ссылок на материалы с SHA-256, 307 прежних файлов остались неизменными.
+- Дубликатов по ID, исходным и принятым именам, синонимам новых видов, GBIF ID и пересечениям вид/подвид с опубликованными записями, архивом и внутри очереди: **0**.
+- Все схемы, sourceIds и четыре кратких текста допустимы; 22 изображения прошли проверку размеров, контейнера, прав и SHA-256. Прежние 23 entries manifest сохранены полностью, включая оба индивидуальных fingerprint.
+- Обычный dry-run: **processed 25, added 25, unchanged 0, rejected 0, mode preview, applied false**; 125 → 150 только прогноз. Фактических добавлений **0**.
+- **npm test: 311/311, ошибок 0**. Первый запуск внутри песочницы дал 16 ошибок чтения конфигурации esbuild; повтор с необходимым доступом прошёл полностью без изменения кода.
+- **npm run data: успешно**, каталог 125, архив 2. **npm run build: успешно**, 104 модуля, source/public/dist по 125 записей.
+- Git index проверен побайтно относительно рабочих файлов перед коммитом. Branch guard не изменён: feature/catalog-150 разрешена, main запрещена. Дизайн, интерфейс, карта и анимации не менялись.
+
+[Полный аудит](C:/Users/Asus/Desktop/Redbook/docs/evidence/catalog-150b-audit.json), [диагностика](C:/Users/Asus/Desktop/Redbook/docs/evidence/catalog-150b-final-validation.json), [dry-run](C:/Users/Asus/Desktop/Redbook/docs/evidence/catalog-150b-import-dry-run.json), [результаты команд](C:/Users/Asus/Desktop/Redbook/docs/evidence/catalog-150b-test-validation.json).
+
+Технических препятствий импорту не обнаружено. Научная и языковая проверка остаются pending; современное присутствие джейрана не заявляется. **ownerAuthorization null, scientificApproval null, publicationAllowed false.** Разрешение задачи 24.2 к этому manifest не относится.
+
+Будущая команда приведена только как шаблон из корня проекта. Она **не запускалась**; ID и дата должны происходить из отдельного решения владельца на приведённый SHA-256:
+
+~~~powershell
+npm run data:bulk:provisional -- --registry data/research/catalog-150-unified-registry.json --manifest data/research/catalog-150-unified-review-manifest.json --mode apply --owner-role project_owner --decision-id "<ID_НОВОГО_РЕШЕНИЯ>" --date "<YYYY-MM-DD>" --reason "Отдельное разрешение владельца на предварительную публикацию manifest SHA-256 e1b61981b42be0f9885eeb97a0f32b4b13aa931a4a87ceb22e11409e77e47b27; независимое научное одобрение отсутствует, scientificReviewStatus pending."
+~~~
+
+Коммит пакета: **643c256bec6cbdc9f432fc57f2740b8f5c1d1e68**. Обновление отчёта сохраняется отдельным документационным коммитом; его хеш определяется `git log -1 -- docs/research/catalog-150-preparation.md` и сообщается в итоговом ответе. Approve/apply/provisional import, merge, push и deployment не выполнялись. После финальной проверки Git работа по задаче завершена.
+
+## Архив отчёта задачи 24.3 — прежний пакет из 23
+
+Ниже сохранено описание состояния до 24.3B. Его числа, manifest и шаблон команды относятся к прежнему пакету; актуальный пакет и команда приведены выше.
 
 Дата: 16.10.2026. Подготовлены **23 кандидата**, из них **23 ready_for_review**, **20 изображений**, **3 placeholder**. Импорт не выполнялся. Возможный размер каталога после отдельного разрешённого импорта этого пакета — **148**, а не 150.
 
