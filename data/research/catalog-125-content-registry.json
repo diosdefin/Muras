@@ -1033,7 +1033,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -1078,7 +1078,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -1103,9 +1114,30 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz",
+            "names.en"
           ],
           "taxonId": "gbif:3987348"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Фотография: Zygophyllum kaschgaricum",
+          "publisher": "iNaturalist",
+          "url": "https://www.inaturalist.org/photos/545676788",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en",
+          "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
         }
       ],
       "contradictions": [],
@@ -1118,6 +1150,18 @@
         {
           "path": "docs/evidence/catalog-125-taxonomy.json",
           "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        },
+        {
+          "path": "data/research/catalog-125-content/block-2-facts.json",
+          "sha256": "5baf2bf74ac0fdbd43bfb5cf6b18447e085feb6d02936985f6fe1ed8d2d854ff"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-2-accounts.json",
+          "sha256": "3acf01f195266ac0c4d4f8f1d12ee17ba44d701a3a9b4bd1a621728304877d36"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-2-images.json",
+          "sha256": "5aa4e8669c7c11438c608e9f88dd2f688288a6cd8031146fbc2dccd706b6a297"
         }
       ],
       "draft": null,
@@ -1143,48 +1187,52 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "zygophyllum-kaschgaricum",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "1cc826d877121f69bc7329b272c650565424f295a1c0cd5151ed6f3251aa44d8",
+        "fingerprint": "b48791295c1f7a44fb420107a78dd16e2994377a088fcf030e8a1822e6551277",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "1cc826d877121f69bc7329b272c650565424f295a1c0cd5151ed6f3251aa44d8"
+      "checkedFingerprint": "b48791295c1f7a44fb420107a78dd16e2994377a088fcf030e8a1822e6551277",
+      "draftFile": "data/research/catalog-125-content/drafts/zygophyllum-kaschgaricum.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; импорт не разрешён.",
+        "KY/UZ/EN: научное имя вместо неподтверждённых народных названий; переводы краткого описания требуют редакторской проверки."
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Нет подтверждённой современной численности или сведений о выполнении рекомендаций."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "zygophyllum-kaschgaricum",
+        "factsFingerprint": "d2904bd42a1a824ef079ee45e56a2a3271efda62d1df2a9247614c3a78aeac8a",
+        "draftSha256": "4d712778c185a61a1fff4107bd66be2340fff5f29ebbdafc33829294501c5d81"
+      }
     },
     {
       "originalScientificName": "Sclerotiaria pentaceros",
@@ -1193,7 +1241,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "CR B2ab(iii)",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -1238,7 +1286,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -1263,7 +1322,16 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz",
+            "names.en"
           ],
           "taxonId": "gbif:3635755"
         }
@@ -1278,6 +1346,18 @@
         {
           "path": "docs/evidence/catalog-125-taxonomy.json",
           "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        },
+        {
+          "path": "data/research/catalog-125-content/block-2-facts.json",
+          "sha256": "5baf2bf74ac0fdbd43bfb5cf6b18447e085feb6d02936985f6fe1ed8d2d854ff"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-2-accounts.json",
+          "sha256": "3acf01f195266ac0c4d4f8f1d12ee17ba44d701a3a9b4bd1a621728304877d36"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-2-images.json",
+          "sha256": "5aa4e8669c7c11438c608e9f88dd2f688288a6cd8031146fbc2dccd706b6a297"
         }
       ],
       "draft": null,
@@ -1303,48 +1383,57 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "sclerotiaria-pentaceros",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "5bffe4e65eea0ce2e59e78064fbe5a754aeaff42c941e120abb077b894ba6461",
+        "fingerprint": "d0c718ad265a9ff095b8a41fb92ff300383c310e5ad5b69acd927e22c49456a8",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "5bffe4e65eea0ce2e59e78064fbe5a754aeaff42c941e120abb077b894ba6461"
+      "checkedFingerprint": "d0c718ad265a9ff095b8a41fb92ff300383c310e5ad5b69acd927e22c49456a8",
+      "draftFile": "data/research/catalog-125-content/drafts/sclerotiaria-pentaceros.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; импорт не разрешён.",
+        "KY/UZ/EN: научное имя вместо неподтверждённых народных названий; переводы краткого описания требуют редакторской проверки.",
+        "Фото: placeholder"
+      ],
+      "editorialNotes": [
+        "Placeholder сохранён намеренно: фотографии нетиповых сборов требуют специалиста; отсутствие повторных находок не приравнено к доказанному вымиранию."
+      ],
+      "missingFacts": [
+        "Современная встречаемость, численность и достоверность нетиповых сборов не установлены."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "sclerotiaria-pentaceros",
+        "factsFingerprint": "811cfbb6bf5c940566cddcb3331d69d2db7d8a4b410b99e16305e067e96c80a3",
+        "draftSha256": "0ba0fea1ec2598b927ed7d6d15ab951f796b5de0d61ab889a676a17773195047"
+      }
     },
     {
       "originalScientificName": "Bupleurum rosulare",
@@ -1353,7 +1442,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -1398,7 +1487,17 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -1423,9 +1522,30 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz",
+            "names.en"
           ],
           "taxonId": "gbif:3636584"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Гербарный образец: Bupleurum rosulare",
+          "publisher": "Moscow State University",
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0858624",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "ru",
+          "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
         }
       ],
       "contradictions": [],
@@ -1438,6 +1558,18 @@
         {
           "path": "docs/evidence/catalog-125-taxonomy.json",
           "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        },
+        {
+          "path": "data/research/catalog-125-content/block-2-facts.json",
+          "sha256": "5baf2bf74ac0fdbd43bfb5cf6b18447e085feb6d02936985f6fe1ed8d2d854ff"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-2-accounts.json",
+          "sha256": "3acf01f195266ac0c4d4f8f1d12ee17ba44d701a3a9b4bd1a621728304877d36"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-2-images.json",
+          "sha256": "5aa4e8669c7c11438c608e9f88dd2f688288a6cd8031146fbc2dccd706b6a297"
         }
       ],
       "draft": null,
@@ -1463,48 +1595,53 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "bupleurum-rosulare",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "0a1f0d07c3622f29a8fb66fdc56857069a5bbea72b64999ed4a9487f2c3698a9",
+        "fingerprint": "3a2bc956004a299433e1388f7c1c83cc23366b9c5ec7b4f5b731a35e387edfd8",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "0a1f0d07c3622f29a8fb66fdc56857069a5bbea72b64999ed4a9487f2c3698a9"
+      "checkedFingerprint": "3a2bc956004a299433e1388f7c1c83cc23366b9c5ec7b4f5b731a35e387edfd8",
+      "draftFile": "data/research/catalog-125-content/drafts/bupleurum-rosulare.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; импорт не разрешён.",
+        "KY/UZ/EN: научное имя вместо неподтверждённых народных названий; переводы краткого описания требуют редакторской проверки."
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Конкретные угрозы не выяснены; threats:null.",
+        "Способ размножения и современная численность неизвестны."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "bupleurum-rosulare",
+        "factsFingerprint": "e91bfda10edaaac288c2946e575584505ba801764f13624f7ff90e1aa7fd6aad",
+        "draftSha256": "c8e765f17aa6883ee26c7865950cbe476cb1dffb44974aa51590b908ed6b0752"
+      }
     },
     {
       "originalScientificName": "Hyalolaena intermedia",
@@ -1513,7 +1650,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -1558,7 +1695,17 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -1583,9 +1730,30 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz",
+            "names.en"
           ],
           "taxonId": "gbif:3640167"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Гербарный образец: Hyalolaena intermedia",
+          "publisher": "Moscow State University",
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0861361",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "ru",
+          "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
         }
       ],
       "contradictions": [],
@@ -1598,6 +1766,18 @@
         {
           "path": "docs/evidence/catalog-125-taxonomy.json",
           "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        },
+        {
+          "path": "data/research/catalog-125-content/block-2-facts.json",
+          "sha256": "5baf2bf74ac0fdbd43bfb5cf6b18447e085feb6d02936985f6fe1ed8d2d854ff"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-2-accounts.json",
+          "sha256": "3acf01f195266ac0c4d4f8f1d12ee17ba44d701a3a9b4bd1a621728304877d36"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-2-images.json",
+          "sha256": "5aa4e8669c7c11438c608e9f88dd2f688288a6cd8031146fbc2dccd706b6a297"
         }
       ],
       "draft": null,
@@ -1623,48 +1803,52 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "hyalolaena-intermedia",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "71335064bdbc94b602818c6e166dfe30f26c3b52eeb0333ef867ca26afbf9cb4",
+        "fingerprint": "43862d4ca90b90a57d99fc82508317fae09f0e3cd064c55751a57392cb45a715",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "71335064bdbc94b602818c6e166dfe30f26c3b52eeb0333ef867ca26afbf9cb4"
+      "checkedFingerprint": "43862d4ca90b90a57d99fc82508317fae09f0e3cd064c55751a57392cb45a715",
+      "draftFile": "data/research/catalog-125-content/drafts/hyalolaena-intermedia.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; импорт не разрешён.",
+        "KY/UZ/EN: научное имя вместо неподтверждённых народных названий; переводы краткого описания требуют редакторской проверки."
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Лимитирующие факторы и современная численность не установлены."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "hyalolaena-intermedia",
+        "factsFingerprint": "676e918a96ea50d757840d81eba1ed30d1b44072197be0f13a41593dc8d4f82e",
+        "draftSha256": "860ca5bd8755f7e880293fd34b551d9674bf216036218ff6d4cddb61976781c6"
+      }
     },
     {
       "originalScientificName": "Seseli eryngioides",
@@ -1673,7 +1857,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -1718,7 +1902,17 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -1743,9 +1937,30 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz",
+            "names.en"
           ],
           "taxonId": "gbif:3631410"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Гербарный образец: Seseli eryngioides",
+          "publisher": "Moscow State University",
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0860309",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "ru",
+          "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
         }
       ],
       "contradictions": [],
@@ -1758,6 +1973,18 @@
         {
           "path": "docs/evidence/catalog-125-taxonomy.json",
           "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        },
+        {
+          "path": "data/research/catalog-125-content/block-2-facts.json",
+          "sha256": "5baf2bf74ac0fdbd43bfb5cf6b18447e085feb6d02936985f6fe1ed8d2d854ff"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-2-accounts.json",
+          "sha256": "3acf01f195266ac0c4d4f8f1d12ee17ba44d701a3a9b4bd1a621728304877d36"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-2-images.json",
+          "sha256": "5aa4e8669c7c11438c608e9f88dd2f688288a6cd8031146fbc2dccd706b6a297"
         }
       ],
       "draft": null,
@@ -1783,48 +2010,52 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "seseli-eryngioides",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "553f18247ad3e385b8ee27bf5624df144e2a75c9a29a7ce48d5ae1d466e560f8",
+        "fingerprint": "79a056afeda26482faf8e5351cb0d5f19457ca094c703ce8aab59d835f6a69b3",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "553f18247ad3e385b8ee27bf5624df144e2a75c9a29a7ce48d5ae1d466e560f8"
+      "checkedFingerprint": "79a056afeda26482faf8e5351cb0d5f19457ca094c703ce8aab59d835f6a69b3",
+      "draftFile": "data/research/catalog-125-content/drafts/seseli-eryngioides.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; импорт не разрешён.",
+        "KY/UZ/EN: научное имя вместо неподтверждённых народных названий; переводы краткого описания требуют редакторской проверки."
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Конкретные угрозы не выяснены; современная численность неизвестна."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "seseli-eryngioides",
+        "factsFingerprint": "18f142b122de75d3f63ff6d661cfeb586b4f8486212847c9017585b90b6abdb5",
+        "draftSha256": "18c88f01db0456f380db5a556d06413202815d8218aaabe494480eecdac526d6"
+      }
     },
     {
       "originalScientificName": "Seseli korshinskyi",

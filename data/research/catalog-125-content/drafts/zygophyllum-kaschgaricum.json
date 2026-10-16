@@ -1,0 +1,268 @@
+{
+  "id": "zygophyllum-kaschgaricum",
+  "scientificName": "Zygophyllum kaschgaricum",
+  "names": {
+    "ru": "Парнолистник кашгарский",
+    "ky": "Zygophyllum kaschgaricum",
+    "uz": "Zygophyllum kaschgaricum",
+    "en": "Zygophyllum kaschgaricum"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Zygophyllales",
+    "family": "Zygophyllaceae",
+    "genus": "Zygophyllum"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Каменистая пустыня; английская сводка национального очерка уточняет связь с влажными участками среди каменистых пространств.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический очерк рассматривает хозяйственное освоение мест произрастания как угрозу крайне редкому растению.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В 2006 году рекомендованы уточнение ареала и состояния популяций, создание ботанического заказника в месте концентрации вида.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/zygophyllum-kaschgaricum.webp",
+      "width": 1350,
+      "height": 1800,
+      "sha256": "8d1ce4bc22ce9b596458088fe4a5b7951f6d75d7057edb5197ac45a1f35ecd2c",
+      "author": "Urgamal Magsar",
+      "originalPage": "https://www.inaturalist.org/photos/545676788",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Urgamal Magsar; Urgamal Magsar; Фото растения; CC BY 4.0. (c) Urgamal Magsar, some rights reserved (CC BY)",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px, WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Фотография растения. Zygophyllum kaschgaricum. Изображение не подтверждает современную встречаемость в Кыргызстане.",
+        "ky": null,
+        "uz": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Zygophyllum kaschgaricum, с. 155",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=155",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-52",
+      "publisher": "Правительство КР; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ],
+      "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Zygophyllum kaschgaricum Boriss.",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Zygophyllum%20kaschgaricum",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz",
+        "names.en"
+      ],
+      "taxonId": "gbif:3987348"
+    },
+    {
+      "id": "photo-primary",
+      "title": "Фотография: Zygophyllum kaschgaricum",
+      "publisher": "iNaturalist",
+      "url": "https://www.inaturalist.org/photos/545676788",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en",
+      "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Колючий кустарник каменистых пустынь, включённый в Красную книгу Кыргызстана 2006 года.",
+        "ky": "Таштак чөлдөрдө өскөн тикендүү бадал. Кыргызстандын 2006-жылкы Кызыл китебине киргизилген.",
+        "uz": "Toshloq choʻllarda oʻsadigan tikanli buta. Qirgʻizistonning 2006-yilgi Qizil kitobiga kiritilgan.",
+        "en": "A thorny shrub of stony deserts, included in Kyrgyzstan’s 2006 Red Data Book."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Колючий кустарник каменистых пустынь, включённый в Красную книгу Кыргызстана 2006 года. Национальный очерк 2006 года содержит следующие сведения. Малоизученное растение, исторически известное из Кашгарии и Центрального Тянь-Шаня. Национальное издание характеризует его как очень редкое и уязвимое к освоению территории; данных о культивировании не приводит. По очерку 2006 года размножается семенами, цветёт в июне–июле и плодоносит в августе. В национальной книге указан Центральный Тянь-Шань, бассейн Сары-Джаза, а за пределами страны — Кашгария. Современные границы распространения здесь не устанавливаются. Исторический очерк рассматривает хозяйственное освоение мест произрастания как угрозу крайне редкому растению. В 2006 году рекомендованы уточнение ареала и состояния популяций, создание ботанического заказника в месте концентрации вида.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Кустарник с извилистыми колючими ветвями и сизо-серой бороздчатой корой. Мясистые линейные листочки расположены попарно; цветки развиваются по одному или по два в пазухах листьев. Плод — трёхкрылая коробочка.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Малоизученное растение, исторически известное из Кашгарии и Центрального Тянь-Шаня. Национальное издание характеризует его как очень редкое и уязвимое к освоению территории; данных о культивировании не приводит.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По очерку 2006 года размножается семенами, цветёт в июне–июле и плодоносит в августе.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальной книге указан Центральный Тянь-Шань, бассейн Сары-Джаза, а за пределами страны — Кашгария. Современные границы распространения здесь не устанавливаются.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}
