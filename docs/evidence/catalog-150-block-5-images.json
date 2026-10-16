@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "batchId": "catalog-150-5",
+  "receipts": [
+    {
+      "candidateId": "columba-leuconota",
+      "status": "prepared",
+      "reason": null,
+      "previousAttempt": {
+        "provider": "Wikimedia Commons",
+        "reason": "Original file HTTP 429"
+      },
+      "metadata": {
+        "description": "iNaturalist photograph: Columba leuconota",
+        "accessedAt": "2026-10-16",
+        "sourceLanguage": "en",
+        "imageType": "photograph",
+        "subjectAsDocumented": "Columba leuconota",
+        "provider": "iNaturalist",
+        "primaryPage": "https://www.inaturalist.org/observations/403005564",
+        "photoPage": "https://www.inaturalist.org/photos/739807432",
+        "primaryMetadataUrl": "https://api.inaturalist.org/v1/observations?taxon_name=Columba+leuconota&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=3",
+        "authorStatement": "(c) Tandin Wangdi, some rights reserved (CC BY)",
+        "originalFileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/739807432/original.jpg",
+        "originalSha256": "00c7bc202e6ab603dc85d8f8c667df09b451baa8226c3a195b9420898bc5ee27",
+        "primarySnapshot": "docs/evidence/catalog-150-photo-primary-fallback.json",
+        "licenseVersionEvidence": "docs/evidence/catalog-150-inaturalist-license-map.json"
+      },
+      "image": {
+        "path": "assets/images/species/columba-leuconota.webp",
+        "width": 1800,
+        "height": 1216,
+        "sha256": "a0363b38059b86cb387420f9b986b3117ed865ab499eccb97ff9ec92fd232450",
+        "author": "Tandin Wangdi",
+        "originalPage": "https://www.inaturalist.org/photos/739807432",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Columba leuconota — Tandin Wangdi; CC BY 4.0; iNaturalist photo 739807432. (c) Tandin Wangdi, some rights reserved (CC BY).",
+        "modifications": [
+          "Уменьшение без увеличения до 1800 px; WebP quality 82; удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Фотография Columba leuconota; пример вида, не подтверждение современного присутствия в Кыргызстане или местного подвида.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-16",
+        "method": "WebP pixels and primary metadata; contact sheets 3–5, separately inspected clearer crane and live owl",
+        "independentTaxonomicReview": "pending",
+        "notes": "Изображение читаемо, явных противоречий подписанному таксону не обнаружено; независимое определение специалистом не выполнено."
+      }
+    },
+    {
+      "candidateId": "columba-eversmanni",
+      "status": "prepared",
+      "reason": null,
+      "previousAttempt": {
+        "provider": "Wikimedia Commons",
+        "reason": "Original file HTTP 429"
+      },
+      "metadata": {
+        "description": "iNaturalist photograph: Columba eversmanni",
+        "accessedAt": "2026-10-16",
+        "sourceLanguage": "en",
+        "imageType": "photograph",
+        "subjectAsDocumented": "Columba eversmanni",
+        "provider": "iNaturalist",
+        "primaryPage": "https://www.inaturalist.org/observations/278927270",
+        "photoPage": "https://www.inaturalist.org/photos/500856871",
+        "primaryMetadataUrl": "https://api.inaturalist.org/v1/observations?taxon_name=Columba+eversmanni&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=3",
+        "authorStatement": "(c) egorbirder, some rights reserved (CC BY)",
+        "originalFileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/500856871/original.jpg",
+        "originalSha256": "901317e629908dab037774a87d759cf529bf2187afdadcb2cf2733f94840078c",
+        "primarySnapshot": "docs/evidence/catalog-150-photo-primary-fallback.json",
+        "licenseVersionEvidence": "docs/evidence/catalog-150-inaturalist-license-map.json"
+      },
+      "image": {
+        "path": "assets/images/species/columba-eversmanni.webp",
+        "width": 1800,
+        "height": 1200,
+        "sha256": "f514ab8fc13f8b13c31de68d1f38a50373f44ab8fb458437aa4b7404bac5de7c",
+        "author": "egorbirder",
+        "originalPage": "https://www.inaturalist.org/photos/500856871",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Columba eversmanni — egorbirder; CC BY 4.0; iNaturalist photo 500856871. (c) egorbirder, some rights reserved (CC BY).",
+        "modifications": [
+          "Уменьшение без увеличения до 1800 px; WebP quality 82; удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Фотография Columba eversmanni; пример вида, не подтверждение современного присутствия в Кыргызстане или местного подвида.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-16",
+        "method": "WebP pixels and primary metadata; contact sheets 3–5, separately inspected clearer crane and live owl",
+        "independentTaxonomicReview": "pending",
+        "notes": "Изображение читаемо, явных противоречий подписанному таксону не обнаружено; независимое определение специалистом не выполнено."
+      }
+    },
+    {
+      "candidateId": "bubo-bubo",
+      "status": "prepared",
+      "reason": null,
+      "previousAttempt": {
+        "provider": "Wikimedia Commons",
+        "reason": "Original file HTTP 429"
+      },
+      "metadata": {
+        "description": "iNaturalist photograph: Bubo bubo",
+        "accessedAt": "2026-10-16",
+        "sourceLanguage": "en",
+        "imageType": "photograph",
+        "subjectAsDocumented": "Bubo bubo",
+        "provider": "iNaturalist",
+        "primaryPage": "https://www.inaturalist.org/observations/406075894",
+        "photoPage": "https://www.inaturalist.org/photos/746000832",
+        "primaryMetadataUrl": "https://api.inaturalist.org/v1/observations?taxon_id=20059&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=20",
+        "authorStatement": "(c) Tim Parker, some rights reserved (CC BY)",
+        "originalFileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/746000832/original.jpg",
+        "originalSha256": "f275d1c1842f422126e055e5ded035ecd960b0bdfbb7ac76dad960828f03ce44",
+        "primarySnapshot": "docs/evidence/catalog-150-photo-primary-fallback.json",
+        "notes": "Живая птица; исходный кадр пера заменён при визуальном просмотре.",
+        "licenseVersionEvidence": "docs/evidence/catalog-150-inaturalist-license-map.json"
+      },
+      "image": {
+        "path": "assets/images/species/bubo-bubo.webp",
+        "width": 911,
+        "height": 931,
+        "sha256": "3673cf76bafb634d4cdd3092d2783b1e2a8cc3a266fad08e6ccb877c4e840b92",
+        "author": "Tim Parker",
+        "originalPage": "https://www.inaturalist.org/photos/746000832",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Bubo bubo — Tim Parker; CC BY 4.0; iNaturalist photo 746000832. (c) Tim Parker, some rights reserved (CC BY).",
+        "modifications": [
+          "Уменьшение без увеличения до 1800 px; WebP quality 82; удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Фотография Bubo bubo; пример вида, не подтверждение современного присутствия в Кыргызстане или местного подвида.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-16",
+        "method": "WebP pixels and primary metadata; contact sheets 3–5, separately inspected clearer crane and live owl",
+        "independentTaxonomicReview": "pending",
+        "notes": "Живая птица на дереве, снимок с большого расстояния. Независимое определение специалистом не выполнено."
+      }
+    }
+  ]
+}

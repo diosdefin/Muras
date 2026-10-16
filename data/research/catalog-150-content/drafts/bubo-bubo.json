@@ -1,0 +1,279 @@
+{
+  "id": "bubo-bubo",
+  "scientificName": "Bubo bubo",
+  "names": {
+    "ru": "Филин",
+    "ky": "Bubo bubo",
+    "uz": "Bubo bubo",
+    "en": "Eurasian Eagle-Owl"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Strigiformes",
+    "family": "Strigidae",
+    "genus": "Bubo"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "LC",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); очерк вида; варианты написания местного подвида в RU/EN не используются для новой карточки",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Горно-лесные участки со скалами, глинистыми обрывами и пещерами. Зимой может спускаться в межгорные долины и приближаться к поселениям.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Изъятие птиц ради перьев.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Гибель на ЛЭП и дорогах.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Спады численности кормовых животных.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Предложена просветительская работа; разведение с прижизненным получением перьев обсуждается как рекомендация источника.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/bubo-bubo.webp",
+      "width": 911,
+      "height": 931,
+      "sha256": "3673cf76bafb634d4cdd3092d2783b1e2a8cc3a266fad08e6ccb877c4e840b92",
+      "author": "Tim Parker",
+      "originalPage": "https://www.inaturalist.org/photos/746000832",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Bubo bubo — Tim Parker; CC BY 4.0; iNaturalist photo 746000832. (c) Tim Parker, some rights reserved (CC BY).",
+      "modifications": [
+        "Уменьшение без увеличения до 1800 px; WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Фотография Bubo bubo; пример вида, не подтверждение современного присутствия в Кыргызстане или местного подвида.",
+        "ky": null,
+        "uz": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Bubo bubo, с. 463",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=463",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "threats.2",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Bubo bubo (Linnaeus, 1758)",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Bubo%20bubo",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz"
+      ],
+      "taxonId": "gbif:5959092"
+    },
+    {
+      "id": "photo-primary",
+      "title": "Фотография Bubo bubo",
+      "publisher": "iNaturalist; Tim Parker",
+      "url": "https://www.inaturalist.org/photos/746000832",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en",
+      "notes": "Per-photo license_code и авторская атрибуция проверены в первичном API; версия лицензии — официальный LicenseModule."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Филин — преимущественно оседлая хищная птица горных ландшафтов, представленная в национальном издании 2006 года.",
+        "ky": "2006-жылкы улуттук очеркте аскалар жана токойлуу тоолор менен байланышкан жырткыч куш.",
+        "uz": "2006-yilgi milliy manbada qoyalar va o‘rmonli tog‘lar bilan bog‘langan yirtqich qush.",
+        "en": "A largely resident owl of rocky, wooded mountain habitats in the 2006 national account."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Филин — преимущественно оседлая хищная птица горных ландшафтов, представленная в национальном издании 2006 года.\n\nГорно-лесные участки со скалами, глинистыми обрывами и пещерами. Зимой может спускаться в межгорные долины и приближаться к поселениям.\n\nСовершает небольшие вертикальные перемещения; при достатке корма может зимовать в высокогорье. В очерке отмечена зависимость местных птиц от кормовой базы.\n\nМлекопитающие, включая зайцев, мышей и полёвок; реже птицы.\n\nВ горных условиях по очерку откладка в апреле, обычно 2–5 яиц; самка насиживает 33–35 дней. Молодые долго остаются на гнездовом участке.\n\nИсторические сведения охватывают Прииссыккулье, внутренние долины и Кыргызский, Алайский и Чаткальский хребты. В части мест гнездование лишь предполагается.\n\nИзъятие птиц ради перьев.\n\nГибель на ЛЭП и дорогах.\n\nСпады численности кормовых животных.\n\nПредложена просветительская работа; разведение с прижизненным получением перьев обсуждается как рекомендация источника.\n\nНациональная категория и описанные встречи относятся к историческому изданию 2006 года. Современная численность не установлена; текущий юридический статус и современное присутствие требуют отдельного подтверждения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Совершает небольшие вертикальные перемещения; при достатке корма может зимовать в высокогорье. В очерке отмечена зависимость местных птиц от кормовой базы.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Млекопитающие, включая зайцев, мышей и полёвок; реже птицы.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В горных условиях по очерку откладка в апреле, обычно 2–5 яиц; самка насиживает 33–35 дней. Молодые долго остаются на гнездовом участке.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические сведения охватывают Прииссыккулье, внутренние долины и Кыргызский, Алайский и Чаткальский хребты. В части мест гнездование лишь предполагается.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

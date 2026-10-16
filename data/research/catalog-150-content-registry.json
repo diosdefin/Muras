@@ -4188,8 +4188,8 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "LC",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); очерк вида с упоминанием номинативного подвида",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -4233,7 +4233,17 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -4245,9 +4255,29 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz"
           ],
           "taxonId": "gbif:5231842"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Фотография Columba leuconota",
+          "publisher": "iNaturalist; Tandin Wangdi",
+          "url": "https://www.inaturalist.org/photos/739807432",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en",
+          "notes": "Per-photo license_code и авторская атрибуция проверены в первичном API; версия лицензии — официальный LicenseModule."
         }
       ],
       "contradictions": [],
@@ -4268,6 +4298,18 @@
         {
           "path": "docs/evidence/catalog-150-source-receipts.json",
           "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-5-facts.json",
+          "sha256": "5d22633d1e62598f04b0583c77dc4cdbd63b3c1ee1c749ec3e96101194a97543"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-5-accounts.json",
+          "sha256": "eb8796b68d48798b9077de0b2432e38dcb7e78f21ad528ae22c61adba1944fb7"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-5-images.json",
+          "sha256": "2b04da00080f3603dc4aaa6841395025eaa6c6b9e02871dc958d094dcd8b6c2d"
         }
       ],
       "draft": null,
@@ -4292,49 +4334,59 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
       "diagnostics": {
         "candidateId": "columba-leuconota",
         "batchNumber": 5,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "36a2268a6ee6ef807c04f0304c8397fc3dbfef0f3e024daf466e20425f971954",
+        "fingerprint": "6d9160cb407bc3f6faa9a42f6ef581ce8efdf9d6adaff1b63e9451b74f088180",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "36a2268a6ee6ef807c04f0304c8397fc3dbfef0f3e024daf466e20425f971954"
+      "checkedFingerprint": "6d9160cb407bc3f6faa9a42f6ef581ce8efdf9d6adaff1b63e9451b74f088180",
+      "draftFile": "data/research/catalog-150-content/drafts/columba-leuconota.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Английское резюме сообщает об отсутствии сведений о гнездовании, русский текст описывает гнездо 1985 года; сохранено датированное сообщение русского текста.",
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Лимитирующие факторы и питание в национальном очерке не установлены.",
+        "Диагностические признаки внешности в использованном очерке не описаны; appearance сохранено null.",
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "columba-leuconota",
+        "factsFingerprint": "265335aaf972841850fa8a9d2de0a576d3d3370db97664e7508b9ad42ec11731",
+        "draftSha256": "f88e43bc8859791857b01e4c19be771ed4753967a807479fd70d1bd1e56f7798"
+      },
+      "scientificReviewStatus": "pending"
     },
     {
       "originalScientificName": "Columba eversmanni",
@@ -4343,7 +4395,7 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -4388,7 +4440,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -4400,9 +4464,29 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz"
           ],
           "taxonId": "gbif:2495464"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Фотография Columba eversmanni",
+          "publisher": "iNaturalist; egorbirder",
+          "url": "https://www.inaturalist.org/photos/500856871",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en",
+          "notes": "Per-photo license_code и авторская атрибуция проверены в первичном API; версия лицензии — официальный LicenseModule."
         }
       ],
       "contradictions": [],
@@ -4423,6 +4507,18 @@
         {
           "path": "docs/evidence/catalog-150-source-receipts.json",
           "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-5-facts.json",
+          "sha256": "5d22633d1e62598f04b0583c77dc4cdbd63b3c1ee1c749ec3e96101194a97543"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-5-accounts.json",
+          "sha256": "eb8796b68d48798b9077de0b2432e38dcb7e78f21ad528ae22c61adba1944fb7"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-5-images.json",
+          "sha256": "2b04da00080f3603dc4aaa6841395025eaa6c6b9e02871dc958d094dcd8b6c2d"
         }
       ],
       "draft": null,
@@ -4447,49 +4543,58 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
       "diagnostics": {
         "candidateId": "columba-eversmanni",
         "batchNumber": 5,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "0592066a19f3cd0e18f05ea1d813da4e89912b9f793d2742febe6b21777cf047",
+        "fingerprint": "21e32a95227b9fe7abb3ba4cfa5b31c7c469e45d98b7376dcde999fb07babe00",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "0592066a19f3cd0e18f05ea1d813da4e89912b9f793d2742febe6b21777cf047"
+      "checkedFingerprint": "21e32a95227b9fe7abb3ba4cfa5b31c7c469e45d98b7376dcde999fb07babe00",
+      "draftFile": "data/research/catalog-150-content/drafts/columba-eversmanni.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Предполагаемое влияние майны в источнике не представлено как установленная причина сокращения.",
+        "Диагностические признаки внешности в использованном очерке не описаны; appearance сохранено null.",
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "columba-eversmanni",
+        "factsFingerprint": "66fc28b3cf6d90b56d827d2b811a3b2db00d5ecbea9b14a2753a7f9401929f0a",
+        "draftSha256": "faa942b32d751ad68e2eadb4ca67074ae86820bae3829185c3927d6a854fda7d"
+      },
+      "scientificReviewStatus": "pending"
     },
     {
       "originalScientificName": "Bubo bubo",
@@ -4498,8 +4603,8 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "LC",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); очерк вида; варианты написания местного подвида в RU/EN не используются для новой карточки",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -4543,7 +4648,21 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "threats.1",
+            "threats.2",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -4555,9 +4674,29 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz"
           ],
           "taxonId": "gbif:5959092"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Фотография Bubo bubo",
+          "publisher": "iNaturalist; Tim Parker",
+          "url": "https://www.inaturalist.org/photos/746000832",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en",
+          "notes": "Per-photo license_code и авторская атрибуция проверены в первичном API; версия лицензии — официальный LicenseModule."
         }
       ],
       "contradictions": [],
@@ -4578,6 +4717,18 @@
         {
           "path": "docs/evidence/catalog-150-source-receipts.json",
           "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-5-facts.json",
+          "sha256": "5d22633d1e62598f04b0583c77dc4cdbd63b3c1ee1c749ec3e96101194a97543"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-5-accounts.json",
+          "sha256": "eb8796b68d48798b9077de0b2432e38dcb7e78f21ad528ae22c61adba1944fb7"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-5-images.json",
+          "sha256": "2b04da00080f3603dc4aaa6841395025eaa6c6b9e02871dc958d094dcd8b6c2d"
         }
       ],
       "draft": null,
@@ -4602,49 +4753,57 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
       "diagnostics": {
         "candidateId": "bubo-bubo",
         "batchNumber": 5,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "d42bf11b35aa20d2875fa941ccc8642e9cb04a5210e773ed610b92e605d7be9d",
+        "fingerprint": "115ea81cb3b886819888356a4c8466f67027f1a8b215c2ecbff99e995bba8b1a",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "d42bf11b35aa20d2875fa941ccc8642e9cb04a5210e773ed610b92e605d7be9d"
+      "checkedFingerprint": "115ea81cb3b886819888356a4c8466f67027f1a8b215c2ecbff99e995bba8b1a",
+      "draftFile": "data/research/catalog-150-content/drafts/bubo-bubo.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Диагностические признаки внешности в использованном очерке не описаны; appearance сохранено null.",
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "bubo-bubo",
+        "factsFingerprint": "0322119245290e92b65f56538adcad5f60f8630375875b02b218f7099b250b0d",
+        "draftSha256": "90a8c757b699c1caa049b07ea90302dec926c37dce4613aaf00a8d5192c3e2a5"
+      },
+      "scientificReviewStatus": "pending"
     }
   ]
 }
