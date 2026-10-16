@@ -3152,7 +3152,7 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "DD",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -3197,7 +3197,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -3209,9 +3220,29 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz"
           ],
           "taxonId": "gbif:2480758"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Фотография Glareola nordmanni",
+          "publisher": "iNaturalist; Oscar Hazell",
+          "url": "https://www.inaturalist.org/photos/731845339",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en",
+          "notes": "Per-photo license_code и авторская атрибуция проверены в первичном API; версия лицензии — официальный LicenseModule."
         }
       ],
       "contradictions": [],
@@ -3232,6 +3263,18 @@
         {
           "path": "docs/evidence/catalog-150-source-receipts.json",
           "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-4-facts.json",
+          "sha256": "dbe74dfdeb2e837a06e4b9be36662e6d4824102a4269e0a289dae87acec2beb1"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-4-accounts.json",
+          "sha256": "eaac19b8722ba22534294e2e09dad69924980eb795adbe16f9f294271a9d6138"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-4-images.json",
+          "sha256": "59885c16bf379f3c0afa0f635fff5b33a83426b327d1bb2025e6d6bbd879e52c"
         }
       ],
       "draft": null,
@@ -3256,49 +3299,58 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
       "diagnostics": {
         "candidateId": "glareola-nordmanni",
         "batchNumber": 4,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "7b3ad4fc2869d95731d455a86227d974103fcbe24ea417462466ad3e12250659",
+        "fingerprint": "459e89a7a2638ca33d3a24cea7144f0feea47c5edaeacbc951b251845fc36ef6",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "7b3ad4fc2869d95731d455a86227d974103fcbe24ea417462466ad3e12250659"
+      "checkedFingerprint": "459e89a7a2638ca33d3a24cea7144f0feea47c5edaeacbc951b251845fc36ef6",
+      "draftFile": "data/research/catalog-150-content/drafts/glareola-nordmanni.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Размножение в национальном очерке не описано. Возможная конкуренция с луговой тиркушкой не представлена как установленный фактор.",
+        "Диагностические признаки внешности в использованном очерке не описаны; appearance сохранено null.",
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "glareola-nordmanni",
+        "factsFingerprint": "dc5b8ea2022fbf2ad2a6455de253b5a685df9b0892e6648523cb82c917e1b1ba",
+        "draftSha256": "70096116e0fb5bc53e3cccd847f7db91110f9b5ba4803e69ed9ab01484d03cca"
+      },
+      "scientificReviewStatus": "pending"
     },
     {
       "originalScientificName": "Strix aluco",
@@ -3307,8 +3359,8 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "LC",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); видовой очерк с упоминанием harmsi; историческое национальное LC не является современной оценкой IUCN",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -3352,7 +3404,20 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "threats.1",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -3364,9 +3429,29 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz"
           ],
           "taxonId": "gbif:9282206"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Фотография Strix aluco",
+          "publisher": "iNaturalist; hanami_yama",
+          "url": "https://www.inaturalist.org/photos/750184013",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en",
+          "notes": "Per-photo license_code и авторская атрибуция проверены в первичном API; версия лицензии — официальный LicenseModule."
         }
       ],
       "contradictions": [],
@@ -3387,6 +3472,18 @@
         {
           "path": "docs/evidence/catalog-150-source-receipts.json",
           "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-4-facts.json",
+          "sha256": "dbe74dfdeb2e837a06e4b9be36662e6d4824102a4269e0a289dae87acec2beb1"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-4-accounts.json",
+          "sha256": "eaac19b8722ba22534294e2e09dad69924980eb795adbe16f9f294271a9d6138"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-4-images.json",
+          "sha256": "59885c16bf379f3c0afa0f635fff5b33a83426b327d1bb2025e6d6bbd879e52c"
         }
       ],
       "draft": null,
@@ -3411,49 +3508,57 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
       "diagnostics": {
         "candidateId": "strix-aluco",
         "batchNumber": 4,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "4b403b5374875caffd9d8e69763d4c21f7f3d5990f2eb97f49d46b1e9b02d31e",
+        "fingerprint": "4b4e4d081122d164d90682f4fc6cccb2022ffc46eb8eb0f265a0d4b0b4c28c2d",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "4b403b5374875caffd9d8e69763d4c21f7f3d5990f2eb97f49d46b1e9b02d31e"
+      "checkedFingerprint": "4b4e4d081122d164d90682f4fc6cccb2022ffc46eb8eb0f265a0d4b0b4c28c2d",
+      "draftFile": "data/research/catalog-150-content/drafts/strix-aluco.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Диагностические признаки внешности в использованном очерке не описаны; appearance сохранено null.",
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "strix-aluco",
+        "factsFingerprint": "16dae4bb4c5e45c356bf69652dfa56bff951cb6b5efcfa5f2713cf03dabc67a8",
+        "draftSha256": "36241bb3f2acf341d9347e7016eb3c0885ceaff0abddd039b5ed7ef46bcdd363"
+      },
+      "scientificReviewStatus": "pending"
     },
     {
       "originalScientificName": "Syrrhaptes paradoxus",
@@ -3462,7 +3567,7 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -3507,7 +3612,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -3519,9 +3636,29 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz"
           ],
           "taxonId": "gbif:2480208"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Фотография Syrrhaptes paradoxus",
+          "publisher": "iNaturalist; Tom Field",
+          "url": "https://www.inaturalist.org/photos/707778366",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en",
+          "notes": "Per-photo license_code и авторская атрибуция проверены в первичном API; версия лицензии — официальный LicenseModule."
         }
       ],
       "contradictions": [],
@@ -3542,6 +3679,18 @@
         {
           "path": "docs/evidence/catalog-150-source-receipts.json",
           "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-4-facts.json",
+          "sha256": "dbe74dfdeb2e837a06e4b9be36662e6d4824102a4269e0a289dae87acec2beb1"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-4-accounts.json",
+          "sha256": "eaac19b8722ba22534294e2e09dad69924980eb795adbe16f9f294271a9d6138"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-4-images.json",
+          "sha256": "59885c16bf379f3c0afa0f635fff5b33a83426b327d1bb2025e6d6bbd879e52c"
         }
       ],
       "draft": null,
@@ -3566,49 +3715,58 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
       "diagnostics": {
         "candidateId": "syrrhaptes-paradoxus",
         "batchNumber": 4,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "a9089266009b31485153aade6a4fadbcc9926ed7be97e77a375a3ba540db94f1",
+        "fingerprint": "5e2775f2d69aa85c1f57086956464bae1f91bf436bd1dbe0ad12e5c06d7481a5",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "a9089266009b31485153aade6a4fadbcc9926ed7be97e77a375a3ba540db94f1"
+      "checkedFingerprint": "5e2775f2d69aa85c1f57086956464bae1f91bf436bd1dbe0ad12e5c06d7481a5",
+      "draftFile": "data/research/catalog-150-content/drafts/syrrhaptes-paradoxus.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Способ доставки воды птенцам из национального текста не воспроизводится без независимой проверки.",
+        "Диагностические признаки внешности в использованном очерке не описаны; appearance сохранено null.",
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "syrrhaptes-paradoxus",
+        "factsFingerprint": "ead2679ff6c2d6ef176b90e35be9f02068204ab9dd55612c098b68804c1aee53",
+        "draftSha256": "2fa136a679829e840b96a8a8bb3300f14e75f45042f5dcc32c94cbb6109bc00c"
+      },
+      "scientificReviewStatus": "pending"
     },
     {
       "originalScientificName": "Pterocles alchata",
@@ -3617,8 +3775,8 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "NT",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); очерк вида; разночтение caudacutus/caudatus в RU/EN не превращается в отдельный таксон",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -3662,7 +3820,17 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -3674,9 +3842,28 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz"
           ],
           "taxonId": "gbif:2480204"
+        },
+        {
+          "id": "photo-commons",
+          "title": "Pin-tailed Sandgrouse Pterocles alchata, Castuera, Badajoz province, Extremadura, Spain",
+          "publisher": "Wikimedia Commons; https://www.flickr.com/photos/francesco_veronesi/",
+          "url": "https://commons.wikimedia.org/wiki/File:Pterocles_alchata_(cropped).jpg",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en"
         }
       ],
       "contradictions": [],
@@ -3697,6 +3884,18 @@
         {
           "path": "docs/evidence/catalog-150-source-receipts.json",
           "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-4-facts.json",
+          "sha256": "dbe74dfdeb2e837a06e4b9be36662e6d4824102a4269e0a289dae87acec2beb1"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-4-accounts.json",
+          "sha256": "eaac19b8722ba22534294e2e09dad69924980eb795adbe16f9f294271a9d6138"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-4-images.json",
+          "sha256": "59885c16bf379f3c0afa0f635fff5b33a83426b327d1bb2025e6d6bbd879e52c"
         }
       ],
       "draft": null,
@@ -3721,49 +3920,58 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
       "diagnostics": {
         "candidateId": "pterocles-alchata",
         "batchNumber": 4,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "96399a656cfdd16bea21bd3b1bab60bc7fcb0150f2c448f32385afb989b7d539",
+        "fingerprint": "6eca0484360c0ebf0a53e5b3c2fb2ef240138c7ae80f7c8e4c91bdb79615f4c4",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "96399a656cfdd16bea21bd3b1bab60bc7fcb0150f2c448f32385afb989b7d539"
+      "checkedFingerprint": "6eca0484360c0ebf0a53e5b3c2fb2ef240138c7ae80f7c8e4c91bdb79615f4c4",
+      "draftFile": "data/research/catalog-150-content/drafts/pterocles-alchata.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Лимитирующие факторы и питание в национальном очерке не установлены.",
+        "Диагностические признаки внешности в использованном очерке не описаны; appearance сохранено null.",
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "pterocles-alchata",
+        "factsFingerprint": "491ef73b7bd7e193a3a56b1d98aff8cccb28ce623b605d36dc7a2662e86684dc",
+        "draftSha256": "78fc5fc0a38f2055d2a75557cd45e3116dbfc7214031d85f4c1853adee46e953"
+      },
+      "scientificReviewStatus": "pending"
     },
     {
       "originalScientificName": "Pterocles orientalis",
@@ -3772,8 +3980,8 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "NT",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); очерк вида с упоминанием arenarius; самостоятельная карточка подвида не создаётся",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -3817,7 +4025,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -3829,9 +4049,29 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz"
           ],
           "taxonId": "gbif:2480193"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Фотография Pterocles orientalis",
+          "publisher": "iNaturalist; Антон Лабачоў",
+          "url": "https://www.inaturalist.org/photos/731522111",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en",
+          "notes": "Per-photo license_code и авторская атрибуция проверены в первичном API; версия лицензии — официальный LicenseModule."
         }
       ],
       "contradictions": [],
@@ -3852,6 +4092,18 @@
         {
           "path": "docs/evidence/catalog-150-source-receipts.json",
           "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-4-facts.json",
+          "sha256": "dbe74dfdeb2e837a06e4b9be36662e6d4824102a4269e0a289dae87acec2beb1"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-4-accounts.json",
+          "sha256": "eaac19b8722ba22534294e2e09dad69924980eb795adbe16f9f294271a9d6138"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-4-images.json",
+          "sha256": "59885c16bf379f3c0afa0f635fff5b33a83426b327d1bb2025e6d6bbd879e52c"
         }
       ],
       "draft": null,
@@ -3876,49 +4128,58 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
       "diagnostics": {
         "candidateId": "pterocles-orientalis",
         "batchNumber": 4,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "1ca80450c7898388bbf9a94a1ec63c0ace0e76c43b29e2c698041dd5f1107e36",
+        "fingerprint": "37c7fc7ad3ecd1df1bed202c3505db2e4c0b6ae6deb027533df14a3a6479a85b",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "1ca80450c7898388bbf9a94a1ec63c0ace0e76c43b29e2c698041dd5f1107e36"
+      "checkedFingerprint": "37c7fc7ad3ecd1df1bed202c3505db2e4c0b6ae6deb027533df14a3a6479a85b",
+      "draftFile": "data/research/catalog-150-content/drafts/pterocles-orientalis.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Способ переноса воды птенцам не воспроизводится без дополнительной проверки.",
+        "Диагностические признаки внешности в использованном очерке не описаны; appearance сохранено null.",
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "pterocles-orientalis",
+        "factsFingerprint": "89ee1f0466db6ae73a85a8393565713751f8b658fade1a3170f148bea9296b95",
+        "draftSha256": "27c0ae3209f67318115cc518e74745f89694e229f795ef5aeee60df5e9ef4f48"
+      },
+      "scientificReviewStatus": "pending"
     },
     {
       "originalScientificName": "Columba leuconota",
