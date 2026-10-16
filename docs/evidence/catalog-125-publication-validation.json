@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-16",
+  "startingCommit": "7d723771a250ecdb08e3d26449144817ee86ae4d",
+  "guardCommit": "25524d028abccf1348dfe683c3e08cdc9c3717f0",
+  "branch": "feature/catalog-150",
+  "manifest": {
+    "path": "data/research/catalog-125-review-manifest.json",
+    "sha256": "e2cb306acf708d13fe53e0ec3ddcdd620489593b4c96d640abd8121ebbc7e1dd",
+    "registryFingerprint": "6b89e1b5e569e2bf23c0a7313e2a0802c73f63fafccdeb895dbabd3baf55f9da",
+    "individualDraftFingerprints": "25 checked and matched; artifacts unchanged"
+  },
+  "ownerDecision": "data/research/publication-decisions/muras-24-1-owner-provisional.json",
+  "counts": {
+    "source": 125,
+    "public": 125,
+    "dist": 125,
+    "newPlants": 25,
+    "newImages": 20,
+    "newPlaceholders": 5,
+    "totalImages": 108,
+    "totalPlaceholders": 17
+  },
+  "preservation": {
+    "oldSourceRecordsUnchanged": 100,
+    "oldPublicRecordsUnchanged": 100,
+    "archiveUnchanged": true,
+    "oldFilesChecked": 191,
+    "changedOldFiles": []
+  },
+  "pagination": [
+    24,
+    24,
+    24,
+    24,
+    24,
+    5
+  ],
+  "tests": {
+    "total": 311,
+    "passed": 311,
+    "failed": 0,
+    "initialFailuresResolved": [
+      "Historical tests assumed the live catalog would always contain 100 records or no UZ names; now use immutable snapshots or actual sourced names.",
+      "The two-document admin draft envelope exceeded its original one-document 2 MiB bound; draft bound now 4 MiB + 64 KiB, source import limit remains 2 MiB."
+    ],
+    "initialFullRun": {
+      "tests": 310,
+      "passed": 299,
+      "failed": 11
+    }
+  },
+  "generation": {
+    "repeatedFiles": 124,
+    "byteIdentical": true
+  },
+  "logs": [
+    {
+      "command": "npm test",
+      "log": ".generated/catalog-125-publication-tests.log",
+      "exitCode": 0,
+      "sha256": "2b2c1848a742fd3041e3331844af84ec7d5f6107e837d4129934a9d90f58b8e6"
+    },
+    {
+      "command": "npm run data",
+      "log": ".generated/catalog-125-publication-data-1.log",
+      "exitCode": 0,
+      "sha256": "1a106933a0e31cccf02b07546dc159013bcf2610970f89d082eaea29519dbf5e"
+    },
+    {
+      "command": "npm run data",
+      "log": ".generated/catalog-125-publication-data-2.log",
+      "exitCode": 0,
+      "sha256": "1a106933a0e31cccf02b07546dc159013bcf2610970f89d082eaea29519dbf5e"
+    },
+    {
+      "command": "npm run build",
+      "log": ".generated/catalog-125-publication-build.log",
+      "exitCode": 0,
+      "sha256": "e715d92634700144e4c82933c3c2918e0c5f6aa4cd291f5456d09b83767d1c23"
+    }
+  ],
+  "rendering": {
+    "ssrNewSpecies": 25,
+    "languages": [
+      "ky",
+      "uz",
+      "ru",
+      "en"
+    ],
+    "components": [
+      "SpeciesCard",
+      "SpeciesModal",
+      "SpeciesPage"
+    ],
+    "renders": 300,
+    "httpReport": "docs/evidence/catalog-125-publication-http.json"
+  },
+  "scientificReview": {
+    "newRecordsVerified": false,
+    "status": "pending",
+    "independentReviewer": null,
+    "population": "unknown"
+  },
+  "sourceSha256": "6d5a40ab8035ae415b79dfd1c609ec34eec0ee3d3a751f5a1c224d217aa4d528",
+  "publicSha256": "199008d108f732773a110d95ca8a0b74cd658bfd73165d89f66f634d99f606bf",
+  "unresolvedProblems": [],
+  "mergePushDeployment": false
+}

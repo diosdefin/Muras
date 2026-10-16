@@ -36,7 +36,11 @@ test('canonical data preserves original nine records and two archived examples w
     assert.equal(s.regions[0].code, 'KG')
     assert.ok(s.sources.find(source => s.regions[0].sourceIds.includes(source.id)).url.includes('282.pdf'))
     if (source.catalog.indexOf(s) < 40) assert.ok(s.names.ru && s.names.ky && s.names.en)
-    else { assert.ok(s.names.ru); assert.equal(s.names.ky, null); assert.equal(s.names.uz, null) }
+    else if (source.catalog.indexOf(s) < 100) { assert.ok(s.names.ru); assert.equal(s.names.ky, null); assert.equal(s.names.uz, null) }
+    else {
+      assert.ok(s.names.ru)
+      for (const language of ['ky', 'uz', 'en']) assert.equal(s.names[language], s.scientificName)
+    }
     assert.equal(s.iucn.year, null) // Dataset publication year is not an assessment year.
     if (source.catalog.indexOf(s) < 17) assert.ok(speciesPhoto(s)) // Preserve the first two photographic batches.
   }
@@ -227,6 +231,8 @@ test('licensed assets are local WebP, have declared dimensions, captions and mat
   const restoration = JSON.parse(await readFile(join(PROJECT_ROOT, 'data/research/catalog-100-photo-updates.json'), 'utf8'))
   const finalPhotos = JSON.parse(await readFile(join(PROJECT_ROOT, 'data/research/catalog-100-photo-final-updates.json'), 'utf8'))
   restoration.records.push(...finalPhotos.records.filter(r => r.status === 'published'))
+  const catalog125Photos = JSON.parse(await readFile(join(PROJECT_ROOT, 'docs/evidence/catalog-125-photo-preparation.json'), 'utf8'))
+  restoration.records.push(...catalog125Photos.receipts.filter(r => r.status === 'prepared').map(r => ({ id: r.candidateId, image: r.image, sha256: r.image.sha256 })))
   for (const s of source.catalog.filter(s => speciesPhoto(s))) {
     const image = speciesPhoto(s)
     const bytes = await readFile(join(PROJECT_ROOT, image.path))

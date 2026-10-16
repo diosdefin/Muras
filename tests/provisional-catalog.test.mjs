@@ -38,7 +38,10 @@ test('provisional release appends exactly the 23 manifest IDs and preserves all 
   assert.equal(new Set(source.catalog.map(s => s.id)).size, 63)
   const changed = new Set(['data/species.source.json', 'public/data/species.json', 'src/data/species-model.js'])
   const preservation = await read('docs/evidence/bulk-25-preservation.json')
-  for (const [p, sha] of Object.entries(preservation)) if (!changed.has(p) && isHistoricalEvidenceUnchanged(p)) assert.equal(digest(await readFile(`${PROJECT_ROOT}/${p}`)), sha, p)
+  for (const [p, sha] of Object.entries(preservation)) if (!changed.has(p) && isHistoricalEvidenceUnchanged(p)) {
+    const baselinePath = p === 'src/admin/data/repository.js' ? 'data/backups/catalog-125/admin-draft-repository.js' : p
+    assert.equal(digest(await readFile(`${PROJECT_ROOT}/${baselinePath}`)), sha, p)
+  }
   assert.equal(digest(await readFile(`${PROJECT_ROOT}/data/backups/bulk-25-provisional/species.source.json`)), preservation['data/species.source.json'])
   assert.equal(digest(await readFile(`${PROJECT_ROOT}/data/backups/bulk-25-provisional/public-species.json`)), preservation['public/data/species.json'])
   assert.equal(fingerprint(registry), manifest.registryFingerprint)

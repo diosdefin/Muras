@@ -1,11 +1,14 @@
 import { clone, editableShape, importSource, MAX_JSON_BYTES } from './model.js'
 export const DRAFT_KEY = 'redbook.admin.draft.v1'
 export const PREVIOUS_KEY = 'redbook.admin.previous.v1'
+// A draft retains two complete documents plus bounded asset metadata.
+// The imported source still has the independent 2 MiB MAX_JSON_BYTES limit.
+export const MAX_DRAFT_BYTES = 2 * MAX_JSON_BYTES + 64 * 1024
 export function createDraftRepository(storage) {
   function read(key) {
     const text = storage?.getItem(key)
     if (!text) return null
-    if (new TextEncoder().encode(text).length > MAX_JSON_BYTES) throw new Error('admin.error.jsonSize')
+    if (new TextEncoder().encode(text).length > MAX_DRAFT_BYTES) throw new Error('admin.error.jsonSize')
     const envelope = JSON.parse(text)
     if (envelope.version !== 1 || !editableShape(envelope.current) || !Array.isArray(envelope.assets) || envelope.assets.some(a=>
       !a || typeof a.id!=='string' || !Number.isInteger(a.speciesIndex) || a.speciesIndex<0 || !Number.isInteger(a.index) || a.index<0 ||
@@ -20,7 +23,7 @@ export function createDraftRepository(storage) {
     save(envelope, { checkpoint = false } = {}) {
       if (!storage) throw new Error('admin.error.storage')
       const value = JSON.stringify({ ...clone(envelope), version: 1 })
-      if (new TextEncoder().encode(value).length > MAX_JSON_BYTES) throw new Error('admin.error.jsonSize')
+      if (new TextEncoder().encode(value).length > MAX_DRAFT_BYTES) throw new Error('admin.error.jsonSize')
       let previous, backup
       try { previous = storage.getItem(DRAFT_KEY); backup = storage.getItem(PREVIOUS_KEY) }
       catch(error) { throw new Error('admin.error.storage', { cause:error }) }
