@@ -3104,7 +3104,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -3149,7 +3149,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -3174,9 +3185,30 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz",
+            "names.en"
           ],
           "taxonId": "gbif:5610043"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Гербарный образец: Scutellaria andrachnoides",
+          "publisher": "Moscow State University",
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0870557",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "ru",
+          "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
         }
       ],
       "contradictions": [],
@@ -3189,6 +3221,18 @@
         {
           "path": "docs/evidence/catalog-125-taxonomy.json",
           "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        },
+        {
+          "path": "data/research/catalog-125-content/block-4-facts.json",
+          "sha256": "2225668d05790edbb57de3c5acef6100b2a69a51fdf4c713a80639179a815c4d"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-4-accounts.json",
+          "sha256": "3670ee35ea006176e0e236a7570f16ec884f4612deea09719f9000901176056e"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-4-images.json",
+          "sha256": "f10509ec7d9e0885226bdec8c74dc79addd796f6bbc5fc6b9a005a1f1b81273c"
         }
       ],
       "draft": null,
@@ -3214,48 +3258,52 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "scutellaria-andrachnoides",
         "batchNumber": 4,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "5cbc478f7cee290b43daaca2837ea44e9f3ef66dbca5bde7e552920020edbf5a",
+        "fingerprint": "d0c972e4801b0efc7ff31fdaa5e960878f8d2bda3044f3e5f2ea0780de2f7cef",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "5cbc478f7cee290b43daaca2837ea44e9f3ef66dbca5bde7e552920020edbf5a"
+      "checkedFingerprint": "d0c972e4801b0efc7ff31fdaa5e960878f8d2bda3044f3e5f2ea0780de2f7cef",
+      "draftFile": "data/research/catalog-125-content/drafts/scutellaria-andrachnoides.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; импорт не разрешён.",
+        "KY/UZ/EN: научное имя вместо неподтверждённых народных названий; переводы краткого описания требуют редакторской проверки."
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Современная численность и актуальное состояние местообитаний неизвестны."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "scutellaria-andrachnoides",
+        "factsFingerprint": "ed54c04647971a6746efad11c5f19fdcbb53fae3f949db148bc230e0a7264290",
+        "draftSha256": "e0e5cf1635956252f93f66d98fe9024646adf7a79fc43cf16b97c2d44ebf76b8"
+      }
     },
     {
       "originalScientificName": "Scutellaria nepetoides",
@@ -3264,7 +3312,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -3309,7 +3357,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -3334,7 +3393,16 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz",
+            "names.en"
           ],
           "taxonId": "gbif:5608807"
         }
@@ -3349,6 +3417,18 @@
         {
           "path": "docs/evidence/catalog-125-taxonomy.json",
           "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        },
+        {
+          "path": "data/research/catalog-125-content/block-4-facts.json",
+          "sha256": "2225668d05790edbb57de3c5acef6100b2a69a51fdf4c713a80639179a815c4d"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-4-accounts.json",
+          "sha256": "3670ee35ea006176e0e236a7570f16ec884f4612deea09719f9000901176056e"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-4-images.json",
+          "sha256": "f10509ec7d9e0885226bdec8c74dc79addd796f6bbc5fc6b9a005a1f1b81273c"
         }
       ],
       "draft": null,
@@ -3374,48 +3454,57 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "scutellaria-nepetoides",
         "batchNumber": 4,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "de395bde3c3dab669cd8f9cbcc8eed7decc50515bdb42000cf58e90b89daff13",
+        "fingerprint": "eb13efec0e02ddb7a21838a6e576870e547f91f0bd96414e3d5a50aa70d93534",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "de395bde3c3dab669cd8f9cbcc8eed7decc50515bdb42000cf58e90b89daff13"
+      "checkedFingerprint": "eb13efec0e02ddb7a21838a6e576870e547f91f0bd96414e3d5a50aa70d93534",
+      "draftFile": "data/research/catalog-125-content/drafts/scutellaria-nepetoides.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; импорт не разрешён.",
+        "KY/UZ/EN: научное имя вместо неподтверждённых народных названий; переводы краткого описания требуют редакторской проверки.",
+        "Фото: placeholder"
+      ],
+      "editorialNotes": [
+        "Разночтение фенологии русской и английской сводок сохранено явно."
+      ],
+      "missingFacts": [
+        "Современная численность и точные сроки сезонного развития не проверены."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "scutellaria-nepetoides",
+        "factsFingerprint": "14fd392f043dafa78d06e9b44e339ec374f42a79710ffe64f69ce633474efa2c",
+        "draftSha256": "cc14c4ea5ef4d058de92aaacad3859b19c961b5250289e0610398d749c23611e"
+      }
     },
     {
       "originalScientificName": "Salvia korolkowii",
@@ -3424,7 +3513,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -3469,7 +3558,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -3494,9 +3594,30 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz",
+            "names.en"
           ],
           "taxonId": "gbif:3898694"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Гербарный образец: Salvia korolkowii",
+          "publisher": "Moscow State University",
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0873538",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "ru",
+          "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
         }
       ],
       "contradictions": [],
@@ -3509,6 +3630,18 @@
         {
           "path": "docs/evidence/catalog-125-taxonomy.json",
           "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        },
+        {
+          "path": "data/research/catalog-125-content/block-4-facts.json",
+          "sha256": "2225668d05790edbb57de3c5acef6100b2a69a51fdf4c713a80639179a815c4d"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-4-accounts.json",
+          "sha256": "3670ee35ea006176e0e236a7570f16ec884f4612deea09719f9000901176056e"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-4-images.json",
+          "sha256": "f10509ec7d9e0885226bdec8c74dc79addd796f6bbc5fc6b9a005a1f1b81273c"
         }
       ],
       "draft": null,
@@ -3534,48 +3667,52 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "salvia-korolkowii",
         "batchNumber": 4,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "8e84f990678fbecde7c4baf5162715dab4d3d08280d5d6e1b8e5969485cba8be",
+        "fingerprint": "b72782d3b0de09482b6249b9e7e1a5cfc1df69771bd6125710b9f760e908188c",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "8e84f990678fbecde7c4baf5162715dab4d3d08280d5d6e1b8e5969485cba8be"
+      "checkedFingerprint": "b72782d3b0de09482b6249b9e7e1a5cfc1df69771bd6125710b9f760e908188c",
+      "draftFile": "data/research/catalog-125-content/drafts/salvia-korolkowii.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; импорт не разрешён.",
+        "KY/UZ/EN: научное имя вместо неподтверждённых народных названий; переводы краткого описания требуют редакторской проверки."
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Современная численность и масштаб утраты местообитаний не установлены."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "salvia-korolkowii",
+        "factsFingerprint": "5e3dc58d53913b6a2ef19a883a3d1671bbd9f2c20d3daf4347da3fe09ee87bc2",
+        "draftSha256": "9dd8bd93e048fd071542bb20bfc750aa3d9198fe6badbf0f89d05cf389251485"
+      }
     },
     {
       "originalScientificName": "Nathaliella alaica",
@@ -3584,7 +3721,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "CR B2ab(iii)",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -3629,7 +3766,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -3654,9 +3802,30 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz",
+            "names.en"
           ],
           "taxonId": "gbif:3737145"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Гербарный образец: Nathaliella alaica",
+          "publisher": "Moscow State University",
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0876914",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "ru",
+          "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
         }
       ],
       "contradictions": [],
@@ -3669,6 +3838,18 @@
         {
           "path": "docs/evidence/catalog-125-taxonomy.json",
           "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        },
+        {
+          "path": "data/research/catalog-125-content/block-4-facts.json",
+          "sha256": "2225668d05790edbb57de3c5acef6100b2a69a51fdf4c713a80639179a815c4d"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-4-accounts.json",
+          "sha256": "3670ee35ea006176e0e236a7570f16ec884f4612deea09719f9000901176056e"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-4-images.json",
+          "sha256": "f10509ec7d9e0885226bdec8c74dc79addd796f6bbc5fc6b9a005a1f1b81273c"
         }
       ],
       "draft": null,
@@ -3694,48 +3875,52 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "nathaliella-alaica",
         "batchNumber": 4,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "a4eb72b5e3d6b06654569ea3d84910049034b07b3808ff844bb02dbaeb33097c",
+        "fingerprint": "628751074ac49b6ee397d3487695ffad0863b4d4c5ee08ecdab06623041657d7",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "a4eb72b5e3d6b06654569ea3d84910049034b07b3808ff844bb02dbaeb33097c"
+      "checkedFingerprint": "628751074ac49b6ee397d3487695ffad0863b4d4c5ee08ecdab06623041657d7",
+      "draftFile": "data/research/catalog-125-content/drafts/nathaliella-alaica.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; импорт не разрешён.",
+        "KY/UZ/EN: научное имя вместо неподтверждённых народных названий; переводы краткого описания требуют редакторской проверки."
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Современная численность и результаты рекомендуемых мер неизвестны."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "nathaliella-alaica",
+        "factsFingerprint": "41c06520055a3e16935804e549ec08a334541c310be013c3509ee3c4ecc748c1",
+        "draftSha256": "49d945db29e5f8e316d86aa6446f82c8b2d1457415ed5e0b8831b3554d7bb0f9"
+      }
     },
     {
       "originalScientificName": "Lonicera paradoxa",
@@ -3744,7 +3929,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "CR B2ab(iii)",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -3789,7 +3974,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -3814,7 +4010,16 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz",
+            "names.en"
           ],
           "taxonId": "gbif:5599068"
         }
@@ -3829,6 +4034,18 @@
         {
           "path": "docs/evidence/catalog-125-taxonomy.json",
           "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        },
+        {
+          "path": "data/research/catalog-125-content/block-4-facts.json",
+          "sha256": "2225668d05790edbb57de3c5acef6100b2a69a51fdf4c713a80639179a815c4d"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-4-accounts.json",
+          "sha256": "3670ee35ea006176e0e236a7570f16ec884f4612deea09719f9000901176056e"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-4-images.json",
+          "sha256": "f10509ec7d9e0885226bdec8c74dc79addd796f6bbc5fc6b9a005a1f1b81273c"
         }
       ],
       "draft": null,
@@ -3854,48 +4071,56 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "lonicera-paradoxa",
         "batchNumber": 4,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "d4123fe0ca3103442138d76b6b96a3dca35cd33ba2b68e663e1651a2c13b063a",
+        "fingerprint": "a132880e369a191fd62733eb3804a4becf9ea0b4d0ad39d3b770153e8fbe9a90",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "d4123fe0ca3103442138d76b6b96a3dca35cd33ba2b68e663e1651a2c13b063a"
+      "checkedFingerprint": "a132880e369a191fd62733eb3804a4becf9ea0b4d0ad39d3b770153e8fbe9a90",
+      "draftFile": "data/research/catalog-125-content/drafts/lonicera-paradoxa.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; импорт не разрешён.",
+        "KY/UZ/EN: научное имя вместо неподтверждённых народных названий; переводы краткого описания требуют редакторской проверки.",
+        "Фото: placeholder"
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Современная численность неизвестна; исторические подсчёты не считаются текущей оценкой.",
+        "Противоречие сроков цветения двух языковых сводок требует отдельной фенологической сверки."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "lonicera-paradoxa",
+        "factsFingerprint": "d2b4882c334adaf2eee9f09cc209637edda6aada3719254c7ba803dafab922ce",
+        "draftSha256": "612c87df0eee33f9f8e7386e315fac61c932c112a228d07796fd5f57f3c5f172"
+      }
     },
     {
       "originalScientificName": "Campanula eugeniae",
