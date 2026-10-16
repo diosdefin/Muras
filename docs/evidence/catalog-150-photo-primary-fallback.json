@@ -1,0 +1,705 @@
+{
+  "schemaVersion": 1,
+  "documentType": "primary-alternative-photo-research",
+  "accessedAt": "2026-10-16",
+  "reason": "Commons original downloads HTTP 429; independently inspect alternative primary iNaturalist images, never transfer record-level licenses.",
+  "rawResponseCache": {
+    "path": ".generated/catalog-150-photo-primary-fallback-raw.json",
+    "sha256": "4ece4254a73bf1fa0345dbbce8b9b153cb1ed580661aa378876823c762b54a2c"
+  },
+  "licenseMappingEvidence": "docs/evidence/catalog-150-inaturalist-license-map.json",
+  "records": [
+    {
+      "candidateId": "vanellus-gregarius",
+      "acceptedScientificName": "Vanellus gregarius",
+      "searches": [
+        {
+          "provider": "GBIF",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=5229138&mediaType=StillImage&limit=10",
+          "status": 200,
+          "count": 943,
+          "responseSha256": "c20300124c586564c99f603574c649df06fcc5de920ff3c4d61f19b3c32e4959"
+        }
+      ],
+      "selected": {
+        "gbifOccurrenceKey": 6133386715,
+        "acceptedTaxonKey": 5229138,
+        "primaryUrl": "https://api.inaturalist.org/v1/observations/336497007",
+        "observationPage": "https://www.inaturalist.org/observations/336497007",
+        "photoId": 611496248,
+        "photo": {
+          "id": 611496248,
+          "license_code": "cc-by",
+          "original_dimensions": {
+            "width": 1487,
+            "height": 1487
+          },
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/611496248/square.jpg",
+          "attribution": "(c) Sameer Shaik, some rights reserved (CC BY)",
+          "flags": [],
+          "moderator_actions": [],
+          "hidden": false
+        },
+        "media": {
+          "type": "StillImage",
+          "format": "image/jpeg",
+          "references": "https://www.inaturalist.org/photos/611496248",
+          "created": "2026-01-24T07:16:36.000+00:00",
+          "creator": "Sameer Shaik",
+          "publisher": "iNaturalist",
+          "license": "http://creativecommons.org/licenses/by/4.0/",
+          "rightsHolder": "Sameer Shaik",
+          "identifier": "https://inaturalist-open-data.s3.amazonaws.com/photos/611496248/original.jpg"
+        },
+        "subject": "Vanellus gregarius",
+        "observationMetadata": {
+          "id": 336497007,
+          "uuid": "4c727738-c7be-4433-89aa-644eb2a09b4d",
+          "observed_on": "2026-01-24",
+          "created_at": "2026-01-28T23:41:09+04:00",
+          "quality_grade": "research",
+          "taxon": {
+            "id": 4858,
+            "name": "Vanellus gregarius",
+            "rank": "species",
+            "ancestor_ids": [
+              48460,
+              1,
+              2,
+              355675,
+              3,
+              67561,
+              4783,
+              4853,
+              4858
+            ]
+          },
+          "photo": {
+            "id": 611496248,
+            "license_code": "cc-by",
+            "original_dimensions": {
+              "width": 1487,
+              "height": 1487
+            },
+            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/611496248/square.jpg",
+            "attribution": "(c) Sameer Shaik, some rights reserved (CC BY)",
+            "flags": [],
+            "moderator_actions": [],
+            "hidden": false
+          }
+        }
+      },
+      "htmlPhotoPage": {
+        "url": "https://www.inaturalist.org/photos/611496248",
+        "status": 403,
+        "note": "Primary API per-photo license and attribution verified; official LicenseModule resolves version/URL."
+      }
+    },
+    {
+      "candidateId": "glareola-nordmanni",
+      "acceptedScientificName": "Glareola nordmanni",
+      "searches": [
+        {
+          "provider": "GBIF",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=2480758&mediaType=StillImage&limit=10",
+          "status": 200,
+          "count": 1490,
+          "responseSha256": "863308443d8dbdb1f3d39b5bc89a518281712e5ba7764b4c4884f41c4fe67b4a"
+        },
+        {
+          "provider": "iNaturalist",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_name=Glareola+nordmanni&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=3",
+          "status": 200,
+          "count": 74,
+          "responseSha256": "cc97a199e2fe7c996e318ac38779297a63ea4f2c77d6b0c596ae30a16a2de738",
+          "ignoredNonmatchingTaxa": []
+        }
+      ],
+      "selected": {
+        "primaryUrl": "https://api.inaturalist.org/v1/observations?taxon_name=Glareola+nordmanni&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=3",
+        "observationPage": "https://www.inaturalist.org/observations/398917205",
+        "photoId": 731845339,
+        "photo": {
+          "id": 731845339,
+          "license_code": "cc-by",
+          "original_dimensions": {
+            "width": 1675,
+            "height": 1117
+          },
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/731845339/square.jpg",
+          "attribution": "(c) Oscar Hazell, some rights reserved (CC BY)",
+          "flags": [],
+          "moderator_actions": [],
+          "hidden": false
+        },
+        "subject": "Glareola nordmanni",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "originalFileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/731845339/original.jpg",
+        "observationMetadata": {
+          "id": 398917205,
+          "uuid": "af5583f5-5b75-44c1-b628-11dfa445f484",
+          "observed_on": "2026-09-08",
+          "created_at": "2026-09-10T10:37:43+04:00",
+          "quality_grade": "research",
+          "taxon": {
+            "id": 4605,
+            "name": "Glareola nordmanni",
+            "rank": "species",
+            "ancestor_ids": [
+              48460,
+              1,
+              2,
+              355675,
+              3,
+              67561,
+              4590,
+              4600,
+              4605
+            ]
+          },
+          "photo": {
+            "id": 731845339,
+            "license_code": "cc-by",
+            "original_dimensions": {
+              "width": 1675,
+              "height": 1117
+            },
+            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/731845339/square.jpg",
+            "attribution": "(c) Oscar Hazell, some rights reserved (CC BY)",
+            "flags": [],
+            "moderator_actions": [],
+            "hidden": false
+          }
+        }
+      },
+      "htmlPhotoPage": {
+        "url": "https://www.inaturalist.org/photos/731845339",
+        "status": 403,
+        "note": "Primary API per-photo license and attribution verified; official LicenseModule resolves version/URL."
+      }
+    },
+    {
+      "candidateId": "strix-aluco",
+      "acceptedScientificName": "Strix aluco",
+      "searches": [
+        {
+          "provider": "GBIF",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=9282206&mediaType=StillImage&limit=10",
+          "status": 200,
+          "count": 27830,
+          "responseSha256": "10deb6f91687f66e66fc8d5cfc8c7ea9cf4645c31bfe9fb4829409dff52f264a"
+        },
+        {
+          "provider": "iNaturalist",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_name=Strix+aluco&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=3",
+          "status": 200,
+          "count": 1404,
+          "responseSha256": "fa972b9cbf6770e240c677788ca68adf2cccedf63e0dafb29771b7c0f400976e",
+          "ignoredNonmatchingTaxa": []
+        }
+      ],
+      "selected": {
+        "primaryUrl": "https://api.inaturalist.org/v1/observations?taxon_name=Strix+aluco&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=3",
+        "observationPage": "https://www.inaturalist.org/observations/408144919",
+        "photoId": 750184013,
+        "photo": {
+          "id": 750184013,
+          "license_code": "cc-by",
+          "original_dimensions": {
+            "width": 1816,
+            "height": 1020
+          },
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/750184013/square.jpg",
+          "attribution": "(c) hanami_yama, some rights reserved (CC BY)",
+          "flags": [],
+          "moderator_actions": [],
+          "hidden": false
+        },
+        "subject": "Strix aluco",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "originalFileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/750184013/original.jpg",
+        "observationMetadata": {
+          "id": 408144919,
+          "uuid": "2ac7a96a-ed96-4d06-acb3-feebe2dbcb8d",
+          "observed_on": "2026-10-13",
+          "created_at": "2026-10-13T22:25:54+01:00",
+          "quality_grade": "research",
+          "taxon": {
+            "id": 19898,
+            "name": "Strix aluco",
+            "rank": "species",
+            "ancestor_ids": [
+              48460,
+              1,
+              2,
+              355675,
+              3,
+              19350,
+              19728,
+              19885,
+              19898
+            ]
+          },
+          "photo": {
+            "id": 750184013,
+            "license_code": "cc-by",
+            "original_dimensions": {
+              "width": 1816,
+              "height": 1020
+            },
+            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/750184013/square.jpg",
+            "attribution": "(c) hanami_yama, some rights reserved (CC BY)",
+            "flags": [],
+            "moderator_actions": [],
+            "hidden": false
+          }
+        }
+      },
+      "htmlPhotoPage": {
+        "url": "https://www.inaturalist.org/photos/750184013",
+        "status": 403,
+        "note": "Primary API per-photo license and attribution verified; official LicenseModule resolves version/URL."
+      }
+    },
+    {
+      "candidateId": "syrrhaptes-paradoxus",
+      "acceptedScientificName": "Syrrhaptes paradoxus",
+      "searches": [
+        {
+          "provider": "GBIF",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=2480208&mediaType=StillImage&limit=10",
+          "status": 200,
+          "count": 451,
+          "responseSha256": "6bedacc80beb404ec4f54c445c1300eb20bcbfcd0a81ce295adf6c635f2fe6af"
+        },
+        {
+          "provider": "iNaturalist",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_name=Syrrhaptes+paradoxus&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=3",
+          "status": 200,
+          "count": 47,
+          "responseSha256": "8e9a80d0653378548954762148c3bdfb10ba241d69df554ca6dbe730766e7b03",
+          "ignoredNonmatchingTaxa": []
+        }
+      ],
+      "selected": {
+        "primaryUrl": "https://api.inaturalist.org/v1/observations?taxon_name=Syrrhaptes+paradoxus&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=3",
+        "observationPage": "https://www.inaturalist.org/observations/386557960",
+        "photoId": 707778366,
+        "photo": {
+          "id": 707778366,
+          "license_code": "cc-by",
+          "original_dimensions": {
+            "width": 2048,
+            "height": 1536
+          },
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/707778366/square.jpg",
+          "attribution": "(c) Tom Field, some rights reserved (CC BY)",
+          "flags": [],
+          "moderator_actions": [],
+          "hidden": false
+        },
+        "subject": "Syrrhaptes paradoxus",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "originalFileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/707778366/original.jpg",
+        "observationMetadata": {
+          "id": 386557960,
+          "uuid": "ebcb808e-000c-41fb-ab80-5b7d8785bf56",
+          "observed_on": "2026-06-15",
+          "created_at": "2026-07-30T21:37:46+08:00",
+          "quality_grade": "research",
+          "taxon": {
+            "id": 117119,
+            "name": "Syrrhaptes paradoxus",
+            "rank": "species",
+            "ancestor_ids": [
+              48460,
+              1,
+              2,
+              355675,
+              3,
+              470156,
+              200960,
+              71761,
+              117119
+            ]
+          },
+          "photo": {
+            "id": 707778366,
+            "license_code": "cc-by",
+            "original_dimensions": {
+              "width": 2048,
+              "height": 1536
+            },
+            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/707778366/square.jpg",
+            "attribution": "(c) Tom Field, some rights reserved (CC BY)",
+            "flags": [],
+            "moderator_actions": [],
+            "hidden": false
+          }
+        }
+      },
+      "htmlPhotoPage": {
+        "url": "https://www.inaturalist.org/photos/707778366",
+        "status": 403,
+        "note": "Primary API per-photo license and attribution verified; official LicenseModule resolves version/URL."
+      }
+    },
+    {
+      "candidateId": "pterocles-orientalis",
+      "acceptedScientificName": "Pterocles orientalis",
+      "searches": [
+        {
+          "provider": "GBIF",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=2480193&mediaType=StillImage&limit=10",
+          "status": 200,
+          "count": 1513,
+          "responseSha256": "35815bf04f52193593459e399c9e0caac552d02becbba074b5bc3bb7de04814a"
+        },
+        {
+          "provider": "iNaturalist",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_name=Pterocles+orientalis&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=3",
+          "status": 200,
+          "count": 194,
+          "responseSha256": "9a4d7db0808e26ef98513b8019b69a37525d738e75bde80aa7e07a1f7c0c39ad",
+          "ignoredNonmatchingTaxa": [
+            "Pterocles orientalis arenarius"
+          ]
+        },
+        {
+          "provider": "iNaturalist",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_id=117088&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=20",
+          "status": 200,
+          "count": 194,
+          "responseSha256": "f72131595a8590c2b64fde6618d58fca2eb0797d5b10f402aaa32b3285ac035f",
+          "ignoredNonmatchingTaxa": [
+            "Pterocles orientalis arenarius"
+          ]
+        }
+      ],
+      "selected": {
+        "primaryUrl": "https://api.inaturalist.org/v1/observations?taxon_id=117088&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=20",
+        "observationPage": "https://www.inaturalist.org/observations/398773181",
+        "photoId": 731522111,
+        "photo": {
+          "id": 731522111,
+          "license_code": "cc-by",
+          "original_dimensions": {
+            "width": 2048,
+            "height": 1365
+          },
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/731522111/square.jpg",
+          "attribution": "(c) Антон Лабачоў, some rights reserved (CC BY)",
+          "flags": [],
+          "moderator_actions": [],
+          "hidden": false
+        },
+        "subject": "Pterocles orientalis",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "originalFileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/731522111/original.jpg",
+        "observationMetadata": {
+          "id": 398773181,
+          "uuid": "61d9b602-8240-42ae-9d92-eac06d1cbea8",
+          "observed_on": "2026-05-12",
+          "created_at": "2026-09-09T21:57:02+04:00",
+          "quality_grade": "research",
+          "taxon": {
+            "id": 117088,
+            "name": "Pterocles orientalis",
+            "rank": "species",
+            "ancestor_ids": [
+              48460,
+              1,
+              2,
+              355675,
+              3,
+              470156,
+              200960,
+              71746,
+              117088
+            ]
+          },
+          "photo": {
+            "id": 731522111,
+            "license_code": "cc-by",
+            "original_dimensions": {
+              "width": 2048,
+              "height": 1365
+            },
+            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/731522111/square.jpg",
+            "attribution": "(c) Антон Лабачоў, some rights reserved (CC BY)",
+            "flags": [],
+            "moderator_actions": [],
+            "hidden": false
+          }
+        }
+      },
+      "htmlPhotoPage": {
+        "url": "https://www.inaturalist.org/photos/731522111",
+        "status": 403,
+        "note": "Primary API per-photo license and attribution verified; official LicenseModule resolves version/URL."
+      }
+    },
+    {
+      "candidateId": "columba-leuconota",
+      "acceptedScientificName": "Columba leuconota",
+      "searches": [
+        {
+          "provider": "GBIF",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=5231842&mediaType=StillImage&limit=10",
+          "status": 200,
+          "count": 315,
+          "responseSha256": "de866edebef4b79a0c37c6c9ac0d40f240d36e1ad86f24d0b77172a3bed1df98"
+        },
+        {
+          "provider": "iNaturalist",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_name=Columba+leuconota&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=3",
+          "status": 200,
+          "count": 33,
+          "responseSha256": "01bdd493a2b7cd04177a28cbc2c81ee4002025b2b395f37564d804e0d69eb4ae",
+          "ignoredNonmatchingTaxa": []
+        }
+      ],
+      "selected": {
+        "primaryUrl": "https://api.inaturalist.org/v1/observations?taxon_name=Columba+leuconota&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=3",
+        "observationPage": "https://www.inaturalist.org/observations/403005564",
+        "photoId": 739807432,
+        "photo": {
+          "id": 739807432,
+          "license_code": "cc-by",
+          "original_dimensions": {
+            "width": 2048,
+            "height": 1384
+          },
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/739807432/square.jpg",
+          "attribution": "(c) Tandin Wangdi, some rights reserved (CC BY)",
+          "flags": [],
+          "moderator_actions": [],
+          "hidden": false
+        },
+        "subject": "Columba leuconota",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "originalFileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/739807432/original.jpg",
+        "observationMetadata": {
+          "id": 403005564,
+          "uuid": "118379c6-8774-4aca-9db9-435c5de7e2c7",
+          "observed_on": "2022-02-20",
+          "created_at": "2026-09-24T20:36:20+06:00",
+          "quality_grade": "research",
+          "taxon": {
+            "id": 3045,
+            "name": "Columba leuconota",
+            "rank": "species",
+            "ancestor_ids": [
+              48460,
+              1,
+              2,
+              355675,
+              3,
+              2708,
+              2715,
+              3000,
+              3045
+            ]
+          },
+          "photo": {
+            "id": 739807432,
+            "license_code": "cc-by",
+            "original_dimensions": {
+              "width": 2048,
+              "height": 1384
+            },
+            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/739807432/square.jpg",
+            "attribution": "(c) Tandin Wangdi, some rights reserved (CC BY)",
+            "flags": [],
+            "moderator_actions": [],
+            "hidden": false
+          }
+        }
+      },
+      "htmlPhotoPage": {
+        "url": "https://www.inaturalist.org/photos/739807432",
+        "status": 403,
+        "note": "Primary API per-photo license and attribution verified; official LicenseModule resolves version/URL."
+      }
+    },
+    {
+      "candidateId": "columba-eversmanni",
+      "acceptedScientificName": "Columba eversmanni",
+      "searches": [
+        {
+          "provider": "GBIF",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=2495464&mediaType=StillImage&limit=10",
+          "status": 200,
+          "count": 122,
+          "responseSha256": "03462e8e4625ae0fc200621406165125709a55c78c3b9648602f82d0e0d3115e"
+        },
+        {
+          "provider": "iNaturalist",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_name=Columba+eversmanni&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=3",
+          "status": 200,
+          "count": 14,
+          "responseSha256": "cd0b9f2df532778222e2f3f61909214964940afd0b41db1473d34776926b9ae8",
+          "ignoredNonmatchingTaxa": []
+        }
+      ],
+      "selected": {
+        "primaryUrl": "https://api.inaturalist.org/v1/observations?taxon_name=Columba+eversmanni&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=3",
+        "observationPage": "https://www.inaturalist.org/observations/278927270",
+        "photoId": 500856871,
+        "photo": {
+          "id": 500856871,
+          "license_code": "cc-by",
+          "original_dimensions": {
+            "width": 1920,
+            "height": 1280
+          },
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/500856871/square.jpg",
+          "attribution": "(c) egorbirder, some rights reserved (CC BY)",
+          "flags": [],
+          "moderator_actions": [],
+          "hidden": false
+        },
+        "subject": "Columba eversmanni",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "originalFileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/500856871/original.jpg",
+        "observationMetadata": {
+          "id": 278927270,
+          "uuid": "6667d66a-ad27-47bf-969b-0fd66a9fa32e",
+          "observed_on": "2025-05-02",
+          "created_at": "2025-05-06T13:23:55+05:00",
+          "quality_grade": "research",
+          "taxon": {
+            "id": 3015,
+            "name": "Columba eversmanni",
+            "rank": "species",
+            "ancestor_ids": [
+              48460,
+              1,
+              2,
+              355675,
+              3,
+              2708,
+              2715,
+              3000,
+              3015
+            ]
+          },
+          "photo": {
+            "id": 500856871,
+            "license_code": "cc-by",
+            "original_dimensions": {
+              "width": 1920,
+              "height": 1280
+            },
+            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/500856871/square.jpg",
+            "attribution": "(c) egorbirder, some rights reserved (CC BY)",
+            "flags": [],
+            "moderator_actions": [],
+            "hidden": false
+          }
+        }
+      },
+      "htmlPhotoPage": {
+        "url": "https://www.inaturalist.org/photos/500856871",
+        "status": 403,
+        "note": "Primary API per-photo license and attribution verified; official LicenseModule resolves version/URL."
+      }
+    },
+    {
+      "candidateId": "bubo-bubo",
+      "acceptedScientificName": "Bubo bubo",
+      "searches": [
+        {
+          "provider": "GBIF",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=5959092&mediaType=StillImage&limit=10",
+          "status": 200,
+          "count": 11047,
+          "responseSha256": "eb85f243eda6182806cda2cf3431a8048eaba5e15672fcdc536be4a87e9405c0"
+        },
+        {
+          "provider": "iNaturalist",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_name=Bubo+bubo&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=3",
+          "status": 200,
+          "count": 35282,
+          "responseSha256": "4f309b8b957a1b4891982322bbbe9f5f00a04f1dad2dfdcdbf34308c5e18b5e7",
+          "ignoredNonmatchingTaxa": [
+            "Podiceps cristatus",
+            "Lophophanes cristatus"
+          ]
+        },
+        {
+          "provider": "iNaturalist",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_id=20059&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=20",
+          "status": 200,
+          "count": 353,
+          "responseSha256": "35ab2dfecb7ff6610ec5b60b216d9e5173d3de727e334d2706038b1bc92fa008",
+          "ignoredNonmatchingTaxa": [
+            "Bubo bubo hispanus"
+          ]
+        }
+      ],
+      "selected": {
+        "primaryUrl": "https://api.inaturalist.org/v1/observations?taxon_id=20059&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=20",
+        "observationPage": "https://www.inaturalist.org/observations/406075894",
+        "photoId": 746000832,
+        "photo": {
+          "id": 746000832,
+          "license_code": "cc-by",
+          "original_dimensions": {
+            "width": 911,
+            "height": 931
+          },
+          "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/746000832/square.jpg",
+          "attribution": "(c) Tim Parker, some rights reserved (CC BY)",
+          "flags": [],
+          "moderator_actions": [],
+          "hidden": false
+        },
+        "subject": "Bubo bubo",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "originalFileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/746000832/original.jpg",
+        "observationMetadata": {
+          "id": 406075894,
+          "uuid": "a5aeecac-ac6e-41de-9cad-d77e852258ff",
+          "observed_on": "2026-10-04",
+          "created_at": "2026-10-05T16:15:07+02:00",
+          "quality_grade": "research",
+          "taxon": {
+            "id": 20059,
+            "name": "Bubo bubo",
+            "rank": "species",
+            "ancestor_ids": [
+              48460,
+              1,
+              2,
+              355675,
+              3,
+              19350,
+              19728,
+              20034,
+              20059
+            ]
+          },
+          "photo": {
+            "id": 746000832,
+            "license_code": "cc-by",
+            "original_dimensions": {
+              "width": 911,
+              "height": 931
+            },
+            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/746000832/square.jpg",
+            "attribution": "(c) Tim Parker, some rights reserved (CC BY)",
+            "flags": [],
+            "moderator_actions": [],
+            "hidden": false
+          }
+        }
+      },
+      "htmlPhotoPage": {
+        "url": "https://www.inaturalist.org/photos/747472562",
+        "status": 403,
+        "note": "Primary API per-photo license and attribution verified; official LicenseModule resolves version/URL."
+      }
+    }
+  ]
+}

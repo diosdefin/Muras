@@ -1,0 +1,266 @@
+{
+  "id": "burhinus-oedicnemus",
+  "scientificName": "Burhinus oedicnemus",
+  "names": {
+    "ru": "Авдотка",
+    "ky": "Burhinus oedicnemus",
+    "uz": "Burhinus oedicnemus",
+    "en": "Eurasian Stone Curlew"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Charadriiformes",
+    "family": "Burhinidae",
+    "genus": "Burhinus"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); очерк вида с упоминанием harterti; отдельная карточка подвида не создаётся",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Степные и полупустынные участки; использование полей обозначено в очерке как возможное.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Распашка степных и полупустынных местообитаний.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Предложены выяснение подходящих местообитаний и характера пребывания вида в стране.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/burhinus-oedicnemus.webp",
+      "width": 1080,
+      "height": 720,
+      "sha256": "d1336bdbbf7ec65ce753fc856c8f832ce0ad1fd93c30446c00238cae122b1724",
+      "author": "Francesco Veronesi from Italy",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Eurasian_Thicknee_-_Along_Po_river_-_Italy_FJ0A1202_(28252446508).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Eurasian Thicknee - Along Po river - Italy FJ0A1202 (28252446508).jpg — Francesco Veronesi from Italy, CC BY-SA 2.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+        "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Фотография Burhinus oedicnemus; иллюстрация вида, не подтверждение современного присутствия в Кыргызстане или местного подвида.",
+        "ky": null,
+        "en": null,
+        "uz": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Burhinus oedicnemus, с. 441",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=441",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Burhinus oedicnemus (Linnaeus, 1758)",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Burhinus%20oedicnemus",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz"
+      ],
+      "taxonId": "gbif:2482100"
+    },
+    {
+      "id": "photo-commons",
+      "title": "Eurasian Thicknee - Along Po river - Italy_FJ0A1202",
+      "publisher": "Wikimedia Commons; Francesco Veronesi from Italy",
+      "url": "https://commons.wikimedia.org/wiki/File:Eurasian_Thicknee_-_Along_Po_river_-_Italy_FJ0A1202_(28252446508).jpg",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Авдотка — скрытная птица степей и полупустынь; национальные встречи в очерке 2006 года преимущественно связаны с осенним пролётом.",
+        "ky": "2006-жылкы улуттук очеркте талаалар жана жарым чөлдөр менен байланышкан жашыруун куш.",
+        "uz": "2006-yilgi milliy manbada dasht va chala cho‘llar bilan bog‘langan yashirin qush.",
+        "en": "A cryptic steppe and semi-desert bird documented in the 2006 national account."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Авдотка — скрытная птица степей и полупустынь; национальные встречи в очерке 2006 года преимущественно связаны с осенним пролётом.\n\nПоловой диморфизм в очерке не выражен; окраска помогает затаившейся птице сливаться с фоном.\n\nСтепные и полупустынные участки; использование полей обозначено в очерке как возможное.\n\nПри опасности затаивается. В очерке весеннее появление отнесено к апрелю, отлёт — к сентябрю.\n\nВ использованном очерке указаны беспозвоночные и семена растений.\n\nПотомство выращивают оба родителя. Встречи в гнездовое время на севере Чуйской долины не принимаются за доказательство современного гнездования.\n\nИсторические сведения охватывают Иссык-Кульскую котловину, Чуйскую и Таласскую долины и Приферганье. Систематических данных о численности нет.\n\nРаспашка степных и полупустынных местообитаний.\n\nПредложены выяснение подходящих местообитаний и характера пребывания вида в стране.\n\nНациональная категория и описанные встречи относятся к историческому изданию 2006 года. Современная численность не установлена; текущий юридический статус и современное присутствие требуют отдельного подтверждения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Половой диморфизм в очерке не выражен; окраска помогает затаившейся птице сливаться с фоном.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "При опасности затаивается. В очерке весеннее появление отнесено к апрелю, отлёт — к сентябрю.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В использованном очерке указаны беспозвоночные и семена растений.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Потомство выращивают оба родителя. Встречи в гнездовое время на севере Чуйской долины не принимаются за доказательство современного гнездования.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические сведения охватывают Иссык-Кульскую котловину, Чуйскую и Таласскую долины и Приферганье. Систематических данных о численности нет.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

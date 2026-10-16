@@ -2110,7 +2110,7 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "NT",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -2155,7 +2155,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -2167,9 +2179,28 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz"
           ],
           "taxonId": "gbif:5228228"
+        },
+        {
+          "id": "photo-commons",
+          "title": "Little Bustard Tetrax tetrax, Castuera, Estremadura, Spain",
+          "publisher": "Wikimedia Commons; Francesco Veronesi from Italy",
+          "url": "https://commons.wikimedia.org/wiki/File:Tetrax_tetrax,_Castuera,_Estremadura,_Spain_3.jpg",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en"
         }
       ],
       "contradictions": [],
@@ -2190,6 +2221,18 @@
         {
           "path": "docs/evidence/catalog-150-source-receipts.json",
           "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-3-facts.json",
+          "sha256": "7856a05fb62f0d0da498637f2dc791ceb619c94d93730c022f3d63796c1b4276"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-3-accounts.json",
+          "sha256": "4e5291886822ce61b977c9e2e08da06df7f3e0593da042a076a9c970ae83ba00"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-3-images.json",
+          "sha256": "5d136ddb847ee9ac1d7ab86ee13a811b62d906a7a4fcc8b4fe23392f98689fb5"
         }
       ],
       "draft": null,
@@ -2214,49 +2257,57 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
       "diagnostics": {
         "candidateId": "tetrax-tetrax",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "446b33145abe2c469ea4a04729add3e7c49a1b24b26f125b20be0279e64eb6f3",
+        "fingerprint": "56e4499e970edf8fcf4d9fc0a9568321f71c2e02d8192baa0d0ad4f7af06029d",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "446b33145abe2c469ea4a04729add3e7c49a1b24b26f125b20be0279e64eb6f3"
+      "checkedFingerprint": "56e4499e970edf8fcf4d9fc0a9568321f71c2e02d8192baa0d0ad4f7af06029d",
+      "draftFile": "data/research/catalog-150-content/drafts/tetrax-tetrax.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Диагностические признаки внешности в использованном очерке не описаны; appearance сохранено null.",
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "tetrax-tetrax",
+        "factsFingerprint": "3c848170ed3eabeda24ff855c8662f7f591d8cbc64251fdcc7b3034029ffcb16",
+        "draftSha256": "e2ada0543616ad52f52d3da1637d8348b1b8946b6ffb786e1198148993194fe7"
+      },
+      "scientificReviewStatus": "pending"
     },
     {
       "originalScientificName": "Crex crex",
@@ -2265,7 +2316,7 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "NT",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -2310,7 +2361,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -2322,9 +2385,28 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz"
           ],
           "taxonId": "gbif:4408498"
+        },
+        {
+          "id": "photo-commons",
+          "title": "Crex crex",
+          "publisher": "Wikimedia Commons; Ziegentom (www.fotocommunity.de)",
+          "url": "https://commons.wikimedia.org/wiki/File:CrexCrex.jpg",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en"
         }
       ],
       "contradictions": [],
@@ -2345,6 +2427,18 @@
         {
           "path": "docs/evidence/catalog-150-source-receipts.json",
           "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-3-facts.json",
+          "sha256": "7856a05fb62f0d0da498637f2dc791ceb619c94d93730c022f3d63796c1b4276"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-3-accounts.json",
+          "sha256": "4e5291886822ce61b977c9e2e08da06df7f3e0593da042a076a9c970ae83ba00"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-3-images.json",
+          "sha256": "5d136ddb847ee9ac1d7ab86ee13a811b62d906a7a4fcc8b4fe23392f98689fb5"
         }
       ],
       "draft": null,
@@ -2369,49 +2463,57 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
       "diagnostics": {
         "candidateId": "crex-crex",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "92d90508abc5173ac701376f8dcc05c73ea2ea3783e7c7e6a07551d6cb0657e7",
+        "fingerprint": "7936cb9e1c12dec666397d8fe87f6291e02730b3727f7d259bca0a1791b8422b",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "92d90508abc5173ac701376f8dcc05c73ea2ea3783e7c7e6a07551d6cb0657e7"
+      "checkedFingerprint": "7936cb9e1c12dec666397d8fe87f6291e02730b3727f7d259bca0a1791b8422b",
+      "draftFile": "data/research/catalog-150-content/drafts/crex-crex.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Диагностические признаки внешности в использованном очерке не описаны; appearance сохранено null.",
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "crex-crex",
+        "factsFingerprint": "5eedf4697eeba6ee796fa391449746e63fdc2c88ce3a1a82703db8c1c4852f3d",
+        "draftSha256": "4818020d3bc0fff031c049e59c8b0da2c56040354e150a6f9e973fc7dbb4e704"
+      },
+      "scientificReviewStatus": "pending"
     },
     {
       "originalScientificName": "Anthropoides virgo",
@@ -2420,7 +2522,7 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "NT",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -2465,7 +2567,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -2477,9 +2591,39 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz"
           ],
           "taxonId": "gbif:2474936"
+        },
+        {
+          "id": "photo-commons",
+          "title": "Flock from Tal Chappar, Churu, Rajasthan",
+          "publisher": "Wikimedia Commons; Sumeet Moghe",
+          "url": "https://commons.wikimedia.org/wiki/File:Demoiselle_Cranes_at_Tal_Chappar.jpg",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en"
+        },
+        {
+          "id": "photo-taxonomy",
+          "title": "GBIF: Grus virgo EXACT SYNONYM, accepted Anthropoides virgo 2474936",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Grus%20virgo",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "images.0.caption"
+          ]
         }
       ],
       "contradictions": [],
@@ -2500,6 +2644,18 @@
         {
           "path": "docs/evidence/catalog-150-source-receipts.json",
           "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-3-facts.json",
+          "sha256": "7856a05fb62f0d0da498637f2dc791ceb619c94d93730c022f3d63796c1b4276"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-3-accounts.json",
+          "sha256": "4e5291886822ce61b977c9e2e08da06df7f3e0593da042a076a9c970ae83ba00"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-3-images.json",
+          "sha256": "5d136ddb847ee9ac1d7ab86ee13a811b62d906a7a4fcc8b4fe23392f98689fb5"
         }
       ],
       "draft": null,
@@ -2524,49 +2680,57 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
       "diagnostics": {
         "candidateId": "anthropoides-virgo",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "ce59aa8b5c31f07c81a43d694aa154f0eec09646ef68c9a98e30270ae3f13b0a",
+        "fingerprint": "55b2428051a1b3737777fd06083331a3956340890a75af89daaa12e98c73e803",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "ce59aa8b5c31f07c81a43d694aa154f0eec09646ef68c9a98e30270ae3f13b0a"
+      "checkedFingerprint": "55b2428051a1b3737777fd06083331a3956340890a75af89daaa12e98c73e803",
+      "draftFile": "data/research/catalog-150-content/drafts/anthropoides-virgo.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Диагностические признаки внешности в использованном очерке не описаны; appearance сохранено null.",
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "anthropoides-virgo",
+        "factsFingerprint": "c9e665326292611326ca3105e1a5f4000a8d7122d00e3d1411c3e05c2d1d8951",
+        "draftSha256": "9180e81474e70966a3307062da08a64a8e4f9711bfb65c6c1aa4dd4d035e1ce0"
+      },
+      "scientificReviewStatus": "pending"
     },
     {
       "originalScientificName": "Burhinus oedicnemus",
@@ -2575,8 +2739,8 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); очерк вида с упоминанием harterti; отдельная карточка подвида не создаётся",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -2620,7 +2784,20 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -2632,9 +2809,28 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz"
           ],
           "taxonId": "gbif:2482100"
+        },
+        {
+          "id": "photo-commons",
+          "title": "Eurasian Thicknee - Along Po river - Italy_FJ0A1202",
+          "publisher": "Wikimedia Commons; Francesco Veronesi from Italy",
+          "url": "https://commons.wikimedia.org/wiki/File:Eurasian_Thicknee_-_Along_Po_river_-_Italy_FJ0A1202_(28252446508).jpg",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en"
         }
       ],
       "contradictions": [],
@@ -2655,6 +2851,18 @@
         {
           "path": "docs/evidence/catalog-150-source-receipts.json",
           "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-3-facts.json",
+          "sha256": "7856a05fb62f0d0da498637f2dc791ceb619c94d93730c022f3d63796c1b4276"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-3-accounts.json",
+          "sha256": "4e5291886822ce61b977c9e2e08da06df7f3e0593da042a076a9c970ae83ba00"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-3-images.json",
+          "sha256": "5d136ddb847ee9ac1d7ab86ee13a811b62d906a7a4fcc8b4fe23392f98689fb5"
         }
       ],
       "draft": null,
@@ -2679,49 +2887,56 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
       "diagnostics": {
         "candidateId": "burhinus-oedicnemus",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "7126954f456ff1d5598aa780610ec40464634c16445b5ce9806b49efa6ad7c55",
+        "fingerprint": "1714d18a2e47086ecfbb8fae59d1d6752d3e47495f2118bc9a7c2dfdc32c4556",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "7126954f456ff1d5598aa780610ec40464634c16445b5ce9806b49efa6ad7c55"
+      "checkedFingerprint": "1714d18a2e47086ecfbb8fae59d1d6752d3e47495f2118bc9a7c2dfdc32c4556",
+      "draftFile": "data/research/catalog-150-content/drafts/burhinus-oedicnemus.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "burhinus-oedicnemus",
+        "factsFingerprint": "721b80a8db288e1bc4a5aa9088a770fbd220db4adf5b8a3b8f8ef16c67660daa",
+        "draftSha256": "823b89a4eee9ed964c922334fc57b2999daad867aa9bc215be7e95a04f091cd8"
+      },
+      "scientificReviewStatus": "pending"
     },
     {
       "originalScientificName": "Vanellus gregarius",
@@ -2730,7 +2945,7 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "CR",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -2775,7 +2990,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -2787,9 +3014,29 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz"
           ],
           "taxonId": "gbif:5229138"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Фотография Vanellus gregarius",
+          "publisher": "iNaturalist; Sameer Shaik",
+          "url": "https://www.inaturalist.org/photos/611496248",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en",
+          "notes": "Per-photo license_code и авторская атрибуция проверены в первичном API; версия лицензии — официальный LicenseModule."
         }
       ],
       "contradictions": [],
@@ -2810,6 +3057,18 @@
         {
           "path": "docs/evidence/catalog-150-source-receipts.json",
           "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-3-facts.json",
+          "sha256": "7856a05fb62f0d0da498637f2dc791ceb619c94d93730c022f3d63796c1b4276"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-3-accounts.json",
+          "sha256": "4e5291886822ce61b977c9e2e08da06df7f3e0593da042a076a9c970ae83ba00"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-3-images.json",
+          "sha256": "5d136ddb847ee9ac1d7ab86ee13a811b62d906a7a4fcc8b4fe23392f98689fb5"
         }
       ],
       "draft": null,
@@ -2834,49 +3093,57 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
       "diagnostics": {
         "candidateId": "vanellus-gregarius",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "937944721b3ecfd38c1e874d5e9026f43f9171265247ee73fcefffcfdc811df0",
+        "fingerprint": "3e72645aa81b58da3bd34ab23b1e8aa9d9182ffd8af523e2dd2eed5cd3422753",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "937944721b3ecfd38c1e874d5e9026f43f9171265247ee73fcefffcfdc811df0"
+      "checkedFingerprint": "3e72645aa81b58da3bd34ab23b1e8aa9d9182ffd8af523e2dd2eed5cd3422753",
+      "draftFile": "data/research/catalog-150-content/drafts/vanellus-gregarius.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Диагностические признаки внешности в использованном очерке не описаны; appearance сохранено null.",
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "vanellus-gregarius",
+        "factsFingerprint": "3ae6a74aeaf140773216ade169bea2d00d70f4b98509e67b9b9c22e113896047",
+        "draftSha256": "263c707aeb9aa355cad6c48d7f55b8dd9499b170dbb6f09d775e32cee3d3cc3f"
+      },
+      "scientificReviewStatus": "pending"
     },
     {
       "originalScientificName": "Glareola nordmanni",

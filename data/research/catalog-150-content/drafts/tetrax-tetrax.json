@@ -1,0 +1,255 @@
+{
+  "id": "tetrax-tetrax",
+  "scientificName": "Tetrax tetrax",
+  "names": {
+    "ru": "Стрепет",
+    "ky": "Tetrax tetrax",
+    "uz": "Tetrax tetrax",
+    "en": "Little Bustard"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Otidiformes",
+    "family": "Otididae",
+    "genus": "Tetrax"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "NT",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Целинные степи с полынно-эфемеровой и другой невысокой растительностью; осенние встречи отмечены также на полях люцерны.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Распашка степей, выпас скота на гнездовых участках и браконьерство.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Предложены изучение биологии и исследование возможности разведения с последующим выпуском; это рекомендация, а не выполненная программа.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/tetrax-tetrax.webp",
+      "width": 1024,
+      "height": 683,
+      "sha256": "78696e0e3302fdee3a3d82cf30d9cd7039ccfac8b526d8253d451320c1406e8b",
+      "author": "Francesco Veronesi from Italy",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Tetrax_tetrax,_Castuera,_Estremadura,_Spain_3.jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Tetrax tetrax, Castuera, Estremadura, Spain 3.jpg — Francesco Veronesi from Italy, CC BY-SA 2.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+        "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Фотография Tetrax tetrax; иллюстрация вида, не подтверждение современного присутствия в Кыргызстане или местного подвида.",
+        "ky": null,
+        "en": null,
+        "uz": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Tetrax tetrax, с. 435",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=435",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Tetrax tetrax (Linnaeus, 1758)",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Tetrax%20tetrax",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz"
+      ],
+      "taxonId": "gbif:5228228"
+    },
+    {
+      "id": "photo-commons",
+      "title": "Little Bustard Tetrax tetrax, Castuera, Estremadura, Spain",
+      "publisher": "Wikimedia Commons; Francesco Veronesi from Italy",
+      "url": "https://commons.wikimedia.org/wiki/File:Tetrax_tetrax,_Castuera,_Estremadura,_Spain_3.jpg",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Стрепет — осторожная степная птица; очерк 2006 года различает старые гнездовые сведения и более поздние редкие пролётные встречи.",
+        "ky": "2006-жылкы улуттук очеркте талаалар менен байланышкан, уя салуусу кайрадан тастыктала элек куш.",
+        "uz": "2006-yilgi milliy manbada dashtlar bilan bog‘langan, qayta uya qurishi tasdiqlanmagan qush.",
+        "en": "A steppe bird whose renewed nesting in Kyrgyzstan was unconfirmed in the 2006 account."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Стрепет — осторожная степная птица; очерк 2006 года различает старые гнездовые сведения и более поздние редкие пролётные встречи.\n\nЦелинные степи с полынно-эфемеровой и другой невысокой растительностью; осенние встречи отмечены также на полях люцерны.\n\nОсторожная птица открытых пространств. Летает невысоко над землёй, осенью может собираться в стаи на полях.\n\nГлавным образом насекомые, также растительная пища, включая листья люцерны.\n\nИсторическое описание: наземное гнездо почти без подстилки и обычно 3–5 яиц. Возобновление гнездования в стране очерком не подтверждено.\n\nСтарые гнездовые сведения относятся к Суусамыру, Прииссыккулью, Таласской и Чуйской долинам и отдельным южным районам. Достоверных гнездовых случаев на момент издания не приведено.\n\nРаспашка степей, выпас скота на гнездовых участках и браконьерство.\n\nПредложены изучение биологии и исследование возможности разведения с последующим выпуском; это рекомендация, а не выполненная программа.\n\nНациональная категория и описанные встречи относятся к историческому изданию 2006 года. Современная численность не установлена; текущий юридический статус и современное присутствие требуют отдельного подтверждения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Осторожная птица открытых пространств. Летает невысоко над землёй, осенью может собираться в стаи на полях.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Главным образом насекомые, также растительная пища, включая листья люцерны.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Историческое описание: наземное гнездо почти без подстилки и обычно 3–5 яиц. Возобновление гнездования в стране очерком не подтверждено.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Старые гнездовые сведения относятся к Суусамыру, Прииссыккулью, Таласской и Чуйской долинам и отдельным южным районам. Достоверных гнездовых случаев на момент издания не приведено.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}
