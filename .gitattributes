@@ -36,3 +36,8 @@ data/research/task23-*.json text eol=lf
 data/research/catalog-125*.json text eol=lf
 data/research/catalog-125-content/**/*.json text eol=lf
 docs/evidence/catalog-125*.json text eol=lf
+
+# Keep unpublished catalog-150 material checksums stable across Windows checkouts.
+data/research/catalog-150*.json text eol=lf
+data/research/catalog-150-content/**/*.json text eol=lf
+docs/evidence/catalog-150*.json text eol=lf

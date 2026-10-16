@@ -1,0 +1,3865 @@
+{
+  "schemaVersion": 1,
+  "documentType": "bulk-research-registry",
+  "registryId": "catalog-150-content",
+  "batchSize": 5,
+  "candidates": [
+    {
+      "originalScientificName": "Barbus capito conocephalus",
+      "acceptedScientificName": "Luciobarbus conocephalus",
+      "rank": "SPECIES",
+      "group": "fish",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); исторический именной подвид B. capito conocephalus; современный вид L. conocephalus; национальная категория относится к исторической местной концепции; запись под именем Barbus capito conocephalus",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Luciobarbus conocephalus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:11619334",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy",
+        "eschmeyer-name",
+        "fish-revision-2025"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Barbus capito conocephalus, с. 307",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=307",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Luciobarbus conocephalus (Kessler, 1872)",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Luciobarbus%20conocephalus",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview",
+            "content.shortDescription",
+            "names.ky",
+            "names.uz"
+          ],
+          "taxonId": "gbif:11619334"
+        },
+        {
+          "id": "eschmeyer-name",
+          "title": "Eschmeyer’s Catalog of Fishes: conocephalus Kessler, 1872",
+          "publisher": "California Academy of Sciences",
+          "url": "https://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=1489",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.distribution"
+          ]
+        },
+        {
+          "id": "fish-revision-2025",
+          "title": "Artaev et al. 2025, Fishes of Tajikistan; AMNH Novitates 4032, p.14; DOI 10.1206/4032.1",
+          "publisher": "American Museum of Natural History; Zenodo/Plazi treatment",
+          "url": "https://zenodo.org/records/20514636",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.distribution"
+          ]
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-1-facts.json",
+          "sha256": "1e45fda9619497b78f49ee196be48ee17217d121cbca64216fef149b4be7ede0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-1-accounts.json",
+          "sha256": "00f4193913515c8a9a844d18004fa2fa88c0d712c91c716403045abe35649867"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-1-images.json",
+          "sha256": "50731f1153ba4c087af76e0d475884cd319253f2369709226639bf9d7fb17c18"
+        }
+      ],
+      "draft": null,
+      "id": "barbus-capito-conocephalus",
+      "nationalSourceRecords": [
+        "book-2006-306"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          306,
+          307
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-306",
+        "requestedName": "Luciobarbus conocephalus",
+        "resolution": "documented_named_taxon_rank_change"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "ready_for_review",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "draftFile": "data/research/catalog-150-content/drafts/barbus-capito-conocephalus.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: принятое научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки.",
+        "Фото: placeholder."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "barbus-capito-conocephalus",
+        "factsFingerprint": "2a177d0caa8b5c3674b185bb6b058d9db618f8bf8a2880f2fbb867da780b5b22",
+        "draftSha256": "a8c153ae64a33cb806d73197f8ec4eda3b3e799f5aa4a70fbe2c86241efdacbf"
+      },
+      "scientificReviewStatus": "pending",
+      "diagnostics": {
+        "candidateId": "barbus-capito-conocephalus",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "677b5a98d24bc41d7d964932a838741733179d4dd4c1bc29ea62a6e6e86e2f0e",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "677b5a98d24bc41d7d964932a838741733179d4dd4c1bc29ea62a6e6e86e2f0e"
+    },
+    {
+      "originalScientificName": "Vipera ursinii renardi",
+      "acceptedScientificName": "Vipera renardi",
+      "rank": "SPECIES",
+      "group": "reptiles",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); исторический V. ursinii renardi, современный вид V. renardi; современный местный подвид не назначен; запись под именем Vipera ursinii renardi",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Vipera renardi",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:8568628",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy",
+        "reptile-name"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Vipera ursinii renardi, с. 345",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=345",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Vipera renardi (Christoph, 1861)",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Vipera%20renardi",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview",
+            "content.shortDescription",
+            "names.ky",
+            "names.uz"
+          ],
+          "taxonId": "gbif:8568628"
+        },
+        {
+          "id": "reptile-name",
+          "title": "Reptile Database: Vipera renardi (Christoph, 1861), synonymy and distribution",
+          "publisher": "The Reptile Database",
+          "url": "https://reptile-database.reptarium.cz/Vipera/renardi",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.distribution"
+          ]
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-1-facts.json",
+          "sha256": "1e45fda9619497b78f49ee196be48ee17217d121cbca64216fef149b4be7ede0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-1-accounts.json",
+          "sha256": "00f4193913515c8a9a844d18004fa2fa88c0d712c91c716403045abe35649867"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-1-images.json",
+          "sha256": "50731f1153ba4c087af76e0d475884cd319253f2369709226639bf9d7fb17c18"
+        }
+      ],
+      "draft": null,
+      "id": "vipera-ursinii-renardi",
+      "nationalSourceRecords": [
+        "book-2006-344"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          344,
+          345
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-344",
+        "requestedName": "Vipera renardi",
+        "resolution": "documented_named_taxon_rank_change"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "ready_for_review",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "draftFile": "data/research/catalog-150-content/drafts/vipera-ursinii-renardi.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: принятое научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки.",
+        "Фото: placeholder."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Диагностические признаки внешности в использованном очерке не описаны; appearance сохранено null.",
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "vipera-ursinii-renardi",
+        "factsFingerprint": "361a100737d39f618f26dc95a4ac6b235e14d484d00be58e1de17b0666544ba7",
+        "draftSha256": "56860726a582afebf4b99f5e2c885050b419a4326e929368276299e5b8f8bcd9"
+      },
+      "scientificReviewStatus": "pending",
+      "diagnostics": {
+        "candidateId": "vipera-ursinii-renardi",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "3b1e92c48d073af3d6059f6002d6b9a160f7f1accc2dd2fdb7ef08ef113a121a",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "3b1e92c48d073af3d6059f6002d6b9a160f7f1accc2dd2fdb7ef08ef113a121a"
+    },
+    {
+      "originalScientificName": "Kirgisobia bohnei",
+      "acceptedScientificName": "Kirgizobia bohnei",
+      "rank": "SPECIES",
+      "group": "arthropods",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "EN",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Kirgisobia bohnei",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Kirgizobia bohnei",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:1157491",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy",
+        "longhorn-catalogue"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Kirgisobia bohnei, с. 263",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=263",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Kirgizobia bohnei Danilevsky, 1992",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Kirgizobia%20bohnei",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview",
+            "content.shortDescription",
+            "names.ky",
+            "names.uz"
+          ],
+          "taxonId": "gbif:1157491"
+        },
+        {
+          "id": "longhorn-catalogue",
+          "title": "M.L. Danilevsky 2015, Catalogue of Palaearctic Cerambycoidea, PDF p.18",
+          "publisher": "M.L. Danilevsky; Zoological Institute RAS",
+          "url": "https://www.zin.ru/animalia/coleoptera/pdf/danilevsky_2015_catalogue_palaearctic_cerambycoidea.pdf#page=18",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.distribution"
+          ]
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-1-facts.json",
+          "sha256": "1e45fda9619497b78f49ee196be48ee17217d121cbca64216fef149b4be7ede0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-1-accounts.json",
+          "sha256": "00f4193913515c8a9a844d18004fa2fa88c0d712c91c716403045abe35649867"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-1-images.json",
+          "sha256": "50731f1153ba4c087af76e0d475884cd319253f2369709226639bf9d7fb17c18"
+        }
+      ],
+      "draft": null,
+      "id": "kirgisobia-bohnei",
+      "nationalSourceRecords": [
+        "book-2006-262"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          262,
+          263
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-262",
+        "requestedName": "Kirgizobia bohnei",
+        "resolution": "documented_orthographic_correction"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "ready_for_review",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "draftFile": "data/research/catalog-150-content/drafts/kirgisobia-bohnei.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: принятое научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки.",
+        "Фото: placeholder."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Личиночные кормовые породы и продолжительность развития не установлены; питание на иве — гипотеза источника.",
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "kirgisobia-bohnei",
+        "factsFingerprint": "1f0c45730b942c6c1c0075a0a0b564fd25d9aafdf931aa0da5b74b425076d9af",
+        "draftSha256": "ef7bad9d1763ac5276fcfda3ba06e4f4c0d6f21ec76ba2ebc66212e52de67c29"
+      },
+      "scientificReviewStatus": "pending",
+      "diagnostics": {
+        "candidateId": "kirgisobia-bohnei",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "dfb6646b848882305cf16b5d2d7935df6b9dd72b268571ec8902e0072c4358bf",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "dfb6646b848882305cf16b5d2d7935df6b9dd72b268571ec8902e0072c4358bf"
+    },
+    {
+      "originalScientificName": "Anser indica",
+      "acceptedScientificName": "Anser indicus",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "NT",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Anser indica",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Anser indicus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2498035",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Anser indica, с. 361",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=361",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "threats.1",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Anser indicus (Latham, 1790)",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Anser%20indicus",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview",
+            "content.shortDescription",
+            "names.ky",
+            "names.uz"
+          ],
+          "taxonId": "gbif:2498035"
+        },
+        {
+          "id": "photo-commons",
+          "title": "Bar-headed Goose (Anser indicus, Anatidae, Anseriformes) in  Gajoldoba, West Bengal, India.",
+          "publisher": "Wikimedia Commons; Tisha Mukherjee",
+          "url": "https://commons.wikimedia.org/wiki/File:Bar-headed_Goose_by_Tisha_Mukherjee_01.jpg",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-1-facts.json",
+          "sha256": "1e45fda9619497b78f49ee196be48ee17217d121cbca64216fef149b4be7ede0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-1-accounts.json",
+          "sha256": "00f4193913515c8a9a844d18004fa2fa88c0d712c91c716403045abe35649867"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-1-images.json",
+          "sha256": "50731f1153ba4c087af76e0d475884cd319253f2369709226639bf9d7fb17c18"
+        }
+      ],
+      "draft": null,
+      "id": "anser-indica",
+      "nationalSourceRecords": [
+        "book-2006-360"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          360,
+          361
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-360",
+        "requestedName": "Anser indicus",
+        "resolution": "exact_same_species_or_documented_synonym"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "ready_for_review",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "draftFile": "data/research/catalog-150-content/drafts/anser-indica.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: принятое научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Диагностические признаки внешности в использованном очерке не описаны; appearance сохранено null.",
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "anser-indica",
+        "factsFingerprint": "1b704cf59c0c2f6d2570b93621c3b57e44723b34e3ec3d45b2cd662c6731f053",
+        "draftSha256": "f118a1bd8b036f87168080d7aba1b31b6869d38f885c049d4debe072213b2895"
+      },
+      "scientificReviewStatus": "pending",
+      "diagnostics": {
+        "candidateId": "anser-indica",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "07939413eabe3b622c4d3d880f417ab82bf969be6fb3f78412d822f4f792e474",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "07939413eabe3b622c4d3d880f417ab82bf969be6fb3f78412d822f4f792e474"
+    },
+    {
+      "originalScientificName": "Accipiter badius",
+      "acceptedScientificName": "Accipiter badius",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "NT",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); очерк вида с упоминанием местного cenchroides; отдельная карточка подвида не создаётся",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Accipiter badius",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2480610",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Accipiter badius, с. 417",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=417",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Accipiter badius (Gmelin, 1788)",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Accipiter%20badius",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz"
+          ],
+          "taxonId": "gbif:2480610"
+        },
+        {
+          "id": "photo-commons",
+          "title": "Eggs of shikra Three specimens of the same spawn ; collection of Jacques Perrin de Brichambaut.",
+          "publisher": "Wikimedia Commons; Roger Culos",
+          "url": "https://commons.wikimedia.org/wiki/File:Accipiter_badius_MHNT.ZOO.2010.11.94.1.jpg",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-1-facts.json",
+          "sha256": "1e45fda9619497b78f49ee196be48ee17217d121cbca64216fef149b4be7ede0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-1-accounts.json",
+          "sha256": "00f4193913515c8a9a844d18004fa2fa88c0d712c91c716403045abe35649867"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-1-images.json",
+          "sha256": "50731f1153ba4c087af76e0d475884cd319253f2369709226639bf9d7fb17c18"
+        }
+      ],
+      "draft": null,
+      "id": "accipiter-badius",
+      "nationalSourceRecords": [
+        "book-2006-416"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          416,
+          417
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-416",
+        "requestedName": "Accipiter badius",
+        "resolution": "exact_same_species_or_documented_synonym"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "ready_for_review",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "draftFile": "data/research/catalog-150-content/drafts/accipiter-badius.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: принятое научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "accipiter-badius",
+        "factsFingerprint": "a36e4d1648fb097a244595f8aec44f639a2fdaa2b79463cbf8717a840a8d1537",
+        "draftSha256": "7a246d3f22d7bfaaa486c89ae8a1d7d76b4674430dde568a9634603feab910c2"
+      },
+      "scientificReviewStatus": "pending",
+      "diagnostics": {
+        "candidateId": "accipiter-badius",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "b51ac59b9fb8e6df54c1a6d01d4d69da61b910fae07b83138753d5dcd1c6bf93",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "b51ac59b9fb8e6df54c1a6d01d4d69da61b910fae07b83138753d5dcd1c6bf93"
+    },
+    {
+      "originalScientificName": "Aquila clanga",
+      "acceptedScientificName": "Aquila clanga",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Aquila clanga",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2480509",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Aquila clanga, с. 419",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=419",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Aquila clanga Pallas, 1811",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Aquila%20clanga",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:2480509"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        }
+      ],
+      "draft": null,
+      "id": "aquila-clanga",
+      "nationalSourceRecords": [
+        "book-2006-418"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          418,
+          419
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-418",
+        "requestedName": "Aquila clanga",
+        "resolution": "exact_same_species_or_documented_synonym"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "research_ready",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "diagnostics": {
+        "candidateId": "aquila-clanga",
+        "batchNumber": 2,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "da1b68cab04014de17e27865fb397e7e10d650bca645a11f585794bfccfe748d",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "da1b68cab04014de17e27865fb397e7e10d650bca645a11f585794bfccfe748d"
+    },
+    {
+      "originalScientificName": "Aquila nipalensis",
+      "acceptedScientificName": "Aquila nipalensis",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Aquila nipalensis",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2480513",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Aquila nipalensis, с. 421",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=421",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Aquila nipalensis Hodgson, 1833",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Aquila%20nipalensis",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:2480513"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        }
+      ],
+      "draft": null,
+      "id": "aquila-nipalensis",
+      "nationalSourceRecords": [
+        "book-2006-420"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          420,
+          421
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-420",
+        "requestedName": "Aquila nipalensis",
+        "resolution": "exact_same_species_or_documented_synonym"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "research_ready",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "diagnostics": {
+        "candidateId": "aquila-nipalensis",
+        "batchNumber": 2,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "6d31efa1adfc1edb391ae9a99ddee5533a215b08c3ac02a4c5dab5b494613b77",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "6d31efa1adfc1edb391ae9a99ddee5533a215b08c3ac02a4c5dab5b494613b77"
+    },
+    {
+      "originalScientificName": "Aquila heliaca",
+      "acceptedScientificName": "Aquila heliaca",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Aquila heliaca",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2480500",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Aquila heliaca, с. 423",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=423",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Aquila heliaca Savigny, 1809",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Aquila%20heliaca",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:2480500"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        }
+      ],
+      "draft": null,
+      "id": "aquila-heliaca",
+      "nationalSourceRecords": [
+        "book-2006-422"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          422,
+          423
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-422",
+        "requestedName": "Aquila heliaca",
+        "resolution": "exact_same_species_or_documented_synonym"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "research_ready",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "diagnostics": {
+        "candidateId": "aquila-heliaca",
+        "batchNumber": 2,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "490fa3571214553cbc5a3b16a4417d7a4ff28c3697fc3234cbdb272189f6c7a4",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "490fa3571214553cbc5a3b16a4417d7a4ff28c3697fc3234cbdb272189f6c7a4"
+    },
+    {
+      "originalScientificName": "Hieraaetus fasciatus",
+      "acceptedScientificName": "Aquila fasciata",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Aquila fasciata",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5844449",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Hieraaetus fasciatus, с. 427",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=427",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Aquila fasciata Vieillot, 1822",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Aquila%20fasciata",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:5844449"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        }
+      ],
+      "draft": null,
+      "id": "hieraaetus-fasciatus",
+      "nationalSourceRecords": [
+        "book-2006-426"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          426,
+          427
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-426",
+        "requestedName": "Hieraaetus fasciatus",
+        "resolution": "exact_same_species_or_documented_synonym"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "research_ready",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "diagnostics": {
+        "candidateId": "hieraaetus-fasciatus",
+        "batchNumber": 2,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "4ea9caec8803cf3cf88b98cf562c56d95c476e24b44445716ad5393acc00ebe6",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "4ea9caec8803cf3cf88b98cf562c56d95c476e24b44445716ad5393acc00ebe6"
+    },
+    {
+      "originalScientificName": "Hieraaetus pennatus",
+      "acceptedScientificName": "Hieraaetus pennatus",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Hieraaetus pennatus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2480685",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Hieraaetus pennatus, с. 429",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=429",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Hieraaetus pennatus (Gmelin, 1788)",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Hieraaetus%20pennatus",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:2480685"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        }
+      ],
+      "draft": null,
+      "id": "hieraaetus-pennatus",
+      "nationalSourceRecords": [
+        "book-2006-428"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          428,
+          429
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-428",
+        "requestedName": "Hieraaetus pennatus",
+        "resolution": "exact_same_species_or_documented_synonym"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "research_ready",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "diagnostics": {
+        "candidateId": "hieraaetus-pennatus",
+        "batchNumber": 2,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "8c33c6278b42485dbf1d343f2a2e9c5856320b01dbf1d195ce7a8b975e80749b",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "8c33c6278b42485dbf1d343f2a2e9c5856320b01dbf1d195ce7a8b975e80749b"
+    },
+    {
+      "originalScientificName": "Tetrax tetrax",
+      "acceptedScientificName": "Tetrax tetrax",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Tetrax tetrax",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5228228",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Tetrax tetrax, с. 435",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=435",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Tetrax tetrax (Linnaeus, 1758)",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Tetrax%20tetrax",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:5228228"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        }
+      ],
+      "draft": null,
+      "id": "tetrax-tetrax",
+      "nationalSourceRecords": [
+        "book-2006-434"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          434,
+          435
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-434",
+        "requestedName": "Tetrax tetrax",
+        "resolution": "exact_same_species_or_documented_synonym"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "research_ready",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "diagnostics": {
+        "candidateId": "tetrax-tetrax",
+        "batchNumber": 3,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "446b33145abe2c469ea4a04729add3e7c49a1b24b26f125b20be0279e64eb6f3",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "446b33145abe2c469ea4a04729add3e7c49a1b24b26f125b20be0279e64eb6f3"
+    },
+    {
+      "originalScientificName": "Crex crex",
+      "acceptedScientificName": "Crex crex",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Crex crex",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:4408498",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Crex crex, с. 437",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=437",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Crex crex (Linnaeus, 1758)",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Crex%20crex",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:4408498"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        }
+      ],
+      "draft": null,
+      "id": "crex-crex",
+      "nationalSourceRecords": [
+        "book-2006-436"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          436,
+          437
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-436",
+        "requestedName": "Crex crex",
+        "resolution": "exact_same_species_or_documented_synonym"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "research_ready",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "diagnostics": {
+        "candidateId": "crex-crex",
+        "batchNumber": 3,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "92d90508abc5173ac701376f8dcc05c73ea2ea3783e7c7e6a07551d6cb0657e7",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "92d90508abc5173ac701376f8dcc05c73ea2ea3783e7c7e6a07551d6cb0657e7"
+    },
+    {
+      "originalScientificName": "Anthropoides virgo",
+      "acceptedScientificName": "Anthropoides virgo",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Anthropoides virgo",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2474936",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Anthropoides virgo, с. 439",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=439",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Anthropoides virgo (Linnaeus, 1758)",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Anthropoides%20virgo",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:2474936"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        }
+      ],
+      "draft": null,
+      "id": "anthropoides-virgo",
+      "nationalSourceRecords": [
+        "book-2006-438"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          438,
+          439
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-438",
+        "requestedName": "Anthropoides virgo",
+        "resolution": "exact_same_species_or_documented_synonym"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "research_ready",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "diagnostics": {
+        "candidateId": "anthropoides-virgo",
+        "batchNumber": 3,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "ce59aa8b5c31f07c81a43d694aa154f0eec09646ef68c9a98e30270ae3f13b0a",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "ce59aa8b5c31f07c81a43d694aa154f0eec09646ef68c9a98e30270ae3f13b0a"
+    },
+    {
+      "originalScientificName": "Burhinus oedicnemus",
+      "acceptedScientificName": "Burhinus oedicnemus",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Burhinus oedicnemus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2482100",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Burhinus oedicnemus, с. 441",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=441",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Burhinus oedicnemus (Linnaeus, 1758)",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Burhinus%20oedicnemus",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:2482100"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        }
+      ],
+      "draft": null,
+      "id": "burhinus-oedicnemus",
+      "nationalSourceRecords": [
+        "book-2006-440"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          440,
+          441
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-440",
+        "requestedName": "Burhinus oedicnemus",
+        "resolution": "exact_same_species_or_documented_synonym"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "research_ready",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "diagnostics": {
+        "candidateId": "burhinus-oedicnemus",
+        "batchNumber": 3,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "7126954f456ff1d5598aa780610ec40464634c16445b5ce9806b49efa6ad7c55",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "7126954f456ff1d5598aa780610ec40464634c16445b5ce9806b49efa6ad7c55"
+    },
+    {
+      "originalScientificName": "Vanellus gregarius",
+      "acceptedScientificName": "Vanellus gregarius",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Vanellus gregarius",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5229138",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Vanellus gregarius, с. 445",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=445",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Vanellus gregarius (Pallas, 1771)",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Vanellus%20gregarius",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:5229138"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        }
+      ],
+      "draft": null,
+      "id": "vanellus-gregarius",
+      "nationalSourceRecords": [
+        "book-2006-444"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          444,
+          445
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-444",
+        "requestedName": "Vanellus gregarius",
+        "resolution": "exact_same_species_or_documented_synonym"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "research_ready",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "diagnostics": {
+        "candidateId": "vanellus-gregarius",
+        "batchNumber": 3,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "937944721b3ecfd38c1e874d5e9026f43f9171265247ee73fcefffcfdc811df0",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "937944721b3ecfd38c1e874d5e9026f43f9171265247ee73fcefffcfdc811df0"
+    },
+    {
+      "originalScientificName": "Glareola nordmanni",
+      "acceptedScientificName": "Glareola nordmanni",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Glareola nordmanni",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2480758",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Glareola nordmanni, с. 449",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=449",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Glareola nordmanni Fischer von Waldheim, 1842",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Glareola%20nordmanni",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:2480758"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        }
+      ],
+      "draft": null,
+      "id": "glareola-nordmanni",
+      "nationalSourceRecords": [
+        "book-2006-448"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          448,
+          449
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-448",
+        "requestedName": "Glareola nordmanni",
+        "resolution": "exact_same_species_or_documented_synonym"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "research_ready",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "diagnostics": {
+        "candidateId": "glareola-nordmanni",
+        "batchNumber": 4,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "7b3ad4fc2869d95731d455a86227d974103fcbe24ea417462466ad3e12250659",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "7b3ad4fc2869d95731d455a86227d974103fcbe24ea417462466ad3e12250659"
+    },
+    {
+      "originalScientificName": "Strix aluco",
+      "acceptedScientificName": "Strix aluco",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Strix aluco",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:9282206",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Strix aluco, с. 465",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=465",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Strix aluco Linnaeus, 1758",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Strix%20aluco",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:9282206"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        }
+      ],
+      "draft": null,
+      "id": "strix-aluco",
+      "nationalSourceRecords": [
+        "book-2006-464"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          464,
+          465
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-464",
+        "requestedName": "Strix aluco",
+        "resolution": "exact_same_species_or_documented_synonym"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "research_ready",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "diagnostics": {
+        "candidateId": "strix-aluco",
+        "batchNumber": 4,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "4b403b5374875caffd9d8e69763d4c21f7f3d5990f2eb97f49d46b1e9b02d31e",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "4b403b5374875caffd9d8e69763d4c21f7f3d5990f2eb97f49d46b1e9b02d31e"
+    },
+    {
+      "originalScientificName": "Syrrhaptes paradoxus",
+      "acceptedScientificName": "Syrrhaptes paradoxus",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Syrrhaptes paradoxus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2480208",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Syrrhaptes paradoxus, с. 453",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=453",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Syrrhaptes paradoxus (Pallas, 1773)",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Syrrhaptes%20paradoxus",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:2480208"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        }
+      ],
+      "draft": null,
+      "id": "syrrhaptes-paradoxus",
+      "nationalSourceRecords": [
+        "book-2006-452"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          452,
+          453
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-452",
+        "requestedName": "Syrrhaptes paradoxus",
+        "resolution": "exact_same_species_or_documented_synonym"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "research_ready",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "diagnostics": {
+        "candidateId": "syrrhaptes-paradoxus",
+        "batchNumber": 4,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "a9089266009b31485153aade6a4fadbcc9926ed7be97e77a375a3ba540db94f1",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "a9089266009b31485153aade6a4fadbcc9926ed7be97e77a375a3ba540db94f1"
+    },
+    {
+      "originalScientificName": "Pterocles alchata",
+      "acceptedScientificName": "Pterocles alchata",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Pterocles alchata",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2480204",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Pterocles alchata, с. 455",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=455",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Pterocles alchata (Linnaeus, 1766)",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Pterocles%20alchata",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:2480204"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        }
+      ],
+      "draft": null,
+      "id": "pterocles-alchata",
+      "nationalSourceRecords": [
+        "book-2006-454"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          454,
+          455
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-454",
+        "requestedName": "Pterocles alchata",
+        "resolution": "exact_same_species_or_documented_synonym"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "research_ready",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "diagnostics": {
+        "candidateId": "pterocles-alchata",
+        "batchNumber": 4,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "96399a656cfdd16bea21bd3b1bab60bc7fcb0150f2c448f32385afb989b7d539",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "96399a656cfdd16bea21bd3b1bab60bc7fcb0150f2c448f32385afb989b7d539"
+    },
+    {
+      "originalScientificName": "Pterocles orientalis",
+      "acceptedScientificName": "Pterocles orientalis",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Pterocles orientalis",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2480193",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Pterocles orientalis, с. 457",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=457",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Pterocles orientalis (Linnaeus, 1758)",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Pterocles%20orientalis",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:2480193"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        }
+      ],
+      "draft": null,
+      "id": "pterocles-orientalis",
+      "nationalSourceRecords": [
+        "book-2006-456"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          456,
+          457
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-456",
+        "requestedName": "Pterocles orientalis",
+        "resolution": "exact_same_species_or_documented_synonym"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "research_ready",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "diagnostics": {
+        "candidateId": "pterocles-orientalis",
+        "batchNumber": 4,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "1ca80450c7898388bbf9a94a1ec63c0ace0e76c43b29e2c698041dd5f1107e36",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "1ca80450c7898388bbf9a94a1ec63c0ace0e76c43b29e2c698041dd5f1107e36"
+    },
+    {
+      "originalScientificName": "Columba leuconota",
+      "acceptedScientificName": "Columba leuconota",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Columba leuconota",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5231842",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Columba leuconota, с. 459",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=459",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Columba leuconota Vigors, 1831",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Columba%20leuconota",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:5231842"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        }
+      ],
+      "draft": null,
+      "id": "columba-leuconota",
+      "nationalSourceRecords": [
+        "book-2006-458"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          458,
+          459
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-458",
+        "requestedName": "Columba leuconota",
+        "resolution": "exact_same_species_or_documented_synonym"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "research_ready",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "diagnostics": {
+        "candidateId": "columba-leuconota",
+        "batchNumber": 5,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "36a2268a6ee6ef807c04f0304c8397fc3dbfef0f3e024daf466e20425f971954",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "36a2268a6ee6ef807c04f0304c8397fc3dbfef0f3e024daf466e20425f971954"
+    },
+    {
+      "originalScientificName": "Columba eversmanni",
+      "acceptedScientificName": "Columba eversmanni",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Columba eversmanni",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2495464",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Columba eversmanni, с. 461",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=461",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Columba eversmanni Bonaparte, 1856",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Columba%20eversmanni",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:2495464"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        }
+      ],
+      "draft": null,
+      "id": "columba-eversmanni",
+      "nationalSourceRecords": [
+        "book-2006-460"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          460,
+          461
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-460",
+        "requestedName": "Columba eversmanni",
+        "resolution": "exact_same_species_or_documented_synonym"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "research_ready",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "diagnostics": {
+        "candidateId": "columba-eversmanni",
+        "batchNumber": 5,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "0592066a19f3cd0e18f05ea1d813da4e89912b9f793d2742febe6b21777cf047",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "0592066a19f3cd0e18f05ea1d813da4e89912b9f793d2742febe6b21777cf047"
+    },
+    {
+      "originalScientificName": "Bubo bubo",
+      "acceptedScientificName": "Bubo bubo",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Bubo bubo",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5959092",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Bubo bubo, с. 463",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=463",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Bubo bubo (Linnaeus, 1758)",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Bubo%20bubo",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:5959092"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150-taxonomy.json",
+          "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+        },
+        {
+          "path": "docs/evidence/catalog-150-selection-decisions.json",
+          "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+        },
+        {
+          "path": "docs/evidence/catalog-150-source-receipts.json",
+          "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        }
+      ],
+      "draft": null,
+      "id": "bubo-bubo",
+      "nationalSourceRecords": [
+        "book-2006-462"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          462,
+          463
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-462",
+        "requestedName": "Bubo bubo",
+        "resolution": "exact_same_species_or_documented_synonym"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "research_ready",
+      "approval": null,
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "diagnostics": {
+        "candidateId": "bubo-bubo",
+        "batchNumber": 5,
+        "state": "research_ready",
+        "errors": [
+          "Не подготовлен публикационный черновик draft/draftFile"
+        ],
+        "warnings": [],
+        "fingerprint": "d42bf11b35aa20d2875fa941ccc8642e9cb04a5210e773ed610b92e605d7be9d",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": false,
+            "en": false
+          },
+          "missingNames": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "translationRequired": [
+            "ky",
+            "uz",
+            "ru",
+            "en"
+          ],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "d42bf11b35aa20d2875fa941ccc8642e9cb04a5210e773ed610b92e605d7be9d"
+    }
+  ]
+}
