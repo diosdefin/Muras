@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-16",
+  "commands": [
+    {
+      "command": "npm test",
+      "path": ".generated/catalog-125-npm-test.log",
+      "exitCode": 0,
+      "sha256": "9e3074a8b84cbfe83ec9437ecf4002ef165a88baedd452ad9027c0466592d13e",
+      "summary": {
+        "tests": 306,
+        "passed": 306,
+        "failed": 0
+      }
+    },
+    {
+      "command": "npm run data:validate",
+      "path": ".generated/catalog-125-data-validate.log",
+      "exitCode": 0,
+      "sha256": "83377cd2f4fdc65c543b0a3815c4fa2443682f6f0e60b680b383ea9b274e750a",
+      "summary": {
+        "localeKeys": 620,
+        "languages": 4,
+        "catalog": 100
+      }
+    },
+    {
+      "command": "npm run build",
+      "path": ".generated/catalog-125-build.log",
+      "exitCode": 0,
+      "sha256": "5dc237e5316003e0e1240be98561259b583416b61c51d898d54d257ad6acfea5",
+      "summary": {
+        "viteModules": 104,
+        "distCatalog": 100
+      }
+    }
+  ],
+  "importPreview": {
+    "command": "npm run data:batch:import -- --input .generated/catalog-125-import-preview.json --report .generated/catalog-125-cli-dry-run.json",
+    "report": "docs/evidence/catalog-125-import-dry-run.json",
+    "applied": false,
+    "counts": {
+      "processed": 25,
+      "added": 25,
+      "unchanged": 0,
+      "rejected": 0
+    }
+  },
+  "repeatCheck": {
+    "counts": {
+      "processed": 25,
+      "accepted": 25,
+      "deferred": 0,
+      "rejected": 0
+    },
+    "manifestFingerprintDrift": []
+  },
+  "preservation": {
+    "comparedFiles": 193,
+    "changed": [],
+    "sourceCatalog": 100,
+    "publicCatalog": 100,
+    "distCatalog": 100,
+    "draftImagesInDist": []
+  },
+  "manifestSha256": "e2cb306acf708d13fe53e0ec3ddcdd620489593b4c96d640abd8121ebbc7e1dd"
+}

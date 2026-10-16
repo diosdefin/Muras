@@ -26,9 +26,11 @@
     ]
   },
   "iucn": {
-    "category": null,
+    "category": "VU",
     "year": null,
-    "sourceIds": []
+    "sourceIds": [
+      "iucn-checklist"
+    ]
   },
   "habitat": {
     "description": {
@@ -192,6 +194,18 @@
       ],
       "language": "ru",
       "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
+    },
+    {
+      "id": "iucn-checklist",
+      "title": "IUCN Red List checklist через GBIF: Salvia korolkowii — VU",
+      "publisher": "IUCN / GBIF",
+      "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Salvia%20korolkowii&limit=10",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "iucn.category"
+      ],
+      "notes": "Точное принятое имя SPECIES и совпадающий nubKey. Категория из опубликованного checklist; год индивидуальной оценки не указан. Это не проверка live IUCN и не национальная категория."
     }
   ],
   "verified": false,

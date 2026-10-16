@@ -799,6 +799,273 @@
         }
       ],
       "complete": true
+    },
+    {
+      "candidateId": "spiraeanthus-schrenkianus",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Spiraeanthus schrenckianus",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Spiraeanthus+schrenckianus%22&gsrnamespace=6&gsrlimit=3&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids%7Ccontent&rvslots=main",
+          "httpStatus": 200,
+          "data": {
+            "batchcomplete": "",
+            "query": {
+              "pages": {
+                "8426901": {
+                  "pageid": 8426901,
+                  "ns": 6,
+                  "title": "File:Spiraeanthus.jpg",
+                  "index": 1,
+                  "imagerepository": "local",
+                  "imageinfo": [
+                    {
+                      "size": 79294,
+                      "width": 500,
+                      "height": 434,
+                      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Spiraeanthus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Spiraeanthus.jpg",
+                      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=8426901",
+                      "extmetadata": {
+                        "DateTime": {
+                          "value": "2009-11-12 12:56:00",
+                          "source": "mediawiki-metadata",
+                          "hidden": ""
+                        },
+                        "ObjectName": {
+                          "value": "Spiraeanthus",
+                          "source": "mediawiki-metadata"
+                        },
+                        "CommonsMetadataExtension": {
+                          "value": 1.2,
+                          "source": "extension",
+                          "hidden": ""
+                        },
+                        "Categories": {
+                          "value": "Spiraeanthus schrenkianus|Karatau|GFDL|License migration redundant|Self-published work|Files with coordinates missing SDC location of creation",
+                          "source": "commons-categories",
+                          "hidden": ""
+                        },
+                        "Assessments": {
+                          "value": "",
+                          "source": "commons-categories",
+                          "hidden": ""
+                        },
+                        "GPSLatitude": {
+                          "value": "43.413028",
+                          "source": "commons-desc-page"
+                        },
+                        "GPSLongitude": {
+                          "value": "68.686522",
+                          "source": "commons-desc-page"
+                        },
+                        "GPSMapDatum": {
+                          "value": "WGS-84",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "ImageDescription": {
+                          "value": "Spiraeanthus schrenkianus Maxim. at Karatau",
+                          "source": "commons-desc-page"
+                        },
+                        "DateTimeOriginal": {
+                          "value": "2006-04-28",
+                          "source": "commons-desc-page"
+                        },
+                        "Credit": {
+                          "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                          "source": "commons-desc-page"
+                        },
+                        "Artist": {
+                          "value": "<a href=\"//commons.wikimedia.org/wiki/User:Skrod\" title=\"User:Skrod\">Skrod</a>",
+                          "source": "commons-desc-page"
+                        },
+                        "LicenseShortName": {
+                          "value": "CC BY-SA 3.0",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "UsageTerms": {
+                          "value": "Creative Commons Attribution-Share Alike 3.0",
+                          "source": "commons-desc-page"
+                        },
+                        "AttributionRequired": {
+                          "value": "true",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "LicenseUrl": {
+                          "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                          "source": "commons-desc-page"
+                        },
+                        "Copyrighted": {
+                          "value": "True",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "Restrictions": {
+                          "value": "",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "License": {
+                          "value": "cc-by-sa-3.0",
+                          "source": "commons-templates",
+                          "hidden": ""
+                        }
+                      }
+                    }
+                  ],
+                  "revisions": [
+                    {
+                      "revid": 1194775511,
+                      "parentid": 1032505913,
+                      "slots": {
+                        "main": {
+                          "contentmodel": "wikitext",
+                          "contentformat": "text/x-wiki",
+                          "*": "== {{int:filedesc}} ==\n{{Information\n|Description={{en|1=Spiraeanthus schrenkianus Maxim. at Karatau}}\n|Source={{own}}\n|Author=[[User:Skrod|Skrod]]\n|Date=2006-04-28\n|Permission=\n|other_versions=\n}}\n{{location|43|24|46.9|N|68|41|11.48|E|region:KZ}} \n\n== {{int:license-header}} ==\n{{self|cc-by-sa-3.0|GFDL}}\n\n[[Category:Spiraeanthus schrenkianus]]\n[[Category:Karatau]]"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        {
+          "name": "Spiraeanthus schrenkianus",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Spiraeanthus+schrenkianus%22&gsrnamespace=6&gsrlimit=3&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids%7Ccontent&rvslots=main",
+          "httpStatus": 200,
+          "data": {
+            "batchcomplete": "",
+            "query": {
+              "pages": {
+                "8426901": {
+                  "pageid": 8426901,
+                  "ns": 6,
+                  "title": "File:Spiraeanthus.jpg",
+                  "index": 1,
+                  "imagerepository": "local",
+                  "imageinfo": [
+                    {
+                      "size": 79294,
+                      "width": 500,
+                      "height": 434,
+                      "url": "https://upload.wikimedia.org/wikipedia/commons/1/1a/Spiraeanthus.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Spiraeanthus.jpg",
+                      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=8426901",
+                      "extmetadata": {
+                        "DateTime": {
+                          "value": "2009-11-12 12:56:00",
+                          "source": "mediawiki-metadata",
+                          "hidden": ""
+                        },
+                        "ObjectName": {
+                          "value": "Spiraeanthus",
+                          "source": "mediawiki-metadata"
+                        },
+                        "CommonsMetadataExtension": {
+                          "value": 1.2,
+                          "source": "extension",
+                          "hidden": ""
+                        },
+                        "Categories": {
+                          "value": "Spiraeanthus schrenkianus|Karatau|GFDL|License migration redundant|Self-published work|Files with coordinates missing SDC location of creation",
+                          "source": "commons-categories",
+                          "hidden": ""
+                        },
+                        "Assessments": {
+                          "value": "",
+                          "source": "commons-categories",
+                          "hidden": ""
+                        },
+                        "GPSLatitude": {
+                          "value": "43.413028",
+                          "source": "commons-desc-page"
+                        },
+                        "GPSLongitude": {
+                          "value": "68.686522",
+                          "source": "commons-desc-page"
+                        },
+                        "GPSMapDatum": {
+                          "value": "WGS-84",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "ImageDescription": {
+                          "value": "Spiraeanthus schrenkianus Maxim. at Karatau",
+                          "source": "commons-desc-page"
+                        },
+                        "DateTimeOriginal": {
+                          "value": "2006-04-28",
+                          "source": "commons-desc-page"
+                        },
+                        "Credit": {
+                          "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                          "source": "commons-desc-page"
+                        },
+                        "Artist": {
+                          "value": "<a href=\"//commons.wikimedia.org/wiki/User:Skrod\" title=\"User:Skrod\">Skrod</a>",
+                          "source": "commons-desc-page"
+                        },
+                        "LicenseShortName": {
+                          "value": "CC BY-SA 3.0",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "UsageTerms": {
+                          "value": "Creative Commons Attribution-Share Alike 3.0",
+                          "source": "commons-desc-page"
+                        },
+                        "AttributionRequired": {
+                          "value": "true",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "LicenseUrl": {
+                          "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                          "source": "commons-desc-page"
+                        },
+                        "Copyrighted": {
+                          "value": "True",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "Restrictions": {
+                          "value": "",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "License": {
+                          "value": "cc-by-sa-3.0",
+                          "source": "commons-templates",
+                          "hidden": ""
+                        }
+                      }
+                    }
+                  ],
+                  "revisions": [
+                    {
+                      "revid": 1194775511,
+                      "parentid": 1032505913,
+                      "slots": {
+                        "main": {
+                          "contentmodel": "wikitext",
+                          "contentformat": "text/x-wiki",
+                          "*": "== {{int:filedesc}} ==\n{{Information\n|Description={{en|1=Spiraeanthus schrenkianus Maxim. at Karatau}}\n|Source={{own}}\n|Author=[[User:Skrod|Skrod]]\n|Date=2006-04-28\n|Permission=\n|other_versions=\n}}\n{{location|43|24|46.9|N|68|41|11.48|E|region:KZ}} \n\n== {{int:license-header}} ==\n{{self|cc-by-sa-3.0|GFDL}}\n\n[[Category:Spiraeanthus schrenkianus]]\n[[Category:Karatau]]"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ],
+      "complete": true
     }
   ],
   "documentType": "unpublished-photo-search-evidence"

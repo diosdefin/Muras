@@ -26,9 +26,11 @@
     ]
   },
   "iucn": {
-    "category": null,
+    "category": "EN",
     "year": null,
-    "sourceIds": []
+    "sourceIds": [
+      "iucn-checklist"
+    ]
   },
   "habitat": {
     "description": {
@@ -158,6 +160,18 @@
         "names.en"
       ],
       "taxonId": "gbif:5599068"
+    },
+    {
+      "id": "iucn-checklist",
+      "title": "IUCN Red List checklist через GBIF: Lonicera paradoxa — EN",
+      "publisher": "IUCN / GBIF",
+      "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Lonicera%20paradoxa&limit=10",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "iucn.category"
+      ],
+      "notes": "Точное принятое имя SPECIES и совпадающий nubKey. Категория из опубликованного checklist; год индивидуальной оценки не указан. Это не проверка live IUCN и не национальная категория."
     }
   ],
   "verified": false,

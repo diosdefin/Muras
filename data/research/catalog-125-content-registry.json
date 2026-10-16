@@ -1138,6 +1138,18 @@
           ],
           "language": "en",
           "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
+        },
+        {
+          "id": "iucn-checklist",
+          "title": "IUCN Red List checklist через GBIF: Zygophyllum kaschgaricum — DD",
+          "publisher": "IUCN / GBIF",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Zygophyllum%20kaschgaricum&limit=10",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "iucn.category"
+          ],
+          "notes": "Точное принятое имя SPECIES и совпадающий nubKey. Категория из опубликованного checklist; год индивидуальной оценки не указан. Это не проверка live IUCN и не национальная категория."
         }
       ],
       "contradictions": [],
@@ -1162,6 +1174,10 @@
         {
           "path": "docs/evidence/catalog-125-block-2-images.json",
           "sha256": "5aa4e8669c7c11438c608e9f88dd2f688288a6cd8031146fbc2dccd706b6a297"
+        },
+        {
+          "path": "docs/evidence/catalog-125-iucn-crosscheck.json",
+          "sha256": "a83d5ab03edadce33a434f8cc6c6f8a8ac64c528f5d80dbb5599822ae848288b"
         }
       ],
       "draft": null,
@@ -1195,7 +1211,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "b48791295c1f7a44fb420107a78dd16e2994377a088fcf030e8a1822e6551277",
+        "fingerprint": "d39895eb3f329f71c72d974c7fd7bd8320e231cdcdeaa0497f227f3a3bd2beff",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -1216,7 +1232,7 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "b48791295c1f7a44fb420107a78dd16e2994377a088fcf030e8a1822e6551277",
+      "checkedFingerprint": "d39895eb3f329f71c72d974c7fd7bd8320e231cdcdeaa0497f227f3a3bd2beff",
       "draftFile": "data/research/catalog-125-content/drafts/zygophyllum-kaschgaricum.json",
       "publicationGaps": [
         "Независимая научная проверка pending; импорт не разрешён.",
@@ -1231,7 +1247,12 @@
         "status": "prepared",
         "sourceMasterId": "zygophyllum-kaschgaricum",
         "factsFingerprint": "d2904bd42a1a824ef079ee45e56a2a3271efda62d1df2a9247614c3a78aeac8a",
-        "draftSha256": "4d712778c185a61a1fff4107bd66be2340fff5f29ebbdafc33829294501c5d81"
+        "draftSha256": "f5e51c80878deee7aab907131d0c6168f27145d971713eccc611c08eb40fdfbf"
+      },
+      "iucnCrosscheck": {
+        "checklistKey": 176812626,
+        "category": "DD",
+        "assessmentYear": null
       }
     },
     {
@@ -3618,6 +3639,18 @@
           ],
           "language": "ru",
           "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
+        },
+        {
+          "id": "iucn-checklist",
+          "title": "IUCN Red List checklist через GBIF: Salvia korolkowii — VU",
+          "publisher": "IUCN / GBIF",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Salvia%20korolkowii&limit=10",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "iucn.category"
+          ],
+          "notes": "Точное принятое имя SPECIES и совпадающий nubKey. Категория из опубликованного checklist; год индивидуальной оценки не указан. Это не проверка live IUCN и не национальная категория."
         }
       ],
       "contradictions": [],
@@ -3642,6 +3675,10 @@
         {
           "path": "docs/evidence/catalog-125-block-4-images.json",
           "sha256": "f10509ec7d9e0885226bdec8c74dc79addd796f6bbc5fc6b9a005a1f1b81273c"
+        },
+        {
+          "path": "docs/evidence/catalog-125-iucn-crosscheck.json",
+          "sha256": "a83d5ab03edadce33a434f8cc6c6f8a8ac64c528f5d80dbb5599822ae848288b"
         }
       ],
       "draft": null,
@@ -3675,7 +3712,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "b72782d3b0de09482b6249b9e7e1a5cfc1df69771bd6125710b9f760e908188c",
+        "fingerprint": "767cfc9d5a02cd39b6cc9bf06a99005982e9d302dd21431a981f4ea0ed3c237e",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -3696,7 +3733,7 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "b72782d3b0de09482b6249b9e7e1a5cfc1df69771bd6125710b9f760e908188c",
+      "checkedFingerprint": "767cfc9d5a02cd39b6cc9bf06a99005982e9d302dd21431a981f4ea0ed3c237e",
       "draftFile": "data/research/catalog-125-content/drafts/salvia-korolkowii.json",
       "publicationGaps": [
         "Независимая научная проверка pending; импорт не разрешён.",
@@ -3711,7 +3748,12 @@
         "status": "prepared",
         "sourceMasterId": "salvia-korolkowii",
         "factsFingerprint": "5e3dc58d53913b6a2ef19a883a3d1671bbd9f2c20d3daf4347da3fe09ee87bc2",
-        "draftSha256": "9dd8bd93e048fd071542bb20bfc750aa3d9198fe6badbf0f89d05cf389251485"
+        "draftSha256": "e0ae4bccf9d289f9b3af683633c291b7f485ab142b11d9890d02d15398ae5900"
+      },
+      "iucnCrosscheck": {
+        "checklistKey": 258108136,
+        "category": "VU",
+        "assessmentYear": null
       }
     },
     {
@@ -4022,6 +4064,18 @@
             "names.en"
           ],
           "taxonId": "gbif:5599068"
+        },
+        {
+          "id": "iucn-checklist",
+          "title": "IUCN Red List checklist через GBIF: Lonicera paradoxa — EN",
+          "publisher": "IUCN / GBIF",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Lonicera%20paradoxa&limit=10",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "iucn.category"
+          ],
+          "notes": "Точное принятое имя SPECIES и совпадающий nubKey. Категория из опубликованного checklist; год индивидуальной оценки не указан. Это не проверка live IUCN и не национальная категория."
         }
       ],
       "contradictions": [],
@@ -4046,6 +4100,10 @@
         {
           "path": "docs/evidence/catalog-125-block-4-images.json",
           "sha256": "f10509ec7d9e0885226bdec8c74dc79addd796f6bbc5fc6b9a005a1f1b81273c"
+        },
+        {
+          "path": "docs/evidence/catalog-125-iucn-crosscheck.json",
+          "sha256": "a83d5ab03edadce33a434f8cc6c6f8a8ac64c528f5d80dbb5599822ae848288b"
         }
       ],
       "draft": null,
@@ -4081,7 +4139,7 @@
         "warnings": [
           "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "fingerprint": "a132880e369a191fd62733eb3804a4becf9ea0b4d0ad39d3b770153e8fbe9a90",
+        "fingerprint": "8bfbe27f0e464e37f2686ed3ad5b1ad020f6d5673c035b46f3b869870b03a8d4",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -4102,7 +4160,7 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "a132880e369a191fd62733eb3804a4becf9ea0b4d0ad39d3b770153e8fbe9a90",
+      "checkedFingerprint": "8bfbe27f0e464e37f2686ed3ad5b1ad020f6d5673c035b46f3b869870b03a8d4",
       "draftFile": "data/research/catalog-125-content/drafts/lonicera-paradoxa.json",
       "publicationGaps": [
         "Независимая научная проверка pending; импорт не разрешён.",
@@ -4119,7 +4177,12 @@
         "status": "prepared",
         "sourceMasterId": "lonicera-paradoxa",
         "factsFingerprint": "d2b4882c334adaf2eee9f09cc209637edda6aada3719254c7ba803dafab922ce",
-        "draftSha256": "612c87df0eee33f9f8e7386e315fac61c932c112a228d07796fd5f57f3c5f172"
+        "draftSha256": "1eaf7ba7b8d045e85c3d81b0caa41162830d3e44f2e45ea1ff96ef83f14e91ef"
+      },
+      "iucnCrosscheck": {
+        "checklistKey": 176773827,
+        "category": "EN",
+        "assessmentYear": null
       }
     },
     {
