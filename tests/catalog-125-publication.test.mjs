@@ -15,7 +15,8 @@ import { paginateCatalog } from '../src/data/catalog-pagination.js'
 import { speciesPath, speciesIdFromPath } from '../src/data/species-routes.js'
 
 const read = async path => JSON.parse(await readFile(`${PROJECT_ROOT}/${path}`, 'utf8'))
-const source = await read('data/species.source.json'), published = await read('public/data/species.json')
+// Immutable 125-record release; catalog-150-publication covers the live catalogue.
+const source = await read('data/backups/catalog-150/species.source.json'), published = await read('data/backups/catalog-150/public-species.json')
 const before = await read('data/backups/catalog-125/species.source.json')
 const beforePublic = await read('data/backups/catalog-125/public-species.json')
 const manifestPath = 'data/research/catalog-125-review-manifest.json'

@@ -37,9 +37,14 @@ test('canonical data preserves original nine records and two archived examples w
     assert.ok(s.sources.find(source => s.regions[0].sourceIds.includes(source.id)).url.includes('282.pdf'))
     if (source.catalog.indexOf(s) < 40) assert.ok(s.names.ru && s.names.ky && s.names.en)
     else if (source.catalog.indexOf(s) < 100) { assert.ok(s.names.ru); assert.equal(s.names.ky, null); assert.equal(s.names.uz, null) }
-    else {
+    else if (source.catalog.indexOf(s) < 125) {
       assert.ok(s.names.ru)
       for (const language of ['ky', 'uz', 'en']) assert.equal(s.names[language], s.scientificName)
+    } else {
+      for (const language of ['ru', 'ky', 'uz', 'en']) {
+        assert.ok(s.names[language])
+        assert.ok(s.sources.some(reference => reference.supports.includes(`names.${language}`)))
+      }
     }
     assert.equal(s.iucn.year, null) // Dataset publication year is not an assessment year.
     if (source.catalog.indexOf(s) < 17) assert.ok(speciesPhoto(s)) // Preserve the first two photographic batches.
@@ -233,6 +238,12 @@ test('licensed assets are local WebP, have declared dimensions, captions and mat
   restoration.records.push(...finalPhotos.records.filter(r => r.status === 'published'))
   const catalog125Photos = JSON.parse(await readFile(join(PROJECT_ROOT, 'docs/evidence/catalog-125-photo-preparation.json'), 'utf8'))
   restoration.records.push(...catalog125Photos.receipts.filter(r => r.status === 'prepared').map(r => ({ id: r.candidateId, image: r.image, sha256: r.image.sha256 })))
+  const catalog150Manifest = JSON.parse(await readFile(join(PROJECT_ROOT, 'data/research/catalog-150-unified-review-manifest.json'), 'utf8'))
+  for (const entry of catalog150Manifest.candidates) {
+    const bytes = await readFile(join(PROJECT_ROOT, entry.draftFile))
+    assert.equal(createHash('sha256').update(bytes).digest('hex'), entry.draftSha256)
+    restoration.records.push(...JSON.parse(bytes).images.map(image => ({ id: entry.id, image, sha256: image.sha256 })))
+  }
   for (const s of source.catalog.filter(s => speciesPhoto(s))) {
     const image = speciesPhoto(s)
     const bytes = await readFile(join(PROJECT_ROOT, image.path))
