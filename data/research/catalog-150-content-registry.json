@@ -1078,7 +1078,7 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "NT",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -1123,7 +1123,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -1135,9 +1147,28 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz"
           ],
           "taxonId": "gbif:2480509"
+        },
+        {
+          "id": "photo-commons",
+          "title": "Greater spotted eagle (Aquila clanga) wintering at Israel",
+          "publisher": "Wikimedia Commons; Вых Пыхманн",
+          "url": "https://commons.wikimedia.org/wiki/File:Greater_spotted_eagle.jpg",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en"
         }
       ],
       "contradictions": [],
@@ -1158,6 +1189,18 @@
         {
           "path": "docs/evidence/catalog-150-source-receipts.json",
           "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-2-facts.json",
+          "sha256": "263e18385a4da96da063872ac9163a00b550d4c762bb65f8772d6b28b04db3fa"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-2-accounts.json",
+          "sha256": "5057c9394b6faf57fc63180f96ad4ed73810f9ee771ed9a5b3c45f9b94e10b96"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-2-images.json",
+          "sha256": "1b3db1167ef342a05c12863ccbe14dd9a4acaca63160383c863b6c088bbcc111"
         }
       ],
       "draft": null,
@@ -1182,49 +1225,57 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
       "diagnostics": {
         "candidateId": "aquila-clanga",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "da1b68cab04014de17e27865fb397e7e10d650bca645a11f585794bfccfe748d",
+        "fingerprint": "ec812ba3159d4b5c4f56ec10e67323aea4950ce90293dd2bc7b5c4b6509fb168",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "da1b68cab04014de17e27865fb397e7e10d650bca645a11f585794bfccfe748d"
+      "checkedFingerprint": "ec812ba3159d4b5c4f56ec10e67323aea4950ce90293dd2bc7b5c4b6509fb168",
+      "draftFile": "data/research/catalog-150-content/drafts/aquila-clanga.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: принятое научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Диагностические признаки внешности в использованном очерке не описаны; appearance сохранено null.",
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "aquila-clanga",
+        "factsFingerprint": "7e9b94674670649d77a2c09537a4838fdef18d64b538794b9aa114bb6b7270f3",
+        "draftSha256": "dd2f676d051909412db093d60d5058369c77be5021c4a5ab1e5757dea4cbaf98"
+      },
+      "scientificReviewStatus": "pending"
     },
     {
       "originalScientificName": "Aquila nipalensis",
@@ -1233,8 +1284,8 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "NT",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); очерк вида с упоминанием orientalis; историческая сноска об A. rapax не принята как современное объединение",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -1278,7 +1329,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -1290,9 +1353,28 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz"
           ],
           "taxonId": "gbif:2480513"
+        },
+        {
+          "id": "photo-commons",
+          "title": "Steppe Eagle (Aquila nipalensis) captured at Sangada, Haripur, KPK, Pakistan with Canon EOS 7D Mark II",
+          "publisher": "Wikimedia Commons; Imran Shah from Islamabad, Pakistan",
+          "url": "https://commons.wikimedia.org/wiki/File:Steppe_Eagle_(Aquila_nipalensis)_(27812388459).jpg",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en"
         }
       ],
       "contradictions": [],
@@ -1313,6 +1395,18 @@
         {
           "path": "docs/evidence/catalog-150-source-receipts.json",
           "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-2-facts.json",
+          "sha256": "263e18385a4da96da063872ac9163a00b550d4c762bb65f8772d6b28b04db3fa"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-2-accounts.json",
+          "sha256": "5057c9394b6faf57fc63180f96ad4ed73810f9ee771ed9a5b3c45f9b94e10b96"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-2-images.json",
+          "sha256": "1b3db1167ef342a05c12863ccbe14dd9a4acaca63160383c863b6c088bbcc111"
         }
       ],
       "draft": null,
@@ -1337,49 +1431,57 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
       "diagnostics": {
         "candidateId": "aquila-nipalensis",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "6d31efa1adfc1edb391ae9a99ddee5533a215b08c3ac02a4c5dab5b494613b77",
+        "fingerprint": "32124afb5ec96af55d4bd4a588fdcede6e42f3a6725a0bfc759a2ae813cbe038",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "6d31efa1adfc1edb391ae9a99ddee5533a215b08c3ac02a4c5dab5b494613b77"
+      "checkedFingerprint": "32124afb5ec96af55d4bd4a588fdcede6e42f3a6725a0bfc759a2ae813cbe038",
+      "draftFile": "data/research/catalog-150-content/drafts/aquila-nipalensis.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: принятое научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Диагностические признаки внешности в использованном очерке не описаны; appearance сохранено null.",
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "aquila-nipalensis",
+        "factsFingerprint": "d2ef5948e490efc70ee495b44fc173ef6f4f6464c7db690452a9bdfcef915467",
+        "draftSha256": "5570a63c78d36fe2b970e3a291c7b6718787bd56d3010053ee82994ae21d532d"
+      },
+      "scientificReviewStatus": "pending"
     },
     {
       "originalScientificName": "Aquila heliaca",
@@ -1388,7 +1490,7 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -1433,7 +1535,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -1445,9 +1559,28 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz"
           ],
           "taxonId": "gbif:2480500"
+        },
+        {
+          "id": "photo-commons",
+          "title": "Juvenile moulting into adult plumage at the Little Rann of Kutch",
+          "publisher": "Wikimedia Commons; Sumeet Moghe",
+          "url": "https://commons.wikimedia.org/wiki/File:Eastern_Imperial_Eagle_cr.jpg",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en"
         }
       ],
       "contradictions": [],
@@ -1468,6 +1601,18 @@
         {
           "path": "docs/evidence/catalog-150-source-receipts.json",
           "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-2-facts.json",
+          "sha256": "263e18385a4da96da063872ac9163a00b550d4c762bb65f8772d6b28b04db3fa"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-2-accounts.json",
+          "sha256": "5057c9394b6faf57fc63180f96ad4ed73810f9ee771ed9a5b3c45f9b94e10b96"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-2-images.json",
+          "sha256": "1b3db1167ef342a05c12863ccbe14dd9a4acaca63160383c863b6c088bbcc111"
         }
       ],
       "draft": null,
@@ -1492,49 +1637,57 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
       "diagnostics": {
         "candidateId": "aquila-heliaca",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "490fa3571214553cbc5a3b16a4417d7a4ff28c3697fc3234cbdb272189f6c7a4",
+        "fingerprint": "a423b4bd28aa957faa3ad939042af89ee3a3ccde614b19861037f20cf4a6e0b5",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "490fa3571214553cbc5a3b16a4417d7a4ff28c3697fc3234cbdb272189f6c7a4"
+      "checkedFingerprint": "a423b4bd28aa957faa3ad939042af89ee3a3ccde614b19861037f20cf4a6e0b5",
+      "draftFile": "data/research/catalog-150-content/drafts/aquila-heliaca.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: принятое научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Диагностические признаки внешности в использованном очерке не описаны; appearance сохранено null.",
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "aquila-heliaca",
+        "factsFingerprint": "a98d0c39edd9642b9976a95cfb41122c01ee35c8dec0eec51c4c0a8186636e0e",
+        "draftSha256": "3369adc49f0b95f052409bc2234b1315a95bac7f05c22686b9b3710e115c3170"
+      },
+      "scientificReviewStatus": "pending"
     },
     {
       "originalScientificName": "Hieraaetus fasciatus",
@@ -1543,8 +1696,8 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "NT",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); видовой очерк с упоминанием номинативного подвида; предполагаемое гнездование не считается подтверждённым; запись под именем Hieraaetus fasciatus",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -1588,7 +1741,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -1600,9 +1765,30 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview",
+            "content.shortDescription",
+            "names.ky",
+            "names.uz"
           ],
           "taxonId": "gbif:5844449"
+        },
+        {
+          "id": "photo-commons",
+          "title": "Aquila fasciata, Castellón, Valencia, Spain",
+          "publisher": "Wikimedia Commons; Paco Gómez from Castellón, Spain",
+          "url": "https://commons.wikimedia.org/wiki/File:Aguila_perdicera.jpg",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en"
         }
       ],
       "contradictions": [],
@@ -1623,6 +1809,18 @@
         {
           "path": "docs/evidence/catalog-150-source-receipts.json",
           "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-2-facts.json",
+          "sha256": "263e18385a4da96da063872ac9163a00b550d4c762bb65f8772d6b28b04db3fa"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-2-accounts.json",
+          "sha256": "5057c9394b6faf57fc63180f96ad4ed73810f9ee771ed9a5b3c45f9b94e10b96"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-2-images.json",
+          "sha256": "1b3db1167ef342a05c12863ccbe14dd9a4acaca63160383c863b6c088bbcc111"
         }
       ],
       "draft": null,
@@ -1647,49 +1845,57 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
       "diagnostics": {
         "candidateId": "hieraaetus-fasciatus",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "4ea9caec8803cf3cf88b98cf562c56d95c476e24b44445716ad5393acc00ebe6",
+        "fingerprint": "640ae2357cee846f81722d411726f75e9ddf461a4bcc1be19a42e4bd40a47efd",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "4ea9caec8803cf3cf88b98cf562c56d95c476e24b44445716ad5393acc00ebe6"
+      "checkedFingerprint": "640ae2357cee846f81722d411726f75e9ddf461a4bcc1be19a42e4bd40a47efd",
+      "draftFile": "data/research/catalog-150-content/drafts/hieraaetus-fasciatus.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: принятое научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Диагностические признаки внешности в использованном очерке не описаны; appearance сохранено null.",
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "hieraaetus-fasciatus",
+        "factsFingerprint": "37d180fcf0575bc8428eebda5f77b45f67b2554ba391a0d548772ccf3203af23",
+        "draftSha256": "f9bc2eb38873fb4c1dad8b6c20839e8e9786b52019fb965a2634926195b930de"
+      },
+      "scientificReviewStatus": "pending"
     },
     {
       "originalScientificName": "Hieraaetus pennatus",
@@ -1698,7 +1904,7 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "NT",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -1743,7 +1949,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -1755,9 +1973,28 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz"
           ],
           "taxonId": "gbif:2480685"
+        },
+        {
+          "id": "photo-commons",
+          "title": "Booted eagle, Hieraaetus pennatus, at Kgalagadi Transfrontier Pa",
+          "publisher": "Wikimedia Commons; Derek Keats from Johannesburg, South Africa",
+          "url": "https://commons.wikimedia.org/wiki/File:Booted_eagle,_Hieraaetus_pennatus,_at_Kgalagadi_Transfrontier_Pa_(32334023348).jpg",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en"
         }
       ],
       "contradictions": [],
@@ -1778,6 +2015,18 @@
         {
           "path": "docs/evidence/catalog-150-source-receipts.json",
           "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+        },
+        {
+          "path": "data/research/catalog-150-content/block-2-facts.json",
+          "sha256": "263e18385a4da96da063872ac9163a00b550d4c762bb65f8772d6b28b04db3fa"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-2-accounts.json",
+          "sha256": "5057c9394b6faf57fc63180f96ad4ed73810f9ee771ed9a5b3c45f9b94e10b96"
+        },
+        {
+          "path": "docs/evidence/catalog-150-block-2-images.json",
+          "sha256": "1b3db1167ef342a05c12863ccbe14dd9a4acaca63160383c863b6c088bbcc111"
         }
       ],
       "draft": null,
@@ -1802,49 +2051,57 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
       "diagnostics": {
         "candidateId": "hieraaetus-pennatus",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "8c33c6278b42485dbf1d343f2a2e9c5856320b01dbf1d195ce7a8b975e80749b",
+        "fingerprint": "25fa543134bf26bcb3424327520a23b99b24c8d7b03b6475487b2b46db24e80f",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "8c33c6278b42485dbf1d343f2a2e9c5856320b01dbf1d195ce7a8b975e80749b"
+      "checkedFingerprint": "25fa543134bf26bcb3424327520a23b99b24c8d7b03b6475487b2b46db24e80f",
+      "draftFile": "data/research/catalog-150-content/drafts/hieraaetus-pennatus.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение на импорт отсутствует.",
+        "KY/UZ: принятое научное имя вместо неподтверждённых народных названий. Краткие переводы требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Названия KY/UZ представлены принятым научным именем; неподтверждённые народные названия не создавались. Краткие переводы требуют редакторской проверки."
+      ],
+      "missingFacts": [
+        "Диагностические признаки внешности в использованном очерке не описаны; appearance сохранено null.",
+        "Современная национальная численность не подтверждена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "hieraaetus-pennatus",
+        "factsFingerprint": "28ea51c12528459fe099da8afc81947371b272ecb9298742e6d183b7e2747935",
+        "draftSha256": "c32a92f6a09a6e6da629c51263c515c2ace8d4026328f2876ebf4e4a91ba671c"
+      },
+      "scientificReviewStatus": "pending"
     },
     {
       "originalScientificName": "Tetrax tetrax",
