@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "registryId": "catalog-125-content",
+  "catalogFingerprint": "d87aa848adc17517ca35a39bcedb1548fd16b1b93d1342beee5d92cfab5483f3",
+  "counts": {
+    "processed": 5,
+    "accepted": 5,
+    "deferred": 0,
+    "rejected": 0
+  },
+  "states": {
+    "pending": 0,
+    "needs_evidence": 0,
+    "research_ready": 0,
+    "needs_photo": 0,
+    "ready_for_review": 5,
+    "approved_for_import": 0,
+    "imported": 0,
+    "rejected": 0
+  },
+  "results": [
+    {
+      "candidateId": "silene-sussamyrica",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "4058f503b3690597d155d3bc84d7dc119a89e62c6f9e303fcd0fb1cd72efc388",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "iskandera-alaica",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "746ced61c83c076a9ee27df2f374a8ecb17df89c0c59585ba4f6eb8995e4dae1",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "spiraeanthus-schrenkianus",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "81369bd1eaf800c776699e4e320ec1fb354d339f96a5b8a9dc21220c1686dbd8",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "chesneya-villosa",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "91e3631efa4be189867bbbd268025e6f7aa42233d499def871cb9d65ae899e94",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "hedysarum-chaitocarpum",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "4ec962d182c31a4c6f92ec82d6786d6c290cafe9ed26dc9cbc22328adef3afd6",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    }
+  ],
+  "metrics": {
+    "durationMs": 184.59,
+    "cpu": {
+      "user": 234000,
+      "system": 32000
+    },
+    "memory": {
+      "rss": 58724352,
+      "heapTotal": 29155328,
+      "heapUsed": 17210224,
+      "external": 3454320,
+      "arrayBuffers": 824177
+    },
+    "localMaterialReads": 10
+  }
+}

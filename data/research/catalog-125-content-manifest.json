@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "documentType": "bulk-content-manifest",
+  "sourceCommit": "f9b1cd7f2854b71317a57bdb753c4db1a31c2207",
+  "masterRegistryFile": "data/research/catalog-125-research-registry.json",
+  "masterRegistryFingerprint": "151f9ad33bd194cb22c3c4082a1776cbf88eabdbc365d890c6da552c1f1a3710",
+  "taxonomyFile": "docs/evidence/catalog-125-taxonomy.json",
+  "registryFile": "data/research/catalog-125-content-registry.json",
+  "contentDirectory": "data/research/catalog-125-content",
+  "evidencePrefix": "catalog-125",
+  "candidateIds": [
+    "silene-sussamyrica",
+    "iskandera-alaica",
+    "spiraeanthus-schrenkianus",
+    "chesneya-villosa",
+    "hedysarum-chaitocarpum",
+    "zygophyllum-kaschgaricum",
+    "sclerotiaria-pentaceros",
+    "bupleurum-rosulare",
+    "hyalolaena-intermedia",
+    "seseli-eryngioides",
+    "seseli-korshinskyi",
+    "cnidiocarpa-alaica",
+    "pastinacopsis-glacialis",
+    "kaufmannia-semenovii",
+    "acantholimon-compactum",
+    "scutellaria-andrachnoides",
+    "scutellaria-nepetoides",
+    "salvia-korolkowii",
+    "nathaliella-alaica",
+    "lonicera-paradoxa",
+    "campanula-eugeniae",
+    "lamyropappus-schakaptaricus",
+    "trichanthemis-aulieatensis",
+    "trichanthemis-aurea",
+    "lepidolopha-komarowii"
+  ],
+  "blocks": [
+    {
+      "number": 1,
+      "batchId": "catalog-125-1",
+      "candidateIds": [
+        "silene-sussamyrica",
+        "iskandera-alaica",
+        "spiraeanthus-schrenkianus",
+        "chesneya-villosa",
+        "hedysarum-chaitocarpum"
+      ],
+      "status": "prepared_for_check"
+    },
+    {
+      "number": 2,
+      "batchId": "catalog-125-2",
+      "candidateIds": [
+        "zygophyllum-kaschgaricum",
+        "sclerotiaria-pentaceros",
+        "bupleurum-rosulare",
+        "hyalolaena-intermedia",
+        "seseli-eryngioides"
+      ],
+      "status": "pending"
+    },
+    {
+      "number": 3,
+      "batchId": "catalog-125-3",
+      "candidateIds": [
+        "seseli-korshinskyi",
+        "cnidiocarpa-alaica",
+        "pastinacopsis-glacialis",
+        "kaufmannia-semenovii",
+        "acantholimon-compactum"
+      ],
+      "status": "pending"
+    },
+    {
+      "number": 4,
+      "batchId": "catalog-125-4",
+      "candidateIds": [
+        "scutellaria-andrachnoides",
+        "scutellaria-nepetoides",
+        "salvia-korolkowii",
+        "nathaliella-alaica",
+        "lonicera-paradoxa"
+      ],
+      "status": "pending"
+    },
+    {
+      "number": 5,
+      "batchId": "catalog-125-5",
+      "candidateIds": [
+        "campanula-eugeniae",
+        "lamyropappus-schakaptaricus",
+        "trichanthemis-aulieatensis",
+        "trichanthemis-aurea",
+        "lepidolopha-komarowii"
+      ],
+      "status": "pending"
+    }
+  ],
+  "publicationAllowed": false,
+  "ownerAuthorization": "absent_requires_specific_review_manifest",
+  "baselineCatalogCount": 100,
+  "excludePublished": true,
+  "excludedIds": [
+    "tulipa-anadroma",
+    "eryx-tataricus"
+  ],
+  "selectionLimit": 25
+}
