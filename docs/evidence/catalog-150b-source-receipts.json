@@ -1,0 +1,306 @@
+{
+  "schemaVersion": 1,
+  "accessedAt": "2026-10-16",
+  "records": [
+    {
+      "id": "mdd-gazelle",
+      "url": "https://www.mammaldiversity.org/taxon/1006154/",
+      "httpStatus": 200,
+      "bytes": 190472,
+      "localCache": ".generated/research/catalog-150b/mdd-gazelle.txt",
+      "sha256": "be10ed16beb35f15fd5c3b3422d8a51cab09843219390966c5afa302e6d3fa5d",
+      "checkedClaims": {
+        "acceptedName": "Gazella subgutturosa",
+        "rank": "SPECIES",
+        "authority": "(von Güldenstädt, 1780)",
+        "originalName": "Antilope subgutturosa",
+        "kyrgyzstanInCountryDistribution": true,
+        "currentLocalPresenceConfirmed": null,
+        "taxonomicNote": "G. marica is excluded; gracilicornis and yarkandensis remain included. No unreviewed subspecies is assigned."
+      }
+    },
+    {
+      "id": "itis-woodpecker",
+      "url": "https://www.itis.gov/ITISWebService/jsonservice/getFullRecordFromTSN?tsn=554050",
+      "httpStatus": 200,
+      "bytes": 5815,
+      "localCache": ".generated/research/catalog-150b/itis-woodpecker.txt",
+      "sha256": "b5868af6d328315ac4dc28f9962612911dde93f8b74929a37ed07ab1ecfafd17",
+      "data": {
+        "acceptedNameList": {
+          "acceptedNames": [
+            null
+          ],
+          "class": "gov.usgs.itis.itis_service.data.SvcAcceptedNameList",
+          "tsn": "554050"
+        },
+        "class": "gov.usgs.itis.itis_service.data.SvcFullRecord",
+        "commentList": {
+          "class": "gov.usgs.itis.itis_service.data.SvcTaxonCommentList",
+          "comments": [
+            null
+          ],
+          "tsn": "554050"
+        },
+        "commonNameList": {
+          "class": "gov.usgs.itis.itis_service.data.SvcCommonNameList",
+          "commonNames": [
+            {
+              "class": "gov.usgs.itis.itis_service.data.SvcCommonName",
+              "commonName": "White-winged Woodpecker",
+              "language": "English",
+              "tsn": "554050"
+            }
+          ],
+          "tsn": "554050"
+        },
+        "completenessRating": {
+          "class": "gov.usgs.itis.itis_service.data.SvcGlobalSpeciesCompleteness",
+          "completeness": "",
+          "rankId": 220,
+          "tsn": "554050"
+        },
+        "coreMetadata": {
+          "class": "gov.usgs.itis.itis_service.data.SvcCoreMetadata",
+          "credRating": "TWG standards met",
+          "rankId": 220,
+          "taxonCoverage": "",
+          "taxonCurrency": "",
+          "taxonUsageRating": "valid",
+          "tsn": "554050",
+          "unacceptReason": ""
+        },
+        "credibilityRating": {
+          "class": "gov.usgs.itis.itis_service.data.SvcCredibilityData",
+          "credRating": "TWG standards met",
+          "tsn": "554050"
+        },
+        "currencyRating": {
+          "class": "gov.usgs.itis.itis_service.data.SvcCurrencyData",
+          "rankId": 220,
+          "taxonCurrency": "",
+          "tsn": "554050"
+        },
+        "dateData": {
+          "class": "gov.usgs.itis.itis_service.data.SvcTaxonDateData",
+          "initialTimeStamp": "1998-09-16 14:57:03.0",
+          "tsn": "554050",
+          "updateDate": "2020-12-18"
+        },
+        "expertList": {
+          "class": "gov.usgs.itis.itis_service.data.SvcTaxonExpertList",
+          "experts": [
+            {
+              "class": "gov.usgs.itis.itis_service.data.SvcTaxonExpert",
+              "comment": "PO Box 1999 Walla Walla, Washington 99362-0999",
+              "expert": "Alan P. Peterson, M.D.",
+              "referenceFor": [
+                {
+                  "class": "gov.usgs.itis.itis_service.data.SvcReferenceForElement",
+                  "name": "Dendrocopos leucopterus",
+                  "refLanguage": null,
+                  "referredTsn": "554050"
+                }
+              ],
+              "updateDate": "2001-09-28"
+            }
+          ],
+          "tsn": "554050"
+        },
+        "geographicDivisionList": {
+          "class": "gov.usgs.itis.itis_service.data.SvcTaxonGeoDivisionList",
+          "geoDivisions": [
+            {
+              "class": "gov.usgs.itis.itis_service.data.SvcTaxonGeoDivision",
+              "geographicValue": "Europe & Northern Asia (excluding China)",
+              "updateDate": "2020-12-18"
+            },
+            {
+              "class": "gov.usgs.itis.itis_service.data.SvcTaxonGeoDivision",
+              "geographicValue": "Southern Asia",
+              "updateDate": "2020-12-18"
+            }
+          ],
+          "tsn": "554050"
+        },
+        "hierarchyUp": {
+          "author": null,
+          "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+          "parentName": "Dendrocopos",
+          "parentTsn": "178213",
+          "rankName": "Species",
+          "taxonName": "Dendrocopos leucopterus",
+          "tsn": "554050"
+        },
+        "jurisdictionalOriginList": {
+          "class": "gov.usgs.itis.itis_service.data.SvcTaxonJurisdictionalOriginList",
+          "jurisdictionalOrigins": [
+            null
+          ],
+          "tsn": "554050"
+        },
+        "kingdom": {
+          "class": "gov.usgs.itis.itis_service.data.SvcKingdomInfo",
+          "kingdomId": "5",
+          "kingdomName": "Animalia  ",
+          "tsn": "554050"
+        },
+        "otherSourceList": {
+          "class": "gov.usgs.itis.itis_service.data.SvcTaxonOtherSourceList",
+          "otherSources": [
+            {
+              "acquisitionDate": "2020-07-25",
+              "class": "gov.usgs.itis.itis_service.data.SvcTaxonOtherSource",
+              "referenceFor": [
+                {
+                  "class": "gov.usgs.itis.itis_service.data.SvcReferenceForElement",
+                  "name": "Dendrocopos leucopterus",
+                  "refLanguage": null,
+                  "referredTsn": "554050"
+                }
+              ],
+              "source": "IOC World Bird List (v 10.2), website (version 10.2)",
+              "sourceComment": "Gill, F., and D. Donsker, eds. 2020. IOC World Bird List (v 10.2). Available at http://www.worldbirdnames.org [Accessed 01 Dec, 2020]",
+              "sourceType": "website",
+              "updateDate": "2020-12-18",
+              "version": "10.2"
+            },
+            {
+              "acquisitionDate": "2020-04-07",
+              "class": "gov.usgs.itis.itis_service.data.SvcTaxonOtherSource",
+              "referenceFor": [
+                {
+                  "class": "gov.usgs.itis.itis_service.data.SvcReferenceForElement",
+                  "name": "Dendrocopos leucopterus",
+                  "refLanguage": null,
+                  "referredTsn": "554050"
+                }
+              ],
+              "source": "Zoonomen - Zoological Nomenclature Resource, 2020.04.03",
+              "sourceComment": "Zoonomen - Zoological Nomenclature Resource maintained by Alan P. Peterson at http://www.zoonomen.net",
+              "sourceType": "website",
+              "updateDate": "2020-06-26",
+              "version": "03-Apr-20"
+            }
+          ],
+          "tsn": "554050"
+        },
+        "parentTSN": {
+          "class": "gov.usgs.itis.itis_service.data.SvcParentTsn",
+          "parentTsn": "178213",
+          "tsn": "554050"
+        },
+        "publicationList": {
+          "class": "gov.usgs.itis.itis_service.data.SvcTaxonPublicationList",
+          "publications": [
+            {
+              "actualPubDate": "2006-01-01",
+              "class": "gov.usgs.itis.itis_service.data.SvcTaxonPublication",
+              "isbn": "0-691-12827-8",
+              "issn": "",
+              "listedPubDate": "2006-01-01",
+              "pages": "ix + 259",
+              "pubComment": "Includes a CD-ROM with the full dataset",
+              "pubName": "Birds of the World: Recommended English Names",
+              "pubPlace": "Princeton, New Jersey, USA",
+              "publisher": "Princeton University Press",
+              "referenceAuthor": "Gill, Frank, and Minturn Wright",
+              "referenceFor": [
+                {
+                  "class": "gov.usgs.itis.itis_service.data.SvcReferenceForElement",
+                  "name": "Dendrocopos leucopterus",
+                  "refLanguage": null,
+                  "referredTsn": "554050"
+                },
+                {
+                  "class": "gov.usgs.itis.itis_service.data.SvcReferenceForElement",
+                  "name": "White-winged Woodpecker",
+                  "refLanguage": "English",
+                  "referredTsn": "554050"
+                }
+              ],
+              "title": "",
+              "updateDate": "2026-06-25"
+            }
+          ],
+          "tsn": "554050"
+        },
+        "scientificName": {
+          "author": "(Salvadori, 1871)",
+          "class": "gov.usgs.itis.itis_service.data.SvcScientificName",
+          "combinedName": "Dendrocopos leucopterus",
+          "kingdom": null,
+          "tsn": "554050",
+          "unitInd1": null,
+          "unitInd2": null,
+          "unitInd3": null,
+          "unitInd4": null,
+          "unitName1": "Dendrocopos                        ",
+          "unitName2": "leucopterus",
+          "unitName3": null,
+          "unitName4": null
+        },
+        "synonymList": {
+          "class": "gov.usgs.itis.itis_service.data.SvcSynonymNameList",
+          "synonyms": [
+            null
+          ],
+          "tsn": "554050"
+        },
+        "taxRank": {
+          "class": "gov.usgs.itis.itis_service.data.SvcTaxonRankInfo",
+          "kingdomId": "5",
+          "kingdomName": "Animalia  ",
+          "rankId": "220",
+          "rankName": "Species        ",
+          "tsn": "554050"
+        },
+        "taxonAuthor": {
+          "authorship": "(Salvadori, 1871)",
+          "class": "gov.usgs.itis.itis_service.data.SvcTaxonAuthorship",
+          "tsn": "554050",
+          "updateDate": "1999-10-29"
+        },
+        "tsn": "554050",
+        "unacceptReason": {
+          "class": "gov.usgs.itis.itis_service.data.SvcUnacceptData",
+          "tsn": "554050",
+          "unacceptReason": null
+        },
+        "usage": {
+          "class": "gov.usgs.itis.itis_service.data.SvcTaxonUsageData",
+          "taxonUsageRating": "valid",
+          "tsn": "554050"
+        }
+      }
+    },
+    {
+      "id": "manas-gazelle",
+      "url": "https://manas.edu.kg/en/natural_sciences/biology/news/7608",
+      "httpStatus": 200,
+      "bytes": 50848,
+      "localCache": ".generated/research/catalog-150b/manas-gazelle.txt",
+      "sha256": "2f84d4510b904040300ea65e628558c1c301f6d2639effda5fdd99dc8515416b",
+      "checkedClaims": {
+        "publicationDate": "2026-03-22",
+        "seminarDate": "2026-03-18",
+        "topic": "Gazella subgutturosa: historical range, decline and reintroduction in Kyrgyzstan",
+        "numericPopulationProvided": false,
+        "independentReviewOfMuras": false
+      }
+    },
+    {
+      "id": "birdlife-woodpecker",
+      "url": "https://doi.org/10.2305/IUCN.UK.2024-2.RLTS.T22681130A264093087.en",
+      "accessMethod": "web search full indexed assessment; direct open failed",
+      "accessedAt": "2026-10-16",
+      "checkedClaims": {
+        "acceptedName": "Dendrocopos leucopterus",
+        "kyrgyzstan": "Native; extant resident",
+        "assessmentYear": 2024,
+        "populationSize": "not quantified"
+      },
+      "scope": "Corroboration only; national accounts provide the draft biology."
+    }
+  ]
+}

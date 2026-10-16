@@ -1,0 +1,295 @@
+{
+  "id": "gazella-subgutturosa",
+  "scientificName": "Gazella subgutturosa",
+  "names": {
+    "ru": "Джейран",
+    "ky": "Жейрен",
+    "uz": "Gazella subgutturosa",
+    "en": "Goitered Gazelle"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Artiodactyla",
+    "family": "Bovidae",
+    "genus": "Gazella"
+  },
+  "group": "mammals",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "CR",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Gazella subgutturoza",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Национальный очерк 2006 года описывает открытые ровные или холмистые участки щебнистых и глинистых пустынь с редкой травянистой растительностью. Это описание исторических местообитаний, а не карта современной популяции.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальном очерке 2006 года: браконьерство и хозяйственное освоение подходящих местообитаний.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный очерк 2006 года рекомендует борьбу с браконьерством, сохранение местообитаний и изучение возможности разведения с последующим выпуском. Выполнение этих рекомендаций и успешное восстановление популяции здесь не утверждаются.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/gazella-subgutturosa.webp",
+      "width": 1800,
+      "height": 1353,
+      "sha256": "fdfd5028cece9e8b5d352a603184c1fb8454613d1332382c240e4e12c9532df6",
+      "author": "Elşad İbrahimov",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Female_goitered_gazelle,_Shirvan_National_Park,_Azerbaijan.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "gazella-subgutturosa — Elşad İbrahimov, CC BY-SA 4.0; Wikimedia Commons. Источник: https://commons.wikimedia.org/wiki/File:Female_goitered_gazelle,_Shirvan_National_Park,_Azerbaijan.jpg. Производное изображение распространяется под CC BY-SA 4.0.",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Джейран, Ширванский национальный парк, Азербайджан; фотография не подтверждает современное присутствие в Кыргызстане.",
+        "ky": null,
+        "uz": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга КР, 2006; Gazella subgutturoza, с. 515",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=515",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 514-бет",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=514",
+      "accessedAt": "2026-10-16",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    },
+    {
+      "id": "national-decree",
+      "title": "Постановление №170 от 28.04.2005, копия с изменениями 25.07.2009; приложение 2, строка 7",
+      "publisher": "Правительство КР; FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=8",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "originalScientificName",
+        "scientificName",
+        "content.overview"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Gazella subgutturosa (Güldenstaedt, 1780)",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Gazella%20subgutturosa",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview",
+        "names.uz"
+      ],
+      "taxonId": "gbif:5220146"
+    },
+    {
+      "id": "mdd-taxonomy",
+      "title": "Mammal Diversity Database: Gazella subgutturosa",
+      "publisher": "American Society of Mammalogists",
+      "url": "https://www.mammaldiversity.org/taxon/1006154/",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.distribution"
+      ]
+    },
+    {
+      "id": "manas-seminar",
+      "title": "Restoration of the Gazella Population in Kyrgyzstan and Its Reintroduction, 22.03.2026",
+      "publisher": "Kyrgyz-Turkish Manas University",
+      "url": "https://manas.edu.kg/en/natural_sciences/biology/news/7608",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "content.overview"
+      ]
+    },
+    {
+      "id": "photo-commons",
+      "title": "Female goitered gazelle (Gazella subgutturosa) at the Shirvan National Park, Azerbaijan",
+      "publisher": "Wikimedia Commons; Elşad İbrahimov",
+      "url": "https://commons.wikimedia.org/wiki/File:Female_goitered_gazelle,_Shirvan_National_Park,_Azerbaijan.jpg",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ky": "Жейрен Кыргызстандын 2006-жылкы Кызыл китебине киргизилген. Очерк Ысык-Көл аймагындагы жана Лейлектеги мурдагы кездешүүлөрдү сүрөттөйт. Өлкөдөгү азыркы саны жана жапайы популяциясынын сакталышы такталган эмес.",
+        "uz": "Jayron Qirgʻizistonning 2006-yilgi Qizil kitobiga kiritilgan. Milliy ocherk Issiqkoʻl hududi va Laylakdagi tarixiy uchrashuvlarni bayon qiladi. Mamlakatdagi hozirgi soni va yovvoyi populyatsiyasining saqlanib qolganligi tasdiqlanmagan.",
+        "ru": "Джейран включён в Красную книгу КР 2006 года. Национальный очерк описывает исторические находки в Прииссыккулье и Лейлеке. Современная численность и сохранение дикой популяции в стране не установлены.",
+        "en": "The goitered gazelle has a species account in the 2006 Red Book of Kyrgyzstan. It describes historical records around Issyk-Kul and in Leilek. Its current national abundance and the persistence of a wild population are unconfirmed."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Джейран — представитель семейства полорогих, включённый в национальную Красную книгу Кыргызстана 2006 года с категорией CR. Эта категория относится к историческому национальному очерку, а не к новой оценке состояния вида. В книге использовано написание Gazella subgutturoza; нормативный перечень в редакции 2009 года приводит Gazella subgutturosa, совпадающее с принятым именем GBIF и Mammal Diversity Database. Очерк связывает прежнее распространение в стране с Прииссыккульем, Орто-Токоем и Лейлекским районом. Упомянутые в нём сведения 1930–1970-х годов не доказывают современного присутствия. В качестве местообитаний описаны открытые щебнистые и глинистые пустыни. Кормление приходится преимущественно на утренние и вечерние часы. Основные угрозы в национальном источнике — браконьерство и хозяйственное освоение подходящих территорий. Обсуждение восстановления популяции в Кыргызстане на научном семинаре 2026 года не является результатом учёта и не подтверждает успешную реинтродукцию. Достоверной современной национальной оценки численности нет; её значение оставлено неизвестным.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "national-decree",
+        "gbif-taxonomy",
+        "mdd-taxonomy",
+        "manas-seminar"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальному очерку, вид преимущественно оседлый и кормится утром и вечером. В сухих местообитаниях использует доступные водопои и воду, собирающуюся после дождя или таяния снега. Современных локальных исследований эти сведения не заменяют.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В очерке приведена общая биология: беременность около 5,5–6 месяцев, обычно 1–2 детёныша. Сезон гона описан по материалам Казахстана; он не переносится на неподтверждённую современную популяцию Кыргызстана.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические сведения Красной книги 2006 года относятся к Прииссыккулью, Орто-Токою и Лейлекскому району. Сам очерк не подтверждает сохранение вида на момент издания. Современная Mammal Diversity Database включает Кыргызстан в перечень стран, но это не подтверждение нынешнего наличия животных в конкретной местности. Современные точки и границы ареала в Кыргызстане не назначены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "mdd-taxonomy"
+      ]
+    }
+  }
+}
