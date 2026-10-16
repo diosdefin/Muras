@@ -2064,7 +2064,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "EN",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -2109,7 +2109,17 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -2134,9 +2144,30 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz",
+            "names.en"
           ],
           "taxonId": "gbif:8119721"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Гербарный образец: Seseli korshinskyi",
+          "publisher": "Moscow State University",
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0860446",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "ru",
+          "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
         }
       ],
       "contradictions": [],
@@ -2149,6 +2180,18 @@
         {
           "path": "docs/evidence/catalog-125-taxonomy.json",
           "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        },
+        {
+          "path": "data/research/catalog-125-content/block-3-facts.json",
+          "sha256": "d9aa3e0113a3577ebaa7d543b120aeeb6fbb5c86d18ba1a103872057c71ef887"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-3-accounts.json",
+          "sha256": "ad787efd56502a2ffd6dff776521906dd6f7912805314b6ad3e11a2367ce3fe5"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-3-images.json",
+          "sha256": "365131d2abb6ed1f827f46cbeb71ec97766b6487f66d2d1f7d1bdc66a560e4bc"
         }
       ],
       "draft": null,
@@ -2174,48 +2217,52 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "seseli-korshinskyi",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "bf2de70fc0bc1334c3bac9ca33049e224a21009753f5d9f53456007f35ffdc5b",
+        "fingerprint": "04ac547361b97d211e31e689307dde7fe3cdbbd04b700ee7d9fb89c9aad9e429",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "bf2de70fc0bc1334c3bac9ca33049e224a21009753f5d9f53456007f35ffdc5b"
+      "checkedFingerprint": "04ac547361b97d211e31e689307dde7fe3cdbbd04b700ee7d9fb89c9aad9e429",
+      "draftFile": "data/research/catalog-125-content/drafts/seseli-korshinskyi.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; импорт не разрешён.",
+        "KY/UZ/EN: научное имя вместо неподтверждённых народных названий; переводы краткого описания требуют редакторской проверки."
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Лимитирующие факторы и современная численность неизвестны."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "seseli-korshinskyi",
+        "factsFingerprint": "dec344eac226f6ce585d22700184006f3db72f25b83c749c7eb08b32d3fc63a3",
+        "draftSha256": "1d2bc0a1e2bcdd43f94ff976a3ac9e536c101e9b15e5e48f6fb626549d3d831d"
+      }
     },
     {
       "originalScientificName": "Cnidiocarpa alaica",
@@ -2224,7 +2271,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -2269,7 +2316,17 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -2294,9 +2351,30 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz",
+            "names.en"
           ],
           "taxonId": "gbif:3638564"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Гербарный образец: Cnidiocarpa alaica",
+          "publisher": "Moscow State University",
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0861517",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "ru",
+          "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
         }
       ],
       "contradictions": [],
@@ -2309,6 +2387,18 @@
         {
           "path": "docs/evidence/catalog-125-taxonomy.json",
           "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        },
+        {
+          "path": "data/research/catalog-125-content/block-3-facts.json",
+          "sha256": "d9aa3e0113a3577ebaa7d543b120aeeb6fbb5c86d18ba1a103872057c71ef887"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-3-accounts.json",
+          "sha256": "ad787efd56502a2ffd6dff776521906dd6f7912805314b6ad3e11a2367ce3fe5"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-3-images.json",
+          "sha256": "365131d2abb6ed1f827f46cbeb71ec97766b6487f66d2d1f7d1bdc66a560e4bc"
         }
       ],
       "draft": null,
@@ -2334,48 +2424,52 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "cnidiocarpa-alaica",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "8606a519694b00818005e3a000ddfed85aedf0c2a6552122c2222229790ee934",
+        "fingerprint": "a3c372cd73cb12a0df4e0e87a9a8903939de0f24f7fca242942a36fd7a0882fe",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "8606a519694b00818005e3a000ddfed85aedf0c2a6552122c2222229790ee934"
+      "checkedFingerprint": "a3c372cd73cb12a0df4e0e87a9a8903939de0f24f7fca242942a36fd7a0882fe",
+      "draftFile": "data/research/catalog-125-content/drafts/cnidiocarpa-alaica.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; импорт не разрешён.",
+        "KY/UZ/EN: научное имя вместо неподтверждённых народных названий; переводы краткого описания требуют редакторской проверки."
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Причины редкости, способ размножения и современная численность не подтверждены."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "cnidiocarpa-alaica",
+        "factsFingerprint": "da75ab86bb0b7d4faa4657058be95183fa859aaca45660fb094390df247edf09",
+        "draftSha256": "4f67501716b77d2cfdd9c3bab5b6933d71bff8538a37dca08806624863097d66"
+      }
     },
     {
       "originalScientificName": "Pastinacopsis glacialis",
@@ -2384,7 +2478,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "EN",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -2429,7 +2523,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -2454,9 +2559,30 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz",
+            "names.en"
           ],
           "taxonId": "gbif:3634712"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Гербарный образец: Pastinacopsis glacialis",
+          "publisher": "Moscow State University",
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0864690",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "ru",
+          "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
         }
       ],
       "contradictions": [],
@@ -2469,6 +2595,18 @@
         {
           "path": "docs/evidence/catalog-125-taxonomy.json",
           "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        },
+        {
+          "path": "data/research/catalog-125-content/block-3-facts.json",
+          "sha256": "d9aa3e0113a3577ebaa7d543b120aeeb6fbb5c86d18ba1a103872057c71ef887"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-3-accounts.json",
+          "sha256": "ad787efd56502a2ffd6dff776521906dd6f7912805314b6ad3e11a2367ce3fe5"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-3-images.json",
+          "sha256": "365131d2abb6ed1f827f46cbeb71ec97766b6487f66d2d1f7d1bdc66a560e4bc"
         }
       ],
       "draft": null,
@@ -2494,48 +2632,52 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "pastinacopsis-glacialis",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "80459b9451faac05cdd16671e242de52296ce975fce40cb4db42ae5b7d97c4cd",
+        "fingerprint": "2816a0ee6854224830a575f18b03cf26ba55012c6afbe574a56aacbf50c71f33",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "80459b9451faac05cdd16671e242de52296ce975fce40cb4db42ae5b7d97c4cd"
+      "checkedFingerprint": "2816a0ee6854224830a575f18b03cf26ba55012c6afbe574a56aacbf50c71f33",
+      "draftFile": "data/research/catalog-125-content/drafts/pastinacopsis-glacialis.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; импорт не разрешён.",
+        "KY/UZ/EN: научное имя вместо неподтверждённых народных названий; переводы краткого описания требуют редакторской проверки."
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Современная численность и выполнение охранных рекомендаций неизвестны."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "pastinacopsis-glacialis",
+        "factsFingerprint": "e0750fd9ebd0a7a2abb33db799bdfdcf6f754c7f90877ede3eb11bb55dbc4712",
+        "draftSha256": "9cdfcebda53db56d9daf58851ff84135b38779e02722bb569777b0f23f1a6f3d"
+      }
     },
     {
       "originalScientificName": "Kaufmannia semenovii",
@@ -2544,7 +2686,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -2589,7 +2731,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -2614,9 +2767,30 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz",
+            "names.en"
           ],
           "taxonId": "gbif:8286447"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Гербарный образец: Kaufmannia semenovii",
+          "publisher": "Moscow State University",
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0865708",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "ru",
+          "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
         }
       ],
       "contradictions": [],
@@ -2629,6 +2803,18 @@
         {
           "path": "docs/evidence/catalog-125-taxonomy.json",
           "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        },
+        {
+          "path": "data/research/catalog-125-content/block-3-facts.json",
+          "sha256": "d9aa3e0113a3577ebaa7d543b120aeeb6fbb5c86d18ba1a103872057c71ef887"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-3-accounts.json",
+          "sha256": "ad787efd56502a2ffd6dff776521906dd6f7912805314b6ad3e11a2367ce3fe5"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-3-images.json",
+          "sha256": "365131d2abb6ed1f827f46cbeb71ec97766b6487f66d2d1f7d1bdc66a560e4bc"
         }
       ],
       "draft": null,
@@ -2654,48 +2840,52 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "kaufmannia-semenovii",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "c33754bff67d1d4a2201fce1f374ceada221e45a5ce0c0e93bf5f410dc5b4b41",
+        "fingerprint": "67ce439f5e6bf7b58d893eb7b65a01e1c853e6dce9ce43037cbbec34867e2145",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "c33754bff67d1d4a2201fce1f374ceada221e45a5ce0c0e93bf5f410dc5b4b41"
+      "checkedFingerprint": "67ce439f5e6bf7b58d893eb7b65a01e1c853e6dce9ce43037cbbec34867e2145",
+      "draftFile": "data/research/catalog-125-content/drafts/kaufmannia-semenovii.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; импорт не разрешён.",
+        "KY/UZ/EN: научное имя вместо неподтверждённых народных названий; переводы краткого описания требуют редакторской проверки."
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Подтверждённая современная численность и способ размножения неизвестны."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "kaufmannia-semenovii",
+        "factsFingerprint": "564649044990ac8996b8e618c9fa68c1cab4263c0404c3bcb663436a5c17b54a",
+        "draftSha256": "1ef3d03167a09ce673f6aeef6ca39f0951a90a5e9cb78f4889d64656e2fa9854"
+      }
     },
     {
       "originalScientificName": "Acantholimon compactum",
@@ -2704,7 +2894,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -2749,7 +2939,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -2774,9 +2975,30 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz",
+            "names.en"
           ],
           "taxonId": "gbif:4090676"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Гербарный образец: Acantholimon compactum",
+          "publisher": "Moscow State University",
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0865969",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "ru",
+          "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
         }
       ],
       "contradictions": [],
@@ -2789,6 +3011,18 @@
         {
           "path": "docs/evidence/catalog-125-taxonomy.json",
           "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        },
+        {
+          "path": "data/research/catalog-125-content/block-3-facts.json",
+          "sha256": "d9aa3e0113a3577ebaa7d543b120aeeb6fbb5c86d18ba1a103872057c71ef887"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-3-accounts.json",
+          "sha256": "ad787efd56502a2ffd6dff776521906dd6f7912805314b6ad3e11a2367ce3fe5"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-3-images.json",
+          "sha256": "365131d2abb6ed1f827f46cbeb71ec97766b6487f66d2d1f7d1bdc66a560e4bc"
         }
       ],
       "draft": null,
@@ -2814,48 +3048,54 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "acantholimon-compactum",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "1f0d3d637feb025fdd8cf4043c566fdfcaca94e1d257dfb6532eb82f0cffd6bb",
+        "fingerprint": "3edddc0ff9c28607aea2a8f902589921d23de74d67021fa6268563a23e0b0d20",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "1f0d3d637feb025fdd8cf4043c566fdfcaca94e1d257dfb6532eb82f0cffd6bb"
+      "checkedFingerprint": "3edddc0ff9c28607aea2a8f902589921d23de74d67021fa6268563a23e0b0d20",
+      "draftFile": "data/research/catalog-125-content/drafts/acantholimon-compactum.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; импорт не разрешён.",
+        "KY/UZ/EN: научное имя вместо неподтверждённых народных названий; переводы краткого описания требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Разночтение сроков цветения двух сводок страницы 185 не скрыто."
+      ],
+      "missingFacts": [
+        "Современная численность и актуальные границы ареала не установлены."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "acantholimon-compactum",
+        "factsFingerprint": "8a5ccd874ae16a370f79790f010a471956a9e144de7f47d240538f2ca13acfbe",
+        "draftSha256": "1e2c71ea01bcc0f9c641ffe91656006bf443146567c7403643bc1f9ffc479b35"
+      }
     },
     {
       "originalScientificName": "Scutellaria andrachnoides",

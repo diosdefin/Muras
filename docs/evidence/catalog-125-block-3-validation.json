@@ -1,0 +1,173 @@
+{
+  "schemaVersion": 1,
+  "registryId": "catalog-125-content",
+  "catalogFingerprint": "d87aa848adc17517ca35a39bcedb1548fd16b1b93d1342beee5d92cfab5483f3",
+  "counts": {
+    "processed": 5,
+    "accepted": 5,
+    "deferred": 0,
+    "rejected": 0
+  },
+  "states": {
+    "pending": 0,
+    "needs_evidence": 0,
+    "research_ready": 0,
+    "needs_photo": 0,
+    "ready_for_review": 5,
+    "approved_for_import": 0,
+    "imported": 0,
+    "rejected": 0
+  },
+  "results": [
+    {
+      "candidateId": "seseli-korshinskyi",
+      "batchNumber": 3,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "04ac547361b97d211e31e689307dde7fe3cdbbd04b700ee7d9fb89c9aad9e429",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "cnidiocarpa-alaica",
+      "batchNumber": 3,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "a3c372cd73cb12a0df4e0e87a9a8903939de0f24f7fca242942a36fd7a0882fe",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "pastinacopsis-glacialis",
+      "batchNumber": 3,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "2816a0ee6854224830a575f18b03cf26ba55012c6afbe574a56aacbf50c71f33",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "kaufmannia-semenovii",
+      "batchNumber": 3,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "67ce439f5e6bf7b58d893eb7b65a01e1c853e6dce9ce43037cbbec34867e2145",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "acantholimon-compactum",
+      "batchNumber": 3,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "3edddc0ff9c28607aea2a8f902589921d23de74d67021fa6268563a23e0b0d20",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    }
+  ],
+  "metrics": {
+    "durationMs": 147.23,
+    "cpu": {
+      "user": 140000,
+      "system": 16000
+    },
+    "memory": {
+      "rss": 62066688,
+      "heapTotal": 29679616,
+      "heapUsed": 12884792,
+      "external": 2946936,
+      "arrayBuffers": 682330
+    },
+    "localMaterialReads": 10
+  }
+}
