@@ -4129,7 +4129,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -4174,7 +4174,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -4199,7 +4210,16 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz",
+            "names.en"
           ],
           "taxonId": "gbif:5411287"
         }
@@ -4214,6 +4234,22 @@
         {
           "path": "docs/evidence/catalog-125-taxonomy.json",
           "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        },
+        {
+          "path": "data/research/catalog-125-content/block-5-facts.json",
+          "sha256": "df8e83bee216c9e25877bb18d9ead229b4fdd202b68c19ffaad74cf3d824a450"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-5-accounts.json",
+          "sha256": "4aa293f341ef01cf4cd5f5df46b4b1c5b5fe327b36af1724b27f778bd96fd378"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-5-images.json",
+          "sha256": "6d13d7387afe24ba9cd6c40ae8a067f098e3e0b2b2a6c20fee3c534db1cf713a"
+        },
+        {
+          "path": "docs/evidence/catalog-125-photo-synonym.json",
+          "sha256": "63054df8624918adeadd50c68fe223c47c15ddaaef480483d962b56a7c81be97"
         }
       ],
       "draft": null,
@@ -4239,48 +4275,55 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "campanula-eugeniae",
         "batchNumber": 5,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "7d73d3e5afe79b45df6d704235756a0c0c1309d7a57a8244e74761ca912db724",
+        "fingerprint": "b1fe1761850aa68df89673729600890eca7da6862e99a1faca1b951d0b473b02",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "7d73d3e5afe79b45df6d704235756a0c0c1309d7a57a8244e74761ca912db724"
+      "checkedFingerprint": "b1fe1761850aa68df89673729600890eca7da6862e99a1faca1b951d0b473b02",
+      "draftFile": "data/research/catalog-125-content/drafts/campanula-eugeniae.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; импорт не разрешён.",
+        "KY/UZ/EN: научное имя вместо неподтверждённых народных названий; переводы краткого описания требуют редакторской проверки.",
+        "Фото: placeholder"
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Современная численность и сведения о реализации рекомендаций отсутствуют."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "campanula-eugeniae",
+        "factsFingerprint": "9be34578fd7bb5a742841302095a51a3c38883d899943f40cd65039469a5d80c",
+        "draftSha256": "e1d33358dcf3bd72c176485e422a1c4dc005cc18050ed432f5ec9f7eaaaeae53"
+      }
     },
     {
       "originalScientificName": "Lamyropappus schakaptaricus",
@@ -4289,7 +4332,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -4334,7 +4377,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -4359,9 +4413,30 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz",
+            "names.en"
           ],
           "taxonId": "gbif:3098608"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Гербарный образец: Lamyropappus schakaptaricus",
+          "publisher": "Moscow State University",
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0890024",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "ru",
+          "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
         }
       ],
       "contradictions": [],
@@ -4374,6 +4449,22 @@
         {
           "path": "docs/evidence/catalog-125-taxonomy.json",
           "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        },
+        {
+          "path": "data/research/catalog-125-content/block-5-facts.json",
+          "sha256": "df8e83bee216c9e25877bb18d9ead229b4fdd202b68c19ffaad74cf3d824a450"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-5-accounts.json",
+          "sha256": "4aa293f341ef01cf4cd5f5df46b4b1c5b5fe327b36af1724b27f778bd96fd378"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-5-images.json",
+          "sha256": "6d13d7387afe24ba9cd6c40ae8a067f098e3e0b2b2a6c20fee3c534db1cf713a"
+        },
+        {
+          "path": "docs/evidence/catalog-125-photo-synonym.json",
+          "sha256": "63054df8624918adeadd50c68fe223c47c15ddaaef480483d962b56a7c81be97"
         }
       ],
       "draft": null,
@@ -4399,48 +4490,52 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "lamyropappus-schakaptaricus",
         "batchNumber": 5,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "e20106c8251a3297f0775e47604d57e171a7c3f09ec09d226aa353400238e1b1",
+        "fingerprint": "6ffd4220271b7e36139a935fa635402235dc64d480da74fc7ef792eb81813553",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "e20106c8251a3297f0775e47604d57e171a7c3f09ec09d226aa353400238e1b1"
+      "checkedFingerprint": "6ffd4220271b7e36139a935fa635402235dc64d480da74fc7ef792eb81813553",
+      "draftFile": "data/research/catalog-125-content/drafts/lamyropappus-schakaptaricus.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; импорт не разрешён.",
+        "KY/UZ/EN: научное имя вместо неподтверждённых народных названий; переводы краткого описания требуют редакторской проверки."
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Современная численность и актуальное состояние местообитаний неизвестны."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "lamyropappus-schakaptaricus",
+        "factsFingerprint": "0e48fd01117dcc1dde86216737a02889f7b1b3cf2a6b05dd0c19a6906b6d2e38",
+        "draftSha256": "528fce480fb559cb2a5af19c9bfd9eab8ec7bb4db96853d2d1cd8649ae134158"
+      }
     },
     {
       "originalScientificName": "Trichanthemis aulieatensis",
@@ -4449,7 +4544,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "EN",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -4494,7 +4589,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -4519,9 +4625,41 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz",
+            "names.en"
           ],
           "taxonId": "gbif:3150861"
+        },
+        {
+          "id": "photo-synonym",
+          "title": "GBIF Backbone: Pseudoglossanthis aulieatensis → Trichanthemis aulieatensis",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Pseudoglossanthis%20aulieatensis",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "images.0.caption"
+          ]
+        },
+        {
+          "id": "photo-primary",
+          "title": "Гербарный образец: Trichanthemis aulieatensis",
+          "publisher": "Moscow State University",
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0886727",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "ru",
+          "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
         }
       ],
       "contradictions": [],
@@ -4534,6 +4672,22 @@
         {
           "path": "docs/evidence/catalog-125-taxonomy.json",
           "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        },
+        {
+          "path": "data/research/catalog-125-content/block-5-facts.json",
+          "sha256": "df8e83bee216c9e25877bb18d9ead229b4fdd202b68c19ffaad74cf3d824a450"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-5-accounts.json",
+          "sha256": "4aa293f341ef01cf4cd5f5df46b4b1c5b5fe327b36af1724b27f778bd96fd378"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-5-images.json",
+          "sha256": "6d13d7387afe24ba9cd6c40ae8a067f098e3e0b2b2a6c20fee3c534db1cf713a"
+        },
+        {
+          "path": "docs/evidence/catalog-125-photo-synonym.json",
+          "sha256": "63054df8624918adeadd50c68fe223c47c15ddaaef480483d962b56a7c81be97"
         }
       ],
       "draft": null,
@@ -4559,48 +4713,54 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "trichanthemis-aulieatensis",
         "batchNumber": 5,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "20822af2fe35a823111a039c65890ed1f5d8106657f734fbc32ead67f7b006dc",
+        "fingerprint": "7a91728ecd814c1856ae6ff507bb8d05c2b8e1439246271a9d387bbcaba406f5",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "20822af2fe35a823111a039c65890ed1f5d8106657f734fbc32ead67f7b006dc"
+      "checkedFingerprint": "7a91728ecd814c1856ae6ff507bb8d05c2b8e1439246271a9d387bbcaba406f5",
+      "draftFile": "data/research/catalog-125-content/drafts/trichanthemis-aulieatensis.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; импорт не разрешён.",
+        "KY/UZ/EN: научное имя вместо неподтверждённых народных названий; переводы краткого описания требуют редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Pseudoglossanthis aulieatensis дан как синоним в том же национальном очерке; свежий EXACT SYNONYM в GBIF указывает acceptedUsageKey 3150861. Эта связь использована только для подписи гербарного изображения."
+      ],
+      "missingFacts": [
+        "Современная численность и непрерывность существования исторических популяций неизвестны."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "trichanthemis-aulieatensis",
+        "factsFingerprint": "d29d0fe958cc8c7e2152260b24b0de08284f3123277889958425ed026451cbe0",
+        "draftSha256": "71ab4ca6c9a7b7420ebfa0098f585b2dabcb2b7544f6cd2ce6a58049db566f2d"
+      }
     },
     {
       "originalScientificName": "Trichanthemis aurea",
@@ -4609,7 +4769,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "VU",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -4654,7 +4814,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -4679,9 +4850,30 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz",
+            "names.en"
           ],
           "taxonId": "gbif:3150867"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Гербарный образец: Trichanthemis aurea",
+          "publisher": "Moscow State University",
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0886728",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "ru",
+          "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
         }
       ],
       "contradictions": [],
@@ -4694,6 +4886,22 @@
         {
           "path": "docs/evidence/catalog-125-taxonomy.json",
           "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        },
+        {
+          "path": "data/research/catalog-125-content/block-5-facts.json",
+          "sha256": "df8e83bee216c9e25877bb18d9ead229b4fdd202b68c19ffaad74cf3d824a450"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-5-accounts.json",
+          "sha256": "4aa293f341ef01cf4cd5f5df46b4b1c5b5fe327b36af1724b27f778bd96fd378"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-5-images.json",
+          "sha256": "6d13d7387afe24ba9cd6c40ae8a067f098e3e0b2b2a6c20fee3c534db1cf713a"
+        },
+        {
+          "path": "docs/evidence/catalog-125-photo-synonym.json",
+          "sha256": "63054df8624918adeadd50c68fe223c47c15ddaaef480483d962b56a7c81be97"
         }
       ],
       "draft": null,
@@ -4719,48 +4927,52 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "trichanthemis-aurea",
         "batchNumber": 5,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "ed908028ccf6a954a073f30651796631adb735131225e199a6b2d8a5ea98063c",
+        "fingerprint": "b13f601433e01ccbdc5c7791832dd5e7daa332eef816c6d30f4fd137340af72a",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "ed908028ccf6a954a073f30651796631adb735131225e199a6b2d8a5ea98063c"
+      "checkedFingerprint": "b13f601433e01ccbdc5c7791832dd5e7daa332eef816c6d30f4fd137340af72a",
+      "draftFile": "data/research/catalog-125-content/drafts/trichanthemis-aurea.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; импорт не разрешён.",
+        "KY/UZ/EN: научное имя вместо неподтверждённых народных названий; переводы краткого описания требуют редакторской проверки."
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Современная количественная оценка популяции отсутствует."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "trichanthemis-aurea",
+        "factsFingerprint": "09a53358329791808c6e2ffed3ac9a8b7a090f16dd84dc099051dda6bab69c1c",
+        "draftSha256": "d3e82615f195ef0aefbd42dde8968edcf89f3f48212377266f30b4a7c4d75e63"
+      }
     },
     {
       "originalScientificName": "Lepidolopha komarowii",
@@ -4769,7 +4981,7 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "EN",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -4814,7 +5026,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ],
           "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
         },
@@ -4839,9 +5062,30 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky",
+            "names.uz",
+            "names.en"
           ],
           "taxonId": "gbif:5388509"
+        },
+        {
+          "id": "photo-primary",
+          "title": "Гербарный образец: Lepidolopha komarowii",
+          "publisher": "Moscow State University",
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0886804",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "ru",
+          "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
         }
       ],
       "contradictions": [],
@@ -4854,6 +5098,22 @@
         {
           "path": "docs/evidence/catalog-125-taxonomy.json",
           "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        },
+        {
+          "path": "data/research/catalog-125-content/block-5-facts.json",
+          "sha256": "df8e83bee216c9e25877bb18d9ead229b4fdd202b68c19ffaad74cf3d824a450"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-5-accounts.json",
+          "sha256": "4aa293f341ef01cf4cd5f5df46b4b1c5b5fe327b36af1724b27f778bd96fd378"
+        },
+        {
+          "path": "docs/evidence/catalog-125-block-5-images.json",
+          "sha256": "6d13d7387afe24ba9cd6c40ae8a067f098e3e0b2b2a6c20fee3c534db1cf713a"
+        },
+        {
+          "path": "docs/evidence/catalog-125-photo-synonym.json",
+          "sha256": "63054df8624918adeadd50c68fe223c47c15ddaaef480483d962b56a7c81be97"
         }
       ],
       "draft": null,
@@ -4879,48 +5139,52 @@
       },
       "verified": false,
       "independentScientificReview": "pending",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "lepidolopha-komarowii",
         "batchNumber": 5,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "753f4460e68220aadbcbeb419e2c2d1f269b447d97b58b4ca27590001fa0bc75",
+        "fingerprint": "4588fcaf05496e214b0746678ab9903a73d755dd205b469c4fb6a4a522309343",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "753f4460e68220aadbcbeb419e2c2d1f269b447d97b58b4ca27590001fa0bc75"
+      "checkedFingerprint": "4588fcaf05496e214b0746678ab9903a73d755dd205b469c4fb6a4a522309343",
+      "draftFile": "data/research/catalog-125-content/drafts/lepidolopha-komarowii.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; импорт не разрешён.",
+        "KY/UZ/EN: научное имя вместо неподтверждённых народных названий; переводы краткого описания требуют редакторской проверки."
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Общая и современная численность не установлена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "lepidolopha-komarowii",
+        "factsFingerprint": "116974b4ee9c6234d9761dc847a71ab3b5cfd2c28548e558e03366e8ff65cfc5",
+        "draftSha256": "978b3796f9689e7dd2b4ecdba7f9ff56e1f73c3f6e17992996569e4c62dda25f"
+      }
     }
   ]
 }

@@ -1102,8 +1102,58 @@
     },
     {
       "candidateId": "trichanthemis-aulieatensis",
-      "status": "placeholder",
-      "reason": "В доступном гербарном фото другое родовое имя; отдельная проверка синонимии изображения отложена"
+      "status": "prepared",
+      "reason": null,
+      "imageType": "herbarium_specimen",
+      "documentedTaxon": "Pseudoglossanthis aulieatensis (B.Fedtsch.) Kamelin",
+      "gbifOccurrenceKey": 1799058461,
+      "metadata": {
+        "accessedAt": "2026-10-16",
+        "sourceLanguage": "ru",
+        "description": "Scan of Pseudoglossanthis aulieatensis (B. Fedtsch.) R.V. Kamelin (Псевдоглоссантис аулиеатинский) from Kyrgyzstan deposited in the Moscow University Herbarium (MW0886727)",
+        "originalSha256": "80c4f0738dbd7df8e5a9d0781ad245cbfe512871c2646191f242d239388173a0",
+        "media": {
+          "type": "StillImage",
+          "format": "image/jpg",
+          "references": "https://plant.depo.msu.ru/open/public/item/MW0886727",
+          "title": "Pseudoglossanthis aulieatensis (B. Fedtsch.) R.V. Kamelin (Псевдоглоссантис аулиеатинский), Moscow University Herbarium",
+          "description": "Scan of Pseudoglossanthis aulieatensis (B. Fedtsch.) R.V. Kamelin (Псевдоглоссантис аулиеатинский) from Kyrgyzstan deposited in the Moscow University Herbarium (MW0886727)",
+          "creator": "ELAR corporation (Moscow, Russia)",
+          "publisher": "Moscow State University",
+          "license": "http://creativecommons.org/licenses/by/4.0/",
+          "rightsHolder": "Moscow State University (copyright is managed by Dr. Alexey P. Seregin)",
+          "identifier": "https://plant.depo.msu.ru/open/public/item/MW0886727/img/0.jpg?gbif"
+        },
+        "primary": {
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0886727",
+          "httpStatus": 200,
+          "sha256": "252d10160d64a6ee41afeab094fed890ddcb27f3ef5ac2c4b1e02a31eb0bca25",
+          "title": "MW0886727, Trichanthemis aulieatensis (Трихантемис аулиеатинский), specimen",
+          "licenseStatement": "Лицензия CC-BY 4.0"
+        },
+        "synonymEvidence": "docs/evidence/catalog-125-photo-synonym.json"
+      },
+      "image": {
+        "path": "assets/images/species/trichanthemis-aulieatensis.webp",
+        "width": 1270,
+        "height": 1800,
+        "sha256": "b86a3401ebc19e50ad4d5f45c0856726d88a394b762acbb47bfe3f5076f59ebb",
+        "author": "ELAR corporation (Moscow, Russia)",
+        "originalPage": "https://plant.depo.msu.ru/open/public/item/MW0886727",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "ELAR corporation (Moscow, Russia); Moscow State University (copyright is managed by Dr. Alexey P. Seregin); Гербарный образец MW0886727. Серегин А. П. (ред.) Цифровой гербарий МГУ. М.: МГУ, 2026. https://plant.depo.msu.ru/open/public/item/MW0886727 (16.10.2026). CC BY 4.0.",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px, WebP quality 82; удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Гербарный образец MW0886727 под синонимом Pseudoglossanthis aulieatensis. Принятое имя: Trichanthemis aulieatensis; связь подтверждена национальным очерком и GBIF. Не подтверждает современную встречаемость в Кыргызстане.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      }
     },
     {
       "candidateId": "trichanthemis-aurea",

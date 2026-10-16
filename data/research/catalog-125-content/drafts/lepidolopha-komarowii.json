@@ -1,0 +1,268 @@
+{
+  "id": "lepidolopha-komarowii",
+  "scientificName": "Lepidolopha komarowii",
+  "names": {
+    "ru": "Лепидолофа Комарова",
+    "ky": "Lepidolopha komarowii",
+    "uz": "Lepidolopha komarowii",
+    "en": "Lepidolopha komarowii"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Asterales",
+    "family": "Asteraceae",
+    "genus": "Lepidolopha"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "EN",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Мелкоземистые и каменистые склоны, осыпи и шлейфы нижнего и среднего горных поясов.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный очерк связывает угрозы с хозяйственной деятельностью и интенсивным летним выпасом.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендации 2006 года: создавать ботанические заказники в местах концентрации популяций и исследовать интродукцию в Ботаническом саду НАН КР.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/lepidolopha-komarowii.webp",
+      "width": 1243,
+      "height": 1800,
+      "sha256": "87a8bb1f54d96b228da0957a63e937e887958256454de40d29d9dfd243f15da6",
+      "author": "ELAR corporation (Moscow, Russia)",
+      "originalPage": "https://plant.depo.msu.ru/open/public/item/MW0886804",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "ELAR corporation (Moscow, Russia); Moscow State University (copyright is managed by Dr. Alexey P. Seregin); Гербарный образец MW0886804; CC BY 4.0.  Серегин А. П. (ред.) Цифровой гербарий МГУ. М.: МГУ, 2026; MW0886804. https://plant.depo.msu.ru/open/public/item/MW0886804 (16.10.2026).",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px, WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Гербарный образец MW0886804. Lepidolopha komarowii. Изображение не подтверждает современную встречаемость в Кыргызстане.",
+        "ky": null,
+        "uz": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Lepidolopha komarowii, с. 225",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=225",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-85",
+      "publisher": "Правительство КР; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ],
+      "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Lepidolopha komarowii C.Winkl.",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Lepidolopha%20komarowii",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz",
+        "names.en"
+      ],
+      "taxonId": "gbif:5388509"
+    },
+    {
+      "id": "photo-primary",
+      "title": "Гербарный образец: Lepidolopha komarowii",
+      "publisher": "Moscow State University",
+      "url": "https://plant.depo.msu.ru/open/public/item/MW0886804",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "ru",
+      "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Кустарник каменистых склонов горной Средней Азии из Красной книги Кыргызстана 2006 года.",
+        "ky": "Тоолуу Борбордук Азиянын таштак капталдарында өскөн бадал. Кыргызстандын 2006-жылкы Кызыл китебине киргизилген.",
+        "uz": "Togʻli Oʻrta Osiyoning toshloq yonbagʻirlarida oʻsadigan buta. Qirgʻizistonning 2006-yilgi Qizil kitobiga kiritilgan.",
+        "en": "A shrub of stony slopes in mountainous Central Asia, included in Kyrgyzstan’s 2006 Red Data Book."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Кустарник каменистых склонов горной Средней Азии из Красной книги Кыргызстана 2006 года. Национальный очерк 2006 года содержит следующие сведения. Исторический очерк отмечает редкость растения в Кыргызстане и отсутствие исследований в культуре. Современное состояние популяций не подтверждено использованным историческим источником. По изданию 2006 года размножается семенами, цветёт в июне–июле, плодоносит в августе–сентябре. Книга описывает горную Среднюю Азию; для Кыргызстана русский очерк указывает сборы у слияния Кара-Суу и Нарына. Английская сводка добавляет северо-запад страны со ссылкой на личное сообщение; это не представлено как новое подтверждённое местонахождение. Национальный очерк связывает угрозы с хозяйственной деятельностью и интенсивным летним выпасом. Рекомендации 2006 года: создавать ботанические заказники в местах концентрации популяций и исследовать интродукцию в Ботаническом саду НАН КР.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Кустарник высотой до 1 м, ветвящийся от основания. Молодые побеги и сизовато-зелёные листья прижато опушены; нижние листья разделены на линейные доли. Небольшие корзинки с жёлтыми цветками собраны в щитки.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический очерк отмечает редкость растения в Кыргызстане и отсутствие исследований в культуре. Современное состояние популяций не подтверждено использованным историческим источником.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По изданию 2006 года размножается семенами, цветёт в июне–июле, плодоносит в августе–сентябре.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книга описывает горную Среднюю Азию; для Кыргызстана русский очерк указывает сборы у слияния Кара-Суу и Нарына. Английская сводка добавляет северо-запад страны со ссылкой на личное сообщение; это не представлено как новое подтверждённое местонахождение.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}
