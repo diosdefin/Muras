@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "documentType": "bulk-content-manifest",
+  "preparedAt": "2026-10-21",
+  "sourceCommit": "09bab0d0d63aabb5899f0033d5d2033979816ed2",
+  "masterRegistryFile": "data/research/catalog-167-research-registry.json",
+  "masterRegistryFingerprint": "35e08fdf5f282e4a58b6fa22fb0e3ac4f575465ed5c601ade4223244820facea",
+  "taxonomyFile": "docs/evidence/catalog-167-taxonomy.json",
+  "registryFile": "data/research/catalog-167-content-registry.json",
+  "contentDirectory": "data/research/catalog-167-content",
+  "evidencePrefix": "catalog-167",
+  "candidateIds": [
+    "sorbus-persica",
+    "amygdalus-petunnikowii",
+    "kosopoljanskia-hebecarpa",
+    "kosopoljanskia-turkestanica",
+    "alajja-anomala",
+    "otostegia-schennikovii",
+    "salvia-vvedenskyi",
+    "stemmacantha-aulieatensis",
+    "centaurea-alaica",
+    "pyrethrum-leontopodium",
+    "phoenicopterus-roseus",
+    "chlamydotis-macqueenii",
+    "numenius-tenuirostris",
+    "larus-ichtyaetus",
+    "dendrocopos-major",
+    "hemiechinus-hypomelas",
+    "allactaga-severtzovi"
+  ],
+  "blocks": [
+    {
+      "number": 1,
+      "batchId": "catalog-167-1",
+      "candidateIds": [
+        "sorbus-persica",
+        "amygdalus-petunnikowii",
+        "kosopoljanskia-hebecarpa",
+        "kosopoljanskia-turkestanica",
+        "alajja-anomala",
+        "otostegia-schennikovii"
+      ],
+      "status": "prepared_for_check"
+    },
+    {
+      "number": 2,
+      "batchId": "catalog-167-2",
+      "candidateIds": [
+        "salvia-vvedenskyi",
+        "stemmacantha-aulieatensis",
+        "centaurea-alaica",
+        "pyrethrum-leontopodium",
+        "phoenicopterus-roseus",
+        "chlamydotis-macqueenii"
+      ],
+      "status": "pending"
+    },
+    {
+      "number": 3,
+      "batchId": "catalog-167-3",
+      "candidateIds": [
+        "numenius-tenuirostris",
+        "larus-ichtyaetus",
+        "dendrocopos-major",
+        "hemiechinus-hypomelas",
+        "allactaga-severtzovi"
+      ],
+      "status": "pending"
+    }
+  ],
+  "publicationAllowed": false,
+  "ownerAuthorization": null,
+  "baselineCatalogCount": 150
+}

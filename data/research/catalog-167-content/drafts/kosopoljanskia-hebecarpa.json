@@ -1,0 +1,231 @@
+{
+  "id": "kosopoljanskia-hebecarpa",
+  "scientificName": "Schrenkia hebecarpa",
+  "names": {
+    "ru": "Козополянския пушистоплодная",
+    "ky": "Түктүү мөмөлүү козополянския",
+    "uz": "Schrenkia hebecarpa",
+    "en": "Woolly-fruited Kosopoljanskia"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Apiales",
+    "family": "Apiaceae",
+    "genus": "Schrenkia"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": null,
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); RU/EN с. 161: EN; KY с. 160: VU; категория не выбрана до редакторской сверки; запись под именем Kosopoljanskia hebecarpa",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Щебнисто-каменистые склоны и осыпи среди кустарников Алайского хребта, по национальному очерку 2006 года.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": null,
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В 2006 году предложены изучение ареала и численности и создание ботанического заказника в низкогорьях Алайского хребта.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е изд., 2006; Kosopoljanskia hebecarpa, с. 160–161",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=161",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.distribution",
+        "conservationMeasures.0",
+        "names.en"
+      ]
+    },
+    {
+      "id": "national-decree",
+      "title": "Постановление №170 от 28.04.2005, документированная редакция 25.07.2009; decree-170-2009-1-63",
+      "publisher": "Правительство Кыргызской Республики; FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "originalScientificName"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Schrenkia hebecarpa (Pimenov & Kamelin) Pimenov",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/7443419",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview",
+        "names.uz"
+      ],
+      "taxonId": "gbif:7443419"
+    },
+    {
+      "id": "msu-schrenkia-hebecarpa",
+      "title": "Type of Kosopoljanskia hebecarpa catalogued under accepted Schrenkia hebecarpa; country Kyrgyzstan. Used only for identity, not photograph preparation.",
+      "publisher": "Moscow State University Digital Herbarium",
+      "url": "https://plant.depo.msu.ru/open/public/en/item/MW0593746",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview"
+      ]
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 160-бет; визуалдык текшерилген аталыш",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=160",
+      "accessedAt": "2026-10-21",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Редкое зонтичное растение Алайского хребта, исторически описанное как Kosopoljanskia hebecarpa; принятое имя — Schrenkia hebecarpa.",
+        "ky": "Алай кырка тоосунун сейрек өсүмдүгү. Тарыхый аты — Kosopoljanskia hebecarpa, кабыл алынган аты — Schrenkia hebecarpa.",
+        "uz": "Oloy tizmasining kamyob oʻsimligi. Tarixiy nomi Kosopoljanskia hebecarpa, qabul qilingan nomi Schrenkia hebecarpa.",
+        "en": "A rare umbellifer from the Alai Range, historically listed as Kosopoljanskia hebecarpa and accepted as Schrenkia hebecarpa."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Козополянския пушистоплодная — многолетнее растение семейства зонтичных, включённое отдельным очерком в Красную книгу Кыргызстана 2006 года. Принятая комбинация Schrenkia hebecarpa связана с исходным именем Kosopoljanskia hebecarpa как точной таксономической записью GBIF, так и первичной записью изотипа MW0593746 в цифровом гербарии МГУ. Перенос в другой род не создаёт дополнительного кандидата.\n\nИсторическое описание подчёркивает прикорневую розетку рассечённых листьев, немногочисленные ветвящиеся стебли и волосистые плоды. Вид указан с Алайского хребта, со щебнисто-каменистых склонов и осыпей среди кустарников. На момент подготовки книги он был известен лишь по двум сборам; это характеристика изученности, а не оценка количества живых растений.\n\nБиология, численность и конкретные ограничивающие факторы в очерке названы неизвестными. Поэтому сведения о сроках цветения, опылителях и размножении не реконструируются по родственным видам. Авторские рекомендации состояли в изучении ареала и популяций и создании ботанического заказника в низкогорьях Алая.\n\nВ языковых версиях книги обнаружено существенное расхождение: русский текст и английское резюме дают EN, кыргызский текст — VU. Оба свидетельства сохранены; структурированная категория оставлена пустой до редакторского решения. Это не препятствует установлению исторического включения и видовой идентичности, но исключает выдачу одной категории за согласованную. Современная численность неизвестна.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy",
+        "msu-schrenkia-hebecarpa"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Многолетник с 1–4 стеблями, разветвлёнными от основания, и преимущественно прикорневыми дважды перисторассечёнными листьями. Зонтики до 15 см в диаметре. Широкоовальные плоды до 5 мм покрыты изогнутыми волосками.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В 2006 году вид был известен по двум сборам; подробная биология и экологические требования не установлены. Число сборов не равно численности популяции.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": null,
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Алайский хребет, исторический очерк 2006 года. Гербарный изотип MW0593746 зарегистрирован как кыргызстанский образец; он не доказывает современное присутствие.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}
