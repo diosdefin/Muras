@@ -17,7 +17,8 @@ import { speciesPath, speciesIdFromPath } from '../src/data/species-routes.js'
 
 const bytes = path => readFile(`${PROJECT_ROOT}/${path}`)
 const read = async path => JSON.parse(await bytes(path))
-const source = await read('data/species.source.json'), published = await read('public/data/species.json')
+// Immutable 150-record release; catalog-166-publication checks the live catalogue.
+const source = await read('data/backups/catalog-166/species.source.json'), published = await read('data/backups/catalog-166/public-species.json')
 const before = await read('data/backups/catalog-150/species.source.json')
 const beforePublic = await read('data/backups/catalog-150/public-species.json')
 const baseline = await read('data/backups/catalog-150/baseline.json')
@@ -67,7 +68,7 @@ test('catalog 150 preserves all prior 125 objects and assets and publishes only 
   assert.equal(registry.candidates.find(c => c.id === gazelle.id).countryOccurrence.currentPresenceConfirmed, null)
 })
 
-test('150 live species retain valid WebP, four-language search, routes, filters and seven complete pagination pages', async () => {
+test('150 release species retain valid WebP, four-language search, routes, filters and seven complete pagination pages', async () => {
   assert.equal(additions.reduce((n, s) => n + s.images.length, 0), 22)
   assert.equal(publicAdditions.reduce((n, s) => n + s.images.length, 0), 22)
   assert.equal(publicAdditions.filter(s => !s.images.length).length, 3)
