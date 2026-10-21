@@ -41,3 +41,7 @@ docs/evidence/catalog-125*.json text eol=lf
 data/research/catalog-150*.json text eol=lf
 data/research/catalog-150-content/**/*.json text eol=lf
 docs/evidence/catalog-150*.json text eol=lf
+
+# Keep inventory source receipts and preservation checksums stable on Windows.
+data/research/catalog-200*.json text eol=lf
+docs/evidence/catalog-200*.json text eol=lf
