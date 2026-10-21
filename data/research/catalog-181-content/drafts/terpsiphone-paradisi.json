@@ -1,0 +1,242 @@
+{
+  "id": "terpsiphone-paradisi",
+  "scientificName": "Terpsiphone paradisi leucogaster",
+  "names": {
+    "ru": "Райская мухоловка, подвид leucogaster",
+    "ky": "Узункуйруктуу чымынчы",
+    "uz": "Terpsiphone paradisi leucogaster",
+    "en": "Terpsiphone paradisi leucogaster"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Passeriformes",
+    "family": "Monarchidae",
+    "genus": "Terpsiphone"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "NT",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Terpsiphone paradisi, с.470–471); Статус: VI, Near Threatened: NT: R",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Лиственные леса и сады у водоёмов и горных рек по национальному очерку.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "code": "KG",
+      "type": "country",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": null,
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В 2006 году рекомендованы исследования ареала, численности и природоохранного статуса; конкретные лимитирующие факторы были названы неизвестными.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Terpsiphone paradisi, с.470–471",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=471",
+      "accessedAt": "2026-10-22",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.category",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "content.diet",
+        "conservationMeasures.0"
+      ],
+      "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 470-бет; проверенный кыргызский заголовок",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=470",
+      "accessedAt": "2026-10-22",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    },
+    {
+      "id": "osme-terpsiphone",
+      "title": "OSME Region List 10.2, Part C, Passerines (2025)",
+      "publisher": "Ornithological Society of the Middle East, the Caucasus and Central Asia",
+      "url": "https://osme.org/wp-content/uploads/2025/03/ORL-10.2-Part-C-Passerines.pdf#page=3",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.distribution",
+        "content.shortDescription"
+      ],
+      "notes": "PDF p.3, species no.641, Monarchidae; переиспользованы доказательства №25.4 (downloaded_primary_PDF_relevant_page_read). Полный текст недоступного источника не объявлен заново прочитанным."
+    },
+    {
+      "id": "itis-terpsiphone",
+      "title": "ITIS: Terpsiphone paradisi leucogaster",
+      "publisher": "Integrated Taxonomic Information System",
+      "url": "https://itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=920668",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview"
+      ],
+      "notes": "TSN 920668; IOC 14.1, accessed by ITIS 03 Mar 2025; переиспользованы доказательства №25.4 (web_indexed_primary_database_text). Полный текст недоступного источника не объявлен заново прочитанным."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone Taxonomy: Terpsiphone paradisi leucogaster (Swainson, 1838); exact SUBSPECIES",
+      "publisher": "GBIF / GBIF Backbone Taxonomy",
+      "url": "https://api.gbif.org/v1/species/6086394",
+      "accessedAt": "2026-10-22",
+      "language": "en",
+      "taxonId": "gbif:6086394",
+      "supports": [
+        "scientificName",
+        "names.uz",
+        "content.overview",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.en"
+      ],
+      "notes": "Источник — реальная запись указанного чек-листа. EXACT означает локальную строгую проверку canonicalName и rank; не вымышленный ответ API match. nubKey другого ранга не подставлен."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Подвид райской мухоловки leucogaster, прямо указанный в книге Кыргызстана 2006 года. Связан с лиственными лесами и садами у водоёмов; современный учёт отсутствует.",
+        "ky": "Кыргызстандын 2006-жылкы китебинде түз көрсөтүлгөн leucogaster түрчөсү. Суу боюндагы жалбырактуу токойлор жана бактар менен байланыштуу; азыркы саны такталган эмес.",
+        "uz": "Qirgʻizistonning 2006-yilgi kitobida bevosita koʻrsatilgan leucogaster kenja turi. Suv yaqinidagi bargli oʻrmonlar va bogʻlar bilan bogʻliq; hozirgi hisobi yoʻq.",
+        "en": "The leucogaster subspecies explicitly named in Kyrgyzstan’s 2006 book, associated with deciduous forests and waterside orchards. No current national count is available."
+      },
+      "sourceIds": [
+        "national-book",
+        "osme-terpsiphone"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Райская мухоловка из национального очерка относится к прямо названному местному подвиду Terpsiphone paradisi leucogaster (Swainson, 1838). Региональный перечень OSME 2025 сохраняет его внутри Terpsiphone paradisi и связывает с западным Кыргызстаном. Старый широкий азиатский комплекс paradisi не используется вместо этого конкретного подвида.\n\nЛиственные леса и сады у водоёмов и горных рек по национальному очерку. Книга характеризует птицу как связанную с подходящими лесными и садовыми местообитаниями. Качественное определение обычности в отдельных биотопах не равно известной численности по стране.\n\nИсторический очерк указывает растянутый гнездовой период и небольшую кладку. Современная национальная продуктивность и сроки гнездования отдельно не подтверждены.\n\nВ книге указан Западный Тянь-Шань; возможные участки на других хребтах сохранены как предположение источника. OSME подтверждает региональное применение leucogaster, не предоставляя современный национальный учёт.\n\nВ 2006 году рекомендованы исследования ареала, численности и природоохранного статуса; конкретные лимитирующие факторы были названы неизвестными.\n\nНациональная NT категория относится к историческому очерку 2006 года и названной местной единице охраны. Она не является глобальной оценкой всего современного таксона или проверенным действующим правовым статусом. Современная численность неизвестна; независимая научная проверка ожидается.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "osme-terpsiphone",
+        "itis-terpsiphone",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книга характеризует птицу как связанную с подходящими лесными и садовыми местообитаниями. Качественное определение обычности в отдельных биотопах не равно известной численности по стране.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический очерк указывает растянутый гнездовой период и небольшую кладку. Современная национальная продуктивность и сроки гнездования отдельно не подтверждены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В книге указан Западный Тянь-Шань; возможные участки на других хребтах сохранены как предположение источника. OSME подтверждает региональное применение leucogaster, не предоставляя современный национальный учёт.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "osme-terpsiphone"
+      ]
+    }
+  }
+}
