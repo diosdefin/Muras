@@ -45,3 +45,8 @@ docs/evidence/catalog-150*.json text eol=lf
 # Keep inventory source receipts and preservation checksums stable on Windows.
 data/research/catalog-200*.json text eol=lf
 docs/evidence/catalog-200*.json text eol=lf
+
+# Fingerprinted unpublished catalog-167 drafts and evidence.
+data/research/catalog-167*.json text eol=lf
+data/research/catalog-167-content/**/*.json text eol=lf
+docs/evidence/catalog-167*.json text eol=lf
