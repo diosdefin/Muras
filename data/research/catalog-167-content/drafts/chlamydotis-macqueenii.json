@@ -1,0 +1,311 @@
+{
+  "id": "chlamydotis-macqueenii",
+  "scientificName": "Chlamydotis macqueenii",
+  "names": {
+    "ru": "Дрофа-красотка",
+    "ky": "Жорго тоодак",
+    "uz": "Chlamydotis macqueenii",
+    "en": "Asian Houbara"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Otidiformes",
+    "family": "Otididae",
+    "genus": "Chlamydotis"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "CR",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); местная Chlamydotis undulata macqueenii J. E. Gray, 1832; не африканская C. undulata; запись под именем Chlamydotis undulata",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Такырные пустыни, полупустыни и опустыненные предгорья; книга также сообщает об осенних и зимних встречах на стерне зерновых полей.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Распашка подходящих пустынных и полупустынных участков.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Незаконный отстрел и недостаточная организация охраны, по оценке 2006 года.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендации 2006 года: установить места пролёта, зимовки и возможного гнездования, обследовать распространение и организовать заказники.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/chlamydotis-macqueenii.webp",
+      "width": 1024,
+      "height": 678,
+      "sha256": "18772843110483377a766a79fbb0bea11600f91043f4c4ad59873c86c3985776",
+      "author": "Kannan AS",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:MacQueens_Bustard_in_Greater_Rann_of_Kutch,_Gujarat,_India.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Kannan AS; CC BY-SA 3.0; https://commons.wikimedia.org/wiki/File:MacQueens_Bustard_in_Greater_Rann_of_Kutch,_Gujarat,_India.jpg. Производные изображения распространяются под той же лицензией.",
+      "modifications": [
+        "Уменьшение без увеличения до 1800 px; конвертация WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ky": null,
+        "uz": null,
+        "ru": "Chlamydotis macqueenii в Большом Качском Ранне, Гуджарат, Индия. Не африканский C. undulata.",
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е изд., 2006; Chlamydotis undulata, с. 432–433",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=433",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-decree",
+      "title": "Постановление №170 от 28.04.2005, документированная редакция 25.07.2009; decree-170-2009-3-30",
+      "publisher": "Правительство Кыргызской Республики; FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "originalScientificName"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Chlamydotis macqueenii (J.E.Gray, 1832)",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Chlamydotis%20macqueenii",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview",
+        "names.uz"
+      ],
+      "taxonId": "gbif:2474863"
+    },
+    {
+      "id": "ifhc",
+      "title": "International Fund for Houbara Conservation: Asian Houbara and North African Houbara",
+      "publisher": "International Fund for Houbara Conservation",
+      "url": "https://houbarafund.gov.ae/",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "names.en",
+        "content.overview"
+      ]
+    },
+    {
+      "id": "photo-commons",
+      "title": "Chlamydotis macqueenii; лицензированное изображение, Kannan AS",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:MacQueens_Bustard_in_Greater_Rann_of_Kutch,_Gujarat,_India.jpg",
+      "accessedAt": "2026-10-21",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": null
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 432-бет; визуалдык текшерилген аталыш",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=432",
+      "accessedAt": "2026-10-21",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Историческая дрофа-красотка Кыргызстана относится к Chlamydotis macqueenii. Старое широкое имя Chlamydotis undulata не означает современный африканский вид.",
+        "ky": "Кыргызстандын тарыхый жорго тоодагы Chlamydotis macqueenii түрүнө таандык. Эски Chlamydotis undulata аты азыркы африкалык түр дегенди билдирбейт.",
+        "uz": "Qirgʻizistonning tarixiy tuvalogʻi Chlamydotis macqueenii turiga mansub. Eski Chlamydotis undulata nomi hozirgi Afrika turini anglatmaydi.",
+        "en": "Kyrgyzstan’s historical houbara account concerns Chlamydotis macqueenii. The broad former name Chlamydotis undulata does not denote today’s African species here."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Дрофа-красотка Кыргызстана представлена историческим очерком, в котором под заголовком Chlamydotis undulata прямо названа местная форма C. undulata macqueenii (J. E. Gray, 1832). Точная таксономическая сверка связывает её с современным видом Chlamydotis macqueenii. Поэтому африканский C. undulata не используется ни для современной идентичности, ни для иллюстрации этой карточки. Английское имя Asian Houbara подтверждено Международным фондом сохранения дрофы-красотки.\n\nНациональный очерк описывает редкие встречи преимущественно в Иссыккульской котловине, в том числе около Тору-Айгыра в 1988 и 1991 годах. Эти сведения относятся к прошлым наблюдениям. Отдельная птица или небольшая группа на поле не являются учётом всей национальной популяции и не подтверждают современное гнездование.\n\nДля вида в источнике названы пустынные и полупустынные открытые местообитания, маскировочная окраска, смешанное питание и простое наземное гнездо. Подробности гнезда приведены как общевидовая биология; местные места размножения нуждались в поиске уже по рекомендациям книги.\n\nСреди неблагоприятных факторов в 2006 году отмечены распашка подходящих участков, незаконный отстрел и слабая организация охраны. Авторы предлагали обследование местообитаний и создание заказников. Историческая национальная категория CR не выдаётся за современную глобальную оценку. Численность в Кыргызстане остаётся unknown, научная проверка — pending.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy",
+        "ifhc"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный очерк отмечает маскировочную окраску туловища, позволяющую сливаться с открытым грунтом. Полная морфологическая диагностика в сохранённом очерке не приведена; признаки африканского C. undulata не перенесены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Обитатель открытых пространств; в книге описано маскировочное поведение при беспокойстве. Исторические встречи в Иссыккульской котловине не устанавливают современный статус пребывания.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальному очерку использует растительный корм, включая колосья и ягоды, а также муравьёв, жуков, кузнечиков и мелких позвоночных.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Общевидовое описание книги: гнездо — углубление в песке или щебне под растительностью; кладка 3–4 пёстрых яйца. Доказательств современной кыргызстанской гнездовой популяции пакет не содержит.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические встречи главным образом в Иссыккульской котловине; в книге указаны наблюдения около Тору-Айгыра в 1988 и 1991 годах. Современные находки не подтверждались.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

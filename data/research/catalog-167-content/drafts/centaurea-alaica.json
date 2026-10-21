@@ -1,0 +1,230 @@
+{
+  "id": "centaurea-alaica",
+  "scientificName": "Rhaponticoides alaica",
+  "names": {
+    "ru": "Василёк алайский",
+    "ky": "Алай көп башы",
+    "uz": "Rhaponticoides alaica",
+    "en": "Alai Centaury"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Asterales",
+    "family": "Asteraceae",
+    "genus": "Rhaponticoides"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Centaurea alaica",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Каменистые склоны нижнего и среднего поясов гор по очерку 2006 года.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": null,
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендации 2006 года: сохранить местообитания и популяции, уточнить состояние вида.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е изд., 2006; Centaurea alaica, с. 216–217",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=217",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-decree",
+      "title": "Постановление №170 от 28.04.2005, документированная редакция 25.07.2009; decree-170-2009-1-87",
+      "publisher": "Правительство Кыргызской Республики; FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "originalScientificName"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Rhaponticoides alaica (Iljin) Negaresh",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/10855762",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview",
+        "names.uz"
+      ],
+      "taxonId": "gbif:10855762"
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 216-бет; визуалдык текшерилген аталыш",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=216",
+      "accessedAt": "2026-10-21",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Высокий многолетник с жёлтыми корзинками, исторически известный с Ферганского и Алайского хребтов. Принятое имя — Rhaponticoides alaica.",
+        "ky": "Сары гүл себеттүү бийик көп жылдык өсүмдүк. Фергана жана Алай кырка тоолорунан тарыхый түрдө белгилүү; кабыл алынган аты — Rhaponticoides alaica.",
+        "uz": "Sariq savatchali, baland koʻp yillik oʻsimlik. Fargʻona va Oloy tizmalaridan tarixan maʼlum; qabul qilingan nomi — Rhaponticoides alaica.",
+        "en": "A tall perennial with yellow flower heads, historically recorded in the Fergana and Alai ranges. Its accepted name is Rhaponticoides alaica."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Василёк алайский — многолетнее растение семейства астровых, описанное в Красной книге Кыргызстана 2006 года под именем Centaurea alaica Iljin. Точное синонимическое соответствие GBIF связывает это имя с принятой видовой комбинацией Rhaponticoides alaica (Iljin) Negaresh. Историческое русское название сохранено, а смена рода не образует новую самостоятельную запись.\n\nПо национальному очерку растение может достигать 80–100 см. Для него характерны продолговатые листья и жёлтые цветки в корзинках. Исторические места произрастания указаны на каменистых склонах нижнего и среднего горных поясов Ферганского и Алайского хребтов. В пределах Ферганского хребта отдельно назван бассейн Тара.\n\nВ книге приведены летние сроки цветения и плодоношения, но отсутствуют подробные данные о численности, культивировании и причинах редкости. Указание на небольшие популяции не позволяет оценить ни национальное количество растений, ни современную тенденцию. Конкретные угрозы в карточке не домыслены по аналогии с другими васильками.\n\nВ 2006 году авторы рекомендовали сохранение местообитаний и популяций и уточнение состояния вида. Эти рекомендации представлены как предложения исторического источника; их выполнение сейчас не установлено. Категория VU сохраняет привязку к году издания. Отсутствие современного мониторинга явно отмечено, численность оставлена unknown, независимого научного одобрения пока нет.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Многолетник до 80–100 см. Листья продолговато-овальные, с хрящевато-зубчатым краем; нижние черешковые, верхние почти сидячие. Цветки жёлтые, в корзинках; обёртки голые. Плоды — семянки с хохолком.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В историческом источнике описаны небольшие популяции; причины редкости не установлены. Современной экологической оценки нет.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книга указывает цветение в июне–июле и плодоношение в июле–августе; дополнительные особенности размножения не сообщаются.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические указания для Ферганского хребта, в том числе долины Тара, и Алайского хребта. Современные обследования в пакет не включены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

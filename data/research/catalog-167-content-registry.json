@@ -1516,8 +1516,8 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Salvia vvedenskyi",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -1561,7 +1561,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -1584,7 +1596,15 @@
           "accessedAt": "2026-10-21",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview",
+            "names.uz"
           ],
           "taxonId": "gbif:3883855"
         },
@@ -1598,6 +1618,28 @@
           "supports": [
             "scientificName",
             "content.overview"
+          ]
+        },
+        {
+          "id": "photo-commons",
+          "title": "Salvia vvedenskii Nikitina; лицензированное изображение, ELAR corporation (Moscow, Russia)",
+          "publisher": "Moscow State University",
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0873533",
+          "accessedAt": "2026-10-21",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": null
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 196-бет; визуалдык текшерилген аталыш",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=196",
+          "accessedAt": "2026-10-21",
+          "language": "ky",
+          "supports": [
+            "names.ky"
           ]
         }
       ],
@@ -1619,6 +1661,30 @@
         {
           "path": "docs/evidence/catalog-167-baseline.json",
           "sha256": "63e8654bdbf4a9730331cd230aff1c5cf8688df8cf1f1430bd06d30232d8617e"
+        },
+        {
+          "path": "data/research/catalog-167-content/block-2-facts.json",
+          "sha256": "d03706abf80c2ce489db0f0b4c0ddedd3fcfe2e4c49e8b7de13e30f9f44c39a5"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-2-accounts.json",
+          "sha256": "a6714a0df8c09b09b855f796f948aaf1e45b5562516fe73f143dda35fad6bd64"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-2-images.json",
+          "sha256": "a722c1523a61e20abed9f64c417cc551c478d3f602cb90d33bd29d368fda4903"
+        },
+        {
+          "path": "docs/evidence/catalog-167-photo-search.json",
+          "sha256": "067912c09b54c0c547c8fb51c4a114fc4c4f1eacd873c9cb45066c7d0ef4228f"
+        },
+        {
+          "path": "docs/evidence/catalog-167-supplementary-photo-search.json",
+          "sha256": "07b8d96d9203b2bd3e7a0d1c8dc15b209a2697dd1bccc87efda6c929fb1472f3"
+        },
+        {
+          "path": "docs/evidence/catalog-167-scientific-review.json",
+          "sha256": "dc4417856f099d8100a32d6ee15f89cd5d5ee672b59a73427d9c15ea9c416ca9"
         }
       ],
       "draft": null,
@@ -1646,48 +1712,58 @@
       "independentScientificReview": "pending",
       "scientificReviewStatus": "pending",
       "historicalNationalScope": "Исторический национальный очерк; современное присутствие и текущая редакция правового реестра не установлены.",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "salvia-vvedenskyi",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "677c3181e705fb2bdae1cf03586752eb6cb07499e42408019a291276ae038d92",
+        "fingerprint": "d70afa837ee8046bd592294801ecdbfe7648ee0e4bdbb0213c39a544acd7f1c8",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "677c3181e705fb2bdae1cf03586752eb6cb07499e42408019a291276ae038d92"
+      "checkedFingerprint": "d70afa837ee8046bd592294801ecdbfe7648ee0e4bdbb0213c39a544acd7f1c8",
+      "draftFile": "data/research/catalog-167-content/drafts/salvia-vvedenskyi.json",
+      "publicationGaps": [
+        "Отдельное разрешение владельца на импорт отсутствует",
+        "Независимая научная проверка pending",
+        "Современная национальная численность unknown",
+        "UZ: используется принятое научное имя; народное название не подтверждено"
+      ],
+      "editorialNotes": [
+        "Орфография vvedenskii сверена по автору и первоописанию; прежний FUZZY не использован как научное доказательство."
+      ],
+      "missingFacts": [
+        "Современная численность, состояние местообитаний, осуществление рекомендованной охраны."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "salvia-vvedenskyi",
+        "factsFingerprint": "ccbc08fa1b015e9b460730c20e9a9582c9e0c8d923d97eb207dec0925acd4aac",
+        "draftSha256": "ccf6849e4b11aa68a32b05fc5c0991ff87357741e1dddc9675e433c6c2a2647e",
+        "metadataCompletion": "Kyrgyz heading visually transcribed; UZ scientific-name fallback; photo provider and source supports reconciled; curlew EX 2025 explicit."
+      },
+      "currentPresenceConfirmed": null
     },
     {
       "originalScientificName": "Stemmacantha aulieatensis",
@@ -1696,8 +1772,8 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "EN",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Stemmacantha aulieatensis",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -1741,7 +1817,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -1764,7 +1852,15 @@
           "accessedAt": "2026-10-21",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview",
+            "names.uz"
           ],
           "taxonId": "gbif:3142224"
         },
@@ -1778,6 +1874,28 @@
           "supports": [
             "scientificName",
             "content.overview"
+          ]
+        },
+        {
+          "id": "photo-commons",
+          "title": "Rhaponticum aulieatense Iljin; лицензированное изображение, ELAR corporation (Moscow, Russia)",
+          "publisher": "Moscow State University",
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0890968",
+          "accessedAt": "2026-10-21",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": null
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 214-бет; визуалдык текшерилген аталыш",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=214",
+          "accessedAt": "2026-10-21",
+          "language": "ky",
+          "supports": [
+            "names.ky"
           ]
         }
       ],
@@ -1799,6 +1917,30 @@
         {
           "path": "docs/evidence/catalog-167-baseline.json",
           "sha256": "63e8654bdbf4a9730331cd230aff1c5cf8688df8cf1f1430bd06d30232d8617e"
+        },
+        {
+          "path": "data/research/catalog-167-content/block-2-facts.json",
+          "sha256": "d03706abf80c2ce489db0f0b4c0ddedd3fcfe2e4c49e8b7de13e30f9f44c39a5"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-2-accounts.json",
+          "sha256": "a6714a0df8c09b09b855f796f948aaf1e45b5562516fe73f143dda35fad6bd64"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-2-images.json",
+          "sha256": "a722c1523a61e20abed9f64c417cc551c478d3f602cb90d33bd29d368fda4903"
+        },
+        {
+          "path": "docs/evidence/catalog-167-photo-search.json",
+          "sha256": "067912c09b54c0c547c8fb51c4a114fc4c4f1eacd873c9cb45066c7d0ef4228f"
+        },
+        {
+          "path": "docs/evidence/catalog-167-supplementary-photo-search.json",
+          "sha256": "07b8d96d9203b2bd3e7a0d1c8dc15b209a2697dd1bccc87efda6c929fb1472f3"
+        },
+        {
+          "path": "docs/evidence/catalog-167-scientific-review.json",
+          "sha256": "dc4417856f099d8100a32d6ee15f89cd5d5ee672b59a73427d9c15ea9c416ca9"
         }
       ],
       "draft": null,
@@ -1826,48 +1968,58 @@
       "independentScientificReview": "pending",
       "scientificReviewStatus": "pending",
       "historicalNationalScope": "Исторический национальный очерк; современное присутствие и текущая редакция правового реестра не установлены.",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "stemmacantha-aulieatensis",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "c2036de735229d961e48e081ae215d251741a5d6507a3856b2d95cdf0103fd00",
+        "fingerprint": "0ce1ddccbcbb69668f1f9cd223e294372b0f5f7145498fee1b2b52ed449f2559",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "c2036de735229d961e48e081ae215d251741a5d6507a3856b2d95cdf0103fd00"
+      "checkedFingerprint": "0ce1ddccbcbb69668f1f9cd223e294372b0f5f7145498fee1b2b52ed449f2559",
+      "draftFile": "data/research/catalog-167-content/drafts/stemmacantha-aulieatensis.json",
+      "publicationGaps": [
+        "Отдельное разрешение владельца на импорт отсутствует",
+        "Независимая научная проверка pending",
+        "Современная национальная численность unknown",
+        "UZ: используется принятое научное имя; народное название не подтверждено"
+      ],
+      "editorialNotes": [
+        "Гомотипные Leuzea/Rhaponticum/Stemmacantha учитываются как один вид. Размер семянок 5–6 (10) см в книге имеет подозрительную размерность и исключён без догадки об исправлении."
+      ],
+      "missingFacts": [
+        "Современные учёты, достоверная размерность семянок в первичном тексте."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "stemmacantha-aulieatensis",
+        "factsFingerprint": "14dcd01521ced2369e294e18c28235514dd6d00bbc57aa6dc1fda73cac143341",
+        "draftSha256": "b141cb35dcb4b81d45b5ac415b66ac353c7470b4ea26156bfc3d56c56be06fa3",
+        "metadataCompletion": "Kyrgyz heading visually transcribed; UZ scientific-name fallback; photo provider and source supports reconciled; curlew EX 2025 explicit."
+      },
+      "currentPresenceConfirmed": null
     },
     {
       "originalScientificName": "Centaurea alaica",
@@ -1876,8 +2028,8 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Centaurea alaica",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -1920,7 +2072,18 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -1943,9 +2106,28 @@
           "accessedAt": "2026-10-21",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview",
+            "names.uz"
           ],
           "taxonId": "gbif:10855762"
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 216-бет; визуалдык текшерилген аталыш",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=216",
+          "accessedAt": "2026-10-21",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
         }
       ],
       "contradictions": [],
@@ -1966,6 +2148,30 @@
         {
           "path": "docs/evidence/catalog-167-baseline.json",
           "sha256": "63e8654bdbf4a9730331cd230aff1c5cf8688df8cf1f1430bd06d30232d8617e"
+        },
+        {
+          "path": "data/research/catalog-167-content/block-2-facts.json",
+          "sha256": "d03706abf80c2ce489db0f0b4c0ddedd3fcfe2e4c49e8b7de13e30f9f44c39a5"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-2-accounts.json",
+          "sha256": "a6714a0df8c09b09b855f796f948aaf1e45b5562516fe73f143dda35fad6bd64"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-2-images.json",
+          "sha256": "a722c1523a61e20abed9f64c417cc551c478d3f602cb90d33bd29d368fda4903"
+        },
+        {
+          "path": "docs/evidence/catalog-167-photo-search.json",
+          "sha256": "067912c09b54c0c547c8fb51c4a114fc4c4f1eacd873c9cb45066c7d0ef4228f"
+        },
+        {
+          "path": "docs/evidence/catalog-167-supplementary-photo-search.json",
+          "sha256": "07b8d96d9203b2bd3e7a0d1c8dc15b209a2697dd1bccc87efda6c929fb1472f3"
+        },
+        {
+          "path": "docs/evidence/catalog-167-scientific-review.json",
+          "sha256": "dc4417856f099d8100a32d6ee15f89cd5d5ee672b59a73427d9c15ea9c416ca9"
         }
       ],
       "draft": null,
@@ -1993,48 +2199,59 @@
       "independentScientificReview": "pending",
       "scientificReviewStatus": "pending",
       "historicalNationalScope": "Исторический национальный очерк; современное присутствие и текущая редакция правового реестра не установлены.",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "centaurea-alaica",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
         ],
-        "warnings": [],
-        "fingerprint": "abf626548195469cb431d3881753d74dec5adb80f961ac021112108fa116660a",
+        "fingerprint": "815c35398c83307f95796c410e5769d5608bc6fad5b0933848e33bda3987a693",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "abf626548195469cb431d3881753d74dec5adb80f961ac021112108fa116660a"
+      "checkedFingerprint": "815c35398c83307f95796c410e5769d5608bc6fad5b0933848e33bda3987a693",
+      "draftFile": "data/research/catalog-167-content/drafts/centaurea-alaica.json",
+      "publicationGaps": [
+        "Отдельное разрешение владельца на импорт отсутствует",
+        "Независимая научная проверка pending",
+        "Современная национальная численность unknown",
+        "UZ: используется принятое научное имя; народное название не подтверждено",
+        "Фото: placeholder"
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Доказанные причины редкости, современная численность, подробная биология размножения."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "centaurea-alaica",
+        "factsFingerprint": "1c049a0814cb677470f71f33c3e03a148a7726b49ab4a367f73ceb210bdcf015",
+        "draftSha256": "b1ebd0b4f23e738cd01c40cf431222cae8c4ae3bb3503bf8706dff6e724ec530",
+        "metadataCompletion": "Kyrgyz heading visually transcribed; UZ scientific-name fallback; photo provider and source supports reconciled; curlew EX 2025 explicit."
+      },
+      "currentPresenceConfirmed": null
     },
     {
       "originalScientificName": "Pyrethrum leontopodium",
@@ -2043,8 +2260,8 @@
       "group": "plants",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Pyrethrum leontopodium",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -2088,7 +2305,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -2111,7 +2340,15 @@
           "accessedAt": "2026-10-21",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview",
+            "names.uz"
           ],
           "taxonId": "gbif:5389434"
         },
@@ -2125,6 +2362,28 @@
           "supports": [
             "scientificName",
             "content.overview"
+          ]
+        },
+        {
+          "id": "photo-commons",
+          "title": "Pyrethrum leontopodium; лицензированное изображение, Arkadiusz Nowak, Marcin Nobis, Sylwia Nowak, Agnieszka Nobis, Anna Wróbel, Sebastian Świerszcz, Ewelina Klichowska, Iwona Dembicz & Grzegorz Kusza",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Pyrethrum_leontopodium_(Flora_of_Tajikistan).png",
+          "accessedAt": "2026-10-21",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": null
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 222-бет; визуалдык текшерилген аталыш",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=222",
+          "accessedAt": "2026-10-21",
+          "language": "ky",
+          "supports": [
+            "names.ky"
           ]
         }
       ],
@@ -2146,6 +2405,30 @@
         {
           "path": "docs/evidence/catalog-167-baseline.json",
           "sha256": "63e8654bdbf4a9730331cd230aff1c5cf8688df8cf1f1430bd06d30232d8617e"
+        },
+        {
+          "path": "data/research/catalog-167-content/block-2-facts.json",
+          "sha256": "d03706abf80c2ce489db0f0b4c0ddedd3fcfe2e4c49e8b7de13e30f9f44c39a5"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-2-accounts.json",
+          "sha256": "a6714a0df8c09b09b855f796f948aaf1e45b5562516fe73f143dda35fad6bd64"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-2-images.json",
+          "sha256": "a722c1523a61e20abed9f64c417cc551c478d3f602cb90d33bd29d368fda4903"
+        },
+        {
+          "path": "docs/evidence/catalog-167-photo-search.json",
+          "sha256": "067912c09b54c0c547c8fb51c4a114fc4c4f1eacd873c9cb45066c7d0ef4228f"
+        },
+        {
+          "path": "docs/evidence/catalog-167-supplementary-photo-search.json",
+          "sha256": "07b8d96d9203b2bd3e7a0d1c8dc15b209a2697dd1bccc87efda6c929fb1472f3"
+        },
+        {
+          "path": "docs/evidence/catalog-167-scientific-review.json",
+          "sha256": "dc4417856f099d8100a32d6ee15f89cd5d5ee672b59a73427d9c15ea9c416ca9"
         }
       ],
       "draft": null,
@@ -2173,48 +2456,56 @@
       "independentScientificReview": "pending",
       "scientificReviewStatus": "pending",
       "historicalNationalScope": "Исторический национальный очерк; современное присутствие и текущая редакция правового реестра не установлены.",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "pyrethrum-leontopodium",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "c3141c2473e3d953fd5f5b67ea474f4c3ec2c5ff787049a54220807717c8c2f7",
+        "fingerprint": "9a55ec102af9fb8abb004e4a47dc07db7b32093f38ae78e5baf6c73abdf67206",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "c3141c2473e3d953fd5f5b67ea474f4c3ec2c5ff787049a54220807717c8c2f7"
+      "checkedFingerprint": "9a55ec102af9fb8abb004e4a47dc07db7b32093f38ae78e5baf6c73abdf67206",
+      "draftFile": "data/research/catalog-167-content/drafts/pyrethrum-leontopodium.json",
+      "publicationGaps": [
+        "Отдельное разрешение владельца на импорт отсутствует",
+        "Независимая научная проверка pending",
+        "Современная национальная численность unknown",
+        "UZ: используется принятое научное имя; народное название не подтверждено"
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Современные национальные учёты и подробности воспроизводства."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "pyrethrum-leontopodium",
+        "factsFingerprint": "17ed101125181e6912c470a0e6beb3a76c246b80941e8193df47d332409e85dc",
+        "draftSha256": "171079cbce0c4608792deff7e903ef3c6c35d29b820c6fdad3ebec3d2aed9a8d",
+        "metadataCompletion": "Kyrgyz heading visually transcribed; UZ scientific-name fallback; photo provider and source supports reconciled; curlew EX 2025 explicit."
+      },
+      "currentPresenceConfirmed": null
     },
     {
       "originalScientificName": "Phoenicopterus ruber",
@@ -2223,8 +2514,8 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "NT",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); исторический местный Phoenicopterus ruber roseus Pallas, 1811; не современный американский P. ruber; запись под именем Phoenicopterus ruber",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -2267,7 +2558,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -2290,9 +2593,50 @@
           "accessedAt": "2026-10-21",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview",
+            "names.uz"
           ],
           "taxonId": "gbif:4352332"
+        },
+        {
+          "id": "birdlife-sa-2015",
+          "title": "Taylor M. R., Peacock F., Wanless R. M. (eds), 2015. The Eskom Red Data Book of Birds of South Africa, Lesotho and Swaziland; Greater Flamingo, p. 302",
+          "publisher": "BirdLife South Africa",
+          "url": "https://www.birdlife.org.za/wp-content/uploads/2021/02/RDBB-Final-copy.pdf",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "content.appearance"
+          ]
+        },
+        {
+          "id": "photo-commons",
+          "title": "Phoenicopterus roseus; лицензированное изображение, Giles Laurent",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:009_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg",
+          "accessedAt": "2026-10-21",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": null
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 372-бет; визуалдык текшерилген аталыш",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=372",
+          "accessedAt": "2026-10-21",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
         }
       ],
       "contradictions": [],
@@ -2313,6 +2657,30 @@
         {
           "path": "docs/evidence/catalog-167-baseline.json",
           "sha256": "63e8654bdbf4a9730331cd230aff1c5cf8688df8cf1f1430bd06d30232d8617e"
+        },
+        {
+          "path": "data/research/catalog-167-content/block-2-facts.json",
+          "sha256": "d03706abf80c2ce489db0f0b4c0ddedd3fcfe2e4c49e8b7de13e30f9f44c39a5"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-2-accounts.json",
+          "sha256": "a6714a0df8c09b09b855f796f948aaf1e45b5562516fe73f143dda35fad6bd64"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-2-images.json",
+          "sha256": "a722c1523a61e20abed9f64c417cc551c478d3f602cb90d33bd29d368fda4903"
+        },
+        {
+          "path": "docs/evidence/catalog-167-photo-search.json",
+          "sha256": "067912c09b54c0c547c8fb51c4a114fc4c4f1eacd873c9cb45066c7d0ef4228f"
+        },
+        {
+          "path": "docs/evidence/catalog-167-supplementary-photo-search.json",
+          "sha256": "07b8d96d9203b2bd3e7a0d1c8dc15b209a2697dd1bccc87efda6c929fb1472f3"
+        },
+        {
+          "path": "docs/evidence/catalog-167-scientific-review.json",
+          "sha256": "dc4417856f099d8100a32d6ee15f89cd5d5ee672b59a73427d9c15ea9c416ca9"
         }
       ],
       "draft": null,
@@ -2340,48 +2708,56 @@
       "independentScientificReview": "pending",
       "scientificReviewStatus": "pending",
       "historicalNationalScope": "Исторический национальный очерк; современное присутствие и текущая редакция правового реестра не установлены.",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "phoenicopterus-roseus",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "deed2f510ae3f837dd737f13541d98f4362f8823adaeef1cec6aeef90afaa7d0",
+        "fingerprint": "61b621da447db2c60831bcd80be404c5cefdac9c46a67726907532ba55998725",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "deed2f510ae3f837dd737f13541d98f4362f8823adaeef1cec6aeef90afaa7d0"
+      "checkedFingerprint": "61b621da447db2c60831bcd80be404c5cefdac9c46a67726907532ba55998725",
+      "draftFile": "data/research/catalog-167-content/drafts/phoenicopterus-roseus.json",
+      "publicationGaps": [
+        "Отдельное разрешение владельца на импорт отсутствует",
+        "Независимая научная проверка pending",
+        "Современная национальная численность unknown",
+        "UZ: используется принятое научное имя; народное название не подтверждено"
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Современное присутствие и национальная численность; доказательства местного гнездования отсутствуют."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "phoenicopterus-roseus",
+        "factsFingerprint": "493dd530f6daf1578332849929fc545a502f1c7be97597aa219b2bb134fa1698",
+        "draftSha256": "bc905220059d31b77c51a384bb000b5126acad934ccbf076913469fd9104e4e7",
+        "metadataCompletion": "Kyrgyz heading visually transcribed; UZ scientific-name fallback; photo provider and source supports reconciled; curlew EX 2025 explicit."
+      },
+      "currentPresenceConfirmed": null
     },
     {
       "originalScientificName": "Chlamydotis undulata",
@@ -2390,8 +2766,8 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "CR",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); местная Chlamydotis undulata macqueenii J. E. Gray, 1832; не африканская C. undulata; запись под именем Chlamydotis undulata",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -2434,7 +2810,20 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.appearance",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "threats.1",
+            "conservationMeasures.0",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -2457,9 +2846,51 @@
           "accessedAt": "2026-10-21",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview",
+            "names.uz"
           ],
           "taxonId": "gbif:2474863"
+        },
+        {
+          "id": "ifhc",
+          "title": "International Fund for Houbara Conservation: Asian Houbara and North African Houbara",
+          "publisher": "International Fund for Houbara Conservation",
+          "url": "https://houbarafund.gov.ae/",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "names.en",
+            "content.overview"
+          ]
+        },
+        {
+          "id": "photo-commons",
+          "title": "Chlamydotis macqueenii; лицензированное изображение, Kannan AS",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:MacQueens_Bustard_in_Greater_Rann_of_Kutch,_Gujarat,_India.jpg",
+          "accessedAt": "2026-10-21",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": null
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 432-бет; визуалдык текшерилген аталыш",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=432",
+          "accessedAt": "2026-10-21",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
         }
       ],
       "contradictions": [],
@@ -2480,6 +2911,30 @@
         {
           "path": "docs/evidence/catalog-167-baseline.json",
           "sha256": "63e8654bdbf4a9730331cd230aff1c5cf8688df8cf1f1430bd06d30232d8617e"
+        },
+        {
+          "path": "data/research/catalog-167-content/block-2-facts.json",
+          "sha256": "d03706abf80c2ce489db0f0b4c0ddedd3fcfe2e4c49e8b7de13e30f9f44c39a5"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-2-accounts.json",
+          "sha256": "a6714a0df8c09b09b855f796f948aaf1e45b5562516fe73f143dda35fad6bd64"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-2-images.json",
+          "sha256": "a722c1523a61e20abed9f64c417cc551c478d3f602cb90d33bd29d368fda4903"
+        },
+        {
+          "path": "docs/evidence/catalog-167-photo-search.json",
+          "sha256": "067912c09b54c0c547c8fb51c4a114fc4c4f1eacd873c9cb45066c7d0ef4228f"
+        },
+        {
+          "path": "docs/evidence/catalog-167-supplementary-photo-search.json",
+          "sha256": "07b8d96d9203b2bd3e7a0d1c8dc15b209a2697dd1bccc87efda6c929fb1472f3"
+        },
+        {
+          "path": "docs/evidence/catalog-167-scientific-review.json",
+          "sha256": "dc4417856f099d8100a32d6ee15f89cd5d5ee672b59a73427d9c15ea9c416ca9"
         }
       ],
       "draft": null,
@@ -2507,48 +2962,56 @@
       "independentScientificReview": "pending",
       "scientificReviewStatus": "pending",
       "historicalNationalScope": "Исторический национальный очерк; современное присутствие и текущая редакция правового реестра не установлены.",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "chlamydotis-macqueenii",
         "batchNumber": 2,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "87b8e2000a729c46778d36e5f390fb4a146680e4cb39e9a94be944c57ac9c106",
+        "fingerprint": "723bd8f16e07a90a4d00b8fdc55c7b0f3a6b90450d2ead9040b9d74995ff0947",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "87b8e2000a729c46778d36e5f390fb4a146680e4cb39e9a94be944c57ac9c106"
+      "checkedFingerprint": "723bd8f16e07a90a4d00b8fdc55c7b0f3a6b90450d2ead9040b9d74995ff0947",
+      "draftFile": "data/research/catalog-167-content/drafts/chlamydotis-macqueenii.json",
+      "publicationGaps": [
+        "Отдельное разрешение владельца на импорт отсутствует",
+        "Независимая научная проверка pending",
+        "Современная национальная численность unknown",
+        "UZ: используется принятое научное имя; народное название не подтверждено"
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Современные национальные учёты и достоверные местные места размножения."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "chlamydotis-macqueenii",
+        "factsFingerprint": "62c2d4e78ee42cf4ad0a406947c61b3d7b25a60c762b98993d117f9d42941135",
+        "draftSha256": "1ed0ed060465707f9885ffe4825513dbd6b27d4071b9a536d09d95a2cc0979ea",
+        "metadataCompletion": "Kyrgyz heading visually transcribed; UZ scientific-name fallback; photo provider and source supports reconciled; curlew EX 2025 explicit."
+      },
+      "currentPresenceConfirmed": null
     },
     {
       "originalScientificName": "Numenius tenuirostris",
