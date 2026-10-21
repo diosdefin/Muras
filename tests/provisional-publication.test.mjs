@@ -27,6 +27,13 @@ test('catalog-150 is explicitly allowed while main and unrelated feature branche
   }
 })
 
+test('catalog-200 is explicitly allowed without admitting main or arbitrary catalog branches', () => {
+  assert.equal(canApplyOnBranch('feature/catalog-200'), true)
+  for (const branch of ['main', 'master', 'feature/catalog-201', 'feature/unrelated', '']) {
+    assert.equal(canApplyOnBranch(branch), false, branch)
+  }
+})
+
 async function fixture(fn) {
   const root = await mkdtemp(join(tmpdir(), 'muras-provisional-'))
   try {

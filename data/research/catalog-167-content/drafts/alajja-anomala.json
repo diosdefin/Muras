@@ -1,0 +1,276 @@
+{
+  "id": "alajja-anomala",
+  "scientificName": "Eriophyton anomalum",
+  "names": {
+    "ru": "Алайя (эриантера) уклоняющаяся",
+    "ky": "Кыйшык корум гүл",
+    "uz": "Eriophyton anomalum",
+    "en": "Anomalous Alajja"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Lamiales",
+    "family": "Lamiaceae",
+    "genus": "Eriophyton"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Alajja anomala",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Крутые каменистые южные склоны и осыпи альпийского и субнивального поясов.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": null,
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендованное в 2006 году сохранение высокогорных местообитаний; специальных разработанных мер очерк не приводит.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/alajja-anomala.webp",
+      "width": 1240,
+      "height": 1800,
+      "sha256": "2c79dc055906a040df53f7d52265dea28e3e61444f65e02c6170dfaee3b41ffe",
+      "author": "ELAR corporation (Moscow, Russia)",
+      "originalPage": "https://plant.depo.msu.ru/open/public/item/MW0872625",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "ELAR corporation (Moscow, Russia); CC BY 4.0; https://plant.depo.msu.ru/open/public/item/MW0872625.",
+      "modifications": [
+        "Уменьшение без увеличения до 1800 px; конвертация WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ky": null,
+        "uz": null,
+        "ru": "Гербарный лист MW0872625, гербарий МГУ: Eriophyton anomalum (Juz.) Lazkov & Sennikov, Kyrgyzstan. Скан ELAR corporation; правообладатель Moscow State University. Исторический образец не подтверждает современное состояние популяции.",
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е изд., 2006; Alajja anomala, с. 190–191",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=191",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-decree",
+      "title": "Постановление №170 от 28.04.2005, документированная редакция 25.07.2009; decree-170-2009-1-69",
+      "publisher": "Правительство Кыргызской Республики; FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "originalScientificName"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Eriophyton anomalum (Juz.) Lazkov & Sennikov",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/9629204",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview",
+        "names.uz"
+      ],
+      "taxonId": "gbif:9629204"
+    },
+    {
+      "id": "eriophyton-corrections",
+      "title": "Documents Eriophyton anomalum as a new combination from Erianthera anomala, discusses the former Alajja concepts and Kyrgyz specimens. No extra taxon is created for the alternative genera.",
+      "publisher": "Sennikov, Lazkov, Uotila & Weber, Taxonomic corrections and new records in vascular plants of Kyrgyzstan (2011)",
+      "url": "https://helda.helsinki.fi/server/api/core/bitstreams/a8938a1f-689d-4736-9f81-ea5dfbdd10ea/content",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview"
+      ]
+    },
+    {
+      "id": "photo-commons",
+      "title": "Eriophyton anomalum (Juz.) Lazkov & Sennikov; лицензированное изображение, ELAR corporation (Moscow, Russia)",
+      "publisher": "Moscow State University",
+      "url": "https://plant.depo.msu.ru/open/public/item/MW0872625",
+      "accessedAt": "2026-10-21",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": null
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 190-бет; визуалдык текшерилген аталыш",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=190",
+      "accessedAt": "2026-10-21",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Опушённый высокогорный многолетник, включённый в Красную книгу 2006 года как Alajja anomala; принятое имя — Eriophyton anomalum.",
+        "ky": "Бийик тоодо өскөн, жыш түктүү көп жылдык өсүмдүк. 2006-жылкы китепте Alajja anomala, азыр Eriophyton anomalum деп аталат.",
+        "uz": "Baland togʻlarda oʻsuvchi, qalin tukli koʻp yillik oʻsimlik. 2006-yilgi kitobda Alajja anomala, hozir Eriophyton anomalum deb ataladi.",
+        "en": "A densely hairy alpine perennial, listed in the 2006 Red Data Book as Alajja anomala and accepted as Eriophyton anomalum."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Алайя уклоняющаяся — корневищный многолетник семейства яснотковых, описанный в национальной Красной книге под двумя историческими родовыми сочетаниями: Alajja anomala и Erianthera anomala. Работа Sennikov и соавторов 2011 года документирует комбинацию Eriophyton anomalum и кыргызстанские гербарные материалы. Вместе с точным ответом GBIF это позволяет использовать современное имя без создания отдельной карточки для каждого синонима.\n\nВнешний облик определяется сильным войлочным опушением и крупными фиолетово-розовыми цветками. Национальный очерк связывает растение с крутыми каменистыми южными склонами и осыпями альпийского и субнивального поясов. Для Кыргызстана перечислены Внутренний Тянь-Шань и Алайский хребет. Эти сведения относятся к исторически обобщённым находкам.\n\nСогласно книге, цветение приходится на июль–август; размножение возможно семенами и вегетативно. Количественная оценка численности отсутствует, а конкретные ограничивающие факторы не выявлены. Поэтому общий вывод о редкости не превращается в цифровую оценку либо доказанную тенденцию сокращения.\n\nВ 2006 году специальных мер охраны авторы не приводили, рекомендуя сохранение высокогорных местообитаний. Категория VU указывается только с годом источника. Актуальные данные о популяциях, местах сохранения и эффективности охраны требуют отдельной проверки; научный статус этой карточки остаётся pending.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy",
+        "eriophyton-corrections"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Многолетник с корневищем и густым бархатисто-войлочным опушением, придающим сероватый облик. Цветки по 2–4 в ложных мутовках; венчик фиолетово-розовый, двугубый, длиной 3–4 см, снаружи мягко опушённый.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический очерк характеризует вид как высокогорный. Конкретные ограничивающие факторы в нём не установлены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге 2006 года цветёт в июле–августе, размножается семенами и вегетативно.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Внутренний Тянь-Шань: Тогуз-Торо, гора Ак-Теке; Алайский хребет. Национальный очерк 2006 года и таксономическая работа 2011 года не являются современным мониторингом.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

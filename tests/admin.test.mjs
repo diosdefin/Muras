@@ -108,10 +108,13 @@ test('draft repository restores incomplete drafts losslessly and maintains a sep
  assert.deepEqual(repo.load().current.demoArchive,source.demoArchive);assert.deepEqual(repo.load().current.catalog[0].sources,source.catalog[0].sources)
 })
 
-test('two-document drafts fit their own bound while oversized envelopes and 2 MiB source imports remain rejected',()=>{
- const memory=storage(),repo=createDraftRepository(memory),draft=envelope(copy())
+test('two-document drafts fit their own bound while oversized envelopes and source imports remain rejected',()=>{
+ const memory=storage(),repo=createDraftRepository(memory),fixture=copy()
+ fixture.catalog=fixture.catalog.slice(0,1)
+ fixture.catalog[0].names.ru='x'.repeat(Math.floor(MAX_JSON_BYTES*.6))
+ const draft={original:clone(fixture),current:clone(fixture),assets:[]}
  assert.ok(new TextEncoder().encode(JSON.stringify(draft)).length>MAX_JSON_BYTES)
- repo.save(draft);assert.deepEqual(repo.load().current,source)
+ repo.save(draft);assert.deepEqual(repo.load().current,fixture)
  const saved=memory.getItem(DRAFT_KEY)
  assert.throws(()=>repo.save({...draft,extra:'x'.repeat(MAX_DRAFT_BYTES)}),/admin.error.jsonSize/)
  assert.equal(memory.getItem(DRAFT_KEY),saved)

@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-21",
+  "commands": [
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "tests": 316,
+      "passed": 316,
+      "failed": 0
+    },
+    {
+      "command": "npm run data",
+      "run": 1,
+      "exitCode": 0,
+      "catalog": 150
+    },
+    {
+      "command": "npm run data",
+      "run": 2,
+      "exitCode": 0,
+      "catalog": 150
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "transformedModules": 104
+    },
+    {
+      "command": "node scripts/validate-catalog-200-inventory.mjs",
+      "exitCode": 0,
+      "historicalPositions": 421,
+      "published": 150
+    },
+    {
+      "command": "node scripts/validate-catalog-167-preparation.mjs",
+      "exitCode": 0,
+      "drafted": 17,
+      "ready": 16,
+      "needsEvidence": 1
+    }
+  ],
+  "logs": [
+    {
+      "path": ".generated/catalog-167/tests-final.log",
+      "sha256": "6b623fab852346a0f98412850ee7328824c625ceb4d11d1cd97558d724148151"
+    },
+    {
+      "path": ".generated/catalog-167/data-final-1.log",
+      "sha256": "60215a6cef73ade86da69723cb5ec2a8ca9151655acbd31a256d25590bcd786c"
+    },
+    {
+      "path": ".generated/catalog-167/data-final-2.log",
+      "sha256": "60215a6cef73ade86da69723cb5ec2a8ca9151655acbd31a256d25590bcd786c"
+    },
+    {
+      "path": ".generated/catalog-167/build-final.log",
+      "sha256": "ba14f3593b9f2bb4b4b9473ad8c809d3e7517febbf9afc5b42b2a05494d263ac"
+    }
+  ],
+  "dataRunsByteIdentical": true,
+  "newWebPDecoded": 13,
+  "newWebPPrivateMetadata": false,
+  "oldDataRecordsAndImagesUnchanged": true,
+  "oldTrackedFilesUnchanged": 946,
+  "allowedChangedOldFiles": [
+    ".gitattributes",
+    "scripts/import-species-batch.mjs",
+    "tests/provisional-publication.test.mjs"
+  ],
+  "catalogSourceSha256": "a5c78f317609a07e630c87791080234d850c2d5aa488ecfc93f3bb728770a1d4",
+  "ownerApproval": null,
+  "independentScientificApproval": null,
+  "importPerformed": false,
+  "knownResolvedTechnicalIssues": [
+    "Default sandbox EPERM on bulk resume realpath: rerun through authorized sandbox escalation.",
+    "Intermediate preview document type corrected from research-draft-batch to species-import-batch before successful dry-run.",
+    "Two photo-supported appearance sources declared explicitly after schema validation rejected unsupported source claims."
+  ],
+  "unresolvedScientificIssues": [
+    "kosopoljanskia-hebecarpa: KY VU vs RU/EN EN in book 2006, needs_evidence; excluded from future owner manifest."
+  ],
+  "imagePreparationLimits": [
+    "One failed herbarium download retried; original exceeds existing 30 MiB limit, placeholder.",
+    "One Commons HTTP 429 retried successfully after other work."
+  ]
+}

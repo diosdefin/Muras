@@ -1,0 +1,289 @@
+{
+  "id": "stemmacantha-aulieatensis",
+  "scientificName": "Leuzea aulieatensis",
+  "names": {
+    "ru": "Большеголовник аулиеатинский",
+    "ky": "Олуяата рапонтикуму",
+    "uz": "Leuzea aulieatensis",
+    "en": "Aulie-Ata Stemmacantha Centaury"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Asterales",
+    "family": "Asteraceae",
+    "genus": "Leuzea"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "EN",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Stemmacantha aulieatensis",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Каменистые и щебнистые склоны в поясе арчового леса; историческое описание 2006 года.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Чрезмерная летняя пастбищная нагрузка, отмеченная в книге 2006 года.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендации 2006 года: изучить популяции, биологию и размножение, организовать ботанические заказники и испытать интродукцию.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/stemmacantha-aulieatensis.webp",
+      "width": 1299,
+      "height": 1800,
+      "sha256": "cf1fd20e01554748782424ece66dbed2d0b3588eb1686afbacc8e8579b15a084",
+      "author": "ELAR corporation (Moscow, Russia)",
+      "originalPage": "https://plant.depo.msu.ru/open/public/item/MW0890968",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "ELAR corporation (Moscow, Russia); CC BY 4.0; https://plant.depo.msu.ru/open/public/item/MW0890968.",
+      "modifications": [
+        "Уменьшение без увеличения до 1800 px; конвертация WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ky": null,
+        "uz": null,
+        "ru": "Гербарный лист MW0890968, гербарий МГУ: Rhaponticum aulieatense Iljin, Kyrgyzstan. Скан ELAR corporation; правообладатель Moscow State University. Исторический образец не подтверждает современное состояние популяции.",
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е изд., 2006; Stemmacantha aulieatensis, с. 214–215",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=215",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-decree",
+      "title": "Постановление №170 от 28.04.2005, документированная редакция 25.07.2009; decree-170-2009-1-86",
+      "publisher": "Правительство Кыргызской Республики; FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "originalScientificName"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Leuzea aulieatensis (Iljin) Holub",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/3142224",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview",
+        "names.uz"
+      ],
+      "taxonId": "gbif:3142224"
+    },
+    {
+      "id": "powo-rhaponticum",
+      "title": "Rhaponticum aulieatense accepted by POWO; Leuzea aulieatensis and Stemmacantha aulieatensis are homotypic alternatives. GBIF chooses Leuzea; the genus preference differs but the named species and rank are linked explicitly. The national account itself gives Rhaponticum as an alternative.",
+      "publisher": "Royal Botanic Gardens, Kew",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:241384-1",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview"
+      ]
+    },
+    {
+      "id": "photo-commons",
+      "title": "Rhaponticum aulieatense Iljin; лицензированное изображение, ELAR corporation (Moscow, Russia)",
+      "publisher": "Moscow State University",
+      "url": "https://plant.depo.msu.ru/open/public/item/MW0890968",
+      "accessedAt": "2026-10-21",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": null
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 214-бет; визуалдык текшерилген аталыш",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=214",
+      "accessedAt": "2026-10-21",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Редкий многолетник каменистых склонов. GBIF принимает Leuzea aulieatensis, POWO — гомотипную комбинацию Rhaponticum aulieatense; это один вид.",
+        "ky": "Таштак беттерде өскөн сейрек көп жылдык өсүмдүк. Leuzea aulieatensis жана Rhaponticum aulieatense — бир түрдүн ар башка уруудагы аттары.",
+        "uz": "Toshli yonbagʻirlarda oʻsuvchi kamyob koʻp yillik oʻsimlik. Leuzea aulieatensis va Rhaponticum aulieatense bir turning turli turkumlardagi nomlaridir.",
+        "en": "A rare perennial of rocky slopes. GBIF accepts Leuzea aulieatensis and POWO the homotypic Rhaponticum aulieatense; they represent one species."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Большеголовник аулиеатинский — корневищное растение семейства астровых, включённое в Красную книгу Кыргызстана 2006 года под именем Stemmacantha aulieatensis. Сам национальный очерк также приводит Rhaponticum aulieatense. В сохранённой таксономической сверке GBIF предпочитает Leuzea aulieatensis, тогда как POWO принимает Rhaponticum aulieatense и явно связывает родовые альтернативы гомотипной синонимией. Различие предпочтений рода не означает двух разных кандидатов.\n\nВ историческом описании отмечены небольшое число стеблей, рассечённые листья и крупные корзинки с желтоватыми и фиолетовыми оттенками цветков. Места произрастания связаны с каменистыми склонами в поясе арчовых лесов. Для Кыргызстана названы запад Кыргызского хребта, Эчкилетау, Акташ и Таласский хребет. Эти районы передают исторические указания, а не современную инвентаризацию.\n\nВ книге сообщается о семенном размножении и весенне-летнем цветении. Чрезмерная нагрузка на пастбища летом названа ограничивающим фактором. Опыт посевов в коллекционном питомнике показывает возможность прорастания, но не доказывает устойчивое сохранение природных популяций.\n\nАвторы рекомендовали изучение популяций и биологии, организацию ботанических заказников и интродукцию. Категория EN относится к национальному очерку 2006 года. Современная численность неизвестна. Сомнительная размерность семянок в тексте книги не перенесена в карточку как достоверное измерение.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy",
+        "powo-rhaponticum"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге многолетник с толстым многоглавым корневищем и 1–3 стеблями высотой 6–40 см. Листья перисторассечённые, тонко опушённые. Корзинки 4–7 см в диаметре; цветки жёлтые с красновато-фиолетовыми вкраплениями.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В книге вид отмечен единичными растениями. Сведения о неустойчивом сохранении в коллекционном питомнике относятся к культуре, а не к полевому учёту.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По очерку цветёт в мае–июне, плодоносит в июне–июле, размножается семенами.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически перечислены западная часть Кыргызского хребта, Эчкилетау, Акташ и бассейн Кара-Коюна в Таласском хребте. Современное состояние этих мест не проверено.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

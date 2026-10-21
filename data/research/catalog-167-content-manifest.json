@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "documentType": "bulk-content-manifest",
+  "preparedAt": "2026-10-21",
+  "sourceCommit": "09bab0d0d63aabb5899f0033d5d2033979816ed2",
+  "masterRegistryFile": "data/research/catalog-167-research-registry.json",
+  "masterRegistryFingerprint": "35e08fdf5f282e4a58b6fa22fb0e3ac4f575465ed5c601ade4223244820facea",
+  "taxonomyFile": "docs/evidence/catalog-167-taxonomy.json",
+  "registryFile": "data/research/catalog-167-content-registry.json",
+  "contentDirectory": "data/research/catalog-167-content",
+  "evidencePrefix": "catalog-167",
+  "candidateIds": [
+    "sorbus-persica",
+    "amygdalus-petunnikowii",
+    "kosopoljanskia-hebecarpa",
+    "kosopoljanskia-turkestanica",
+    "alajja-anomala",
+    "otostegia-schennikovii",
+    "salvia-vvedenskyi",
+    "stemmacantha-aulieatensis",
+    "centaurea-alaica",
+    "pyrethrum-leontopodium",
+    "phoenicopterus-roseus",
+    "chlamydotis-macqueenii",
+    "numenius-tenuirostris",
+    "larus-ichtyaetus",
+    "dendrocopos-major",
+    "hemiechinus-hypomelas",
+    "allactaga-severtzovi"
+  ],
+  "blocks": [
+    {
+      "number": 1,
+      "batchId": "catalog-167-1",
+      "candidateIds": [
+        "sorbus-persica",
+        "amygdalus-petunnikowii",
+        "kosopoljanskia-hebecarpa",
+        "kosopoljanskia-turkestanica",
+        "alajja-anomala",
+        "otostegia-schennikovii"
+      ],
+      "status": "prepared_with_one_source_conflict"
+    },
+    {
+      "number": 2,
+      "batchId": "catalog-167-2",
+      "candidateIds": [
+        "salvia-vvedenskyi",
+        "stemmacantha-aulieatensis",
+        "centaurea-alaica",
+        "pyrethrum-leontopodium",
+        "phoenicopterus-roseus",
+        "chlamydotis-macqueenii"
+      ],
+      "status": "prepared_for_check"
+    },
+    {
+      "number": 3,
+      "batchId": "catalog-167-3",
+      "candidateIds": [
+        "numenius-tenuirostris",
+        "larus-ichtyaetus",
+        "dendrocopos-major",
+        "hemiechinus-hypomelas",
+        "allactaga-severtzovi"
+      ],
+      "status": "prepared_for_check"
+    }
+  ],
+  "publicationAllowed": false,
+  "ownerAuthorization": null,
+  "baselineCatalogCount": 150,
+  "withheldCandidates": [
+    {
+      "id": "kosopoljanskia-hebecarpa",
+      "reason": "Неразрешённое расхождение исторической категории в первоисточнике: KY с.160 VU, RU/EN с.161 EN. Самостоятельность вида и национальное включение подтверждены, но по условию задачи спорный кандидат удержан в needs_evidence до предметного редакторского разрешения. Пустое поле категории не используется как обход конфликта."
+    }
+  ]
+}

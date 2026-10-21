@@ -39,7 +39,7 @@ test('provisional release appends exactly the 23 manifest IDs and preserves all 
   const changed = new Set(['data/species.source.json', 'public/data/species.json', 'src/data/species-model.js'])
   const preservation = await read('docs/evidence/bulk-25-preservation.json')
   for (const [p, sha] of Object.entries(preservation)) if (!changed.has(p) && isHistoricalEvidenceUnchanged(p)) {
-    const baselinePath = p === 'src/admin/data/repository.js' ? 'data/backups/catalog-125/admin-draft-repository.js' : p
+    const baselinePath = p === 'src/admin/data/repository.js' ? 'data/backups/catalog-125/admin-draft-repository.js' : p === 'src/admin/data/model.js' ? 'data/backups/catalog-166/admin-model.js' : p
     assert.equal(digest(await readFile(`${PROJECT_ROOT}/${baselinePath}`)), sha, p)
   }
   assert.equal(digest(await readFile(`${PROJECT_ROOT}/data/backups/bulk-25-provisional/species.source.json`)), preservation['data/species.source.json'])

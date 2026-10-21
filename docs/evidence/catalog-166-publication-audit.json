@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-21",
+  "timeZone": "Asia/Bishkek",
+  "sourceCommit": "8e92593a313d96450013207b47f6b1891f0030f4",
+  "decisionId": "muras-25-3-owner-provisional",
+  "publishedCount": 166,
+  "importedIds": [
+    "sorbus-persica",
+    "amygdalus-petunnikowii",
+    "kosopoljanskia-turkestanica",
+    "alajja-anomala",
+    "otostegia-schennikovii",
+    "salvia-vvedenskyi",
+    "stemmacantha-aulieatensis",
+    "centaurea-alaica",
+    "pyrethrum-leontopodium",
+    "phoenicopterus-roseus",
+    "chlamydotis-macqueenii",
+    "numenius-tenuirostris",
+    "larus-ichtyaetus",
+    "dendrocopos-major",
+    "hemiechinus-hypomelas",
+    "allactaga-severtzovi"
+  ],
+  "newGroups": {
+    "plants": 9,
+    "birds": 5,
+    "mammals": 2
+  },
+  "newImageCount": 13,
+  "newPlaceholderCount": 3,
+  "withheldIds": [
+    "kosopoljanskia-hebecarpa"
+  ],
+  "scientificReviewStatus": "pending",
+  "independentReviewer": null,
+  "scientificApproval": null,
+  "allNewVerified": false,
+  "allNewPopulationsUnknown": true,
+  "registryFingerprint": "2aa4ae2a31a6a84375eb9f463091a744f06a02683981e0015e4b538027de7a78",
+  "sha256": {
+    "data/species.source.json": "79197b9323386983951a56c889b5246884a5d9a17bc203b94ad077bd96892360",
+    "public/data/species.json": "ccc17e1b7592b1c5aa11c129a6935e3472ca7bf0b6ed940904fb06e89d484b4c",
+    "data/research/catalog-167-review-manifest.json": "a56943c3295e3619a6e5c6d418071b813cc89970499e655b1cf923bbf428aefe",
+    "data/research/catalog-167-content-registry.json": "af04c03391ef2fe7e06fd49ef1319b2fb1d739438b3f822f59124786f81f971e",
+    "data/research/publication-decisions/muras-25-3-owner-provisional.json": "46ecdab8c21f147154ad122b3b506366641a99eca7ebe104fad403f47cf630f7"
+  },
+  "preImportDryRun": {
+    "processed": 16,
+    "added": 16,
+    "unchanged": 0,
+    "rejected": 0
+  },
+  "import": {
+    "processed": 16,
+    "added": 16,
+    "unchanged": 0,
+    "rejected": 0
+  },
+  "repeatDryRun": {
+    "processed": 16,
+    "added": 0,
+    "unchanged": 16,
+    "rejected": 0
+  },
+  "pagination": [
+    24,
+    24,
+    24,
+    24,
+    24,
+    24,
+    22
+  ],
+  "searchLocales": [
+    "ky",
+    "uz",
+    "ru",
+    "en"
+  ],
+  "ssrRenders": 192,
+  "webpFullDecodes": 13,
+  "corruptNewWebP": 0,
+  "dataRunsByteIdentical": true,
+  "distBytes": 34096208,
+  "tests": {
+    "total": 321,
+    "passed": 321,
+    "failed": 0
+  },
+  "dataRuns": [
+    {
+      "exitCode": 0,
+      "catalog": 166
+    },
+    {
+      "exitCode": 0,
+      "catalog": 166
+    }
+  ],
+  "build": {
+    "exitCode": 0,
+    "modules": 104
+  },
+  "allowedAdminJsonBytes": 4194304,
+  "sourceJsonBytes": 2197672,
+  "originalFilesUnchanged": 995,
+  "oldScientificDataAndImagesUnchanged": true,
+  "unresolvedProblems": [
+    "kosopoljanskia-hebecarpa remains needs_evidence and unpublished: KY VU vs RU/EN EN; unchanged by task 25.3."
+  ],
+  "resolvedCompatibilityIssues": [
+    "Historical 150-release tests now use an exact immutable snapshot, with new 166-live coverage.",
+    "A real Kyrgyz substring «кирписи» suppresses fuzzy «ирпис» by existing search rules; search implementation unchanged.",
+    "Dated EX 2025 curlew assessment explicitly tested separately from unknown assessment years.",
+    "Per-image receipts include all newly published images.",
+    "Admin source import retains a bounded 4 MiB limit; oversized JSON, schema and draft-envelope safeguards remain tested.",
+    "Historical byte checks read the exact preserved original admin model rather than skipping its checksum."
+  ]
+}

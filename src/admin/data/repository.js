@@ -2,7 +2,7 @@ import { clone, editableShape, importSource, MAX_JSON_BYTES } from './model.js'
 export const DRAFT_KEY = 'redbook.admin.draft.v1'
 export const PREVIOUS_KEY = 'redbook.admin.previous.v1'
 // A draft retains two complete documents plus bounded asset metadata.
-// The imported source still has the independent 2 MiB MAX_JSON_BYTES limit.
+// The imported source still has the independent MAX_JSON_BYTES limit.
 export const MAX_DRAFT_BYTES = 2 * MAX_JSON_BYTES + 64 * 1024
 export function createDraftRepository(storage) {
   function read(key) {

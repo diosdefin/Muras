@@ -5,7 +5,8 @@ import { publicImageUrl } from '../../data/presentation.js'
 import { LANGUAGES } from '../../data/localization.js'
 import { CONTENT_FIELDS } from '../../data/species-content.js'
 
-export const MAX_JSON_BYTES = 2 * 1024 * 1024
+// The formatted 166-record source exceeds 2 MiB; retain a bounded import size.
+export const MAX_JSON_BYTES = 4 * 1024 * 1024
 export const EMPTY_NAMES = Object.freeze({ ru: null, ky: null, en: null, uz: null })
 export { GROUPS } from '../../data/species-groups.js'
 export const TAXONOMY = ['kingdom','phylum','class','order','family','genus']

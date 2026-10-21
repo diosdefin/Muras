@@ -1,0 +1,276 @@
+{
+  "id": "kosopoljanskia-turkestanica",
+  "scientificName": "Schrenkia turkestanica",
+  "names": {
+    "ru": "Козополянския туркестанская",
+    "ky": "Түркстан козополянскиясы",
+    "uz": "Schrenkia turkestanica",
+    "en": "Turkestan Kosopoljanskia"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Apiales",
+    "family": "Apiaceae",
+    "genus": "Schrenkia"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Kosopoljanskia turkestanica",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Сухие сланцевые осыпи, каменисто-мелкоземистые и конгломератовые склоны, пестроцветные соленосные глины.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": null,
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендации книги 2006 года: поиск местонахождений и ботанические заказники в ущельях с концентрацией вида.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/kosopoljanskia-turkestanica.webp",
+      "width": 1231,
+      "height": 1800,
+      "sha256": "8bd93f5f22cfc24f28b7df4db6bf3faa017bdb896fbb4885c67633a7b5e33072",
+      "author": "ELAR corporation (Moscow, Russia)",
+      "originalPage": "https://plant.depo.msu.ru/open/public/item/MW0856258",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "ELAR corporation (Moscow, Russia); CC BY 4.0; https://plant.depo.msu.ru/open/public/item/MW0856258.",
+      "modifications": [
+        "Уменьшение без увеличения до 1800 px; конвертация WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ky": null,
+        "uz": null,
+        "ru": "Гербарный лист MW0856258, гербарий МГУ: Schrenkia turkestanica (Korovin) Pimenov, Kyrgyzstan. Скан ELAR corporation; правообладатель Moscow State University. Исторический образец не подтверждает современное состояние популяции.",
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е изд., 2006; Kosopoljanskia turkestanica, с. 162–163",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=163",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-decree",
+      "title": "Постановление №170 от 28.04.2005, документированная редакция 25.07.2009; decree-170-2009-1-55",
+      "publisher": "Правительство Кыргызской Республики; FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "originalScientificName"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Schrenkia turkestanica (Korovin) Pimenov",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/7831968",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview",
+        "names.uz"
+      ],
+      "taxonId": "gbif:7831968"
+    },
+    {
+      "id": "schrenkia-central-asia",
+      "title": "Page 43 gives the homotypic combination Schrenkia turkestanica = Kosopoljanskia turkestanica and distribution including Talas, Kyrgyzstan.",
+      "publisher": "Plant Diversity of Central Asia 1 (2022), 21–51; University of Helsinki repository",
+      "url": "https://helda.helsinki.fi/server/api/core/bitstreams/4fafafb0-212f-40ce-b6be-8a2a11afff58/content",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview"
+      ]
+    },
+    {
+      "id": "photo-commons",
+      "title": "Schrenkia turkestanica (Korovin) Pimenov; лицензированное изображение, ELAR corporation (Moscow, Russia)",
+      "publisher": "Moscow State University",
+      "url": "https://plant.depo.msu.ru/open/public/item/MW0856258",
+      "accessedAt": "2026-10-21",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": null
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 162-бет; визуалдык текшерилген аталыш",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=162",
+      "accessedAt": "2026-10-21",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Многолетник каменистых склонов, включённый в книгу 2006 года как Kosopoljanskia turkestanica. Современная комбинация — Schrenkia turkestanica.",
+        "ky": "Таштак беттерде өскөн көп жылдык өсүмдүк. 2006-жылкы китептеги Kosopoljanskia turkestanica азыр Schrenkia turkestanica деп кабыл алынат.",
+        "uz": "Toshli yonbagʻirlarda oʻsuvchi koʻp yillik oʻsimlik. 2006-yilgi kitobdagi Kosopoljanskia turkestanica hozir Schrenkia turkestanica nomi bilan qabul qilinadi.",
+        "en": "A perennial of rocky slopes, listed in 2006 as Kosopoljanskia turkestanica and now accepted as Schrenkia turkestanica."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Козополянския туркестанская — многолетнее зонтичное растение, исторически включённое в национальную Красную книгу под именем Kosopoljanskia turkestanica. Современная комбинация Schrenkia turkestanica подтверждена GBIF и региональной научной обработкой 2022 года. Последняя связывает оба названия и приводит Кыргызстан, включая Таласский район распространения.\n\nВ очерке 2006 года описаны сизые голые стебли, разделённые листья и сложные зонтики. Растение отмечено на сухих сланцевых осыпях, каменистых и конгломератовых склонах, а также пестроцветных соленосных глинах. Такой перечень субстратов передаёт сведения национального источника; он не используется для вычисления площади современного ареала.\n\nКнига указывает цветение в июне, плодоношение в июле и семенное размножение. Возможный снос плодов дождевой водой в жаркие предгорья рассматривается авторами как предположение об ограничивающем факторе. В карточке он сохранён именно как гипотеза, без объявления доказанной причиной сокращения.\n\nИсторические рекомендации включали поиск новых местонахождений и создание ботанических заказников. Отсутствуют подтверждённые современные учёты и сведения о выполнении этих мер. Национальная категория VU относится к 2006 году и не подменяет глобальную оценку либо действующий в 2026 году правовой перечень.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy",
+        "schrenkia-central-asia"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По описанию 2006 года растение 40–60 см высотой, с цилиндрическим стержневым корнем и одиночными либо 2–3 ветвящимися голыми сизыми стеблями. Листья главным образом прикорневые, дважды перисторассечённые; плоды голые, яйцевидные, распадаются на два полуплодика.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В книге высказана гипотеза о смыве зрелых плодов в неблагоприятные жаркие предгорья. Причинная связь не установлена; современных экологических исследований в пакете нет.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По очерку 2006 года цветёт в июне, плодоносит в июле, размножается семенами.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические указания: верховья Таласа, Орток-Тоо, Уч-Булак, Алайский хребет в долине Ак-Бууры, долина Джумгала у Кокомерена. Эти пункты не объявляются современными подтверждёнными популяциями.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

@@ -46,7 +46,12 @@ test('canonical data preserves original nine records and two archived examples w
         assert.ok(s.sources.some(reference => reference.supports.includes(`names.${language}`)))
       }
     }
-    assert.equal(s.iucn.year, null) // Dataset publication year is not an assessment year.
+    if (s.id === 'numenius-tenuirostris') {
+      assert.equal(s.iucn.category, 'EX')
+      assert.equal(s.iucn.year, 2025)
+      assert.deepEqual(s.iucn.sourceIds, ['birdlife-2025'])
+      assert.ok(s.sources.find(r => r.id === 'birdlife-2025').supports.includes('iucn.year'))
+    } else assert.equal(s.iucn.year, null) // Dataset publication year is not an assessment year.
     if (source.catalog.indexOf(s) < 17) assert.ok(speciesPhoto(s)) // Preserve the first two photographic batches.
   }
   assert.equal(source.catalog.find(s => s.id === 'argali').nationalRedBook.category, null)
@@ -240,6 +245,12 @@ test('licensed assets are local WebP, have declared dimensions, captions and mat
   restoration.records.push(...catalog125Photos.receipts.filter(r => r.status === 'prepared').map(r => ({ id: r.candidateId, image: r.image, sha256: r.image.sha256 })))
   const catalog150Manifest = JSON.parse(await readFile(join(PROJECT_ROOT, 'data/research/catalog-150-unified-review-manifest.json'), 'utf8'))
   for (const entry of catalog150Manifest.candidates) {
+    const bytes = await readFile(join(PROJECT_ROOT, entry.draftFile))
+    assert.equal(createHash('sha256').update(bytes).digest('hex'), entry.draftSha256)
+    restoration.records.push(...JSON.parse(bytes).images.map(image => ({ id: entry.id, image, sha256: image.sha256 })))
+  }
+  const catalog166Manifest = JSON.parse(await readFile(join(PROJECT_ROOT, 'data/research/catalog-167-review-manifest.json'), 'utf8'))
+  for (const entry of catalog166Manifest.candidates) {
     const bytes = await readFile(join(PROJECT_ROOT, entry.draftFile))
     assert.equal(createHash('sha256').update(bytes).digest('hex'), entry.draftSha256)
     restoration.records.push(...JSON.parse(bytes).images.map(image => ({ id: entry.id, image, sha256: image.sha256 })))

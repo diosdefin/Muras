@@ -1,0 +1,289 @@
+{
+  "id": "salvia-vvedenskyi",
+  "scientificName": "Salvia vvedenskii",
+  "names": {
+    "ru": "Шалфей Введенского",
+    "ky": "Введенский шалфейи",
+    "uz": "Salvia vvedenskii",
+    "en": "Vvedensky’s Sage"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Lamiales",
+    "family": "Lamiaceae",
+    "genus": "Salvia"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Salvia vvedenskyi",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Каменистые и мелкоземистые склоны среднего пояса гор по национальному источнику 2006 года.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Хозяйственное освоение территории в местах произрастания, по оценке 2006 года.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендации 2006 года: изучить ареал и популяции, создать ботанический заказник по левому берегу Чичкана в Кетмень-Тюбинской котловине.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/salvia-vvedenskyi.webp",
+      "width": 1246,
+      "height": 1800,
+      "sha256": "ccab53eb16c50faf51e0c2c8d46147989037b29d4f7304d2271a90099dd8c2c1",
+      "author": "ELAR corporation (Moscow, Russia)",
+      "originalPage": "https://plant.depo.msu.ru/open/public/item/MW0873533",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "ELAR corporation (Moscow, Russia); CC BY 4.0; https://plant.depo.msu.ru/open/public/item/MW0873533.",
+      "modifications": [
+        "Уменьшение без увеличения до 1800 px; конвертация WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ky": null,
+        "uz": null,
+        "ru": "Гербарный лист MW0873533, гербарий МГУ: Salvia vvedenskii Nikitina, Kyrgyzstan. Скан ELAR corporation; правообладатель Moscow State University. Исторический образец не подтверждает современное состояние популяции.",
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е изд., 2006; Salvia vvedenskyi, с. 196–197",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=197",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-decree",
+      "title": "Постановление №170 от 28.04.2005, документированная редакция 25.07.2009; decree-170-2009-1-72",
+      "publisher": "Правительство Кыргызской Республики; FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "originalScientificName"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Salvia vvedenskii Nikitina",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Salvia%20vvedenskii",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview",
+        "names.uz"
+      ],
+      "taxonId": "gbif:3883855"
+    },
+    {
+      "id": "powo-salvia",
+      "title": "Salvia vvedenskii Nikitina accepted; original publication Flora Kirgizskoi SSR 10:377 (1962), range Kyrgyzstan. National Salvia vvedenskyi E. Nikit. is reconciled by the same author and a subsequent exact GBIF query, not by fuzzy matching alone.",
+      "publisher": "Royal Botanic Gardens, Kew",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:457526-1",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview"
+      ]
+    },
+    {
+      "id": "photo-commons",
+      "title": "Salvia vvedenskii Nikitina; лицензированное изображение, ELAR corporation (Moscow, Russia)",
+      "publisher": "Moscow State University",
+      "url": "https://plant.depo.msu.ru/open/public/item/MW0873533",
+      "accessedAt": "2026-10-21",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": null
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 196-бет; визуалдык текшерилген аталыш",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=196",
+      "accessedAt": "2026-10-21",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Редкий многолетний шалфей, исторически указанный для Кетмень-Тюбинской котловины. Принятое написание — Salvia vvedenskii; численность неизвестна.",
+        "ky": "Кетмен-Төбө өрөөнүндө тарыхый түрдө катталган сейрек көп жылдык өсүмдүк. Кабыл алынган аты — Salvia vvedenskii; саны белгисиз.",
+        "uz": "Ketmontepa botigʻida tarixan qayd etilgan kamyob koʻp yillik oʻsimlik. Qabul qilingan nomi — Salvia vvedenskii; soni nomaʼlum.",
+        "en": "A rare perennial sage historically recorded in the Ketmen-Tyube basin. Its accepted spelling is Salvia vvedenskii; abundance is unknown."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Шалфей Введенского — многолетнее растение семейства яснотковых, которому посвящён отдельный очерк Красной книги Кыргызстана 2006 года. Национальное написание Salvia vvedenskyi E. Nikit. сверено с Salvia vvedenskii Nikitina, опубликованным во «Флоре Киргизской ССР» в 1962 году. POWO и отдельный точный запрос GBIF подтверждают принятое имя; первоначальное приблизительное совпадение само по себе не использовалось для допуска.\n\nРастение отличается рассечёнными листьями, опушёнными стеблями и крупными розоватыми двугубыми цветками. Книга описывает его как узко распространённый вид, связанный с каменистыми и мелкоземистыми склонами среднего горного пояса. Исторические указания сосредоточены в районе Суусамырского хребта и Кетмень-Тюбинской котловины, в том числе у Чичкана.\n\nЦветение и плодоношение приходятся на лето; в очерке названо семенное размножение. Главной угрозой авторы считали хозяйственное освоение территории. Однако количественных учётов, позволяющих определить современную численность или скорость её изменения, в пакете нет. Слова исторического источника об ограниченности вида не преобразованы в численную оценку.\n\nВ 2006 году рекомендовалось изучить ареал и состояние популяций и организовать ботанический заказник по левому берегу Чичкана. Выполнение этих рекомендаций не проверено. Категория VU привязана к изданию 2006 года; карточка сохраняет verified: false и ожидает независимой научной проверки.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy",
+        "powo-salvia"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По русскому очерку 2006 года многолетник со стеблем 40–60 см, густо опушённым. Прикорневые листья длинночерешковые, до 8 × 4 см, перистораздельные. Венчик розоватый, до 35 мм; чашечка железисто-волосистая, увеличивается при плодах. Кыргызская версия даёт высоту до 65 см; диапазоны не объединены произвольно.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический очерк относит растение к узко распространённым видам Кыргызстана. Данные о культуре и современных популяционных процессах отсутствуют.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге цветёт в июне–июле, плодоносит в июле–августе, размножается семенами.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические указания: Суусамырский хребет, Кетмень-Тюбинская котловина между Тереком и Согот-Суу, левобережье Чичкана. Современная сохранность местонахождений не установлена.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

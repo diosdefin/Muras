@@ -8,7 +8,7 @@ import { canPublishImage } from '../src/data/species-model.js'
 import { PROJECT_ROOT } from './build-data.mjs'
 
 const hash=bytes=>createHash('sha256').update(bytes).digest('hex')
-export const IMPORT_BRANCHES = ['feature/catalog-expansion', 'feature/species-content', 'feature/bulk-import', 'feature/bulk-import-next', 'feature/catalog-150']
+export const IMPORT_BRANCHES = ['feature/catalog-expansion', 'feature/species-content', 'feature/bulk-import', 'feature/bulk-import-next', 'feature/catalog-150', 'feature/catalog-200']
 export const canApplyOnBranch = branch => IMPORT_BRANCHES.includes(branch)
 const confined=(root,path)=>{const target=resolve(root,path),rel=relative(root,target);if(!rel||rel.startsWith('..')||rel.includes(':'))throw new Error(`Путь вне проекта: ${path}`);return target}
 export function webpMetadata(bytes){

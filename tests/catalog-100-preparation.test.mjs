@@ -33,7 +33,7 @@ test('preparation preserves its 84-record baseline, keeps the manifest without s
   assert.equal(source.catalog.length, 84); assert.equal(published.length, 84)
   for (const [p, sha] of Object.entries(await read('docs/evidence/catalog-100-preservation.json'))) {
     if (!isHistoricalEvidenceUnchanged(p)) continue
-    const baselinePath = p === 'data/species.source.json' ? 'data/backups/catalog-100/species.source.json' : p === 'public/data/species.json' ? 'data/backups/catalog-100/public-species.json' : p === 'src/admin/data/repository.js' ? 'data/backups/catalog-125/admin-draft-repository.js' : p
+    const baselinePath = p === 'data/species.source.json' ? 'data/backups/catalog-100/species.source.json' : p === 'public/data/species.json' ? 'data/backups/catalog-100/public-species.json' : p === 'src/admin/data/repository.js' ? 'data/backups/catalog-125/admin-draft-repository.js' : p === 'src/admin/data/model.js' ? 'data/backups/catalog-166/admin-model.js' : p
     assert.equal(digest(await readFile(`${PROJECT_ROOT}/${baselinePath}`)), sha, p)
   }
   assert.equal(fingerprint(registry), manifest.registryFingerprint)

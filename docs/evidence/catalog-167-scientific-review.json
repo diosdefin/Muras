@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-21",
+  "scope": "17 category A only; editorial preparation, not independent approval",
+  "originalInventory": "data/research/catalog-200-inventory.json",
+  "verified": false,
+  "scientificReviewStatus": "pending",
+  "newBlockingTaxonomicConflicts": [],
+  "decisions": [
+    {
+      "id": "numenius-tenuirostris",
+      "decision": "historical_educational_card_with_explicit_global_extinction",
+      "evidence": "BirdLife International final update, 10 October 2025",
+      "url": "https://www.birdlife.org/news/2025/10/10/restoring-habitats-key-to-fighting-extinctions/",
+      "finding": "Global extinction confirmed in 2025; do not perpetuate 2006 expectations of future vagrancy as current advice."
+    },
+    {
+      "id": "kosopoljanskia-hebecarpa",
+      "decision": "category_null_pending_editorial_resolution",
+      "finding": "Book p160 KY VU; p161 RU/EN EN. Inclusion and accepted species identity remain documented; no category chosen."
+    },
+    {
+      "id": "otostegia-schennikovii",
+      "decision": "restrict_historical_concept",
+      "finding": "Heterotypic synonym in POWO; biology and range do not describe all Moluccella olgae. Illustration of broad accepted species not substituted."
+    },
+    {
+      "id": "allactaga-severtzovi",
+      "decision": "retain_historical_LR_lc_in_edition_category_null",
+      "finding": "No automatic conversion of historical VII LR/lc to current category; Kazakhstan transect densities are not KG national population."
+    },
+    {
+      "id": "hemiechinus-hypomelas",
+      "decision": "historical_inclusion_only_current_presence_null",
+      "finding": "Prior MDD country-list discrepancy retained; no modern KG population asserted."
+    },
+    {
+      "id": "dendrocopos-major",
+      "decision": "species_rank_historical_records_only",
+      "finding": "Old museum specimens do not establish current population; brevirostris not a second candidate."
+    }
+  ],
+  "languagePolicy": {
+    "ky": "Names transcribed from visually rendered Kyrgyz book headings; PDF font extraction corrected only by visible heading.",
+    "uz": "Accepted scientific name deliberately used as name; no unverified Uzbek vernacular names invented. Short descriptions translated into Uzbek.",
+    "ru": "Historical book names retained with accepted scientific name separate.",
+    "en": "Book headings, normalized English spelling; Asian Houbara from IFHC."
+  },
+  "imagePolicy": {
+    "searchLimited": true,
+    "original150NotSearched": true,
+    "visualReviewIsNotIndependentTaxonomicApproval": true,
+    "images": 13,
+    "placeholders": 4
+  },
+  "globalAssessmentPolicy": "Only Numenius EX 2025 explicitly populated from final BirdLife Red List update; other historic codes not asserted as current global assessments."
+}

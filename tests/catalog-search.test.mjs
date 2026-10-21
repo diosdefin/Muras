@@ -47,7 +47,7 @@ test('safe Latin transliterations are marked and preserve the original Kyrgyz na
   assert.ok(typoDistance('көлдосу', 'колдосу', 2) > 2)
 })
 test('small typos and adjacent transpositions produce explicitly probable matches', () => {
-  for (const query of ['ирпис', 'ирбс', 'илбирз', 'snow leoprad', 'snoq leoprad', 'panthrea uncai']) {
+  for (const query of ['ирбс', 'илбирз', 'snow leoprad', 'snoq leoprad', 'panthrea uncai']) {
     const result = searchSpecies(index, query)
     assert.equal(result[0]?.species.id, 'irbis', query)
     assert.ok(result.every(item => item.kind === 'fuzzy'), query)
@@ -60,7 +60,13 @@ test('short, foreign, random, oversized and punctuation-only queries do not inve
     if (query === 'ман') { assert.ok(ids(query).includes('manul')); continue }
     assert.deepEqual(ids(query), [], query)
   }
-  assert.deepEqual(ids('ирп'), [])
+  // New Kyrgyz «кирписи» contains these strings: a real substring suppresses fuzzy correction.
+  for (const query of ['ирп', 'ирпис']) {
+    const result = searchSpecies(index, query)
+    assert.deepEqual(result.map(r => r.species.id), ['hemiechinus-hypomelas'])
+    assert.equal(result[0].kind, 'direct')
+    assert.equal(result[0].matchedName, 'Брандттын кирписи')
+  }
 })
 test('exact and partial results suppress fuzzy alternatives rather than replacing names', () => {
   const fixture = createSearchIndex([

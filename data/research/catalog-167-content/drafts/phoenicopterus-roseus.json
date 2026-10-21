@@ -1,0 +1,297 @@
+{
+  "id": "phoenicopterus-roseus",
+  "scientificName": "Phoenicopterus roseus",
+  "names": {
+    "ru": "Обыкновенный фламинго",
+    "ky": "Кызгылт фламинго",
+    "uz": "Phoenicopterus roseus",
+    "en": "Greater Flamingo"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Phoenicopteriformes",
+    "family": "Phoenicopteridae",
+    "genus": "Phoenicopterus"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "NT",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); исторический местный Phoenicopterus ruber roseus Pallas, 1811; не современный американский P. ruber; запись под именем Phoenicopterus ruber",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Для вида в целом книга описывает обширные мелководные солёные озёра и малодоступные острова. Для Кыргызстана подтверждены лишь исторические залётные указания.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Недостаток подходящих водоёмов в стране назван ограничивающим фактором исторического очерка.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендации 2006 года: временная охрана мест пролёта и зимовок, запрет охоты. Выполнение мер не проверено.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/phoenicopterus-roseus.webp",
+      "width": 1440,
+      "height": 1800,
+      "sha256": "351ca2fe21d410149f3d32b4c6b0367e3bfbb4299091893adeb0d6f1c2baf6cf",
+      "author": "Giles Laurent",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:009_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Giles Laurent; CC BY-SA 4.0; https://commons.wikimedia.org/wiki/File:009_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg. Производные изображения распространяются под той же лицензией.",
+      "modifications": [
+        "Уменьшение без увеличения до 1800 px; конвертация WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ky": null,
+        "uz": null,
+        "ru": "Phoenicopterus roseus в Камарге, Франция; фотография не подтверждает гнездование в Кыргызстане.",
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е изд., 2006; Phoenicopterus ruber, с. 372–373",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=373",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-decree",
+      "title": "Постановление №170 от 28.04.2005, документированная редакция 25.07.2009; decree-170-2009-3-9",
+      "publisher": "Правительство Кыргызской Республики; FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "originalScientificName"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Phoenicopterus roseus Pallas, 1811",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Phoenicopterus%20roseus",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview",
+        "names.uz"
+      ],
+      "taxonId": "gbif:4352332"
+    },
+    {
+      "id": "birdlife-sa-2015",
+      "title": "Taylor M. R., Peacock F., Wanless R. M. (eds), 2015. The Eskom Red Data Book of Birds of South Africa, Lesotho and Swaziland; Greater Flamingo, p. 302",
+      "publisher": "BirdLife South Africa",
+      "url": "https://www.birdlife.org.za/wp-content/uploads/2021/02/RDBB-Final-copy.pdf",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "content.appearance"
+      ]
+    },
+    {
+      "id": "photo-commons",
+      "title": "Phoenicopterus roseus; лицензированное изображение, Giles Laurent",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:009_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg",
+      "accessedAt": "2026-10-21",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": null
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 372-бет; визуалдык текшерилген аталыш",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=372",
+      "accessedAt": "2026-10-21",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Исторически редкая залётная птица Кыргызстана. Местный Phoenicopterus ruber roseus из книги 2006 года соответствует современному Phoenicopterus roseus.",
+        "ky": "Кыргызстанга тарыхый түрдө сейрек учуп келген канаттуу. Китептеги жергиликтүү Phoenicopterus ruber roseus азыркы Phoenicopterus roseus түрүнө туура келет.",
+        "uz": "Qirgʻizistonga tarixan kamdan-kam uchib kelgan qush. Kitobdagi mahalliy Phoenicopterus ruber roseus hozirgi Phoenicopterus roseus turiga mos keladi.",
+        "en": "Historically a rare vagrant to Kyrgyzstan. The local Phoenicopterus ruber roseus named in 2006 corresponds to the modern Phoenicopterus roseus."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Обыкновенный фламинго — водная птица, исторически включённая в Красную книгу Кыргызстана как редкий залётный вид. Заголовок очерка 2006 года использует широкое старое имя Phoenicopterus ruber, но сам текст прямо уточняет местную форму P. ruber roseus Pallas, 1811. Именно она соответствует принятому Phoenicopterus roseus и строке национального перечня. Современный американский P. ruber не подменяет эту концепцию.\n\nКнига приводит единичные находки и небольшие группы на Иссык-Куле, включая музейный экземпляр 1933 года и зимние наблюдения конца 1990-х — начала 2000-х годов. У русского текста и английского резюме различаются отдельные географические формулировки; карточка не уточняет их современными координатами. Эти свидетельства показывают исторические залёты, но не устойчивую гнездящуюся популяцию страны.\n\nОписанная в книге биология колониального гнездования на мелководных солёных озёрах относится к виду в целом. Ни наличие колонии, ни её численность в Кыргызстане из этих сведений не следуют. Рекомендации об охране мест пролёта и зимовок также имеют исторический характер.\n\nНациональная категория NT привязана к изданию 2006 года. Современная численность в Кыргызстане не подтверждена, цифровые размеры старых групп не перенесены в национальное поле population. Карточка требует научной проверки и не заявляет современного гнездования.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Общее описание вида по Illustrated Red Data Book of Birds of South Africa (2015): оперение светло-розовое, верхние кроющие крыла ярко-красные, маховые чёрные; молодые птицы серее. Эти признаки не являются подтверждением наблюдения в Кыргызстане.",
+        "en": null
+      },
+      "sourceIds": [
+        "birdlife-sa-2015"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальному очерку — редкая залётная птица. Изменение уровня и солёности озёр влияет на размещение колоний в общем ареале; кыргызстанские колонии не установлены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По общевидовому описанию книги питается мелкими ракообразными, моллюсками, личинками и семенами водных растений, фильтруя воду и ил клювом.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книга описывает колониальные гнёзда на мелководных солёных озёрах и участие обоих родителей в насиживании. Эти сведения общевидовые и не доказывают размножение в Кыргызстане.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические указания в национальном очерке связаны главным образом с Иссык-Кулем; отдельно приводится старое сообщение о Нарыне. Современное местное присутствие и гнездование не устанавливаются.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

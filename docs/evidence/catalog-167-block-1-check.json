@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "scope": "First block only; remaining blocks not authored at checkpoint",
+  "results": [
+    {
+      "candidateId": "sorbus-persica",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "6da6392179c9df8cb55551e2e385f38387270a983f16521a141059c4a76d1aa4",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "amygdalus-petunnikowii",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "9e1a4e3bbb47f2cbfb0d23b6aff160527ae607c525c773ab6d7a306887d094dd",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "kosopoljanskia-hebecarpa",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "a201e4441eaeacf0374673990e5c4ae2158a4cdeae323475e3ccb92a0b700378",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "kosopoljanskia-turkestanica",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "f2f0c7a33d2a160e516f5634720fe17d91cb0f04ef19405af769dad88f3d8631",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "alajja-anomala",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "e9b3040579c0942a87b26dc4683f99482d530d29d97ebe0f152f7cc1eb6b5254",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "otostegia-schennikovii",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "62fc121e556f9caeb8fd62970503e2b6d7aeff04a8712bc94e33447fd710ac7c",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    }
+  ]
+}

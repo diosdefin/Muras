@@ -1,0 +1,289 @@
+{
+  "id": "pyrethrum-leontopodium",
+  "scientificName": "Richteria leontopodium",
+  "names": {
+    "ru": "Поповник (ромашник) эдельвейсовидный",
+    "ky": "Ак мандайдай пиретрум",
+    "uz": "Richteria leontopodium",
+    "en": "Edelweiss-like Pyrethrum"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Asterales",
+    "family": "Asteraceae",
+    "genus": "Richteria"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Pyrethrum leontopodium",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Галечники горных рек, морены, каменистые склоны и осыпи верхнего горного пояса.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Выпас скота и сбор цветов, отмеченные в национальном очерке 2006 года.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендации 2006 года: сохранение мест произрастания, мониторинг численности и запрет сбора цветов.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/pyrethrum-leontopodium.webp",
+      "width": 1245,
+      "height": 887,
+      "sha256": "11c08c548ce5df7f6ed94130840f9f0446c571bf233c80a4e161198cc2f7e11c",
+      "author": "Arkadiusz Nowak, Marcin Nobis, Sylwia Nowak, Agnieszka Nobis, Anna Wróbel, Sebastian Świerszcz, Ewelina Klichowska, Iwona Dembicz & Grzegorz Kusza",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Pyrethrum_leontopodium_(Flora_of_Tajikistan).png",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Arkadiusz Nowak, Marcin Nobis, Sylwia Nowak, Agnieszka Nobis, Anna Wróbel, Sebastian Świerszcz, Ewelina Klichowska, Iwona Dembicz & Grzegorz Kusza; CC BY 4.0; https://commons.wikimedia.org/wiki/File:Pyrethrum_leontopodium_(Flora_of_Tajikistan).png.",
+      "modifications": [
+        "Уменьшение без увеличения до 1800 px; конвертация WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ky": null,
+        "uz": null,
+        "ru": "Растение в Таджикистане; изображение из Illustrated Flora of Tajikistan and adjacent areas (2020). Не современная находка в Кыргызстане.",
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е изд., 2006; Pyrethrum leontopodium, с. 222–223",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=223",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-decree",
+      "title": "Постановление №170 от 28.04.2005, документированная редакция 25.07.2009; decree-170-2009-1-89",
+      "publisher": "Правительство Кыргызской Республики; FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "originalScientificName"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Richteria leontopodium Winkl.",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/5389434",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview",
+        "names.uz"
+      ],
+      "taxonId": "gbif:5389434"
+    },
+    {
+      "id": "powo-richteria",
+      "title": "Richteria leontopodium accepted; Pyrethrum leontopodium a homotypic synonym; distribution includes Kyrgyzstan.",
+      "publisher": "Royal Botanic Gardens, Kew",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:241476-1",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview"
+      ]
+    },
+    {
+      "id": "photo-commons",
+      "title": "Pyrethrum leontopodium; лицензированное изображение, Arkadiusz Nowak, Marcin Nobis, Sylwia Nowak, Agnieszka Nobis, Anna Wróbel, Sebastian Świerszcz, Ewelina Klichowska, Iwona Dembicz & Grzegorz Kusza",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Pyrethrum_leontopodium_(Flora_of_Tajikistan).png",
+      "accessedAt": "2026-10-21",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": null
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 222-бет; визуалдык текшерилген аталыш",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=222",
+      "accessedAt": "2026-10-21",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Низкий беловойлочный многолетник высокогорных осыпей. Историческое Pyrethrum leontopodium соответствует принятому Richteria leontopodium.",
+        "ky": "Бийик тоолуу корумдарда өскөн ак түктүү жапыз көп жылдык өсүмдүк. Pyrethrum leontopodium деген тарыхый аты Richteria leontopodium түрүнө туура келет.",
+        "uz": "Baland togʻ toshloqlarida oʻsuvchi oq tukli past boʻyli koʻp yillik oʻsimlik. Tarixiy Pyrethrum leontopodium nomi Richteria leontopodium turiga mos keladi.",
+        "en": "A low, white-woolly perennial of alpine screes. The historical Pyrethrum leontopodium is accepted as Richteria leontopodium."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Поповник эдельвейсовидный — небольшой многолетник семейства астровых. В Красной книге Кыргызстана 2006 года он приведён под именем Pyrethrum leontopodium. Сохранённая сверка GBIF и гомотипная синонимия POWO подтверждают соответствие принятому Richteria leontopodium; отдельные карточки для этих комбинаций не создаются.\n\nОблик растения определяется очень густым беловатым опушением листьев и цветоносов и одиночными корзинками с белыми язычковыми цветками. Очерк связывает его с верхним поясом гор: речными галечниками, моренами, каменистыми склонами и осыпями. Национальные указания охватывают несколько хребтов Тянь-Шаня и бассейны Сары-Джаза и Каинды.\n\nПо книге цветение приходится на июль–август, созревание плодов — на август–сентябрь. Малочисленность популяций описана качественно. Эти слова не позволяют установить количество растений в стране, а свежих сопоставимых учётов в подготовленном пакете нет. Пастбищная нагрузка и сбор цветов названы ограничивающими факторами.\n\nВ 2006 году рекомендовались сохранение местообитаний, мониторинг популяций и запрет сбора цветов. Карточка не утверждает, что эти меры уже реализованы. Историческая национальная категория VU отделена от современной глобальной оценки, которая здесь не назначается. Иллюстрация из флоры Таджикистана подписана как иностранный пример вида и не используется как свидетельство его современного присутствия в Кыргызстане.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy",
+        "powo-richteria"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Многолетник около 3–15 см высотой. Листья густо беловойлочные, прикорневые длинночерешковые, дважды или почти трижды перисторассечённые. Корзинки одиночные, на длинных войлочных ножках; язычковые цветки белые.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический очерк характеризует популяции как небольшие; современная динамика и точные размеры популяций не установлены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге 2006 года цветёт в июле–августе, плодоносит в августе–сентябре. Подробности опыления и возобновления не подтверждены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически перечислены Кунгей и Тескей Ала-Тоо, Ферганский и Кыргызский хребты, бассейны Сары-Джаза и Каинды. Общий ареал в книге включает также другие горы Центральной Азии; современные локальные находки не устанавливаются.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

@@ -23,7 +23,8 @@ export async function auditBulk25(root = PROJECT_ROOT, { historical = false } = 
   const baselinePath = p => historical ? ({ 'data/species.source.json': 'data/backups/bulk-25-provisional/species.source.json',
     'public/data/species.json': 'data/backups/bulk-25-provisional/public-species.json',
     'src/data/species-model.js': 'data/backups/bulk-25-provisional/species-model.js',
-    'src/admin/data/repository.js': 'data/backups/catalog-125/admin-draft-repository.js' }[p] || p) : p
+    'src/admin/data/repository.js': 'data/backups/catalog-125/admin-draft-repository.js',
+    'src/admin/data/model.js': 'data/backups/catalog-166/admin-model.js' }[p] || p) : p
   const [registry, manifest, master, source, national, taxonomy, legacy, selection, preserved] = await Promise.all([
     'data/research/bulk-25-content-registry.json', 'data/research/bulk-25-content-manifest.json',
     'data/research/redbook-master-registry.json', 'data/species.source.json',
