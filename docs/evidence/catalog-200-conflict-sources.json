@@ -1,0 +1,785 @@
+{
+  "schemaVersion": 1,
+  "documentType": "task-25-4-primary-source-evidence-index",
+  "date": "2026-10-21",
+  "independentApproval": false,
+  "primaryPdfs": [
+    {
+      "id": "book-2006",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf",
+      "localCache": ".generated/research/redbook.pdf",
+      "sha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8",
+      "year": 2006,
+      "pages": 543,
+      "access": "Existing verified copy of the official book on a third-party mirror; previous complete transcription reused."
+    },
+    {
+      "id": "decree-170-2009",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf",
+      "localCache": ".generated/research/decree-170.pdf",
+      "sha256": "1e47f07208cf45d90096f0b9775fd625dd2102e06b42cf69610a49cc57f21be4",
+      "year": 2009,
+      "pages": 13,
+      "access": "Existing consolidated copy of resolution 170/2005 as amended by 471/2009; comparison pages rendered again. Not a verified 2026 legal edition."
+    }
+  ],
+  "sources": [
+    {
+      "id": "powo-anemone",
+      "title": "POWO: Anemonastrum obtusilobum",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:60476974-2",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_primary_page_text",
+      "locator": "Taxonomy; Homotypic Synonyms; Distribution; Phytoneuron 2018-55:7",
+      "finding": "Принят вид; Anemone obtusiloba D.Don — гомотипный синоним. Kirgizstan включён в исходный ареал."
+    },
+    {
+      "id": "ipni-anemone",
+      "title": "IPNI: Anemone obtusiloba D.Don",
+      "url": "https://www.ipni.org/n/708529-1",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_text",
+      "locator": "IPNI 708529-1",
+      "finding": "Базионим D.Don, Prodr. Fl. Nepal.:149 (1825); новая комбинация Mosyakin, 2018 имеет тот же именной тип."
+    },
+    {
+      "id": "powo-berberis-old",
+      "title": "POWO: Berberis kaschgarica Rupr.",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:106805-1",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_text",
+      "locator": "Publications; Sert. Tiansch.:38 (1869)",
+      "finding": "Синоним B. ulicina; приведена ревизия Harber (2020), при этом обработка Кыргызстана 2011 года сохраняла старое видовое имя."
+    },
+    {
+      "id": "powo-berberis",
+      "title": "POWO: Berberis ulicina",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:107162-1",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_text",
+      "locator": "Heterotypic Synonyms; Distribution",
+      "finding": "Принятый вид включает B. kaschgarica Rupr. как гетеротипный синоним; Kirgizstan указан как native."
+    },
+    {
+      "id": "powo-tulipa",
+      "title": "POWO: Tulipa anadroma",
+      "url": "https://powo.science.kew.org/taxon/542821-1",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_text",
+      "locator": "Taxonomy; alternative taxonomy; Christenhusz et al. 2013, Bot. J. Linn. Soc. 172:280–328",
+      "finding": "POWO принимает вид T. anadroma, но указывает альтернативные обработки как T. × tschimganica. Противоречие с GBIF не снято."
+    },
+    {
+      "id": "powo-sorbaria",
+      "title": "POWO: Sorbaria olgae",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:741579-1",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_text",
+      "locator": "Taxonomy; Publications",
+      "finding": "Имя сведено к Sorbaria tomentosa var. tomentosa: другой ранг, чем SPECIES в GBIF."
+    },
+    {
+      "id": "sorbaria-revision",
+      "title": "Song & Hong (2021): revision of Sorbaria",
+      "url": "https://doi.org/10.11646/phytotaxa.487.1.1",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "publisher_abstract_only",
+      "locator": "Phytotaxa 487(1):1–25; 22 February 2021",
+      "finding": "Найдена профильная ревизия. Доступны библиографические данные и аннотация; полный текст требует подписки и здесь не проверен."
+    },
+    {
+      "id": "powo-pyrus",
+      "title": "POWO: Pyrus asiae-mediae",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:730696-1",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_text",
+      "locator": "Taxonomy; Homotypic Synonyms; Distribution",
+      "finding": "Принят вид с Kirgizstan в ареале; это само по себе не отвечает на предметное сомнение в самостоятельности типового материала."
+    },
+    {
+      "id": "bgci-pyrus",
+      "title": "BGCI/FFI (2009): Red List of Trees of Central Asia",
+      "url": "https://www.bgci.org/wp/wp-content/uploads/2019/04/Red_List_Central_Asia_2009.pdf#page=20",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_pdf_text",
+      "locator": "Printed p.18, entry Pyrus asiae-mediae",
+      "finding": "В оценке Pyrus asiae-mediae прямо отмечен неясный таксономический статус. Это историческая оценка 2009 года, не современная категория национального реестра."
+    },
+    {
+      "id": "powo-malus-n",
+      "title": "POWO: Malus niedzwetzkyana",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:726346-1",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_text",
+      "locator": "Taxonomy",
+      "finding": "Имя Dieck сведено к Malus domestica."
+    },
+    {
+      "id": "powo-malus-s",
+      "title": "POWO: Malus sieversii (Ledeb.) M.Roem.",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:726400-1",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_text",
+      "locator": "Taxonomy; Fam. Nat. Syn. Monogr. 3:216 (1847)",
+      "finding": "То же принятое имя Malus domestica, что у M. niedzwetzkyana. Проверено конкретное авторство опубликованного имени."
+    },
+    {
+      "id": "powo-sophora",
+      "title": "POWO: Styphnolobium japonicum",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:1119529-2",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_text",
+      "locator": "Heterotypic Synonyms; Distribution; Deut. Dendrol.:323 (1893)",
+      "finding": "Приведён Sophora korolkowii Dieck ex Koehne; Kirgizstan — introduced. Это не объясняет национальный очерк естественного узкого кустарникового концепта и его смену ранга."
+    },
+    {
+      "id": "powo-vitis",
+      "title": "POWO: Vitis vinifera",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:30478388-2",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_text",
+      "locator": "Heterotypic Synonyms; Novosti Sist. Vyssh. Rast. 20:133 (1983)",
+      "finding": "Vitis usunachmatica Vassilcz. приведён как гетеротипный синоним V. vinifera; GBIF предлагает V. gmelinii. Объём дикорастущего национального концепта не согласован."
+    },
+    {
+      "id": "powo-ferula",
+      "title": "POWO: Ferula namanganica",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77331188-1",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "existing_primary_review_reused",
+      "locator": "docs/evidence/catalog-200-source-review.json#powo-ferula",
+      "finding": "Гомотипная связь с Dorema microcarpum сохранена; расхождения принятого имени и географического охвата с GBIF/национальным очерком остаются."
+    },
+    {
+      "id": "powo-primula",
+      "title": "POWO: Primula macrocalyx Bunge",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:702229-1",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_primary_page_text",
+      "locator": "Taxonomy; Fl. Altaic. 1:209 (1829); Flora Europaea 3 (1972)",
+      "finding": "Прямой переход от имени Bunge к Primula veris subsp. macrocalyx; не замена всем видом P. veris."
+    },
+    {
+      "id": "grin-primula",
+      "title": "USDA GRIN / AAFC: Primula macrocalyx",
+      "url": "https://pgrc-rpc.agr.gc.ca/gringlobal/taxon/taxonomydetail?id=29651",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_text",
+      "locator": "Taxonomy detail 29651",
+      "finding": "Связь с Primula veris subsp. macrocalyx (Bunge) Lüdi подтверждает именную преемственность и подвидовой ранг."
+    },
+    {
+      "id": "powo-tianschaniella",
+      "title": "POWO: Tianschaniella umbellulifera",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:120865-1",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_text",
+      "locator": "Taxonomy; Homotypic Synonyms; Bot. Mater. Gerb. 14:338 (1951)",
+      "finding": "Принятое видовое имя с авторством B.Fedtsch. ex Popov и исходной публикацией 1951:338; Lappula umbellulifera — гомотипная комбинация. Написание книги umbellifera требует документированной связи с типом."
+    },
+    {
+      "id": "mycokeys-2019",
+      "title": "Cabral et al. (2019): Behind the veil — Phallus indusiatus s.l.",
+      "url": "https://mycokeys.pensoft.net/article_preview.php?id=35324&skip_redirect=1",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_text_only",
+      "locator": "MycoBank 245788; taxonomic treatment of Phallus indusiatus; article 35324",
+      "finding": "Работа исследует комплекс indusiatus и в синонимике включает Phallus duplicatus / Dictyophora duplicata. Национальные находки не переопределены этой записью."
+    },
+    {
+      "id": "mycology-2014",
+      "title": "Some New Records of Stinkhorns (2014)",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1155/2014/490847",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "existing_primary_review_reused",
+      "locator": "DOI 10.1155/2014/490847; earlier audit referenced by inventory B",
+      "finding": "Ранее сохранённая микологическая обработка различает duplicatus и indusiatus; не заменена голосованием между базами."
+    },
+    {
+      "id": "odonata-2024",
+      "title": "Schneider et al. (2024): Cordulegastridae molecular phylogeny",
+      "url": "https://pisum.icgbio.ru/kosterin/pdf/schneider_et_al_2024.pdf",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "existing_primary_pdf_read_in_full_relevant_sections",
+      "locator": "Insects 15:622, DOI 10.3390/insects15080622; PDF pp.3,5 (specimen 636, PP792850/PQ120578),17,27–29; table 3, p.29",
+      "finding": "Таблица образцов включает coronata из Кыргызстана; авторы принимают Thecagaster coronata comb. nov. Возможное будущее объединение с brevistigma обозначено как гипотеза, а не выполненная синонимизация."
+    },
+    {
+      "id": "carabidae-1995",
+      "title": "Kryzhanovskij et al. (1995): Checklist of ground-beetles of Russia and adjacent lands",
+      "url": "https://www.zin.ru/animalia/coleoptera/pdf/kryzhanovskij_et_al_1995.pdf",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_pdf_text_only",
+      "locator": "Printed p.24, subgenus Cephalota, no.14",
+      "finding": "Каталог печатает galatea (Cicindela) THIEME 1881, позиция 14; это не документированное исправление в galathea."
+    },
+    {
+      "id": "loxias-original-reference",
+      "title": "Kreuzberg: Parnassius loxias tashkorensis",
+      "url": "https://repository.naturalis.nl/pub/318175/ZM1993067015.pdf",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_bibliographic_reference_only",
+      "locator": "Reference: Kreuzberg 1983, pp.157–162; not a reviewed original description",
+      "finding": "Библиография первичной работы приводит описание Kreuzberg (1983), Acta Musei Reginaehradecensis 18:157–162; национальный очерк датирует подвид 1984. Сам протолог и современная граница подвида здесь не проверены."
+    },
+    {
+      "id": "mcz-merzbacheri",
+      "title": "Harvard MCZbase: Parnassius apollo merzbacheri",
+      "url": "https://mczbase.mcz.harvard.edu/name/Parnassius%20apollo%20merzbacheri",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_collection_database",
+      "locator": "Name Authority MCZ; Subspecies; no cited MCZ specimens",
+      "finding": "Музейный реестр сохраняет подвид Fruhstorfer 1906, но страница не содержит цитированных экземпляров или публикаций, разрешающих границы концепта."
+    },
+    {
+      "id": "parnassius-types-1966",
+      "title": "Les types et typoïdes de Parnassius au Muséum de Paris (1966)",
+      "url": "https://www.persee.fr/doc/bsef_0037-928x_1966_num_71_7_20893",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_fragment_only",
+      "locator": "Bull. Soc. Entomol. France 71(7), record 20893",
+      "finding": "Найдена дополнительная историческая трактовка merzbacheri как chryseis. Индексированного фрагмента недостаточно для принятия современной подвидовой границы."
+    },
+    {
+      "id": "papilio-2025",
+      "title": "Nazari et al. (2025): Papilio alexanor phylogeography",
+      "url": "https://doi.org/10.1093/biolinnean/blaf078",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_primary_page_text",
+      "locator": "Biol. J. Linn. Soc. 146(1), blaf078; Abstract and systematic conclusions; published 9 September 2025",
+      "finding": "Молекулярная ревизия восстанавливает P. alexanor ssp. voldemar Kreuzberg, 1989 stat. rev. Это подтверждает подвидовой концепт книги; не делает judeus его доказанным синонимом и не исправляет постановление."
+    },
+    {
+      "id": "wasp-megalodontes",
+      "title": "Iziko / WaspWeb: Megalodontes",
+      "url": "https://www.waspweb.org/Pamphilioidea/Megalodontesidae/Megalodontes/index.htm",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_checklist_text_only",
+      "locator": "Species list: Megalodontes kuznetzovi",
+      "finding": "Специализированный музейный перечень признаёт Megalodontes kuznetzovi Dovnar-Zapolskij, 1930 отдельным видом с тем же авторством, что в национальной книге."
+    },
+    {
+      "id": "wasp-polochrum",
+      "title": "Iziko / WaspWeb: World Sapygidae",
+      "url": "https://www.waspweb.org/Pompiloidea/Sapygidae/Classification/Classification_world_Sapygidae.htm",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_primary_page_text",
+      "locator": "Genus Polochrum; curator Simon van Noort; citation 2026",
+      "finding": "В перечне Polochrum pamirepandum Kurzenko, 1986 отдельно от P. repandum Spinola, 1805; это снимает отсутствие точного вида в GBIF как единственное номенклатурное препятствие."
+    },
+    {
+      "id": "itis-capoetobrama",
+      "title": "ITIS: Capoetobrama kuschakewitschi",
+      "url": "https://www.itis.gov/ITISWebService/jsonservice/getFullRecordFromTSN?tsn=688845",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "live_primary_API_response",
+      "locator": "synonymList; hierarchyUp; taxonUsageRating valid; source Eschmeyer 11-Jan-2023",
+      "finding": "Принятый вид TSN 688845, synonymList явно включает C. kuschakewitschi orientalis (TSN 1200459). Это именная синонимия, а не произвольное отбрасывание третьего эпитета."
+    },
+    {
+      "id": "eschmeyer-issykkuli",
+      "title": "Eschmeyer: Schizothorax pseudoaksaiensis issykkuli Berg 1907",
+      "url": "https://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=48193",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "live_primary_HTML_response",
+      "locator": "Species record 48193; Berg 1907:321; Berg 1949:718; current status, online edition 20 Oct 2026",
+      "finding": "Именной синоним S. pseudoaksaiensis; исходный материал из Иссык-Куля: ZIN 13546 и части серий 9705,9707–08,9690. Национальный Berg совпадает с типовым концептом."
+    },
+    {
+      "id": "eschmeyer-lansdelli",
+      "title": "Eschmeyer: Diptychus lansdelli Günther 1889",
+      "url": "https://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=48488",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "live_primary_HTML_response",
+      "locator": "Species record 48488; Günther 1889:361; Berg 1949:726; Wu & Wu 1992:432; current status 20 Oct 2026",
+      "finding": "Прямо сведён к Gymnodiptychus dybowskii; типовая местность Иссык-Куль, синтипы BMNH 1888.12.14.18–21. Тем самым установлен именной переход исторической формы."
+    },
+    {
+      "id": "asw-bufotes",
+      "title": "AMNH Amphibian Species of the World: Bufotes viridis",
+      "url": "https://amphibiansoftheworld.amnh.org/Amphibia/Anura/Bufonidae/Bufotes/Bufotes-viridis",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_primary_page_text",
+      "locator": "Geographic Occurrence; Distribution; Comment; Dufresnes et al. 2019 cited there",
+      "finding": "Для Кыргызстана стоит Likely/Controversially Present; описана гибридизация восточных линий с B. pewzowi. Историческое широкое Bufo viridis не переопределено для национального материала."
+    },
+    {
+      "id": "rdb-eumeces",
+      "title": "Reptile Database: Eumeces schneiderii",
+      "url": "https://reptile-database.reptarium.cz/Eumeces/schneiderii",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_primary_page_text",
+      "locator": "Subspecies; Comment; Euprepis princeps Eichwald 1839:303",
+      "finding": "princeps признан подвидом, но Comment отмечает парафилию (Faizi et al. 2021); Novoeumeces — непригодное разделение рода с тем же типовым видом. Местный подвидовой охват требует сверки."
+    },
+    {
+      "id": "rdb-eryx",
+      "title": "Reptile Database: Eryx miliaris",
+      "url": "https://reptile-database.reptarium.cz/Eryx/miliaris",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_primary_page_text",
+      "locator": "Synonymy; Types; Comment; Eryx tataricus / Boa tatarica Lichtenstein 1823",
+      "finding": "Comment прямо ссылается на формальную синонимизацию tataricus с miliaris (Eskandarzadeh et al. 2020); в историческом ареале tataricus указан Кыргызстан и приведён лектотип ZMB 1461."
+    },
+    {
+      "id": "rdb-spalerosophis",
+      "title": "Reptile Database: Spalerosophis diadema",
+      "url": "https://reptile-database.reptarium.cz/Spalerosophis/diadema",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_primary_page_text",
+      "locator": "Subspecies; Distribution; Comment; Jan 1863; Baig et al. 2007",
+      "finding": "База сохраняет schirazianus как подвид и указывает Кыргызстан; Comment также документирует трактовки отдельным видом и синонимом всего S. diadema."
+    },
+    {
+      "id": "ioc-falcons",
+      "title": "IOC World Bird List: proposed splits / lumps",
+      "url": "https://www.worldbirdnames.org/new/updates/proposed-splits/",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_proposal_only",
+      "locator": "Falco pelegrinoides / peregrinus, proposal PL7.1; not an adopted checklist",
+      "finding": "Предложение по F. pelegrinoides является страницей обсуждения, не достаточным подтверждением принятого единого современного стандарта. Национальный местный babylonicus нельзя заменить номинативным pelegrinoides."
+    },
+    {
+      "id": "osme-terpsiphone",
+      "title": "OSME Region List 10.2, Part C, Passerines (2025)",
+      "url": "https://osme.org/wp-content/uploads/2025/03/ORL-10.2-Part-C-Passerines.pdf#page=3",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "downloaded_primary_PDF_relevant_page_read",
+      "locator": "PDF p.3, species no.641, Monarchidae",
+      "finding": "Позиция 641: T. paradisi, местный T.p. leucogaster; отдельно указано гнездование в западном Кыргызстане. Уточняется, что разделения прежнего широкого комплекса относятся к восточным таксонам."
+    },
+    {
+      "id": "itis-terpsiphone",
+      "title": "ITIS: Terpsiphone paradisi leucogaster",
+      "url": "https://itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=920668",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_database_text",
+      "locator": "TSN 920668; IOC 14.1, accessed by ITIS 03 Mar 2025",
+      "finding": "Подвид (Swainson, 1838); источник IOC 14.1. Дополнительное согласование ранга, а не единственное доказательство национального включения."
+    },
+    {
+      "id": "mdd-rhino",
+      "title": "MDD: Rhinolophus hipposideros",
+      "url": "https://www.mammaldiversity.org/taxon/1004693/",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "existing_primary_review_reused",
+      "locator": "docs/evidence/catalog-200-source-review.json#mdd-hipposideros",
+      "finding": "Современное имя André 1797; прежний комплекс включал выделенный R. midas. Местный концепт книги прямо назван midas, не просто видом hipposideros."
+    },
+    {
+      "id": "mdd-midas",
+      "title": "MDD: Rhinolophus midas",
+      "url": "https://www.mammaldiversity.org/taxon/1006733/",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "existing_primary_review_reused",
+      "locator": "DOI 10.3161/15081109ACC2022.24.2.001, Benda et al. 2023",
+      "finding": "Признан отдельный вид; список стран Iran/Oman не доказывает принадлежность старых кыргызских находок. Требуются материалы ревизии и национальные ваучеры."
+    },
+    {
+      "id": "msu-otonycteris",
+      "title": "Зоомузей МГУ: Otonycteris leucophaea",
+      "url": "https://zmmu.msu.ru/bats/rusbats/e_guide/othemp_e.htm",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_primary_page_text",
+      "locator": "Scientific name; Distribution; taxonomy paragraph",
+      "finding": "Профильный музейный определитель прямо выделяет O. leucophaea из прежнего O. hemprichi, ссылается на Benda & Gvoždík 2010 и включает Кыргызстан в ареал."
+    },
+    {
+      "id": "otonycteris-revision",
+      "title": "Benda & Gvoždík (2010): Taxonomy of Otonycteris",
+      "url": "https://doi.org/10.3161/150811010X504617",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "abstract_and_author_bibliography_only",
+      "locator": "Acta Chiropterologica 12(1):83–102; museum download Benda2010ac.pdf failed",
+      "finding": "Найдены аннотация и библиография ревизии; полный PDF по ссылке авторского музея вернул 404. Национальные экземпляры в этой статье заново не проверены; решение опирается также на прямую региональную обработку МГУ."
+    },
+    {
+      "id": "mdd-cervus",
+      "title": "MDD: Cervus canadensis",
+      "url": "https://www.mammaldiversity.org/taxon/1006312/",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_primary_page_text",
+      "locator": "Taxonomy notes; Names and synonyms: Cervus canadensis asiaticus; country Kyrgyzstan",
+      "finding": "Принят вид C. canadensis, распространение включает Кыргызстан; список имён прямо связывает Cervus canadensis asiaticus Lydekker, 1898 с этим видом."
+    },
+    {
+      "id": "cervus-2018",
+      "title": "Исследование (2018): Late Pleistocene wapiti, Cervus canadensis",
+      "url": "https://brill.com/view/journals/ctoz/87/1/article-p1_1.pdf",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_indexed_primary_pdf_text",
+      "locator": "Contributions to Zoology 87(1):1–10; discussion of name C. canadensis asiaticus",
+      "finding": "Номенклатурный разбор связывает азиатское asiaticus с Lydekker (1898), а не с непригодным инфраподвидовым именем Severtzov. Не является обследованием современной популяции Кыргызстана."
+    },
+    {
+      "id": "mdd-jerboa",
+      "title": "MDD: Orientallactaga sibirica",
+      "url": "https://www.mammaldiversity.org/taxon/1001964/",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "web_primary_page_text",
+      "locator": "Names and synonyms; country distribution; Lebedev et al. 2013, DOI 10.1111/zsc.12002",
+      "finding": "Современный вид включает имена saltator, altorum и Allactaga saltator dementiewi. Для altorum приведён тип ZMMU S-95888 из Кыргызстана; для dementiewi — Toktosunov 1958, с.60, Kyrgyzstan. Это один вид, а не две новые карточки."
+    },
+    {
+      "id": "msu-schrenkia",
+      "title": "МГУ: тип Kosopoljanskia hebecarpa",
+      "url": "https://plant.depo.msu.ru/open/public/en/item/MW0593746",
+      "accessedOn": "2026-10-21",
+      "accessMethod": "existing_primary_review_reused",
+      "locator": "MW0593746; docs/evidence/catalog-200-source-review.json#msu-schrenkia-hebecarpa",
+      "finding": "Типовой материал связан с Schrenkia hebecarpa; это подтверждение имени, не исправление исторической категории VU/EN."
+    }
+  ],
+  "networkReceipts": [
+    {
+      "id": "otonycteris-2010",
+      "url": "https://nm.cz/download/pm/zoo/benda_lit/Benda2010ac.pdf",
+      "accessedAt": "2026-10-21T17:35:15.690Z",
+      "status": 404,
+      "contentType": "text/html; charset=UTF-8",
+      "bytes": 43761,
+      "sha256": "611b592c38d34c47ca96204429de209f0576ac2fe65792f25a888526a48952ab",
+      "path": ".generated/catalog-200-conflicts/remote/otonycteris-2010.txt"
+    },
+    {
+      "id": "osme-passerines",
+      "url": "https://osme.org/wp-content/uploads/2025/03/ORL-10.2-Part-C-Passerines.pdf",
+      "accessedAt": "2026-10-21T17:35:14.574Z",
+      "status": 200,
+      "contentType": "application/pdf",
+      "bytes": 2263594,
+      "sha256": "ab3cc206eecd78314590e6baad58258947ed7dd67bde93ab9c23342d06fa5de1",
+      "path": ".generated/catalog-200-conflicts/remote/osme-passerines.pdf"
+    },
+    {
+      "id": "itis-capoetobrama",
+      "url": "https://www.itis.gov/ITISWebService/jsonservice/getFullRecordFromTSN?tsn=688845",
+      "accessedAt": "2026-10-21T17:35:10.638Z",
+      "status": 200,
+      "contentType": "text/json;charset=ISO-8859-1",
+      "bytes": 6534,
+      "sha256": "393d177433474e9a76151ace177d7ff3f31d2d95184f625cf65cfd40424012c6",
+      "path": ".generated/catalog-200-conflicts/remote/itis-capoetobrama.txt"
+    },
+    {
+      "id": "eschmeyer-lansdelli",
+      "url": "https://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=48488",
+      "accessedAt": "2026-10-21T17:35:10.738Z",
+      "status": 200,
+      "contentType": "text/html",
+      "bytes": 9445,
+      "sha256": "5e8bbc9998755f4985adae1ddc5a2d17f43c5e3cc3c98455e9c004d526131196",
+      "path": ".generated/catalog-200-conflicts/remote/eschmeyer-lansdelli.txt"
+    },
+    {
+      "id": "eschmeyer-issykkuli",
+      "url": "https://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=48193",
+      "accessedAt": "2026-10-21T17:35:11.185Z",
+      "status": 200,
+      "contentType": "text/html",
+      "bytes": 9292,
+      "sha256": "30f91fe00b442f4feee62ba5ffcd121ed3405a7e1b82eacd2feb5da130a8d163",
+      "path": ".generated/catalog-200-conflicts/remote/eschmeyer-issykkuli.txt"
+    }
+  ],
+  "primaryApiResponses": [
+    {
+      "sourceId": "itis-capoetobrama",
+      "data": {
+        "acceptedNameList": {
+          "acceptedNames": [
+            null
+          ],
+          "class": "gov.usgs.itis.itis_service.data.SvcAcceptedNameList",
+          "tsn": "688845"
+        },
+        "class": "gov.usgs.itis.itis_service.data.SvcFullRecord",
+        "commentList": {
+          "class": "gov.usgs.itis.itis_service.data.SvcTaxonCommentList",
+          "comments": [
+            null
+          ],
+          "tsn": "688845"
+        },
+        "commonNameList": {
+          "class": "gov.usgs.itis.itis_service.data.SvcCommonNameList",
+          "commonNames": [
+            null
+          ],
+          "tsn": "688845"
+        },
+        "completenessRating": {
+          "class": "gov.usgs.itis.itis_service.data.SvcGlobalSpeciesCompleteness",
+          "completeness": "",
+          "rankId": 220,
+          "tsn": "688845"
+        },
+        "coreMetadata": {
+          "class": "gov.usgs.itis.itis_service.data.SvcCoreMetadata",
+          "credRating": "TWG standards met",
+          "rankId": 220,
+          "taxonCoverage": "",
+          "taxonCurrency": "",
+          "taxonUsageRating": "valid",
+          "tsn": "688845",
+          "unacceptReason": ""
+        },
+        "credibilityRating": {
+          "class": "gov.usgs.itis.itis_service.data.SvcCredibilityData",
+          "credRating": "TWG standards met",
+          "tsn": "688845"
+        },
+        "currencyRating": {
+          "class": "gov.usgs.itis.itis_service.data.SvcCurrencyData",
+          "rankId": 220,
+          "taxonCurrency": "",
+          "tsn": "688845"
+        },
+        "dateData": {
+          "class": "gov.usgs.itis.itis_service.data.SvcTaxonDateData",
+          "initialTimeStamp": "2005-09-28 16:43:59.0",
+          "tsn": "688845",
+          "updateDate": "2023-03-30"
+        },
+        "expertList": {
+          "class": "gov.usgs.itis.itis_service.data.SvcTaxonExpertList",
+          "experts": [
+            {
+              "class": "gov.usgs.itis.itis_service.data.SvcTaxonExpert",
+              "comment": "Retired Research Fish Biologist, U.S. Geological Survey, 7920 N.W. 71st Street, Gainesville, Florida 32653",
+              "expert": "Howard L. Jelks",
+              "referenceFor": [
+                {
+                  "class": "gov.usgs.itis.itis_service.data.SvcReferenceForElement",
+                  "name": "Capoetobrama kuschakewitschi",
+                  "refLanguage": null,
+                  "referredTsn": "688845"
+                }
+              ],
+              "updateDate": "2024-06-25"
+            }
+          ],
+          "tsn": "688845"
+        },
+        "geographicDivisionList": {
+          "class": "gov.usgs.itis.itis_service.data.SvcTaxonGeoDivisionList",
+          "geoDivisions": [
+            null
+          ],
+          "tsn": "688845"
+        },
+        "hierarchyUp": {
+          "author": null,
+          "class": "gov.usgs.itis.itis_service.data.SvcHierarchyRecord",
+          "parentName": "Capoetobrama",
+          "parentTsn": "687502",
+          "rankName": "Species",
+          "taxonName": "Capoetobrama kuschakewitschi",
+          "tsn": "688845"
+        },
+        "jurisdictionalOriginList": {
+          "class": "gov.usgs.itis.itis_service.data.SvcTaxonJurisdictionalOriginList",
+          "jurisdictionalOrigins": [
+            null
+          ],
+          "tsn": "688845"
+        },
+        "kingdom": {
+          "class": "gov.usgs.itis.itis_service.data.SvcKingdomInfo",
+          "kingdomId": "5",
+          "kingdomName": "Animalia  ",
+          "tsn": "688845"
+        },
+        "otherSourceList": {
+          "class": "gov.usgs.itis.itis_service.data.SvcTaxonOtherSourceList",
+          "otherSources": [
+            {
+              "acquisitionDate": "2021-08-19",
+              "class": "gov.usgs.itis.itis_service.data.SvcTaxonOtherSource",
+              "referenceFor": [
+                {
+                  "class": "gov.usgs.itis.itis_service.data.SvcReferenceForElement",
+                  "name": "Capoetobrama kuschakewitschi",
+                  "refLanguage": null,
+                  "referredTsn": "688845"
+                }
+              ],
+              "source": "The IUCN Red List of Threatened Species 2020",
+              "sourceComment": "Mamilov, N. & Karimov, B. 2020. Capoetobrama kuschakewitschi. The IUCN Red List of Threatened Species 2020: e.T169620A156732450. https://dx.doi.org/10.2305/IUCN.UK.2020-3.RLTS.T169620A156732450.en. Downloaded on 19 August 2021.",
+              "sourceType": "website",
+              "updateDate": "2023-03-30",
+              "version": "02-Mar-20"
+            },
+            {
+              "acquisitionDate": "2023-01-11",
+              "class": "gov.usgs.itis.itis_service.data.SvcTaxonOtherSource",
+              "referenceFor": [
+                {
+                  "class": "gov.usgs.itis.itis_service.data.SvcReferenceForElement",
+                  "name": "Capoetobrama kuschakewitschi",
+                  "refLanguage": null,
+                  "referredTsn": "688845"
+                }
+              ],
+              "source": "Eschmeyer's Catalog of Fishes, 11-Jan-2023",
+              "sourceComment": "Fricke, R., Eschmeyer, W. N. & van der Laan, R. (eds) 2023. ESCHMEYER'S CATALOG OF FISHES: GENERA, SPECIES, REFERENCES. (https://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatmain.asp). Electronic version accessed 11 Jan 2023",
+              "sourceType": "website",
+              "updateDate": "2023-03-30",
+              "version": "11-Jan-23"
+            }
+          ],
+          "tsn": "688845"
+        },
+        "parentTSN": {
+          "class": "gov.usgs.itis.itis_service.data.SvcParentTsn",
+          "parentTsn": "687502",
+          "tsn": "688845"
+        },
+        "publicationList": {
+          "class": "gov.usgs.itis.itis_service.data.SvcTaxonPublicationList",
+          "publications": [
+            {
+              "actualPubDate": "1949-09-28",
+              "class": "gov.usgs.itis.itis_service.data.SvcTaxonPublication",
+              "isbn": "",
+              "issn": "",
+              "listedPubDate": "1949-09-28",
+              "pages": "467-925",
+              "pubComment": "Translated by Israel Program for Scientific Translation in 1964",
+              "pubName": "Guide to the Fauna of the U.S.S.R., no. 29, Fourth edition",
+              "pubPlace": "",
+              "publisher": "",
+              "referenceAuthor": "Berg, Leo S.",
+              "referenceFor": [
+                {
+                  "class": "gov.usgs.itis.itis_service.data.SvcReferenceForElement",
+                  "name": "Capoetobrama kuschakewitschi",
+                  "refLanguage": null,
+                  "referredTsn": "688845"
+                }
+              ],
+              "title": "Freshwater Fishes of the U.S.S.R. and Adjacent Countries",
+              "updateDate": "2023-03-30"
+            },
+            {
+              "actualPubDate": "1981-01-01",
+              "class": "gov.usgs.itis.itis_service.data.SvcTaxonPublication",
+              "isbn": "",
+              "issn": "0068-8037",
+              "listedPubDate": "1981-01-01",
+              "pages": "i-v + 1-26",
+              "pubComment": "",
+              "pubName": "National Museum of Canada Publications in Zoology, no. 14",
+              "pubPlace": "",
+              "publisher": "",
+              "referenceAuthor": "Coad, B. W.",
+              "referenceFor": [
+                {
+                  "class": "gov.usgs.itis.itis_service.data.SvcReferenceForElement",
+                  "name": "Capoetobrama kuschakewitschi",
+                  "refLanguage": null,
+                  "referredTsn": "688845"
+                }
+              ],
+              "title": "Fishes of Afghanistan, an annotated checklist",
+              "updateDate": "2023-03-30"
+            }
+          ],
+          "tsn": "688845"
+        },
+        "scientificName": {
+          "author": "(Kessler, 1872)",
+          "class": "gov.usgs.itis.itis_service.data.SvcScientificName",
+          "combinedName": "Capoetobrama kuschakewitschi",
+          "kingdom": null,
+          "tsn": "688845",
+          "unitInd1": null,
+          "unitInd2": null,
+          "unitInd3": null,
+          "unitInd4": null,
+          "unitName1": "Capoetobrama                       ",
+          "unitName2": "kuschakewitschi",
+          "unitName3": null,
+          "unitName4": null
+        },
+        "synonymList": {
+          "class": "gov.usgs.itis.itis_service.data.SvcSynonymNameList",
+          "synonyms": [
+            {
+              "author": null,
+              "class": "gov.usgs.itis.itis_service.data.SvcTaxonName",
+              "sciName": "Acanthobrama bogdanowi",
+              "tsn": "1199709"
+            },
+            {
+              "author": null,
+              "class": "gov.usgs.itis.itis_service.data.SvcTaxonName",
+              "sciName": "Acanthobrama kuschakewitschi",
+              "tsn": "1199892"
+            },
+            {
+              "author": null,
+              "class": "gov.usgs.itis.itis_service.data.SvcTaxonName",
+              "sciName": "Capoetobrama kuschakewitschi orientalis",
+              "tsn": "1200459"
+            }
+          ],
+          "tsn": "688845"
+        },
+        "taxRank": {
+          "class": "gov.usgs.itis.itis_service.data.SvcTaxonRankInfo",
+          "kingdomId": "5",
+          "kingdomName": "Animalia  ",
+          "rankId": "220",
+          "rankName": "Species        ",
+          "tsn": "688845"
+        },
+        "taxonAuthor": {
+          "authorship": "(Kessler, 1872)",
+          "class": "gov.usgs.itis.itis_service.data.SvcTaxonAuthorship",
+          "tsn": "688845",
+          "updateDate": "2004-02-23"
+        },
+        "tsn": "688845",
+        "unacceptReason": {
+          "class": "gov.usgs.itis.itis_service.data.SvcUnacceptData",
+          "tsn": "688845",
+          "unacceptReason": null
+        },
+        "usage": {
+          "class": "gov.usgs.itis.itis_service.data.SvcTaxonUsageData",
+          "taxonUsageRating": "valid",
+          "tsn": "688845"
+        }
+      }
+    }
+  ],
+  "accessLimitations": [
+    "Источники с accessMethod web_indexed_* доступны только в индексированном тексте; это не утверждение об успешном скачивании полного документа.",
+    "POWO: некоторые прямые открытия возвращали Cache miss; использованы доступные индексированные первичные карточки. Прежний Cloudflare challenge не обходился.",
+    "MycoKeys прямой запрос: 403; PMC: reCAPTCHA; использованы лишь доступный индексированный текст MycoKeys и прежние сохранённые решения. Переопределение национальных образцов не заявлено.",
+    "WaspWeb Megalodontes: прямой запрос 429; доступен индексированный видовой перечень музея. Sapygidae был прочитан как первичная страница.",
+    "Прямые страницы IOC monarchs/falcons: timeout. Страница proposed-splits не использована как действующее принятое решение. Для leucogaster прочитан первичный OSME PDF.",
+    "Полный Sorbaria 2021 требует подписки; доступна аннотация. PDF Otonycteris по ссылке авторского музея возвращает 404; прочитана профильная региональная обработка МГУ.",
+    "ZIN-каталог жужелиц: прямой доступ ограничен robots.txt; использован индексированный текст с точной страницей. Протолог Thieme не проверен.",
+    "Для Cuon alpinus не найден документ, снимающий сомнение национального автора в конкретных старых шкурах; существование вида в мировой базе не заменяет такой документ."
+  ],
+  "localVisualReview": {
+    "pdf": ".generated/research/redbook.pdf",
+    "sha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8",
+    "pages": [
+      21,
+      22,
+      160,
+      161
+    ],
+    "renderedImages": [
+      ".generated/catalog-200-conflicts/schrenkia-spread.png",
+      ".generated/catalog-200-conflicts/book-21.png",
+      ".generated/catalog-200-conflicts/book-22.png"
+    ],
+    "finding": "Заголовки одного Kosopoljanskia hebecarpa; VU на KY160, EN на RU/EN161. Таблица1 и национальные пояснения не делают EN эквивалентом VU."
+  },
+  "taxonomyEvidenceFile": "docs/evidence/catalog-200-conflict-taxonomy.json",
+  "reusePolicy": "Старые ответы GBIF и исследовательские пакеты не перезаписаны; сохранённые точные запросы повторно не выполнялись. Новые запросы касаются альтернативных комбинаций, авторства или установленного именного перехода."
+}
