@@ -1,0 +1,255 @@
+{
+  "id": "aquila-heliaca",
+  "scientificName": "Aquila heliaca",
+  "names": {
+    "ru": "Могильник",
+    "ky": "Aquila heliaca",
+    "uz": "Aquila heliaca",
+    "en": "Eastern Imperial Eagle"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "genus": "Aquila"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Предгорья с древесной растительностью, в очерке — преимущественно ниже 2000 м.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Сокращение кормовой базы, изъятие птенцов из гнёзд, гибель на опорах ЛЭП.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Предложены борьба с браконьерством и исследование лимитирующих факторов; разведение в неволе указано как рекомендация.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/aquila-heliaca.webp",
+      "width": 660,
+      "height": 636,
+      "sha256": "2a2f8f73acb3acb385bc02a1f97180859f013e854ac005d0467e07e521885fd9",
+      "author": "Sumeet Moghe",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Eastern_Imperial_Eagle_cr.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Eastern Imperial Eagle cr.jpg — Sumeet Moghe, CC BY-SA 3.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+        "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Фотография Aquila heliaca; иллюстрация вида, не подтверждение современного присутствия в Кыргызстане или местного подвида. Молодая птица в переходном оперении по описанию автора.",
+        "ky": null,
+        "en": null,
+        "uz": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Aquila heliaca, с. 423",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=423",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Aquila heliaca Savigny, 1809",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Aquila%20heliaca",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz"
+      ],
+      "taxonId": "gbif:2480500"
+    },
+    {
+      "id": "photo-commons",
+      "title": "Juvenile moulting into adult plumage at the Little Rann of Kutch",
+      "publisher": "Wikimedia Commons; Sumeet Moghe",
+      "url": "https://commons.wikimedia.org/wiki/File:Eastern_Imperial_Eagle_cr.jpg",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Могильник — редкий орёл, связанный в национальном очерке 2006 года с предгорными участками, где сохраняются деревья.",
+        "ky": "2006-жылкы улуттук очеркте дарактуу тоо этектери менен байланышкан сейрек бүркүт.",
+        "uz": "2006-yilgi milliy manbada daraxtli tog‘ etaklari bilan bog‘langan noyob burgut.",
+        "en": "A rare eagle associated with wooded foothills in the 2006 national account."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Могильник — редкий орёл, связанный в национальном очерке 2006 года с предгорными участками, где сохраняются деревья.\n\nПредгорья с древесной растительностью, в очерке — преимущественно ниже 2000 м.\n\nПерелётная птица: весеннее появление отнесено к марту, начало отлёта — к сентябрю. Упомянута отдельная зимовка у Токтогульского водохранилища.\n\nПреимущественно грызуны средней величины.\n\nКладка по очерку содержит 1–3 яйца, насиживание длится около 43 дней. Эти сведения не датируют современное гнездование в стране.\n\nИсторические сообщения из Чуйской долины, Прииссыккулья и юга страны. Системной национальной оценки численности нет.\n\nСокращение кормовой базы, изъятие птенцов из гнёзд, гибель на опорах ЛЭП.\n\nПредложены борьба с браконьерством и исследование лимитирующих факторов; разведение в неволе указано как рекомендация.\n\nНациональная категория и описанные встречи относятся к историческому изданию 2006 года. Современная численность не установлена; текущий юридический статус и современное присутствие требуют отдельного подтверждения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Перелётная птица: весеннее появление отнесено к марту, начало отлёта — к сентябрю. Упомянута отдельная зимовка у Токтогульского водохранилища.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Преимущественно грызуны средней величины.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Кладка по очерку содержит 1–3 яйца, насиживание длится около 43 дней. Эти сведения не датируют современное гнездование в стране.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические сообщения из Чуйской долины, Прииссыккулья и юга страны. Системной национальной оценки численности нет.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

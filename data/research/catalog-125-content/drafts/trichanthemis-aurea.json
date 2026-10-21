@@ -1,0 +1,268 @@
+{
+  "id": "trichanthemis-aurea",
+  "scientificName": "Trichanthemis aurea",
+  "names": {
+    "ru": "Волосистоцветочник золотистый",
+    "ky": "Trichanthemis aurea",
+    "uz": "Trichanthemis aurea",
+    "en": "Trichanthemis aurea"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Asterales",
+    "family": "Asteraceae",
+    "genus": "Trichanthemis"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Каменистые склоны и выходы сланцев предгорий и нижнего горного пояса.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В очерке названы вытаптывание при бессистемном выпасе и массовый сбор цветов местными жителями и туристами.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендации 2006 года: организовать ботанический заказник и исследовать введение растения в культуру.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/trichanthemis-aurea.webp",
+      "width": 1225,
+      "height": 1800,
+      "sha256": "551e08d4f0290b7d98f923ee998f5d6fdae8f6233ead5d73b8c6ecdd3371352f",
+      "author": "ELAR corporation (Moscow, Russia)",
+      "originalPage": "https://plant.depo.msu.ru/open/public/item/MW0886728",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "ELAR corporation (Moscow, Russia); Moscow State University (copyright is managed by Dr. Alexey P. Seregin); Гербарный образец MW0886728; CC BY 4.0.  Серегин А. П. (ред.) Цифровой гербарий МГУ. М.: МГУ, 2026; MW0886728. https://plant.depo.msu.ru/open/public/item/MW0886728 (16.10.2026).",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px, WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Гербарный образец MW0886728. Trichanthemis aurea. Изображение не подтверждает современную встречаемость в Кыргызстане.",
+        "ky": null,
+        "uz": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Trichanthemis aurea, с. 221",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=221",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-83",
+      "publisher": "Правительство КР; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ],
+      "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Trichanthemis aurea Krasch.",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Trichanthemis%20aurea",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz",
+        "names.en"
+      ],
+      "taxonId": "gbif:3150867"
+    },
+    {
+      "id": "photo-primary",
+      "title": "Гербарный образец: Trichanthemis aurea",
+      "publisher": "Moscow State University",
+      "url": "https://plant.depo.msu.ru/open/public/item/MW0886728",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "ru",
+      "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Опушённый многолетник каменистых склонов северного Алая из Красной книги Кыргызстана 2006 года.",
+        "ky": "Алайдын түндүгүндөгү таштак капталдарда өскөн түктүү көп жылдык өсүмдүк. 2006-жылкы Кызыл китепке киргизилген.",
+        "uz": "Oloyning shimolidagi toshloq yonbagʻirlarda oʻsadigan tukli koʻp yillik oʻsimlik. 2006-yilgi Qizil kitobga kiritilgan.",
+        "en": "A hairy perennial of stony slopes in the northern Alai, included in Kyrgyzstan’s 2006 Red Data Book."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Опушённый многолетник каменистых склонов северного Алая из Красной книги Кыргызстана 2006 года. Национальный очерк 2006 года содержит следующие сведения. Национальный очерк характеризует растение как редкое и декоративное, с очень небольшими популяциями. Сбор цветов снижает число плодоносящих растений; сведения о культивировании в источнике отсутствуют. По книге 2006 года размножение семенное, цветение в мае–июне, плодоношение в июле–августе. Исторически указан северный склон Алайского хребта в Кыргызстане и Узбекистане; в стране названы Исфайрам-Сай, Шахимардан, окрестности Уч-Коргона, Пульгона и Кадамжая, Катран-Тоо. В очерке названы вытаптывание при бессистемном выпасе и массовый сбор цветов местными жителями и туристами. Рекомендации 2006 года: организовать ботанический заказник и исследовать введение растения в культуру.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Серовато-зелёный многолетник с короткими сближенными каудексами и многочисленными стеблями высотой 5–30 см. Листья дважды перисторассечённые. На верхушках стеблей расположены одиночные корзинки с язычковыми краевыми и трубчатыми дисковыми цветками.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный очерк характеризует растение как редкое и декоративное, с очень небольшими популяциями. Сбор цветов снижает число плодоносящих растений; сведения о культивировании в источнике отсутствуют.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге 2006 года размножение семенное, цветение в мае–июне, плодоношение в июле–августе.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически указан северный склон Алайского хребта в Кыргызстане и Узбекистане; в стране названы Исфайрам-Сай, Шахимардан, окрестности Уч-Коргона, Пульгона и Кадамжая, Катран-Тоо.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

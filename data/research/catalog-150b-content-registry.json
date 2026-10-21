@@ -1,0 +1,484 @@
+{
+  "schemaVersion": 1,
+  "documentType": "bulk-research-registry",
+  "registryId": "catalog-150b-content",
+  "batchSize": 5,
+  "candidates": [
+    {
+      "originalScientificName": "Gazella subgutturoza",
+      "acceptedScientificName": "Gazella subgutturosa",
+      "rank": "SPECIES",
+      "group": "mammals",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "CR",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Gazella subgutturoza",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Gazella subgutturosa",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5220146",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy",
+        "mdd-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга КР, 2006; Gazella subgutturoza, с. 515",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=515",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
+          ]
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 514-бет",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=514",
+          "accessedAt": "2026-10-16",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
+        },
+        {
+          "id": "national-decree",
+          "title": "Постановление №170 от 28.04.2005, копия с изменениями 25.07.2009; приложение 2, строка 7",
+          "publisher": "Правительство КР; FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=8",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "originalScientificName",
+            "scientificName",
+            "content.overview"
+          ]
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Gazella subgutturosa (Güldenstaedt, 1780)",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Gazella%20subgutturosa",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview",
+            "names.uz"
+          ],
+          "taxonId": "gbif:5220146"
+        },
+        {
+          "id": "mdd-taxonomy",
+          "title": "Mammal Diversity Database: Gazella subgutturosa",
+          "publisher": "American Society of Mammalogists",
+          "url": "https://www.mammaldiversity.org/taxon/1006154/",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.distribution"
+          ]
+        },
+        {
+          "id": "manas-seminar",
+          "title": "Restoration of the Gazella Population in Kyrgyzstan and Its Reintroduction, 22.03.2026",
+          "publisher": "Kyrgyz-Turkish Manas University",
+          "url": "https://manas.edu.kg/en/natural_sciences/biology/news/7608",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "content.overview"
+          ]
+        },
+        {
+          "id": "photo-commons",
+          "title": "Female goitered gazelle (Gazella subgutturosa) at the Shirvan National Park, Azerbaijan",
+          "publisher": "Wikimedia Commons; Elşad İbrahimov",
+          "url": "https://commons.wikimedia.org/wiki/File:Female_goitered_gazelle,_Shirvan_National_Park,_Azerbaijan.jpg",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150b-taxonomy.json",
+          "sha256": "c6c09984c927eaa0939b556f03dc341e11d56e84e7267fa36a0964652f7be333"
+        },
+        {
+          "path": "docs/evidence/catalog-150b-selection-decisions.json",
+          "sha256": "739ed6a29ba87036adaad52e6f28ad9ba7d12b70349bd7b95c329dc9d2e2ea2e"
+        },
+        {
+          "path": "docs/evidence/catalog-150b-source-receipts.json",
+          "sha256": "540045a11c66adc5bd123be5400b7ff6368a5523168fae4688172ebe9535d633"
+        },
+        {
+          "path": "docs/evidence/catalog-150b-country-research.json",
+          "sha256": "6ab6e5625d75130c4c537f0fbd69a6445e555d1f0971acef0178bae7ea261b57"
+        },
+        {
+          "path": "data/research/catalog-150-content/supplement/block-1-facts.json",
+          "sha256": "88637651b7b15e1e6910c378d7c36e1880741a2ccb7dc826e1dd608e26fb9ffc"
+        },
+        {
+          "path": "docs/evidence/catalog-150b-block-1-accounts.json",
+          "sha256": "366e49696821b2fde2d51673cd612f0d39bcd618e2c2dbdf52837433cbfe400e"
+        },
+        {
+          "path": "docs/evidence/catalog-150b-block-1-images.json",
+          "sha256": "d25b4d2595e9a4e48300fa914eaf31d67694f9158fb1398722f80810c5d2aacb"
+        },
+        {
+          "path": "docs/evidence/catalog-150b-photo-search.json",
+          "sha256": "c976d2d3f29e63e082dcdb3bbafe2a5b90f8fa278f989b5a5718688872aaca41"
+        },
+        {
+          "path": "docs/evidence/catalog-150b-synonyms.json",
+          "sha256": "20a85c801d7c71080b35d47580afd7be9d32a7942b952b2256630a6d1fa8b546"
+        }
+      ],
+      "draft": null,
+      "id": "gazella-subgutturosa",
+      "nationalSourceRecords": [
+        "book-2006-514",
+        "decree-170-2009-2-7"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          514,
+          515
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-514",
+        "requestedName": "Gazella subgutturosa",
+        "resolution": "National book subgutturoza is reconciled with subgutturosa in the national decree for the same Russian-named gazelle and 1780 authority. Modern MDD and exact accepted GBIF species concur. No parent-species substitution and no subspecies assignment. Modern local survival remains unconfirmed."
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "scientificReviewStatus": "pending",
+      "state": "pending",
+      "approval": null,
+      "draftFile": "data/research/catalog-150-content/supplement/drafts/gazella-subgutturosa.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение владельца на импорт отсутствует.",
+        "Имя UZ: документированное научное имя; переводы KY/UZ требуют независимой редакторской проверки."
+      ],
+      "editorialNotes": [
+        "Написание subgutturoza в книге не принято через fuzzy match: связь с subgutturosa подтверждена национальной строкой о джейране и тем же автором/годом; точный принятый ответ GBIF сохранён отдельно.",
+        "Подвид не назначается. Аравийская Gazella marica не включена в понятие карточки; использовано современное понятие G. subgutturosa MDD.",
+        "CR — национальная категория 2006 года; актуальная глобальная категория IUCN в схеме не назначена.",
+        "Тексты KY/UZ — редакционные переводы с pending проверкой; имя KY из оригинального очерка, UZ использует научное имя."
+      ],
+      "missingFacts": [
+        "Современное присутствие и численность в Кыргызстане",
+        "Актуальный правовой статус",
+        "Подтверждённые современные координаты",
+        "Диагностическое описание внешности",
+        "Состав питания в национальном очерке",
+        "Независимая научная и языковая проверка"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "gazella-subgutturosa",
+        "factsFingerprint": "ae26936aa0129afb54c1a0e9dfa872217e802d1a1695e1f80e6782be81eed28d",
+        "draftSha256": "559e755e3c285a4fe53f2414b7a049b4e91a0382203e2f2f8a0fb43f779f16d0"
+      }
+    },
+    {
+      "originalScientificName": "Dendrocopos leucopterus",
+      "acceptedScientificName": "Dendrocopos leucopterus",
+      "rank": "SPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "LC",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Dendrocopos leucopterus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2478035",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy",
+        "itis-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга КР, 2006; Dendrocopos leucopterus, с. 467",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=467",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
+          ]
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 466-бет",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=466",
+          "accessedAt": "2026-10-16",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
+        },
+        {
+          "id": "national-decree",
+          "title": "Постановление №170 от 28.04.2005, копия с изменениями 25.07.2009; приложение 3, строка 19",
+          "publisher": "Правительство КР; FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "originalScientificName"
+          ]
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Dendrocopos leucopterus (Salvadori, 1871)",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Dendrocopos%20leucopterus",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview",
+            "names.uz"
+          ],
+          "taxonId": "gbif:2478035"
+        },
+        {
+          "id": "itis-taxonomy",
+          "title": "ITIS: Dendrocopos leucopterus; valid species TSN 554050",
+          "publisher": "Integrated Taxonomic Information System",
+          "url": "https://www.itis.gov/ITISWebService/jsonservice/getFullRecordFromTSN?tsn=554050",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview"
+          ]
+        },
+        {
+          "id": "photo-commons",
+          "title": "White-winged Woodpecker (Dendrocopos leucopterus) in Kyrgyzstan",
+          "publisher": "Wikimedia Commons; Griha Hasanov",
+          "url": "https://commons.wikimedia.org/wiki/File:Dendrocopos_leucopterus_258242098.jpg",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": "en"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-150b-taxonomy.json",
+          "sha256": "c6c09984c927eaa0939b556f03dc341e11d56e84e7267fa36a0964652f7be333"
+        },
+        {
+          "path": "docs/evidence/catalog-150b-selection-decisions.json",
+          "sha256": "739ed6a29ba87036adaad52e6f28ad9ba7d12b70349bd7b95c329dc9d2e2ea2e"
+        },
+        {
+          "path": "docs/evidence/catalog-150b-source-receipts.json",
+          "sha256": "540045a11c66adc5bd123be5400b7ff6368a5523168fae4688172ebe9535d633"
+        },
+        {
+          "path": "docs/evidence/catalog-150b-country-research.json",
+          "sha256": "6ab6e5625d75130c4c537f0fbd69a6445e555d1f0971acef0178bae7ea261b57"
+        },
+        {
+          "path": "data/research/catalog-150-content/supplement/block-1-facts.json",
+          "sha256": "88637651b7b15e1e6910c378d7c36e1880741a2ccb7dc826e1dd608e26fb9ffc"
+        },
+        {
+          "path": "docs/evidence/catalog-150b-block-1-accounts.json",
+          "sha256": "366e49696821b2fde2d51673cd612f0d39bcd618e2c2dbdf52837433cbfe400e"
+        },
+        {
+          "path": "docs/evidence/catalog-150b-block-1-images.json",
+          "sha256": "d25b4d2595e9a4e48300fa914eaf31d67694f9158fb1398722f80810c5d2aacb"
+        },
+        {
+          "path": "docs/evidence/catalog-150b-photo-search.json",
+          "sha256": "c976d2d3f29e63e082dcdb3bbafe2a5b90f8fa278f989b5a5718688872aaca41"
+        },
+        {
+          "path": "docs/evidence/catalog-150b-synonyms.json",
+          "sha256": "20a85c801d7c71080b35d47580afd7be9d32a7942b952b2256630a6d1fa8b546"
+        }
+      ],
+      "draft": null,
+      "id": "dendrocopos-leucopterus",
+      "nationalSourceRecords": [
+        "book-2006-466",
+        "decree-170-2009-3-19"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          466,
+          467
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-466",
+        "requestedName": "Dendrocopos leucopterus",
+        "resolution": "Identical species name in national account, national list, exact accepted GBIF and valid ITIS record. Bibliographic authority year 1870 in book versus 1871 in modern sources is recorded, not treated as a different taxon."
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "historicalNationalScope": "Подтверждён национальный очерк 2006; не текущий правовой статус и не современное присутствие.",
+      "scientificReviewStatus": "pending",
+      "state": "pending",
+      "approval": null,
+      "draftFile": "data/research/catalog-150-content/supplement/drafts/dendrocopos-leucopterus.json",
+      "publicationGaps": [
+        "Независимая научная проверка pending; отдельное разрешение владельца на импорт отсутствует.",
+        "Имя UZ: документированное научное имя; переводы KY/UZ требуют независимой редакторской проверки."
+      ],
+      "editorialNotes": [
+        "1870 в национальном заголовке и 1871 в GBIF/ITIS — библиографическое разночтение года авторства при одинаковом видовом имени, не отдельные кандидаты.",
+        "Локальная плотность 1–3 особи/км² из старого очерка не экстраполируется на страну и не превращается в современную оценку численности.",
+        "LC — категория национального издания 2006 года. Независимая научная проверка pending.",
+        "Тексты KY/UZ — редакционные переводы с pending проверкой; имя KY из оригинального очерка, UZ использует научное имя."
+      ],
+      "missingFacts": [
+        "Современная систематическая национальная оценка численности",
+        "Актуальный правовой статус",
+        "Диагностическое описание внешности",
+        "Точные параметры кладки и насиживания",
+        "Независимая научная и языковая проверка"
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "dendrocopos-leucopterus",
+        "factsFingerprint": "19fc2d2a09a38c3ee04d6975bf5f78f3cc3d705321efaa1c487f30a4c50af2e2",
+        "draftSha256": "c3f5c8fdd2043e8e03fc1483c236d70a52944ed5117177ad37b2cc1d1fc2deb4"
+      }
+    }
+  ]
+}

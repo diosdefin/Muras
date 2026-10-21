@@ -4,8 +4,8 @@ import {readFile,mkdir,mkdtemp,rm,writeFile} from 'node:fs/promises'
 import {tmpdir} from 'node:os'
 import {join} from 'node:path'
 import {createRenderer,defineComponent,h,nextTick} from 'vue'
-import {clone,deleteSpecies,duplicateSpecies,emptySpecies,exportSource,importSource,jsonSafe,populationTransition,publicationErrors,previewUrl,setPhotoComposition,setPath,uniqueId} from '../src/admin/data/model.js'
-import {createDraftRepository,DRAFT_KEY,PREVIOUS_KEY} from '../src/admin/data/repository.js'
+import {clone,deleteSpecies,duplicateSpecies,emptySpecies,exportSource,importSource,jsonSafe,populationTransition,publicationErrors,previewUrl,setPhotoComposition,setPath,uniqueId,MAX_JSON_BYTES} from '../src/admin/data/model.js'
+import {createDraftRepository,DRAFT_KEY,PREVIOUS_KEY,MAX_DRAFT_BYTES} from '../src/admin/data/repository.js'
 import {createImageSession,imageFormat,inspectImage,MAX_IMAGE_BYTES} from '../src/admin/data/images.js'
 import {useAdminEditor} from '../src/admin/useAdminEditor.js'
 import {compositionCrop,compositionStyle,imageComposition,panComposition,validComposition} from '../src/data/image-composition.js'
@@ -106,6 +106,17 @@ test('draft repository restores incomplete drafts losslessly and maintains a sep
  const next=envelope(setPath(changed.current,['catalog',0,'scientificName'],null));repo.save(next)
  assert.equal(repo.previous().current.catalog[0].names.en,'Snow Leopard')
  assert.deepEqual(repo.load().current.demoArchive,source.demoArchive);assert.deepEqual(repo.load().current.catalog[0].sources,source.catalog[0].sources)
+})
+
+test('two-document drafts fit their own bound while oversized envelopes and 2 MiB source imports remain rejected',()=>{
+ const memory=storage(),repo=createDraftRepository(memory),draft=envelope(copy())
+ assert.ok(new TextEncoder().encode(JSON.stringify(draft)).length>MAX_JSON_BYTES)
+ repo.save(draft);assert.deepEqual(repo.load().current,source)
+ const saved=memory.getItem(DRAFT_KEY)
+ assert.throws(()=>repo.save({...draft,extra:'x'.repeat(MAX_DRAFT_BYTES)}),/admin.error.jsonSize/)
+ assert.equal(memory.getItem(DRAFT_KEY),saved)
+ memory.setItem(DRAFT_KEY,' '.repeat(MAX_DRAFT_BYTES+1));assert.throws(()=>repo.load(),/admin.error.jsonSize/)
+ assert.throws(()=>importSource(' '.repeat(MAX_JSON_BYTES)+'{}'),/admin.error.jsonSize/)
 })
 test('corrupt draft structures and lost archive data are rejected, not reconstructed from public records',()=>{
  const memory=storage(),repo=createDraftRepository(memory);memory.setItem(DRAFT_KEY,'{');assert.throws(()=>repo.load())

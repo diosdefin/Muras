@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "accessedAt": "2026-10-16",
+  "candidateId": "trichanthemis-aulieatensis",
+  "nationalBridge": {
+    "source": "https://macrolepidoptera.ru/lnk/282.pdf#page=219",
+    "evidence": "docs/evidence/catalog-125-block-5-accounts.json",
+    "sameAccountAlternativeName": "Pseudoglossanthis aulieatensis"
+  },
+  "gbif": {
+    "url": "https://api.gbif.org/v1/species/match?strict=true&name=Pseudoglossanthis%20aulieatensis",
+    "httpStatus": 200,
+    "data": {
+      "usageKey": 3134046,
+      "acceptedUsageKey": 3150861,
+      "scientificName": "Pseudoglossanthis aulieatensis (B.Fedtsch.) Kamelin",
+      "canonicalName": "Pseudoglossanthis aulieatensis",
+      "rank": "SPECIES",
+      "status": "SYNONYM",
+      "confidence": 99,
+      "matchType": "EXACT",
+      "kingdom": "Plantae",
+      "phylum": "Tracheophyta",
+      "order": "Asterales",
+      "family": "Asteraceae",
+      "genus": "Trichanthemis",
+      "species": "Trichanthemis aulieatensis",
+      "kingdomKey": 6,
+      "phylumKey": 7707728,
+      "classKey": 220,
+      "orderKey": 414,
+      "familyKey": 3065,
+      "genusKey": 3150855,
+      "speciesKey": 3150861,
+      "class": "Magnoliopsida"
+    }
+  }
+}

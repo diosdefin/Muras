@@ -14,7 +14,9 @@ import { speciesPhoto } from '../src/data/presentation.js'
 const read = async p => JSON.parse(await readFile(`${PROJECT_ROOT}/${p}`, 'utf8'))
 const baseline = await read('data/backups/catalog-100-photo-final/species.source.json')
 const beforePublic = await read('data/backups/catalog-100-photo-final/public-species.json')
-const source = await read('data/species.source.json'), published = await read('public/data/species.json')
+// Immutable task 23.1 release; catalog-125-publication tests cover live additions
+// and verify that these complete 100 records remain unchanged.
+const source = await read('data/backups/catalog-125/species.source.json'), published = await read('data/backups/catalog-125/public-species.json')
 const journal = await read('data/research/catalog-100-photo-final-updates.json')
 const selection = await read('data/research/catalog-100-photo-final-selection.json')
 const added = journal.records.filter(r => r.status === 'published')

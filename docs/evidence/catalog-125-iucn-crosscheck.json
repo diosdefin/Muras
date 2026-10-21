@@ -1,0 +1,947 @@
+{
+  "schemaVersion": 1,
+  "dataset": "IUCN checklist via GBIF; not the live IUCN assessment service",
+  "records": [
+    {
+      "candidateId": "iskandera-alaica",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Iskandera alaica",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Iskandera%20alaica&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "silene-sussamyrica",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Silene sussamyrica",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Silene%20sussamyrica&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "chesneya-villosa",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Chesneya villosa",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Chesneya%20villosa&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "spiraeanthus-schrenkianus",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Spiraeanthus schrenckianus",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Spiraeanthus%20schrenckianus&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        },
+        {
+          "name": "Spiraeanthus schrenkianus",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Spiraeanthus%20schrenkianus&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 1,
+            "results": [
+              {
+                "key": 176783753,
+                "datasetKey": "19491596-35ae-4a91-9a98-85cf505f1bd3",
+                "nubKey": 2986431,
+                "parentKey": 340237473,
+                "parent": "Spiraeanthus",
+                "kingdom": "PLANTAE",
+                "phylum": "TRACHEOPHYTA",
+                "order": "ROSALES",
+                "family": "ROSACEAE",
+                "genus": "Spiraeanthus",
+                "species": "Spiraeanthus schrenkianus",
+                "kingdomKey": 340231984,
+                "phylumKey": 340233373,
+                "classKey": 340233498,
+                "orderKey": 340237430,
+                "familyKey": 340237467,
+                "genusKey": 340237473,
+                "speciesKey": 176783753,
+                "scientificName": "Spiraeanthus schrenkianus (Fisch. & C.A.Mey.) Maxim.",
+                "canonicalName": "Spiraeanthus schrenkianus",
+                "authorship": "(Fisch. & C.A.Mey.) Maxim.",
+                "nameType": "SCIENTIFIC",
+                "taxonomicStatus": "ACCEPTED",
+                "rank": "SPECIES",
+                "origin": "SOURCE",
+                "numDescendants": 0,
+                "numOccurrences": 0,
+                "taxonID": "63489",
+                "habitats": [],
+                "nomenclaturalStatus": [],
+                "threatStatuses": [
+                  "ENDANGERED"
+                ],
+                "descriptions": [],
+                "vernacularNames": [],
+                "synonym": false,
+                "higherClassificationMap": {
+                  "340231984": "PLANTAE",
+                  "340233373": "TRACHEOPHYTA",
+                  "340233498": "MAGNOLIOPSIDA",
+                  "340237430": "ROSALES",
+                  "340237467": "ROSACEAE",
+                  "340237473": "Spiraeanthus"
+                },
+                "class": "MAGNOLIOPSIDA"
+              }
+            ],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "zygophyllum-kaschgaricum",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Zygophyllum kaschgaricum",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Zygophyllum%20kaschgaricum&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 1,
+            "results": [
+              {
+                "key": 176812626,
+                "datasetKey": "19491596-35ae-4a91-9a98-85cf505f1bd3",
+                "nubKey": 3987348,
+                "parentKey": 340237162,
+                "parent": "Zygophyllum",
+                "kingdom": "PLANTAE",
+                "phylum": "TRACHEOPHYTA",
+                "order": "ZYGOPHYLLALES",
+                "family": "ZYGOPHYLLACEAE",
+                "genus": "Zygophyllum",
+                "species": "Zygophyllum kaschgaricum",
+                "kingdomKey": 340231984,
+                "phylumKey": 340233373,
+                "classKey": 340233498,
+                "orderKey": 340237154,
+                "familyKey": 340237155,
+                "genusKey": 340237162,
+                "speciesKey": 176812626,
+                "scientificName": "Zygophyllum kaschgaricum Boriss.",
+                "canonicalName": "Zygophyllum kaschgaricum",
+                "authorship": "Boriss.",
+                "nameType": "SCIENTIFIC",
+                "taxonomicStatus": "ACCEPTED",
+                "rank": "SPECIES",
+                "origin": "SOURCE",
+                "numDescendants": 0,
+                "numOccurrences": 0,
+                "taxonID": "63514",
+                "habitats": [],
+                "nomenclaturalStatus": [],
+                "threatStatuses": [
+                  "DATA_DEFICIENT"
+                ],
+                "descriptions": [],
+                "vernacularNames": [],
+                "synonym": false,
+                "higherClassificationMap": {
+                  "340231984": "PLANTAE",
+                  "340233373": "TRACHEOPHYTA",
+                  "340233498": "MAGNOLIOPSIDA",
+                  "340237154": "ZYGOPHYLLALES",
+                  "340237155": "ZYGOPHYLLACEAE",
+                  "340237162": "Zygophyllum"
+                },
+                "class": "MAGNOLIOPSIDA"
+              }
+            ],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [
+        176812626
+      ],
+      "decision": "Категория точной принятой записи IUCN checklist через GBIF; год индивидуальной оценки неизвестен, year:null."
+    },
+    {
+      "candidateId": "hedysarum-chaitocarpum",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Hedysarum chaitocarpum",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Hedysarum%20chaitocarpum&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "sclerotiaria-pentaceros",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Sclerotiaria pentaceros",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Sclerotiaria%20pentaceros&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "bupleurum-rosulare",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Bupleurum rosulare",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Bupleurum%20rosulare&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "seseli-korshinskyi",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Seseli korshinskyi",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Seseli%20korshinskyi&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "seseli-eryngioides",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Seseli eryngioides",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Seseli%20eryngioides&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "cnidiocarpa-alaica",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Cnidiocarpa alaica",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Cnidiocarpa%20alaica&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "hyalolaena-intermedia",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Hyalolaena intermedia",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Hyalolaena%20intermedia&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "acantholimon-compactum",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Acantholimon compactum",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Acantholimon%20compactum&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "pastinacopsis-glacialis",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Pastinacopsis glacialis",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Pastinacopsis%20glacialis&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "kaufmannia-semenovii",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Kaufmannia semenovii",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Kaufmannia%20semenovii&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "scutellaria-andrachnoides",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Scutellaria andrachnoides",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Scutellaria%20andrachnoides&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "nathaliella-alaica",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Nathaliella alaica",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Nathaliella%20alaica&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "salvia-korolkowii",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Salvia korolkowii",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Salvia%20korolkowii&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 5,
+            "results": [
+              {
+                "key": 258108136,
+                "datasetKey": "19491596-35ae-4a91-9a98-85cf505f1bd3",
+                "nubKey": 3898694,
+                "parentKey": 340234811,
+                "parent": "Salvia",
+                "kingdom": "PLANTAE",
+                "phylum": "TRACHEOPHYTA",
+                "order": "LAMIALES",
+                "family": "LAMIACEAE",
+                "genus": "Salvia",
+                "species": "Salvia korolkowii",
+                "kingdomKey": 340231984,
+                "phylumKey": 340233373,
+                "classKey": 340233498,
+                "orderKey": 340233730,
+                "familyKey": 340234743,
+                "genusKey": 340234811,
+                "speciesKey": 258108136,
+                "scientificName": "Salvia korolkowii Regel & Schmalh.",
+                "canonicalName": "Salvia korolkowii",
+                "authorship": "Regel & Schmalh.",
+                "nameType": "SCIENTIFIC",
+                "taxonomicStatus": "ACCEPTED",
+                "rank": "SPECIES",
+                "origin": "SOURCE",
+                "numDescendants": 0,
+                "numOccurrences": 0,
+                "taxonID": "217557065",
+                "habitats": [],
+                "nomenclaturalStatus": [],
+                "threatStatuses": [
+                  "VULNERABLE"
+                ],
+                "descriptions": [],
+                "vernacularNames": [
+                  {
+                    "vernacularName": "Корольков сәлбен",
+                    "language": "kaz"
+                  },
+                  {
+                    "vernacularName": "Шалфей Королькова",
+                    "language": "rus"
+                  },
+                  {
+                    "vernacularName": "Корольков мармараги",
+                    "language": "uzb"
+                  }
+                ],
+                "synonym": false,
+                "higherClassificationMap": {
+                  "340231984": "PLANTAE",
+                  "340233373": "TRACHEOPHYTA",
+                  "340233498": "MAGNOLIOPSIDA",
+                  "340233730": "LAMIALES",
+                  "340234743": "LAMIACEAE",
+                  "340234811": "Salvia"
+                },
+                "class": "MAGNOLIOPSIDA"
+              },
+              {
+                "key": 258108143,
+                "datasetKey": "19491596-35ae-4a91-9a98-85cf505f1bd3",
+                "nubKey": 3898694,
+                "parentKey": 311027,
+                "parent": "Salvia",
+                "acceptedKey": 258108136,
+                "accepted": "Salvia korolkowii Regel & Schmalh.",
+                "kingdom": "PLANTAE",
+                "phylum": "TRACHEOPHYTA",
+                "order": "LAMIALES",
+                "family": "LAMIACEAE",
+                "genus": "Salvia",
+                "species": "Salvia korolkowii",
+                "kingdomKey": 340231984,
+                "phylumKey": 340233373,
+                "classKey": 340233498,
+                "orderKey": 340233730,
+                "familyKey": 340234743,
+                "genusKey": 340234811,
+                "speciesKey": 258108136,
+                "scientificName": "Salvia korolkowi Regel & Schmalh. [orth. error]",
+                "canonicalName": "Salvia korolkowi",
+                "authorship": "Regel & Schmalh. [orth. error]",
+                "nameType": "SCIENTIFIC",
+                "taxonomicStatus": "SYNONYM",
+                "origin": "SOURCE",
+                "numDescendants": 0,
+                "numOccurrences": 0,
+                "taxonID": "217557065_2",
+                "habitats": [],
+                "nomenclaturalStatus": [],
+                "threatStatuses": [],
+                "descriptions": [],
+                "vernacularNames": [],
+                "synonym": true,
+                "higherClassificationMap": {
+                  "311027": "Salvia",
+                  "258108136": "Salvia korolkowii",
+                  "340231984": "PLANTAE",
+                  "340233373": "TRACHEOPHYTA",
+                  "340233498": "MAGNOLIOPSIDA",
+                  "340233730": "LAMIALES",
+                  "340234743": "LAMIACEAE",
+                  "340234811": "Salvia"
+                },
+                "class": "MAGNOLIOPSIDA"
+              },
+              {
+                "key": 258108141,
+                "datasetKey": "19491596-35ae-4a91-9a98-85cf505f1bd3",
+                "nubKey": 11268781,
+                "parentKey": 311027,
+                "parent": "Salvia",
+                "acceptedKey": 258108136,
+                "accepted": "Salvia korolkowii Regel & Schmalh.",
+                "kingdom": "PLANTAE",
+                "phylum": "TRACHEOPHYTA",
+                "order": "LAMIALES",
+                "family": "LAMIACEAE",
+                "genus": "Salvia",
+                "species": "Salvia korolkowii",
+                "kingdomKey": 340231984,
+                "phylumKey": 340233373,
+                "classKey": 340233498,
+                "orderKey": 340233730,
+                "familyKey": 340234743,
+                "genusKey": 340234811,
+                "speciesKey": 258108136,
+                "scientificName": "Schraderia korolkowii (Regel & Schmalh.) Pobed.",
+                "canonicalName": "Schraderia korolkowii",
+                "authorship": "(Regel & Schmalh.) Pobed.",
+                "nameType": "SCIENTIFIC",
+                "taxonomicStatus": "SYNONYM",
+                "origin": "SOURCE",
+                "numDescendants": 0,
+                "numOccurrences": 0,
+                "taxonID": "217557065_3",
+                "habitats": [],
+                "nomenclaturalStatus": [],
+                "threatStatuses": [],
+                "descriptions": [],
+                "vernacularNames": [],
+                "synonym": true,
+                "higherClassificationMap": {
+                  "311027": "Salvia",
+                  "258108136": "Salvia korolkowii",
+                  "340231984": "PLANTAE",
+                  "340233373": "TRACHEOPHYTA",
+                  "340233498": "MAGNOLIOPSIDA",
+                  "340233730": "LAMIALES",
+                  "340234743": "LAMIACEAE",
+                  "340234811": "Salvia"
+                },
+                "class": "MAGNOLIOPSIDA"
+              },
+              {
+                "key": 258108145,
+                "datasetKey": "19491596-35ae-4a91-9a98-85cf505f1bd3",
+                "nubKey": 11283458,
+                "parentKey": 311027,
+                "parent": "Salvia",
+                "acceptedKey": 258108136,
+                "accepted": "Salvia korolkowii Regel & Schmalh.",
+                "kingdom": "PLANTAE",
+                "phylum": "TRACHEOPHYTA",
+                "order": "LAMIALES",
+                "family": "LAMIACEAE",
+                "genus": "Salvia",
+                "species": "Salvia korolkowii",
+                "kingdomKey": 340231984,
+                "phylumKey": 340233373,
+                "classKey": 340233498,
+                "orderKey": 340233730,
+                "familyKey": 340234743,
+                "genusKey": 340234811,
+                "speciesKey": 258108136,
+                "scientificName": "Arischrada korolkowii (Regel & Schmalh.) Pobed.",
+                "canonicalName": "Arischrada korolkowii",
+                "authorship": "(Regel & Schmalh.) Pobed.",
+                "nameType": "SCIENTIFIC",
+                "taxonomicStatus": "SYNONYM",
+                "origin": "SOURCE",
+                "numDescendants": 0,
+                "numOccurrences": 0,
+                "taxonID": "217557065_1",
+                "habitats": [],
+                "nomenclaturalStatus": [],
+                "threatStatuses": [],
+                "descriptions": [],
+                "vernacularNames": [],
+                "synonym": true,
+                "higherClassificationMap": {
+                  "311027": "Salvia",
+                  "258108136": "Salvia korolkowii",
+                  "340231984": "PLANTAE",
+                  "340233373": "TRACHEOPHYTA",
+                  "340233498": "MAGNOLIOPSIDA",
+                  "340233730": "LAMIALES",
+                  "340234743": "LAMIACEAE",
+                  "340234811": "Salvia"
+                },
+                "class": "MAGNOLIOPSIDA"
+              },
+              {
+                "key": 258108139,
+                "datasetKey": "19491596-35ae-4a91-9a98-85cf505f1bd3",
+                "nubKey": 11354462,
+                "parentKey": 311027,
+                "parent": "Salvia",
+                "acceptedKey": 258108136,
+                "accepted": "Salvia korolkowii Regel & Schmalh.",
+                "kingdom": "PLANTAE",
+                "phylum": "TRACHEOPHYTA",
+                "order": "LAMIALES",
+                "family": "LAMIACEAE",
+                "genus": "Salvia",
+                "species": "Salvia korolkowii",
+                "kingdomKey": 340231984,
+                "phylumKey": 340233373,
+                "classKey": 340233498,
+                "orderKey": 340233730,
+                "familyKey": 340234743,
+                "genusKey": 340234811,
+                "speciesKey": 258108136,
+                "scientificName": "Stiefia korolkowii (Regel & Schmalh.) Soják",
+                "canonicalName": "Stiefia korolkowii",
+                "authorship": "(Regel & Schmalh.) Soják",
+                "nameType": "SCIENTIFIC",
+                "taxonomicStatus": "SYNONYM",
+                "origin": "SOURCE",
+                "numDescendants": 0,
+                "numOccurrences": 0,
+                "taxonID": "217557065_4",
+                "habitats": [],
+                "nomenclaturalStatus": [],
+                "threatStatuses": [],
+                "descriptions": [],
+                "vernacularNames": [],
+                "synonym": true,
+                "higherClassificationMap": {
+                  "311027": "Salvia",
+                  "258108136": "Salvia korolkowii",
+                  "340231984": "PLANTAE",
+                  "340233373": "TRACHEOPHYTA",
+                  "340233498": "MAGNOLIOPSIDA",
+                  "340233730": "LAMIALES",
+                  "340234743": "LAMIACEAE",
+                  "340234811": "Salvia"
+                },
+                "class": "MAGNOLIOPSIDA"
+              }
+            ],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [
+        258108136
+      ],
+      "decision": "Категория точной принятой записи IUCN checklist через GBIF; год индивидуальной оценки неизвестен, year:null."
+    },
+    {
+      "candidateId": "scutellaria-nepetoides",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Scutellaria nepetoides",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Scutellaria%20nepetoides&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "lonicera-paradoxa",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Lonicera paradoxa",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Lonicera%20paradoxa&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 1,
+            "results": [
+              {
+                "key": 176773827,
+                "datasetKey": "19491596-35ae-4a91-9a98-85cf505f1bd3",
+                "nubKey": 5599068,
+                "parentKey": 340235072,
+                "parent": "Lonicera",
+                "kingdom": "PLANTAE",
+                "phylum": "TRACHEOPHYTA",
+                "order": "DIPSACALES",
+                "family": "CAPRIFOLIACEAE",
+                "genus": "Lonicera",
+                "species": "Lonicera paradoxa",
+                "kingdomKey": 340231984,
+                "phylumKey": 340233373,
+                "classKey": 340233498,
+                "orderKey": 340235056,
+                "familyKey": 340235057,
+                "genusKey": 340235072,
+                "speciesKey": 176773827,
+                "scientificName": "Lonicera paradoxa Pojark.",
+                "canonicalName": "Lonicera paradoxa",
+                "authorship": "Pojark.",
+                "nameType": "SCIENTIFIC",
+                "taxonomicStatus": "ACCEPTED",
+                "rank": "SPECIES",
+                "origin": "SOURCE",
+                "numDescendants": 0,
+                "numOccurrences": 0,
+                "taxonID": "63475",
+                "habitats": [],
+                "nomenclaturalStatus": [],
+                "threatStatuses": [
+                  "ENDANGERED"
+                ],
+                "descriptions": [],
+                "vernacularNames": [],
+                "synonym": false,
+                "higherClassificationMap": {
+                  "340231984": "PLANTAE",
+                  "340233373": "TRACHEOPHYTA",
+                  "340233498": "MAGNOLIOPSIDA",
+                  "340235056": "DIPSACALES",
+                  "340235057": "CAPRIFOLIACEAE",
+                  "340235072": "Lonicera"
+                },
+                "class": "MAGNOLIOPSIDA"
+              }
+            ],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [
+        176773827
+      ],
+      "decision": "Категория точной принятой записи IUCN checklist через GBIF; год индивидуальной оценки неизвестен, year:null."
+    },
+    {
+      "candidateId": "lamyropappus-schakaptaricus",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Lamyropappus schakaptaricus",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Lamyropappus%20schakaptaricus&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "campanula-eugeniae",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Campanula eugeniae",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Campanula%20eugeniae&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "trichanthemis-aulieatensis",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Trichanthemis aulieatensis",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Trichanthemis%20aulieatensis&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "trichanthemis-aurea",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Trichanthemis aurea",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Trichanthemis%20aurea&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    },
+    {
+      "candidateId": "lepidolopha-komarowii",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Lepidolopha komarowii",
+          "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Lepidolopha%20komarowii&limit=10",
+          "httpStatus": 200,
+          "data": {
+            "offset": 0,
+            "limit": 10,
+            "endOfRecords": true,
+            "count": 0,
+            "results": [],
+            "facets": []
+          }
+        }
+      ],
+      "exactAcceptedKeys": [],
+      "decision": "Точная принятая запись не найдена в ограниченном поиске; category/year:null. Это не доказательство NE."
+    }
+  ]
+}

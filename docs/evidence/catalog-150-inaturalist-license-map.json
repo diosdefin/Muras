@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "accessedAt": "2026-10-16",
+  "url": "https://raw.githubusercontent.com/inaturalist/inaturalist/2c2bec7eee618a3c7ec8b984c16ac3d457a19985/app/models/shared/license_module.rb",
+  "httpStatus": 200,
+  "sha256": "4f13be6e7aaf8f93d910b764463ce42449abccea21de9a6535e606a60f964965",
+  "photoPageHtmlStatus": 403,
+  "method": "Per-image photo.license_code and attribution from primary iNaturalist API; URL/version mapping from official fixed-commit LicenseModule.",
+  "ccVersion": "4.0",
+  "photoCodeMapping": {
+    "cc-by": {
+      "license": "CC BY 4.0",
+      "url": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "cc-by-sa": {
+      "license": "CC BY-SA 4.0",
+      "url": "https://creativecommons.org/licenses/by-sa/4.0/"
+    }
+  },
+  "sourceExcerpt": "CC_VERSION = \"4.0\""
+}

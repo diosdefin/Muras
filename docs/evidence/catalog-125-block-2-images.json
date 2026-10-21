@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "receipts": [
+    {
+      "candidateId": "zygophyllum-kaschgaricum",
+      "status": "prepared",
+      "reason": null,
+      "imageType": "field_photograph",
+      "documentedTaxon": "Zygophyllum kaschgaricum Boriss.",
+      "gbifOccurrenceKey": 5282335953,
+      "metadata": {
+        "accessedAt": "2026-10-16",
+        "sourceLanguage": "en",
+        "description": "Zygophyllum kaschgaricum Boriss.",
+        "originalSha256": "7887325a83939bdd5e778992caadbf0b529bbe9cb0db3796731d96151173499d",
+        "media": {
+          "type": "StillImage",
+          "format": "image/jpeg",
+          "references": "https://www.inaturalist.org/photos/545676788",
+          "created": "2025-07-31T18:35:57.000+00:00",
+          "creator": "Urgamal Magsar",
+          "publisher": "iNaturalist",
+          "license": "http://creativecommons.org/licenses/by/4.0/",
+          "rightsHolder": "Urgamal Magsar",
+          "identifier": "https://inaturalist-open-data.s3.amazonaws.com/photos/545676788/original.jpg"
+        },
+        "primary": {
+          "url": "https://www.inaturalist.org/photos/545676788",
+          "accessedAt": "2026-10-16",
+          "apiUrl": "https://api.inaturalist.org/v1/observations/302776604",
+          "httpStatus": 200,
+          "sha256": "e2cc153a0986ab46e9374baaeb7be7ddc249e07cc3841ebea19eaa6e602e6b11",
+          "observationId": 302776604,
+          "taxon": {
+            "id": 444984,
+            "name": "Zygophyllum kaschgaricum"
+          },
+          "photo": {
+            "id": 545676788,
+            "license_code": "cc-by",
+            "original_dimensions": {
+              "width": 1536,
+              "height": 2048
+            },
+            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/545676788/square.jpg",
+            "attribution": "(c) Urgamal Magsar, some rights reserved (CC BY)",
+            "flags": [],
+            "moderator_actions": [],
+            "hidden": false
+          }
+        },
+        "collectionCitation": "(c) Urgamal Magsar, some rights reserved (CC BY)"
+      },
+      "image": {
+        "path": "assets/images/species/zygophyllum-kaschgaricum.webp",
+        "width": 1350,
+        "height": 1800,
+        "sha256": "8d1ce4bc22ce9b596458088fe4a5b7951f6d75d7057edb5197ac45a1f35ecd2c",
+        "author": "Urgamal Magsar",
+        "originalPage": "https://www.inaturalist.org/photos/545676788",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Urgamal Magsar; Urgamal Magsar; Фото растения; CC BY 4.0. (c) Urgamal Magsar, some rights reserved (CC BY)",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px, WebP quality 82; удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Фотография растения. Zygophyllum kaschgaricum. Изображение не подтверждает современную встречаемость в Кыргызстане.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-16",
+        "method": "Просмотр локального WebP и этикетки/метаданных; независимая идентификация специалистом pending",
+        "independentTaxonomicReview": "pending"
+      }
+    },
+    {
+      "candidateId": "sclerotiaria-pentaceros",
+      "status": "placeholder",
+      "reason": "Национальный очерк предупреждает о сомнительных сборах; изображения нетиповых образцов требуют экспертной сверки"
+    },
+    {
+      "candidateId": "bupleurum-rosulare",
+      "status": "prepared",
+      "reason": null,
+      "imageType": "herbarium_specimen",
+      "documentedTaxon": "Bupleurum rosulare Korovin ex Pimenov & Sdobnina",
+      "gbifOccurrenceKey": 1799030317,
+      "metadata": {
+        "accessedAt": "2026-10-16",
+        "sourceLanguage": "ru",
+        "description": "Scan of Bupleurum rosulare Korovin ex Pimenov & Sdobnina (Володушка розеточная) from Kyrgyzstan deposited in the Moscow University Herbarium (MW0858624)",
+        "originalSha256": "6559ee4a00b6a624f364d6b4fafbb2b8231dc9715bdc6c21ffa0794665effbfa",
+        "media": {
+          "type": "StillImage",
+          "format": "image/jpg",
+          "references": "https://plant.depo.msu.ru/open/public/item/MW0858624",
+          "title": "Bupleurum rosulare Korovin ex Pimenov & Sdobnina (Володушка розеточная), Moscow University Herbarium",
+          "description": "Scan of Bupleurum rosulare Korovin ex Pimenov & Sdobnina (Володушка розеточная) from Kyrgyzstan deposited in the Moscow University Herbarium (MW0858624)",
+          "creator": "ELAR corporation (Moscow, Russia)",
+          "publisher": "Moscow State University",
+          "license": "http://creativecommons.org/licenses/by/4.0/",
+          "rightsHolder": "Moscow State University (copyright is managed by Dr. Alexey P. Seregin)",
+          "identifier": "https://plant.depo.msu.ru/open/public/item/MW0858624/img/0.jpg?gbif"
+        },
+        "primary": {
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0858624",
+          "accessedAt": "2026-10-16",
+          "httpStatus": 200,
+          "sha256": "dc1e345af1426dd963ad38d89e1b4fd842649d92605f12b780768735050f9109",
+          "title": "MW0858624, Bupleurum rosulare (Володушка розеточная), specimen",
+          "licenseStatement": "Лицензия CC-BY 4.0 (см. рекомендованное цитирование в \"Полной карточке\", раздел \"Цитировать для публикации\") Хочешь принять участие в создании \"Атласа флоры России\"? Загружай свои фотографии растени",
+          "fullCard": {
+            "url": "https://plant.depo.msu.ru/open/module/itempublic?d=P&openparams=%5Bopen-id%3D101526968%5D",
+            "httpStatus": 200,
+            "sha256": "db117825bbe58e9a92c4463af1bafe8c7c89271bb582c80cdf3c7ee6f7119725",
+            "citationSection": ""
+          }
+        },
+        "collectionCitation": " Серегин А. П. (ред.) Цифровой гербарий МГУ. М.: МГУ, 2026; MW0858624. https://plant.depo.msu.ru/open/public/item/MW0858624 (16.10.2026)."
+      },
+      "image": {
+        "path": "assets/images/species/bupleurum-rosulare.webp",
+        "width": 1256,
+        "height": 1800,
+        "sha256": "af364b6a52b5fa0788468a75ffbf560d8d27042e53033f15d219c34e7fc557c6",
+        "author": "ELAR corporation (Moscow, Russia)",
+        "originalPage": "https://plant.depo.msu.ru/open/public/item/MW0858624",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "ELAR corporation (Moscow, Russia); Moscow State University (copyright is managed by Dr. Alexey P. Seregin); Гербарный образец MW0858624; CC BY 4.0.  Серегин А. П. (ред.) Цифровой гербарий МГУ. М.: МГУ, 2026; MW0858624. https://plant.depo.msu.ru/open/public/item/MW0858624 (16.10.2026).",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px, WebP quality 82; удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Гербарный образец MW0858624. Bupleurum rosulare. Изображение не подтверждает современную встречаемость в Кыргызстане.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-16",
+        "method": "Просмотр локального WebP и этикетки/метаданных; независимая идентификация специалистом pending",
+        "independentTaxonomicReview": "pending"
+      }
+    },
+    {
+      "candidateId": "hyalolaena-intermedia",
+      "status": "prepared",
+      "reason": null,
+      "imageType": "herbarium_specimen",
+      "documentedTaxon": "Hyalolaena intermedia Pimenov & Kljuykov",
+      "gbifOccurrenceKey": 1799033091,
+      "metadata": {
+        "accessedAt": "2026-10-16",
+        "sourceLanguage": "ru",
+        "description": "Scan of Hyalolaena intermedia Pimenov & Kljuykov (Гиалолена промежуточная) from Kyrgyzstan deposited in the Moscow University Herbarium (MW0861361)",
+        "originalSha256": "890860dab21e04fb6b6cbdbb3e2db0d4d49cdb9603086f29bb966d8175217558",
+        "media": {
+          "type": "StillImage",
+          "format": "image/jpg",
+          "references": "https://plant.depo.msu.ru/open/public/item/MW0861361",
+          "title": "Hyalolaena intermedia Pimenov & Kljuykov (Гиалолена промежуточная), Moscow University Herbarium",
+          "description": "Scan of Hyalolaena intermedia Pimenov & Kljuykov (Гиалолена промежуточная) from Kyrgyzstan deposited in the Moscow University Herbarium (MW0861361)",
+          "creator": "ELAR corporation (Moscow, Russia)",
+          "publisher": "Moscow State University",
+          "license": "http://creativecommons.org/licenses/by/4.0/",
+          "rightsHolder": "Moscow State University (copyright is managed by Dr. Alexey P. Seregin)",
+          "identifier": "https://plant.depo.msu.ru/open/public/item/MW0861361/img/0.jpg?gbif"
+        },
+        "primary": {
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0861361",
+          "accessedAt": "2026-10-16",
+          "httpStatus": 200,
+          "sha256": "6a667e3e9351fc03dba8dc4c133f9022b62a2583826f7f03422dd9246b98abb4",
+          "title": "MW0861361, Hyalolaena intermedia (Гиалолена промежуточная), specimen",
+          "licenseStatement": "Лицензия CC-BY 4.0 (см. рекомендованное цитирование в \"Полной карточке\", раздел \"Цитировать для публикации\") Хочешь принять участие в создании \"Атласа флоры России\"? Загружай свои фотографии растени",
+          "fullCard": {
+            "url": "https://plant.depo.msu.ru/open/module/itempublic?d=P&openparams=%5Bopen-id%3D101573882%5D",
+            "httpStatus": 200,
+            "sha256": "f279c3e20964bafc26658646da3a8d787e7e67947f0e65831982c246971b5fb3",
+            "citationSection": ""
+          }
+        },
+        "collectionCitation": " Серегин А. П. (ред.) Цифровой гербарий МГУ. М.: МГУ, 2026; MW0861361. https://plant.depo.msu.ru/open/public/item/MW0861361 (16.10.2026)."
+      },
+      "image": {
+        "path": "assets/images/species/hyalolaena-intermedia.webp",
+        "width": 1243,
+        "height": 1800,
+        "sha256": "1cfdab01742ff9287b19a9a5877b925ccf4540ac7dddee5e3f96fa0ef98dbb05",
+        "author": "ELAR corporation (Moscow, Russia)",
+        "originalPage": "https://plant.depo.msu.ru/open/public/item/MW0861361",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "ELAR corporation (Moscow, Russia); Moscow State University (copyright is managed by Dr. Alexey P. Seregin); Гербарный образец MW0861361; CC BY 4.0.  Серегин А. П. (ред.) Цифровой гербарий МГУ. М.: МГУ, 2026; MW0861361. https://plant.depo.msu.ru/open/public/item/MW0861361 (16.10.2026).",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px, WebP quality 82; удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Гербарный образец MW0861361. Hyalolaena intermedia. Изображение не подтверждает современную встречаемость в Кыргызстане.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-16",
+        "method": "Просмотр локального WebP и этикетки/метаданных; независимая идентификация специалистом pending",
+        "independentTaxonomicReview": "pending"
+      }
+    },
+    {
+      "candidateId": "seseli-eryngioides",
+      "status": "prepared",
+      "reason": null,
+      "imageType": "herbarium_specimen",
+      "documentedTaxon": "Seseli eryngioides (Korovin) Pimenov & V.N.Tikhom.",
+      "gbifOccurrenceKey": 1799032017,
+      "metadata": {
+        "accessedAt": "2026-10-16",
+        "sourceLanguage": "ru",
+        "description": "Scan of Seseli eryngioides (Korovin) Pimenov & V.N.Tikhom. (Жабрица синеголовниковая) from Kyrgyzstan deposited in the Moscow University Herbarium (MW0860309)",
+        "originalSha256": "bb90f3cef84e6adb25e7111a2454f948c01755f685bbfaa3be922fc27f4ca3ff",
+        "media": {
+          "type": "StillImage",
+          "format": "image/jpg",
+          "references": "https://plant.depo.msu.ru/open/public/item/MW0860309",
+          "title": "Seseli eryngioides (Korovin) Pimenov & V.N.Tikhom. (Жабрица синеголовниковая), Moscow University Herbarium",
+          "description": "Scan of Seseli eryngioides (Korovin) Pimenov & V.N.Tikhom. (Жабрица синеголовниковая) from Kyrgyzstan deposited in the Moscow University Herbarium (MW0860309)",
+          "creator": "ELAR corporation (Moscow, Russia)",
+          "publisher": "Moscow State University",
+          "license": "http://creativecommons.org/licenses/by/4.0/",
+          "rightsHolder": "Moscow State University (copyright is managed by Dr. Alexey P. Seregin)",
+          "identifier": "https://plant.depo.msu.ru/open/public/item/MW0860309/img/0.jpg?gbif"
+        },
+        "primary": {
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0860309",
+          "accessedAt": "2026-10-16",
+          "httpStatus": 200,
+          "sha256": "02a61df35006404cf5b44be869dc6167dea29226b4aa0ad89b9ee4b5d8f894fe",
+          "title": "MW0860309, Seseli eryngioides (Жабрица синеголовниковая), specimen",
+          "licenseStatement": "Лицензия CC-BY 4.0 (см. рекомендованное цитирование в \"Полной карточке\", раздел \"Цитировать для публикации\") Хочешь принять участие в создании \"Атласа флоры России\"? Загружай свои фотографии растени",
+          "fullCard": {
+            "url": "https://plant.depo.msu.ru/open/module/itempublic?d=P&openparams=%5Bopen-id%3D101556111%5D",
+            "httpStatus": 200,
+            "sha256": "77842ea5e009f5a2aee46c6ec0cb02a0bde228961d5c2d9297a5421ba86eceab",
+            "citationSection": ""
+          }
+        },
+        "collectionCitation": " Серегин А. П. (ред.) Цифровой гербарий МГУ. М.: МГУ, 2026; MW0860309. https://plant.depo.msu.ru/open/public/item/MW0860309 (16.10.2026)."
+      },
+      "image": {
+        "path": "assets/images/species/seseli-eryngioides.webp",
+        "width": 1257,
+        "height": 1800,
+        "sha256": "7372f98d3faa098f35be8b726932639db15fef2b48f60fd159978e6efdbf373f",
+        "author": "ELAR corporation (Moscow, Russia)",
+        "originalPage": "https://plant.depo.msu.ru/open/public/item/MW0860309",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "ELAR corporation (Moscow, Russia); Moscow State University (copyright is managed by Dr. Alexey P. Seregin); Гербарный образец MW0860309; CC BY 4.0.  Серегин А. П. (ред.) Цифровой гербарий МГУ. М.: МГУ, 2026; MW0860309. https://plant.depo.msu.ru/open/public/item/MW0860309 (16.10.2026).",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px, WebP quality 82; удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Гербарный образец MW0860309. Seseli eryngioides. Изображение не подтверждает современную встречаемость в Кыргызстане.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-16",
+        "method": "Просмотр локального WebP и этикетки/метаданных; независимая идентификация специалистом pending",
+        "independentTaxonomicReview": "pending"
+      }
+    }
+  ]
+}

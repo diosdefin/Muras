@@ -1,0 +1,2993 @@
+{
+  "schemaVersion": 1,
+  "documentType": "bulk-research-registry",
+  "registryId": "catalog-125-research",
+  "batchSize": 5,
+  "candidates": [
+    {
+      "originalScientificName": "Silene sussamyrica",
+      "acceptedScientificName": "Silene sussamyrica",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Silene sussamyrica",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:8240880",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Silene sussamyrica, с. 105",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=105",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Silene sussamyrica Lazkov",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Silene%20sussamyrica",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:8240880"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "silene-sussamyrica",
+      "nationalSourceRecords": [
+        "book-2006-104"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          104,
+          105
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-104",
+        "requestedName": "Silene sussamyrica",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Iskandera alaica",
+      "acceptedScientificName": "Iskandera alaica",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Iskandera alaica",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3044433",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Iskandera alaica, с. 121",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=121",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-34",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Iskandera alaica (Korsh.) Botsch. & Vved.",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Iskandera%20alaica",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:3044433"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "iskandera-alaica",
+      "nationalSourceRecords": [
+        "book-2006-120",
+        "decree-170-2009-1-34"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          120,
+          121
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-120",
+        "requestedName": "Iskandera alaica",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Spiraeanthus schrenkianus",
+      "acceptedScientificName": "Spiraeanthus schrenckianus",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Spiraeanthus schrenckianus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3853299",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; Таволгоцвет Шренка, с. 129",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=129",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Spiraeanthus schrenckianus (C.A.Mey.) Maxim.",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Spiraeanthus%20schrenckianus",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:3853299"
+        },
+        {
+          "id": "gbif-synonym",
+          "title": "GBIF Backbone: историческое имя Spiraeanthus schrenkianus → Spiraeanthus schrenckianus",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Spiraeanthus%20schrenkianus",
+          "language": "en",
+          "accessedAt": "2026-10-16",
+          "supports": [
+            "originalScientificName",
+            "scientificName",
+            "content.overview"
+          ],
+          "notes": "EXACT SYNONYM, acceptedUsageKey 3853299; принятие проверено отдельным EXACT ACCEPTED того же ранга."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление №170 (2005), редакция №471 (2009); decree-170-2009-1-44",
+          "publisher": "Правительство КР; копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ]
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "spiraeanthus-schrenkianus",
+      "nationalSourceRecords": [
+        "book-2006-128",
+        "decree-170-2009-1-44"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          128,
+          129
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-128",
+        "requestedName": "Spiraeanthus schrenkianus",
+        "resolution": "GBIF exact synonym acceptedUsageKey 3853299 equals exact accepted usageKey; same SPECIES rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Chesneya villosa",
+      "acceptedScientificName": "Chesneya villosa",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Chesneya villosa",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5353648",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Chesneya villosa, с. 151",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=151",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Chesneya villosa (Boriss.) Kamelin & R.M.Vinogr.",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Chesneya%20villosa",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:5353648"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "chesneya-villosa",
+      "nationalSourceRecords": [
+        "book-2006-150"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          150,
+          151
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-150",
+        "requestedName": "Chesneya villosa",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Hedysarum chaitocarpum",
+      "acceptedScientificName": "Hedysarum chaitocarpum",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Hedysarum chaitocarpum",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2960817",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Hedysarum chaitocarpum, с. 153",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=153",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-51",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Hedysarum chaitocarpum Regel & Schmalh.",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Hedysarum%20chaitocarpum",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:2960817"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "hedysarum-chaitocarpum",
+      "nationalSourceRecords": [
+        "book-2006-152",
+        "decree-170-2009-1-51"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          152,
+          153
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-152",
+        "requestedName": "Hedysarum chaitocarpum",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Zygophyllum kaschgaricum",
+      "acceptedScientificName": "Zygophyllum kaschgaricum",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Zygophyllum kaschgaricum",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3987348",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Zygophyllum kaschgaricum, с. 155",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=155",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-52",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Zygophyllum kaschgaricum Boriss.",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Zygophyllum%20kaschgaricum",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:3987348"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "zygophyllum-kaschgaricum",
+      "nationalSourceRecords": [
+        "book-2006-154",
+        "decree-170-2009-1-52"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          154,
+          155
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-154",
+        "requestedName": "Zygophyllum kaschgaricum",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Sclerotiaria pentaceros",
+      "acceptedScientificName": "Sclerotiaria pentaceros",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Sclerotiaria pentaceros",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3635755",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Sclerotiaria pentaceros, с. 159",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=159",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-98",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=7",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Sclerotiaria pentaceros (Korovin) Korovin",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Sclerotiaria%20pentaceros",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:3635755"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "sclerotiaria-pentaceros",
+      "nationalSourceRecords": [
+        "book-2006-158",
+        "decree-170-2009-1-98"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          158,
+          159
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-158",
+        "requestedName": "Sclerotiaria pentaceros",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Bupleurum rosulare",
+      "acceptedScientificName": "Bupleurum rosulare",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Bupleurum rosulare",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3636584",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Bupleurum rosulare, с. 165",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=165",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-56",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Bupleurum rosulare Korovin ex Pimenov & Sdobnina",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Bupleurum%20rosulare",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:3636584"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "bupleurum-rosulare",
+      "nationalSourceRecords": [
+        "book-2006-164",
+        "decree-170-2009-1-56"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          164,
+          165
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-164",
+        "requestedName": "Bupleurum rosulare",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Hyalolaena intermedia",
+      "acceptedScientificName": "Hyalolaena intermedia",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Hyalolaena intermedia",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3640167",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Hyalolaena intermedia, с. 167",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=167",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-57",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Hyalolaena intermedia Pimenov & Kljuykov",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Hyalolaena%20intermedia",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:3640167"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "hyalolaena-intermedia",
+      "nationalSourceRecords": [
+        "book-2006-166",
+        "decree-170-2009-1-57"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          166,
+          167
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-166",
+        "requestedName": "Hyalolaena intermedia",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Seseli eryngioides",
+      "acceptedScientificName": "Seseli eryngioides",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Seseli eryngioides",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3631410",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Seseli eryngioides, с. 169",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=169",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-59",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Seseli eryngioides (Korovin) Pimenov & V.N.Tikhom.",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Seseli%20eryngioides",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:3631410"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "seseli-eryngioides",
+      "nationalSourceRecords": [
+        "book-2006-168",
+        "decree-170-2009-1-59"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          168,
+          169
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-168",
+        "requestedName": "Seseli eryngioides",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Seseli korshinskyi",
+      "acceptedScientificName": "Seseli korshinskyi",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Seseli korshinskyi",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:8119721",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Seseli korshinskyi, с. 171",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=171",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-58",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Seseli korshinskyi (Schischk.) Pimenov",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Seseli%20korshinskyi",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:8119721"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "seseli-korshinskyi",
+      "nationalSourceRecords": [
+        "book-2006-170",
+        "decree-170-2009-1-58"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          170,
+          171
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-170",
+        "requestedName": "Seseli korshinskyi",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Cnidiocarpa alaica",
+      "acceptedScientificName": "Cnidiocarpa alaica",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Cnidiocarpa alaica",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3638564",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Cnidiocarpa alaica, с. 173",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=173",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-61",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Cnidiocarpa alaica Pimenov",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Cnidiocarpa%20alaica",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:3638564"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "cnidiocarpa-alaica",
+      "nationalSourceRecords": [
+        "book-2006-172",
+        "decree-170-2009-1-61"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          172,
+          173
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-172",
+        "requestedName": "Cnidiocarpa alaica",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Pastinacopsis glacialis",
+      "acceptedScientificName": "Pastinacopsis glacialis",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Pastinacopsis glacialis",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3634712",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Pastinacopsis glacialis, с. 177",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=177",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-62",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Pastinacopsis glacialis Golosk.",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Pastinacopsis%20glacialis",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:3634712"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "pastinacopsis-glacialis",
+      "nationalSourceRecords": [
+        "book-2006-176",
+        "decree-170-2009-1-62"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          176,
+          177
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-176",
+        "requestedName": "Pastinacopsis glacialis",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Kaufmannia semenovii",
+      "acceptedScientificName": "Kaufmannia semenovii",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Kaufmannia semenovii",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:8286447",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Kaufmannia semenovii, с. 183",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=183",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-67",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Kaufmannia semenovii (Herder) Regel",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Kaufmannia%20semenovii",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:8286447"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "kaufmannia-semenovii",
+      "nationalSourceRecords": [
+        "book-2006-182",
+        "decree-170-2009-1-67"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          182,
+          183
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-182",
+        "requestedName": "Kaufmannia semenovii",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Acantholimon compactum",
+      "acceptedScientificName": "Acantholimon compactum",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Acantholimon compactum",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:4090676",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Acantholimon compactum, с. 185",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=185",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-68",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Acantholimon compactum Korovin",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Acantholimon%20compactum",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:4090676"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "acantholimon-compactum",
+      "nationalSourceRecords": [
+        "book-2006-184",
+        "decree-170-2009-1-68"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          184,
+          185
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-184",
+        "requestedName": "Acantholimon compactum",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Scutellaria andrachnoides",
+      "acceptedScientificName": "Scutellaria andrachnoides",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Scutellaria andrachnoides",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5610043",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Scutellaria andrachnoides, с. 187",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=187",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-73",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Scutellaria andrachnoides Vved.",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Scutellaria%20andrachnoides",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:5610043"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "scutellaria-andrachnoides",
+      "nationalSourceRecords": [
+        "book-2006-186",
+        "decree-170-2009-1-73"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          186,
+          187
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-186",
+        "requestedName": "Scutellaria andrachnoides",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Scutellaria nepetoides",
+      "acceptedScientificName": "Scutellaria nepetoides",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Scutellaria nepetoides",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5608807",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Scutellaria nepetoides, с. 189",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=189",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-74",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Scutellaria nepetoides Popov ex Juz.",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Scutellaria%20nepetoides",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:5608807"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "scutellaria-nepetoides",
+      "nationalSourceRecords": [
+        "book-2006-188",
+        "decree-170-2009-1-74"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          188,
+          189
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-188",
+        "requestedName": "Scutellaria nepetoides",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Salvia korolkowii",
+      "acceptedScientificName": "Salvia korolkowii",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Salvia korolkowii",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3898694",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Salvia korolkowii, с. 195",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=195",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-71",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Salvia korolkowii Regel & Schmalh.",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Salvia%20korolkowii",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:3898694"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "salvia-korolkowii",
+      "nationalSourceRecords": [
+        "book-2006-194",
+        "decree-170-2009-1-71"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          194,
+          195
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-194",
+        "requestedName": "Salvia korolkowii",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Nathaliella alaica",
+      "acceptedScientificName": "Nathaliella alaica",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Nathaliella alaica",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3737145",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Nathaliella alaica, с. 203",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=203",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-99",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=7",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Nathaliella alaica B.Fedtsch.",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Nathaliella%20alaica",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:3737145"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "nathaliella-alaica",
+      "nationalSourceRecords": [
+        "book-2006-202",
+        "decree-170-2009-1-99"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          202,
+          203
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-202",
+        "requestedName": "Nathaliella alaica",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Lonicera paradoxa",
+      "acceptedScientificName": "Lonicera paradoxa",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Lonicera paradoxa",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5599068",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Lonicera paradoxa, с. 207",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=207",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-78",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Lonicera paradoxa Pojark.",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Lonicera%20paradoxa",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:5599068"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "lonicera-paradoxa",
+      "nationalSourceRecords": [
+        "book-2006-206",
+        "decree-170-2009-1-78"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          206,
+          207
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-206",
+        "requestedName": "Lonicera paradoxa",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Campanula eugeniae",
+      "acceptedScientificName": "Campanula eugeniae",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Campanula eugeniae",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5411287",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Campanula eugeniae, с. 209",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=209",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-79",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Campanula eugeniae Fed.",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Campanula%20eugeniae",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:5411287"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "campanula-eugeniae",
+      "nationalSourceRecords": [
+        "book-2006-208",
+        "decree-170-2009-1-79"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          208,
+          209
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-208",
+        "requestedName": "Campanula eugeniae",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Lamyropappus schakaptaricus",
+      "acceptedScientificName": "Lamyropappus schakaptaricus",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Lamyropappus schakaptaricus",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3098608",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Lamyropappus schakaptaricus, с. 211",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=211",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-84",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Lamyropappus schakaptaricus (O.Fedtsch. & B.Fedtsch.) Knorring & Tamamsch.",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Lamyropappus%20schakaptaricus",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:3098608"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "lamyropappus-schakaptaricus",
+      "nationalSourceRecords": [
+        "book-2006-210",
+        "decree-170-2009-1-84"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          210,
+          211
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-210",
+        "requestedName": "Lamyropappus schakaptaricus",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Trichanthemis aulieatensis",
+      "acceptedScientificName": "Trichanthemis aulieatensis",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Trichanthemis aulieatensis",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3150861",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Trichanthemis aulieatensis, с. 219",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=219",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-82",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Trichanthemis aulieatensis (B.Fedtsch.) Krasch.",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Trichanthemis%20aulieatensis",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:3150861"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "trichanthemis-aulieatensis",
+      "nationalSourceRecords": [
+        "book-2006-218",
+        "decree-170-2009-1-82"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          218,
+          219
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-218",
+        "requestedName": "Trichanthemis aulieatensis",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Trichanthemis aurea",
+      "acceptedScientificName": "Trichanthemis aurea",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Trichanthemis aurea",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3150867",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Trichanthemis aurea, с. 221",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=221",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-83",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Trichanthemis aurea Krasch.",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Trichanthemis%20aurea",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:3150867"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "trichanthemis-aurea",
+      "nationalSourceRecords": [
+        "book-2006-220",
+        "decree-170-2009-1-83"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          220,
+          221
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-220",
+        "requestedName": "Trichanthemis aurea",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    },
+    {
+      "originalScientificName": "Lepidolopha komarowii",
+      "acceptedScientificName": "Lepidolopha komarowii",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Lepidolopha komarowii",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5388509",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Lepidolopha komarowii, с. 225",
+          "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+          "authors": "Э. Дж. Шукуров (главный редактор)",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=225",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName"
+          ],
+          "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+        },
+        {
+          "id": "national-list-1",
+          "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-85",
+          "publisher": "Правительство КР; документальная копия FAOLEX",
+          "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6",
+          "accessedAt": "2026-10-16",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalSourceRecords"
+          ],
+          "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone: Lepidolopha komarowii C.Winkl.",
+          "publisher": "GBIF",
+          "url": "https://api.gbif.org/v1/species/match?strict=true&name=Lepidolopha%20komarowii",
+          "accessedAt": "2026-10-16",
+          "language": "en",
+          "supports": [
+            "scientificName"
+          ],
+          "taxonId": "gbif:5388509"
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/redbook-master-national-lists.json",
+          "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+        },
+        {
+          "path": "docs/evidence/catalog-125-taxonomy.json",
+          "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+        }
+      ],
+      "draft": null,
+      "id": "lepidolopha-komarowii",
+      "nationalSourceRecords": [
+        "book-2006-224",
+        "decree-170-2009-1-85"
+      ],
+      "nationalConfirmation": {
+        "confirmed": true,
+        "basis": "individually_indexed_national_account",
+        "pdfPages": [
+          224,
+          225
+        ],
+        "year": 2006,
+        "currentLegalStatus": null
+      },
+      "taxonomyResearch": {
+        "evidenceRecordId": "book-2006-224",
+        "requestedName": "Lepidolopha komarowii",
+        "resolution": "rechecked_exact_accepted_same_rank"
+      },
+      "verified": false,
+      "independentScientificReview": "pending",
+      "state": "pending",
+      "approval": null
+    }
+  ]
+}

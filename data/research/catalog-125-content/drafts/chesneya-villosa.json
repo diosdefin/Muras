@@ -1,0 +1,267 @@
+{
+  "id": "chesneya-villosa",
+  "scientificName": "Chesneya villosa",
+  "names": {
+    "ru": "Чезнея мохнатая",
+    "ky": "Chesneya villosa",
+    "uz": "Chesneya villosa",
+    "en": "Chesneya villosa"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Fabales",
+    "family": "Fabaceae",
+    "genus": "Chesneya"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "EN",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Каменистые предгорные равнины с пустынной и полупустынной растительностью.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Выпас весной и другие антропогенные воздействия указаны в очерке как лимитирующие факторы.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Засуха неблагоприятна для семенного возобновления; современные потери количественно не оценены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В книге 2006 года рекомендованы учёт популяций и введение в культуру в Ботаническом саду НАН КР.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/chesneya-villosa.webp",
+      "width": 1254,
+      "height": 1800,
+      "sha256": "c6196fb7892eb111412f2d93091bb08d8bd40eafdf1bd5f79f22f7a382ae1190",
+      "author": "ELAR corporation (Moscow, Russia)",
+      "originalPage": "https://plant.depo.msu.ru/open/public/item/MW0844262",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "ELAR corporation (Moscow, Russia); Moscow State University (copyright is managed by Dr. Alexey P. Seregin); Гербарный образец MW0844262; CC BY 4.0.  Серегин А. П. (ред.) Цифровой гербарий МГУ. М.: МГУ, 2026; MW0844262. https://plant.depo.msu.ru/open/public/item/MW0844262 (16.10.2026).",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px, WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Гербарный образец MW0844262. Chesneya villosa. Изображение не подтверждает современную встречаемость в Кыргызстане.",
+        "ky": null,
+        "uz": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Chesneya villosa, с. 151",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=151",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Chesneya villosa (Boriss.) Kamelin & R.M.Vinogr.",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Chesneya%20villosa",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz",
+        "names.en"
+      ],
+      "taxonId": "gbif:5353648"
+    },
+    {
+      "id": "photo-primary",
+      "title": "Гербарный образец: Chesneya villosa",
+      "publisher": "Moscow State University",
+      "url": "https://plant.depo.msu.ru/open/public/item/MW0844262",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "ru",
+      "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Опушённый многолетник каменистых предгорных равнин западного Прииссыккулья из Красной книги 2006 года.",
+        "ky": "Ысык-Көлдүн батышындагы таштак тоо этектеринде өскөн түктүү көп жылдык өсүмдүк. 2006-жылкы Кызыл китепке киргизилген.",
+        "uz": "Issiqkoʻlning gʻarbiy qismidagi toshloq togʻoldi tekisliklarida oʻsadigan tukli koʻp yillik oʻsimlik. 2006-yilgi Qizil kitobga kiritilgan.",
+        "en": "A hairy perennial of stony piedmont plains in western Issyk-Kul, included in the 2006 Red Data Book."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Опушённый многолетник каменистых предгорных равнин западного Прииссыккулья из Красной книги 2006 года. Национальный очерк 2006 года содержит следующие сведения. Исторический очерк связывает редкость растения с антропогенной нагрузкой и слабым возобновлением при засухе. Данных об успешном выращивании в культуре в использованном издании нет. По изданию 2006 года размножение семенное; цветение в июле, плодоношение в августе. Историческая область находок в книге — западная часть Иссык-Кульской котловины. Современные границы распространения не установлены этим исследованием. Выпас весной и другие антропогенные воздействия указаны в очерке как лимитирующие факторы. Засуха неблагоприятна для семенного возобновления; современные потери количественно не оценены. В книге 2006 года рекомендованы учёт популяций и введение в культуру в Ботаническом саду НАН КР.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Многолетняя трава с густым мохнатым опушением, мощным стержневым корнем и стелющимися стеблями. Листья непарноперистые, цветоносы несут по одному красному цветку; бобы продолговатые.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический очерк связывает редкость растения с антропогенной нагрузкой и слабым возобновлением при засухе. Данных об успешном выращивании в культуре в использованном издании нет.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По изданию 2006 года размножение семенное; цветение в июле, плодоношение в августе.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Историческая область находок в книге — западная часть Иссык-Кульской котловины. Современные границы распространения не установлены этим исследованием.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

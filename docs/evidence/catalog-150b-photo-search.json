@@ -1,0 +1,709 @@
+{
+  "schemaVersion": 1,
+  "records": [
+    {
+      "candidateId": "gazella-subgutturosa",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Gazella subgutturosa",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Gazella+subgutturosa%22&gsrnamespace=6&gsrlimit=3&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids%7Ccontent&rvslots=main",
+          "httpStatus": 200,
+          "data": {
+            "batchcomplete": "",
+            "continue": {
+              "gsroffset": 3,
+              "continue": "gsroffset||"
+            },
+            "query": {
+              "pages": {
+                "6409401": {
+                  "pageid": 6409401,
+                  "ns": 6,
+                  "title": "File:Kuhertajagaselli Korkeasaari.jpg",
+                  "index": 2,
+                  "imagerepository": "local",
+                  "imageinfo": [
+                    {
+                      "size": 1861975,
+                      "width": 2612,
+                      "height": 2292,
+                      "url": "https://upload.wikimedia.org/wikipedia/commons/2/22/Kuhertajagaselli_Korkeasaari.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Kuhertajagaselli_Korkeasaari.jpg",
+                      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=6409401",
+                      "extmetadata": {
+                        "DateTime": {
+                          "value": "2009-04-03 15:53:52",
+                          "source": "mediawiki-metadata",
+                          "hidden": ""
+                        },
+                        "ObjectName": {
+                          "value": "Kuhertajagaselli Korkeasaari",
+                          "source": "mediawiki-metadata"
+                        },
+                        "CommonsMetadataExtension": {
+                          "value": 1.2,
+                          "source": "extension",
+                          "hidden": ""
+                        },
+                        "Categories": {
+                          "value": "Self-published work|PD-self|Gazella subgutturosa in zoos|Artiodactyla in Korkeasaari",
+                          "source": "commons-categories",
+                          "hidden": ""
+                        },
+                        "Assessments": {
+                          "value": "",
+                          "source": "commons-categories",
+                          "hidden": ""
+                        },
+                        "ImageDescription": {
+                          "value": "Goitered Gazelle (<i>Gazella subgutturosa</i>) at Korkeasaari Zoo.",
+                          "source": "commons-desc-page"
+                        },
+                        "DateTimeOriginal": {
+                          "value": "2009",
+                          "source": "commons-desc-page"
+                        },
+                        "Credit": {
+                          "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                          "source": "commons-desc-page"
+                        },
+                        "Artist": {
+                          "value": "<a href=\"//commons.wikimedia.org/wiki/User:Kallerna\" title=\"User:Kallerna\">kallerna</a>",
+                          "source": "commons-desc-page"
+                        },
+                        "LicenseShortName": {
+                          "value": "Public domain",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "UsageTerms": {
+                          "value": "Public domain",
+                          "source": "commons-desc-page"
+                        },
+                        "AttributionRequired": {
+                          "value": "false",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "Copyrighted": {
+                          "value": "False",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "Restrictions": {
+                          "value": "",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "License": {
+                          "value": "pd",
+                          "source": "commons-templates",
+                          "hidden": ""
+                        }
+                      }
+                    }
+                  ],
+                  "revisions": [
+                    {
+                      "revid": 1253703615,
+                      "parentid": 1027870284,
+                      "slots": {
+                        "main": {
+                          "contentmodel": "wikitext",
+                          "contentformat": "text/x-wiki",
+                          "*": "== {{int:filedesc}} ==\n{{Information\n|Description={{en|1=Goitered Gazelle (''Gazella subgutturosa'') at Korkeasaari Zoo.}}\n{{fi|1=Kuhertajagaselli (''Gazella subgutturosa'') Korkeasaaressa.}}\n|Source={{Own}}\n|Author=[[User:Kallerna|kallerna]]\n|Date=2009\n|Permission=\n|other_versions=\n}}\n\n== {{int:license-header}} ==\n{{PD-self}}\n\n[[Category:Gazella subgutturosa in zoos]]\n[[Category:Artiodactyla in Korkeasaari|Gazella subgutturosa]]"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "74819513": {
+                  "pageid": 74819513,
+                  "ns": 6,
+                  "title": "File:Female goitered gazelle, Shirvan National Park, Azerbaijan.jpg",
+                  "index": 1,
+                  "imagerepository": "local",
+                  "imageinfo": [
+                    {
+                      "size": 10576611,
+                      "width": 5000,
+                      "height": 3759,
+                      "url": "https://upload.wikimedia.org/wikipedia/commons/3/32/Female_goitered_gazelle%2C_Shirvan_National_Park%2C_Azerbaijan.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Female_goitered_gazelle,_Shirvan_National_Park,_Azerbaijan.jpg",
+                      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=74819513",
+                      "extmetadata": {
+                        "DateTime": {
+                          "value": "2018-12-03 10:01:23",
+                          "source": "mediawiki-metadata",
+                          "hidden": ""
+                        },
+                        "ObjectName": {
+                          "value": "Female goitered gazelle, Shirvan National Park, Azerbaijan",
+                          "source": "mediawiki-metadata"
+                        },
+                        "CommonsMetadataExtension": {
+                          "value": 1.2,
+                          "source": "extension",
+                          "hidden": ""
+                        },
+                        "Categories": {
+                          "value": "Gazella subgutturosa|Shirvan National Park|Self-published work",
+                          "source": "commons-categories",
+                          "hidden": ""
+                        },
+                        "Assessments": {
+                          "value": "",
+                          "source": "commons-categories",
+                          "hidden": ""
+                        },
+                        "ImageDescription": {
+                          "value": "Female <a href=\"https://en.wikipedia.org/wiki/goitered_gazelle\" class=\"extiw\" title=\"en:goitered gazelle\">goitered gazelle</a> (<i>Gazella subgutturosa</i>) at the Shirvan National Park, Azerbaijan",
+                          "source": "commons-desc-page"
+                        },
+                        "DateTimeOriginal": {
+                          "value": "2018-11-04 11:39:48",
+                          "source": "commons-desc-page"
+                        },
+                        "Credit": {
+                          "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                          "source": "commons-desc-page"
+                        },
+                        "Artist": {
+                          "value": "<a href=\"//commons.wikimedia.org/wiki/User:Elshad_photo\" title=\"User:Elshad photo\">Elşad İbrahimov</a>",
+                          "source": "commons-desc-page"
+                        },
+                        "LicenseShortName": {
+                          "value": "CC BY-SA 4.0",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "UsageTerms": {
+                          "value": "Creative Commons Attribution-Share Alike 4.0",
+                          "source": "commons-desc-page"
+                        },
+                        "AttributionRequired": {
+                          "value": "true",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "LicenseUrl": {
+                          "value": "https://creativecommons.org/licenses/by-sa/4.0",
+                          "source": "commons-desc-page"
+                        },
+                        "Copyrighted": {
+                          "value": "True",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "Restrictions": {
+                          "value": "",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "License": {
+                          "value": "cc-by-sa-4.0",
+                          "source": "commons-templates",
+                          "hidden": ""
+                        }
+                      }
+                    }
+                  ],
+                  "revisions": [
+                    {
+                      "revid": 1098476455,
+                      "parentid": 987119848,
+                      "slots": {
+                        "main": {
+                          "contentmodel": "wikitext",
+                          "contentformat": "text/x-wiki",
+                          "*": "=={{int:filedesc}}==\n{{Information\n|description={{en|Female [[:en:goitered gazelle|goitered gazelle]] (''Gazella subgutturosa'') at the Shirvan National Park, Azerbaijan}}{{az|1=Ceyran. Şirvan Milli Parkı}}\n|date=2018-11-04 11:39:48\n|source={{own}}\n|author=[[User:Elshad photo|Elşad İbrahimov]]\n|permission=\n|other versions=\n}}\n\n=={{int:license-header}}==\n{{self|cc-by-sa-4.0}}\n\n[[Category:Gazella subgutturosa]]\n[[Category:Shirvan National Park]]"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "81081876": {
+                  "pageid": 81081876,
+                  "ns": 6,
+                  "title": "File:Gazella subgutturosa in Iran.jpg",
+                  "index": 3,
+                  "imagerepository": "local",
+                  "imageinfo": [
+                    {
+                      "size": 291988,
+                      "width": 1050,
+                      "height": 701,
+                      "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Gazella_subgutturosa_in_Iran.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Gazella_subgutturosa_in_Iran.jpg",
+                      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=81081876",
+                      "extmetadata": {
+                        "DateTime": {
+                          "value": "2019-08-06 18:27:45",
+                          "source": "mediawiki-metadata",
+                          "hidden": ""
+                        },
+                        "ObjectName": {
+                          "value": "Gazella subgutturosa in Iran",
+                          "source": "mediawiki-metadata"
+                        },
+                        "CommonsMetadataExtension": {
+                          "value": 1.2,
+                          "source": "extension",
+                          "hidden": ""
+                        },
+                        "Categories": {
+                          "value": "Gazella subgutturosa|Files from external sources with reviewed licenses|Photographs from farsnews.ir",
+                          "source": "commons-categories",
+                          "hidden": ""
+                        },
+                        "Assessments": {
+                          "value": "",
+                          "source": "commons-categories",
+                          "hidden": ""
+                        },
+                        "ImageDescription": {
+                          "value": "یک غزال ایرانی در ایران",
+                          "source": "commons-desc-page"
+                        },
+                        "DateTimeOriginal": {
+                          "value": "2019-07-30 16:19:14",
+                          "source": "commons-desc-page"
+                        },
+                        "Credit": {
+                          "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.farsnews.com/photo/13980508000931/%D8%AD%DB%8C%D8%A7%D8%AA-%D9%88%D8%AD%D8%B4-%D8%A7%DB%8C%D8%B1%D8%A7%D9%86\">https://www.farsnews.com/photo/13980508000931/حیات-وحش-ایران</a>",
+                          "source": "commons-desc-page"
+                        },
+                        "Artist": {
+                          "value": "Abolfazl Fallahzadeh",
+                          "source": "commons-desc-page"
+                        },
+                        "LicenseShortName": {
+                          "value": "CC BY 4.0",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "UsageTerms": {
+                          "value": "Creative Commons Attribution 4.0",
+                          "source": "commons-desc-page"
+                        },
+                        "AttributionRequired": {
+                          "value": "true",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "Attribution": {
+                          "value": "Fars Media Corporation",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "LicenseUrl": {
+                          "value": "https://creativecommons.org/licenses/by/4.0",
+                          "source": "commons-desc-page"
+                        },
+                        "Copyrighted": {
+                          "value": "True",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "Restrictions": {
+                          "value": "",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "License": {
+                          "value": "cc-by-4.0",
+                          "source": "commons-templates",
+                          "hidden": ""
+                        }
+                      }
+                    }
+                  ],
+                  "revisions": [
+                    {
+                      "revid": 933948365,
+                      "parentid": 688795166,
+                      "slots": {
+                        "main": {
+                          "contentmodel": "wikitext",
+                          "contentformat": "text/x-wiki",
+                          "*": "=={{int:filedesc}}==\n{{Information\n|description={{fa|1=یک غزال ایرانی در ایران}}\n|date=2019-07-30 16:19:14\n|source=https://www.farsnews.com/photo/13980508000931/حیات-وحش-ایران\n|author=Abolfazl Fallahzadeh\n|permission=\n|other versions=\n}}\n\n=={{int:license-header}}==\n\n{{Fars}}\n{{LicenseReview|site=https://www.farsnews.com/photo/13980508000931/حیات-وحش-ایران|user=Hanooz|date=2019-11-30}}\n\n\n[[Category:Gazella subgutturosa]]"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ],
+      "complete": true
+    },
+    {
+      "candidateId": "dendrocopos-leucopterus",
+      "accessedAt": "2026-10-16",
+      "queries": [
+        {
+          "name": "Dendrocopos leucopterus",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Dendrocopos+leucopterus%22&gsrnamespace=6&gsrlimit=3&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids%7Ccontent&rvslots=main",
+          "httpStatus": 200,
+          "data": {
+            "batchcomplete": "",
+            "continue": {
+              "gsroffset": 3,
+              "continue": "gsroffset||"
+            },
+            "query": {
+              "pages": {
+                "2198788": {
+                  "pageid": 2198788,
+                  "ns": 6,
+                  "title": "File:White-winged Woodpecker.jpg",
+                  "index": 1,
+                  "imagerepository": "local",
+                  "imageinfo": [
+                    {
+                      "size": 258274,
+                      "width": 1600,
+                      "height": 1200,
+                      "url": "https://upload.wikimedia.org/wikipedia/commons/d/dd/White-winged_Woodpecker.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                      "descriptionurl": "https://commons.wikimedia.org/wiki/File:White-winged_Woodpecker.jpg",
+                      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=2198788",
+                      "extmetadata": {
+                        "DateTime": {
+                          "value": "2007-06-03 21:29:15",
+                          "source": "mediawiki-metadata",
+                          "hidden": ""
+                        },
+                        "ObjectName": {
+                          "value": "White-winged Woodpecker",
+                          "source": "mediawiki-metadata"
+                        },
+                        "CommonsMetadataExtension": {
+                          "value": 1.2,
+                          "source": "extension",
+                          "hidden": ""
+                        },
+                        "Categories": {
+                          "value": "Dendrocopos leucopterus|Taken with Nikon Coolpix 4500|Flickr images reviewed by FlickreviewR|Flickr images missing SDC creator|Flickr images missing SDC inception|Flickr images missing SDC source of file|Photographs by Alastair Rae",
+                          "source": "commons-categories",
+                          "hidden": ""
+                        },
+                        "Assessments": {
+                          "value": "",
+                          "source": "commons-categories",
+                          "hidden": ""
+                        },
+                        "ImageDescription": {
+                          "value": "White-winged Woodpecker (<i><a href=\"//commons.wikimedia.org/wiki/Dendrocopos_leucopterus\" title=\"Dendrocopos leucopterus\">Dendrocopos leucopterus</a></i>)",
+                          "source": "commons-desc-page"
+                        },
+                        "DateTimeOriginal": {
+                          "value": "uploaded to Flickr May 29 2007 - uploaded to commons June 3 2007",
+                          "source": "commons-desc-page"
+                        },
+                        "Credit": {
+                          "value": "Flickr <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/merula/520335113/\">here</a>",
+                          "source": "commons-desc-page"
+                        },
+                        "Artist": {
+                          "value": "Flickr user <a rel=\"nofollow\" class=\"external text\" href=\"https://www.flickr.com/photos/merula/\">Alastair Rae</a> . Photo uploaded to commons by user <a href=\"//commons.wikimedia.org/wiki/User:Ltshears\" title=\"User:Ltshears\">ltshears</a>",
+                          "source": "commons-desc-page"
+                        },
+                        "LicenseShortName": {
+                          "value": "CC BY-SA 2.0",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "UsageTerms": {
+                          "value": "Creative Commons Attribution-Share Alike 2.0",
+                          "source": "commons-desc-page"
+                        },
+                        "AttributionRequired": {
+                          "value": "true",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "LicenseUrl": {
+                          "value": "https://creativecommons.org/licenses/by-sa/2.0",
+                          "source": "commons-desc-page"
+                        },
+                        "Copyrighted": {
+                          "value": "True",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "Restrictions": {
+                          "value": "",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "License": {
+                          "value": "cc-by-sa-2.0",
+                          "source": "commons-templates",
+                          "hidden": ""
+                        }
+                      }
+                    }
+                  ],
+                  "revisions": [
+                    {
+                      "revid": 1059478674,
+                      "parentid": 701421345,
+                      "slots": {
+                        "main": {
+                          "contentmodel": "wikitext",
+                          "contentformat": "text/x-wiki",
+                          "*": "== {{int:filedesc}} ==\n{{Information\n|Description= White-winged Woodpecker (''[[Dendrocopos leucopterus]]'')\n|Source= Flickr [https://www.flickr.com/photos/merula/520335113/ here]\n|Date= uploaded to Flickr May 29 2007 - uploaded to commons June 3 2007\n|Author= Flickr user [https://www.flickr.com/photos/merula/  Alastair Rae] . Photo uploaded to commons by user [[:User:Ltshears|ltshears]]\n|Permission= \n|other_versions=\n}}\n\n== {{int:license-header}} ==\n{{cc-by-sa-2.0}}{{User:FlickreviewR/reviewed-pass|Alastair Rae|https://www.flickr.com/photos/55663585@N00/520335113|10:26, 7 June 2007 (UTC)|cc-by-sa-2.0}}\n\n[[Category:Dendrocopos leucopterus]]\n[[Category:Photographs by Alastair Rae]]\n[[Category:Taken with Nikon Coolpix 4500]]"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "175109365": {
+                  "pageid": 175109365,
+                  "ns": 6,
+                  "title": "File:Dendrocopos leucopterus 399366469.jpg",
+                  "index": 2,
+                  "imagerepository": "local",
+                  "imageinfo": [
+                    {
+                      "size": 568651,
+                      "width": 2048,
+                      "height": 1365,
+                      "url": "https://upload.wikimedia.org/wikipedia/commons/9/93/Dendrocopos_leucopterus_399366469.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Dendrocopos_leucopterus_399366469.jpg",
+                      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=175109365",
+                      "extmetadata": {
+                        "DateTime": {
+                          "value": "2025-09-15 16:01:10",
+                          "source": "mediawiki-metadata",
+                          "hidden": ""
+                        },
+                        "ObjectName": {
+                          "value": "Dendrocopos leucopterus 399366469",
+                          "source": "mediawiki-metadata"
+                        },
+                        "CommonsMetadataExtension": {
+                          "value": 1.2,
+                          "source": "extension",
+                          "hidden": ""
+                        },
+                        "Categories": {
+                          "value": "Dendrocopos leucopterus|Media from iNaturalist|INaturalist images reviewed by iNaturalistReviewBot|Files with coordinates missing SDC location of creation|Uploaded with iNaturalist2Commons|Media from GBIF",
+                          "source": "commons-categories",
+                          "hidden": ""
+                        },
+                        "Assessments": {
+                          "value": "",
+                          "source": "commons-categories",
+                          "hidden": ""
+                        },
+                        "GPSLatitude": {
+                          "value": "37.478850",
+                          "source": "commons-desc-page"
+                        },
+                        "GPSLongitude": {
+                          "value": "71.596720",
+                          "source": "commons-desc-page"
+                        },
+                        "GPSMapDatum": {
+                          "value": "WGS-84",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "ImageDescription": {
+                          "value": "White-winged Woodpecker (<i>Dendrocopos leucopterus</i>) in Tajikistan",
+                          "source": "commons-desc-page"
+                        },
+                        "DateTimeOriginal": {
+                          "value": "2024-05-26",
+                          "source": "commons-desc-page"
+                        },
+                        "Credit": {
+                          "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.inaturalist.org/photos/399366469\">https://www.inaturalist.org/photos/399366469</a>",
+                          "source": "commons-desc-page"
+                        },
+                        "Artist": {
+                          "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.inaturalist.org/users/2567886\">Andrew Bazdyrev</a>",
+                          "source": "commons-desc-page"
+                        },
+                        "LicenseShortName": {
+                          "value": "CC BY 4.0",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "UsageTerms": {
+                          "value": "Creative Commons Attribution 4.0",
+                          "source": "commons-desc-page"
+                        },
+                        "AttributionRequired": {
+                          "value": "true",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "LicenseUrl": {
+                          "value": "https://creativecommons.org/licenses/by/4.0",
+                          "source": "commons-desc-page"
+                        },
+                        "Copyrighted": {
+                          "value": "True",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "Restrictions": {
+                          "value": "",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "License": {
+                          "value": "cc-by-4.0",
+                          "source": "commons-templates",
+                          "hidden": ""
+                        }
+                      }
+                    }
+                  ],
+                  "revisions": [
+                    {
+                      "revid": 1198141369,
+                      "parentid": 1152364437,
+                      "slots": {
+                        "main": {
+                          "contentmodel": "wikitext",
+                          "contentformat": "text/x-wiki",
+                          "*": "== {{int:filedesc}} ==\n{{Information\n|description={{en|White-winged Woodpecker (''Dendrocopos leucopterus'') in Tajikistan}}\n|date=2024-05-26\n|source=https://www.inaturalist.org/photos/399366469\n|author=[https://www.inaturalist.org/users/2567886 Andrew Bazdyrev]\n|permission=\n|other versions=\n}}\n{{Location|37.47885|71.59672}}\n{{iNaturalist|225267960}}\n{{iNaturalistreview |status=pass |author=andrewbazdyrev |sourceurl=https://www.inaturalist.org/photos/399366469 |archive= |reviewdate=2025-09-15 |reviewer=INaturalistReviewBot |reviewlicense=Cc-by-4.0 |reason=sha1}}\n{{gbif|4903791504}}\n\n[[Category:Dendrocopos leucopterus]]\n[[Category:Uploaded with iNaturalist2Commons]]\n\n== {{int:license-header}} ==\n{{cc-by-4.0}}"
+                        }
+                      }
+                    }
+                  ]
+                },
+                "175109383": {
+                  "pageid": 175109383,
+                  "ns": 6,
+                  "title": "File:Dendrocopos leucopterus 258242098.jpg",
+                  "index": 3,
+                  "imagerepository": "local",
+                  "imageinfo": [
+                    {
+                      "size": 1842814,
+                      "width": 1900,
+                      "height": 1403,
+                      "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Dendrocopos_leucopterus_258242098.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                      "descriptionurl": "https://commons.wikimedia.org/wiki/File:Dendrocopos_leucopterus_258242098.jpg",
+                      "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=175109383",
+                      "extmetadata": {
+                        "DateTime": {
+                          "value": "2025-09-15 16:02:00",
+                          "source": "mediawiki-metadata",
+                          "hidden": ""
+                        },
+                        "ObjectName": {
+                          "value": "Dendrocopos leucopterus 258242098",
+                          "source": "mediawiki-metadata"
+                        },
+                        "CommonsMetadataExtension": {
+                          "value": 1.2,
+                          "source": "extension",
+                          "hidden": ""
+                        },
+                        "Categories": {
+                          "value": "Dendrocopos leucopterus|Media from iNaturalist|INaturalist images reviewed by iNaturalistReviewBot|Files with coordinates missing SDC location of creation|Uploaded with iNaturalist2Commons|Media from GBIF",
+                          "source": "commons-categories",
+                          "hidden": ""
+                        },
+                        "Assessments": {
+                          "value": "",
+                          "source": "commons-categories",
+                          "hidden": ""
+                        },
+                        "GPSLatitude": {
+                          "value": "42.835819",
+                          "source": "commons-desc-page"
+                        },
+                        "GPSLongitude": {
+                          "value": "74.636301",
+                          "source": "commons-desc-page"
+                        },
+                        "GPSMapDatum": {
+                          "value": "WGS-84",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "ImageDescription": {
+                          "value": "White-winged Woodpecker (<i>Dendrocopos leucopterus</i>) in Kyrgyzstan",
+                          "source": "commons-desc-page"
+                        },
+                        "DateTimeOriginal": {
+                          "value": "2023-02-27",
+                          "source": "commons-desc-page"
+                        },
+                        "Credit": {
+                          "value": "<a rel=\"nofollow\" class=\"external free\" href=\"https://www.inaturalist.org/photos/258242098\">https://www.inaturalist.org/photos/258242098</a>",
+                          "source": "commons-desc-page"
+                        },
+                        "Artist": {
+                          "value": "<a rel=\"nofollow\" class=\"external text\" href=\"https://www.inaturalist.org/users/1411159\">Griha Hasanov</a>",
+                          "source": "commons-desc-page"
+                        },
+                        "LicenseShortName": {
+                          "value": "CC BY 4.0",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "UsageTerms": {
+                          "value": "Creative Commons Attribution 4.0",
+                          "source": "commons-desc-page"
+                        },
+                        "AttributionRequired": {
+                          "value": "true",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "LicenseUrl": {
+                          "value": "https://creativecommons.org/licenses/by/4.0",
+                          "source": "commons-desc-page"
+                        },
+                        "Copyrighted": {
+                          "value": "True",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "Restrictions": {
+                          "value": "",
+                          "source": "commons-desc-page",
+                          "hidden": ""
+                        },
+                        "License": {
+                          "value": "cc-by-4.0",
+                          "source": "commons-templates",
+                          "hidden": ""
+                        }
+                      }
+                    }
+                  ],
+                  "revisions": [
+                    {
+                      "revid": 1200901095,
+                      "parentid": 1147786717,
+                      "slots": {
+                        "main": {
+                          "contentmodel": "wikitext",
+                          "contentformat": "text/x-wiki",
+                          "*": "== {{int:filedesc}} ==\n{{Information\n|description={{en|White-winged Woodpecker (''Dendrocopos leucopterus'') in Kyrgyzstan}}\n|date=2023-02-27\n|source=https://www.inaturalist.org/photos/258242098\n|author=[https://www.inaturalist.org/users/1411159 Griha Hasanov]\n|permission=\n|other versions=\n}}\n{{Location|42.8358190618|74.6363014488}}\n{{iNaturalist|149828721}}\n{{iNaturalistreview |status=pass |author=grishahasanov |sourceurl=https://www.inaturalist.org/photos/258242098 |archive= |reviewdate=2025-09-15 |reviewer=INaturalistReviewBot |reviewlicense=Cc-by-4.0 |reason=sha1}}\n{{gbif|4046770343}}\n\n[[Category:Dendrocopos leucopterus]]\n[[Category:Uploaded with iNaturalist2Commons]]\n\n== {{int:license-header}} ==\n{{cc-by-4.0}}"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        }
+      ],
+      "complete": true
+    }
+  ],
+  "documentType": "unpublished-photo-search-evidence"
+}

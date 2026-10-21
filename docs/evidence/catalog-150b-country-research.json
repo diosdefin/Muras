@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "accessedAt": "2026-10-16",
+  "records": [
+    {
+      "name": "Paraechinus hypomelas",
+      "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=2437154&country=KG&limit=3",
+      "httpStatus": 200,
+      "data": {
+        "offset": 0,
+        "limit": 3,
+        "endOfRecords": true,
+        "count": 0,
+        "results": [],
+        "facets": []
+      }
+    },
+    {
+      "name": "Allactaga severtzovi",
+      "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=2439487&country=KG&limit=3",
+      "httpStatus": 200,
+      "data": {
+        "offset": 0,
+        "limit": 3,
+        "endOfRecords": true,
+        "count": 0,
+        "results": [],
+        "facets": []
+      }
+    }
+  ]
+}

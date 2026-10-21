@@ -1,0 +1,268 @@
+{
+  "id": "hedysarum-chaitocarpum",
+  "scientificName": "Hedysarum chaitocarpum",
+  "names": {
+    "ru": "Копеечник щетиноплодный",
+    "ky": "Hedysarum chaitocarpum",
+    "uz": "Hedysarum chaitocarpum",
+    "en": "Hedysarum chaitocarpum"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Fabales",
+    "family": "Fabaceae",
+    "genus": "Hedysarum"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "EN",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Ореховые и другие широколиственные леса, кустарниковые заросли, высокотравные луга; в книге отмечен заход в субальпийский пояс.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Очерк 2006 года связывает сокращение с антропогенным воздействием на леса и сенокошением.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические рекомендации: уточнить ареал и численность, создавать ботанические заказники в местах концентрации популяций, изучать введение в культуру.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/hedysarum-chaitocarpum.webp",
+      "width": 1250,
+      "height": 1800,
+      "sha256": "17f14191336274226329ae1666f4217943fef61c8da3afeb307784ce072a13fd",
+      "author": "ELAR corporation (Moscow, Russia)",
+      "originalPage": "https://plant.depo.msu.ru/open/public/item/MW0848983",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "ELAR corporation (Moscow, Russia); Moscow State University (copyright is managed by Dr. Alexey P. Seregin); Гербарный образец MW0848983; CC BY 4.0.  Серегин А. П. (ред.) Цифровой гербарий МГУ. М.: МГУ, 2026; MW0848983. https://plant.depo.msu.ru/open/public/item/MW0848983 (16.10.2026).",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px, WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Гербарный образец MW0848983. Hedysarum chaitocarpum. Изображение не подтверждает современную встречаемость в Кыргызстане.",
+        "ky": null,
+        "uz": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Hedysarum chaitocarpum, с. 153",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=153",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-51",
+      "publisher": "Правительство КР; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ],
+      "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Hedysarum chaitocarpum Regel & Schmalh.",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Hedysarum%20chaitocarpum",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz",
+        "names.en"
+      ],
+      "taxonId": "gbif:2960817"
+    },
+    {
+      "id": "photo-primary",
+      "title": "Гербарный образец: Hedysarum chaitocarpum",
+      "publisher": "Moscow State University",
+      "url": "https://plant.depo.msu.ru/open/public/item/MW0848983",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "ru",
+      "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Многолетний копеечник орехово-плодовых лесов и высокотравных лугов из Красной книги Кыргызстана 2006 года.",
+        "ky": "Жаңгак-мөмө токойлорунда жана бийик чөптүү шалбааларда өскөн көп жылдык өсүмдүк. 2006-жылкы Кызыл китепке киргизилген.",
+        "uz": "Yongʻoq-mevali oʻrmonlar va baland oʻtli oʻtloqlarda oʻsadigan koʻp yillik oʻsimlik. 2006-yilgi Qizil kitobga kiritilgan.",
+        "en": "A perennial sweetvetch of walnut-fruit forests and tall-herb meadows, listed in Kyrgyzstan’s 2006 Red Data Book."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Многолетний копеечник орехово-плодовых лесов и высокотравных лугов из Красной книги Кыргызстана 2006 года. Национальный очерк 2006 года содержит следующие сведения. Реликтовое растение лесных сообществ, описанное в национальном издании как редкое, встречающееся одиночно либо небольшими группами. Исторические сведения о редкости не являются современной численной оценкой. По книге 2006 года размножается семенами; цветёт в июне, плодоносит в июле–августе. Исторически указан для Чаткальского, Узун-Ахматского, Ферганского и Алайского хребтов, в том числе Сары-Челека, Кара-Шоро и Арсланбаба. Новые находки здесь не заявлены. Очерк 2006 года связывает сокращение с антропогенным воздействием на леса и сенокошением. Исторические рекомендации: уточнить ареал и численность, создавать ботанические заказники в местах концентрации популяций, изучать введение в культуру.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Травянистый многолетник до 60 см высотой, с голыми стеблями и перистыми листьями. Розово-лиловые цветки собраны в густые кисти; членистые бобы обычно покрыты короткими тонкими щетинками, которые у отдельных растений отсутствуют.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Реликтовое растение лесных сообществ, описанное в национальном издании как редкое, встречающееся одиночно либо небольшими группами. Исторические сведения о редкости не являются современной численной оценкой.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге 2006 года размножается семенами; цветёт в июне, плодоносит в июле–августе.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически указан для Чаткальского, Узун-Ахматского, Ферганского и Алайского хребтов, в том числе Сары-Челека, Кара-Шоро и Арсланбаба. Новые находки здесь не заявлены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

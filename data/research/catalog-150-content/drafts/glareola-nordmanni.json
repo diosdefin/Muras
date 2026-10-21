@@ -1,0 +1,244 @@
+{
+  "id": "glareola-nordmanni",
+  "scientificName": "Glareola nordmanni",
+  "names": {
+    "ru": "Степная тиркушка",
+    "ky": "Glareola nordmanni",
+    "uz": "Glareola nordmanni",
+    "en": "Black-winged Pratincole"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Charadriiformes",
+    "family": "Glareolidae",
+    "genus": "Glareola"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "DD",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Околоводные пространства и прилегающие открытые участки; местные границы пригодных местообитаний требуют изучения.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Распашка местообитаний, перевыпас и отстрел.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендованы выявление мест отдыха и возможного гнездования и снижение хозяйственного воздействия, в том числе созданием небольших охраняемых участков.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/glareola-nordmanni.webp",
+      "width": 1675,
+      "height": 1117,
+      "sha256": "6c51ef8917a8283eb23bd45727dbb8d276cd8ad5428815d95777b45512e4e993",
+      "author": "Oscar Hazell",
+      "originalPage": "https://www.inaturalist.org/photos/731845339",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Glareola nordmanni — Oscar Hazell; CC BY 4.0; iNaturalist photo 731845339. (c) Oscar Hazell, some rights reserved (CC BY).",
+      "modifications": [
+        "Уменьшение без увеличения до 1800 px; WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Фотография Glareola nordmanni; пример вида, не подтверждение современного присутствия в Кыргызстане или местного подвида.",
+        "ky": null,
+        "uz": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Glareola nordmanni, с. 449",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=449",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Glareola nordmanni Fischer von Waldheim, 1842",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Glareola%20nordmanni",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz"
+      ],
+      "taxonId": "gbif:2480758"
+    },
+    {
+      "id": "photo-primary",
+      "title": "Фотография Glareola nordmanni",
+      "publisher": "iNaturalist; Oscar Hazell",
+      "url": "https://www.inaturalist.org/photos/731845339",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en",
+      "notes": "Per-photo license_code и авторская атрибуция проверены в первичном API; версия лицензии — официальный LicenseModule."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Степная тиркушка представлена в национальном очерке 2006 года как малоизученный пролётный вид долинных районов.",
+        "ky": "2006-жылкы улуттук очеркте өрөөндөрдүн суу жээктеринен учуп өтүүдө катталган куш.",
+        "uz": "2006-yilgi milliy manbada vodiylarning suvga yaqin joylarida ko‘chish paytida qayd etilgan qush.",
+        "en": "A passage bird of valley wetlands and nearby open ground in the 2006 national account."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Степная тиркушка представлена в национальном очерке 2006 года как малоизученный пролётный вид долинных районов.\n\nОколоводные пространства и прилегающие открытые участки; местные границы пригодных местообитаний требуют изучения.\n\nДля Кыргызстана в очерке указан пролёт. Гнездование не подтверждено, систематические сведения о численности отсутствуют.\n\nПреимущественно насекомые.\n\nИсторический национальный источник сообщает о пролётных встречах в долинной части Кыргызстана; это не современная карта распространения.\n\nРаспашка местообитаний, перевыпас и отстрел.\n\nРекомендованы выявление мест отдыха и возможного гнездования и снижение хозяйственного воздействия, в том числе созданием небольших охраняемых участков.\n\nНациональная категория и описанные встречи относятся к историческому изданию 2006 года. Современная численность не установлена; текущий юридический статус и современное присутствие требуют отдельного подтверждения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Для Кыргызстана в очерке указан пролёт. Гнездование не подтверждено, систематические сведения о численности отсутствуют.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Преимущественно насекомые.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": null,
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический национальный источник сообщает о пролётных встречах в долинной части Кыргызстана; это не современная карта распространения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

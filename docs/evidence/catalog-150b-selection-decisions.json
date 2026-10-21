@@ -1,0 +1,81 @@
+{
+  "schemaVersion": 1,
+  "documentType": "additional-national-selection-decisions",
+  "sourceCommit": "7f9027170b2eb0962ca1b0c3c180f04d699ff10f",
+  "accessedAt": "2026-10-16",
+  "original23Unchanged": true,
+  "selected": [
+    {
+      "id": "gazella-subgutturosa",
+      "bookRecord": "book-2006-514",
+      "decreeRecord": "decree-170-2009-2-7",
+      "acceptedName": "Gazella subgutturosa",
+      "gbifTaxonId": "gbif:5220146",
+      "rank": "SPECIES",
+      "resolution": "National book subgutturoza is reconciled with subgutturosa in the national decree for the same Russian-named gazelle and 1780 authority. Modern MDD and exact accepted GBIF species concur. No parent-species substitution and no subspecies assignment. Modern local survival remains unconfirmed."
+    },
+    {
+      "id": "dendrocopos-leucopterus",
+      "bookRecord": "book-2006-466",
+      "decreeRecord": "decree-170-2009-3-19",
+      "acceptedName": "Dendrocopos leucopterus",
+      "gbifTaxonId": "gbif:2478035",
+      "rank": "SPECIES",
+      "resolution": "Identical species name in national account, national list, exact accepted GBIF and valid ITIS record. Bibliographic authority year 1870 in book versus 1871 in modern sources is recorded, not treated as a different taxon."
+    }
+  ],
+  "notSelected": [
+    {
+      "nationalRecordId": "book-2006-302",
+      "name": "Capoetobrama kuschakewitschi orientalis",
+      "reason": "not_selected_subspecies_synonym_of_parent_species"
+    },
+    {
+      "nationalRecordId": "book-2006-266",
+      "name": "Parnassius loxias tashkorensis",
+      "reason": "not_selected_subspecies_synonym_of_parent_species"
+    },
+    {
+      "nationalRecordId": "book-2006-268",
+      "name": "Parnassius apollo merzbacheri",
+      "reason": "not_selected_subspecies_synonym_of_parent_species"
+    },
+    {
+      "nationalRecordId": "book-2006-270",
+      "name": "Papilio alexanor voldemar",
+      "reason": "not_selected_subspecies_synonym_of_parent_species"
+    },
+    {
+      "nationalRecordId": "book-2006-278",
+      "name": "Polochrum pamirepandum",
+      "reason": "not_selected_no_exact_accepted_species_resolution"
+    },
+    {
+      "nationalRecordId": "book-2006-482",
+      "name": "Paraechinus hypomelas",
+      "reason": "not_selected_current_KG_range_not_corroborated_by_MDD"
+    },
+    {
+      "nationalRecordId": "book-2006-526",
+      "name": "Allactaga severtzovi",
+      "reason": "not_selected_current_KG_range_not_corroborated_by_MDD"
+    },
+    {
+      "nationalRecordId": "book-2006-110",
+      "name": "Anemone obtusiloba",
+      "reason": "not_selected_no_exact_accepted_species_resolution"
+    },
+    {
+      "nationalRecordId": "book-2006-180",
+      "name": "Primula macrocalyx",
+      "reason": "not_selected_no_exact_accepted_species_resolution"
+    }
+  ],
+  "previousExclusions": {
+    "source": "docs/evidence/catalog-150-selection-decisions.json",
+    "retained": true,
+    "note": "No previously excluded disputed taxon reinstated; no parent species substituted for nationally listed subspecies."
+  },
+  "scope": "Historical national inclusion; no assertion of current legal status or new country observations. MDD country omission and zero GBIF records are not proof of absence.",
+  "publicationAllowed": false
+}

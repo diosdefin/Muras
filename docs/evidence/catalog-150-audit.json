@@ -1,0 +1,634 @@
+{
+  "schemaVersion": 1,
+  "documentType": "catalog-150-final-audit",
+  "date": "2026-10-16",
+  "initialCommit": "e3219fc63d6ed22a4260bc420cdfe2a77fe7718a",
+  "catalogCounts": {
+    "source": 125,
+    "public": 125,
+    "dist": 125
+  },
+  "prepared": 23,
+  "groups": {
+    "fish": 1,
+    "reptiles": 1,
+    "arthropods": 1,
+    "birds": 20
+  },
+  "images": 20,
+  "placeholders": [
+    "barbus-capito-conocephalus",
+    "vipera-ursinii-renardi",
+    "kirgisobia-bohnei"
+  ],
+  "oldFilesVerified": 233,
+  "oldFilesChanged": [],
+  "unpublishedImageLeaks": [],
+  "manifestSha256": "85bed9d67e06af5bbcdcd47ff8947d5deb70658c48bd89ea23e7bc4da43f5d82",
+  "registryFingerprint": "8fb1b765c25494f80ec996d6679aee1f0100ad50763cda3682a1f46ac8717f71",
+  "errors": [],
+  "records": [
+    {
+      "id": "barbus-capito-conocephalus",
+      "scientificName": "Luciobarbus conocephalus",
+      "group": "fish",
+      "rank": "SPECIES",
+      "historicalRank": "SUBSPECIES",
+      "checkedFingerprint": "063461ceccdd337c90395deca0837d8f35f2efdecddd2a5b34cc3ea683192cb1",
+      "draftSha256": "a8c153ae64a33cb806d73197f8ec4eda3b3e799f5aa4a70fbe2c86241efdacbf",
+      "overviewWords": 154,
+      "images": [],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "vipera-ursinii-renardi",
+      "scientificName": "Vipera renardi",
+      "group": "reptiles",
+      "rank": "SPECIES",
+      "historicalRank": "SUBSPECIES",
+      "checkedFingerprint": "9952736f6837fd6b8025f3daf584a97f183c4ae0451bf03e830317aa401e770c",
+      "draftSha256": "56860726a582afebf4b99f5e2c885050b419a4326e929368276299e5b8f8bcd9",
+      "overviewWords": 136,
+      "images": [],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "kirgisobia-bohnei",
+      "scientificName": "Kirgizobia bohnei",
+      "group": "arthropods",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "c341a731d89ec8ccaf86bec76e25871b274e24c25818c16828b9bdf66d7e27ac",
+      "draftSha256": "ef7bad9d1763ac5276fcfda3ba06e4f4c0d6f21ec76ba2ebc66212e52de67c29",
+      "overviewWords": 144,
+      "images": [],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "anser-indica",
+      "scientificName": "Anser indicus",
+      "group": "birds",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "9224db014c2a19f606264b7093b738b4f77cf9044dcb0ca43db12b58d5fb8151",
+      "draftSha256": "f118a1bd8b036f87168080d7aba1b31b6869d38f885c049d4debe072213b2895",
+      "overviewWords": 128,
+      "images": [
+        {
+          "path": "assets/images/species/anser-indica.webp",
+          "sha256": "6af7804c2b6ad960f4750eecc6d9ccd914d273a33171d5cd3771d6ebf65b3840",
+          "originalCache": ".generated/bulk-originals/anser-indica.jpg",
+          "originalSha256": "d423122421405beb018aa8f2bde92879f667a8a85fd36e1001fc51f516be8d09",
+          "directUrl": "https://upload.wikimedia.org/wikipedia/commons/3/34/Bar-headed_Goose_by_Tisha_Mukherjee_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Bar-headed_Goose_by_Tisha_Mukherjee_01.jpg",
+          "author": "Tisha Mukherjee",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "imageType": "photograph",
+          "bytes": 60050
+        }
+      ],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "accipiter-badius",
+      "scientificName": "Accipiter badius",
+      "group": "birds",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "cb38ffeb1f5f8d1073b6d6778cd1f9184f11231d1508c14a52a2b261b781e526",
+      "draftSha256": "7a246d3f22d7bfaaa486c89ae8a1d7d76b4674430dde568a9634603feab910c2",
+      "overviewWords": 148,
+      "images": [
+        {
+          "path": "assets/images/species/accipiter-badius.webp",
+          "sha256": "1012c0b2ae5756c1cb2a7da26777e63a5982b641698c92a4d60ef192d1d5a3dd",
+          "originalCache": ".generated/bulk-originals/accipiter-badius.jpg",
+          "originalSha256": "8c88e21fa41ccf784b94b7d532b72eecb7b465e62da12e197f4c4a4300144bba",
+          "directUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Accipiter_badius_MHNT.ZOO.2010.11.94.1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Accipiter_badius_MHNT.ZOO.2010.11.94.1.jpg",
+          "author": "Roger Culos",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+          "imageType": "museum_eggs",
+          "bytes": 69382
+        }
+      ],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "aquila-clanga",
+      "scientificName": "Aquila clanga",
+      "group": "birds",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "7c36a1a7e20abe18101d3b05e259d55ccc4b397d05202ba0f35fce1afa6d28a7",
+      "draftSha256": "dd2f676d051909412db093d60d5058369c77be5021c4a5ab1e5757dea4cbaf98",
+      "overviewWords": 132,
+      "images": [
+        {
+          "path": "assets/images/species/aquila-clanga.webp",
+          "sha256": "4c9e152c4db1939c6edcf09b353fbc990f5a81558d041b8166c768a4ebe852d3",
+          "originalCache": ".generated/bulk-originals/aquila-clanga.jpg",
+          "originalSha256": "855fb0902067c455a57d83d53d7c1403a4729dea4fc1fb02f74b93b3e11a7531",
+          "directUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Greater_spotted_eagle.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Greater_spotted_eagle.jpg",
+          "author": "Вых Пыхманн",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "imageType": "photograph",
+          "bytes": 154704
+        }
+      ],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "aquila-nipalensis",
+      "scientificName": "Aquila nipalensis",
+      "group": "birds",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "e886d151618a2bb46dce08dfb7a3a12784b4fd6e4a6b1ebad28952d963d506da",
+      "draftSha256": "5570a63c78d36fe2b970e3a291c7b6718787bd56d3010053ee82994ae21d532d",
+      "overviewWords": 118,
+      "images": [
+        {
+          "path": "assets/images/species/aquila-nipalensis.webp",
+          "sha256": "f426e4489b52a0be3dddc2da85bd5eafbdb927f8507e3e187fc6ef09edbc94af",
+          "originalCache": ".generated/bulk-originals/aquila-nipalensis.jpg",
+          "originalSha256": "7708a0d89df2927d437b929cdb08fe4ee14e78c84421c0e2ba2e101c905d9abb",
+          "directUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Steppe_Eagle_%28Aquila_nipalensis%29_%2827812388459%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Steppe_Eagle_(Aquila_nipalensis)_(27812388459).jpg",
+          "author": "Imran Shah from Islamabad, Pakistan",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "imageType": "photograph",
+          "bytes": 166544
+        }
+      ],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "aquila-heliaca",
+      "scientificName": "Aquila heliaca",
+      "group": "birds",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "32e8d20f97653b364e408f0f26869d3210e4bfa42239c6a9fa16eec459d17b82",
+      "draftSha256": "3369adc49f0b95f052409bc2234b1315a95bac7f05c22686b9b3710e115c3170",
+      "overviewWords": 131,
+      "images": [
+        {
+          "path": "assets/images/species/aquila-heliaca.webp",
+          "sha256": "2a2f8f73acb3acb385bc02a1f97180859f013e854ac005d0467e07e521885fd9",
+          "originalCache": ".generated/bulk-originals/aquila-heliaca.jpg",
+          "originalSha256": "abc8787e818d1f45479973edf30217e5563b984301e9b8421957e66bcdc74abe",
+          "directUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Eastern_Imperial_Eagle_cr.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Eastern_Imperial_Eagle_cr.jpg",
+          "author": "Sumeet Moghe",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "imageType": "photograph",
+          "bytes": 45360
+        }
+      ],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "hieraaetus-fasciatus",
+      "scientificName": "Aquila fasciata",
+      "group": "birds",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "42c6dbfcffad33fa43b4f487620ace0c6160e1162646f0ece09ec1258c558f8e",
+      "draftSha256": "f9bc2eb38873fb4c1dad8b6c20839e8e9786b52019fb965a2634926195b930de",
+      "overviewWords": 136,
+      "images": [
+        {
+          "path": "assets/images/species/hieraaetus-fasciatus.webp",
+          "sha256": "0950d072b83f61d2417cfb657aca94d814f833b900aed9c2c91b2cfe2eaa36b0",
+          "originalCache": ".generated/bulk-originals/hieraaetus-fasciatus.jpg",
+          "originalSha256": "304904f8de71be688bff64aaba9fccdd91bef3204e066087ff058a4889ed6753",
+          "directUrl": "https://upload.wikimedia.org/wikipedia/commons/2/27/Aguila_perdicera.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Aguila_perdicera.jpg",
+          "author": "Paco Gómez from Castellón, Spain",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "imageType": "photograph",
+          "bytes": 228006
+        }
+      ],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "hieraaetus-pennatus",
+      "scientificName": "Hieraaetus pennatus",
+      "group": "birds",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "1bff291f4ae82b1d8411316002d6f9d9de4684b2bf8097c60d33272f18fd5a3a",
+      "draftSha256": "c32a92f6a09a6e6da629c51263c515c2ace8d4026328f2876ebf4e4a91ba671c",
+      "overviewWords": 117,
+      "images": [
+        {
+          "path": "assets/images/species/hieraaetus-pennatus.webp",
+          "sha256": "e2d38785968184591115fddf0d638fc3fd483bb1a18419d95a00ef5cde332e98",
+          "originalCache": ".generated/bulk-originals/hieraaetus-pennatus.jpg",
+          "originalSha256": "08b4ffc510be517ccbb2f287fba116696d2116296fd1d75849545abe7043dfe2",
+          "directUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Booted_eagle%2C_Hieraaetus_pennatus%2C_at_Kgalagadi_Transfrontier_Pa_%2832334023348%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Booted_eagle,_Hieraaetus_pennatus,_at_Kgalagadi_Transfrontier_Pa_(32334023348).jpg",
+          "author": "Derek Keats from Johannesburg, South Africa",
+          "license": "CC BY 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+          "imageType": "photograph",
+          "bytes": 89674
+        }
+      ],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "tetrax-tetrax",
+      "scientificName": "Tetrax tetrax",
+      "group": "birds",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "366fd4b9382c209b75ce08a14b18d42b0a8fb359b232b74edeca97f3ea9218fc",
+      "draftSha256": "e2ada0543616ad52f52d3da1637d8348b1b8946b6ffb786e1198148993194fe7",
+      "overviewWords": 147,
+      "images": [
+        {
+          "path": "assets/images/species/tetrax-tetrax.webp",
+          "sha256": "78696e0e3302fdee3a3d82cf30d9cd7039ccfac8b526d8253d451320c1406e8b",
+          "originalCache": ".generated/bulk-originals/tetrax-tetrax.jpg",
+          "originalSha256": "92db4f1ea804701c6d2e113ee4a985224d1757a6e9347a0c1f069de7e81e99c5",
+          "directUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0b/Tetrax_tetrax%2C_Castuera%2C_Estremadura%2C_Spain_3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Tetrax_tetrax,_Castuera,_Estremadura,_Spain_3.jpg",
+          "author": "Francesco Veronesi from Italy",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "imageType": "photograph",
+          "bytes": 64980
+        }
+      ],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "crex-crex",
+      "scientificName": "Crex crex",
+      "group": "birds",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "c5253b2834aad130d02c46e6af0329546b90690d750b53d598ad85595567010d",
+      "draftSha256": "4818020d3bc0fff031c049e59c8b0da2c56040354e150a6f9e973fc7dbb4e704",
+      "overviewWords": 130,
+      "images": [
+        {
+          "path": "assets/images/species/crex-crex.webp",
+          "sha256": "d752fcd217ea8c5182f70f0201b2912837a7a7e642d94f1f36bbc7ca504b6282",
+          "originalCache": ".generated/bulk-originals/crex-crex.jpg",
+          "originalSha256": "557e66e06048df11879fa9b4266746dadeac739c89fedfce78a356caf64379d7",
+          "directUrl": "https://upload.wikimedia.org/wikipedia/commons/b/bf/CrexCrex.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:CrexCrex.jpg",
+          "author": "Ziegentom (www.fotocommunity.de)",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "imageType": "photograph",
+          "bytes": 166976
+        }
+      ],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "anthropoides-virgo",
+      "scientificName": "Anthropoides virgo",
+      "group": "birds",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "16e71c9c0b94f9739cd8e07092d10dce7a598cafc4f297d28879e46b5a31eb0b",
+      "draftSha256": "9180e81474e70966a3307062da08a64a8e4f9711bfb65c6c1aa4dd4d035e1ce0",
+      "overviewWords": 144,
+      "images": [
+        {
+          "path": "assets/images/species/anthropoides-virgo.webp",
+          "sha256": "33ffc5a69d145d6d9f4b7d2a5247fc8b2f5ca5ae82920d0def27c0b37e5f9819",
+          "originalCache": ".generated/catalog-150-sources/crane-alternative.jpg",
+          "originalSha256": "e493edc631f633a9fa50e759d99aca2912ebebb33af85af6a20e03c551b18127",
+          "directUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Demoiselle_Cranes_at_Tal_Chappar.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Demoiselle_Cranes_at_Tal_Chappar.jpg",
+          "author": "Sumeet Moghe",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "imageType": "photograph",
+          "bytes": 161182
+        }
+      ],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "burhinus-oedicnemus",
+      "scientificName": "Burhinus oedicnemus",
+      "group": "birds",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "69ebc4e471fc4c02ed2fedba85fb60554eeec5fddd745cf8b9796fda2f93d995",
+      "draftSha256": "823b89a4eee9ed964c922334fc57b2999daad867aa9bc215be7e95a04f091cd8",
+      "overviewWords": 137,
+      "images": [
+        {
+          "path": "assets/images/species/burhinus-oedicnemus.webp",
+          "sha256": "d1336bdbbf7ec65ce753fc856c8f832ce0ad1fd93c30446c00238cae122b1724",
+          "originalCache": ".generated/bulk-originals/burhinus-oedicnemus.jpg",
+          "originalSha256": "2a3b0e1ed71a76085ddedef3226a02f9ca8b4c42d19d8a408ee980af5f0484d9",
+          "directUrl": "https://upload.wikimedia.org/wikipedia/commons/3/38/Eurasian_Thicknee_-_Along_Po_river_-_Italy_FJ0A1202_%2828252446508%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Eurasian_Thicknee_-_Along_Po_river_-_Italy_FJ0A1202_(28252446508).jpg",
+          "author": "Francesco Veronesi from Italy",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "imageType": "photograph",
+          "bytes": 187864
+        }
+      ],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "vanellus-gregarius",
+      "scientificName": "Vanellus gregarius",
+      "group": "birds",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "d531d6950c99d391cd598a11a20bbd751a2eebe15f8e35a6fe338a023350b433",
+      "draftSha256": "263c707aeb9aa355cad6c48d7f55b8dd9499b170dbb6f09d775e32cee3d3cc3f",
+      "overviewWords": 145,
+      "images": [
+        {
+          "path": "assets/images/species/vanellus-gregarius.webp",
+          "sha256": "69a7fc798d3f2f47e4901c040db3ec4e5a19428e264b86d022f86e75938cd3dc",
+          "originalCache": ".generated/bulk-originals/vanellus-gregarius.jpg",
+          "originalSha256": "127f4b19bac874fe19e5a210a3df0fed8fc9b5db86a68b074078fe775361534d",
+          "directUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/611496248/original.jpg",
+          "originalPage": "https://www.inaturalist.org/photos/611496248",
+          "author": "Sameer Shaik",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "imageType": "photograph",
+          "bytes": 137806
+        }
+      ],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "glareola-nordmanni",
+      "scientificName": "Glareola nordmanni",
+      "group": "birds",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "b3ea31fae37040b6c94d3f207a036d4e000c68004df8586e905746536a230026",
+      "draftSha256": "70096116e0fb5bc53e3cccd847f7db91110f9b5ba4803e69ed9ab01484d03cca",
+      "overviewWords": 105,
+      "images": [
+        {
+          "path": "assets/images/species/glareola-nordmanni.webp",
+          "sha256": "6c51ef8917a8283eb23bd45727dbb8d276cd8ad5428815d95777b45512e4e993",
+          "originalCache": ".generated/bulk-originals/glareola-nordmanni.jpg",
+          "originalSha256": "299ed781cc3b702e1e6ae09285e5a12c573a63bdce9fe29680b29049849d3b79",
+          "directUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/731845339/original.jpg",
+          "originalPage": "https://www.inaturalist.org/photos/731845339",
+          "author": "Oscar Hazell",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "imageType": "photograph",
+          "bytes": 231660
+        }
+      ],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "strix-aluco",
+      "scientificName": "Strix aluco",
+      "group": "birds",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "482a48d1d83e564c8432686668aa7e6a844a6cdb408b7007f2afffd6e24621f2",
+      "draftSha256": "36241bb3f2acf341d9347e7016eb3c0885ceaff0abddd039b5ed7ef46bcdd363",
+      "overviewWords": 148,
+      "images": [
+        {
+          "path": "assets/images/species/strix-aluco.webp",
+          "sha256": "b822a70ee53abd2577d0df440fd6d23d3124d1f9cbd57e260a56b03af4168d00",
+          "originalCache": ".generated/bulk-originals/strix-aluco.jpg",
+          "originalSha256": "d564e609cf16a9751730030b9a869e45fd94da739b2c1ccc64c0cd52e060391c",
+          "directUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/750184013/original.jpg",
+          "originalPage": "https://www.inaturalist.org/photos/750184013",
+          "author": "hanami_yama",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "imageType": "photograph",
+          "bytes": 95426
+        }
+      ],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "syrrhaptes-paradoxus",
+      "scientificName": "Syrrhaptes paradoxus",
+      "group": "birds",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "33ae84c131054d46f5d67e316d440163c6e58179dd43cd14a1ba371cd8422201",
+      "draftSha256": "2fa136a679829e840b96a8a8bb3300f14e75f45042f5dcc32c94cbb6109bc00c",
+      "overviewWords": 131,
+      "images": [
+        {
+          "path": "assets/images/species/syrrhaptes-paradoxus.webp",
+          "sha256": "728fdd7aa841cd29948f6d63807d5813d89091176876c12514e4bf80bf8ad6e2",
+          "originalCache": ".generated/bulk-originals/syrrhaptes-paradoxus.jpg",
+          "originalSha256": "860bd21303f905b15d3611b7945679a2c125dc09b0e362006f783a041c57cbe1",
+          "directUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/707778366/original.jpg",
+          "originalPage": "https://www.inaturalist.org/photos/707778366",
+          "author": "Tom Field",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "imageType": "photograph",
+          "bytes": 225092
+        }
+      ],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "pterocles-alchata",
+      "scientificName": "Pterocles alchata",
+      "group": "birds",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "6659096a52cf3873a36aa915182cf07e9a3800bf446067fc3655c689f5973f56",
+      "draftSha256": "78fc5fc0a38f2055d2a75557cd45e3116dbfc7214031d85f4c1853adee46e953",
+      "overviewWords": 125,
+      "images": [
+        {
+          "path": "assets/images/species/pterocles-alchata.webp",
+          "sha256": "7f804dc71600f9a6f70d2831d8e7106307dc83552c1acd12614b8dc7ddb66aca",
+          "originalCache": ".generated/bulk-originals/pterocles-alchata.jpg",
+          "originalSha256": "ec1a71ae20184324f06070b76930d71921c728eb0302db5008ebd267d5ae5163",
+          "directUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Pterocles_alchata_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Pterocles_alchata_(cropped).jpg",
+          "author": "https://www.flickr.com/photos/francesco_veronesi/",
+          "license": "CC BY-SA 2.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+          "imageType": "photograph",
+          "bytes": 56450
+        }
+      ],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "pterocles-orientalis",
+      "scientificName": "Pterocles orientalis",
+      "group": "birds",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "6255b29a8b69ae8125caa46524c570e8229dfeee9f2905c14436d0a769adc831",
+      "draftSha256": "27c0ae3209f67318115cc518e74745f89694e229f795ef5aeee60df5e9ef4f48",
+      "overviewWords": 137,
+      "images": [
+        {
+          "path": "assets/images/species/pterocles-orientalis.webp",
+          "sha256": "c3f1cd305778fdcf9185d77486f96a5e530d0fcdb029dc0d43cf183290cc308c",
+          "originalCache": ".generated/bulk-originals/pterocles-orientalis.jpg",
+          "originalSha256": "458e6f25afead13e52735d5fce2d2ef65583c5efefd1cfc42a6b69c892b49be0",
+          "directUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/731522111/original.jpg",
+          "originalPage": "https://www.inaturalist.org/photos/731522111",
+          "author": "Антон Лабачоў",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "imageType": "photograph",
+          "bytes": 24612
+        }
+      ],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "columba-leuconota",
+      "scientificName": "Columba leuconota",
+      "group": "birds",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "c1cc18c2072dd6425178a4e6c8bcaf0ce0ac38c83035a38c84fd1164ed8beb37",
+      "draftSha256": "f88e43bc8859791857b01e4c19be771ed4753967a807479fd70d1bd1e56f7798",
+      "overviewWords": 124,
+      "images": [
+        {
+          "path": "assets/images/species/columba-leuconota.webp",
+          "sha256": "a0363b38059b86cb387420f9b986b3117ed865ab499eccb97ff9ec92fd232450",
+          "originalCache": ".generated/bulk-originals/columba-leuconota.jpg",
+          "originalSha256": "00c7bc202e6ab603dc85d8f8c667df09b451baa8226c3a195b9420898bc5ee27",
+          "directUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/739807432/original.jpg",
+          "originalPage": "https://www.inaturalist.org/photos/739807432",
+          "author": "Tandin Wangdi",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "imageType": "photograph",
+          "bytes": 104678
+        }
+      ],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "columba-eversmanni",
+      "scientificName": "Columba eversmanni",
+      "group": "birds",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "60fafa02fff7886cf6515da5a5637dec6b9ac55c8638e1b0a0837aa861211898",
+      "draftSha256": "faa942b32d751ad68e2eadb4ca67074ae86820bae3829185c3927d6a854fda7d",
+      "overviewWords": 124,
+      "images": [
+        {
+          "path": "assets/images/species/columba-eversmanni.webp",
+          "sha256": "f514ab8fc13f8b13c31de68d1f38a50373f44ab8fb458437aa4b7404bac5de7c",
+          "originalCache": ".generated/bulk-originals/columba-eversmanni.jpg",
+          "originalSha256": "901317e629908dab037774a87d759cf529bf2187afdadcb2cf2733f94840078c",
+          "directUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/500856871/original.jpg",
+          "originalPage": "https://www.inaturalist.org/photos/500856871",
+          "author": "egorbirder",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "imageType": "photograph",
+          "bytes": 77318
+        }
+      ],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    },
+    {
+      "id": "bubo-bubo",
+      "scientificName": "Bubo bubo",
+      "group": "birds",
+      "rank": "SPECIES",
+      "historicalRank": "SPECIES",
+      "checkedFingerprint": "e6c420146d311ad7c1b806fdf1396aeb3f3db4d9dbd7265e955f2070e187050e",
+      "draftSha256": "90a8c757b699c1caa049b07ea90302dec926c37dce4613aaf00a8d5192c3e2a5",
+      "overviewWords": 148,
+      "images": [
+        {
+          "path": "assets/images/species/bubo-bubo.webp",
+          "sha256": "3673cf76bafb634d4cdd3092d2783b1e2a8cc3a266fad08e6ccb877c4e840b92",
+          "originalCache": ".generated/catalog-150-sources/bubo-selected.jpg",
+          "originalSha256": "f275d1c1842f422126e055e5ded035ecd960b0bdfbb7ac76dad960828f03ce44",
+          "directUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/746000832/original.jpg",
+          "originalPage": "https://www.inaturalist.org/photos/746000832",
+          "author": "Tim Parker",
+          "license": "CC BY 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "imageType": "photograph",
+          "bytes": 77064
+        }
+      ],
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "populationType": "unknown"
+    }
+  ]
+}

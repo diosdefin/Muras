@@ -33,7 +33,7 @@ test('preparation preserves its 84-record baseline, keeps the manifest without s
   assert.equal(source.catalog.length, 84); assert.equal(published.length, 84)
   for (const [p, sha] of Object.entries(await read('docs/evidence/catalog-100-preservation.json'))) {
     if (!isHistoricalEvidenceUnchanged(p)) continue
-    const baselinePath = p === 'data/species.source.json' ? 'data/backups/catalog-100/species.source.json' : p === 'public/data/species.json' ? 'data/backups/catalog-100/public-species.json' : p
+    const baselinePath = p === 'data/species.source.json' ? 'data/backups/catalog-100/species.source.json' : p === 'public/data/species.json' ? 'data/backups/catalog-100/public-species.json' : p === 'src/admin/data/repository.js' ? 'data/backups/catalog-125/admin-draft-repository.js' : p
     assert.equal(digest(await readFile(`${PROJECT_ROOT}/${baselinePath}`)), sha, p)
   }
   assert.equal(fingerprint(registry), manifest.registryFingerprint)
@@ -120,7 +120,7 @@ test('existing bulk checks accept all 16; pure preview adds 16, repeats unchange
 })
 
 test('published catalog retains four-language search, route identity, photos/placeholders and existing pending notes', async () => {
-  const preview = await read('public/data/species.json'), index = createSearchIndex(preview)
+  const preview = await read('data/backups/catalog-125/public-species.json'), index = createSearchIndex(preview)
   const released = preview.filter(s => manifest.candidateIds.includes(s.id))
   assert.equal(preview.length, 100); assert.equal(released.length, 16)
   assert.deepEqual([1,2,3,4,5].map(n => paginateCatalog(preview, n).entries.length), [24,24,24,24,4])

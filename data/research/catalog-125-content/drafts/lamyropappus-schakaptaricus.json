@@ -1,0 +1,268 @@
+{
+  "id": "lamyropappus-schakaptaricus",
+  "scientificName": "Lamyropappus schakaptaricus",
+  "names": {
+    "ru": "Ламиропаппус шакафтарский",
+    "ky": "Lamyropappus schakaptaricus",
+    "uz": "Lamyropappus schakaptaricus",
+    "en": "Lamyropappus schakaptaricus"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Asterales",
+    "family": "Asteraceae",
+    "genus": "Lamyropappus"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Пестроцветные склоны, речные долины и каменисто-глинистые предгорные впадины от равнин до нижнего горного пояса.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Очерк 2006 года указывает бессистемный выпас, чрезмерную пастбищную нагрузку, распашку и строительные работы.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендации 2006 года: организовать ботанический заказник, провести учёт популяций и исследовать введение в культуру.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/lamyropappus-schakaptaricus.webp",
+      "width": 1266,
+      "height": 1800,
+      "sha256": "9cbadcba558cbc78de7370dfed9494ce6ff9ddbeb224e657cde3b2ec273b033a",
+      "author": "ELAR corporation (Moscow, Russia)",
+      "originalPage": "https://plant.depo.msu.ru/open/public/item/MW0890024",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "ELAR corporation (Moscow, Russia); Moscow State University (copyright is managed by Dr. Alexey P. Seregin); Гербарный образец MW0890024; CC BY 4.0.  Серегин А. П. (ред.) Цифровой гербарий МГУ. М.: МГУ, 2026; MW0890024. https://plant.depo.msu.ru/open/public/item/MW0890024 (16.10.2026).",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px, WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Гербарный образец MW0890024. Lamyropappus schakaptaricus. Изображение не подтверждает современную встречаемость в Кыргызстане.",
+        "ky": null,
+        "uz": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Lamyropappus schakaptaricus, с. 211",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=211",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-84",
+      "publisher": "Правительство КР; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ],
+      "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Lamyropappus schakaptaricus (O.Fedtsch. & B.Fedtsch.) Knorring & Tamamsch.",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Lamyropappus%20schakaptaricus",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz",
+        "names.en"
+      ],
+      "taxonId": "gbif:3098608"
+    },
+    {
+      "id": "photo-primary",
+      "title": "Гербарный образец: Lamyropappus schakaptaricus",
+      "publisher": "Moscow State University",
+      "url": "https://plant.depo.msu.ru/open/public/item/MW0890024",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "ru",
+      "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Колючелистное растение пестроцветных и каменисто-глинистых склонов из Красной книги Кыргызстана 2006 года.",
+        "ky": "Ала-була жана таштак-чополуу капталдарда өскөн, жалбырактары тикендүү өсүмдүк. 2006-жылкы Кызыл китепке киргизилген.",
+        "uz": "Rang-barang jinsli va toshloq-gilli yonbagʻirlarda oʻsadigan, barglari tikanli oʻsimlik. 2006-yilgi Qizil kitobga kiritilgan.",
+        "en": "A spiny-leaved plant of variegated and stony-clay slopes, included in Kyrgyzstan’s 2006 Red Data Book."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Колючелистное растение пестроцветных и каменисто-глинистых склонов из Красной книги Кыргызстана 2006 года. Национальный очерк 2006 года содержит следующие сведения. Исторический очерк описывает разобщённое распространение и редкие одиночные растения. Данные о культивировании отсутствовали; современный размер популяций не выведен из этих качественных наблюдений. По книге размножается семенами, цветёт в июне–июле и плодоносит в августе. Книга указывает среднее течение Нарына, окрестности Шекафтара и Таш-Кумыра, бассейн Майли-Сая и Джиде-Сая, Кетмень-Тюбинскую котловину. За пределами страны названы прибалхашские пустыни Казахстана. Эти сведения исторические. Очерк 2006 года указывает бессистемный выпас, чрезмерную пастбищную нагрузку, распашку и строительные работы. Рекомендации 2006 года: организовать ботанический заказник, провести учёт популяций и исследовать введение в культуру.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Многолетнее или двулетнее растение с толстым веретеновидным корнем и беловато-войлочными ветвящимися стеблями. Кожистые листья по краю гребенчато-колючие, снизу беловойлочные. Корзинки несут пурпуровые цветки; семянки снабжены длинным хохолком.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический очерк описывает разобщённое распространение и редкие одиночные растения. Данные о культивировании отсутствовали; современный размер популяций не выведен из этих качественных наблюдений.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге размножается семенами, цветёт в июне–июле и плодоносит в августе.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книга указывает среднее течение Нарына, окрестности Шекафтара и Таш-Кумыра, бассейн Майли-Сая и Джиде-Сая, Кетмень-Тюбинскую котловину. За пределами страны названы прибалхашские пустыни Казахстана. Эти сведения исторические.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

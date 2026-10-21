@@ -1,0 +1,255 @@
+{
+  "id": "vanellus-gregarius",
+  "scientificName": "Vanellus gregarius",
+  "names": {
+    "ru": "Кречётка",
+    "ky": "Vanellus gregarius",
+    "uz": "Vanellus gregarius",
+    "en": "Sociable Plover"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Charadriiformes",
+    "family": "Charadriidae",
+    "genus": "Vanellus"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "CR",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Сухие степи, солонцеватые участки и разреженная растительность; на пролёте — сухие места поблизости от воды.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Перевыпас в гнездовых местообитаниях и разорение гнёзд; эти сведения относятся к общей биологии вида.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Предложены обследование подходящих степных участков, предотвращение пожаров и перевыпаса и просветительская работа.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/vanellus-gregarius.webp",
+      "width": 1487,
+      "height": 1487,
+      "sha256": "69a7fc798d3f2f47e4901c040db3ec4e5a19428e264b86d022f86e75938cd3dc",
+      "author": "Sameer Shaik",
+      "originalPage": "https://www.inaturalist.org/photos/611496248",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Vanellus gregarius — Sameer Shaik; CC BY 4.0; iNaturalist photo 611496248. (c) Sameer Shaik, some rights reserved (CC BY).",
+      "modifications": [
+        "Уменьшение без увеличения до 1800 px; WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Фотография Vanellus gregarius; пример вида, не подтверждение современного присутствия в Кыргызстане или местного подвида.",
+        "ky": null,
+        "uz": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Vanellus gregarius, с. 445",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=445",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Vanellus gregarius (Pallas, 1771)",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Vanellus%20gregarius",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz"
+      ],
+      "taxonId": "gbif:5229138"
+    },
+    {
+      "id": "photo-primary",
+      "title": "Фотография Vanellus gregarius",
+      "publisher": "iNaturalist; Sameer Shaik",
+      "url": "https://www.inaturalist.org/photos/611496248",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en",
+      "notes": "Per-photo license_code и авторская атрибуция проверены в первичном API; версия лицензии — официальный LicenseModule."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Кречётка включена в национальное издание 2006 года как критически угрожаемая птица; гнездование в Кыргызстане этим источником не установлено.",
+        "ky": "2006-жылкы улуттук очеркте Ысык-Көлдөн айрым жолугушуулары берилген, Кыргызстанда уя салуусу аныкталбаган куш.",
+        "uz": "2006-yilgi milliy manbada Issiqko‘l atrofida ayrim uchrashuvlari keltirilgan, mamlakatda uya qurishi aniqlanmagan qush.",
+        "en": "A lapwing with isolated Issyk-Kul records and no confirmed Kyrgyz nesting in the 2006 account."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Кречётка включена в национальное издание 2006 года как критически угрожаемая птица; гнездование в Кыргызстане этим источником не установлено.\n\nСухие степи, солонцеватые участки и разреженная растительность; на пролёте — сухие места поблизости от воды.\n\nНациональные сведения представляют отдельные встречи в Прииссыккулье. Потенциально пригодные предгорья не считаются автоматически заселёнными.\n\nНасекомые, включая жуков, саранчовых и гусениц.\n\nОбщие сведения очерка о гнездовом ареале вне Кыргызстана: наземное гнездо, обычно 4 яйца, инкубация 21–25 дней с участием обоих родителей.\n\nПриведены исторические сообщения с берегов Иссык-Куля, в том числе у Ананьево в 2003 году. Они не определяют нынешнюю численность и регулярность пребывания.\n\nПеревыпас в гнездовых местообитаниях и разорение гнёзд; эти сведения относятся к общей биологии вида.\n\nПредложены обследование подходящих степных участков, предотвращение пожаров и перевыпаса и просветительская работа.\n\nНациональная категория и описанные встречи относятся к историческому изданию 2006 года. Современная численность не установлена; текущий юридический статус и современное присутствие требуют отдельного подтверждения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальные сведения представляют отдельные встречи в Прииссыккулье. Потенциально пригодные предгорья не считаются автоматически заселёнными.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Насекомые, включая жуков, саранчовых и гусениц.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Общие сведения очерка о гнездовом ареале вне Кыргызстана: наземное гнездо, обычно 4 яйца, инкубация 21–25 дней с участием обоих родителей.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Приведены исторические сообщения с берегов Иссык-Куля, в том числе у Ананьево в 2003 году. Они не определяют нынешнюю численность и регулярность пребывания.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

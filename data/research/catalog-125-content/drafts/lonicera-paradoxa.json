@@ -1,0 +1,248 @@
+{
+  "id": "lonicera-paradoxa",
+  "scientificName": "Lonicera paradoxa",
+  "names": {
+    "ru": "Жимолость странная",
+    "ky": "Lonicera paradoxa",
+    "uz": "Lonicera paradoxa",
+    "en": "Lonicera paradoxa"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Dipsacales",
+    "family": "Caprifoliaceae",
+    "genus": "Lonicera"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "CR B2ab(iii)",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": "EN",
+    "year": null,
+    "sourceIds": [
+      "iucn-checklist"
+    ]
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Крупнокаменистые шлейфы у известняковых скал, каменисто-щебнистые склоны среди кустарников, лугово-степной растительности и разреженных арчовников на высотах 2000–3000 м.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По очерку 2006 года опасны освоение местообитаний, рубка на топливо и отсутствие семенного возобновления.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические рекомендации: изучить биологию, экологию и состояние популяций, организовать заказник в бассейне Курбан-Кёля.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Lonicera paradoxa, с. 207",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=207",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-78",
+      "publisher": "Правительство КР; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ],
+      "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Lonicera paradoxa Pojark.",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Lonicera%20paradoxa",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz",
+        "names.en"
+      ],
+      "taxonId": "gbif:5599068"
+    },
+    {
+      "id": "iucn-checklist",
+      "title": "IUCN Red List checklist через GBIF: Lonicera paradoxa — EN",
+      "publisher": "IUCN / GBIF",
+      "url": "https://api.gbif.org/v1/species/search?datasetKey=19491596-35ae-4a91-9a98-85cf505f1bd3&q=Lonicera%20paradoxa&limit=10",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "iucn.category"
+      ],
+      "notes": "Точное принятое имя SPECIES и совпадающий nubKey. Категория из опубликованного checklist; год индивидуальной оценки не указан. Это не проверка live IUCN и не национальная категория."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Низкий кустарник каменистых склонов с лопастными листьями, включённый в Красную книгу Кыргызстана 2006 года.",
+        "ky": "Таштак капталдарда өскөн, жалбырактары калакчалуу жапыз бадал. 2006-жылкы Кызыл китепке киргизилген.",
+        "uz": "Toshloq yonbagʻirlarda oʻsadigan, barglari boʻlakli past buta. 2006-yilgi Qizil kitobga kiritilgan.",
+        "en": "A low shrub of stony slopes with lobed leaves, included in Kyrgyzstan’s 2006 Red Data Book."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Низкий кустарник каменистых склонов с лопастными листьями, включённый в Красную книгу Кыргызстана 2006 года. Национальный очерк 2006 года содержит следующие сведения. Национальная книга характеризует кустарник как реликт с разорванным ареалом и слабым семенным возобновлением. Приведённые в ней подсчёты прошлых десятилетий не перенесены в современное поле численности. В книге указано семенное размножение при почти отсутствующем естественном возобновлении. Сроки цветения расходятся: русский текст даёт июль–август, английский — май. Единый подтверждённый срок здесь не установлен. В Кыргызстане исторический очерк называет ущелье Кёк-Суу выше Курбан-Кёля на Алайском хребте; зарубежные участки ареала относятся к Таджикистану и Узбекистану. Современные находки не подтверждались. По очерку 2006 года опасны освоение местообитаний, рубка на топливо и отсутствие семенного возобновления. Исторические рекомендации: изучить биологию, экологию и состояние популяций, организовать заказник в бассейне Курбан-Кёля.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Приземистый кустарник высотой до 1,5 м со старой отслаивающейся серой корой. Листья мелкие, часть из них заметно лопастная или разрезанная. Пазушные цветки парные, ягоды красные, шаровидные.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная книга характеризует кустарник как реликт с разорванным ареалом и слабым семенным возобновлением. Приведённые в ней подсчёты прошлых десятилетий не перенесены в современное поле численности.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В книге указано семенное размножение при почти отсутствующем естественном возобновлении. Сроки цветения расходятся: русский текст даёт июль–август, английский — май. Единый подтверждённый срок здесь не установлен.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В Кыргызстане исторический очерк называет ущелье Кёк-Суу выше Курбан-Кёля на Алайском хребте; зарубежные участки ареала относятся к Таджикистану и Узбекистану. Современные находки не подтверждались.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

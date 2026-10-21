@@ -1,0 +1,1611 @@
+{
+  "schemaVersion": 1,
+  "documentType": "secondary-photo-search",
+  "accessedAt": "2026-10-16",
+  "records": [
+    {
+      "candidateId": "barbus-capito-conocephalus",
+      "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=11619334&mediaType=StillImage&limit=3",
+      "httpStatus": 200,
+      "data": {
+        "offset": 0,
+        "limit": 3,
+        "endOfRecords": true,
+        "count": 2,
+        "results": [
+          {
+            "key": 5908905434,
+            "datasetKey": "50c9509d-22c7-4a22-a47d-8c48425ef4a7",
+            "publishingOrgKey": "28eb1a3f-1c15-4a95-931a-4af90ecb574d",
+            "datasetCategory": [
+              "CitizenScience"
+            ],
+            "installationKey": "997448a8-f762-11e1-a439-00145eb45e9a",
+            "hostingOrganizationKey": "28eb1a3f-1c15-4a95-931a-4af90ecb574d",
+            "publishingCountry": "US",
+            "protocol": "DWC_ARCHIVE",
+            "lastCrawled": "2026-10-13T15:36:28.771+00:00",
+            "lastParsed": "2026-10-14T02:41:03.225+00:00",
+            "crawlId": 609,
+            "extensions": {
+              "http://rs.gbif.org/terms/1.0/Multimedia": [
+                {
+                  "http://purl.org/dc/terms/license": "https://creativecommons.org/licenses/by-nc/4.0/",
+                  "http://purl.org/dc/terms/created": "2025-03-13T02:37:04Z",
+                  "http://purl.org/dc/terms/publisher": "iNaturalist",
+                  "http://purl.org/dc/terms/format": "image/jpeg",
+                  "http://purl.org/dc/terms/identifier": "https://inaturalist-open-data.s3.amazonaws.com/photos/485051817/original.jpg",
+                  "http://rs.tdwg.org/dwc/terms/catalogNumber": "485051817",
+                  "http://purl.org/dc/terms/references": "https://www.inaturalist.org/photos/485051817",
+                  "http://purl.org/dc/terms/rightsHolder": "Akbarjon Rozimov",
+                  "http://purl.org/dc/terms/type": "StillImage",
+                  "http://purl.org/dc/terms/creator": "Akbarjon Rozimov"
+                }
+              ]
+            },
+            "basisOfRecord": "HUMAN_OBSERVATION",
+            "occurrenceStatus": "PRESENT",
+            "classifications": {
+              "7ddf754f-d193-4cc9-b351-99906754a03b": {
+                "usage": {
+                  "key": "QBDQM",
+                  "name": "Luciobarbus conocephalus (Kessler, 1872)",
+                  "rank": "SPECIES",
+                  "code": "ZOOLOGICAL",
+                  "authorship": "(Kessler, 1872)",
+                  "genericName": "Luciobarbus",
+                  "specificEpithet": "conocephalus",
+                  "formattedName": "<i>Luciobarbus</i> <i>conocephalus</i> (Kessler, 1872)"
+                },
+                "acceptedUsage": {
+                  "key": "3WCK8",
+                  "name": "Luciobarbus capito (Güldenstädt, 1773)",
+                  "rank": "SPECIES",
+                  "code": "ZOOLOGICAL",
+                  "authorship": "(Güldenstädt, 1773)",
+                  "genericName": "Luciobarbus",
+                  "specificEpithet": "capito",
+                  "formattedName": "<i>Luciobarbus</i> <i>capito</i> (Güldenstädt, 1773)"
+                },
+                "taxonomicStatus": "SYNONYM",
+                "classification": [
+                  {
+                    "key": "CS5HF",
+                    "name": "Eukaryota",
+                    "rank": "DOMAIN"
+                  },
+                  {
+                    "key": "N",
+                    "name": "Animalia",
+                    "rank": "KINGDOM"
+                  },
+                  {
+                    "key": "CH2",
+                    "name": "Chordata",
+                    "rank": "PHYLUM"
+                  },
+                  {
+                    "key": "8V4V3",
+                    "name": "Vertebrata",
+                    "rank": "SUBPHYLUM"
+                  },
+                  {
+                    "key": "8V4V5",
+                    "name": "Gnathostomata",
+                    "rank": "INFRAPHYLUM"
+                  },
+                  {
+                    "key": "8VVWB",
+                    "name": "Osteichthyes",
+                    "rank": "PARVPHYLUM"
+                  },
+                  {
+                    "key": "8VR36",
+                    "name": "Actinopterygii",
+                    "rank": "GIGACLASS"
+                  },
+                  {
+                    "key": "KTWM8",
+                    "name": "Actinopteri",
+                    "rank": "SUPERCLASS"
+                  },
+                  {
+                    "key": "8V4VD",
+                    "name": "Teleostei",
+                    "rank": "CLASS"
+                  },
+                  {
+                    "key": "334",
+                    "name": "Cypriniformes",
+                    "rank": "ORDER"
+                  },
+                  {
+                    "key": "KV2GM",
+                    "name": "Cyprinidae",
+                    "rank": "FAMILY"
+                  },
+                  {
+                    "key": "KV528",
+                    "name": "Barbinae",
+                    "rank": "SUBFAMILY"
+                  },
+                  {
+                    "key": "KVHYH",
+                    "name": "Luciobarbus",
+                    "rank": "GENUS"
+                  },
+                  {
+                    "key": "3WCK8",
+                    "name": "Luciobarbus capito",
+                    "rank": "SPECIES"
+                  }
+                ],
+                "issues": [
+                  "TAXON_ID_NOT_FOUND"
+                ]
+              },
+              "d7dddbf4-2cf0-4f39-9b2a-bb099caae36c": {
+                "usage": {
+                  "key": "11619334",
+                  "name": "Luciobarbus conocephalus (Kessler, 1872)",
+                  "rank": "SPECIES",
+                  "code": "ZOOLOGICAL",
+                  "authorship": "(Kessler, 1872)",
+                  "genericName": "Luciobarbus",
+                  "specificEpithet": "conocephalus",
+                  "formattedName": "<i>Luciobarbus</i> <i>conocephalus</i> (Kessler, 1872)"
+                },
+                "acceptedUsage": {
+                  "key": "11619334",
+                  "name": "Luciobarbus conocephalus (Kessler, 1872)",
+                  "rank": "SPECIES",
+                  "code": "ZOOLOGICAL",
+                  "authorship": "(Kessler, 1872)",
+                  "genericName": "Luciobarbus",
+                  "specificEpithet": "conocephalus",
+                  "formattedName": "<i>Luciobarbus</i> <i>conocephalus</i> (Kessler, 1872)"
+                },
+                "taxonomicStatus": "ACCEPTED",
+                "classification": [
+                  {
+                    "key": "1",
+                    "name": "Animalia",
+                    "rank": "KINGDOM"
+                  },
+                  {
+                    "key": "44",
+                    "name": "Chordata",
+                    "rank": "PHYLUM"
+                  },
+                  {
+                    "key": "1153",
+                    "name": "Cypriniformes",
+                    "rank": "ORDER"
+                  },
+                  {
+                    "key": "7336",
+                    "name": "Cyprinidae",
+                    "rank": "FAMILY"
+                  },
+                  {
+                    "key": "2363068",
+                    "name": "Luciobarbus",
+                    "rank": "GENUS"
+                  },
+                  {
+                    "key": "11619334",
+                    "name": "Luciobarbus conocephalus",
+                    "rank": "SPECIES"
+                  }
+                ],
+                "issues": [
+                  "TAXON_ID_NOT_FOUND"
+                ]
+              }
+            },
+            "taxonKey": 11619334,
+            "kingdomKey": 1,
+            "phylumKey": 44,
+            "orderKey": 1153,
+            "familyKey": 7336,
+            "genusKey": 2363068,
+            "speciesKey": 11619334,
+            "acceptedTaxonKey": 11619334,
+            "scientificName": "Luciobarbus conocephalus (Kessler, 1872)",
+            "scientificNameAuthorship": "(Kessler, 1872)",
+            "acceptedScientificName": "Luciobarbus conocephalus (Kessler, 1872)",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "order": "Cypriniformes",
+            "family": "Cyprinidae",
+            "genus": "Luciobarbus",
+            "species": "Luciobarbus conocephalus",
+            "genericName": "Luciobarbus",
+            "specificEpithet": "conocephalus",
+            "taxonRank": "SPECIES",
+            "taxonomicStatus": "ACCEPTED",
+            "dateIdentified": "2025-04-11T07:42:35",
+            "decimalLatitude": 40.91003,
+            "decimalLongitude": 68.700805,
+            "coordinateUncertaintyInMeters": 3,
+            "continent": "ASIA",
+            "stateProvince": "Sirdaryo",
+            "gadm": {
+              "level0": {
+                "gid": "UZB",
+                "name": "Uzbekistan"
+              },
+              "level1": {
+                "gid": "UZB.11_1",
+                "name": "Sirdaryo"
+              },
+              "level2": {
+                "gid": "UZB.11.7_1",
+                "name": "Sirdaryo"
+              }
+            },
+            "year": 2025,
+            "month": 3,
+            "day": 13,
+            "eventDate": "2025-03-13T07:37:04",
+            "startDayOfYear": 72,
+            "endDayOfYear": 72,
+            "issues": [
+              "CONTINENT_DERIVED_FROM_COORDINATES",
+              "TAXON_ID_NOT_FOUND"
+            ],
+            "modified": "2025-12-04T11:16:21.000+00:00",
+            "lastInterpreted": "2026-10-14T02:41:03.225+00:00",
+            "references": "https://www.inaturalist.org/observations/269749356",
+            "license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "isSequenced": false,
+            "identifiers": [
+              {
+                "identifier": "269749356"
+              }
+            ],
+            "media": [
+              {
+                "type": "StillImage",
+                "format": "image/jpeg",
+                "references": "https://www.inaturalist.org/photos/485051817",
+                "created": "2025-03-13T02:37:04.000+00:00",
+                "creator": "Akbarjon Rozimov",
+                "publisher": "iNaturalist",
+                "license": "http://creativecommons.org/licenses/by-nc/4.0/",
+                "rightsHolder": "Akbarjon Rozimov",
+                "identifier": "https://inaturalist-open-data.s3.amazonaws.com/photos/485051817/original.jpg"
+              }
+            ],
+            "facts": [],
+            "relations": [],
+            "isInCluster": false,
+            "datasetName": "iNaturalist research-grade observations",
+            "recordedBy": "Akbarjon Rozimov",
+            "identifiedBy": "Akbarjon Rozimov",
+            "dnaSequenceID": [],
+            "nucleotideSequence": [],
+            "geodeticDatum": "WGS84",
+            "countryCode": "UZ",
+            "recordedByIDs": [],
+            "identifiedByIDs": [],
+            "gbifRegion": "EUROPE",
+            "country": "Uzbekistan",
+            "publishedByGbifRegion": "NORTH_AMERICA",
+            "rightsHolder": "Akbarjon Rozimov",
+            "identifier": "269749356",
+            "http://unknown.org/nick": "akbarjon_rozimov",
+            "verbatimEventDate": "2025-03-13 07:37:04+05:00",
+            "http://unknown.org/crawl_attempt": "610",
+            "http://unknown.org/status": "not_reviewed",
+            "http://unknown.org/allowCoordinatesFlipping": "true",
+            "collectionCode": "Observations",
+            "gbifID": "5908905434",
+            "verbatimLocality": "Sirdaryo, UZ-SI, UZ",
+            "occurrenceID": "https://www.inaturalist.org/observations/269749356",
+            "taxonID": "1316816",
+            "http://unknown.org/captive_cultivated": "wild",
+            "catalogNumber": "269749356",
+            "institutionCode": "iNaturalist",
+            "eventTime": "07:37:04+05:00",
+            "identificationID": "611419816"
+          },
+          {
+            "key": 4953170346,
+            "datasetKey": "50c9509d-22c7-4a22-a47d-8c48425ef4a7",
+            "publishingOrgKey": "28eb1a3f-1c15-4a95-931a-4af90ecb574d",
+            "datasetCategory": [
+              "CitizenScience"
+            ],
+            "installationKey": "997448a8-f762-11e1-a439-00145eb45e9a",
+            "hostingOrganizationKey": "28eb1a3f-1c15-4a95-931a-4af90ecb574d",
+            "publishingCountry": "CA",
+            "protocol": "DWC_ARCHIVE",
+            "lastCrawled": "2026-10-13T15:36:28.771+00:00",
+            "lastParsed": "2026-10-14T02:47:43.787+00:00",
+            "crawlId": 609,
+            "extensions": {
+              "http://rs.gbif.org/terms/1.0/Multimedia": [
+                {
+                  "http://purl.org/dc/terms/license": "https://creativecommons.org/licenses/by/4.0/",
+                  "http://purl.org/dc/terms/created": "2023-07-01T05:00:48Z",
+                  "http://purl.org/dc/terms/publisher": "iNaturalist",
+                  "http://purl.org/dc/terms/format": "image/jpeg",
+                  "http://purl.org/dc/terms/identifier": "https://inaturalist-open-data.s3.amazonaws.com/photos/390287886/original.jpeg",
+                  "http://rs.tdwg.org/dwc/terms/catalogNumber": "390287886",
+                  "http://purl.org/dc/terms/references": "https://www.inaturalist.org/photos/390287886",
+                  "http://purl.org/dc/terms/rightsHolder": "Murodjon Rakhmonov",
+                  "http://purl.org/dc/terms/type": "StillImage",
+                  "http://purl.org/dc/terms/creator": "Murodjon Rakhmonov"
+                }
+              ]
+            },
+            "basisOfRecord": "HUMAN_OBSERVATION",
+            "occurrenceStatus": "PRESENT",
+            "lifeStage": "Adult",
+            "classifications": {
+              "7ddf754f-d193-4cc9-b351-99906754a03b": {
+                "usage": {
+                  "key": "QBDQM",
+                  "name": "Luciobarbus conocephalus (Kessler, 1872)",
+                  "rank": "SPECIES",
+                  "code": "ZOOLOGICAL",
+                  "authorship": "(Kessler, 1872)",
+                  "genericName": "Luciobarbus",
+                  "specificEpithet": "conocephalus",
+                  "formattedName": "<i>Luciobarbus</i> <i>conocephalus</i> (Kessler, 1872)"
+                },
+                "acceptedUsage": {
+                  "key": "3WCK8",
+                  "name": "Luciobarbus capito (Güldenstädt, 1773)",
+                  "rank": "SPECIES",
+                  "code": "ZOOLOGICAL",
+                  "authorship": "(Güldenstädt, 1773)",
+                  "genericName": "Luciobarbus",
+                  "specificEpithet": "capito",
+                  "formattedName": "<i>Luciobarbus</i> <i>capito</i> (Güldenstädt, 1773)"
+                },
+                "taxonomicStatus": "SYNONYM",
+                "classification": [
+                  {
+                    "key": "CS5HF",
+                    "name": "Eukaryota",
+                    "rank": "DOMAIN"
+                  },
+                  {
+                    "key": "N",
+                    "name": "Animalia",
+                    "rank": "KINGDOM"
+                  },
+                  {
+                    "key": "CH2",
+                    "name": "Chordata",
+                    "rank": "PHYLUM"
+                  },
+                  {
+                    "key": "8V4V3",
+                    "name": "Vertebrata",
+                    "rank": "SUBPHYLUM"
+                  },
+                  {
+                    "key": "8V4V5",
+                    "name": "Gnathostomata",
+                    "rank": "INFRAPHYLUM"
+                  },
+                  {
+                    "key": "8VVWB",
+                    "name": "Osteichthyes",
+                    "rank": "PARVPHYLUM"
+                  },
+                  {
+                    "key": "8VR36",
+                    "name": "Actinopterygii",
+                    "rank": "GIGACLASS"
+                  },
+                  {
+                    "key": "KTWM8",
+                    "name": "Actinopteri",
+                    "rank": "SUPERCLASS"
+                  },
+                  {
+                    "key": "8V4VD",
+                    "name": "Teleostei",
+                    "rank": "CLASS"
+                  },
+                  {
+                    "key": "334",
+                    "name": "Cypriniformes",
+                    "rank": "ORDER"
+                  },
+                  {
+                    "key": "KV2GM",
+                    "name": "Cyprinidae",
+                    "rank": "FAMILY"
+                  },
+                  {
+                    "key": "KV528",
+                    "name": "Barbinae",
+                    "rank": "SUBFAMILY"
+                  },
+                  {
+                    "key": "KVHYH",
+                    "name": "Luciobarbus",
+                    "rank": "GENUS"
+                  },
+                  {
+                    "key": "3WCK8",
+                    "name": "Luciobarbus capito",
+                    "rank": "SPECIES"
+                  }
+                ],
+                "issues": [
+                  "TAXON_ID_NOT_FOUND"
+                ]
+              },
+              "d7dddbf4-2cf0-4f39-9b2a-bb099caae36c": {
+                "usage": {
+                  "key": "11619334",
+                  "name": "Luciobarbus conocephalus (Kessler, 1872)",
+                  "rank": "SPECIES",
+                  "code": "ZOOLOGICAL",
+                  "authorship": "(Kessler, 1872)",
+                  "genericName": "Luciobarbus",
+                  "specificEpithet": "conocephalus",
+                  "formattedName": "<i>Luciobarbus</i> <i>conocephalus</i> (Kessler, 1872)"
+                },
+                "acceptedUsage": {
+                  "key": "11619334",
+                  "name": "Luciobarbus conocephalus (Kessler, 1872)",
+                  "rank": "SPECIES",
+                  "code": "ZOOLOGICAL",
+                  "authorship": "(Kessler, 1872)",
+                  "genericName": "Luciobarbus",
+                  "specificEpithet": "conocephalus",
+                  "formattedName": "<i>Luciobarbus</i> <i>conocephalus</i> (Kessler, 1872)"
+                },
+                "taxonomicStatus": "ACCEPTED",
+                "classification": [
+                  {
+                    "key": "1",
+                    "name": "Animalia",
+                    "rank": "KINGDOM"
+                  },
+                  {
+                    "key": "44",
+                    "name": "Chordata",
+                    "rank": "PHYLUM"
+                  },
+                  {
+                    "key": "1153",
+                    "name": "Cypriniformes",
+                    "rank": "ORDER"
+                  },
+                  {
+                    "key": "7336",
+                    "name": "Cyprinidae",
+                    "rank": "FAMILY"
+                  },
+                  {
+                    "key": "2363068",
+                    "name": "Luciobarbus",
+                    "rank": "GENUS"
+                  },
+                  {
+                    "key": "11619334",
+                    "name": "Luciobarbus conocephalus",
+                    "rank": "SPECIES"
+                  }
+                ],
+                "issues": [
+                  "TAXON_ID_NOT_FOUND"
+                ]
+              }
+            },
+            "taxonKey": 11619334,
+            "kingdomKey": 1,
+            "phylumKey": 44,
+            "orderKey": 1153,
+            "familyKey": 7336,
+            "genusKey": 2363068,
+            "speciesKey": 11619334,
+            "acceptedTaxonKey": 11619334,
+            "scientificName": "Luciobarbus conocephalus (Kessler, 1872)",
+            "scientificNameAuthorship": "(Kessler, 1872)",
+            "acceptedScientificName": "Luciobarbus conocephalus (Kessler, 1872)",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "order": "Cypriniformes",
+            "family": "Cyprinidae",
+            "genus": "Luciobarbus",
+            "species": "Luciobarbus conocephalus",
+            "genericName": "Luciobarbus",
+            "specificEpithet": "conocephalus",
+            "taxonRank": "SPECIES",
+            "taxonomicStatus": "ACCEPTED",
+            "dateIdentified": "2024-06-03T13:01:37",
+            "decimalLatitude": 40.814073,
+            "decimalLongitude": 72.097835,
+            "coordinateUncertaintyInMeters": 2843,
+            "continent": "ASIA",
+            "stateProvince": "Andijon",
+            "gadm": {
+              "level0": {
+                "gid": "UZB",
+                "name": "Uzbekistan"
+              },
+              "level1": {
+                "gid": "UZB.1_1",
+                "name": "Andijon"
+              },
+              "level2": {
+                "gid": "UZB.1.9_1",
+                "name": "Oltinko'l"
+              }
+            },
+            "year": 2023,
+            "month": 7,
+            "day": 1,
+            "eventDate": "2023-07-01T10:00:48",
+            "startDayOfYear": 182,
+            "endDayOfYear": 182,
+            "issues": [
+              "COORDINATE_ROUNDED",
+              "CONTINENT_DERIVED_FROM_COORDINATES",
+              "TAXON_ID_NOT_FOUND"
+            ],
+            "modified": "2025-06-04T12:07:53.000+00:00",
+            "lastInterpreted": "2026-10-14T02:47:43.787+00:00",
+            "references": "https://www.inaturalist.org/observations/220237332",
+            "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+            "isSequenced": false,
+            "identifiers": [
+              {
+                "identifier": "220237332"
+              }
+            ],
+            "media": [
+              {
+                "type": "StillImage",
+                "format": "image/jpeg",
+                "references": "https://www.inaturalist.org/photos/390287886",
+                "created": "2023-07-01T05:00:48.000+00:00",
+                "creator": "Murodjon Rakhmonov",
+                "publisher": "iNaturalist",
+                "license": "http://creativecommons.org/licenses/by/4.0/",
+                "rightsHolder": "Murodjon Rakhmonov",
+                "identifier": "https://inaturalist-open-data.s3.amazonaws.com/photos/390287886/original.jpeg"
+              }
+            ],
+            "facts": [],
+            "relations": [],
+            "isInCluster": false,
+            "datasetName": "iNaturalist research-grade observations",
+            "recordedBy": "Murodjon Rakhmonov",
+            "identifiedBy": "Murodjon Rakhmonov",
+            "dnaSequenceID": [],
+            "nucleotideSequence": [],
+            "geodeticDatum": "WGS84",
+            "countryCode": "UZ",
+            "recordedByIDs": [],
+            "identifiedByIDs": [],
+            "gbifRegion": "EUROPE",
+            "country": "Uzbekistan",
+            "publishedByGbifRegion": "NORTH_AMERICA",
+            "rightsHolder": "Murodjon Rakhmonov",
+            "identifier": "220237332",
+            "http://unknown.org/nick": "murodjon_rakhmonov",
+            "verbatimEventDate": "2023-07-01 10:00:48",
+            "http://unknown.org/crawl_attempt": "610",
+            "http://unknown.org/status": "not_reviewed",
+            "http://unknown.org/allowCoordinatesFlipping": "true",
+            "collectionCode": "Observations",
+            "gbifID": "4953170346",
+            "verbatimLocality": "Altinkul District, Andijan region, Uzbekistan",
+            "occurrenceID": "https://www.inaturalist.org/observations/220237332",
+            "taxonID": "1316816",
+            "http://unknown.org/captive_cultivated": "wild",
+            "catalogNumber": "220237332",
+            "institutionCode": "iNaturalist",
+            "vitality": "alive",
+            "eventTime": "10:00:48+05:00",
+            "identificationID": "496046592"
+          }
+        ],
+        "facets": []
+      },
+      "decision": "not_selected_requires_primary_image_and_taxon_rights_confirmation"
+    },
+    {
+      "candidateId": "vipera-ursinii-renardi",
+      "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=8568628&mediaType=StillImage&limit=3",
+      "httpStatus": 200,
+      "data": {
+        "offset": 0,
+        "limit": 3,
+        "endOfRecords": false,
+        "count": 732,
+        "results": [
+          {
+            "key": 6178851760,
+            "datasetKey": "50c9509d-22c7-4a22-a47d-8c48425ef4a7",
+            "publishingOrgKey": "28eb1a3f-1c15-4a95-931a-4af90ecb574d",
+            "datasetCategory": [
+              "CitizenScience"
+            ],
+            "installationKey": "997448a8-f762-11e1-a439-00145eb45e9a",
+            "hostingOrganizationKey": "28eb1a3f-1c15-4a95-931a-4af90ecb574d",
+            "publishingCountry": "US",
+            "protocol": "DWC_ARCHIVE",
+            "lastCrawled": "2026-10-13T15:36:28.771+00:00",
+            "lastParsed": "2026-10-14T02:03:45.743+00:00",
+            "crawlId": 609,
+            "extensions": {
+              "http://rs.gbif.org/terms/1.0/Multimedia": [
+                {
+                  "http://purl.org/dc/terms/license": "https://creativecommons.org/licenses/by-nc/4.0/",
+                  "http://purl.org/dc/terms/created": "2026-03-16T14:31:41-07:00",
+                  "http://purl.org/dc/terms/publisher": "iNaturalist",
+                  "http://purl.org/dc/terms/format": "image/jpeg",
+                  "http://purl.org/dc/terms/identifier": "https://inaturalist-open-data.s3.amazonaws.com/photos/625327616/original.jpg",
+                  "http://rs.tdwg.org/dwc/terms/catalogNumber": "625327616",
+                  "http://purl.org/dc/terms/references": "https://www.inaturalist.org/photos/625327616",
+                  "http://purl.org/dc/terms/rightsHolder": "Нимат Мурсаитов",
+                  "http://purl.org/dc/terms/type": "StillImage",
+                  "http://purl.org/dc/terms/creator": "Нимат Мурсаитов"
+                },
+                {
+                  "http://purl.org/dc/terms/license": "https://creativecommons.org/licenses/by-nc/4.0/",
+                  "http://purl.org/dc/terms/created": "2026-03-16T14:31:52-07:00",
+                  "http://purl.org/dc/terms/publisher": "iNaturalist",
+                  "http://purl.org/dc/terms/format": "image/jpeg",
+                  "http://purl.org/dc/terms/identifier": "https://inaturalist-open-data.s3.amazonaws.com/photos/625327640/original.jpg",
+                  "http://rs.tdwg.org/dwc/terms/catalogNumber": "625327640",
+                  "http://purl.org/dc/terms/references": "https://www.inaturalist.org/photos/625327640",
+                  "http://purl.org/dc/terms/rightsHolder": "Нимат Мурсаитов",
+                  "http://purl.org/dc/terms/type": "StillImage",
+                  "http://purl.org/dc/terms/creator": "Нимат Мурсаитов"
+                },
+                {
+                  "http://purl.org/dc/terms/license": "https://creativecommons.org/licenses/by-nc/4.0/",
+                  "http://purl.org/dc/terms/created": "2026-03-16T14:33:42-07:00",
+                  "http://purl.org/dc/terms/publisher": "iNaturalist",
+                  "http://purl.org/dc/terms/format": "image/jpeg",
+                  "http://purl.org/dc/terms/identifier": "https://inaturalist-open-data.s3.amazonaws.com/photos/625327665/original.jpg",
+                  "http://rs.tdwg.org/dwc/terms/catalogNumber": "625327665",
+                  "http://purl.org/dc/terms/references": "https://www.inaturalist.org/photos/625327665",
+                  "http://purl.org/dc/terms/rightsHolder": "Нимат Мурсаитов",
+                  "http://purl.org/dc/terms/type": "StillImage",
+                  "http://purl.org/dc/terms/creator": "Нимат Мурсаитов"
+                }
+              ]
+            },
+            "basisOfRecord": "HUMAN_OBSERVATION",
+            "occurrenceStatus": "PRESENT",
+            "classifications": {
+              "7ddf754f-d193-4cc9-b351-99906754a03b": {
+                "usage": {
+                  "key": "7FTJ6",
+                  "name": "Vipera renardi (Christoph, 1861)",
+                  "rank": "SPECIES",
+                  "code": "ZOOLOGICAL",
+                  "authorship": "(Christoph, 1861)",
+                  "genericName": "Vipera",
+                  "specificEpithet": "renardi",
+                  "formattedName": "<i>Vipera</i> <i>renardi</i> (Christoph, 1861)"
+                },
+                "acceptedUsage": {
+                  "key": "7FTJ6",
+                  "name": "Vipera renardi (Christoph, 1861)",
+                  "rank": "SPECIES",
+                  "code": "ZOOLOGICAL",
+                  "authorship": "(Christoph, 1861)",
+                  "genericName": "Vipera",
+                  "specificEpithet": "renardi",
+                  "formattedName": "<i>Vipera</i> <i>renardi</i> (Christoph, 1861)"
+                },
+                "taxonomicStatus": "ACCEPTED",
+                "classification": [
+                  {
+                    "key": "CS5HF",
+                    "name": "Eukaryota",
+                    "rank": "DOMAIN"
+                  },
+                  {
+                    "key": "N",
+                    "name": "Animalia",
+                    "rank": "KINGDOM"
+                  },
+                  {
+                    "key": "CH2",
+                    "name": "Chordata",
+                    "rank": "PHYLUM"
+                  },
+                  {
+                    "key": "8V4V3",
+                    "name": "Vertebrata",
+                    "rank": "SUBPHYLUM"
+                  },
+                  {
+                    "key": "8V4V5",
+                    "name": "Gnathostomata",
+                    "rank": "INFRAPHYLUM"
+                  },
+                  {
+                    "key": "8VVWB",
+                    "name": "Osteichthyes",
+                    "rank": "PARVPHYLUM"
+                  },
+                  {
+                    "key": "9CK8W",
+                    "name": "Tetrapoda",
+                    "rank": "MEGACLASS"
+                  },
+                  {
+                    "key": "RP",
+                    "name": "Reptilia",
+                    "rank": "CLASS"
+                  },
+                  {
+                    "key": "45C",
+                    "name": "Squamata",
+                    "rank": "ORDER"
+                  },
+                  {
+                    "key": "DJ4D3",
+                    "name": "Serpentes",
+                    "rank": "SUBORDER"
+                  },
+                  {
+                    "key": "V7FVL",
+                    "name": "Alethinophidia",
+                    "rank": "INFRAORDER"
+                  },
+                  {
+                    "key": "6273B",
+                    "name": "Viperidae",
+                    "rank": "FAMILY"
+                  },
+                  {
+                    "key": "87CPV",
+                    "name": "Viperinae",
+                    "rank": "SUBFAMILY"
+                  },
+                  {
+                    "key": "86VT",
+                    "name": "Vipera",
+                    "rank": "GENUS"
+                  },
+                  {
+                    "key": "7FTJ6",
+                    "name": "Vipera renardi",
+                    "rank": "SPECIES"
+                  }
+                ],
+                "iucnRedListCategoryCode": "NT",
+                "issues": [
+                  "TAXON_ID_NOT_FOUND"
+                ]
+              },
+              "d7dddbf4-2cf0-4f39-9b2a-bb099caae36c": {
+                "usage": {
+                  "key": "8568628",
+                  "name": "Vipera renardi (Christoph, 1861)",
+                  "rank": "SPECIES",
+                  "code": "ZOOLOGICAL",
+                  "authorship": "(Christoph, 1861)",
+                  "genericName": "Vipera",
+                  "specificEpithet": "renardi",
+                  "formattedName": "<i>Vipera</i> <i>renardi</i> (Christoph, 1861)"
+                },
+                "acceptedUsage": {
+                  "key": "8568628",
+                  "name": "Vipera renardi (Christoph, 1861)",
+                  "rank": "SPECIES",
+                  "code": "ZOOLOGICAL",
+                  "authorship": "(Christoph, 1861)",
+                  "genericName": "Vipera",
+                  "specificEpithet": "renardi",
+                  "formattedName": "<i>Vipera</i> <i>renardi</i> (Christoph, 1861)"
+                },
+                "taxonomicStatus": "ACCEPTED",
+                "classification": [
+                  {
+                    "key": "1",
+                    "name": "Animalia",
+                    "rank": "KINGDOM"
+                  },
+                  {
+                    "key": "44",
+                    "name": "Chordata",
+                    "rank": "PHYLUM"
+                  },
+                  {
+                    "key": "11592253",
+                    "name": "Squamata",
+                    "rank": "CLASS"
+                  },
+                  {
+                    "key": "5024",
+                    "name": "Viperidae",
+                    "rank": "FAMILY"
+                  },
+                  {
+                    "key": "2469892",
+                    "name": "Vipera",
+                    "rank": "GENUS"
+                  },
+                  {
+                    "key": "8568628",
+                    "name": "Vipera renardi",
+                    "rank": "SPECIES"
+                  }
+                ],
+                "iucnRedListCategoryCode": "NT",
+                "issues": [
+                  "TAXON_ID_NOT_FOUND"
+                ]
+              }
+            },
+            "taxonKey": 8568628,
+            "kingdomKey": 1,
+            "phylumKey": 44,
+            "classKey": 11592253,
+            "familyKey": 5024,
+            "genusKey": 2469892,
+            "speciesKey": 8568628,
+            "acceptedTaxonKey": 8568628,
+            "scientificName": "Vipera renardi (Christoph, 1861)",
+            "scientificNameAuthorship": "(Christoph, 1861)",
+            "acceptedScientificName": "Vipera renardi (Christoph, 1861)",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "family": "Viperidae",
+            "genus": "Vipera",
+            "species": "Vipera renardi",
+            "genericName": "Vipera",
+            "specificEpithet": "renardi",
+            "taxonRank": "SPECIES",
+            "taxonomicStatus": "ACCEPTED",
+            "iucnRedListCategory": "NT",
+            "dateIdentified": "2026-03-16T12:30:28",
+            "decimalLatitude": 42.788824,
+            "decimalLongitude": 72.968977,
+            "coordinateUncertaintyInMeters": 928,
+            "continent": "ASIA",
+            "stateProvince": "Zhambyl",
+            "gadm": {
+              "level0": {
+                "gid": "KAZ",
+                "name": "Kazakhstan"
+              },
+              "level1": {
+                "gid": "KAZ.14_1",
+                "name": "Zhambyl"
+              },
+              "level2": {
+                "gid": "KAZ.14.3_1",
+                "name": "Lugovskoy"
+              }
+            },
+            "year": 2026,
+            "month": 3,
+            "day": 16,
+            "eventDate": "2026-03-16T14:31:41",
+            "startDayOfYear": 75,
+            "endDayOfYear": 75,
+            "issues": [
+              "COORDINATE_ROUNDED",
+              "CONTINENT_DERIVED_FROM_COORDINATES",
+              "TAXON_ID_NOT_FOUND"
+            ],
+            "modified": "2026-04-11T12:31:21.000+00:00",
+            "lastInterpreted": "2026-10-14T02:03:45.743+00:00",
+            "references": "https://www.inaturalist.org/observations/343301214",
+            "license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "isSequenced": false,
+            "identifiers": [
+              {
+                "identifier": "343301214"
+              }
+            ],
+            "media": [
+              {
+                "type": "StillImage",
+                "format": "image/jpeg",
+                "references": "https://www.inaturalist.org/photos/625327616",
+                "created": "2026-03-16T21:31:41.000+00:00",
+                "creator": "Нимат Мурсаитов",
+                "publisher": "iNaturalist",
+                "license": "http://creativecommons.org/licenses/by-nc/4.0/",
+                "rightsHolder": "Нимат Мурсаитов",
+                "identifier": "https://inaturalist-open-data.s3.amazonaws.com/photos/625327616/original.jpg"
+              },
+              {
+                "type": "StillImage",
+                "format": "image/jpeg",
+                "references": "https://www.inaturalist.org/photos/625327640",
+                "created": "2026-03-16T21:31:52.000+00:00",
+                "creator": "Нимат Мурсаитов",
+                "publisher": "iNaturalist",
+                "license": "http://creativecommons.org/licenses/by-nc/4.0/",
+                "rightsHolder": "Нимат Мурсаитов",
+                "identifier": "https://inaturalist-open-data.s3.amazonaws.com/photos/625327640/original.jpg"
+              },
+              {
+                "type": "StillImage",
+                "format": "image/jpeg",
+                "references": "https://www.inaturalist.org/photos/625327665",
+                "created": "2026-03-16T21:33:42.000+00:00",
+                "creator": "Нимат Мурсаитов",
+                "publisher": "iNaturalist",
+                "license": "http://creativecommons.org/licenses/by-nc/4.0/",
+                "rightsHolder": "Нимат Мурсаитов",
+                "identifier": "https://inaturalist-open-data.s3.amazonaws.com/photos/625327665/original.jpg"
+              }
+            ],
+            "facts": [],
+            "relations": [],
+            "isInCluster": false,
+            "datasetName": "iNaturalist research-grade observations",
+            "recordedBy": "Нимат Мурсаитов",
+            "identifiedBy": "Анатолий Озерной /Anatoly Ozernoy",
+            "dnaSequenceID": [],
+            "nucleotideSequence": [],
+            "geodeticDatum": "WGS84",
+            "class": "Squamata",
+            "countryCode": "KZ",
+            "recordedByIDs": [],
+            "identifiedByIDs": [],
+            "gbifRegion": "EUROPE",
+            "country": "Kazakhstan",
+            "publishedByGbifRegion": "NORTH_AMERICA",
+            "rightsHolder": "Нимат Мурсаитов",
+            "identifier": "343301214",
+            "http://unknown.org/nick": "nimat__",
+            "verbatimEventDate": "2026-03-16 14:31:41",
+            "http://unknown.org/crawl_attempt": "610",
+            "http://unknown.org/status": "not_reviewed",
+            "http://unknown.org/allowCoordinatesFlipping": "true",
+            "collectionCode": "Observations",
+            "gbifID": "6178851760",
+            "verbatimLocality": "Казахстан",
+            "occurrenceID": "https://www.inaturalist.org/observations/343301214",
+            "taxonID": "114991",
+            "http://unknown.org/captive_cultivated": "wild",
+            "catalogNumber": "343301214",
+            "institutionCode": "iNaturalist",
+            "vitality": "alive",
+            "eventTime": "14:31:41+05:00",
+            "identificationID": "774723108"
+          },
+          {
+            "key": 6183344235,
+            "datasetKey": "8a863029-f435-446a-821e-275f4f641165",
+            "publishingOrgKey": "c8d737e0-2ff8-42e8-b8fc-6b805d26fc5f",
+            "installationKey": "a0e05292-3d09-4eae-9f83-02ae3516283c",
+            "hostingOrganizationKey": "c8d737e0-2ff8-42e8-b8fc-6b805d26fc5f",
+            "publishingCountry": "NL",
+            "protocol": "DWC_ARCHIVE",
+            "lastCrawled": "2026-09-01T05:31:09.143+00:00",
+            "lastParsed": "2026-09-01T17:43:13.693+00:00",
+            "crawlId": 223,
+            "extensions": {
+              "http://rs.tdwg.org/ac/terms/Multimedia": [
+                {
+                  "http://purl.org/dc/elements/1.1/rights": "http://creativecommons.org/licenses/by-nc-nd/4.0/legalcode",
+                  "http://rs.tdwg.org/ac/terms/variantLiteral": "Best Quality",
+                  "http://purl.org/dc/elements/1.1/format": "image/jpeg",
+                  "http://purl.org/dc/elements/1.1/type": "StillImage",
+                  "http://purl.org/dc/terms/identifier": "https://observation.org/photos/145570640",
+                  "http://rs.tdwg.org/ac/terms/accessURI": "https://observation.org/photos/145570640.jpg",
+                  "http://purl.org/dc/elements/1.1/creator": "Johannes Schulze Ising",
+                  "http://ns.adobe.com/xap/1.0/rights/Owner": "Johannes Schulze Ising"
+                }
+              ]
+            },
+            "basisOfRecord": "HUMAN_OBSERVATION",
+            "individualCount": 1,
+            "occurrenceStatus": "PRESENT",
+            "lifeStage": "Subadult",
+            "classifications": {
+              "7ddf754f-d193-4cc9-b351-99906754a03b": {
+                "usage": {
+                  "key": "7FTJ6",
+                  "name": "Vipera renardi (Christoph, 1861)",
+                  "rank": "SPECIES",
+                  "code": "ZOOLOGICAL",
+                  "authorship": "(Christoph, 1861)",
+                  "genericName": "Vipera",
+                  "specificEpithet": "renardi",
+                  "formattedName": "<i>Vipera</i> <i>renardi</i> (Christoph, 1861)"
+                },
+                "acceptedUsage": {
+                  "key": "7FTJ6",
+                  "name": "Vipera renardi (Christoph, 1861)",
+                  "rank": "SPECIES",
+                  "code": "ZOOLOGICAL",
+                  "authorship": "(Christoph, 1861)",
+                  "genericName": "Vipera",
+                  "specificEpithet": "renardi",
+                  "formattedName": "<i>Vipera</i> <i>renardi</i> (Christoph, 1861)"
+                },
+                "taxonomicStatus": "ACCEPTED",
+                "classification": [
+                  {
+                    "key": "CS5HF",
+                    "name": "Eukaryota",
+                    "rank": "DOMAIN"
+                  },
+                  {
+                    "key": "N",
+                    "name": "Animalia",
+                    "rank": "KINGDOM"
+                  },
+                  {
+                    "key": "CH2",
+                    "name": "Chordata",
+                    "rank": "PHYLUM"
+                  },
+                  {
+                    "key": "8V4V3",
+                    "name": "Vertebrata",
+                    "rank": "SUBPHYLUM"
+                  },
+                  {
+                    "key": "8V4V5",
+                    "name": "Gnathostomata",
+                    "rank": "INFRAPHYLUM"
+                  },
+                  {
+                    "key": "8VVWB",
+                    "name": "Osteichthyes",
+                    "rank": "PARVPHYLUM"
+                  },
+                  {
+                    "key": "9CK8W",
+                    "name": "Tetrapoda",
+                    "rank": "MEGACLASS"
+                  },
+                  {
+                    "key": "RP",
+                    "name": "Reptilia",
+                    "rank": "CLASS"
+                  },
+                  {
+                    "key": "45C",
+                    "name": "Squamata",
+                    "rank": "ORDER"
+                  },
+                  {
+                    "key": "DJ4D3",
+                    "name": "Serpentes",
+                    "rank": "SUBORDER"
+                  },
+                  {
+                    "key": "V7FVL",
+                    "name": "Alethinophidia",
+                    "rank": "INFRAORDER"
+                  },
+                  {
+                    "key": "6273B",
+                    "name": "Viperidae",
+                    "rank": "FAMILY"
+                  },
+                  {
+                    "key": "87CPV",
+                    "name": "Viperinae",
+                    "rank": "SUBFAMILY"
+                  },
+                  {
+                    "key": "86VT",
+                    "name": "Vipera",
+                    "rank": "GENUS"
+                  },
+                  {
+                    "key": "7FTJ6",
+                    "name": "Vipera renardi",
+                    "rank": "SPECIES"
+                  }
+                ],
+                "iucnRedListCategoryCode": "NT",
+                "issues": []
+              },
+              "d7dddbf4-2cf0-4f39-9b2a-bb099caae36c": {
+                "usage": {
+                  "key": "8568628",
+                  "name": "Vipera renardi (Christoph, 1861)",
+                  "rank": "SPECIES",
+                  "code": "ZOOLOGICAL",
+                  "authorship": "(Christoph, 1861)",
+                  "genericName": "Vipera",
+                  "specificEpithet": "renardi",
+                  "formattedName": "<i>Vipera</i> <i>renardi</i> (Christoph, 1861)"
+                },
+                "acceptedUsage": {
+                  "key": "8568628",
+                  "name": "Vipera renardi (Christoph, 1861)",
+                  "rank": "SPECIES",
+                  "code": "ZOOLOGICAL",
+                  "authorship": "(Christoph, 1861)",
+                  "genericName": "Vipera",
+                  "specificEpithet": "renardi",
+                  "formattedName": "<i>Vipera</i> <i>renardi</i> (Christoph, 1861)"
+                },
+                "taxonomicStatus": "ACCEPTED",
+                "classification": [
+                  {
+                    "key": "1",
+                    "name": "Animalia",
+                    "rank": "KINGDOM"
+                  },
+                  {
+                    "key": "44",
+                    "name": "Chordata",
+                    "rank": "PHYLUM"
+                  },
+                  {
+                    "key": "11592253",
+                    "name": "Squamata",
+                    "rank": "CLASS"
+                  },
+                  {
+                    "key": "5024",
+                    "name": "Viperidae",
+                    "rank": "FAMILY"
+                  },
+                  {
+                    "key": "2469892",
+                    "name": "Vipera",
+                    "rank": "GENUS"
+                  },
+                  {
+                    "key": "8568628",
+                    "name": "Vipera renardi",
+                    "rank": "SPECIES"
+                  }
+                ],
+                "iucnRedListCategoryCode": "NT",
+                "issues": []
+              }
+            },
+            "taxonKey": 8568628,
+            "kingdomKey": 1,
+            "phylumKey": 44,
+            "classKey": 11592253,
+            "familyKey": 5024,
+            "genusKey": 2469892,
+            "speciesKey": 8568628,
+            "acceptedTaxonKey": 8568628,
+            "scientificName": "Vipera renardi (Christoph, 1861)",
+            "scientificNameAuthorship": "(Christoph, 1861)",
+            "acceptedScientificName": "Vipera renardi (Christoph, 1861)",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "family": "Viperidae",
+            "genus": "Vipera",
+            "species": "Vipera renardi",
+            "genericName": "Vipera",
+            "specificEpithet": "renardi",
+            "taxonRank": "SPECIES",
+            "taxonomicStatus": "ACCEPTED",
+            "iucnRedListCategory": "NT",
+            "decimalLatitude": 43.463342,
+            "decimalLongitude": 76.706337,
+            "coordinateUncertaintyInMeters": 10,
+            "continent": "ASIA",
+            "stateProvince": "Almaty",
+            "gadm": {
+              "level0": {
+                "gid": "KAZ",
+                "name": "Kazakhstan"
+              },
+              "level1": {
+                "gid": "KAZ.1_1",
+                "name": "Almaty"
+              },
+              "level2": {
+                "gid": "KAZ.1.6_1",
+                "name": "Iliyskiy"
+              }
+            },
+            "year": 2026,
+            "month": 3,
+            "day": 20,
+            "eventDate": "2026-03-20",
+            "startDayOfYear": 79,
+            "endDayOfYear": 79,
+            "issues": [],
+            "modified": "2026-03-20T15:17:00.000+00:00",
+            "lastInterpreted": "2026-09-01T17:43:13.693+00:00",
+            "license": "http://creativecommons.org/licenses/by-nc/4.0/legalcode",
+            "isSequenced": false,
+            "identifiers": [
+              {
+                "identifier": "388968439"
+              }
+            ],
+            "media": [
+              {
+                "type": "StillImage",
+                "format": "image/jpeg",
+                "creator": "Johannes Schulze Ising",
+                "license": "http://creativecommons.org/licenses/by-nc-nd/4.0/",
+                "rightsHolder": "Johannes Schulze Ising",
+                "identifier": "https://observation.org/photos/145570640.jpg"
+              }
+            ],
+            "facts": [],
+            "relations": [],
+            "isInCluster": false,
+            "recordedBy": "User 1075587",
+            "samplingProtocol": "seen",
+            "dnaSequenceID": [],
+            "nucleotideSequence": [],
+            "geodeticDatum": "WGS84",
+            "class": "Squamata",
+            "countryCode": "KZ",
+            "recordedByIDs": [],
+            "identifiedByIDs": [],
+            "gbifRegion": "EUROPE",
+            "country": "Kazakhstan",
+            "publishedByGbifRegion": "EUROPE",
+            "rightsHolder": "Stichting Observation International",
+            "identifier": "388968439",
+            "habitat": "unknown",
+            "http://unknown.org/crawl_attempt": "226",
+            "locality": "Iliyskiy",
+            "http://unknown.org/status": "not_reviewed",
+            "http://unknown.org/griddedDataset": "{\"percentNN\":0.9424,\"countNN\":3010,\"distanceNN\":0.05}",
+            "identificationVerificationStatus": "Approved | Expert | Evidence",
+            "gbifID": "6183344235",
+            "occurrenceID": "https://observation.org/observation/388968439",
+            "http://unknown.org/omitFromScheduledCrawl": "true",
+            "vernacularName": "Steppe Viper",
+            "eventTime": "13:21"
+          },
+          {
+            "key": 6234621303,
+            "datasetKey": "50c9509d-22c7-4a22-a47d-8c48425ef4a7",
+            "publishingOrgKey": "28eb1a3f-1c15-4a95-931a-4af90ecb574d",
+            "datasetCategory": [
+              "CitizenScience"
+            ],
+            "installationKey": "997448a8-f762-11e1-a439-00145eb45e9a",
+            "hostingOrganizationKey": "28eb1a3f-1c15-4a95-931a-4af90ecb574d",
+            "publishingCountry": "US",
+            "protocol": "DWC_ARCHIVE",
+            "lastCrawled": "2026-10-13T15:36:28.771+00:00",
+            "lastParsed": "2026-10-14T02:20:46.810+00:00",
+            "crawlId": 609,
+            "projectId": "https://www.inaturalist.org/projects/western-palearctic-reptiles-and-amphibians",
+            "extensions": {
+              "http://rs.gbif.org/terms/1.0/Multimedia": [
+                {
+                  "http://purl.org/dc/terms/license": "https://creativecommons.org/licenses/by/4.0/",
+                  "http://purl.org/dc/terms/created": "2026-03-31T12:51:49-07:00",
+                  "http://purl.org/dc/terms/publisher": "iNaturalist",
+                  "http://purl.org/dc/terms/format": "image/jpeg",
+                  "http://purl.org/dc/terms/identifier": "https://inaturalist-open-data.s3.amazonaws.com/photos/639272794/original.jpg",
+                  "http://rs.tdwg.org/dwc/terms/catalogNumber": "639272794",
+                  "http://purl.org/dc/terms/references": "https://www.inaturalist.org/photos/639272794",
+                  "http://purl.org/dc/terms/rightsHolder": "Георгий Виноградов (Georgy Vinogradov)",
+                  "http://purl.org/dc/terms/type": "StillImage",
+                  "http://purl.org/dc/terms/creator": "Георгий Виноградов (Georgy Vinogradov)"
+                }
+              ]
+            },
+            "basisOfRecord": "HUMAN_OBSERVATION",
+            "occurrenceStatus": "PRESENT",
+            "lifeStage": "Adult",
+            "classifications": {
+              "7ddf754f-d193-4cc9-b351-99906754a03b": {
+                "usage": {
+                  "key": "7FTJ6",
+                  "name": "Vipera renardi (Christoph, 1861)",
+                  "rank": "SPECIES",
+                  "code": "ZOOLOGICAL",
+                  "authorship": "(Christoph, 1861)",
+                  "genericName": "Vipera",
+                  "specificEpithet": "renardi",
+                  "formattedName": "<i>Vipera</i> <i>renardi</i> (Christoph, 1861)"
+                },
+                "acceptedUsage": {
+                  "key": "7FTJ6",
+                  "name": "Vipera renardi (Christoph, 1861)",
+                  "rank": "SPECIES",
+                  "code": "ZOOLOGICAL",
+                  "authorship": "(Christoph, 1861)",
+                  "genericName": "Vipera",
+                  "specificEpithet": "renardi",
+                  "formattedName": "<i>Vipera</i> <i>renardi</i> (Christoph, 1861)"
+                },
+                "taxonomicStatus": "ACCEPTED",
+                "classification": [
+                  {
+                    "key": "CS5HF",
+                    "name": "Eukaryota",
+                    "rank": "DOMAIN"
+                  },
+                  {
+                    "key": "N",
+                    "name": "Animalia",
+                    "rank": "KINGDOM"
+                  },
+                  {
+                    "key": "CH2",
+                    "name": "Chordata",
+                    "rank": "PHYLUM"
+                  },
+                  {
+                    "key": "8V4V3",
+                    "name": "Vertebrata",
+                    "rank": "SUBPHYLUM"
+                  },
+                  {
+                    "key": "8V4V5",
+                    "name": "Gnathostomata",
+                    "rank": "INFRAPHYLUM"
+                  },
+                  {
+                    "key": "8VVWB",
+                    "name": "Osteichthyes",
+                    "rank": "PARVPHYLUM"
+                  },
+                  {
+                    "key": "9CK8W",
+                    "name": "Tetrapoda",
+                    "rank": "MEGACLASS"
+                  },
+                  {
+                    "key": "RP",
+                    "name": "Reptilia",
+                    "rank": "CLASS"
+                  },
+                  {
+                    "key": "45C",
+                    "name": "Squamata",
+                    "rank": "ORDER"
+                  },
+                  {
+                    "key": "DJ4D3",
+                    "name": "Serpentes",
+                    "rank": "SUBORDER"
+                  },
+                  {
+                    "key": "V7FVL",
+                    "name": "Alethinophidia",
+                    "rank": "INFRAORDER"
+                  },
+                  {
+                    "key": "6273B",
+                    "name": "Viperidae",
+                    "rank": "FAMILY"
+                  },
+                  {
+                    "key": "87CPV",
+                    "name": "Viperinae",
+                    "rank": "SUBFAMILY"
+                  },
+                  {
+                    "key": "86VT",
+                    "name": "Vipera",
+                    "rank": "GENUS"
+                  },
+                  {
+                    "key": "7FTJ6",
+                    "name": "Vipera renardi",
+                    "rank": "SPECIES"
+                  }
+                ],
+                "iucnRedListCategoryCode": "NT",
+                "issues": [
+                  "TAXON_ID_NOT_FOUND"
+                ]
+              },
+              "d7dddbf4-2cf0-4f39-9b2a-bb099caae36c": {
+                "usage": {
+                  "key": "8568628",
+                  "name": "Vipera renardi (Christoph, 1861)",
+                  "rank": "SPECIES",
+                  "code": "ZOOLOGICAL",
+                  "authorship": "(Christoph, 1861)",
+                  "genericName": "Vipera",
+                  "specificEpithet": "renardi",
+                  "formattedName": "<i>Vipera</i> <i>renardi</i> (Christoph, 1861)"
+                },
+                "acceptedUsage": {
+                  "key": "8568628",
+                  "name": "Vipera renardi (Christoph, 1861)",
+                  "rank": "SPECIES",
+                  "code": "ZOOLOGICAL",
+                  "authorship": "(Christoph, 1861)",
+                  "genericName": "Vipera",
+                  "specificEpithet": "renardi",
+                  "formattedName": "<i>Vipera</i> <i>renardi</i> (Christoph, 1861)"
+                },
+                "taxonomicStatus": "ACCEPTED",
+                "classification": [
+                  {
+                    "key": "1",
+                    "name": "Animalia",
+                    "rank": "KINGDOM"
+                  },
+                  {
+                    "key": "44",
+                    "name": "Chordata",
+                    "rank": "PHYLUM"
+                  },
+                  {
+                    "key": "11592253",
+                    "name": "Squamata",
+                    "rank": "CLASS"
+                  },
+                  {
+                    "key": "5024",
+                    "name": "Viperidae",
+                    "rank": "FAMILY"
+                  },
+                  {
+                    "key": "2469892",
+                    "name": "Vipera",
+                    "rank": "GENUS"
+                  },
+                  {
+                    "key": "8568628",
+                    "name": "Vipera renardi",
+                    "rank": "SPECIES"
+                  }
+                ],
+                "iucnRedListCategoryCode": "NT",
+                "issues": [
+                  "TAXON_ID_NOT_FOUND"
+                ]
+              }
+            },
+            "taxonKey": 8568628,
+            "kingdomKey": 1,
+            "phylumKey": 44,
+            "classKey": 11592253,
+            "familyKey": 5024,
+            "genusKey": 2469892,
+            "speciesKey": 8568628,
+            "acceptedTaxonKey": 8568628,
+            "scientificName": "Vipera renardi (Christoph, 1861)",
+            "scientificNameAuthorship": "(Christoph, 1861)",
+            "acceptedScientificName": "Vipera renardi (Christoph, 1861)",
+            "kingdom": "Animalia",
+            "phylum": "Chordata",
+            "family": "Viperidae",
+            "genus": "Vipera",
+            "species": "Vipera renardi",
+            "genericName": "Vipera",
+            "specificEpithet": "renardi",
+            "taxonRank": "SPECIES",
+            "taxonomicStatus": "ACCEPTED",
+            "iucnRedListCategory": "NT",
+            "dateIdentified": "2026-04-16T22:05:05",
+            "decimalLatitude": 49.171635,
+            "decimalLongitude": 46.823716,
+            "coordinateUncertaintyInMeters": 26582,
+            "continent": "EUROPE",
+            "stateProvince": "Volgograd",
+            "gadm": {
+              "level0": {
+                "gid": "RUS",
+                "name": "Russia"
+              },
+              "level1": {
+                "gid": "RUS.77_1",
+                "name": "Volgograd"
+              },
+              "level2": {
+                "gid": "RUS.77.27_1",
+                "name": "Pallasovskiy rayon"
+              },
+              "level3": {
+                "gid": "RUS.77.27.1_1"
+              }
+            },
+            "year": 2026,
+            "month": 3,
+            "day": 31,
+            "eventDate": "2026-03-31T12:51",
+            "startDayOfYear": 90,
+            "endDayOfYear": 90,
+            "issues": [
+              "COORDINATE_ROUNDED",
+              "CONTINENT_DERIVED_FROM_COORDINATES",
+              "TAXON_ID_NOT_FOUND"
+            ],
+            "modified": "2026-04-23T08:57:49.000+00:00",
+            "lastInterpreted": "2026-10-14T02:20:46.810+00:00",
+            "references": "https://www.inaturalist.org/observations/350374302",
+            "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+            "isSequenced": false,
+            "identifiers": [
+              {
+                "identifier": "350374302"
+              }
+            ],
+            "media": [
+              {
+                "type": "StillImage",
+                "format": "image/jpeg",
+                "references": "https://www.inaturalist.org/photos/639272794",
+                "created": "2026-03-31T19:51:49.000+00:00",
+                "creator": "Георгий Виноградов (Georgy Vinogradov)",
+                "publisher": "iNaturalist",
+                "license": "http://creativecommons.org/licenses/by/4.0/",
+                "rightsHolder": "Георгий Виноградов (Georgy Vinogradov)",
+                "identifier": "https://inaturalist-open-data.s3.amazonaws.com/photos/639272794/original.jpg"
+              }
+            ],
+            "facts": [],
+            "relations": [],
+            "isInCluster": false,
+            "datasetName": "iNaturalist research-grade observations",
+            "recordedBy": "Георгий Виноградов (Georgy Vinogradov)",
+            "identifiedBy": "Георгий Виноградов (Georgy Vinogradov)",
+            "dnaSequenceID": [],
+            "nucleotideSequence": [],
+            "geodeticDatum": "WGS84",
+            "class": "Squamata",
+            "countryCode": "RU",
+            "recordedByIDs": [
+              {
+                "type": "ORCID",
+                "value": "https://orcid.org/0000-0002-4548-8017"
+              }
+            ],
+            "identifiedByIDs": [
+              {
+                "type": "ORCID",
+                "value": "https://orcid.org/0000-0002-4548-8017"
+              }
+            ],
+            "gbifRegion": "EUROPE",
+            "country": "Russian Federation",
+            "publishedByGbifRegion": "NORTH_AMERICA",
+            "rightsHolder": "Георгий Виноградов (Georgy Vinogradov)",
+            "identifier": "350374302",
+            "http://unknown.org/nick": "prokhozhyj",
+            "informationWithheld": "Coordinate uncertainty increased to 26582m to protect threatened taxon",
+            "verbatimEventDate": "2026/03/31 12:51",
+            "http://unknown.org/crawl_attempt": "610",
+            "dynamicProperties": "{\"evidenceOfPresence\":\"organism\"}",
+            "http://unknown.org/status": "not_reviewed",
+            "http://unknown.org/allowCoordinatesFlipping": "true",
+            "collectionCode": "Observations",
+            "gbifID": "6234621303",
+            "verbatimLocality": "Pallasovskiy rayon, RU-VG, RU",
+            "occurrenceID": "https://www.inaturalist.org/observations/350374302",
+            "taxonID": "114991",
+            "http://unknown.org/captive_cultivated": "wild",
+            "catalogNumber": "350374302",
+            "institutionCode": "iNaturalist",
+            "vitality": "alive",
+            "eventTime": "12:51:00+03:00",
+            "occurrenceRemarks": "Степь у озера Эльтон.",
+            "identificationID": "790332251"
+          }
+        ],
+        "facets": []
+      },
+      "decision": "not_selected_requires_primary_image_and_taxon_rights_confirmation"
+    },
+    {
+      "candidateId": "kirgisobia-bohnei",
+      "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=1157491&mediaType=StillImage&limit=3",
+      "httpStatus": 200,
+      "data": {
+        "offset": 0,
+        "limit": 3,
+        "endOfRecords": true,
+        "count": 0,
+        "results": [],
+        "facets": []
+      },
+      "decision": "not_selected_requires_primary_image_and_taxon_rights_confirmation"
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "documentType": "catalog-150-publication-validation",
+  "date": "2026-10-16",
+  "timeZone": "Asia/Bishkek",
+  "branch": "feature/catalog-150",
+  "sourceCommit": "45f0d74591b19b103a89c35fba63ac8807824013",
+  "decisionId": "muras-24-4-owner-provisional",
+  "manifest": {
+    "path": "data/research/catalog-150-unified-review-manifest.json",
+    "sha256": "e1b61981b42be0f9885eeb97a0f32b4b13aa931a4a87ceb22e11409e77e47b27",
+    "registry": "data/research/catalog-150-unified-registry.json",
+    "registryFingerprint": "69acb83ebcc96c30bc378b80a60db3b2199cd48220f874593ba28067932014d0",
+    "unchanged": true
+  },
+  "catalog": {
+    "source": 150,
+    "public": 150,
+    "dist": 150,
+    "archive": 2,
+    "previous125Unchanged": true,
+    "oldPublicRecordsUnchanged": true,
+    "images": 130,
+    "placeholders": 20
+  },
+  "importedIds": [
+    "barbus-capito-conocephalus",
+    "vipera-ursinii-renardi",
+    "kirgisobia-bohnei",
+    "anser-indica",
+    "accipiter-badius",
+    "aquila-clanga",
+    "aquila-nipalensis",
+    "aquila-heliaca",
+    "hieraaetus-fasciatus",
+    "hieraaetus-pennatus",
+    "tetrax-tetrax",
+    "crex-crex",
+    "anthropoides-virgo",
+    "burhinus-oedicnemus",
+    "vanellus-gregarius",
+    "glareola-nordmanni",
+    "strix-aluco",
+    "syrrhaptes-paradoxus",
+    "pterocles-alchata",
+    "pterocles-orientalis",
+    "columba-leuconota",
+    "columba-eversmanni",
+    "bubo-bubo",
+    "gazella-subgutturosa",
+    "dendrocopos-leucopterus"
+  ],
+  "newBatch": {
+    "records": 25,
+    "images": 22,
+    "placeholders": 3,
+    "scientificReviewStatus": "pending",
+    "verified": false,
+    "population": "unknown",
+    "nationalYear": 2006
+  },
+  "preservation": {
+    "oldAssetFiles": 243,
+    "researchFiles": 58,
+    "materialReferences": 411,
+    "allUnchanged": true
+  },
+  "checks": {
+    "before": {
+      "processed": 25,
+      "accepted": 25,
+      "deferred": 0,
+      "rejected": 0
+    },
+    "apply": {
+      "processed": 25,
+      "added": 25,
+      "unchanged": 0,
+      "rejected": 0
+    },
+    "repeatDryRun": {
+      "processed": 25,
+      "added": 0,
+      "unchanged": 25,
+      "rejected": 0
+    },
+    "after": {
+      "pending": 0,
+      "needs_evidence": 0,
+      "research_ready": 0,
+      "needs_photo": 0,
+      "ready_for_review": 0,
+      "approved_for_import": 0,
+      "imported": 25,
+      "rejected": 0
+    },
+    "duplicateTaxa": 0,
+    "damagedWebP": 0,
+    "searchLanguages": [
+      "ky",
+      "uz",
+      "ru",
+      "en"
+    ],
+    "pagination": [
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      6
+    ],
+    "newComponentRenders": 300,
+    "httpRoutes": 25,
+    "httpImages": 22,
+    "generatedFilesByteIdentical": 140
+  },
+  "tests": {
+    "total": 315,
+    "passed": 315,
+    "failed": 0
+  },
+  "dist": {
+    "bytes": 31327320,
+    "files": 154,
+    "MiB": 29.876
+  },
+  "logs": [
+    {
+      "name": "tests",
+      "path": ".generated/catalog-150-publication-tests.log",
+      "sha256": "2a5dcbe68063c5141841c2b97481da4df1812a7eb5539c183cd8d1897f5b66b9",
+      "exitCode": 0
+    },
+    {
+      "name": "data-1",
+      "path": ".generated/catalog-150-publication-data-1.log",
+      "sha256": "60215a6cef73ade86da69723cb5ec2a8ca9151655acbd31a256d25590bcd786c",
+      "exitCode": 0
+    },
+    {
+      "name": "data-2",
+      "path": ".generated/catalog-150-publication-data-2.log",
+      "sha256": "60215a6cef73ade86da69723cb5ec2a8ca9151655acbd31a256d25590bcd786c",
+      "exitCode": 0
+    },
+    {
+      "name": "data-3",
+      "path": ".generated/catalog-150-publication-data-3.log",
+      "sha256": "60215a6cef73ade86da69723cb5ec2a8ca9151655acbd31a256d25590bcd786c",
+      "exitCode": 0
+    },
+    {
+      "name": "build",
+      "path": ".generated/catalog-150-publication-build.log",
+      "sha256": "47bf4f3fe952c66f620c9a966b117a4c6dbe122a3b55a3679e274d122a0845ae",
+      "exitCode": 0
+    },
+    {
+      "name": "check-before",
+      "path": ".generated/catalog-150-publication-check-before.log",
+      "sha256": "670dcb5150f9fe9f02d442f0779de3e2d5858239407bd0c8358ed3473546a792",
+      "exitCode": 0
+    },
+    {
+      "name": "preview",
+      "path": ".generated/catalog-150-publication-preview.log",
+      "sha256": "baa220e6d26917169ece70bf2dd205ab7c1be70fc7b75332e5103ddcb50022f0",
+      "exitCode": 0
+    },
+    {
+      "name": "apply",
+      "path": ".generated/catalog-150-publication-apply.log",
+      "sha256": "a5970a301b84072b3f9aff346f5f026b657f146915a3784de6aa62a1ea5916b8",
+      "exitCode": 0
+    },
+    {
+      "name": "repeat",
+      "path": ".generated/catalog-150-publication-repeat.log",
+      "sha256": "61568572558299703534726c4eb65eec9a3c48e23a545582993eaf921ccf2b95",
+      "exitCode": 0
+    },
+    {
+      "name": "check-after",
+      "path": ".generated/catalog-150-publication-check-after.log",
+      "sha256": "e533b65234a951ac330ca17f8b905a80fff11bbebee4bd115d7b3d9e052a2abd",
+      "exitCode": 0
+    }
+  ],
+  "scientificApproval": null,
+  "independentReviewer": null,
+  "knownLimitations": [
+    "Independent scientific and linguistic review pending.",
+    "Gazella subgutturosa: modern wild population in Kyrgyzstan unconfirmed.",
+    "Historical national listing is not a verified current legal status."
+  ],
+  "resolvedProblems": [
+    "Four stale historical test assumptions updated using the immutable 125-record snapshot and reviewed names/photo receipts; production code unchanged."
+  ]
+}

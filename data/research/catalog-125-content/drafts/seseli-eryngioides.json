@@ -1,0 +1,255 @@
+{
+  "id": "seseli-eryngioides",
+  "scientificName": "Seseli eryngioides",
+  "names": {
+    "ru": "Жабрица синеголовниковая",
+    "ky": "Seseli eryngioides",
+    "uz": "Seseli eryngioides",
+    "en": "Seseli eryngioides"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Apiales",
+    "family": "Apiaceae",
+    "genus": "Seseli"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Трещины известняковых скал.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": null,
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендации 2006 года: уточнить состояние популяций и обеспечить охрану местообитаний.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/seseli-eryngioides.webp",
+      "width": 1257,
+      "height": 1800,
+      "sha256": "7372f98d3faa098f35be8b726932639db15fef2b48f60fd159978e6efdbf373f",
+      "author": "ELAR corporation (Moscow, Russia)",
+      "originalPage": "https://plant.depo.msu.ru/open/public/item/MW0860309",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "ELAR corporation (Moscow, Russia); Moscow State University (copyright is managed by Dr. Alexey P. Seregin); Гербарный образец MW0860309; CC BY 4.0.  Серегин А. П. (ред.) Цифровой гербарий МГУ. М.: МГУ, 2026; MW0860309. https://plant.depo.msu.ru/open/public/item/MW0860309 (16.10.2026).",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px, WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Гербарный образец MW0860309. Seseli eryngioides. Изображение не подтверждает современную встречаемость в Кыргызстане.",
+        "ky": null,
+        "uz": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Seseli eryngioides, с. 169",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=169",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "conservationMeasures.0",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-59",
+      "publisher": "Правительство КР; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ],
+      "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Seseli eryngioides (Korovin) Pimenov & V.N.Tikhom.",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Seseli%20eryngioides",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz",
+        "names.en"
+      ],
+      "taxonId": "gbif:3631410"
+    },
+    {
+      "id": "photo-primary",
+      "title": "Гербарный образец: Seseli eryngioides",
+      "publisher": "Moscow State University",
+      "url": "https://plant.depo.msu.ru/open/public/item/MW0860309",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "ru",
+      "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Многолетний монокарпик известняковых скал Чаткальского хребта из Красной книги Кыргызстана 2006 года.",
+        "ky": "Чаткал кырка тоосунун акиташтуу аскаларында өскөн көп жылдык өсүмдүк. 2006-жылкы Кызыл китепке киргизилген.",
+        "uz": "Chotqol tizmasining ohaktosh qoyalarida oʻsadigan koʻp yillik oʻsimlik. 2006-yilgi Qizil kitobga kiritilgan.",
+        "en": "A perennial monocarpic plant of limestone cliffs in the Chatkal Range, listed in the 2006 Red Data Book."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Многолетний монокарпик известняковых скал Чаткальского хребта из Красной книги Кыргызстана 2006 года. Национальный очерк 2006 года содержит следующие сведения. В национальном очерке растение названо монокарпическим и эндемичным, с единичными популяциями. Точные причины редкости и данные о культивировании отсутствуют. По книге 2006 года цветёт в июле, плодоносит в августе–сентябре; дополнительные сведения о механизмах размножения не приведены. Исторически указан Чаткальский хребет: Бозбу-Тоо, долина Итагара, Ак-Сай и Кур-Айрык. В очерке отмечена часть популяций в Беш-Аральском заповеднике; современные границы не проверены. Рекомендации 2006 года: уточнить состояние популяций и обеспечить охрану местообитаний.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Многолетник с одиночным стеблем, ветвящимся почти от основания, и розеткой перисторассечённых листьев. Верхние листья упрощены. Многочисленные белые цветки собраны в зонтики; плоды слегка сжаты с боков.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальном очерке растение названо монокарпическим и эндемичным, с единичными популяциями. Точные причины редкости и данные о культивировании отсутствуют.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге 2006 года цветёт в июле, плодоносит в августе–сентябре; дополнительные сведения о механизмах размножения не приведены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически указан Чаткальский хребет: Бозбу-Тоо, долина Итагара, Ак-Сай и Кур-Айрык. В очерке отмечена часть популяций в Беш-Аральском заповеднике; современные границы не проверены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

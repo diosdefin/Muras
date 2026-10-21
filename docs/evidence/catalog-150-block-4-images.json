@@ -1,0 +1,273 @@
+{
+  "schemaVersion": 1,
+  "batchId": "catalog-150-4",
+  "receipts": [
+    {
+      "candidateId": "pterocles-alchata",
+      "status": "prepared",
+      "reason": null,
+      "metadata": {
+        "license": "CC BY-SA 2.0",
+        "author": "https://www.flickr.com/photos/francesco_veronesi/",
+        "artistStatementSha256": "e84c8f17c9283d10c5914354fdbf016be2515b0e7c17e77943a469bf54c34908",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Pterocles_alchata_(cropped).jpg",
+        "revisionId": 938442916,
+        "width": 644,
+        "height": 513,
+        "description": "Pin-tailed Sandgrouse Pterocles alchata, Castuera, Badajoz province, Extremadura, Spain",
+        "accessedAt": "2026-10-16",
+        "sourceLanguage": "en",
+        "imageType": "photograph",
+        "subjectAsDocumented": "Pterocles alchata",
+        "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d8/Pterocles_alchata_%28cropped%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "originalSha256": "ec1a71ae20184324f06070b76930d71921c728eb0302db5008ebd267d5ae5163",
+        "metadataCache": {
+          "path": "docs/evidence/catalog-150-photo-search.json",
+          "sha256": "863149f1279e510cc3223b12ff43ecc5cf71e287ea8e9814c65618d582b67e87",
+          "note": "Reused saved primary page revisions/imageinfo; no repeated Commons API request."
+        }
+      },
+      "image": {
+        "path": "assets/images/species/pterocles-alchata.webp",
+        "width": 644,
+        "height": 513,
+        "sha256": "7f804dc71600f9a6f70d2831d8e7106307dc83552c1acd12614b8dc7ddb66aca",
+        "author": "https://www.flickr.com/photos/francesco_veronesi/",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Pterocles_alchata_(cropped).jpg",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "attribution": "File:Pterocles alchata (cropped).jpg — https://www.flickr.com/photos/francesco_veronesi/, CC BY-SA 2.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+        "modifications": [
+          "Уменьшение без увеличения до 1800 px; WebP quality 82; удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Фотография Pterocles alchata; иллюстрация вида, не подтверждение современного присутствия в Кыргызстане или местного подвида.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-16",
+        "method": "WebP pixels and primary metadata; contact sheets 3–5, separately inspected clearer crane and live owl",
+        "independentTaxonomicReview": "pending",
+        "notes": "Изображение читаемо, явных противоречий подписанному таксону не обнаружено; независимое определение специалистом не выполнено."
+      }
+    },
+    {
+      "candidateId": "glareola-nordmanni",
+      "status": "prepared",
+      "reason": null,
+      "previousAttempt": {
+        "provider": "Wikimedia Commons",
+        "reason": "Original file HTTP 429"
+      },
+      "metadata": {
+        "description": "iNaturalist photograph: Glareola nordmanni",
+        "accessedAt": "2026-10-16",
+        "sourceLanguage": "en",
+        "imageType": "photograph",
+        "subjectAsDocumented": "Glareola nordmanni",
+        "provider": "iNaturalist",
+        "primaryPage": "https://www.inaturalist.org/observations/398917205",
+        "photoPage": "https://www.inaturalist.org/photos/731845339",
+        "primaryMetadataUrl": "https://api.inaturalist.org/v1/observations?taxon_name=Glareola+nordmanni&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=3",
+        "authorStatement": "(c) Oscar Hazell, some rights reserved (CC BY)",
+        "originalFileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/731845339/original.jpg",
+        "originalSha256": "299ed781cc3b702e1e6ae09285e5a12c573a63bdce9fe29680b29049849d3b79",
+        "primarySnapshot": "docs/evidence/catalog-150-photo-primary-fallback.json",
+        "licenseVersionEvidence": "docs/evidence/catalog-150-inaturalist-license-map.json"
+      },
+      "image": {
+        "path": "assets/images/species/glareola-nordmanni.webp",
+        "width": 1675,
+        "height": 1117,
+        "sha256": "6c51ef8917a8283eb23bd45727dbb8d276cd8ad5428815d95777b45512e4e993",
+        "author": "Oscar Hazell",
+        "originalPage": "https://www.inaturalist.org/photos/731845339",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Glareola nordmanni — Oscar Hazell; CC BY 4.0; iNaturalist photo 731845339. (c) Oscar Hazell, some rights reserved (CC BY).",
+        "modifications": [
+          "Уменьшение без увеличения до 1800 px; WebP quality 82; удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Фотография Glareola nordmanni; пример вида, не подтверждение современного присутствия в Кыргызстане или местного подвида.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-16",
+        "method": "WebP pixels and primary metadata; contact sheets 3–5, separately inspected clearer crane and live owl",
+        "independentTaxonomicReview": "pending",
+        "notes": "Изображение читаемо, явных противоречий подписанному таксону не обнаружено; независимое определение специалистом не выполнено."
+      }
+    },
+    {
+      "candidateId": "strix-aluco",
+      "status": "prepared",
+      "reason": null,
+      "previousAttempt": {
+        "provider": "Wikimedia Commons",
+        "reason": "Original file HTTP 429"
+      },
+      "metadata": {
+        "description": "iNaturalist photograph: Strix aluco",
+        "accessedAt": "2026-10-16",
+        "sourceLanguage": "en",
+        "imageType": "photograph",
+        "subjectAsDocumented": "Strix aluco",
+        "provider": "iNaturalist",
+        "primaryPage": "https://www.inaturalist.org/observations/408144919",
+        "photoPage": "https://www.inaturalist.org/photos/750184013",
+        "primaryMetadataUrl": "https://api.inaturalist.org/v1/observations?taxon_name=Strix+aluco&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=3",
+        "authorStatement": "(c) hanami_yama, some rights reserved (CC BY)",
+        "originalFileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/750184013/original.jpg",
+        "originalSha256": "d564e609cf16a9751730030b9a869e45fd94da739b2c1ccc64c0cd52e060391c",
+        "primarySnapshot": "docs/evidence/catalog-150-photo-primary-fallback.json",
+        "licenseVersionEvidence": "docs/evidence/catalog-150-inaturalist-license-map.json"
+      },
+      "image": {
+        "path": "assets/images/species/strix-aluco.webp",
+        "width": 1800,
+        "height": 1011,
+        "sha256": "b822a70ee53abd2577d0df440fd6d23d3124d1f9cbd57e260a56b03af4168d00",
+        "author": "hanami_yama",
+        "originalPage": "https://www.inaturalist.org/photos/750184013",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Strix aluco — hanami_yama; CC BY 4.0; iNaturalist photo 750184013. (c) hanami_yama, some rights reserved (CC BY).",
+        "modifications": [
+          "Уменьшение без увеличения до 1800 px; WebP quality 82; удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Фотография Strix aluco; пример вида, не подтверждение современного присутствия в Кыргызстане или местного подвида. Чёрно-белый кадр; цвет оперения по нему не оценивается.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-16",
+        "method": "WebP pixels and primary metadata; contact sheets 3–5, separately inspected clearer crane and live owl",
+        "independentTaxonomicReview": "pending",
+        "notes": "Изображение читаемо, явных противоречий подписанному таксону не обнаружено; независимое определение специалистом не выполнено."
+      }
+    },
+    {
+      "candidateId": "syrrhaptes-paradoxus",
+      "status": "prepared",
+      "reason": null,
+      "previousAttempt": {
+        "provider": "Wikimedia Commons",
+        "reason": "Original file HTTP 429"
+      },
+      "metadata": {
+        "description": "iNaturalist photograph: Syrrhaptes paradoxus",
+        "accessedAt": "2026-10-16",
+        "sourceLanguage": "en",
+        "imageType": "photograph",
+        "subjectAsDocumented": "Syrrhaptes paradoxus",
+        "provider": "iNaturalist",
+        "primaryPage": "https://www.inaturalist.org/observations/386557960",
+        "photoPage": "https://www.inaturalist.org/photos/707778366",
+        "primaryMetadataUrl": "https://api.inaturalist.org/v1/observations?taxon_name=Syrrhaptes+paradoxus&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=3",
+        "authorStatement": "(c) Tom Field, some rights reserved (CC BY)",
+        "originalFileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/707778366/original.jpg",
+        "originalSha256": "860bd21303f905b15d3611b7945679a2c125dc09b0e362006f783a041c57cbe1",
+        "primarySnapshot": "docs/evidence/catalog-150-photo-primary-fallback.json",
+        "licenseVersionEvidence": "docs/evidence/catalog-150-inaturalist-license-map.json"
+      },
+      "image": {
+        "path": "assets/images/species/syrrhaptes-paradoxus.webp",
+        "width": 1800,
+        "height": 1350,
+        "sha256": "728fdd7aa841cd29948f6d63807d5813d89091176876c12514e4bf80bf8ad6e2",
+        "author": "Tom Field",
+        "originalPage": "https://www.inaturalist.org/photos/707778366",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Syrrhaptes paradoxus — Tom Field; CC BY 4.0; iNaturalist photo 707778366. (c) Tom Field, some rights reserved (CC BY).",
+        "modifications": [
+          "Уменьшение без увеличения до 1800 px; WebP quality 82; удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Фотография Syrrhaptes paradoxus; пример вида, не подтверждение современного присутствия в Кыргызстане или местного подвида.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-16",
+        "method": "WebP pixels and primary metadata; contact sheets 3–5, separately inspected clearer crane and live owl",
+        "independentTaxonomicReview": "pending",
+        "notes": "Изображение читаемо, явных противоречий подписанному таксону не обнаружено; независимое определение специалистом не выполнено."
+      }
+    },
+    {
+      "candidateId": "pterocles-orientalis",
+      "status": "prepared",
+      "reason": null,
+      "previousAttempt": {
+        "provider": "Wikimedia Commons",
+        "reason": "Original file HTTP 429"
+      },
+      "metadata": {
+        "description": "iNaturalist photograph: Pterocles orientalis",
+        "accessedAt": "2026-10-16",
+        "sourceLanguage": "en",
+        "imageType": "photograph",
+        "subjectAsDocumented": "Pterocles orientalis",
+        "provider": "iNaturalist",
+        "primaryPage": "https://www.inaturalist.org/observations/398773181",
+        "photoPage": "https://www.inaturalist.org/photos/731522111",
+        "primaryMetadataUrl": "https://api.inaturalist.org/v1/observations?taxon_id=117088&photo_license=cc0%2Ccc-by%2Ccc-by-sa&quality_grade=research&photos=true&per_page=20",
+        "authorStatement": "(c) Антон Лабачоў, some rights reserved (CC BY)",
+        "originalFileUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/731522111/original.jpg",
+        "originalSha256": "458e6f25afead13e52735d5fce2d2ef65583c5efefd1cfc42a6b69c892b49be0",
+        "primarySnapshot": "docs/evidence/catalog-150-photo-primary-fallback.json",
+        "licenseVersionEvidence": "docs/evidence/catalog-150-inaturalist-license-map.json"
+      },
+      "image": {
+        "path": "assets/images/species/pterocles-orientalis.webp",
+        "width": 1800,
+        "height": 1200,
+        "sha256": "c3f1cd305778fdcf9185d77486f96a5e530d0fcdb029dc0d43cf183290cc308c",
+        "author": "Антон Лабачоў",
+        "originalPage": "https://www.inaturalist.org/photos/731522111",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Pterocles orientalis — Антон Лабачоў; CC BY 4.0; iNaturalist photo 731522111. (c) Антон Лабачоў, some rights reserved (CC BY).",
+        "modifications": [
+          "Уменьшение без увеличения до 1800 px; WebP quality 82; удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Фотография Pterocles orientalis; пример вида, не подтверждение современного присутствия в Кыргызстане или местного подвида.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-16",
+        "method": "WebP pixels and primary metadata; contact sheets 3–5, separately inspected clearer crane and live owl",
+        "independentTaxonomicReview": "pending",
+        "notes": "Изображение читаемо, явных противоречий подписанному таксону не обнаружено; независимое определение специалистом не выполнено."
+      }
+    }
+  ]
+}

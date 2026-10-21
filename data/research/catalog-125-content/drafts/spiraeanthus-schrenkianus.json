@@ -1,0 +1,283 @@
+{
+  "id": "spiraeanthus-schrenkianus",
+  "scientificName": "Spiraeanthus schrenckianus",
+  "names": {
+    "ru": "Таволгоцвет Шренка",
+    "ky": "Spiraeanthus schrenckianus",
+    "uz": "Spiraeanthus schrenckianus",
+    "en": "Spiraeanthus schrenckianus"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Rosales",
+    "family": "Rosaceae",
+    "genus": "Spiraeanthus"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "CR B2ab(iii)",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Spiraeanthus schrenkianus",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Каменистые склоны низкогорий; по национальному очерку растения образуют небольшие группы.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В книге 2006 года указаны бессистемный выпас и рубка кустарников на топливо.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендации 2006 года: уточнить состояние популяций, организовать ботанический заказник и повторить опыты выращивания для возможной реинтродукции.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/spiraeanthus-schrenkianus.webp",
+      "width": 1800,
+      "height": 1800,
+      "sha256": "592950e20a18f7510f13a2f8ea03724d8df4c5fc73548fa6ebbc28566b94ee97",
+      "author": "Alexander Dubynin",
+      "originalPage": "https://www.inaturalist.org/photos/502777007",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Alexander Dubynin; Alexander Dubynin; Фото растения; CC BY 4.0. (c) Alexander Dubynin, some rights reserved (CC BY)",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px, WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Фотография растения. Spiraeanthus schrenckianus. Изображение не подтверждает современную встречаемость в Кыргызстане.",
+        "ky": null,
+        "uz": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; Таволгоцвет Шренка, с. 129",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=129",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Spiraeanthus schrenckianus (C.A.Mey.) Maxim.",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Spiraeanthus%20schrenckianus",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview",
+        "names.ky",
+        "names.uz",
+        "names.en"
+      ],
+      "taxonId": "gbif:3853299"
+    },
+    {
+      "id": "gbif-synonym",
+      "title": "GBIF Backbone: историческое имя Spiraeanthus schrenkianus → Spiraeanthus schrenckianus",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Spiraeanthus%20schrenkianus",
+      "language": "en",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "originalScientificName",
+        "scientificName",
+        "content.overview"
+      ],
+      "notes": "EXACT SYNONYM, acceptedUsageKey 3853299; принятие проверено отдельным EXACT ACCEPTED того же ранга."
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление №170 (2005), редакция №471 (2009); decree-170-2009-1-44",
+      "publisher": "Правительство КР; копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ]
+    },
+    {
+      "id": "photo-primary",
+      "title": "Фотография: Spiraeanthus schrenckianus",
+      "publisher": "iNaturalist",
+      "url": "https://www.inaturalist.org/photos/502777007",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en",
+      "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Кустарник каменистых низкогорий, описанный в Красной книге Кыргызстана 2006 года под именем Spiraeanthus schrenkianus.",
+        "ky": "Жапыз тоолордун таштак капталдарында өскөн бадал. 2006-жылкы Кызыл китепте Spiraeanthus schrenkianus деп берилген.",
+        "uz": "Past togʻlarning toshloq yonbagʻirlarida oʻsadigan buta. 2006-yilgi Qizil kitobda Spiraeanthus schrenkianus nomi bilan berilgan.",
+        "en": "A shrub of stony low mountains, recorded as Spiraeanthus schrenkianus in Kyrgyzstan’s 2006 Red Data Book."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Кустарник каменистых низкогорий, описанный в Красной книге Кыргызстана 2006 года под именем Spiraeanthus schrenkianus. Национальный очерк 2006 года содержит следующие сведения. Вегетация по историческому описанию начинается в апреле. Естественное возобновление слабое. В книге приведён неудачный опыт выращивания в ботаническом саду Бишкека в 1955–1958 годах из-за конкуренции других кустарников. Цветёт в июне около 15–20 дней; плоды созревают с конца июля до сентября. Очерк описывает прорастание семян, но отмечает отсутствие всходов и подроста в естественных условиях. Исторический национальный очерк подтверждает включение для Кыргызстана. Русская часть называет бассейн Майлы-Суу, английская — окрестности Маймака. Эти противоречащие привязки не объединены в подтверждённый ареал; современное местонахождение требует проверки. В книге 2006 года указаны бессистемный выпас и рубка кустарников на топливо. Рекомендации 2006 года: уточнить состояние популяций, организовать ботанический заказник и повторить опыты выращивания для возможной реинтродукции.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Кустарник высотой до 3 м с густой кроной, серовато-жёлтой растрескивающейся корой и мелкими листочками в парноперистых листьях. Бело-розовые душистые цветки образуют метёлки на концах годичных побегов.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Вегетация по историческому описанию начинается в апреле. Естественное возобновление слабое. В книге приведён неудачный опыт выращивания в ботаническом саду Бишкека в 1955–1958 годах из-за конкуренции других кустарников.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Цветёт в июне около 15–20 дней; плоды созревают с конца июля до сентября. Очерк описывает прорастание семян, но отмечает отсутствие всходов и подроста в естественных условиях.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический национальный очерк подтверждает включение для Кыргызстана. Русская часть называет бассейн Майлы-Суу, английская — окрестности Маймака. Эти противоречащие привязки не объединены в подтверждённый ареал; современное местонахождение требует проверки.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

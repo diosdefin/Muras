@@ -1,0 +1,111 @@
+{
+  "schemaVersion": 1,
+  "documentType": "bulk-content-manifest",
+  "sourceCommit": "e3219fc63d6ed22a4260bc420cdfe2a77fe7718a",
+  "masterRegistryFile": "data/research/catalog-150-research-registry.json",
+  "masterRegistryFingerprint": "d5f69a74748beefd53f909d69048882f40902892b7b7dcb5d2a07660b476d618",
+  "taxonomyFile": "docs/evidence/catalog-150-taxonomy.json",
+  "registryFile": "data/research/catalog-150-content-registry.json",
+  "contentDirectory": "data/research/catalog-150-content",
+  "evidencePrefix": "catalog-150",
+  "candidateIds": [
+    "barbus-capito-conocephalus",
+    "vipera-ursinii-renardi",
+    "kirgisobia-bohnei",
+    "anser-indica",
+    "accipiter-badius",
+    "aquila-clanga",
+    "aquila-nipalensis",
+    "aquila-heliaca",
+    "hieraaetus-fasciatus",
+    "hieraaetus-pennatus",
+    "tetrax-tetrax",
+    "crex-crex",
+    "anthropoides-virgo",
+    "burhinus-oedicnemus",
+    "vanellus-gregarius",
+    "glareola-nordmanni",
+    "strix-aluco",
+    "syrrhaptes-paradoxus",
+    "pterocles-alchata",
+    "pterocles-orientalis",
+    "columba-leuconota",
+    "columba-eversmanni",
+    "bubo-bubo"
+  ],
+  "blocks": [
+    {
+      "number": 1,
+      "batchId": "catalog-150-1",
+      "candidateIds": [
+        "barbus-capito-conocephalus",
+        "vipera-ursinii-renardi",
+        "kirgisobia-bohnei",
+        "anser-indica",
+        "accipiter-badius"
+      ],
+      "status": "prepared_for_check"
+    },
+    {
+      "number": 2,
+      "batchId": "catalog-150-2",
+      "candidateIds": [
+        "aquila-clanga",
+        "aquila-nipalensis",
+        "aquila-heliaca",
+        "hieraaetus-fasciatus",
+        "hieraaetus-pennatus"
+      ],
+      "status": "prepared_for_check"
+    },
+    {
+      "number": 3,
+      "batchId": "catalog-150-3",
+      "candidateIds": [
+        "tetrax-tetrax",
+        "crex-crex",
+        "anthropoides-virgo",
+        "burhinus-oedicnemus",
+        "vanellus-gregarius"
+      ],
+      "status": "prepared_for_check"
+    },
+    {
+      "number": 4,
+      "batchId": "catalog-150-4",
+      "candidateIds": [
+        "glareola-nordmanni",
+        "strix-aluco",
+        "syrrhaptes-paradoxus",
+        "pterocles-alchata",
+        "pterocles-orientalis"
+      ],
+      "status": "prepared_for_check"
+    },
+    {
+      "number": 5,
+      "batchId": "catalog-150-5",
+      "candidateIds": [
+        "columba-leuconota",
+        "columba-eversmanni",
+        "bubo-bubo"
+      ],
+      "status": "prepared_for_check"
+    }
+  ],
+  "publicationAllowed": false,
+  "ownerAuthorization": "absent_requires_specific_review_manifest",
+  "baselineCatalogCount": 125,
+  "excludePublished": true,
+  "excludedIds": [
+    "sonjagaster-coronatus",
+    "cephalota-galathea",
+    "larus-ichtyaetus",
+    "tulipa-anadroma",
+    "eryx-tataricus",
+    "pyrus-asiae-mediae",
+    "cuon-alpinus",
+    "hystrix-indica"
+  ],
+  "selectionLimit": 25
+}

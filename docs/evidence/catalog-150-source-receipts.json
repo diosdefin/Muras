@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "receipts": [
+    {
+      "id": "fish-2025",
+      "url": "https://zenodo.org/records/20514636/files/treatment.html",
+      "error": "HTTP 403"
+    },
+    {
+      "id": "reptile-database",
+      "url": "https://reptile-database.reptarium.cz/Vipera/renardi",
+      "accessedAt": "2026-10-16",
+      "httpStatus": 200,
+      "localCache": ".generated/catalog-150-sources/reptile-database.html",
+      "sha256": "33132759f32c36924e3ac4e9caa8c69b4e9eab606f0ef5d66dfbb4763bbc492d"
+    },
+    {
+      "id": "longhorn-2026",
+      "url": "https://www.cerambycidae.net/russia_sr.pdf",
+      "error": "fetch failed"
+    },
+    {
+      "id": "odonata-2024",
+      "url": "https://pisum.icgbio.ru/kosterin/pdf/schneider_et_al_2024.pdf",
+      "accessedAt": "2026-10-16",
+      "httpStatus": 200,
+      "localCache": ".generated/catalog-150-sources/odonata-2024.pdf",
+      "sha256": "41e59c38df218d26bc55ee700a60fc46ba4eae0b73ef5bdc3f7ff373cbaaf276"
+    },
+    {
+      "id": "longhorn-2015",
+      "url": "https://www.zin.ru/animalia/coleoptera/pdf/danilevsky_2015_catalogue_palaearctic_cerambycoidea.pdf",
+      "accessedAt": "2026-10-16",
+      "httpStatus": 200,
+      "localCache": ".generated/catalog-150-sources/longhorn-2015.pdf",
+      "sha256": "213262206aaa85e439a72cd60069ee9b228357a4354881a77b9309d271899592",
+      "pagesReviewed": [
+        1,
+        18
+      ]
+    }
+  ]
+}

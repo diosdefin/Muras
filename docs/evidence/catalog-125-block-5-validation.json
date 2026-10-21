@@ -1,0 +1,175 @@
+{
+  "schemaVersion": 1,
+  "registryId": "catalog-125-content",
+  "catalogFingerprint": "d87aa848adc17517ca35a39bcedb1548fd16b1b93d1342beee5d92cfab5483f3",
+  "counts": {
+    "processed": 5,
+    "accepted": 5,
+    "deferred": 0,
+    "rejected": 0
+  },
+  "states": {
+    "pending": 0,
+    "needs_evidence": 0,
+    "research_ready": 0,
+    "needs_photo": 0,
+    "ready_for_review": 5,
+    "approved_for_import": 0,
+    "imported": 0,
+    "rejected": 0
+  },
+  "results": [
+    {
+      "candidateId": "campanula-eugeniae",
+      "batchNumber": 5,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "b1fe1761850aa68df89673729600890eca7da6862e99a1faca1b951d0b473b02",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "lamyropappus-schakaptaricus",
+      "batchNumber": 5,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "6ffd4220271b7e36139a935fa635402235dc64d480da74fc7ef792eb81813553",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "trichanthemis-aulieatensis",
+      "batchNumber": 5,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "7a91728ecd814c1856ae6ff507bb8d05c2b8e1439246271a9d387bbcaba406f5",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "trichanthemis-aurea",
+      "batchNumber": 5,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "b13f601433e01ccbdc5c7791832dd5e7daa332eef816c6d30f4fd137340af72a",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "lepidolopha-komarowii",
+      "batchNumber": 5,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "4588fcaf05496e214b0746678ab9903a73d755dd205b469c4fb6a4a522309343",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    }
+  ],
+  "metrics": {
+    "durationMs": 188.9,
+    "cpu": {
+      "user": 187000,
+      "system": 31000
+    },
+    "memory": {
+      "rss": 61313024,
+      "heapTotal": 28368896,
+      "heapUsed": 18069792,
+      "external": 4678053,
+      "arrayBuffers": 709923
+    },
+    "localMaterialReads": 11
+  }
+}
