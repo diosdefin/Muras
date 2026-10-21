@@ -1,0 +1,271 @@
+{
+  "id": "dendrocopos-major",
+  "scientificName": "Dendrocopos major",
+  "names": {
+    "ru": "Большой пёстрый дятел",
+    "ky": "Чоң чаар тонкулдак",
+    "uz": "Dendrocopos major",
+    "en": "Great Spotted Woodpecker"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Piciformes",
+    "family": "Picidae",
+    "genus": "Dendrocopos"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "NT",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); видовой очерк; упомянутый местный brevirostris не создаёт отдельного кандидата",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "По книге 2006 года — еловые и орехово-плодовые леса; обитание в восточном Прииссыккулье названо возможным, а не подтверждённым современным обследованием.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": null,
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендации книги 2006 года: сохранять еловые, орехово-плодовые и пойменные леса, предотвращать бесконтрольные рубки, восстанавливать лесные местообитания.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/dendrocopos-major.webp",
+      "width": 600,
+      "height": 800,
+      "sha256": "3e14bf17d754510ab3da33af340e42f3f2b61415823637c23a965c95ae2b1c06",
+      "author": "Sławomir Staszczuk (info [AT] photoss.net)",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:DendrocoposMajor.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Sławomir Staszczuk (info [AT] photoss.net); CC BY-SA 3.0; https://commons.wikimedia.org/wiki/File:DendrocoposMajor.jpg. Производные изображения распространяются под той же лицензией.",
+      "modifications": [
+        "Уменьшение без увеличения до 1800 px; конвертация WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ky": null,
+        "uz": null,
+        "ru": "Большой пёстрый дятел, видовая иллюстрация; определение местного подвида brevirostris и присутствие в Кыргызстане по этому фото не устанавливаются.",
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е изд., 2006; Dendrocopos major, с. 468–469",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=469",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.distribution",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-decree",
+      "title": "Постановление №170 от 28.04.2005, документированная редакция 25.07.2009; decree-170-2009-3-25",
+      "publisher": "Правительство Кыргызской Республики; FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "originalScientificName"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Dendrocopos major (Linnaeus, 1758)",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Dendrocopos%20major",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.uz"
+      ],
+      "taxonId": "gbif:2477968"
+    },
+    {
+      "id": "rspb-woodpecker",
+      "title": "RSPB. Great Spotted Woodpecker: identification",
+      "publisher": "Royal Society for the Protection of Birds",
+      "url": "https://www.rspb.org.uk/birds-and-wildlife/great-spotted-woodpecker/",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "content.appearance"
+      ]
+    },
+    {
+      "id": "photo-commons",
+      "title": "Dendrocopos major; лицензированное изображение, Sławomir Staszczuk (info [AT] photoss.net)",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:DendrocoposMajor.jpg",
+      "accessedAt": "2026-10-21",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": null
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 468-бет; визуалдык текшерилген аталыш",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=468",
+      "accessedAt": "2026-10-21",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Лесной дятел с историческим очерком в книге 2006 года. Кыргызcтанские сведения основаны на старых коллекционных экземплярах; современная популяция не подтверждена.",
+        "ky": "2006-жылкы китепке киргизилген токой канаттуусу. Кыргызстан боюнча маалымат эски коллекциялык үлгүлөргө таянат; азыркы популяциясы тастыкталган эмес.",
+        "uz": "2006-yilgi kitobga kiritilgan oʻrmon qushi. Qirgʻiziston haqidagi maʼlumot eski kolleksiya namunalariga asoslanadi; hozirgi populyatsiya tasdiqlanmagan.",
+        "en": "A woodland woodpecker listed in the 2006 book. Kyrgyz records rely on old collection specimens; a current population is unconfirmed."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Большой пёстрый дятел — самостоятельный широко распространённый вид лесных птиц, которому посвящён национальный очерк 2006 года. Точное имя Dendrocopos major подтверждено сохранённой таксономической записью. В книге упомянута местная форма brevirostris, однако карточка сохраняет видовой ранг исторического заголовка и не создаёт дополнительный подвидовой объект.\n\nНаиболее существенное ограничение национальной информации — давность и малое число свидетельств. В очерке указаны коллекционные экземпляры с Тескей Ала-Тоо и Кыргызского хребта; одна находка датирована 1876 годом. Материалы из Текеса относятся к Казахстану и не становятся кыргызстанскими только из-за соседства регионов. Английское резюме прямо называет статус пребывания неясным.\n\nКнига связывает возможное обитание с еловыми и орехово-плодовыми лесами и описывает преимущественно насекомоядное питание. Детали современного размножения, численность и конкретные ограничивающие факторы для страны не установлены. Общевидовое описание внешности из RSPB не используется для переноса британских численностей и статусов в Кыргызстан.\n\nИсторические рекомендации касаются сохранения лесов, предотвращения бесконтрольных рубок и восстановления местообитаний. Категория NT относится к книге 2006 года. Эта карточка документирует национальное историческое включение и не утверждает существование подтверждённой современной местной популяции.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По RSPB оперение контрастное, чёрно-белое с красным участком в нижней части тела. У самца красное пятно на затылке, у молодых красная шапочка. Это общевидовые признаки, а не диагностика местного подвида brevirostris.",
+        "en": null
+      },
+      "sourceIds": [
+        "rspb-woodpecker"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В историческом очерке лесная птица, национальный статус пребывания неясен. Опубликованные старые коллекционные находки не доказывают современной оседлой популяции.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальному очерку питается преимущественно насекомыми, в том числе насекомыми на лесных деревьях.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": null,
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный очерк указывает старые экземпляры с Тескей Ала-Тоо и Кыргызского хребта; возможное обитание в восточном Прииссыккулье требует подтверждения. Казахстанские экземпляры из долины Текеса отделены от кыргызстанских сведений.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

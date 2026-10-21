@@ -1,0 +1,295 @@
+{
+  "id": "numenius-tenuirostris",
+  "scientificName": "Numenius tenuirostris",
+  "names": {
+    "ru": "Тонкоклювый кроншнеп",
+    "ky": "Ичкетумшуктуу төөчулдук",
+    "uz": "Numenius tenuirostris",
+    "en": "Slender-billed Curlew"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae",
+    "genus": "Numenius"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "CR",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": "EX",
+    "year": 2025,
+    "sourceIds": [
+      "birdlife-2025"
+    ]
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Исторический национальный очерк указывает водно-болотные угодья равнин, низко- и среднегорий как места возможной остановки залётных птиц.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические факторы по очерку 2006 года: нелегальный отстрел и осушение участков кормёжки.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические рекомендации 2006 года: охрана мест остановок, предотвращение осушения и научная фиксация сообщений. После подтверждения глобального вымирания они не представлены как действующая программа охраны существующей популяции.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/numenius-tenuirostris.webp",
+      "width": 728,
+      "height": 464,
+      "sha256": "941aaf4658f5a4a893607cb70941dc22c6925ff667fb152c7cb6ea1eb2fff638",
+      "author": "Naturalis Biodiversity Center (коллекция и поставщик изображения; фотограф не указан)",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_ZMA.AVES.1670_-_Numenius_tenuirostris_Vieillot,_1817_-_Scolopacidae_-_skin_specimen.jpeg",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "attribution": "Naturalis Biodiversity Center (коллекция и поставщик изображения; фотограф не указан); CC0; https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_ZMA.AVES.1670_-_Numenius_tenuirostris_Vieillot,_1817_-_Scolopacidae_-_skin_specimen.jpeg.",
+      "modifications": [
+        "Уменьшение без увеличения до 1800 px; конвертация WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ky": null,
+        "uz": null,
+        "ru": "Музейный экземпляр (на странице коллекции: skin specimen) ZMA.AVES.1670, Naturalis Biodiversity Center: молодой самец, Нидерланды, сбор J. H. Albarda 27.12.1889. Не живая птица и не кыргызстанская находка.",
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е изд., 2006; Numenius tenuirostris, с. 446–447",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=447",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-decree",
+      "title": "Постановление №170 от 28.04.2005, документированная редакция 25.07.2009; decree-170-2009-3-58",
+      "publisher": "Правительство Кыргызской Республики; FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "originalScientificName"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Numenius tenuirostris Vieillot, 1817",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Numenius%20tenuirostris",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.uz"
+      ],
+      "taxonId": "gbif:2481789"
+    },
+    {
+      "id": "birdlife-2025",
+      "title": "BirdLife International, 10 October 2025. Restoring habitats key to fighting extinctions; final Red List update confirms Slender-billed Curlew extinction",
+      "publisher": "BirdLife International",
+      "url": "https://www.birdlife.org/news/2025/10/10/restoring-habitats-key-to-fighting-extinctions/",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.distribution",
+        "iucn.category",
+        "iucn.year"
+      ]
+    },
+    {
+      "id": "rspb-aewa-2008",
+      "title": "RSPB/AEWA, November 2008. A toolkit for finding Slender-billed Curlews, identification table, p. 2 (historical identification guidance)",
+      "publisher": "RSPB; AEWA; hosted by UNEP/MAP SPA/RAC",
+      "url": "https://www.rac-spa.org/sites/default/files/doc_birds/toolkit_slender_billed_curlew_identification_search.pdf",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "content.appearance"
+      ]
+    },
+    {
+      "id": "photo-commons",
+      "title": "Numenius tenuirostris; лицензированное изображение, Naturalis Biodiversity Center (коллекция и поставщик изображения; фотограф не указан)",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_ZMA.AVES.1670_-_Numenius_tenuirostris_Vieillot,_1817_-_Scolopacidae_-_skin_specimen.jpeg",
+      "accessedAt": "2026-10-21",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": null
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 446-бет; визуалдык текшерилген аталыш",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=446",
+      "accessedAt": "2026-10-21",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Исторический залётный вид из Красной книги Кыргызстана 2006 года. BirdLife в обновлении 2025 года подтвердил глобальное вымирание; современных местных птиц карточка не заявляет.",
+        "ky": "Кыргызстандын 2006-жылкы Кызыл китебиндеги тарыхый сейрек учуп келген түр. BirdLife 2025-жылы анын дүйнө жүзүндө тукум курут болгонун тастыктаган.",
+        "uz": "Qirgʻizistonning 2006-yilgi Qizil kitobidagi tarixiy, kamdan-kam uchib kelgan tur. BirdLife 2025-yilda uning butun dunyoda yoʻqolib ketganini tasdiqlagan.",
+        "en": "A historical vagrant in Kyrgyzstan’s 2006 Red Data Book. BirdLife confirmed its global extinction in the 2025 update; no current local birds are claimed."
+      },
+      "sourceIds": [
+        "national-book",
+        "birdlife-2025"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Тонкоклювый кроншнеп — самостоятельный вид куликов, которому посвящён исторический очерк Красной книги Кыргызстана 2006 года. Его научное имя Numenius tenuirostris и видовой ранг подтверждены точной сохранённой записью GBIF. Историческое включение остаётся документальным фактом независимо от последующего изменения состояния вида.\n\nЗдесь необходимо отличать два времени оценки. Книга 2006 года рассматривала птицу как крайне редкого залётного кроншнепа и допускала будущие встречи. Однако BirdLife International в окончательном обновлении Красного списка от 10 октября 2025 года подтвердил глобальное вымирание вида. Поэтому старые предположения о будущих залётах не используются как современная рекомендация или свидетельство существующей популяции.\n\nНациональный очерк связывал исторические сообщения с Иссыккульской котловиной; возможность встреч в Чуйской долине была сформулирована предположительно. Эти уровни доказательности сохранены раздельно. Сам очерк не давал национальной численности и отмечал, что страна лежит вне обычных путей миграции.\n\nИсторические угрозы включали отстрел и осушение пригодных участков. Рекомендации того времени касались охраны мест отдыха и кормёжки и научного документирования сообщений. Теперь карточка имеет прежде всего историческое и образовательное значение. Поле национальной категории CR сопровождается годом 2006, а актуальное сообщение о вымирании дано отдельно. Неизвестная национальная численность не заменена вымышленным учётом, фотография музейного экземпляра не представлена как живая современная птица.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "birdlife-2025"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Пособие RSPB/AEWA 2008 года описывает тонкий клюв с острым кончиком, тёмно-серые ноги и белый хвост с немногочисленными тёмными полосами. Определение сложно и требует сочетания признаков; пособие используется для морфологии, а не как актуальное свидетельство существования вида.",
+        "en": null
+      },
+      "sourceIds": [
+        "rspb-aewa-2008"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В источнике 2006 года для Кыргызстана — залётный вид вне обычных миграционных путей. В 2025 году BirdLife подтвердил глобальное вымирание; описание прежнего поведения не означает современного присутствия.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "birdlife-2025"
+      ]
+    },
+    "diet": null,
+    "reproduction": null,
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические указания книги относятся к Иссыккульской котловине; Чуйская долина упомянута как возможность, без равного ей подтверждения находки. Современное присутствие не заявляется; BirdLife 2025 подтвердил глобальное вымирание.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "birdlife-2025"
+      ]
+    }
+  }
+}

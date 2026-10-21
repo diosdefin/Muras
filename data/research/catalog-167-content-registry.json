@@ -3020,7 +3020,7 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
+        "category": "CR",
         "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
         "year": 2006,
         "sourceIds": [
@@ -3064,7 +3064,17 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -3087,9 +3097,65 @@
           "accessedAt": "2026-10-21",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.uz"
           ],
           "taxonId": "gbif:2481789"
+        },
+        {
+          "id": "birdlife-2025",
+          "title": "BirdLife International, 10 October 2025. Restoring habitats key to fighting extinctions; final Red List update confirms Slender-billed Curlew extinction",
+          "publisher": "BirdLife International",
+          "url": "https://www.birdlife.org/news/2025/10/10/restoring-habitats-key-to-fighting-extinctions/",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.distribution",
+            "iucn.category",
+            "iucn.year"
+          ]
+        },
+        {
+          "id": "rspb-aewa-2008",
+          "title": "RSPB/AEWA, November 2008. A toolkit for finding Slender-billed Curlews, identification table, p. 2 (historical identification guidance)",
+          "publisher": "RSPB; AEWA; hosted by UNEP/MAP SPA/RAC",
+          "url": "https://www.rac-spa.org/sites/default/files/doc_birds/toolkit_slender_billed_curlew_identification_search.pdf",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "content.appearance"
+          ]
+        },
+        {
+          "id": "photo-commons",
+          "title": "Numenius tenuirostris; лицензированное изображение, Naturalis Biodiversity Center (коллекция и поставщик изображения; фотограф не указан)",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Naturalis_Biodiversity_Center_-_ZMA.AVES.1670_-_Numenius_tenuirostris_Vieillot,_1817_-_Scolopacidae_-_skin_specimen.jpeg",
+          "accessedAt": "2026-10-21",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": null
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 446-бет; визуалдык текшерилген аталыш",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=446",
+          "accessedAt": "2026-10-21",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
         }
       ],
       "contradictions": [],
@@ -3110,6 +3176,30 @@
         {
           "path": "docs/evidence/catalog-167-baseline.json",
           "sha256": "63e8654bdbf4a9730331cd230aff1c5cf8688df8cf1f1430bd06d30232d8617e"
+        },
+        {
+          "path": "data/research/catalog-167-content/block-3-facts.json",
+          "sha256": "5dfa51f9fdb7ce243e7709531881470c657ebff7de1f1357681200a39a214960"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-3-accounts.json",
+          "sha256": "b3ef69536a083ac48878312906b8ee23b74b9776fcc47dff8f54c2eb9117088c"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-3-images.json",
+          "sha256": "11d227de67362b1a721782141051f3f87439e2c7230c93895c312f03eae58da6"
+        },
+        {
+          "path": "docs/evidence/catalog-167-photo-search.json",
+          "sha256": "067912c09b54c0c547c8fb51c4a114fc4c4f1eacd873c9cb45066c7d0ef4228f"
+        },
+        {
+          "path": "docs/evidence/catalog-167-supplementary-photo-search.json",
+          "sha256": "07b8d96d9203b2bd3e7a0d1c8dc15b209a2697dd1bccc87efda6c929fb1472f3"
+        },
+        {
+          "path": "docs/evidence/catalog-167-scientific-review.json",
+          "sha256": "dc4417856f099d8100a32d6ee15f89cd5d5ee672b59a73427d9c15ea9c416ca9"
         }
       ],
       "draft": null,
@@ -3137,48 +3227,60 @@
       "independentScientificReview": "pending",
       "scientificReviewStatus": "pending",
       "historicalNationalScope": "Исторический национальный очерк; современное присутствие и текущая редакция правового реестра не установлены.",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "numenius-tenuirostris",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "981e50be3ae94bdf77c66b5c96ad5eaf0945c105829fee693818ba0fa92f6ed8",
+        "fingerprint": "34fa8c053a3a1c6a6760c04e210381c6eb9a014e66cd8f41f6293b971684c490",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "981e50be3ae94bdf77c66b5c96ad5eaf0945c105829fee693818ba0fa92f6ed8"
+      "checkedFingerprint": "34fa8c053a3a1c6a6760c04e210381c6eb9a014e66cd8f41f6293b971684c490",
+      "draftFile": "data/research/catalog-167-content/drafts/numenius-tenuirostris.json",
+      "publicationGaps": [
+        "Отдельное разрешение владельца на импорт отсутствует",
+        "Независимая научная проверка pending",
+        "Современная национальная численность unknown",
+        "UZ: используется принятое научное имя; народное название не подтверждено"
+      ],
+      "editorialNotes": [
+        "Глобальное вымирание 2025 года учтено; историческая национальная CR 2006 и современная EX не смешаны.",
+        "В таблице population остаётся unknown для национального учёта, без вымышленного значения 0."
+      ],
+      "missingFacts": [
+        "Новые подтверждённые местные наблюдения отсутствуют; современная живая популяция не заявляется.",
+        "Детальная национальная биология размножения и рацион в очерке не установлены."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "numenius-tenuirostris",
+        "factsFingerprint": "226ec654204f9d291a6b348f1b92b73393d2b762ddb11094753a7af86ed8bf02",
+        "draftSha256": "c38a3abb5dd2f2e5668a1e829502e119445d5d9f1addc930b3b1d601228d56b0",
+        "metadataCompletion": "Kyrgyz heading visually transcribed; UZ scientific-name fallback; photo provider and source supports reconciled; curlew EX 2025 explicit."
+      },
+      "currentPresenceConfirmed": null
     },
     {
       "originalScientificName": "Larus ichtyaetus",
@@ -3187,8 +3289,8 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "NT",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Larus ichtyaetus",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -3231,7 +3333,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -3254,9 +3368,50 @@
           "accessedAt": "2026-10-21",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview",
+            "names.uz"
           ],
           "taxonId": "gbif:8028588"
+        },
+        {
+          "id": "cornell-gull",
+          "title": "Cornell Lab of Ornithology, eBird/Merlin. Pallas’s Gull: identification",
+          "publisher": "Cornell Lab of Ornithology",
+          "url": "https://ebird.org/species/gbhgul2",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "content.appearance"
+          ]
+        },
+        {
+          "id": "photo-commons",
+          "title": "Ichthyaetus ichthyaetus; лицензированное изображение, Tisha Mukherjee",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Pallas%27s_Gull_by_Tisha_Mukherjee_20.jpg",
+          "accessedAt": "2026-10-21",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": null
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 450-бет; визуалдык текшерилген аталыш",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=450",
+          "accessedAt": "2026-10-21",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
         }
       ],
       "contradictions": [],
@@ -3277,6 +3432,30 @@
         {
           "path": "docs/evidence/catalog-167-baseline.json",
           "sha256": "63e8654bdbf4a9730331cd230aff1c5cf8688df8cf1f1430bd06d30232d8617e"
+        },
+        {
+          "path": "data/research/catalog-167-content/block-3-facts.json",
+          "sha256": "5dfa51f9fdb7ce243e7709531881470c657ebff7de1f1357681200a39a214960"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-3-accounts.json",
+          "sha256": "b3ef69536a083ac48878312906b8ee23b74b9776fcc47dff8f54c2eb9117088c"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-3-images.json",
+          "sha256": "11d227de67362b1a721782141051f3f87439e2c7230c93895c312f03eae58da6"
+        },
+        {
+          "path": "docs/evidence/catalog-167-photo-search.json",
+          "sha256": "067912c09b54c0c547c8fb51c4a114fc4c4f1eacd873c9cb45066c7d0ef4228f"
+        },
+        {
+          "path": "docs/evidence/catalog-167-supplementary-photo-search.json",
+          "sha256": "07b8d96d9203b2bd3e7a0d1c8dc15b209a2697dd1bccc87efda6c929fb1472f3"
+        },
+        {
+          "path": "docs/evidence/catalog-167-scientific-review.json",
+          "sha256": "dc4417856f099d8100a32d6ee15f89cd5d5ee672b59a73427d9c15ea9c416ca9"
         }
       ],
       "draft": null,
@@ -3304,48 +3483,56 @@
       "independentScientificReview": "pending",
       "scientificReviewStatus": "pending",
       "historicalNationalScope": "Исторический национальный очерк; современное присутствие и текущая редакция правового реестра не установлены.",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "larus-ichtyaetus",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "538c4037fd1bbb35c2e5e8215eb2f3187ec991fe198d34a08486b14fa759dc2b",
+        "fingerprint": "e16ecdbcef1e994a1c552bbfa8c240192caea342caa116a42f70181b03bca5bb",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "538c4037fd1bbb35c2e5e8215eb2f3187ec991fe198d34a08486b14fa759dc2b"
+      "checkedFingerprint": "e16ecdbcef1e994a1c552bbfa8c240192caea342caa116a42f70181b03bca5bb",
+      "draftFile": "data/research/catalog-167-content/drafts/larus-ichtyaetus.json",
+      "publicationGaps": [
+        "Отдельное разрешение владельца на импорт отсутствует",
+        "Независимая научная проверка pending",
+        "Современная национальная численность unknown",
+        "UZ: используется принятое научное имя; народное название не подтверждено"
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Современные национальные учёты и проверенные колонии."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "larus-ichtyaetus",
+        "factsFingerprint": "d0e879ee9694acedbfa197b138d15d51fe5d917bdcf8defd979e29001e80d9eb",
+        "draftSha256": "d115d2318e6e9c6796e9d148b9da76877784fe2724b4850a6478477fc8682845",
+        "metadataCompletion": "Kyrgyz heading visually transcribed; UZ scientific-name fallback; photo provider and source supports reconciled; curlew EX 2025 explicit."
+      },
+      "currentPresenceConfirmed": null
     },
     {
       "originalScientificName": "Dendrocopos major",
@@ -3354,8 +3541,8 @@
       "group": "birds",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "NT",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); видовой очерк; упомянутый местный brevirostris не создаёт отдельного кандидата",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -3398,7 +3585,17 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.distribution",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -3421,9 +3618,49 @@
           "accessedAt": "2026-10-21",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.uz"
           ],
           "taxonId": "gbif:2477968"
+        },
+        {
+          "id": "rspb-woodpecker",
+          "title": "RSPB. Great Spotted Woodpecker: identification",
+          "publisher": "Royal Society for the Protection of Birds",
+          "url": "https://www.rspb.org.uk/birds-and-wildlife/great-spotted-woodpecker/",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "content.appearance"
+          ]
+        },
+        {
+          "id": "photo-commons",
+          "title": "Dendrocopos major; лицензированное изображение, Sławomir Staszczuk (info [AT] photoss.net)",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:DendrocoposMajor.jpg",
+          "accessedAt": "2026-10-21",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": null
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 468-бет; визуалдык текшерилген аталыш",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=468",
+          "accessedAt": "2026-10-21",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
         }
       ],
       "contradictions": [],
@@ -3444,6 +3681,30 @@
         {
           "path": "docs/evidence/catalog-167-baseline.json",
           "sha256": "63e8654bdbf4a9730331cd230aff1c5cf8688df8cf1f1430bd06d30232d8617e"
+        },
+        {
+          "path": "data/research/catalog-167-content/block-3-facts.json",
+          "sha256": "5dfa51f9fdb7ce243e7709531881470c657ebff7de1f1357681200a39a214960"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-3-accounts.json",
+          "sha256": "b3ef69536a083ac48878312906b8ee23b74b9776fcc47dff8f54c2eb9117088c"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-3-images.json",
+          "sha256": "11d227de67362b1a721782141051f3f87439e2c7230c93895c312f03eae58da6"
+        },
+        {
+          "path": "docs/evidence/catalog-167-photo-search.json",
+          "sha256": "067912c09b54c0c547c8fb51c4a114fc4c4f1eacd873c9cb45066c7d0ef4228f"
+        },
+        {
+          "path": "docs/evidence/catalog-167-supplementary-photo-search.json",
+          "sha256": "07b8d96d9203b2bd3e7a0d1c8dc15b209a2697dd1bccc87efda6c929fb1472f3"
+        },
+        {
+          "path": "docs/evidence/catalog-167-scientific-review.json",
+          "sha256": "dc4417856f099d8100a32d6ee15f89cd5d5ee672b59a73427d9c15ea9c416ca9"
         }
       ],
       "draft": null,
@@ -3471,48 +3732,56 @@
       "independentScientificReview": "pending",
       "scientificReviewStatus": "pending",
       "historicalNationalScope": "Исторический национальный очерк; современное присутствие и текущая редакция правового реестра не установлены.",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "dendrocopos-major",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "ea00ce19b5a07fc63e2a571780546651da15f96960c8176a0d9f58e6850b9183",
+        "fingerprint": "b01cf80006cc3b5e3d3585257bc274c7c4c2fc25a89ad238345df4968a07123e",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "ea00ce19b5a07fc63e2a571780546651da15f96960c8176a0d9f58e6850b9183"
+      "checkedFingerprint": "b01cf80006cc3b5e3d3585257bc274c7c4c2fc25a89ad238345df4968a07123e",
+      "draftFile": "data/research/catalog-167-content/drafts/dendrocopos-major.json",
+      "publicationGaps": [
+        "Отдельное разрешение владельца на импорт отсутствует",
+        "Независимая научная проверка pending",
+        "Современная национальная численность unknown",
+        "UZ: используется принятое научное имя; народное название не подтверждено"
+      ],
+      "editorialNotes": [],
+      "missingFacts": [
+        "Современная национальная популяция, местное размножение и конкретные ограничивающие факторы."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "dendrocopos-major",
+        "factsFingerprint": "db91d76aa895c037d8760d89b86ae1de8f19965aca9747977ddd78a7ca85531b",
+        "draftSha256": "480f23d90e8b15002d4064cdef89ab0fcc72e9e9fdd77277f5cc40e3112b6634",
+        "metadataCompletion": "Kyrgyz heading visually transcribed; UZ scientific-name fallback; photo provider and source supports reconciled; curlew EX 2025 explicit."
+      },
+      "currentPresenceConfirmed": null
     },
     {
       "originalScientificName": "Hemiechinus hypomelas",
@@ -3521,8 +3790,8 @@
       "group": "mammals",
       "nationalRedBook": {
         "listed": true,
-        "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "category": "DD",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Hemiechinus hypomelas",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -3565,7 +3834,19 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.diet",
+            "content.reproduction",
+            "content.distribution",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.en",
+            "nationalRedBook.category"
           ]
         },
         {
@@ -3588,9 +3869,63 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.overview",
+            "names.uz"
           ],
           "taxonId": "gbif:2437154"
+        },
+        {
+          "id": "mdd-hedgehog",
+          "title": "Mammal Diversity Database. Paraechinus hypomelas, taxon 1003819; modern country list compared in inventory 25.1",
+          "publisher": "American Society of Mammalogists",
+          "url": "https://www.mammaldiversity.org/taxon/1003819/",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.distribution"
+          ]
+        },
+        {
+          "id": "photo-observation",
+          "title": "Описание видимых признаков конкретной подписанной иллюстрации; не морфологический диагноз",
+          "publisher": "Wikimedia Commons; Shah Jahan",
+          "url": "https://commons.wikimedia.org/wiki/File:Brandt%27s_Hedgehog.jpg",
+          "accessedAt": "2026-10-21",
+          "language": null,
+          "supports": [
+            "content.appearance"
+          ]
+        },
+        {
+          "id": "photo-commons",
+          "title": "Paraechinus hypomelas; лицензированное изображение, Shah Jahan",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Brandt%27s_Hedgehog.jpg",
+          "accessedAt": "2026-10-21",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": null
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 482-бет; визуалдык текшерилген аталыш",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=482",
+          "accessedAt": "2026-10-21",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
         }
       ],
       "contradictions": [],
@@ -3611,6 +3946,30 @@
         {
           "path": "docs/evidence/catalog-167-baseline.json",
           "sha256": "63e8654bdbf4a9730331cd230aff1c5cf8688df8cf1f1430bd06d30232d8617e"
+        },
+        {
+          "path": "data/research/catalog-167-content/block-3-facts.json",
+          "sha256": "5dfa51f9fdb7ce243e7709531881470c657ebff7de1f1357681200a39a214960"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-3-accounts.json",
+          "sha256": "b3ef69536a083ac48878312906b8ee23b74b9776fcc47dff8f54c2eb9117088c"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-3-images.json",
+          "sha256": "11d227de67362b1a721782141051f3f87439e2c7230c93895c312f03eae58da6"
+        },
+        {
+          "path": "docs/evidence/catalog-167-photo-search.json",
+          "sha256": "067912c09b54c0c547c8fb51c4a114fc4c4f1eacd873c9cb45066c7d0ef4228f"
+        },
+        {
+          "path": "docs/evidence/catalog-167-supplementary-photo-search.json",
+          "sha256": "07b8d96d9203b2bd3e7a0d1c8dc15b209a2697dd1bccc87efda6c929fb1472f3"
+        },
+        {
+          "path": "docs/evidence/catalog-167-scientific-review.json",
+          "sha256": "dc4417856f099d8100a32d6ee15f89cd5d5ee672b59a73427d9c15ea9c416ca9"
         }
       ],
       "draft": null,
@@ -3638,48 +3997,59 @@
       "independentScientificReview": "pending",
       "scientificReviewStatus": "pending",
       "historicalNationalScope": "Исторический национальный очерк; современное присутствие и текущая редакция правового реестра не установлены.",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "hemiechinus-hypomelas",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "6d6f6f04fdafb2b74605d34c34e039f11b08d724c93b55c0c4753e441df199f5",
+        "fingerprint": "956c0c38743798c8b6ad59aff5718af8fcbb2f04edfd7cb631cce025dbefb4aa",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "6d6f6f04fdafb2b74605d34c34e039f11b08d724c93b55c0c4753e441df199f5"
+      "checkedFingerprint": "956c0c38743798c8b6ad59aff5718af8fcbb2f04edfd7cb631cce025dbefb4aa",
+      "draftFile": "data/research/catalog-167-content/drafts/hemiechinus-hypomelas.json",
+      "publicationGaps": [
+        "Отдельное разрешение владельца на импорт отсутствует",
+        "Независимая научная проверка pending",
+        "Современная национальная численность unknown",
+        "UZ: используется принятое научное имя; народное название не подтверждено"
+      ],
+      "editorialNotes": [
+        "A означает исторически допустимый образовательный кандидат, не подтверждённую современную фауну страны. Фотография из ОАЭ не снимает географической оговорки."
+      ],
+      "missingFacts": [
+        "Современные подтверждённые находки и национальная численность.",
+        "Независимая проверка исторического сообщения и местной биологии."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "hemiechinus-hypomelas",
+        "factsFingerprint": "4cbfcf8ae077d6098f3bbbaa9aa7d7a2b40abd91b0eeac093c0988cdd1227c7f",
+        "draftSha256": "56840eedea917f3476a5f61cef3f2dd3cafd821d31a6529fe86ce5a794661512",
+        "metadataCompletion": "Kyrgyz heading visually transcribed; UZ scientific-name fallback; photo provider and source supports reconciled; curlew EX 2025 explicit."
+      },
+      "currentPresenceConfirmed": null
     },
     {
       "originalScientificName": "Allactaga severtzovi",
@@ -3689,7 +4059,7 @@
       "nationalRedBook": {
         "listed": true,
         "category": null,
-        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); историческая категория VII, LR/lc (2006); не переведена произвольно в современную категорию",
         "year": 2006,
         "sourceIds": [
           "national-book"
@@ -3732,7 +4102,16 @@
             "nationalRedBook.year",
             "group",
             "regions.0",
-            "originalScientificName"
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "conservationMeasures.0",
+            "names.en"
           ]
         },
         {
@@ -3755,9 +4134,62 @@
           "accessedAt": "2026-10-16",
           "language": "en",
           "supports": [
-            "scientificName"
+            "scientificName",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.uz"
           ],
           "taxonId": "gbif:2439487"
+        },
+        {
+          "id": "mdd-jerboa",
+          "title": "Mammal Diversity Database. Allactaga severtzovi, taxon 1001960; original name, rank and country distribution",
+          "publisher": "American Society of Mammalogists",
+          "url": "https://www.mammaldiversity.org/taxon/1001960/",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.distribution"
+          ]
+        },
+        {
+          "id": "photo-observation",
+          "title": "Описание видимых признаков конкретной подписанной иллюстрации; не морфологический диагноз",
+          "publisher": "Wikimedia Commons; Alexander A. Fomichev",
+          "url": "https://commons.wikimedia.org/wiki/File:Allactaga_severtzovi.jpg",
+          "accessedAt": "2026-10-21",
+          "language": null,
+          "supports": [
+            "content.appearance"
+          ]
+        },
+        {
+          "id": "photo-commons",
+          "title": "Allactaga severtzovi; лицензированное изображение, Alexander A. Fomichev",
+          "publisher": "Wikimedia Commons",
+          "url": "https://commons.wikimedia.org/wiki/File:Allactaga_severtzovi.jpg",
+          "accessedAt": "2026-10-21",
+          "supports": [
+            "images.0.caption"
+          ],
+          "language": null
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 526-бет; визуалдык текшерилген аталыш",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=526",
+          "accessedAt": "2026-10-21",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
         }
       ],
       "contradictions": [],
@@ -3778,6 +4210,30 @@
         {
           "path": "docs/evidence/catalog-167-baseline.json",
           "sha256": "63e8654bdbf4a9730331cd230aff1c5cf8688df8cf1f1430bd06d30232d8617e"
+        },
+        {
+          "path": "data/research/catalog-167-content/block-3-facts.json",
+          "sha256": "5dfa51f9fdb7ce243e7709531881470c657ebff7de1f1357681200a39a214960"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-3-accounts.json",
+          "sha256": "b3ef69536a083ac48878312906b8ee23b74b9776fcc47dff8f54c2eb9117088c"
+        },
+        {
+          "path": "docs/evidence/catalog-167-block-3-images.json",
+          "sha256": "11d227de67362b1a721782141051f3f87439e2c7230c93895c312f03eae58da6"
+        },
+        {
+          "path": "docs/evidence/catalog-167-photo-search.json",
+          "sha256": "067912c09b54c0c547c8fb51c4a114fc4c4f1eacd873c9cb45066c7d0ef4228f"
+        },
+        {
+          "path": "docs/evidence/catalog-167-supplementary-photo-search.json",
+          "sha256": "07b8d96d9203b2bd3e7a0d1c8dc15b209a2697dd1bccc87efda6c929fb1472f3"
+        },
+        {
+          "path": "docs/evidence/catalog-167-scientific-review.json",
+          "sha256": "dc4417856f099d8100a32d6ee15f89cd5d5ee672b59a73427d9c15ea9c416ca9"
         }
       ],
       "draft": null,
@@ -3805,48 +4261,60 @@
       "independentScientificReview": "pending",
       "scientificReviewStatus": "pending",
       "historicalNationalScope": "Исторический национальный очерк; современное присутствие и текущая редакция правового реестра не установлены.",
-      "state": "research_ready",
+      "state": "ready_for_review",
       "approval": null,
       "diagnostics": {
         "candidateId": "allactaga-severtzovi",
         "batchNumber": 3,
-        "state": "research_ready",
-        "errors": [
-          "Не подготовлен публикационный черновик draft/draftFile"
-        ],
+        "state": "ready_for_review",
+        "errors": [],
         "warnings": [],
-        "fingerprint": "7b1c619ce334d584c80d5ebd7a71859f9714e13162445d00713624846ba72d28",
+        "fingerprint": "29dd49aa2a538a76d64910a8876939d05c4d3d1758a1ea06a168d0d80bc87a54",
         "readiness": {
-          "photo": "placeholder",
-          "photoCheck": "placeholder_allowed",
+          "photo": "prepared",
+          "photoCheck": "passed",
           "shortDescriptions": {
-            "ky": false,
-            "uz": false,
-            "ru": false,
-            "en": false
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
           },
           "fullDescriptions": {
             "ky": false,
             "uz": false,
-            "ru": false,
+            "ru": true,
             "en": false
           },
-          "missingNames": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
-          "translationRequired": [
-            "ky",
-            "uz",
-            "ru",
-            "en"
-          ],
+          "missingNames": [],
+          "translationRequired": [],
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "7b1c619ce334d584c80d5ebd7a71859f9714e13162445d00713624846ba72d28"
+      "checkedFingerprint": "29dd49aa2a538a76d64910a8876939d05c4d3d1758a1ea06a168d0d80bc87a54",
+      "draftFile": "data/research/catalog-167-content/drafts/allactaga-severtzovi.json",
+      "publicationGaps": [
+        "Отдельное разрешение владельца на импорт отсутствует",
+        "Независимая научная проверка pending",
+        "Современная национальная численность unknown",
+        "UZ: используется принятое научное имя; народное название не подтверждено"
+      ],
+      "editorialNotes": [
+        "Казахстанские маршрутные плотности 1,9–2,1 и 3,7 на 10 км не являются национальной оценкой и не перенесены в population."
+      ],
+      "missingFacts": [
+        "Современные кыргызстанские находки, учёты и местная биология.",
+        "Подтверждённое подробное описание рациона и диагностических размеров в используемом национальном очерке отсутствует.",
+        "Непосредственная интерпретация старой категории LR/lc в современной схеме не назначена."
+      ],
+      "incidentalPopulationEvidence": [],
+      "preparation": {
+        "status": "prepared",
+        "sourceMasterId": "allactaga-severtzovi",
+        "factsFingerprint": "efd4fa4178e7ac5479573d5449b6dd16ed75dbab42b615ecb6fec630f12bbe6c",
+        "draftSha256": "4494e2d819e464d42f37b6f0c3560de2e8d0be2f05a31cb4d313d6e00340caa7",
+        "metadataCompletion": "Kyrgyz heading visually transcribed; UZ scientific-name fallback; photo provider and source supports reconciled; curlew EX 2025 explicit."
+      },
+      "currentPresenceConfirmed": null
     }
   ]
 }
