@@ -629,7 +629,9 @@
           ]
         }
       ],
-      "contradictions": [],
+      "contradictions": [
+        "Неразрешённое расхождение исторической категории в первоисточнике: KY с.160 VU, RU/EN с.161 EN. Самостоятельность вида и национальное включение подтверждены, но по условию задачи спорный кандидат удержан в needs_evidence до предметного редакторского разрешения. Пустое поле категории не используется как обход конфликта."
+      ],
       "missingData": [],
       "materials": [
         {
@@ -671,6 +673,10 @@
         {
           "path": "docs/evidence/catalog-167-scientific-review.json",
           "sha256": "dc4417856f099d8100a32d6ee15f89cd5d5ee672b59a73427d9c15ea9c416ca9"
+        },
+        {
+          "path": "docs/evidence/catalog-167-final-source-decisions.json",
+          "sha256": "7a6f3c1b5bc38a62a7ba0261444e052e4899ec85693504098f447930d7229f8d"
         }
       ],
       "draft": null,
@@ -698,7 +704,7 @@
       "independentScientificReview": "pending",
       "scientificReviewStatus": "pending",
       "historicalNationalScope": "Исторический национальный очерк; современное присутствие и текущая редакция правового реестра не установлены.",
-      "state": "ready_for_review",
+      "state": "needs_evidence",
       "approval": null,
       "draftFile": "data/research/catalog-167-content/drafts/kosopoljanskia-hebecarpa.json",
       "publicationGaps": [
@@ -709,7 +715,8 @@
         "Фото: placeholder"
       ],
       "editorialNotes": [
-        "Разночтение категории сохранено без произвольного выбора; таксономическая идентичность подтверждена."
+        "Разночтение категории сохранено без произвольного выбора; таксономическая идентичность подтверждена.",
+        "Финальный аудит: исключён из допуска будущей публикации до разрешения источникового конфликта."
       ],
       "missingFacts": [
         "Сроки цветения и плодоношения, способы размножения, конкретные угрозы и современная численность.",
@@ -717,7 +724,7 @@
       ],
       "incidentalPopulationEvidence": [],
       "preparation": {
-        "status": "prepared",
+        "status": "needs_evidence",
         "sourceMasterId": "kosopoljanskia-hebecarpa",
         "factsFingerprint": "685a21b768416e613f5dc702625d7214e5755d77aa96eb566d08962c227b9453",
         "draftSha256": "b3311ec493b977c3e26e6d3aea3fbb841e61477f475087478f8eccda3197797b",
@@ -727,12 +734,12 @@
       "diagnostics": {
         "candidateId": "kosopoljanskia-hebecarpa",
         "batchNumber": 1,
-        "state": "ready_for_review",
-        "errors": [],
-        "warnings": [
-          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        "state": "needs_evidence",
+        "errors": [
+          "Есть нерешённые противоречия или обязательные пробелы"
         ],
-        "fingerprint": "a201e4441eaeacf0374673990e5c4ae2158a4cdeae323475e3ccb92a0b700378",
+        "warnings": [],
+        "fingerprint": "d0b508b808c3679b3df133d5f96c4fbed2aa64cbc7a8cd9416c22fe6911dbbd7",
         "readiness": {
           "photo": "placeholder",
           "photoCheck": "placeholder_allowed",
@@ -753,7 +760,7 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "a201e4441eaeacf0374673990e5c4ae2158a4cdeae323475e3ccb92a0b700378"
+      "checkedFingerprint": "d0b508b808c3679b3df133d5f96c4fbed2aa64cbc7a8cd9416c22fe6911dbbd7"
     },
     {
       "originalScientificName": "Kosopoljanskia turkestanica",
@@ -3740,7 +3747,7 @@
         "state": "ready_for_review",
         "errors": [],
         "warnings": [],
-        "fingerprint": "b01cf80006cc3b5e3d3585257bc274c7c4c2fc25a89ad238345df4968a07123e",
+        "fingerprint": "9022d79e2dc9a72c852564c7c07ec5f6f6397a3add686a3559710e01f429c149",
         "readiness": {
           "photo": "prepared",
           "photoCheck": "passed",
@@ -3761,7 +3768,7 @@
           "scientificReviewRequired": true
         }
       },
-      "checkedFingerprint": "b01cf80006cc3b5e3d3585257bc274c7c4c2fc25a89ad238345df4968a07123e",
+      "checkedFingerprint": "9022d79e2dc9a72c852564c7c07ec5f6f6397a3add686a3559710e01f429c149",
       "draftFile": "data/research/catalog-167-content/drafts/dendrocopos-major.json",
       "publicationGaps": [
         "Отдельное разрешение владельца на импорт отсутствует",
@@ -3778,8 +3785,16 @@
         "status": "prepared",
         "sourceMasterId": "dendrocopos-major",
         "factsFingerprint": "db91d76aa895c037d8760d89b86ae1de8f19965aca9747977ddd78a7ca85531b",
-        "draftSha256": "480f23d90e8b15002d4064cdef89ab0fcc72e9e9fdd77277f5cc40e3112b6634",
-        "metadataCompletion": "Kyrgyz heading visually transcribed; UZ scientific-name fallback; photo provider and source supports reconciled; curlew EX 2025 explicit."
+        "draftSha256": "f95ae6c4d72d4f8577ec3e903d41434c989ce3058f99995aeb7602da0d40eac1",
+        "metadataCompletion": "Kyrgyz heading visually transcribed; UZ scientific-name fallback; photo provider and source supports reconciled; curlew EX 2025 explicit.",
+        "editorialCorrections": [
+          {
+            "field": "content.shortDescription.text.ru",
+            "from": "Кыргызcтанские",
+            "to": "Кыргызстанские",
+            "reason": "Replace a Latin c confusable with Cyrillic с; no scientific claim changed."
+          }
+        ]
       },
       "currentPresenceConfirmed": null
     },

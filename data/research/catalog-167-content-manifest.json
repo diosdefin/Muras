@@ -40,7 +40,7 @@
         "alajja-anomala",
         "otostegia-schennikovii"
       ],
-      "status": "prepared_for_check"
+      "status": "prepared_with_one_source_conflict"
     },
     {
       "number": 2,
@@ -70,5 +70,11 @@
   ],
   "publicationAllowed": false,
   "ownerAuthorization": null,
-  "baselineCatalogCount": 150
+  "baselineCatalogCount": 150,
+  "withheldCandidates": [
+    {
+      "id": "kosopoljanskia-hebecarpa",
+      "reason": "Неразрешённое расхождение исторической категории в первоисточнике: KY с.160 VU, RU/EN с.161 EN. Самостоятельность вида и национальное включение подтверждены, но по условию задачи спорный кандидат удержан в needs_evidence до предметного редакторского разрешения. Пустое поле категории не используется как обход конфликта."
+    }
+  ]
 }
