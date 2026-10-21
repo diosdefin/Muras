@@ -1,0 +1,255 @@
+{
+  "id": "aquila-nipalensis",
+  "scientificName": "Aquila nipalensis",
+  "names": {
+    "ru": "Степной орёл",
+    "ky": "Aquila nipalensis",
+    "uz": "Aquila nipalensis",
+    "en": "Steppe Eagle"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "genus": "Aquila"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "NT",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); очерк вида с упоминанием orientalis; историческая сноска об A. rapax не принята как современное объединение",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Открытые предгорья; национальные наблюдения относятся главным образом к Чуйской долине.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Прямое уничтожение, разорение гнёзд, гибель на проводах и опорах ЛЭП.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Очерком предложены борьба с браконьерством, просвещение и обследование возможных гнездовых мест.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/aquila-nipalensis.webp",
+      "width": 1800,
+      "height": 1350,
+      "sha256": "f426e4489b52a0be3dddc2da85bd5eafbdb927f8507e3e187fc6ef09edbc94af",
+      "author": "Imran Shah from Islamabad, Pakistan",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Steppe_Eagle_(Aquila_nipalensis)_(27812388459).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Steppe Eagle (Aquila nipalensis) (27812388459).jpg — Imran Shah from Islamabad, Pakistan, CC BY-SA 2.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+        "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Фотография Aquila nipalensis; иллюстрация вида, не подтверждение современного присутствия в Кыргызстане или местного подвида.",
+        "ky": null,
+        "en": null,
+        "uz": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Aquila nipalensis, с. 421",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=421",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Aquila nipalensis Hodgson, 1833",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Aquila%20nipalensis",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz"
+      ],
+      "taxonId": "gbif:2480513"
+    },
+    {
+      "id": "photo-commons",
+      "title": "Steppe Eagle (Aquila nipalensis) captured at Sangada, Haripur, KPK, Pakistan with Canon EOS 7D Mark II",
+      "publisher": "Wikimedia Commons; Imran Shah from Islamabad, Pakistan",
+      "url": "https://commons.wikimedia.org/wiki/File:Steppe_Eagle_(Aquila_nipalensis)_(27812388459).jpg",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Степной орёл в национальном очерке 2006 года описан как пролётная птица открытых предгорных пространств.",
+        "ky": "2006-жылкы улуттук очеркте ачык тоо этектеринен учуп өтүүдө катталган бүркүт.",
+        "uz": "2006-yilgi milliy manbada ochiq tog‘ etaklarida ko‘chish vaqtida qayd etilgan burgut.",
+        "en": "An eagle recorded on passage through open foothills in the 2006 national account."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Степной орёл в национальном очерке 2006 года описан как пролётная птица открытых предгорных пространств.\n\nОткрытые предгорья; национальные наблюдения относятся главным образом к Чуйской долине.\n\nДля Кыргызстана в очерке описан пролёт. Единичные наблюдения не подтверждают современную гнездящуюся популяцию.\n\nПреимущественно грызуны средней величины.\n\nОбщая характеристика вида: гнёзда на земле, небольших кустах и скалах. Это не документированное гнездо в Кыргызстане.\n\nИсторические национальные сведения о пролёте приведены из Чуйской долины и её предгорий; систематической оценки численности нет.\n\nПрямое уничтожение, разорение гнёзд, гибель на проводах и опорах ЛЭП.\n\nОчерком предложены борьба с браконьерством, просвещение и обследование возможных гнездовых мест.\n\nНациональная категория и описанные встречи относятся к историческому изданию 2006 года. Современная численность не установлена; текущий юридический статус и современное присутствие требуют отдельного подтверждения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Для Кыргызстана в очерке описан пролёт. Единичные наблюдения не подтверждают современную гнездящуюся популяцию.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Преимущественно грызуны средней величины.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Общая характеристика вида: гнёзда на земле, небольших кустах и скалах. Это не документированное гнездо в Кыргызстане.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические национальные сведения о пролёте приведены из Чуйской долины и её предгорий; систематической оценки численности нет.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

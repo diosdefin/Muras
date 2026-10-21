@@ -1,0 +1,289 @@
+{
+  "id": "dendrocopos-leucopterus",
+  "scientificName": "Dendrocopos leucopterus",
+  "names": {
+    "ru": "Белокрылый дятел",
+    "ky": "Акканаттуу тоңкулдак",
+    "uz": "Dendrocopos leucopterus",
+    "en": "White-winged Woodpecker"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Piciformes",
+    "family": "Picidae",
+    "genus": "Dendrocopos"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "LC",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Лиственные, орехово-плодовые и пойменные леса. В национальном очерке 2006 года отмечено присутствие до 2800 м над уровнем моря; эта историческая отметка не объявляется современной предельной высотой вида.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальному очерку 2006 года: неконтролируемая вырубка старых деревьев с пригодными для гнездования дуплами.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В издании 2006 года рекомендованы сохранение старых лесных участков, ограничение вырубок и согласование лесохозяйственных мероприятий с орнитологами. Исполнение этих рекомендаций не подтверждено новой проверкой.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/dendrocopos-leucopterus.webp",
+      "width": 1800,
+      "height": 1329,
+      "sha256": "75fe364b7a84a6a6e4fffd4869d4ffc4d7c89708cdf5fe775430cea6f4a44210",
+      "author": "Griha Hasanov",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Dendrocopos_leucopterus_258242098.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "dendrocopos-leucopterus — Griha Hasanov, CC BY 4.0; Wikimedia Commons. Источник: https://commons.wikimedia.org/wiki/File:Dendrocopos_leucopterus_258242098.jpg.",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Белокрылый дятел; по описанию источника снимок сделан в Кыргызстане 27.02.2023. Фотография не является оценкой численности.",
+        "ky": null,
+        "uz": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга КР, 2006; Dendrocopos leucopterus, с. 467",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=467",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 466-бет",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=466",
+      "accessedAt": "2026-10-16",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    },
+    {
+      "id": "national-decree",
+      "title": "Постановление №170 от 28.04.2005, копия с изменениями 25.07.2009; приложение 3, строка 19",
+      "publisher": "Правительство КР; FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "originalScientificName"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Dendrocopos leucopterus (Salvadori, 1871)",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Dendrocopos%20leucopterus",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview",
+        "names.uz"
+      ],
+      "taxonId": "gbif:2478035"
+    },
+    {
+      "id": "itis-taxonomy",
+      "title": "ITIS: Dendrocopos leucopterus; valid species TSN 554050",
+      "publisher": "Integrated Taxonomic Information System",
+      "url": "https://www.itis.gov/ITISWebService/jsonservice/getFullRecordFromTSN?tsn=554050",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview"
+      ]
+    },
+    {
+      "id": "photo-commons",
+      "title": "White-winged Woodpecker (Dendrocopos leucopterus) in Kyrgyzstan",
+      "publisher": "Wikimedia Commons; Griha Hasanov",
+      "url": "https://commons.wikimedia.org/wiki/File:Dendrocopos_leucopterus_258242098.jpg",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ky": "Акканаттуу тоңкулдак Кыргызстандын 2006-жылкы Кызыл китебине киргизилген. Улуттук очерк аны түштүктөгү жаңгак-мөмө токойлорунда жана айрым дарыялардын жайылма токойлорунда жашаган отурукташкан куш катары сүрөттөйт. Уя салууга жарактуу көңдөйлүү эски дарактарды сактоо маанилүү.",
+        "uz": "Oq qanotli qizilishton Qirgʻizistonning 2006-yilgi Qizil kitobiga kiritilgan. Milliy ocherk uni janubdagi yongʻoq-mevali oʻrmonlar va ayrim daryolarning qayir oʻrmonlarida yashaydigan oʻtroq qush sifatida tasvirlaydi. Uyalash uchun kovakli qari daraxtlarni saqlash muhim.",
+        "ru": "Белокрылый дятел включён в Красную книгу КР 2006 года. Национальный очерк описывает оседлую птицу орехово-плодовых и некоторых пойменных лесов. Для её гнездования важно сохранение старых деревьев с подходящими дуплами.",
+        "en": "The white-winged woodpecker is included in the 2006 Red Book of Kyrgyzstan. Its national account describes a resident of walnut-fruit forests and some riverine woodlands. Retaining old trees with suitable cavities is important for nesting."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Белокрылый дятел — вид семейства дятловых, представленный самостоятельным очерком Красной книги Кыргызской Республики 2006 года. Его национальная категория в этом издании — LC; историческое национальное включение не следует смешивать с новым юридическим или глобальным природоохранным решением. Принятое научное имя Dendrocopos leucopterus подтверждено точным видовым ответом GBIF и записью ITIS. В книге год авторства указан как 1870, а в современных таксономических базах — 1871; разночтение сохранено в исследовательских материалах и не используется для создания отдельного таксона. Национальный очерк описывает оседлую птицу лиственных лесов, прежде всего орехово-плодовых лесов юга страны. Упоминаются также пойменные леса Нарына и Ат-Баши, Алайский и Ферганский хребты. Птица устраивает гнездо в дупле, питается главным образом насекомыми, а также орехами и плодами. Биология размножения изучена неполно. Систематической национальной оценки численности в очерке нет. Главная указанная угроза — неконтролируемая вырубка старых деревьев, уменьшающая число подходящих мест гнездования.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy",
+        "itis-taxonomy"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Оседлый вид; гнёзда устраивает в дуплах лиственных деревьев. Старые деревья с подходящими полостями необходимы для сохранения гнездовых участков.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальному очерку, основу питания составляют насекомые, в том числе насекомые, повреждающие лес. Также употребляет ядра орехов и плоды дикорастущих косточковых растений.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В очерке сведения о гнездовании названы отрывочными. Гнездо находится в дупле; молодые птицы отмечались в середине июля. Точные сроки кладки, размер кладки и продолжительность насиживания не установлены этим источником.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный очерк 2006 года отмечает орехово-плодовые леса юга Кыргызстана, отдельные находки в поймах Нарына и Ат-Баши, на Алайском и Ферганском хребтах и в Бишкеке. Это сведения конкретного исторического источника; новые точки наблюдений и современная численность не добавляются.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

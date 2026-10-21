@@ -1,0 +1,259 @@
+{
+  "id": "hieraaetus-fasciatus",
+  "scientificName": "Aquila fasciata",
+  "names": {
+    "ru": "Ястребиный орёл",
+    "ky": "Aquila fasciata",
+    "uz": "Aquila fasciata",
+    "en": "Bonelli’s Eagle"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "genus": "Aquila"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "NT",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); видовой очерк с упоминанием номинативного подвида; предполагаемое гнездование не считается подтверждённым; запись под именем Hieraaetus fasciatus",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Низко- и среднегорные участки с деревьями и скальными выходами; зимой может спускаться на равнины.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Хозяйственная нагрузка на гнездовые местообитания и нелегальный отстрел.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Предложены уточнение характера пребывания, выявление гнёзд, мониторинг и охрана гнездовых территорий.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/hieraaetus-fasciatus.webp",
+      "width": 1800,
+      "height": 1745,
+      "sha256": "0950d072b83f61d2417cfb657aca94d814f833b900aed9c2c91b2cfe2eaa36b0",
+      "author": "Paco Gómez from Castellón, Spain",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Aguila_perdicera.jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "Aguila perdicera.jpg — Paco Gómez from Castellón, Spain, CC BY-SA 2.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+        "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Фотография Aquila fasciata; иллюстрация вида, не подтверждение современного присутствия в Кыргызстане или местного подвида.",
+        "ky": null,
+        "en": null,
+        "uz": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Hieraaetus fasciatus, с. 427",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=427",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Aquila fasciata Vieillot, 1822",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Aquila%20fasciata",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview",
+        "content.shortDescription",
+        "names.ky",
+        "names.uz"
+      ],
+      "taxonId": "gbif:5844449"
+    },
+    {
+      "id": "photo-commons",
+      "title": "Aquila fasciata, Castellón, Valencia, Spain",
+      "publisher": "Wikimedia Commons; Paco Gómez from Castellón, Spain",
+      "url": "https://commons.wikimedia.org/wiki/File:Aguila_perdicera.jpg",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Ястребиный орёл описан в издании 2006 года под именем Hieraaetus fasciatus; GBIF связывает его с принятым Aquila fasciata.",
+        "ky": "2006-жылкы улуттук очеркте дарактар жана аскалар бар төмөнкү жана орто тоо алкактары менен байланышкан бүркүт.",
+        "uz": "2006-yilgi milliy manbada daraxt va qoyali past hamda o‘rta tog‘ hududlari bilan bog‘langan burgut.",
+        "en": "An eagle of wooded, rocky low- and middle-elevation habitats in the historical national account."
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Ястребиный орёл описан в издании 2006 года под именем Hieraaetus fasciatus; GBIF связывает его с принятым Aquila fasciata.\n\nНизко- и среднегорные участки с деревьями и скальными выходами; зимой может спускаться на равнины.\n\nПреследует добычу либо подкарауливает из засады. В очерке отмечена возможность совместной охоты пары.\n\nПтицы и небольшие млекопитающие; среди добычи упомянуты зайцы-толаи и врановые.\n\nОбщее описание: массивное гнездо из веток на дереве или скальном выступе, обычно 2 яйца; заботятся оба родителя.\n\nНациональная запись опирается в том числе на экземпляр из ущелья Шахимардан. Гнездование на юге страны в источнике предполагается и требует подтверждения.\n\nХозяйственная нагрузка на гнездовые местообитания и нелегальный отстрел.\n\nПредложены уточнение характера пребывания, выявление гнёзд, мониторинг и охрана гнездовых территорий.\n\nНациональная категория и описанные встречи относятся к историческому изданию 2006 года. Современная численность не установлена; текущий юридический статус и современное присутствие требуют отдельного подтверждения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Преследует добычу либо подкарауливает из засады. В очерке отмечена возможность совместной охоты пары.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Птицы и небольшие млекопитающие; среди добычи упомянуты зайцы-толаи и врановые.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Общее описание: массивное гнездо из веток на дереве или скальном выступе, обычно 2 яйца; заботятся оба родителя.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная запись опирается в том числе на экземпляр из ущелья Шахимардан. Гнездование на юге страны в источнике предполагается и требует подтверждения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

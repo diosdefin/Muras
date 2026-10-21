@@ -1,0 +1,357 @@
+{
+  "schemaVersion": 1,
+  "documentType": "cached-taxonomy-research",
+  "accessedAt": "2026-10-16",
+  "records": [
+    {
+      "nationalRecordId": "book-2006-302",
+      "requestedName": "Capoetobrama kuschakewitschi orientalis",
+      "accessedAt": "2026-10-16",
+      "match": {
+        "url": "https://api.gbif.org/v1/species/match?strict=true&name=Capoetobrama%20kuschakewitschi%20orientalis",
+        "httpStatus": 200,
+        "data": {
+          "usageKey": 6167415,
+          "acceptedUsageKey": 4286997,
+          "scientificName": "Capoetobrama kuschakewitschi orientalis Nikolskii, 1934",
+          "canonicalName": "Capoetobrama kuschakewitschi orientalis",
+          "rank": "SUBSPECIES",
+          "status": "SYNONYM",
+          "confidence": 99,
+          "matchType": "EXACT",
+          "kingdom": "Animalia",
+          "phylum": "Chordata",
+          "order": "Cypriniformes",
+          "family": "Cyprinidae",
+          "genus": "Capoetobrama",
+          "species": "Capoetobrama kuschakewitschi",
+          "kingdomKey": 1,
+          "phylumKey": 44,
+          "orderKey": 1153,
+          "familyKey": 7336,
+          "genusKey": 2361467,
+          "speciesKey": 4286997
+        }
+      },
+      "decision": "not_selected_subspecies_synonym_of_parent_species"
+    },
+    {
+      "nationalRecordId": "book-2006-266",
+      "requestedName": "Parnassius loxias tashkorensis",
+      "accessedAt": "2026-10-16",
+      "attempts": [],
+      "match": {
+        "url": "https://api.gbif.org/v1/species/match?strict=true&name=Parnassius%20loxias%20tashkorensis",
+        "httpStatus": 200,
+        "data": {
+          "usageKey": 6235716,
+          "acceptedUsageKey": 1938972,
+          "scientificName": "Parnassius loxias tashkorensis Kreuzberg, 1984",
+          "canonicalName": "Parnassius loxias tashkorensis",
+          "rank": "SUBSPECIES",
+          "status": "SYNONYM",
+          "confidence": 99,
+          "matchType": "EXACT",
+          "kingdom": "Animalia",
+          "phylum": "Arthropoda",
+          "order": "Lepidoptera",
+          "family": "Papilionidae",
+          "genus": "Parnassius",
+          "species": "Parnassius loxias",
+          "kingdomKey": 1,
+          "phylumKey": 54,
+          "classKey": 216,
+          "orderKey": 797,
+          "familyKey": 9417,
+          "genusKey": 1938238,
+          "speciesKey": 1938972,
+          "class": "Insecta"
+        }
+      },
+      "decision": "not_selected_subspecies_synonym_of_parent_species"
+    },
+    {
+      "nationalRecordId": "book-2006-268",
+      "requestedName": "Parnassius apollo merzbacheri",
+      "accessedAt": "2026-10-16",
+      "attempts": [],
+      "match": {
+        "url": "https://api.gbif.org/v1/species/match?strict=true&name=Parnassius%20apollo%20merzbacheri",
+        "httpStatus": 200,
+        "data": {
+          "usageKey": 6235202,
+          "acceptedUsageKey": 1938810,
+          "scientificName": "Parnassius apollo merzbacheri Fruhstorfer, 1906",
+          "canonicalName": "Parnassius apollo merzbacheri",
+          "rank": "SUBSPECIES",
+          "status": "SYNONYM",
+          "confidence": 99,
+          "matchType": "EXACT",
+          "kingdom": "Animalia",
+          "phylum": "Arthropoda",
+          "order": "Lepidoptera",
+          "family": "Papilionidae",
+          "genus": "Parnassius",
+          "species": "Parnassius apollo",
+          "kingdomKey": 1,
+          "phylumKey": 54,
+          "classKey": 216,
+          "orderKey": 797,
+          "familyKey": 9417,
+          "genusKey": 1938238,
+          "speciesKey": 1938810,
+          "class": "Insecta"
+        }
+      },
+      "decision": "not_selected_subspecies_synonym_of_parent_species"
+    },
+    {
+      "nationalRecordId": "book-2006-270",
+      "requestedName": "Papilio alexanor voldemar",
+      "accessedAt": "2026-10-16",
+      "attempts": [],
+      "match": {
+        "url": "https://api.gbif.org/v1/species/match?strict=true&name=Papilio%20alexanor%20voldemar",
+        "httpStatus": 200,
+        "data": {
+          "usageKey": 6236312,
+          "acceptedUsageKey": 1938131,
+          "scientificName": "Papilio alexanor voldemar Kreuzberg, 1989",
+          "canonicalName": "Papilio alexanor voldemar",
+          "rank": "SUBSPECIES",
+          "status": "SYNONYM",
+          "confidence": 99,
+          "matchType": "EXACT",
+          "kingdom": "Animalia",
+          "phylum": "Arthropoda",
+          "order": "Lepidoptera",
+          "family": "Papilionidae",
+          "genus": "Papilio",
+          "species": "Papilio alexanor",
+          "kingdomKey": 1,
+          "phylumKey": 54,
+          "classKey": 216,
+          "orderKey": 797,
+          "familyKey": 9417,
+          "genusKey": 10175914,
+          "speciesKey": 1938131,
+          "class": "Insecta"
+        }
+      },
+      "decision": "not_selected_subspecies_synonym_of_parent_species"
+    },
+    {
+      "nationalRecordId": "book-2006-278",
+      "requestedName": "Polochrum pamirepandum",
+      "accessedAt": "2026-10-16",
+      "attempts": [],
+      "match": {
+        "url": "https://api.gbif.org/v1/species/match?strict=true&name=Polochrum%20pamirepandum",
+        "httpStatus": 200,
+        "data": {
+          "confidence": 100,
+          "matchType": "NONE",
+          "synonym": false
+        }
+      },
+      "decision": "not_selected_no_exact_accepted_species_resolution"
+    },
+    {
+      "nationalRecordId": "book-2006-482",
+      "requestedName": "Paraechinus hypomelas",
+      "accessedAt": "2026-10-16",
+      "match": {
+        "url": "https://api.gbif.org/v1/species/match?strict=true&name=Paraechinus%20hypomelas",
+        "httpStatus": 200,
+        "data": {
+          "usageKey": 2437154,
+          "scientificName": "Paraechinus hypomelas (Brandt, 1836)",
+          "canonicalName": "Paraechinus hypomelas",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 99,
+          "matchType": "EXACT",
+          "kingdom": "Animalia",
+          "phylum": "Chordata",
+          "order": "Erinaceomorpha",
+          "family": "Erinaceidae",
+          "genus": "Paraechinus",
+          "species": "Paraechinus hypomelas",
+          "kingdomKey": 1,
+          "phylumKey": 44,
+          "classKey": 359,
+          "orderKey": 829,
+          "familyKey": 5722,
+          "genusKey": 8588598,
+          "speciesKey": 2437154,
+          "class": "Mammalia"
+        }
+      },
+      "decision": "not_selected_current_KG_range_not_corroborated_by_MDD"
+    },
+    {
+      "nationalRecordId": "book-2006-526",
+      "requestedName": "Allactaga severtzovi",
+      "accessedAt": "2026-10-16",
+      "match": {
+        "url": "https://api.gbif.org/v1/species/match?strict=true&name=Allactaga%20severtzovi",
+        "httpStatus": 200,
+        "data": {
+          "usageKey": 2439487,
+          "scientificName": "Allactaga severtzovi Vinogradov, 1925",
+          "canonicalName": "Allactaga severtzovi",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 99,
+          "matchType": "EXACT",
+          "kingdom": "Animalia",
+          "phylum": "Chordata",
+          "order": "Rodentia",
+          "family": "Dipodidae",
+          "genus": "Allactaga",
+          "species": "Allactaga severtzovi",
+          "kingdomKey": 1,
+          "phylumKey": 44,
+          "classKey": 359,
+          "orderKey": 1459,
+          "familyKey": 9435,
+          "genusKey": 2439481,
+          "speciesKey": 2439487,
+          "class": "Mammalia"
+        }
+      },
+      "decision": "not_selected_current_KG_range_not_corroborated_by_MDD"
+    },
+    {
+      "nationalRecordId": "book-2006-110",
+      "requestedName": "Anemone obtusiloba",
+      "accessedAt": "2026-10-16",
+      "match": {
+        "url": "https://api.gbif.org/v1/species/match?strict=true&name=Anemone%20obtusiloba",
+        "httpStatus": 200,
+        "data": {
+          "usageKey": 7277728,
+          "scientificName": "Anemonastrum Holub",
+          "canonicalName": "Anemonastrum",
+          "rank": "GENUS",
+          "status": "ACCEPTED",
+          "confidence": 98,
+          "matchType": "HIGHERRANK",
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Ranunculales",
+          "family": "Ranunculaceae",
+          "genus": "Anemonastrum",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 220,
+          "orderKey": 399,
+          "familyKey": 2410,
+          "genusKey": 7277728,
+          "class": "Magnoliopsida"
+        }
+      },
+      "decision": "not_selected_no_exact_accepted_species_resolution"
+    },
+    {
+      "nationalRecordId": "book-2006-180",
+      "requestedName": "Primula macrocalyx",
+      "accessedAt": "2026-10-16",
+      "match": {
+        "url": "https://api.gbif.org/v1/species/match?strict=true&name=Primula%20macrocalyx",
+        "httpStatus": 200,
+        "data": {
+          "usageKey": 5640667,
+          "acceptedUsageKey": 5832513,
+          "scientificName": "Primula macrocalyx Bunge",
+          "canonicalName": "Primula macrocalyx",
+          "rank": "SPECIES",
+          "status": "SYNONYM",
+          "confidence": 99,
+          "matchType": "EXACT",
+          "kingdom": "Plantae",
+          "phylum": "Tracheophyta",
+          "order": "Ericales",
+          "family": "Primulaceae",
+          "genus": "Primula",
+          "species": "Primula veris",
+          "kingdomKey": 6,
+          "phylumKey": 7707728,
+          "classKey": 220,
+          "orderKey": 1353,
+          "familyKey": 6674,
+          "genusKey": 8026112,
+          "speciesKey": 8377689,
+          "class": "Magnoliopsida"
+        }
+      },
+      "decision": "not_selected_no_exact_accepted_species_resolution"
+    },
+    {
+      "nationalRecordId": "book-2006-514",
+      "requestedName": "Gazella subgutturosa",
+      "accessedAt": "2026-10-16",
+      "match": {
+        "url": "https://api.gbif.org/v1/species/match?strict=true&name=Gazella%20subgutturosa",
+        "httpStatus": 200,
+        "data": {
+          "usageKey": 5220146,
+          "scientificName": "Gazella subgutturosa (Güldenstaedt, 1780)",
+          "canonicalName": "Gazella subgutturosa",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 99,
+          "matchType": "EXACT",
+          "kingdom": "Animalia",
+          "phylum": "Chordata",
+          "order": "Artiodactyla",
+          "family": "Bovidae",
+          "genus": "Gazella",
+          "species": "Gazella subgutturosa",
+          "kingdomKey": 1,
+          "phylumKey": 44,
+          "classKey": 359,
+          "orderKey": 731,
+          "familyKey": 9614,
+          "genusKey": 2441075,
+          "speciesKey": 5220146,
+          "class": "Mammalia"
+        }
+      },
+      "decision": "selected_exact_accepted_species"
+    },
+    {
+      "nationalRecordId": "book-2006-466",
+      "requestedName": "Dendrocopos leucopterus",
+      "accessedAt": "2026-10-16",
+      "match": {
+        "url": "https://api.gbif.org/v1/species/match?strict=true&name=Dendrocopos%20leucopterus",
+        "httpStatus": 200,
+        "data": {
+          "usageKey": 2478035,
+          "scientificName": "Dendrocopos leucopterus (Salvadori, 1871)",
+          "canonicalName": "Dendrocopos leucopterus",
+          "rank": "SPECIES",
+          "status": "ACCEPTED",
+          "confidence": 99,
+          "matchType": "EXACT",
+          "kingdom": "Animalia",
+          "phylum": "Chordata",
+          "order": "Piciformes",
+          "family": "Picidae",
+          "genus": "Dendrocopos",
+          "species": "Dendrocopos leucopterus",
+          "kingdomKey": 1,
+          "phylumKey": 44,
+          "classKey": 212,
+          "orderKey": 724,
+          "familyKey": 9333,
+          "genusKey": 2477899,
+          "speciesKey": 2478035,
+          "class": "Aves"
+        }
+      },
+      "decision": "selected_exact_accepted_species"
+    }
+  ]
+}

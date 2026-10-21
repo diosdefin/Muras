@@ -1,0 +1,255 @@
+{
+  "id": "columba-eversmanni",
+  "scientificName": "Columba eversmanni",
+  "names": {
+    "ru": "Бурый голубь",
+    "ky": "Columba eversmanni",
+    "uz": "Columba eversmanni",
+    "en": "Yellow-eyed Pigeon"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Columbiformes",
+    "family": "Columbidae",
+    "genus": "Columba"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Речные обрывы низкогорных долин; в очерке также упомянуты дупла деревьев и заброшенные строения.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Охота в местах гнездования и пролёта, разрушение гнездовых мест.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендованы выяснение современного распространения и численности и разработка мер сохранения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/columba-eversmanni.webp",
+      "width": 1800,
+      "height": 1200,
+      "sha256": "f514ab8fc13f8b13c31de68d1f38a50373f44ab8fb458437aa4b7404bac5de7c",
+      "author": "egorbirder",
+      "originalPage": "https://www.inaturalist.org/photos/500856871",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Columba eversmanni — egorbirder; CC BY 4.0; iNaturalist photo 500856871. (c) egorbirder, some rights reserved (CC BY).",
+      "modifications": [
+        "Уменьшение без увеличения до 1800 px; WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Фотография Columba eversmanni; пример вида, не подтверждение современного присутствия в Кыргызстане или местного подвида.",
+        "ky": null,
+        "uz": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Columba eversmanni, с. 461",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=461",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Columba eversmanni Bonaparte, 1856",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Columba%20eversmanni",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz"
+      ],
+      "taxonId": "gbif:2495464"
+    },
+    {
+      "id": "photo-primary",
+      "title": "Фотография Columba eversmanni",
+      "publisher": "iNaturalist; egorbirder",
+      "url": "https://www.inaturalist.org/photos/500856871",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en",
+      "notes": "Per-photo license_code и авторская атрибуция проверены в первичном API; версия лицензии — официальный LicenseModule."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Бурый голубь — преимущественно центральноазиатский вид, исторически связанный в Кыргызстане с низкогорными речными долинами.",
+        "ky": "2006-жылкы улуттук очеркте жапыз тоолордун дарыя жарлары менен байланышкан көгүчкөн.",
+        "uz": "2006-yilgi milliy manbada past tog‘ vodiylarining daryo jarliklari bilan bog‘langan kaptar.",
+        "en": "A pigeon associated with river cliffs in low mountain valleys in the 2006 national account."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Бурый голубь — преимущественно центральноазиатский вид, исторически связанный в Кыргызстане с низкогорными речными долинами.\n\nРечные обрывы низкогорных долин; в очерке также упомянуты дупла деревьев и заброшенные строения.\n\nОсенний отлёт в очерке приходится на август–сентябрь. Старые указания на многочисленный пролёт не используются как современная оценка.\n\nСемена дикорастущих растений и культурных злаков.\n\nВ кладке 2 яйца. Оба родителя выкармливают потомство; по очерку возможно два выводка за лето.\n\nИсторические сведения из Чуйской и Таласской долин и Приферганья, включая речные обрывы Чу, Ак-Су и Кёк-Арта.\n\nОхота в местах гнездования и пролёта, разрушение гнездовых мест.\n\nРекомендованы выяснение современного распространения и численности и разработка мер сохранения.\n\nНациональная категория и описанные встречи относятся к историческому изданию 2006 года. Современная численность не установлена; текущий юридический статус и современное присутствие требуют отдельного подтверждения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Осенний отлёт в очерке приходится на август–сентябрь. Старые указания на многочисленный пролёт не используются как современная оценка.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Семена дикорастущих растений и культурных злаков.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В кладке 2 яйца. Оба родителя выкармливают потомство; по очерку возможно два выводка за лето.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические сведения из Чуйской и Таласской долин и Приферганья, включая речные обрывы Чу, Ак-Су и Кёк-Арта.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

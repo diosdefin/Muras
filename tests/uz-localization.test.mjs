@@ -86,7 +86,7 @@ test('all 30 source records and archive remain byte-logically identical to the t
   assert.equal(hash(legacyScientificSource({...source,catalog:source.catalog.slice(0,30)})), '52e69ac766a536e158d5b3ea0780db66c25f02944644de0871a9383fe85e2fb0')
   assert.ok(source.catalog.length >= 30); assert.equal(catalog.length, source.catalog.length)
   assert.deepEqual(validateSource(source), [])
-  for (const s of [...source.catalog, ...source.demoArchive]) {
+  for (const s of [...source.catalog.slice(0, 30), ...source.demoArchive]) {
     assert.ok(!s.names.uz)
     assert.equal(s.verified, false)
   }
@@ -148,7 +148,11 @@ test('actual catalog remains searchable in KY/RU/EN/Latin while UZ never synthes
   for (const s of catalog) for (const name of [...Object.values(s.names), s.scientificName].filter(Boolean)) {
     assert.ok(searchSpecies(index, name).some(result => result.species.id === s.id), name)
   }
-  assert.ok(index.every(entry => entry.aliases.every(alias => alias.language !== 'uz')))
+  for (const entry of index) {
+    const uz = entry.aliases.filter(alias => alias.language === 'uz')
+    if (!entry.species.names.uz) assert.deepEqual(uz, [])
+    else assert.ok(uz.every(alias => alias.name === entry.species.names.uz && !alias.transliterated))
+  }
   const leopard = searchSpecies(index, 'ирбис')[0]
   assert.equal(searchContentLanguage(leopard, 'uz'), 'ru')
   assert.equal(searchContentLanguage(searchSpecies(index, 'Panthera uncia')[0], 'uz'), 'uz')
@@ -156,9 +160,10 @@ test('actual catalog remains searchable in KY/RU/EN/Latin while UZ never synthes
 
 test('UZ scientific fallback labels the actual language; absent science stays null and URLs stay original', () => {
   for (const s of catalog) {
-    assert.deepEqual(scientificContent(s.names, 'uz'), { text: s.names.ru, language: 'ru', fallback: true })
-    assert.equal(speciesName(s, 'uz'), s.names.ru)
-    assert.equal(speciesNameLanguage(s, 'uz'), 'ru')
+    const expected = s.names.uz ? { text: s.names.uz, language: 'uz', fallback: false } : { text: s.names.ru, language: 'ru', fallback: true }
+    assert.deepEqual(scientificContent(s.names, 'uz'), expected)
+    assert.equal(speciesName(s, 'uz'), expected.text)
+    assert.equal(speciesNameLanguage(s, 'uz'), expected.language)
     for (const original of s.sources) assert.equal(localizedSource(original, 'uz').url, original.url)
   }
   assert.deepEqual(scientificContent(null, 'uz'), { text: null, language: 'und', fallback: false })

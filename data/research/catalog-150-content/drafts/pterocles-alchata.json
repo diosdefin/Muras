@@ -1,0 +1,230 @@
+{
+  "id": "pterocles-alchata",
+  "scientificName": "Pterocles alchata",
+  "names": {
+    "ru": "Белобрюхий рябок",
+    "ky": "Pterocles alchata",
+    "uz": "Pterocles alchata",
+    "en": "Pin-tailed Sandgrouse"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Pteroclidiformes",
+    "family": "Pteroclididae",
+    "genus": "Pterocles"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "NT",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); очерк вида; разночтение caudacutus/caudatus в RU/EN не превращается в отдельный таксон",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Песчаные пространства с чередованием глинистых и солончаковых участков. Общая характеристика гнездовых биотопов связана с близостью воды.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": null,
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В очерке предложено распространение сведений об охране вида.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/pterocles-alchata.webp",
+      "width": 644,
+      "height": 513,
+      "sha256": "7f804dc71600f9a6f70d2831d8e7106307dc83552c1acd12614b8dc7ddb66aca",
+      "author": "https://www.flickr.com/photos/francesco_veronesi/",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Pterocles_alchata_(cropped).jpg",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "attribution": "File:Pterocles alchata (cropped).jpg — https://www.flickr.com/photos/francesco_veronesi/, CC BY-SA 2.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+      "modifications": [
+        "Уменьшение без увеличения до 1800 px; WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Фотография Pterocles alchata; иллюстрация вида, не подтверждение современного присутствия в Кыргызстане или местного подвида.",
+        "ky": null,
+        "uz": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Pterocles alchata, с. 455",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=455",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Pterocles alchata (Linnaeus, 1766)",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Pterocles%20alchata",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz"
+      ],
+      "taxonId": "gbif:2480204"
+    },
+    {
+      "id": "photo-commons",
+      "title": "Pin-tailed Sandgrouse Pterocles alchata, Castuera, Badajoz province, Extremadura, Spain",
+      "publisher": "Wikimedia Commons; https://www.flickr.com/photos/francesco_veronesi/",
+      "url": "https://commons.wikimedia.org/wiki/File:Pterocles_alchata_(cropped).jpg",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Белобрюхий рябок в национальном очерке 2006 года обозначен как малоизученная птица, встречающаяся в Кыргызстане на пролёте.",
+        "ky": "2006-жылкы улуттук очеркте Нарын жана Ат-Башыда учуп өтүүдө катталган кумдуу жерлердин кушу.",
+        "uz": "2006-yilgi milliy manbada Norin va Otboshida ko‘chish paytida qayd etilgan qumli joylar qushi.",
+        "en": "A sandgrouse of sandy habitats recorded on passage in Naryn and At-Bashi in the 2006 account."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Белобрюхий рябок в национальном очерке 2006 года обозначен как малоизученная птица, встречающаяся в Кыргызстане на пролёте.\n\nПесчаные пространства с чередованием глинистых и солончаковых участков. Общая характеристика гнездовых биотопов связана с близостью воды.\n\nВесенние встречи в очерке отнесены к концу марта–началу апреля. Сведения о кочующих семьях в общей части не подтверждают местное размножение.\n\nОбщее описание: гнездо на песчаном склоне или глинистой площадке, обычно в тени растений; 2–3 яйца, насиживают оба родителя 21–23 дня. В Кыргызстане гнездование очерком не установлено.\n\nИсторические национальные сведения относятся к пролёту в Нарынской области и долине Ат-Баши. Численность не оценена.\n\nВ очерке предложено распространение сведений об охране вида.\n\nНациональная категория и описанные встречи относятся к историческому изданию 2006 года. Современная численность не установлена; текущий юридический статус и современное присутствие требуют отдельного подтверждения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Весенние встречи в очерке отнесены к концу марта–началу апреля. Сведения о кочующих семьях в общей части не подтверждают местное размножение.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Общее описание: гнездо на песчаном склоне или глинистой площадке, обычно в тени растений; 2–3 яйца, насиживают оба родителя 21–23 дня. В Кыргызстане гнездование очерком не установлено.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические национальные сведения относятся к пролёту в Нарынской области и долине Ат-Баши. Численность не оценена.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

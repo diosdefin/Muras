@@ -32,7 +32,8 @@ test('bulk-25 keeps stable accepted taxon order, the master registry and public 
     if (!isHistoricalEvidenceUnchanged(path)) continue
     const baselinePath = ({ 'data/species.source.json': 'data/backups/bulk-25-provisional/species.source.json',
       'public/data/species.json': 'data/backups/bulk-25-provisional/public-species.json',
-      'src/data/species-model.js': 'data/backups/bulk-25-provisional/species-model.js' })[path] || path
+      'src/data/species-model.js': 'data/backups/bulk-25-provisional/species-model.js',
+      'src/admin/data/repository.js': 'data/backups/catalog-125/admin-draft-repository.js' })[path] || path
     assert.equal(digest(await readFile(`${PROJECT_ROOT}/${baselinePath}`)), sha, path)
   }
 })

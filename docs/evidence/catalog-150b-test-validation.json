@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "tests": {
+    "total": 311,
+    "passed": 311,
+    "failed": 0
+  },
+  "commands": [
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "path": ".generated/catalog-150b-tests-full.log",
+      "sha256": "973726e02a12d0b39996434cf03629e858588ed5fff159ccfe4a83a00dc56ce2"
+    },
+    {
+      "command": "npm run data",
+      "exitCode": 0,
+      "path": ".generated/catalog-150b-data.log",
+      "sha256": "1a106933a0e31cccf02b07546dc159013bcf2610970f89d082eaea29519dbf5e"
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "path": ".generated/catalog-150b-build.log",
+      "sha256": "43ccfcf30001b73f0ae6cc5a263f1d3ef16b8280a942bbaa5505b55b5965a819"
+    }
+  ],
+  "resolvedEnvironmentFailure": {
+    "initialLog": ".generated/catalog-150b-tests.log",
+    "initialLogSha256": "900276bb2adf2abbaab3205f9adaaed621820d95c3c67ff7d56e4adb9d48551f",
+    "reason": "16 esbuild directory access failures inside sandbox; full authorized-access rerun passed 311/311 without code changes."
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "id": "hyalolaena-intermedia",
+  "scientificName": "Hyalolaena intermedia",
+  "names": {
+    "ru": "Гиалолена промежуточная",
+    "ky": "Hyalolaena intermedia",
+    "uz": "Hyalolaena intermedia",
+    "en": "Hyalolaena intermedia"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Apiales",
+    "family": "Apiaceae",
+    "genus": "Hyalolaena"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Выходы гипсированных известняков.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": null,
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная рекомендация 2006 года — сохранение местообитаний; часть исторических местонахождений указана в Беш-Аральском заповеднике.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/hyalolaena-intermedia.webp",
+      "width": 1243,
+      "height": 1800,
+      "sha256": "1cfdab01742ff9287b19a9a5877b925ccf4540ac7dddee5e3f96fa0ef98dbb05",
+      "author": "ELAR corporation (Moscow, Russia)",
+      "originalPage": "https://plant.depo.msu.ru/open/public/item/MW0861361",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "ELAR corporation (Moscow, Russia); Moscow State University (copyright is managed by Dr. Alexey P. Seregin); Гербарный образец MW0861361; CC BY 4.0.  Серегин А. П. (ред.) Цифровой гербарий МГУ. М.: МГУ, 2026; MW0861361. https://plant.depo.msu.ru/open/public/item/MW0861361 (16.10.2026).",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px, WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Гербарный образец MW0861361. Hyalolaena intermedia. Изображение не подтверждает современную встречаемость в Кыргызстане.",
+        "ky": null,
+        "uz": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; очерк Hyalolaena intermedia, с. 167",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=167",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.appearance",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "conservationMeasures.0",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "national-list-1",
+      "title": "Постановление Правительства КР №170 (2005), редакция №471 (2009); decree-170-2009-1-57",
+      "publisher": "Правительство КР; документальная копия FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalSourceRecords"
+      ],
+      "notes": "Историческая редакция 2009 года, актуальность на 2026 год не установлена."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Hyalolaena intermedia Pimenov & Kljuykov",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Hyalolaena%20intermedia",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz",
+        "names.en"
+      ],
+      "taxonId": "gbif:3640167"
+    },
+    {
+      "id": "photo-primary",
+      "title": "Гербарный образец: Hyalolaena intermedia",
+      "publisher": "Moscow State University",
+      "url": "https://plant.depo.msu.ru/open/public/item/MW0861361",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "ru",
+      "notes": "Первичная страница и лицензия конкретного изображения проверены; визуальный просмотр не является независимым научным одобрением."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Многолетний монокарпик гипсированных известняков, включённый в Красную книгу Кыргызстана 2006 года.",
+        "ky": "Гипстүү акиташтарда өскөн, өмүрүндө бир жолу мөмөлөгөн көп жылдык өсүмдүк. 2006-жылкы Кызыл китепке киргизилген.",
+        "uz": "Gipsli ohaktoshlarda oʻsadigan, umrida bir marta meva beradigan koʻp yillik oʻsimlik. 2006-yilgi Qizil kitobga kiritilgan.",
+        "en": "A perennial monocarpic plant of gypsum-bearing limestone, listed in Kyrgyzstan’s 2006 Red Data Book."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Многолетний монокарпик гипсированных известняков, включённый в Красную книгу Кыргызстана 2006 года. Национальный очерк 2006 года содержит следующие сведения. В книге описан как многолетний монокарпик — растение, плодоносящее один раз за жизнь. Популяции представлены разобщёнными группами. Причины редкости и сведения о культивировании в национальном очерке не приведены. По книге цветение приходится на май–июнь, плодоношение — на июнь–июль. Семенное размножение английская сводка обозначает как предположение; подтверждённых деталей нет. Исторические указания: Чаткальский и Ферганский хребты, бассейн Нарына и долина Бекечала. В книге отмечено присутствие в Беш-Аральском заповеднике; актуальное состояние не проверено. Национальная рекомендация 2006 года — сохранение местообитаний; часть исторических местонахождений указана в Беш-Аральском заповеднике.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Растение с одиночным многократно ветвящимся стеблем и шнуровидными корнями. Рассечённые листья имеют узкие конечные доли; белые цветки образуют сложные зонтики. Плоды тёмно-коричневые, овальные или продолговатые.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В книге описан как многолетний монокарпик — растение, плодоносящее один раз за жизнь. Популяции представлены разобщёнными группами. Причины редкости и сведения о культивировании в национальном очерке не приведены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге цветение приходится на май–июнь, плодоношение — на июнь–июль. Семенное размножение английская сводка обозначает как предположение; подтверждённых деталей нет.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические указания: Чаткальский и Ферганский хребты, бассейн Нарына и долина Бекечала. В книге отмечено присутствие в Беш-Аральском заповеднике; актуальное состояние не проверено.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

@@ -1,0 +1,255 @@
+{
+  "id": "aquila-clanga",
+  "scientificName": "Aquila clanga",
+  "names": {
+    "ru": "Большой подорлик",
+    "ky": "Aquila clanga",
+    "uz": "Aquila clanga",
+    "en": "Spotted Eagle"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "genus": "Aquila"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "NT",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Равнинные, низко- и среднегорные участки у воды, включая прирусловые леса.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Сокращение гнездовых местообитаний и прямое уничтожение человеком.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендованы охрана потенциальных гнездовых участков и сохранение прирусловых лесов.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/aquila-clanga.webp",
+      "width": 1350,
+      "height": 1800,
+      "sha256": "4c9e152c4db1939c6edcf09b353fbc990f5a81558d041b8166c768a4ebe852d3",
+      "author": "Вых Пыхманн",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Greater_spotted_eagle.jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Greater spotted eagle.jpg — Вых Пыхманн, CC BY-SA 3.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+        "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Фотография Aquila clanga; иллюстрация вида, не подтверждение современного присутствия в Кыргызстане или местного подвида.",
+        "ky": null,
+        "en": null,
+        "uz": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Aquila clanga, с. 419",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=419",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Aquila clanga Pallas, 1811",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Aquila%20clanga",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz"
+      ],
+      "taxonId": "gbif:2480509"
+    },
+    {
+      "id": "photo-commons",
+      "title": "Greater spotted eagle (Aquila clanga) wintering at Israel",
+      "publisher": "Wikimedia Commons; Вых Пыхманн",
+      "url": "https://commons.wikimedia.org/wiki/File:Greater_spotted_eagle.jpg",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Большой подорлик представлен в национальном издании 2006 года главным образом как редкий пролётный хищник околоводных ландшафтов.",
+        "ky": "2006-жылкы улуттук очеркте суу жээгиндеги аймактардан учуп өтүүдө кездешкен жырткыч куш.",
+        "uz": "2006-yilgi milliy manbada suvga yaqin joylarda ko‘chish paytida uchraydigan yirtqich qush.",
+        "en": "A rare passage raptor associated with wetland edges in the 2006 national account."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Большой подорлик представлен в национальном издании 2006 года главным образом как редкий пролётный хищник околоводных ландшафтов.\n\nРавнинные, низко- и среднегорные участки у воды, включая прирусловые леса.\n\nПерелётный вид. Описана охота на водных и наземных животных и отнимание добычи у более мелких хищных птиц.\n\nВодоплавающие и мелкие воробьиные птицы, лягушки.\n\nОбщее описание вида: массивное гнездо из ветвей близ вершины дерева, обычно 1–2 яйца. Старые сведения о гнездовании в стране не подтверждают современные гнёзда.\n\nОчерком указан пролёт преимущественно в Чуйской долине и реже в Иссык-Кульской котловине; приведены старые сообщения с Кыргызского и Алайского хребтов.\n\nСокращение гнездовых местообитаний и прямое уничтожение человеком.\n\nРекомендованы охрана потенциальных гнездовых участков и сохранение прирусловых лесов.\n\nНациональная категория и описанные встречи относятся к историческому изданию 2006 года. Современная численность не установлена; текущий юридический статус и современное присутствие требуют отдельного подтверждения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Перелётный вид. Описана охота на водных и наземных животных и отнимание добычи у более мелких хищных птиц.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Водоплавающие и мелкие воробьиные птицы, лягушки.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Общее описание вида: массивное гнездо из ветвей близ вершины дерева, обычно 1–2 яйца. Старые сведения о гнездовании в стране не подтверждают современные гнёзда.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Очерком указан пролёт преимущественно в Чуйской долине и реже в Иссык-Кульской котловине; приведены старые сообщения с Кыргызского и Алайского хребтов.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

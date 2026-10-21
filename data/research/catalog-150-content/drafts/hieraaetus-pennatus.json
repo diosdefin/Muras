@@ -1,0 +1,255 @@
+{
+  "id": "hieraaetus-pennatus",
+  "scientificName": "Hieraaetus pennatus",
+  "names": {
+    "ru": "Орёл-карлик",
+    "ky": "Hieraaetus pennatus",
+    "uz": "Hieraaetus pennatus",
+    "en": "Booted Eagle"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "genus": "Hieraaetus"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "NT",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись)",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Леса разных типов, прежде всего лиственные, реже хвойные.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Прямое уничтожение и разорение гнёзд.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендованы охрана гнездовых мест, создание охраняемых участков и изучение биологии для выявления лимитирующих факторов.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/hieraaetus-pennatus.webp",
+      "width": 1320,
+      "height": 1800,
+      "sha256": "e2d38785968184591115fddf0d638fc3fd483bb1a18419d95a00ef5cde332e98",
+      "author": "Derek Keats from Johannesburg, South Africa",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Booted_eagle,_Hieraaetus_pennatus,_at_Kgalagadi_Transfrontier_Pa_(32334023348).jpg",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "attribution": "Booted eagle, Hieraaetus pennatus, at Kgalagadi Transfrontier Pa (32334023348).jpg — Derek Keats from Johannesburg, South Africa, CC BY 2.0; Wikimedia Commons.",
+      "modifications": [
+        "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+        "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Фотография Hieraaetus pennatus; иллюстрация вида, не подтверждение современного присутствия в Кыргызстане или местного подвида.",
+        "ky": null,
+        "en": null,
+        "uz": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Hieraaetus pennatus, с. 429",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=429",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Hieraaetus pennatus (Gmelin, 1788)",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Hieraaetus%20pennatus",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz"
+      ],
+      "taxonId": "gbif:2480685"
+    },
+    {
+      "id": "photo-commons",
+      "title": "Booted eagle, Hieraaetus pennatus, at Kgalagadi Transfrontier Pa",
+      "publisher": "Wikimedia Commons; Derek Keats from Johannesburg, South Africa",
+      "url": "https://commons.wikimedia.org/wiki/File:Booted_eagle,_Hieraaetus_pennatus,_at_Kgalagadi_Transfrontier_Pa_(32334023348).jpg",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Орёл-карлик — редкая и малоизученная птица горных лесов, включённая в национальное издание 2006 года.",
+        "ky": "2006-жылкы улуттук очеркте тоолуу жалбырактуу токойлор менен байланышкан сейрек бүркүт.",
+        "uz": "2006-yilgi milliy manbada tog‘li bargli o‘rmonlar bilan bog‘langan noyob burgut.",
+        "en": "A rare eagle associated mainly with mountain broadleaf forests in the 2006 national account."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Орёл-карлик — редкая и малоизученная птица горных лесов, включённая в национальное издание 2006 года.\n\nЛеса разных типов, прежде всего лиственные, реже хвойные.\n\nВ национальном очерке описан как перелётная птица, появляющаяся в апреле. Систематические сведения о численности отсутствуют.\n\nПреимущественно птицы, реже мелкие грызуны и рептилии.\n\nГнездо обычно на лиственном дереве, реже на хвойном; в кладке 1–2 яйца.\n\nИсторическая национальная запись относится к горным лесам Кыргызстана. Глобальная география из очерка без отдельной современной проверки не воспроизводится.\n\nПрямое уничтожение и разорение гнёзд.\n\nРекомендованы охрана гнездовых мест, создание охраняемых участков и изучение биологии для выявления лимитирующих факторов.\n\nНациональная категория и описанные встречи относятся к историческому изданию 2006 года. Современная численность не установлена; текущий юридический статус и современное присутствие требуют отдельного подтверждения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальном очерке описан как перелётная птица, появляющаяся в апреле. Систематические сведения о численности отсутствуют.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Преимущественно птицы, реже мелкие грызуны и рептилии.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Гнездо обычно на лиственном дереве, реже на хвойном; в кладке 1–2 яйца.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Историческая национальная запись относится к горным лесам Кыргызстана. Глобальная география из очерка без отдельной современной проверки не воспроизводится.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

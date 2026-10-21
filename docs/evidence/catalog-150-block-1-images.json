@@ -1,0 +1,125 @@
+{
+  "schemaVersion": 1,
+  "batchId": "catalog-150-1",
+  "receipts": [
+    {
+      "candidateId": "barbus-capito-conocephalus",
+      "status": "placeholder",
+      "reason": "Найдены потенциальные изображения, но первичный файл, точное определение и права не подтверждены совместно; placeholder сохранён."
+    },
+    {
+      "candidateId": "vipera-ursinii-renardi",
+      "status": "placeholder",
+      "reason": "Найдены потенциальные изображения, но первичный файл, точное определение и права не подтверждены совместно; placeholder сохранён."
+    },
+    {
+      "candidateId": "kirgisobia-bohnei",
+      "status": "placeholder",
+      "reason": "Commons: нет точного результата; GBIF: 0 изображений в ограниченном поиске."
+    },
+    {
+      "candidateId": "anser-indica",
+      "status": "prepared",
+      "reason": null,
+      "metadata": {
+        "license": "CC BY-SA 4.0",
+        "author": "Tisha Mukherjee",
+        "artistStatementSha256": "dae7c517e0d9a7d2c64fafe83d1409d408dcc7b2e7ac15af884fd0bfe8d70578",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Bar-headed_Goose_by_Tisha_Mukherjee_01.jpg",
+        "revisionId": 1123189215,
+        "width": 3790,
+        "height": 2707,
+        "description": "Bar-headed Goose (Anser indicus, Anatidae, Anseriformes) in  Gajoldoba, West Bengal, India.",
+        "metadataUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=File%3ABar-headed+Goose+by+Tisha+Mukherjee+01.jpg&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids%7Ccontent&rvslots=main",
+        "accessedAt": "2026-10-16",
+        "originalSha256": "d423122421405beb018aa8f2bde92879f667a8a85fd36e1001fc51f516be8d09",
+        "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/3/34/Bar-headed_Goose_by_Tisha_Mukherjee_01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "imageType": "photograph",
+        "subjectAsDocumented": "Anser indicus",
+        "sourceLanguage": "en"
+      },
+      "image": {
+        "path": "assets/images/species/anser-indica.webp",
+        "width": 1800,
+        "height": 1286,
+        "sha256": "6af7804c2b6ad960f4750eecc6d9ccd914d273a33171d5cd3771d6ebf65b3840",
+        "author": "Tisha Mukherjee",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Bar-headed_Goose_by_Tisha_Mukherjee_01.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "attribution": "Bar-headed Goose by Tisha Mukherjee 01.jpg — Tisha Mukherjee, CC BY-SA 4.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+          "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Фотография Anser indicus; иллюстрация вида, не подтверждение современного присутствия в Кыргызстане или местного подвида.",
+          "ky": null,
+          "en": null,
+          "uz": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "method": "original WebP pixels and cached original-page imageinfo/revision",
+        "reviewedAt": "2026-10-16",
+        "independentTaxonomicReview": "pending",
+        "notes": "Изображение читаемо, явных противоречий подписанному таксону не обнаружено; это не независимое определение специалиста."
+      }
+    },
+    {
+      "candidateId": "accipiter-badius",
+      "status": "prepared",
+      "reason": null,
+      "metadata": {
+        "license": "CC BY-SA 4.0",
+        "author": "Roger Culos",
+        "artistStatementSha256": "05aa70ba253f1686dd78d959508b2300fa380e8327d68f127ab25136015f4708",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Accipiter_badius_MHNT.ZOO.2010.11.94.1.jpg",
+        "revisionId": 780432202,
+        "width": 3780,
+        "height": 2835,
+        "description": "Eggs of shikra Three specimens of the same spawn ; collection of Jacques Perrin de Brichambaut.",
+        "metadataUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=File%3AAccipiter+badius+MHNT.ZOO.2010.11.94.1.jpg&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids%7Ccontent&rvslots=main",
+        "accessedAt": "2026-10-16",
+        "originalSha256": "8c88e21fa41ccf784b94b7d532b72eecb7b465e62da12e197f4c4a4300144bba",
+        "originalFileUrl": "https://upload.wikimedia.org/wikipedia/commons/9/94/Accipiter_badius_MHNT.ZOO.2010.11.94.1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "imageType": "museum_eggs",
+        "subjectAsDocumented": "Accipiter badius",
+        "sourceLanguage": "en"
+      },
+      "image": {
+        "path": "assets/images/species/accipiter-badius.webp",
+        "width": 1800,
+        "height": 1350,
+        "sha256": "1012c0b2ae5756c1cb2a7da26777e63a5982b641698c92a4d60ef192d1d5a3dd",
+        "author": "Roger Culos",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Accipiter_badius_MHNT.ZOO.2010.11.94.1.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "attribution": "Accipiter badius MHNT.ZOO.2010.11.94.1.jpg — Roger Culos, CC BY-SA 4.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+          "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Музейный образец: яйца Accipiter badius, коллекция Jacques Perrin de Brichambaut; не живая птица и не находка в Кыргызстане.",
+          "ky": null,
+          "en": null,
+          "uz": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "method": "original WebP pixels and cached original-page imageinfo/revision",
+        "reviewedAt": "2026-10-16",
+        "independentTaxonomicReview": "pending",
+        "notes": "Изображение читаемо, явных противоречий подписанному таксону не обнаружено; это не независимое определение специалиста."
+      }
+    }
+  ]
+}

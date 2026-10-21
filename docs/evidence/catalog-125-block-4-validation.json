@@ -1,0 +1,177 @@
+{
+  "schemaVersion": 1,
+  "registryId": "catalog-125-content",
+  "catalogFingerprint": "d87aa848adc17517ca35a39bcedb1548fd16b1b93d1342beee5d92cfab5483f3",
+  "counts": {
+    "processed": 5,
+    "accepted": 5,
+    "deferred": 0,
+    "rejected": 0
+  },
+  "states": {
+    "pending": 0,
+    "needs_evidence": 0,
+    "research_ready": 0,
+    "needs_photo": 0,
+    "ready_for_review": 5,
+    "approved_for_import": 0,
+    "imported": 0,
+    "rejected": 0
+  },
+  "results": [
+    {
+      "candidateId": "scutellaria-andrachnoides",
+      "batchNumber": 4,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "d0c972e4801b0efc7ff31fdaa5e960878f8d2bda3044f3e5f2ea0780de2f7cef",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "scutellaria-nepetoides",
+      "batchNumber": 4,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "eb13efec0e02ddb7a21838a6e576870e547f91f0bd96414e3d5a50aa70d93534",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "salvia-korolkowii",
+      "batchNumber": 4,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "b72782d3b0de09482b6249b9e7e1a5cfc1df69771bd6125710b9f760e908188c",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "nathaliella-alaica",
+      "batchNumber": 4,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "628751074ac49b6ee397d3487695ffad0863b4d4c5ee08ecdab06623041657d7",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "lonicera-paradoxa",
+      "batchNumber": 4,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "a132880e369a191fd62733eb3804a4becf9ea0b4d0ad39d3b770153e8fbe9a90",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    }
+  ],
+  "metrics": {
+    "durationMs": 117.25,
+    "cpu": {
+      "user": 172000,
+      "system": 63000
+    },
+    "memory": {
+      "rss": 61960192,
+      "heapTotal": 29417472,
+      "heapUsed": 12752800,
+      "external": 2951597,
+      "arrayBuffers": 686991
+    },
+    "localMaterialReads": 10
+  }
+}

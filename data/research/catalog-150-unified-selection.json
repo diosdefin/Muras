@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "documentType": "combined-preparation-selection",
+  "sourceCommit": "7f9027170b2eb0962ca1b0c3c180f04d699ff10f",
+  "baselineCatalogCount": 125,
+  "originalPreparation": {
+    "manifest": "data/research/catalog-150-review-manifest.json",
+    "sha256": "85bed9d67e06af5bbcdcd47ff8947d5deb70658c48bd89ea23e7bc4da43f5d82",
+    "candidateCount": 23,
+    "fingerprintsUnchanged": true
+  },
+  "supplement": "data/research/catalog-150b-content-manifest.json",
+  "registry": "data/research/catalog-150-unified-registry.json",
+  "candidateIds": [
+    "barbus-capito-conocephalus",
+    "vipera-ursinii-renardi",
+    "kirgisobia-bohnei",
+    "anser-indica",
+    "accipiter-badius",
+    "aquila-clanga",
+    "aquila-nipalensis",
+    "aquila-heliaca",
+    "hieraaetus-fasciatus",
+    "hieraaetus-pennatus",
+    "tetrax-tetrax",
+    "crex-crex",
+    "anthropoides-virgo",
+    "burhinus-oedicnemus",
+    "vanellus-gregarius",
+    "glareola-nordmanni",
+    "strix-aluco",
+    "syrrhaptes-paradoxus",
+    "pterocles-alchata",
+    "pterocles-orientalis",
+    "columba-leuconota",
+    "columba-eversmanni",
+    "bubo-bubo",
+    "gazella-subgutturosa",
+    "dendrocopos-leucopterus"
+  ],
+  "blocks": [
+    {
+      "number": 1,
+      "candidateIds": [
+        "barbus-capito-conocephalus",
+        "vipera-ursinii-renardi",
+        "kirgisobia-bohnei",
+        "anser-indica",
+        "accipiter-badius"
+      ]
+    },
+    {
+      "number": 2,
+      "candidateIds": [
+        "aquila-clanga",
+        "aquila-nipalensis",
+        "aquila-heliaca",
+        "hieraaetus-fasciatus",
+        "hieraaetus-pennatus"
+      ]
+    },
+    {
+      "number": 3,
+      "candidateIds": [
+        "tetrax-tetrax",
+        "crex-crex",
+        "anthropoides-virgo",
+        "burhinus-oedicnemus",
+        "vanellus-gregarius"
+      ]
+    },
+    {
+      "number": 4,
+      "candidateIds": [
+        "glareola-nordmanni",
+        "strix-aluco",
+        "syrrhaptes-paradoxus",
+        "pterocles-alchata",
+        "pterocles-orientalis"
+      ]
+    },
+    {
+      "number": 5,
+      "candidateIds": [
+        "columba-leuconota",
+        "columba-eversmanni",
+        "bubo-bubo",
+        "gazella-subgutturosa",
+        "dendrocopos-leucopterus"
+      ]
+    }
+  ],
+  "publicationAllowed": false
+}

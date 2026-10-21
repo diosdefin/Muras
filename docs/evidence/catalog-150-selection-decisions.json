@@ -1,0 +1,115 @@
+{
+  "schemaVersion": 1,
+  "documentType": "taxonomic-selection-decisions",
+  "accessedAt": "2026-10-16",
+  "publicationAllowed": false,
+  "records": [
+    {
+      "id": "barbus-capito-conocephalus",
+      "decision": "prepare",
+      "historicalName": "Barbus capito conocephalus",
+      "acceptedName": "Luciobarbus conocephalus",
+      "historicalRank": "SUBSPECIES",
+      "acceptedRank": "SPECIES",
+      "reason": "Именной таксон Kessler 1872; повышение ранга подтверждено современным каталогом и обработкой, не подмена родительским Luciobarbus capito. Современное присутствие в Кыргызстане не установлено.",
+      "sources": [
+        {
+          "url": "https://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=1489",
+          "title": "Eschmeyer’s Catalog of Fishes: conocephalus Kessler, 1872",
+          "method": "web source read"
+        },
+        {
+          "url": "https://zenodo.org/records/20514636",
+          "title": "Artaev et al. 2025, Fishes of Tajikistan, AMNH Novitates 4032, Luciobarbus conocephalus, p.14; DOI 10.1206/4032.1",
+          "method": "web page read; direct treatment.html fetch returned 403"
+        }
+      ]
+    },
+    {
+      "id": "vipera-ursinii-renardi",
+      "decision": "prepare",
+      "historicalName": "Vipera ursinii renardi",
+      "acceptedName": "Vipera renardi",
+      "historicalRank": "SUBSPECIES",
+      "acceptedRank": "SPECIES",
+      "reason": "Именной таксон Christoph 1861 теперь вид; Reptile Database документирует синоним Vipera ursinii renardi и Кыргызстан. Исторический местный очерк сохранён отдельно; современный подвид не назначается.",
+      "sources": [
+        {
+          "url": "https://reptile-database.reptarium.cz/Vipera/renardi",
+          "title": "Reptile Database: Vipera renardi (Christoph, 1861)",
+          "method": "HTML snapshot SHA in source receipts"
+        }
+      ]
+    },
+    {
+      "id": "kirgisobia-bohnei",
+      "decision": "prepare",
+      "historicalName": "Kirgisobia bohnei",
+      "acceptedName": "Kirgizobia bohnei",
+      "historicalRank": "SPECIES",
+      "acceptedRank": "SPECIES",
+      "reason": "Исправление написания рода; тот же bohnei Danilevsky 1992. Первичный каталог Danilevsky 2015, PDF p.18: Kirgizobia Danilevsky 1992c:203, bohnei 1992c:204, A:KI.",
+      "sources": [
+        {
+          "url": "https://www.zin.ru/animalia/coleoptera/pdf/danilevsky_2015_catalogue_palaearctic_cerambycoidea.pdf#page=18",
+          "title": "M.L. Danilevsky, Catalogue of Palaearctic Cerambycoidea, updated 01.12.2015",
+          "method": "PDF text and visual review"
+        }
+      ]
+    },
+    {
+      "id": "sonjagaster-coronatus",
+      "decision": "defer",
+      "reason": "GBIF EXACT Cordulegaster coronata найден; Schneider et al. 2024 переносит в Thecagaster coronata, но с.27 также обсуждает возможный подвид/синоним T. brevistigma. До уточнения границ таксона в пакет не включается.",
+      "sources": [
+        {
+          "url": "https://doi.org/10.3390/insects15080622",
+          "title": "Schneider et al. 2024, Molecular Phylogeny of the Family Cordulegastridae Worldwide, pp.27–29",
+          "method": "downloaded primary PDF SHA in receipts"
+        }
+      ]
+    },
+    {
+      "id": "cephalota-galathea",
+      "decision": "defer",
+      "reason": "GBIF EXACT сам по себе не разрешает galatea/galathea: Kryzhanovskij et al. 1995, p.24: galatea Thieme 1881, galathea auct. Нужна номенклатурная сверка.",
+      "sources": [
+        {
+          "url": "https://www.zin.ru/animalia/coleoptera/pdf/kryzhanovskij_et_al_1995.pdf",
+          "title": "Kryzhanovskij et al. 1995, A checklist of the ground-beetles of Russia and adjacent lands, p.24",
+          "method": "web primary PDF read"
+        }
+      ]
+    },
+    {
+      "id": "larus-ichtyaetus",
+      "decision": "defer",
+      "reason": "В ограниченном запросе GBIF ответ FUZZY SYNONYM. Орфографическое и родовое сопоставление не доведено до подтверждённого EXACT; не допущен автоматически."
+    },
+    {
+      "id": "tulipa-anadroma",
+      "decision": "remain_blocked",
+      "reason": "Ранее документированное противоречие не разрешено; прежние реестры не изменялись."
+    },
+    {
+      "id": "eryx-tataricus",
+      "decision": "remain_blocked",
+      "reason": "Ранее документированное противоречие не разрешено; прежние реестры не изменялись."
+    },
+    {
+      "id": "pyrus-asiae-mediae",
+      "decision": "remain_blocked",
+      "reason": "Ранее документированное противоречие не разрешено; прежние реестры не изменялись."
+    },
+    {
+      "id": "cuon-alpinus",
+      "decision": "defer",
+      "reason": "Национальный очерк 2006 с.497 прямо сомневается в правильности старых определений и сообщает об отсутствии достоверных регистраций за 50 лет; не превращаем национальное включение в доказательство присутствия."
+    },
+    {
+      "id": "hystrix-indica",
+      "decision": "exclude_duplicate_catalog",
+      "reason": "Штатный check выявил существующий indian-crested-porcupine в рабочем catalog: совпадают научное имя и GBIF ID. Новая карточка не создаётся."
+    }
+  ]
+}

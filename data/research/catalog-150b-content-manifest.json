@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "documentType": "bulk-content-manifest",
+  "sourceCommit": "7f9027170b2eb0962ca1b0c3c180f04d699ff10f",
+  "masterRegistryFile": "data/research/catalog-150b-research-registry.json",
+  "masterRegistryFingerprint": "4bfa7445d4471b8dc5cea28fb308d6b178e06bd129d1cff9a96469c1e8815258",
+  "taxonomyFile": "docs/evidence/catalog-150b-taxonomy.json",
+  "registryFile": "data/research/catalog-150b-content-registry.json",
+  "contentDirectory": "data/research/catalog-150-content/supplement",
+  "evidencePrefix": "catalog-150b",
+  "candidateIds": [
+    "gazella-subgutturosa",
+    "dendrocopos-leucopterus"
+  ],
+  "blocks": [
+    {
+      "number": 1,
+      "batchId": "catalog-150b-1",
+      "candidateIds": [
+        "gazella-subgutturosa",
+        "dendrocopos-leucopterus"
+      ],
+      "status": "prepared_for_check"
+    }
+  ],
+  "publicationAllowed": false,
+  "ownerAuthorization": null,
+  "baselineCatalogCount": 125,
+  "selectionLimit": 2
+}

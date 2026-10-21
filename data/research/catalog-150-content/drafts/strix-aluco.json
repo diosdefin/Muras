@@ -1,0 +1,267 @@
+{
+  "id": "strix-aluco",
+  "scientificName": "Strix aluco",
+  "names": {
+    "ru": "Серая неясыть",
+    "ky": "Strix aluco",
+    "uz": "Strix aluco",
+    "en": "Tawny Owl"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Strigiformes",
+    "family": "Strigidae",
+    "genus": "Strix"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "LC",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); видовой очерк с упоминанием harmsi; историческое национальное LC не является современной оценкой IUCN",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Старые леса с дуплистыми деревьями и естественным древесным завалом; в Кыргызстане очерк выделяет орехоплодовые массивы.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Вырубка старых деревьев с дуплами.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Спады численности основных кормовых грызунов.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Очерком рекомендовано размещение искусственных дуплянок в старых лесах.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/strix-aluco.webp",
+      "width": 1800,
+      "height": 1011,
+      "sha256": "b822a70ee53abd2577d0df440fd6d23d3124d1f9cbd57e260a56b03af4168d00",
+      "author": "hanami_yama",
+      "originalPage": "https://www.inaturalist.org/photos/750184013",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Strix aluco — hanami_yama; CC BY 4.0; iNaturalist photo 750184013. (c) hanami_yama, some rights reserved (CC BY).",
+      "modifications": [
+        "Уменьшение без увеличения до 1800 px; WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ru": "Фотография Strix aluco; пример вида, не подтверждение современного присутствия в Кыргызстане или местного подвида. Чёрно-белый кадр; цвет оперения по нему не оценивается.",
+        "ky": null,
+        "uz": null,
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Strix aluco, с. 465",
+      "publisher": "ГАОСЛХ при Правительстве КР; Биолого-почвенный институт НАН КР; ЭД «Алейне»",
+      "authors": "Э. Дж. Шукуров (главный редактор)",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=465",
+      "accessedAt": "2026-10-16",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "threats.1",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ],
+      "notes": "Историческое издание. Текущий правовой статус, современная численность и современное присутствие не установлены."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Strix aluco Linnaeus, 1758",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Strix%20aluco",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky",
+        "names.uz"
+      ],
+      "taxonId": "gbif:9282206"
+    },
+    {
+      "id": "photo-primary",
+      "title": "Фотография Strix aluco",
+      "publisher": "iNaturalist; hanami_yama",
+      "url": "https://www.inaturalist.org/photos/750184013",
+      "accessedAt": "2026-10-16",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": "en",
+      "notes": "Per-photo license_code и авторская атрибуция проверены в первичном API; версия лицензии — официальный LicenseModule."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Серая неясыть в национальном очерке 2006 года связана прежде всего со старыми орехоплодовыми лесами.",
+        "ky": "2006-жылкы улуттук очеркте эски жаңгак-мөмө токойлору менен байланышкан үкү тукумундагы куш.",
+        "uz": "2006-yilgi milliy manbada eski yong‘oq-mevali o‘rmonlar bilan bog‘langan boyqush.",
+        "en": "An owl associated with old walnut-fruit forests in the 2006 national account."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Серая неясыть в национальном очерке 2006 года связана прежде всего со старыми орехоплодовыми лесами.\n\nСтарые леса с дуплистыми деревьями и естественным древесным завалом; в Кыргызстане очерк выделяет орехоплодовые массивы.\n\nОчерком приведены лесные и отдельные долинные встречи, в том числе зимой. Количественная оценка популяции отсутствует.\n\nМелкие млекопитающие и птицы, реже другие мелкие позвоночные и жуки; в местных условиях выделены мышевидные грызуны и туркестанская крыса.\n\nСроки размножения в Кыргызстане не установлены. Для соседних районов приведены 2–6 яиц и около 30 дней насиживания самкой; эти сроки не переносятся на национальную популяцию.\n\nНациональная запись относится к Чаткальскому и Ферганскому хребтам, содержит отдельные сведения из Чуйской долины и южных населённых пунктов.\n\nВырубка старых деревьев с дуплами.\n\nСпады численности основных кормовых грызунов.\n\nОчерком рекомендовано размещение искусственных дуплянок в старых лесах.\n\nНациональная категория и описанные встречи относятся к историческому изданию 2006 года. Современная численность не установлена; текущий юридический статус и современное присутствие требуют отдельного подтверждения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Очерком приведены лесные и отдельные долинные встречи, в том числе зимой. Количественная оценка популяции отсутствует.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Мелкие млекопитающие и птицы, реже другие мелкие позвоночные и жуки; в местных условиях выделены мышевидные грызуны и туркестанская крыса.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Сроки размножения в Кыргызстане не установлены. Для соседних районов приведены 2–6 яиц и около 30 дней насиживания самкой; эти сроки не переносятся на национальную популяцию.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная запись относится к Чаткальскому и Ферганскому хребтам, содержит отдельные сведения из Чуйской долины и южных населённых пунктов.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

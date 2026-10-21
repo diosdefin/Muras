@@ -1,0 +1,665 @@
+{
+  "schemaVersion": 1,
+  "registryId": "catalog-150-content",
+  "catalogFingerprint": "3fb9586c5f26925610a975eb80c1a48510d260d1c13573336a3ddcac81460b56",
+  "counts": {
+    "processed": 23,
+    "accepted": 23,
+    "deferred": 0,
+    "rejected": 0
+  },
+  "states": {
+    "pending": 0,
+    "needs_evidence": 0,
+    "research_ready": 0,
+    "needs_photo": 0,
+    "ready_for_review": 23,
+    "approved_for_import": 0,
+    "imported": 0,
+    "rejected": 0
+  },
+  "results": [
+    {
+      "candidateId": "barbus-capito-conocephalus",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "063461ceccdd337c90395deca0837d8f35f2efdecddd2a5b34cc3ea683192cb1",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "vipera-ursinii-renardi",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "9952736f6837fd6b8025f3daf584a97f183c4ae0451bf03e830317aa401e770c",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "kirgisobia-bohnei",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "c341a731d89ec8ccaf86bec76e25871b274e24c25818c16828b9bdf66d7e27ac",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "anser-indica",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "9224db014c2a19f606264b7093b738b4f77cf9044dcb0ca43db12b58d5fb8151",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "accipiter-badius",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "cb38ffeb1f5f8d1073b6d6778cd1f9184f11231d1508c14a52a2b261b781e526",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "aquila-clanga",
+      "batchNumber": 2,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "7c36a1a7e20abe18101d3b05e259d55ccc4b397d05202ba0f35fce1afa6d28a7",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "aquila-nipalensis",
+      "batchNumber": 2,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "e886d151618a2bb46dce08dfb7a3a12784b4fd6e4a6b1ebad28952d963d506da",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "aquila-heliaca",
+      "batchNumber": 2,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "32e8d20f97653b364e408f0f26869d3210e4bfa42239c6a9fa16eec459d17b82",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "hieraaetus-fasciatus",
+      "batchNumber": 2,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "42c6dbfcffad33fa43b4f487620ace0c6160e1162646f0ece09ec1258c558f8e",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "hieraaetus-pennatus",
+      "batchNumber": 2,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "1bff291f4ae82b1d8411316002d6f9d9de4684b2bf8097c60d33272f18fd5a3a",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "tetrax-tetrax",
+      "batchNumber": 3,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "366fd4b9382c209b75ce08a14b18d42b0a8fb359b232b74edeca97f3ea9218fc",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "crex-crex",
+      "batchNumber": 3,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "c5253b2834aad130d02c46e6af0329546b90690d750b53d598ad85595567010d",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "anthropoides-virgo",
+      "batchNumber": 3,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "16e71c9c0b94f9739cd8e07092d10dce7a598cafc4f297d28879e46b5a31eb0b",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "burhinus-oedicnemus",
+      "batchNumber": 3,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "69ebc4e471fc4c02ed2fedba85fb60554eeec5fddd745cf8b9796fda2f93d995",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "vanellus-gregarius",
+      "batchNumber": 3,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "d531d6950c99d391cd598a11a20bbd751a2eebe15f8e35a6fe338a023350b433",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "glareola-nordmanni",
+      "batchNumber": 4,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "b3ea31fae37040b6c94d3f207a036d4e000c68004df8586e905746536a230026",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "strix-aluco",
+      "batchNumber": 4,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "482a48d1d83e564c8432686668aa7e6a844a6cdb408b7007f2afffd6e24621f2",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "syrrhaptes-paradoxus",
+      "batchNumber": 4,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "33ae84c131054d46f5d67e316d440163c6e58179dd43cd14a1ba371cd8422201",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "pterocles-alchata",
+      "batchNumber": 4,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "6659096a52cf3873a36aa915182cf07e9a3800bf446067fc3655c689f5973f56",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "pterocles-orientalis",
+      "batchNumber": 4,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "6255b29a8b69ae8125caa46524c570e8229dfeee9f2905c14436d0a769adc831",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "columba-leuconota",
+      "batchNumber": 5,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "c1cc18c2072dd6425178a4e6c8bcaf0ce0ac38c83035a38c84fd1164ed8beb37",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "columba-eversmanni",
+      "batchNumber": 5,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "60fafa02fff7886cf6515da5a5637dec6b9ac55c8638e1b0a0837aa861211898",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "bubo-bubo",
+      "batchNumber": 5,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "e6c420146d311ad7c1b806fdf1396aeb3f3db4d9dbd7265e955f2070e187050e",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    }
+  ],
+  "metrics": {
+    "durationMs": 271.85,
+    "cpu": {
+      "user": 313000,
+      "system": 78000
+    },
+    "memory": {
+      "rss": 90619904,
+      "heapTotal": 52318208,
+      "heapUsed": 32861712,
+      "external": 5214861,
+      "arrayBuffers": 2966706
+    },
+    "localMaterialReads": 52
+  }
+}
