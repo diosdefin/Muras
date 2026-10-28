@@ -8,5 +8,6 @@ export const MAP_EVOLVING_FILES = new Set([
   'src/locales/ky.json', 'src/locales/uz.json', 'src/locales/ru.json', 'src/locales/en.json',
   'scripts/audit-bulk-25-release.mjs', 'tests/bulk-25-content.test.mjs',
   'tests/catalog-100-preparation.test.mjs', 'tests/provisional-catalog.test.mjs',
+  'tests/helpers/historical-pipeline.mjs',
   'tests/map.test.mjs', 'tests/first-batch.test.mjs', 'tests/species-groups.test.mjs',
 ])

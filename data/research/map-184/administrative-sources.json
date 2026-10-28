@@ -1,0 +1,129 @@
+{
+  "sources": [
+    {
+      "id": "admin-protected",
+      "title": "CAIAG. Национальная база ООПТ: таблицы заповедников и природных парков",
+      "url": "https://wildlife.caiag.kg/drupal_wa/?q=ru/node/18",
+      "locator": "Таблицы: место расположения каждого названного ООПТ",
+      "publicationYear": null,
+      "checkedAt": "2026-10-28",
+      "role": "administrative-only; never a species occurrence by itself",
+      "access": "primary_html_downloaded_and_read",
+      "cache": ".generated/map-184/admin/protected.html",
+      "sha256": "29df1e043c50621c80a6a9853c1c79cf1712bf562cb7fd8c435b31e1ef474e27"
+    },
+    {
+      "id": "admin-chuy",
+      "title": "МЧС КР. Чуйская область: территория, рельеф и гидрография",
+      "url": "https://www.mchs.gov.kg/ru/structures_old/kr-okm-chui-oblusu-boyuncha-bashkarmalygy/",
+      "locator": "О территории; Рельеф: Чуйская, Суусамырская, Чон-Кеминская и Кичи-Кеминская долины",
+      "publicationYear": null,
+      "checkedAt": "2026-10-28",
+      "role": "administrative-only; never a species occurrence by itself",
+      "access": "primary_html_downloaded_and_read",
+      "cache": ".generated/map-184/admin/chuy.html",
+      "sha256": "4b3126b93befbd765e7b452798d90cc17d98c6d2d052ea2bbdd3af93a09b1ae9"
+    },
+    {
+      "id": "admin-naryn",
+      "title": "МЧС КР. Нарынская область: природные условия",
+      "url": "https://www.mchs.gov.kg/ru/structures_old/kr-okm-naryn-oblusu-boyuncha-bashkarmalygy/",
+      "locator": "Рельеф: Ат-Башы-Каракоюнская, Сон-Кельская, Чатыр-Кельская, Кочкорская, Джумгальская, Средненарынская впадины",
+      "publicationYear": null,
+      "checkedAt": "2026-10-28",
+      "role": "administrative-only; never a species occurrence by itself",
+      "access": "primary_html_downloaded_and_read",
+      "cache": ".generated/map-184/admin/naryn.html",
+      "sha256": "523233808cc65408f7089caf37902b4d2a77e39aa3f83c09720ee0fe36c3f8a6"
+    },
+    {
+      "id": "admin-jalal",
+      "title": "МЧС КР. Джалал-Абадская область: территория и природные условия",
+      "url": "https://www.mchs.gov.kg/ru/structures_old/kr-okm-zhalal-abad-oblusu-boyuncha-bashkarmalygy/img/",
+      "locator": "Административное деление; рельеф: Кетмень-Тюбинская и Тогуз-Тороузская впадины; города",
+      "publicationYear": null,
+      "checkedAt": "2026-10-28",
+      "role": "administrative-only; never a species occurrence by itself",
+      "access": "primary_html_downloaded_and_read",
+      "cache": ".generated/map-184/admin/jalal.html",
+      "sha256": "6f4ae95ee5d11d6ac36b8c9c8981af8636dda22fffd4350a188378977c974450"
+    },
+    {
+      "id": "admin-tourism",
+      "title": "Департамент туризма КР. Цифровые навигации",
+      "url": "https://tourism.gov.kg/digital-navigation/",
+      "locator": "Списки природных объектов по областям: Чычкан, Токтогульское водохранилище, Бабаш-Ата, Кировское водохранилище, Айгул-Тоо",
+      "publicationYear": null,
+      "checkedAt": "2026-10-28",
+      "role": "administrative-only; never a species occurrence by itself",
+      "access": "primary_html_downloaded_and_read",
+      "cache": ".generated/map-184/admin/tourism.html",
+      "sha256": "d671a76a7aad6876e81df063816c39a5935785413f0fae5e8e84d6c211840e3e"
+    },
+    {
+      "id": "admin-osh",
+      "title": "Кабинет Министров КР. Ошская область",
+      "url": "https://www.gov.kg/ru/region/osh",
+      "locator": "Административное устройство: Алайский, Чон-Алайский, Араванский районы; Гульча, Узген",
+      "publicationYear": null,
+      "checkedAt": "2026-10-28",
+      "role": "administrative-only; never a species occurrence by itself",
+      "access": "primary_indexed_text; direct access limited",
+      "accessLimitation": "fetch failed"
+    },
+    {
+      "id": "admin-batken",
+      "title": "Национальный статистический комитет КР. Баткенская область",
+      "url": "https://www.stat.gov.kg/ru/batkenskaya-oblast/",
+      "locator": "Административное устройство: Баткенский, Кадамжайский, Лейлекский районы; Баткен, Сулюкта, Кадамжай",
+      "publicationYear": null,
+      "checkedAt": "2026-10-28",
+      "role": "administrative-only; never a species occurrence by itself",
+      "access": "primary_page_text_read_via_web; direct retrieval limited",
+      "accessLimitation": "fetch failed",
+      "historySourceUrl": "https://www.archive.kg/gosudarstvennye-arkhivy/batkenskoe-regionalnoe-upravlenie-arkhivnoj-sluzhby/istoriya.html"
+    },
+    {
+      "id": "admin-talas",
+      "title": "Кабинет Министров КР. Таласская область",
+      "url": "https://www.gov.kg/ru/region/talas",
+      "locator": "Административное устройство Таласской области",
+      "publicationYear": null,
+      "checkedAt": "2026-10-28",
+      "role": "administrative-only; never a species occurrence by itself",
+      "access": "primary_indexed_text; direct access limited",
+      "accessLimitation": "fetch failed"
+    },
+    {
+      "id": "admin-lakes",
+      "title": "Ramsar. Annotated list: Kyrgyzstan",
+      "url": "https://rsis.ramsar.org/sites/default/files/rsiswp_search/exports/Ramsar-Sites-annotated-summary-Kyrgyzstan.pdf",
+      "locator": "PDF p.1 Chatyr Kul and Son-Kol; p.2 Issyk-Kul; only administrative fields used for crosswalk",
+      "publicationYear": null,
+      "checkedAt": "2026-10-28",
+      "role": "administrative-only; never a species occurrence by itself",
+      "access": "primary_pdf_downloaded_and_read; both pages checked",
+      "cache": ".generated/map-184/admin/admin-lakes.pdf",
+      "sha256": "a2e99413b1b788c2c710f9e2ab6024e5ff96dddf9094fa2723e03de6e97419ab"
+    },
+    {
+      "id": "admin-alai",
+      "title": "Алайская районная государственная администрация",
+      "url": "https://alay.gov.kg/ru/главная/",
+      "locator": "Алайская долина; Ошская область, Алайский район",
+      "publicationYear": null,
+      "checkedAt": "2026-10-28",
+      "role": "administrative-only; never a species occurrence by itself",
+      "access": "primary_html_downloaded_and_read",
+      "cache": ".generated/map-184/admin/admin-alai.html",
+      "sha256": "78f153993686a6ff571c7df6858b400bd9a348f7e64cceb4fa70d705380cb7a9"
+    }
+  ],
+  "limits": [
+    "No mountain range is mapped wholesale to an oblast.",
+    "Only the Kyrgyz part of a transboundary valley is considered.",
+    "Bishkek and Osh cities alone do not establish an oblast.",
+    "Historical Osh region must not be equated automatically with present Osh.",
+    "Some MCHS PDF URLs returned 404; their unread full contents were not used."
+  ]
+}

@@ -91,7 +91,8 @@ test('expanded admin import/export is lossless and seven public groups filter re
 })
 
 test('regional drafts stay private and never become map results; unchanged quiz still has 18 valid questions', async () => {
-  const drafts=await read('data/research/first-batch-regions.json'), evidence=await read('data/geography/occurrences.source.json')
+  // This assertion concerns the original private decision, not later independently documented links.
+  const drafts=await read('data/research/first-batch-regions.json'), evidence=JSON.parse(historicalBytes('b83a48c3b7b362bd6a93661ebb8dcb4415fcce74','data/geography/occurrences.source.json'))
   assert.equal(drafts.notForPublication,true); assert.equal(drafts.records.length,2)
   assert.deepEqual(drafts.records.map(r=>r.regionId),['issyk-kul','talas'])
   for(const r of drafts.records){assert.equal(r.reviewStatus,'pending');assert.equal(r.publicationApproved,false);assert.equal(r.localityPrecision,'oblast')}

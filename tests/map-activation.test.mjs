@@ -10,8 +10,10 @@ import { loadRegionalData, queryRegionalEntries } from '../src/data/geography/re
 import { speciesPath, speciesIdFromPath } from '../src/data/species-routes.js'
 import { historicalBytes } from './helpers/photo-amendment.mjs'
 const read = async path => JSON.parse(await readFile(new URL('../'+path, import.meta.url)))
-const species = await read('public/data/species.json'), evidence = await read('data/geography/occurrences.source.json')
-const geometry = await read('public/data/geography/map.json'), published = await read('public/data/geography/occurrences.json')
+// Replay task 27.1 against its immutable six-link publication; live expansion is tested separately.
+const activation = path => JSON.parse(historicalBytes('b83a48c3b7b362bd6a93661ebb8dcb4415fcce74',path))
+const species = await read('public/data/species.json'), evidence = activation('data/geography/occurrences.source.json')
+const geometry = await read('public/data/geography/map.json'), published = activation('public/data/geography/occurrences.json')
 const base = '43ff31186ea54eafdb6eec654c50828fb4c99eb3'
 const old = path => historicalBytes(base, path)
 const hash = bytes => createHash('sha256').update(bytes).digest('hex')

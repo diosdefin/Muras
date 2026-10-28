@@ -1,0 +1,1022 @@
+{
+  "gbifSearch": {
+    "targets": 75,
+    "scope": "Only gaps after the complete national-book scan; exact saved GBIF IDs, country KG, PRESERVED_SPECIMEN, up to 100 records each; no iNaturalist inference or obscured coordinates.",
+    "records": [
+      {
+        "speciesId": "golden-eagle",
+        "taxonId": null,
+        "query": null,
+        "status": "no_exact_saved_taxon_id",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "bearded-vulture",
+        "taxonId": null,
+        "query": null,
+        "status": "no_exact_saved_taxon_id",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "saker-falcon",
+        "taxonId": null,
+        "query": null,
+        "status": "no_exact_saved_taxon_id",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "eurasian-lynx",
+        "taxonId": "2435240",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2435240&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "access_limited",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "ostrowskis-tulip",
+        "taxonId": "5299338",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=5299338&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "access_limited",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "christophs-clouded-yellow",
+        "taxonId": "5137697",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=5137697&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "access_limited",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "relict-spider",
+        "taxonId": "2144820",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2144820&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "vigorous-ground-beetle",
+        "taxonId": "8881643",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=8881643&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "pskem-onion",
+        "taxonId": "2856107",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2856107&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 4,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "korzhinskys-pear",
+        "taxonId": "5363093",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=5363093&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 100,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "egyptian-vulture",
+        "taxonId": "2480696",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2480696&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 1,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "cinereous-vulture",
+        "taxonId": "5229165",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=5229165&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 2,
+        "selectedEvidence": {
+          "occurrenceKey": 3460302047,
+          "url": "https://www.gbif.org/occurrence/3460302047",
+          "verbatimUrl": "https://api.gbif.org/v1/occurrence/3460302047/verbatim",
+          "countryCode": "KG",
+          "verbatimCountry": "Kyrgyzstan",
+          "verbatimStateProvince": "Naryn",
+          "regionId": "naryn",
+          "acceptedTaxonId": "gbif:5229165",
+          "acceptedScientificName": "Aegypius monachus (Linnaeus, 1766)",
+          "originalScientificName": "Aegypius monachus (Linnaeus, 1766)",
+          "rank": "SPECIES",
+          "eventDate": "1920-01",
+          "catalogNumber": "NHMD000875335",
+          "institutionCode": "NHMD",
+          "datasetKey": "e5c5cad9-b987-4bb4-b07b-85488c5fdd80",
+          "issues": [],
+          "coordinateUncertaintyInMeters": 8000,
+          "administrativeBasis": "Publisher verbatim province; not a coordinate-derived guess",
+          "spatialCheck": "Naryn specimen: point within Naryn, uncertainty 8000m, boundary distance approx 56889m.",
+          "snapshotSha256": "f857538a25abdd347185fb3207349deeb396de3764a627c3a1decdfc38491f45",
+          "status": "documented_pending_review"
+        },
+        "decision": "accepted_documentary_specimen"
+      },
+      {
+        "speciesId": "eminium-regelii",
+        "taxonId": "2867729",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2867729&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 1,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "eremurus-zenaidae",
+        "taxonId": "2778824",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2778824&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 9,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "tulipa-korolkowii",
+        "taxonId": "5299568",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=5299568&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 11,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "allium-semenovii",
+        "taxonId": "2857114",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2857114&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 25,
+        "selectedEvidence": {
+          "occurrenceKey": 2625864765,
+          "url": "https://www.gbif.org/occurrence/2625864765",
+          "verbatimUrl": "https://api.gbif.org/v1/occurrence/2625864765/verbatim",
+          "countryCode": "KG",
+          "verbatimCountry": "Kyrgyzstan",
+          "verbatimStateProvince": "Ysyk-Kol",
+          "regionId": "issyk-kul",
+          "acceptedTaxonId": "gbif:2857114",
+          "acceptedScientificName": "Allium semenovii Regel",
+          "originalScientificName": "Allium semenovii Regel",
+          "rank": "SPECIES",
+          "eventDate": "1936-07-04",
+          "catalogNumber": "US 2090191",
+          "institutionCode": "US",
+          "datasetKey": "821cc27a-e3bb-4bc5-ac34-89ada245069d",
+          "issues": [
+            "OCCURRENCE_STATUS_INFERRED_FROM_INDIVIDUAL_COUNT"
+          ],
+          "coordinateUncertaintyInMeters": null,
+          "administrativeBasis": "Publisher verbatim province; not a coordinate-derived guess",
+          "spatialCheck": "No coordinate inference; uncertainty unknown where absent. Exact publisher administrative field used.",
+          "snapshotSha256": "3e4979e4b692ba054e11a0037edab7714e7cfb48bbae6241834333ec1595c603",
+          "status": "documented_pending_review"
+        },
+        "decision": "accepted_documentary_specimen"
+      },
+      {
+        "speciesId": "tulipa-platystemon",
+        "taxonId": "5299510",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=5299510&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 4,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "tulipa-tetraphylla",
+        "taxonId": "5299660",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=5299660&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 18,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "juno-orchioides",
+        "taxonId": "5298228",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=5298228&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 28,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Административные кандидаты найдены, но нет собственного catalogNumber в ответе; строгие требования существующего specimen-пути не обходятся. Требуется первичная коллекционная запись. Для Tulipa также не согласовано расхождение принятого имени в ответе."
+      },
+      {
+        "speciesId": "tulipa-zenaidae",
+        "taxonId": "5299646",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=5299646&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 26,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Административные кандидаты найдены, но нет собственного catalogNumber в ответе; строгие требования существующего specimen-пути не обходятся. Требуется первичная коллекционная запись. Для Tulipa также не согласовано расхождение принятого имени в ответе."
+      },
+      {
+        "speciesId": "delphinium-knorringianum",
+        "taxonId": "3930642",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=3930642&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 2,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "iridodictyum-kolpakowskianum",
+        "taxonId": "5299049",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=5299049&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 3,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "masaris-longicornis",
+        "taxonId": "1312316",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=1312316&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "oxyura-leucocephala",
+        "taxonId": "2498302",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2498302&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "gyps-himalayensis",
+        "taxonId": "9561629",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=9561629&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 1,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "haliaeetus-leucoryphus",
+        "taxonId": "2480453",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2480453&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 2,
+        "selectedEvidence": {
+          "occurrenceKey": 3446855612,
+          "url": "https://www.gbif.org/occurrence/3446855612",
+          "verbatimUrl": "https://api.gbif.org/v1/occurrence/3446855612/verbatim",
+          "countryCode": "KG",
+          "verbatimCountry": "Kyrgyzstan",
+          "verbatimStateProvince": "Issyk-Kul Region",
+          "regionId": "issyk-kul",
+          "acceptedTaxonId": "gbif:2480453",
+          "acceptedScientificName": "Haliaeetus leucoryphus (Pallas, 1771)",
+          "originalScientificName": "Haliaeetus leucoryphus (Pallas, 1771)",
+          "rank": "SPECIES",
+          "eventDate": "1896-07-20",
+          "catalogNumber": "http://id.luomus.fi/KS.UL2560",
+          "institutionCode": "MZH",
+          "datasetKey": "b89dcfd3-e410-4b40-907c-2348cd748060",
+          "issues": [
+            "TAXON_CONCEPT_ID_NOT_FOUND"
+          ],
+          "coordinateUncertaintyInMeters": null,
+          "administrativeBasis": "Publisher verbatim province; not a coordinate-derived guess",
+          "spatialCheck": "No coordinate inference; uncertainty unknown where absent. Exact publisher administrative field used.",
+          "snapshotSha256": "2265184ef8aefadd41c51db5702c4f515ec7eac7a14b6665c21212bccea134f9",
+          "status": "documented_pending_review"
+        },
+        "decision": "accepted_documentary_specimen"
+      },
+      {
+        "speciesId": "gyps-fulvus",
+        "taxonId": "2480389",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2480389&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "rhinolophus-bocharicus",
+        "taxonId": "4266846",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=4266846&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 9,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "MHNG: точка внутри Баткенской области, но uncertainty 10000м превышает расстояние до границы около 1900м. Областная принадлежность недостаточно надёжна."
+      },
+      {
+        "speciesId": "ursus-arctos",
+        "taxonId": "2433433",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2433433&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "tadarida-teniotis",
+        "taxonId": "2433009",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2433009&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 6,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "martes-foina",
+        "taxonId": "5218887",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=5218887&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "dictyocephalus-attenuatus",
+        "taxonId": "2530276",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2530276&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "prionus-tschitscherini",
+        "taxonId": "1147213",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=1147213&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "corydalis-pseudoadunca",
+        "taxonId": "5531646",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=5531646&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 9,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "rhodiola-litwinowii",
+        "taxonId": "7552101",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=7552101&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 8,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "fumariola-turkestanica",
+        "taxonId": "3602966",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=3602966&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 11,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "sibiraea-tianschanica",
+        "taxonId": "3032448",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=3032448&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 2,
+        "selectedEvidence": {
+          "occurrenceKey": 5833161152,
+          "url": "https://www.gbif.org/occurrence/5833161152",
+          "verbatimUrl": "https://api.gbif.org/v1/occurrence/5833161152/verbatim",
+          "countryCode": "KG",
+          "verbatimCountry": "Kyrgyzstan",
+          "verbatimStateProvince": "Issyk-Kul",
+          "regionId": "issyk-kul",
+          "acceptedTaxonId": "gbif:3032448",
+          "acceptedScientificName": "Sibiraea tianschanica (Krasn.) Pojark.",
+          "originalScientificName": "Sibiraea tianschanica (Krasn.) Pojark.",
+          "rank": "SPECIES",
+          "eventDate": "1962-08-23",
+          "catalogNumber": "1749873",
+          "institutionCode": "MICH",
+          "datasetKey": "c8d12f8a-7e39-4e2c-92d7-825d590ad15b",
+          "issues": [],
+          "coordinateUncertaintyInMeters": null,
+          "administrativeBasis": "Publisher verbatim province; not a coordinate-derived guess",
+          "spatialCheck": "No coordinate inference; uncertainty unknown where absent. Exact publisher administrative field used.",
+          "snapshotSha256": "f9dba692e305a6c282a33a168310258c9b7d3a082888a6fc0789340aeeeb12d3",
+          "status": "documented_pending_review"
+        },
+        "decision": "accepted_documentary_specimen"
+      },
+      {
+        "speciesId": "ammopiptanthus-nanus",
+        "taxonId": "2943139",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2943139&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 28,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Поле первоисточника Chuy or Naryn прямо неоднозначно; не делится на две подтверждённые области."
+      },
+      {
+        "speciesId": "physochlaina-alaica",
+        "taxonId": "3799874",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=3799874&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "colutea-brachyptera",
+        "taxonId": "2956464",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2956464&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 7,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Osh на исторической этикетке до образования Баткенской области в 1999 году; без разрешения конкретной административной неоднозначности не превращается в современную Ошскую область."
+      },
+      {
+        "speciesId": "incarvillea-olgae",
+        "taxonId": "4091178",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=4091178&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 3,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "saussurea-involucrata",
+        "taxonId": "5404194",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=5404194&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 10,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "zygophyllum-kaschgaricum",
+        "taxonId": "3987348",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=3987348&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "silene-sussamyrica",
+        "taxonId": "8240880",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=8240880&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 10,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "sclerotiaria-pentaceros",
+        "taxonId": "3635755",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=3635755&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 1,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "cnidiocarpa-alaica",
+        "taxonId": "3638564",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=3638564&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 7,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "kaufmannia-semenovii",
+        "taxonId": "8286447",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=8286447&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 3,
+        "selectedEvidence": {
+          "occurrenceKey": 890179680,
+          "url": "https://www.gbif.org/occurrence/890179680",
+          "verbatimUrl": "https://api.gbif.org/v1/occurrence/890179680/verbatim",
+          "countryCode": "KG",
+          "verbatimCountry": "Kyrgyzstan",
+          "verbatimStateProvince": "Ysyk-Köl",
+          "regionId": "issyk-kul",
+          "acceptedTaxonId": "gbif:8286447",
+          "acceptedScientificName": "Kaufmannia semenovii (Herder) Regel",
+          "originalScientificName": "Kaufmannia brachyanthera Losinsk.",
+          "rank": "SPECIES",
+          "eventDate": "2013-05-01",
+          "catalogNumber": "E00662335",
+          "institutionCode": "RBGE",
+          "datasetKey": "bf2a4bf0-5f31-11de-b67e-b8a03c50a862",
+          "issues": [
+            "CONTINENT_DERIVED_FROM_COORDINATES"
+          ],
+          "coordinateUncertaintyInMeters": null,
+          "administrativeBasis": "Publisher verbatim province; not a coordinate-derived guess",
+          "spatialCheck": "No coordinate inference; uncertainty unknown where absent. Exact publisher administrative field used.",
+          "snapshotSha256": "844769d1a99b48c1146df5b2fe6139f847a60cd201fcda05437b63103bf8264e",
+          "status": "documented_pending_review"
+        },
+        "decision": "accepted_documentary_specimen"
+      },
+      {
+        "speciesId": "acantholimon-compactum",
+        "taxonId": "4090676",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=4090676&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 4,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "scutellaria-nepetoides",
+        "taxonId": "5608807",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=5608807&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 1,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "scutellaria-andrachnoides",
+        "taxonId": "5610043",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=5610043&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 3,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "salvia-korolkowii",
+        "taxonId": "3898694",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=3898694&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 3,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Административные кандидаты найдены, но нет собственного catalogNumber в ответе; строгие требования существующего specimen-пути не обходятся. Требуется первичная коллекционная запись. Для Tulipa также не согласовано расхождение принятого имени в ответе."
+      },
+      {
+        "speciesId": "nathaliella-alaica",
+        "taxonId": "3737145",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=3737145&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 4,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "campanula-eugeniae",
+        "taxonId": "5411287",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=5411287&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 3,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "lonicera-paradoxa",
+        "taxonId": "5599068",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=5599068&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 1,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Административные кандидаты найдены, но нет собственного catalogNumber в ответе; строгие требования существующего specimen-пути не обходятся. Требуется первичная коллекционная запись. Для Tulipa также не согласовано расхождение принятого имени в ответе."
+      },
+      {
+        "speciesId": "trichanthemis-aulieatensis",
+        "taxonId": "3150861",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=3150861&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 2,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "lepidolopha-komarowii",
+        "taxonId": "5388509",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=5388509&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 4,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "kirgisobia-bohnei",
+        "taxonId": "1157491",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=1157491&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "aquila-nipalensis",
+        "taxonId": "2480513",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2480513&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "hieraaetus-pennatus",
+        "taxonId": "2480685",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2480685&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 2,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Turkestan не область Кыргызстана; TAXON_MATCH_HIGHERRANK исключает автоматическое использование."
+      },
+      {
+        "speciesId": "hieraaetus-fasciatus",
+        "taxonId": "5844449",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=5844449&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "glareola-nordmanni",
+        "taxonId": "2480758",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2480758&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "otostegia-schennikovii",
+        "taxonId": "7762981",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=7762981&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 42,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Osh на исторической этикетке до образования Баткенской области в 1999 году; без разрешения конкретной административной неоднозначности не превращается в современную Ошскую область."
+      },
+      {
+        "speciesId": "stemmacantha-aulieatensis",
+        "taxonId": "3142224",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=3142224&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 2,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "centaurea-alaica",
+        "taxonId": "10855762",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=10855762&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "dendrocopos-major",
+        "taxonId": "2477968",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2477968&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "pyrethrum-leontopodium",
+        "taxonId": "5389434",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=5389434&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 11,
+        "selectedEvidence": {
+          "occurrenceKey": 6160574399,
+          "url": "https://www.gbif.org/occurrence/6160574399",
+          "verbatimUrl": "https://api.gbif.org/v1/occurrence/6160574399/verbatim",
+          "countryCode": "KG",
+          "verbatimCountry": "Kyrgyzstan",
+          "verbatimStateProvince": "Chuy",
+          "regionId": "chuy",
+          "acceptedTaxonId": "gbif:5389434",
+          "acceptedScientificName": "Richteria leontopodium Winkl.",
+          "originalScientificName": "Richteria leontopodium Winkl.",
+          "rank": "SPECIES",
+          "eventDate": "1917-07-10",
+          "catalogNumber": "1816639",
+          "institutionCode": "MICH",
+          "datasetKey": "c8d12f8a-7e39-4e2c-92d7-825d590ad15b",
+          "issues": [],
+          "coordinateUncertaintyInMeters": null,
+          "administrativeBasis": "Publisher verbatim province; not a coordinate-derived guess",
+          "spatialCheck": "No coordinate inference; uncertainty unknown where absent. Exact publisher administrative field used.",
+          "snapshotSha256": "035b0f4f3ed91e53b17dbde0932c94f311711caf929205c206dcedf51c46c1b9",
+          "status": "documented_pending_review"
+        },
+        "decision": "accepted_documentary_specimen"
+      },
+      {
+        "speciesId": "hemiechinus-hypomelas",
+        "taxonId": "2437154",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2437154&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "allactaga-severtzovi",
+        "taxonId": "2439487",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2439487&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "anemone-obtusiloba",
+        "taxonId": "10404690",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=10404690&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 1,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "berberis-kaschgarica",
+        "taxonId": "3980999",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=3980999&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 17,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "dorema-microcarpum",
+        "taxonId": "295893852",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=295893852&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "sorbaria-olgae",
+        "taxonId": "3012117",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=3012117&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "parnassius-apollo-merzbacheri",
+        "taxonId": "177946994",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=177946994&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "parnassius-loxias-tashkorensis",
+        "taxonId": "307395113",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=307395113&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 0,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      },
+      {
+        "speciesId": "cuon-alpinus",
+        "taxonId": "2434317",
+        "query": "https://api.gbif.org/v1/occurrence/search?country=KG&taxonKey=2434317&basisOfRecord=PRESERVED_SPECIMEN&limit=100",
+        "status": "retrieved",
+        "records": 2,
+        "selectedEvidence": null,
+        "decision": "needs_evidence",
+        "reason": "Нет пригодного опубликованного образца с однозначной областью и достаточной идентичностью в сохранённом ответе (до 100 записей); отсутствие результатов не доказывает отсутствие вида."
+      }
+    ]
+  },
+  "monitoring": {
+    "source": {
+      "id": "mnr-besh-tash-2025",
+      "url": "https://www.mnr.gov.kg/ru/posts/news/v-bes-tasskom-gosudarstvennom-prirodnom-parke-zafiksirovany-dikie-zivotnye",
+      "title": "МПРЭТН КР. В Беш-Ташском государственном природном парке зафиксированы дикие животные",
+      "publicationDate": "2025-10-02",
+      "publicationYear": 2025,
+      "sourceTagConflict": "Страница помечена «Чуйская область», но текст указывает Беш-Таш и Таласскую долину. CAIAG независимо подтверждает Таласскую область. Ошибочный тег не использован.",
+      "snapshotSha256": "ea4785dc2c09002c03b4c93677cfa09c6345d620959f15f1dd0f36b28f86cb1b"
+    },
+    "records": [
+      {
+        "speciesId": "irbis",
+        "regionId": "talas",
+        "sourceCommonName": "снежный барс",
+        "observationYear": 2025,
+        "observationPeriod": "сентябрь 2025",
+        "evidenceType": "camera-trap-observation",
+        "locator": "Первый абзац, фотоловушки сентября 2025",
+        "administrativeSourceIds": [
+          "admin-protected"
+        ],
+        "status": "documented_pending_review",
+        "limits": "Не доказательство постоянного обитания, размера популяции или присутствия в 2026 году."
+      },
+      {
+        "speciesId": "argali",
+        "regionId": "talas",
+        "sourceCommonName": "архар",
+        "observationYear": 2025,
+        "observationPeriod": "сентябрь 2025",
+        "evidenceType": "camera-trap-observation",
+        "locator": "Первый абзац, фотоловушки сентября 2025",
+        "administrativeSourceIds": [
+          "admin-protected"
+        ],
+        "status": "documented_pending_review",
+        "limits": "Не доказательство постоянного обитания, размера популяции или присутствия в 2026 году."
+      },
+      {
+        "speciesId": "golden-eagle",
+        "regionId": "talas",
+        "sourceCommonName": "беркут",
+        "observationYear": null,
+        "observationPeriod": "Дата отдельного наблюдения не приведена; опубликованный в 2025 году список фауны парка.",
+        "evidenceType": "published-regional-fauna-list",
+        "locator": "Справочно: абзац о животном мире парка",
+        "administrativeSourceIds": [
+          "admin-protected"
+        ],
+        "status": "documented_pending_review",
+        "limits": "Не доказательство постоянного обитания, размера популяции или присутствия в 2026 году."
+      },
+      {
+        "speciesId": "saker-falcon",
+        "regionId": "talas",
+        "sourceCommonName": "балобан",
+        "observationYear": null,
+        "observationPeriod": "Дата отдельного наблюдения не приведена; опубликованный в 2025 году список фауны парка.",
+        "evidenceType": "published-regional-fauna-list",
+        "locator": "Справочно: абзац о животном мире парка",
+        "administrativeSourceIds": [
+          "admin-protected"
+        ],
+        "status": "documented_pending_review",
+        "limits": "Не доказательство постоянного обитания, размера популяции или присутствия в 2026 году."
+      },
+      {
+        "speciesId": "eurasian-lynx",
+        "regionId": "talas",
+        "sourceCommonName": "рысь",
+        "observationYear": null,
+        "observationPeriod": "Дата отдельного наблюдения не приведена; опубликованный в 2025 году список фауны парка.",
+        "evidenceType": "published-regional-fauna-list",
+        "locator": "Справочно: абзац о животном мире парка",
+        "administrativeSourceIds": [
+          "admin-protected"
+        ],
+        "status": "documented_pending_review",
+        "limits": "Не доказательство постоянного обитания, размера популяции или присутствия в 2026 году."
+      }
+    ]
+  },
+  "independentScientificApproval": null,
+  "wetlandSource": {
+    "id": "ramsar-sonkol-ris2010",
+    "url": "https://rsis.ramsar.org/sites/default/files/rsiswp_search/exports/Ramsar-Sites-annotated-summary-Kyrgyzstan.pdf",
+    "title": "Ramsar Sites Information Service. Son-Kol Lake, site 1943; most recent RIS information 2010",
+    "publicationYear": null,
+    "informationYear": 2010,
+    "page": 1,
+    "snapshotSha256": "a2e99413b1b788c2c710f9e2ab6024e5ff96dddf9094fa2723e03de6e97419ab",
+    "records": [
+      {
+        "speciesId": "black-stork",
+        "regionId": "naryn",
+        "scientificName": "Ciconia nigra",
+        "status": "documented_pending_review",
+        "observationYear": null,
+        "observationPeriod": "Список фауны участка; most recent RIS information 2010. Дата отдельного наблюдения и дата публикации сводного PDF неизвестны.",
+        "administrativeSourceIds": [
+          "admin-lakes",
+          "admin-naryn"
+        ]
+      },
+      {
+        "speciesId": "great-bustard",
+        "regionId": "naryn",
+        "scientificName": "Otis tarda",
+        "status": "needs_evidence",
+        "observationYear": null,
+        "observationPeriod": "Список фауны участка; most recent RIS information 2010. Дата отдельного наблюдения и дата публикации сводного PDF неизвестны.",
+        "administrativeSourceIds": [
+          "admin-lakes",
+          "admin-naryn"
+        ],
+        "reason": "Ramsar p.1 lists Otis tarda at species rank; current MURAS card is Otis tarda tarda. No subspecies determination in this source; no Naryn link admitted."
+      },
+      {
+        "speciesId": "saker-falcon",
+        "regionId": "naryn",
+        "scientificName": "Falco cherrug",
+        "status": "documented_pending_review",
+        "observationYear": null,
+        "observationPeriod": "Список фауны участка; most recent RIS information 2010. Дата отдельного наблюдения и дата публикации сводного PDF неизвестны.",
+        "administrativeSourceIds": [
+          "admin-lakes",
+          "admin-naryn"
+        ]
+      }
+    ]
+  }
+}
