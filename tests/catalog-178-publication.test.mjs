@@ -20,7 +20,8 @@ import { importSource, MAX_JSON_BYTES } from '../src/admin/data/model.js'
 
 const bytes=p=>readFile(`${PROJECT_ROOT}/${p}`)
 const read=async p=>JSON.parse(await bytes(p))
-const source=await read('data/species.source.json'),published=await read('public/data/species.json')
+// Immutable 178-record release; catalog-184-publication validates the live catalogue.
+const source=await read('data/backups/catalog-184/species.source.json'),published=await read('data/backups/catalog-184/public-species.json')
 const before=await read('data/backups/catalog-178/species.source.json')
 const beforePublic=await read('data/backups/catalog-178/public-species.json')
 const baseline=await read('data/backups/catalog-178/baseline.json')
@@ -153,7 +154,7 @@ test('replaying the actual owner decision is read-only and returns zero addition
 })
 
 test('the existing bounded admin importer accepts the 178-record source with no model changes',async()=>{
- const data=await bytes('data/species.source.json')
+ const data=await bytes('data/backups/catalog-184/species.source.json')
  assert.ok(data.length<MAX_JSON_BYTES)
  assert.deepEqual(importSource(data.toString('utf8')),source)
 })

@@ -47987,6 +47987,1717 @@
         "publishedAt": "2026-10-28",
         "researchFingerprint": "e9e13b9b8d1f8580837dfbe7326b877b98b030864229b35c7c976d137e198b55"
       }
+    },
+    {
+      "id": "sorbaria-olgae",
+      "scientificName": "Sorbaria tomentosa",
+      "names": {
+        "ru": "Рябинник Ольги",
+        "ky": "Ольга четиндиги",
+        "uz": "Sorbaria tomentosa",
+        "en": "Olga's Sorbaria"
+      },
+      "taxonomy": {
+        "kingdom": "Plantae",
+        "phylum": "Tracheophyta",
+        "class": "Magnoliopsida",
+        "order": "Rosales",
+        "family": "Rosaceae",
+        "genus": "Sorbaria"
+      },
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "CR B2ab(iii)",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Sorbaria olgae, с.126–127); Статус: CR B2ab(iii).  Редчайший узкоэндемичный вид Алайского хребта. Декоративен.",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "iucn": {
+        "category": null,
+        "year": null,
+        "sourceIds": []
+      },
+      "habitat": {
+        "description": {
+          "ky": null,
+          "uz": null,
+          "ru": "Склоны ущелья на северном склоне Алайского хребта, близ Шахимардана; историческая локализация национального очерка 2006 года.",
+          "en": null
+        },
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "regions": [
+        {
+          "code": "KG",
+          "type": "country",
+          "names": {
+            "ru": "Кыргызстан",
+            "ky": "Кыргызстан",
+            "uz": "Qirgʻiziston",
+            "en": "Kyrgyzstan"
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      ],
+      "threats": null,
+      "conservationMeasures": [
+        {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "В очерке 2006 года рекомендованы повторные обследования исторического района и организация охраняемого участка при обнаружении растения. Упоминания охраны 1975 и 1985 годов являются историческими сведениями.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      ],
+      "population": {
+        "type": "unknown",
+        "value": null,
+        "min": null,
+        "max": null,
+        "territory": null,
+        "year": null,
+        "unit": null,
+        "sourceIds": [],
+        "reviewStatus": "pending",
+        "method": null
+      },
+      "images": [],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; Sorbaria olgae, с.126–127",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=127",
+          "accessedAt": "2026-10-28",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.overview",
+            "content.shortDescription",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.appearance",
+            "conservationMeasures.0",
+            "names.ky",
+            "names.en"
+          ],
+          "notes": "Исторические сведения местного очерка. Названия KY проверены по первоисточнику, краткие описания KY/UZ/EN — редакционные переводы, не цитаты. Современное присутствие и правовой статус не заявлены."
+        },
+        {
+          "id": "sorbaria-full",
+          "title": "Song & Hong 2021. A taxonomic revision of Sorbaria. Phytotaxa 487(1):1–25",
+          "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+          "url": "https://doi.org/10.11646/phytotaxa.487.1.1",
+          "accessedAt": "2026-10-28",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "с.17, treatment 3 и ключ разновидностей; author_uploaded_full_text_web_reader; direct_download_403. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+        },
+        {
+          "id": "previous-powo-sorbaria",
+          "title": "POWO: Sorbaria olgae",
+          "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:741579-1",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "Taxonomy; Publications; web_indexed_primary_text. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone Taxonomy: Sorbaria tomentosa (Lindl.) Rehder; exact SPECIES",
+          "publisher": "GBIF / GBIF Backbone Taxonomy",
+          "url": "https://api.gbif.org/v1/species/3012117",
+          "accessedAt": "2026-10-28",
+          "language": "en",
+          "taxonId": "gbif:3012117",
+          "supports": [
+            "scientificName",
+            "names.uz",
+            "content.overview",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
+          ],
+          "notes": "Реальная принятая запись указанного dataset. EXACT — локальная строгая проверка canonicalName/rank, не вымышленный API match. nubKey/parentKey не подставлены. Issues: "
+        }
+      ],
+      "verified": false,
+      "lastReviewedAt": null,
+      "content": {
+        "shortDescription": {
+          "text": {
+            "ru": "Исторический рябинник Ольги из книги 2006 года, рассматриваемый в составе Sorbaria tomentosa. Современное состояние местных популяций неизвестно.",
+            "ky": "2006-жылкы китептеги Ольга четиндиги азыр Sorbaria tomentosa түрүнүн курамында каралат. Жергиликтүү популяциялардын азыркы абалы белгисиз.",
+            "uz": "2006-yilgi kitobdagi Sorbaria olgae hozir Sorbaria tomentosa tarkibida talqin qilinadi. Mahalliy populyatsiyalarning hozirgi holati nomaʼlum.",
+            "en": "The historical Olga’s sorbaria account of 2006 is interpreted within Sorbaria tomentosa. The current state of local populations is unknown."
+          },
+          "sourceIds": [
+            "national-book",
+            "sorbaria-full"
+          ]
+        },
+        "overview": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Рябинник Ольги — историческое имя местного кустарника, которому посвящён отдельный очерк Красной книги Кыргызстана 2006 года. Для этой образовательной карточки выбран современный вид Sorbaria tomentosa: ревизия Song и Hong 2021 года прямо относит Sorbaria olgae Zinserling к его синонимам, а POWO уточняет номинативную разновидность tomentosa. Таким образом, речь не о новом определении по похожему названию, а о документированном таксономическом переходе. Охранные сведения местного очерка нельзя автоматически распространять на весь современный вид.\n\nВ национальном описании местной формы отмечены голые ветви и непарноперистые листья с 15–19 яйцевидно-ланцетными листочками. Их край дважды зубчатый, нижняя сторона имеет отдельные простые волоски по жилкам. Описана разветвлённая система соцветий. Эти признаки пересказаны для исторического материала olgae, а не как исчерпывающая диагностика всех разновидностей Sorbaria tomentosa. Склоны ущелья на северном склоне Алайского хребта, близ Шахимардана; историческая локализация национального очерка 2006 года. Кустарниковая жизненная форма подтверждена национальным описанием. Подробные экологические зависимости и сведения о культивировании в русском очерке отсутствуют; предположение английской версии о роли выпаса не принято за установленную угрозу.\n\nНациональный источник указывает цветение в мае и плодоношение в июле. Другие особенности размножения названы неизученными; успешное современное воспроизводство местной популяции не утверждается.\n\nКнига сообщает о находке 1871 года близ Шахимардана и безуспешных последующих поисках. Это состояние знаний на 2006 год, а не доказательство современного исчезновения или наличия живой популяции. Ферганский тип, приведённый в ревизии 2021, не объявляется новой находкой в Кыргызстане.\n\nВ очерке 2006 года рекомендованы повторные обследования исторического района и организация охраняемого участка при обнаружении растения. Упоминания охраны 1975 и 1985 годов являются историческими сведениями.\n\nНациональная категория относится к местной исторической единице охраны, описанной в 2006 году. Она не является глобальной оценкой всего принятого таксона, современной категорией IUCN или проверенным правовым статусом 2026 года. Современная национальная численность остаётся неизвестной; независимая научная проверка ожидается.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book",
+            "sorbaria-full",
+            "previous-powo-sorbaria",
+            "gbif-taxonomy"
+          ]
+        },
+        "appearance": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "В национальном описании местной формы отмечены голые ветви и непарноперистые листья с 15–19 яйцевидно-ланцетными листочками. Их край дважды зубчатый, нижняя сторона имеет отдельные простые волоски по жилкам. Описана разветвлённая система соцветий. Эти признаки пересказаны для исторического материала olgae, а не как исчерпывающая диагностика всех разновидностей Sorbaria tomentosa.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "ecology": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Кустарниковая жизненная форма подтверждена национальным описанием. Подробные экологические зависимости и сведения о культивировании в русском очерке отсутствуют; предположение английской версии о роли выпаса не принято за установленную угрозу.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "diet": null,
+        "reproduction": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Национальный источник указывает цветение в мае и плодоношение в июле. Другие особенности размножения названы неизученными; успешное современное воспроизводство местной популяции не утверждается.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "distribution": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Книга сообщает о находке 1871 года близ Шахимардана и безуспешных последующих поисках. Это состояние знаний на 2006 год, а не доказательство современного исчезновения или наличия живой популяции. Ферганский тип, приведённый в ревизии 2021, не объявляется новой находкой в Кыргызстане.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      },
+      "publication": {
+        "status": "provisional",
+        "scientificReviewStatus": "pending",
+        "independentReviewer": null,
+        "decisionId": "muras-25-11-owner-provisional",
+        "publishedAt": "2026-10-28",
+        "researchFingerprint": "c90fe2e86b7075bc2e879d2498b069218f3eb0a781886907e17efd8389e4bb4b"
+      }
+    },
+    {
+      "id": "dorema-microcarpum",
+      "scientificName": "Ferula namanganica",
+      "names": {
+        "ru": "Дорема мелкоплодная",
+        "ky": "Майда мөмөлүү дорема",
+        "uz": "Ferula namanganica",
+        "en": "Microcarpous Dorema"
+      },
+      "taxonomy": {
+        "kingdom": "Plantae",
+        "phylum": "Tracheophyta",
+        "class": "Magnoliopsida",
+        "order": "Apiales",
+        "family": "Apiaceae",
+        "genus": "Ferula"
+      },
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Dorema microcarpum, с.174–175); Статус: VU. Редкий эндемичный вид.",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "iucn": {
+        "category": null,
+        "year": null,
+        "sourceIds": []
+      },
+      "habitat": {
+        "description": {
+          "ky": null,
+          "uz": null,
+          "ru": "Исторически указаны гипсоносные и глинистые обнажения, щебнисто-каменистые склоны и сухие водотоки, среди разреженной гипсофильной растительности и ксерофильных кустарников на высотах 700–1800 м.",
+          "en": null
+        },
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "regions": [
+        {
+          "code": "KG",
+          "type": "country",
+          "names": {
+            "ru": "Кыргызстан",
+            "ky": "Кыргызстан",
+            "uz": "Qirgʻiziston",
+            "en": "Kyrgyzstan"
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Национальный очерк связывает уязвимость с антропогенным воздействием, не разделяя его количественно по видам нагрузки. Современная сила воздействия не установлена.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      ],
+      "conservationMeasures": [
+        {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "В 2006 году предложены учёт численности и введение в культуру; выполнение этих предложений современными данными не подтверждено.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      ],
+      "population": {
+        "type": "unknown",
+        "value": null,
+        "min": null,
+        "max": null,
+        "territory": null,
+        "year": null,
+        "unit": null,
+        "sourceIds": [],
+        "reviewStatus": "pending",
+        "method": null
+      },
+      "images": [],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; Dorema microcarpum, с.174–175",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=175",
+          "accessedAt": "2026-10-28",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.overview",
+            "content.shortDescription",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.appearance",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.ky",
+            "names.en"
+          ],
+          "notes": "Исторические сведения местного очерка. Названия KY проверены по первоисточнику, краткие описания KY/UZ/EN — редакционные переводы, не цитаты. Современное присутствие и правовой статус не заявлены."
+        },
+        {
+          "id": "ferula-2023",
+          "title": "Puchałka et al. 2023. Phylogenetic position of Dorema within Ferula. Plant Systematics and Evolution 309:28",
+          "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+          "url": "https://link.springer.com/article/10.1007/s00606-023-01857-z",
+          "accessedAt": "2026-10-28",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "Introduction / Methods / Dorema microcarpum; primary_full_text. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+        },
+        {
+          "id": "ncbi-ferula",
+          "title": "NCBI Taxonomy 2928647: Ferula namanganica",
+          "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+          "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2928647",
+          "accessedAt": "2026-10-28",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "Homotypic synonym; primary_taxonomic_record. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+        },
+        {
+          "id": "previous-powo-ferula",
+          "title": "POWO: Ferula namanganica",
+          "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77331188-1",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "docs/evidence/catalog-200-source-review.json#powo-ferula; existing_primary_review_reused. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "Catalogue of Life: Ferula namanganica Sennikov; exact SPECIES",
+          "publisher": "GBIF / Catalogue of Life",
+          "url": "https://api.gbif.org/v1/species/295893852",
+          "accessedAt": "2026-10-28",
+          "language": "en",
+          "taxonId": "gbif:295893852",
+          "supports": [
+            "scientificName",
+            "names.uz",
+            "content.overview",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
+          ],
+          "notes": "Реальная принятая запись указанного dataset. EXACT — локальная строгая проверка canonicalName/rank, не вымышленный API match. nubKey/parentKey не подставлены. Issues: BACKBONE_MATCH_NONE"
+        }
+      ],
+      "verified": false,
+      "lastReviewedAt": null,
+      "content": {
+        "shortDescription": {
+          "text": {
+            "ru": "Растение сухих гипсоносных и каменистых склонов из очерка Dorema microcarpum 2006 года. Принятое имя — Ferula namanganica; современная численность неизвестна.",
+            "ky": "2006-жылкы Dorema microcarpum очеркиндеги кургак гипстүү жана таштак беттердин өсүмдүгү. Азыркы кабыл алынган аты — Ferula namanganica; саны белгисиз.",
+            "uz": "Oʻsimlik 2006-yilgi Dorema microcarpum ocherkida quruq gipsli va toshloq yonbagʻirlardan keltirilgan. Qabul qilingan nomi Ferula namanganica; hozirgi soni nomaʼlum.",
+            "en": "A dry gypsum and rocky-slope plant treated as Dorema microcarpum in 2006. Its accepted name is Ferula namanganica; current abundance is unknown."
+          },
+          "sourceIds": [
+            "national-book",
+            "ferula-2023"
+          ]
+        },
+        "overview": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Дорема мелкоплодная включена в национальную книгу 2006 года под именем Dorema microcarpum Korovin. Современное принятое имя этой карточки — Ferula namanganica Sennikov. Гомотипную связь имён указывает POWO, а молекулярная работа Puchałka и соавторов 2023 года рассматривает этот материал в составе Ferula. Выбран точный видовой ключ Catalogue of Life, представленный в GBIF; название Ferula microcarpum из иного ответа backbone автоматически не подставлено.\n\nПо национальному очерку это стержнекорневое многолетнее растение с одиночным стеблем высотой до 1–1,5 м. Прикорневые листья многократно рассечены, стеблевые сильно уменьшены. Цветки с жёлтыми лепестками собраны в простые зонтички на коротких ножках. Овальные или продолговатые плоды имеют узкие краевые крылья. Исторически указаны гипсоносные и глинистые обнажения, щебнисто-каменистые склоны и сухие водотоки, среди разреженной гипсофильной растительности и ксерофильных кустарников на высотах 700–1800 м. Национальный очерк характеризует растение как монокарпический многолетник сухих склонов. Данные о культивировании и детальная современная оценка экологических зависимостей отсутствуют.\n\nРазмножение семенное, цветение в мае–июне по русской версии очерка. Месяцы плодоношения расходятся между русским и английским текстами; точный современный календарь здесь не назначен.\n\nВ книге указаны обращённые к Ферганской долине склоны Чаткальского, Ферганского и Алайского хребтов. Это историческое национальное свидетельство. POWO перечисляет в современном ареале Узбекистан; расхождение географического охвата явно сохраняется, а не превращается в подтверждение современной популяции Кыргызстана.\n\nНациональный очерк связывает уязвимость с антропогенным воздействием, не разделяя его количественно по видам нагрузки. Современная сила воздействия не установлена. В 2006 году предложены учёт численности и введение в культуру; выполнение этих предложений современными данными не подтверждено.\n\nНациональная категория относится к местной исторической единице охраны, описанной в 2006 году. Она не является глобальной оценкой всего принятого таксона, современной категорией IUCN или проверенным правовым статусом 2026 года. Современная национальная численность остаётся неизвестной; независимая научная проверка ожидается.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book",
+            "ferula-2023",
+            "ncbi-ferula",
+            "previous-powo-ferula",
+            "gbif-taxonomy"
+          ]
+        },
+        "appearance": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "По национальному очерку это стержнекорневое многолетнее растение с одиночным стеблем высотой до 1–1,5 м. Прикорневые листья многократно рассечены, стеблевые сильно уменьшены. Цветки с жёлтыми лепестками собраны в простые зонтички на коротких ножках. Овальные или продолговатые плоды имеют узкие краевые крылья.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "ecology": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Национальный очерк характеризует растение как монокарпический многолетник сухих склонов. Данные о культивировании и детальная современная оценка экологических зависимостей отсутствуют.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "diet": null,
+        "reproduction": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Размножение семенное, цветение в мае–июне по русской версии очерка. Месяцы плодоношения расходятся между русским и английским текстами; точный современный календарь здесь не назначен.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "distribution": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "В книге указаны обращённые к Ферганской долине склоны Чаткальского, Ферганского и Алайского хребтов. Это историческое национальное свидетельство. POWO перечисляет в современном ареале Узбекистан; расхождение географического охвата явно сохраняется, а не превращается в подтверждение современной популяции Кыргызстана.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      },
+      "publication": {
+        "status": "provisional",
+        "scientificReviewStatus": "pending",
+        "independentReviewer": null,
+        "decisionId": "muras-25-11-owner-provisional",
+        "publishedAt": "2026-10-28",
+        "researchFingerprint": "28196ecc55278901d71b2f203a92dfc9d22fc8436374df2d9d37416fccb4166c"
+      }
+    },
+    {
+      "id": "tianschaniella-umbellifera",
+      "scientificName": "Tianschaniella umbellulifera",
+      "names": {
+        "ru": "Тяньшаночка зонтиконосная",
+        "ky": "Чатырчалуу тяньшанчек",
+        "uz": "Tianschaniella umbellulifera",
+        "en": "Tianschaniella"
+      },
+      "taxonomy": {
+        "kingdom": "Plantae",
+        "phylum": "Tracheophyta",
+        "class": "Magnoliopsida",
+        "order": "Boraginales",
+        "family": "Boraginaceae",
+        "genus": "Tianschaniella"
+      },
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Tianschaniella umbellifera, с.200–201); Статус:  VU.  Значительно сокращающийся узкоэндемичный вид Центрального Тянь-Шаня.",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "iucn": {
+        "category": null,
+        "year": null,
+        "sourceIds": []
+      },
+      "habitat": {
+        "description": {
+          "ky": null,
+          "uz": null,
+          "ru": "Маломощные мелкоземистые участки среди скал по берегам рек и в ущельях верхнего горного пояса; национальные сведения 2006 года.",
+          "en": null
+        },
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "regions": [
+        {
+          "code": "KG",
+          "type": "country",
+          "names": {
+            "ru": "Кыргызстан",
+            "ky": "Кыргызстан",
+            "uz": "Qirgʻiziston",
+            "en": "Kyrgyzstan"
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Книга 2006 года указывает нарушение местообитаний при бессистемном выпасе скота; современный уровень нагрузки не оценён.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      ],
+      "conservationMeasures": [
+        {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "В источнике рекомендованы изучение ареала и состояния популяций, создание ботанического заказника в местах концентрации растения. Историческое включение в книгу Киргизской ССР 1985 года не названо проверенным текущим правовым статусом.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      ],
+      "population": {
+        "type": "unknown",
+        "value": null,
+        "min": null,
+        "max": null,
+        "territory": null,
+        "year": null,
+        "unit": null,
+        "sourceIds": [],
+        "reviewStatus": "pending",
+        "method": null
+      },
+      "images": [],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; Tianschaniella umbellifera, с.200–201",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=201",
+          "accessedAt": "2026-10-28",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.overview",
+            "content.shortDescription",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.appearance",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.ky",
+            "names.en"
+          ],
+          "notes": "Исторические сведения местного очерка. Названия KY проверены по первоисточнику, краткие описания KY/UZ/EN — редакционные переводы, не цитаты. Современное присутствие и правовой статус не заявлены."
+        },
+        {
+          "id": "wwf-tians-2017",
+          "title": "Balbakova, Alamanov, Lipka, Pereladova 2017. Climate Change Vulnerability Assessment… Central Tian Shan Region of the Kyrgyz Republic",
+          "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+          "url": "https://files.worldwildlife.org/wwfcmsprod/files/Publication/file/7fw9zpus8w_AHM_Kyrgyzstan_Climate_Vulnerability_Assessment_WEB_Final.pdf",
+          "accessedAt": "2026-10-28",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "с.9, таблица 2, строка Tianschaniella umbellulifera* и сноска; primary_regional_report_table_and_footnote. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+        },
+        {
+          "id": "tians-types-2015",
+          "title": "Овчинникова С.В. 2015. Типификация названий трех видов Boraginaceae. Новости систематики высших растений 46:164–170",
+          "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+          "url": "https://www.binran.ru/files/journals/Novitates/2015_46/NSPV-46_20-Ovchinnikova.pdf",
+          "accessedAt": "2026-10-28",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "с.164–166; таблица I; publisher_pdf_downloaded_and_read. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+        },
+        {
+          "id": "previous-powo-tianschaniella",
+          "title": "POWO: Tianschaniella umbellulifera",
+          "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:120865-1",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "Taxonomy; Homotypic Synonyms; Bot. Mater. Gerb. 14:338 (1951); web_indexed_primary_text. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone Taxonomy: Tianschaniella umbellulifera B.Fedtsch. ex Popov, 1951; exact SPECIES",
+          "publisher": "GBIF / GBIF Backbone Taxonomy",
+          "url": "https://api.gbif.org/v1/species/10874182",
+          "accessedAt": "2026-10-28",
+          "language": "en",
+          "taxonId": "gbif:10874182",
+          "supports": [
+            "scientificName",
+            "names.uz",
+            "content.overview",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
+          ],
+          "notes": "Реальная принятая запись указанного dataset. EXACT — локальная строгая проверка canonicalName/rank, не вымышленный API match. nubKey/parentKey не подставлены. Issues: "
+        }
+      ],
+      "verified": false,
+      "lastReviewedAt": null,
+      "content": {
+        "shortDescription": {
+          "text": {
+            "ru": "Многолетник скалистых речных берегов Центрального Тянь-Шаня из национального очерка 2006 года. Корректное имя — Tianschaniella umbellulifera.",
+            "ky": "2006-жылкы улуттук очерктеги Борбордук Теңир-Тоонун аскалуу дарыя жээктеринин көп жылдык өсүмдүгү. Туура илимий аты — Tianschaniella umbellulifera.",
+            "uz": "Markaziy Tyanshanning qoyali daryo qirgʻoqlarida oʻsuvchi koʻp yillik oʻsimlik, 2006-yilgi milliy ocherkda keltirilgan. Toʻgʻri nomi — Tianschaniella umbellulifera.",
+            "en": "A perennial of rocky river banks in the Central Tien Shan, treated in the 2006 national account. The correct name is Tianschaniella umbellulifera."
+          },
+          "sourceIds": [
+            "national-book",
+            "wwf-tians-2017"
+          ]
+        },
+        "overview": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Тяньшаночка зонтиконосная — многолетнее растение Центрального Тянь-Шаня, рассмотренное в книге Кыргызстана 2006 года с написанием Tianschaniella umbellifera. Здесь принято Tianschaniella umbellulifera B.Fedtsch. ex Popov. Основание перехода — типификация Овчинниковой 2015 года и региональная таблица WWF 2017 года, прямо связывающая корректное имя с национальной книгой. Альтернативная гомотипная комбинация Lappula umbellulifera не является дополнительным видом для каталога.\n\nВ национальном очерке описаны тонкие восходящие стебли высотой 30–40 см, розетки прикорневых листьев и прижатоопушённые стеблевые листья. Пучки цветоножек создают ложнозонтиковидное соцветие. Венчик голубоватый или беловатый; плод распадается на орешки с крылатыми краями и якорными шипиками. Маломощные мелкоземистые участки среди скал по берегам рек и в ущельях верхнего горного пояса; национальные сведения 2006 года. Источник описывает рост отдельными растениями или небольшими группами. Количественная оценка размеров современных популяций этим не устанавливается. В сведениях о цветении имеются различия между языковыми версиями книги; они не исправлены догадкой.\n\nРазмножение в национальном очерке семенное. Фенологические сроки расходятся между версиями: русский текст даёт июль–август для цветения, английский — июнь–июль. Точный единый календарь до уточнения не заявлен.\n\nИсторический очерк связывает растение с Центральным Тянь-Шанем: сырты Иссык-Кульской области, южный макросклон Терскей Ала-Тоо, Торугартский хребет и окрестности Чатыр-Куля. Лектотип LE01013870 из Центрального Тянь-Шаня документирует применение правильного имени, но не современную численность.\n\nКнига 2006 года указывает нарушение местообитаний при бессистемном выпасе скота; современный уровень нагрузки не оценён. В источнике рекомендованы изучение ареала и состояния популяций, создание ботанического заказника в местах концентрации растения. Историческое включение в книгу Киргизской ССР 1985 года не названо проверенным текущим правовым статусом.\n\nНациональная категория относится к местной исторической единице охраны, описанной в 2006 году. Она не является глобальной оценкой всего принятого таксона, современной категорией IUCN или проверенным правовым статусом 2026 года. Современная национальная численность остаётся неизвестной; независимая научная проверка ожидается.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book",
+            "wwf-tians-2017",
+            "tians-types-2015",
+            "previous-powo-tianschaniella",
+            "gbif-taxonomy"
+          ]
+        },
+        "appearance": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "В национальном очерке описаны тонкие восходящие стебли высотой 30–40 см, розетки прикорневых листьев и прижатоопушённые стеблевые листья. Пучки цветоножек создают ложнозонтиковидное соцветие. Венчик голубоватый или беловатый; плод распадается на орешки с крылатыми краями и якорными шипиками.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "ecology": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Источник описывает рост отдельными растениями или небольшими группами. Количественная оценка размеров современных популяций этим не устанавливается. В сведениях о цветении имеются различия между языковыми версиями книги; они не исправлены догадкой.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "diet": null,
+        "reproduction": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Размножение в национальном очерке семенное. Фенологические сроки расходятся между версиями: русский текст даёт июль–август для цветения, английский — июнь–июль. Точный единый календарь до уточнения не заявлен.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "distribution": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Исторический очерк связывает растение с Центральным Тянь-Шанем: сырты Иссык-Кульской области, южный макросклон Терскей Ала-Тоо, Торугартский хребет и окрестности Чатыр-Куля. Лектотип LE01013870 из Центрального Тянь-Шаня документирует применение правильного имени, но не современную численность.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      },
+      "publication": {
+        "status": "provisional",
+        "scientificReviewStatus": "pending",
+        "independentReviewer": null,
+        "decisionId": "muras-25-11-owner-provisional",
+        "publishedAt": "2026-10-28",
+        "researchFingerprint": "912c3c2bf6677a48e7d97c8a429dcf5851c8d78d2bdcf357260872a03c51e48e"
+      }
+    },
+    {
+      "id": "parnassius-loxias-tashkorensis",
+      "scientificName": "Parnassius loxias loxias",
+      "names": {
+        "ru": "Аполлон Локсиас, исторический ташкорооский подвид",
+        "ky": "Локсиас калдырканы",
+        "uz": "Parnassius loxias loxias",
+        "en": "Loxias Apollo Butterfly"
+      },
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Lepidoptera",
+        "family": "Papilionidae",
+        "genus": "Parnassius"
+      },
+      "group": "arthropods",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "II [VU B1ac(v)+2ab(iii)c(v); D2]",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Parnassius loxias tashkorensis, с.266–267); Статус: II категория (VU B1ac(v)+2ab(iii)c(v); D2) . Изолированный подвид чрезвычайно локально и спорадично",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "iucn": {
+        "category": null,
+        "year": null,
+        "sourceIds": []
+      },
+      "habitat": {
+        "description": {
+          "ky": null,
+          "uz": null,
+          "ru": "Крутые сухие эродированные глинисто-каменистые склоны с кормовым растением в среднегорном поясе, на высотах 2500–3100 м по национальному очерку.",
+          "en": null
+        },
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "regions": [
+        {
+          "code": "KG",
+          "type": "country",
+          "names": {
+            "ru": "Кыргызстан",
+            "ky": "Кыргызстан",
+            "uz": "Qirgʻiziston",
+            "en": "Kyrgyzstan"
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Национальный очерк указывает изоляцию, малую площадь мест обитания и зависимость от кормового растения; перевыпас, эрозия и горные разработки названы потенциальными воздействиями.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      ],
+      "conservationMeasures": [
+        {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "В 2006 году предложены микрорезерваты, мониторинг размножения и регулирование нагрузки на растительность. Искусственное расширение ареала остаётся предложением того источника, не выполненной мерой.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      ],
+      "population": {
+        "type": "unknown",
+        "value": null,
+        "min": null,
+        "max": null,
+        "territory": null,
+        "year": null,
+        "unit": null,
+        "sourceIds": [],
+        "reviewStatus": "pending",
+        "method": null
+      },
+      "images": [],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; Parnassius loxias tashkorensis, с.266–267",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=267",
+          "accessedAt": "2026-10-28",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.overview",
+            "content.shortDescription",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.appearance",
+            "content.diet",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.ky",
+            "names.en"
+          ],
+          "notes": "Исторические сведения местного очерка. Названия KY проверены по первоисточнику, краткие описания KY/UZ/EN — редакционные переводы, не цитаты. Современное присутствие и правовой статус не заявлены."
+        },
+        {
+          "id": "huang-2023",
+          "title": "Huang H. 2023. Contributions to the study of butterflies from Xinjiang — 1: the genus Parnassius. Atalanta 54(1/2)",
+          "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+          "url": "https://www.researchgate.net/publication/376002146_Contributions_to_the_study_of_butterflies_from_Xinjiang_-1_the_genus_Parnassius_LatreiLLe_1804_Lepidoptera_Papilionidae_by",
+          "accessedAt": "2026-10-28",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "с.154–155: apollo merzbacheri; с.166–167: loxias; author_uploaded_full_text. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+        },
+        {
+          "id": "kiev-types-2001",
+          "title": "Писанец Е.М. (ред.). 2001. Каталог типовых экземпляров Зоологического музея ННПМ НАН Украины, вып.1",
+          "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+          "url": "https://museumkiev.org/upload/zoo/Catalog_types_Zoological_museum_2001.pdf",
+          "accessedAt": "2026-10-28",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "печатная с.71 / PDF-страница 75; primary_museum_catalog. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+        },
+        {
+          "id": "kreuzberg-biblio-2016",
+          "title": "Atalanta 47(1/2):265–277, 2016. Биография и список публикаций А.В.А. Крейцберга",
+          "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+          "url": "https://www.zobodat.at/pdf/Atalanta_47_0265-0277.pdf",
+          "accessedAt": "2026-10-28",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "Список публикаций, позиции 5–6; indexed_primary_bibliography; direct_web_pdf_error. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+        },
+        {
+          "id": "previous-loxias-original-reference",
+          "title": "Kreuzberg: Parnassius loxias tashkorensis",
+          "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+          "url": "https://repository.naturalis.nl/pub/318175/ZM1993067015.pdf",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "Reference: Kreuzberg 1983, pp.157–162; not a reviewed original description; web_indexed_bibliographic_reference_only. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "Catalogue of Life: Parnassius loxias subsp. loxias; exact SUBSPECIES",
+          "publisher": "GBIF / Catalogue of Life",
+          "url": "https://api.gbif.org/v1/species/307395113",
+          "accessedAt": "2026-10-28",
+          "language": "en",
+          "taxonId": "gbif:307395113",
+          "supports": [
+            "scientificName",
+            "names.uz",
+            "content.overview",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
+          ],
+          "notes": "Реальная принятая запись указанного dataset. EXACT — локальная строгая проверка canonicalName/rank, не вымышленный API match. nubKey/parentKey не подставлены. Issues: BACKBONE_MATCH_NONE"
+        }
+      ],
+      "verified": false,
+      "lastReviewedAt": null,
+      "content": {
+        "shortDescription": {
+          "text": {
+            "ru": "Историческая ташкорооская форма из книги 2006 года рассматривается как Parnassius loxias loxias. Подвидовой охват сохранён; современная численность неизвестна.",
+            "ky": "2006-жылкы китептеги тарыхый ташкороос формасы Parnassius loxias loxias деп каралат. Түрчөнүн так чеги сакталган; азыркы саны белгисиз.",
+            "uz": "2006-yilgi kitobdagi tarixiy tashkorensis shakli Parnassius loxias loxias sifatida talqin qilinadi. Kenja tur doirasi saqlangan; hozirgi soni nomaʼlum.",
+            "en": "The historical tashkorensis account of 2006 is interpreted as Parnassius loxias loxias. Subspecies scope is retained; current abundance is unknown."
+          },
+          "sourceIds": [
+            "national-book",
+            "huang-2023"
+          ]
+        },
+        "overview": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Национальный очерк 2006 года посвящён ташкорооскому аполлону, названному Parnassius loxias tashkorensis Kreuzberg, 1984. В этой карточке использовано решение №25.8: современная обработка Huang 2023 относит tashkorensis к номинативному подвиду Parnassius loxias loxias. Поэтому сохранён именно подвидовой ранг; родительский вид не подставляется вместо местной единицы охраны. Музейный каталог Киева независимо документирует паратип из Уч-Чат хребта Каинды.\n\nВ описании местной формы преобладает белая окраска крыльев, на передних крыльях имеются тёмные поперечные элементы, на задних — небольшие красные пятна в тонком чёрном ободке. По внешнему краю проходит полупрозрачная кайма. Длина переднего крыла указана как 33–35 мм; это характеристика исторического материала, не размер всей современной популяции. Крутые сухие эродированные глинисто-каменистые склоны с кормовым растением в среднегорном поясе, на высотах 2500–3100 м по национальному очерку. В книге личинки связаны с хохлаткой Краснова Corydalis krasnovi. Они активны ночью и прячутся днём под камнями; взрослые питаются нектаром. Изолированность участков и тесная связь с кормовым растением ограничивают расселение местной формы.\n\nНациональный источник называет листья Corydalis krasnovi кормом гусениц; для взрослых приводит посещение цветков дикого лука и сложноцветных. Эти наблюдения не обобщаются на все подвиды Parnassius loxias. По книге развивается одно поколение в год. Гусеница первого возраста зимует внутри яйцевой оболочки; самки откладывают яйца на камни рядом с кормовыми растениями. Исторически лёт отмечали с середины июня до середины августа.\n\nИсторические местонахождения ташкорооской формы указаны в бассейне левых притоков Сары-Джаза, у западных оконечностей Каинды-Катта и Иныльчек-Тоо. Современная синонимия с номинативным подвидом не превращает все его зарубежные места в национальные. Новое обследование этих популяций не заявлено.\n\nНациональный очерк указывает изоляцию, малую площадь мест обитания и зависимость от кормового растения; перевыпас, эрозия и горные разработки названы потенциальными воздействиями. В 2006 году предложены микрорезерваты, мониторинг размножения и регулирование нагрузки на растительность. Искусственное расширение ареала остаётся предложением того источника, не выполненной мерой.\n\nНациональная категория относится к местной исторической единице охраны, описанной в 2006 году. Она не является глобальной оценкой всего принятого таксона, современной категорией IUCN или проверенным правовым статусом 2026 года. Современная национальная численность остаётся неизвестной; независимая научная проверка ожидается.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book",
+            "huang-2023",
+            "kiev-types-2001",
+            "kreuzberg-biblio-2016",
+            "previous-loxias-original-reference",
+            "gbif-taxonomy"
+          ]
+        },
+        "appearance": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "В описании местной формы преобладает белая окраска крыльев, на передних крыльях имеются тёмные поперечные элементы, на задних — небольшие красные пятна в тонком чёрном ободке. По внешнему краю проходит полупрозрачная кайма. Длина переднего крыла указана как 33–35 мм; это характеристика исторического материала, не размер всей современной популяции.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "ecology": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "В книге личинки связаны с хохлаткой Краснова Corydalis krasnovi. Они активны ночью и прячутся днём под камнями; взрослые питаются нектаром. Изолированность участков и тесная связь с кормовым растением ограничивают расселение местной формы.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "diet": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Национальный источник называет листья Corydalis krasnovi кормом гусениц; для взрослых приводит посещение цветков дикого лука и сложноцветных. Эти наблюдения не обобщаются на все подвиды Parnassius loxias.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "reproduction": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "По книге развивается одно поколение в год. Гусеница первого возраста зимует внутри яйцевой оболочки; самки откладывают яйца на камни рядом с кормовыми растениями. Исторически лёт отмечали с середины июня до середины августа.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "distribution": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Исторические местонахождения ташкорооской формы указаны в бассейне левых притоков Сары-Джаза, у западных оконечностей Каинды-Катта и Иныльчек-Тоо. Современная синонимия с номинативным подвидом не превращает все его зарубежные места в национальные. Новое обследование этих популяций не заявлено.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      },
+      "publication": {
+        "status": "provisional",
+        "scientificReviewStatus": "pending",
+        "independentReviewer": null,
+        "decisionId": "muras-25-11-owner-provisional",
+        "publishedAt": "2026-10-28",
+        "researchFingerprint": "612ac26580cd1f08e979517dd605e977c18ad250ce891b6333359193581b072a"
+      }
+    },
+    {
+      "id": "parnassius-apollo-merzbacheri",
+      "scientificName": "Parnassius apollo merzbacheri",
+      "names": {
+        "ru": "Аполлон обыкновенный, подвид Мерцбахера",
+        "ky": "Мерцбахер (кадимки) калдырканы",
+        "uz": "Parnassius apollo merzbacheri",
+        "en": "Merzbacher's Apollo Butterfly"
+      },
+      "taxonomy": {
+        "kingdom": "Metazoa",
+        "phylum": "Arthropoda",
+        "class": "Insecta",
+        "order": "Lepidoptera",
+        "family": "Papilionidae",
+        "genus": "Parnassius"
+      },
+      "group": "arthropods",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "III [LR-nt]",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Parnassius apollo merzbacheri, с.268–269); Статус: III категория (LR-nt). Локальный подвид, популяции которого потенциально уязвимы, но не находятся",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "iucn": {
+        "category": null,
+        "year": null,
+        "sourceIds": []
+      },
+      "habitat": {
+        "description": {
+          "ky": null,
+          "uz": null,
+          "ru": "Среднегорные лугово-лесные и луго-степные ландшафты, каменистые склоны с высокотравными и субальпийскими лугами на высотах 1000–3000 м; историческое описание местной формы.",
+          "en": null
+        },
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "regions": [
+        {
+          "code": "KG",
+          "type": "country",
+          "names": {
+            "ru": "Кыргызстан",
+            "ky": "Кыргызстан",
+            "uz": "Qirgʻiziston",
+            "en": "Kyrgyzstan"
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "В книге обсуждаются утрата луговых местообитаний, сенокошение, перевыпас, рекреация, пестициды и отлов. Их современная интенсивность отдельно не установлена.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      ],
+      "conservationMeasures": [
+        {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "В 2006 году предлагались микрорезерваты на участках с растущей нагрузкой, мониторинг и уточнение кормовой базы; исторические сведения об охране на отдельных территориях не выдаются за аудит 2026 года.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      ],
+      "population": {
+        "type": "unknown",
+        "value": null,
+        "min": null,
+        "max": null,
+        "territory": null,
+        "year": null,
+        "unit": null,
+        "sourceIds": [],
+        "reviewStatus": "pending",
+        "method": null
+      },
+      "images": [],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; Parnassius apollo merzbacheri, с.268–269",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=269",
+          "accessedAt": "2026-10-28",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.overview",
+            "content.shortDescription",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.appearance",
+            "content.diet",
+            "threats.0",
+            "conservationMeasures.0",
+            "names.ky",
+            "names.en"
+          ],
+          "notes": "Исторические сведения местного очерка. Названия KY проверены по первоисточнику, краткие описания KY/UZ/EN — редакционные переводы, не цитаты. Современное присутствие и правовой статус не заявлены."
+        },
+        {
+          "id": "huang-2023",
+          "title": "Huang H. 2023. Contributions to the study of butterflies from Xinjiang — 1: the genus Parnassius. Atalanta 54(1/2)",
+          "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+          "url": "https://www.researchgate.net/publication/376002146_Contributions_to_the_study_of_butterflies_from_Xinjiang_-1_the_genus_Parnassius_LatreiLLe_1804_Lepidoptera_Papilionidae_by",
+          "accessedAt": "2026-10-28",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "с.154–155: apollo merzbacheri; с.166–167: loxias; author_uploaded_full_text. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+        },
+        {
+          "id": "previous-mcz-merzbacheri",
+          "title": "Harvard MCZbase: Parnassius apollo merzbacheri",
+          "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+          "url": "https://mczbase.mcz.harvard.edu/name/Parnassius%20apollo%20merzbacheri",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "Name Authority MCZ; Subspecies; no cited MCZ specimens; web_indexed_primary_collection_database. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+        },
+        {
+          "id": "previous-parnassius-types-1966",
+          "title": "Les types et typoïdes de Parnassius au Muséum de Paris (1966)",
+          "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+          "url": "https://www.persee.fr/doc/bsef_0037-928x_1966_num_71_7_20893",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "Bull. Soc. Entomol. France 71(7), record 20893; web_indexed_primary_fragment_only. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "The European Nucleotide Archive (ENA) taxonomy: Parnassius apollo merzbacheri; exact SUBSPECIES",
+          "publisher": "GBIF / The European Nucleotide Archive (ENA) taxonomy",
+          "url": "https://api.gbif.org/v1/species/177946994",
+          "accessedAt": "2026-10-28",
+          "language": "en",
+          "taxonId": "gbif:177946994",
+          "supports": [
+            "scientificName",
+            "names.uz",
+            "content.overview",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
+          ],
+          "notes": "Реальная принятая запись указанного dataset. EXACT — локальная строгая проверка canonicalName/rank, не вымышленный API match. nubKey/parentKey не подставлены. Issues: CLASSIFICATION_NOT_APPLIED"
+        }
+      ],
+      "verified": false,
+      "lastReviewedAt": null,
+      "content": {
+        "shortDescription": {
+          "text": {
+            "ru": "Джунгаро-северотяньшанский подвид аполлона из книги 2006 года. Современная обработка признаёт merzbacheri; текущая численность в Кыргызстане неизвестна.",
+            "ky": "2006-жылкы китептеги аполлондун Жуңгар–Түндүк Теңир-Тоо түрчөсү. Азыркы таксономия merzbacheri түрчөсүн тааныйт; Кыргызстандагы саны белгисиз.",
+            "uz": "Apollonning Jungʻor–Shimoliy Tyanshan kenja turi, 2006-yilgi kitobda keltirilgan. Merzbacheri hozirgi talqinda tan olinadi; Qirgʻizistondagi soni nomaʼlum.",
+            "en": "A Dzungarian–northern Tien Shan Apollo subspecies treated in 2006. Merzbacheri is recognized in the selected revision; current abundance in Kyrgyzstan is unknown."
+          },
+          "sourceIds": [
+            "national-book",
+            "huang-2023"
+          ]
+        },
+        "overview": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Аполлон Мерцбахера — подвид Parnassius apollo, выделенный отдельным национальным очерком 2006 года. Для подготовки принят Parnassius apollo merzbacheri по обработке Huang 2023: автор явно признаёт подвид и относит к его синонимам chryseis. Точная подвидовая запись ENA taxonomy в GBIF согласуется с этим охватом. Синонимический ключ backbone, ведущий к родительскому apollo, не используется как принятый подвидовой идентификатор.\n\nБелые или кремоватые крылья несут чёрный рисунок; на каждом заднем крыле заметны два красных пятна с чёрными ободками и более или менее выраженными светлыми центрами. В книге самцы обычно светлее и мельче самок. Числовой размах крыльев расходится между языковыми версиями очерка и здесь не унифицируется. Среднегорные лугово-лесные и луго-степные ландшафты, каменистые склоны с высокотравными и субальпийскими лугами на высотах 1000–3000 м; историческое описание местной формы. Национальная книга описывает тесную связь личинок с толстянковыми растениями и оседлый характер местных популяций. Исторические значения плотности и колебания обилия не превращены в современную оценку численности.\n\nДля гусениц местного подвида книга указывает очитки Sedum ewersii, S. hybridum и S. alberti. Связь с Orostachys в том же тексте предположительна и не включена в подтверждённый перечень. По национальному источнику развивается одно поколение в год, зимует гусеница первого возраста, нередко внутри яйцевой оболочки. Взрослые отмечались с конца июня до осени. Эти сведения относятся к описанным наблюдениям, а не к новому обследованию.\n\nОчерк относит подвид к джунгаро-северотяньшанскому ареалу и перечисляет исторические местонахождения по Киргизскому, Джумгальскому, Кастекскому, Заилийскому, Кунгей и Терскей Ала-Тоо. Указание для Ат-Баши сам источник отвергает. Современная обработка 2023 подтверждает связь концепта с северо-востоком Кыргызстана.\n\nВ книге обсуждаются утрата луговых местообитаний, сенокошение, перевыпас, рекреация, пестициды и отлов. Их современная интенсивность отдельно не установлена. В 2006 году предлагались микрорезерваты на участках с растущей нагрузкой, мониторинг и уточнение кормовой базы; исторические сведения об охране на отдельных территориях не выдаются за аудит 2026 года.\n\nНациональная категория относится к местной исторической единице охраны, описанной в 2006 году. Она не является глобальной оценкой всего принятого таксона, современной категорией IUCN или проверенным правовым статусом 2026 года. Современная национальная численность остаётся неизвестной; независимая научная проверка ожидается.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book",
+            "huang-2023",
+            "previous-mcz-merzbacheri",
+            "previous-parnassius-types-1966",
+            "gbif-taxonomy"
+          ]
+        },
+        "appearance": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Белые или кремоватые крылья несут чёрный рисунок; на каждом заднем крыле заметны два красных пятна с чёрными ободками и более или менее выраженными светлыми центрами. В книге самцы обычно светлее и мельче самок. Числовой размах крыльев расходится между языковыми версиями очерка и здесь не унифицируется.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "ecology": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Национальная книга описывает тесную связь личинок с толстянковыми растениями и оседлый характер местных популяций. Исторические значения плотности и колебания обилия не превращены в современную оценку численности.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "diet": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Для гусениц местного подвида книга указывает очитки Sedum ewersii, S. hybridum и S. alberti. Связь с Orostachys в том же тексте предположительна и не включена в подтверждённый перечень.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "reproduction": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "По национальному источнику развивается одно поколение в год, зимует гусеница первого возраста, нередко внутри яйцевой оболочки. Взрослые отмечались с конца июня до осени. Эти сведения относятся к описанным наблюдениям, а не к новому обследованию.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "distribution": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Очерк относит подвид к джунгаро-северотяньшанскому ареалу и перечисляет исторические местонахождения по Киргизскому, Джумгальскому, Кастекскому, Заилийскому, Кунгей и Терскей Ала-Тоо. Указание для Ат-Баши сам источник отвергает. Современная обработка 2023 подтверждает связь концепта с северо-востоком Кыргызстана.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      },
+      "publication": {
+        "status": "provisional",
+        "scientificReviewStatus": "pending",
+        "independentReviewer": null,
+        "decisionId": "muras-25-11-owner-provisional",
+        "publishedAt": "2026-10-28",
+        "researchFingerprint": "d4894e8c3107800ef208f595e34dca337245dcfe11b6c592aeb39e0cc9f52afa"
+      }
+    },
+    {
+      "id": "cuon-alpinus",
+      "scientificName": "Cuon alpinus",
+      "names": {
+        "ru": "Красный волк",
+        "ky": "Cuon alpinus",
+        "uz": "Cuon alpinus",
+        "en": "Dhole"
+      },
+      "taxonomy": {
+        "kingdom": "Animalia",
+        "phylum": "Chordata",
+        "class": "Mammalia",
+        "order": "Carnivora",
+        "family": "Canidae",
+        "genus": "Cuon"
+      },
+      "group": "mammals",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "III [CR: R]",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Cuon alpinus, с.496–497); Статус: III категория Critically Endangered, CR: R. За последние 50 лет факты достоверной регистрации на",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "iucn": {
+        "category": null,
+        "year": null,
+        "sourceIds": []
+      },
+      "habitat": {
+        "description": {
+          "ky": null,
+          "uz": null,
+          "ru": "По историческому национальному описанию — остепнённые участки альпийского и субальпийского поясов и верхняя часть лесного пояса, связанные с местами концентрации диких копытных.",
+          "en": null
+        },
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "regions": [
+        {
+          "code": "KG",
+          "type": "country",
+          "names": {
+            "ru": "Кыргызстан",
+            "ky": "Кыргызстан",
+            "uz": "Qirgʻiziston",
+            "en": "Kyrgyzstan"
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      ],
+      "threats": [
+        {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "В национальном очерке обсуждаются конкуренция с волками и собаками и возможное прямое преследование человеком. Текущая сила этих факторов для местной популяции не оценена.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        }
+      ],
+      "conservationMeasures": [
+        {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Книга 2006 года рекомендует поиск достоверных регистраций и последующее наблюдение. Работа 2022 года обосновывает дальнейший мониторинг, но не подтверждает выполнение программы восстановления популяции.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book",
+            "cuon-2022"
+          ]
+        }
+      ],
+      "population": {
+        "type": "unknown",
+        "value": null,
+        "min": null,
+        "max": null,
+        "territory": null,
+        "year": null,
+        "unit": null,
+        "sourceIds": [],
+        "reviewStatus": "pending",
+        "method": null
+      },
+      "images": [
+        {
+          "path": "assets/images/species/catalog187-cuon-alpinus.webp",
+          "width": 1350,
+          "height": 1800,
+          "sha256": "e52d745554b52850ff6f4f3e70ae24f430c390ab920e610e6a89ffb000f25b47",
+          "author": "Hans Hillewaert",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Cuon_alpinus_(Dhole).jpg",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "attribution": "© Hans Hillewaert; CC BY-SA 3.0; https://commons.wikimedia.org/wiki/File:Cuon_alpinus_(Dhole).jpg. Производное изображение распространяется под той же лицензией.",
+          "modifications": [
+            "Штатный scripts/process_data.py: уменьшение без кадрирования до 1800 px, WebP quality 82; EXIF/XMP удалены."
+          ],
+          "licenseVerified": true,
+          "caption": {
+            "ky": null,
+            "uz": null,
+            "ru": "Cuon alpinus в Port Lympne Wild Animal Park, Великобритания, 7 июля 2010 года. Животное в неволе; снимок не подтверждает встречаемость в Кыргызстане.",
+            "en": null
+          }
+        }
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; Cuon alpinus, с.496–497",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=497",
+          "accessedAt": "2026-10-28",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.overview",
+            "content.shortDescription",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.diet",
+            "threats.0",
+            "conservationMeasures.0"
+          ],
+          "notes": "Исторические сведения местного очерка. Названия KY проверены по первоисточнику, краткие описания KY/UZ/EN — редакционные переводы, не цитаты. Современное присутствие и правовой статус не заявлены."
+        },
+        {
+          "id": "zin-cuontype",
+          "title": "ЗИН РАН: типовой каталог Mammalia, Cuon alpinus hesperius",
+          "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+          "url": "https://www.zin.ru/collections/Mammalia/catalog_en.html?taxon_id=1030631073673807",
+          "accessedAt": "2026-10-28",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "Голотип №23894; primary_museum_type_database. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+        },
+        {
+          "id": "cuon-2022",
+          "title": "Cancellare et al. 2022. New distribution record of dhole from southern Kyrgyzstan using non-invasive genetic sampling. Canid Biology & Conservation 24(1):1–3",
+          "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+          "url": "https://www.canids.org/CBC/24/Dhole_distribution_Kyrgyzstan.pdf",
+          "accessedAt": "2026-10-28",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription",
+            "content.distribution",
+            "names.en",
+            "conservationMeasures.0"
+          ],
+          "notes": "с.1–2, материал / метод / MZ813093; publisher_pdf_downloaded_and_read; redirect canids.org/cbc-journal/24-1.pdf. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+        },
+        {
+          "id": "genbank-cuon",
+          "title": "NCBI GenBank MZ813093.1",
+          "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+          "url": "https://www.ncbi.nlm.nih.gov/nuccore/MZ813093",
+          "accessedAt": "2026-10-28",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription",
+            "content.distribution"
+          ],
+          "notes": "isolate SKY_001; cytb; geo_loc_name Kyrgyzstan; fresh_efetch_record. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone Taxonomy: Cuon alpinus (Pallas, 1811); exact SPECIES",
+          "publisher": "GBIF / GBIF Backbone Taxonomy",
+          "url": "https://api.gbif.org/v1/species/2434317",
+          "accessedAt": "2026-10-28",
+          "language": "en",
+          "taxonId": "gbif:2434317",
+          "supports": [
+            "scientificName",
+            "names.uz",
+            "content.overview",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky"
+          ],
+          "notes": "Реальная принятая запись указанного dataset. EXACT — локальная строгая проверка canonicalName/rank, не вымышленный API match. nubKey/parentKey не подставлены. Issues: "
+        },
+        {
+          "id": "photo-commons",
+          "title": "Cuon alpinus в неволе, 2010; Hans Hillewaert",
+          "publisher": "Wikimedia Commons; Hans Hillewaert",
+          "url": "https://commons.wikimedia.org/wiki/File:Cuon_alpinus_(Dhole).jpg",
+          "accessedAt": "2026-10-28",
+          "language": "en",
+          "supports": [
+            "images.0.caption"
+          ],
+          "notes": "Лицензия и определение конкретного файла проверены; зарубежное животное в неволе не подтверждает национальную встречаемость."
+        }
+      ],
+      "verified": false,
+      "lastReviewedAt": null,
+      "content": {
+        "shortDescription": {
+          "text": {
+            "ru": "Псовый из национального очерка 2006 года; независимая генетическая находка относится к пробе 2019 года. Численность и постоянная популяция в Кыргызстане не подтверждены.",
+            "ky": "2006-жылкы улуттук очерктеги иттер тукумундагы түр; көз карандысыз генетикалык табылга 2019-жылкы үлгүгө тиешелүү. Кыргызстанда туруктуу популяциясы жана саны тастыкталган эмес.",
+            "uz": "2006-yilgi milliy ocherkdagi itsimon tur; mustaqil genetik qayd 2019-yilgi namunaga tegishli. Qirgʻizistonda doimiy populyatsiya va uning soni tasdiqlanmagan.",
+            "en": "A canid listed in the 2006 national account, independently detected in a 2019 genetic sample. A resident population and its abundance in Kyrgyzstan remain unconfirmed."
+          },
+          "sourceIds": [
+            "national-book",
+            "cuon-2022"
+          ]
+        },
+        "overview": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Красный волк, или Cuon alpinus, — самостоятельный вид псовых, включённый в Красную книгу Кыргызстана 2006 года. Старый очерк сомневался в определении шести шкур, принятых в 1922–1956 годах. В подготовке учтены независимый типовой экземпляр ЗИН №23894 из Ат-Баши 1907 года и генетическая находка, опубликованная Cancellare и соавторами в 2022 году. Эти новые основания не объявляют спорные шкуры правильно определёнными.\n\nПо историческому национальному описанию — остепнённые участки альпийского и субальпийского поясов и верхняя часть лесного пояса, связанные с местами концентрации диких копытных. Вид социальный; национальный очерк описывает объединение в стаи и активность как днём, так и ночью. Одна генетическая находка не доказывает наличие устойчивой местной стаи или размножающейся популяции в 2026 году.\n\nНациональный источник называет диких копытных, в том числе козерогов, объектами охоты. Это характеристика питания вида в очерке, не количественно установленный рацион нынешней кыргызской популяции. В книге для вида приведены сезон размножения зимой и рождение нескольких щенков. Эти общебиологические сведения не означают подтверждения размножения в современной природе Кыргызстана.\n\nВ пробе помёта, собранной 15 августа 2019 года на юге Кыргызстана, анализ 2021 года определил фрагмент mitochondrial cytb длиной 147 bp как Cuon alpinus. Результат опубликован в 2022 и депонирован как GenBank MZ813093. Современная численность, регулярность присутствия и воспроизводство в этом районе не установлены.\n\nВ национальном очерке обсуждаются конкуренция с волками и собаками и возможное прямое преследование человеком. Текущая сила этих факторов для местной популяции не оценена. Книга 2006 года рекомендует поиск достоверных регистраций и последующее наблюдение. Работа 2022 года обосновывает дальнейший мониторинг, но не подтверждает выполнение программы восстановления популяции.\n\nНациональная категория относится к местной исторической единице охраны, описанной в 2006 году. Она не является глобальной оценкой всего принятого таксона, современной категорией IUCN или проверенным правовым статусом 2026 года. Современная национальная численность остаётся неизвестной; независимая научная проверка ожидается.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book",
+            "zin-cuontype",
+            "cuon-2022",
+            "genbank-cuon",
+            "gbif-taxonomy"
+          ]
+        },
+        "appearance": null,
+        "ecology": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Вид социальный; национальный очерк описывает объединение в стаи и активность как днём, так и ночью. Одна генетическая находка не доказывает наличие устойчивой местной стаи или размножающейся популяции в 2026 году.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "diet": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "Национальный источник называет диких копытных, в том числе козерогов, объектами охоты. Это характеристика питания вида в очерке, не количественно установленный рацион нынешней кыргызской популяции.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "reproduction": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "В книге для вида приведены сезон размножения зимой и рождение нескольких щенков. Эти общебиологические сведения не означают подтверждения размножения в современной природе Кыргызстана.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book"
+          ]
+        },
+        "distribution": {
+          "text": {
+            "ky": null,
+            "uz": null,
+            "ru": "В пробе помёта, собранной 15 августа 2019 года на юге Кыргызстана, анализ 2021 года определил фрагмент mitochondrial cytb длиной 147 bp как Cuon alpinus. Результат опубликован в 2022 и депонирован как GenBank MZ813093. Современная численность, регулярность присутствия и воспроизводство в этом районе не установлены.",
+            "en": null
+          },
+          "sourceIds": [
+            "national-book",
+            "cuon-2022",
+            "genbank-cuon"
+          ]
+        }
+      },
+      "publication": {
+        "status": "provisional",
+        "scientificReviewStatus": "pending",
+        "independentReviewer": null,
+        "decisionId": "muras-25-11-owner-provisional",
+        "publishedAt": "2026-10-28",
+        "researchFingerprint": "f23d3fedebf63dd40bb44d405410a0ec623a4924111e01884be64efabff9dd50"
+      }
     }
   ],
   "demoArchive": [

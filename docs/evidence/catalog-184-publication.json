@@ -1,0 +1,376 @@
+{
+  "task": "25.11",
+  "date": "2026-10-28",
+  "initialHead": "71785389008fef4edc96d9c284e23355f31b180b",
+  "branch": "feature/catalog-200",
+  "beforeCount": 178,
+  "afterCount": 184,
+  "archiveCount": 2,
+  "ids": [
+    "sorbaria-olgae",
+    "dorema-microcarpum",
+    "tianschaniella-umbellifera",
+    "parnassius-loxias-tashkorensis",
+    "parnassius-apollo-merzbacheri",
+    "cuon-alpinus"
+  ],
+  "blockedIds": [
+    "papilio-alexanor-voldemar",
+    "megalodontes-kuznetzovi",
+    "polochrum-pamirepandum"
+  ],
+  "images": 1,
+  "placeholders": 5,
+  "manifest": "data/research/catalog-187-review-manifest.json",
+  "manifestSha256": "ea602571d211f948738d5016c70fd235f01d211b144e324687764a99906922f7",
+  "registry": "data/research/catalog-187-content-registry.json",
+  "registryFingerprint": "e464a27088b435607d373d58154fff1fcb385ad55ba3d294765c17384c4800e6",
+  "registrySha256": "30a22dc3960bba6996af6529127f19dd9bf58663166528fb2bc18570378bb73d",
+  "decision": "data/research/publication-decisions/muras-25-11-owner-provisional.json",
+  "sourceSha256": "cee3277b598a87b40126fc24064a6c5c05487a8d107cd7a95d401ad1d380a881",
+  "publicSha256": "74a09270cafbf4444f750fe64e9a2e9966b52d0cef4187814b6b22ba043fedd4",
+  "preservation": {
+    "allOldObjectsEqual": true,
+    "publicOldObjectsEqual": true,
+    "archiveEqual": true,
+    "unchangedStartingFiles": 1118,
+    "changedStartingFiles": [
+      "data/species.source.json",
+      "public/data/species.json",
+      "tests/catalog-178-publication.test.mjs"
+    ],
+    "trackedImageAssetsUnchanged": 301,
+    "allOtherStartingFilesUnchanged": true
+  },
+  "dryRunBefore": {
+    "schemaVersion": 1,
+    "mode": "dry-run",
+    "publicationStatus": "provisional",
+    "decisionId": "muras-25-11-owner-provisional",
+    "counts": {
+      "processed": 6,
+      "added": 6,
+      "unchanged": 0,
+      "rejected": 0
+    },
+    "results": [
+      {
+        "index": 0,
+        "candidateId": "sorbaria-olgae",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "sorbaria-olgae",
+          "scientificName": "Sorbaria tomentosa",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 1,
+        "candidateId": "dorema-microcarpum",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "dorema-microcarpum",
+          "scientificName": "Ferula namanganica",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 2,
+        "candidateId": "tianschaniella-umbellifera",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "tianschaniella-umbellifera",
+          "scientificName": "Tianschaniella umbellulifera",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 3,
+        "candidateId": "parnassius-loxias-tashkorensis",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "parnassius-loxias-tashkorensis",
+          "scientificName": "Parnassius loxias loxias",
+          "group": "arthropods",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 4,
+        "candidateId": "parnassius-apollo-merzbacheri",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "parnassius-apollo-merzbacheri",
+          "scientificName": "Parnassius apollo merzbacheri",
+          "group": "arthropods",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 5,
+        "candidateId": "cuon-alpinus",
+        "status": "added",
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "id": "cuon-alpinus",
+          "scientificName": "Cuon alpinus",
+          "group": "mammals",
+          "imageCount": 1
+        }
+      }
+    ],
+    "applied": false,
+    "scientificApproval": null,
+    "registryChanged": false
+  },
+  "import": {
+    "schemaVersion": 1,
+    "mode": "apply",
+    "publicationStatus": "provisional",
+    "decisionId": "muras-25-11-owner-provisional",
+    "counts": {
+      "processed": 6,
+      "added": 6,
+      "unchanged": 0,
+      "rejected": 0
+    },
+    "results": [
+      {
+        "index": 0,
+        "candidateId": "sorbaria-olgae",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "sorbaria-olgae",
+          "scientificName": "Sorbaria tomentosa",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 1,
+        "candidateId": "dorema-microcarpum",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "dorema-microcarpum",
+          "scientificName": "Ferula namanganica",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 2,
+        "candidateId": "tianschaniella-umbellifera",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "tianschaniella-umbellifera",
+          "scientificName": "Tianschaniella umbellulifera",
+          "group": "plants",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 3,
+        "candidateId": "parnassius-loxias-tashkorensis",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "parnassius-loxias-tashkorensis",
+          "scientificName": "Parnassius loxias loxias",
+          "group": "arthropods",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 4,
+        "candidateId": "parnassius-apollo-merzbacheri",
+        "status": "added",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "summary": {
+          "id": "parnassius-apollo-merzbacheri",
+          "scientificName": "Parnassius apollo merzbacheri",
+          "group": "arthropods",
+          "imageCount": 0
+        }
+      },
+      {
+        "index": 5,
+        "candidateId": "cuon-alpinus",
+        "status": "added",
+        "errors": [],
+        "warnings": [],
+        "summary": {
+          "id": "cuon-alpinus",
+          "scientificName": "Cuon alpinus",
+          "group": "mammals",
+          "imageCount": 1
+        }
+      }
+    ],
+    "applied": true,
+    "scientificApproval": null,
+    "registryChanged": false
+  },
+  "dryRunAfter": {
+    "schemaVersion": 1,
+    "mode": "dry-run",
+    "publicationStatus": "provisional",
+    "decisionId": "muras-25-11-owner-provisional",
+    "counts": {
+      "processed": 6,
+      "added": 0,
+      "unchanged": 6,
+      "rejected": 0
+    },
+    "results": [
+      {
+        "index": 0,
+        "candidateId": "sorbaria-olgae",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 1,
+        "candidateId": "dorema-microcarpum",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 2,
+        "candidateId": "tianschaniella-umbellifera",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 3,
+        "candidateId": "parnassius-loxias-tashkorensis",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 4,
+        "candidateId": "parnassius-apollo-merzbacheri",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      },
+      {
+        "index": 5,
+        "candidateId": "cuon-alpinus",
+        "status": "unchanged",
+        "errors": [],
+        "warnings": []
+      }
+    ],
+    "applied": false,
+    "scientificApproval": null,
+    "registryChanged": false
+  },
+  "validation": {
+    "npmTest": {
+      "exit": 0,
+      "passed": 331,
+      "failed": 0,
+      "skipped": 0
+    },
+    "data1": {
+      "exit": 0,
+      "count": 184,
+      "archive": 2
+    },
+    "data2": {
+      "exit": 0,
+      "count": 184,
+      "archive": 2,
+      "identicalToFirst": true
+    },
+    "build": {
+      "exit": 0,
+      "modules": 104,
+      "distCatalog": 184,
+      "distBytes": 34985763,
+      "distFiles": 170
+    },
+    "locales": {
+      "keys": 620,
+      "languages": 4
+    },
+    "pagination": [
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      24,
+      16
+    ],
+    "componentRenders": 72,
+    "enospc": false,
+    "freeBytesAfter": 7449718784
+  },
+  "logs": [
+    {
+      "path": ".generated/catalog-184-publication/npm-test.log",
+      "sha256": "0de4db6d7bf4172f85f04f709b71cc112d500531f190f36c66c3bc32fc459316"
+    },
+    {
+      "path": ".generated/catalog-184-publication/npm-data-1.log",
+      "sha256": "db9ed72befe6ec0a5e774dec8723c32ddad1109ef5b1b18263b36024f5362216"
+    },
+    {
+      "path": ".generated/catalog-184-publication/npm-data-2.log",
+      "sha256": "db9ed72befe6ec0a5e774dec8723c32ddad1109ef5b1b18263b36024f5362216"
+    },
+    {
+      "path": ".generated/catalog-184-publication/npm-build.log",
+      "sha256": "2cf077138abdfef245545b34dca67aa28ea87d1c45a471e3faf8b6188aeb887d"
+    }
+  ],
+  "scientificApproval": null
+}
