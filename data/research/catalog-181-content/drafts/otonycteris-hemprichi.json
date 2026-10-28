@@ -1,0 +1,274 @@
+{
+  "id": "otonycteris-hemprichi",
+  "scientificName": "Otonycteris leucophaea",
+  "names": {
+    "ru": "Белобрюхий стрелоух",
+    "ky": "Акбоор жебекулак жарганаты",
+    "uz": "Otonycteris leucophaea",
+    "en": "Otonycteris leucophaea"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Chiroptera",
+    "family": "Vespertilionidae",
+    "genus": "Otonycteris"
+  },
+  "group": "mammals",
+  "nationalRedBook": {
+    "listed": true,
+    "category": null,
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Otonycteris hemprichi, с.492–493); Статус: VII категория, Lower Risk – Least Concern, LR/lc",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Полупустынные предгорья со скальными выходами и редкими фисташками; исторические сведения национальной книги.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "code": "KG",
+      "type": "country",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В источнике предположены уничтожение поселившихся рядом с человеком зверьков и нарушение убежищ; специальная современная оценка не выполнена.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендованные в 2006 году меры: охрана убежищ, небольшие заказники и разъяснительная работа.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Otonycteris hemprichi, с.492–493",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=493",
+      "accessedAt": "2026-10-22",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.category",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "content.diet",
+        "threats.0",
+        "conservationMeasures.0"
+      ],
+      "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 492-бет; проверенный кыргызский заголовок",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=492",
+      "accessedAt": "2026-10-22",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    },
+    {
+      "id": "msu-otonycteris",
+      "title": "Зоомузей МГУ: Otonycteris leucophaea",
+      "publisher": "Зоологический музей МГУ",
+      "url": "https://zmmu.msu.ru/bats/rusbats/e_guide/othemp_e.htm",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.appearance",
+        "content.shortDescription"
+      ],
+      "notes": "Scientific name; Distribution; taxonomy paragraph; переиспользованы доказательства №25.4 (web_primary_page_text). Полный текст недоступного источника не объявлен заново прочитанным."
+    },
+    {
+      "id": "otonycteris-revision",
+      "title": "Benda & Gvoždík (2010): Taxonomy of Otonycteris",
+      "publisher": "Научный источник; издатель указан по ссылке",
+      "url": "https://doi.org/10.3161/150811010X504617",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview"
+      ],
+      "notes": "Acta Chiropterologica 12(1):83–102; museum download Benda2010ac.pdf failed; переиспользованы доказательства №25.4 (abstract_and_author_bibliography_only). Полный текст недоступного источника не объявлен заново прочитанным."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone Taxonomy: Otonycteris leucophaea (Severcov, 1873); exact SPECIES",
+      "publisher": "GBIF / GBIF Backbone Taxonomy",
+      "url": "https://api.gbif.org/v1/species/7584928",
+      "accessedAt": "2026-10-22",
+      "language": "en",
+      "taxonId": "gbif:7584928",
+      "supports": [
+        "scientificName",
+        "names.uz",
+        "content.overview",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.en"
+      ],
+      "notes": "Источник — реальная запись указанного чек-листа. EXACT означает локальную строгую проверку canonicalName и rank; не вымышленный ответ API match. nubKey другого ранга не подставлен."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Летучая мышь, исторически указанная как Otonycteris hemprichi; кыргызский концепт отнесён к O. leucophaea. Современная численность неизвестна.",
+        "ky": "Тарыхый китепте Otonycteris hemprichi деп берилген жарганаттын Кыргызстандагы концепту O. leucophaea түрүнө тиешелүү. Азыркы саны белгисиз.",
+        "uz": "Tarixiy kitobda Otonycteris hemprichi deb keltirilgan koʻrshapalakning Qirgʻiziston konsepti O. leucophaea turiga tegishli. Hozirgi soni nomaʼlum.",
+        "en": "A bat historically listed as Otonycteris hemprichi; the Kyrgyz concept is assigned to O. leucophaea under the adopted regional treatment. Current abundance is unknown."
+      },
+      "sourceIds": [
+        "national-book",
+        "msu-otonycteris"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Белобрюхий стрелоух — крупная светлая летучая мышь, исторически включённая в национальную книгу как Otonycteris hemprichi (Peters, 1859). В принятой современной региональной обработке Зоомузея МГУ кыргызский концепт относится к выделенному Otonycteris leucophaea (Severtzov, 1873). Исправление имени не означает нового обследования старых экземпляров или подтверждения современной популяции.\n\nОпределитель Зоомузея МГУ описывает крупного светлоокрашенного представителя гладконосых летучих мышей с очень длинными ушами, не соединёнными между собой. Полупустынные предгорья со скальными выходами и редкими фисташками; исторические сведения национальной книги. В книге описаны сумеречно-ночная активность, низкий поисковый полёт и захват добычи на поверхности земли. Убежищами служат скальные щели и другие полости.\n\nИсторический анализ питания включал сольпуг, скорпионов, пауков и насекомых. Проценты отдельных групп из локальной выборки не выдаются за постоянный рацион всех популяций. Размножение в условиях Кыргызстана в источнике названо слабо изученным; начало сезона обозначено предположительно. Точные сроки не представлены установленным современным фактом.\n\nВ книге приведены историческая находка 1966 года возле Таш-Кумыра и отловы 1992 года в Араванском районе. Это датированные сведения, а не современные точки или оценка численности страны.\n\nВ источнике предположены уничтожение поселившихся рядом с человеком зверьков и нарушение убежищ; специальная современная оценка не выполнена. Рекомендованные в 2006 году меры: охрана убежищ, небольшие заказники и разъяснительная работа.\n\nНациональная буквально сохранённая в издании категория относится к историческому очерку 2006 года и названной местной единице охраны. Она не является глобальной оценкой всего современного таксона или проверенным действующим правовым статусом. Современная численность неизвестна; независимая научная проверка ожидается.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "msu-otonycteris",
+        "otonycteris-revision",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Определитель Зоомузея МГУ описывает крупного светлоокрашенного представителя гладконосых летучих мышей с очень длинными ушами, не соединёнными между собой.",
+        "en": null
+      },
+      "sourceIds": [
+        "msu-otonycteris"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В книге описаны сумеречно-ночная активность, низкий поисковый полёт и захват добычи на поверхности земли. Убежищами служат скальные щели и другие полости.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический анализ питания включал сольпуг, скорпионов, пауков и насекомых. Проценты отдельных групп из локальной выборки не выдаются за постоянный рацион всех популяций.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Размножение в условиях Кыргызстана в источнике названо слабо изученным; начало сезона обозначено предположительно. Точные сроки не представлены установленным современным фактом.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В книге приведены историческая находка 1966 года возле Таш-Кумыра и отловы 1992 года в Араванском районе. Это датированные сведения, а не современные точки или оценка численности страны.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

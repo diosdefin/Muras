@@ -1,0 +1,4389 @@
+{
+  "schemaVersion": 1,
+  "documentType": "bulk-research-registry",
+  "registryId": "catalog-181-content",
+  "batchSize": 5,
+  "candidates": [
+    {
+      "originalScientificName": "Anemone obtusiloba",
+      "acceptedScientificName": "Anemonastrum obtusilobum",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Anemone obtusiloba, с.110–111); Статус: VU",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Anemonastrum obtusilobum",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:10404690",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy",
+        "powo-anemone",
+        "ipni-anemone"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Anemone obtusiloba, с.110–111",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=111",
+          "accessedAt": "2026-10-22",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.diet",
+            "threats.0",
+            "conservationMeasures.0",
+            "content.appearance",
+            "names.en"
+          ],
+          "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 110-бет; проверенный кыргызский заголовок",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=110",
+          "accessedAt": "2026-10-22",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
+        },
+        {
+          "id": "powo-anemone",
+          "title": "POWO: Anemonastrum obtusilobum",
+          "publisher": "Royal Botanic Gardens, Kew",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:60476974-2",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "Taxonomy; Homotypic Synonyms; Distribution; Phytoneuron 2018-55:7; переиспользованы доказательства №25.4 (web_primary_page_text). Полный текст недоступного источника не объявлен заново прочитанным."
+        },
+        {
+          "id": "ipni-anemone",
+          "title": "IPNI: Anemone obtusiloba D.Don",
+          "publisher": "Royal Botanic Gardens, Kew",
+          "url": "https://www.ipni.org/n/708529-1",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview"
+          ],
+          "notes": "IPNI 708529-1; переиспользованы доказательства №25.4 (web_indexed_primary_text). Полный текст недоступного источника не объявлен заново прочитанным."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone Taxonomy: Anemonastrum obtusilobum (D.Don) Mosyakin; exact SPECIES",
+          "publisher": "GBIF / GBIF Backbone Taxonomy",
+          "url": "https://api.gbif.org/v1/species/10404690",
+          "accessedAt": "2026-10-22",
+          "language": "en",
+          "taxonId": "gbif:10404690",
+          "supports": [
+            "scientificName",
+            "names.uz",
+            "content.overview",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
+          ],
+          "notes": "Источник — реальная запись указанного чек-листа. EXACT означает локальную строгую проверку canonicalName и rank; не вымышленный ответ API match. nubKey другого ранга не подставлен."
+        },
+        {
+          "id": "photo-commons",
+          "title": "Anemone obtusiloba; Hedwig Storch",
+          "publisher": "Wikimedia Commons; автор указан в атрибуции",
+          "url": "https://commons.wikimedia.org/wiki/File:Blaue_Himalaya-Anemone_(Anemone_obtusiloba)_5668.JPG",
+          "accessedAt": "2026-10-22",
+          "language": null,
+          "supports": [
+            "images.0.caption"
+          ],
+          "notes": "Лицензия конкретного файла и исходное определение проверены; зарубежный снимок не подтверждает национальное включение."
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/catalog-200-conflict-resolution.json",
+          "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c"
+        },
+        {
+          "path": "docs/evidence/catalog-200-conflict-sources.json",
+          "sha256": "ed3db701e03053951178b5f5c16c3a829e560d2b02113c101375c1725253af48"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy.json",
+          "sha256": "9280809fb203aefa5dbd97e2f1373220ad8918028d9661f35a0b8d8f49449425"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy-search.json",
+          "sha256": "584804d5a9553687e5d5e585ddb47974a2193ab9867021a08e3cf51440b5a0cd"
+        },
+        {
+          "path": "docs/evidence/catalog-181-national-accounts.json",
+          "sha256": "fb4e8d4ff73fd081898eb3c3b675634c1c132b4a8262e0fb701753cba21c65d9"
+        },
+        {
+          "path": "docs/evidence/catalog-181-images.json",
+          "sha256": "e46cdf82c03c59411ad6aba1ad721693da9313ff932b5ab9e0fe63393a347e82"
+        },
+        {
+          "path": "docs/evidence/catalog-181-photo-search.json",
+          "sha256": "e5577296864a986d9405c73ab4bf464d8f605057012ea81dfc07349b97886154"
+        },
+        {
+          "path": "docs/evidence/catalog-181-baseline.json",
+          "sha256": "8c63ed21eb17384fb6027dc6274955aaf214f441ca0536b293ff4a9ef103f264"
+        },
+        {
+          "path": "data/research/catalog-181-content/facts.json",
+          "sha256": "3f6c1b1ecee974a90cc46320cb9d015031f282837bbd276a1aad3bd1c6ff50ed"
+        }
+      ],
+      "draft": null,
+      "id": "anemone-obtusiloba",
+      "draftFile": "data/research/catalog-181-content/drafts/anemone-obtusiloba.json",
+      "verified": false,
+      "lastReviewedAt": null,
+      "scientificReviewStatus": "pending",
+      "independentScientificReview": "pending",
+      "sourceDecision": {
+        "file": "data/research/catalog-200-conflict-resolution.json",
+        "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c",
+        "id": "anemone-obtusiloba",
+        "originalStatus": "READY",
+        "acceptedName": "Anemonastrum obtusilobum",
+        "rank": "SPECIES"
+      },
+      "nationalConfirmation": {
+        "candidateId": "anemone-obtusiloba",
+        "originalScientificName": "Anemone obtusiloba",
+        "pages": [
+          110,
+          111
+        ],
+        "bookYear": 2006,
+        "bookPdfSha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8",
+        "urls": [
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=110",
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=111"
+        ],
+        "originalTextSha256": [
+          {
+            "page": 110,
+            "sha256": "f284c49de998c5a13ad956ef60c71cf0f5fe450eff4c0f24498e058e374d527d"
+          },
+          {
+            "page": 111,
+            "sha256": "db2060282edc5bc0a0429717ba86991618322619d9f92e536e7509a46ef04cb4"
+          }
+        ],
+        "historicalCategoryLines": [
+          {
+            "page": 110,
+            "lines": [
+              "Статусу: VU. Эь четки батыш ареалы Кыргызстандын Борбордук Тяньшанынд а жайгашкан."
+            ]
+          },
+          {
+            "page": 111,
+            "lines": [
+              "Статус: VU. Самая западная граница ареала в Кыргызстане находится в Центральном Тянь-Шане.",
+              "Status:  VU. It is the most rare species from 4 Kyrgyz congeners, distributed in Terskey Ala-Too Mountain"
+            ]
+          }
+        ],
+        "literalKyrgyzHeading": "Учсуз анемона",
+        "kyrgyzHeadingVisuallyRead": true,
+        "selectedKyrgyzName": "Учсуз анемона",
+        "kyrgyzScientificNameFallback": false,
+        "modernPresenceConfirmed": null,
+        "decreeReferencesPreservedSeparately": [
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-1-29",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3"
+          }
+        ],
+        "decreeNotUsedToOverrideBookConcept": true
+      },
+      "authorship": {
+        "value": "(D.Don) Mosyakin",
+        "sourceIds": [
+          "gbif-taxonomy"
+        ]
+      },
+      "namePolicy": {
+        "ky": "visually_confirmed_historical_book_heading",
+        "uz": "accepted_scientific_name_fallback_no_unverified_vernacular",
+        "en": "historical_book_heading"
+      },
+      "contentLanguage": {
+        "shortDescriptions": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "longSections": "ru",
+        "otherLongLanguages": null,
+        "scientificFallback": "ru, explicitly labelled by existing UI"
+      },
+      "editorialNotes": [
+        "Один из четырёх современных подвидов Anemonastrum obtusilobum не назначен без доказательств."
+      ],
+      "unknownFacts": [
+        "Современная национальная численность и сохранение исторических местонахождений не подтверждены."
+      ],
+      "preparation": {
+        "date": "2026-10-22",
+        "draftSha256": "115eb04a0b510a64cbfee10ab9cc4c66236d3099fde856c3144c84fe73e17936",
+        "draftSemanticFingerprint": "f0859cd67fa30a055447c4d320d55d08175426429f54cdd1eaf4e760b0b97e7d"
+      },
+      "state": "ready_for_review",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "anemone-obtusiloba",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "2eff54944933d18855bb646d01f8a3eb9bce0087745805d9662ce5dc1736ea16",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "2eff54944933d18855bb646d01f8a3eb9bce0087745805d9662ce5dc1736ea16"
+    },
+    {
+      "originalScientificName": "Berberis kaschgarica",
+      "acceptedScientificName": "Berberis ulicina",
+      "rank": "SPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Berberis kaschgarica, с.114–115); Статус:  VU",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Berberis ulicina",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:3980999",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy",
+        "powo-berberis-old",
+        "powo-berberis"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Berberis kaschgarica, с.114–115",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=115",
+          "accessedAt": "2026-10-22",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.diet",
+            "threats.0",
+            "conservationMeasures.0",
+            "content.appearance",
+            "names.en"
+          ],
+          "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 114-бет; проверенный кыргызский заголовок",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=114",
+          "accessedAt": "2026-10-22",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
+        },
+        {
+          "id": "powo-berberis-old",
+          "title": "POWO: Berberis kaschgarica Rupr.",
+          "publisher": "Royal Botanic Gardens, Kew",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:106805-1",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "Publications; Sert. Tiansch.:38 (1869); переиспользованы доказательства №25.4 (web_indexed_primary_text). Полный текст недоступного источника не объявлен заново прочитанным."
+        },
+        {
+          "id": "powo-berberis",
+          "title": "POWO: Berberis ulicina",
+          "publisher": "Royal Botanic Gardens, Kew",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:107162-1",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview"
+          ],
+          "notes": "Heterotypic Synonyms; Distribution; переиспользованы доказательства №25.4 (web_indexed_primary_text). Полный текст недоступного источника не объявлен заново прочитанным."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone Taxonomy: Berberis ulicina Hook.fil. & Thomson; exact SPECIES",
+          "publisher": "GBIF / GBIF Backbone Taxonomy",
+          "url": "https://api.gbif.org/v1/species/3980999",
+          "accessedAt": "2026-10-22",
+          "language": "en",
+          "taxonId": "gbif:3980999",
+          "supports": [
+            "scientificName",
+            "names.uz",
+            "content.overview",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
+          ],
+          "notes": "Источник — реальная запись указанного чек-листа. EXACT означает локальную строгую проверку canonicalName и rank; не вымышленный ответ API match. nubKey другого ранга не подставлен."
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/catalog-200-conflict-resolution.json",
+          "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c"
+        },
+        {
+          "path": "docs/evidence/catalog-200-conflict-sources.json",
+          "sha256": "ed3db701e03053951178b5f5c16c3a829e560d2b02113c101375c1725253af48"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy.json",
+          "sha256": "9280809fb203aefa5dbd97e2f1373220ad8918028d9661f35a0b8d8f49449425"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy-search.json",
+          "sha256": "584804d5a9553687e5d5e585ddb47974a2193ab9867021a08e3cf51440b5a0cd"
+        },
+        {
+          "path": "docs/evidence/catalog-181-national-accounts.json",
+          "sha256": "fb4e8d4ff73fd081898eb3c3b675634c1c132b4a8262e0fb701753cba21c65d9"
+        },
+        {
+          "path": "docs/evidence/catalog-181-images.json",
+          "sha256": "e46cdf82c03c59411ad6aba1ad721693da9313ff932b5ab9e0fe63393a347e82"
+        },
+        {
+          "path": "docs/evidence/catalog-181-photo-search.json",
+          "sha256": "e5577296864a986d9405c73ab4bf464d8f605057012ea81dfc07349b97886154"
+        },
+        {
+          "path": "docs/evidence/catalog-181-baseline.json",
+          "sha256": "8c63ed21eb17384fb6027dc6274955aaf214f441ca0536b293ff4a9ef103f264"
+        },
+        {
+          "path": "data/research/catalog-181-content/facts.json",
+          "sha256": "3f6c1b1ecee974a90cc46320cb9d015031f282837bbd276a1aad3bd1c6ff50ed"
+        }
+      ],
+      "draft": null,
+      "id": "berberis-kaschgarica",
+      "draftFile": "data/research/catalog-181-content/drafts/berberis-kaschgarica.json",
+      "verified": false,
+      "lastReviewedAt": null,
+      "scientificReviewStatus": "pending",
+      "independentScientificReview": "pending",
+      "sourceDecision": {
+        "file": "data/research/catalog-200-conflict-resolution.json",
+        "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c",
+        "id": "berberis-kaschgarica",
+        "originalStatus": "READY",
+        "acceptedName": "Berberis ulicina",
+        "rank": "SPECIES"
+      },
+      "nationalConfirmation": {
+        "candidateId": "berberis-kaschgarica",
+        "originalScientificName": "Berberis kaschgarica",
+        "pages": [
+          114,
+          115
+        ],
+        "bookYear": 2006,
+        "bookPdfSha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8",
+        "urls": [
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=114",
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=115"
+        ],
+        "originalTextSha256": [
+          {
+            "page": 114,
+            "sha256": "10796027f6d679ff267de57312e913a55e9882e019d5a5ff3ab63cd729d71c3c"
+          },
+          {
+            "page": 115,
+            "sha256": "cc9f570d0c0b08d958299579ebff4c32bb58ae9a5d994127d1360b757293feff"
+          }
+        ],
+        "historicalCategoryLines": [
+          {
+            "page": 114,
+            "lines": [
+              "Статусу: VU. Сейрек кездешъъчъ тър."
+            ]
+          },
+          {
+            "page": 115,
+            "lines": [
+              "Статус:  VU.   Редкий вид.",
+              "Status:  VU. It is rare little-known species, one of five Kyrgyz congeners, scarcely distributed in Sary-Dzhaz"
+            ]
+          }
+        ],
+        "literalKyrgyzHeading": "Кашкар бөрү карагаты",
+        "kyrgyzHeadingVisuallyRead": true,
+        "selectedKyrgyzName": "Кашкар бөрү карагаты",
+        "kyrgyzScientificNameFallback": false,
+        "modernPresenceConfirmed": null,
+        "decreeReferencesPreservedSeparately": [
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-1-32",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=3"
+          }
+        ],
+        "decreeNotUsedToOverrideBookConcept": true
+      },
+      "authorship": {
+        "value": "Hook.fil. & Thomson",
+        "sourceIds": [
+          "gbif-taxonomy"
+        ]
+      },
+      "namePolicy": {
+        "ky": "visually_confirmed_historical_book_heading",
+        "uz": "accepted_scientific_name_fallback_no_unverified_vernacular",
+        "en": "historical_book_heading"
+      },
+      "contentLanguage": {
+        "shortDescriptions": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "longSections": "ru",
+        "otherLongLanguages": null,
+        "scientificFallback": "ru, explicitly labelled by existing UI"
+      },
+      "editorialNotes": [
+        "Ревизия Harber 2020 принята в POWO; обработка флоры Кыргызстана 2011 года сохраняла B. kaschgarica.",
+        "Очевидное разночтение размерности высоты в кыргызском тексте не копируется; использовано русское описание.",
+        "Несогласованные языковые календари не выдаются за установленную фенологию."
+      ],
+      "unknownFacts": [
+        "Современная национальная численность и сохранение исторических местонахождений не подтверждены."
+      ],
+      "preparation": {
+        "date": "2026-10-22",
+        "draftSha256": "8edfe28513778782303d070096283f982384ec5d4e76f4858acb62fb7f82d164",
+        "draftSemanticFingerprint": "0b6b9d2c73d9751670f11aea47a0a0d62eb552b90bb4b49e769c0d72bdce22d6"
+      },
+      "state": "ready_for_review",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "berberis-kaschgarica",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "c8686f3e9bbfb253c7edd22ddcb5d4c55affb9ff82184032368240799b3ff932",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "c8686f3e9bbfb253c7edd22ddcb5d4c55affb9ff82184032368240799b3ff932"
+    },
+    {
+      "originalScientificName": "Primula macrocalyx",
+      "acceptedScientificName": "Primula veris subsp. macrocalyx",
+      "rank": "SUBSPECIES",
+      "group": "plants",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Primula macrocalyx, с.180–181); Статус:  VU",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Primula veris macrocalyx",
+        "rank": "SUBSPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:5832513",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy",
+        "powo-primula",
+        "grin-primula"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Primula macrocalyx, с.180–181",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=181",
+          "accessedAt": "2026-10-22",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.diet",
+            "threats.0",
+            "conservationMeasures.0",
+            "content.appearance",
+            "names.en"
+          ],
+          "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 180-бет; проверенный кыргызский заголовок",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=180",
+          "accessedAt": "2026-10-22",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
+        },
+        {
+          "id": "powo-primula",
+          "title": "POWO: Primula macrocalyx Bunge",
+          "publisher": "Royal Botanic Gardens, Kew",
+          "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:702229-1",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "Taxonomy; Fl. Altaic. 1:209 (1829); Flora Europaea 3 (1972); переиспользованы доказательства №25.4 (web_primary_page_text). Полный текст недоступного источника не объявлен заново прочитанным."
+        },
+        {
+          "id": "grin-primula",
+          "title": "USDA GRIN / AAFC: Primula macrocalyx",
+          "publisher": "USDA ARS GRIN; AAFC",
+          "url": "https://pgrc-rpc.agr.gc.ca/gringlobal/taxon/taxonomydetail?id=29651",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview"
+          ],
+          "notes": "Taxonomy detail 29651; переиспользованы доказательства №25.4 (web_indexed_primary_text). Полный текст недоступного источника не объявлен заново прочитанным."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone Taxonomy: Primula veris subsp. macrocalyx (Bunge) Lüdi; exact SUBSPECIES",
+          "publisher": "GBIF / GBIF Backbone Taxonomy",
+          "url": "https://api.gbif.org/v1/species/5832513",
+          "accessedAt": "2026-10-22",
+          "language": "en",
+          "taxonId": "gbif:5832513",
+          "supports": [
+            "scientificName",
+            "names.uz",
+            "content.overview",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
+          ],
+          "notes": "Источник — реальная запись указанного чек-листа. EXACT означает локальную строгую проверку canonicalName и rank; не вымышленный ответ API match. nubKey другого ранга не подставлен."
+        },
+        {
+          "id": "photo-commons",
+          "title": "Primula veris subsp. macrocalyx; Krzysztof Ziarnek, Kenraiz",
+          "publisher": "Wikimedia Commons; автор указан в атрибуции",
+          "url": "https://commons.wikimedia.org/wiki/File:Primula_veris_subsp._macrocalyx_kz06.jpg",
+          "accessedAt": "2026-10-22",
+          "language": null,
+          "supports": [
+            "images.0.caption"
+          ],
+          "notes": "Лицензия конкретного файла и исходное определение проверены; зарубежный снимок не подтверждает национальное включение."
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/catalog-200-conflict-resolution.json",
+          "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c"
+        },
+        {
+          "path": "docs/evidence/catalog-200-conflict-sources.json",
+          "sha256": "ed3db701e03053951178b5f5c16c3a829e560d2b02113c101375c1725253af48"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy.json",
+          "sha256": "9280809fb203aefa5dbd97e2f1373220ad8918028d9661f35a0b8d8f49449425"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy-search.json",
+          "sha256": "584804d5a9553687e5d5e585ddb47974a2193ab9867021a08e3cf51440b5a0cd"
+        },
+        {
+          "path": "docs/evidence/catalog-181-national-accounts.json",
+          "sha256": "fb4e8d4ff73fd081898eb3c3b675634c1c132b4a8262e0fb701753cba21c65d9"
+        },
+        {
+          "path": "docs/evidence/catalog-181-images.json",
+          "sha256": "e46cdf82c03c59411ad6aba1ad721693da9313ff932b5ab9e0fe63393a347e82"
+        },
+        {
+          "path": "docs/evidence/catalog-181-photo-search.json",
+          "sha256": "e5577296864a986d9405c73ab4bf464d8f605057012ea81dfc07349b97886154"
+        },
+        {
+          "path": "docs/evidence/catalog-181-baseline.json",
+          "sha256": "8c63ed21eb17384fb6027dc6274955aaf214f441ca0536b293ff4a9ef103f264"
+        },
+        {
+          "path": "data/research/catalog-181-content/facts.json",
+          "sha256": "3f6c1b1ecee974a90cc46320cb9d015031f282837bbd276a1aad3bd1c6ff50ed"
+        }
+      ],
+      "draft": null,
+      "id": "primula-macrocalyx",
+      "draftFile": "data/research/catalog-181-content/drafts/primula-macrocalyx.json",
+      "verified": false,
+      "lastReviewedAt": null,
+      "scientificReviewStatus": "pending",
+      "independentScientificReview": "pending",
+      "sourceDecision": {
+        "file": "data/research/catalog-200-conflict-resolution.json",
+        "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c",
+        "id": "primula-macrocalyx",
+        "originalStatus": "READY",
+        "acceptedName": "Primula veris subsp. macrocalyx",
+        "rank": "SUBSPECIES"
+      },
+      "nationalConfirmation": {
+        "candidateId": "primula-macrocalyx",
+        "originalScientificName": "Primula macrocalyx",
+        "pages": [
+          180,
+          181
+        ],
+        "bookYear": 2006,
+        "bookPdfSha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8",
+        "urls": [
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=180",
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=181"
+        ],
+        "originalTextSha256": [
+          {
+            "page": 180,
+            "sha256": "1fde4e5260805f30a5425022757a53f5af707d697fbbd680e01bb8d51c9b5362"
+          },
+          {
+            "page": 181,
+            "sha256": "099a94469f84e77ef7ba67679c4e1414439f0f9d09306857c3847c1977c77368"
+          }
+        ],
+        "historicalCategoryLines": [
+          {
+            "page": 180,
+            "lines": [
+              "Статусу: VU.Кыргызстанда ётё сейрек таралган, витаминдъъ жана декоративдъъ ёсъмдък."
+            ]
+          },
+          {
+            "page": 181,
+            "lines": [
+              "Статус:  VU. В Кыргызстане очень узкораспространенное, редкое, декоративное и витаминоносное",
+              "Status: VU. This sporadically distributed widespread species is rare very narrow-spreaded plant in Kyrgyzstan."
+            ]
+          }
+        ],
+        "literalKyrgyzHeading": "Ири чөйчөкчөлүү примула",
+        "kyrgyzHeadingVisuallyRead": true,
+        "selectedKyrgyzName": "Ири чөйчөкчөлүү примула",
+        "kyrgyzScientificNameFallback": false,
+        "modernPresenceConfirmed": null,
+        "decreeReferencesPreservedSeparately": [
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-1-65",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5"
+          }
+        ],
+        "decreeNotUsedToOverrideBookConcept": true
+      },
+      "authorship": {
+        "value": "(Bunge) Lüdi",
+        "sourceIds": [
+          "gbif-taxonomy"
+        ]
+      },
+      "namePolicy": {
+        "ky": "visually_confirmed_historical_book_heading",
+        "uz": "accepted_scientific_name_fallback_no_unverified_vernacular",
+        "en": "historical_book_heading"
+      },
+      "contentLanguage": {
+        "shortDescriptions": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "longSections": "ru",
+        "otherLongLanguages": null,
+        "scientificFallback": "ru, explicitly labelled by existing UI"
+      },
+      "editorialNotes": [
+        "Сомнительная размерность чашечки в русском тексте не воспроизводится и не исправляется догадкой."
+      ],
+      "unknownFacts": [
+        "Современная национальная численность и сохранение исторических местонахождений не подтверждены."
+      ],
+      "preparation": {
+        "date": "2026-10-22",
+        "draftSha256": "381447ec3db5d4ee68f4acd3cb9606345d25e714c6c954df983081199b924e1c",
+        "draftSemanticFingerprint": "58d7de502f6ffaee3bba5602fa704b3154b8c0082f964a8b82257080eeb441ac"
+      },
+      "state": "ready_for_review",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "primula-macrocalyx",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [],
+        "fingerprint": "b3e613a3b96ff3f3b25c79c34b34b19492b081299710cc696fe0f806f89e71e2",
+        "readiness": {
+          "photo": "prepared",
+          "photoCheck": "passed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "b3e613a3b96ff3f3b25c79c34b34b19492b081299710cc696fe0f806f89e71e2"
+    },
+    {
+      "originalScientificName": "Sonjagaster coronatus",
+      "acceptedScientificName": "Thecagaster coronata",
+      "rank": "SPECIES",
+      "group": "arthropods",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Sonjagaster coronatus, с.250–251); Статус: II  категория  (VU A4bc;  B2b(iii,iv); D2) ",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Thecagaster coronata",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:296781457",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy",
+        "odonata-2024"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Sonjagaster coronatus, с.250–251",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=251",
+          "accessedAt": "2026-10-22",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.diet",
+            "threats.0",
+            "conservationMeasures.0",
+            "content.appearance",
+            "names.en"
+          ],
+          "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 250-бет; проверенный кыргызский заголовок",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=250",
+          "accessedAt": "2026-10-22",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
+        },
+        {
+          "id": "odonata-2024",
+          "title": "Schneider et al. (2024): Cordulegastridae molecular phylogeny",
+          "publisher": "Insects / MDPI",
+          "url": "https://pisum.icgbio.ru/kosterin/pdf/schneider_et_al_2024.pdf",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.distribution",
+            "content.shortDescription"
+          ],
+          "notes": "Insects 15:622, DOI 10.3390/insects15080622; PDF pp.3,5 (specimen 636, PP792850/PQ120578),17,27–29; table 3, p.29; переиспользованы доказательства №25.4 (existing_primary_pdf_read_in_full_relevant_sections). Полный текст недоступного источника не объявлен заново прочитанным."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "Catalogue of Life: Thecagaster coronata (Morton, 1916); exact SPECIES",
+          "publisher": "GBIF / Catalogue of Life",
+          "url": "https://api.gbif.org/v1/species/296781457",
+          "accessedAt": "2026-10-22",
+          "language": "en",
+          "taxonId": "gbif:296781457",
+          "supports": [
+            "scientificName",
+            "names.uz",
+            "content.overview",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
+          ],
+          "notes": "Источник — реальная запись указанного чек-листа. EXACT означает локальную строгую проверку canonicalName и rank; не вымышленный ответ API match. nubKey другого ранга не подставлен."
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/catalog-200-conflict-resolution.json",
+          "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c"
+        },
+        {
+          "path": "docs/evidence/catalog-200-conflict-sources.json",
+          "sha256": "ed3db701e03053951178b5f5c16c3a829e560d2b02113c101375c1725253af48"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy.json",
+          "sha256": "9280809fb203aefa5dbd97e2f1373220ad8918028d9661f35a0b8d8f49449425"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy-search.json",
+          "sha256": "584804d5a9553687e5d5e585ddb47974a2193ab9867021a08e3cf51440b5a0cd"
+        },
+        {
+          "path": "docs/evidence/catalog-181-national-accounts.json",
+          "sha256": "fb4e8d4ff73fd081898eb3c3b675634c1c132b4a8262e0fb701753cba21c65d9"
+        },
+        {
+          "path": "docs/evidence/catalog-181-images.json",
+          "sha256": "e46cdf82c03c59411ad6aba1ad721693da9313ff932b5ab9e0fe63393a347e82"
+        },
+        {
+          "path": "docs/evidence/catalog-181-photo-search.json",
+          "sha256": "e5577296864a986d9405c73ab4bf464d8f605057012ea81dfc07349b97886154"
+        },
+        {
+          "path": "docs/evidence/catalog-181-baseline.json",
+          "sha256": "8c63ed21eb17384fb6027dc6274955aaf214f441ca0536b293ff4a9ef103f264"
+        },
+        {
+          "path": "data/research/catalog-181-content/facts.json",
+          "sha256": "3f6c1b1ecee974a90cc46320cb9d015031f282837bbd276a1aad3bd1c6ff50ed"
+        }
+      ],
+      "draft": null,
+      "id": "sonjagaster-coronatus",
+      "draftFile": "data/research/catalog-181-content/drafts/sonjagaster-coronatus.json",
+      "verified": false,
+      "lastReviewedAt": null,
+      "scientificReviewStatus": "pending",
+      "independentScientificReview": "pending",
+      "sourceDecision": {
+        "file": "data/research/catalog-200-conflict-resolution.json",
+        "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c",
+        "id": "sonjagaster-coronatus",
+        "originalStatus": "READY",
+        "acceptedName": "Thecagaster coronata",
+        "rank": "SPECIES"
+      },
+      "nationalConfirmation": {
+        "candidateId": "sonjagaster-coronatus",
+        "originalScientificName": "Sonjagaster coronatus",
+        "pages": [
+          250,
+          251
+        ],
+        "bookYear": 2006,
+        "bookPdfSha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8",
+        "urls": [
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=250",
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=251"
+        ],
+        "originalTextSha256": [
+          {
+            "page": 250,
+            "sha256": "8c5953e6cfed7aab16ce3ed1d0b1f7ca64542d53063c542a6da72382f645662a"
+          },
+          {
+            "page": 251,
+            "sha256": "68a0c2fc84032159e9aa4af672fad124cb16cd2fd7d60df5a527dd8bb980e8c1"
+          }
+        ],
+        "historicalCategoryLines": [
+          {
+            "page": 250,
+            "lines": [
+              "Статусу:  II категория (VU A4bc; B2b(iii,iv); D2).  Саны кыскарууга багыт алган белгилъъ"
+            ]
+          },
+          {
+            "page": 251,
+            "lines": [
+              "Статус: II  категория  (VU A4bc;  B2b(iii,iv); D2) .    Локально  встречающийся  вид,  с  тенденцией  к",
+              "Status: Vulnerable (VU A4bc; B2b(iii,iv); D2 – Category II), local montane Middle-Asian species with mosaic"
+            ]
+          }
+        ],
+        "literalKyrgyzHeading": "Тикен куйрук ийнелик",
+        "kyrgyzHeadingVisuallyRead": true,
+        "selectedKyrgyzName": "Тикен куйрук ийнелик",
+        "kyrgyzScientificNameFallback": false,
+        "modernPresenceConfirmed": null,
+        "decreeReferencesPreservedSeparately": [
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-4-1",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=11"
+          }
+        ],
+        "decreeNotUsedToOverrideBookConcept": true
+      },
+      "authorship": {
+        "value": "(Morton, 1916) ",
+        "sourceIds": [
+          "gbif-taxonomy"
+        ]
+      },
+      "namePolicy": {
+        "ky": "visually_confirmed_historical_book_heading",
+        "uz": "accepted_scientific_name_fallback_no_unverified_vernacular",
+        "en": "historical_book_heading"
+      },
+      "contentLanguage": {
+        "shortDescriptions": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "longSections": "ru",
+        "otherLongLanguages": null,
+        "scientificFallback": "ru, explicitly labelled by existing UI"
+      },
+      "editorialNotes": [
+        "Ревизия сохраняет возможность будущей синонимии с T. brevistigma как исследовательскую гипотезу; выполненной синонимизацией она не названа.",
+        "Для точного выбранного имени используется исходная запись Catalogue of Life через GBIF, а не каноническое имя другого рода в backbone."
+      ],
+      "unknownFacts": [
+        "Современная национальная численность и сохранение исторических местонахождений не подтверждены."
+      ],
+      "preparation": {
+        "date": "2026-10-22",
+        "draftSha256": "438ddf7a23994e8b99e31da215677335d503b791008acc85f43889ef298dd4c2",
+        "draftSemanticFingerprint": "79c3ec4605a59f4b1fa270b6c4de43ae665b8c0f949b711041b6f2039d75c6b1"
+      },
+      "state": "ready_for_review",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "sonjagaster-coronatus",
+        "batchNumber": 1,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "f3c9d11d65e2ef3a5f4da2467458f3444e38b38602e3e8bcf8e51939b1f8055b",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "f3c9d11d65e2ef3a5f4da2467458f3444e38b38602e3e8bcf8e51939b1f8055b"
+    },
+    {
+      "originalScientificName": "Papilio alexanor voldemar",
+      "acceptedScientificName": "Papilio alexanor voldemar",
+      "rank": "SUBSPECIES",
+      "group": "arthropods",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Papilio alexanor voldemar, с.270–271); Статус: II категория (VU B1ab(iii)+2ab(iii)c(iii,iv); C2b) ",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "taxonomyEvidence": null,
+      "taxonomySourceIds": [
+        "papilio-2025"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Papilio alexanor voldemar, с.270–271",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=271",
+          "accessedAt": "2026-10-22",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.diet",
+            "threats.0",
+            "conservationMeasures.0",
+            "content.appearance",
+            "names.en"
+          ],
+          "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 270-бет; проверенный кыргызский заголовок",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=270",
+          "accessedAt": "2026-10-22",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
+        },
+        {
+          "id": "papilio-2025",
+          "title": "Nazari et al. (2025): Papilio alexanor phylogeography",
+          "publisher": "Biological Journal of the Linnean Society / Oxford University Press",
+          "url": "https://doi.org/10.1093/biolinnean/blaf078",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "names.uz",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.shortDescription"
+          ],
+          "notes": "Biol. J. Linn. Soc. 146(1), blaf078; Abstract and systematic conclusions; published 9 September 2025; переиспользованы доказательства №25.4 (web_primary_page_text). Полный текст недоступного источника не объявлен заново прочитанным."
+        }
+      ],
+      "contradictions": [
+        "В GBIF найден только SYNONYM SUBSPECIES voldemar → SPECIES alexanor. Точный принятый подвидовой идентификатор не установлен; родительский вид не подставляется."
+      ],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/catalog-200-conflict-resolution.json",
+          "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c"
+        },
+        {
+          "path": "docs/evidence/catalog-200-conflict-sources.json",
+          "sha256": "ed3db701e03053951178b5f5c16c3a829e560d2b02113c101375c1725253af48"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy.json",
+          "sha256": "9280809fb203aefa5dbd97e2f1373220ad8918028d9661f35a0b8d8f49449425"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy-search.json",
+          "sha256": "584804d5a9553687e5d5e585ddb47974a2193ab9867021a08e3cf51440b5a0cd"
+        },
+        {
+          "path": "docs/evidence/catalog-181-national-accounts.json",
+          "sha256": "fb4e8d4ff73fd081898eb3c3b675634c1c132b4a8262e0fb701753cba21c65d9"
+        },
+        {
+          "path": "docs/evidence/catalog-181-images.json",
+          "sha256": "e46cdf82c03c59411ad6aba1ad721693da9313ff932b5ab9e0fe63393a347e82"
+        },
+        {
+          "path": "docs/evidence/catalog-181-photo-search.json",
+          "sha256": "e5577296864a986d9405c73ab4bf464d8f605057012ea81dfc07349b97886154"
+        },
+        {
+          "path": "docs/evidence/catalog-181-baseline.json",
+          "sha256": "8c63ed21eb17384fb6027dc6274955aaf214f441ca0536b293ff4a9ef103f264"
+        },
+        {
+          "path": "data/research/catalog-181-content/facts.json",
+          "sha256": "3f6c1b1ecee974a90cc46320cb9d015031f282837bbd276a1aad3bd1c6ff50ed"
+        }
+      ],
+      "draft": null,
+      "id": "papilio-alexanor-voldemar",
+      "draftFile": "data/research/catalog-181-content/drafts/papilio-alexanor-voldemar.json",
+      "verified": false,
+      "lastReviewedAt": null,
+      "scientificReviewStatus": "pending",
+      "independentScientificReview": "pending",
+      "sourceDecision": {
+        "file": "data/research/catalog-200-conflict-resolution.json",
+        "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c",
+        "id": "papilio-alexanor-voldemar",
+        "originalStatus": "READY",
+        "acceptedName": "Papilio alexanor voldemar",
+        "rank": "SUBSPECIES"
+      },
+      "nationalConfirmation": {
+        "candidateId": "papilio-alexanor-voldemar",
+        "originalScientificName": "Papilio alexanor voldemar",
+        "pages": [
+          270,
+          271
+        ],
+        "bookYear": 2006,
+        "bookPdfSha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8",
+        "urls": [
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=270",
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=271"
+        ],
+        "originalTextSha256": [
+          {
+            "page": 270,
+            "sha256": "330d57ff78d979d438292a2f528ef39202a2f1d13575551374f716624a7cbb29"
+          },
+          {
+            "page": 271,
+            "sha256": "1c62bde1953e31833cdd2413540d7eb4c0d724f2c5dc3481ada891ee119eecb4"
+          }
+        ],
+        "historicalCategoryLines": [
+          {
+            "page": 270,
+            "lines": [
+              "Статусу:  II категория (VU B1ab(iii)+2ab(iii)c(iii,iv); C2b).  Ётё чектелген тъштък-батыш палеарктикада"
+            ]
+          },
+          {
+            "page": 271,
+            "lines": [
+              "Статус: II категория (VU B1ab(iii)+2ab(iii)c(iii,iv); C2b) .  Локальный подвид южного западнопалеарктического вида",
+              "Status:  Vulnerable (VU B1ab (iii)+2ab(iii)c(iii, iv); C2b – Category II), local West Tien Shan subspecies of mosaic-"
+            ]
+          }
+        ],
+        "literalKyrgyzHeading": "Кичи махаон",
+        "kyrgyzHeadingVisuallyRead": true,
+        "selectedKyrgyzName": "Кичи махаон",
+        "kyrgyzScientificNameFallback": false,
+        "modernPresenceConfirmed": null,
+        "decreeReferencesPreservedSeparately": [
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-4-11",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=11"
+          }
+        ],
+        "decreeNotUsedToOverrideBookConcept": true
+      },
+      "authorship": {
+        "value": "Kreuzberg, 1989",
+        "sourceIds": [
+          "papilio-2025"
+        ]
+      },
+      "namePolicy": {
+        "ky": "visually_confirmed_historical_book_heading",
+        "uz": "accepted_scientific_name_fallback_no_unverified_vernacular",
+        "en": "historical_book_heading"
+      },
+      "contentLanguage": {
+        "shortDescriptions": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "longSections": "ru",
+        "otherLongLanguages": null,
+        "scientificFallback": "ru, explicitly labelled by existing UI"
+      },
+      "editorialNotes": [
+        "Связь voldemar с позицией judeus в постановлении остаётся неразрешённой; национальное включение обосновано отдельным книжным очерком."
+      ],
+      "unknownFacts": [
+        "Современная национальная численность и сохранение исторических местонахождений не подтверждены."
+      ],
+      "preparation": {
+        "date": "2026-10-22",
+        "draftSha256": "8eafcbacecab6f6164da7eb6ac0ffa2e7686727063f7a424736c56866baa3d80",
+        "draftSemanticFingerprint": "55ed1da1e42fcfc03014565ec30ec17659d087364adde3b1f52eb01460f92684"
+      },
+      "state": "needs_evidence",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "papilio-alexanor-voldemar",
+        "batchNumber": 1,
+        "state": "needs_evidence",
+        "errors": [
+          "Нет точного принятого таксона со связанным источником и идентификатором",
+          "Есть нерешённые противоречия или обязательные пробелы"
+        ],
+        "warnings": [],
+        "fingerprint": "eb591a3debaa4db1081a339761b738357e2df4d72b85866a9672671091afc0fc",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "eb591a3debaa4db1081a339761b738357e2df4d72b85866a9672671091afc0fc"
+    },
+    {
+      "originalScientificName": "Megalodontes kuznetzovi",
+      "acceptedScientificName": "Megalodontes kuznetzovi",
+      "rank": "SPECIES",
+      "group": "arthropods",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Megalodontes kuznetzovi, с.276–277); Статус: II категория (VU B1ab(iii)+2ab(ii,iii,iv); D2; E) ",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "taxonomyEvidence": null,
+      "taxonomySourceIds": [
+        "wasp-megalodontes"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Megalodontes kuznetzovi, с.276–277",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=277",
+          "accessedAt": "2026-10-22",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.diet",
+            "threats.0",
+            "conservationMeasures.0",
+            "content.appearance"
+          ],
+          "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 276-бет; проверенный кыргызский заголовок",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=276",
+          "accessedAt": "2026-10-22",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
+        },
+        {
+          "id": "wasp-megalodontes",
+          "title": "Iziko / WaspWeb: Megalodontes",
+          "publisher": "Iziko South African Museum / WaspWeb",
+          "url": "https://www.waspweb.org/Pamphilioidea/Megalodontesidae/Megalodontes/index.htm",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "names.uz",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.en",
+            "content.shortDescription"
+          ],
+          "notes": "Species list: Megalodontes kuznetzovi; переиспользованы доказательства №25.4 (web_indexed_primary_checklist_text_only). Полный текст недоступного источника не объявлен заново прочитанным."
+        }
+      ],
+      "contradictions": [
+        "Точный принятый вид с числовым GBIF-ключом в ограниченном поиске не найден; профильный WaspWeb не заменён вымышленным gbif: ID."
+      ],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/catalog-200-conflict-resolution.json",
+          "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c"
+        },
+        {
+          "path": "docs/evidence/catalog-200-conflict-sources.json",
+          "sha256": "ed3db701e03053951178b5f5c16c3a829e560d2b02113c101375c1725253af48"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy.json",
+          "sha256": "9280809fb203aefa5dbd97e2f1373220ad8918028d9661f35a0b8d8f49449425"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy-search.json",
+          "sha256": "584804d5a9553687e5d5e585ddb47974a2193ab9867021a08e3cf51440b5a0cd"
+        },
+        {
+          "path": "docs/evidence/catalog-181-national-accounts.json",
+          "sha256": "fb4e8d4ff73fd081898eb3c3b675634c1c132b4a8262e0fb701753cba21c65d9"
+        },
+        {
+          "path": "docs/evidence/catalog-181-images.json",
+          "sha256": "e46cdf82c03c59411ad6aba1ad721693da9313ff932b5ab9e0fe63393a347e82"
+        },
+        {
+          "path": "docs/evidence/catalog-181-photo-search.json",
+          "sha256": "e5577296864a986d9405c73ab4bf464d8f605057012ea81dfc07349b97886154"
+        },
+        {
+          "path": "docs/evidence/catalog-181-baseline.json",
+          "sha256": "8c63ed21eb17384fb6027dc6274955aaf214f441ca0536b293ff4a9ef103f264"
+        },
+        {
+          "path": "data/research/catalog-181-content/facts.json",
+          "sha256": "3f6c1b1ecee974a90cc46320cb9d015031f282837bbd276a1aad3bd1c6ff50ed"
+        }
+      ],
+      "draft": null,
+      "id": "megalodontes-kuznetzovi",
+      "draftFile": "data/research/catalog-181-content/drafts/megalodontes-kuznetzovi.json",
+      "verified": false,
+      "lastReviewedAt": null,
+      "scientificReviewStatus": "pending",
+      "independentScientificReview": "pending",
+      "sourceDecision": {
+        "file": "data/research/catalog-200-conflict-resolution.json",
+        "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c",
+        "id": "megalodontes-kuznetzovi",
+        "originalStatus": "READY",
+        "acceptedName": "Megalodontes kuznetzovi",
+        "rank": "SPECIES"
+      },
+      "nationalConfirmation": {
+        "candidateId": "megalodontes-kuznetzovi",
+        "originalScientificName": "Megalodontes kuznetzovi",
+        "pages": [
+          276,
+          277
+        ],
+        "bookYear": 2006,
+        "bookPdfSha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8",
+        "urls": [
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=276",
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=277"
+        ],
+        "originalTextSha256": [
+          {
+            "page": 276,
+            "sha256": "1bf2e6c59528278ecc6179f1a0bf0e3b56f5551de728573fcb0a4a719bccd568"
+          },
+          {
+            "page": 277,
+            "sha256": "1e0999f23778554f2461520f514632771d84d2ff5a7ed1f9d079311c67398c64"
+          }
+        ],
+        "historicalCategoryLines": [
+          {
+            "page": 276,
+            "lines": [
+              "Статусу:  II категория (VU B1ab(iii)+2ab(ii,iii,iv); D2; E).   Сейрек тар локалдуу Батыш Тяньшандын"
+            ]
+          },
+          {
+            "page": 277,
+            "lines": [
+              "Статус: II категория (VU B1ab(iii)+2ab(ii,iii,iv); D2; E) . Редкий узколокальный эндемик Западного Тянь-Шаня,",
+              "Status:  Vulnerable (VU B1ab(iii)+2ab(ii, iii, iv); D2; E – Category II), West Tien Shan endem, which has the most narrow"
+            ]
+          }
+        ],
+        "literalKyrgyzHeading": "Кузнецов бутак муруттуу таарыгычы",
+        "kyrgyzHeadingVisuallyRead": true,
+        "selectedKyrgyzName": "Кузнецов бутак муруттуу таарыгычы",
+        "kyrgyzScientificNameFallback": false,
+        "modernPresenceConfirmed": null,
+        "decreeReferencesPreservedSeparately": [
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-4-14",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=11"
+          }
+        ],
+        "decreeNotUsedToOverrideBookConcept": true
+      },
+      "authorship": {
+        "value": "Dovnar-Zapolskij, 1930",
+        "sourceIds": [
+          "wasp-megalodontes"
+        ]
+      },
+      "namePolicy": {
+        "ky": "visually_confirmed_historical_book_heading",
+        "uz": "accepted_scientific_name_fallback_no_unverified_vernacular",
+        "en": "accepted_scientific_name_fallback"
+      },
+      "contentLanguage": {
+        "shortDescriptions": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "longSections": "ru",
+        "otherLongLanguages": null,
+        "scientificFallback": "ru, explicitly labelled by existing UI"
+      },
+      "editorialNotes": [
+        "Предположения национального автора о личиночной кормовой базе и зимующей стадии не повышены до установленных фактов."
+      ],
+      "unknownFacts": [
+        "Современная национальная численность и сохранение исторических местонахождений не подтверждены."
+      ],
+      "preparation": {
+        "date": "2026-10-22",
+        "draftSha256": "3470655eea598397a8cea4a110592a5b672748c71fc3d66bb43f4a6f06c0160d",
+        "draftSemanticFingerprint": "e6fa60183bcee8424dfe67f2118af96b091a90b1c0d63a5e6288a61f0118b568"
+      },
+      "state": "needs_evidence",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "megalodontes-kuznetzovi",
+        "batchNumber": 2,
+        "state": "needs_evidence",
+        "errors": [
+          "Нет точного принятого таксона со связанным источником и идентификатором",
+          "Есть нерешённые противоречия или обязательные пробелы"
+        ],
+        "warnings": [],
+        "fingerprint": "70f7b361f95a63acd3f05fdff1d4b1bf60bf0d085192aeb2da5288d8de51d84e",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "70f7b361f95a63acd3f05fdff1d4b1bf60bf0d085192aeb2da5288d8de51d84e"
+    },
+    {
+      "originalScientificName": "Polochrum pamirepandum",
+      "acceptedScientificName": "Polochrum pamirepandum",
+      "rank": "SPECIES",
+      "group": "arthropods",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "VU",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Polochrum pamirepandum, с.278–279); Статус: II категория (VU B2ab(iii); C2b; D2) ",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "taxonomyEvidence": null,
+      "taxonomySourceIds": [
+        "wasp-polochrum"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Polochrum pamirepandum, с.278–279",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=279",
+          "accessedAt": "2026-10-22",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.diet",
+            "threats.0",
+            "conservationMeasures.0",
+            "content.appearance",
+            "names.en"
+          ],
+          "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 278-бет; проверенный кыргызский заголовок",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=278",
+          "accessedAt": "2026-10-22",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
+        },
+        {
+          "id": "wasp-polochrum",
+          "title": "Iziko / WaspWeb: World Sapygidae",
+          "publisher": "Iziko South African Museum / WaspWeb",
+          "url": "https://www.waspweb.org/Pompiloidea/Sapygidae/Classification/Classification_world_Sapygidae.htm",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "names.uz",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "content.shortDescription"
+          ],
+          "notes": "Genus Polochrum; curator Simon van Noort; citation 2026; переиспользованы доказательства №25.4 (web_primary_page_text). Полный текст недоступного источника не объявлен заново прочитанным."
+        }
+      ],
+      "contradictions": [
+        "В точном поиске GBIF видовой accepted record не найден. Ни P. repandum, ни родовой ключ не подставлены."
+      ],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/catalog-200-conflict-resolution.json",
+          "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c"
+        },
+        {
+          "path": "docs/evidence/catalog-200-conflict-sources.json",
+          "sha256": "ed3db701e03053951178b5f5c16c3a829e560d2b02113c101375c1725253af48"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy.json",
+          "sha256": "9280809fb203aefa5dbd97e2f1373220ad8918028d9661f35a0b8d8f49449425"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy-search.json",
+          "sha256": "584804d5a9553687e5d5e585ddb47974a2193ab9867021a08e3cf51440b5a0cd"
+        },
+        {
+          "path": "docs/evidence/catalog-181-national-accounts.json",
+          "sha256": "fb4e8d4ff73fd081898eb3c3b675634c1c132b4a8262e0fb701753cba21c65d9"
+        },
+        {
+          "path": "docs/evidence/catalog-181-images.json",
+          "sha256": "e46cdf82c03c59411ad6aba1ad721693da9313ff932b5ab9e0fe63393a347e82"
+        },
+        {
+          "path": "docs/evidence/catalog-181-photo-search.json",
+          "sha256": "e5577296864a986d9405c73ab4bf464d8f605057012ea81dfc07349b97886154"
+        },
+        {
+          "path": "docs/evidence/catalog-181-baseline.json",
+          "sha256": "8c63ed21eb17384fb6027dc6274955aaf214f441ca0536b293ff4a9ef103f264"
+        },
+        {
+          "path": "data/research/catalog-181-content/facts.json",
+          "sha256": "3f6c1b1ecee974a90cc46320cb9d015031f282837bbd276a1aad3bd1c6ff50ed"
+        }
+      ],
+      "draft": null,
+      "id": "polochrum-pamirepandum",
+      "draftFile": "data/research/catalog-181-content/drafts/polochrum-pamirepandum.json",
+      "verified": false,
+      "lastReviewedAt": null,
+      "scientificReviewStatus": "pending",
+      "independentScientificReview": "pending",
+      "sourceDecision": {
+        "file": "data/research/catalog-200-conflict-resolution.json",
+        "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c",
+        "id": "polochrum-pamirepandum",
+        "originalStatus": "READY",
+        "acceptedName": "Polochrum pamirepandum",
+        "rank": "SPECIES"
+      },
+      "nationalConfirmation": {
+        "candidateId": "polochrum-pamirepandum",
+        "originalScientificName": "Polochrum pamirepandum",
+        "pages": [
+          278,
+          279
+        ],
+        "bookYear": 2006,
+        "bookPdfSha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8",
+        "urls": [
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=278",
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=279"
+        ],
+        "originalTextSha256": [
+          {
+            "page": 278,
+            "sha256": "8f7b688b268d9028b5c9bf5a818949301c4778a82f9a63cb1f35b94be1b4c08a"
+          },
+          {
+            "page": 279,
+            "sha256": "b169b6112ee488f944b958ad5a38502812fabde3c0c20a9762635a9ddbba3776"
+          }
+        ],
+        "historicalCategoryLines": [
+          {
+            "page": 278,
+            "lines": [
+              "Статусу:  II категория (VU B2ab(iii); C2b; D2) . Азыркы фаунада таралышы кыскарып бара жаткан"
+            ]
+          },
+          {
+            "page": 279,
+            "lines": [
+              "Статус: II категория (VU B2ab(iii); C2b; D2) . Редкий уязвимый эндемичный среднеазиатский вид реликтового",
+              "Status: Vulnerable (VU B2ab (iii); C2b; D2 – Category II), one of two representatives of the rarest relic genus, which has"
+            ]
+          }
+        ],
+        "literalKyrgyzHeading": "Полохрум сары аарысы",
+        "kyrgyzHeadingVisuallyRead": true,
+        "selectedKyrgyzName": "Полохрум сары аарысы",
+        "kyrgyzScientificNameFallback": false,
+        "modernPresenceConfirmed": null,
+        "decreeReferencesPreservedSeparately": [
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-4-15",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=11"
+          }
+        ],
+        "decreeNotUsedToOverrideBookConcept": true
+      },
+      "authorship": {
+        "value": "Kurzenko, 1986",
+        "sourceIds": [
+          "wasp-polochrum"
+        ]
+      },
+      "namePolicy": {
+        "ky": "visually_confirmed_historical_book_heading",
+        "uz": "accepted_scientific_name_fallback_no_unverified_vernacular",
+        "en": "historical_book_heading"
+      },
+      "contentLanguage": {
+        "shortDescriptions": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "longSections": "ru",
+        "otherLongLanguages": null,
+        "scientificFallback": "ru, explicitly labelled by existing UI"
+      },
+      "editorialNotes": [
+        "Старое определение repandum не использовано для чужой фотографии и не выдано за современный accepted taxon."
+      ],
+      "unknownFacts": [
+        "Современная национальная численность и сохранение исторических местонахождений не подтверждены."
+      ],
+      "preparation": {
+        "date": "2026-10-22",
+        "draftSha256": "9c30a1dc5eb4109a701dba6557725ebaea11a4786d8a81b5ea32c8e4f46ac65b",
+        "draftSemanticFingerprint": "48bbd5456b573fe83d32cd95c067177d3881350a9019e49105d8c39b825205bd"
+      },
+      "state": "needs_evidence",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "polochrum-pamirepandum",
+        "batchNumber": 2,
+        "state": "needs_evidence",
+        "errors": [
+          "Нет точного принятого таксона со связанным источником и идентификатором",
+          "Есть нерешённые противоречия или обязательные пробелы"
+        ],
+        "warnings": [],
+        "fingerprint": "e9c082eb11239d593b3347fad07f0b04159d2572deaaeb2b3f57237dfe7f5523",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "e9c082eb11239d593b3347fad07f0b04159d2572deaaeb2b3f57237dfe7f5523"
+    },
+    {
+      "originalScientificName": "Capoetobrama kuschakewitschi orientalis",
+      "acceptedScientificName": "Capoetobrama kuschakewitschi",
+      "rank": "SPECIES",
+      "group": "fish",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "CR",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Capoetobrama kuschakewitschi orientalis, с.302–303); Статус:  2 [CR: C]",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Capoetobrama kuschakewitschi",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:4286997",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy",
+        "itis-capoetobrama"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Capoetobrama kuschakewitschi orientalis, с.302–303",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=303",
+          "accessedAt": "2026-10-22",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.diet",
+            "threats.0",
+            "conservationMeasures.0",
+            "content.appearance",
+            "names.en"
+          ],
+          "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 302-бет; проверенный кыргызский заголовок",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=302",
+          "accessedAt": "2026-10-22",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
+        },
+        {
+          "id": "itis-capoetobrama",
+          "title": "ITIS: Capoetobrama kuschakewitschi",
+          "publisher": "Integrated Taxonomic Information System",
+          "url": "https://www.itis.gov/ITISWebService/jsonservice/getFullRecordFromTSN?tsn=688845",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "synonymList; hierarchyUp; taxonUsageRating valid; source Eschmeyer 11-Jan-2023; переиспользованы доказательства №25.4 (live_primary_API_response). Полный текст недоступного источника не объявлен заново прочитанным."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone Taxonomy: Capoetobrama kuschakewitschi (Kessler, 1872); exact SPECIES",
+          "publisher": "GBIF / GBIF Backbone Taxonomy",
+          "url": "https://api.gbif.org/v1/species/4286997",
+          "accessedAt": "2026-10-22",
+          "language": "en",
+          "taxonId": "gbif:4286997",
+          "supports": [
+            "scientificName",
+            "names.uz",
+            "content.overview",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
+          ],
+          "notes": "Источник — реальная запись указанного чек-листа. EXACT означает локальную строгую проверку canonicalName и rank; не вымышленный ответ API match. nubKey другого ранга не подставлен."
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/catalog-200-conflict-resolution.json",
+          "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c"
+        },
+        {
+          "path": "docs/evidence/catalog-200-conflict-sources.json",
+          "sha256": "ed3db701e03053951178b5f5c16c3a829e560d2b02113c101375c1725253af48"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy.json",
+          "sha256": "9280809fb203aefa5dbd97e2f1373220ad8918028d9661f35a0b8d8f49449425"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy-search.json",
+          "sha256": "584804d5a9553687e5d5e585ddb47974a2193ab9867021a08e3cf51440b5a0cd"
+        },
+        {
+          "path": "docs/evidence/catalog-181-national-accounts.json",
+          "sha256": "fb4e8d4ff73fd081898eb3c3b675634c1c132b4a8262e0fb701753cba21c65d9"
+        },
+        {
+          "path": "docs/evidence/catalog-181-images.json",
+          "sha256": "e46cdf82c03c59411ad6aba1ad721693da9313ff932b5ab9e0fe63393a347e82"
+        },
+        {
+          "path": "docs/evidence/catalog-181-photo-search.json",
+          "sha256": "e5577296864a986d9405c73ab4bf464d8f605057012ea81dfc07349b97886154"
+        },
+        {
+          "path": "docs/evidence/catalog-181-baseline.json",
+          "sha256": "8c63ed21eb17384fb6027dc6274955aaf214f441ca0536b293ff4a9ef103f264"
+        },
+        {
+          "path": "data/research/catalog-181-content/facts.json",
+          "sha256": "3f6c1b1ecee974a90cc46320cb9d015031f282837bbd276a1aad3bd1c6ff50ed"
+        }
+      ],
+      "draft": null,
+      "id": "capoetobrama-kuschakewitschi-orientalis",
+      "draftFile": "data/research/catalog-181-content/drafts/capoetobrama-kuschakewitschi-orientalis.json",
+      "verified": false,
+      "lastReviewedAt": null,
+      "scientificReviewStatus": "pending",
+      "independentScientificReview": "pending",
+      "sourceDecision": {
+        "file": "data/research/catalog-200-conflict-resolution.json",
+        "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c",
+        "id": "capoetobrama-kuschakewitschi-orientalis",
+        "originalStatus": "READY",
+        "acceptedName": "Capoetobrama kuschakewitschi",
+        "rank": "SPECIES"
+      },
+      "nationalConfirmation": {
+        "candidateId": "capoetobrama-kuschakewitschi-orientalis",
+        "originalScientificName": "Capoetobrama kuschakewitschi orientalis",
+        "pages": [
+          302,
+          303
+        ],
+        "bookYear": 2006,
+        "bookPdfSha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8",
+        "urls": [
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=302",
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=303"
+        ],
+        "originalTextSha256": [
+          {
+            "page": 302,
+            "sha256": "86797f1bcfbbb26fec8189bb4b49cf7fb471e6b3d00a9de146833d1f6021feaa"
+          },
+          {
+            "page": 303,
+            "sha256": "8147bd4b5cdfedebd4a9d54798c0f217424e5c77b29adfee0f99f20c8ff83572"
+          }
+        ],
+        "historicalCategoryLines": [
+          {
+            "page": 302,
+            "lines": [
+              "Статусу: 2 [CR: C]. Кыргызстандын аймагында балким жоголуп кеткен търчё болушу"
+            ]
+          },
+          {
+            "page": 303,
+            "lines": [
+              "Статус:  2 [CR: C]. Возможно, уже исчезнувший на территории Кыргызстана эндемичный подвид [10].",
+              "Status:  Category 2 [CR: C], critically endangered in Kyrgyzstan, narrowly distributed subspecies of Amudar-"
+            ]
+          }
+        ],
+        "literalKyrgyzHeading": "Учтуу канат",
+        "kyrgyzHeadingVisuallyRead": true,
+        "selectedKyrgyzName": "Учтуу канат",
+        "kyrgyzScientificNameFallback": false,
+        "modernPresenceConfirmed": null,
+        "decreeReferencesPreservedSeparately": [
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-6-5",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=13"
+          }
+        ],
+        "decreeNotUsedToOverrideBookConcept": true
+      },
+      "authorship": {
+        "value": "(Kessler, 1872) ",
+        "sourceIds": [
+          "gbif-taxonomy"
+        ]
+      },
+      "namePolicy": {
+        "ky": "visually_confirmed_historical_book_heading",
+        "uz": "accepted_scientific_name_fallback_no_unverified_vernacular",
+        "en": "historical_book_heading"
+      },
+      "contentLanguage": {
+        "shortDescriptions": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "longSections": "ru",
+        "otherLongLanguages": null,
+        "scientificFallback": "ru, explicitly labelled by existing UI"
+      },
+      "editorialNotes": [
+        "Исходная запись 2 [CR:C] сохранена в метаданных; буквенный CR взят непосредственно из очерка, цифра 2 не переведена в современную категорию автоматически."
+      ],
+      "unknownFacts": [
+        "Современная национальная численность и сохранение исторических местонахождений не подтверждены."
+      ],
+      "preparation": {
+        "date": "2026-10-22",
+        "draftSha256": "bcb21c1bb5243e5933f3db02912135c2803c840cd92df40b75c3e4734d022a08",
+        "draftSemanticFingerprint": "e289ca6abb5e3e5972b14364baf4d9e355e7526a946b501caee893556bfa7287"
+      },
+      "state": "ready_for_review",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "capoetobrama-kuschakewitschi-orientalis",
+        "batchNumber": 2,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "2256e907545e9c3138a95fbc3e1937f1ee4bfc1a75543d2e0a13e8204f1e24f6",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "2256e907545e9c3138a95fbc3e1937f1ee4bfc1a75543d2e0a13e8204f1e24f6"
+    },
+    {
+      "originalScientificName": "Schizothorax issykkuli",
+      "acceptedScientificName": "Schizothorax pseudoaksaiensis",
+      "rank": "SPECIES",
+      "group": "fish",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "EN",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Schizothorax issykkuli, с.308–309); Статус:  2 [EN: D]",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Schizothorax pseudoaksaiensis",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:4286958",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy",
+        "eschmeyer-issykkuli"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Schizothorax issykkuli, с.308–309",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=309",
+          "accessedAt": "2026-10-22",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.diet",
+            "threats.0",
+            "conservationMeasures.0",
+            "content.appearance",
+            "names.en"
+          ],
+          "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 308-бет; проверенный кыргызский заголовок",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=308",
+          "accessedAt": "2026-10-22",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
+        },
+        {
+          "id": "eschmeyer-issykkuli",
+          "title": "Eschmeyer: Schizothorax pseudoaksaiensis issykkuli Berg 1907",
+          "publisher": "California Academy of Sciences",
+          "url": "https://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=48193",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "Species record 48193; Berg 1907:321; Berg 1949:718; current status, online edition 20 Oct 2026; переиспользованы доказательства №25.4 (live_primary_HTML_response). Полный текст недоступного источника не объявлен заново прочитанным."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone Taxonomy: Schizothorax pseudoaksaiensis Herzenstein, 1889; exact SPECIES",
+          "publisher": "GBIF / GBIF Backbone Taxonomy",
+          "url": "https://api.gbif.org/v1/species/4286958",
+          "accessedAt": "2026-10-22",
+          "language": "en",
+          "taxonId": "gbif:4286958",
+          "supports": [
+            "scientificName",
+            "names.uz",
+            "content.overview",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
+          ],
+          "notes": "Источник — реальная запись указанного чек-листа. EXACT означает локальную строгую проверку canonicalName и rank; не вымышленный ответ API match. nubKey другого ранга не подставлен."
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/catalog-200-conflict-resolution.json",
+          "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c"
+        },
+        {
+          "path": "docs/evidence/catalog-200-conflict-sources.json",
+          "sha256": "ed3db701e03053951178b5f5c16c3a829e560d2b02113c101375c1725253af48"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy.json",
+          "sha256": "9280809fb203aefa5dbd97e2f1373220ad8918028d9661f35a0b8d8f49449425"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy-search.json",
+          "sha256": "584804d5a9553687e5d5e585ddb47974a2193ab9867021a08e3cf51440b5a0cd"
+        },
+        {
+          "path": "docs/evidence/catalog-181-national-accounts.json",
+          "sha256": "fb4e8d4ff73fd081898eb3c3b675634c1c132b4a8262e0fb701753cba21c65d9"
+        },
+        {
+          "path": "docs/evidence/catalog-181-images.json",
+          "sha256": "e46cdf82c03c59411ad6aba1ad721693da9313ff932b5ab9e0fe63393a347e82"
+        },
+        {
+          "path": "docs/evidence/catalog-181-photo-search.json",
+          "sha256": "e5577296864a986d9405c73ab4bf464d8f605057012ea81dfc07349b97886154"
+        },
+        {
+          "path": "docs/evidence/catalog-181-baseline.json",
+          "sha256": "8c63ed21eb17384fb6027dc6274955aaf214f441ca0536b293ff4a9ef103f264"
+        },
+        {
+          "path": "data/research/catalog-181-content/facts.json",
+          "sha256": "3f6c1b1ecee974a90cc46320cb9d015031f282837bbd276a1aad3bd1c6ff50ed"
+        }
+      ],
+      "draft": null,
+      "id": "schizothorax-issykkuli",
+      "draftFile": "data/research/catalog-181-content/drafts/schizothorax-issykkuli.json",
+      "verified": false,
+      "lastReviewedAt": null,
+      "scientificReviewStatus": "pending",
+      "independentScientificReview": "pending",
+      "sourceDecision": {
+        "file": "data/research/catalog-200-conflict-resolution.json",
+        "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c",
+        "id": "schizothorax-issykkuli",
+        "originalStatus": "READY",
+        "acceptedName": "Schizothorax pseudoaksaiensis",
+        "rank": "SPECIES"
+      },
+      "nationalConfirmation": {
+        "candidateId": "schizothorax-issykkuli",
+        "originalScientificName": "Schizothorax issykkuli",
+        "pages": [
+          308,
+          309
+        ],
+        "bookYear": 2006,
+        "bookPdfSha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8",
+        "urls": [
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=308",
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=309"
+        ],
+        "originalTextSha256": [
+          {
+            "page": 308,
+            "sha256": "3d4a349c58894f00245d6b4b4e754a43c04b5773c77dac4162a1d480e4521449"
+          },
+          {
+            "page": 309,
+            "sha256": "26fa5a9227532541f82d21fab62925088ef05116168531a611d73fa37540ca35"
+          }
+        ],
+        "historicalCategoryLines": [
+          {
+            "page": 308,
+            "lines": [
+              "Статусу:  2 [EN: D]. Ысыккёлдё жашаган сейрек кездешъъчъ таксон. Ёз алдынча тър катары"
+            ]
+          },
+          {
+            "page": 309,
+            "lines": [
+              "Статус:  2 [EN: D]. Редкий таксон, обитающий в оз. Иссык-Куль. Самостоятельное видовое значение",
+              "Status: Category 2 [EN: D], rare endemic Issyk-Kul species with declining number, one of four congeners in"
+            ]
+          }
+        ],
+        "literalKyrgyzHeading": "Сазан кара балыгы",
+        "kyrgyzHeadingVisuallyRead": true,
+        "selectedKyrgyzName": "Сазан кара балыгы",
+        "kyrgyzScientificNameFallback": false,
+        "modernPresenceConfirmed": null,
+        "decreeReferencesPreservedSeparately": [
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-6-1",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=13"
+          }
+        ],
+        "decreeNotUsedToOverrideBookConcept": true
+      },
+      "authorship": {
+        "value": "Herzenstein, 1889",
+        "sourceIds": [
+          "gbif-taxonomy"
+        ]
+      },
+      "namePolicy": {
+        "ky": "visually_confirmed_historical_book_heading",
+        "uz": "accepted_scientific_name_fallback_no_unverified_vernacular",
+        "en": "historical_book_heading"
+      },
+      "contentLanguage": {
+        "shortDescriptions": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "longSections": "ru",
+        "otherLongLanguages": null,
+        "scientificFallback": "ru, explicitly labelled by existing UI"
+      },
+      "editorialNotes": [
+        "Из исторической записи 2 [EN:D] сохранён буквенный EN и буквальное обозначение; это не новая региональная оценка."
+      ],
+      "unknownFacts": [
+        "Современная национальная численность и сохранение исторических местонахождений не подтверждены."
+      ],
+      "preparation": {
+        "date": "2026-10-22",
+        "draftSha256": "df01f386f7f56f216e12a2610d27613ab719ba74ed1cc433baa1743b67206f86",
+        "draftSemanticFingerprint": "4368e88b85068c2c4c35d12662bb9e3e155ee386d5bc117af4a5c666af6f3021"
+      },
+      "state": "ready_for_review",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "schizothorax-issykkuli",
+        "batchNumber": 2,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "a09887653f9eddbe59f435cbed695ac618cb6839c7264c7c0cf86b8bb8ecdb82",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "a09887653f9eddbe59f435cbed695ac618cb6839c7264c7c0cf86b8bb8ecdb82"
+    },
+    {
+      "originalScientificName": "Diptychus dybowskii lansdelli",
+      "acceptedScientificName": "Gymnodiptychus dybowskii",
+      "rank": "SPECIES",
+      "group": "fish",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "CR",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Diptychus dybowskii lansdelli, с.310–311); Статус: 2 [CR: D]",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Gymnodiptychus dybowskii",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2362516",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy",
+        "eschmeyer-lansdelli"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Diptychus dybowskii lansdelli, с.310–311",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=311",
+          "accessedAt": "2026-10-22",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.diet",
+            "threats.0",
+            "conservationMeasures.0",
+            "content.appearance",
+            "names.en"
+          ],
+          "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 310-бет; проверенный кыргызский заголовок",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=310",
+          "accessedAt": "2026-10-22",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
+        },
+        {
+          "id": "eschmeyer-lansdelli",
+          "title": "Eschmeyer: Diptychus lansdelli Günther 1889",
+          "publisher": "California Academy of Sciences",
+          "url": "https://researcharchive.calacademy.org/research/ichthyology/catalog/fishcatget.asp?spid=48488",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.shortDescription"
+          ],
+          "notes": "Species record 48488; Günther 1889:361; Berg 1949:726; Wu & Wu 1992:432; current status 20 Oct 2026; переиспользованы доказательства №25.4 (live_primary_HTML_response). Полный текст недоступного источника не объявлен заново прочитанным."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone Taxonomy: Gymnodiptychus dybowskii (Kessler, 1874); exact SPECIES",
+          "publisher": "GBIF / GBIF Backbone Taxonomy",
+          "url": "https://api.gbif.org/v1/species/2362516",
+          "accessedAt": "2026-10-22",
+          "language": "en",
+          "taxonId": "gbif:2362516",
+          "supports": [
+            "scientificName",
+            "names.uz",
+            "content.overview",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
+          ],
+          "notes": "Источник — реальная запись указанного чек-листа. EXACT означает локальную строгую проверку canonicalName и rank; не вымышленный ответ API match. nubKey другого ранга не подставлен."
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/catalog-200-conflict-resolution.json",
+          "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c"
+        },
+        {
+          "path": "docs/evidence/catalog-200-conflict-sources.json",
+          "sha256": "ed3db701e03053951178b5f5c16c3a829e560d2b02113c101375c1725253af48"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy.json",
+          "sha256": "9280809fb203aefa5dbd97e2f1373220ad8918028d9661f35a0b8d8f49449425"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy-search.json",
+          "sha256": "584804d5a9553687e5d5e585ddb47974a2193ab9867021a08e3cf51440b5a0cd"
+        },
+        {
+          "path": "docs/evidence/catalog-181-national-accounts.json",
+          "sha256": "fb4e8d4ff73fd081898eb3c3b675634c1c132b4a8262e0fb701753cba21c65d9"
+        },
+        {
+          "path": "docs/evidence/catalog-181-images.json",
+          "sha256": "e46cdf82c03c59411ad6aba1ad721693da9313ff932b5ab9e0fe63393a347e82"
+        },
+        {
+          "path": "docs/evidence/catalog-181-photo-search.json",
+          "sha256": "e5577296864a986d9405c73ab4bf464d8f605057012ea81dfc07349b97886154"
+        },
+        {
+          "path": "docs/evidence/catalog-181-baseline.json",
+          "sha256": "8c63ed21eb17384fb6027dc6274955aaf214f441ca0536b293ff4a9ef103f264"
+        },
+        {
+          "path": "data/research/catalog-181-content/facts.json",
+          "sha256": "3f6c1b1ecee974a90cc46320cb9d015031f282837bbd276a1aad3bd1c6ff50ed"
+        }
+      ],
+      "draft": null,
+      "id": "diptychus-dybowskii-lansdelli",
+      "draftFile": "data/research/catalog-181-content/drafts/diptychus-dybowskii-lansdelli.json",
+      "verified": false,
+      "lastReviewedAt": null,
+      "scientificReviewStatus": "pending",
+      "independentScientificReview": "pending",
+      "sourceDecision": {
+        "file": "data/research/catalog-200-conflict-resolution.json",
+        "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c",
+        "id": "diptychus-dybowskii-lansdelli",
+        "originalStatus": "READY",
+        "acceptedName": "Gymnodiptychus dybowskii",
+        "rank": "SPECIES"
+      },
+      "nationalConfirmation": {
+        "candidateId": "diptychus-dybowskii-lansdelli",
+        "originalScientificName": "Diptychus dybowskii lansdelli",
+        "pages": [
+          310,
+          311
+        ],
+        "bookYear": 2006,
+        "bookPdfSha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8",
+        "urls": [
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=310",
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=311"
+        ],
+        "originalTextSha256": [
+          {
+            "page": 310,
+            "sha256": "693fd005ac7d7ae738e6475f87d9c9ffd872a2d896dceb9a35e46a26454b277e"
+          },
+          {
+            "page": 311,
+            "sha256": "b6758acffdd4dbb2443881657c97d484c20f68dd088bf16a38d490d5d734edb6"
+          }
+        ],
+        "historicalCategoryLines": [
+          {
+            "page": 310,
+            "lines": [
+              "Статусу:  2 [CR: D]. Кёлдё жашоочу формасы, саны эь аз, жоголуп кетъъ чегинде турат."
+            ]
+          },
+          {
+            "page": 311,
+            "lines": [
+              "Статус: 2 [CR: D]. Озерная форма, очень малочисленная, находящаяся на грани исчезновения.. Эндемик,",
+              "Status: Category 2 [CR: D], rare critically endangered subspecies (limnicolous form) of Tien Shan sub-en-"
+            ]
+          }
+        ],
+        "literalKyrgyzHeading": "Көк чаар, Ала буга",
+        "kyrgyzHeadingVisuallyRead": true,
+        "selectedKyrgyzName": "Көк чаар, Ала буга",
+        "kyrgyzScientificNameFallback": false,
+        "modernPresenceConfirmed": null,
+        "decreeReferencesPreservedSeparately": [
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-6-4",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=13"
+          }
+        ],
+        "decreeNotUsedToOverrideBookConcept": true
+      },
+      "authorship": {
+        "value": "(Kessler, 1874) ",
+        "sourceIds": [
+          "gbif-taxonomy"
+        ]
+      },
+      "namePolicy": {
+        "ky": "visually_confirmed_historical_book_heading",
+        "uz": "accepted_scientific_name_fallback_no_unverified_vernacular",
+        "en": "historical_book_heading"
+      },
+      "contentLanguage": {
+        "shortDescriptions": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "longSections": "ru",
+        "otherLongLanguages": null,
+        "scientificFallback": "ru, explicitly labelled by existing UI"
+      },
+      "editorialNotes": [
+        "Разночтение RU/EN в объёмах старого промысла не скопировано и не исправлено догадкой; тоннажи не превращены в число живых особей.",
+        "Исходная категория 2 [CR:D] сохранена как историческая формулировка."
+      ],
+      "unknownFacts": [
+        "Современная национальная численность и сохранение исторических местонахождений не подтверждены."
+      ],
+      "preparation": {
+        "date": "2026-10-22",
+        "draftSha256": "eca3aeaf47686b0227b8101d2ee16a91e020c127f92d76cda8123471d3a63339",
+        "draftSemanticFingerprint": "46e55838fc90f12e233341324a4b20b7799576c9fc3fcc0f5d3c0f298c43417e"
+      },
+      "state": "ready_for_review",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "diptychus-dybowskii-lansdelli",
+        "batchNumber": 2,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "5cd783a2fc8c71512e0f22c6016dcadeb2679ae16e8f237d88f6eb6c7c799ee5",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "5cd783a2fc8c71512e0f22c6016dcadeb2679ae16e8f237d88f6eb6c7c799ee5"
+    },
+    {
+      "originalScientificName": "Eryx tataricus",
+      "acceptedScientificName": "Eryx miliaris",
+      "rank": "SPECIES",
+      "group": "reptiles",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "NT",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Eryx tataricus, с.340–341); Статус: Категория NT",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Eryx miliaris",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:2465319",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy",
+        "rdb-eryx"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Eryx tataricus, с.340–341",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=341",
+          "accessedAt": "2026-10-22",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.diet",
+            "threats.0",
+            "conservationMeasures.0"
+          ],
+          "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 340-бет; проверенный кыргызский заголовок",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=340",
+          "accessedAt": "2026-10-22",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
+        },
+        {
+          "id": "rdb-eryx",
+          "title": "Reptile Database: Eryx miliaris",
+          "publisher": "The Reptile Database",
+          "url": "https://reptile-database.reptarium.cz/Eryx/miliaris",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "names.en",
+            "content.shortDescription"
+          ],
+          "notes": "Synonymy; Types; Comment; Eryx tataricus / Boa tatarica Lichtenstein 1823; переиспользованы доказательства №25.4 (web_primary_page_text). Полный текст недоступного источника не объявлен заново прочитанным."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone Taxonomy: Eryx miliaris (Pallas, 1773); exact SPECIES",
+          "publisher": "GBIF / GBIF Backbone Taxonomy",
+          "url": "https://api.gbif.org/v1/species/2465319",
+          "accessedAt": "2026-10-22",
+          "language": "en",
+          "taxonId": "gbif:2465319",
+          "supports": [
+            "scientificName",
+            "names.uz",
+            "content.overview",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.family",
+            "taxonomy.genus"
+          ],
+          "notes": "Источник — реальная запись указанного чек-листа. EXACT означает локальную строгую проверку canonicalName и rank; не вымышленный ответ API match. nubKey другого ранга не подставлен."
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/catalog-200-conflict-resolution.json",
+          "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c"
+        },
+        {
+          "path": "docs/evidence/catalog-200-conflict-sources.json",
+          "sha256": "ed3db701e03053951178b5f5c16c3a829e560d2b02113c101375c1725253af48"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy.json",
+          "sha256": "9280809fb203aefa5dbd97e2f1373220ad8918028d9661f35a0b8d8f49449425"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy-search.json",
+          "sha256": "584804d5a9553687e5d5e585ddb47974a2193ab9867021a08e3cf51440b5a0cd"
+        },
+        {
+          "path": "docs/evidence/catalog-181-national-accounts.json",
+          "sha256": "fb4e8d4ff73fd081898eb3c3b675634c1c132b4a8262e0fb701753cba21c65d9"
+        },
+        {
+          "path": "docs/evidence/catalog-181-images.json",
+          "sha256": "e46cdf82c03c59411ad6aba1ad721693da9313ff932b5ab9e0fe63393a347e82"
+        },
+        {
+          "path": "docs/evidence/catalog-181-photo-search.json",
+          "sha256": "e5577296864a986d9405c73ab4bf464d8f605057012ea81dfc07349b97886154"
+        },
+        {
+          "path": "docs/evidence/catalog-181-baseline.json",
+          "sha256": "8c63ed21eb17384fb6027dc6274955aaf214f441ca0536b293ff4a9ef103f264"
+        },
+        {
+          "path": "data/research/catalog-181-content/facts.json",
+          "sha256": "3f6c1b1ecee974a90cc46320cb9d015031f282837bbd276a1aad3bd1c6ff50ed"
+        }
+      ],
+      "draft": null,
+      "id": "eryx-tataricus",
+      "draftFile": "data/research/catalog-181-content/drafts/eryx-tataricus.json",
+      "verified": false,
+      "lastReviewedAt": null,
+      "scientificReviewStatus": "pending",
+      "independentScientificReview": "pending",
+      "sourceDecision": {
+        "file": "data/research/catalog-200-conflict-resolution.json",
+        "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c",
+        "id": "eryx-tataricus",
+        "originalStatus": "READY",
+        "acceptedName": "Eryx miliaris",
+        "rank": "SPECIES"
+      },
+      "nationalConfirmation": {
+        "candidateId": "eryx-tataricus",
+        "originalScientificName": "Eryx tataricus",
+        "pages": [
+          340,
+          341
+        ],
+        "bookYear": 2006,
+        "bookPdfSha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8",
+        "urls": [
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=340",
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=341"
+        ],
+        "originalTextSha256": [
+          {
+            "page": 340,
+            "sha256": "7602ac1c0c933e5b7b350a2d91d54dad4e426719b0e5a9cf547e4b9cd50d181b"
+          },
+          {
+            "page": 341,
+            "sha256": "5827e3b667fdb8e7838a37a2b8f9b119a4df5060f25b7bc2ed04966574177f57"
+          }
+        ],
+        "historicalCategoryLines": [
+          {
+            "page": 340,
+            "lines": [
+              "Статусу: NT категория. Тукумдун майда ёкълдёрън камтыган уруудагы 10 търдън бирёёсъ, бардык"
+            ]
+          },
+          {
+            "page": 341,
+            "lines": [
+              "Статус: Категория NT. Один из 10 видов рода, объединяющего мелких представителей семейства, все",
+              "Status: Near Treatened (category NT), Turan-Centralasian representative of small boa genus, with reducing num-"
+            ]
+          }
+        ],
+        "literalKyrgyzHeading": "Чыгыш кумчул муунткучу",
+        "kyrgyzHeadingVisuallyRead": true,
+        "selectedKyrgyzName": "Чыгыш кумчул муунткучу",
+        "kyrgyzScientificNameFallback": false,
+        "modernPresenceConfirmed": null,
+        "decreeReferencesPreservedSeparately": [
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-5-10",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=12"
+          }
+        ],
+        "decreeNotUsedToOverrideBookConcept": true
+      },
+      "authorship": {
+        "value": "(Pallas, 1773) ",
+        "sourceIds": [
+          "gbif-taxonomy"
+        ]
+      },
+      "namePolicy": {
+        "ky": "visually_confirmed_historical_book_heading",
+        "uz": "accepted_scientific_name_fallback_no_unverified_vernacular",
+        "en": "confirmed_specialist_source_name"
+      },
+      "contentLanguage": {
+        "shortDescriptions": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "longSections": "ru",
+        "otherLongLanguages": null,
+        "scientificFallback": "ru, explicitly labelled by existing UI"
+      },
+      "editorialNotes": [
+        "Противоречивые RU/EN формулировки охраны в Токмакском заказнике не использованы как доказательство действующей охраны."
+      ],
+      "unknownFacts": [
+        "Современная национальная численность и сохранение исторических местонахождений не подтверждены.",
+        "Внешность не реконструирована без подходящего описания."
+      ],
+      "preparation": {
+        "date": "2026-10-22",
+        "draftSha256": "c8327660afde75ad21bfe8a35b84cdeea06fca15aafb89f7918dd33244625a8f",
+        "draftSemanticFingerprint": "a99fdbc843ce34f9497bb18cc32f99115b9d29c586d49d1b25f99a43c4c1d1be"
+      },
+      "state": "ready_for_review",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "eryx-tataricus",
+        "batchNumber": 3,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "9bcbdef86723af3a084ade2d56d35a9d45b8b8290df0a9ae4f8d7d09593925da",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "9bcbdef86723af3a084ade2d56d35a9d45b8b8290df0a9ae4f8d7d09593925da"
+    },
+    {
+      "originalScientificName": "Terpsiphone paradisi",
+      "acceptedScientificName": "Terpsiphone paradisi leucogaster",
+      "rank": "SUBSPECIES",
+      "group": "birds",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "NT",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Terpsiphone paradisi, с.470–471); Статус: VI, Near Threatened: NT: R",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Terpsiphone paradisi leucogaster",
+        "rank": "SUBSPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:6086394",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy",
+        "osme-terpsiphone",
+        "itis-terpsiphone"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Terpsiphone paradisi, с.470–471",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=471",
+          "accessedAt": "2026-10-22",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.diet",
+            "conservationMeasures.0"
+          ],
+          "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 470-бет; проверенный кыргызский заголовок",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=470",
+          "accessedAt": "2026-10-22",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
+        },
+        {
+          "id": "osme-terpsiphone",
+          "title": "OSME Region List 10.2, Part C, Passerines (2025)",
+          "publisher": "Ornithological Society of the Middle East, the Caucasus and Central Asia",
+          "url": "https://osme.org/wp-content/uploads/2025/03/ORL-10.2-Part-C-Passerines.pdf#page=3",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.distribution",
+            "content.shortDescription"
+          ],
+          "notes": "PDF p.3, species no.641, Monarchidae; переиспользованы доказательства №25.4 (downloaded_primary_PDF_relevant_page_read). Полный текст недоступного источника не объявлен заново прочитанным."
+        },
+        {
+          "id": "itis-terpsiphone",
+          "title": "ITIS: Terpsiphone paradisi leucogaster",
+          "publisher": "Integrated Taxonomic Information System",
+          "url": "https://itis.gov/servlet/SingleRpt/SingleRpt?search_topic=TSN&search_value=920668",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview"
+          ],
+          "notes": "TSN 920668; IOC 14.1, accessed by ITIS 03 Mar 2025; переиспользованы доказательства №25.4 (web_indexed_primary_database_text). Полный текст недоступного источника не объявлен заново прочитанным."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone Taxonomy: Terpsiphone paradisi leucogaster (Swainson, 1838); exact SUBSPECIES",
+          "publisher": "GBIF / GBIF Backbone Taxonomy",
+          "url": "https://api.gbif.org/v1/species/6086394",
+          "accessedAt": "2026-10-22",
+          "language": "en",
+          "taxonId": "gbif:6086394",
+          "supports": [
+            "scientificName",
+            "names.uz",
+            "content.overview",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.en"
+          ],
+          "notes": "Источник — реальная запись указанного чек-листа. EXACT означает локальную строгую проверку canonicalName и rank; не вымышленный ответ API match. nubKey другого ранга не подставлен."
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/catalog-200-conflict-resolution.json",
+          "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c"
+        },
+        {
+          "path": "docs/evidence/catalog-200-conflict-sources.json",
+          "sha256": "ed3db701e03053951178b5f5c16c3a829e560d2b02113c101375c1725253af48"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy.json",
+          "sha256": "9280809fb203aefa5dbd97e2f1373220ad8918028d9661f35a0b8d8f49449425"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy-search.json",
+          "sha256": "584804d5a9553687e5d5e585ddb47974a2193ab9867021a08e3cf51440b5a0cd"
+        },
+        {
+          "path": "docs/evidence/catalog-181-national-accounts.json",
+          "sha256": "fb4e8d4ff73fd081898eb3c3b675634c1c132b4a8262e0fb701753cba21c65d9"
+        },
+        {
+          "path": "docs/evidence/catalog-181-images.json",
+          "sha256": "e46cdf82c03c59411ad6aba1ad721693da9313ff932b5ab9e0fe63393a347e82"
+        },
+        {
+          "path": "docs/evidence/catalog-181-photo-search.json",
+          "sha256": "e5577296864a986d9405c73ab4bf464d8f605057012ea81dfc07349b97886154"
+        },
+        {
+          "path": "docs/evidence/catalog-181-baseline.json",
+          "sha256": "8c63ed21eb17384fb6027dc6274955aaf214f441ca0536b293ff4a9ef103f264"
+        },
+        {
+          "path": "data/research/catalog-181-content/facts.json",
+          "sha256": "3f6c1b1ecee974a90cc46320cb9d015031f282837bbd276a1aad3bd1c6ff50ed"
+        }
+      ],
+      "draft": null,
+      "id": "terpsiphone-paradisi",
+      "draftFile": "data/research/catalog-181-content/drafts/terpsiphone-paradisi.json",
+      "verified": false,
+      "lastReviewedAt": null,
+      "scientificReviewStatus": "pending",
+      "independentScientificReview": "pending",
+      "sourceDecision": {
+        "file": "data/research/catalog-200-conflict-resolution.json",
+        "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c",
+        "id": "terpsiphone-paradisi",
+        "originalStatus": "READY",
+        "acceptedName": "Terpsiphone paradisi leucogaster",
+        "rank": "SUBSPECIES"
+      },
+      "nationalConfirmation": {
+        "candidateId": "terpsiphone-paradisi",
+        "originalScientificName": "Terpsiphone paradisi",
+        "pages": [
+          470,
+          471
+        ],
+        "bookYear": 2006,
+        "bookPdfSha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8",
+        "urls": [
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=470",
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=471"
+        ],
+        "originalTextSha256": [
+          {
+            "page": 470,
+            "sha256": "05bb96c917af8fe6bb5f53109ea2ed92debe78baf11a35577575632d318fee36"
+          },
+          {
+            "page": 471,
+            "sha256": "e0bc8b0ee374d503c67bdcdbca1dd6ead451896c4f7cf20bd91696ddfdc7f054"
+          }
+        ],
+        "historicalCategoryLines": [
+          {
+            "page": 470,
+            "lines": [
+              "Статусу: VI, Near Threatened: NT: R.. Кыргызстанда T.p.leucogaster (Swainson, 1838) кездешъъдё."
+            ]
+          },
+          {
+            "page": 471,
+            "lines": [
+              "Статус: VI, Near Threatened: NT: R. Один вид семейства Монарховых MONARCHIDAE в фауне Киргизии",
+              "Status: VI category, Near Threatened, NT: R. Occurs in Western Tien Shan, probably in western part of Talas"
+            ]
+          }
+        ],
+        "literalKyrgyzHeading": "Узункуйруктуу чымынчы",
+        "kyrgyzHeadingVisuallyRead": true,
+        "selectedKyrgyzName": "Узункуйруктуу чымынчы",
+        "kyrgyzScientificNameFallback": false,
+        "modernPresenceConfirmed": null,
+        "decreeReferencesPreservedSeparately": [
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-3-36",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10"
+          }
+        ],
+        "decreeNotUsedToOverrideBookConcept": true
+      },
+      "authorship": {
+        "value": "(Swainson, 1838) ",
+        "sourceIds": [
+          "gbif-taxonomy"
+        ]
+      },
+      "namePolicy": {
+        "ky": "visually_confirmed_historical_book_heading",
+        "uz": "accepted_scientific_name_fallback_no_unverified_vernacular",
+        "en": "accepted_scientific_name_fallback"
+      },
+      "contentLanguage": {
+        "shortDescriptions": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "longSections": "ru",
+        "otherLongLanguages": null,
+        "scientificFallback": "ru, explicitly labelled by existing UI"
+      },
+      "editorialNotes": [
+        "Внешний вид и рацион не заполнены по общему знанию о всём комплексе; в использованном национальном очерке их описания недостаточны."
+      ],
+      "unknownFacts": [
+        "Современная национальная численность и сохранение исторических местонахождений не подтверждены.",
+        "Внешность не реконструирована без подходящего описания."
+      ],
+      "preparation": {
+        "date": "2026-10-22",
+        "draftSha256": "0599091ff14cfa8d6e984e1f191b796d9c3e1a069dfb3e31d7a4a1cc76cfa46a",
+        "draftSemanticFingerprint": "f88c7f0f03189e48cf05650c51185d21fed999452f081e039e185cc21be66636"
+      },
+      "state": "ready_for_review",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "terpsiphone-paradisi",
+        "batchNumber": 3,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "d07f2e7f7ed3a322594357bfd245e6ff882a692dbdfa2fda035bff70fdd9e862",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "d07f2e7f7ed3a322594357bfd245e6ff882a692dbdfa2fda035bff70fdd9e862"
+    },
+    {
+      "originalScientificName": "Otonycteris hemprichi",
+      "acceptedScientificName": "Otonycteris leucophaea",
+      "rank": "SPECIES",
+      "group": "mammals",
+      "nationalRedBook": {
+        "listed": true,
+        "category": null,
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Otonycteris hemprichi, с.492–493); Статус: VII категория, Lower Risk – Least Concern, LR/lc",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Otonycteris leucophaea",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:7584928",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy",
+        "msu-otonycteris",
+        "otonycteris-revision"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Otonycteris hemprichi, с.492–493",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=493",
+          "accessedAt": "2026-10-22",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.diet",
+            "threats.0",
+            "conservationMeasures.0"
+          ],
+          "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 492-бет; проверенный кыргызский заголовок",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=492",
+          "accessedAt": "2026-10-22",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
+        },
+        {
+          "id": "msu-otonycteris",
+          "title": "Зоомузей МГУ: Otonycteris leucophaea",
+          "publisher": "Зоологический музей МГУ",
+          "url": "https://zmmu.msu.ru/bats/rusbats/e_guide/othemp_e.htm",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "content.appearance",
+            "content.shortDescription"
+          ],
+          "notes": "Scientific name; Distribution; taxonomy paragraph; переиспользованы доказательства №25.4 (web_primary_page_text). Полный текст недоступного источника не объявлен заново прочитанным."
+        },
+        {
+          "id": "otonycteris-revision",
+          "title": "Benda & Gvoždík (2010): Taxonomy of Otonycteris",
+          "publisher": "Научный источник; издатель указан по ссылке",
+          "url": "https://doi.org/10.3161/150811010X504617",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview"
+          ],
+          "notes": "Acta Chiropterologica 12(1):83–102; museum download Benda2010ac.pdf failed; переиспользованы доказательства №25.4 (abstract_and_author_bibliography_only). Полный текст недоступного источника не объявлен заново прочитанным."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "GBIF Backbone Taxonomy: Otonycteris leucophaea (Severcov, 1873); exact SPECIES",
+          "publisher": "GBIF / GBIF Backbone Taxonomy",
+          "url": "https://api.gbif.org/v1/species/7584928",
+          "accessedAt": "2026-10-22",
+          "language": "en",
+          "taxonId": "gbif:7584928",
+          "supports": [
+            "scientificName",
+            "names.uz",
+            "content.overview",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.en"
+          ],
+          "notes": "Источник — реальная запись указанного чек-листа. EXACT означает локальную строгую проверку canonicalName и rank; не вымышленный ответ API match. nubKey другого ранга не подставлен."
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/catalog-200-conflict-resolution.json",
+          "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c"
+        },
+        {
+          "path": "docs/evidence/catalog-200-conflict-sources.json",
+          "sha256": "ed3db701e03053951178b5f5c16c3a829e560d2b02113c101375c1725253af48"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy.json",
+          "sha256": "9280809fb203aefa5dbd97e2f1373220ad8918028d9661f35a0b8d8f49449425"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy-search.json",
+          "sha256": "584804d5a9553687e5d5e585ddb47974a2193ab9867021a08e3cf51440b5a0cd"
+        },
+        {
+          "path": "docs/evidence/catalog-181-national-accounts.json",
+          "sha256": "fb4e8d4ff73fd081898eb3c3b675634c1c132b4a8262e0fb701753cba21c65d9"
+        },
+        {
+          "path": "docs/evidence/catalog-181-images.json",
+          "sha256": "e46cdf82c03c59411ad6aba1ad721693da9313ff932b5ab9e0fe63393a347e82"
+        },
+        {
+          "path": "docs/evidence/catalog-181-photo-search.json",
+          "sha256": "e5577296864a986d9405c73ab4bf464d8f605057012ea81dfc07349b97886154"
+        },
+        {
+          "path": "docs/evidence/catalog-181-baseline.json",
+          "sha256": "8c63ed21eb17384fb6027dc6274955aaf214f441ca0536b293ff4a9ef103f264"
+        },
+        {
+          "path": "data/research/catalog-181-content/facts.json",
+          "sha256": "3f6c1b1ecee974a90cc46320cb9d015031f282837bbd276a1aad3bd1c6ff50ed"
+        }
+      ],
+      "draft": null,
+      "id": "otonycteris-hemprichi",
+      "draftFile": "data/research/catalog-181-content/drafts/otonycteris-hemprichi.json",
+      "verified": false,
+      "lastReviewedAt": null,
+      "scientificReviewStatus": "pending",
+      "independentScientificReview": "pending",
+      "sourceDecision": {
+        "file": "data/research/catalog-200-conflict-resolution.json",
+        "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c",
+        "id": "otonycteris-hemprichi",
+        "originalStatus": "READY",
+        "acceptedName": "Otonycteris leucophaea",
+        "rank": "SPECIES"
+      },
+      "nationalConfirmation": {
+        "candidateId": "otonycteris-hemprichi",
+        "originalScientificName": "Otonycteris hemprichi",
+        "pages": [
+          492,
+          493
+        ],
+        "bookYear": 2006,
+        "bookPdfSha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8",
+        "urls": [
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=492",
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=493"
+        ],
+        "originalTextSha256": [
+          {
+            "page": 492,
+            "sha256": "660e1069df22fe3b910a4821812e8ba1469e3056fbd8df83cfd0bb387409bb7a"
+          },
+          {
+            "page": 493,
+            "sha256": "7ec58247b7308a1bb47480617d39771fde707f72d1177fd9c8888bde4116c1a8"
+          }
+        ],
+        "historicalCategoryLines": [
+          {
+            "page": 492,
+            "lines": [
+              "Статусу: VII категория, Lower Risk – Least Concern, LR/lc."
+            ]
+          },
+          {
+            "page": 493,
+            "lines": [
+              "Статус: VII категория, Lower Risk – Least Concern, LR/lc.",
+              "Status: VII category, «Lower Risk – Least Concern», LR/lc. This comparatively large (body length is 69 mm) light-"
+            ]
+          }
+        ],
+        "literalKyrgyzHeading": "Акбоор жебекулак жарганаты",
+        "kyrgyzHeadingVisuallyRead": true,
+        "selectedKyrgyzName": "Акбоор жебекулак жарганаты",
+        "kyrgyzScientificNameFallback": false,
+        "modernPresenceConfirmed": null,
+        "decreeReferencesPreservedSeparately": [
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-2-2",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=8"
+          }
+        ],
+        "decreeNotUsedToOverrideBookConcept": true
+      },
+      "authorship": {
+        "value": "(Severcov, 1873) ",
+        "sourceIds": [
+          "gbif-taxonomy"
+        ]
+      },
+      "namePolicy": {
+        "ky": "visually_confirmed_historical_book_heading",
+        "uz": "accepted_scientific_name_fallback_no_unverified_vernacular",
+        "en": "accepted_scientific_name_fallback"
+      },
+      "contentLanguage": {
+        "shortDescriptions": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "longSections": "ru",
+        "otherLongLanguages": null,
+        "scientificFallback": "ru, explicitly labelled by existing UI"
+      },
+      "editorialNotes": [
+        "Историческое VII, Lower Risk – Least Concern, LR/lc сохранено буквально в edition/метаданных; автоматически не преобразовано в современную национальную LC.",
+        "Описание внешности дополнено только профильным источником МГУ, а не обобщением для старого широкого O. hemprichii."
+      ],
+      "unknownFacts": [
+        "Современная национальная численность и сохранение исторических местонахождений не подтверждены."
+      ],
+      "preparation": {
+        "date": "2026-10-22",
+        "draftSha256": "2e3caf8c975820d12b0c876b89e4f3a152b25bc3c521fa905eab971d4145efb9",
+        "draftSemanticFingerprint": "a347c7831bb862011a820a3fe120a47e56adc264328b40dc619d6445ace8219c"
+      },
+      "state": "ready_for_review",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "otonycteris-hemprichi",
+        "batchNumber": 3,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "78d1c8d6bbf7da6ab9b674d91785c3542c6b770ca0c0495132f678d56cb7b2ac",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "78d1c8d6bbf7da6ab9b674d91785c3542c6b770ca0c0495132f678d56cb7b2ac"
+    },
+    {
+      "originalScientificName": "Cervus elaphus asiaticus",
+      "acceptedScientificName": "Cervus canadensis",
+      "rank": "SPECIES",
+      "group": "mammals",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "EN",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Cervus elaphus asiaticus, с.512–513); Статус: Категория IV , Endangered, EN C2a(i): R",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Cervus canadensis",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:134092547",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy",
+        "mdd-cervus",
+        "cervus-2018"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Cervus elaphus asiaticus, с.512–513",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=513",
+          "accessedAt": "2026-10-22",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.diet",
+            "threats.0",
+            "conservationMeasures.0"
+          ],
+          "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+        },
+        {
+          "id": "mdd-cervus",
+          "title": "MDD: Cervus canadensis",
+          "publisher": "American Society of Mammalogists / Mammal Diversity Database",
+          "url": "https://www.mammaldiversity.org/taxon/1006312/",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "names.en",
+            "content.shortDescription"
+          ],
+          "notes": "Taxonomy notes; Names and synonyms: Cervus canadensis asiaticus; country Kyrgyzstan; переиспользованы доказательства №25.4 (web_primary_page_text). Полный текст недоступного источника не объявлен заново прочитанным."
+        },
+        {
+          "id": "cervus-2018",
+          "title": "Исследование (2018): Late Pleistocene wapiti, Cervus canadensis",
+          "publisher": "Contributions to Zoology / Brill",
+          "url": "https://brill.com/view/journals/ctoz/87/1/article-p1_1.pdf",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview"
+          ],
+          "notes": "Contributions to Zoology 87(1):1–10; discussion of name C. canadensis asiaticus; переиспользованы доказательства №25.4 (web_indexed_primary_pdf_text). Полный текст недоступного источника не объявлен заново прочитанным."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "Integrated Taxonomic Information System (ITIS): Cervus canadensis Erxleben, 1777; exact SPECIES",
+          "publisher": "GBIF / Integrated Taxonomic Information System (ITIS)",
+          "url": "https://api.gbif.org/v1/species/134092547",
+          "accessedAt": "2026-10-22",
+          "language": "en",
+          "taxonId": "gbif:134092547",
+          "supports": [
+            "scientificName",
+            "names.uz",
+            "content.overview",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus",
+            "names.ky"
+          ],
+          "notes": "Источник — реальная запись указанного чек-листа. EXACT означает локальную строгую проверку canonicalName и rank; не вымышленный ответ API match. nubKey другого ранга не подставлен."
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/catalog-200-conflict-resolution.json",
+          "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c"
+        },
+        {
+          "path": "docs/evidence/catalog-200-conflict-sources.json",
+          "sha256": "ed3db701e03053951178b5f5c16c3a829e560d2b02113c101375c1725253af48"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy.json",
+          "sha256": "9280809fb203aefa5dbd97e2f1373220ad8918028d9661f35a0b8d8f49449425"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy-search.json",
+          "sha256": "584804d5a9553687e5d5e585ddb47974a2193ab9867021a08e3cf51440b5a0cd"
+        },
+        {
+          "path": "docs/evidence/catalog-181-national-accounts.json",
+          "sha256": "fb4e8d4ff73fd081898eb3c3b675634c1c132b4a8262e0fb701753cba21c65d9"
+        },
+        {
+          "path": "docs/evidence/catalog-181-images.json",
+          "sha256": "e46cdf82c03c59411ad6aba1ad721693da9313ff932b5ab9e0fe63393a347e82"
+        },
+        {
+          "path": "docs/evidence/catalog-181-photo-search.json",
+          "sha256": "e5577296864a986d9405c73ab4bf464d8f605057012ea81dfc07349b97886154"
+        },
+        {
+          "path": "docs/evidence/catalog-181-baseline.json",
+          "sha256": "8c63ed21eb17384fb6027dc6274955aaf214f441ca0536b293ff4a9ef103f264"
+        },
+        {
+          "path": "data/research/catalog-181-content/facts.json",
+          "sha256": "3f6c1b1ecee974a90cc46320cb9d015031f282837bbd276a1aad3bd1c6ff50ed"
+        }
+      ],
+      "draft": null,
+      "id": "cervus-elaphus-asiaticus",
+      "draftFile": "data/research/catalog-181-content/drafts/cervus-elaphus-asiaticus.json",
+      "verified": false,
+      "lastReviewedAt": null,
+      "scientificReviewStatus": "pending",
+      "independentScientificReview": "pending",
+      "sourceDecision": {
+        "file": "data/research/catalog-200-conflict-resolution.json",
+        "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c",
+        "id": "cervus-elaphus-asiaticus",
+        "originalStatus": "READY",
+        "acceptedName": "Cervus canadensis",
+        "rank": "SPECIES"
+      },
+      "nationalConfirmation": {
+        "candidateId": "cervus-elaphus-asiaticus",
+        "originalScientificName": "Cervus elaphus asiaticus",
+        "pages": [
+          512,
+          513
+        ],
+        "bookYear": 2006,
+        "bookPdfSha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8",
+        "urls": [
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=512",
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=513"
+        ],
+        "originalTextSha256": [
+          {
+            "page": 512,
+            "sha256": "00cea9ad0a388d706b4846da5d0d9ecb7247b20d868182668e2944fcea2df064"
+          },
+          {
+            "page": 513,
+            "sha256": "71425efe5b8123262f564cb56ad1f471db5f7b9104cb54a22c62d8fc129d7566"
+          }
+        ],
+        "historicalCategoryLines": [
+          {
+            "page": 512,
+            "lines": [
+              "Статусу:  IV категория, Endangered, EN C 2a(i):  R. Бъткъл ареалы боюнча саны кескин кыскарган"
+            ]
+          },
+          {
+            "page": 513,
+            "lines": [
+              "Статус: Категория IV , Endangered, EN C2a(i): R. Резко сократившийся в численности по всему ареалу горный",
+              "Status: IV category, Endangered, EN C2a(i): R. It is large red deer, sporadically spreaded Central Asian subspecies of"
+            ]
+          }
+        ],
+        "literalKyrgyzHeading": "Бугу (эркеги), Марал (ургаачысы)",
+        "kyrgyzHeadingVisuallyRead": true,
+        "selectedKyrgyzName": "Cervus canadensis",
+        "kyrgyzScientificNameFallback": true,
+        "modernPresenceConfirmed": null,
+        "decreeReferencesPreservedSeparately": [
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-2-3",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=8"
+          }
+        ],
+        "decreeNotUsedToOverrideBookConcept": true
+      },
+      "authorship": {
+        "value": "Erxleben, 1777",
+        "sourceIds": [
+          "gbif-taxonomy"
+        ]
+      },
+      "namePolicy": {
+        "ky": "accepted_scientific_name_fallback",
+        "uz": "accepted_scientific_name_fallback_no_unverified_vernacular",
+        "en": "confirmed_specialist_source_name"
+      },
+      "contentLanguage": {
+        "shortDescriptions": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "longSections": "ru",
+        "otherLongLanguages": null,
+        "scientificFallback": "ru, explicitly labelled by existing UI"
+      },
+      "editorialNotes": [
+        "Историческая местная EN 2006 не является глобальной оценкой всего C. canadensis.",
+        "Числа отдельных учётов 1983–2003 годов не записаны в population как современная численность.",
+        "Для точного видового имени найден реальный accepted SPECIES в исходном ITIS через GBIF; это не подвидовой ключ C. elaphus canadensis из прежнего match."
+      ],
+      "unknownFacts": [
+        "Современная национальная численность и сохранение исторических местонахождений не подтверждены.",
+        "Внешность не реконструирована без подходящего описания."
+      ],
+      "preparation": {
+        "date": "2026-10-22",
+        "draftSha256": "03dd40c5ff074e3f06da81e95f13068d33d6eaa2c9189ea6ac56284c6fe3b185",
+        "draftSemanticFingerprint": "b8301d0f664a838340be8308d437546ea2064e8338619221809f9e37a40070f5"
+      },
+      "state": "ready_for_review",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "cervus-elaphus-asiaticus",
+        "batchNumber": 3,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "8a617e97d8eff8ecf21b79db230af3ba82fa387f1afa66deaabf4d9b6782f5eb",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "8a617e97d8eff8ecf21b79db230af3ba82fa387f1afa66deaabf4d9b6782f5eb"
+    },
+    {
+      "originalScientificName": "Allactaga saltator",
+      "acceptedScientificName": "Orientallactaga sibirica",
+      "rank": "SPECIES",
+      "group": "mammals",
+      "nationalRedBook": {
+        "listed": true,
+        "category": "NT",
+        "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Allactaga saltator, с.524–525); Статус: Near Threatened, NT: R",
+        "year": 2006,
+        "sourceIds": [
+          "national-book"
+        ],
+        "basis": "historical_edition",
+        "claimsCurrentLegalStatus": false
+      },
+      "countryOccurrence": {
+        "countryCode": "KG",
+        "confirmed": true,
+        "basis": "historical_national_account",
+        "sourceYear": 2006,
+        "currentPresenceConfirmed": null,
+        "sourceIds": [
+          "national-book"
+        ]
+      },
+      "taxonomyEvidence": {
+        "canonicalName": "Orientallactaga sibirica",
+        "rank": "SPECIES",
+        "status": "ACCEPTED",
+        "matchType": "EXACT",
+        "taxonId": "gbif:104051133",
+        "sourceId": "gbif-taxonomy"
+      },
+      "taxonomySourceIds": [
+        "gbif-taxonomy",
+        "mdd-jerboa"
+      ],
+      "sources": [
+        {
+          "id": "national-book",
+          "title": "Красная книга Кыргызской Республики, 2006; Allactaga saltator, с.524–525",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=525",
+          "accessedAt": "2026-10-22",
+          "language": "ru",
+          "supports": [
+            "nationalRedBook.listed",
+            "nationalRedBook.category",
+            "nationalRedBook.edition",
+            "nationalRedBook.year",
+            "group",
+            "regions.0",
+            "originalScientificName",
+            "names.ru",
+            "habitat",
+            "content.shortDescription",
+            "content.overview",
+            "content.ecology",
+            "content.reproduction",
+            "content.distribution",
+            "content.diet",
+            "threats.0",
+            "conservationMeasures.0"
+          ],
+          "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+        },
+        {
+          "id": "national-ky",
+          "title": "Кыргыз Республикасынын Кызыл китеби, 524-бет; проверенный кыргызский заголовок",
+          "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+          "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=524",
+          "accessedAt": "2026-10-22",
+          "language": "ky",
+          "supports": [
+            "names.ky"
+          ]
+        },
+        {
+          "id": "mdd-jerboa",
+          "title": "MDD: Orientallactaga sibirica",
+          "publisher": "American Society of Mammalogists / Mammal Diversity Database",
+          "url": "https://www.mammaldiversity.org/taxon/1001964/",
+          "accessedAt": "2026-10-21",
+          "language": "en",
+          "supports": [
+            "scientificName",
+            "content.overview",
+            "names.en",
+            "content.shortDescription"
+          ],
+          "notes": "Names and synonyms; country distribution; Lebedev et al. 2013, DOI 10.1111/zsc.12002; переиспользованы доказательства №25.4 (web_primary_page_text). Полный текст недоступного источника не объявлен заново прочитанным."
+        },
+        {
+          "id": "gbif-taxonomy",
+          "title": "NCBI Taxonomy: Orientallactaga sibirica; exact SPECIES",
+          "publisher": "GBIF / NCBI Taxonomy",
+          "url": "https://api.gbif.org/v1/species/104051133",
+          "accessedAt": "2026-10-22",
+          "language": "en",
+          "taxonId": "gbif:104051133",
+          "supports": [
+            "scientificName",
+            "names.uz",
+            "content.overview",
+            "taxonomy.kingdom",
+            "taxonomy.phylum",
+            "taxonomy.class",
+            "taxonomy.order",
+            "taxonomy.family",
+            "taxonomy.genus"
+          ],
+          "notes": "Источник — реальная запись указанного чек-листа. EXACT означает локальную строгую проверку canonicalName и rank; не вымышленный ответ API match. nubKey другого ранга не подставлен."
+        }
+      ],
+      "contradictions": [],
+      "missingData": [],
+      "materials": [
+        {
+          "path": "data/research/catalog-200-conflict-resolution.json",
+          "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c"
+        },
+        {
+          "path": "docs/evidence/catalog-200-conflict-sources.json",
+          "sha256": "ed3db701e03053951178b5f5c16c3a829e560d2b02113c101375c1725253af48"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy.json",
+          "sha256": "9280809fb203aefa5dbd97e2f1373220ad8918028d9661f35a0b8d8f49449425"
+        },
+        {
+          "path": "docs/evidence/catalog-181-taxonomy-search.json",
+          "sha256": "584804d5a9553687e5d5e585ddb47974a2193ab9867021a08e3cf51440b5a0cd"
+        },
+        {
+          "path": "docs/evidence/catalog-181-national-accounts.json",
+          "sha256": "fb4e8d4ff73fd081898eb3c3b675634c1c132b4a8262e0fb701753cba21c65d9"
+        },
+        {
+          "path": "docs/evidence/catalog-181-images.json",
+          "sha256": "e46cdf82c03c59411ad6aba1ad721693da9313ff932b5ab9e0fe63393a347e82"
+        },
+        {
+          "path": "docs/evidence/catalog-181-photo-search.json",
+          "sha256": "e5577296864a986d9405c73ab4bf464d8f605057012ea81dfc07349b97886154"
+        },
+        {
+          "path": "docs/evidence/catalog-181-baseline.json",
+          "sha256": "8c63ed21eb17384fb6027dc6274955aaf214f441ca0536b293ff4a9ef103f264"
+        },
+        {
+          "path": "data/research/catalog-181-content/facts.json",
+          "sha256": "3f6c1b1ecee974a90cc46320cb9d015031f282837bbd276a1aad3bd1c6ff50ed"
+        }
+      ],
+      "draft": null,
+      "id": "allactaga-saltator",
+      "draftFile": "data/research/catalog-181-content/drafts/allactaga-saltator.json",
+      "verified": false,
+      "lastReviewedAt": null,
+      "scientificReviewStatus": "pending",
+      "independentScientificReview": "pending",
+      "sourceDecision": {
+        "file": "data/research/catalog-200-conflict-resolution.json",
+        "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c",
+        "id": "allactaga-saltator",
+        "originalStatus": "READY",
+        "acceptedName": "Orientallactaga sibirica",
+        "rank": "SPECIES"
+      },
+      "nationalConfirmation": {
+        "candidateId": "allactaga-saltator",
+        "originalScientificName": "Allactaga saltator",
+        "pages": [
+          524,
+          525
+        ],
+        "bookYear": 2006,
+        "bookPdfSha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8",
+        "urls": [
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=524",
+          "https://macrolepidoptera.ru/lnk/282.pdf#page=525"
+        ],
+        "originalTextSha256": [
+          {
+            "page": 524,
+            "sha256": "bd329ae4f03872e88061978802c77952ef5e6e9f16ae7db94ecd6b173ce9df08"
+          },
+          {
+            "page": 525,
+            "sha256": "7973906448b2f74879bb8f5763e3efcfe092cc6645450feb96e396030f6162a0"
+          }
+        ],
+        "historicalCategoryLines": [
+          {
+            "page": 524,
+            "lines": [
+              "Статусу: Near Threatened, NT: R."
+            ]
+          },
+          {
+            "page": 525,
+            "lines": [
+              "Статус: Near Threatened, NT: R",
+              "Status. VI, Near Threatened, NT: R. A.s. altorum occurs in Issyk-Kul Region and Kochkor V alley, A.s. dementiewi"
+            ]
+          }
+        ],
+        "literalKyrgyzHeading": "Кошаяк",
+        "kyrgyzHeadingVisuallyRead": true,
+        "selectedKyrgyzName": "Кошаяк",
+        "kyrgyzScientificNameFallback": false,
+        "modernPresenceConfirmed": null,
+        "decreeReferencesPreservedSeparately": [
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-2-25",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=8"
+          }
+        ],
+        "decreeNotUsedToOverrideBookConcept": true
+      },
+      "authorship": {
+        "value": "(J.R.Forster, 1778)",
+        "sourceIds": [
+          "mdd-jerboa"
+        ]
+      },
+      "namePolicy": {
+        "ky": "visually_confirmed_historical_book_heading",
+        "uz": "accepted_scientific_name_fallback_no_unverified_vernacular",
+        "en": "confirmed_specialist_source_name"
+      },
+      "contentLanguage": {
+        "shortDescriptions": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "longSections": "ru",
+        "otherLongLanguages": null,
+        "scientificFallback": "ru, explicitly labelled by existing UI"
+      },
+      "editorialNotes": [
+        "Доли попадания в капканы из старых работ не являются числом особей и не использованы в population.",
+        "Родовое имя MDD сохранено; реальный числовой идентификатор точного принятого вида получен из NCBI Taxonomy через GBIF. Это не результат backbone match и не переименование старого ключа."
+      ],
+      "unknownFacts": [
+        "Современная национальная численность и сохранение исторических местонахождений не подтверждены.",
+        "Внешность не реконструирована без подходящего описания."
+      ],
+      "preparation": {
+        "date": "2026-10-22",
+        "draftSha256": "1a52d3e7712e31a19001247ccd359ad2ded4eb542ebeca39ce1793ab86ad0435",
+        "draftSemanticFingerprint": "8ab088eb7cbaece05c1ba92dc6a4f53d4a71eaf4d6c50b2c5b680f98d4581bc0"
+      },
+      "state": "ready_for_review",
+      "approval": null,
+      "diagnostics": {
+        "candidateId": "allactaga-saltator",
+        "batchNumber": 3,
+        "state": "ready_for_review",
+        "errors": [],
+        "warnings": [
+          "Разрешённая фотография отсутствует: используется существующий placeholder"
+        ],
+        "fingerprint": "e9e13b9b8d1f8580837dfbe7326b877b98b030864229b35c7c976d137e198b55",
+        "readiness": {
+          "photo": "placeholder",
+          "photoCheck": "placeholder_allowed",
+          "shortDescriptions": {
+            "ky": true,
+            "uz": true,
+            "ru": true,
+            "en": true
+          },
+          "fullDescriptions": {
+            "ky": false,
+            "uz": false,
+            "ru": true,
+            "en": false
+          },
+          "missingNames": [],
+          "translationRequired": [],
+          "scientificReviewRequired": true
+        }
+      },
+      "checkedFingerprint": "e9e13b9b8d1f8580837dfbe7326b877b98b030864229b35c7c976d137e198b55"
+    }
+  ],
+  "sourceCommit": "903a932a8b7577b85d9c3734bee03ce512e0b72e",
+  "scientificApproval": null,
+  "ownerAuthorization": null,
+  "publicationAllowed": false
+}

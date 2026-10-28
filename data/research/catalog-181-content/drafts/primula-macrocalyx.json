@@ -1,0 +1,298 @@
+{
+  "id": "primula-macrocalyx",
+  "scientificName": "Primula veris subsp. macrocalyx",
+  "names": {
+    "ru": "Первоцвет крупночашечный",
+    "ky": "Ири чөйчөкчөлүү примула",
+    "uz": "Primula veris subsp. macrocalyx",
+    "en": "Large-calyxed Primrose"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Ericales",
+    "family": "Primulaceae",
+    "genus": "Primula"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Primula macrocalyx, с.180–181); Статус:  VU",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Лесные поляны и высокотравные луга лесолугового пояса; историческое описание 2006 года.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "code": "KG",
+      "type": "country",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Массовый сбор цветущих растений и заготовка лекарственного сырья названы в источнике 2006 года.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические рекомендации: изучить популяции, организовать ботанический заказник и испытать растение в культуре.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/catalog181-primula-macrocalyx.webp",
+      "width": 1350,
+      "height": 1800,
+      "sha256": "d5ec59b08be3673d41303d12740da3b57a899dcf35ad9a015345de287abceacd",
+      "author": "Krzysztof Ziarnek, Kenraiz",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Primula_veris_subsp._macrocalyx_kz06.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Krzysztof Ziarnek, Kenraiz; CC BY-SA 4.0; https://commons.wikimedia.org/wiki/File:Primula_veris_subsp._macrocalyx_kz06.jpg. Производное изображение распространяется под той же лицензией.",
+      "modifications": [
+        "Уменьшение без увеличения до 1800 px; WebP quality 82; EXIF/XMP удалены штатным scripts/process_data.py."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ky": null,
+        "uz": null,
+        "ru": "Primula veris subsp. macrocalyx, южнее Nshkhark, Армения; фото 2016 года. Не свидетельство нахождения в Кыргызстане.",
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Primula macrocalyx, с.180–181",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=181",
+      "accessedAt": "2026-10-22",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.category",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "content.diet",
+        "threats.0",
+        "conservationMeasures.0",
+        "content.appearance",
+        "names.en"
+      ],
+      "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 180-бет; проверенный кыргызский заголовок",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=180",
+      "accessedAt": "2026-10-22",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    },
+    {
+      "id": "powo-primula",
+      "title": "POWO: Primula macrocalyx Bunge",
+      "publisher": "Royal Botanic Gardens, Kew",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:702229-1",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.shortDescription"
+      ],
+      "notes": "Taxonomy; Fl. Altaic. 1:209 (1829); Flora Europaea 3 (1972); переиспользованы доказательства №25.4 (web_primary_page_text). Полный текст недоступного источника не объявлен заново прочитанным."
+    },
+    {
+      "id": "grin-primula",
+      "title": "USDA GRIN / AAFC: Primula macrocalyx",
+      "publisher": "USDA ARS GRIN; AAFC",
+      "url": "https://pgrc-rpc.agr.gc.ca/gringlobal/taxon/taxonomydetail?id=29651",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview"
+      ],
+      "notes": "Taxonomy detail 29651; переиспользованы доказательства №25.4 (web_indexed_primary_text). Полный текст недоступного источника не объявлен заново прочитанным."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone Taxonomy: Primula veris subsp. macrocalyx (Bunge) Lüdi; exact SUBSPECIES",
+      "publisher": "GBIF / GBIF Backbone Taxonomy",
+      "url": "https://api.gbif.org/v1/species/5832513",
+      "accessedAt": "2026-10-22",
+      "language": "en",
+      "taxonId": "gbif:5832513",
+      "supports": [
+        "scientificName",
+        "names.uz",
+        "content.overview",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "notes": "Источник — реальная запись указанного чек-листа. EXACT означает локальную строгую проверку canonicalName и rank; не вымышленный ответ API match. nubKey другого ранга не подставлен."
+    },
+    {
+      "id": "photo-commons",
+      "title": "Primula veris subsp. macrocalyx; Krzysztof Ziarnek, Kenraiz",
+      "publisher": "Wikimedia Commons; автор указан в атрибуции",
+      "url": "https://commons.wikimedia.org/wiki/File:Primula_veris_subsp._macrocalyx_kz06.jpg",
+      "accessedAt": "2026-10-22",
+      "language": null,
+      "supports": [
+        "images.0.caption"
+      ],
+      "notes": "Лицензия конкретного файла и исходное определение проверены; зарубежный снимок не подтверждает национальное включение."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Многолетний первоцвет с жёлтыми цветками лесных полян и лугов. Исторический национальный очерк относится к Primula veris subsp. macrocalyx.",
+        "ky": "Токой аянтчаларында жана шалбааларда өскөн сары гүлдүү көп жылдык өсүмдүк. Улуттук тарыхый очерк Primula veris subsp. macrocalyx таксонуна тиешелүү.",
+        "uz": "Oʻrmon ochiqliklari va oʻtloqlarda oʻsuvchi sariq gulli koʻp yillik oʻsimlik. Milliy tarixiy ocherk Primula veris subsp. macrocalyx taksoniga tegishli.",
+        "en": "A yellow-flowered perennial of forest clearings and meadows. The historical national account applies to Primula veris subsp. macrocalyx."
+      },
+      "sourceIds": [
+        "national-book",
+        "powo-primula"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Первоцвет крупночашечный — многолетнее розеточное растение, включённое в книгу 2006 года как Primula macrocalyx Bunge. Здесь принят подвид Primula veris subsp. macrocalyx (Bunge) Lüdi, прямо связанный с исходным именем в POWO и GRIN. Национальная охраняемая единица не заменяется всем видом Primula veris.\n\nПо очерку растение имеет прикорневую розетку листьев, косое корневище и зонтиковидное соцветие. Венчик жёлтый с оранжевыми пятнами у основания долей; чашечка вздутая и ширококолокольчатая. Лесные поляны и высокотравные луга лесолугового пояса; историческое описание 2006 года. Местные растения в книге характеризуются как редкие и занимающие ограниченную площадь. Эти определения не используются для вымышленной оценки числа особей.\n\nНациональный очерк указывает цветение в мае, плодоношение в июне и семенное размножение. Современная местная фенология отдельно не проверялась.\n\nСеверный макросклон Кыргызского хребта, междуречье Кегеты, Талды-Булака и Шамси — исторические сведения книги, не новые точки находок.\n\nМассовый сбор цветущих растений и заготовка лекарственного сырья названы в источнике 2006 года. Исторические рекомендации: изучить популяции, организовать ботанический заказник и испытать растение в культуре.\n\nНациональная VU категория относится к историческому очерку 2006 года и названной местной единице охраны. Она не является глобальной оценкой всего современного таксона или проверенным действующим правовым статусом. Современная численность неизвестна; независимая научная проверка ожидается.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "powo-primula",
+        "grin-primula",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По очерку растение имеет прикорневую розетку листьев, косое корневище и зонтиковидное соцветие. Венчик жёлтый с оранжевыми пятнами у основания долей; чашечка вздутая и ширококолокольчатая.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Местные растения в книге характеризуются как редкие и занимающие ограниченную площадь. Эти определения не используются для вымышленной оценки числа особей.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный очерк указывает цветение в мае, плодоношение в июне и семенное размножение. Современная местная фенология отдельно не проверялась.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Северный макросклон Кыргызского хребта, междуречье Кегеты, Талды-Булака и Шамси — исторические сведения книги, не новые точки находок.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

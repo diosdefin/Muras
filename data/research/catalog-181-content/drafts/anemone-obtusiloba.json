@@ -1,0 +1,298 @@
+{
+  "id": "anemone-obtusiloba",
+  "scientificName": "Anemonastrum obtusilobum",
+  "names": {
+    "ru": "Ветреница туполопастная",
+    "ky": "Учсуз анемона",
+    "uz": "Anemonastrum obtusilobum",
+    "en": "Obtusilobous Windflower"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Ranunculales",
+    "family": "Ranunculaceae",
+    "genus": "Anemonastrum"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Anemone obtusiloba, с.110–111); Статус: VU",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Каменистые склоны и скалы верхнего горного пояса; историческая характеристика издания 2006 года.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "code": "KG",
+      "type": "country",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По историческому очерку: хозяйственное освоение местообитаний и нерегулируемый выпас.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В 2006 году рекомендованы уточнение ареала и численности, ботанический заказник и испытание культуры в ботаническом саду.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/catalog181-anemone-obtusiloba.webp",
+      "width": 1800,
+      "height": 1428,
+      "sha256": "461a2aa25ab5d3b30178ad6975abf0102ff3e8ba79ccabf1aaa46e98cb8533d8",
+      "author": "Hedwig Storch",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Blaue_Himalaya-Anemone_(Anemone_obtusiloba)_5668.JPG",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "Hedwig Storch; CC BY-SA 3.0; https://commons.wikimedia.org/wiki/File:Blaue_Himalaya-Anemone_(Anemone_obtusiloba)_5668.JPG. Производное изображение распространяется под той же лицензией.",
+      "modifications": [
+        "Уменьшение без увеличения до 1800 px; WebP quality 82; EXIF/XMP удалены штатным scripts/process_data.py."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ky": null,
+        "uz": null,
+        "ru": "Anemone obtusiloba (= Anemonastrum obtusilobum), выращенный экземпляр в ботаническом саду Акюрейри, Исландия. Фото 2010 года; не свидетельство нахождения в Кыргызстане.",
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Anemone obtusiloba, с.110–111",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=111",
+      "accessedAt": "2026-10-22",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.category",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "content.diet",
+        "threats.0",
+        "conservationMeasures.0",
+        "content.appearance",
+        "names.en"
+      ],
+      "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 110-бет; проверенный кыргызский заголовок",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=110",
+      "accessedAt": "2026-10-22",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    },
+    {
+      "id": "powo-anemone",
+      "title": "POWO: Anemonastrum obtusilobum",
+      "publisher": "Royal Botanic Gardens, Kew",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:60476974-2",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.shortDescription"
+      ],
+      "notes": "Taxonomy; Homotypic Synonyms; Distribution; Phytoneuron 2018-55:7; переиспользованы доказательства №25.4 (web_primary_page_text). Полный текст недоступного источника не объявлен заново прочитанным."
+    },
+    {
+      "id": "ipni-anemone",
+      "title": "IPNI: Anemone obtusiloba D.Don",
+      "publisher": "Royal Botanic Gardens, Kew",
+      "url": "https://www.ipni.org/n/708529-1",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview"
+      ],
+      "notes": "IPNI 708529-1; переиспользованы доказательства №25.4 (web_indexed_primary_text). Полный текст недоступного источника не объявлен заново прочитанным."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone Taxonomy: Anemonastrum obtusilobum (D.Don) Mosyakin; exact SPECIES",
+      "publisher": "GBIF / GBIF Backbone Taxonomy",
+      "url": "https://api.gbif.org/v1/species/10404690",
+      "accessedAt": "2026-10-22",
+      "language": "en",
+      "taxonId": "gbif:10404690",
+      "supports": [
+        "scientificName",
+        "names.uz",
+        "content.overview",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "notes": "Источник — реальная запись указанного чек-листа. EXACT означает локальную строгую проверку canonicalName и rank; не вымышленный ответ API match. nubKey другого ранга не подставлен."
+    },
+    {
+      "id": "photo-commons",
+      "title": "Anemone obtusiloba; Hedwig Storch",
+      "publisher": "Wikimedia Commons; автор указан в атрибуции",
+      "url": "https://commons.wikimedia.org/wiki/File:Blaue_Himalaya-Anemone_(Anemone_obtusiloba)_5668.JPG",
+      "accessedAt": "2026-10-22",
+      "language": null,
+      "supports": [
+        "images.0.caption"
+      ],
+      "notes": "Лицензия конкретного файла и исходное определение проверены; зарубежный снимок не подтверждает национальное включение."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Высокогорный многолетник каменистых склонов; в книге Кыргызстана 2006 года назван Anemone obtusiloba. Современная численность неизвестна.",
+        "ky": "Бийик тоонун таштак беттеринде өскөн көп жылдык өсүмдүк. 2006-жылкы Кызыл китепте Anemone obtusiloba деп берилген; азыркы саны белгисиз.",
+        "uz": "Baland togʻlarning toshloq yonbagʻirlarida oʻsuvchi koʻp yillik oʻsimlik. 2006-yilgi Qizil kitobda Anemone obtusiloba nomi bilan keltirilgan; hozirgi soni nomaʼlum.",
+        "en": "A high-mountain perennial of stony slopes, listed in Kyrgyzstan’s 2006 Red Data Book as Anemone obtusiloba. Current national abundance is unknown."
+      },
+      "sourceIds": [
+        "national-book",
+        "powo-anemone"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Ветреница туполопастная — невысокий многолетник семейства лютиковых. В национальной книге она названа Anemone obtusiloba D.Don. Принятая комбинация Anemonastrum obtusilobum (D.Don) Mosyakin сохраняет тот же именной тип; это перенос рода, а не дополнительный вид.\n\nПо описанию 2006 года опушённое растение достигает примерно 15 см. Прикорневые листья глубоко трёхрассечённые. Небольшие цветки изнутри светлые, снаружи имеют фиолетово-синий оттенок. Каменистые склоны и скалы верхнего горного пояса; историческая характеристика издания 2006 года. Национальный очерк связывает растение с высокогорьями Центрального Тянь-Шаня. Эти сведения описывают среду исторических находок, а не современную карту сохранившихся популяций.\n\nВ русском очерке указано цветение в июле; английское резюме сообщает о семенном размножении. Данные о культивировании отсутствовали.\n\nВ книге названы Центральный Тянь-Шань, Терскей Ала-Тоо и бассейн Сары-Джаза. Никакой современный подвид по этим географическим сведениям здесь не назначается.\n\nПо историческому очерку: хозяйственное освоение местообитаний и нерегулируемый выпас. В 2006 году рекомендованы уточнение ареала и численности, ботанический заказник и испытание культуры в ботаническом саду.\n\nНациональная VU категория относится к историческому очерку 2006 года и названной местной единице охраны. Она не является глобальной оценкой всего современного таксона или проверенным действующим правовым статусом. Современная численность неизвестна; независимая научная проверка ожидается.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "powo-anemone",
+        "ipni-anemone",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По описанию 2006 года опушённое растение достигает примерно 15 см. Прикорневые листья глубоко трёхрассечённые. Небольшие цветки изнутри светлые, снаружи имеют фиолетово-синий оттенок.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный очерк связывает растение с высокогорьями Центрального Тянь-Шаня. Эти сведения описывают среду исторических находок, а не современную карту сохранившихся популяций.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В русском очерке указано цветение в июле; английское резюме сообщает о семенном размножении. Данные о культивировании отсутствовали.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В книге названы Центральный Тянь-Шань, Терскей Ала-Тоо и бассейн Сары-Джаза. Никакой современный подвид по этим географическим сведениям здесь не назначается.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "id": "papilio-alexanor-voldemar",
+  "scientificName": "Papilio alexanor voldemar",
+  "names": {
+    "ru": "Алексанор, подвид Вольдемар",
+    "ky": "Кичи махаон",
+    "uz": "Papilio alexanor voldemar",
+    "en": "Voldemar Southern Swallowtail"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Papilionidae",
+    "genus": "Papilio"
+  },
+  "group": "arthropods",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Papilio alexanor voldemar, с.270–271); Статус: II категория (VU B1ab(iii)+2ab(iii)c(iii,iv); C2b) ",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Каменисто-глинистые склоны с ксерофильной и степной растительностью; национальные сведения 2006 года.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "code": "KG",
+      "type": "country",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В книге обсуждаются разобщённость популяций, перевыпас и паразитоиды; современная сила этих воздействий не установлена.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В 2006 году предложены микрорезерваты, мониторинг и регулирование хозяйственной нагрузки.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Papilio alexanor voldemar, с.270–271",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=271",
+      "accessedAt": "2026-10-22",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.category",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "content.diet",
+        "threats.0",
+        "conservationMeasures.0",
+        "content.appearance",
+        "names.en"
+      ],
+      "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 270-бет; проверенный кыргызский заголовок",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=270",
+      "accessedAt": "2026-10-22",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    },
+    {
+      "id": "papilio-2025",
+      "title": "Nazari et al. (2025): Papilio alexanor phylogeography",
+      "publisher": "Biological Journal of the Linnean Society / Oxford University Press",
+      "url": "https://doi.org/10.1093/biolinnean/blaf078",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "names.uz",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.shortDescription"
+      ],
+      "notes": "Biol. J. Linn. Soc. 146(1), blaf078; Abstract and systematic conclusions; published 9 September 2025; переиспользованы доказательства №25.4 (web_primary_page_text). Полный текст недоступного источника не объявлен заново прочитанным."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Западно-тяньшанский подвид алексанора каменистых склонов, рассмотренный в национальной книге 2006 года. Современная численность неизвестна.",
+        "ky": "2006-жылкы улуттук китептеги Батыш Теңир-Тоонун таштак беттеринде жашаган алексанор түрчөсү. Азыркы саны белгисиз.",
+        "uz": "2006-yilgi milliy kitobda yoritilgan Gʻarbiy Tyanshan toshloq yonbagʻirlarining aleksanor kenja turi. Hozirgi soni nomaʼlum.",
+        "en": "A western Tien Shan swallowtail subspecies of stony slopes, treated in the 2006 national book. Current abundance is unknown."
+      },
+      "sourceIds": [
+        "national-book",
+        "papilio-2025"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Алексанор Вольдемар — западно-тяньшанский подвид бабочки Papilio alexanor. Национальная книга 2006 года рассматривает Papilio alexanor voldemar Kreuzberg, 1989; молекулярная ревизия Nazari et al. 2025 восстанавливает его подвидовой статус.\n\nПо национальному очерку бабочка имеет бледно-жёлтые крылья с чёрным рисунком и хвостовидными выростами задних крыльев. У внутреннего угла заднего крыла расположены цветные глазки. Каменисто-глинистые склоны с ксерофильной и степной растительностью; национальные сведения 2006 года. Гусеницы в национальном очерке связаны с зонтичными растениями; на Кыргызском хребте указана Ferula sp. Это не основание назначать один подтверждённый вид кормового растения всем популяциям.\n\nКнига описывает длительное развитие с зимовкой куколок и откладку одиночных яиц на кормовые растения. Современное обследование жизненного цикла в Кыргызстане не выполнялось.\n\nКнижный концепт относится к Западному Тянь-Шаню. На с.271 указание judeus для Кыргызстана прямо названо недостоверным; строка постановления с judeus не объявлена синонимом voldemar.\n\nВ книге обсуждаются разобщённость популяций, перевыпас и паразитоиды; современная сила этих воздействий не установлена. В 2006 году предложены микрорезерваты, мониторинг и регулирование хозяйственной нагрузки.\n\nНациональная VU категория относится к историческому очерку 2006 года и названной местной единице охраны. Она не является глобальной оценкой всего современного таксона или проверенным действующим правовым статусом. Современная численность неизвестна; независимая научная проверка ожидается.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "papilio-2025"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальному очерку бабочка имеет бледно-жёлтые крылья с чёрным рисунком и хвостовидными выростами задних крыльев. У внутреннего угла заднего крыла расположены цветные глазки.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Гусеницы в национальном очерке связаны с зонтичными растениями; на Кыргызском хребте указана Ferula sp. Это не основание назначать один подтверждённый вид кормового растения всем популяциям.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книга описывает длительное развитие с зимовкой куколок и откладку одиночных яиц на кормовые растения. Современное обследование жизненного цикла в Кыргызстане не выполнялось.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книжный концепт относится к Западному Тянь-Шаню. На с.271 указание judeus для Кыргызстана прямо названо недостоверным; строка постановления с judeus не объявлена синонимом voldemar.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

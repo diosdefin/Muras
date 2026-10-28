@@ -1,0 +1,472 @@
+{
+  "schemaVersion": 1,
+  "registryId": "catalog-181-content",
+  "catalogFingerprint": "9f8e3c2f89bd9d3278567960669b9cf94b2c4e8daacff7f8415e43bc3c85c834",
+  "counts": {
+    "processed": 15,
+    "accepted": 12,
+    "deferred": 3,
+    "rejected": 0
+  },
+  "states": {
+    "pending": 0,
+    "needs_evidence": 3,
+    "research_ready": 0,
+    "needs_photo": 0,
+    "ready_for_review": 12,
+    "approved_for_import": 0,
+    "imported": 0,
+    "rejected": 0
+  },
+  "results": [
+    {
+      "candidateId": "anemone-obtusiloba",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "2eff54944933d18855bb646d01f8a3eb9bce0087745805d9662ce5dc1736ea16",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "berberis-kaschgarica",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "c8686f3e9bbfb253c7edd22ddcb5d4c55affb9ff82184032368240799b3ff932",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "primula-macrocalyx",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "b3e613a3b96ff3f3b25c79c34b34b19492b081299710cc696fe0f806f89e71e2",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "sonjagaster-coronatus",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "f3c9d11d65e2ef3a5f4da2467458f3444e38b38602e3e8bcf8e51939b1f8055b",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "papilio-alexanor-voldemar",
+      "batchNumber": 1,
+      "state": "needs_evidence",
+      "errors": [
+        "Нет точного принятого таксона со связанным источником и идентификатором",
+        "Есть нерешённые противоречия или обязательные пробелы"
+      ],
+      "warnings": [],
+      "fingerprint": "eb591a3debaa4db1081a339761b738357e2df4d72b85866a9672671091afc0fc",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "megalodontes-kuznetzovi",
+      "batchNumber": 2,
+      "state": "needs_evidence",
+      "errors": [
+        "Нет точного принятого таксона со связанным источником и идентификатором",
+        "Есть нерешённые противоречия или обязательные пробелы"
+      ],
+      "warnings": [],
+      "fingerprint": "70f7b361f95a63acd3f05fdff1d4b1bf60bf0d085192aeb2da5288d8de51d84e",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "polochrum-pamirepandum",
+      "batchNumber": 2,
+      "state": "needs_evidence",
+      "errors": [
+        "Нет точного принятого таксона со связанным источником и идентификатором",
+        "Есть нерешённые противоречия или обязательные пробелы"
+      ],
+      "warnings": [],
+      "fingerprint": "e9c082eb11239d593b3347fad07f0b04159d2572deaaeb2b3f57237dfe7f5523",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "capoetobrama-kuschakewitschi-orientalis",
+      "batchNumber": 2,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "2256e907545e9c3138a95fbc3e1937f1ee4bfc1a75543d2e0a13e8204f1e24f6",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "schizothorax-issykkuli",
+      "batchNumber": 2,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "a09887653f9eddbe59f435cbed695ac618cb6839c7264c7c0cf86b8bb8ecdb82",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "diptychus-dybowskii-lansdelli",
+      "batchNumber": 2,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "5cd783a2fc8c71512e0f22c6016dcadeb2679ae16e8f237d88f6eb6c7c799ee5",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "eryx-tataricus",
+      "batchNumber": 3,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "9bcbdef86723af3a084ade2d56d35a9d45b8b8290df0a9ae4f8d7d09593925da",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "terpsiphone-paradisi",
+      "batchNumber": 3,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "d07f2e7f7ed3a322594357bfd245e6ff882a692dbdfa2fda035bff70fdd9e862",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "otonycteris-hemprichi",
+      "batchNumber": 3,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "78d1c8d6bbf7da6ab9b674d91785c3542c6b770ca0c0495132f678d56cb7b2ac",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "cervus-elaphus-asiaticus",
+      "batchNumber": 3,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "8a617e97d8eff8ecf21b79db230af3ba82fa387f1afa66deaabf4d9b6782f5eb",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "allactaga-saltator",
+      "batchNumber": 3,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "e9e13b9b8d1f8580837dfbe7326b877b98b030864229b35c7c976d137e198b55",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    }
+  ],
+  "metrics": {
+    "durationMs": 191.95,
+    "cpu": {
+      "user": 250000,
+      "system": 141000
+    },
+    "memory": {
+      "rss": 84123648,
+      "heapTotal": 52146176,
+      "heapUsed": 25549936,
+      "external": 4249634,
+      "arrayBuffers": 2001479
+    },
+    "localMaterialReads": 24
+  }
+}

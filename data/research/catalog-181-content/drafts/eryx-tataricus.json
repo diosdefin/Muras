@@ -1,0 +1,248 @@
+{
+  "id": "eryx-tataricus",
+  "scientificName": "Eryx miliaris",
+  "names": {
+    "ru": "Восточный удавчик",
+    "ky": "Чыгыш кумчул муунткучу",
+    "uz": "Eryx miliaris",
+    "en": "Dwarf Sand Boa"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Squamata",
+    "order": null,
+    "family": "Boidae",
+    "genus": "Eryx"
+  },
+  "group": "reptiles",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "NT",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Eryx tataricus, с.340–341); Статус: Категория NT",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Глинистые, лёссовые и щебнистые пустынно-степные участки равнин и предгорий; описание исторического очерка.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "code": "KG",
+      "type": "country",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически отмечены распашка, интенсивный выпас и прямое уничтожение; коммерческий вылов обозначен как возможный фактор.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендации 2006 года включали разъяснительную работу и ограничение коммерческого отлова.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Eryx tataricus, с.340–341",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=341",
+      "accessedAt": "2026-10-22",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.category",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "content.diet",
+        "threats.0",
+        "conservationMeasures.0"
+      ],
+      "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 340-бет; проверенный кыргызский заголовок",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=340",
+      "accessedAt": "2026-10-22",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    },
+    {
+      "id": "rdb-eryx",
+      "title": "Reptile Database: Eryx miliaris",
+      "publisher": "The Reptile Database",
+      "url": "https://reptile-database.reptarium.cz/Eryx/miliaris",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "names.en",
+        "content.shortDescription"
+      ],
+      "notes": "Synonymy; Types; Comment; Eryx tataricus / Boa tatarica Lichtenstein 1823; переиспользованы доказательства №25.4 (web_primary_page_text). Полный текст недоступного источника не объявлен заново прочитанным."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone Taxonomy: Eryx miliaris (Pallas, 1773); exact SPECIES",
+      "publisher": "GBIF / GBIF Backbone Taxonomy",
+      "url": "https://api.gbif.org/v1/species/2465319",
+      "accessedAt": "2026-10-22",
+      "language": "en",
+      "taxonId": "gbif:2465319",
+      "supports": [
+        "scientificName",
+        "names.uz",
+        "content.overview",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "notes": "Источник — реальная запись указанного чек-листа. EXACT означает локальную строгую проверку canonicalName и rank; не вымышленный ответ API match. nubKey другого ранга не подставлен."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Исторический восточный удавчик Eryx tataricus из национальной книги 2006 года, включённый в Eryx miliaris. Современная численность в стране неизвестна.",
+        "ky": "2006-жылкы улуттук китептеги Eryx tataricus тарыхый таксону азыр Eryx miliaris түрүнө киргизилет. Өлкөдөгү азыркы саны белгисиз.",
+        "uz": "2006-yilgi milliy kitobdagi tarixiy Eryx tataricus hozir Eryx miliaris tarkibida qaraladi. Mamlakatdagi hozirgi soni nomaʼlum.",
+        "en": "The historical national Eryx tataricus concept, included in Eryx miliaris under the adopted taxonomy. Present national abundance is unknown."
+      },
+      "sourceIds": [
+        "national-book",
+        "rdb-eryx"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Восточный удавчик — исторический национальный концепт Eryx tataricus (Lichtenstein, 1823), который принятая здесь современная обработка включает в Eryx miliaris (Pallas, 1773). Reptile Database документирует формальную синонимизацию, а не только сходство названий. Национальные сведения тяньшанско-туранского концепта не переносятся автоматически на все популяции расширенного вида.\n\nГлинистые, лёссовые и щебнистые пустынно-степные участки равнин и предгорий; описание исторического очерка. По книге активен преимущественно в сумерках и ночью, использует норы и полости под камнями и корнями. Скрытность затрудняла оценку численности уже при подготовке национального источника.\n\nВ национальном очерке перечислены мелкие пресмыкающиеся, млекопитающие, реже птицы и насекомые; добыча удерживается кольцами тела. Источник 2006 года характеризует национальный концепт как яйцеживородящий, с весенним спариванием и появлением молодняка летом и в начале осени. Новые сроки не установлены.\n\nВ историческом очерке названы Чуйская и Таласская долины, Кетмень-Тюбинская котловина и северо-восток Баткенской области. Эти сведения не подтверждают современное сохранение каждой популяции.\n\nИсторически отмечены распашка, интенсивный выпас и прямое уничтожение; коммерческий вылов обозначен как возможный фактор. Рекомендации 2006 года включали разъяснительную работу и ограничение коммерческого отлова.\n\nНациональная NT категория относится к историческому очерку 2006 года и названной местной единице охраны. Она не является глобальной оценкой всего современного таксона или проверенным действующим правовым статусом. Современная численность неизвестна; независимая научная проверка ожидается.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "rdb-eryx",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге активен преимущественно в сумерках и ночью, использует норы и полости под камнями и корнями. Скрытность затрудняла оценку численности уже при подготовке национального источника.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальном очерке перечислены мелкие пресмыкающиеся, млекопитающие, реже птицы и насекомые; добыча удерживается кольцами тела.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Источник 2006 года характеризует национальный концепт как яйцеживородящий, с весенним спариванием и появлением молодняка летом и в начале осени. Новые сроки не установлены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В историческом очерке названы Чуйская и Таласская долины, Кетмень-Тюбинская котловина и северо-восток Баткенской области. Эти сведения не подтверждают современное сохранение каждой популяции.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

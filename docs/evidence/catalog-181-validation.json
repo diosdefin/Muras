@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-22",
+  "sourceCommit": "903a932a8b7577b85d9c3734bee03ce512e0b72e",
+  "npmTest": {
+    "exitCode": 0,
+    "tests": 321,
+    "pass": 321,
+    "fail": 0,
+    "skipped": 0,
+    "logSha256": "8c5c1e16a4f234bd0c401a18baee560f7c181414c95e821145be6277fadf118d"
+  },
+  "commands": [
+    {
+      "command": "npm run data",
+      "exitCode": 0,
+      "logSha256": "3393afb98cdcb9313f6fd1277bccbc9bd13fce404e1801ab45a717edbca21c7c",
+      "tail": [
+        "> redbook@0.1.0 data",
+        "> node scripts/build-data.mjs",
+        "",
+        "Данные проверены: каталог 166, архив 2, викторина 18, области 7, региональные свидетельства 2."
+      ]
+    },
+    {
+      "command": "npm run data-validate",
+      "exitCode": 0,
+      "logSha256": "4feb40d032befd6d3e5db89bdfdab81688d142603fe3c2c75544576de7dc7437",
+      "tail": [
+        "> redbook@0.1.0 data:validate",
+        "> node scripts/validate-locales.mjs && node scripts/build-data.mjs --check",
+        "",
+        "Переводы проверены: 620 ключей × 4 языка.",
+        "Данные проверены: каталог 166, архив 2, викторина 18, области 7, региональные свидетельства 2."
+      ]
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "logSha256": "605655d5ef30c22e00c43dc6a1f4e3667808e55f640b6a72527d7a56c09f7478",
+      "tail": [
+        "dist/assets/useModalDialog-C-hFAoqp.js   155.16 kB │ gzip: 46.18 kB",
+        "✓ built in 3.12s",
+        "",
+        "> redbook@0.1.0 postbuild",
+        "> node scripts/admin-entry.mjs"
+      ]
+    }
+  ],
+  "dryRun": {
+    "runs": 2,
+    "byteIdentical": true,
+    "firstReportSha256": "f6c7187f359008c454e154f066b4425feb0b6c89fe737ffddded1dd0975c6908",
+    "secondReportSha256": "f6c7187f359008c454e154f066b4425feb0b6c89fe737ffddded1dd0975c6908",
+    "applied": false,
+    "added": 12,
+    "rejected": 0,
+    "baselineCount": 166,
+    "potentialCount": 178
+  },
+  "readOnlyAuthoringReproduction": {
+    "command": "node scripts/prepare-catalog-181.mjs --verify",
+    "exitCode": 0
+  },
+  "independentAudit": {
+    "command": "node scripts/validate-catalog-181-preparation.mjs",
+    "exitCode": 0,
+    "receipt": "docs/evidence/catalog-181-preparation-audit.json"
+  },
+  "webpDecode": [
+    {
+      "path": "assets/images/species/catalog181-anemone-obtusiloba.webp",
+      "format": "WEBP",
+      "size": [
+        1800,
+        1428
+      ],
+      "decoded": true,
+      "exif": false,
+      "xmp": false
+    },
+    {
+      "path": "assets/images/species/catalog181-primula-macrocalyx.webp",
+      "format": "WEBP",
+      "size": [
+        1350,
+        1800
+      ],
+      "decoded": true,
+      "exif": false,
+      "xmp": false
+    }
+  ],
+  "publicCatalogCount": 166,
+  "archiveCount": 2,
+  "publicCatalogModified": false,
+  "publicationAllowed": false
+}
