@@ -1,0 +1,2554 @@
+{
+  "schemaVersion": 1,
+  "documentType": "muras-final-remaining-taxonomy-review",
+  "reviewedOn": "2026-10-28",
+  "timezone": "Asia/Bishkek",
+  "branch": "feature/catalog-200",
+  "sourceCommit": "1f5d7e951fbf645fbf16e143b1da081b1d81be2d",
+  "baseline": {
+    "catalogCount": 178,
+    "archiveCount": 2,
+    "cleanGitInitially": true,
+    "expectedHeadMatched": true,
+    "protectedTrackedFileCount": 1088
+  },
+  "scope": {
+    "previousNeedsEvidenceCount": 19,
+    "additionalTechnicalHoldsCount": 3,
+    "intersectionIds": [],
+    "uniqueCandidateCount": 22,
+    "importedCandidateIntersectionIds": [],
+    "full421PositionInventoryRepeated": false,
+    "priorInventoryReused": true,
+    "onlyExistingCandidatesUsed": true,
+    "pairComparisons": 231
+  },
+  "definitions": {
+    "READY": "Достаточно данных для подготовки образовательной карточки в явно выбранном охвате; не технический допуск, научное одобрение или публикация.",
+    "NEEDS_EVIDENCE": "Существенный предметный конфликт сохраняется.",
+    "DUPLICATE": "Доказанный дубликат существующего опубликованного таксона.",
+    "EXCLUDED": "Документированно недопустимая самостоятельная запись; отсутствие GBIF не является основанием исключения."
+  },
+  "counts": {
+    "READY": 9,
+    "NEEDS_EVIDENCE": 13,
+    "DUPLICATE": 0,
+    "EXCLUDED": 0
+  },
+  "readyCandidateIds": [
+    "sorbaria-olgae",
+    "dorema-microcarpum",
+    "tianschaniella-umbellifera",
+    "parnassius-loxias-tashkorensis",
+    "parnassius-apollo-merzbacheri",
+    "cuon-alpinus",
+    "papilio-alexanor-voldemar",
+    "megalodontes-kuznetzovi",
+    "polochrum-pamirepandum"
+  ],
+  "decisions": [
+    {
+      "id": "dictyophora-duplicata",
+      "group": "fungi",
+      "status": "NEEDS_EVIDENCE",
+      "historicalScientificName": "Dictyophora duplicata",
+      "historicalRank": "SPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          40,
+          41
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-1-93"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=41"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-1-93",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": null,
+      "acceptedRank": null,
+      "gbifTaxonIdForSelectedConcept": null,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "NEEDS_EVIDENCE",
+        "reason": "Синонимика 2019 года частично объясняет ответ GBIF, но комплекс indusiatus и альтернативная трактовка duplicatus не позволяют переопределить национальные находки только по имени.",
+        "remainingBlockers": [
+          "Проверить современный типовой/молекулярный концепт duplicatus и indusiatus и его применимость к документированному кыргызскому материалу."
+        ],
+        "technicalHoldSource": null,
+        "technicalHoldStateRetained": null
+      },
+      "newEvidence": "Index Fungorum ведёт к indusiatus, но первичная работа 1996 различает азиатские определения duplicata sensu auct. и настоящий Bosc-концепт. Национальные сборы не переопределены.",
+      "taxonomySourceIds": [
+        "if-duplicata",
+        "czech-1996",
+        "previous:mycokeys-2019"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "unresolved_or_scope_limited",
+        "decision": "high_for_retaining_specified_blocker",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Найти кыргызский гербарный ваучер, проверить морфологию/микроскопию и при возможности ITS; разграничить indusiatus, duplicatus и pseudoduplicatus."
+      ],
+      "acceptedNameScope": "Национальный очерк сохраняет исторический местный охват; категория не переносится на весь мировой ареал принятого таксона.",
+      "scientificPreparationAllowed": false,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "if-duplicata",
+          "locator": "Name record / current name"
+        },
+        {
+          "sourceId": "czech-1996",
+          "locator": "с.280, D. duplicata sensu auct."
+        },
+        {
+          "sourceId": "previous:mycokeys-2019",
+          "locator": "MycoBank 245788; taxonomic treatment of Phallus indusiatus; article 35324"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          0
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Dictyophora duplicata"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [],
+        "semanticNotes": "Учтены документированные синонимы, ранги и ранее проверенные исторические имена; потенциальная синонимия не объявлена доказанной."
+      }
+    },
+    {
+      "id": "tulipa-anadroma",
+      "group": "plants",
+      "status": "NEEDS_EVIDENCE",
+      "historicalScientificName": "Tulipa anadroma",
+      "historicalRank": "SPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          78,
+          79
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-1-12"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=79"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-1-12",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=2"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": null,
+      "acceptedRank": null,
+      "gbifTaxonIdForSelectedConcept": null,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "NEEDS_EVIDENCE",
+        "reason": "POWO и GBIF выбирают разные видовые/гибридные концепты. Национальный эндемик не объявляется автоматически ни синонимом, ни самостоятельным негибридным видом.",
+        "remainingBlockers": [
+          "Нужна предметная ревизия anadroma / tschimganica с типами и кыргызским материалом; выбор одного агрегатора не снимает конфликт."
+        ],
+        "technicalHoldSource": null,
+        "technicalHoldStateRetained": null
+      },
+      "newEvidence": "Сохраняется расхождение POWO (anadroma) и GBIF (×tschimganica); гибридный знак не доказывает ни самостоятельность, ни недопустимость исторической позиции.",
+      "taxonomySourceIds": [
+        "previous:powo-tulipa",
+        "gbif-fresh"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "unresolved_or_scope_limited",
+        "decision": "high_for_retaining_specified_blocker",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Сверить тип Botschantzeva и обработку Christenhusz et al. 2013, границы гибридного концепта и связь с национальными сборами."
+      ],
+      "acceptedNameScope": "Национальный очерк сохраняет исторический местный охват; категория не переносится на весь мировой ареал принятого таксона.",
+      "scientificPreparationAllowed": false,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "previous:powo-tulipa",
+          "locator": "Taxonomy; alternative taxonomy; Christenhusz et al. 2013, Bot. J. Linn. Soc. 172:280–328"
+        },
+        {
+          "sourceId": "gbif-fresh",
+          "locator": "docs/evidence/catalog-200-final-gbif.json"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          1
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Tulipa anadroma"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [],
+        "semanticNotes": "Учтены документированные синонимы, ранги и ранее проверенные исторические имена; потенциальная синонимия не объявлена доказанной."
+      }
+    },
+    {
+      "id": "sorbaria-olgae",
+      "group": "plants",
+      "status": "READY",
+      "historicalScientificName": "Sorbaria olgae",
+      "historicalRank": "SPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          126,
+          127
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-1-42"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=127"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-1-42",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": "Sorbaria tomentosa",
+      "acceptedRank": "SPECIES",
+      "gbifTaxonIdForSelectedConcept": 3012117,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "NEEDS_EVIDENCE",
+        "reason": "Уточнён конфликт: POWO ведёт к разновидности S. tomentosa var. tomentosa, GBIF — к виду S. tomentosa. Найдена профильная ревизия, но её полный текст не был доступен.",
+        "remainingBlockers": [
+          "Прочесть таксономическую обработку и типификацию olgae в Song & Hong 2021; обосновать допустимый ранг и объём национального концепта."
+        ],
+        "technicalHoldSource": null,
+        "technicalHoldStateRetained": null
+      },
+      "newEvidence": "Полная ревизия 2021 явно включает olgae в tomentosa и приводит тип. POWO уточняет var. tomentosa; видовой охват обоснован ревизией, а не удалением ранга.",
+      "taxonomySourceIds": [
+        "sorbaria-full",
+        "previous:powo-sorbaria",
+        "gbif-fresh"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "high_for_selected_documented_concept",
+        "decision": "high",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Сохранить olgae / var. tomentosa как охват исторической охраны; не выдавать разновидность за подвид. Тип LE авторы ревизии не видели."
+      ],
+      "acceptedNameScope": "Одна видовая карточка в историческом местном охвате olgae / var. tomentosa; отдельная вторая карточка разновидности не планируется.",
+      "scientificPreparationAllowed": true,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "confirmedAliases": [
+        "Sorbaria olgae",
+        "Sorbaria tomentosa var. tomentosa"
+      ],
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "sorbaria-full",
+          "locator": "с.17, treatment 3 и ключ разновидностей"
+        },
+        {
+          "sourceId": "previous:powo-sorbaria",
+          "locator": "Taxonomy; Publications"
+        },
+        {
+          "sourceId": "gbif-fresh",
+          "locator": "docs/evidence/catalog-200-final-gbif.json"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          2,
+          27
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Sorbaria olgae",
+          "Sorbaria tomentosa",
+          "Sorbaria olgae",
+          "Sorbaria tomentosa var. tomentosa"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [],
+        "semanticNotes": "Учтены документированные синонимы, ранги и ранее проверенные исторические имена; потенциальная синонимия не объявлена доказанной."
+      }
+    },
+    {
+      "id": "pyrus-asiae-mediae",
+      "group": "plants",
+      "status": "NEEDS_EVIDENCE",
+      "historicalScientificName": "Pyrus asiae-mediae",
+      "historicalRank": "SPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          130,
+          131
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-1-39"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=131"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-1-39",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": "Pyrus asiae-mediae",
+      "acceptedRank": "SPECIES",
+      "gbifTaxonIdForSelectedConcept": 5362597,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "NEEDS_EVIDENCE",
+        "reason": "Признание в POWO/GBIF не разрешает прямо опубликованное BGCI сомнение в самостоятельности таксона. Гибридность не объявлена доказанной, исключение не производится.",
+        "remainingBlockers": [
+          "Нужна ревизия типового материала и самостоятельности; проверить отношение к опубликованному Pyrus korshinskyi, не объявляя их синонимами по предположению."
+        ],
+        "technicalHoldSource": null,
+        "technicalHoldStateRetained": null
+      },
+      "newEvidence": "GRIN связывает имя с P. communis, POWO/GBIF признают вид, BGCI отмечал неопределённость. Связь с опубликованным P. korshinskyi не доказана.",
+      "taxonomySourceIds": [
+        "grin-pyrus",
+        "previous:powo-pyrus",
+        "previous:bgci-pyrus"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "unresolved_or_scope_limited",
+        "decision": "high_for_retaining_specified_blocker",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Сопоставить тип/протолог Попова, комбинацию Maleev и современную ревизию; заключение систематика Pyrus по кыргызскому материалу."
+      ],
+      "acceptedNameScope": "Условное имя в стандарте POWO/GBIF; самостоятельность национального концепта не одобрена.",
+      "scientificPreparationAllowed": false,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "grin-pyrus",
+          "locator": "Synonymy / references"
+        },
+        {
+          "sourceId": "previous:powo-pyrus",
+          "locator": "Taxonomy; Homotypic Synonyms; Distribution"
+        },
+        {
+          "sourceId": "previous:bgci-pyrus",
+          "locator": "Printed p.18, entry Pyrus asiae-mediae"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          3
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Pyrus asiae-mediae",
+          "Pyrus asiae-mediae"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [],
+        "semanticNotes": "Pyrus korshinskyi опубликован; доказанная синонимия с asiae-mediae не установлена."
+      }
+    },
+    {
+      "id": "sophora-griffithii-korolkowii",
+      "group": "plants",
+      "status": "NEEDS_EVIDENCE",
+      "historicalScientificName": "Sophora griffithii korolkowii",
+      "historicalRank": "SUBSPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          144,
+          145
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-1-50"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=145"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-1-50",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": null,
+      "acceptedRank": null,
+      "gbifTaxonIdForSelectedConcept": null,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "NEEDS_EVIDENCE",
+        "reason": "Проверено авторство Koehne, но современная синонимика с S. japonicum и введённый ареал не объясняют исторический естественный кустарниковый концепт книги. Сходство эпитетов недостаточно.",
+        "remainingBlockers": [
+          "Сопоставить тип Sophora korolkowii Dieck ex Koehne, комбинацию Yakovlev и национальный griffithii ssp. korolkowii; разрешить видовой/подвидовой ранг и природный/интродуцированный концепт."
+        ],
+        "technicalHoldSource": null,
+        "technicalHoldStateRetained": null
+      },
+      "newEvidence": "Точное имя Yakovlev документировано WFO; GBIF/POWO ведут к Styphnolobium japonicum. Это не объясняет местный желтоцветковый кустарниковый концепт.",
+      "taxonomySourceIds": [
+        "wfo-sophora",
+        "previous:powo-sophora",
+        "gbif-fresh"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "unresolved_or_scope_limited",
+        "decision": "high_for_retaining_specified_blocker",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Проверить тип korolkowii Dieck ex Koehne, комбинацию Yakovlev и сборы КР; не отождествлять с интродуцированным деревом по эпитету."
+      ],
+      "acceptedNameScope": "Национальный очерк сохраняет исторический местный охват; категория не переносится на весь мировой ареал принятого таксона.",
+      "scientificPreparationAllowed": false,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "wfo-sophora",
+          "locator": "Name record"
+        },
+        {
+          "sourceId": "previous:powo-sophora",
+          "locator": "Heterotypic Synonyms; Distribution; Deut. Dendrol.:323 (1893)"
+        },
+        {
+          "sourceId": "gbif-fresh",
+          "locator": "docs/evidence/catalog-200-final-gbif.json"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          4
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Sophora griffithii korolkowii"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [],
+        "semanticNotes": "Учтены документированные синонимы, ранги и ранее проверенные исторические имена; потенциальная синонимия не объявлена доказанной."
+      }
+    },
+    {
+      "id": "vitis-usunachmatica",
+      "group": "plants",
+      "status": "NEEDS_EVIDENCE",
+      "historicalScientificName": "Vitis usunachmatica",
+      "historicalRank": "SPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          156,
+          157
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-1-54"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=157"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-1-54",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=4"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": null,
+      "acceptedRank": null,
+      "gbifTaxonIdForSelectedConcept": null,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "NEEDS_EVIDENCE",
+        "reason": "POWO предлагает V. vinifera, GBIF — V. gmelinii. Одной страны в ареале недостаточно для переноса очерка дикого усун-ахматского винограда на культурный или расширенный вид.",
+        "remainingBlockers": [
+          "Документировать типовую связь usunachmatica с gmelinii/vinifera и современный ранг местного дикорастущего концепта."
+        ],
+        "technicalHoldSource": null,
+        "technicalHoldStateRetained": null
+      },
+      "newEvidence": "POWO ведёт к V. vinifera, GBIF — V. gmelinii; ответы не разграничивают местную дикую форму и широкий культурный концепт.",
+      "taxonomySourceIds": [
+        "previous:powo-vitis",
+        "gbif-fresh"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "unresolved_or_scope_limited",
+        "decision": "high_for_retaining_specified_blocker",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Получить протолог Vassilczenko 1983, Новости систематики высших растений 20:133; сопоставить тип/национальные сборы с ревизией Vitis."
+      ],
+      "acceptedNameScope": "Национальный очерк сохраняет исторический местный охват; категория не переносится на весь мировой ареал принятого таксона.",
+      "scientificPreparationAllowed": false,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "previous:powo-vitis",
+          "locator": "Heterotypic Synonyms; Novosti Sist. Vyssh. Rast. 20:133 (1983)"
+        },
+        {
+          "sourceId": "gbif-fresh",
+          "locator": "docs/evidence/catalog-200-final-gbif.json"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          5
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Vitis usunachmatica"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [],
+        "semanticNotes": "Учтены документированные синонимы, ранги и ранее проверенные исторические имена; потенциальная синонимия не объявлена доказанной."
+      }
+    },
+    {
+      "id": "dorema-microcarpum",
+      "group": "plants",
+      "status": "READY",
+      "historicalScientificName": "Dorema microcarpum",
+      "historicalRank": "SPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          174,
+          175
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-1-64"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=175"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-1-64",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": "Ferula namanganica",
+      "acceptedRank": "SPECIES",
+      "gbifTaxonIdForSelectedConcept": null,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "NEEDS_EVIDENCE",
+        "reason": "Гомотипность Dorema microcarpum / Ferula namanganica сохраняется как доказательство имени, но национальная привязка и валидное принятое имя Ferula microcarpum в GBIF требуют совместного решения.",
+        "remainingBlockers": [
+          "Сверить заменяющее имя и его публикацию, тип и кыргызский материал; разъяснить отсутствие Кыргызстана в приведённом охвате POWO."
+        ],
+        "technicalHoldSource": null,
+        "technicalHoldStateRetained": null
+      },
+      "newEvidence": "Молекулярная работа 2023 явно связывает Dorema microcarpum с Ferula namanganica; POWO/NCBI поддерживают преемственность. Национальный очерк остаётся историческим при более узком списке стран POWO.",
+      "taxonomySourceIds": [
+        "ferula-2023",
+        "ncbi-ferula",
+        "previous:powo-ferula",
+        "gbif-fresh"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "high_for_selected_documented_concept",
+        "decision": "high",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Не заявлять современную популяцию КР; явно отметить расхождение географического охвата баз и отдельно проверить точный поддерживаемый reference."
+      ],
+      "acceptedNameScope": "Национальный очерк сохраняет исторический местный охват; категория не переносится на весь мировой ареал принятого таксона.",
+      "scientificPreparationAllowed": true,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "confirmedAliases": [
+        "Dorema microcarpum"
+      ],
+      "alternativeIdentifiers": [
+        {
+          "namespace": "ncbitaxon",
+          "id": "2928647",
+          "rank": "SPECIES",
+          "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2928647"
+        },
+        {
+          "namespace": "ipni",
+          "id": "77331188-1",
+          "kind": "nomenclatural_name_not_taxon_circumscription"
+        }
+      ],
+      "technicalConstraints": [
+        "GBIF strict match принятого имени NONE; bounded search имеет точные видовые записи 234997743, 295893852, 231080481 из разных datasets. Их концепты не проверены для назначения; Ferula microcarpum автоматически не подставляется.",
+        "Поддержка альтернативного reference только предложена; валидатор не менялся."
+      ],
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "ferula-2023",
+          "locator": "Introduction / Methods / Dorema microcarpum"
+        },
+        {
+          "sourceId": "ncbi-ferula",
+          "locator": "Homotypic synonym"
+        },
+        {
+          "sourceId": "previous:powo-ferula",
+          "locator": "docs/evidence/catalog-200-source-review.json#powo-ferula"
+        },
+        {
+          "sourceId": "gbif-fresh",
+          "locator": "docs/evidence/catalog-200-final-gbif.json"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          6,
+          28
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Dorema microcarpum",
+          "Ferula namanganica",
+          "Dorema microcarpum"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [],
+        "semanticNotes": "Учтены документированные синонимы, ранги и ранее проверенные исторические имена; потенциальная синонимия не объявлена доказанной."
+      }
+    },
+    {
+      "id": "tianschaniella-umbellifera",
+      "group": "plants",
+      "status": "READY",
+      "historicalScientificName": "Tianschaniella umbellifera",
+      "historicalRank": "SPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          200,
+          201
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-1-76"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=201"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-1-76",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=6"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": "Tianschaniella umbellulifera",
+      "acceptedRank": "SPECIES",
+      "gbifTaxonIdForSelectedConcept": 10874182,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "NEEDS_EVIDENCE",
+        "reason": "Для правильного ботанического имени T. umbellulifera теперь получен точный видовой ключ 10874182. Однако книга печатает umbellifera; сходство, одинаковый род и близкое авторство сами по себе не заменяют документированного исправления/типовой связи.",
+        "remainingBlockers": [
+          "Нужен региональный первичный источник, непосредственно связывающий написание национального очерка umbellifera с umbellulifera; затем выбрать между Tianschaniella и гомотипной Lappula."
+        ],
+        "technicalHoldSource": null,
+        "technicalHoldStateRetained": null
+      },
+      "newEvidence": "WWF 2017 прямо связывает правильное имя с книгой КР 2006. Типификация 2015 подтверждает лектотип LE01013870 из Центрального Тянь-Шаня.",
+      "taxonomySourceIds": [
+        "wwf-tians-2017",
+        "tians-types-2015",
+        "previous:powo-tianschaniella",
+        "gbif-fresh"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "high_for_selected_documented_concept",
+        "decision": "high",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Сохранить книжное umbellifera как документальное написание, не самостоятельное имя. Lappula umbellulifera — альтернативная гомотипная комбинация, не второй кандидат."
+      ],
+      "acceptedNameScope": "Национальный очерк сохраняет исторический местный охват; категория не переносится на весь мировой ареал принятого таксона.",
+      "scientificPreparationAllowed": true,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "confirmedAliases": [
+        "Tianschaniella umbellifera",
+        "Lappula umbellulifera"
+      ],
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "wwf-tians-2017",
+          "locator": "с.9, таблица 2, строка Tianschaniella umbellulifera* и сноска"
+        },
+        {
+          "sourceId": "tians-types-2015",
+          "locator": "с.164–166; таблица I"
+        },
+        {
+          "sourceId": "previous:powo-tianschaniella",
+          "locator": "Taxonomy; Homotypic Synonyms; Bot. Mater. Gerb. 14:338 (1951)"
+        },
+        {
+          "sourceId": "gbif-fresh",
+          "locator": "docs/evidence/catalog-200-final-gbif.json"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          7,
+          26
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Tianschaniella umbellifera",
+          "Tianschaniella umbellulifera",
+          "Tianschaniella umbellifera",
+          "Lappula umbellulifera"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [],
+        "semanticNotes": "Учтены документированные синонимы, ранги и ранее проверенные исторические имена; потенциальная синонимия не объявлена доказанной."
+      }
+    },
+    {
+      "id": "cephalota-galathea",
+      "group": "arthropods",
+      "status": "NEEDS_EVIDENCE",
+      "historicalScientificName": "Cephalota galatea",
+      "historicalRank": "SPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          254,
+          255
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-4-3"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=255"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-4-3",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=11"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": null,
+      "acceptedRank": null,
+      "gbifTaxonIdForSelectedConcept": null,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "NEEDS_EVIDENCE",
+        "reason": "Национальное galatea согласуется с профильным каталогом 1995 года; GBIF выбирает galathea. Не найдено первичное номенклатурное обоснование этой поправки, поэтому ключ galathea не выдаётся за доказанную идентичность.",
+        "remainingBlockers": [
+          "Проверить протолог Thieme 1881, правильное первоначальное написание и документированное отношение к galathea auct.; связать с конкретным ключом без fuzzy-подмены."
+        ],
+        "technicalHoldSource": null,
+        "technicalHoldStateRetained": null
+      },
+      "newEvidence": "Типовой каталог 1973:380 печатает galathea Thieme 1881 и называет синтипы; каталог 1995 — galatea. GBIF fuzzy не разрешает спор документированных написаний.",
+      "taxonomySourceIds": [
+        "cephalota-types-1973",
+        "previous:carabidae-1995",
+        "gbif-fresh"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "unresolved_or_scope_limited",
+        "decision": "high_for_retaining_specified_blocker",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Получить Berliner Entomologische Zeitschrift 25 (1881):97, проверить исходное написание и эмендацию по ICZN у систематика Cicindelinae."
+      ],
+      "acceptedNameScope": "Национальный очерк сохраняет исторический местный охват; категория не переносится на весь мировой ареал принятого таксона.",
+      "scientificPreparationAllowed": false,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "cephalota-types-1973",
+          "locator": "с.380: galathea THIEME 1881"
+        },
+        {
+          "sourceId": "previous:carabidae-1995",
+          "locator": "Printed p.24, subgenus Cephalota, no.14"
+        },
+        {
+          "sourceId": "gbif-fresh",
+          "locator": "docs/evidence/catalog-200-final-gbif.json"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          8,
+          25
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Cephalota galatea"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [],
+        "semanticNotes": "Учтены документированные синонимы, ранги и ранее проверенные исторические имена; потенциальная синонимия не объявлена доказанной."
+      }
+    },
+    {
+      "id": "parnassius-loxias-tashkorensis",
+      "group": "arthropods",
+      "status": "READY",
+      "historicalScientificName": "Parnassius loxias tashkorensis",
+      "historicalRank": "SUBSPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          266,
+          267
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-4-9"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=267"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-4-9",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=11"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": "Parnassius loxias loxias",
+      "acceptedRank": "SUBSPECIES",
+      "gbifTaxonIdForSelectedConcept": null,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "NEEDS_EVIDENCE",
+        "reason": "Найдена конкретная ссылка на описание tashkorensis, но есть разница дат 1983/1984. Сохранённый GBIF-синоним родительского P. loxias не определяет действительный подвидовой концепт.",
+        "remainingBlockers": [
+          "Получить и проверить оригинальное описание pp.157–162, корректную дату и современную ревизию подвида с национальными местонахождениями."
+        ],
+        "technicalHoldSource": null,
+        "technicalHoldStateRetained": null
+      },
+      "newEvidence": "Huang 2023 явно относит tashkorensis к номинативному подвиду loxias и называет типовую местность Каинды / Уч-Чат; музей хранит соответствующий паратип. Это связь точного концепта, а не ответ GBIF о родителе.",
+      "taxonomySourceIds": [
+        "huang-2023",
+        "kiev-types-2001",
+        "kreuzberg-biblio-2016",
+        "previous:loxias-original-reference",
+        "gbif-fresh"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "high_for_selected_documented_concept",
+        "decision": "high",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Сверить год оригинального описания 1983/1984 по издательскому экземпляру; историческую цитату книги не исправлять молча."
+      ],
+      "acceptedNameScope": "Номинативный подвид по Huang 2023; историческая местная форма ташкоренского аполлона, не весь вид.",
+      "scientificPreparationAllowed": true,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "confirmedAliases": [
+        "Parnassius loxias tashkorensis"
+      ],
+      "technicalConstraints": [
+        "Точный match P. loxias loxias — NONE; родительский ключ 1938972 не присваивается подвидовой карточке.",
+        "Проверка reference нужного ранга при подготовке обязательна."
+      ],
+      "bibliographicUncertainty": "Дата 1983/1984 не закрыта; уверенность в идентичности высокая, в датировке оригинала средняя.",
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "huang-2023",
+          "locator": "с.154–155: apollo merzbacheri; с.166–167: loxias"
+        },
+        {
+          "sourceId": "kiev-types-2001",
+          "locator": "печатная с.71 / PDF-страница 75"
+        },
+        {
+          "sourceId": "kreuzberg-biblio-2016",
+          "locator": "Список публикаций, позиции 5–6"
+        },
+        {
+          "sourceId": "previous:loxias-original-reference",
+          "locator": "Reference: Kreuzberg 1983, pp.157–162; not a reviewed original description"
+        },
+        {
+          "sourceId": "gbif-fresh",
+          "locator": "docs/evidence/catalog-200-final-gbif.json"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          9,
+          32
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Parnassius loxias tashkorensis",
+          "Parnassius loxias loxias",
+          "Parnassius loxias tashkorensis"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [],
+        "semanticNotes": "Учтены документированные синонимы, ранги и ранее проверенные исторические имена; потенциальная синонимия не объявлена доказанной."
+      }
+    },
+    {
+      "id": "parnassius-apollo-merzbacheri",
+      "group": "arthropods",
+      "status": "READY",
+      "historicalScientificName": "Parnassius apollo merzbacheri",
+      "historicalRank": "SUBSPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          268,
+          269
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-4-10"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=269"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-4-10",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=11"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": "Parnassius apollo merzbacheri",
+      "acceptedRank": "SUBSPECIES",
+      "gbifTaxonIdForSelectedConcept": null,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "NEEDS_EVIDENCE",
+        "reason": "MCZ хранит подвид merzbacheri, но без подтверждающих экземпляров на странице; историческая типовая обработка даёт альтернативную связь с chryseis. Родительский ключ apollo не снимает эту предметную неопределённость.",
+        "remainingBlockers": [
+          "Сверить тип merzbacheri, chryseis и национальные границы подвида по полной современной ревизии; не назначать весь P. apollo."
+        ],
+        "technicalHoldSource": null,
+        "technicalHoldStateRetained": null
+      },
+      "newEvidence": "Huang 2023 признаёт merzbacheri, явно включает chryseis в синонимию и указывает северо-восток КР. Прежняя альтернатива разрешена обработкой нужного ранга.",
+      "taxonomySourceIds": [
+        "huang-2023",
+        "previous:mcz-merzbacheri",
+        "previous:parnassius-types-1966",
+        "gbif-fresh"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "high_for_selected_documented_concept",
+        "decision": "high",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Сверить библиографическое разночтение Fruhstorfer 1906/1914 по протологу; современный концепт для подготовки закреплён по обработке 2023."
+      ],
+      "acceptedNameScope": "Национальный очерк сохраняет исторический местный охват; категория не переносится на весь мировой ареал принятого таксона.",
+      "scientificPreparationAllowed": true,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "confirmedAliases": [
+        "Parnassius apollo chryseis"
+      ],
+      "technicalConstraints": [
+        "6235202 — синонимическая подвидовая запись, ведущая к виду apollo 1938810. Эти ключи не назначены принятым подвидовым reference."
+      ],
+      "bibliographicUncertainty": "Высокая уверенность в выбранном концепте, средняя — в библиографическом годе оригинала.",
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "huang-2023",
+          "locator": "с.154–155: apollo merzbacheri; с.166–167: loxias"
+        },
+        {
+          "sourceId": "previous:mcz-merzbacheri",
+          "locator": "Name Authority MCZ; Subspecies; no cited MCZ specimens"
+        },
+        {
+          "sourceId": "previous:parnassius-types-1966",
+          "locator": "Bull. Soc. Entomol. France 71(7), record 20893"
+        },
+        {
+          "sourceId": "gbif-fresh",
+          "locator": "docs/evidence/catalog-200-final-gbif.json"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          10
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Parnassius apollo merzbacheri",
+          "Parnassius apollo merzbacheri",
+          "Parnassius apollo chryseis"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [],
+        "semanticNotes": "Учтены документированные синонимы, ранги и ранее проверенные исторические имена; потенциальная синонимия не объявлена доказанной."
+      }
+    },
+    {
+      "id": "bufo-viridis",
+      "group": "amphibians",
+      "status": "NEEDS_EVIDENCE",
+      "historicalScientificName": "Bufo viridis",
+      "historicalRank": "SPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          326,
+          327
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-5-1"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=327"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-5-1",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=12"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": null,
+      "acceptedRank": null,
+      "gbifTaxonIdForSelectedConcept": null,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "NEEDS_EVIDENCE",
+        "reason": "AMNH и сейчас считает присутствие B. viridis s.str. в Кыргызстане спорным и описывает границы с B. pewzowi. Это комплексный случай, а не простая смена Bufo на Bufotes.",
+        "remainingBlockers": [
+          "Переопределить национальный материал с учётом плоидности/линий комплекса; ни B. viridis s.str., ни B. pewzowi не назначать автоматически."
+        ],
+        "technicalHoldSource": null,
+        "technicalHoldStateRetained": null
+      },
+      "newEvidence": "Свежий GBIF повторяет Bufo → Bufotes viridis; прежнее предупреждение AMNH о центральноазиатском комплексе не снято. Повторное открытие AMNH завершилось timeout.",
+      "taxonomySourceIds": [
+        "previous:asw-bufotes",
+        "gbif-fresh"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "unresolved_or_scope_limited",
+        "decision": "high_for_retaining_specified_blocker",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Проверить кыргызские ваучеры, кариотип/плоидность и молекулярные данные viridis/pewzowi с герпетологом этого комплекса."
+      ],
+      "acceptedNameScope": "Национальный очерк сохраняет исторический местный охват; категория не переносится на весь мировой ареал принятого таксона.",
+      "scientificPreparationAllowed": false,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "previous:asw-bufotes",
+          "locator": "Geographic Occurrence; Distribution; Comment; Dufresnes et al. 2019 cited there"
+        },
+        {
+          "sourceId": "gbif-fresh",
+          "locator": "docs/evidence/catalog-200-final-gbif.json"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          11
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Bufo viridis"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [],
+        "semanticNotes": "Учтены документированные синонимы, ранги и ранее проверенные исторические имена; потенциальная синонимия не объявлена доказанной."
+      }
+    },
+    {
+      "id": "novoeumeces-schneideri-princeps",
+      "group": "reptiles",
+      "status": "NEEDS_EVIDENCE",
+      "historicalScientificName": "Novoeumeces schneideri princeps",
+      "historicalRank": "SUBSPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          338,
+          339
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-5-7"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=339"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-5-7",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=12"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": "Eumeces schneiderii princeps",
+      "acceptedRank": "SUBSPECIES",
+      "gbifTaxonIdForSelectedConcept": 9014419,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "NEEDS_EVIDENCE",
+        "reason": "Родовое название объяснено номенклатурно, но принятый в базе princeps отмечен как парафилетический. Проверки соответствия национальной узкой популяции линиям ревизии нет.",
+        "remainingBlockers": [
+          "Проверить материал/ареал princeps в Faizi et al. 2021 и связь национального очерка с ним; не заменять всем E. schneiderii из постановления."
+        ],
+        "technicalHoldSource": null,
+        "technicalHoldStateRetained": null
+      },
+      "newEvidence": "Reptile Database сохраняет princeps, одновременно отмечая парафилетичность по Faizi et al. 2021. Правильный род и GBIF не относят национальную популяцию к конкретной линии.",
+      "taxonomySourceIds": [
+        "previous:rdb-eumeces",
+        "gbif-fresh"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "unresolved_or_scope_limited",
+        "decision": "high_for_retaining_specified_blocker",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Проверить региональную выборку Faizi et al. 2021, тип princeps Eichwald 1839 и применение границ к материалу КР."
+      ],
+      "acceptedNameScope": "Национальный очерк сохраняет исторический местный охват; категория не переносится на весь мировой ареал принятого таксона.",
+      "scientificPreparationAllowed": false,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "previous:rdb-eumeces",
+          "locator": "Subspecies; Comment; Euprepis princeps Eichwald 1839:303"
+        },
+        {
+          "sourceId": "gbif-fresh",
+          "locator": "docs/evidence/catalog-200-final-gbif.json"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          12,
+          13
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Novoeumeces schneideri princeps",
+          "Eumeces schneiderii princeps"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [],
+        "semanticNotes": "Учтены документированные синонимы, ранги и ранее проверенные исторические имена; потенциальная синонимия не объявлена доказанной."
+      }
+    },
+    {
+      "id": "spalerosophis-diadema-schiraziana",
+      "group": "reptiles",
+      "status": "NEEDS_EVIDENCE",
+      "historicalScientificName": "Spalerosophis diadema schiraziana",
+      "historicalRank": "SUBSPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          342,
+          343
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-5-8"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=343"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-5-8",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=12"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": "Spalerosophis diadema schirazianus",
+      "acceptedRank": "SUBSPECIES",
+      "gbifTaxonIdForSelectedConcept": 6161973,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "NEEDS_EVIDENCE",
+        "reason": "Уточнено правильное согласование schirazianus и принятый базой подвид, но та же обработка фиксирует альтернативы вида и синонима. Национальная связь более широкого постановления с узким очерком предметно не разрешена.",
+        "remainingBlockers": [
+          "Сопоставить оригинал Jan, Baig et al. и национальные экземпляры; обосновать один ранг и охват, не отождествляя все S. diadema с этим подвидом."
+        ],
+        "technicalHoldSource": null,
+        "technicalHoldStateRetained": null
+      },
+      "newEvidence": "База подтверждает schirazianus Jan 1863 и подвидовой ранг; альтернативы вида/синонима и соотношение широкого постановления с узким очерком не закрыты экземплярным доказательством.",
+      "taxonomySourceIds": [
+        "previous:rdb-spalerosophis",
+        "gbif-fresh"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "unresolved_or_scope_limited",
+        "decision": "high_for_retaining_specified_blocker",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Проверить Jan 1863, региональные ревизии и ваучеры КР; установить применимость узкого подвидового концепта."
+      ],
+      "acceptedNameScope": "Национальный очерк сохраняет исторический местный охват; категория не переносится на весь мировой ареал принятого таксона.",
+      "scientificPreparationAllowed": false,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "previous:rdb-spalerosophis",
+          "locator": "Subspecies; Distribution; Comment; Jan 1863; Baig et al. 2007"
+        },
+        {
+          "sourceId": "gbif-fresh",
+          "locator": "docs/evidence/catalog-200-final-gbif.json"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          14,
+          15
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Spalerosophis diadema schiraziana",
+          "Spalerosophis diadema schirazianus"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [],
+        "semanticNotes": "Учтены документированные синонимы, ранги и ранее проверенные исторические имена; потенциальная синонимия не объявлена доказанной."
+      }
+    },
+    {
+      "id": "falco-peregrinus",
+      "group": "birds",
+      "status": "NEEDS_EVIDENCE",
+      "historicalScientificName": "Falco peregrinus",
+      "historicalRank": "SPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          392,
+          393
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-3-2"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=393"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-3-2",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=9"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": "Falco peregrinus",
+      "acceptedRank": "SPECIES",
+      "gbifTaxonIdForSelectedConcept": 2481047,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "NEEDS_EVIDENCE",
+        "reason": "Точное принятое видовое имя не снимает пересечение со второй национальной позицией pelegrinoides, которую GBIF включает внутрь этого вида. До совместного решения пара не допускается.",
+        "remainingBlockers": [
+          "Выбрать документированный актуальный орнитологический стандарт и единое представление двух национальных очерков без вида плюс его собственного подвида."
+        ],
+        "technicalHoldSource": null,
+        "technicalHoldStateRetained": null
+      },
+      "newEvidence": "Проверено принятое IOC-объединение pelegrinoides с peregrinus. Очерк с.393 описывает peregrinus/calidus; babylonicus охраняется отдельным историческим очерком.",
+      "taxonomySourceIds": [
+        "ioc-adopted",
+        "ioc-current",
+        "gbif-fresh"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "unresolved_or_scope_limited",
+        "decision": "high_for_retaining_specified_blocker",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Совместно с pelegrinoides выбрать неперекрывающиеся единицы: одна видовая карточка с двумя историческими очерками либо доказанная модель подвидов без широкой родительской карточки. Не смешивать национальные LC и CR."
+      ],
+      "acceptedNameScope": "Видовой родитель включает babylonicus; охват самостоятельной записи пока не определён.",
+      "scientificPreparationAllowed": false,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "candidateOverlapIds": [
+        "falco-pelegrinoides"
+      ],
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "ioc-adopted",
+          "locator": "Falco pelegrinoides → SSP / Falco peregrinus"
+        },
+        {
+          "sourceId": "ioc-current",
+          "locator": "Текущая версия 15.2"
+        },
+        {
+          "sourceId": "gbif-fresh",
+          "locator": "docs/evidence/catalog-200-final-gbif.json"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          16
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Falco peregrinus",
+          "Falco peregrinus"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [
+          "falco-pelegrinoides"
+        ],
+        "semanticNotes": "Учтены документированные синонимы, ранги и ранее проверенные исторические имена; потенциальная синонимия не объявлена доказанной."
+      }
+    },
+    {
+      "id": "falco-pelegrinoides",
+      "group": "birds",
+      "status": "NEEDS_EVIDENCE",
+      "historicalScientificName": "Falco pelegrinoides",
+      "historicalRank": "SPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          394,
+          395
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-3-37"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=395"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-3-37",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": "Falco peregrinus babylonicus",
+      "acceptedRank": "SUBSPECIES",
+      "gbifTaxonIdForSelectedConcept": 5844347,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "NEEDS_EVIDENCE",
+        "reason": "Книга с.395 уточняет местный babylonicus; это не номинативный pelegrinoides. Ни старый вид, ни GBIF F. peregrinus pelegrinoides не подставляются без проверки локального концепта и общей карточки peregrinus.",
+        "remainingBlockers": [
+          "Сверить babylonicus в принятом современном чек-листе и доказать его отношение к национальному очерку; совместно решить пересечение с falco-peregrinus."
+        ],
+        "technicalHoldSource": null,
+        "technicalHoldStateRetained": null
+      },
+      "newEvidence": "Книга с.395 прямо называет местный babylonicus; GBIF/принятые IOC-изменения отличают его от номинативного peregrinus pelegrinoides. Подмена последним неверна.",
+      "taxonomySourceIds": [
+        "ioc-adopted",
+        "ioc-current",
+        "gbif-fresh"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "unresolved_or_scope_limited",
+        "decision": "high_for_retaining_specified_blocker",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Совместно с peregrinus закрепить иерархию и неперекрывающийся охват. Действительный babylonicus не объявляется автоматически дубликатом опубликованной записи или исключённым таксоном."
+      ],
+      "acceptedNameScope": "Местный babylonicus книги; не весь исторический pelegrinoides и не его номинативный подвид.",
+      "scientificPreparationAllowed": false,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "candidateOverlapIds": [
+        "falco-peregrinus"
+      ],
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "ioc-adopted",
+          "locator": "Falco pelegrinoides → SSP / Falco peregrinus"
+        },
+        {
+          "sourceId": "ioc-current",
+          "locator": "Текущая версия 15.2"
+        },
+        {
+          "sourceId": "gbif-fresh",
+          "locator": "docs/evidence/catalog-200-final-gbif.json"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          17,
+          29
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Falco pelegrinoides",
+          "Falco peregrinus babylonicus"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [
+          "falco-peregrinus"
+        ],
+        "semanticNotes": "Учтены документированные синонимы, ранги и ранее проверенные исторические имена; потенциальная синонимия не объявлена доказанной."
+      }
+    },
+    {
+      "id": "rhinolophus-hipposideros",
+      "group": "mammals",
+      "status": "NEEDS_EVIDENCE",
+      "historicalScientificName": "Phinolophus hipposideros",
+      "historicalRank": "SPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          488,
+          489
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-2-15"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=489"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-2-15",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=8"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": null,
+      "acceptedRank": null,
+      "gbifTaxonIdForSelectedConcept": null,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "NEEDS_EVIDENCE",
+        "reason": "Книга с.489 прямо уточняет Rh.h. midas Andersen 1905. MDD выделяет midas в вид, но приведённые страны не включают Кыргызстан. Исправление Phinolophus не разрешает принадлежность национальных находок.",
+        "remainingBlockers": [
+          "Проверить старые кыргызские ваучеры и материал ревизии Benda et al. 2023; документированно выбрать hipposideros или midas, не выводя идентичность только из географии."
+        ],
+        "technicalHoldSource": null,
+        "technicalHoldStateRetained": null
+      },
+      "newEvidence": "MDD признаёт midas и новый kirghisorum 2024 с типом из КР. В новой обработке старые определения hipposideros/lepidus указаны partim; это не разрешает книжный midas по одной стране.",
+      "taxonomySourceIds": [
+        "mdd-kirghisorum",
+        "rhino-2024",
+        "previous:mdd-midas",
+        "previous:mdd-rhino",
+        "gbif-fresh"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "unresolved_or_scope_limited",
+        "decision": "high_for_retaining_specified_blocker",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Хироптерологу сопоставить конкретные ваучеры Rybin et al. 1989/очерка 2006 с типовой серией kirghisorum и ревизией midas 2023; получить полный текст 2024."
+      ],
+      "acceptedNameScope": "Национальный очерк сохраняет исторический местный охват; категория не переносится на весь мировой ареал принятого таксона.",
+      "scientificPreparationAllowed": false,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "alternativeIdentifiers": [
+        {
+          "namespace": "mdd",
+          "id": "1006933",
+          "name": "Rhinolophus kirghisorum",
+          "assignment": "alternative_to_investigate_not_assigned"
+        },
+        {
+          "namespace": "mdd",
+          "id": "1006733",
+          "name": "Rhinolophus midas",
+          "assignment": "alternative_to_investigate_not_assigned"
+        }
+      ],
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "mdd-kirghisorum",
+          "locator": "Taxonomy / original description / type"
+        },
+        {
+          "sourceId": "rhino-2024",
+          "locator": "с.43 и синонимика / типовая серия R. kirghisorum"
+        },
+        {
+          "sourceId": "previous:mdd-midas",
+          "locator": "DOI 10.3161/15081109ACC2022.24.2.001, Benda et al. 2023"
+        },
+        {
+          "sourceId": "previous:mdd-rhino",
+          "locator": "docs/evidence/catalog-200-source-review.json#mdd-hipposideros"
+        },
+        {
+          "sourceId": "gbif-fresh",
+          "locator": "docs/evidence/catalog-200-final-gbif.json"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          18
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Phinolophus hipposideros"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [],
+        "semanticNotes": "Опубликованный R. bocharicus — иной концепт; kirghisorum не добавлен как новый кандидат."
+      }
+    },
+    {
+      "id": "cuon-alpinus",
+      "group": "mammals",
+      "status": "READY",
+      "historicalScientificName": "Cuon alpinus",
+      "historicalRank": "SPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          496,
+          497
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-2-14"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=497"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-2-14",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=8"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": "Cuon alpinus",
+      "acceptedRank": "SPECIES",
+      "gbifTaxonIdForSelectedConcept": 2434317,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "NEEDS_EVIDENCE",
+        "reason": "Видовое имя и историческое включение не спорны, но сам национальный автор сомневается в определении старых шкур. Таксономическая база другого вида не используется как подтверждение; основание решения — очерк с.497.",
+        "remainingBlockers": [
+          "Найти и переопределить упомянутые национальным автором музейные экземпляры либо получить надёжную публикацию, прямо разрешающую сомнение в этих регистрациях."
+        ],
+        "technicalHoldSource": null,
+        "technicalHoldStateRetained": null
+      },
+      "newEvidence": "Тип ЗИН №23894 из Ат-Баши 1907 и генетическая находка пробы 2019, опубликованная в 2022, дают независимое кыргызское подтверждение. Шесть спорных шкур книги не переопределены.",
+      "taxonomySourceIds": [
+        "zin-cuontype",
+        "cuon-2022",
+        "genbank-cuon",
+        "gbif-fresh"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "high_for_selected_documented_concept",
+        "decision": "high",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Численность unknown; датировать музейную находку, пробу 2019, анализ 2021 и публикацию 2022 отдельно. Не утверждать современную постоянную/размножающуюся популяцию."
+      ],
+      "acceptedNameScope": "Национальный очерк сохраняет исторический местный охват; категория не переносится на весь мировой ареал принятого таксона.",
+      "scientificPreparationAllowed": true,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "zin-cuontype",
+          "locator": "Голотип №23894"
+        },
+        {
+          "sourceId": "cuon-2022",
+          "locator": "с.1–2, материал / метод / MZ813093"
+        },
+        {
+          "sourceId": "genbank-cuon",
+          "locator": "isolate SKY_001; cytb; geo_loc_name Kyrgyzstan"
+        },
+        {
+          "sourceId": "gbif-fresh",
+          "locator": "docs/evidence/catalog-200-final-gbif.json"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          19
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Cuon alpinus",
+          "Cuon alpinus"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [],
+        "semanticNotes": "Учтены документированные синонимы, ранги и ранее проверенные исторические имена; потенциальная синонимия не объявлена доказанной."
+      }
+    },
+    {
+      "id": "kosopoljanskia-hebecarpa",
+      "group": "plants",
+      "status": "NEEDS_EVIDENCE",
+      "historicalScientificName": "Kosopoljanskia hebecarpa",
+      "historicalRank": "SPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          160,
+          161
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-1-63"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=161"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-1-63",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=5"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": "Schrenkia hebecarpa",
+      "acceptedRank": "SPECIES",
+      "gbifTaxonIdForSelectedConcept": 7443419,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "NEEDS_EVIDENCE",
+        "reason": "Визуально перепроверены KY с.160: VU, RU и EN с.161: EN, совпадающие заголовки одного очерка. Введение с.20–22 и таблица 1 с.21 различают EN и VU, а не объявляют их эквивалентами. Первичное исправление не найдено; прежний needs_evidence сохраняется.",
+        "remainingBlockers": [
+          "Нужна авторитетная редакторская поправка либо документированное предметное решение по разночтению исходных языковых версий. Не выбирать по большинству, не подставлять современный IUCN, не оставлять пустое поле для обхода блока."
+        ],
+        "technicalHoldSource": null,
+        "technicalHoldStateRetained": null
+      },
+      "newEvidence": "Визуально подтверждены KY с.160 VU, RU/EN с.161 EN. Таксономия и тип MW0593746 поддерживаются, но первичная редакторская поправка не найдена.",
+      "taxonomySourceIds": [
+        "powo-schrenkia",
+        "previous:msu-schrenkia",
+        "gbif-fresh"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "unresolved_or_scope_limited",
+        "decision": "high_for_retaining_specified_blocker",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Получить документированное решение редакции/автора очерка или компетентного национального научного учреждения о категории; не выбирать большинство языков и не обнулять поле ради допуска."
+      ],
+      "acceptedNameScope": "Национальный очерк сохраняет исторический местный охват; категория не переносится на весь мировой ареал принятого таксона.",
+      "scientificPreparationAllowed": false,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "powo-schrenkia",
+          "locator": "Synonymy / комбинация 2002"
+        },
+        {
+          "sourceId": "previous:msu-schrenkia",
+          "locator": "MW0593746; docs/evidence/catalog-200-source-review.json#msu-schrenkia-hebecarpa"
+        },
+        {
+          "sourceId": "gbif-fresh",
+          "locator": "docs/evidence/catalog-200-final-gbif.json"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          20,
+          21
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Kosopoljanskia hebecarpa",
+          "Schrenkia hebecarpa"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [],
+        "semanticNotes": "Учтены документированные синонимы, ранги и ранее проверенные исторические имена; потенциальная синонимия не объявлена доказанной."
+      }
+    },
+    {
+      "id": "papilio-alexanor-voldemar",
+      "group": "arthropods",
+      "status": "READY",
+      "historicalScientificName": "Papilio alexanor voldemar",
+      "historicalRank": "SUBSPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          270,
+          271
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-4-11"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=271"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-4-11",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=11"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "unresolved_judeus_is_not_asserted_as_voldemar"
+      },
+      "acceptedScientificName": "Papilio alexanor voldemar",
+      "acceptedRank": "SUBSPECIES",
+      "gbifTaxonIdForSelectedConcept": null,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "READY",
+        "reason": "Подвид voldemar прямо восстановлен молекулярной ревизией 2025 года; книга с.271 независимо подтверждает этот национальный концепт и отвергает местное judeus. Готовить можно именно книжный voldemar; позиция постановления judeus не объявляется его синонимом или исправленной.",
+        "remainingBlockers": [],
+        "technicalHoldSource": "docs/research/catalog-181-preparation.md",
+        "technicalHoldStateRetained": "needs_evidence"
+      },
+      "newEvidence": "Повторно проверены книга и открытая ревизия 2025: voldemar stat. rev. — признанный подвид. GBIF 6236312 — синоним вида alexanor; принятый точный подвидовой ключ не установлен.",
+      "taxonomySourceIds": [
+        "papilio-full",
+        "gbif-fresh"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "high_for_selected_documented_concept",
+        "decision": "high",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Оригинал Kreuzberg 1989 известен по библиографии, отдельно не прочитан. Judeus постановления не выдаётся за доказанный синоним voldemar. Технический hold №25.5 сохраняется."
+      ],
+      "acceptedNameScope": "Национальный очерк сохраняет исторический местный охват; категория не переносится на весь мировой ареал принятого таксона.",
+      "scientificPreparationAllowed": true,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "originalDescription": {
+        "author": "Kreuzberg",
+        "year": 1989,
+        "title": "New subspecies of the papilionids and whites (Lepidoptera, Papilionidae, Pieride)",
+        "publication": "Vestnik Zoologii 6:31–41",
+        "originalReadDirectly": false,
+        "bibliographySourceId": "papilio-full"
+      },
+      "identityWithoutExactGbif": {
+        "scientificallySupported": true,
+        "globallyUniqueAlternativeTaxonIdentifierConfirmed": false,
+        "reference": {
+          "namespace": "doi",
+          "id": "10.1093/biolinnean/blaf078",
+          "kind": "publication_with_named_treatment_not_standalone_taxon_id"
+        }
+      },
+      "technicalConstraints": [
+        "Прежний registry needs_evidence неизменён.",
+        "Не использовать 1938131 (родитель) или синонимический 6236312 как принятый подвидовой ключ."
+      ],
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "papilio-full",
+          "locator": "Discussion: voldemar stat. rev.; References: Kreuzberg 1989"
+        },
+        {
+          "sourceId": "gbif-fresh",
+          "locator": "docs/evidence/catalog-200-final-gbif.json"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          22
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Papilio alexanor voldemar",
+          "Papilio alexanor voldemar"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [],
+        "semanticNotes": "Учтены документированные синонимы, ранги и ранее проверенные исторические имена; потенциальная синонимия не объявлена доказанной."
+      }
+    },
+    {
+      "id": "megalodontes-kuznetzovi",
+      "group": "arthropods",
+      "status": "READY",
+      "historicalScientificName": "Megalodontes kuznetzovi",
+      "historicalRank": "SPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          276,
+          277
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-4-14"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=277"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-4-14",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=11"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": "Megalodontes kuznetzovi",
+      "acceptedRank": "SPECIES",
+      "gbifTaxonIdForSelectedConcept": null,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "READY",
+        "reason": "Профильный музейный перечень признаёт ровно тот вид и авторство Dovnar-Zapolskij 1930, что национальный очерк. Отсутствие в GBIF не является доказательством отсутствия вида.",
+        "remainingBlockers": [],
+        "technicalHoldSource": "docs/research/catalog-181-preparation.md",
+        "technicalHoldStateRetained": "needs_evidence"
+      },
+      "newEvidence": "Каталог Taeger 1998 связывает современное имя с исходной комбинацией Rhipidioceros и andromorphus. Точный/синонимический поиск GBIF пуст; это техническое отсутствие.",
+      "taxonomySourceIds": [
+        "taeger-full",
+        "previous:wasp-megalodontes",
+        "gbif-fresh"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "high_for_selected_documented_concept",
+        "decision": "high",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Получить протолог Dovnar-Zapolskij 1930 и сведения о типах для полной библиографии. Неизвестные страницы/название оригинала не выдумываются; прежний hold сохранён."
+      ],
+      "acceptedNameScope": "Национальный очерк сохраняет исторический местный охват; категория не переносится на весь мировой ареал принятого таксона.",
+      "scientificPreparationAllowed": true,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "confirmedAliases": [
+        "Megalodontes (Rhipidioceros) kuznetzovi",
+        "Megalodontes andromorphus"
+      ],
+      "originalDescription": {
+        "author": "Dovnar-Zapolskij",
+        "year": 1930,
+        "originalCombination": "Megalodontes (Rhipidioceros) kuznetzovi",
+        "title": null,
+        "pages": null,
+        "originalReadDirectly": false
+      },
+      "identityWithoutExactGbif": {
+        "scientificallySupported": true,
+        "globallyUniqueAlternativeTaxonIdentifierConfirmed": false,
+        "reference": {
+          "url": "https://www.waspweb.org/Pamphilioidea/Megalodontesidae/Megalodontes/index.htm",
+          "kind": "curated_genus_checklist_plus_name_author_year_rank_not_global_taxon_id"
+        }
+      },
+      "technicalConstraints": [
+        "needs_evidence в прежнем registry сохраняется; произвольный числовой ключ не назначен."
+      ],
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "taeger-full",
+          "locator": "Каталог, запись Megalodontes kuznetzovi"
+        },
+        {
+          "sourceId": "previous:wasp-megalodontes",
+          "locator": "Species list: Megalodontes kuznetzovi"
+        },
+        {
+          "sourceId": "gbif-fresh",
+          "locator": "docs/evidence/catalog-200-final-gbif.json"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          23
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Megalodontes kuznetzovi",
+          "Megalodontes kuznetzovi",
+          "Megalodontes (Rhipidioceros) kuznetzovi",
+          "Megalodontes andromorphus"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [],
+        "semanticNotes": "Учтены документированные синонимы, ранги и ранее проверенные исторические имена; потенциальная синонимия не объявлена доказанной."
+      }
+    },
+    {
+      "id": "polochrum-pamirepandum",
+      "group": "arthropods",
+      "status": "READY",
+      "historicalScientificName": "Polochrum pamirepandum",
+      "historicalRank": "SPECIES",
+      "nationalSources": {
+        "bookEdition": 2006,
+        "bookPages": [
+          278,
+          279
+        ],
+        "decreeVersion": "170/2005 consolidated with 471/2009",
+        "decreePositions": [
+          "decree-170-2009-4-15"
+        ],
+        "references": [
+          {
+            "sourceId": "book-2006",
+            "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=279"
+          },
+          {
+            "sourceId": "decree-170-2009",
+            "recordId": "decree-170-2009-4-15",
+            "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=11"
+          }
+        ],
+        "modernIdentityNotAssertedByHistoricalPositionAlone": true,
+        "decreeCorrespondenceForSelectedConcept": "historical_documentary_link_only"
+      },
+      "acceptedScientificName": "Polochrum pamirepandum",
+      "acceptedRank": "SPECIES",
+      "gbifTaxonIdForSelectedConcept": null,
+      "previousDecision": {
+        "path": "data/research/catalog-200-conflict-resolution.json",
+        "status": "READY",
+        "reason": "Музейный перечень признаёт P. pamirepandum Kurzenko 1986 отдельно от P. repandum. Национальный очерк использует то же имя и авторство; старое указание repandum в книге обозначено как прежнее определение, не ещё один таксон.",
+        "remainingBlockers": [],
+        "technicalHoldSource": "docs/research/catalog-181-preparation.md",
+        "technicalHoldStateRetained": "needs_evidence"
+      },
+      "newEvidence": "Первичная мировая таблица Sapygidae 2024 и текущий музейный WaspWeb различают pamirepandum Kurzenko 1986 и repandum. Установлена библиография 1986, но сам протолог не прочитан.",
+      "taxonomySourceIds": [
+        "polochrum-2024",
+        "bitsch-2017",
+        "wasp-polochrum-fresh",
+        "gbif-fresh"
+      ],
+      "confidence": {
+        "historicalInclusion": "high",
+        "identity": "high_for_selected_documented_concept",
+        "decision": "high",
+        "independentReview": false
+      },
+      "remainingQuestions": [
+        "Получить Kurzenko 1986, Sapygidae фауны СССР, с.64–80: точная страница описания и типы. Старое repandum из КР — прежнее определение, не современный синоним; pamiripandum постановления хранится раздельно."
+      ],
+      "acceptedNameScope": "Национальный очерк сохраняет исторический местный охват; категория не переносится на весь мировой ареал принятого таксона.",
+      "scientificPreparationAllowed": true,
+      "technicalReadiness": "not_granted_by_this_research",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "scientificApproval": null,
+      "ownerAuthorization": null,
+      "publicationAllowed": false,
+      "newDraftCreated": false,
+      "originalDescription": {
+        "author": "Kurzenko",
+        "year": 1986,
+        "title": "Wasps of the Family Sapygidae (Hymenoptera, Aculeata) of the USSR fauna",
+        "publication": "In: Ler, Belokobylskij & Storozheva (eds), Hymenoptera of East Siberia and Far East. Vladivostok, pp.64–80",
+        "exactDescriptionPage": null,
+        "originalReadDirectly": false
+      },
+      "identityWithoutExactGbif": {
+        "scientificallySupported": true,
+        "globallyUniqueAlternativeTaxonIdentifierConfirmed": false,
+        "reference": {
+          "url": "https://www.waspweb.org/Pompiloidea/Sapygidae/Classification/Classification_world_Sapygidae.htm",
+          "kind": "curated_family_checklist_plus_name_author_year_rank_not_global_taxon_id"
+        }
+      },
+      "technicalConstraints": [
+        "Прежний registry needs_evidence неизменён.",
+        "Не использовать GBIF рода или P. repandum; настоящий точный ключ не найден."
+      ],
+      "taxonomyEvidenceLocators": [
+        {
+          "sourceId": "polochrum-2024",
+          "locator": "Таблица 3, с.450, №35; библиография Kurzenko 1986"
+        },
+        {
+          "sourceId": "bitsch-2017",
+          "locator": "с.18; библиография с.31"
+        },
+        {
+          "sourceId": "wasp-polochrum-fresh",
+          "locator": "Род Polochrum"
+        },
+        {
+          "sourceId": "gbif-fresh",
+          "locator": "docs/evidence/catalog-200-final-gbif.json"
+        }
+      ],
+      "gbifEvidence": {
+        "file": "docs/evidence/catalog-200-final-gbif.json",
+        "recordIndexes": [
+          24
+        ],
+        "automaticAdmission": false
+      },
+      "duplicateAssessment": {
+        "comparedCatalogCount": 178,
+        "comparedArchiveCount": 2,
+        "comparedHistoricalCrosswalkCount": 150,
+        "comparedNames": [
+          "Polochrum pamirepandum",
+          "Polochrum pamirepandum"
+        ],
+        "exactPublishedNameMatches": [],
+        "exactArchiveNameMatches": [],
+        "selectedKeyMatches": [],
+        "confirmedDuplicateOfCatalogIds": [],
+        "candidateOverlapIds": [],
+        "semanticNotes": "Учтены документированные синонимы, ранги и ранее проверенные исторические имена; потенциальная синонимия не объявлена доказанной."
+      }
+    }
+  ],
+  "expansion": {
+    "publishedCount": 178,
+    "scientificallyReadyCandidateCount": 9,
+    "supportedPotentialAfterPreparingReady": 187,
+    "requiresSeparatePreparationAndPublicationAuthorization": true,
+    "exactMaximumScientificallyEstablished": false,
+    "exactMaximum": null,
+    "looseArithmeticCeilingWithinThese22": 200,
+    "conditionalSingleFalcoSpeciesCeiling": 199,
+    "conditionalCeilingAssumptions": [
+      "Все остальные спорные случаи разрешаются положительно без новых перекрытий/синонимов.",
+      "Два исторических очерка Falco представлены одной общей видовой карточкой; это вариант учёта, не исключение действительного babylonicus."
+    ],
+    "why200NotGuaranteed": [
+      "421 документальная позиция не равна 421 уникальному современному таксону.",
+      "22 остаточных случая могут дать меньше 22 записей: родительский peregrinus включает местный babylonicus.",
+      "13 случаев сохраняют типовые, источниковые, ранговые или местные идентификационные конфликты.",
+      "Даже научно определённый концепт без точного поддерживаемого reference не проходит будущий штатный технический допуск."
+    ],
+    "modernLegalListCompletenessClaim": false,
+    "maximumAppliesOnlyToAuditedHistoricalScope": true
+  },
+  "safeAlternativeIdentifierSupportProposal": {
+    "implemented": false,
+    "validatorChanged": false,
+    "principle": "Отдельная будущая задача: проверяемые taxon references с whitelisted namespaces; отсутствие GBIF не заполняется ключом родителя.",
+    "requirements": [
+      "Различать реальный taxon concept ID, номенклатурный name ID, publication DOI и checklist URI; хранить имя, автора, год, ранг и версию концепта.",
+      "Для DOI/общего списка дополнительно фиксировать точную именную обработку, локатор, версию и SHA-256; такая составная ссылка не становится глобальным taxon ID.",
+      "GBIF остаётся null при отсутствии ключа. Любой альтернативный reference требует отдельного аудита национального моста, ранга, синонимов и дубликатов.",
+      "NCBI/IPNI для Ferula и MDD для альтернатив Rhinolophus реальны; они не присваиваются трём насекомым. У всех трёх насекомых глобальный уникальный альтернативный taxon ID не подтверждён.",
+      "Если механизм будет отдельно согласован: отрицательные тесты неверного родителя/ранга, неизменённый branch guard, научная проверка pending и отдельное разрешение владельца."
+    ],
+    "specialThreeRegistryStatesUnchanged": true
+  },
+  "constraints": {
+    "newPublicRecords": 0,
+    "importPerformed": false,
+    "ownerAuthorization": null,
+    "scientificApproval": null,
+    "scientificReviewStatus": "pending",
+    "oldScientificStatusesUnchanged": true,
+    "oldSourcesAndLicensesUnchanged": true,
+    "photosResearched": false,
+    "longCardsPrepared": false,
+    "uiChanged": false
+  },
+  "evidence": {
+    "sources": "docs/evidence/catalog-200-final-sources.json",
+    "gbif": "docs/evidence/catalog-200-final-gbif.json",
+    "preservation": "docs/evidence/catalog-200-final-preservation.json",
+    "validation": "docs/evidence/catalog-200-final-validation.json"
+  },
+  "validation": {
+    "status": "passed",
+    "tests": 326,
+    "failed": 0,
+    "sourceCatalogCount": 178,
+    "publicCatalogCount": 178,
+    "distCatalogCount": 178,
+    "archiveCount": 2,
+    "all1088ProtectedFilesByteIdentical": true,
+    "receipt": "docs/evidence/catalog-200-final-validation.json"
+  }
+}
