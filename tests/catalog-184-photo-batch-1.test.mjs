@@ -13,11 +13,13 @@ import { createSearchIndex, searchSpecies, matchesCatalogFilters } from '../src/
 import { paginateCatalog } from '../src/data/catalog-pagination.js'
 import { speciesName } from '../src/data/presentation.js'
 import { speciesPath, speciesIdFromPath } from '../src/data/species-routes.js'
-import { photoBatch, assertPhotoAmendment, assertPhotoEvidence, historical184, PHOTO_COMMIT } from './helpers/photo-amendment.mjs'
+import { photoBatch, assertPhotoAmendment, assertPhotoEvidence, historical184, PHOTO_COMMIT, historicalBytes } from './helpers/photo-amendment.mjs'
 
 const bytes = p => readFile(`${PROJECT_ROOT}/${p}`)
 const read = async p => JSON.parse(await bytes(p))
-const source = await read('data/species.source.json'), published = await read('public/data/species.json')
+// The complete batch-1 state remains immutable after later append-only media events.
+const source = JSON.parse(historicalBytes(PHOTO_COMMIT, 'data/species.source.json'))
+const published = JSON.parse(historicalBytes(PHOTO_COMMIT, 'public/data/species.json'))
 const journal = await photoBatch()
 const fresh = () => [structuredClone(source), structuredClone(published), structuredClone(journal)]
 const check = (...args) => assertPhotoAmendment(...args)

@@ -1,4 +1,4 @@
-import { photoBatch, assertPhotoAmendment } from './helpers/photo-amendment.mjs'
+import { allPhotoAmendments } from './helpers/photo-batch-2.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile, writeFile, mkdir, mkdtemp, readdir, rm } from 'node:fs/promises'
@@ -256,9 +256,8 @@ test('licensed assets are local WebP, have declared dimensions, captions and mat
     assert.equal(createHash('sha256').update(bytes).digest('hex'), entry.draftSha256)
     restoration.records.push(...JSON.parse(bytes).images.map(image => ({ id: entry.id, image, sha256: image.sha256 })))
   }
-  const photoJournal = await photoBatch()
   const currentPublic = JSON.parse(await readFile(join(PROJECT_ROOT, 'public/data/species.json'), 'utf8'))
-  const amendments = await assertPhotoAmendment(source, currentPublic, photoJournal)
+  const amendments = await allPhotoAmendments(source, currentPublic)
   restoration.records.push(...amendments.map(r => ({ id: r.id, image: r.image, sha256: r.finalWebPSha256 })))
   for (const s of source.catalog.filter(s => speciesPhoto(s))) {
     const image = speciesPhoto(s)
