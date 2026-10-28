@@ -1,3 +1,5 @@
+import { historicalBytes } from './helpers/photo-amendment.mjs'
+import { historicalPipeline } from './helpers/historical-pipeline.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
@@ -82,7 +84,8 @@ test('catalog 178 preserves all prior 166 objects, archive, assets and research 
  }
  // Only catalog outputs and the previous live-release test become different old files.
  const allowed=new Set(['data/species.source.json','public/data/species.json','tests/catalog-166-publication.test.mjs'])
- for(const f of baseline.files)if(!allowed.has(f.path))assert.equal(digest(await bytes(f.path)),f.sha256,f.path)
+ const revisedTests=new Set(['tests/catalog-150-publication.test.mjs','tests/data.test.mjs'])
+ for(const f of baseline.files)if(!allowed.has(f.path))assert.equal(digest(revisedTests.has(f.path)?historicalBytes(baseline.initialHead,f.path,f.sha256):await bytes(f.path)),f.sha256,f.path)
  assert.equal(canApplyOnBranch('feature/catalog-200'),true)
  for(const branch of ['main','master','feature/catalog-201','feature/unrelated'])assert.equal(canApplyOnBranch(branch),false)
 })
@@ -145,8 +148,8 @@ test('all 12 imported cards, modals and pages render photos or placeholders and 
 
 test('replaying the actual owner decision is read-only and returns zero additions and 12 unchanged',async()=>{
  const beforeSource=digest(await bytes('data/species.source.json')),beforeRegistry=fingerprint(registry)
- const result=await runPipeline(PROJECT_ROOT,['provisional','--registry',manifest.registry,'--manifest',manifestPath,
-  '--mode','dry-run','--owner-role','project_owner','--decision-id',decision.decisionId,'--date','2026-10-28','--reason',decision.records[0].reason])
+ const result=await historicalPipeline(source, root => runPipeline(root,['provisional','--registry',manifest.registry,'--manifest',manifestPath,
+  '--mode','dry-run','--owner-role','project_owner','--decision-id',decision.decisionId,'--date','2026-10-28','--reason',decision.records[0].reason]))
  assert.deepEqual(result.counts,{processed:12,added:0,unchanged:12,rejected:0})
  assert.equal(result.applied,false);assert.equal(result.scientificApproval,null)
  assert.equal(digest(await bytes('data/species.source.json')),beforeSource)

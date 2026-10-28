@@ -1,3 +1,5 @@
+import { historical184, historicalPublic184, historicalBytes } from './helpers/photo-amendment.mjs'
+import { historicalPipeline } from './helpers/historical-pipeline.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
@@ -20,7 +22,7 @@ import { importSource, MAX_JSON_BYTES } from '../src/admin/data/model.js'
 
 const bytes=p=>readFile(`${PROJECT_ROOT}/${p}`)
 const read=async p=>JSON.parse(await bytes(p))
-const source=await read('data/species.source.json'),published=await read('public/data/species.json')
+const source=historical184(),published=historicalPublic184()
 const before=await read('data/backups/catalog-184/species.source.json')
 const beforePublic=await read('data/backups/catalog-184/public-species.json')
 const baseline=await read('data/backups/catalog-184/baseline.json')
@@ -80,12 +82,14 @@ test('catalog 184 preserves all prior 178 objects, archive, assets and research 
  }
  // Only catalog outputs and the previous live-release test become different old files.
  const allowed=new Set(['data/species.source.json','public/data/species.json','tests/catalog-178-publication.test.mjs'])
- for(const f of baseline.files)if(!allowed.has(f.path))assert.equal(digest(await bytes(f.path)),f.sha256,f.path)
+ // Evolving test code is checked against its actual historical blob; data/assets stay live.
+ const revisedTests=new Set(['tests/catalog-150-publication.test.mjs','tests/catalog-166-publication.test.mjs','tests/data.test.mjs'])
+ for(const f of baseline.files)if(!allowed.has(f.path))assert.equal(digest(revisedTests.has(f.path)?historicalBytes(baseline.sourceCommit,f.path,f.sha256):await bytes(f.path)),f.sha256,f.path)
  assert.equal(canApplyOnBranch('feature/catalog-200'),true)
  for(const branch of ['main','master','feature/catalog-201','feature/unrelated'])assert.equal(canApplyOnBranch(branch),false)
 })
 
-test('184 live records have complete pagination, four-language search, routes, filters and unchanged licensed assets',async()=>{
+test('184 historical release records have complete pagination, four-language search, routes, filters and unchanged licensed assets',async()=>{
  assert.equal(additions.reduce((n,s)=>n+s.images.length,0),1)
  assert.equal(publicAdditions.reduce((n,s)=>n+s.images.length,0),1)
  assert.equal(publicAdditions.filter(s=>!s.images.length).length,5)
@@ -143,8 +147,8 @@ test('all 6 imported cards, modals and pages render photos or placeholders and p
 
 test('replaying the actual owner decision is read-only and returns zero additions and 6 unchanged',async()=>{
  const beforeSource=digest(await bytes('data/species.source.json')),beforeRegistry=fingerprint(registry)
- const result=await runPipeline(PROJECT_ROOT,['provisional','--registry',manifest.registry,'--manifest',manifestPath,
-  '--mode','dry-run','--owner-role','project_owner','--decision-id',decision.decisionId,'--date','2026-10-28','--reason',decision.records[0].reason])
+ const result=await historicalPipeline(source, root => runPipeline(root,['provisional','--registry',manifest.registry,'--manifest',manifestPath,
+  '--mode','dry-run','--owner-role','project_owner','--decision-id',decision.decisionId,'--date','2026-10-28','--reason',decision.records[0].reason]))
  assert.deepEqual(result.counts,{processed:6,added:0,unchanged:6,rejected:0})
  assert.equal(result.applied,false);assert.equal(result.scientificApproval,null)
  assert.equal(digest(await bytes('data/species.source.json')),beforeSource)
@@ -152,7 +156,7 @@ test('replaying the actual owner decision is read-only and returns zero addition
 })
 
 test('the existing bounded admin importer accepts the 184-record source with no model changes',async()=>{
- const data=await bytes('data/species.source.json')
+ const data=historicalBytes('63f8e43d7d6b504079412c03c7cbf6eda421567a','data/species.source.json')
  assert.ok(data.length<MAX_JSON_BYTES)
  assert.deepEqual(importSource(data.toString('utf8')),source)
 })
