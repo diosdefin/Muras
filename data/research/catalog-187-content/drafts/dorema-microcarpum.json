@@ -1,0 +1,269 @@
+{
+  "id": "dorema-microcarpum",
+  "scientificName": "Ferula namanganica",
+  "names": {
+    "ru": "Дорема мелкоплодная",
+    "ky": "Майда мөмөлүү дорема",
+    "uz": "Ferula namanganica",
+    "en": "Microcarpous Dorema"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Apiales",
+    "family": "Apiaceae",
+    "genus": "Ferula"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Dorema microcarpum, с.174–175); Статус: VU. Редкий эндемичный вид.",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Исторически указаны гипсоносные и глинистые обнажения, щебнисто-каменистые склоны и сухие водотоки, среди разреженной гипсофильной растительности и ксерофильных кустарников на высотах 700–1800 м.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "code": "KG",
+      "type": "country",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный очерк связывает уязвимость с антропогенным воздействием, не разделяя его количественно по видам нагрузки. Современная сила воздействия не установлена.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В 2006 году предложены учёт численности и введение в культуру; выполнение этих предложений современными данными не подтверждено.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; Dorema microcarpum, с.174–175",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=175",
+      "accessedAt": "2026-10-28",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.category",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.overview",
+        "content.shortDescription",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "content.appearance",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.ky",
+        "names.en"
+      ],
+      "notes": "Исторические сведения местного очерка. Названия KY проверены по первоисточнику, краткие описания KY/UZ/EN — редакционные переводы, не цитаты. Современное присутствие и правовой статус не заявлены."
+    },
+    {
+      "id": "ferula-2023",
+      "title": "Puchałka et al. 2023. Phylogenetic position of Dorema within Ferula. Plant Systematics and Evolution 309:28",
+      "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+      "url": "https://link.springer.com/article/10.1007/s00606-023-01857-z",
+      "accessedAt": "2026-10-28",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.shortDescription"
+      ],
+      "notes": "Introduction / Methods / Dorema microcarpum; primary_full_text. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+    },
+    {
+      "id": "ncbi-ferula",
+      "title": "NCBI Taxonomy 2928647: Ferula namanganica",
+      "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+      "url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2928647",
+      "accessedAt": "2026-10-28",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.shortDescription"
+      ],
+      "notes": "Homotypic synonym; primary_taxonomic_record. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+    },
+    {
+      "id": "previous-powo-ferula",
+      "title": "POWO: Ferula namanganica",
+      "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:77331188-1",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.shortDescription"
+      ],
+      "notes": "docs/evidence/catalog-200-source-review.json#powo-ferula; existing_primary_review_reused. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "Catalogue of Life: Ferula namanganica Sennikov; exact SPECIES",
+      "publisher": "GBIF / Catalogue of Life",
+      "url": "https://api.gbif.org/v1/species/295893852",
+      "accessedAt": "2026-10-28",
+      "language": "en",
+      "taxonId": "gbif:295893852",
+      "supports": [
+        "scientificName",
+        "names.uz",
+        "content.overview",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "notes": "Реальная принятая запись указанного dataset. EXACT — локальная строгая проверка canonicalName/rank, не вымышленный API match. nubKey/parentKey не подставлены. Issues: BACKBONE_MATCH_NONE"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Растение сухих гипсоносных и каменистых склонов из очерка Dorema microcarpum 2006 года. Принятое имя — Ferula namanganica; современная численность неизвестна.",
+        "ky": "2006-жылкы Dorema microcarpum очеркиндеги кургак гипстүү жана таштак беттердин өсүмдүгү. Азыркы кабыл алынган аты — Ferula namanganica; саны белгисиз.",
+        "uz": "Oʻsimlik 2006-yilgi Dorema microcarpum ocherkida quruq gipsli va toshloq yonbagʻirlardan keltirilgan. Qabul qilingan nomi Ferula namanganica; hozirgi soni nomaʼlum.",
+        "en": "A dry gypsum and rocky-slope plant treated as Dorema microcarpum in 2006. Its accepted name is Ferula namanganica; current abundance is unknown."
+      },
+      "sourceIds": [
+        "national-book",
+        "ferula-2023"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Дорема мелкоплодная включена в национальную книгу 2006 года под именем Dorema microcarpum Korovin. Современное принятое имя этой карточки — Ferula namanganica Sennikov. Гомотипную связь имён указывает POWO, а молекулярная работа Puchałka и соавторов 2023 года рассматривает этот материал в составе Ferula. Выбран точный видовой ключ Catalogue of Life, представленный в GBIF; название Ferula microcarpum из иного ответа backbone автоматически не подставлено.\n\nПо национальному очерку это стержнекорневое многолетнее растение с одиночным стеблем высотой до 1–1,5 м. Прикорневые листья многократно рассечены, стеблевые сильно уменьшены. Цветки с жёлтыми лепестками собраны в простые зонтички на коротких ножках. Овальные или продолговатые плоды имеют узкие краевые крылья. Исторически указаны гипсоносные и глинистые обнажения, щебнисто-каменистые склоны и сухие водотоки, среди разреженной гипсофильной растительности и ксерофильных кустарников на высотах 700–1800 м. Национальный очерк характеризует растение как монокарпический многолетник сухих склонов. Данные о культивировании и детальная современная оценка экологических зависимостей отсутствуют.\n\nРазмножение семенное, цветение в мае–июне по русской версии очерка. Месяцы плодоношения расходятся между русским и английским текстами; точный современный календарь здесь не назначен.\n\nВ книге указаны обращённые к Ферганской долине склоны Чаткальского, Ферганского и Алайского хребтов. Это историческое национальное свидетельство. POWO перечисляет в современном ареале Узбекистан; расхождение географического охвата явно сохраняется, а не превращается в подтверждение современной популяции Кыргызстана.\n\nНациональный очерк связывает уязвимость с антропогенным воздействием, не разделяя его количественно по видам нагрузки. Современная сила воздействия не установлена. В 2006 году предложены учёт численности и введение в культуру; выполнение этих предложений современными данными не подтверждено.\n\nНациональная категория относится к местной исторической единице охраны, описанной в 2006 году. Она не является глобальной оценкой всего принятого таксона, современной категорией IUCN или проверенным правовым статусом 2026 года. Современная национальная численность остаётся неизвестной; независимая научная проверка ожидается.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "ferula-2023",
+        "ncbi-ferula",
+        "previous-powo-ferula",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальному очерку это стержнекорневое многолетнее растение с одиночным стеблем высотой до 1–1,5 м. Прикорневые листья многократно рассечены, стеблевые сильно уменьшены. Цветки с жёлтыми лепестками собраны в простые зонтички на коротких ножках. Овальные или продолговатые плоды имеют узкие краевые крылья.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный очерк характеризует растение как монокарпический многолетник сухих склонов. Данные о культивировании и детальная современная оценка экологических зависимостей отсутствуют.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Размножение семенное, цветение в мае–июне по русской версии очерка. Месяцы плодоношения расходятся между русским и английским текстами; точный современный календарь здесь не назначен.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В книге указаны обращённые к Ферганской долине склоны Чаткальского, Ферганского и Алайского хребтов. Это историческое национальное свидетельство. POWO перечисляет в современном ареале Узбекистан; расхождение географического охвата явно сохраняется, а не превращается в подтверждение современной популяции Кыргызстана.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

@@ -1,0 +1,254 @@
+{
+  "id": "polochrum-pamirepandum",
+  "scientificName": "Polochrum pamirepandum",
+  "names": {
+    "ru": "Полохрум азиатский",
+    "ky": "Полохрум сары аарысы",
+    "uz": "Polochrum pamirepandum",
+    "en": "Asiatic Polochrum Sapygid Wasp"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Hymenoptera",
+    "family": "Sapygidae",
+    "genus": "Polochrum"
+  },
+  "group": "arthropods",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Polochrum pamirepandum, с.278–279); Статус: II категория (VU B2ab(iii); C2b; D2) . Редкий уязвимый эндемичный среднеазиатский вид реликтового",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Пойменный лиственный лес с полянами в Западном Тянь-Шане; сведения национального очерка.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "code": "KG",
+      "type": "country",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторически обсуждались санитарные рубки, пестициды и, предположительно, интенсивное сенокошение; современная оценка не выполнена.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В 2006 году предлагалось сохранять старые стволы деревьев и уменьшать хозяйственную нагрузку на пойменные поляны.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; Polochrum pamirepandum, с.278–279",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=279",
+      "accessedAt": "2026-10-28",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.category",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.overview",
+        "content.shortDescription",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "content.appearance",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.ky",
+        "names.en"
+      ],
+      "notes": "Исторические сведения местного очерка. Названия KY проверены по первоисточнику, краткие описания KY/UZ/EN — редакционные переводы, не цитаты. Современное присутствие и правовой статус не заявлены."
+    },
+    {
+      "id": "polochrum-2024",
+      "title": "Lopes, Moleiro & Lucena 2024. A new species of Huarpea… Zootaxa 5507(3):439–455",
+      "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+      "url": "https://doi.org/10.11646/zootaxa.5507.3.3",
+      "accessedAt": "2026-10-28",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.shortDescription",
+        "names.uz",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "notes": "Таблица 3, с.450, №35; библиография Kurzenko 1986; author_uploaded_full_text. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+    },
+    {
+      "id": "bitsch-2017",
+      "title": "Bitsch J. 2017. Les Sapygidae d’Europe. Bulletin de la Société entomologique de France 122(1):7–34",
+      "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+      "url": "https://lasef.org/wp-content/uploads/BSEF/122-1/1918_Bitsch.pdf",
+      "accessedAt": "2026-10-28",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.shortDescription"
+      ],
+      "notes": "с.18; библиография с.31; publisher_full_pdf. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+    },
+    {
+      "id": "wasp-polochrum-fresh",
+      "title": "Iziko Museums / WaspWeb: World Sapygidae",
+      "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+      "url": "https://www.waspweb.org/Pompiloidea/Sapygidae/Classification/Classification_world_Sapygidae.htm",
+      "accessedAt": "2026-10-28",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.shortDescription"
+      ],
+      "notes": "Род Polochrum; fresh_institutional_checklist. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Редкая одиночная оса пойменных лесов из национального очерка 2006 года. Современная численность и конкретный вид пчелы-хозяина не подтверждены.",
+        "ky": "2006-жылкы улуттук очерктеги жайылма токойлордун сейрек жалгыз аарысы. Азыркы саны жана кожоюн аарынын так түрү тастыкталган эмес.",
+        "uz": "2006-yilgi milliy ocherkdagi qayir oʻrmonlarining kamyob yakka arisi. Hozirgi soni va xoʻjayin asalarining aniq turi tasdiqlanmagan.",
+        "en": "A rare solitary sapygid wasp of floodplain forests treated in 2006. Current abundance and the exact host bee species are unconfirmed."
+      },
+      "sourceIds": [
+        "national-book",
+        "polochrum-2024"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Азиатский полохрум — одиночная оса семейства Sapygidae, рассматриваемая книгой 2006 года как Polochrum pamirepandum Kurzenko, 1986. Современный музейный перечень WaspWeb отличает её от Polochrum repandum Spinola, 1805. Историческое употребление второго имени для кыргызского материала не превращает оба имени в две национальные карточки.\n\nПо описанию 2006 года оса чёрная с жёлтым рисунком и буровато-жёлтыми крыльями. Самки немного крупнее самцов; форма головы и усиков входит в признаки национального описания. Пойменный лиственный лес с полянами в Западном Тянь-Шане; сведения национального очерка. Книга характеризует полохрумов как инквилинов гнёзд пчёл-плотников Xylocopa. Конкретный хозяин X. valga для P. pamirepandum назван предположительно, поэтому не выдаётся здесь за доказанную обязательную связь.\n\nВ источнике описана зимовка в коконе в гнезде хозяина или рядом. По коллекционным данным имаго отмечались с начала июня до начала августа.\n\nДля Кыргызстана национальная книга приводит ущелье Ходжа-Ата Чаткальского хребта. Упоминание в старой литературе как P. repandum сохранено как история определения.\n\nИсторически обсуждались санитарные рубки, пестициды и, предположительно, интенсивное сенокошение; современная оценка не выполнена. В 2006 году предлагалось сохранять старые стволы деревьев и уменьшать хозяйственную нагрузку на пойменные поляны.\n\nНациональная категория относится к местной исторической единице охраны, описанной в 2006 году. Она не является глобальной оценкой всего принятого таксона, современной категорией IUCN или проверенным правовым статусом 2026 года. Современная национальная численность остаётся неизвестной; независимая научная проверка ожидается.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "polochrum-2024",
+        "bitsch-2017",
+        "wasp-polochrum-fresh"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По описанию 2006 года оса чёрная с жёлтым рисунком и буровато-жёлтыми крыльями. Самки немного крупнее самцов; форма головы и усиков входит в признаки национального описания.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книга характеризует полохрумов как инквилинов гнёзд пчёл-плотников Xylocopa. Конкретный хозяин X. valga для P. pamirepandum назван предположительно, поэтому не выдаётся здесь за доказанную обязательную связь.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В источнике описана зимовка в коконе в гнезде хозяина или рядом. По коллекционным данным имаго отмечались с начала июня до начала августа.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Для Кыргызстана национальная книга приводит ущелье Ходжа-Ата Чаткальского хребта. Упоминание в старой литературе как P. repandum сохранено как история определения.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

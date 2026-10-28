@@ -1,0 +1,309 @@
+{
+  "id": "cuon-alpinus",
+  "scientificName": "Cuon alpinus",
+  "names": {
+    "ru": "Красный волк",
+    "ky": "Cuon alpinus",
+    "uz": "Cuon alpinus",
+    "en": "Dhole"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Carnivora",
+    "family": "Canidae",
+    "genus": "Cuon"
+  },
+  "group": "mammals",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "III [CR: R]",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Cuon alpinus, с.496–497); Статус: III категория Critically Endangered, CR: R. За последние 50 лет факты достоверной регистрации на",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "По историческому национальному описанию — остепнённые участки альпийского и субальпийского поясов и верхняя часть лесного пояса, связанные с местами концентрации диких копытных.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "code": "KG",
+      "type": "country",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальном очерке обсуждаются конкуренция с волками и собаками и возможное прямое преследование человеком. Текущая сила этих факторов для местной популяции не оценена.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книга 2006 года рекомендует поиск достоверных регистраций и последующее наблюдение. Работа 2022 года обосновывает дальнейший мониторинг, но не подтверждает выполнение программы восстановления популяции.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "cuon-2022"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/catalog187-cuon-alpinus.webp",
+      "width": 1350,
+      "height": 1800,
+      "sha256": "e52d745554b52850ff6f4f3e70ae24f430c390ab920e610e6a89ffb000f25b47",
+      "author": "Hans Hillewaert",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Cuon_alpinus_(Dhole).jpg",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "attribution": "© Hans Hillewaert; CC BY-SA 3.0; https://commons.wikimedia.org/wiki/File:Cuon_alpinus_(Dhole).jpg. Производное изображение распространяется под той же лицензией.",
+      "modifications": [
+        "Штатный scripts/process_data.py: уменьшение без кадрирования до 1800 px, WebP quality 82; EXIF/XMP удалены."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ky": null,
+        "uz": null,
+        "ru": "Cuon alpinus в Port Lympne Wild Animal Park, Великобритания, 7 июля 2010 года. Животное в неволе; снимок не подтверждает встречаемость в Кыргызстане.",
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; Cuon alpinus, с.496–497",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=497",
+      "accessedAt": "2026-10-28",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.category",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.overview",
+        "content.shortDescription",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "content.diet",
+        "threats.0",
+        "conservationMeasures.0"
+      ],
+      "notes": "Исторические сведения местного очерка. Названия KY проверены по первоисточнику, краткие описания KY/UZ/EN — редакционные переводы, не цитаты. Современное присутствие и правовой статус не заявлены."
+    },
+    {
+      "id": "zin-cuontype",
+      "title": "ЗИН РАН: типовой каталог Mammalia, Cuon alpinus hesperius",
+      "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+      "url": "https://www.zin.ru/collections/Mammalia/catalog_en.html?taxon_id=1030631073673807",
+      "accessedAt": "2026-10-28",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.shortDescription"
+      ],
+      "notes": "Голотип №23894; primary_museum_type_database. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+    },
+    {
+      "id": "cuon-2022",
+      "title": "Cancellare et al. 2022. New distribution record of dhole from southern Kyrgyzstan using non-invasive genetic sampling. Canid Biology & Conservation 24(1):1–3",
+      "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+      "url": "https://www.canids.org/CBC/24/Dhole_distribution_Kyrgyzstan.pdf",
+      "accessedAt": "2026-10-28",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.shortDescription",
+        "content.distribution",
+        "names.en",
+        "conservationMeasures.0"
+      ],
+      "notes": "с.1–2, материал / метод / MZ813093; publisher_pdf_downloaded_and_read; redirect canids.org/cbc-journal/24-1.pdf. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+    },
+    {
+      "id": "genbank-cuon",
+      "title": "NCBI GenBank MZ813093.1",
+      "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+      "url": "https://www.ncbi.nlm.nih.gov/nuccore/MZ813093",
+      "accessedAt": "2026-10-28",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.shortDescription",
+        "content.distribution"
+      ],
+      "notes": "isolate SKY_001; cytb; geo_loc_name Kyrgyzstan; fresh_efetch_record. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone Taxonomy: Cuon alpinus (Pallas, 1811); exact SPECIES",
+      "publisher": "GBIF / GBIF Backbone Taxonomy",
+      "url": "https://api.gbif.org/v1/species/2434317",
+      "accessedAt": "2026-10-28",
+      "language": "en",
+      "taxonId": "gbif:2434317",
+      "supports": [
+        "scientificName",
+        "names.uz",
+        "content.overview",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky"
+      ],
+      "notes": "Реальная принятая запись указанного dataset. EXACT — локальная строгая проверка canonicalName/rank, не вымышленный API match. nubKey/parentKey не подставлены. Issues: "
+    },
+    {
+      "id": "photo-commons",
+      "title": "Cuon alpinus в неволе, 2010; Hans Hillewaert",
+      "publisher": "Wikimedia Commons; Hans Hillewaert",
+      "url": "https://commons.wikimedia.org/wiki/File:Cuon_alpinus_(Dhole).jpg",
+      "accessedAt": "2026-10-28",
+      "language": "en",
+      "supports": [
+        "images.0.caption"
+      ],
+      "notes": "Лицензия и определение конкретного файла проверены; зарубежное животное в неволе не подтверждает национальную встречаемость."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Псовый из национального очерка 2006 года; независимая генетическая находка относится к пробе 2019 года. Численность и постоянная популяция в Кыргызстане не подтверждены.",
+        "ky": "2006-жылкы улуттук очерктеги иттер тукумундагы түр; көз карандысыз генетикалык табылга 2019-жылкы үлгүгө тиешелүү. Кыргызстанда туруктуу популяциясы жана саны тастыкталган эмес.",
+        "uz": "2006-yilgi milliy ocherkdagi itsimon tur; mustaqil genetik qayd 2019-yilgi namunaga tegishli. Qirgʻizistonda doimiy populyatsiya va uning soni tasdiqlanmagan.",
+        "en": "A canid listed in the 2006 national account, independently detected in a 2019 genetic sample. A resident population and its abundance in Kyrgyzstan remain unconfirmed."
+      },
+      "sourceIds": [
+        "national-book",
+        "cuon-2022"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Красный волк, или Cuon alpinus, — самостоятельный вид псовых, включённый в Красную книгу Кыргызстана 2006 года. Старый очерк сомневался в определении шести шкур, принятых в 1922–1956 годах. В подготовке учтены независимый типовой экземпляр ЗИН №23894 из Ат-Баши 1907 года и генетическая находка, опубликованная Cancellare и соавторами в 2022 году. Эти новые основания не объявляют спорные шкуры правильно определёнными.\n\nПо историческому национальному описанию — остепнённые участки альпийского и субальпийского поясов и верхняя часть лесного пояса, связанные с местами концентрации диких копытных. Вид социальный; национальный очерк описывает объединение в стаи и активность как днём, так и ночью. Одна генетическая находка не доказывает наличие устойчивой местной стаи или размножающейся популяции в 2026 году.\n\nНациональный источник называет диких копытных, в том числе козерогов, объектами охоты. Это характеристика питания вида в очерке, не количественно установленный рацион нынешней кыргызской популяции. В книге для вида приведены сезон размножения зимой и рождение нескольких щенков. Эти общебиологические сведения не означают подтверждения размножения в современной природе Кыргызстана.\n\nВ пробе помёта, собранной 15 августа 2019 года на юге Кыргызстана, анализ 2021 года определил фрагмент mitochondrial cytb длиной 147 bp как Cuon alpinus. Результат опубликован в 2022 и депонирован как GenBank MZ813093. Современная численность, регулярность присутствия и воспроизводство в этом районе не установлены.\n\nВ национальном очерке обсуждаются конкуренция с волками и собаками и возможное прямое преследование человеком. Текущая сила этих факторов для местной популяции не оценена. Книга 2006 года рекомендует поиск достоверных регистраций и последующее наблюдение. Работа 2022 года обосновывает дальнейший мониторинг, но не подтверждает выполнение программы восстановления популяции.\n\nНациональная категория относится к местной исторической единице охраны, описанной в 2006 году. Она не является глобальной оценкой всего принятого таксона, современной категорией IUCN или проверенным правовым статусом 2026 года. Современная национальная численность остаётся неизвестной; независимая научная проверка ожидается.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "zin-cuontype",
+        "cuon-2022",
+        "genbank-cuon",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Вид социальный; национальный очерк описывает объединение в стаи и активность как днём, так и ночью. Одна генетическая находка не доказывает наличие устойчивой местной стаи или размножающейся популяции в 2026 году.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный источник называет диких копытных, в том числе козерогов, объектами охоты. Это характеристика питания вида в очерке, не количественно установленный рацион нынешней кыргызской популяции.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В книге для вида приведены сезон размножения зимой и рождение нескольких щенков. Эти общебиологические сведения не означают подтверждения размножения в современной природе Кыргызстана.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В пробе помёта, собранной 15 августа 2019 года на юге Кыргызстана, анализ 2021 года определил фрагмент mitochondrial cytb длиной 147 bp как Cuon alpinus. Результат опубликован в 2022 и депонирован как GenBank MZ813093. Современная численность, регулярность присутствия и воспроизводство в этом районе не установлены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "cuon-2022",
+        "genbank-cuon"
+      ]
+    }
+  }
+}

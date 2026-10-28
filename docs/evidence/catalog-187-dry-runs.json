@@ -1,0 +1,228 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-28",
+  "command": "npm run data:batch:import -- --input .generated/catalog-187/import-preview.json --report .generated/catalog-187/dry-run-N.json",
+  "ownerAuthorization": null,
+  "scientificApproval": null,
+  "runs": [
+    {
+      "invocation": 1,
+      "independentNodeProcess": true,
+      "report": {
+        "schemaVersion": 1,
+        "batchId": "catalog-187-preparation-preview",
+        "beforeCount": 178,
+        "afterCount": 184,
+        "counts": {
+          "processed": 6,
+          "added": 6,
+          "unchanged": 0,
+          "rejected": 0
+        },
+        "results": [
+          {
+            "index": 0,
+            "candidateId": "sorbaria-olgae",
+            "status": "added",
+            "errors": [],
+            "warnings": [
+              "Разрешённая фотография отсутствует: используется существующий placeholder"
+            ],
+            "summary": {
+              "id": "sorbaria-olgae",
+              "scientificName": "Sorbaria tomentosa",
+              "group": "plants",
+              "imageCount": 0
+            }
+          },
+          {
+            "index": 1,
+            "candidateId": "dorema-microcarpum",
+            "status": "added",
+            "errors": [],
+            "warnings": [
+              "Разрешённая фотография отсутствует: используется существующий placeholder"
+            ],
+            "summary": {
+              "id": "dorema-microcarpum",
+              "scientificName": "Ferula namanganica",
+              "group": "plants",
+              "imageCount": 0
+            }
+          },
+          {
+            "index": 2,
+            "candidateId": "tianschaniella-umbellifera",
+            "status": "added",
+            "errors": [],
+            "warnings": [
+              "Разрешённая фотография отсутствует: используется существующий placeholder"
+            ],
+            "summary": {
+              "id": "tianschaniella-umbellifera",
+              "scientificName": "Tianschaniella umbellulifera",
+              "group": "plants",
+              "imageCount": 0
+            }
+          },
+          {
+            "index": 3,
+            "candidateId": "parnassius-loxias-tashkorensis",
+            "status": "added",
+            "errors": [],
+            "warnings": [
+              "Разрешённая фотография отсутствует: используется существующий placeholder"
+            ],
+            "summary": {
+              "id": "parnassius-loxias-tashkorensis",
+              "scientificName": "Parnassius loxias loxias",
+              "group": "arthropods",
+              "imageCount": 0
+            }
+          },
+          {
+            "index": 4,
+            "candidateId": "parnassius-apollo-merzbacheri",
+            "status": "added",
+            "errors": [],
+            "warnings": [
+              "Разрешённая фотография отсутствует: используется существующий placeholder"
+            ],
+            "summary": {
+              "id": "parnassius-apollo-merzbacheri",
+              "scientificName": "Parnassius apollo merzbacheri",
+              "group": "arthropods",
+              "imageCount": 0
+            }
+          },
+          {
+            "index": 5,
+            "candidateId": "cuon-alpinus",
+            "status": "added",
+            "errors": [],
+            "warnings": [],
+            "summary": {
+              "id": "cuon-alpinus",
+              "scientificName": "Cuon alpinus",
+              "group": "mammals",
+              "imageCount": 1
+            }
+          }
+        ],
+        "sourceSha256": "088f8f2fc78462a1721e293974b1054dc7a80b215f25bd111be3565318948f60",
+        "mode": "preview",
+        "applied": false
+      }
+    },
+    {
+      "invocation": 2,
+      "independentNodeProcess": true,
+      "report": {
+        "schemaVersion": 1,
+        "batchId": "catalog-187-preparation-preview",
+        "beforeCount": 178,
+        "afterCount": 184,
+        "counts": {
+          "processed": 6,
+          "added": 6,
+          "unchanged": 0,
+          "rejected": 0
+        },
+        "results": [
+          {
+            "index": 0,
+            "candidateId": "sorbaria-olgae",
+            "status": "added",
+            "errors": [],
+            "warnings": [
+              "Разрешённая фотография отсутствует: используется существующий placeholder"
+            ],
+            "summary": {
+              "id": "sorbaria-olgae",
+              "scientificName": "Sorbaria tomentosa",
+              "group": "plants",
+              "imageCount": 0
+            }
+          },
+          {
+            "index": 1,
+            "candidateId": "dorema-microcarpum",
+            "status": "added",
+            "errors": [],
+            "warnings": [
+              "Разрешённая фотография отсутствует: используется существующий placeholder"
+            ],
+            "summary": {
+              "id": "dorema-microcarpum",
+              "scientificName": "Ferula namanganica",
+              "group": "plants",
+              "imageCount": 0
+            }
+          },
+          {
+            "index": 2,
+            "candidateId": "tianschaniella-umbellifera",
+            "status": "added",
+            "errors": [],
+            "warnings": [
+              "Разрешённая фотография отсутствует: используется существующий placeholder"
+            ],
+            "summary": {
+              "id": "tianschaniella-umbellifera",
+              "scientificName": "Tianschaniella umbellulifera",
+              "group": "plants",
+              "imageCount": 0
+            }
+          },
+          {
+            "index": 3,
+            "candidateId": "parnassius-loxias-tashkorensis",
+            "status": "added",
+            "errors": [],
+            "warnings": [
+              "Разрешённая фотография отсутствует: используется существующий placeholder"
+            ],
+            "summary": {
+              "id": "parnassius-loxias-tashkorensis",
+              "scientificName": "Parnassius loxias loxias",
+              "group": "arthropods",
+              "imageCount": 0
+            }
+          },
+          {
+            "index": 4,
+            "candidateId": "parnassius-apollo-merzbacheri",
+            "status": "added",
+            "errors": [],
+            "warnings": [
+              "Разрешённая фотография отсутствует: используется существующий placeholder"
+            ],
+            "summary": {
+              "id": "parnassius-apollo-merzbacheri",
+              "scientificName": "Parnassius apollo merzbacheri",
+              "group": "arthropods",
+              "imageCount": 0
+            }
+          },
+          {
+            "index": 5,
+            "candidateId": "cuon-alpinus",
+            "status": "added",
+            "errors": [],
+            "warnings": [],
+            "summary": {
+              "id": "cuon-alpinus",
+              "scientificName": "Cuon alpinus",
+              "group": "mammals",
+              "imageCount": 1
+            }
+          }
+        ],
+        "sourceSha256": "088f8f2fc78462a1721e293974b1054dc7a80b215f25bd111be3565318948f60",
+        "mode": "preview",
+        "applied": false
+      }
+    }
+  ],
+  "oldSourceUnchanged": true
+}

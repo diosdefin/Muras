@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 1,
+  "registryId": "catalog-187-content",
+  "catalogFingerprint": "5a07bfea5f9a5daa7295b40c798f366c937314f626893f22ed57a8eb2838cf00",
+  "counts": {
+    "processed": 9,
+    "accepted": 6,
+    "deferred": 3,
+    "rejected": 0
+  },
+  "states": {
+    "pending": 0,
+    "needs_evidence": 3,
+    "research_ready": 0,
+    "needs_photo": 0,
+    "ready_for_review": 6,
+    "approved_for_import": 0,
+    "imported": 0,
+    "rejected": 0
+  },
+  "results": [
+    {
+      "candidateId": "sorbaria-olgae",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "c90fe2e86b7075bc2e879d2498b069218f3eb0a781886907e17efd8389e4bb4b",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "dorema-microcarpum",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "28196ecc55278901d71b2f203a92dfc9d22fc8436374df2d9d37416fccb4166c",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "tianschaniella-umbellifera",
+      "batchNumber": 1,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "912c3c2bf6677a48e7d97c8a429dcf5851c8d78d2bdcf357260872a03c51e48e",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "parnassius-loxias-tashkorensis",
+      "batchNumber": 2,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "612ac26580cd1f08e979517dd605e977c18ad250ce891b6333359193581b072a",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "parnassius-apollo-merzbacheri",
+      "batchNumber": 2,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [
+        "Разрешённая фотография отсутствует: используется существующий placeholder"
+      ],
+      "fingerprint": "d4894e8c3107800ef208f595e34dca337245dcfe11b6c592aeb39e0cc9f52afa",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "cuon-alpinus",
+      "batchNumber": 2,
+      "state": "ready_for_review",
+      "errors": [],
+      "warnings": [],
+      "fingerprint": "f23d3fedebf63dd40bb44d405410a0ec623a4924111e01884be64efabff9dd50",
+      "readiness": {
+        "photo": "prepared",
+        "photoCheck": "passed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "papilio-alexanor-voldemar",
+      "batchNumber": 3,
+      "state": "needs_evidence",
+      "errors": [
+        "Нет точного принятого таксона со связанным источником и идентификатором",
+        "Есть нерешённые противоречия или обязательные пробелы"
+      ],
+      "warnings": [],
+      "fingerprint": "73b621aed61453a50677d8e5a8fc97a4701757dbd0ed7adc02b1088c44c64414",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "megalodontes-kuznetzovi",
+      "batchNumber": 3,
+      "state": "needs_evidence",
+      "errors": [
+        "Нет точного принятого таксона со связанным источником и идентификатором",
+        "Есть нерешённые противоречия или обязательные пробелы"
+      ],
+      "warnings": [],
+      "fingerprint": "1f71da793eedbbe3c384598ee1864d3d717cb87b28753954733f7d18f7c71d8e",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    },
+    {
+      "candidateId": "polochrum-pamirepandum",
+      "batchNumber": 3,
+      "state": "needs_evidence",
+      "errors": [
+        "Нет точного принятого таксона со связанным источником и идентификатором",
+        "Есть нерешённые противоречия или обязательные пробелы"
+      ],
+      "warnings": [],
+      "fingerprint": "3fa5c56d2a2ce8bdab60f6ee901beb33ddf7a897232139dd1fb0954742595fe0",
+      "readiness": {
+        "photo": "placeholder",
+        "photoCheck": "placeholder_allowed",
+        "shortDescriptions": {
+          "ky": true,
+          "uz": true,
+          "ru": true,
+          "en": true
+        },
+        "fullDescriptions": {
+          "ky": false,
+          "uz": false,
+          "ru": true,
+          "en": false
+        },
+        "missingNames": [],
+        "translationRequired": [],
+        "scientificReviewRequired": true
+      }
+    }
+  ]
+}
