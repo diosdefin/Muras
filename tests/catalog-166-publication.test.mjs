@@ -19,7 +19,8 @@ import { importSource, MAX_JSON_BYTES } from '../src/admin/data/model.js'
 
 const bytes = path => readFile(`${PROJECT_ROOT}/${path}`)
 const read = async path => JSON.parse(await bytes(path))
-const source = await read('data/species.source.json'), published = await read('public/data/species.json')
+// Immutable 166-record release; catalog-178-publication validates the live catalogue.
+const source = await read('data/backups/catalog-178/species.source.json'), published = await read('data/backups/catalog-178/public-species.json')
 const before = await read('data/backups/catalog-166/species.source.json')
 const beforePublic = await read('data/backups/catalog-166/public-species.json')
 const manifestPath = 'data/research/catalog-167-review-manifest.json'
@@ -75,7 +76,7 @@ test('catalog 166 preserves the exact prior 150 and publishes only the 16 owner-
   assert.equal(canApplyOnBranch('feature/catalog-200'), true); assert.equal(canApplyOnBranch('main'), false)
 })
 
-test('166 live species retain correct pagination, four-language search, routes, filters and all licensed WebP', async () => {
+test('166 release species retain correct pagination, four-language search, routes, filters and all licensed WebP', async () => {
   assert.equal(additions.reduce((n, s) => n + s.images.length, 0), 13)
   assert.equal(publicAdditions.reduce((n, s) => n + s.images.length, 0), 13)
   assert.deepEqual(publicAdditions.filter(s => !s.images.length).map(s => s.id), ['sorbus-persica', 'otostegia-schennikovii', 'centaurea-alaica'])
@@ -152,7 +153,7 @@ test('the same owner decision repeats as a read-only dry-run with zero additions
 })
 
 test('the bounded admin importer accepts the formatted 166-record source without changing validation', async () => {
-  const data = await bytes('data/species.source.json')
+  const data = await bytes('data/backups/catalog-178/species.source.json')
   assert.ok(data.length > 2 * 1024 * 1024)
   assert.ok(data.length < MAX_JSON_BYTES)
   assert.deepEqual(importSource(data.toString('utf8')), source)

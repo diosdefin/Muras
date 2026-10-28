@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-28",
+  "npmTest": {
+    "exitCode": 0,
+    "tests": 326,
+    "pass": 326,
+    "fail": 0,
+    "skipped": 0,
+    "logSha256": "a436d1d0e9be7ecfe0c482b6c9ea2cda175faf68cfc9b5558bea01c5538d0b2c"
+  },
+  "focusedTest": {
+    "tests": 5,
+    "pass": 5,
+    "fail": 0
+  },
+  "dataRuns": 2,
+  "dataLogsByteIdentical": true,
+  "build": {
+    "exitCode": 0,
+    "distBytes": 34692982,
+    "logSha256": "5f0fb7267f7688020f424a5fb66ba1edc0729908482affa530337233a9c0c7c7"
+  },
+  "beforeImport": {
+    "processed": 12,
+    "added": 12,
+    "unchanged": 0,
+    "rejected": 0
+  },
+  "applied": {
+    "processed": 12,
+    "added": 12,
+    "unchanged": 0,
+    "rejected": 0
+  },
+  "repeat": {
+    "processed": 12,
+    "added": 0,
+    "unchanged": 12,
+    "rejected": 0
+  },
+  "catalogCount": 178,
+  "pagination": [
+    24,
+    24,
+    24,
+    24,
+    24,
+    24,
+    24,
+    10
+  ],
+  "searchLanguages": [
+    "ky",
+    "uz",
+    "ru",
+    "en"
+  ],
+  "uiSSR": {
+    "records": 12,
+    "languages": 4,
+    "components": [
+      "SpeciesCard.vue",
+      "SpeciesModal.vue",
+      "SpeciesPage.vue"
+    ],
+    "passed": true
+  },
+  "routes": true,
+  "filters": true,
+  "sourceAndPublishedOldObjectsUnchanged": 166,
+  "newImageCount": 2,
+  "newPlaceholderCount": 10,
+  "licensedWebpChecked": 145,
+  "newWebpFullyDecoded": true,
+  "heldCandidates": [
+    {
+      "id": "papilio-alexanor-voldemar",
+      "state": "needs_evidence"
+    },
+    {
+      "id": "megalodontes-kuznetzovi",
+      "state": "needs_evidence"
+    },
+    {
+      "id": "polochrum-pamirepandum",
+      "state": "needs_evidence"
+    }
+  ],
+  "scientificApproval": null,
+  "scientificReviewStatus": "pending"
+}
