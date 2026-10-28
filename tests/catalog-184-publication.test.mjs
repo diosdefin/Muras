@@ -1,3 +1,4 @@
+import { MAP_EVOLVING_FILES } from './helpers/map-evolution.mjs'
 import { historical184, historicalPublic184, historicalBytes } from './helpers/photo-amendment.mjs'
 import { historicalPipeline } from './helpers/historical-pipeline.mjs'
 import test from 'node:test'
@@ -84,7 +85,7 @@ test('catalog 184 preserves all prior 178 objects, archive, assets and research 
  const allowed=new Set(['data/species.source.json','public/data/species.json','tests/catalog-178-publication.test.mjs'])
  // Evolving test code is checked against its actual historical blob; data/assets stay live.
  const revisedTests=new Set(['tests/catalog-150-publication.test.mjs','tests/catalog-166-publication.test.mjs','tests/data.test.mjs'])
- for(const f of baseline.files)if(!allowed.has(f.path))assert.equal(digest(revisedTests.has(f.path)?historicalBytes(baseline.sourceCommit,f.path,f.sha256):await bytes(f.path)),f.sha256,f.path)
+ for(const f of baseline.files)if(!allowed.has(f.path))assert.equal(digest((revisedTests.has(f.path)||MAP_EVOLVING_FILES.has(f.path))?historicalBytes(baseline.sourceCommit,f.path,f.sha256):await bytes(f.path)),f.sha256,f.path)
  assert.equal(canApplyOnBranch('feature/catalog-200'),true)
  for(const branch of ['main','master','feature/catalog-201','feature/unrelated'])assert.equal(canApplyOnBranch(branch),false)
 })

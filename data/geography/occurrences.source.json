@@ -11,13 +11,30 @@
       "checkedAt": "2026-10-12",
       "license": "CC BY 4.0",
       "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "id": "rbge-e00714915",
+      "title": "Royal Botanic Garden Edinburgh. Herbarium specimen E00714915, Tianschaniella umbellulifera",
+      "url": "https://data.rbge.org.uk/herb/E00714915",
+      "year": null,
+      "kind": "preserved-specimen",
+      "locator": "Herbarium label: administrative region, taxon, collection date and determination; E00714915",
+      "checkedAt": "2026-10-28",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "catalogNumber": "E00714915",
+      "taxonId": "gbif:10874182",
+      "scientificName": "Tianschaniella umbellulifera",
+      "administrativeRegionId": "issyk-kul"
     }
   ],
   "records": [
     {
       "speciesId": "kaufmanns-tulip",
       "regionId": "jalal-abad",
-      "sourceIds": ["kendirbaeva-2025"],
+      "sourceIds": [
+        "kendirbaeva-2025"
+      ],
       "evidence": "Авторы отмечают тюльпан Кауфмана при полевом обследовании Беш-Аральского заповедника в 2022 году. Район исследования отнесён в статье к Джалал-Абадской области.",
       "locator": "Abstract; section 3, Besh-Aral; Table 1, Tulipa kaufmanniana",
       "reviewStatus": "documented_pending_review",
@@ -27,12 +44,71 @@
     {
       "speciesId": "sievers-apple",
       "regionId": "jalal-abad",
-      "sourceIds": ["kendirbaeva-2025"],
+      "sourceIds": [
+        "kendirbaeva-2025"
+      ],
       "evidence": "В результатах полевого обследования 2022 года указано присутствие Malus sieversii в районе Сары-Челека. Район исследования отнесён в статье к Джалал-Абадской области.",
       "locator": "Abstract; section 3, control plot K#6; Table 1, description 9, Malus sieversii",
       "reviewStatus": "documented_pending_review",
       "localityPrecision": "oblast",
       "observationYear": 2022
+    },
+    {
+      "speciesId": "hedysarum-chaitocarpum",
+      "regionId": "jalal-abad",
+      "sourceIds": [
+        "kendirbaeva-2025"
+      ],
+      "evidence": "Полевое исследование 2022 года прямо указывает Hedysarum chaitocarpum в обследованной территории Джалал-Абадской области. Это датированное свидетельство, а не подтверждение присутствия в 2026 году.",
+      "locator": "Abstract; section 1; Hedysarum chaitocarpum",
+      "reviewStatus": "documented_pending_review",
+      "localityPrecision": "oblast",
+      "observationYear": 2022,
+      "temporalContext": "historical",
+      "precisionLimits": "Публичная точность — область; современная численность не оценена."
+    },
+    {
+      "speciesId": "amygdalus-petunnikowii",
+      "regionId": "jalal-abad",
+      "sourceIds": [
+        "kendirbaeva-2025"
+      ],
+      "evidence": "Полевое исследование 2022 года прямо указывает Amygdalus petunnikowii в обследованной территории Джалал-Абадской области. Это датированное свидетельство, а не подтверждение присутствия в 2026 году.",
+      "locator": "Abstract; section 1; Amygdalus petunnikowii",
+      "reviewStatus": "documented_pending_review",
+      "localityPrecision": "oblast",
+      "observationYear": 2022,
+      "temporalContext": "historical",
+      "precisionLimits": "Публичная точность — область; современная численность не оценена."
+    },
+    {
+      "speciesId": "sorbus-persica",
+      "regionId": "jalal-abad",
+      "sourceIds": [
+        "kendirbaeva-2025"
+      ],
+      "evidence": "Полевое исследование 2022 года прямо указывает Sorbus persica в обследованной территории Джалал-Абадской области. Это датированное свидетельство, а не подтверждение присутствия в 2026 году.",
+      "locator": "Abstract; section 1; Sorbus persica",
+      "reviewStatus": "documented_pending_review",
+      "localityPrecision": "oblast",
+      "observationYear": 2022,
+      "temporalContext": "historical",
+      "precisionLimits": "Публичная точность — область; современная численность не оценена."
+    },
+    {
+      "speciesId": "tianschaniella-umbellifera",
+      "regionId": "issyk-kul",
+      "sourceIds": [
+        "rbge-e00714915"
+      ],
+      "evidence": "Этикетка гербария E00714915 прямо указывает Issyk-Kul Region, Kyrgyzstan, точное название Tianschaniella umbellulifera и сбор 20 июля 2000 года; определение Г.А. Лазкова, октябрь 2000. Современное присутствие не установлено.",
+      "locator": "E00714915: label heading, taxon, collection date, determination",
+      "reviewStatus": "documented_pending_review",
+      "localityPrecision": "oblast",
+      "observationYear": 2000,
+      "observationDate": "2000-07-20",
+      "temporalContext": "historical",
+      "precisionLimits": "Исторический гербарный сбор; публично только область. Дата публикации каталожной записи неизвестна."
     }
   ]
 }

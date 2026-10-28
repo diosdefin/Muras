@@ -151,7 +151,7 @@
   "ui.m150": "{p0} · manbalar bilan asoslangan qaydlar: {p1}",
   "ui.m151": "Hududiy maʼlumot aniqlashtirilmoqda",
   "ui.m152": "Tanlangan guruh uchun bazamizda hujjatli hududiy dalillar hali yoʻq.",
-  "ui.m153": "Ushbu viloyatga bogʻlangan turlar boʻyicha bazamizda hujjatli dalillar hali yoʻq.",
+  "ui.m153": "Tasdiqlangan hududiy maʼlumotlar hozircha mavjud emas",
   "ui.m154": "Bu yerda noyob turlar yoʻqligini anglatmaydi.",
   "ui.m155": "Xaritadan yoki roʻyxatdan viloyat tanlang. Boʻsh tanlov noyob turlar yoʻqligini anglatmaydi.",
   "ui.m156": "Tanlovni tozalash",
@@ -416,7 +416,7 @@
   "mapPreview.sourceNote": "Bu raqamlar Qirgʻizistonning barcha turlarini emas, MURAS katalogini tavsiflaydi.",
   "mapPreview.regionSubtitle": "Hududiy dalillar",
   "mapPreview.regionRecords": "Bu viloyatga bogʻlangan {p0} ta hujjatli MURAS qaydi",
-  "mapPreview.regionNoData": "Tekshirilgan hududiy dalillar hozircha cheklangan. Bu yerda noyob turlar yoʻqligini anglatmaydi.",
+  "mapPreview.regionNoData": "Tasdiqlangan hududiy maʼlumotlar hozircha mavjud emas. Bu yerda noyob turlar yoʻqligini anglatmaydi.",
   "mapPreview.regionReview": "Hududiy bogʻlanishlarning ilmiy tekshiruvi davom etmoqda.",
   "mapPreview.clear": "Tanlangan viloyatni tozalash",
   "mapPreview.details": "Toʻliq xaritani oʻrganish",
@@ -450,5 +450,13 @@
   "catalogUI.inRow": "Qatorda {p0} ta",
   "mapUI.pager": "Xarita koʻrinishini almashtirish",
   "mapUI.map": "Xarita",
-  "mapUI.details": "Maʼlumotlar"
+  "mapUI.details": "Maʼlumotlar",
+  "mapUI.allRegions": "Barcha viloyatlar",
+  "mapUI.search": "Turni qidirish",
+  "mapUI.searchHint": "KY / UZ / RU / EN yoki ilmiy nom",
+  "mapUI.noMatches": "Tanlangan filtrlarga mos hujjatlashtirilgan bogʻlanish topilmadi.",
+  "mapUI.observed": "Kuzatuv / yigʻish:",
+  "mapUI.historical": "Sanasi maʼlum dalil; hozirgi uchrashi va soni aniqlanmagan.",
+  "mapUI.page": "Tur sahifasi",
+  "mapUI.publicationUnknown": "nashr sanasi nomaʼlum"
 }

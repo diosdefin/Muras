@@ -1,3 +1,4 @@
+import { historicalMapBytes } from '../scripts/lib/map-history.mjs'
 import { isHistoricalEvidenceUnchanged } from '../scripts/lib/ui-design-scope.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
@@ -40,7 +41,7 @@ test('provisional release appends exactly the 23 manifest IDs and preserves all 
   const preservation = await read('docs/evidence/bulk-25-preservation.json')
   for (const [p, sha] of Object.entries(preservation)) if (!changed.has(p) && isHistoricalEvidenceUnchanged(p)) {
     const baselinePath = p === 'src/admin/data/repository.js' ? 'data/backups/catalog-125/admin-draft-repository.js' : p === 'src/admin/data/model.js' ? 'data/backups/catalog-166/admin-model.js' : p
-    assert.equal(digest(await readFile(`${PROJECT_ROOT}/${baselinePath}`)), sha, p)
+    assert.equal(digest(await historicalMapBytes(PROJECT_ROOT, baselinePath, sha)), sha, p)
   }
   assert.equal(digest(await readFile(`${PROJECT_ROOT}/data/backups/bulk-25-provisional/species.source.json`)), preservation['data/species.source.json'])
   assert.equal(digest(await readFile(`${PROJECT_ROOT}/data/backups/bulk-25-provisional/public-species.json`)), preservation['public/data/species.json'])

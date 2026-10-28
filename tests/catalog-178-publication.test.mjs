@@ -1,3 +1,4 @@
+import { MAP_EVOLVING_FILES } from './helpers/map-evolution.mjs'
 import { historicalBytes } from './helpers/photo-amendment.mjs'
 import { historicalPipeline } from './helpers/historical-pipeline.mjs'
 import test from 'node:test'
@@ -85,7 +86,7 @@ test('catalog 178 preserves all prior 166 objects, archive, assets and research 
  // Only catalog outputs and the previous live-release test become different old files.
  const allowed=new Set(['data/species.source.json','public/data/species.json','tests/catalog-166-publication.test.mjs'])
  const revisedTests=new Set(['tests/catalog-150-publication.test.mjs','tests/data.test.mjs'])
- for(const f of baseline.files)if(!allowed.has(f.path))assert.equal(digest(revisedTests.has(f.path)?historicalBytes(baseline.initialHead,f.path,f.sha256):await bytes(f.path)),f.sha256,f.path)
+ for(const f of baseline.files)if(!allowed.has(f.path))assert.equal(digest((revisedTests.has(f.path)||MAP_EVOLVING_FILES.has(f.path))?historicalBytes(baseline.initialHead,f.path,f.sha256):await bytes(f.path)),f.sha256,f.path)
  assert.equal(canApplyOnBranch('feature/catalog-200'),true)
  for(const branch of ['main','master','feature/catalog-201','feature/unrelated'])assert.equal(canApplyOnBranch(branch),false)
 })

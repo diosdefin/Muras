@@ -151,7 +151,7 @@
   "ui.m150": "{p0} · entries supported by sources: {p1}",
   "ui.m151": "Regional information is being clarified",
   "ui.m152": "Our database has no documentary regional evidence for the selected group yet.",
-  "ui.m153": "Our database has no documentary species evidence linked to this region yet.",
+  "ui.m153": "Confirmed regional evidence is not yet available",
   "ui.m154": "This does not mean that rare species are absent here.",
   "ui.m155": "Choose a region on the map or in the list. An empty selection does not imply the absence of rare species.",
   "ui.m156": "Clear selection",
@@ -416,7 +416,7 @@
   "mapPreview.sourceNote": "These figures describe the MURAS catalogue, not all species in Kyrgyzstan.",
   "mapPreview.regionSubtitle": "Regional evidence",
   "mapPreview.regionRecords": "{p0} documented MURAS records linked to this region",
-  "mapPreview.regionNoData": "Verified regional evidence is currently limited. This does not mean rare species are absent here.",
+  "mapPreview.regionNoData": "Confirmed regional evidence is not yet available. This does not mean that rare species are absent here.",
   "mapPreview.regionReview": "Scientific review of regional links is ongoing.",
   "mapPreview.clear": "Clear selected region",
   "mapPreview.details": "Explore the full map",
@@ -450,5 +450,13 @@
   "catalogUI.inRow": "{p0} per row",
   "mapUI.pager": "Map preview slides",
   "mapUI.map": "Map",
-  "mapUI.details": "Region information"
+  "mapUI.details": "Region information",
+  "mapUI.allRegions": "All regions",
+  "mapUI.search": "Find a species",
+  "mapUI.searchHint": "KY / UZ / RU / EN or scientific name",
+  "mapUI.noMatches": "No documented links match these filters.",
+  "mapUI.observed": "Observation / collection:",
+  "mapUI.historical": "Dated evidence; present occurrence and population size are not established.",
+  "mapUI.page": "Species page",
+  "mapUI.publicationUnknown": "publication date unknown"
 }

@@ -1,3 +1,4 @@
+import { historicalMapBytes } from '../scripts/lib/map-history.mjs'
 import { isHistoricalEvidenceUnchanged } from '../scripts/lib/ui-design-scope.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
@@ -35,7 +36,7 @@ test('bulk-25 keeps stable accepted taxon order, the master registry and public 
       'src/data/species-model.js': 'data/backups/bulk-25-provisional/species-model.js',
       'src/admin/data/repository.js': 'data/backups/catalog-125/admin-draft-repository.js',
       'src/admin/data/model.js': 'data/backups/catalog-166/admin-model.js' })[path] || path
-    assert.equal(digest(await readFile(`${PROJECT_ROOT}/${baselinePath}`)), sha, path)
+    assert.equal(digest(await historicalMapBytes(PROJECT_ROOT, baselinePath, sha)), sha, path)
   }
 })
 

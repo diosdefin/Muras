@@ -152,3 +152,11 @@
 .map-preview .map-overview-credits summary { cursor: pointer; width: fit-content; min-height: 24px; text-decoration: underline; text-underline-offset: 3px; }
 .map-preview .map-overview-credit-links { position: absolute; bottom: 100%; left: 0; z-index: 3; width: min(300px, 80vw); max-height: 126px; padding: 12px; display: flex; flex-direction: column; gap: 5px; overflow-y: auto; background: white; border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 6px 24px #253b3222; }
 .map-preview .map-overview-credits:not([open]) .map-overview-credit-links { display: none; }
+
+/* Regional search uses the existing map panel and remains touch/keyboard accessible. */
+.map-search-label { display: block; margin-top: 16px; font-weight: 600; }
+#map-species-search { display: block; width: 100%; min-width: 0; min-height: 44px; margin-block: 6px 14px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; background: white; color: var(--ink); }
+#map-species-search:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.map-observation { margin-top: 10px; font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+.regional-actions a, .regional-actions button { min-height: 44px; display: inline-flex; align-items: center; }
+.map-full .map-panel { min-width: 0; overflow-wrap: anywhere; }

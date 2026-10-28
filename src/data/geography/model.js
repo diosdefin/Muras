@@ -49,7 +49,10 @@ export function validateRegionalEvidence(data, species) {
   if (data?.schemaVersion !== 1 || !Array.isArray(data.sources) || !Array.isArray(data.records)) return ['Свидетельства: ожидаются schemaVersion: 1, sources и records.']
   const sources = new Map()
   for (const source of data.sources) {
-    if (!text(source?.id) || sources.has(source.id) || !text(source.title) || !https(source.url) || !text(source.locator) || !Number.isInteger(source.year) || source.kind !== 'regional-field-study') errors.push('Свидетельства: неверный, повторный или нерегиональный источник.')
+    if (!text(source?.id) || sources.has(source.id) || !text(source.title) || !https(source.url) || !text(source.locator) || !(Number.isInteger(source.year) || source.kind === 'preserved-specimen' && source.year === null) || !['regional-field-study', 'preserved-specimen'].includes(source.kind)) errors.push('Свидетельства: неверный, повторный или нерегиональный источник.')
+    if (source?.kind === 'preserved-specimen' && (!text(source.catalogNumber) || !/^gbif:\d+$/.test(source.taxonId) || !text(source.scientificName) || !REGIONS.some(r => r.id === source.administrativeRegionId))) errors.push('Свидетельства: образцу нужны точный таксон, номер и документированная область.')
+    if (source && Object.keys(source).some(k => !['id', 'title', 'url', 'locator', 'year', 'kind', 'checkedAt', 'license', 'licenseUrl', 'catalogNumber', 'taxonId', 'scientificName', 'administrativeRegionId'].includes(k))) errors.push('Свидетельства: неизвестные поля источника, включая координаты, запрещены.')
+    if (/\d+\s*[°′″]|\b(?:latitude|longitude|coordinates)\b|\b\d{2}\.\d{3,}\b/i.test(`${source?.title || ''} ${source?.locator || ''}`)) errors.push('Свидетельства: точные местоположения источника нельзя публиковать.')
     sources.set(source?.id, source)
   }
   const seen = new Set()
@@ -65,9 +68,16 @@ export function validateRegionalEvidence(data, species) {
     if (!text(record?.evidence) || !text(record?.locator)) errors.push(`${prefix}: нужны доказательство и место в публикации.`)
     if (!REVIEW_STATUSES.includes(record?.reviewStatus)) errors.push(`${prefix}: неизвестный статус проверки.`)
     if (record?.localityPrecision !== 'oblast') errors.push(`${prefix}: разрешена только точность до области.`)
-    if (!Number.isInteger(record?.observationYear) || record.observationYear < 1800 || record.observationYear > 2100 || sourceIds.some(id => sources.get(id)?.year < record.observationYear)) errors.push(`${prefix}: неверный год наблюдения.`)
-    if (record && Object.keys(record).some(k => !['speciesId', 'regionId', 'sourceIds', 'evidence', 'locator', 'reviewStatus', 'localityPrecision', 'observationYear'].includes(k))) errors.push(`${prefix}: лишние поля, включая координаты, запрещены.`)
-    if (/\d+\s*[°′″]|\b(?:latitude|longitude|coordinates)\b|\b\d{2}\.\d{3,}\b/i.test(`${record?.evidence || ''} ${record?.locator || ''}`)) errors.push(`${prefix}: точные местоположения нельзя публиковать.`)
+    for (const id of sourceIds) {
+      const source = sources.get(id), item = species.find(s => s.id === record?.speciesId)
+      if (source?.kind === 'preserved-specimen' && (source.administrativeRegionId !== record?.regionId || source.scientificName !== item?.scientificName || !item?.sources?.some(s => s.taxonId === source.taxonId))) errors.push(`${prefix}: образец не подтверждает точный таксон и область.`)
+    }
+    if (record?.observationDate !== undefined && (!/^\d{4}-\d{2}-\d{2}$/.test(record.observationDate) || !Number.isFinite(Date.parse(record.observationDate)) || new Date(record.observationDate).toISOString().slice(0, 10) !== record.observationDate || +record.observationDate.slice(0, 4) !== record.observationYear)) errors.push(`${prefix}: неверная дата наблюдения.`)
+    if (record?.temporalContext !== undefined && record.temporalContext !== 'historical') errors.push(`${prefix}: современное присутствие не подтверждено.`)
+    if (record?.precisionLimits !== undefined && !text(record.precisionLimits)) errors.push(`${prefix}: нужны ограничения точности.`)
+    if (!Number.isInteger(record?.observationYear) || record.observationYear < 1800 || record.observationYear > 2100 || sourceIds.some(id => Number.isInteger(sources.get(id)?.year) && sources.get(id).year < record.observationYear)) errors.push(`${prefix}: неверный год наблюдения.`)
+    if (record && Object.keys(record).some(k => !['speciesId', 'regionId', 'sourceIds', 'evidence', 'locator', 'reviewStatus', 'localityPrecision', 'observationYear', 'observationDate', 'temporalContext', 'precisionLimits'].includes(k))) errors.push(`${prefix}: лишние поля, включая координаты, запрещены.`)
+    if (/\d+\s*[°′″]|\b(?:latitude|longitude|coordinates)\b|\b\d{2}\.\d{3,}\b/i.test(`${record?.evidence || ''} ${record?.locator || ''} ${record?.precisionLimits || ''}`)) errors.push(`${prefix}: точные местоположения нельзя публиковать.`)
   }
   return errors
 }
@@ -78,6 +88,7 @@ export function regionalEntries(data, species, regionId, group = 'ALL') {
   for (const record of data?.records || []) {
     if (record.regionId !== regionId || !['documented_pending_review', 'reviewed'].includes(record.reviewStatus) || record.localityPrecision !== 'oblast') continue
     const item = species.find(s => s.id === record.speciesId)
+    if (!Array.isArray(record.sourceIds)) continue
     const sources = record.sourceIds.map(id => data.sources.find(s => s.id === id)).filter(Boolean)
     if (item && sources.length === record.sourceIds.length && sources.length && (group === 'ALL' || item.group === group)) entries.set(item.id, { species: item, evidence: record, sources })
   }
@@ -95,4 +106,14 @@ export function validateMapGeometry(data) {
   }
   if (data.provenance?.license !== 'ODbL-1.0' || data.provenance?.yearRepresented !== '2017' || !https(data.provenance?.sourceUrl)) errors.push('Карта: отсутствует происхождение, дата или лицензия.')
   return errors
+}
+
+export function publicRegionalEvidence(data) {
+  const records = data.records.filter(r => ['documented_pending_review', 'reviewed'].includes(r.reviewStatus)).map(r => ({
+    ...r,
+    evidence: `${REGIONS.find(region => region.id === r.regionId).name}: документированная запись ${r.observationYear} года. Современное присутствие и численность этим свидетельством не установлены.`,
+    locator: 'См. указанный источник; публичная точность — только область.',
+  }))
+  const used = new Set(records.flatMap(r => r.sourceIds))
+  return { schemaVersion: 1, sources: data.sources.filter(s => used.has(s.id)), records }
 }

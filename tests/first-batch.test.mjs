@@ -1,3 +1,4 @@
+import { historicalBytes } from './helpers/photo-amendment.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
@@ -94,7 +95,10 @@ test('regional drafts stay private and never become map results; unchanged quiz 
   assert.equal(drafts.notForPublication,true); assert.equal(drafts.records.length,2)
   assert.deepEqual(drafts.records.map(r=>r.regionId),['issyk-kul','talas'])
   for(const r of drafts.records){assert.equal(r.reviewStatus,'pending');assert.equal(r.publicationApproved,false);assert.equal(r.localityPrecision,'oblast')}
-  assert.equal(evidence.records.length,2)
+  const originalEvidence=JSON.parse(historicalBytes('43ff31186ea54eafdb6eec654c50828fb4c99eb3','data/geography/occurrences.source.json'))
+  assert.equal(originalEvidence.records.length,2)
+  assert.deepEqual(evidence.records.slice(0,2),originalEvidence.records)
+  for(const draft of drafts.records)assert.ok(!evidence.records.some(r=>r.speciesId===draft.speciesId&&r.regionId===draft.regionId))
   for(const id of ['issyk-kul','talas','jalal-abad']) assert.ok(!regionalEntries(evidence,published,id).some(r=>Object.hasOwn(expected,r.species.id)))
   const questions=await read('src/data/quiz/questions.json')
   assert.equal(questions.length,18);assert.deepEqual(validateQuestions(questions,published),[])

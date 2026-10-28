@@ -300,7 +300,7 @@ onUnmounted(() => {
       </div>
       <div class="hero-landscape"><HeroIllustrations /></div>
     </section>
-    <MapSection v-show="activeView === 'catalog' || activeView === 'map'" :mode="activeView === 'map' ? 'full' : 'preview'" :route-region="mapRouteRegion" :species="species" :loading="isLoading" :error="errorMessage" @open="openSpecies" @details="showMap" @regionchange="updateMapRegion" />
+    <MapSection v-show="activeView === 'catalog' || activeView === 'map'" :mode="activeView === 'map' ? 'full' : 'preview'" :route-region="mapRouteRegion" :species="species" :loading="isLoading" :error="errorMessage" @open="openSpecies" @profile="openSpeciesPage" @details="showMap" @regionchange="updateMapRegion" />
     <section v-show="activeView === 'catalog'" id="catalog" class="catalog page-container" aria-labelledby="catalog-title" tabindex="-1" :aria-busy="isLoading">
       <div class="catalog-heading">
         <div>
