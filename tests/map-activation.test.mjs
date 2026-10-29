@@ -109,9 +109,9 @@ test('specimen safeguards reject wrong taxon, wrong oblast, invalid date and pre
   ]){const data=clone(evidence);mutate(data);assert.ok(validateRegionalEvidence(data,species).length)}
 })
 
-test('map-only locale changes preserve every unrelated translation from the baseline', async () => {
+test('historical map-only locale migration preserves every unrelated translation from its baseline', async () => {
   for(const lang of ['ky','uz','ru','en']){
-    const path=`src/locales/${lang}.json`,before=JSON.parse(old(path)),after=await read(path)
+    const path=`src/locales/${lang}.json`,before=JSON.parse(old(path)),after=activation(path)
     for(const [key,value]of Object.entries(before))if(!['ui.m153','mapPreview.regionNoData'].includes(key))assert.equal(after[key],value,lang+':'+key)
     for(const key of Object.keys(after))if(!(key in before))assert.ok(key.startsWith('mapUI.'))
   }

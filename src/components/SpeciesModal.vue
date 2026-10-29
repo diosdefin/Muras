@@ -4,12 +4,10 @@ import { provideContentLanguage, useLocale } from '../composables/useLocale.js'
 import { computed, ref, toRef } from 'vue'
 import { groupLabel, nationalStatus, regionNames, speciesName, speciesPhoto, statusDetails } from '../data/presentation.js'
 import { useModalDialog } from '../composables/useModalDialog.js'
-import { populationPresentation } from '../data/population.js'
 import { siteLanguage } from '../composables/useLocale.js'
 import ScientificText from './ScientificText.vue'
 import SpeciesVisualization from './SpeciesVisualization.vue'
 import LessonReferences from './lesson/LessonReferences.vue'
-import PopulationInfo from './PopulationInfo.vue'
 import { overviewPreview } from '../data/species-content.js'
 
 const props = defineProps({ species: { type: Object, required: true }, contentLanguage: { type: String, default: null } })
@@ -20,7 +18,6 @@ const emit = defineEmits(['close', 'support', 'details'])
 const dialog = ref(null)
 const closeButton = ref(null)
 const photo = computed(() => speciesPhoto(props.species))
-const population = computed(() => populationPresentation(props.species.population, props.species.sources))
 const currentName = computed(() => speciesName(props.species, language.value))
 const currentStatus = computed(() => statusDetails(props.species, language.value))
 const knownRegions = computed(() => regionNames(props.species, language.value))
@@ -71,8 +68,7 @@ function closeFromBackdrop(event) {
     <div class="modal-scroll">
       <div class="modal-grid">
         <section class="modal-media" :aria-label="t('ui.m238')">
-          <SpeciesVisualization :photo="photo" :name="currentName" :population-type="population.type" :species-id="species.id" />
-          <PopulationInfo :population="species.population" :sources="species.sources" />
+          <SpeciesVisualization :photo="photo" :name="currentName" :population="species.population" :sources="species.sources" :species-id="species.id" />
           <details v-if="photo" class="modal-disclosure photo-details">
             <summary>{{ t('ui.m240') }}</summary>
             <div class="photo-credit">

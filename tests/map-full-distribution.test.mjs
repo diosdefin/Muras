@@ -1,3 +1,4 @@
+import { POPULATION_EVOLVING_FILES } from './helpers/population-evolution.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
@@ -166,14 +167,14 @@ test('full repository returns all pairs for all seven oblasts, filters and four-
  assert.equal((await loadRegionalData(species,{fetcher:async url=>({ok:true,json:async()=>url.endsWith('map.json')?geometry:published})})).evidence.records.length,208)
 })
 
-test('all 184 scientific cards, archive, images, licences, geometry, UI and locales are byte-for-byte unchanged',async()=>{
+test('184 cards, archive, images and geometry stay unchanged; historical UI hashes retain authentic Git bytes',async()=>{
  assert.deepEqual(source,old('data/species.source.json'));assert.equal(source.catalog.length,184);assert.equal(source.demoArchive.length,2)
  assert.equal(source.catalog.filter(s=>s.images.length).length,161)
  const frozen=await read('data/research/map-184/preservation.json')
  assert.equal(frozen.sourceCommit,BASE)
  for(const [path,expected] of Object.entries(frozen.files)){
   assert.equal(hash(historicalBytes(BASE,path,expected)),expected,path+' historical')
-  assert.equal(hash(await bytes(path)),expected,path+' live')
+  assert.equal(hash(POPULATION_EVOLVING_FILES.has(path)?historicalBytes(BASE,path,expected):await bytes(path)),expected,path+' preserved')
  }
 })
 

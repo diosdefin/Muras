@@ -6,6 +6,10 @@ import { resolve } from 'node:path'
 import assert from 'node:assert/strict'
 import { digest } from './research-pipeline.mjs'
 export const MAP_APPLICATION_FILES = new Set([
+  // Task 28.1 also evolves presentation/lifecycle files; their earlier scientific-release checksums stay pinned.
+  'src/admin/components/PhotoEditor.vue', 'src/components/SpeciesVisualization.vue',
+  'src/components/SpeciesModal.vue', 'src/components/SpeciesPage.vue',
+  'src/composables/useImageVisualization.js', 'src/data/visualization/engine.js',
   'data/geography/occurrences.source.json', 'public/data/geography/occurrences.json',
   'scripts/build-map.mjs', 'src/App.vue', 'src/data/geography/model.js',
   'src/components/map/MapSection.vue', 'src/components/map/RegionPanel.vue',

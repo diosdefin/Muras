@@ -78,7 +78,7 @@ onBeforeUnmount(()=>{end();uploadController?.abort()})
     <div v-if="url&&!failed" class="admin-previews">
       <section><h4>{{ t('admin.preview.card') }}</h4><div class="admin-preview-frame"><img :src="url" :style="compositionStyle(photo,'card')" :alt="t('admin.preview.card')" /></div></section>
       <section><h4>{{ t('admin.preview.detail') }}</h4><div class="admin-preview-frame"><img :src="url" :style="compositionStyle(photo,'detail')" :alt="t('admin.preview.detail')" /></div></section>
-      <section><h4>{{ t('admin.preview.canvas') }}</h4><SpeciesVisualization :photo="photo" :preview-url="url" :name="species.scientificName || species.id" :population-type="species.population.type" :species-id="`${species.id}:${index}`" /></section>
+      <section><h4>{{ t('admin.preview.canvas') }}</h4><SpeciesVisualization :photo="photo" :preview-url="url" :name="species.scientificName || species.id" :population="species.population" :sources="species.sources" :species-id="`${species.id}:${index}`" /></section>
       <section><h4>{{ t('admin.preview.lesson') }}</h4><div v-if="photo.compositions?.lesson" class="admin-preview-frame"><img :src="url" :style="compositionStyle(photo,'lesson')" :alt="t('admin.preview.lesson')" /></div><img v-else class="admin-whole-image" :src="url" :alt="t('admin.preview.lesson')" /><p class="admin-hint">{{ t('admin.lessonFrameHint') }}</p></section>
     </div>
   </template><p v-else class="admin-empty">{{ t('admin.noPhotos') }}</p>

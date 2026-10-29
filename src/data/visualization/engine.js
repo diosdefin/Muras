@@ -1,9 +1,8 @@
 import { compositionCrop, DEFAULT_COMPOSITION, validComposition } from '../image-composition.js'
 
 export const ANIMATION_DURATION = 900
-export const AUTO_DELAY = 450
-// Unknown population: retain some original colour; never imply an extinction count.
-export const UNKNOWN_DESATURATION = 0.72
+// Desaturation carries no numeric meaning; unknown never means zero or extinction.
+export const UNKNOWN_DESATURATION = 1
 export function backingSize(width, height, dpr = 1) {
   if (![width, height].every(v => Number.isFinite(v) && v > 0)) return null
   const density = Number.isFinite(dpr) && dpr > 0 ? Math.min(2, dpr) : 1
@@ -43,19 +42,19 @@ export function renderFrame(canvas, scratch, source, amount, size, dpr, { compos
 }
 
 export function createVisualization({ canvas, createCanvas, createImage, requestFrame, cancelFrame,
-  setTimer = setTimeout, clearTimer = clearTimeout, measure, getDpr = () => 1,
+  measure, getDpr = () => 1,
   reducedMotion = () => false, onState = () => {} }) {
   const scratch = createCanvas()
-  let source = null, frame = null, timer = null, transition = null, disposed = false, generation = 0, visible = true
-  let automatic = false, composition = DEFAULT_COMPOSITION
+  let source = null, frame = null, transition = null, disposed = false, generation = 0, visible = true
+  let composition = DEFAULT_COMPOSITION
   let state = { mode: 'photo', amount: 0, effect: 'unknown', loading: false, ready: false, error: '' }
   const publish = () => onState({ ...state })
   function cancelFrameOnly() { if (frame !== null) cancelFrame(frame); frame = null }
-  function cancel() { cancelFrameOnly(); if (timer !== null) clearTimer(timer); timer = null; transition = null }
+  function cancel() { cancelFrameOnly(); transition = null }
   function releaseSource() {
     if (source) { source.onload = null; source.onerror = null; source.removeAttribute?.('src'); source = null }
   }
-  function fail(message) { cancel(); automatic = false; state.mode = 'photo'; state.amount = 0; state.ready = false; state.error = message; publish() }
+  function fail(message) { cancel(); state.mode = 'photo'; state.amount = 0; state.ready = false; state.error = message; publish() }
   function draw() {
     const size = measure()
     if (!backingSize(size?.width, size?.height)) return false
@@ -86,7 +85,7 @@ export function createVisualization({ canvas, createCanvas, createImage, request
   }
   function change(to) {
     if (disposed || !state.ready) return false
-    cancel(); automatic = false
+    cancel()
     if (reducedMotion()) {
       state.amount = to; state.mode = to ? 'active' : 'photo'
       try { if (visible) draw() } catch { fail('Интерактивная визуализация недоступна. Можно изучать обычную фотографию.'); return false }
@@ -97,16 +96,11 @@ export function createVisualization({ canvas, createCanvas, createImage, request
     state.mode = to ? 'animating' : 'restoring'
     schedule(); return true
   }
-  function queueAutomatic() {
-    if (disposed || !visible || !state.ready || !automatic || timer !== null) return
-    const token = generation
-    timer = setTimer(() => { if (disposed || token !== generation) return; timer = null; if (visible && automatic) change(1) }, AUTO_DELAY)
-  }
   function load(path, options = {}) {
     if (disposed) return
     generation += 1; cancel(); releaseSource()
     canvas.width = canvas.height = scratch.width = scratch.height = 0
-    automatic = Boolean(path); composition = options.composition || DEFAULT_COMPOSITION
+    composition = options.composition || DEFAULT_COMPOSITION
     state = { mode: 'photo', amount: 0, effect: ['exact', 'approximate'].includes(options.type) ? options.type : 'unknown', loading: Boolean(path), ready: false, error: '', grayscaleFallback: false }
     publish()
     if (!path) return
@@ -120,7 +114,7 @@ export function createVisualization({ canvas, createCanvas, createImage, request
         state.grayscaleFallback = Boolean(context && typeof context.filter !== 'string')
       } catch { state.ready = false }
       if (!state.ready) state.error = 'Интерактивная визуализация недоступна. Можно изучать обычную фотографию.'
-      publish(); queueAutomatic()
+      publish()
     }
     next.onerror = () => {
       if (disposed || token !== generation) return
@@ -143,9 +137,9 @@ export function createVisualization({ canvas, createCanvas, createImage, request
       if (disposed || visible === value) return
       visible = value
       if (!visible) {
-        cancelFrameOnly(); if (timer !== null) clearTimer(timer); timer = null
+        cancelFrameOnly()
         if (transition) { transition.from = state.amount; transition.startedAt = null }
-      } else { if (state.mode !== 'photo') schedule(); queueAutomatic() }
+      } else { if (state.mode !== 'photo') schedule() }
     },
     dispose() {
       disposed = true; generation += 1; cancel(); releaseSource()
