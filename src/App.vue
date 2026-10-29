@@ -24,13 +24,15 @@ import { useCatalog } from './composables/useCatalog.js'
 import './components/catalog.css'
 import { loadSpeciesCatalog } from './data/catalog-repository.js'
 import { populationPublicationContexts } from './data/population-publication.js'
+import editorialPopulationRelease from './data/population-editorial-release.json'
 import { createSearchIndex, searchSpecies } from './data/catalog-search.js'
 import { validateQuestions } from './data/quiz/model.js'
 
 const { t, language, siteLanguage, setLanguage } = useLocale()
 
-// Empty by default. A trusted host/API may provide an explicitly authorized sidecar.
-const props = defineProps({ populationPublicationRelease: { type: Object, default: null } })
+// Task 28.5 owner decision is a separate fixed release, validated per taxon by the existing gate.
+// A trusted host/API can replace or revoke this context without changing scientific records.
+const props = defineProps({ populationPublicationRelease: { type: Object, default: () => editorialPopulationRelease } })
 const populationContexts = computed(() => populationPublicationContexts(props.populationPublicationRelease))
 const species = ref([])
 const catalog = useCatalog(species)

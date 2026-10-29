@@ -1,0 +1,135 @@
+{
+  "task": "28.5",
+  "errors": [],
+  "sourceHEAD": "b77e2030974778ebd1cfaba7f87a4d75d02a6739",
+  "decisionId": "muras-28-5-owner-editorial",
+  "decisionDate": "2026-10-29",
+  "registrySHA256": "9b949266a1b96b2d39277040898f175fb071f98fb517c873e7855075418df8c1",
+  "registryFingerprint": "13f2c5b5f958dda341502a84e00782a59310745ebfdd146880fae9df56696de8",
+  "selectionManifestFingerprint": "6e7af629fdae99d30b5c2da3ffd72a162babe57787f7db9b2fd5d22f50616b1a",
+  "published": 6,
+  "symbolicVisualizationWithPhotos": 5,
+  "placeholder": 1,
+  "otherTaxaUnknown": 178,
+  "alternativeEstimates": 30,
+  "catalogue": 184,
+  "archive": 2,
+  "regionalLinks": 208,
+  "protectedFiles": 1030,
+  "changedProtectedFiles": [],
+  "freeDiskBytes": 8180547584,
+  "tests": {
+    "command": "npm test -- --test-concurrency=1",
+    "passed": 410,
+    "failed": 0,
+    "skipped": 0,
+    "dataRuns": 2,
+    "productionBuild": "PASS",
+    "localizationKeys": 645,
+    "languages": 4,
+    "postIndexHistoricalAndRealDecisionRegression": {
+      "passed": 12,
+      "failed": 0
+    }
+  },
+  "productionBrowser": {
+    "passed": 10,
+    "realOwnerDecisionId": "muras-28-5-owner-editorial",
+    "productionEntry": true,
+    "published": 6,
+    "symbolicPhotos": 5,
+    "placeholder": 1,
+    "results": [
+      {
+        "id": "irbis",
+        "entry": "production species route",
+        "label": "≈ 300 взрослых особей",
+        "photo": true,
+        "source": "https://publicera.kb.se/slr/article/download/63883/51550",
+        "passed": true
+      },
+      {
+        "id": "manul",
+        "entry": "production species route",
+        "label": "10–12 особей · оценочный диапазон",
+        "photo": true,
+        "source": "https://macrolepidoptera.ru/lnk/282.pdf",
+        "passed": true
+      },
+      {
+        "id": "golden-eagle",
+        "entry": "production species route",
+        "label": "≈ 655 особей",
+        "photo": true,
+        "source": "https://ort.cbd.int/national-reports/nr7/2183E018-5EB6-CF13-E45A-95A7680BA4C5",
+        "passed": true
+      },
+      {
+        "id": "eurasian-lynx",
+        "entry": "production species route",
+        "label": "≈ 1 937 особей",
+        "photo": true,
+        "source": "https://ort.cbd.int/national-reports/nr7/2183E018-5EB6-CF13-E45A-95A7680BA4C5",
+        "passed": true
+      },
+      {
+        "id": "ursus-arctos",
+        "entry": "production species route",
+        "label": "200–250 особей · оценочный диапазон",
+        "photo": true,
+        "source": "https://macrolepidoptera.ru/lnk/282.pdf",
+        "passed": true
+      },
+      {
+        "id": "lonicera-paradoxa",
+        "entry": "production species route",
+        "label": "≈ 12 экземпляров",
+        "photo": false,
+        "source": "https://macrolepidoptera.ru/lnk/282.pdf",
+        "passed": true
+      },
+      {
+        "id": "argali",
+        "unknown": "CSS grayscale only; no fabricated number or Canvas",
+        "passed": true
+      },
+      {
+        "entry": "production catalogue modal",
+        "symbolic": true,
+        "closeReleasesCanvas": true,
+        "passed": true
+      },
+      {
+        "entry": "production language menu",
+        "languages": [
+          "ky",
+          "uz",
+          "ru",
+          "en"
+        ],
+        "passed": true
+      },
+      {
+        "entry": "390px reduced-motion placeholder",
+        "passed": true
+      }
+    ],
+    "errors": []
+  },
+  "gateBrowser": {
+    "passed": 8,
+    "results": [
+      "without a separate editorial decision, real candidate stays unknown, full-colour by default and CSS grayscale on demand; no Canvas or RAF",
+      "all six selected candidates use correct types, field dates, publication years, territory, units, source and pending warning; five photos use existing symbolic Canvas, placeholder does not",
+      "revoking permission removes the number and Canvas and releases RAF; a rapid grant/revoke cannot revive stale data",
+      "NEEDS_EVIDENCE, damaged number, substituted source, wrong accepted name and wrong catalogue taxon ID all block publication",
+      "KY UZ RU EN retain approximate marker, separate 95% CI, field period, publication year and explicit pending review warning",
+      "actual SpeciesModal and SpeciesPage consume the same opt-in editorial context and reset/release resources",
+      "actual App sidecar wiring reaches catalogue modal and species route; revocation hides the estimate; authorized placeholder page shows metadata without Canvas",
+      "390px reduced-motion range stays readable without horizontal overflow or animation RAF"
+    ],
+    "errors": [],
+    "syntheticDecisionsOnly": true,
+    "publications": 0
+  }
+}

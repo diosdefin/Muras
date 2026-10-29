@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "task": "28.5",
+  "baseHEAD": "b77e2030974778ebd1cfaba7f87a4d75d02a6739",
+  "decision": {
+    "schemaVersion": 1,
+    "decisionId": "muras-28-5-owner-editorial",
+    "ownerRole": "project_owner",
+    "populationPublicationStatus": "authorized",
+    "date": "2026-10-29",
+    "reason": "Явное разрешение владельца проекта MURAS в текущем диалоге, задача №28.5, на редакционную публикацию исключительно шести выбранных оценок пакета №28.4. Это не независимое научное одобрение; scientificReviewStatus pending, verified false. Другие оценки и будущие исследования не разрешены.",
+    "packetFingerprint": "6e7af629fdae99d30b5c2da3ffd72a162babe57787f7db9b2fd5d22f50616b1a",
+    "authorizedCandidates": [
+      {
+        "speciesId": "eurasian-lynx",
+        "candidateFingerprint": "f70945304702b162e8b3cd8492f51376ac05c08a3d2662d826f9b88f64386bb9"
+      },
+      {
+        "speciesId": "golden-eagle",
+        "candidateFingerprint": "6d49a9da29482245df44fdef0704013df3b4bc0f4ff00371117ceeb609a7b349"
+      },
+      {
+        "speciesId": "irbis",
+        "candidateFingerprint": "bdead02ea49c8cb05754dc7ba542d7ce0c2c3255a8dd2aa22556f20c3cb4f4d3"
+      },
+      {
+        "speciesId": "lonicera-paradoxa",
+        "candidateFingerprint": "abde5790a0eeeb9e55aa0b0b6ba0ea00eb8e7a62117fc666d5b003b081aabd1c"
+      },
+      {
+        "speciesId": "manul",
+        "candidateFingerprint": "c68e3e18af1f5164f720363ae7b8e820e0b44940d1377b7ca60d889996bfa25b"
+      },
+      {
+        "speciesId": "ursus-arctos",
+        "candidateFingerprint": "6c92cf640d95209dfb0d9c14eb4e232fc118bbfafcdf2fe909e67652126071e6"
+      }
+    ]
+  },
+  "authorizationEvidence": {
+    "provenance": "Explicit project-owner authorization in the human user message for task 28.5 in the current dialog",
+    "receivedOn": "2026-10-29",
+    "timezone": "Asia/Bishkek",
+    "independentScientificApproval": false,
+    "preparationRegistryPath": "data/research/population-publication-candidates.json",
+    "preparationRegistrySHA256": "9b949266a1b96b2d39277040898f175fb071f98fb517c873e7855075418df8c1",
+    "preparationRegistryFingerprint": "13f2c5b5f958dda341502a84e00782a59310745ebfdd146880fae9df56696de8",
+    "manifestFingerprint": "6e7af629fdae99d30b5c2da3ffd72a162babe57787f7db9b2fd5d22f50616b1a"
+  },
+  "records": [
+    {
+      "speciesId": "irbis",
+      "evidenceId": "slr-national-adults",
+      "candidateFingerprint": "bdead02ea49c8cb05754dc7ba542d7ce0c2c3255a8dd2aa22556f20c3cb4f4d3",
+      "evidenceFingerprint": "7651b5bf775c2b1be49d978324b326a61b2283c7c854e79999fbeff065bbd17f",
+      "decisionId": "muras-28-5-owner-editorial",
+      "date": "2026-10-29",
+      "basis": "Явное разрешение владельца проекта MURAS в текущем диалоге, задача №28.5, на редакционную публикацию исключительно шести выбранных оценок пакета №28.4. Это не независимое научное одобрение; scientificReviewStatus pending, verified false. Другие оценки и будущие исследования не разрешены."
+    },
+    {
+      "speciesId": "manul",
+      "evidenceId": "book-sarychat",
+      "candidateFingerprint": "c68e3e18af1f5164f720363ae7b8e820e0b44940d1377b7ca60d889996bfa25b",
+      "evidenceFingerprint": "13405f8ece2891ca995aeffe24e900786b4721b3061e4a672fc884fd6269ec0f",
+      "decisionId": "muras-28-5-owner-editorial",
+      "date": "2026-10-29",
+      "basis": "Явное разрешение владельца проекта MURAS в текущем диалоге, задача №28.5, на редакционную публикацию исключительно шести выбранных оценок пакета №28.4. Это не независимое научное одобрение; scientificReviewStatus pending, verified false. Другие оценки и будущие исследования не разрешены."
+    },
+    {
+      "speciesId": "golden-eagle",
+      "evidenceId": "nr7-row-7-2024",
+      "candidateFingerprint": "6d49a9da29482245df44fdef0704013df3b4bc0f4ff00371117ceeb609a7b349",
+      "evidenceFingerprint": "3ac03381f57856e5b9762182c844aa82e41f5b46b97d7ad3471a8f1ab9953f5d",
+      "decisionId": "muras-28-5-owner-editorial",
+      "date": "2026-10-29",
+      "basis": "Явное разрешение владельца проекта MURAS в текущем диалоге, задача №28.5, на редакционную публикацию исключительно шести выбранных оценок пакета №28.4. Это не независимое научное одобрение; scientificReviewStatus pending, verified false. Другие оценки и будущие исследования не разрешены."
+    },
+    {
+      "speciesId": "eurasian-lynx",
+      "evidenceId": "nr7-row-6-2024",
+      "candidateFingerprint": "f70945304702b162e8b3cd8492f51376ac05c08a3d2662d826f9b88f64386bb9",
+      "evidenceFingerprint": "0e53ff48573bf708eb9539f4c5eb087c795627a26d2e38871dbdb808e341b441",
+      "decisionId": "muras-28-5-owner-editorial",
+      "date": "2026-10-29",
+      "basis": "Явное разрешение владельца проекта MURAS в текущем диалоге, задача №28.5, на редакционную публикацию исключительно шести выбранных оценок пакета №28.4. Это не независимое научное одобрение; scientificReviewStatus pending, verified false. Другие оценки и будущие исследования не разрешены."
+    },
+    {
+      "speciesId": "ursus-arctos",
+      "evidenceId": "book-fergana-bear",
+      "candidateFingerprint": "6c92cf640d95209dfb0d9c14eb4e232fc118bbfafcdf2fe909e67652126071e6",
+      "evidenceFingerprint": "38205d691ba18b02b86bc2eb72812d437970b10d517be328674655e91472bf1a",
+      "decisionId": "muras-28-5-owner-editorial",
+      "date": "2026-10-29",
+      "basis": "Явное разрешение владельца проекта MURAS в текущем диалоге, задача №28.5, на редакционную публикацию исключительно шести выбранных оценок пакета №28.4. Это не независимое научное одобрение; scientificReviewStatus pending, verified false. Другие оценки и будущие исследования не разрешены."
+    },
+    {
+      "speciesId": "lonicera-paradoxa",
+      "evidenceId": "book-lonicera-1973",
+      "candidateFingerprint": "abde5790a0eeeb9e55aa0b0b6ba0ea00eb8e7a62117fc666d5b003b081aabd1c",
+      "evidenceFingerprint": "dfbec4625b0ba84a4296f709d1eeb5324058c1a6492969121bdb348aca77f6f3",
+      "decisionId": "muras-28-5-owner-editorial",
+      "date": "2026-10-29",
+      "basis": "Явное разрешение владельца проекта MURAS в текущем диалоге, задача №28.5, на редакционную публикацию исключительно шести выбранных оценок пакета №28.4. Это не независимое научное одобрение; scientificReviewStatus pending, verified false. Другие оценки и будущие исследования не разрешены."
+    }
+  ],
+  "revocation": "Set the release ownerAuthorization.populationPublicationStatus to revoked, rebuild and redistribute the release. No candidate fingerprints or scientific records change. A trusted live API/host may instead replace the reactive App prop to revoke immediately."
+}
