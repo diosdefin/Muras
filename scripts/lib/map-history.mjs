@@ -15,13 +15,19 @@ export const MAP_APPLICATION_FILES = new Set([
   'src/composables/useImageVisualization.js', 'src/data/visualization/engine.js',
   'data/geography/occurrences.source.json', 'public/data/geography/occurrences.json',
   'scripts/build-map.mjs', 'src/App.vue', 'src/data/geography/model.js',
-  'src/components/map/MapSection.vue', 'src/components/map/RegionPanel.vue',
+  'src/components/map/MapSection.vue', 'src/components/map/RegionMap.vue', 'src/components/map/RegionPanel.vue',
   'src/components/map/RegionalSpecies.vue', 'src/components/map/map.css',
   'src/locales/ky.json', 'src/locales/uz.json', 'src/locales/ru.json', 'src/locales/en.json',
 ])
 export async function historicalMapBytes(root, path, sha256) {
   if (!MAP_APPLICATION_FILES.has(path)) return readFile(resolve(root, path))
-  let bytes = execFileSync('git', ['show', `43ff31186ea54eafdb6eec654c50828fb4c99eb3:${path}`], { cwd: root, windowsHide: true })
+  // The regional-map view was a UI-only edit after map publication.
+  // Its pre-UI bytes are still pinned by the old checksum and are available
+  // at the immutable 28.5 HEAD, not necessarily at the initial map commit.
+  const snapshot = path === 'src/components/map/RegionMap.vue'
+    ? 'ce646a90262e9cf1b0636bdd1963251aa74981b1'
+    : '43ff31186ea54eafdb6eec654c50828fb4c99eb3'
+  let bytes = execFileSync('git', ['show', `${snapshot}:${path}`], { cwd: root, windowsHide: true })
   if (digest(bytes) !== sha256) bytes = Buffer.from(bytes.toString('utf8').replace(/\r?\n/g, '\r\n'))
   assert.equal(digest(bytes), sha256, `original map snapshot: ${path}`)
   return bytes
