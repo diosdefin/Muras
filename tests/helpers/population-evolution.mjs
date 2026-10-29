@@ -1,0 +1,3 @@
+// Task 28.1 explicitly authorizes these UI/lifecycle changes. Historical hashes still verify original Git objects.
+import { POPULATION_PUBLICATION_FILES } from "./population-publication-evolution.mjs"
+export const POPULATION_EVOLVING_FILES = new Set([...POPULATION_PUBLICATION_FILES,"src/components/SpeciesVisualization.vue", "src/components/SpeciesModal.vue", "src/components/SpeciesPage.vue", "src/admin/components/PhotoEditor.vue", "src/composables/useImageVisualization.js", "src/data/visualization/engine.js", "tests/visualization-core.test.mjs", "tests/population-integration.test.mjs", "tests/admin.test.mjs", "src/locales/ky.json", "src/locales/uz.json", "src/locales/ru.json", "src/locales/en.json"])

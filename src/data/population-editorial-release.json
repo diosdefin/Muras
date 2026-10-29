@@ -1,0 +1,432 @@
+{
+  "schemaVersion": 1,
+  "documentType": "owner-authorized-population-release",
+  "preparationRegistryFingerprint": "13f2c5b5f958dda341502a84e00782a59310745ebfdd146880fae9df56696de8",
+  "selectionManifest": {
+    "schemaVersion": 1,
+    "documentType": "population-publication-selection",
+    "researchRegistryFingerprint": "7b482286e9b5c4c67ecf50c1f09ea45b1cbd3fdecf6adc2306673fe037bd96e8",
+    "candidates": [
+      {
+        "speciesId": "eurasian-lynx",
+        "candidateFingerprint": "f70945304702b162e8b3cd8492f51376ac05c08a3d2662d826f9b88f64386bb9"
+      },
+      {
+        "speciesId": "golden-eagle",
+        "candidateFingerprint": "6d49a9da29482245df44fdef0704013df3b4bc0f4ff00371117ceeb609a7b349"
+      },
+      {
+        "speciesId": "irbis",
+        "candidateFingerprint": "bdead02ea49c8cb05754dc7ba542d7ce0c2c3255a8dd2aa22556f20c3cb4f4d3"
+      },
+      {
+        "speciesId": "lonicera-paradoxa",
+        "candidateFingerprint": "abde5790a0eeeb9e55aa0b0b6ba0ea00eb8e7a62117fc666d5b003b081aabd1c"
+      },
+      {
+        "speciesId": "manul",
+        "candidateFingerprint": "c68e3e18af1f5164f720363ae7b8e820e0b44940d1377b7ca60d889996bfa25b"
+      },
+      {
+        "speciesId": "ursus-arctos",
+        "candidateFingerprint": "6c92cf640d95209dfb0d9c14eb4e232fc118bbfafcdf2fe909e67652126071e6"
+      }
+    ],
+    "fingerprint": "6e7af629fdae99d30b5c2da3ffd72a162babe57787f7db9b2fd5d22f50616b1a"
+  },
+  "ownerAuthorization": {
+    "schemaVersion": 1,
+    "decisionId": "muras-28-5-owner-editorial",
+    "ownerRole": "project_owner",
+    "populationPublicationStatus": "authorized",
+    "date": "2026-10-29",
+    "reason": "Явное разрешение владельца проекта MURAS в текущем диалоге, задача №28.5, на редакционную публикацию исключительно шести выбранных оценок пакета №28.4. Это не независимое научное одобрение; scientificReviewStatus pending, verified false. Другие оценки и будущие исследования не разрешены.",
+    "packetFingerprint": "6e7af629fdae99d30b5c2da3ffd72a162babe57787f7db9b2fd5d22f50616b1a",
+    "authorizedCandidates": [
+      {
+        "speciesId": "eurasian-lynx",
+        "candidateFingerprint": "f70945304702b162e8b3cd8492f51376ac05c08a3d2662d826f9b88f64386bb9"
+      },
+      {
+        "speciesId": "golden-eagle",
+        "candidateFingerprint": "6d49a9da29482245df44fdef0704013df3b4bc0f4ff00371117ceeb609a7b349"
+      },
+      {
+        "speciesId": "irbis",
+        "candidateFingerprint": "bdead02ea49c8cb05754dc7ba542d7ce0c2c3255a8dd2aa22556f20c3cb4f4d3"
+      },
+      {
+        "speciesId": "lonicera-paradoxa",
+        "candidateFingerprint": "abde5790a0eeeb9e55aa0b0b6ba0ea00eb8e7a62117fc666d5b003b081aabd1c"
+      },
+      {
+        "speciesId": "manul",
+        "candidateFingerprint": "c68e3e18af1f5164f720363ae7b8e820e0b44940d1377b7ca60d889996bfa25b"
+      },
+      {
+        "speciesId": "ursus-arctos",
+        "candidateFingerprint": "6c92cf640d95209dfb0d9c14eb4e232fc118bbfafcdf2fe909e67652126071e6"
+      }
+    ]
+  },
+  "candidates": [
+    {
+      "schemaVersion": 1,
+      "documentType": "documented-population-candidate",
+      "identity": {
+        "speciesId": "irbis",
+        "acceptedScientificName": "Panthera uncia",
+        "taxonRank": "SPECIES",
+        "taxonIds": []
+      },
+      "sourceReadiness": "READY_SOURCE_DOCUMENTED",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "lastReviewedAt": null,
+      "populationPublicationStatus": "unpublished",
+      "estimate": {
+        "type": "approximate",
+        "value": 300,
+        "min": null,
+        "max": null,
+        "territory": "Кыргызстан",
+        "year": null,
+        "observationPeriod": {
+          "startYear": 2020,
+          "endYear": 2024
+        },
+        "publicationYear": 2026,
+        "method": "estimate",
+        "confidenceInterval": {
+          "min": 246,
+          "max": 366,
+          "level": 0.95
+        },
+        "uncertaintyInterval": null,
+        "unit": "adult individuals",
+        "scope": "KG_NATIONAL"
+      },
+      "source": {
+        "id": "slr-2026",
+        "title": "Kubanychbekov et al. Snow Leopard (Panthera uncia) Status in Kyrgyzstan",
+        "url": "https://publicera.kb.se/slr/article/download/63883/51550",
+        "retrievedUrl": null,
+        "sourcePage": "28 (PDF 3), §2",
+        "sourceName": "Panthera uncia",
+        "sourceConfirmationStatus": "DOCUMENT_CONTENT_PREVIOUSLY_CHECKED",
+        "sha256": null
+      },
+      "documentation": {
+        "evidenceId": "slr-national-adults",
+        "evidenceFingerprint": "7651b5bf775c2b1be49d978324b326a61b2283c7c854e79999fbeff065bbd17f",
+        "researchRegistryFingerprint": "7b482286e9b5c4c67ecf50c1f09ea45b1cbd3fdecf6adc2306673fe037bd96e8",
+        "taxonMatchConfirmed": true,
+        "territoryMatchConfirmed": true,
+        "methodology": "Multisession spatial capture–recapture, 43 sessions, camera traps; countrywide habitat model.",
+        "unitNormalization": null,
+        "limitations": [
+          "Только взрослые особи; возрастной охват других учётов отличается.",
+          "Полевой период 2020–2024 сохранён целиком; современная численность 2026 не установлена.",
+          "Исходный отчёт PASK 2024 не получен.",
+          "Независимая научная проверка MURAS ожидается."
+        ]
+      },
+      "selectionReason": "Национальная модель SCR с явным периодом, возрастной группой и 95% ДИ. Ведомственные учёты с неуточнённым возрастным охватом и региональные модели имеют иной охват; не усреднены и не заменяют эту оценку.",
+      "candidateFingerprint": "bdead02ea49c8cb05754dc7ba542d7ce0c2c3255a8dd2aa22556f20c3cb4f4d3"
+    },
+    {
+      "schemaVersion": 1,
+      "documentType": "documented-population-candidate",
+      "identity": {
+        "speciesId": "manul",
+        "acceptedScientificName": "Otocolobus manul",
+        "taxonRank": "SPECIES",
+        "taxonIds": []
+      },
+      "sourceReadiness": "READY_SOURCE_DOCUMENTED",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "lastReviewedAt": null,
+      "populationPublicationStatus": "unpublished",
+      "estimate": {
+        "type": "range",
+        "value": null,
+        "min": 10,
+        "max": 12,
+        "territory": "Сарычат, Кыргызстан; обследовано 14000 га",
+        "year": null,
+        "observationPeriod": {
+          "startYear": 1977,
+          "endYear": 1979
+        },
+        "publicationYear": 2006,
+        "method": "estimate",
+        "confidenceInterval": null,
+        "uncertaintyInterval": null,
+        "unit": "individuals",
+        "scope": "KG_LOCAL"
+      },
+      "source": {
+        "id": "redbook-2006",
+        "title": "Красная книга Кыргызской Республики, второе издание",
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf",
+        "retrievedUrl": null,
+        "sourcePage": 507,
+        "sourceName": "Otocolobus manul",
+        "sourceConfirmationStatus": "DOCUMENT_CONTENT_PREVIOUSLY_CHECKED",
+        "sha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8"
+      },
+      "documentation": {
+        "evidenceId": "book-sarychat",
+        "evidenceFingerprint": "13405f8ece2891ca995aeffe24e900786b4721b3061e4a672fc884fd6269ec0f",
+        "researchRegistryFingerprint": "7b482286e9b5c4c67ecf50c1f09ea45b1cbd3fdecf6adc2306673fe037bd96e8",
+        "taxonMatchConfirmed": true,
+        "territoryMatchConfirmed": true,
+        "methodology": "Специальные учёты в высокогорных урочищах; подробный протокол не приведён.",
+        "unitNormalization": null,
+        "limitations": [
+          "Сам очерк называет общие сведения о виде случайными, ограниченными и зачастую недостоверными.",
+          "Это локальный исторический учёт Сарычата на 14000 га в 1977–1979; не численность всего Кыргызстана.",
+          "В мае–июне 1998 в тех же местах встреч не было; это не доказательство нулевой популяции или вымирания.",
+          "Независимая научная проверка MURAS ожидается."
+        ]
+      },
+      "selectionReason": "Единственная датированная локальная оценка в готовом наборе. Только исторический участок Сарычата 14000 га, 1977–1979; отсутствие встреч в 1998 не названо вымиранием.",
+      "candidateFingerprint": "c68e3e18af1f5164f720363ae7b8e820e0b44940d1377b7ca60d889996bfa25b"
+    },
+    {
+      "schemaVersion": 1,
+      "documentType": "documented-population-candidate",
+      "identity": {
+        "speciesId": "golden-eagle",
+        "acceptedScientificName": "Aquila chrysaetos",
+        "taxonRank": "SPECIES",
+        "taxonIds": []
+      },
+      "sourceReadiness": "READY_SOURCE_DOCUMENTED",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "lastReviewedAt": null,
+      "populationPublicationStatus": "unpublished",
+      "estimate": {
+        "type": "approximate",
+        "value": 655,
+        "min": null,
+        "max": null,
+        "territory": "Кыргызстан; государственный мониторинг ООПТ и охотничьих угодий",
+        "year": 2024,
+        "observationPeriod": null,
+        "publicationYear": 2026,
+        "method": "estimate",
+        "confidenceInterval": null,
+        "uncertaintyInterval": null,
+        "unit": "individuals",
+        "scope": "KG_MONITORING"
+      },
+      "source": {
+        "id": "nr7-2026",
+        "title": "Kyrgyzstan Seventh National Report, Russian ORT export",
+        "url": "https://ort.cbd.int/national-reports/nr7/2183E018-5EB6-CF13-E45A-95A7680BA4C5",
+        "retrievedUrl": "https://cdn.climatepolicyradar.org/navigator/KGZ/2026/kyrgyzstan-7th-national-report-nr7-2026_3e568ecdddf41a70a877f597e51963d5.pdf",
+        "sourcePage": "49; national monitoring table row 7",
+        "sourceName": "Беркут",
+        "sourceConfirmationStatus": "MIRROR_BYTES_CHECKED_OFFICIAL_REPORT_ANNOUNCEMENT_CORROBORATED",
+        "sha256": "c16d081cbc229657e8e3a76e076750b06684ea3cbdf10a8a7f9b7a3a375016e8"
+      },
+      "documentation": {
+        "evidenceId": "nr7-row-7-2024",
+        "evidenceFingerprint": "3ac03381f57856e5b9762182c844aa82e41f5b46b97d7ad3471a8f1ab9953f5d",
+        "researchRegistryFingerprint": "7b482286e9b5c4c67ecf50c1f09ea45b1cbd3fdecf6adc2306673fe037bd96e8",
+        "taxonMatchConfirmed": true,
+        "territoryMatchConfirmed": true,
+        "methodology": "Ежегодные весенние/зимние учёты. На с.49 прямо сказано: годы таблицы — годы учётных работ; зимний учёт 2024 использован в 2025.",
+        "unitNormalization": null,
+        "limitations": [
+          "Official ORT endpoint could not be retrieved; archived copy is hashed and visually inspected.",
+          "Official MNR announcement corroborates preparation, not byte identity of this export.",
+          "The report mentions approved census methods but does not provide taxon-specific protocols or detection corrections.",
+          "Возрастной охват не уточнён; численность не названа полным точным подсчётом всех особей страны.",
+          "Независимая научная проверка MURAS ожидается."
+        ]
+      },
+      "selectionReason": "Конечная датированная строка единого ряда государственного мониторинга ООПТ и охотугодий 2018–2024. Выбор ограничен этим охватом и протоколом; меньшие значения охотхозяйств с иным охватом не заменены. Это не полный учёт всех птиц страны.",
+      "candidateFingerprint": "6d49a9da29482245df44fdef0704013df3b4bc0f4ff00371117ceeb609a7b349"
+    },
+    {
+      "schemaVersion": 1,
+      "documentType": "documented-population-candidate",
+      "identity": {
+        "speciesId": "eurasian-lynx",
+        "acceptedScientificName": "Lynx lynx",
+        "taxonRank": "SPECIES",
+        "taxonIds": [
+          "gbif:2435240"
+        ]
+      },
+      "sourceReadiness": "READY_SOURCE_DOCUMENTED",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "lastReviewedAt": null,
+      "populationPublicationStatus": "unpublished",
+      "estimate": {
+        "type": "approximate",
+        "value": 1937,
+        "min": null,
+        "max": null,
+        "territory": "Кыргызстан; государственный мониторинг ООПТ и охотничьих угодий",
+        "year": 2024,
+        "observationPeriod": null,
+        "publicationYear": 2026,
+        "method": "estimate",
+        "confidenceInterval": null,
+        "uncertaintyInterval": null,
+        "unit": "individuals",
+        "scope": "KG_MONITORING"
+      },
+      "source": {
+        "id": "nr7-2026",
+        "title": "Kyrgyzstan Seventh National Report, Russian ORT export",
+        "url": "https://ort.cbd.int/national-reports/nr7/2183E018-5EB6-CF13-E45A-95A7680BA4C5",
+        "retrievedUrl": "https://cdn.climatepolicyradar.org/navigator/KGZ/2026/kyrgyzstan-7th-national-report-nr7-2026_3e568ecdddf41a70a877f597e51963d5.pdf",
+        "sourcePage": "49; national monitoring table row 6",
+        "sourceName": "Рысь",
+        "sourceConfirmationStatus": "MIRROR_BYTES_CHECKED_OFFICIAL_REPORT_ANNOUNCEMENT_CORROBORATED",
+        "sha256": "c16d081cbc229657e8e3a76e076750b06684ea3cbdf10a8a7f9b7a3a375016e8"
+      },
+      "documentation": {
+        "evidenceId": "nr7-row-6-2024",
+        "evidenceFingerprint": "0e53ff48573bf708eb9539f4c5eb087c795627a26d2e38871dbdb808e341b441",
+        "researchRegistryFingerprint": "7b482286e9b5c4c67ecf50c1f09ea45b1cbd3fdecf6adc2306673fe037bd96e8",
+        "taxonMatchConfirmed": true,
+        "territoryMatchConfirmed": true,
+        "methodology": "Ежегодные весенние/зимние учёты. На с.49 прямо сказано: годы таблицы — годы учётных работ; зимний учёт 2024 использован в 2025.",
+        "unitNormalization": null,
+        "limitations": [
+          "Official ORT endpoint could not be retrieved; archived copy is hashed and visually inspected.",
+          "Official MNR announcement corroborates preparation, not byte identity of this export.",
+          "The report mentions approved census methods but does not provide taxon-specific protocols or detection corrections.",
+          "Возрастной охват не уточнён; численность не названа полным точным подсчётом всех особей страны.",
+          "Независимая научная проверка MURAS ожидается."
+        ]
+      },
+      "selectionReason": "Конечная датированная строка единого ряда государственного мониторинга ООПТ и охотугодий 2018–2024. Выбор основан на явной полевой дате и охвате, не величине числа; статистика только охотхозяйств не эквивалентна.",
+      "candidateFingerprint": "f70945304702b162e8b3cd8492f51376ac05c08a3d2662d826f9b88f64386bb9"
+    },
+    {
+      "schemaVersion": 1,
+      "documentType": "documented-population-candidate",
+      "identity": {
+        "speciesId": "ursus-arctos",
+        "acceptedScientificName": "Ursus arctos",
+        "taxonRank": "SPECIES",
+        "taxonIds": [
+          "gbif:2433433"
+        ]
+      },
+      "sourceReadiness": "READY_SOURCE_DOCUMENTED",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "lastReviewedAt": null,
+      "populationPublicationStatus": "unpublished",
+      "estimate": {
+        "type": "range",
+        "value": null,
+        "min": 200,
+        "max": 250,
+        "territory": "Восточные склоны Ферганского хребта, Кыргызстан, около 200000 га",
+        "year": 1964,
+        "observationPeriod": null,
+        "publicationYear": 2006,
+        "method": "estimate",
+        "confidenceInterval": null,
+        "uncertaintyInterval": null,
+        "unit": "individuals",
+        "scope": "KG_LOCAL"
+      },
+      "source": {
+        "id": "redbook-2006",
+        "title": "Красная книга Кыргызской Республики, второе издание",
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf",
+        "retrievedUrl": null,
+        "sourcePage": 499,
+        "sourceName": "Ursus arctos",
+        "sourceConfirmationStatus": "DOCUMENT_CONTENT_PREVIOUSLY_CHECKED",
+        "sha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8"
+      },
+      "documentation": {
+        "evidenceId": "book-fergana-bear",
+        "evidenceFingerprint": "38205d691ba18b02b86bc2eb72812d437970b10d517be328674655e91472bf1a",
+        "researchRegistryFingerprint": "7b482286e9b5c4c67ecf50c1f09ea45b1cbd3fdecf6adc2306673fe037bd96e8",
+        "taxonMatchConfirmed": true,
+        "territoryMatchConfirmed": true,
+        "methodology": "Охотобследование; исходный протокол и поправки на обнаруживаемость отсутствуют.",
+        "unitNormalization": null,
+        "limitations": [
+          "Охотобследование 1964; около 200000 га восточных склонов Ферганского хребта.",
+          "Полнота учёта и поправки обнаруживаемости не подтверждены; это приблизительный исторический диапазон.",
+          "Независимая научная проверка MURAS ожидается."
+        ]
+      },
+      "selectionReason": "Датированное охотобследование определённой площади около 200000 га восточных склонов Ферганского хребта в 1964. Историческая локальная оценка; не современная национальная численность.",
+      "candidateFingerprint": "6c92cf640d95209dfb0d9c14eb4e232fc118bbfafcdf2fe909e67652126071e6"
+    },
+    {
+      "schemaVersion": 1,
+      "documentType": "documented-population-candidate",
+      "identity": {
+        "speciesId": "lonicera-paradoxa",
+        "acceptedScientificName": "Lonicera paradoxa",
+        "taxonRank": "SPECIES",
+        "taxonIds": [
+          "gbif:5599068"
+        ]
+      },
+      "sourceReadiness": "READY_SOURCE_DOCUMENTED",
+      "scientificReviewStatus": "pending",
+      "verified": false,
+      "lastReviewedAt": null,
+      "populationPublicationStatus": "unpublished",
+      "estimate": {
+        "type": "approximate",
+        "value": 12,
+        "min": null,
+        "max": null,
+        "territory": "Алайский хребет, Кыргызстан",
+        "year": 1973,
+        "observationPeriod": null,
+        "publicationYear": 2006,
+        "method": "estimate",
+        "confidenceInterval": null,
+        "uncertaintyInterval": null,
+        "unit": "specimens",
+        "scope": "KG_LOCAL"
+      },
+      "source": {
+        "id": "redbook-2006",
+        "title": "Красная книга Кыргызской Республики, второе издание",
+        "url": "https://macrolepidoptera.ru/lnk/282.pdf",
+        "retrievedUrl": null,
+        "sourcePage": 207,
+        "sourceName": "Lonicera paradoxa",
+        "sourceConfirmationStatus": "DOCUMENT_CONTENT_PREVIOUSLY_CHECKED",
+        "sha256": "f517212f7ce12fcf5c30f2cf73edc5a842b3ded15dea232b844fbe7ce2525cf8"
+      },
+      "documentation": {
+        "evidenceId": "book-lonicera-1973",
+        "evidenceFingerprint": "dfbec4625b0ba84a4296f709d1eeb5324058c1a6492969121bdb348aca77f6f3",
+        "researchRegistryFingerprint": "7b482286e9b5c4c67ecf50c1f09ea45b1cbd3fdecf6adc2306673fe037bd96e8",
+        "taxonMatchConfirmed": true,
+        "territoryMatchConfirmed": true,
+        "methodology": null,
+        "unitNormalization": "Source account says экземпляров; research unit individuals retained in original evidence, display unit specimens.",
+        "limitations": [
+          "Только описанная алайская группа; не все очаги распространения.",
+          "В книге число экземпляров снизилось с 22 (1969) до 12 (1973); методика и современная численность не установлены.",
+          "Независимая научная проверка MURAS ожидается."
+        ]
+      },
+      "selectionReason": "Источник явно описывает снижение одной алайской группы с 22 в 1969 до 12 в 1973; выбран конечный результат этого описанного сравнения. Это не общий итог по всем четырём очагам. Единица «экземпляров» сохранена как specimens.",
+      "candidateFingerprint": "abde5790a0eeeb9e55aa0b0b6ba0ea00eb8e7a62117fc666d5b003b081aabd1c"
+    }
+  ]
+}

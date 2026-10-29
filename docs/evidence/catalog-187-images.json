@@ -1,0 +1,216 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-28",
+  "receipts": [
+    {
+      "candidateId": "cuon-alpinus",
+      "documentedSubject": "Cuon alpinus (Pallas, 1811)",
+      "identityBasis": "Точное определение в описании файла Commons и категория Cuon alpinus; оригинал и WebP визуально просмотрены, независимая переидентификация не заявлена.",
+      "originalSha256": "a76fbdbb3170c167a1acf3ec07267860baf281df956f1b254dfeae18a6539616",
+      "originalWidth": 2585,
+      "originalHeight": 3446,
+      "originalBytes": 2896765,
+      "commonsRevision": 1156232029,
+      "metadata": {
+        "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&prop=imageinfo%7Crevisions&titles=File%3ACuon+alpinus+%28Dhole%29.jpg&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids",
+        "httpStatus": 200,
+        "accessedOn": "2026-10-28",
+        "data": {
+          "batchcomplete": "",
+          "query": {
+            "pages": {
+              "10866705": {
+                "pageid": 10866705,
+                "ns": 6,
+                "title": "File:Cuon alpinus (Dhole).jpg",
+                "imagerepository": "local",
+                "imageinfo": [
+                  {
+                    "size": 2896765,
+                    "width": 2585,
+                    "height": 3446,
+                    "url": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Cuon_alpinus_%28Dhole%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+                    "descriptionurl": "https://commons.wikimedia.org/wiki/File:Cuon_alpinus_(Dhole).jpg",
+                    "descriptionshorturl": "https://commons.wikimedia.org/w/index.php?curid=10866705",
+                    "sha1": "487a84e7e6ef874f18c14cade4be49157a06e312",
+                    "extmetadata": {
+                      "DateTime": {
+                        "value": "2010-07-12 05:50:43",
+                        "source": "mediawiki-metadata",
+                        "hidden": ""
+                      },
+                      "ObjectName": {
+                        "value": "Cuon alpinus (Dhole)",
+                        "source": "mediawiki-metadata"
+                      },
+                      "CommonsMetadataExtension": {
+                        "value": 1.2,
+                        "source": "extension",
+                        "hidden": ""
+                      },
+                      "Categories": {
+                        "value": "Taken with Sony DSLR-A700|Self-published work|Information field template with formatting|Photographs by Hans Hillewaert|Files with coordinates missing SDC location of creation (51° N, 1° E)|Mammals in Port Lympne Wild Animal Park|Cuon alpinus in zoos",
+                        "source": "commons-categories",
+                        "hidden": ""
+                      },
+                      "Assessments": {
+                        "value": "",
+                        "source": "commons-categories",
+                        "hidden": ""
+                      },
+                      "GPSLatitude": {
+                        "value": "51.077878",
+                        "source": "commons-desc-page"
+                      },
+                      "GPSLongitude": {
+                        "value": "1.004814",
+                        "source": "commons-desc-page"
+                      },
+                      "GPSMapDatum": {
+                        "value": "WGS-84",
+                        "source": "commons-desc-page",
+                        "hidden": ""
+                      },
+                      "ImageDescription": {
+                        "value": "Dhole at Port Lympne Wild Animal Park, Kent, UK.",
+                        "source": "commons-desc-page"
+                      },
+                      "DateTimeOriginal": {
+                        "value": "2010-07-07",
+                        "source": "commons-desc-page"
+                      },
+                      "Credit": {
+                        "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+                        "source": "commons-desc-page"
+                      },
+                      "Artist": {
+                        "value": "(<a href=\"//commons.wikimedia.org/wiki/User:Biopics\" title=\"User:Biopics\">Hans Hillewaert</a>)",
+                        "source": "commons-desc-page"
+                      },
+                      "Permission": {
+                        "value": "I, the copyright holder of this work, hereby publish it under the following license:",
+                        "source": "commons-desc-page",
+                        "hidden": ""
+                      },
+                      "Attribution": {
+                        "value": "© Hans Hillewaert",
+                        "source": "commons-desc-page",
+                        "hidden": ""
+                      },
+                      "LicenseShortName": {
+                        "value": "CC BY-SA 3.0",
+                        "source": "commons-desc-page",
+                        "hidden": ""
+                      },
+                      "UsageTerms": {
+                        "value": "Creative Commons Attribution-Share Alike 3.0",
+                        "source": "commons-desc-page"
+                      },
+                      "AttributionRequired": {
+                        "value": "true",
+                        "source": "commons-desc-page",
+                        "hidden": ""
+                      },
+                      "LicenseUrl": {
+                        "value": "https://creativecommons.org/licenses/by-sa/3.0",
+                        "source": "commons-desc-page"
+                      },
+                      "Copyrighted": {
+                        "value": "True",
+                        "source": "commons-desc-page",
+                        "hidden": ""
+                      },
+                      "Restrictions": {
+                        "value": "",
+                        "source": "commons-desc-page",
+                        "hidden": ""
+                      },
+                      "License": {
+                        "value": "cc-by-sa-3.0",
+                        "source": "commons-templates",
+                        "hidden": ""
+                      }
+                    }
+                  }
+                ],
+                "revisions": [
+                  {
+                    "revid": 1156232029,
+                    "parentid": 1006856514
+                  }
+                ]
+              }
+            }
+          }
+        }
+      },
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Cuon_alpinus_%28Dhole%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "recipe": "python scripts/process_data.py --optimize-input .generated/catalog-187/cuon-original.jpg --optimize-output assets/images/species/catalog187-cuon-alpinus.webp --max-edge 1800 --quality 82",
+      "image": {
+        "path": "assets/images/species/catalog187-cuon-alpinus.webp",
+        "width": 1350,
+        "height": 1800,
+        "sha256": "e52d745554b52850ff6f4f3e70ae24f430c390ab920e610e6a89ffb000f25b47",
+        "author": "Hans Hillewaert",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Cuon_alpinus_(Dhole).jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "attribution": "© Hans Hillewaert; CC BY-SA 3.0; https://commons.wikimedia.org/wiki/File:Cuon_alpinus_(Dhole).jpg. Производное изображение распространяется под той же лицензией.",
+        "modifications": [
+          "Штатный scripts/process_data.py: уменьшение без кадрирования до 1800 px, WebP quality 82; EXIF/XMP удалены."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ky": null,
+          "uz": null,
+          "ru": "Cuon alpinus в Port Lympne Wild Animal Park, Великобритания, 7 июля 2010 года. Животное в неволе; снимок не подтверждает встречаемость в Кыргызстане.",
+          "en": null
+        }
+      },
+      "visualReview": {
+        "original": true,
+        "webp": true
+      },
+      "derivativeBytes": 186812
+    }
+  ],
+  "placeholders": [
+    {
+      "id": "sorbaria-olgae",
+      "reason": "В этот пакет не включён файл с проверенными точной идентификацией и лицензией; placeholder не означает, что фотографии таксона нигде не существует."
+    },
+    {
+      "id": "dorema-microcarpum",
+      "reason": "В этот пакет не включён файл с проверенными точной идентификацией и лицензией; placeholder не означает, что фотографии таксона нигде не существует."
+    },
+    {
+      "id": "tianschaniella-umbellifera",
+      "reason": "В этот пакет не включён файл с проверенными точной идентификацией и лицензией; placeholder не означает, что фотографии таксона нигде не существует."
+    },
+    {
+      "id": "parnassius-loxias-tashkorensis",
+      "reason": "В этот пакет не включён файл с проверенными точной идентификацией и лицензией; placeholder не означает, что фотографии таксона нигде не существует."
+    },
+    {
+      "id": "parnassius-apollo-merzbacheri",
+      "reason": "В этот пакет не включён файл с проверенными точной идентификацией и лицензией; placeholder не означает, что фотографии таксона нигде не существует."
+    },
+    {
+      "id": "papilio-alexanor-voldemar",
+      "reason": "В этот пакет не включён файл с проверенными точной идентификацией и лицензией; placeholder не означает, что фотографии таксона нигде не существует."
+    },
+    {
+      "id": "megalodontes-kuznetzovi",
+      "reason": "В этот пакет не включён файл с проверенными точной идентификацией и лицензией; placeholder не означает, что фотографии таксона нигде не существует."
+    },
+    {
+      "id": "polochrum-pamirepandum",
+      "reason": "В этот пакет не включён файл с проверенными точной идентификацией и лицензией; placeholder не означает, что фотографии таксона нигде не существует."
+    }
+  ],
+  "totalPhotographs": 1,
+  "totalPlaceholders": 8,
+  "eligiblePhotographs": 1,
+  "eligiblePlaceholders": 5,
+  "oldImagesResearched": false
+}

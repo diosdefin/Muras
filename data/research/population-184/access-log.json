@@ -1,0 +1,54 @@
+{
+  "checkedAt": "2026-10-29",
+  "items": [
+    {
+      "id": "lonicera-2024",
+      "url": "https://smujo.id/biodiv/article/download/16106/7517",
+      "access": "web_full_pdf",
+      "localDownload": "HTTP 403",
+      "pagesReviewed": [
+        1,
+        3,
+        8
+      ]
+    },
+    {
+      "id": "manul-2024",
+      "url": "https://academic.oup.com/mspecies/article/56/1038/seae004/7712840",
+      "access": "blocked_redirect",
+      "claimAdmission": "none"
+    },
+    {
+      "id": "pelican-2020",
+      "url": "https://osme.org/wp-content/uploads/2020/03/Sandgrouse42-1-15.pdf",
+      "access": "web_content_size_limit_14785507_bytes",
+      "claimAdmission": "none"
+    },
+    {
+      "id": "kabar-presentation-2024",
+      "url": "https://kabar.kg/news/na-territorii-kyrgyzstana-obitaiut-285-snezhnykh-barsov/",
+      "access": "not_accessible_via_web_tool",
+      "fallback": "attributed CACIP republication; B only"
+    },
+    {
+      "id": "news-24kg-2024",
+      "url": "https://24.kg/english/315254_285_snow_leopards_live_on_the_territory_of_Kyrgyzstan____/",
+      "access": "search_excerpt_then_HTTP_403",
+      "claimAdmission": "corroborating lead only"
+    },
+    {
+      "id": "knau-2024",
+      "url": "https://knau-bulletin.com/ru/article/download/status-snyezhnogo-barsa-v-kyrgyzstanye",
+      "access": "web_cache_miss",
+      "landingMetadataRead": true,
+      "claimAdmission": "no numeric estimate inferred from abstract"
+    },
+    {
+      "id": "PASK-2024",
+      "access": "cited_report_not_obtained",
+      "knownReference": "PASK Working Group 2024, GSLEP Bishkek",
+      "fallback": "SLR 2026 method and results read; original report required during review"
+    }
+  ],
+  "policy": "No search fragment is scientific approval; no repeated download after the same failure."
+}

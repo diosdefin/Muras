@@ -18,8 +18,8 @@ test('Vue integration measures the visible image frame when the initial Canvas i
     globalThis.window = { devicePixelRatio: 1, requestAnimationFrame: fn => { frames.set(++id, fn); return id }, cancelAnimationFrame: token => frames.delete(token),
       addEventListener() {}, removeEventListener() {}, matchMedia: () => ({ matches: false, addEventListener() {}, removeEventListener() {} }) }
     const renderer = createRenderer({ createElement: tag => ({ tag }), insert() {}, remove() {}, patchProp() {}, setElementText() {}, createText: text => ({ text }), createComment: text => ({ text }), setText() {}, setComment() {}, parentNode: () => null, nextSibling: () => null })
-    app = renderer.createApp({ setup() { api = useImageVisualization(ref(canvas), ref(container), ref({ path: '/test-only.webp', type: 'unknown' })); return () => h('div') } })
-    app.mount({}); images[0].onload(); api.start()
+    app = renderer.createApp({ setup() { api = useImageVisualization(ref(canvas), ref(container), ref({ path: '/test-only.webp', type: 'exact' })); return () => h('div') } })
+    app.mount({}); assert.equal(images.length,0); assert.equal(frames.size,0); api.start(); images[0].onload()
     const callbacks = [...frames.values()]; frames.clear(); callbacks.forEach(fn => fn(0))
     assert.equal(canvas.width, 600); assert.equal(canvas.height, 450); assert.equal(api.state.value.mode, 'animating')
     app.unmount(); app = null

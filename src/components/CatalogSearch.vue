@@ -11,8 +11,7 @@ const input = ref(null), expanded = ref(false), active = ref(-1), composing = re
 const suggestions = computed(() => props.results.slice(0, 6))
 const secondaryName = result => result.matchedName === speciesName(result.species, language.value) ? result.species.scientificName : speciesName(result.species, language.value)
 const secondaryLanguage = result => result.matchedName === speciesName(result.species, language.value) ? 'la' : language.value
-const marqueeWords = ['Издөө', 'Izlash', 'Искать', 'Search']
-const showMarquee = computed(() => !draft.value && !expanded.value)
+const placeholder = computed(() => ({ ky: 'Издөө', uz: 'Izlash', ru: 'Искать', en: 'Search' })[language.value] || 'Издөө')
 const visible = computed(() => expanded.value && Boolean(props.modelValue.trim()))
 const activeId = computed(() => visible.value && active.value >= 0 && suggestions.value[active.value] ? `search-option-${suggestions.value[active.value].species.id}` : undefined)
 watch(() => props.modelValue, value => { draft.value = value; active.value = -1 })
@@ -47,12 +46,7 @@ function leave(event) { if (!event.currentTarget.contains(event.relatedTarget)) 
     <label for="catalog-search">{{ t('ui.m044') }}</label>
     <div class="search-input-row">
       <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 5 5"/></svg>
-      <input id="catalog-search" ref="input" :value="draft" type="text" role="combobox" aria-autocomplete="list" :aria-expanded="visible" aria-controls="catalog-suggestions" :aria-activedescendant="activeId" aria-describedby="catalog-search-hint" autocomplete="off" :spellcheck="false" maxlength="120" :placeholder="''" @input="update" @focus="expanded = true" @keydown="keydown" @compositionstart="composing = true" @compositionend="composing = false; update($event)" />
-      <div v-if="showMarquee" class="search-marquee" aria-hidden="true">
-        <div class="search-marquee-track">
-          <span v-for="copy in 2" :key="copy" class="search-marquee-segment"><span v-for="(word, index) in marqueeWords" :key="`${copy}-${word}`">{{ word }}<span class="search-marquee-separator">{{ index === marqueeWords.length - 1 ? '·' : '·' }}</span></span></span>
-        </div>
-      </div>
+      <input id="catalog-search" ref="input" :value="draft" type="text" role="combobox" aria-autocomplete="list" :aria-expanded="visible" aria-controls="catalog-suggestions" :aria-activedescendant="activeId" aria-describedby="catalog-search-hint" autocomplete="off" :spellcheck="false" maxlength="120" :placeholder="placeholder" @input="update" @focus="expanded = true" @keydown="keydown" @compositionstart="composing = true" @compositionend="composing = false; update($event)" />
       <button v-if="modelValue" type="button" class="search-clear" :aria-label="t('ui.m046')" @click="clear">×</button>
     </div>
     <p id="catalog-search-hint" class="search-hint">{{ t('ui.m047') }}</p>

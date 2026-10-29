@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "documentType": "muras-final-taxonomy-validation",
+  "date": "2026-10-28",
+  "sourceCommit": "1f5d7e951fbf645fbf16e143b1da081b1d81be2d",
+  "commands": [
+    {
+      "command": "npm test",
+      "exitCode": 0,
+      "tests": 326,
+      "passed": 326,
+      "failed": 0
+    },
+    {
+      "command": "npm run data",
+      "exitCode": 0,
+      "catalog": 178,
+      "archive": 2
+    },
+    {
+      "command": "npm run data:validate",
+      "exitCode": 0,
+      "localeKeys": 620,
+      "languages": 4,
+      "catalog": 178,
+      "archive": 2
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "distCatalogCount": 178
+    }
+  ],
+  "logChecksums": {
+    "npm-test": "e5654c1fa0fa6bd77f6c8bed15456e427279fd10e86e2ea4c6e8a375af2e00f0",
+    "npm-data": "9db521f07ffc1ae54dd455ee2197163e48d285df21e8915d21831c693ec675cd",
+    "npm-data-validate": "df4e886fa8a7797cb1780080de2f2334b14c8b8f0e829f1fa823db25d0a1076e",
+    "npm-build": "04b1880b6cf49a6367a067480a9f9e8d4a792310e2eac002ff5c002010420f97"
+  },
+  "researchAudit": {
+    "scopeCount": 22,
+    "prior19Plus3Intersection": [],
+    "counts": {
+      "READY": 9,
+      "NEEDS_EVIDENCE": 13,
+      "DUPLICATE": 0,
+      "EXCLUDED": 0
+    },
+    "readyIdsExact": true,
+    "candidatePairComparisons": 231,
+    "allNationalReferencesAndPreviousBlocksPresent": true,
+    "allSelectedConceptsDistinctFromPublishedNamesAndArchive": true,
+    "specialThreeRemainUnpublishedAndOldManifestUnchanged": true,
+    "allNewDocumentsParse": true,
+    "gbifMatchResponses": 33,
+    "gbifSearchResponses": 5,
+    "allApiHttp200": true,
+    "noAuthorizationOrApprovalCreated": true,
+    "noRuntimeSchemaOrValidatorChange": true
+  },
+  "preservation": {
+    "protectedFiles": 1088,
+    "unchangedFiles": 1088,
+    "changedFiles": [],
+    "protectedImageAssets": 300,
+    "sourceCatalogCount": 178,
+    "publicCatalogCount": 178,
+    "distCatalogCount": 178,
+    "archiveCount": 2
+  },
+  "dist": {
+    "files": 169,
+    "bytes": 34692982
+  },
+  "criticalChecksums": {
+    "data/species.source.json": "088f8f2fc78462a1721e293974b1054dc7a80b215f25bd111be3565318948f60",
+    "public/data/species.json": "1bfe3899a1e83aed43d2bbb5f62dc5d01fb257c153934374c6a3f0862a1d1162",
+    "data/archive/demo-species.generated.json": "9741b9905ccae70935268bfe41daa790f23674417bfc69451a06e35c68eeb5e0",
+    "data/research/catalog-181-review-manifest.json": "0ba2e9ea7922b13b10baed4b37ea48fb61befe766c170120379ccb51c6c1882e",
+    "data/research/catalog-181-content-registry.json": "797b8e530bc1934101a735e93d904ed1eca74728942b9ecb324b62c6249fa125"
+  },
+  "limitations": "Проверки кода и сохранности не заменяют независимую научную экспертизу. Точный максимум каталога не установлен; публикационный допуск не предоставлен."
+}

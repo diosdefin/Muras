@@ -1,4 +1,6 @@
 <script setup>
+import { speciesPath } from '../../data/species-routes.js'
+import { regionLabel } from '../../data/presentation.js'
 import ScientificText from "../ScientificText.vue"
 import SourceLink from '../SourceLink.vue'
 import { useLocale } from '../../composables/useLocale.js'
@@ -8,9 +10,14 @@ import { publicImageUrl, speciesName, speciesNameLanguage, speciesPhoto, PLACEHO
 const { t, language } = useLocale()
 
 const props = defineProps({ entry: { type: Object, required: true } })
-const emit = defineEmits(['open'])
+const emit = defineEmits(['open', 'profile'])
 const failed = ref(false)
 const photo = computed(() => speciesPhoto(props.entry.species))
+function openPage(event) {
+  if (event.button !== 0 || event.ctrlKey || event.metaKey || event.shiftKey || event.altKey) return
+  event.preventDefault()
+  emit('profile', props.entry.species.id)
+}
 </script>
 
 <template>
@@ -21,11 +28,14 @@ const photo = computed(() => speciesPhoto(props.entry.species))
       <div><h4 :lang="speciesNameLanguage(entry.species, language)">{{ speciesName(entry.species, language) }}</h4><p class="scientific-name" lang="la">{{ entry.species.scientificName }}</p></div>
     </div>
     <p v-if="photo" class="map-photo-caption"><ScientificText :value="photo.caption" /> {{ t('ui.m122') }}</p>
+    <p class="map-observation">{{ regionLabel(entry.evidence.regionId, language) }} · {{ t('mapUI.observed') }} <time :datetime="entry.evidence.observationDate || String(entry.evidence.observationYear)">{{ entry.evidence.observationDate || entry.evidence.observationYear }}</time></p>
     <p><ScientificText :value="{ru: entry.evidence.evidence}" /></p>
+    <p class="map-review">{{ t('mapUI.historical') }}</p>
     <p class="map-review">{{ entry.evidence.reviewStatus === 'reviewed' ? t('ui.m123') : t('ui.m124') }}</p>
     <div class="regional-actions">
+      <a class="text-link map-species-page" :href="speciesPath(entry.species.id)" @click="openPage">{{ t('mapUI.page') }} <span aria-hidden="true">→</span></a>
       <button type="button" class="text-link" aria-haspopup="dialog" :aria-label="t('ui.m125', { p0: speciesName(entry.species, language) })" @click="emit('open', entry.species)">{{ t('ui.m126') }} <span aria-hidden="true">↗</span></button>
-      <SourceLink v-for="source in entry.sources" :key="source.id" :source="source" compact>{{ t('ui.m128') }} {{ source.year }}</SourceLink>
+      <SourceLink v-for="source in entry.sources" :key="source.id" :source="source" compact>{{ t('ui.m128') }} {{ source.year ?? t('mapUI.publicationUnknown') }}</SourceLink>
     </div>
     <details v-if="photo" class="map-photo-credit">
       <summary>{{ t('ui.m129') }}</summary>

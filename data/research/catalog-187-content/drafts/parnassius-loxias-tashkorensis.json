@@ -1,0 +1,295 @@
+{
+  "id": "parnassius-loxias-tashkorensis",
+  "scientificName": "Parnassius loxias loxias",
+  "names": {
+    "ru": "Аполлон Локсиас, исторический ташкорооский подвид",
+    "ky": "Локсиас калдырканы",
+    "uz": "Parnassius loxias loxias",
+    "en": "Loxias Apollo Butterfly"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Papilionidae",
+    "genus": "Parnassius"
+  },
+  "group": "arthropods",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "II [VU B1ac(v)+2ab(iii)c(v); D2]",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Parnassius loxias tashkorensis, с.266–267); Статус: II категория (VU B1ac(v)+2ab(iii)c(v); D2) . Изолированный подвид чрезвычайно локально и спорадично",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Крутые сухие эродированные глинисто-каменистые склоны с кормовым растением в среднегорном поясе, на высотах 2500–3100 м по национальному очерку.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "code": "KG",
+      "type": "country",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный очерк указывает изоляцию, малую площадь мест обитания и зависимость от кормового растения; перевыпас, эрозия и горные разработки названы потенциальными воздействиями.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В 2006 году предложены микрорезерваты, мониторинг размножения и регулирование нагрузки на растительность. Искусственное расширение ареала остаётся предложением того источника, не выполненной мерой.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; Parnassius loxias tashkorensis, с.266–267",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=267",
+      "accessedAt": "2026-10-28",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.category",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.overview",
+        "content.shortDescription",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "content.appearance",
+        "content.diet",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.ky",
+        "names.en"
+      ],
+      "notes": "Исторические сведения местного очерка. Названия KY проверены по первоисточнику, краткие описания KY/UZ/EN — редакционные переводы, не цитаты. Современное присутствие и правовой статус не заявлены."
+    },
+    {
+      "id": "huang-2023",
+      "title": "Huang H. 2023. Contributions to the study of butterflies from Xinjiang — 1: the genus Parnassius. Atalanta 54(1/2)",
+      "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+      "url": "https://www.researchgate.net/publication/376002146_Contributions_to_the_study_of_butterflies_from_Xinjiang_-1_the_genus_Parnassius_LatreiLLe_1804_Lepidoptera_Papilionidae_by",
+      "accessedAt": "2026-10-28",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.shortDescription"
+      ],
+      "notes": "с.154–155: apollo merzbacheri; с.166–167: loxias; author_uploaded_full_text. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+    },
+    {
+      "id": "kiev-types-2001",
+      "title": "Писанец Е.М. (ред.). 2001. Каталог типовых экземпляров Зоологического музея ННПМ НАН Украины, вып.1",
+      "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+      "url": "https://museumkiev.org/upload/zoo/Catalog_types_Zoological_museum_2001.pdf",
+      "accessedAt": "2026-10-28",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.shortDescription"
+      ],
+      "notes": "печатная с.71 / PDF-страница 75; primary_museum_catalog. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+    },
+    {
+      "id": "kreuzberg-biblio-2016",
+      "title": "Atalanta 47(1/2):265–277, 2016. Биография и список публикаций А.В.А. Крейцберга",
+      "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+      "url": "https://www.zobodat.at/pdf/Atalanta_47_0265-0277.pdf",
+      "accessedAt": "2026-10-28",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.shortDescription"
+      ],
+      "notes": "Список публикаций, позиции 5–6; indexed_primary_bibliography; direct_web_pdf_error. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+    },
+    {
+      "id": "previous-loxias-original-reference",
+      "title": "Kreuzberg: Parnassius loxias tashkorensis",
+      "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+      "url": "https://repository.naturalis.nl/pub/318175/ZM1993067015.pdf",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.shortDescription"
+      ],
+      "notes": "Reference: Kreuzberg 1983, pp.157–162; not a reviewed original description; web_indexed_bibliographic_reference_only. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "Catalogue of Life: Parnassius loxias subsp. loxias; exact SUBSPECIES",
+      "publisher": "GBIF / Catalogue of Life",
+      "url": "https://api.gbif.org/v1/species/307395113",
+      "accessedAt": "2026-10-28",
+      "language": "en",
+      "taxonId": "gbif:307395113",
+      "supports": [
+        "scientificName",
+        "names.uz",
+        "content.overview",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "notes": "Реальная принятая запись указанного dataset. EXACT — локальная строгая проверка canonicalName/rank, не вымышленный API match. nubKey/parentKey не подставлены. Issues: BACKBONE_MATCH_NONE"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Историческая ташкорооская форма из книги 2006 года рассматривается как Parnassius loxias loxias. Подвидовой охват сохранён; современная численность неизвестна.",
+        "ky": "2006-жылкы китептеги тарыхый ташкороос формасы Parnassius loxias loxias деп каралат. Түрчөнүн так чеги сакталган; азыркы саны белгисиз.",
+        "uz": "2006-yilgi kitobdagi tarixiy tashkorensis shakli Parnassius loxias loxias sifatida talqin qilinadi. Kenja tur doirasi saqlangan; hozirgi soni nomaʼlum.",
+        "en": "The historical tashkorensis account of 2006 is interpreted as Parnassius loxias loxias. Subspecies scope is retained; current abundance is unknown."
+      },
+      "sourceIds": [
+        "national-book",
+        "huang-2023"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный очерк 2006 года посвящён ташкорооскому аполлону, названному Parnassius loxias tashkorensis Kreuzberg, 1984. В этой карточке использовано решение №25.8: современная обработка Huang 2023 относит tashkorensis к номинативному подвиду Parnassius loxias loxias. Поэтому сохранён именно подвидовой ранг; родительский вид не подставляется вместо местной единицы охраны. Музейный каталог Киева независимо документирует паратип из Уч-Чат хребта Каинды.\n\nВ описании местной формы преобладает белая окраска крыльев, на передних крыльях имеются тёмные поперечные элементы, на задних — небольшие красные пятна в тонком чёрном ободке. По внешнему краю проходит полупрозрачная кайма. Длина переднего крыла указана как 33–35 мм; это характеристика исторического материала, не размер всей современной популяции. Крутые сухие эродированные глинисто-каменистые склоны с кормовым растением в среднегорном поясе, на высотах 2500–3100 м по национальному очерку. В книге личинки связаны с хохлаткой Краснова Corydalis krasnovi. Они активны ночью и прячутся днём под камнями; взрослые питаются нектаром. Изолированность участков и тесная связь с кормовым растением ограничивают расселение местной формы.\n\nНациональный источник называет листья Corydalis krasnovi кормом гусениц; для взрослых приводит посещение цветков дикого лука и сложноцветных. Эти наблюдения не обобщаются на все подвиды Parnassius loxias. По книге развивается одно поколение в год. Гусеница первого возраста зимует внутри яйцевой оболочки; самки откладывают яйца на камни рядом с кормовыми растениями. Исторически лёт отмечали с середины июня до середины августа.\n\nИсторические местонахождения ташкорооской формы указаны в бассейне левых притоков Сары-Джаза, у западных оконечностей Каинды-Катта и Иныльчек-Тоо. Современная синонимия с номинативным подвидом не превращает все его зарубежные места в национальные. Новое обследование этих популяций не заявлено.\n\nНациональный очерк указывает изоляцию, малую площадь мест обитания и зависимость от кормового растения; перевыпас, эрозия и горные разработки названы потенциальными воздействиями. В 2006 году предложены микрорезерваты, мониторинг размножения и регулирование нагрузки на растительность. Искусственное расширение ареала остаётся предложением того источника, не выполненной мерой.\n\nНациональная категория относится к местной исторической единице охраны, описанной в 2006 году. Она не является глобальной оценкой всего принятого таксона, современной категорией IUCN или проверенным правовым статусом 2026 года. Современная национальная численность остаётся неизвестной; независимая научная проверка ожидается.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "huang-2023",
+        "kiev-types-2001",
+        "kreuzberg-biblio-2016",
+        "previous-loxias-original-reference",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В описании местной формы преобладает белая окраска крыльев, на передних крыльях имеются тёмные поперечные элементы, на задних — небольшие красные пятна в тонком чёрном ободке. По внешнему краю проходит полупрозрачная кайма. Длина переднего крыла указана как 33–35 мм; это характеристика исторического материала, не размер всей современной популяции.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В книге личинки связаны с хохлаткой Краснова Corydalis krasnovi. Они активны ночью и прячутся днём под камнями; взрослые питаются нектаром. Изолированность участков и тесная связь с кормовым растением ограничивают расселение местной формы.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный источник называет листья Corydalis krasnovi кормом гусениц; для взрослых приводит посещение цветков дикого лука и сложноцветных. Эти наблюдения не обобщаются на все подвиды Parnassius loxias.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге развивается одно поколение в год. Гусеница первого возраста зимует внутри яйцевой оболочки; самки откладывают яйца на камни рядом с кормовыми растениями. Исторически лёт отмечали с середины июня до середины августа.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические местонахождения ташкорооской формы указаны в бассейне левых притоков Сары-Джаза, у западных оконечностей Каинды-Катта и Иныльчек-Тоо. Современная синонимия с номинативным подвидом не превращает все его зарубежные места в национальные. Новое обследование этих популяций не заявлено.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

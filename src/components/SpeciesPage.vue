@@ -2,15 +2,14 @@
 import { computed, toRef } from 'vue'
 import { provideContentLanguage, siteLanguage, useLocale } from '../composables/useLocale.js'
 import { groupLabel, nationalStatus, regionNames, speciesName, speciesNameLanguage, speciesPhoto, statusDetails } from '../data/presentation.js'
-import { populationPresentation } from '../data/population.js'
 import ScientificText from './ScientificText.vue'
 import SpeciesVisualization from './SpeciesVisualization.vue'
-import PopulationInfo from './PopulationInfo.vue'
 import LessonReferences from './lesson/LessonReferences.vue'
 import SourceLink from './SourceLink.vue'
 import { contentParagraphs } from '../data/species-content.js'
 
 const props = defineProps({
+  populationPublication: { type: Object, default: null },
   species: { type: Object, default: null },
   loading: { type: Boolean, default: false },
   error: { type: String, default: '' },
@@ -24,7 +23,6 @@ const name = computed(() => props.species ? speciesName(props.species, language.
 const photo = computed(() => props.species ? speciesPhoto(props.species) : null)
 const status = computed(() => props.species ? statusDetails(props.species, language.value) : null)
 const locations = computed(() => props.species ? regionNames(props.species, language.value) : [])
-const population = computed(() => props.species ? populationPresentation(props.species.population, props.species.sources) : { type: 'unknown' })
 </script>
 
 <template>
@@ -44,8 +42,7 @@ const population = computed(() => props.species ? populationPresentation(props.s
       </header>
       <div class="profile-layout">
         <aside class="profile-sidebar" :aria-label="t('speciesProfile.visualAndPopulation')">
-          <SpeciesVisualization :photo="photo" :name="name" :population-type="population.type" :species-id="species.id" />
-          <PopulationInfo :population="species.population" :sources="species.sources" />
+          <SpeciesVisualization :photo="photo" :name="name" :population="species.population" :sources="species.sources" :species-id="species.id" :scientific-name="species.scientificName" :population-publication="populationPublication" :taxon-ids="species.sources.filter(source => source.taxonId).map(source => source.taxonId)" />
           <details v-if="photo" class="profile-credits">
             <summary>{{ t('ui.m240') }}</summary>
             <p><a :href="photo.originalPage" target="_blank" rel="noopener noreferrer">{{ t('ui.m082') }} {{ photo.author }}</a> · <a :href="photo.licenseUrl" target="_blank" rel="noopener noreferrer">{{ photo.license }}</a></p>

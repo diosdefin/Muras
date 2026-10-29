@@ -1,3 +1,4 @@
+import { historicalPipeline } from './helpers/historical-pipeline.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
@@ -144,8 +145,8 @@ test('all 16 new cards, modals and species pages render credits, placeholders an
 
 test('the same owner decision repeats as a read-only dry-run with zero additions and all 16 unchanged', async () => {
   const originalSource = digest(await bytes('data/species.source.json')), originalRegistry = fingerprint(registry)
-  const result = await runPipeline(PROJECT_ROOT, ['provisional', '--registry', manifest.registry, '--manifest', manifestPath,
-    '--mode', 'dry-run', '--owner-role', 'project_owner', '--decision-id', decision.decisionId, '--date', '2026-10-21', '--reason', decision.records[0].reason])
+  const result = await historicalPipeline(source, root => runPipeline(root, ['provisional', '--registry', manifest.registry, '--manifest', manifestPath,
+    '--mode', 'dry-run', '--owner-role', 'project_owner', '--decision-id', decision.decisionId, '--date', '2026-10-21', '--reason', decision.records[0].reason]))
   assert.deepEqual(result.counts, { processed: 16, added: 0, unchanged: 16, rejected: 0 })
   assert.equal(result.applied, false); assert.equal(result.scientificApproval, null)
   assert.equal(digest(await bytes('data/species.source.json')), originalSource)

@@ -1,0 +1,41 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Documented population — TEST ONLY</title>
+<style>body{font-family:sans-serif;margin:12px}#controls{display:flex;flex-wrap:wrap;gap:8px}button{min-height:44px}#subject{max-width:600px;margin:20px auto}h1{overflow-wrap:anywhere}</style>
+<h1>TEST ONLY — SYNTHETIC EDITORIAL PERMISSION. NO OWNER AUTHORIZATION.</h1><div id="app"></div>
+<script type="module">
+import {createApp,computed,h,ref} from 'vue'
+import Visualization from '/src/components/SpeciesVisualization.vue'
+import Modal from '/src/components/SpeciesModal.vue'
+import Page from '/src/components/SpeciesPage.vue'
+import App from '/src/App.vue'
+import {siteLanguage} from '/src/composables/useLocale.js'
+import {syntheticOwnerDecision} from '/tests/helpers/population-publication-fixtures.mjs'
+import '/src/style.css'
+const packet=await(await fetch('/data/research/population-publication-candidates.json')).json()
+const catalogue=await(await fetch('/data/species.json')).json()
+const selected=ref('irbis'),granted=ref(false),failure=ref(''),view=ref('visualization'),shown=ref(true)
+siteLanguage.value='ru'
+const species=computed(()=>catalogue.find(s=>s.id===selected.value))
+const context=computed(()=>{
+ const candidate=structuredClone(packet.candidates.find(c=>c.identity.speciesId===selected.value))
+ if(failure.value==='needs')candidate.sourceReadiness='NEEDS_EVIDENCE'
+ if(failure.value==='corrupt')candidate.estimate.value=(candidate.estimate.value||0)+1
+ if(failure.value==='source')candidate.source.url='https://example.org/test-substitution'
+ const decision=granted.value?syntheticOwnerDecision(packet.selectionManifest):null
+ return {candidate,manifest:structuredClone(packet.selectionManifest),decision}
+})
+const release=computed(()=>({...packet,ownerAuthorization:granted.value?syntheticOwnerDecision(packet.selectionManifest):null}))
+const taxonIds=computed(()=>failure.value==='taxonId'?['gbif:1']:species.value.sources.filter(s=>s.taxonId).map(s=>s.taxonId))
+const name=computed(()=>failure.value==='identity'?'Testus mismatch':species.value.scientificName)
+window.publicationFixture={packet,selected,granted,failure,view,shown,siteLanguage}
+createApp({setup(){return()=>h('div',[
+ h('div',{id:'controls'},[
+ ...packet.candidates.map(c=>h('button',{'data-species':c.identity.speciesId,onClick:()=>{selected.value=c.identity.speciesId;failure.value='';shown.value=true}},c.identity.speciesId)),
+ h('button',{id:'grant-test',onClick:()=>granted.value=true},'Synthetic permission'),h('button',{id:'revoke-test',onClick:()=>granted.value=false},'Revoke'),
+ ...['','needs','corrupt','source','identity','taxonId'].map(key=>h('button',{'data-failure':key,onClick:()=>failure.value=key},key||'Valid')),
+ ...['visualization','modal','page','app'].map(key=>h('button',{'data-view':key,onClick:()=>{view.value=key;shown.value=true}},key)),
+ ...['ky','uz','ru','en'].map(key=>h('button',{'data-language':key,onClick:()=>siteLanguage.value=key},key))]),
+ h('div',{id:'subject'},shown.value?[
+ view.value==='app'?h(App,{populationPublicationRelease:release.value}):view.value==='visualization'?h(Visualization,{photo:species.value.images[0]||null,name:species.value.scientificName,population:species.value.population,sources:species.value.sources,speciesId:species.value.id,scientificName:name.value,taxonIds:taxonIds.value,populationPublication:context.value}):view.value==='modal'?h(Modal,{species:species.value,populationPublication:context.value,onClose:()=>shown.value=false}):h(Page,{species:species.value,populationPublication:context.value})
+ ]:[])
+])}}).mount('#app')
+</script></html>

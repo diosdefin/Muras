@@ -218,7 +218,7 @@ test('all editor panels render real Vue templates with imported fields and image
    const {default:Component}=await vite.ssrLoadModule(`/src/admin/components/${name}.vue`)
    const html=await renderToString(createSSRApp(Component,{species,speciesIndex:0,published,assets:[],session:createImageSession(),revision:0,ask:async()=>false}))
    assert.ok(html.includes('<input'));assert.ok(!html.includes('admin.'))
-   if(name==='PhotoEditor')assert.ok(html.includes('/images/approved/irbis-1.webp')&&html.includes('<canvas')&&html.includes('Horizontal'))
+   if(name==='PhotoEditor')assert.ok(html.includes('/images/approved/irbis-1.webp')&&!html.includes('<canvas')&&html.includes('visualization-button')&&html.includes('data-mode="photo"')&&html.includes('Horizontal'))
    if(name==='SourcesEditor')assert.ok(html.includes('redbook-2006')&&html.includes('https://macrolepidoptera.ru'))
   }
  }finally{await vite.close()}
