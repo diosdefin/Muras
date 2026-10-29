@@ -23,11 +23,15 @@ import { prioritizeIllustratedResults } from './data/catalog-pagination.js'
 import { useCatalog } from './composables/useCatalog.js'
 import './components/catalog.css'
 import { loadSpeciesCatalog } from './data/catalog-repository.js'
+import { populationPublicationContexts } from './data/population-publication.js'
 import { createSearchIndex, searchSpecies } from './data/catalog-search.js'
 import { validateQuestions } from './data/quiz/model.js'
 
 const { t, language, siteLanguage, setLanguage } = useLocale()
 
+// Empty by default. A trusted host/API may provide an explicitly authorized sidecar.
+const props = defineProps({ populationPublicationRelease: { type: Object, default: null } })
+const populationContexts = computed(() => populationPublicationContexts(props.populationPublicationRelease))
 const species = ref([])
 const catalog = useCatalog(species)
 // Header search sees the whole catalogue even when page filters are active.
@@ -380,7 +384,7 @@ onUnmounted(() => {
       @catalog="showView('catalog')" @study="studySpecies" @lesson="showView('lesson')" />
     <LessonView v-if="mountedViews.has('lesson')" ref="lessonView" v-show="activeView === 'lesson'" :species="species" :active="activeView === 'lesson'" :loading="isLoading" :error="errorMessage"
       @catalog="showView('catalog')" @quiz="openQuizFromLesson" />
-    <SpeciesPage v-if="activeView === 'species'" :species="profileSpecies" :loading="isLoading" :error="errorMessage" :content-language="contentLanguage" @catalog="showView('catalog')" @support="openSupport" />
+    <SpeciesPage v-if="activeView === 'species'" :species="profileSpecies" :population-publication="populationContexts.get(profileSpecies?.id) || null" :loading="isLoading" :error="errorMessage" :content-language="contentLanguage" @catalog="showView('catalog')" @support="openSupport" />
     <SupportView v-if="mountedViews.has('support')" v-show="activeView === 'support'" :species="species" :species-id="supportSpeciesId" :loading="isLoading" :error="errorMessage"
       @select="supportSpeciesId = $event" @study="studySpecies" @catalog="showView('catalog')" />
   </main>
@@ -390,5 +394,5 @@ onUnmounted(() => {
       <p class="footer-note">Полотова А.</p>
     </div>
   </footer>
-  <SpeciesModal v-if="selectedSpecies" :species="selectedSpecies" :content-language="contentLanguage" @close="closeSpecies" @support="openSupport" @details="openSpeciesPage" />
+  <SpeciesModal v-if="selectedSpecies" :species="selectedSpecies" :population-publication="populationContexts.get(selectedSpecies.id) || null" :content-language="contentLanguage" @close="closeSpecies" @support="openSupport" @details="openSpeciesPage" />
 </template>

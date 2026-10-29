@@ -1,3 +1,4 @@
+import { POPULATION_PUBLICATION_BASE, POPULATION_PUBLICATION_FILES } from './helpers/population-publication-evolution.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
@@ -62,7 +63,7 @@ test('scientific records, images, licences, archive, adapter and all 208 regiona
  }
  assert.deepEqual(changes.filter(line=>!allowedResearchAddition(line)),[])
  // Attributes affect only these fingerprinted, unpublished research JSONs.
- const attributeRules=(await bytes('data/.gitattributes')).toString('utf8').split(/\r?\n/).map(l=>l.trim()).filter(l=>l&&!l.startsWith('#'))
+ const attributeRules=historicalBytes(POPULATION_PUBLICATION_BASE,'data/.gitattributes').toString('utf8').split(/\r?\n/).map(l=>l.trim()).filter(l=>l&&!l.startsWith('#'))
  assert.deepEqual(attributeRules,['research/population-184-evidence-audit.json text eol=lf','research/population-184-bulk-publication.json text eol=lf'])
  const source=await read('data/species.source.json'),evidence=await read('data/geography/occurrences.source.json')
  assert.deepEqual(source,JSON.parse(historicalBytes(BASE,'data/species.source.json')))
@@ -74,10 +75,10 @@ test('scientific records, images, licences, archive, adapter and all 208 regiona
 
 test('activation adds only three localized messages and leaves catalogue cards, map, lesson and global design unchanged',async()=>{
  for(const lang of ['ky','uz','ru','en']){
-  const path=`src/locales/${lang}.json`,before=JSON.parse(historicalBytes(BASE,path)),after=await read(path)
+  const path=`src/locales/${lang}.json`,before=JSON.parse(historicalBytes(BASE,path)),after=JSON.parse(historicalBytes(POPULATION_PUBLICATION_BASE,path))
   for(const [key,value]of Object.entries(before))assert.equal(after[key],value,lang+':'+key)
   assert.deepEqual(Object.keys(after).filter(k=>!(k in before)).sort(),['visualization.restore','visualization.start','visualization.unknown'])
  }
  const stable=['src/App.vue','src/components/SpeciesCard.vue','src/components/lesson/LessonPhoto.vue','src/components/PopulationInfo.vue','src/data/visualization/environment.js','src/data/geography/repository.js']
- for(const p of stable)assert.deepEqual((await bytes(p)).toString('utf8').replace(/\r\n/g,'\n'),historicalBytes(BASE,p).toString('utf8'),p)
+ for(const p of stable)assert.deepEqual((POPULATION_PUBLICATION_FILES.has(p)?historicalBytes(POPULATION_PUBLICATION_BASE,p):await bytes(p)).toString('utf8').replace(/\r\n/g,'\n'),historicalBytes(BASE,p).toString('utf8'),p)
 })

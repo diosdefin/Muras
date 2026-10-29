@@ -3,7 +3,7 @@ import { useLocale } from '../composables/useLocale.js'
 import { computed, ref, watch } from 'vue'
 import { PLACEHOLDER, publicImageUrl } from '../data/presentation.js'
 import { compositionStyle, imageComposition } from '../data/image-composition.js'
-import { populationPresentation } from '../data/population.js'
+import { usePopulationPresentation } from '../composables/usePopulationPresentation.js'
 import { useImageVisualization } from '../composables/useImageVisualization.js'
 import { ANIMATION_DURATION } from '../data/visualization/engine.js'
 import PopulationInfo from './PopulationInfo.vue'
@@ -11,13 +11,13 @@ import PopulationInfo from './PopulationInfo.vue'
 const { t, language, uiMessage } = useLocale()
 const props = defineProps({ photo: { type: Object, default: null }, name: { type: String, required: true },
   population: { type: Object, default: null }, sources: { type: Array, default: () => [] },
-  speciesId: { type: String, default: '' }, previewUrl: { type: String, default: null } })
+  populationPublication: { type: Object, default: null }, scientificName: { type: String, default: '' }, taxonIds: { type: Array, default: () => [] }, speciesId: { type: String, default: '' }, previewUrl: { type: String, default: null } })
 const canvas = ref(null), container = ref(null), failed = ref(false), active = ref(false)
 // The same validated adapter serves local JSON and future REST records; a type string is not approval.
-const presentation = computed(() => populationPresentation(props.population, props.sources, language.value))
+const presentation = usePopulationPresentation(props, language)
 const known = computed(() => presentation.value.type !== 'unknown')
 const input = computed(() => ({ path: props.previewUrl || (props.photo ? publicImageUrl(props.photo.path) : null),
-  composition: imageComposition(props.photo), type: presentation.value.type, id: props.speciesId }))
+  composition: imageComposition(props.photo), type: presentation.value.type, id: props.speciesId, estimateKey: presentation.value.candidateFingerprint || '' }))
 const { state, start, restore } = useImageVisualization(canvas, container, input)
 const canvasVisible = computed(() => active.value && known.value && state.value.mode !== 'photo' && !state.value.error)
 function reset() { active.value = false; restore() }
@@ -29,7 +29,7 @@ function toggle() {
 }
 function imageFailed() { failed.value = true; reset() }
 watch(input, (value, previous) => {
-  if (value.path !== previous?.path || value.id !== previous?.id || value.type !== previous?.type) { failed.value = false; reset() }
+  if (value.path !== previous?.path || value.id !== previous?.id || value.type !== previous?.type || value.estimateKey !== previous?.estimateKey) { failed.value = false; reset() }
 })
 watch(() => state.value.error, value => { if (value) active.value = false })
 </script>
@@ -49,10 +49,10 @@ watch(() => state.value.error, value => { if (value) active.value = false })
     <button class="visualization-button" type="button" :disabled="!photo || failed" :aria-pressed="active" @click="toggle">
       {{ active ? t('visualization.restore') : t('visualization.start') }} <span aria-hidden="true">{{ active ? '↗' : '↘' }}</span>
     </button>
-    <div v-if="active" class="visualization-explanation" aria-live="polite">
+    <div v-if="active || (!photo && known && presentation.publicationMode === 'source-documented')" class="visualization-explanation" aria-live="polite">
       <template v-if="known">
-        <p class="media-note">{{ t('ui.m269') }}</p>
-        <PopulationInfo :population="population" :sources="sources" />
+        <p v-if="active" class="media-note">{{ t('ui.m269') }}</p>
+        <PopulationInfo :population="population" :sources="sources" :population-publication="populationPublication" :species-id="speciesId" :scientific-name="scientificName" :taxon-ids="taxonIds" />
       </template>
       <p v-else class="media-note visualization-unknown-label">{{ t('visualization.unknown') }}</p>
     </div>

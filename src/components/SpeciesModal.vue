@@ -10,7 +10,7 @@ import SpeciesVisualization from './SpeciesVisualization.vue'
 import LessonReferences from './lesson/LessonReferences.vue'
 import { overviewPreview } from '../data/species-content.js'
 
-const props = defineProps({ species: { type: Object, required: true }, contentLanguage: { type: String, default: null } })
+const props = defineProps({ populationPublication: { type: Object, default: null }, species: { type: Object, required: true }, contentLanguage: { type: String, default: null } })
 const effectiveLanguage = computed(() => props.contentLanguage || siteLanguage.value)
 const { t, language } = useLocale(effectiveLanguage)
 provideContentLanguage(toRef(props, 'contentLanguage'))
@@ -68,7 +68,7 @@ function closeFromBackdrop(event) {
     <div class="modal-scroll">
       <div class="modal-grid">
         <section class="modal-media" :aria-label="t('ui.m238')">
-          <SpeciesVisualization :photo="photo" :name="currentName" :population="species.population" :sources="species.sources" :species-id="species.id" />
+          <SpeciesVisualization :photo="photo" :name="currentName" :population="species.population" :sources="species.sources" :species-id="species.id" :scientific-name="species.scientificName" :population-publication="populationPublication" :taxon-ids="species.sources.filter(source => source.taxonId).map(source => source.taxonId)" />
           <details v-if="photo" class="modal-disclosure photo-details">
             <summary>{{ t('ui.m240') }}</summary>
             <div class="photo-credit">

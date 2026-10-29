@@ -9,6 +9,7 @@ import SourceLink from './SourceLink.vue'
 import { contentParagraphs } from '../data/species-content.js'
 
 const props = defineProps({
+  populationPublication: { type: Object, default: null },
   species: { type: Object, default: null },
   loading: { type: Boolean, default: false },
   error: { type: String, default: '' },
@@ -41,7 +42,7 @@ const locations = computed(() => props.species ? regionNames(props.species, lang
       </header>
       <div class="profile-layout">
         <aside class="profile-sidebar" :aria-label="t('speciesProfile.visualAndPopulation')">
-          <SpeciesVisualization :photo="photo" :name="name" :population="species.population" :sources="species.sources" :species-id="species.id" />
+          <SpeciesVisualization :photo="photo" :name="name" :population="species.population" :sources="species.sources" :species-id="species.id" :scientific-name="species.scientificName" :population-publication="populationPublication" :taxon-ids="species.sources.filter(source => source.taxonId).map(source => source.taxonId)" />
           <details v-if="photo" class="profile-credits">
             <summary>{{ t('ui.m240') }}</summary>
             <p><a :href="photo.originalPage" target="_blank" rel="noopener noreferrer">{{ t('ui.m082') }} {{ photo.author }}</a> · <a :href="photo.licenseUrl" target="_blank" rel="noopener noreferrer">{{ photo.license }}</a></p>

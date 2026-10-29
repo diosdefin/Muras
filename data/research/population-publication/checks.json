@@ -1,0 +1,82 @@
+{
+  "task": "28.4",
+  "sourceCommit": "c043497581bb3a5722830a22a2177b97a4594a1e",
+  "errors": [],
+  "readOnly": true,
+  "counts": {
+    "reviewedTaxa": 8,
+    "reviewedEstimates": 36,
+    "eligibleTaxa": 6,
+    "eligibleWithImages": 5,
+    "excludedTaxa": 2,
+    "alternativeEstimates": 30,
+    "published": 0
+  },
+  "publicationPermittedNow": 0,
+  "deniedWithoutOwner": 6,
+  "protectedFileCount": 1016,
+  "changedProtectedFiles": [],
+  "sourceCatalogueSHA256": "22cab3d3dbad13cb44343646081fbcf9880d9fe244956e694314e808e1593935",
+  "publicCatalogueSHA256": "8c87e8254851ad70ecafd256f6f8138a65d8181660b03abe20121233655ea532",
+  "priorRegistrySHA256": "07c75b54d5c769050d0f65c2820cbf023f18df19c83042563db3e31abadfc86b",
+  "candidateRegistrySHA256": "9b949266a1b96b2d39277040898f175fb071f98fb517c873e7855075418df8c1",
+  "candidateRegistryFingerprint": "13f2c5b5f958dda341502a84e00782a59310745ebfdd146880fae9df56696de8",
+  "selectionManifestFingerprint": "6e7af629fdae99d30b5c2da3ffd72a162babe57787f7db9b2fd5d22f50616b1a",
+  "freeDiskBytes": 10487410688,
+  "verification": {
+    "tests": {
+      "passed": 402,
+      "failed": 0,
+      "newTests": 21,
+      "postPreparationCandidateTests": 21
+    },
+    "data": "PASS:184/2/208",
+    "data:validate": "PASS:645 keys x 4; generated data up to date",
+    "build": "PASS:107 modules; production build and admin-entry",
+    "candidateBrowser": {
+      "passed": 8,
+      "results": [
+        "without a separate editorial decision, real candidate stays unknown, full-colour by default and CSS grayscale on demand; no Canvas or RAF",
+        "all six selected candidates use correct types, field dates, publication years, territory, units, source and pending warning; five photos use existing symbolic Canvas, placeholder does not",
+        "revoking permission removes the number and Canvas and releases RAF; a rapid grant/revoke cannot revive stale data",
+        "NEEDS_EVIDENCE, damaged number, substituted source, wrong accepted name and wrong catalogue taxon ID all block publication",
+        "KY UZ RU EN retain approximate marker, separate 95% CI, field period, publication year and explicit pending review warning",
+        "actual SpeciesModal and SpeciesPage consume the same opt-in editorial context and reset/release resources",
+        "actual App sidecar wiring reaches catalogue modal and species route; revocation hides the estimate; authorized placeholder page shows metadata without Canvas",
+        "390px reduced-motion range stays readable without horizontal overflow or animation RAF"
+      ],
+      "errors": [],
+      "syntheticDecisionsOnly": true,
+      "publications": 0
+    },
+    "legacyBrowser": {
+      "passed": 10,
+      "results": [
+        "default stays sharp and full-colour; unknown is CSS grayscale only; restore preserves original source and resolution; unknown species switch resets immediately",
+        "manual controls and unknown message work in KY UZ RU EN",
+        "pending rejected and invalid synthetic claims hide numbers, dates and sources; no pixelation",
+        "approved exact approximate and range fixtures use existing symbolic Canvas; endpoint values, territory, year, source and type stay intact",
+        "rapid toggles, species change, unmount, broken or missing photo release Canvas/RAF; placeholder is preserved",
+        "offscreen active component schedules no RAF, including on resize",
+        "real modal and species page share manual behaviour; closing an active known-population modal releases Canvas and RAF",
+        "real catalogue has no per-card Canvas; real card → modal and /species/irbis work with unchanged public data",
+        "390px touch controls have no overflow; reduced-motion grayscale and known Canvas need no animation RAF",
+        "unsupported Canvas preserves original photo; unknown grayscale remains available"
+      ],
+      "errors": []
+    },
+    "syntheticDecisionInDist": [],
+    "logSHA256": {
+      "test": "85440b0cb165c2b4efd9f686d2c5e9489322d79966511b2941647610f609fcb0",
+      "data": "c93ee0587b608a03d0f204717974f8464982af96ade8780bbd3a195ff182f9cf",
+      "data:validate": "2cae18047a8981de2526ed1d8ebdc3363b2a2033d549d19d8b6e6a39c6df6889",
+      "build": "4934326d848792eed575dc121032b4e24230c9108db6a3e3919b72cecd85d42e",
+      "browser": "91fe47e8c082b5fa10433f3bb3ab3705f7f33755b42390bb6f8845204c9976a6",
+      "legacy-browser": "caa03d54eecdf64075edb38c247f9b54de3ac976115bae8586ad1da3cdc9e365",
+      "candidate-regression": "bdac9b72f049a26f9fba1fc6cc4a68db723c74c036c91567ecb5a26d668d615e"
+    },
+    "diskFreeAtStart": 10506276864,
+    "diskFreeAfterChecks": 10487406592,
+    "ENOSPC": false
+  }
+}
