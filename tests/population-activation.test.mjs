@@ -53,8 +53,17 @@ test('real visualization SSR defaults to full-colour photo and manual action in 
 })
 
 test('scientific records, images, licences, archive, adapter and all 208 regional links remain unchanged',async()=>{
- const protectedChanges=execFileSync('git',['diff','--name-only',BASE,'--','data','assets','public','src/data/population.js','src/data/geography','src/data/species-model.js'],{encoding:'utf8'}).trim()
- assert.equal(protectedChanges,'')
+ // New unpublished research is not a mutation of the activation baseline.
+ // Existing protected paths still reject modifications, deletions or renames.
+ const changes=execFileSync('git',['diff','--name-status','--no-renames',BASE,'--','data','assets','public','src/data/population.js','src/data/geography','src/data/species-model.js'],{encoding:'utf8'}).trim().split('\n').filter(Boolean)
+ const allowedResearchAddition=line=>{
+  const [status,path]=line.trim().split('\t')
+  return status==='A'&&(path.startsWith('data/research/')||path==='data/.gitattributes')
+ }
+ assert.deepEqual(changes.filter(line=>!allowedResearchAddition(line)),[])
+ // Attributes affect only these fingerprinted, unpublished research JSONs.
+ const attributeRules=(await bytes('data/.gitattributes')).toString('utf8').split(/\r?\n/).map(l=>l.trim()).filter(l=>l&&!l.startsWith('#'))
+ assert.deepEqual(attributeRules,['research/population-184-evidence-audit.json text eol=lf','research/population-184-bulk-publication.json text eol=lf'])
  const source=await read('data/species.source.json'),evidence=await read('data/geography/occurrences.source.json')
  assert.deepEqual(source,JSON.parse(historicalBytes(BASE,'data/species.source.json')))
  assert.equal(source.catalog.length,184);assert.equal(source.demoArchive.length,2);assert.equal(source.catalog.filter(s=>s.images.length).length,161)
