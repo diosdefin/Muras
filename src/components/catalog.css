@@ -131,15 +131,20 @@
   .catalog-density { margin-left: 0; }
 }
 
-/* The single empty search input displays a continuous multilingual LED-style hint.
-   Real input, value and accessible label are unchanged. */
+/* Keep the search field clipping the native single-language placeholder cleanly. */
 .search-input-row { position: relative; overflow: hidden; }
-.search-marquee { position: absolute; inset: 0 18px 0 46px; display: flex; align-items: center; pointer-events: none; overflow: hidden; }
-.search-marquee-track { display: flex; width: max-content; flex: 0 0 auto; white-space: nowrap; animation: catalog-search-marquee 21s linear infinite; color: #728176; font-size: 15px; }
-.search-marquee-segment { display: inline-flex; align-items: center; flex: 0 0 auto; }
-.search-marquee-segment > span { display: inline-flex; align-items: center; }
-.search-marquee-separator { margin-inline: 26px; opacity: .55; }
-@keyframes catalog-search-marquee { to { transform: translateX(-50%); } }
-.header-search .search-input-row input:not(:focus):placeholder-shown { caret-color: transparent; }
-@media (max-width: 767px) { .search-marquee { inset-inline-start: 34px; inset-inline-end: 6px; } .search-marquee-track { font-size: 13px; } }
-@media (prefers-reduced-motion: reduce) { .search-marquee-track { animation: none; } }
+
+/* Compact density must always fit the available phone width: never scroll horizontally. */
+@media (max-width: 767px) {
+  .catalog-grid-viewport { overflow-x: hidden !important; }
+  .catalog-custom-grid { min-width: 0 !important; width: 100%; }
+  .catalog-custom-grid[data-columns="1"], .catalog-custom-grid[data-columns="2"] { min-width: 0 !important; }
+  .catalog-density .muras-select { width: min(148px, 38vw); }
+  .catalog-tools .filter-field .muras-select { width: 100%; }
+}
+.catalog-density .muras-select-trigger { min-height: 42px; font-size: 14px; }
+.compact-filter-fields .muras-select-trigger { min-height: 43px; }
+.catalog-tools .filter-field .muras-select { max-width: 100%; }
+
+.catalog-density > .muras-select { width: 170px; flex: 0 0 auto; }
+@media (max-width: 767px) { .catalog-density > .muras-select { width: min(148px, 38vw); } }

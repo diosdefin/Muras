@@ -1,3 +1,4 @@
+import { UI_V3_FILES, assertUiV3File } from '../../../tests/helpers/ui-v3-preservation.mjs'
 // Read-only audit of the real owner decision; it never issues or changes permissions.
 import {readFileSync,statfsSync} from 'node:fs'
 import {createHash} from 'node:crypto'
@@ -12,7 +13,11 @@ export async function verifySixPublication(){
  const packet=read('data/research/population-publication-candidates.json'), release=read('src/data/population-editorial-release.json'), audit=read('data/research/population-six-publication/owner-decision.json'),baseline=read('data/research/population-six-publication/baseline.json'),source=read('data/species.source.json')
  const errors=[],fail=s=>errors.push(s)
  if(baseline.head!=='b77e2030974778ebd1cfaba7f87a4d75d02a6739')fail('Unexpected baseline HEAD')
- const changedProtectedFiles=Object.entries(baseline.hashes).filter(([p,h])=>sha(p)!==h).map(([p])=>p)
+ const changedProtectedFiles=Object.entries(baseline.hashes).filter(([p,h])=>{
+  if(sha(p)===h)return false
+  if(!UI_V3_FILES.has(p))return true
+  try{return !assertUiV3File(p)}catch{return true}
+ }).map(([p])=>p)
  errors.push(...changedProtectedFiles.map(p=>'Protected bytes changed: '+p))
  if(sha('data/research/population-publication-candidates.json')!=='9b949266a1b96b2d39277040898f175fb071f98fb517c873e7855075418df8c1')fail('Preparation SHA-256 mismatch')
  const {registryFingerprint,...body}=packet

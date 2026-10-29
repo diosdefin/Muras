@@ -10,6 +10,7 @@ export const MAP_APPLICATION_FILES = new Set([
   'src/admin/components/PhotoEditor.vue', 'src/components/SpeciesVisualization.vue',
   // Task 28.4 changes metadata rendering; preserve its authentic old release bytes.
   'src/components/PopulationInfo.vue',
+  'src/components/lesson/LessonView.vue',
   'src/components/SpeciesModal.vue', 'src/components/SpeciesPage.vue',
   'src/composables/useImageVisualization.js', 'src/data/visualization/engine.js',
   'data/geography/occurrences.source.json', 'public/data/geography/occurrences.json',

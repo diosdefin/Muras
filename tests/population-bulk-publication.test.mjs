@@ -1,3 +1,4 @@
+import { UI_V3_FILES } from './helpers/ui-v3-preservation.mjs'
 import { historicalBytes } from './helpers/photo-amendment.mjs'
 import { POPULATION_PUBLICATION_BASE, POPULATION_PUBLICATION_FILES } from './helpers/population-publication-evolution.mjs'
 import test from 'node:test'
@@ -87,7 +88,7 @@ test('28.3: tampered values, missing sources, invented approval and density pixe
 })
 test('28.3: pre-existing scientific statuses, archive, media and other untouched tracked bytes remain immutable',()=>{
  const baseline=read('data/research/population-184-bulk/baseline.json')
- for(const [path,expected] of Object.entries(baseline.hashes).filter(([p])=>!['tests/population-activation.test.mjs','data/.gitattributes'].includes(p))) assert.equal(sha(POPULATION_PUBLICATION_FILES.has(path)?historicalBytes(POPULATION_PUBLICATION_BASE,path,expected):readFileSync(new URL('../'+path,import.meta.url))),expected,path)
+ for(const [path,expected] of Object.entries(baseline.hashes).filter(([p])=>!['tests/population-activation.test.mjs','data/.gitattributes'].includes(p))) assert.equal(sha((POPULATION_PUBLICATION_FILES.has(path)||UI_V3_FILES.has(path))?historicalBytes(POPULATION_PUBLICATION_BASE,path,expected):readFileSync(new URL('../'+path,import.meta.url))),expected,path)
  assert.equal(source.catalog.length,184);assert.equal(source.demoArchive.length,2)
  assert.equal(source.catalog.filter(s=>s.images.length).length,161)
  for(const s of source.catalog){assert.equal(s.population.type,'unknown');assert.equal(s.verified,false);assert.equal(s.population.reviewStatus,'pending')}

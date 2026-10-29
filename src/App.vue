@@ -17,6 +17,8 @@ import CatalogSearch from './components/CatalogSearch.vue'
 import LanguageMenu from './components/LanguageMenu.vue'
 import { paginateCatalog, pageNumbers } from './data/catalog-pagination.js'
 import GroupFilter from './components/GroupFilter.vue'
+import CustomSelect from './components/CustomSelect.vue'
+import './components/custom-select.css'
 import HeroIllustrations from './components/HeroIllustrations.vue'
 import { speciesPhoto } from './data/presentation.js'
 import { prioritizeIllustratedResults } from './data/catalog-pagination.js'
@@ -53,12 +55,17 @@ const desktopColumns = ref(3)
 const compactColumns = ref(2)
 const catalogColumns = computed({
   get: () => isCompactViewport.value ? compactColumns.value : desktopColumns.value,
-  set: value => { if (isCompactViewport.value) compactColumns.value = Number(value); else desktopColumns.value = Number(value) },
+  set: value => { if (isCompactViewport.value) compactColumns.value = Math.min(2, Math.max(1, Number(value))); else desktopColumns.value = Number(value) },
 })
 let viewportQuery
-function updateViewport(event) { isCompactViewport.value = event.matches }
+function updateViewport(event) { isCompactViewport.value = event.matches; if (event.matches && compactColumns.value > 2) compactColumns.value = 2 }
 const catalogGridStyle = computed(() => ({ '--catalog-columns': catalogColumns.value }))
 const paginationButtons = computed(() => pageNumbers(catalogPagination.value.current, catalogPagination.value.totalPages))
+const desktopColumnOptions = computed(() => [1, 2, 3, 4, 5].map(n => ({ value: n, label: t('catalogUI.inRow', { p0: n }) })))
+const mobileColumnOptions = computed(() => [1, 2].map(n => ({ value: n, label: t('catalogUI.inRow', { p0: n }) })))
+const columnOptions = computed(() => isCompactViewport.value ? mobileColumnOptions.value : desktopColumnOptions.value)
+const statusOptions = computed(() => options.value.statuses.map(option => ({ value: option.value, label: statusLabel(option.value) })))
+const regionOptions = computed(() => options.value.regions.map(region => ({ value: region, label: regionFilterLabel(region, language.value) })))
 watch([query, selectedStatus, selectedRegion, selectedGroup, species], () => { catalogPageNumber.value = 1 }, { flush: 'sync' })
 const isLoading = ref(true)
 const errorMessage = ref('')
@@ -322,15 +329,11 @@ onUnmounted(() => {
           <div class="filter-bar">
             <div class="filter-field">
               <label for="status-filter">{{ t('ui.m026') }}</label>
-              <select id="status-filter" v-model="selectedStatus" :aria-label="t('ui.m027')">
-                <option v-for="status in options.statuses" :key="status.value" :value="status.value">{{ statusLabel(status.value) }}</option>
-              </select>
+              <CustomSelect id="status-filter" v-model="selectedStatus" :options="statusOptions" :label="t('ui.m027')" />
             </div>
             <div class="filter-field">
               <label for="region-filter">{{ t('ui.m028') }}</label>
-              <select id="region-filter" v-model="selectedRegion" :aria-label="t('ui.m029')">
-                <option v-for="region in options.regions" :key="region" :value="region">{{ regionFilterLabel(region, language) }}</option>
-              </select>
+              <CustomSelect id="region-filter" v-model="selectedRegion" :options="regionOptions" :label="t('ui.m029')" />
             </div>
             <button type="button" class="catalog-reset" :disabled="!hasFilters" @click="catalog.reset">{{ t('ui.m031') }}</button>
           </div>
@@ -341,15 +344,15 @@ onUnmounted(() => {
             <div class="compact-filter-fields">
               <div class="filter-field">
                 <label for="group-filter-compact">{{ t('ui.m025') }}</label>
-                <select id="group-filter-compact" v-model="selectedGroup"><option v-for="group in translatedGroups" :key="group.value" :value="group.value">{{ group.label }}</option></select>
+                <CustomSelect id="group-filter-compact" v-model="selectedGroup" :options="translatedGroups" :label="t('ui.m025')" />
               </div>
               <div class="filter-field">
                 <label for="status-filter-compact">{{ t('ui.m026') }}</label>
-                <select id="status-filter-compact" v-model="selectedStatus"><option v-for="status in options.statuses" :key="status.value" :value="status.value">{{ statusLabel(status.value) }}</option></select>
+                <CustomSelect id="status-filter-compact" v-model="selectedStatus" :options="statusOptions" :label="t('ui.m027')" />
               </div>
               <div class="filter-field">
                 <label for="region-filter-compact">{{ t('ui.m028') }}</label>
-                <select id="region-filter-compact" v-model="selectedRegion"><option v-for="region in options.regions" :key="region" :value="region">{{ regionFilterLabel(region, language) }}</option></select>
+                <CustomSelect id="region-filter-compact" v-model="selectedRegion" :options="regionOptions" :label="t('ui.m029')" />
               </div>
               <button type="button" class="catalog-reset" :disabled="!hasFilters" @click="catalog.reset">{{ t('ui.m031') }}</button>
             </div>
@@ -359,9 +362,7 @@ onUnmounted(() => {
           <p class="result-count" role="status" aria-live="polite" aria-atomic="true">{{ isLoading ? t('ui.m032') : errorMessage ? t('ui.m033') : fuzzy ? t('ui.m034', { p0: results.length }) : t('ui.m035', { p0: results.length }) }}</p>
           <div class="catalog-density">
             <label for="catalog-columns">{{ t('catalogUI.columns') }}</label>
-            <select id="catalog-columns" v-model.number="catalogColumns" :aria-label="t('catalogUI.columns')">
-              <option v-for="number in 5" :key="number" :value="number">{{ t('catalogUI.inRow', { p0: number }) }}</option>
-            </select>
+            <CustomSelect id="catalog-columns" v-model="catalogColumns" :options="columnOptions" :label="t('catalogUI.columns')" />
           </div>
         </div>
       </div>

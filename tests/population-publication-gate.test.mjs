@@ -1,3 +1,4 @@
+import { UI_V3_FILES, assertUiV3File } from './helpers/ui-v3-preservation.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import {readFileSync} from 'node:fs'
@@ -121,7 +122,7 @@ test('28.4: scientific records, source history, media, licences, archive and 208
   assert.equal(styles(bytes(path)),styles(historicalBytes(BASE,path)),path+' CSS')
  }
  assert.equal(bytes('src/App.vue').toString('utf8').match(/<style[\s\S]*$/)?.[0] || '',historicalBytes(BASE,'src/App.vue').toString('utf8').match(/<style[\s\S]*$/)?.[0] || '')
- for(const path of ['src/style.css','src/components/catalog.css'])assert.equal(sha(bytes(path)),baseline.hashes[path],path)
+ for(const path of ['src/style.css','src/components/catalog.css']){if(UI_V3_FILES.has(path))assertUiV3File(path);else assert.equal(sha(bytes(path)),baseline.hashes[path],path)}
  for(const lang of ['ky','uz','ru','en']){const path=`src/locales/${lang}.json`,old=JSON.parse(historicalBytes(BASE,path)),now=read(path);for(const [key,value]of Object.entries(old))assert.equal(now[key],value,lang+':'+key)}
 })
 

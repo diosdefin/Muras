@@ -5,6 +5,8 @@ import ScientificText from "../ScientificText.vue"
 import { useLocale } from '../../composables/useLocale.js'
 import { nextTick, onBeforeUnmount, onMounted, ref, toRef, watch } from 'vue'
 import LessonPhoto from './LessonPhoto.vue'
+import CustomSelect from '../CustomSelect.vue'
+import '../custom-select.css'
 import LessonDetails from './LessonDetails.vue'
 import LessonReferences from './LessonReferences.vue'
 import { useLesson } from '../../composables/useLesson.js'
@@ -25,7 +27,7 @@ const { isFullscreen, message, toggle, exit } = useLessonFullscreen(root, {
 watch(() => current.value?.id, async () => {
   await nextTick()
   if (!props.active || !root.value) return
-  const editing = document.activeElement?.closest('select, input, textarea, [contenteditable]')
+  const editing = document.activeElement?.closest('.muras-select, select, input, textarea, [contenteditable]')
   if (isFullscreen.value) root.value.scrollTop = 0
   if (!editing) {
     if (!isFullscreen.value) root.value.scrollIntoView({ block: 'start', behavior: 'instant' })
@@ -63,9 +65,7 @@ defineExpose({ exitFullscreen: exit })
       <div><p class="eyebrow">{{ t('ui.m088') }}</p><h1 id="lesson-title">{{ t('ui.m012') }}</h1></div>
       <div class="lesson-tools">
         <label class="sr-only" for="lesson-species">{{ t('ui.m089') }}</label>
-        <select id="lesson-species" :value="selectedId || ''" :disabled="!current" @change="select($event.target.value)">
-          <option v-for="record in species" :key="record.id" :value="record.id" :lang="speciesNameLanguage(record, language)">{{ speciesName(record, language) }}</option>
-        </select>
+        <CustomSelect id="lesson-species" :model-value="selectedId || ''" :options="species.map(record => ({ value: record.id, label: speciesName(record, language) }))" :label="t('ui.m089')" :disabled="!current" @update:model-value="select($event)" />
         <button class="quiz-secondary" type="button" :aria-pressed="isFullscreen" @click="toggle">{{ isFullscreen ? t('ui.m090') : t('ui.m091') }}</button>
       </div>
     </header>

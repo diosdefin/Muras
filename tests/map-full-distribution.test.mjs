@@ -1,3 +1,4 @@
+import { UI_V3_FILES } from './helpers/ui-v3-preservation.mjs'
 import { POPULATION_EVOLVING_FILES } from './helpers/population-evolution.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
@@ -174,7 +175,7 @@ test('184 cards, archive, images and geometry stay unchanged; historical UI hash
  assert.equal(frozen.sourceCommit,BASE)
  for(const [path,expected] of Object.entries(frozen.files)){
   assert.equal(hash(historicalBytes(BASE,path,expected)),expected,path+' historical')
-  assert.equal(hash(POPULATION_EVOLVING_FILES.has(path)?historicalBytes(BASE,path,expected):await bytes(path)),expected,path+' preserved')
+  assert.equal(hash((POPULATION_EVOLVING_FILES.has(path)||UI_V3_FILES.has(path))?historicalBytes(BASE,path,expected):await bytes(path)),expected,path+' preserved')
  }
 })
 

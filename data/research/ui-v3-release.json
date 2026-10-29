@@ -1,0 +1,74 @@
+{
+  "baseCommit": "ce646a90262e9cf1b0636bdd1963251aa74981b1",
+  "purpose": "Allow precisely this UI v3 release while retaining historic scientific snapshot checks. Not a scientific approval.",
+  "files": {
+    "src/App.vue": {
+      "before": "c1ff7936ccfc22ea472778b73ff61320b83bbd262113a0f12726439d6709c98e",
+      "after": "11ecc0d666913b094e58cc2be587306d29530478e37504f0af777ddac05a7bb2"
+    },
+    "src/style.css": {
+      "before": "c34462014afcfbbae933c1205750b86c549b3a202638c3e476e455c00237ae95",
+      "after": "241823eaa49a00fed181ecce74eefa2d393929759bcc960d32f0755a47eb7c9a"
+    },
+    "src/components/catalog.css": {
+      "before": "5453a4246ecaaea46fca787be4fce0e884801160b9285fb9116a37d6d2b6e159",
+      "after": "b733a244c74f0c8c4ef0d219c5e5ed41c5114b990707cb567a37cf5bb514dd43"
+    },
+    "src/components/CatalogSearch.vue": {
+      "before": "4129bb30d3903c6eecba603fa77b031386dfa5d4c85e67de0a5c83450365d2d3",
+      "after": "d50febfd1d97ad27558039405008ec49a969541c0f9e8e2eb7003269b4624e20"
+    },
+    "src/components/CustomSelect.vue": {
+      "before": null,
+      "after": "bf9a702eda1fa01d22c3a84cd9da26f4303efe2c4198245f82190408b7883a55"
+    },
+    "src/components/custom-select.css": {
+      "before": null,
+      "after": "69c7cadfbd9f3ae72544f4784cdd265ddebb4040e5ae7e3a007456e2b2ef5dd4"
+    },
+    "src/components/map/MapOverviewPanel.vue": {
+      "before": "c9825bd1b6533a12c033fba0bead02d6710bdb385314ab1949cf0ab97668ac0b",
+      "after": "8315b84dd163768f16b5d4b2e93cecee15f2280ab16ab71ec13ded22f750d896"
+    },
+    "src/components/map/RegionPanel.vue": {
+      "before": "e0a1782b29d2f1163ad61a80e254d9d02f61a99ce59c6091a4fc8203fd863b72",
+      "after": "191a01a574f81053eec27cac95a68b162673faee15dbbce148179c2ad4fa58a6"
+    },
+    "src/components/map/RegionMap.vue": {
+      "before": "db8c2eb234df45011133a07f82cc46408bef822a1c1c2995e458e4645f5e2084",
+      "after": "20ebf9f54fb62d77e1ee354a7de87276685b2095604b50518278147627f6def2"
+    },
+    "src/components/map/map.css": {
+      "before": "d98ea5ffdc5467cf34706a8ec52e5215edc4f20587b82951510091628754c2d5",
+      "after": "70e3e25da0dd23e516da9c06cb749cc2e5dc59f6bfed7ab6368329c9f41d7f88"
+    },
+    "src/components/support/SupportView.vue": {
+      "before": "10df20cd4723373a1595fa12cc7c7147e1fa378bea77cee7b1ec26ad71f9feef",
+      "after": "39e258b7bb94ca9dce80d209e841e3627ff76abc7e5c51647ce0e0916417056e"
+    },
+    "src/components/support/support.css": {
+      "before": "510e7b6d0f1a4685021805fed06f8506b318faf0ea94a1d1cbf8464602afcd29",
+      "after": "ff4e2d4ab33df750119d1ca9c4989dfed5784063b90655214d0164880414b8dc"
+    },
+    "src/components/lesson/LessonView.vue": {
+      "before": "b817c0e1cf784666244d27995fdf59772b1baff8a0618db929861075722aa1ca",
+      "after": "755fed02c1f3fff6f46a1bca3095a10fa7fd02cc2d6dd2c4b5685d6ae1599c6b"
+    },
+    "src/locales/ky.json": {
+      "before": "4fc06fe5a3ba6e24f05e646e361745e67fe2d2b2e1be55982507177371c5e102",
+      "after": "592e1c272f2bbf8db3b3296d48155cb1780e3746e5e9852031b35ec95fd16137"
+    },
+    "src/locales/uz.json": {
+      "before": "432efcd97218646165cb70bf4b887c7d469df9c555516073061023e29f06a0f6",
+      "after": "bcf31cd481b7bc3571d49adcbd150b08c07df768a480c2edbe6978b44b1ef8ee"
+    },
+    "src/locales/ru.json": {
+      "before": "5c3785d49a084d06ae1f465b4c7cbc3fcb094fa6ceb870e06db190bdfe8b90fe",
+      "after": "4d2462d84c84986ae9f2e4c5d7e9832b6ab42f8fc377f6ee2e7baff8be83bb44"
+    },
+    "src/locales/en.json": {
+      "before": "a9461487882fcea4abae412ac9ed1c10fa9a13231eddacb291d9b560f6efa35b",
+      "after": "72005dde09c5fd226cbfcd0e50625dda288b150f75437f7dd23abcf46ee3af41"
+    }
+  }
+}

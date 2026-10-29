@@ -89,3 +89,32 @@
 @media (min-width: 1024px) {
   .support-species { grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr); gap: 36px; padding: 28px; }
 }
+
+/* Compact support concept, not a live donation/payment form. */
+.support-section { padding-block: 30px 48px; }
+.support-heading { margin-bottom: 20px; gap: 14px; }
+.support-heading h1 { margin-block: 9px 12px; font-size: clamp(32px, 4.2vw, 56px); }
+.support-heading p:last-child { line-height: 1.55; max-width: 700px; }
+.support-closed { padding: 15px 18px; margin-bottom: 22px; }
+.support-selection { margin-bottom: 22px; }
+.support-selection .muras-select { width: 100%; }
+.support-purpose { padding-block: 8px 16px; }
+.support-purpose > p:not(.eyebrow) { margin-top: 12px; line-height: 1.6; }
+.support-program { margin-top: 25px; padding-top: 22px; }
+.support-program header > p:last-child { margin-top: 10px; line-height: 1.55; }
+.support-program ol { gap: 14px; margin-top: 18px; }
+.support-program li { padding-block: 12px; }
+.support-future-thanks { margin-top: 24px; padding: 18px 20px; border: 1px solid var(--line); border-radius: 9px; background: #fff; }
+.support-future-thanks h2 { margin: 9px 0 7px; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(22px, 2.4vw, 30px); font-weight: 400; line-height: 1.25; }
+.support-future-thanks > p:last-child { color: var(--muted); max-width: 850px; line-height: 1.55; font-size: 14px; }
+.support-future-thanks + .support-wall { margin-top: 22px; padding-top: 22px; }
+@media (max-width: 767px) {
+  .support-heading { gap: 14px; }
+  .support-section { padding-block: 24px 36px; }
+  .support-heading h1 { font-size: clamp(30px, 9vw, 42px); }
+  .support-heading > div { width: 100%; }
+  .support-closed { align-items: flex-start; }
+  .support-program ol { gap: 7px; }
+  .support-future-thanks { padding: 15px; }
+  .support-demo-form { padding: 16px; }
+}
