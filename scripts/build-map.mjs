@@ -1,7 +1,7 @@
 import { readFile, writeFile, mkdir } from 'node:fs/promises'
 import { resolve, dirname } from 'node:path'
 import { createHash } from 'node:crypto'
-import { REGIONS, polygons, validateBoundaries, validateMapGeometry, validateRegionalEvidence } from '../src/data/geography/model.js'
+import { REGIONS, polygons, validateBoundaries, validateMapGeometry, validateRegionalEvidence, publicRegionalEvidence } from '../src/data/geography/model.js'
 
 export const BOUNDARY_SHA256 = 'b2161137ec372230b04f7b755b3d4fd50f3a6c6197f82bebc2301fb3b0222036'
 export const BOUNDARY_URL = 'https://github.com/wmgeolab/geoBoundaries/raw/9469f09/releaseData/gbOpen/KGZ/ADM1/geoBoundaries-KGZ-ADM1_simplified.geojson'
@@ -47,9 +47,10 @@ export async function prepareMap(root, species) {
     if (metadata.boundaryID !== 'KGZ-ADM1-38789647' || metadata.boundaryType !== 'ADM1' || metadata.boundaryISO !== 'KGZ' || metadata.admUnitCount !== '7' || metadata.boundaryYearRepresented !== '2017' || metadata.boundaryLicense !== 'Open Data Commons Open Database License 1.0' || metadata.simplifiedGeometryGeoJSON !== BOUNDARY_URL) throw new Error('Изменены происхождение, дата или лицензия проверенных границ.')
     if (!license.includes('ODC Open Database License (ODbL)')) throw new Error('Отсутствует полный текст ODbL.')
     const geojson = JSON.parse(bytes.toString('utf8'))
-    const occurrences = JSON.parse(evidence)
-    const errors = validateRegionalEvidence(occurrences, species)
+    const originalEvidence = JSON.parse(evidence)
+    const errors = validateRegionalEvidence(originalEvidence, species)
     if (errors.length) throw new Error(errors.join('\n'))
+    const occurrences = publicRegionalEvidence(originalEvidence)
     const geometry = projectBoundaries(geojson, metadata)
     const geometryErrors = validateMapGeometry(geometry)
     if (geometryErrors.length) throw new Error(geometryErrors.join('\n'))

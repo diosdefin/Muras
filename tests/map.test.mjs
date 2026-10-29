@@ -1,3 +1,4 @@
+import { historicalBytes } from './helpers/photo-amendment.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile, writeFile, cp, mkdtemp, rm, mkdir } from 'node:fs/promises'
@@ -6,12 +7,13 @@ import { tmpdir } from 'node:os'
 import { createHash } from 'node:crypto'
 import { PROJECT_ROOT, generateAllData } from '../scripts/build-data.mjs'
 import { BOUNDARY_SHA256, prepareMap, projectBoundaries, publishMap } from '../scripts/build-map.mjs'
-import { REGIONS, polygons, regionalEntries, validateBoundaries, validateMapGeometry, validateRegionalEvidence } from '../src/data/geography/model.js'
+import { REGIONS, polygons, regionalEntries, validateBoundaries, validateMapGeometry, validateRegionalEvidence, publicRegionalEvidence } from '../src/data/geography/model.js'
 
 const read = async path => JSON.parse(await readFile(resolve(PROJECT_ROOT, path), 'utf8'))
 const geojson = await read('data/geography/source/regions.geojson')
 const metadata = await read('data/geography/source/metadata.json')
-const evidence = await read('data/geography/occurrences.source.json')
+// Preserve the original two-link contract against its immutable historical evidence.
+const evidence = JSON.parse(historicalBytes('43ff31186ea54eafdb6eec654c50828fb4c99eb3', 'data/geography/occurrences.source.json'))
 const species = await read('public/data/species.json')
 const clone = value => structuredClone(value)
 
@@ -108,7 +110,7 @@ test('malformed evidence returns errors and precise habitat coordinates cannot b
 test('public geometry, evidence and machine-readable ODbL data are deterministic local outputs', async () => {
   const prepared = await prepareMap(PROJECT_ROOT, species)
   await publishMap(PROJECT_ROOT, prepared, { check: true })
-  assert.deepEqual(await read('public/data/geography/occurrences.json'), evidence)
+  assert.deepEqual(await read('public/data/geography/occurrences.json'), publicRegionalEvidence(await read('data/geography/occurrences.source.json')))
   const publicGeojson = await read('public/data/geography/regions.geojson')
   assert.deepEqual(publicGeojson.features, geojson.features)
   assert.equal(publicGeojson.license, 'https://opendatacommons.org/licenses/odbl/1-0/')

@@ -1,0 +1,2800 @@
+{
+  "schemaVersion": 1,
+  "batchId": "catalog-167-1",
+  "receipts": [
+    {
+      "candidateId": "sorbus-persica",
+      "status": "placeholder",
+      "reason": "Commons: нерелевантные исторические каталоги; проверенные результаты GBIF/iNaturalist имеют CC BY-NC и не входят в набор лицензий текущего обработчика.",
+      "metadata": null,
+      "image": null
+    },
+    {
+      "candidateId": "amygdalus-petunnikowii",
+      "status": "prepared",
+      "reason": null,
+      "metadata": {
+        "provider": "iNaturalist",
+        "accessedAt": "2026-10-21",
+        "metadataUrl": "https://api.gbif.org/v1/occurrence/search?taxon_key=8486864&media_type=StillImage&limit=3",
+        "gbifOccurrenceId": 5238089597,
+        "documentedSubject": "Prunus petunnikowii (Litv.) Rehder",
+        "creator": "Алексей Ябс",
+        "rightsHolder": "Алексей Ябс",
+        "mediaLicense": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "sourceMedia": {
+          "type": "StillImage",
+          "format": "image/jpeg",
+          "references": "https://www.inaturalist.org/photos/537425448",
+          "created": "2025-07-16T16:38:28.000+00:00",
+          "creator": "Алексей Ябс",
+          "publisher": "iNaturalist",
+          "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+          "rightsHolder": "Алексей Ябс",
+          "identifier": "https://inaturalist-open-data.s3.amazonaws.com/photos/537425448/original.jpg"
+        },
+        "originalObservation": {
+          "url": "https://api.inaturalist.org/v1/observations/298362469",
+          "data": {
+            "total_results": 1,
+            "page": 1,
+            "per_page": 1,
+            "results": [
+              {
+                "quality_grade": "research",
+                "time_observed_at": "2025-07-16T09:38:28+05:00",
+                "taxon_geoprivacy": "open",
+                "annotations": [
+                  {
+                    "uuid": "d037cb0f-0485-470e-a9ac-b218a61b9fc0",
+                    "controlled_attribute_id": 12,
+                    "controlled_value_id": 14,
+                    "concatenated_attr_val": "12|14",
+                    "user_id": 3309653,
+                    "votes": [],
+                    "controlled_value": {
+                      "ontology_uri": "",
+                      "uri": "",
+                      "is_value": true,
+                      "blocking": false,
+                      "uuid": "503cef8b-770b-4c2d-a0b0-e0ea9f7df465",
+                      "id": 14,
+                      "taxon_ids": [
+                        47125
+                      ],
+                      "label": "Fruits or Seeds"
+                    },
+                    "controlled_attribute": {
+                      "id": 12,
+                      "ontology_uri": "",
+                      "uri": "",
+                      "is_value": false,
+                      "multivalued": true,
+                      "uuid": "e997f5f1-1e22-4f1e-bb51-425d70d07b1a",
+                      "values": [
+                        {
+                          "id": 13,
+                          "ontology_uri": "",
+                          "uri": "",
+                          "blocking": false,
+                          "uuid": "84aa676e-2921-42cf-ae01-034a98425b5c",
+                          "labels": [
+                            {
+                              "id": 16,
+                              "locale": "en",
+                              "valid_within_clade": null,
+                              "label": "Flowers",
+                              "definition": ""
+                            }
+                          ],
+                          "taxon_ids": [
+                            47125
+                          ]
+                        },
+                        {
+                          "id": 14,
+                          "ontology_uri": "",
+                          "uri": "",
+                          "blocking": false,
+                          "uuid": "503cef8b-770b-4c2d-a0b0-e0ea9f7df465",
+                          "labels": [
+                            {
+                              "id": 17,
+                              "locale": "en",
+                              "valid_within_clade": null,
+                              "label": "Fruits or Seeds",
+                              "definition": ""
+                            }
+                          ],
+                          "taxon_ids": [
+                            47125
+                          ]
+                        },
+                        {
+                          "id": 15,
+                          "ontology_uri": "",
+                          "uri": "",
+                          "blocking": false,
+                          "uuid": "9c9d28a1-4ad3-408e-9f2b-30af803f5eb9",
+                          "labels": [
+                            {
+                              "id": 18,
+                              "locale": "en",
+                              "valid_within_clade": null,
+                              "label": "Flower Buds",
+                              "definition": ""
+                            }
+                          ],
+                          "taxon_ids": [
+                            47125
+                          ]
+                        },
+                        {
+                          "id": 21,
+                          "ontology_uri": "",
+                          "uri": "",
+                          "blocking": true,
+                          "uuid": "943f8dac-764a-4736-86b5-2f419bbd368b",
+                          "labels": [
+                            {
+                              "id": 24,
+                              "locale": "en",
+                              "valid_within_clade": null,
+                              "label": "No Flowers or Fruits",
+                              "definition": "Media provides no evidence of reproductive structures"
+                            }
+                          ],
+                          "taxon_ids": [
+                            47125
+                          ]
+                        }
+                      ],
+                      "taxon_ids": [
+                        47126
+                      ],
+                      "label": "Flowers and Fruits"
+                    },
+                    "user": {
+                      "id": 3309653,
+                      "login": "alexey_yabs",
+                      "spam": false,
+                      "suspended": false,
+                      "created_at": "2020-07-10T07:21:59+00:00",
+                      "login_autocomplete": "alexey_yabs",
+                      "login_exact": "alexey_yabs",
+                      "name": "Алексей Ябс",
+                      "name_autocomplete": "Алексей Ябс",
+                      "orcid": "https://orcid.org/0000-0003-2053-5865",
+                      "icon": "https://static.inaturalist.org/attachments/users/icons/3309653/thumb.jpeg?1605074984",
+                      "observations_count": 18650,
+                      "identifications_count": 1183,
+                      "journal_posts_count": 0,
+                      "activity_count": 19833,
+                      "species_count": 3315,
+                      "annotated_observations_count": 12901,
+                      "universal_search_rank": 18650,
+                      "roles": [],
+                      "site_id": 1,
+                      "icon_url": "https://static.inaturalist.org/attachments/users/icons/3309653/medium.jpeg?1605074984"
+                    },
+                    "vote_score": 0
+                  }
+                ],
+                "uuid": "a56aedb2-ebfc-44bf-9bd4-3e9efc2aaf1e",
+                "observed_on_details": {
+                  "date": "2025-07-16",
+                  "day": 16,
+                  "month": 7,
+                  "year": 2025,
+                  "hour": 9,
+                  "week": 29
+                },
+                "id": 298362469,
+                "cached_votes_total": 0,
+                "identifications_most_agree": true,
+                "created_at_details": {
+                  "date": "2025-07-16",
+                  "day": 16,
+                  "month": 7,
+                  "year": 2025,
+                  "hour": 12,
+                  "week": 29
+                },
+                "species_guess": "Миндаль Петунникова",
+                "identifications_most_disagree": false,
+                "tags": [],
+                "positional_accuracy": null,
+                "comments_count": 0,
+                "site_id": 1,
+                "created_time_zone": "Asia/Tashkent",
+                "license_code": "cc0",
+                "observed_time_zone": "Asia/Tashkent",
+                "quality_metrics": [],
+                "public_positional_accuracy": null,
+                "reviewed_by": [
+                  4054197
+                ],
+                "oauth_application_id": 2,
+                "flags": [],
+                "created_at": "2025-07-16T12:39:55+05:00",
+                "description": null,
+                "time_zone_offset": "+05:00",
+                "project_ids_with_curator_id": [],
+                "observed_on": "2025-07-16",
+                "observed_on_string": "2025-07-16 09:38:28",
+                "updated_at": "2025-07-26T08:14:45+05:00",
+                "sounds": [],
+                "place_ids": [
+                  7352,
+                  12438,
+                  59614,
+                  65842,
+                  80627,
+                  97395,
+                  107254,
+                  226393
+                ],
+                "captive": false,
+                "taxon": {
+                  "provisional": false,
+                  "is_active": true,
+                  "ancestry": "48460/47126/211194/47125/47124/47132/47148/922110/922113/47351/886531/886533",
+                  "min_species_ancestry": "48460,47126,211194,47125,47124,47132,47148,922110,922113,47351,886531,886533,986868",
+                  "endemic": false,
+                  "iconic_taxon_id": 47126,
+                  "min_species_taxon_id": 986868,
+                  "threatened": false,
+                  "rank_level": 10,
+                  "introduced": false,
+                  "native": false,
+                  "parent_id": 886533,
+                  "name": "Prunus petunnikowii",
+                  "rank": "species",
+                  "extinct": false,
+                  "id": 986868,
+                  "ancestor_ids": [
+                    48460,
+                    47126,
+                    211194,
+                    47125,
+                    47124,
+                    47132,
+                    47148,
+                    922110,
+                    922113,
+                    47351,
+                    886531,
+                    886533,
+                    986868
+                  ],
+                  "created_at": "2020-01-01T17:09:11+00:00",
+                  "default_photo": {
+                    "id": 369961484,
+                    "license_code": "cc-by-nc",
+                    "attribution": "(c) Наталья Бешко, some rights reserved (CC BY-NC), uploaded by Наталья Бешко",
+                    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/369961484/square.jpeg",
+                    "original_dimensions": {
+                      "height": 1536,
+                      "width": 2048
+                    },
+                    "flags": [],
+                    "attribution_name": "Наталья Бешко",
+                    "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/369961484/square.jpeg",
+                    "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/369961484/medium.jpeg"
+                  },
+                  "taxon_changes_count": 1,
+                  "taxon_schemes_count": 1,
+                  "observations_count": 31,
+                  "photos_locked": false,
+                  "universal_search_rank": 31,
+                  "flag_counts": {
+                    "resolved": 0,
+                    "unresolved": 0
+                  },
+                  "current_synonymous_taxon_ids": null,
+                  "atlas_id": null,
+                  "complete_species_count": null,
+                  "wikipedia_url": null,
+                  "iconic_taxon_name": "Plantae",
+                  "wikipedia_summary": null
+                },
+                "ident_taxon_ids": [
+                  48460,
+                  47126,
+                  211194,
+                  47125,
+                  47124,
+                  47132,
+                  47148,
+                  922110,
+                  922113,
+                  47351,
+                  886531,
+                  886533,
+                  986868
+                ],
+                "outlinks": [
+                  {
+                    "source": "GBIF",
+                    "url": "http://www.gbif.org/occurrence/5238089597"
+                  }
+                ],
+                "faves_count": 0,
+                "ofvs": [],
+                "num_identification_agreements": 1,
+                "preferences": {
+                  "prefers_community_taxon": null
+                },
+                "identification_disagreements_count": 0,
+                "comments": [],
+                "map_scale": null,
+                "uri": "https://www.inaturalist.org/observations/298362469",
+                "project_ids": [],
+                "community_taxon_id": 986868,
+                "geojson": {
+                  "type": "Point",
+                  "coordinates": [
+                    70.126416,
+                    41.145246
+                  ]
+                },
+                "owners_identification_from_vision": false,
+                "identifications_count": 1,
+                "obscured": false,
+                "num_identification_disagreements": 0,
+                "geoprivacy": null,
+                "location": "41.145246,70.126416",
+                "votes": [],
+                "spam": false,
+                "user": {
+                  "id": 3309653,
+                  "login": "alexey_yabs",
+                  "spam": false,
+                  "suspended": false,
+                  "created_at": "2020-07-10T07:21:59+00:00",
+                  "site_id": 1,
+                  "preferences": {},
+                  "login_autocomplete": "alexey_yabs",
+                  "login_exact": "alexey_yabs",
+                  "name": "Алексей Ябс",
+                  "name_autocomplete": "Алексей Ябс",
+                  "orcid": "https://orcid.org/0000-0003-2053-5865",
+                  "icon": "https://static.inaturalist.org/attachments/users/icons/3309653/thumb.jpeg?1605074984",
+                  "observations_count": 18650,
+                  "identifications_count": 1183,
+                  "journal_posts_count": 0,
+                  "activity_count": 19833,
+                  "species_count": 3315,
+                  "annotated_observations_count": 12901,
+                  "universal_search_rank": 18650,
+                  "roles": [],
+                  "icon_url": "https://static.inaturalist.org/attachments/users/icons/3309653/medium.jpeg?1605074984"
+                },
+                "mappable": true,
+                "identifications_some_agree": true,
+                "project_ids_without_curator_id": [],
+                "place_guess": "Ахангаранский район, Ташкентская область, Узбекистан",
+                "identifications": [
+                  {
+                    "id": 671115881,
+                    "uuid": "f4ff4051-f0cc-4716-86ed-cdf58e23a625",
+                    "user": {
+                      "id": 4054197,
+                      "login": "natalya_beshko",
+                      "spam": false,
+                      "suspended": false,
+                      "created_at": "2021-02-28T05:41:56+00:00",
+                      "login_autocomplete": "natalya_beshko",
+                      "login_exact": "natalya_beshko",
+                      "name": "Наталья Бешко",
+                      "name_autocomplete": "Наталья Бешко",
+                      "orcid": null,
+                      "icon": "https://static.inaturalist.org/attachments/users/icons/4054197/thumb.jpeg?1614490915",
+                      "observations_count": 3205,
+                      "identifications_count": 4027,
+                      "journal_posts_count": 1,
+                      "activity_count": 7233,
+                      "species_count": 1244,
+                      "annotated_observations_count": 4,
+                      "universal_search_rank": 3205,
+                      "roles": [],
+                      "site_id": 1,
+                      "icon_url": "https://static.inaturalist.org/attachments/users/icons/4054197/medium.jpeg?1614490915"
+                    },
+                    "created_at": "2025-07-26T05:37:50+05:00",
+                    "created_at_details": {
+                      "date": "2025-07-26",
+                      "day": 26,
+                      "month": 7,
+                      "year": 2025,
+                      "hour": 5,
+                      "week": 30
+                    },
+                    "body": null,
+                    "category": "improving",
+                    "current": true,
+                    "flags": [],
+                    "own_observation": false,
+                    "taxon_change": null,
+                    "vision": false,
+                    "disagreement": true,
+                    "previous_observation_taxon_id": 992723,
+                    "spam": false,
+                    "taxon_id": 986868,
+                    "hidden": false,
+                    "moderator_actions": [],
+                    "exemplar_identification": null,
+                    "taxon": {
+                      "id": 986868,
+                      "rank": "species",
+                      "rank_level": 10,
+                      "iconic_taxon_id": 47126,
+                      "ancestor_ids": [
+                        48460,
+                        47126,
+                        211194,
+                        47125,
+                        47124,
+                        47132,
+                        47148,
+                        922110,
+                        922113,
+                        47351,
+                        886531,
+                        886533
+                      ],
+                      "is_active": true,
+                      "min_species_taxon_id": 986868,
+                      "name": "Prunus petunnikowii",
+                      "parent_id": 886533,
+                      "ancestry": "48460/47126/211194/47125/47124/47132/47148/922110/922113/47351/886531/886533",
+                      "min_species_ancestry": "48460,47126,211194,47125,47124,47132,47148,922110,922113,47351,886531,886533,986868",
+                      "extinct": false,
+                      "provisional": false,
+                      "created_at": "2020-01-01T17:09:11+00:00",
+                      "default_photo": {
+                        "id": 369961484,
+                        "license_code": "cc-by-nc",
+                        "attribution": "(c) Наталья Бешко, some rights reserved (CC BY-NC), uploaded by Наталья Бешко",
+                        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/369961484/square.jpeg",
+                        "original_dimensions": {
+                          "height": 1536,
+                          "width": 2048
+                        },
+                        "flags": [],
+                        "attribution_name": "Наталья Бешко",
+                        "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/369961484/square.jpeg",
+                        "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/369961484/medium.jpeg"
+                      },
+                      "taxon_changes_count": 1,
+                      "taxon_schemes_count": 1,
+                      "observations_count": 31,
+                      "photos_locked": false,
+                      "universal_search_rank": 31,
+                      "flag_counts": {
+                        "resolved": 0,
+                        "unresolved": 0
+                      },
+                      "current_synonymous_taxon_ids": null,
+                      "atlas_id": null,
+                      "complete_species_count": null,
+                      "wikipedia_url": null,
+                      "iconic_taxon_name": "Plantae",
+                      "ancestors": [
+                        {
+                          "id": 47126,
+                          "rank": "kingdom",
+                          "rank_level": 70,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126
+                          ],
+                          "is_active": true,
+                          "name": "Plantae",
+                          "parent_id": 48460,
+                          "ancestry": "48460",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 221143410,
+                            "license_code": null,
+                            "attribution": "(c) Rocío Ramírez Barrios, all rights reserved, uploaded by Rocío Ramírez Barrios",
+                            "url": "https://static.inaturalist.org/photos/221143410/square.jpeg",
+                            "original_dimensions": {
+                              "height": 2048,
+                              "width": 1462
+                            },
+                            "flags": [],
+                            "attribution_name": "Rocío Ramírez Barrios",
+                            "square_url": "https://static.inaturalist.org/photos/221143410/square.jpeg",
+                            "medium_url": "https://static.inaturalist.org/photos/221143410/medium.jpeg"
+                          },
+                          "taxon_changes_count": 10,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 161381609,
+                          "flag_counts": {
+                            "resolved": 34,
+                            "unresolved": 3
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Plant",
+                          "complete_rank": "phylum",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "Plants"
+                        },
+                        {
+                          "id": 211194,
+                          "rank": "phylum",
+                          "rank_level": 60,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194
+                          ],
+                          "is_active": true,
+                          "name": "Tracheophyta",
+                          "parent_id": 47126,
+                          "ancestry": "48460/47126",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 301768574,
+                            "license_code": "cc-by-sa",
+                            "attribution": "(c) Douglas Goldman, some rights reserved (CC BY-SA), uploaded by Douglas Goldman",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/301768574/square.jpg",
+                            "original_dimensions": {
+                              "height": 2048,
+                              "width": 1371
+                            },
+                            "flags": [],
+                            "attribution_name": "Douglas Goldman",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/301768574/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/301768574/medium.jpg"
+                          },
+                          "taxon_changes_count": 3,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 156544226,
+                          "flag_counts": {
+                            "resolved": 8,
+                            "unresolved": 1
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Vascular_plant",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "Vascular Plants"
+                        },
+                        {
+                          "id": 47125,
+                          "rank": "subphylum",
+                          "rank_level": 57,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125
+                          ],
+                          "is_active": true,
+                          "name": "Angiospermae",
+                          "parent_id": 211194,
+                          "ancestry": "48460/47126/211194",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 6943609,
+                            "license_code": "cc-by-nc",
+                            "attribution": "(c) Amy, some rights reserved (CC BY-NC), uploaded by Amy",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/6943609/square.jpg",
+                            "original_dimensions": {
+                              "height": 2048,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Amy",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/6943609/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/6943609/medium.jpg"
+                          },
+                          "taxon_changes_count": 5,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 147817535,
+                          "flag_counts": {
+                            "resolved": 15,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Flowering_plant",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "flowering plants"
+                        },
+                        {
+                          "id": 47124,
+                          "rank": "class",
+                          "rank_level": 50,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124
+                          ],
+                          "is_active": true,
+                          "name": "Magnoliopsida",
+                          "parent_id": 47125,
+                          "ancestry": "48460/47126/211194/47125",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 98056702,
+                            "license_code": "cc-by",
+                            "attribution": "(c) Michelle W. （鍾偉瑋）, some rights reserved (CC BY), uploaded by Michelle W. （鍾偉瑋）",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/98056702/square.jpeg",
+                            "original_dimensions": {
+                              "height": 1638,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Michelle W. （鍾偉瑋）",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/98056702/square.jpeg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/98056702/medium.jpeg"
+                          },
+                          "taxon_changes_count": 4,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 123944423,
+                          "flag_counts": {
+                            "resolved": 10,
+                            "unresolved": 1
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Magnoliopsida",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "Dicots"
+                        },
+                        {
+                          "id": 47132,
+                          "rank": "order",
+                          "rank_level": 40,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132
+                          ],
+                          "is_active": true,
+                          "name": "Rosales",
+                          "parent_id": 47124,
+                          "ancestry": "48460/47126/211194/47125/47124",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 11763754,
+                            "license_code": "cc-by-sa",
+                            "attribution": "(c) Dominicus Johannes Bergsma, some rights reserved (CC BY-SA)",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/11763754/square.jpg",
+                            "original_dimensions": {
+                              "height": 1379,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Dominicus Johannes Bergsma",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/11763754/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/11763754/medium.jpg"
+                          },
+                          "taxon_changes_count": 0,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 10305663,
+                          "flag_counts": {
+                            "resolved": 3,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "http://en.wikipedia.org/wiki/Rosales",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "Roses, Elms, Figs, and Allies"
+                        },
+                        {
+                          "id": 47148,
+                          "rank": "family",
+                          "rank_level": 30,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132,
+                            47148
+                          ],
+                          "is_active": true,
+                          "name": "Rosaceae",
+                          "parent_id": 47132,
+                          "ancestry": "48460/47126/211194/47125/47124/47132",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 2066379,
+                            "license_code": "cc-by-nc",
+                            "attribution": "(c) Beate &amp; Heinz Beyerlein, some rights reserved (CC BY-NC), uploaded by Beate &amp; Heinz Beyerlein",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2066379/square.JPG",
+                            "original_dimensions": {
+                              "height": 1455,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Beate &amp; Heinz Beyerlein",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2066379/square.JPG",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2066379/medium.JPG"
+                          },
+                          "taxon_changes_count": 1,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 7260724,
+                          "flag_counts": {
+                            "resolved": 0,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "http://en.wikipedia.org/wiki/Rosaceae",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "rose family"
+                        },
+                        {
+                          "id": 922110,
+                          "rank": "subfamily",
+                          "rank_level": 27,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132,
+                            47148,
+                            922110
+                          ],
+                          "is_active": true,
+                          "name": "Amygdaloideae",
+                          "parent_id": 47148,
+                          "ancestry": "48460/47126/211194/47125/47124/47132/47148",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 18293394,
+                            "license_code": "cc-by",
+                            "attribution": "(c) Katja Schulz, some rights reserved (CC BY), uploaded by Katja Schulz",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/18293394/square.jpg",
+                            "original_dimensions": {
+                              "height": 1536,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Katja Schulz",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/18293394/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/18293394/medium.jpg"
+                          },
+                          "taxon_changes_count": 1,
+                          "taxon_schemes_count": 0,
+                          "observations_count": 3175018,
+                          "flag_counts": {
+                            "resolved": 0,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Amygdaloideae",
+                          "iconic_taxon_name": "Plantae"
+                        },
+                        {
+                          "id": 922113,
+                          "rank": "tribe",
+                          "rank_level": 25,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132,
+                            47148,
+                            922110,
+                            922113
+                          ],
+                          "is_active": true,
+                          "name": "Amygdaleae",
+                          "parent_id": 922110,
+                          "ancestry": "48460/47126/211194/47125/47124/47132/47148/922110",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 31959710,
+                            "license_code": "cc-by-nc",
+                            "attribution": "(c) Sarah Bonnett, some rights reserved (CC BY-NC), uploaded by Sarah Bonnett",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/31959710/square.jpg",
+                            "original_dimensions": {
+                              "height": 724,
+                              "width": 1086
+                            },
+                            "flags": [],
+                            "attribution_name": "Sarah Bonnett",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/31959710/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/31959710/medium.jpg"
+                          },
+                          "taxon_changes_count": 0,
+                          "taxon_schemes_count": 0,
+                          "observations_count": 1098022,
+                          "flag_counts": {
+                            "resolved": 0,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Prunus",
+                          "iconic_taxon_name": "Plantae"
+                        },
+                        {
+                          "id": 47351,
+                          "rank": "genus",
+                          "rank_level": 20,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132,
+                            47148,
+                            922110,
+                            922113,
+                            47351
+                          ],
+                          "is_active": true,
+                          "name": "Prunus",
+                          "parent_id": 922113,
+                          "ancestry": "48460/47126/211194/47125/47124/47132/47148/922110/922113",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 93584919,
+                            "license_code": "cc-by-sa",
+                            "attribution": "(c) Trachemys, some rights reserved (CC BY-SA)",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/93584919/square.jpg",
+                            "original_dimensions": {
+                              "height": 1356,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Trachemys",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/93584919/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/93584919/medium.jpg"
+                          },
+                          "taxon_changes_count": 7,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 1097648,
+                          "flag_counts": {
+                            "resolved": 19,
+                            "unresolved": 1
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Prunus",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "plums, cherries, and allies"
+                        },
+                        {
+                          "id": 886531,
+                          "rank": "subgenus",
+                          "rank_level": 15,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132,
+                            47148,
+                            922110,
+                            922113,
+                            47351,
+                            886531
+                          ],
+                          "is_active": true,
+                          "name": "Prunus",
+                          "parent_id": 47351,
+                          "ancestry": "48460/47126/211194/47125/47124/47132/47148/922110/922113/47351",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 40183935,
+                            "license_code": "cc-by-nc",
+                            "attribution": "(c) jmgregg, some rights reserved (CC BY-NC)",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/40183935/square.jpg",
+                            "original_dimensions": {
+                              "height": 768,
+                              "width": 1024
+                            },
+                            "flags": [],
+                            "attribution_name": "jmgregg",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/40183935/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/40183935/medium.jpg"
+                          },
+                          "taxon_changes_count": 0,
+                          "taxon_schemes_count": 1,
+                          "observations_count": 282582,
+                          "flag_counts": {
+                            "resolved": 0,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Prunus",
+                          "iconic_taxon_name": "Plantae"
+                        },
+                        {
+                          "id": 886533,
+                          "rank": "section",
+                          "rank_level": 13,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132,
+                            47148,
+                            922110,
+                            922113,
+                            47351,
+                            886531,
+                            886533
+                          ],
+                          "is_active": true,
+                          "name": "Amygdalus",
+                          "parent_id": 886531,
+                          "ancestry": "48460/47126/211194/47125/47124/47132/47148/922110/922113/47351/886531",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 114091584,
+                            "license_code": null,
+                            "attribution": "(c) Konstantinos Kalaentzis, all rights reserved, uploaded by Konstantinos Kalaentzis",
+                            "url": "https://static.inaturalist.org/photos/114091584/square.jpg",
+                            "original_dimensions": {
+                              "height": 1366,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Konstantinos Kalaentzis",
+                            "square_url": "https://static.inaturalist.org/photos/114091584/square.jpg",
+                            "medium_url": "https://static.inaturalist.org/photos/114091584/medium.jpg"
+                          },
+                          "taxon_changes_count": 1,
+                          "taxon_schemes_count": 1,
+                          "observations_count": 57340,
+                          "flag_counts": {
+                            "resolved": 2,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Prunus",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "Almonds and Peaches"
+                        }
+                      ]
+                    },
+                    "previous_observation_taxon": {
+                      "id": 992723,
+                      "rank": "species",
+                      "rank_level": 10,
+                      "iconic_taxon_id": 47126,
+                      "ancestor_ids": [
+                        48460,
+                        47126,
+                        211194,
+                        47125,
+                        47124,
+                        47132,
+                        47148,
+                        922110,
+                        922113,
+                        47351,
+                        886531,
+                        886533,
+                        992723
+                      ],
+                      "is_active": true,
+                      "min_species_taxon_id": 992723,
+                      "name": "Prunus spinosissima",
+                      "parent_id": 886533,
+                      "ancestry": "48460/47126/211194/47125/47124/47132/47148/922110/922113/47351/886531/886533",
+                      "min_species_ancestry": "48460,47126,211194,47125,47124,47132,47148,922110,922113,47351,886531,886533,992723",
+                      "extinct": false,
+                      "provisional": false,
+                      "created_at": "2020-01-04T17:30:23+00:00",
+                      "default_photo": {
+                        "id": 487032532,
+                        "license_code": "cc-by-nc",
+                        "attribution": "(c) Todd Boland, some rights reserved (CC BY-NC), uploaded by Todd Boland",
+                        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/487032532/square.jpeg",
+                        "original_dimensions": {
+                          "height": 1542,
+                          "width": 2048
+                        },
+                        "flags": [],
+                        "attribution_name": "Todd Boland",
+                        "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/487032532/square.jpeg",
+                        "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/487032532/medium.jpeg"
+                      },
+                      "taxon_changes_count": 1,
+                      "taxon_schemes_count": 1,
+                      "observations_count": 264,
+                      "photos_locked": false,
+                      "universal_search_rank": 264,
+                      "flag_counts": {
+                        "resolved": 0,
+                        "unresolved": 0
+                      },
+                      "current_synonymous_taxon_ids": null,
+                      "atlas_id": null,
+                      "complete_species_count": null,
+                      "wikipedia_url": "https://en.wikipedia.org/wiki/Prunus_spinosissima",
+                      "iconic_taxon_name": "Plantae",
+                      "preferred_common_name": "thorny almond"
+                    }
+                  },
+                  {
+                    "id": 671166547,
+                    "uuid": "6614378e-0568-493d-8344-b5e4e62a5916",
+                    "user": {
+                      "id": 3309653,
+                      "login": "alexey_yabs",
+                      "spam": false,
+                      "suspended": false,
+                      "created_at": "2020-07-10T07:21:59+00:00",
+                      "login_autocomplete": "alexey_yabs",
+                      "login_exact": "alexey_yabs",
+                      "name": "Алексей Ябс",
+                      "name_autocomplete": "Алексей Ябс",
+                      "orcid": "https://orcid.org/0000-0003-2053-5865",
+                      "icon": "https://static.inaturalist.org/attachments/users/icons/3309653/thumb.jpeg?1605074984",
+                      "observations_count": 18650,
+                      "identifications_count": 1183,
+                      "journal_posts_count": 0,
+                      "activity_count": 19833,
+                      "species_count": 3315,
+                      "annotated_observations_count": 12901,
+                      "universal_search_rank": 18650,
+                      "roles": [],
+                      "site_id": 1,
+                      "icon_url": "https://static.inaturalist.org/attachments/users/icons/3309653/medium.jpeg?1605074984"
+                    },
+                    "created_at": "2025-07-26T08:10:43+05:00",
+                    "created_at_details": {
+                      "date": "2025-07-26",
+                      "day": 26,
+                      "month": 7,
+                      "year": 2025,
+                      "hour": 8,
+                      "week": 30
+                    },
+                    "body": null,
+                    "category": "supporting",
+                    "current": true,
+                    "flags": [],
+                    "own_observation": true,
+                    "taxon_change": null,
+                    "vision": false,
+                    "disagreement": false,
+                    "previous_observation_taxon_id": 886533,
+                    "spam": false,
+                    "taxon_id": 986868,
+                    "hidden": false,
+                    "moderator_actions": [],
+                    "exemplar_identification": null,
+                    "taxon": {
+                      "id": 986868,
+                      "rank": "species",
+                      "rank_level": 10,
+                      "iconic_taxon_id": 47126,
+                      "ancestor_ids": [
+                        48460,
+                        47126,
+                        211194,
+                        47125,
+                        47124,
+                        47132,
+                        47148,
+                        922110,
+                        922113,
+                        47351,
+                        886531,
+                        886533
+                      ],
+                      "is_active": true,
+                      "min_species_taxon_id": 986868,
+                      "name": "Prunus petunnikowii",
+                      "parent_id": 886533,
+                      "ancestry": "48460/47126/211194/47125/47124/47132/47148/922110/922113/47351/886531/886533",
+                      "min_species_ancestry": "48460,47126,211194,47125,47124,47132,47148,922110,922113,47351,886531,886533,986868",
+                      "extinct": false,
+                      "provisional": false,
+                      "created_at": "2020-01-01T17:09:11+00:00",
+                      "default_photo": {
+                        "id": 369961484,
+                        "license_code": "cc-by-nc",
+                        "attribution": "(c) Наталья Бешко, some rights reserved (CC BY-NC), uploaded by Наталья Бешко",
+                        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/369961484/square.jpeg",
+                        "original_dimensions": {
+                          "height": 1536,
+                          "width": 2048
+                        },
+                        "flags": [],
+                        "attribution_name": "Наталья Бешко",
+                        "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/369961484/square.jpeg",
+                        "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/369961484/medium.jpeg"
+                      },
+                      "taxon_changes_count": 1,
+                      "taxon_schemes_count": 1,
+                      "observations_count": 31,
+                      "photos_locked": false,
+                      "universal_search_rank": 31,
+                      "flag_counts": {
+                        "resolved": 0,
+                        "unresolved": 0
+                      },
+                      "current_synonymous_taxon_ids": null,
+                      "atlas_id": null,
+                      "complete_species_count": null,
+                      "wikipedia_url": null,
+                      "iconic_taxon_name": "Plantae",
+                      "ancestors": [
+                        {
+                          "id": 47126,
+                          "rank": "kingdom",
+                          "rank_level": 70,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126
+                          ],
+                          "is_active": true,
+                          "name": "Plantae",
+                          "parent_id": 48460,
+                          "ancestry": "48460",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 221143410,
+                            "license_code": null,
+                            "attribution": "(c) Rocío Ramírez Barrios, all rights reserved, uploaded by Rocío Ramírez Barrios",
+                            "url": "https://static.inaturalist.org/photos/221143410/square.jpeg",
+                            "original_dimensions": {
+                              "height": 2048,
+                              "width": 1462
+                            },
+                            "flags": [],
+                            "attribution_name": "Rocío Ramírez Barrios",
+                            "square_url": "https://static.inaturalist.org/photos/221143410/square.jpeg",
+                            "medium_url": "https://static.inaturalist.org/photos/221143410/medium.jpeg"
+                          },
+                          "taxon_changes_count": 10,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 161381609,
+                          "flag_counts": {
+                            "resolved": 34,
+                            "unresolved": 3
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Plant",
+                          "complete_rank": "phylum",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "Plants"
+                        },
+                        {
+                          "id": 211194,
+                          "rank": "phylum",
+                          "rank_level": 60,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194
+                          ],
+                          "is_active": true,
+                          "name": "Tracheophyta",
+                          "parent_id": 47126,
+                          "ancestry": "48460/47126",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 301768574,
+                            "license_code": "cc-by-sa",
+                            "attribution": "(c) Douglas Goldman, some rights reserved (CC BY-SA), uploaded by Douglas Goldman",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/301768574/square.jpg",
+                            "original_dimensions": {
+                              "height": 2048,
+                              "width": 1371
+                            },
+                            "flags": [],
+                            "attribution_name": "Douglas Goldman",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/301768574/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/301768574/medium.jpg"
+                          },
+                          "taxon_changes_count": 3,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 156544226,
+                          "flag_counts": {
+                            "resolved": 8,
+                            "unresolved": 1
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Vascular_plant",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "Vascular Plants"
+                        },
+                        {
+                          "id": 47125,
+                          "rank": "subphylum",
+                          "rank_level": 57,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125
+                          ],
+                          "is_active": true,
+                          "name": "Angiospermae",
+                          "parent_id": 211194,
+                          "ancestry": "48460/47126/211194",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 6943609,
+                            "license_code": "cc-by-nc",
+                            "attribution": "(c) Amy, some rights reserved (CC BY-NC), uploaded by Amy",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/6943609/square.jpg",
+                            "original_dimensions": {
+                              "height": 2048,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Amy",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/6943609/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/6943609/medium.jpg"
+                          },
+                          "taxon_changes_count": 5,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 147817535,
+                          "flag_counts": {
+                            "resolved": 15,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Flowering_plant",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "flowering plants"
+                        },
+                        {
+                          "id": 47124,
+                          "rank": "class",
+                          "rank_level": 50,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124
+                          ],
+                          "is_active": true,
+                          "name": "Magnoliopsida",
+                          "parent_id": 47125,
+                          "ancestry": "48460/47126/211194/47125",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 98056702,
+                            "license_code": "cc-by",
+                            "attribution": "(c) Michelle W. （鍾偉瑋）, some rights reserved (CC BY), uploaded by Michelle W. （鍾偉瑋）",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/98056702/square.jpeg",
+                            "original_dimensions": {
+                              "height": 1638,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Michelle W. （鍾偉瑋）",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/98056702/square.jpeg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/98056702/medium.jpeg"
+                          },
+                          "taxon_changes_count": 4,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 123944423,
+                          "flag_counts": {
+                            "resolved": 10,
+                            "unresolved": 1
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Magnoliopsida",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "Dicots"
+                        },
+                        {
+                          "id": 47132,
+                          "rank": "order",
+                          "rank_level": 40,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132
+                          ],
+                          "is_active": true,
+                          "name": "Rosales",
+                          "parent_id": 47124,
+                          "ancestry": "48460/47126/211194/47125/47124",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 11763754,
+                            "license_code": "cc-by-sa",
+                            "attribution": "(c) Dominicus Johannes Bergsma, some rights reserved (CC BY-SA)",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/11763754/square.jpg",
+                            "original_dimensions": {
+                              "height": 1379,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Dominicus Johannes Bergsma",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/11763754/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/11763754/medium.jpg"
+                          },
+                          "taxon_changes_count": 0,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 10305663,
+                          "flag_counts": {
+                            "resolved": 3,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "http://en.wikipedia.org/wiki/Rosales",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "Roses, Elms, Figs, and Allies"
+                        },
+                        {
+                          "id": 47148,
+                          "rank": "family",
+                          "rank_level": 30,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132,
+                            47148
+                          ],
+                          "is_active": true,
+                          "name": "Rosaceae",
+                          "parent_id": 47132,
+                          "ancestry": "48460/47126/211194/47125/47124/47132",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 2066379,
+                            "license_code": "cc-by-nc",
+                            "attribution": "(c) Beate &amp; Heinz Beyerlein, some rights reserved (CC BY-NC), uploaded by Beate &amp; Heinz Beyerlein",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2066379/square.JPG",
+                            "original_dimensions": {
+                              "height": 1455,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Beate &amp; Heinz Beyerlein",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2066379/square.JPG",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2066379/medium.JPG"
+                          },
+                          "taxon_changes_count": 1,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 7260724,
+                          "flag_counts": {
+                            "resolved": 0,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "http://en.wikipedia.org/wiki/Rosaceae",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "rose family"
+                        },
+                        {
+                          "id": 922110,
+                          "rank": "subfamily",
+                          "rank_level": 27,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132,
+                            47148,
+                            922110
+                          ],
+                          "is_active": true,
+                          "name": "Amygdaloideae",
+                          "parent_id": 47148,
+                          "ancestry": "48460/47126/211194/47125/47124/47132/47148",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 18293394,
+                            "license_code": "cc-by",
+                            "attribution": "(c) Katja Schulz, some rights reserved (CC BY), uploaded by Katja Schulz",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/18293394/square.jpg",
+                            "original_dimensions": {
+                              "height": 1536,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Katja Schulz",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/18293394/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/18293394/medium.jpg"
+                          },
+                          "taxon_changes_count": 1,
+                          "taxon_schemes_count": 0,
+                          "observations_count": 3175018,
+                          "flag_counts": {
+                            "resolved": 0,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Amygdaloideae",
+                          "iconic_taxon_name": "Plantae"
+                        },
+                        {
+                          "id": 922113,
+                          "rank": "tribe",
+                          "rank_level": 25,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132,
+                            47148,
+                            922110,
+                            922113
+                          ],
+                          "is_active": true,
+                          "name": "Amygdaleae",
+                          "parent_id": 922110,
+                          "ancestry": "48460/47126/211194/47125/47124/47132/47148/922110",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 31959710,
+                            "license_code": "cc-by-nc",
+                            "attribution": "(c) Sarah Bonnett, some rights reserved (CC BY-NC), uploaded by Sarah Bonnett",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/31959710/square.jpg",
+                            "original_dimensions": {
+                              "height": 724,
+                              "width": 1086
+                            },
+                            "flags": [],
+                            "attribution_name": "Sarah Bonnett",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/31959710/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/31959710/medium.jpg"
+                          },
+                          "taxon_changes_count": 0,
+                          "taxon_schemes_count": 0,
+                          "observations_count": 1098022,
+                          "flag_counts": {
+                            "resolved": 0,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Prunus",
+                          "iconic_taxon_name": "Plantae"
+                        },
+                        {
+                          "id": 47351,
+                          "rank": "genus",
+                          "rank_level": 20,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132,
+                            47148,
+                            922110,
+                            922113,
+                            47351
+                          ],
+                          "is_active": true,
+                          "name": "Prunus",
+                          "parent_id": 922113,
+                          "ancestry": "48460/47126/211194/47125/47124/47132/47148/922110/922113",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 93584919,
+                            "license_code": "cc-by-sa",
+                            "attribution": "(c) Trachemys, some rights reserved (CC BY-SA)",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/93584919/square.jpg",
+                            "original_dimensions": {
+                              "height": 1356,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Trachemys",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/93584919/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/93584919/medium.jpg"
+                          },
+                          "taxon_changes_count": 7,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 1097648,
+                          "flag_counts": {
+                            "resolved": 19,
+                            "unresolved": 1
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Prunus",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "plums, cherries, and allies"
+                        },
+                        {
+                          "id": 886531,
+                          "rank": "subgenus",
+                          "rank_level": 15,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132,
+                            47148,
+                            922110,
+                            922113,
+                            47351,
+                            886531
+                          ],
+                          "is_active": true,
+                          "name": "Prunus",
+                          "parent_id": 47351,
+                          "ancestry": "48460/47126/211194/47125/47124/47132/47148/922110/922113/47351",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 40183935,
+                            "license_code": "cc-by-nc",
+                            "attribution": "(c) jmgregg, some rights reserved (CC BY-NC)",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/40183935/square.jpg",
+                            "original_dimensions": {
+                              "height": 768,
+                              "width": 1024
+                            },
+                            "flags": [],
+                            "attribution_name": "jmgregg",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/40183935/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/40183935/medium.jpg"
+                          },
+                          "taxon_changes_count": 0,
+                          "taxon_schemes_count": 1,
+                          "observations_count": 282582,
+                          "flag_counts": {
+                            "resolved": 0,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Prunus",
+                          "iconic_taxon_name": "Plantae"
+                        },
+                        {
+                          "id": 886533,
+                          "rank": "section",
+                          "rank_level": 13,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132,
+                            47148,
+                            922110,
+                            922113,
+                            47351,
+                            886531,
+                            886533
+                          ],
+                          "is_active": true,
+                          "name": "Amygdalus",
+                          "parent_id": 886531,
+                          "ancestry": "48460/47126/211194/47125/47124/47132/47148/922110/922113/47351/886531",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 114091584,
+                            "license_code": null,
+                            "attribution": "(c) Konstantinos Kalaentzis, all rights reserved, uploaded by Konstantinos Kalaentzis",
+                            "url": "https://static.inaturalist.org/photos/114091584/square.jpg",
+                            "original_dimensions": {
+                              "height": 1366,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Konstantinos Kalaentzis",
+                            "square_url": "https://static.inaturalist.org/photos/114091584/square.jpg",
+                            "medium_url": "https://static.inaturalist.org/photos/114091584/medium.jpg"
+                          },
+                          "taxon_changes_count": 1,
+                          "taxon_schemes_count": 1,
+                          "observations_count": 57340,
+                          "flag_counts": {
+                            "resolved": 2,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Prunus",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "Almonds and Peaches"
+                        }
+                      ]
+                    },
+                    "previous_observation_taxon": {
+                      "id": 886533,
+                      "rank": "section",
+                      "rank_level": 13,
+                      "iconic_taxon_id": 47126,
+                      "ancestor_ids": [
+                        48460,
+                        47126,
+                        211194,
+                        47125,
+                        47124,
+                        47132,
+                        47148,
+                        922110,
+                        922113,
+                        47351,
+                        886531,
+                        886533
+                      ],
+                      "is_active": true,
+                      "min_species_taxon_id": 886533,
+                      "name": "Amygdalus",
+                      "parent_id": 886531,
+                      "ancestry": "48460/47126/211194/47125/47124/47132/47148/922110/922113/47351/886531",
+                      "min_species_ancestry": "48460,47126,211194,47125,47124,47132,47148,922110,922113,47351,886531,886533",
+                      "extinct": false,
+                      "provisional": false,
+                      "created_at": "2019-04-28T20:30:58+00:00",
+                      "default_photo": {
+                        "id": 114091584,
+                        "license_code": null,
+                        "attribution": "(c) Konstantinos Kalaentzis, all rights reserved, uploaded by Konstantinos Kalaentzis",
+                        "url": "https://static.inaturalist.org/photos/114091584/square.jpg",
+                        "original_dimensions": {
+                          "height": 1366,
+                          "width": 2048
+                        },
+                        "flags": [],
+                        "attribution_name": "Konstantinos Kalaentzis",
+                        "square_url": "https://static.inaturalist.org/photos/114091584/square.jpg",
+                        "medium_url": "https://static.inaturalist.org/photos/114091584/medium.jpg"
+                      },
+                      "taxon_changes_count": 1,
+                      "taxon_schemes_count": 1,
+                      "observations_count": 57340,
+                      "photos_locked": false,
+                      "universal_search_rank": 57340,
+                      "flag_counts": {
+                        "resolved": 2,
+                        "unresolved": 0
+                      },
+                      "current_synonymous_taxon_ids": null,
+                      "atlas_id": null,
+                      "complete_species_count": null,
+                      "wikipedia_url": "https://en.wikipedia.org/wiki/Prunus",
+                      "iconic_taxon_name": "Plantae",
+                      "preferred_common_name": "Almonds and Peaches"
+                    }
+                  }
+                ],
+                "project_observations": [],
+                "observation_photos": [
+                  {
+                    "id": 499381097,
+                    "position": 0,
+                    "uuid": "e7003734-fca8-401a-8701-f14694129152",
+                    "photo_id": 537425448,
+                    "photo": {
+                      "id": 537425448,
+                      "license_code": "cc0",
+                      "original_dimensions": {
+                        "width": 944,
+                        "height": 2048
+                      },
+                      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/537425448/square.jpg",
+                      "attribution": "no rights reserved",
+                      "flags": [],
+                      "moderator_actions": [],
+                      "hidden": false
+                    }
+                  },
+                  {
+                    "id": 499381277,
+                    "position": 1,
+                    "uuid": "68d72e14-1851-44c5-896b-7865d9db76a0",
+                    "photo_id": 537425576,
+                    "photo": {
+                      "id": 537425576,
+                      "license_code": "cc0",
+                      "original_dimensions": {
+                        "width": 2048,
+                        "height": 944
+                      },
+                      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/537425576/square.jpg",
+                      "attribution": "no rights reserved",
+                      "flags": [],
+                      "moderator_actions": [],
+                      "hidden": false
+                    }
+                  },
+                  {
+                    "id": 499381369,
+                    "position": 2,
+                    "uuid": "d4a63429-2cdb-4052-9a74-6f7eb79b13bd",
+                    "photo_id": 537425671,
+                    "photo": {
+                      "id": 537425671,
+                      "license_code": "cc0",
+                      "original_dimensions": {
+                        "width": 2048,
+                        "height": 944
+                      },
+                      "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/537425671/square.jpg",
+                      "attribution": "no rights reserved",
+                      "flags": [],
+                      "moderator_actions": [],
+                      "hidden": false
+                    }
+                  }
+                ],
+                "photos": [
+                  {
+                    "id": 537425448,
+                    "license_code": "cc0",
+                    "original_dimensions": {
+                      "width": 944,
+                      "height": 2048
+                    },
+                    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/537425448/square.jpg",
+                    "attribution": "no rights reserved",
+                    "flags": [],
+                    "moderator_actions": [],
+                    "hidden": false
+                  },
+                  {
+                    "id": 537425576,
+                    "license_code": "cc0",
+                    "original_dimensions": {
+                      "width": 2048,
+                      "height": 944
+                    },
+                    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/537425576/square.jpg",
+                    "attribution": "no rights reserved",
+                    "flags": [],
+                    "moderator_actions": [],
+                    "hidden": false
+                  },
+                  {
+                    "id": 537425671,
+                    "license_code": "cc0",
+                    "original_dimensions": {
+                      "width": 2048,
+                      "height": 944
+                    },
+                    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/537425671/square.jpg",
+                    "attribution": "no rights reserved",
+                    "flags": [],
+                    "moderator_actions": [],
+                    "hidden": false
+                  }
+                ],
+                "application": {
+                  "id": 2,
+                  "name": "iNaturalist (Android)",
+                  "url": "https://play.google.com/store/apps/details?id=org.inaturalist.android",
+                  "icon": "https://static.inaturalist.org/oauth_applications/2-thumb.png"
+                },
+                "community_taxon": {
+                  "id": 986868,
+                  "rank": "species",
+                  "rank_level": 10,
+                  "iconic_taxon_id": 47126,
+                  "ancestor_ids": [
+                    48460,
+                    47126,
+                    211194,
+                    47125,
+                    47124,
+                    47132,
+                    47148,
+                    922110,
+                    922113,
+                    47351,
+                    886531,
+                    886533,
+                    986868
+                  ],
+                  "is_active": true,
+                  "name": "Prunus petunnikowii",
+                  "parent_id": 886533,
+                  "ancestry": "48460/47126/211194/47125/47124/47132/47148/922110/922113/47351/886531/886533",
+                  "extinct": false,
+                  "provisional": false,
+                  "default_photo": {
+                    "id": 369961484,
+                    "license_code": "cc-by-nc",
+                    "attribution": "(c) Наталья Бешко, some rights reserved (CC BY-NC), uploaded by Наталья Бешко",
+                    "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/369961484/square.jpeg",
+                    "original_dimensions": {
+                      "height": 1536,
+                      "width": 2048
+                    },
+                    "flags": [],
+                    "attribution_name": "Наталья Бешко",
+                    "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/369961484/square.jpeg",
+                    "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/369961484/medium.jpeg"
+                  },
+                  "taxon_changes_count": 1,
+                  "taxon_schemes_count": 1,
+                  "observations_count": 31,
+                  "flag_counts": {
+                    "resolved": 0,
+                    "unresolved": 0
+                  },
+                  "current_synonymous_taxon_ids": null,
+                  "atlas_id": null,
+                  "complete_species_count": null,
+                  "wikipedia_url": null,
+                  "iconic_taxon_name": "Plantae"
+                },
+                "faves": [],
+                "non_owner_ids": [
+                  {
+                    "id": 671115881,
+                    "uuid": "f4ff4051-f0cc-4716-86ed-cdf58e23a625",
+                    "user": {
+                      "id": 4054197,
+                      "login": "natalya_beshko",
+                      "spam": false,
+                      "suspended": false,
+                      "created_at": "2021-02-28T05:41:56+00:00",
+                      "login_autocomplete": "natalya_beshko",
+                      "login_exact": "natalya_beshko",
+                      "name": "Наталья Бешко",
+                      "name_autocomplete": "Наталья Бешко",
+                      "orcid": null,
+                      "icon": "https://static.inaturalist.org/attachments/users/icons/4054197/thumb.jpeg?1614490915",
+                      "observations_count": 3205,
+                      "identifications_count": 4027,
+                      "journal_posts_count": 1,
+                      "activity_count": 7233,
+                      "species_count": 1244,
+                      "annotated_observations_count": 4,
+                      "universal_search_rank": 3205,
+                      "roles": [],
+                      "site_id": 1,
+                      "icon_url": "https://static.inaturalist.org/attachments/users/icons/4054197/medium.jpeg?1614490915"
+                    },
+                    "created_at": "2025-07-26T05:37:50+05:00",
+                    "created_at_details": {
+                      "date": "2025-07-26",
+                      "day": 26,
+                      "month": 7,
+                      "year": 2025,
+                      "hour": 5,
+                      "week": 30
+                    },
+                    "body": null,
+                    "category": "improving",
+                    "current": true,
+                    "flags": [],
+                    "own_observation": false,
+                    "taxon_change": null,
+                    "vision": false,
+                    "disagreement": true,
+                    "previous_observation_taxon_id": 992723,
+                    "spam": false,
+                    "taxon_id": 986868,
+                    "hidden": false,
+                    "moderator_actions": [],
+                    "exemplar_identification": null,
+                    "taxon": {
+                      "id": 986868,
+                      "rank": "species",
+                      "rank_level": 10,
+                      "iconic_taxon_id": 47126,
+                      "ancestor_ids": [
+                        48460,
+                        47126,
+                        211194,
+                        47125,
+                        47124,
+                        47132,
+                        47148,
+                        922110,
+                        922113,
+                        47351,
+                        886531,
+                        886533
+                      ],
+                      "is_active": true,
+                      "min_species_taxon_id": 986868,
+                      "name": "Prunus petunnikowii",
+                      "parent_id": 886533,
+                      "ancestry": "48460/47126/211194/47125/47124/47132/47148/922110/922113/47351/886531/886533",
+                      "min_species_ancestry": "48460,47126,211194,47125,47124,47132,47148,922110,922113,47351,886531,886533,986868",
+                      "extinct": false,
+                      "provisional": false,
+                      "created_at": "2020-01-01T17:09:11+00:00",
+                      "default_photo": {
+                        "id": 369961484,
+                        "license_code": "cc-by-nc",
+                        "attribution": "(c) Наталья Бешко, some rights reserved (CC BY-NC), uploaded by Наталья Бешко",
+                        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/369961484/square.jpeg",
+                        "original_dimensions": {
+                          "height": 1536,
+                          "width": 2048
+                        },
+                        "flags": [],
+                        "attribution_name": "Наталья Бешко",
+                        "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/369961484/square.jpeg",
+                        "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/369961484/medium.jpeg"
+                      },
+                      "taxon_changes_count": 1,
+                      "taxon_schemes_count": 1,
+                      "observations_count": 31,
+                      "photos_locked": false,
+                      "universal_search_rank": 31,
+                      "flag_counts": {
+                        "resolved": 0,
+                        "unresolved": 0
+                      },
+                      "current_synonymous_taxon_ids": null,
+                      "atlas_id": null,
+                      "complete_species_count": null,
+                      "wikipedia_url": null,
+                      "iconic_taxon_name": "Plantae",
+                      "ancestors": [
+                        {
+                          "id": 47126,
+                          "rank": "kingdom",
+                          "rank_level": 70,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126
+                          ],
+                          "is_active": true,
+                          "name": "Plantae",
+                          "parent_id": 48460,
+                          "ancestry": "48460",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 221143410,
+                            "license_code": null,
+                            "attribution": "(c) Rocío Ramírez Barrios, all rights reserved, uploaded by Rocío Ramírez Barrios",
+                            "url": "https://static.inaturalist.org/photos/221143410/square.jpeg",
+                            "original_dimensions": {
+                              "height": 2048,
+                              "width": 1462
+                            },
+                            "flags": [],
+                            "attribution_name": "Rocío Ramírez Barrios",
+                            "square_url": "https://static.inaturalist.org/photos/221143410/square.jpeg",
+                            "medium_url": "https://static.inaturalist.org/photos/221143410/medium.jpeg"
+                          },
+                          "taxon_changes_count": 10,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 161381609,
+                          "flag_counts": {
+                            "resolved": 34,
+                            "unresolved": 3
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Plant",
+                          "complete_rank": "phylum",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "Plants"
+                        },
+                        {
+                          "id": 211194,
+                          "rank": "phylum",
+                          "rank_level": 60,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194
+                          ],
+                          "is_active": true,
+                          "name": "Tracheophyta",
+                          "parent_id": 47126,
+                          "ancestry": "48460/47126",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 301768574,
+                            "license_code": "cc-by-sa",
+                            "attribution": "(c) Douglas Goldman, some rights reserved (CC BY-SA), uploaded by Douglas Goldman",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/301768574/square.jpg",
+                            "original_dimensions": {
+                              "height": 2048,
+                              "width": 1371
+                            },
+                            "flags": [],
+                            "attribution_name": "Douglas Goldman",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/301768574/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/301768574/medium.jpg"
+                          },
+                          "taxon_changes_count": 3,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 156544226,
+                          "flag_counts": {
+                            "resolved": 8,
+                            "unresolved": 1
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Vascular_plant",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "Vascular Plants"
+                        },
+                        {
+                          "id": 47125,
+                          "rank": "subphylum",
+                          "rank_level": 57,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125
+                          ],
+                          "is_active": true,
+                          "name": "Angiospermae",
+                          "parent_id": 211194,
+                          "ancestry": "48460/47126/211194",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 6943609,
+                            "license_code": "cc-by-nc",
+                            "attribution": "(c) Amy, some rights reserved (CC BY-NC), uploaded by Amy",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/6943609/square.jpg",
+                            "original_dimensions": {
+                              "height": 2048,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Amy",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/6943609/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/6943609/medium.jpg"
+                          },
+                          "taxon_changes_count": 5,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 147817535,
+                          "flag_counts": {
+                            "resolved": 15,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Flowering_plant",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "flowering plants"
+                        },
+                        {
+                          "id": 47124,
+                          "rank": "class",
+                          "rank_level": 50,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124
+                          ],
+                          "is_active": true,
+                          "name": "Magnoliopsida",
+                          "parent_id": 47125,
+                          "ancestry": "48460/47126/211194/47125",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 98056702,
+                            "license_code": "cc-by",
+                            "attribution": "(c) Michelle W. （鍾偉瑋）, some rights reserved (CC BY), uploaded by Michelle W. （鍾偉瑋）",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/98056702/square.jpeg",
+                            "original_dimensions": {
+                              "height": 1638,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Michelle W. （鍾偉瑋）",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/98056702/square.jpeg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/98056702/medium.jpeg"
+                          },
+                          "taxon_changes_count": 4,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 123944423,
+                          "flag_counts": {
+                            "resolved": 10,
+                            "unresolved": 1
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Magnoliopsida",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "Dicots"
+                        },
+                        {
+                          "id": 47132,
+                          "rank": "order",
+                          "rank_level": 40,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132
+                          ],
+                          "is_active": true,
+                          "name": "Rosales",
+                          "parent_id": 47124,
+                          "ancestry": "48460/47126/211194/47125/47124",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 11763754,
+                            "license_code": "cc-by-sa",
+                            "attribution": "(c) Dominicus Johannes Bergsma, some rights reserved (CC BY-SA)",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/11763754/square.jpg",
+                            "original_dimensions": {
+                              "height": 1379,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Dominicus Johannes Bergsma",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/11763754/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/11763754/medium.jpg"
+                          },
+                          "taxon_changes_count": 0,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 10305663,
+                          "flag_counts": {
+                            "resolved": 3,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "http://en.wikipedia.org/wiki/Rosales",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "Roses, Elms, Figs, and Allies"
+                        },
+                        {
+                          "id": 47148,
+                          "rank": "family",
+                          "rank_level": 30,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132,
+                            47148
+                          ],
+                          "is_active": true,
+                          "name": "Rosaceae",
+                          "parent_id": 47132,
+                          "ancestry": "48460/47126/211194/47125/47124/47132",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 2066379,
+                            "license_code": "cc-by-nc",
+                            "attribution": "(c) Beate &amp; Heinz Beyerlein, some rights reserved (CC BY-NC), uploaded by Beate &amp; Heinz Beyerlein",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2066379/square.JPG",
+                            "original_dimensions": {
+                              "height": 1455,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Beate &amp; Heinz Beyerlein",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2066379/square.JPG",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2066379/medium.JPG"
+                          },
+                          "taxon_changes_count": 1,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 7260724,
+                          "flag_counts": {
+                            "resolved": 0,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "http://en.wikipedia.org/wiki/Rosaceae",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "rose family"
+                        },
+                        {
+                          "id": 922110,
+                          "rank": "subfamily",
+                          "rank_level": 27,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132,
+                            47148,
+                            922110
+                          ],
+                          "is_active": true,
+                          "name": "Amygdaloideae",
+                          "parent_id": 47148,
+                          "ancestry": "48460/47126/211194/47125/47124/47132/47148",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 18293394,
+                            "license_code": "cc-by",
+                            "attribution": "(c) Katja Schulz, some rights reserved (CC BY), uploaded by Katja Schulz",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/18293394/square.jpg",
+                            "original_dimensions": {
+                              "height": 1536,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Katja Schulz",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/18293394/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/18293394/medium.jpg"
+                          },
+                          "taxon_changes_count": 1,
+                          "taxon_schemes_count": 0,
+                          "observations_count": 3175018,
+                          "flag_counts": {
+                            "resolved": 0,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Amygdaloideae",
+                          "iconic_taxon_name": "Plantae"
+                        },
+                        {
+                          "id": 922113,
+                          "rank": "tribe",
+                          "rank_level": 25,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132,
+                            47148,
+                            922110,
+                            922113
+                          ],
+                          "is_active": true,
+                          "name": "Amygdaleae",
+                          "parent_id": 922110,
+                          "ancestry": "48460/47126/211194/47125/47124/47132/47148/922110",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 31959710,
+                            "license_code": "cc-by-nc",
+                            "attribution": "(c) Sarah Bonnett, some rights reserved (CC BY-NC), uploaded by Sarah Bonnett",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/31959710/square.jpg",
+                            "original_dimensions": {
+                              "height": 724,
+                              "width": 1086
+                            },
+                            "flags": [],
+                            "attribution_name": "Sarah Bonnett",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/31959710/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/31959710/medium.jpg"
+                          },
+                          "taxon_changes_count": 0,
+                          "taxon_schemes_count": 0,
+                          "observations_count": 1098022,
+                          "flag_counts": {
+                            "resolved": 0,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Prunus",
+                          "iconic_taxon_name": "Plantae"
+                        },
+                        {
+                          "id": 47351,
+                          "rank": "genus",
+                          "rank_level": 20,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132,
+                            47148,
+                            922110,
+                            922113,
+                            47351
+                          ],
+                          "is_active": true,
+                          "name": "Prunus",
+                          "parent_id": 922113,
+                          "ancestry": "48460/47126/211194/47125/47124/47132/47148/922110/922113",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 93584919,
+                            "license_code": "cc-by-sa",
+                            "attribution": "(c) Trachemys, some rights reserved (CC BY-SA)",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/93584919/square.jpg",
+                            "original_dimensions": {
+                              "height": 1356,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Trachemys",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/93584919/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/93584919/medium.jpg"
+                          },
+                          "taxon_changes_count": 7,
+                          "taxon_schemes_count": 2,
+                          "observations_count": 1097648,
+                          "flag_counts": {
+                            "resolved": 19,
+                            "unresolved": 1
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Prunus",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "plums, cherries, and allies"
+                        },
+                        {
+                          "id": 886531,
+                          "rank": "subgenus",
+                          "rank_level": 15,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132,
+                            47148,
+                            922110,
+                            922113,
+                            47351,
+                            886531
+                          ],
+                          "is_active": true,
+                          "name": "Prunus",
+                          "parent_id": 47351,
+                          "ancestry": "48460/47126/211194/47125/47124/47132/47148/922110/922113/47351",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 40183935,
+                            "license_code": "cc-by-nc",
+                            "attribution": "(c) jmgregg, some rights reserved (CC BY-NC)",
+                            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/40183935/square.jpg",
+                            "original_dimensions": {
+                              "height": 768,
+                              "width": 1024
+                            },
+                            "flags": [],
+                            "attribution_name": "jmgregg",
+                            "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/40183935/square.jpg",
+                            "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/40183935/medium.jpg"
+                          },
+                          "taxon_changes_count": 0,
+                          "taxon_schemes_count": 1,
+                          "observations_count": 282582,
+                          "flag_counts": {
+                            "resolved": 0,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Prunus",
+                          "iconic_taxon_name": "Plantae"
+                        },
+                        {
+                          "id": 886533,
+                          "rank": "section",
+                          "rank_level": 13,
+                          "iconic_taxon_id": 47126,
+                          "ancestor_ids": [
+                            48460,
+                            47126,
+                            211194,
+                            47125,
+                            47124,
+                            47132,
+                            47148,
+                            922110,
+                            922113,
+                            47351,
+                            886531,
+                            886533
+                          ],
+                          "is_active": true,
+                          "name": "Amygdalus",
+                          "parent_id": 886531,
+                          "ancestry": "48460/47126/211194/47125/47124/47132/47148/922110/922113/47351/886531",
+                          "extinct": false,
+                          "provisional": false,
+                          "default_photo": {
+                            "id": 114091584,
+                            "license_code": null,
+                            "attribution": "(c) Konstantinos Kalaentzis, all rights reserved, uploaded by Konstantinos Kalaentzis",
+                            "url": "https://static.inaturalist.org/photos/114091584/square.jpg",
+                            "original_dimensions": {
+                              "height": 1366,
+                              "width": 2048
+                            },
+                            "flags": [],
+                            "attribution_name": "Konstantinos Kalaentzis",
+                            "square_url": "https://static.inaturalist.org/photos/114091584/square.jpg",
+                            "medium_url": "https://static.inaturalist.org/photos/114091584/medium.jpg"
+                          },
+                          "taxon_changes_count": 1,
+                          "taxon_schemes_count": 1,
+                          "observations_count": 57340,
+                          "flag_counts": {
+                            "resolved": 2,
+                            "unresolved": 0
+                          },
+                          "current_synonymous_taxon_ids": null,
+                          "atlas_id": null,
+                          "complete_species_count": null,
+                          "wikipedia_url": "https://en.wikipedia.org/wiki/Prunus",
+                          "iconic_taxon_name": "Plantae",
+                          "preferred_common_name": "Almonds and Peaches"
+                        }
+                      ]
+                    },
+                    "previous_observation_taxon": {
+                      "id": 992723,
+                      "rank": "species",
+                      "rank_level": 10,
+                      "iconic_taxon_id": 47126,
+                      "ancestor_ids": [
+                        48460,
+                        47126,
+                        211194,
+                        47125,
+                        47124,
+                        47132,
+                        47148,
+                        922110,
+                        922113,
+                        47351,
+                        886531,
+                        886533,
+                        992723
+                      ],
+                      "is_active": true,
+                      "min_species_taxon_id": 992723,
+                      "name": "Prunus spinosissima",
+                      "parent_id": 886533,
+                      "ancestry": "48460/47126/211194/47125/47124/47132/47148/922110/922113/47351/886531/886533",
+                      "min_species_ancestry": "48460,47126,211194,47125,47124,47132,47148,922110,922113,47351,886531,886533,992723",
+                      "extinct": false,
+                      "provisional": false,
+                      "created_at": "2020-01-04T17:30:23+00:00",
+                      "default_photo": {
+                        "id": 487032532,
+                        "license_code": "cc-by-nc",
+                        "attribution": "(c) Todd Boland, some rights reserved (CC BY-NC), uploaded by Todd Boland",
+                        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/487032532/square.jpeg",
+                        "original_dimensions": {
+                          "height": 1542,
+                          "width": 2048
+                        },
+                        "flags": [],
+                        "attribution_name": "Todd Boland",
+                        "square_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/487032532/square.jpeg",
+                        "medium_url": "https://inaturalist-open-data.s3.amazonaws.com/photos/487032532/medium.jpeg"
+                      },
+                      "taxon_changes_count": 1,
+                      "taxon_schemes_count": 1,
+                      "observations_count": 264,
+                      "photos_locked": false,
+                      "universal_search_rank": 264,
+                      "flag_counts": {
+                        "resolved": 0,
+                        "unresolved": 0
+                      },
+                      "current_synonymous_taxon_ids": null,
+                      "atlas_id": null,
+                      "complete_species_count": null,
+                      "wikipedia_url": "https://en.wikipedia.org/wiki/Prunus_spinosissima",
+                      "iconic_taxon_name": "Plantae",
+                      "preferred_common_name": "thorny almond"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "downloadUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/537425448/original.jpg",
+        "originalSha256": "f0869a41a363d701997e35b676683a6169ae97f948f5752d97ba019d89f1fdad"
+      },
+      "image": {
+        "path": "assets/images/species/amygdalus-petunnikowii.webp",
+        "width": 830,
+        "height": 1800,
+        "sha256": "79a5bd655adb5888e4bfdbe87935945963fb35c905ccfc056230445d36d4a7dd",
+        "author": "Алексей Ябс",
+        "originalPage": "https://www.inaturalist.org/photos/537425448",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Алексей Ябс; CC0; https://www.inaturalist.org/photos/537425448.",
+        "modifications": [
+          "Уменьшение без увеличения до 1800 px; конвертация WebP quality 82; удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ky": null,
+          "uz": null,
+          "ru": "Prunus petunnikowii, Узбекистан, фотография Алексей Ябс; iNaturalist 298362469, фото 537425448, CC0. Не подтверждение современной кыргызстанской популяции.",
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-21",
+        "reviewerRole": "preparing_editor",
+        "method": "Decoded WebP visual review; contact sheet and full-size jerboa image",
+        "independentScientificApproval": false
+      }
+    },
+    {
+      "candidateId": "kosopoljanskia-hebecarpa",
+      "status": "placeholder",
+      "reason": "Лицензия CC BY 4.0 и автор скана ELAR подтверждены, но оригинал MW0593744 превышает лимит существующего обработчика 30 MiB; после одного повтора сохранён placeholder. Другие сборы не перебирались.",
+      "metadata": null,
+      "image": null
+    },
+    {
+      "candidateId": "kosopoljanskia-turkestanica",
+      "status": "prepared",
+      "reason": null,
+      "metadata": {
+        "provider": "Moscow State University",
+        "accessedAt": "2026-10-21",
+        "metadataUrl": "https://api.gbif.org/v1/occurrence/search?taxon_key=7831968&media_type=StillImage&limit=3",
+        "gbifOccurrenceId": 1799027957,
+        "documentedSubject": "Schrenkia turkestanica (Korovin) Pimenov",
+        "creator": "ELAR corporation (Moscow, Russia)",
+        "rightsHolder": "Moscow State University (copyright is managed by Dr. Alexey P. Seregin)",
+        "mediaLicense": "http://creativecommons.org/licenses/by/4.0/",
+        "sourceMedia": {
+          "type": "StillImage",
+          "format": "image/jpg",
+          "references": "https://plant.depo.msu.ru/open/public/item/MW0856258",
+          "title": "Schrenkia turkestanica (Korovin) Pimenov (Шренкия туркестанская), Moscow University Herbarium",
+          "description": "Scan of Schrenkia turkestanica (Korovin) Pimenov (Шренкия туркестанская) from Kyrgyzstan deposited in the Moscow University Herbarium (MW0856258)",
+          "creator": "ELAR corporation (Moscow, Russia)",
+          "publisher": "Moscow State University",
+          "license": "http://creativecommons.org/licenses/by/4.0/",
+          "rightsHolder": "Moscow State University (copyright is managed by Dr. Alexey P. Seregin)",
+          "identifier": "https://plant.depo.msu.ru/open/public/item/MW0856258/img/0.jpg?gbif"
+        },
+        "collectionPage": {
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0856258",
+          "sha256": "a645dc5df79fc97ce50402d40a941fc93a9a4a3a65e69e002176a680bbdab3ee",
+          "barcode": "MW0856258",
+          "licenseRead": true
+        },
+        "downloadUrl": "https://plant.depo.msu.ru/open/public/item/MW0856258/img/0.jpg?gbif",
+        "originalSha256": "cf1a7d54ef29dd9bc70253af171380dd1e4f9c9fb7bc4c92f567f679f7195884"
+      },
+      "image": {
+        "path": "assets/images/species/kosopoljanskia-turkestanica.webp",
+        "width": 1231,
+        "height": 1800,
+        "sha256": "8bd93f5f22cfc24f28b7df4db6bf3faa017bdb896fbb4885c67633a7b5e33072",
+        "author": "ELAR corporation (Moscow, Russia)",
+        "originalPage": "https://plant.depo.msu.ru/open/public/item/MW0856258",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "ELAR corporation (Moscow, Russia); CC BY 4.0; https://plant.depo.msu.ru/open/public/item/MW0856258.",
+        "modifications": [
+          "Уменьшение без увеличения до 1800 px; конвертация WebP quality 82; удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ky": null,
+          "uz": null,
+          "ru": "Гербарный лист MW0856258, гербарий МГУ: Schrenkia turkestanica (Korovin) Pimenov, Kyrgyzstan. Скан ELAR corporation; правообладатель Moscow State University. Исторический образец не подтверждает современное состояние популяции.",
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-21",
+        "reviewerRole": "preparing_editor",
+        "method": "Decoded WebP visual review; contact sheet and full-size jerboa image",
+        "independentScientificApproval": false
+      }
+    },
+    {
+      "candidateId": "alajja-anomala",
+      "status": "prepared",
+      "reason": null,
+      "metadata": {
+        "provider": "Moscow State University",
+        "accessedAt": "2026-10-21",
+        "metadataUrl": "https://api.gbif.org/v1/occurrence/search?taxon_key=9629204&media_type=StillImage&limit=3",
+        "gbifOccurrenceId": 1799044352,
+        "documentedSubject": "Eriophyton anomalum (Juz.) Lazkov & Sennikov",
+        "creator": "ELAR corporation (Moscow, Russia)",
+        "rightsHolder": "Moscow State University (copyright is managed by Dr. Alexey P. Seregin)",
+        "mediaLicense": "http://creativecommons.org/licenses/by/4.0/",
+        "sourceMedia": {
+          "type": "StillImage",
+          "format": "image/jpg",
+          "references": "https://plant.depo.msu.ru/open/public/item/MW0872625",
+          "title": "Eriophyton anomalum (Juz.) Lazkov & Sennikov, Moscow University Herbarium",
+          "description": "Scan of Eriophyton anomalum (Juz.) Lazkov & Sennikov from Kyrgyzstan deposited in the Moscow University Herbarium (MW0872625)",
+          "creator": "ELAR corporation (Moscow, Russia)",
+          "publisher": "Moscow State University",
+          "license": "http://creativecommons.org/licenses/by/4.0/",
+          "rightsHolder": "Moscow State University (copyright is managed by Dr. Alexey P. Seregin)",
+          "identifier": "https://plant.depo.msu.ru/open/public/item/MW0872625/img/0.jpg?gbif"
+        },
+        "collectionPage": {
+          "url": "https://plant.depo.msu.ru/open/public/item/MW0872625",
+          "sha256": "40b06ca98b35e47db4441640a414682c6ef80e8b88ca2c21ae083648ce48e420",
+          "barcode": "MW0872625",
+          "licenseRead": true
+        },
+        "downloadUrl": "https://plant.depo.msu.ru/open/public/item/MW0872625/img/0.jpg?gbif",
+        "originalSha256": "4b52d896fabf25ab75fdc888e321ccf4e391b61b9375451b4dcacd600870b864"
+      },
+      "image": {
+        "path": "assets/images/species/alajja-anomala.webp",
+        "width": 1240,
+        "height": 1800,
+        "sha256": "2c79dc055906a040df53f7d52265dea28e3e61444f65e02c6170dfaee3b41ffe",
+        "author": "ELAR corporation (Moscow, Russia)",
+        "originalPage": "https://plant.depo.msu.ru/open/public/item/MW0872625",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "ELAR corporation (Moscow, Russia); CC BY 4.0; https://plant.depo.msu.ru/open/public/item/MW0872625.",
+        "modifications": [
+          "Уменьшение без увеличения до 1800 px; конвертация WebP quality 82; удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ky": null,
+          "uz": null,
+          "ru": "Гербарный лист MW0872625, гербарий МГУ: Eriophyton anomalum (Juz.) Lazkov & Sennikov, Kyrgyzstan. Скан ELAR corporation; правообладатель Moscow State University. Исторический образец не подтверждает современное состояние популяции.",
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "reviewedAt": "2026-10-21",
+        "reviewerRole": "preparing_editor",
+        "method": "Decoded WebP visual review; contact sheet and full-size jerboa image",
+        "independentScientificApproval": false
+      }
+    },
+    {
+      "candidateId": "otostegia-schennikovii",
+      "status": "placeholder",
+      "reason": "Результат Commons показывает сообщество, а не отдельный таксон; фотографии принятого Moluccella olgae не подтверждают узкий исторический O. schennikovii. Сохранён placeholder.",
+      "metadata": null,
+      "image": null
+    }
+  ]
+}

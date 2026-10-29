@@ -1,0 +1,280 @@
+{
+  "id": "parnassius-apollo-merzbacheri",
+  "scientificName": "Parnassius apollo merzbacheri",
+  "names": {
+    "ru": "Аполлон обыкновенный, подвид Мерцбахера",
+    "ky": "Мерцбахер (кадимки) калдырканы",
+    "uz": "Parnassius apollo merzbacheri",
+    "en": "Merzbacher's Apollo Butterfly"
+  },
+  "taxonomy": {
+    "kingdom": "Metazoa",
+    "phylum": "Arthropoda",
+    "class": "Insecta",
+    "order": "Lepidoptera",
+    "family": "Papilionidae",
+    "genus": "Parnassius"
+  },
+  "group": "arthropods",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "III [LR-nt]",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Parnassius apollo merzbacheri, с.268–269); Статус: III категория (LR-nt). Локальный подвид, популяции которого потенциально уязвимы, но не находятся",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Среднегорные лугово-лесные и луго-степные ландшафты, каменистые склоны с высокотравными и субальпийскими лугами на высотах 1000–3000 м; историческое описание местной формы.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "code": "KG",
+      "type": "country",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В книге обсуждаются утрата луговых местообитаний, сенокошение, перевыпас, рекреация, пестициды и отлов. Их современная интенсивность отдельно не установлена.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В 2006 году предлагались микрорезерваты на участках с растущей нагрузкой, мониторинг и уточнение кормовой базы; исторические сведения об охране на отдельных территориях не выдаются за аудит 2026 года.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е издание, 2006; Parnassius apollo merzbacheri, с.268–269",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=269",
+      "accessedAt": "2026-10-28",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.category",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.overview",
+        "content.shortDescription",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "content.appearance",
+        "content.diet",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.ky",
+        "names.en"
+      ],
+      "notes": "Исторические сведения местного очерка. Названия KY проверены по первоисточнику, краткие описания KY/UZ/EN — редакционные переводы, не цитаты. Современное присутствие и правовой статус не заявлены."
+    },
+    {
+      "id": "huang-2023",
+      "title": "Huang H. 2023. Contributions to the study of butterflies from Xinjiang — 1: the genus Parnassius. Atalanta 54(1/2)",
+      "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+      "url": "https://www.researchgate.net/publication/376002146_Contributions_to_the_study_of_butterflies_from_Xinjiang_-1_the_genus_Parnassius_LatreiLLe_1804_Lepidoptera_Papilionidae_by",
+      "accessedAt": "2026-10-28",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.shortDescription"
+      ],
+      "notes": "с.154–155: apollo merzbacheri; с.166–167: loxias; author_uploaded_full_text. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+    },
+    {
+      "id": "previous-mcz-merzbacheri",
+      "title": "Harvard MCZbase: Parnassius apollo merzbacheri",
+      "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+      "url": "https://mczbase.mcz.harvard.edu/name/Parnassius%20apollo%20merzbacheri",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.shortDescription"
+      ],
+      "notes": "Name Authority MCZ; Subspecies; no cited MCZ specimens; web_indexed_primary_collection_database. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+    },
+    {
+      "id": "previous-parnassius-types-1966",
+      "title": "Les types et typoïdes de Parnassius au Muséum de Paris (1966)",
+      "publisher": "Издатель / научное учреждение указан в библиографическом названии и первоисточнике",
+      "url": "https://www.persee.fr/doc/bsef_0037-928x_1966_num_71_7_20893",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.shortDescription"
+      ],
+      "notes": "Bull. Soc. Entomol. France 71(7), record 20893; web_indexed_primary_fragment_only. Пределы чтения и доступа сохранены в отчёте №25.8; непрочитанный оригинал не объявлен проверенным заново."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "The European Nucleotide Archive (ENA) taxonomy: Parnassius apollo merzbacheri; exact SUBSPECIES",
+      "publisher": "GBIF / The European Nucleotide Archive (ENA) taxonomy",
+      "url": "https://api.gbif.org/v1/species/177946994",
+      "accessedAt": "2026-10-28",
+      "language": "en",
+      "taxonId": "gbif:177946994",
+      "supports": [
+        "scientificName",
+        "names.uz",
+        "content.overview",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "notes": "Реальная принятая запись указанного dataset. EXACT — локальная строгая проверка canonicalName/rank, не вымышленный API match. nubKey/parentKey не подставлены. Issues: CLASSIFICATION_NOT_APPLIED"
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Джунгаро-северотяньшанский подвид аполлона из книги 2006 года. Современная обработка признаёт merzbacheri; текущая численность в Кыргызстане неизвестна.",
+        "ky": "2006-жылкы китептеги аполлондун Жуңгар–Түндүк Теңир-Тоо түрчөсү. Азыркы таксономия merzbacheri түрчөсүн тааныйт; Кыргызстандагы саны белгисиз.",
+        "uz": "Apollonning Jungʻor–Shimoliy Tyanshan kenja turi, 2006-yilgi kitobda keltirilgan. Merzbacheri hozirgi talqinda tan olinadi; Qirgʻizistondagi soni nomaʼlum.",
+        "en": "A Dzungarian–northern Tien Shan Apollo subspecies treated in 2006. Merzbacheri is recognized in the selected revision; current abundance in Kyrgyzstan is unknown."
+      },
+      "sourceIds": [
+        "national-book",
+        "huang-2023"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Аполлон Мерцбахера — подвид Parnassius apollo, выделенный отдельным национальным очерком 2006 года. Для подготовки принят Parnassius apollo merzbacheri по обработке Huang 2023: автор явно признаёт подвид и относит к его синонимам chryseis. Точная подвидовая запись ENA taxonomy в GBIF согласуется с этим охватом. Синонимический ключ backbone, ведущий к родительскому apollo, не используется как принятый подвидовой идентификатор.\n\nБелые или кремоватые крылья несут чёрный рисунок; на каждом заднем крыле заметны два красных пятна с чёрными ободками и более или менее выраженными светлыми центрами. В книге самцы обычно светлее и мельче самок. Числовой размах крыльев расходится между языковыми версиями очерка и здесь не унифицируется. Среднегорные лугово-лесные и луго-степные ландшафты, каменистые склоны с высокотравными и субальпийскими лугами на высотах 1000–3000 м; историческое описание местной формы. Национальная книга описывает тесную связь личинок с толстянковыми растениями и оседлый характер местных популяций. Исторические значения плотности и колебания обилия не превращены в современную оценку численности.\n\nДля гусениц местного подвида книга указывает очитки Sedum ewersii, S. hybridum и S. alberti. Связь с Orostachys в том же тексте предположительна и не включена в подтверждённый перечень. По национальному источнику развивается одно поколение в год, зимует гусеница первого возраста, нередко внутри яйцевой оболочки. Взрослые отмечались с конца июня до осени. Эти сведения относятся к описанным наблюдениям, а не к новому обследованию.\n\nОчерк относит подвид к джунгаро-северотяньшанскому ареалу и перечисляет исторические местонахождения по Киргизскому, Джумгальскому, Кастекскому, Заилийскому, Кунгей и Терскей Ала-Тоо. Указание для Ат-Баши сам источник отвергает. Современная обработка 2023 подтверждает связь концепта с северо-востоком Кыргызстана.\n\nВ книге обсуждаются утрата луговых местообитаний, сенокошение, перевыпас, рекреация, пестициды и отлов. Их современная интенсивность отдельно не установлена. В 2006 году предлагались микрорезерваты на участках с растущей нагрузкой, мониторинг и уточнение кормовой базы; исторические сведения об охране на отдельных территориях не выдаются за аудит 2026 года.\n\nНациональная категория относится к местной исторической единице охраны, описанной в 2006 году. Она не является глобальной оценкой всего принятого таксона, современной категорией IUCN или проверенным правовым статусом 2026 года. Современная национальная численность остаётся неизвестной; независимая научная проверка ожидается.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "huang-2023",
+        "previous-mcz-merzbacheri",
+        "previous-parnassius-types-1966",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Белые или кремоватые крылья несут чёрный рисунок; на каждом заднем крыле заметны два красных пятна с чёрными ободками и более или менее выраженными светлыми центрами. В книге самцы обычно светлее и мельче самок. Числовой размах крыльев расходится между языковыми версиями очерка и здесь не унифицируется.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная книга описывает тесную связь личинок с толстянковыми растениями и оседлый характер местных популяций. Исторические значения плотности и колебания обилия не превращены в современную оценку численности.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Для гусениц местного подвида книга указывает очитки Sedum ewersii, S. hybridum и S. alberti. Связь с Orostachys в том же тексте предположительна и не включена в подтверждённый перечень.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По национальному источнику развивается одно поколение в год, зимует гусеница первого возраста, нередко внутри яйцевой оболочки. Взрослые отмечались с конца июня до осени. Эти сведения относятся к описанным наблюдениям, а не к новому обследованию.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Очерк относит подвид к джунгаро-северотяньшанскому ареалу и перечисляет исторические местонахождения по Киргизскому, Джумгальскому, Кастекскому, Заилийскому, Кунгей и Терскей Ала-Тоо. Указание для Ат-Баши сам источник отвергает. Современная обработка 2023 подтверждает связь концепта с северо-востоком Кыргызстана.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

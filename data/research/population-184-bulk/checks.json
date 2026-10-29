@@ -1,0 +1,327 @@
+{
+  "task": "28.3",
+  "readOnly": true,
+  "errors": [],
+  "catalogue": 184,
+  "archive": 2,
+  "photos": 161,
+  "placeholder": 23,
+  "registryFingerprint": "7b482286e9b5c4c67ecf50c1f09ea45b1cbd3fdecf6adc2306673fe037bd96e8",
+  "manifestSHA256": "b69e129a21330d1bf6698f7457d2b3b9339bf3b3a9014424989301448633ebbc",
+  "registrySHA256": "07c75b54d5c769050d0f65c2820cbf023f18df19c83042563db3e31abadfc86b",
+  "manifestEstimates": 36,
+  "manifestTaxa": 8,
+  "shapeValid": 25,
+  "shapeBlocked": 11,
+  "hiddenByPublicGate": 36,
+  "publicationPermitted": 0,
+  "published": 0,
+  "firstReadOnlyProbe": {
+    "before": 184,
+    "after": 184,
+    "counts": {
+      "processed": 1,
+      "added": 0,
+      "unchanged": 0,
+      "rejected": 1
+    },
+    "errors": [
+      "ID eurasian-lynx уже существует с другими данными; импорт только добавляет, не перезаписывает"
+    ]
+  },
+  "secondReadOnlyProbe": {
+    "before": 184,
+    "after": 184,
+    "counts": {
+      "processed": 1,
+      "added": 0,
+      "unchanged": 0,
+      "rejected": 1
+    },
+    "errors": [
+      "ID eurasian-lynx уже существует с другими данными; импорт только добавляет, не перезаписывает"
+    ]
+  },
+  "identicalProbes": true,
+  "proposedSourceUnchanged": true,
+  "unchangedPriorFiles": 1207,
+  "changedPriorFiles": [
+    "data/.gitattributes",
+    "tests/population-activation.test.mjs"
+  ],
+  "compatibility": [
+    {
+      "speciesId": "irbis",
+      "evidenceId": "slr-national-adults",
+      "shapeErrors": [
+        "population: оценка требует территорию, год и единицу учёта"
+      ],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "irbis",
+      "evidenceId": "slr-region-15",
+      "shapeErrors": [
+        "population: оценка требует территорию, год и единицу учёта"
+      ],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "irbis",
+      "evidenceId": "slr-region-23",
+      "shapeErrors": [
+        "population: оценка требует территорию, год и единицу учёта"
+      ],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "irbis",
+      "evidenceId": "slr-region-46",
+      "shapeErrors": [
+        "population: оценка требует территорию, год и единицу учёта"
+      ],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "irbis",
+      "evidenceId": "slr-region-72",
+      "shapeErrors": [
+        "population: оценка требует территорию, год и единицу учёта"
+      ],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "irbis",
+      "evidenceId": "slr-region-62",
+      "shapeErrors": [
+        "population: оценка требует территорию, год и единицу учёта"
+      ],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "irbis",
+      "evidenceId": "slr-region-50",
+      "shapeErrors": [
+        "population: оценка требует территорию, год и единицу учёта"
+      ],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "irbis",
+      "evidenceId": "slr-region-31",
+      "shapeErrors": [
+        "population: оценка требует территорию, год и единицу учёта"
+      ],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "manul",
+      "evidenceId": "book-sarychat",
+      "shapeErrors": [
+        "population: оценка требует территорию, год и единицу учёта"
+      ],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "menzbiers-marmot",
+      "evidenceId": "book-marmot-en",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "ursus-arctos",
+      "evidenceId": "book-fergana-bear",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "lonicera-paradoxa",
+      "evidenceId": "book-lonicera-1969",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "lonicera-paradoxa",
+      "evidenceId": "book-lonicera-1973",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "anser-indica",
+      "evidenceId": "book-sonkul-geese",
+      "shapeErrors": [
+        "population: оценка требует территорию, год и единицу учёта"
+      ],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "anser-indica",
+      "evidenceId": "book-chatyrkul-geese",
+      "shapeErrors": [
+        "population: оценка требует территорию, год и единицу учёта"
+      ],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "irbis",
+      "evidenceId": "nr7-row-5-2018",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "irbis",
+      "evidenceId": "nr7-row-5-2019",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "irbis",
+      "evidenceId": "nr7-row-5-2020",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "irbis",
+      "evidenceId": "nr7-row-5-2021",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "irbis",
+      "evidenceId": "nr7-row-5-2022",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "irbis",
+      "evidenceId": "nr7-row-5-2023",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "irbis",
+      "evidenceId": "nr7-row-5-2024",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "eurasian-lynx",
+      "evidenceId": "nr7-row-6-2018",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "eurasian-lynx",
+      "evidenceId": "nr7-row-6-2019",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "eurasian-lynx",
+      "evidenceId": "nr7-row-6-2020",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "eurasian-lynx",
+      "evidenceId": "nr7-row-6-2021",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "eurasian-lynx",
+      "evidenceId": "nr7-row-6-2022",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "eurasian-lynx",
+      "evidenceId": "nr7-row-6-2023",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "eurasian-lynx",
+      "evidenceId": "nr7-row-6-2024",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "golden-eagle",
+      "evidenceId": "nr7-row-7-2018",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "golden-eagle",
+      "evidenceId": "nr7-row-7-2019",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "golden-eagle",
+      "evidenceId": "nr7-row-7-2020",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "golden-eagle",
+      "evidenceId": "nr7-row-7-2021",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "golden-eagle",
+      "evidenceId": "nr7-row-7-2022",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "golden-eagle",
+      "evidenceId": "nr7-row-7-2023",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    },
+    {
+      "speciesId": "golden-eagle",
+      "evidenceId": "nr7-row-7-2024",
+      "shapeErrors": [],
+      "publicType": "unknown"
+    }
+  ],
+  "verification": {
+    "npm test -- --test-concurrency=1": {
+      "passed": 381,
+      "failed": 0
+    },
+    "npm run data": "PASS: catalogue 184 / archive 2 / regional links 208",
+    "npm run data:validate": "PASS: 631 locale keys x 4 / generated data up to date",
+    "npm run build": "PASS: 105 modules / production build / admin-entry",
+    "browser": {
+      "passed": 10,
+      "results": [
+        "default stays sharp and full-colour; unknown is CSS grayscale only; restore preserves original source and resolution; unknown species switch resets immediately",
+        "manual controls and unknown message work in KY UZ RU EN",
+        "pending rejected and invalid synthetic claims hide numbers, dates and sources; no pixelation",
+        "approved exact approximate and range fixtures use existing symbolic Canvas; endpoint values, territory, year, source and type stay intact",
+        "rapid toggles, species change, unmount, broken or missing photo release Canvas/RAF; placeholder is preserved",
+        "offscreen active component schedules no RAF, including on resize",
+        "real modal and species page share manual behaviour; closing an active known-population modal releases Canvas and RAF",
+        "real catalogue has no per-card Canvas; real card → modal and /species/irbis work with unchanged public data",
+        "390px touch controls have no overflow; reduced-motion grayscale and known Canvas need no animation RAF",
+        "unsupported Canvas preserves original photo; unknown grayscale remains available"
+      ],
+      "errors": []
+    },
+    "logSHA256": {
+      "test": "d12a233cdeb6c47b6e29429979632683fe92a9de29d020c7f4435d5df6f6c53b",
+      "data": "c93ee0587b608a03d0f204717974f8464982af96ade8780bbd3a195ff182f9cf",
+      "data:validate": "f54b85ee77f854f287d064ee97bc4237768b7b7ed9b7e069c32385ea2b5e1d52",
+      "build": "b31b265e9d49c562189e88d349d95751d0caede2633108287b79bce4b5140944",
+      "browser": "caa03d54eecdf64075edb38c247f9b54de3ac976115bae8586ad1da3cdc9e365"
+    },
+    "diskFreeBytesAtStart": 7899725824,
+    "diskFreeBytesAfterChecks": 10639364096,
+    "enospc": false
+  }
+}

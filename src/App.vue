@@ -17,17 +17,25 @@ import CatalogSearch from './components/CatalogSearch.vue'
 import LanguageMenu from './components/LanguageMenu.vue'
 import { paginateCatalog, pageNumbers } from './data/catalog-pagination.js'
 import GroupFilter from './components/GroupFilter.vue'
+import CustomSelect from './components/CustomSelect.vue'
+import './components/custom-select.css'
 import HeroIllustrations from './components/HeroIllustrations.vue'
 import { speciesPhoto } from './data/presentation.js'
 import { prioritizeIllustratedResults } from './data/catalog-pagination.js'
 import { useCatalog } from './composables/useCatalog.js'
 import './components/catalog.css'
 import { loadSpeciesCatalog } from './data/catalog-repository.js'
+import { populationPublicationContexts } from './data/population-publication.js'
+import editorialPopulationRelease from './data/population-editorial-release.json'
 import { createSearchIndex, searchSpecies } from './data/catalog-search.js'
 import { validateQuestions } from './data/quiz/model.js'
 
 const { t, language, siteLanguage, setLanguage } = useLocale()
 
+// Task 28.5 owner decision is a separate fixed release, validated per taxon by the existing gate.
+// A trusted host/API can replace or revoke this context without changing scientific records.
+const props = defineProps({ populationPublicationRelease: { type: Object, default: () => editorialPopulationRelease } })
+const populationContexts = computed(() => populationPublicationContexts(props.populationPublicationRelease))
 const species = ref([])
 const catalog = useCatalog(species)
 // Header search sees the whole catalogue even when page filters are active.
@@ -47,12 +55,17 @@ const desktopColumns = ref(3)
 const compactColumns = ref(2)
 const catalogColumns = computed({
   get: () => isCompactViewport.value ? compactColumns.value : desktopColumns.value,
-  set: value => { if (isCompactViewport.value) compactColumns.value = Number(value); else desktopColumns.value = Number(value) },
+  set: value => { if (isCompactViewport.value) compactColumns.value = Math.min(2, Math.max(1, Number(value))); else desktopColumns.value = Number(value) },
 })
 let viewportQuery
-function updateViewport(event) { isCompactViewport.value = event.matches }
+function updateViewport(event) { isCompactViewport.value = event.matches; if (event.matches && compactColumns.value > 2) compactColumns.value = 2 }
 const catalogGridStyle = computed(() => ({ '--catalog-columns': catalogColumns.value }))
 const paginationButtons = computed(() => pageNumbers(catalogPagination.value.current, catalogPagination.value.totalPages))
+const desktopColumnOptions = computed(() => [1, 2, 3, 4, 5].map(n => ({ value: n, label: t('catalogUI.inRow', { p0: n }) })))
+const mobileColumnOptions = computed(() => [1, 2].map(n => ({ value: n, label: t('catalogUI.inRow', { p0: n }) })))
+const columnOptions = computed(() => isCompactViewport.value ? mobileColumnOptions.value : desktopColumnOptions.value)
+const statusOptions = computed(() => options.value.statuses.map(option => ({ value: option.value, label: statusLabel(option.value) })))
+const regionOptions = computed(() => options.value.regions.map(region => ({ value: region, label: regionFilterLabel(region, language.value) })))
 watch([query, selectedStatus, selectedRegion, selectedGroup, species], () => { catalogPageNumber.value = 1 }, { flush: 'sync' })
 const isLoading = ref(true)
 const errorMessage = ref('')
@@ -300,7 +313,7 @@ onUnmounted(() => {
       </div>
       <div class="hero-landscape"><HeroIllustrations /></div>
     </section>
-    <MapSection v-show="activeView === 'catalog' || activeView === 'map'" :mode="activeView === 'map' ? 'full' : 'preview'" :route-region="mapRouteRegion" :species="species" :loading="isLoading" :error="errorMessage" @open="openSpecies" @details="showMap" @regionchange="updateMapRegion" />
+    <MapSection v-show="activeView === 'catalog' || activeView === 'map'" :mode="activeView === 'map' ? 'full' : 'preview'" :route-region="mapRouteRegion" :species="species" :loading="isLoading" :error="errorMessage" @open="openSpecies" @profile="openSpeciesPage" @details="showMap" @regionchange="updateMapRegion" />
     <section v-show="activeView === 'catalog'" id="catalog" class="catalog page-container" aria-labelledby="catalog-title" tabindex="-1" :aria-busy="isLoading">
       <div class="catalog-heading">
         <div>
@@ -316,15 +329,11 @@ onUnmounted(() => {
           <div class="filter-bar">
             <div class="filter-field">
               <label for="status-filter">{{ t('ui.m026') }}</label>
-              <select id="status-filter" v-model="selectedStatus" :aria-label="t('ui.m027')">
-                <option v-for="status in options.statuses" :key="status.value" :value="status.value">{{ statusLabel(status.value) }}</option>
-              </select>
+              <CustomSelect id="status-filter" v-model="selectedStatus" :options="statusOptions" :label="t('ui.m027')" />
             </div>
             <div class="filter-field">
               <label for="region-filter">{{ t('ui.m028') }}</label>
-              <select id="region-filter" v-model="selectedRegion" :aria-label="t('ui.m029')">
-                <option v-for="region in options.regions" :key="region" :value="region">{{ regionFilterLabel(region, language) }}</option>
-              </select>
+              <CustomSelect id="region-filter" v-model="selectedRegion" :options="regionOptions" :label="t('ui.m029')" />
             </div>
             <button type="button" class="catalog-reset" :disabled="!hasFilters" @click="catalog.reset">{{ t('ui.m031') }}</button>
           </div>
@@ -335,15 +344,15 @@ onUnmounted(() => {
             <div class="compact-filter-fields">
               <div class="filter-field">
                 <label for="group-filter-compact">{{ t('ui.m025') }}</label>
-                <select id="group-filter-compact" v-model="selectedGroup"><option v-for="group in translatedGroups" :key="group.value" :value="group.value">{{ group.label }}</option></select>
+                <CustomSelect id="group-filter-compact" v-model="selectedGroup" :options="translatedGroups" :label="t('ui.m025')" />
               </div>
               <div class="filter-field">
                 <label for="status-filter-compact">{{ t('ui.m026') }}</label>
-                <select id="status-filter-compact" v-model="selectedStatus"><option v-for="status in options.statuses" :key="status.value" :value="status.value">{{ statusLabel(status.value) }}</option></select>
+                <CustomSelect id="status-filter-compact" v-model="selectedStatus" :options="statusOptions" :label="t('ui.m027')" />
               </div>
               <div class="filter-field">
                 <label for="region-filter-compact">{{ t('ui.m028') }}</label>
-                <select id="region-filter-compact" v-model="selectedRegion"><option v-for="region in options.regions" :key="region" :value="region">{{ regionFilterLabel(region, language) }}</option></select>
+                <CustomSelect id="region-filter-compact" v-model="selectedRegion" :options="regionOptions" :label="t('ui.m029')" />
               </div>
               <button type="button" class="catalog-reset" :disabled="!hasFilters" @click="catalog.reset">{{ t('ui.m031') }}</button>
             </div>
@@ -353,9 +362,7 @@ onUnmounted(() => {
           <p class="result-count" role="status" aria-live="polite" aria-atomic="true">{{ isLoading ? t('ui.m032') : errorMessage ? t('ui.m033') : fuzzy ? t('ui.m034', { p0: results.length }) : t('ui.m035', { p0: results.length }) }}</p>
           <div class="catalog-density">
             <label for="catalog-columns">{{ t('catalogUI.columns') }}</label>
-            <select id="catalog-columns" v-model.number="catalogColumns" :aria-label="t('catalogUI.columns')">
-              <option v-for="number in 5" :key="number" :value="number">{{ t('catalogUI.inRow', { p0: number }) }}</option>
-            </select>
+            <CustomSelect id="catalog-columns" v-model="catalogColumns" :options="columnOptions" :label="t('catalogUI.columns')" />
           </div>
         </div>
       </div>
@@ -380,7 +387,7 @@ onUnmounted(() => {
       @catalog="showView('catalog')" @study="studySpecies" @lesson="showView('lesson')" />
     <LessonView v-if="mountedViews.has('lesson')" ref="lessonView" v-show="activeView === 'lesson'" :species="species" :active="activeView === 'lesson'" :loading="isLoading" :error="errorMessage"
       @catalog="showView('catalog')" @quiz="openQuizFromLesson" />
-    <SpeciesPage v-if="activeView === 'species'" :species="profileSpecies" :loading="isLoading" :error="errorMessage" :content-language="contentLanguage" @catalog="showView('catalog')" @support="openSupport" />
+    <SpeciesPage v-if="activeView === 'species'" :species="profileSpecies" :population-publication="populationContexts.get(profileSpecies?.id) || null" :loading="isLoading" :error="errorMessage" :content-language="contentLanguage" @catalog="showView('catalog')" @support="openSupport" />
     <SupportView v-if="mountedViews.has('support')" v-show="activeView === 'support'" :species="species" :species-id="supportSpeciesId" :loading="isLoading" :error="errorMessage"
       @select="supportSpeciesId = $event" @study="studySpecies" @catalog="showView('catalog')" />
   </main>
@@ -390,5 +397,5 @@ onUnmounted(() => {
       <p class="footer-note">Полотова А.</p>
     </div>
   </footer>
-  <SpeciesModal v-if="selectedSpecies" :species="selectedSpecies" :content-language="contentLanguage" @close="closeSpecies" @support="openSupport" @details="openSpeciesPage" />
+  <SpeciesModal v-if="selectedSpecies" :species="selectedSpecies" :population-publication="populationContexts.get(selectedSpecies.id) || null" :content-language="contentLanguage" @close="closeSpecies" @support="openSupport" @details="openSpeciesPage" />
 </template>

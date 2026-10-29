@@ -1,3 +1,4 @@
+import { historicalPipeline } from './helpers/historical-pipeline.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
@@ -17,7 +18,8 @@ import { speciesPath, speciesIdFromPath } from '../src/data/species-routes.js'
 
 const bytes = path => readFile(`${PROJECT_ROOT}/${path}`)
 const read = async path => JSON.parse(await bytes(path))
-const source = await read('data/species.source.json'), published = await read('public/data/species.json')
+// Immutable 150-record release; catalog-166-publication checks the live catalogue.
+const source = await read('data/backups/catalog-166/species.source.json'), published = await read('data/backups/catalog-166/public-species.json')
 const before = await read('data/backups/catalog-150/species.source.json')
 const beforePublic = await read('data/backups/catalog-150/public-species.json')
 const baseline = await read('data/backups/catalog-150/baseline.json')
@@ -67,7 +69,7 @@ test('catalog 150 preserves all prior 125 objects and assets and publishes only 
   assert.equal(registry.candidates.find(c => c.id === gazelle.id).countryOccurrence.currentPresenceConfirmed, null)
 })
 
-test('150 live species retain valid WebP, four-language search, routes, filters and seven complete pagination pages', async () => {
+test('150 release species retain valid WebP, four-language search, routes, filters and seven complete pagination pages', async () => {
   assert.equal(additions.reduce((n, s) => n + s.images.length, 0), 22)
   assert.equal(publicAdditions.reduce((n, s) => n + s.images.length, 0), 22)
   assert.equal(publicAdditions.filter(s => !s.images.length).length, 3)
@@ -129,8 +131,8 @@ test('all 25 new cards, modals and species pages render photos/placeholders, cre
 
 test('a repeat of the same owner decision is a read-only dry-run with zero additions and 25 unchanged records', async () => {
   const originalSource = digest(await bytes('data/species.source.json')), originalRegistry = fingerprint(registry)
-  const result = await runPipeline(PROJECT_ROOT, ['provisional', '--registry', manifest.registry, '--manifest', manifestPath,
-    '--mode', 'dry-run', '--owner-role', 'project_owner', '--decision-id', decision.decisionId, '--date', '2026-10-16', '--reason', reason])
+  const result = await historicalPipeline(source, root => runPipeline(root, ['provisional', '--registry', manifest.registry, '--manifest', manifestPath,
+    '--mode', 'dry-run', '--owner-role', 'project_owner', '--decision-id', decision.decisionId, '--date', '2026-10-16', '--reason', reason]))
   assert.deepEqual(result.counts, { processed: 25, added: 0, unchanged: 25, rejected: 0 })
   assert.equal(result.applied, false); assert.equal(result.scientificApproval, null)
   assert.equal(digest(await bytes('data/species.source.json')), originalSource)

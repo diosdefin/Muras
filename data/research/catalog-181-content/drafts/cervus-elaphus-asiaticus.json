@@ -1,0 +1,253 @@
+{
+  "id": "cervus-elaphus-asiaticus",
+  "scientificName": "Cervus canadensis",
+  "names": {
+    "ru": "Тяньшанский марал, исторический asiaticus",
+    "ky": "Cervus canadensis",
+    "uz": "Cervus canadensis",
+    "en": "Wapiti"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Artiodactyla",
+    "family": "Cervidae",
+    "genus": "Cervus"
+  },
+  "group": "mammals",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "EN",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Cervus elaphus asiaticus, с.512–513); Статус: Категория IV , Endangered, EN C2a(i): R",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Еловые леса и кустарниковые заросли гор; в книге описаны сезонные выходы на субальпийские луга.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "code": "KG",
+      "type": "country",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В историческом источнике названы вырубка, интенсивный выпас, беспокойство, браконьерство и ограниченность зимних кормовых участков.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендации 2006 года: охрана и расширение местообитаний, экологические коридоры и контроль браконьерства.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Cervus elaphus asiaticus, с.512–513",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=513",
+      "accessedAt": "2026-10-22",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.category",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "content.diet",
+        "threats.0",
+        "conservationMeasures.0"
+      ],
+      "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+    },
+    {
+      "id": "mdd-cervus",
+      "title": "MDD: Cervus canadensis",
+      "publisher": "American Society of Mammalogists / Mammal Diversity Database",
+      "url": "https://www.mammaldiversity.org/taxon/1006312/",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "names.en",
+        "content.shortDescription"
+      ],
+      "notes": "Taxonomy notes; Names and synonyms: Cervus canadensis asiaticus; country Kyrgyzstan; переиспользованы доказательства №25.4 (web_primary_page_text). Полный текст недоступного источника не объявлен заново прочитанным."
+    },
+    {
+      "id": "cervus-2018",
+      "title": "Исследование (2018): Late Pleistocene wapiti, Cervus canadensis",
+      "publisher": "Contributions to Zoology / Brill",
+      "url": "https://brill.com/view/journals/ctoz/87/1/article-p1_1.pdf",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview"
+      ],
+      "notes": "Contributions to Zoology 87(1):1–10; discussion of name C. canadensis asiaticus; переиспользованы доказательства №25.4 (web_indexed_primary_pdf_text). Полный текст недоступного источника не объявлен заново прочитанным."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "Integrated Taxonomic Information System (ITIS): Cervus canadensis Erxleben, 1777; exact SPECIES",
+      "publisher": "GBIF / Integrated Taxonomic Information System (ITIS)",
+      "url": "https://api.gbif.org/v1/species/134092547",
+      "accessedAt": "2026-10-22",
+      "language": "en",
+      "taxonId": "gbif:134092547",
+      "supports": [
+        "scientificName",
+        "names.uz",
+        "content.overview",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.ky"
+      ],
+      "notes": "Источник — реальная запись указанного чек-листа. EXACT означает локальную строгую проверку canonicalName и rank; не вымышленный ответ API match. nubKey другого ранга не подставлен."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Исторический тяньшанский марал asiaticus, включённый в современный Cervus canadensis. Старые местные учёты не являются современной оценкой численности.",
+        "ky": "Азыр Cervus canadensis түрүнө киргизилген Теңир-Тоодогу тарыхый asiaticus концепту. Мурунку жергиликтүү эсептер азыркы санынын баасы эмес.",
+        "uz": "Hozir Cervus canadensis tarkibida qaraladigan Tyanshanning tarixiy asiaticus konsepti. Eski mahalliy hisoblar hozirgi son bahosi emas.",
+        "en": "The historical Tien Shan asiaticus concept included in Cervus canadensis. Old local counts are not a present national population estimate."
+      },
+      "sourceIds": [
+        "national-book",
+        "mdd-cervus"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Тяньшанский марал — историческая национальная единица охраны, описанная как Cervus elaphus asiaticus Lydekker, 1898. Принятый видовой стандарт MDD связывает имя asiaticus с Cervus canadensis Erxleben, 1777. Подготовка следует этой именной связи, не объявляя asiaticus самостоятельно принятым современным подвидом.\n\nЕловые леса и кустарниковые заросли гор; в книге описаны сезонные выходы на субальпийские луга. По историческому национальному очерку маралы способны к кочёвкам, в том числе через границы государств. Локальные стада и случайные переходы не объединяются в вымышленную современную популяцию.\n\nВ национальном очерке основной корм описан как травянистая растительность; современные сезонные доли кормов не установлены. Книга описывает осенний гон и появление молодняка в конце весны — начале лета. Разночтения отдельных сроков RU/EN не использованы для точного календаря.\n\nНациональный очерк приводит Нарын-Тоо и восточное Прииссыккулье, а для части старых участков прямо отмечает отсутствие сведений. Карточка не переносит историческое состояние этих мест в настоящее.\n\nВ историческом источнике названы вырубка, интенсивный выпас, беспокойство, браконьерство и ограниченность зимних кормовых участков. Рекомендации 2006 года: охрана и расширение местообитаний, экологические коридоры и контроль браконьерства.\n\nНациональная EN категория относится к историческому очерку 2006 года и названной местной единице охраны. Она не является глобальной оценкой всего современного таксона или проверенным действующим правовым статусом. Современная численность неизвестна; независимая научная проверка ожидается.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "mdd-cervus",
+        "cervus-2018",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": null,
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По историческому национальному очерку маралы способны к кочёвкам, в том числе через границы государств. Локальные стада и случайные переходы не объединяются в вымышленную современную популяцию.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальном очерке основной корм описан как травянистая растительность; современные сезонные доли кормов не установлены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книга описывает осенний гон и появление молодняка в конце весны — начале лета. Разночтения отдельных сроков RU/EN не использованы для точного календаря.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный очерк приводит Нарын-Тоо и восточное Прииссыккулье, а для части старых участков прямо отмечает отсутствие сведений. Карточка не переносит историческое состояние этих мест в настоящее.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

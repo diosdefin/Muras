@@ -646,3 +646,21 @@
   .page-header .header-search, .page-header .header-search .search-input-row,
   .page-header .language-trigger, .page-header .language-trigger svg { transition: none; }
 }
+
+/* A restrained, accessible pager: compact and predictable on narrow devices. */
+.catalog-pagination { gap: 5px; margin-top: 14px; padding-top: 21px; }
+.catalog-pagination button { border-radius: 8px; transition: background .18s ease, border-color .18s ease, color .18s ease; }
+.catalog-pagination button:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; }
+.catalog-pagination .page-number:not([aria-current="page"]) { border-color: transparent; }
+.catalog-pagination .page-arrow { background: transparent; border-color: var(--line); font-size: 17px; }
+.catalog-pagination .page-arrow:disabled { opacity: .3; }
+@media (max-width: 479px) {
+  .catalog-pagination { gap: 2px; flex-wrap: nowrap; }
+  .catalog-pagination button { min-width: 38px; min-height: 40px; padding: 0 7px; font-size: 14px; }
+  .catalog-pagination .page-ellipsis { min-width: 15px; }
+}
+@media (prefers-reduced-motion: reduce) { .catalog-pagination button { transition: none; } }
+
+/* Keep lesson selector aligned with its companion fullscreen button. */
+.lesson-tools > .muras-select { width: min(320px, 40vw); flex: 0 1 320px; }
+@media (max-width: 767px) { .lesson-tools > .muras-select { width: 100%; flex: 1 1 100%; } }

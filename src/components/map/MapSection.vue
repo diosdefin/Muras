@@ -1,27 +1,28 @@
 <script setup>
 import ErrorNotice from '../ErrorNotice.vue'
 import { useLocale } from '../../composables/useLocale.js'
-import { computed, nextTick, onMounted, ref, watch } from 'vue'
+import { computed, nextTick, ref, watch } from 'vue'
 import RegionMap from './RegionMap.vue'
 import RegionPanel from './RegionPanel.vue'
 import MapOverviewPanel from './MapOverviewPanel.vue'
-import { REGIONS, regionalEntries, validateMapGeometry, validateRegionalEvidence } from '../../data/geography/model.js'
+import { REGIONS, regionalEntries, validateRegionalEvidence } from '../../data/geography/model.js'
+import { loadRegionalData, queryRegionalEntries } from '../../data/geography/repository.js'
 import './map.css'
 
 const { t } = useLocale()
 
 const props = defineProps({ species: { type: Array, default: () => [] }, loading: { type: Boolean, default: false }, error: { type: String, default: '' }, mode: { type: String, default: 'full' }, routeRegion: { type: String, default: '' } })
-const emit = defineEmits(['open', 'details', 'regionchange'])
+const emit = defineEmits(['open', 'profile', 'details', 'regionchange'])
 const geometry = ref(null), evidence = ref(null), loadingMap = ref(true), loadError = ref('')
-const selected = ref(''), group = ref('ALL')
+const selected = ref(''), group = ref('ALL'), query = ref('')
 const mobilePreviewSlide = ref('map')
 const region = computed(() => REGIONS.find(r => r.id === selected.value) || null)
 const validationError = computed(() => !props.loading && evidence.value ? validateRegionalEvidence(evidence.value, props.species)[0] || '' : '')
 const errorMessage = computed(() => props.error || loadError.value || validationError.value)
-const entries = computed(() => errorMessage.value ? [] : regionalEntries(evidence.value, props.species, selected.value, group.value))
-const unfilteredCount = computed(() => regionalEntries(evidence.value, props.species, selected.value).length)
-watch(() => props.routeRegion, id => {
-  if (props.mode === 'full') selected.value = REGIONS.some(region => region.id === id) ? id : ''
+const entries = computed(() => errorMessage.value ? [] : queryRegionalEntries(evidence.value, props.species, { regionId: selected.value, group: group.value, query: query.value }))
+const unfilteredCount = computed(() => queryRegionalEntries(evidence.value, props.species, { regionId: selected.value }).length)
+watch(() => [props.mode, props.routeRegion], ([mode, id]) => {
+  if (mode === 'full') selected.value = REGIONS.some(region => region.id === id) ? id : ''
 }, { immediate: true })
 function selectRegion(id) {
   selected.value = selected.value === id ? '' : id
@@ -31,23 +32,22 @@ function selectRegion(id) {
 function dismissPreview() { selected.value = ''; mobilePreviewSlide.value = 'map' }
 const local = file => `${import.meta.env.BASE_URL}data/geography/${file}`
 async function reset() {
-  selected.value = ''; group.value = 'ALL'; emit('regionchange', '')
+  selected.value = ''; group.value = 'ALL'; query.value = ''; emit('regionchange', '')
   await nextTick()
   document.getElementById('map-region-select')?.focus({ preventScroll: true })
 }
-onMounted(async () => {
+async function load() {
+  loadingMap.value = true; loadError.value = ''
   try {
-    const [map, records] = await Promise.all(['map.json', 'occurrences.json'].map(async file => {
-      const response = await fetch(local(file))
-      if (!response.ok) throw new Error(`HTTP ${response.status}: data/geography/${file}`)
-      return response.json()
-    }))
-    const errors = validateMapGeometry(map)
-    if (errors.length) throw new Error(errors[0])
-    geometry.value = map; evidence.value = records
+    const data = await loadRegionalData(props.species, { baseUrl: import.meta.env.BASE_URL })
+    geometry.value = data.geometry; evidence.value = data.evidence
   } catch (error) { loadError.value = error.message }
   finally { loadingMap.value = false }
-})
+}
+watch(() => [props.loading, props.species], ([loading, species]) => {
+  if (typeof window !== 'undefined' && !loading && species.length) load()
+}, { immediate: true })
+
 </script>
 
 <template>
@@ -56,12 +56,12 @@ onMounted(async () => {
       <div><p class="eyebrow"><span class="red-rule" aria-hidden="true"></span> {{ t('ui.m109') }}</p><h2 id="map-title" tabindex="-1">{{ t('ui.m110') }}</h2></div>
       <p>{{ t('ui.m111') }}</p>
     </div>
-    <p v-if="loadingMap || loading" class="catalog-message" role="status">{{ t('ui.m112') }}</p>
-    <ErrorNotice v-else-if="errorMessage" :message="errorMessage"></ErrorNotice>
+    <ErrorNotice v-if="errorMessage" :message="errorMessage"></ErrorNotice>
+    <p v-else-if="loadingMap || loading" class="catalog-message" role="status">{{ t('ui.m112') }}</p>
     <div v-else class="map-layout" :class="{ 'map-mobile-show-info': mode === 'preview' && mobilePreviewSlide === 'info', 'map-mobile-show-map': mode === 'preview' && mobilePreviewSlide === 'map' }">
       <RegionMap :geometry="geometry" :selected="selected" :preview="mode === 'preview'" :panel-id="mode === 'preview' ? 'map-overview-panel' : 'map-region-panel'" @select="selectRegion" />
       <MapOverviewPanel v-if="mode === 'preview'" :species="species" :region="region" :entries="regionalEntries(evidence, species, selected)" @clear="dismissPreview" @details="emit('details', selected)" />
-      <RegionPanel v-else :species="species" :region="region" :entries="entries" :group="group" :unfiltered-count="unfilteredCount" @group="group = $event" @reset="reset" @open="emit('open', $event)" />
+      <RegionPanel v-else :species="species" :region="region" :entries="entries" :group="group" :query="query" :unfiltered-count="unfilteredCount" @query="query = $event" @group="group = $event" @reset="reset" @open="emit('open', $event)" @profile="emit('profile', $event)" />
     </div>
     <div v-if="mode === 'preview' && !loadingMap && !errorMessage" class="map-mobile-pager" role="group" :aria-label="t('mapUI.pager')">
       <button type="button" :aria-label="t('mapUI.map')" :aria-pressed="mobilePreviewSlide === 'map'" @click="mobilePreviewSlide = 'map'"></button>

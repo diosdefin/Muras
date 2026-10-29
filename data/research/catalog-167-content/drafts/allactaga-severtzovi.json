@@ -1,0 +1,285 @@
+{
+  "id": "allactaga-severtzovi",
+  "scientificName": "Allactaga severtzovi",
+  "names": {
+    "ru": "Тушканчик Северцова",
+    "ky": "Северцов кошаягы",
+    "uz": "Allactaga severtzovi",
+    "en": "Severtzov’s Jerboa"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Mammalia",
+    "order": "Rodentia",
+    "family": "Dipodidae",
+    "genus": "Allactaga"
+  },
+  "group": "mammals",
+  "nationalRedBook": {
+    "listed": true,
+    "category": null,
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); историческая категория VII, LR/lc (2006); не переведена произвольно в современную категорию",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "По очерку 2006 года относительно ровные полупустыни с травянистой растительностью, эфемерами и эфемероидами; упомянуты глинистые участки.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": null,
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендация книги 2006 года: сохранять местообитания. Конкретные действующие местные меры не подтверждены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/allactaga-severtzovi.webp",
+      "width": 1800,
+      "height": 1336,
+      "sha256": "6fa83363d260ef07a6e488d908eac8dffd6762f95fa74ce01f116f4d50d65858",
+      "author": "Alexander A. Fomichev",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Allactaga_severtzovi.jpg",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "attribution": "Alexander A. Fomichev; CC BY 4.0; https://commons.wikimedia.org/wiki/File:Allactaga_severtzovi.jpg.",
+      "modifications": [
+        "Уменьшение без увеличения до 1800 px; конвертация WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ky": null,
+        "uz": null,
+        "ru": "Allactaga severtzovi, фотография Alexander A. Fomichev от 09.05.2025; iNaturalist 292504490 / GBIF 5217369006. Не используется как доказательство современного присутствия в Кыргызстане. На оригинале указана Навоийская область, Узбекистан.",
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е изд., 2006; Allactaga severtzovi, с. 526–527",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=527",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "conservationMeasures.0",
+        "names.en"
+      ]
+    },
+    {
+      "id": "national-decree",
+      "title": "Постановление №170 от 28.04.2005, документированная редакция 25.07.2009; decree-170-2009-2-24",
+      "publisher": "Правительство Кыргызской Республики; FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=8",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "originalScientificName"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Allactaga severtzovi Vinogradov, 1925",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/match?strict=true&name=Allactaga%20severtzovi",
+      "accessedAt": "2026-10-16",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "names.uz"
+      ],
+      "taxonId": "gbif:2439487"
+    },
+    {
+      "id": "mdd-jerboa",
+      "title": "Mammal Diversity Database. Allactaga severtzovi, taxon 1001960; original name, rank and country distribution",
+      "publisher": "American Society of Mammalogists",
+      "url": "https://www.mammaldiversity.org/taxon/1001960/",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.distribution"
+      ]
+    },
+    {
+      "id": "photo-observation",
+      "title": "Описание видимых признаков конкретной подписанной иллюстрации; не морфологический диагноз",
+      "publisher": "Wikimedia Commons; Alexander A. Fomichev",
+      "url": "https://commons.wikimedia.org/wiki/File:Allactaga_severtzovi.jpg",
+      "accessedAt": "2026-10-21",
+      "language": null,
+      "supports": [
+        "content.appearance"
+      ]
+    },
+    {
+      "id": "photo-commons",
+      "title": "Allactaga severtzovi; лицензированное изображение, Alexander A. Fomichev",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Allactaga_severtzovi.jpg",
+      "accessedAt": "2026-10-21",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": null
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 526-бет; визуалдык текшерилген аталыш",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=526",
+      "accessedAt": "2026-10-21",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Исторический национальный очерк о тушканчике Allactaga severtzovi. Современное присутствие и численность в Кыргызстане остаются неподтверждёнными.",
+        "ky": "Allactaga severtzovi жөнүндө тарыхый улуттук очерк. Кыргызстанда азыр бар экендиги жана саны тастыкталган эмес.",
+        "uz": "Allactaga severtzovi haqidagi tarixiy milliy ocherk. Qirgʻizistonda hozir mavjudligi va soni tasdiqlanmagan.",
+        "en": "A historical national account of Allactaga severtzovi. Its current presence and abundance in Kyrgyzstan remain unconfirmed."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Тушканчик Северцова — вид грызунов, представленный отдельным очерком в Красной книге Кыргызстана 2006 года и строкой национального перечня. Принятое видовое имя Allactaga severtzovi подтверждено точной сохранённой записью GBIF и современной Mammal Diversity Database. В оригинальном описании 1925 года использовано сочетание Alactaga severtzovi; это номенклатурная история того же вида, а не дополнительный кандидат.\n\nНациональный очерк связывает вид с относительно ровными полупустынями, эфемерной растительностью и глинистыми участками. Для общего ареала перечислены районы Центральной Азии, западного и северного Тянь-Шаня и западной части Ферганской долины. Однако национальные современные находки в пакете не подтверждены. В современном списке стран MDD Кыргызстан отсутствует; такое расхождение требует честной оговорки и не разрешается автоматическим переносом распространения из соседних стран.\n\nБиология в книге обобщена по литературе: сумеречная и ночная активность, сезонный цикл и неглубокие норы. Репродуктивные параметры, включая данные Кызылкумов, не объявляются местными наблюдениями. Маршрутные значения из Казахстана также не превращены в национальную численность.\n\nИсторическая категория записана как VII, LR/lc. Она не преобразована в современный код поля nationalRedBook.category без прямого основания. Рекомендация книги — сохранять местообитания; конкретные угрозы не установлены. Карточка документирует историческое включение, сохраняя unknown для численности и pending для научной проверки.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "mdd-jerboa"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "На документированной фотографии Allactaga severtzovi из Навоийской области Узбекистана видны длинные задние ноги, крупные уши и длинный хвост с контрастной концевой кисточкой. Это описание иллюстрации, не диагностический ключ и не кыргызстанское полевое наблюдение.",
+        "en": null
+      },
+      "sourceIds": [
+        "photo-observation"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Литературное обобщение книги: сумеречно-ночная активность, сезон активности около 7–8 месяцев, неглубокие норы. Местная кыргызстанская биология названа неизвестной.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книга приводит литературные сведения о весеннем размножении, беременности около 26 дней и 2–7 эмбрионах; сведения о беременности в апреле относятся к Кызылкумам. Это не подтверждённые параметры кыргызстанской популяции.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный очерк 2006 года указывает западный и северный Тянь-Шань и запад Ферганской долины в составе общего ареала. Современная MDD перечисляет Казахстан, Таджикистан, Туркменистан и Узбекистан, без Кыргызстана. Современное присутствие в Кыргызстане не установлено.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "mdd-jerboa"
+      ]
+    }
+  }
+}

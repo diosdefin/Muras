@@ -1,0 +1,144 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-28",
+  "sourceCommit": "841110e08bbd262d3624a5553f39e682cf921c93",
+  "catalogCount": 178,
+  "archiveCount": 2,
+  "distCatalogCount": 178,
+  "preparedDrafts": 9,
+  "eligible": 6,
+  "held": 3,
+  "groups": {
+    "all": {
+      "plants": 3,
+      "arthropods": 5,
+      "mammals": 1
+    },
+    "eligible": {
+      "plants": 3,
+      "arthropods": 2,
+      "mammals": 1
+    }
+  },
+  "images": {
+    "all": 1,
+    "placeholdersAll": 8,
+    "eligible": 1,
+    "placeholdersEligible": 5
+  },
+  "commands": [
+    {
+      "command": "npm test",
+      "exitCode": 1,
+      "passed": 325,
+      "tests": 326,
+      "failed": 1,
+      "problem": "ENOSPC writing a temporary test fixture; no assertion failure in packet"
+    },
+    {
+      "command": "npm test -- --test-concurrency=1",
+      "exitCode": 1,
+      "passed": 321,
+      "tests": 323,
+      "failed": 2,
+      "problem": "Flag appended after file glob did not serialize the runner; ENOSPC plus test child process exit 3221226505"
+    },
+    {
+      "command": "node --test --test-concurrency=1 tests/*.test.mjs",
+      "exitCode": 0,
+      "passed": 326,
+      "tests": 326,
+      "failed": 0,
+      "skipped": 0
+    },
+    {
+      "command": "npm run data (first)",
+      "exitCode": 0,
+      "catalog": 178
+    },
+    {
+      "command": "npm run data (second)",
+      "exitCode": 0,
+      "catalog": 178
+    },
+    {
+      "command": "npm run build",
+      "exitCode": 0,
+      "catalog": 178
+    },
+    {
+      "command": "node scripts/prepare-catalog-187.mjs --verify",
+      "exitCode": 0
+    },
+    {
+      "command": "node scripts/validate-catalog-187-preparation.mjs",
+      "exitCode": 0
+    }
+  ],
+  "testRunnerCodeChanged": false,
+  "oldGeneratedFilesDeleted": false,
+  "resourceLimitation": "Drive C had about 200 MiB free. Complete suite passed with concurrency flag before the test paths; no test skipped or changed.",
+  "logs": {
+    "npm-test": {
+      "path": ".generated/catalog-187/npm-test.log",
+      "sha256": "60f9651d8fcfdb252c993127c628df477b3e6dd06a3d8cd7ac771d9fb80e8f73"
+    },
+    "npm-test-serial": {
+      "path": ".generated/catalog-187/npm-test-serial.log",
+      "sha256": "cdccf62ca55330fcacc6d407e6e09471119ad8f42663fe3ad801e72437b36448"
+    },
+    "node-test-sequential": {
+      "path": ".generated/catalog-187/node-test-sequential.log",
+      "sha256": "330b205d77c0f3bc0e1de9a486874051656bb3e1a2a5ed579adffccbc6d11f50"
+    },
+    "npm-data-1": {
+      "path": ".generated/catalog-187/npm-data-1.log",
+      "sha256": "9db521f07ffc1ae54dd455ee2197163e48d285df21e8915d21831c693ec675cd"
+    },
+    "npm-data-2": {
+      "path": ".generated/catalog-187/npm-data-2.log",
+      "sha256": "9db521f07ffc1ae54dd455ee2197163e48d285df21e8915d21831c693ec675cd"
+    },
+    "npm-build": {
+      "path": ".generated/catalog-187/npm-build.log",
+      "sha256": "ad3de1ded14eb65b79bb4678bd0cf8ddd0db01b57e5401b63307f225f930bab1"
+    }
+  },
+  "manifestSha256": "ea602571d211f948738d5016c70fd235f01d211b144e324687764a99906922f7",
+  "registryFingerprint": "e464a27088b435607d373d58154fff1fcb385ad55ba3d294765c17384c4800e6",
+  "registrySha256": "30a22dc3960bba6996af6529127f19dd9bf58663166528fb2bc18570378bb73d",
+  "dryRun": {
+    "invocations": 2,
+    "identical": true,
+    "before": 178,
+    "additions": 6,
+    "projectedAfter": 184,
+    "errors": 0,
+    "duplicates": 0,
+    "applied": false
+  },
+  "preservation": {
+    "protectedFiles": 1094,
+    "unchangedFiles": 1094,
+    "changedFiles": [],
+    "protectedImageFiles": 300,
+    "sourceSha256": "088f8f2fc78462a1721e293974b1054dc7a80b215f25bd111be3565318948f60",
+    "publicSha256": "1bfe3899a1e83aed43d2bbb5f62dc5d01fb257c153934374c6a3f0862a1d1162",
+    "archiveSha256": "9741b9905ccae70935268bfe41daa790f23674417bfc69451a06e35c68eeb5e0",
+    "allOldLicensesAndResearchUnchanged": true
+  },
+  "dist": {
+    "bytes": 34692982,
+    "files": 169
+  },
+  "scientificReviewStatus": "pending",
+  "ownerAuthorization": null,
+  "scientificApproval": null,
+  "importPerformed": false,
+  "evidenceCompaction": {
+    "datasetMetadataOnly": true,
+    "taxonRecordsRetainedFully": true,
+    "publicDraftBytesUnchanged": true,
+    "bulkCheckAndFingerprintReproductionPassedAfterCompaction": true
+  }
+}

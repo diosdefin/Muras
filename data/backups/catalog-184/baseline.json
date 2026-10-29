@@ -1,0 +1,4489 @@
+{
+  "sourceCommit": "71785389008fef4edc96d9c284e23355f31b180b",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "626a7af9d7370f7dc8adbc387799ee770ae8c46a66941bbf6533a37e54120a50"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "80b381b737ca7d1103d5b0f50054cdb01c5d3779ae5fda4eaaef7ae2dfa8e062"
+    },
+    {
+      "path": "MURAS-UI-100-INSTALL.txt",
+      "sha256": "652cbfbb3d2fead01e690f07b1caf8ca307291ae563185363b0b536cfeeb6a0e"
+    },
+    {
+      "path": "README.md",
+      "sha256": "42733537f5ea9f84533e64c332ffb51a015f310f755c2ea18391e5eaa25f8f1c"
+    },
+    {
+      "path": "assets/images/species/acantholimon-compactum.webp",
+      "sha256": "a4aebe6b362eb27207298cb953ffa4b96309032c1dcce64964e355ad896c599d"
+    },
+    {
+      "path": "assets/images/species/accipiter-badius.webp",
+      "sha256": "1012c0b2ae5756c1cb2a7da26777e63a5982b641698c92a4d60ef192d1d5a3dd"
+    },
+    {
+      "path": "assets/images/species/alajja-anomala.webp",
+      "sha256": "2c79dc055906a040df53f7d52265dea28e3e61444f65e02c6170dfaee3b41ffe"
+    },
+    {
+      "path": "assets/images/species/allactaga-elater.webp",
+      "sha256": "a2a5ce7ecf6684539aa91449321d1cff08782980b41ef3317de5c1ce10d0e340"
+    },
+    {
+      "path": "assets/images/species/allactaga-severtzovi.webp",
+      "sha256": "6fa83363d260ef07a6e488d908eac8dffd6762f95fa74ce01f116f4d50d65858"
+    },
+    {
+      "path": "assets/images/species/allium-dodecadontum.webp",
+      "sha256": "f7525d351226ec7dafb8c3ff5af01cb73da915aa5c41532247af9900bcab8f55"
+    },
+    {
+      "path": "assets/images/species/allium-semenovii-task23.webp",
+      "sha256": "ef0c723594e21b189743ac7e76fa8418a4580df89c28256c418b2d93e7f1f513"
+    },
+    {
+      "path": "assets/images/species/allium-semenovii.webp",
+      "sha256": "1a49143b62158efbc19034a3c460a70c8d087fb0ba9e75bbeb8cbca4536db0fa"
+    },
+    {
+      "path": "assets/images/species/allochrusa-gypsophiloides.webp",
+      "sha256": "d81c051e7d6a7ea75012ce14903d31efd527da94ba2bba789d063ddac7d97e30"
+    },
+    {
+      "path": "assets/images/species/ammopiptanthus-nanus.webp",
+      "sha256": "44206f067287168caa9a17cbb10aef842e909fdf520ab325e13f836f8ca670d2"
+    },
+    {
+      "path": "assets/images/species/amygdalus-petunnikowii.webp",
+      "sha256": "79a5bd655adb5888e4bfdbe87935945963fb35c905ccfc056230445d36d4a7dd"
+    },
+    {
+      "path": "assets/images/species/anser-indica.webp",
+      "sha256": "6af7804c2b6ad960f4750eecc6d9ccd914d273a33171d5cd3771d6ebf65b3840"
+    },
+    {
+      "path": "assets/images/species/anthropoides-virgo.webp",
+      "sha256": "33ffc5a69d145d6d9f4b7d2a5247fc8b2f5ca5ae82920d0def27c0b37e5f9819"
+    },
+    {
+      "path": "assets/images/species/aquila-clanga.webp",
+      "sha256": "4c9e152c4db1939c6edcf09b353fbc990f5a81558d041b8166c768a4ebe852d3"
+    },
+    {
+      "path": "assets/images/species/aquila-heliaca.webp",
+      "sha256": "2a2f8f73acb3acb385bc02a1f97180859f013e854ac005d0467e07e521885fd9"
+    },
+    {
+      "path": "assets/images/species/aquila-nipalensis.webp",
+      "sha256": "f426e4489b52a0be3dddc2da85bd5eafbdb927f8507e3e187fc6ef09edbc94af"
+    },
+    {
+      "path": "assets/images/species/argali.webp",
+      "sha256": "05cd846a1cd67d1401d6b08b50b6c57505bbd26552494f2fe3f7680b503739dd"
+    },
+    {
+      "path": "assets/images/species/aythya-nyroca.webp",
+      "sha256": "369c049d90ae87fd30775fafc91cc6d7c2edc0cfb172b3c29c029989d6c8c54e"
+    },
+    {
+      "path": "assets/images/species/barbastella-leucomelas-illustration.webp",
+      "sha256": "0108cccdc7845c3202e41135ade5dadf5e6cb9b45ef4a49b00e9847db17c20ba"
+    },
+    {
+      "path": "assets/images/species/barbus-brachycephalus-task23.webp",
+      "sha256": "d1c34b3e3d1ae19dcf455aaa85cf6415da0e68ad16de11fe5f04dafe2d0cf778"
+    },
+    {
+      "path": "assets/images/species/bearded-vulture.webp",
+      "sha256": "d46960f9a9244255c91b2a96b78d579491c97f42fd6a2e99e8ef58309dd67922"
+    },
+    {
+      "path": "assets/images/species/black-stork.webp",
+      "sha256": "cf027d88081ac71d5079987af5d40d0bc256d559891f9405245c659b7f809687"
+    },
+    {
+      "path": "assets/images/species/bubo-bubo.webp",
+      "sha256": "3673cf76bafb634d4cdd3092d2783b1e2a8cc3a266fad08e6ccb877c4e840b92"
+    },
+    {
+      "path": "assets/images/species/bupleurum-rosulare.webp",
+      "sha256": "af364b6a52b5fa0788468a75ffbf560d8d27042e53033f15d219c34e7fc557c6"
+    },
+    {
+      "path": "assets/images/species/burhinus-oedicnemus.webp",
+      "sha256": "d1336bdbbf7ec65ce753fc856c8f832ce0ad1fd93c30446c00238cae122b1724"
+    },
+    {
+      "path": "assets/images/species/catalog181-anemone-obtusiloba.webp",
+      "sha256": "461a2aa25ab5d3b30178ad6975abf0102ff3e8ba79ccabf1aaa46e98cb8533d8"
+    },
+    {
+      "path": "assets/images/species/catalog181-primula-macrocalyx.webp",
+      "sha256": "d5ec59b08be3673d41303d12740da3b57a899dcf35ad9a015345de287abceacd"
+    },
+    {
+      "path": "assets/images/species/catalog187-cuon-alpinus.webp",
+      "sha256": "e52d745554b52850ff6f4f3e70ae24f430c390ab920e610e6a89ffb000f25b47"
+    },
+    {
+      "path": "assets/images/species/central-asian-frog.webp",
+      "sha256": "9e68faf61fe4b14224cce2706bd2d5c8e11f5dcefe86fdea3c8b3f3219b54e18"
+    },
+    {
+      "path": "assets/images/species/central-asian-tortoise.webp",
+      "sha256": "d37b5f8eedf3d9a96b0f07097689b0537f1dde7096ee07c049f6768dc07c0795"
+    },
+    {
+      "path": "assets/images/species/chesneya-villosa.webp",
+      "sha256": "c6196fb7892eb111412f2d93091bb08d8bd40eafdf1bd5f79f22f7a382ae1190"
+    },
+    {
+      "path": "assets/images/species/chlamydotis-macqueenii.webp",
+      "sha256": "18772843110483377a766a79fbb0bea11600f91043f4c4ad59873c86c3985776"
+    },
+    {
+      "path": "assets/images/species/christophs-clouded-yellow.webp",
+      "sha256": "e3bba6988ffa3850d717e2e8fb9c68975cee2648148d8ff6d08db4886ffef425"
+    },
+    {
+      "path": "assets/images/species/ciconia-ciconia.webp",
+      "sha256": "12f7c8a1c700c6ea2bde1f0ec920adcae2d1a5155d2e32c5efb10bd16e842013"
+    },
+    {
+      "path": "assets/images/species/cinereous-vulture.webp",
+      "sha256": "dd32de6437931ca037bf0dde283aaed1bc29ac37d6bdb2dc6ef36e0fe5172761"
+    },
+    {
+      "path": "assets/images/species/circaetus-gallicus.webp",
+      "sha256": "dbd70fb4abe80a938139cb0460f5c528766109b63d75a7a2bf6c93ae2c38d710"
+    },
+    {
+      "path": "assets/images/species/circus-macrourus.webp",
+      "sha256": "8e2688b098115cf75e1ad1682e460e881aa310635f55a61884cbd46214b0e0a9"
+    },
+    {
+      "path": "assets/images/species/cnidiocarpa-alaica.webp",
+      "sha256": "eaf29cfd542e3e01544ee4e94c56622c059edf940dff4c805452cb3c8d19860c"
+    },
+    {
+      "path": "assets/images/species/columba-eversmanni.webp",
+      "sha256": "f514ab8fc13f8b13c31de68d1f38a50373f44ab8fb458437aa4b7404bac5de7c"
+    },
+    {
+      "path": "assets/images/species/columba-leuconota.webp",
+      "sha256": "a0363b38059b86cb387420f9b986b3117ed865ab499eccb97ff9ec92fd232450"
+    },
+    {
+      "path": "assets/images/species/colutea-brachyptera.webp",
+      "sha256": "50e81da22a7a42b5e370c6bac77e5355ea60f5b10f20d9b1ed56e2cbebe01d48"
+    },
+    {
+      "path": "assets/images/species/corydalis-pseudoadunca.webp",
+      "sha256": "b4fe2178d60c8d35eb1bb770180fcc9a1d52257c538c5a14e688aba276787ffc"
+    },
+    {
+      "path": "assets/images/species/crex-crex.webp",
+      "sha256": "d752fcd217ea8c5182f70f0201b2912837a7a7e642d94f1f36bbc7ca504b6282"
+    },
+    {
+      "path": "assets/images/species/cygnus-cygnus.webp",
+      "sha256": "1cc4fd4c5a86bfbd98c7374b3784158fdb734419202d96dbd9ec394aeb84871e"
+    },
+    {
+      "path": "assets/images/species/dalmatian-pelican.webp",
+      "sha256": "1e0182e145dfbc89402535446c4e9db987dd5689fea9881c4f33d36356f4bc20"
+    },
+    {
+      "path": "assets/images/species/dendrocopos-leucopterus.webp",
+      "sha256": "75fe364b7a84a6a6e4fffd4869d4ffc4d7c89708cdf5fe775430cea6f4a44210"
+    },
+    {
+      "path": "assets/images/species/dendrocopos-major.webp",
+      "sha256": "3e14bf17d754510ab3da33af340e42f3f2b61415823637c23a965c95ae2b1c06"
+    },
+    {
+      "path": "assets/images/species/dictyocephalus-attenuatus.webp",
+      "sha256": "0a109660a2caa346b47d3ee630dc5e370b8a0eff22c60e1d30b20f41029a045e"
+    },
+    {
+      "path": "assets/images/species/dog-stinkhorn.webp",
+      "sha256": "98af1ec652407ce317722ddb77df7ffa9816c54d018cfb89ded7f461a17f830f"
+    },
+    {
+      "path": "assets/images/species/eduards-fritillary.webp",
+      "sha256": "8c0664bf42afe98e7de029f6ac4fc35382a885e40f86851fa90586401c259abe"
+    },
+    {
+      "path": "assets/images/species/egyptian-vulture.webp",
+      "sha256": "c316177c52699ceeedeade6643652c086422caa869fb1b46a8f0ec778da2fbe4"
+    },
+    {
+      "path": "assets/images/species/eminium-regelii.webp",
+      "sha256": "2443bc7d68476b5c8223d302b273a0dfb4907d72858b7ffe78b6ff5bb8ebd7df"
+    },
+    {
+      "path": "assets/images/species/eremurus-zenaidae.webp",
+      "sha256": "b82a44c8d2c693aeac225a1303f823cc1578268d125d6093792aca0bdd64625b"
+    },
+    {
+      "path": "assets/images/species/eremurus-zoae.webp",
+      "sha256": "3ea71a9076e0e01938fe0255717c19e1a1a9cfcfbebca2df40914e6652122b76"
+    },
+    {
+      "path": "assets/images/species/eryx-tataricus.webp",
+      "sha256": "7349129d7637e82aa10bda8c1cf6e56dd70869c548abc238a91896296087e577"
+    },
+    {
+      "path": "assets/images/species/eurasian-lynx.webp",
+      "sha256": "27961ddf57c1f5c5d19d0c56d3ed8ca0413b2c53a654da590c8fc3a6ef72b31d"
+    },
+    {
+      "path": "assets/images/species/european-glass-lizard.webp",
+      "sha256": "196f274ee1309b36402d030cd80aafa8221fa3482cd3bb46a3b9d13b575e9801"
+    },
+    {
+      "path": "assets/images/species/falco-naumanni.webp",
+      "sha256": "5418e5d0bc197e881ae5b37d369339c866f350ded08707833264d7de9a775fd6"
+    },
+    {
+      "path": "assets/images/species/falco-rusticolus.webp",
+      "sha256": "dd1157398fb926a5a948e115478134a431c156ef07a9a172c2f1af01f102ac77"
+    },
+    {
+      "path": "assets/images/species/fumariola-turkestanica.webp",
+      "sha256": "554a61936cc17d8dbff563cec11962296308b6ff5962e9cbb847345f01aa6022"
+    },
+    {
+      "path": "assets/images/species/gavia-arctica.webp",
+      "sha256": "afca282d2bf1ceb0466e05dd84ea58291bbaffe81a044a5533c017b268dd46fe"
+    },
+    {
+      "path": "assets/images/species/gazella-subgutturosa.webp",
+      "sha256": "fdfd5028cece9e8b5d352a603184c1fb8454613d1332382c240e4e12c9532df6"
+    },
+    {
+      "path": "assets/images/species/giant-robber-fly.webp",
+      "sha256": "ba4728fc48f629e504924b139890693fcf08f590baa31626280db96e3c6fe650"
+    },
+    {
+      "path": "assets/images/species/glareola-nordmanni.webp",
+      "sha256": "6c51ef8917a8283eb23bd45727dbb8d276cd8ad5428815d95777b45512e4e993"
+    },
+    {
+      "path": "assets/images/species/golden-eagle.webp",
+      "sha256": "d8c618e27182eb9fddb4cdff7e58aa4f42bc8cc5a192390e598ef81be197c1fa"
+    },
+    {
+      "path": "assets/images/species/great-bustard.webp",
+      "sha256": "394f1bf720a1bab1459f1326aeef082ca2b40ef3f2ca673714ab541fd86f2924"
+    },
+    {
+      "path": "assets/images/species/greigs-tulip.webp",
+      "sha256": "e86e885c1857def6585336cf554b73ed80532d39c4594c2cb7c458a856a84b2e"
+    },
+    {
+      "path": "assets/images/species/gyps-fulvus.webp",
+      "sha256": "0afc9fd993989cb636316e549fbf4f07ec80f4e1f24e7d078f1542c502b83576"
+    },
+    {
+      "path": "assets/images/species/gyps-himalayensis.webp",
+      "sha256": "0e49b1b37a460da71b5e7bc39ea64de307377e85761da36af59024bb2c137a6e"
+    },
+    {
+      "path": "assets/images/species/haliaeetus-albicilla.webp",
+      "sha256": "004dfff7af3e71723cf372460a21f4f06e8158cd1fd853998b4e16d5f7bb4e0a"
+    },
+    {
+      "path": "assets/images/species/haliaeetus-leucoryphus.webp",
+      "sha256": "f1bd9c20603ea765588b0630be3334479788040307db7bfc14e7625f6f0264a4"
+    },
+    {
+      "path": "assets/images/species/hedysarum-chaitocarpum.webp",
+      "sha256": "17f14191336274226329ae1666f4217943fef61c8da3afeb307784ce072a13fd"
+    },
+    {
+      "path": "assets/images/species/hemiechinus-hypomelas.webp",
+      "sha256": "7c4e53b0a30ddd23438008fb6704743327fa873c66dc467c1d2a75a041ac0b41"
+    },
+    {
+      "path": "assets/images/species/hieraaetus-fasciatus.webp",
+      "sha256": "0950d072b83f61d2417cfb657aca94d814f833b900aed9c2c91b2cfe2eaa36b0"
+    },
+    {
+      "path": "assets/images/species/hieraaetus-pennatus.webp",
+      "sha256": "e2d38785968184591115fddf0d638fc3fd483bb1a18419d95a00ef5cde332e98"
+    },
+    {
+      "path": "assets/images/species/hyalolaena-intermedia.webp",
+      "sha256": "1cfdab01742ff9287b19a9a5877b925ccf4540ac7dddee5e3f96fa0ef98dbb05"
+    },
+    {
+      "path": "assets/images/species/ibisbill.webp",
+      "sha256": "1e13016f52bbcbb3ef5ddb95c1e35494d87e0912dde92e1ddc7f608baedf852d"
+    },
+    {
+      "path": "assets/images/species/incarvillea-olgae.webp",
+      "sha256": "1dd50724bba68446224d21bf249399c6cdc10e1ef92990517fccf1ab82472c42"
+    },
+    {
+      "path": "assets/images/species/indian-crested-porcupine.webp",
+      "sha256": "3aaf49bfd0b37dfe0535a139efffa54d45448685c8e7c853fc1851260e2486e2"
+    },
+    {
+      "path": "assets/images/species/irbis.webp",
+      "sha256": "250c124488aa1008011eecff378bf31a3397978918403408ce977b4b4c5748dd"
+    },
+    {
+      "path": "assets/images/species/iridodictyum-kolpakowskianum.webp",
+      "sha256": "a473358b2097c103a64cfc2366c7fcf469c1b83ca43c1a359405eb0b773039aa"
+    },
+    {
+      "path": "assets/images/species/juno-orchioides.webp",
+      "sha256": "ec630795b16d6400dd7ca3656edc08f921fb48b3e375964e2ff72f82e0a0342a"
+    },
+    {
+      "path": "assets/images/species/kaufmannia-semenovii.webp",
+      "sha256": "c60c6045333167d41f8f00e6617de6fb33799ef3613ef79c5656c451bac526f7"
+    },
+    {
+      "path": "assets/images/species/kaufmanns-tulip.webp",
+      "sha256": "ca1bb2eecc5c3e3e7b2246b611fff9157b7bdcaf577fb04254f998097c347a7d"
+    },
+    {
+      "path": "assets/images/species/kolpakowskis-tulip.webp",
+      "sha256": "9c39ebf9886db953639088f3ec4d9768e4786ca345ba1c8778beb639f03b35ad"
+    },
+    {
+      "path": "assets/images/species/korzhinskys-pear.webp",
+      "sha256": "0773e5979b56a68e712c3ff9a8e45cc8c67d545e129ee6cea366a0b007405338"
+    },
+    {
+      "path": "assets/images/species/kosopoljanskia-turkestanica.webp",
+      "sha256": "8bd93f5f22cfc24f28b7df4db6bf3faa017bdb896fbb4885c67633a7b5e33072"
+    },
+    {
+      "path": "assets/images/species/kostychevs-pasque-flower.webp",
+      "sha256": "ddc39cc9eff90f74a1194840d9d54e76b2e97f169e34feca8a383b7e1d05b366"
+    },
+    {
+      "path": "assets/images/species/lamyropappus-schakaptaricus.webp",
+      "sha256": "9cbadcba558cbc78de7370dfed9494ce6ff9ddbeb224e657cde3b2ec273b033a"
+    },
+    {
+      "path": "assets/images/species/larus-ichtyaetus.webp",
+      "sha256": "dfef49079c0bbc259df2cc9f757cd90fef3f45fcc00083f899aac65765854dd8"
+    },
+    {
+      "path": "assets/images/species/lepidolopha-komarowii.webp",
+      "sha256": "87a8bb1f54d96b228da0957a63e937e887958256454de40d29d9dfd243f15da6"
+    },
+    {
+      "path": "assets/images/species/lutra-lutra.webp",
+      "sha256": "e2960ad835a3ff35cf8b39aea76f7bed1d6a9af7e4513124d3b072edb77d7ebc"
+    },
+    {
+      "path": "assets/images/species/lyrurus-tetrix.webp",
+      "sha256": "c161d75ef1478e7f9cfdba7a30b8b84dd73a84fadb957df50bea684f82431360"
+    },
+    {
+      "path": "assets/images/species/manul.webp",
+      "sha256": "f5f0c8394805636748d0da7709f69becc961e51cb8b2fbfd17bc8051113d54b1"
+    },
+    {
+      "path": "assets/images/species/marbled-polecat.webp",
+      "sha256": "dab719e3fd431506df3969d1d6f42ce166b15c07f86dc8e8dc2abaefb2359b7c"
+    },
+    {
+      "path": "assets/images/species/martes-foina.webp",
+      "sha256": "817a207452c35d05a2beeee610b4d89112cad73a53ca016336705e20c116acb4"
+    },
+    {
+      "path": "assets/images/species/mergus-serrator.webp",
+      "sha256": "9d85633340e60994021d1d3b41ca9641e96ece515318419895f69dc85358af41"
+    },
+    {
+      "path": "assets/images/species/nathaliella-alaica.webp",
+      "sha256": "5e805d75f6942d0401b9e5232a3395ae6809162afa39109991925d5c99b790aa"
+    },
+    {
+      "path": "assets/images/species/neomys-fodiens.webp",
+      "sha256": "3044c2a4892ca976509a469188413fe6c581f998f9b6b965dea9aac205725514"
+    },
+    {
+      "path": "assets/images/species/numenius-tenuirostris.webp",
+      "sha256": "941aaf4658f5a4a893607cb70941dc22c6925ff667fb152c7cb6ea1eb2fff638"
+    },
+    {
+      "path": "assets/images/species/ostrowskis-tulip.webp",
+      "sha256": "bde6fad74185b66b65d21d9f9b8a9c72a22484ae5fc2e94e8381c2da24fc97c4"
+    },
+    {
+      "path": "assets/images/species/oxyura-leucocephala.webp",
+      "sha256": "7630668650650cadf43e9b23c8c5196adfda70e702c8e278335afb5a78020326"
+    },
+    {
+      "path": "assets/images/species/pandion-haliaetus.webp",
+      "sha256": "19e3932c5a8498f27bac1584af2ef45012086bc6b358832282ff4289a266c5ce"
+    },
+    {
+      "path": "assets/images/species/pastinacopsis-glacialis.webp",
+      "sha256": "ae02ba9f493a5cf75f6cc841a4638aec54d9212c26a7814d609390b071e4eb6e"
+    },
+    {
+      "path": "assets/images/species/pelecanus-onocrotalus.webp",
+      "sha256": "a2254ed984a5af64a863f983002c6ad729d79daac9872a8f4ec0f14c8b670a34"
+    },
+    {
+      "path": "assets/images/species/phalacrocorax-pygmaeus.webp",
+      "sha256": "a60170d2d7d4993306bd8df2adc1db69787e7b651e824a031fe1a5ab04625be8"
+    },
+    {
+      "path": "assets/images/species/phoenicopterus-roseus.webp",
+      "sha256": "351ca2fe21d410149f3d32b4c6b0367e3bfbb4299091893adeb0d6f1c2baf6cf"
+    },
+    {
+      "path": "assets/images/species/physochlaina-alaica.webp",
+      "sha256": "3e7395176a550e40e503aa550076d04915021a96e79f5e5280570e8358277d42"
+    },
+    {
+      "path": "assets/images/species/platalea-leucorodia.webp",
+      "sha256": "bda6ca8a8e03cb3eee9598fcd7f9c5beaae804068619c34317b15df3bbc6d451"
+    },
+    {
+      "path": "assets/images/species/predatory-bush-cricket.webp",
+      "sha256": "3e8dbf107742d44384832ce07d7a7332f5a693aab893f505b869e4bb62519e12"
+    },
+    {
+      "path": "assets/images/species/pskem-onion.webp",
+      "sha256": "ffcb628f76c771ca18ddc43fd37f0f4d6b247ea1db57164301a3955289ad541e"
+    },
+    {
+      "path": "assets/images/species/pterocles-alchata.webp",
+      "sha256": "7f804dc71600f9a6f70d2831d8e7106307dc83552c1acd12614b8dc7ddb66aca"
+    },
+    {
+      "path": "assets/images/species/pterocles-orientalis.webp",
+      "sha256": "c3f1cd305778fdcf9185d77486f96a5e530d0fcdb029dc0d43cf183290cc308c"
+    },
+    {
+      "path": "assets/images/species/pyrethrum-leontopodium.webp",
+      "sha256": "11c08c548ce5df7f6ed94130840f9f0446c571bf233c80a4e161198cc2f7e11c"
+    },
+    {
+      "path": "assets/images/species/rhinolophus-bocharicus.webp",
+      "sha256": "ba4827a47bf3bd3c4c076c25c7fa8df38e5d63eb33b990591f61f593a1ee60e3"
+    },
+    {
+      "path": "assets/images/species/rhodiola-litwinowii.webp",
+      "sha256": "1cb23145fc1ff01eaf7cf526a46cab6729a9c16a45d1ce9bbcf26622626e5a1c"
+    },
+    {
+      "path": "assets/images/species/rossomyrmex-proformicarum-task23.webp",
+      "sha256": "03d90f22c9f4ad73dd4e0a2eafb23aec68b750bdc99179c69ec2e8f57c99b6b2"
+    },
+    {
+      "path": "assets/images/species/said-alievs-toad-agama-final.webp",
+      "sha256": "e71d3343f5c6dd59b91f1cd912e243627228a82ef3db5007cf638d246b3a0816"
+    },
+    {
+      "path": "assets/images/species/saker-falcon.webp",
+      "sha256": "c8755f98c96ebb2d88929b7ceefa882b3f622b2c3da5373aa3474a370ac9c9a7"
+    },
+    {
+      "path": "assets/images/species/salvia-korolkowii.webp",
+      "sha256": "3b54895cf6152206b592890c850c4893b51192038fce3655fcfb7b60f1fe6a6e"
+    },
+    {
+      "path": "assets/images/species/salvia-vvedenskyi.webp",
+      "sha256": "ccab53eb16c50faf51e0c2c8d46147989037b29d4f7304d2271a90099dd8c2c1"
+    },
+    {
+      "path": "assets/images/species/saussurea-involucrata.webp",
+      "sha256": "5415546a85c921f89b749a45d4c6bead134a21d9f557ae6cc52cbca0a2ce1332"
+    },
+    {
+      "path": "assets/images/species/scutellaria-andrachnoides.webp",
+      "sha256": "a9abdba32d8a3d010954d1dc1b5b771fe74a466898c6cad3d88b1278a8a45ac7"
+    },
+    {
+      "path": "assets/images/species/semenovs-fir.webp",
+      "sha256": "e7574a5e8fc3f261c8484474695b36517bc5535bd731a1a3d1633d2e5596b4ef"
+    },
+    {
+      "path": "assets/images/species/seseli-eryngioides.webp",
+      "sha256": "7372f98d3faa098f35be8b726932639db15fef2b48f60fd159978e6efdbf373f"
+    },
+    {
+      "path": "assets/images/species/seseli-korshinskyi.webp",
+      "sha256": "03027ddea9826879f025ff69ab637b02f3e16c322bf36f2e7827bcd842f92de0"
+    },
+    {
+      "path": "assets/images/species/sibiraea-tianschanica.webp",
+      "sha256": "a79b70f97a9cd784a07d7705a96a9d369735ca41584478dae12bc35eea53d5df"
+    },
+    {
+      "path": "assets/images/species/sievers-apple.webp",
+      "sha256": "273f73a29bb105f970b1d70d526418eadbd743676da38ba2af7b36cf72b91e88"
+    },
+    {
+      "path": "assets/images/species/silene-sussamyrica.webp",
+      "sha256": "fc938fe266d63cff9f3a40e6b2ddf009b1b13ee1f00ea176b331d2a61ec765b5"
+    },
+    {
+      "path": "assets/images/species/spiraeanthus-schrenkianus.webp",
+      "sha256": "592950e20a18f7510f13a2f8ea03724d8df4c5fc73548fa6ebbc28566b94ee97"
+    },
+    {
+      "path": "assets/images/species/stemmacantha-aulieatensis.webp",
+      "sha256": "cf1fd20e01554748782424ece66dbed2d0b3588eb1686afbacc8e8579b15a084"
+    },
+    {
+      "path": "assets/images/species/strix-aluco.webp",
+      "sha256": "b822a70ee53abd2577d0df440fd6d23d3124d1f9cbd57e260a56b03af4168d00"
+    },
+    {
+      "path": "assets/images/species/syrrhaptes-paradoxus.webp",
+      "sha256": "728fdd7aa841cd29948f6d63807d5813d89091176876c12514e4bf80bf8ad6e2"
+    },
+    {
+      "path": "assets/images/species/tadarida-teniotis.webp",
+      "sha256": "d7e7f1130a7d82064aa7d2b877dfd4b39303337dab94c25ba36839d9a5fc92fb"
+    },
+    {
+      "path": "assets/images/species/tetrax-tetrax.webp",
+      "sha256": "78696e0e3302fdee3a3d82cf30d9cd7039ccfac8b526d8253d451320c1406e8b"
+    },
+    {
+      "path": "assets/images/species/thesium-minkwitzianum.webp",
+      "sha256": "8804a895a23c150fe80b60798c4eff463c2e99d53ed06c538d18ab54efaed633"
+    },
+    {
+      "path": "assets/images/species/trichanthemis-aulieatensis.webp",
+      "sha256": "b86a3401ebc19e50ad4d5f45c0856726d88a394b762acbb47bfe3f5076f59ebb"
+    },
+    {
+      "path": "assets/images/species/trichanthemis-aurea.webp",
+      "sha256": "551e08d4f0290b7d98f923ee998f5d6fdae8f6233ead5d73b8c6ecdd3371352f"
+    },
+    {
+      "path": "assets/images/species/tulipa-affinis.webp",
+      "sha256": "f2b9c25db202b2044b0c998eff3e785e12096a6ec82ea8ce37d6ad360792bffd"
+    },
+    {
+      "path": "assets/images/species/tulipa-korolkowii.webp",
+      "sha256": "702be54f053ea22c997aa3e6c1dd6856f2b21615ac50d5a6c91c9bcf4156f66d"
+    },
+    {
+      "path": "assets/images/species/tulipa-platystemon.webp",
+      "sha256": "f31dff47d90f7d75db84d8ceb2b61631cc42d6469f42fe063c7a7b6c1eeb87e6"
+    },
+    {
+      "path": "assets/images/species/tulipa-tetraphylla.webp",
+      "sha256": "c18f4901cbd1074dcf55d94b962d2d65c357ffc3eee96292396ad3f72ade09ca"
+    },
+    {
+      "path": "assets/images/species/tulipa-zenaidae-final.webp",
+      "sha256": "b891d7eb9093c066909e09715aa2a9c419e43378c222ab3d8208e0ea15865c6b"
+    },
+    {
+      "path": "assets/images/species/urocerus-sah.webp",
+      "sha256": "131cf6a2f6a34eac29d493cdbf3745b159b0b17a81d7387b3f912e3b7a23ad8f"
+    },
+    {
+      "path": "assets/images/species/ursus-arctos.webp",
+      "sha256": "5ec06f04e7d4a44be474af845ceab7fc15c501c1045084bd226dfefb3748fc69"
+    },
+    {
+      "path": "assets/images/species/vanellus-gregarius.webp",
+      "sha256": "69a7fc798d3f2f47e4901c040db3ec4e5a19428e264b86d022f86e75938cd3dc"
+    },
+    {
+      "path": "assets/images/species/varanus-griseus-caspius.webp",
+      "sha256": "0b1c99d07a193d6c5dcd5cc7cee91306f3c832e1ca3a648801bd2b3bb356d6a0"
+    },
+    {
+      "path": "assets/images/species/zygophyllum-kaschgaricum.webp",
+      "sha256": "8d1ce4bc22ce9b596458088fe4a5b7951f6d75d7057edb5197ac45a1f35ecd2c"
+    },
+    {
+      "path": "data/archive/demo-species.generated.json",
+      "sha256": "9741b9905ccae70935268bfe41daa790f23674417bfc69451a06e35c68eeb5e0"
+    },
+    {
+      "path": "data/backups/bulk-25-provisional/README.md",
+      "sha256": "f4e2231e6606bd7532098ceed4eac13c4667f52f670a7bd05f54d187ce93d55d"
+    },
+    {
+      "path": "data/backups/bulk-25-provisional/public-species.json",
+      "sha256": "701ff3874a6bdee91962575c42728f55ae15c3aeeb187af2f1a8f9053b87f761"
+    },
+    {
+      "path": "data/backups/bulk-25-provisional/species-model.js",
+      "sha256": "4760145ac5422e79b4e7eb17a9cb42f82b035ad2792a403a13f457f0fa221e86"
+    },
+    {
+      "path": "data/backups/bulk-25-provisional/species.source.json",
+      "sha256": "054d14c79971fbd68e31b7c1f931d57b012a9a223a382d17f14fa05223cc14f4"
+    },
+    {
+      "path": "data/backups/catalog-100-photo-final/public-species.json",
+      "sha256": "e3973a4bb4657a743712a1f0f89b0a4e0991f91b588831240a7e114c27e4f4f7"
+    },
+    {
+      "path": "data/backups/catalog-100-photo-final/species.source.json",
+      "sha256": "aef4a7784c4871ef2ef61b2ef00865bc8d64e9ffb14660a1385ae872bae00083"
+    },
+    {
+      "path": "data/backups/catalog-100-photos/public-species.json",
+      "sha256": "0d718eaf134d09b2dd4cca9ded689c0054ca59a80bc69c249a82a4cfcf093cfc"
+    },
+    {
+      "path": "data/backups/catalog-100-photos/species.source.json",
+      "sha256": "0ae786ae29548029297ab28e0562cac660780b45f041e6022702f68408fcea17"
+    },
+    {
+      "path": "data/backups/catalog-100/public-species.json",
+      "sha256": "9143220e63eee0e31370b7a52c0000acbf7632b6c38c301787ebda6847fb7cc6"
+    },
+    {
+      "path": "data/backups/catalog-100/species.source.json",
+      "sha256": "f128320d510d13bc1e8e626e0c1e6f99918a98e453e6e552079e57a2409da17c"
+    },
+    {
+      "path": "data/backups/catalog-125/README.md",
+      "sha256": "0e299775a2c0f9eb0504f93146c2fcfb4fa0cae73a4f1260bb5e9c76a4bc3526"
+    },
+    {
+      "path": "data/backups/catalog-125/admin-draft-repository.js",
+      "sha256": "e7601df59f59d2c9aa4c871b53624fd5479753dd2c8653db1e6cf44890fd712c"
+    },
+    {
+      "path": "data/backups/catalog-125/public-species.json",
+      "sha256": "d643a7b9debdd5731033f515dfa886dd75b78bfee3c7284c5c3b3fed22517891"
+    },
+    {
+      "path": "data/backups/catalog-125/species.source.json",
+      "sha256": "bdc83075ef87850b54f590e4feba3ec7e6545c405208ad6172d1eb3463e516ea"
+    },
+    {
+      "path": "data/backups/catalog-150/baseline.json",
+      "sha256": "b4e72e334e20ffde5864d515ffb96f74e3de5d338a32d8e355cc0f9e4289d7bf"
+    },
+    {
+      "path": "data/backups/catalog-150/public-species.json",
+      "sha256": "199008d108f732773a110d95ca8a0b74cd658bfd73165d89f66f634d99f606bf"
+    },
+    {
+      "path": "data/backups/catalog-150/species.source.json",
+      "sha256": "6d5a40ab8035ae415b79dfd1c609ec34eec0ee3d3a751f5a1c224d217aa4d528"
+    },
+    {
+      "path": "data/backups/catalog-166/admin-model.js",
+      "sha256": "61dd00662bbaaea0f2d64cd218c9891109ad4f46914bcbe3a99ffc705880372c"
+    },
+    {
+      "path": "data/backups/catalog-166/baseline.json",
+      "sha256": "a2ce521707c2f2b01ba8b67e1d10abcb0484bfae5e524240bf6d981004caea28"
+    },
+    {
+      "path": "data/backups/catalog-166/public-species.json",
+      "sha256": "7a20756f6943a6291682d2535e1e6ebcad76a0fb74eca8cea06bdf9b8946b6c1"
+    },
+    {
+      "path": "data/backups/catalog-166/species.source.json",
+      "sha256": "a5c78f317609a07e630c87791080234d850c2d5aa488ecfc93f3bb728770a1d4"
+    },
+    {
+      "path": "data/backups/catalog-178/baseline.json",
+      "sha256": "12f5e8df9d4f09489013124d30fa1c474215911906f6558ae4a2a83e31b40865"
+    },
+    {
+      "path": "data/backups/catalog-178/public-species.json",
+      "sha256": "ccc17e1b7592b1c5aa11c129a6935e3472ca7bf0b6ed940904fb06e89d484b4c"
+    },
+    {
+      "path": "data/backups/catalog-178/species.source.json",
+      "sha256": "79197b9323386983951a56c889b5246884a5d9a17bc203b94ad077bd96892360"
+    },
+    {
+      "path": "data/backups/catalog-84/public-species.json",
+      "sha256": "158dc93ab7e41d064958a0828db16d05f77e28d55d97c9c8218dfe3a56c4fb05"
+    },
+    {
+      "path": "data/backups/catalog-84/species.source.json",
+      "sha256": "360e11b5bd2e42b62d733cfcf43b7989fffe2135720a40af5788f3b6f910a393"
+    },
+    {
+      "path": "data/backups/legacy-2026-10-12/README.md",
+      "sha256": "c014f68d884d002b69db989c1b3c4fe0b41d097a9f190b33ae92a12f444e65a2"
+    },
+    {
+      "path": "data/backups/legacy-2026-10-12/images/processed/amur-tiger.png",
+      "sha256": "e6b37051371de75e80d3428b5422c1c520c9e3600cf9b4f616a642760e632442"
+    },
+    {
+      "path": "data/backups/legacy-2026-10-12/images/processed/irbis.png",
+      "sha256": "334084ebb338a8e7d74dbe8af2ea6826d1de1f4fc3f7cedc98b038257d14aaee"
+    },
+    {
+      "path": "data/backups/legacy-2026-10-12/images/processed/whooping-crane.png",
+      "sha256": "121e5fa6751de3d6f2164a70300d3061647649234496463528afeba7630584e4"
+    },
+    {
+      "path": "data/backups/legacy-2026-10-12/images/source/amur-tiger.jpg",
+      "sha256": "9869754745f76afaf2dad7a919c5d6a39bc18e5e44d0620fc1944516a408bec3"
+    },
+    {
+      "path": "data/backups/legacy-2026-10-12/images/source/irbis.jpg",
+      "sha256": "6e0523366e694b95e6c8aa190b5beacbd6a96fd1a707e16bed82926f5df88c83"
+    },
+    {
+      "path": "data/backups/legacy-2026-10-12/images/source/whooping-crane.jpg",
+      "sha256": "25f288c185456f254841a7324e681bc9386f6b71899bdb02040592e729fbb90c"
+    },
+    {
+      "path": "data/backups/legacy-2026-10-12/manifest.json",
+      "sha256": "0ce39e145dc14c9875128b22b5455b0152e3b5e50e767c4d28fb55fb6d9d98e2"
+    },
+    {
+      "path": "data/backups/legacy-2026-10-12/process_data.py",
+      "sha256": "e83ac3027a17eb8e773686fb2c0e19f7eb44f28245f079b80215e11fda71ade5"
+    },
+    {
+      "path": "data/backups/legacy-2026-10-12/species.json",
+      "sha256": "0cb009c9e7b880883af0a48329ee54370bece1927df4b271d8515af90c9cee18"
+    },
+    {
+      "path": "data/geography/occurrences.source.json",
+      "sha256": "542c45c610a3ea0845063987fdf0497d0416dd752df83c5b80dba791c8383f92"
+    },
+    {
+      "path": "data/geography/source/ODbL-1.0.txt",
+      "sha256": "607680718977f6f6c9607972afd98f208573f19251315ed1362a8589b51beaf5"
+    },
+    {
+      "path": "data/geography/source/metadata.json",
+      "sha256": "7b89f5f67fdf0a36b41d11783f4c6a3b8bd3ecde5f10a4f3a7acc05581a34819"
+    },
+    {
+      "path": "data/geography/source/regions.geojson",
+      "sha256": "b2161137ec372230b04f7b755b3d4fd50f3a6c6197f82bebc2301fb3b0222036"
+    },
+    {
+      "path": "data/research/.gitattributes",
+      "sha256": "68da3bf75a9826d7425c9907fb97342e4abd4443bb21d8d14463ad1f97c0fca9"
+    },
+    {
+      "path": "data/research/bulk-25-content-manifest.json",
+      "sha256": "cc861c8a177a0c788e2ce8f05af36b0f4eba2fe3c4200f699db7c613e3d73fd2"
+    },
+    {
+      "path": "data/research/bulk-25-content-registry.json",
+      "sha256": "034cd8ff88880788df81fe6ab28cab8a5a4465901789e46289792e1460c0186e"
+    },
+    {
+      "path": "data/research/bulk-25-content-seeds.json",
+      "sha256": "c8969a09b4207dbaeaf8e70bf85ab2696c1fa3c5c36dc1ba9346c9c4bda3a3f5"
+    },
+    {
+      "path": "data/research/bulk-25-content/block-1-drafts.json",
+      "sha256": "b4c27e195f86539f352c46cf4275bc6d164fca052c1e1233e9f759dec273bd6e"
+    },
+    {
+      "path": "data/research/bulk-25-content/block-1-facts.json",
+      "sha256": "c1b20b0854d674b0501e32ba8de61b9ceb9035abbed732f8f4910f895eb3e889"
+    },
+    {
+      "path": "data/research/bulk-25-content/block-1-photo-selection.json",
+      "sha256": "1cc04cb7bbe59efea282c5c287a697ef220633b4c684a3fbd8dbbb16be210995"
+    },
+    {
+      "path": "data/research/bulk-25-content/block-1-photos.json",
+      "sha256": "7ac719ad8e39e34739f1419dd79f446f65a48cb57293f5e22f1fa698060e939e"
+    },
+    {
+      "path": "data/research/bulk-25-content/block-2-drafts.json",
+      "sha256": "49111f3de715ace9dbf6c066cb8ebd65312cc00e97688952fb4955299515adf0"
+    },
+    {
+      "path": "data/research/bulk-25-content/block-2-facts.json",
+      "sha256": "e9db167acff60292d3f60e837b4ce39e7e41263552821cec2580851e7b2a9b3d"
+    },
+    {
+      "path": "data/research/bulk-25-content/block-2-photo-selection.json",
+      "sha256": "454e6b729c38c5c4b73807112ee3f26b6db0aadf9952b6b6ca062a403da1afb1"
+    },
+    {
+      "path": "data/research/bulk-25-content/block-2-photos.json",
+      "sha256": "625eb63c74254d2851579b62465eb5a1a9d74ee41f0554048a5258a90e8f8836"
+    },
+    {
+      "path": "data/research/bulk-25-content/block-3-drafts.json",
+      "sha256": "d819f648ca14df4c6495a5f2c833841bbc2da99939739d890c36e56ef8028b69"
+    },
+    {
+      "path": "data/research/bulk-25-content/block-3-facts.json",
+      "sha256": "263d3d5e893f31d7bb207326c31c3fa5b9181183e42a9f330cf6b44d32bb2dfb"
+    },
+    {
+      "path": "data/research/bulk-25-content/block-3-photo-selection.json",
+      "sha256": "42cb07236b83eae9bb87ff2d16e62b4f6d0a937fcdaad47011b95ab27b35553e"
+    },
+    {
+      "path": "data/research/bulk-25-content/block-3-photos.json",
+      "sha256": "02651ff0eea83899745e7c1070da2743419fc2f4d1d83d46dd5e6dbbc099cb54"
+    },
+    {
+      "path": "data/research/bulk-25-content/block-4-drafts.json",
+      "sha256": "a101098d1d9cfadf82098b1f1a3e056396380eed06f98c714e1c5b5c8b45e305"
+    },
+    {
+      "path": "data/research/bulk-25-content/block-4-facts.json",
+      "sha256": "f80a3a2ac7a7f760faecc5c01c089140d70fd8f09c67763c6d6acc66eeee93d4"
+    },
+    {
+      "path": "data/research/bulk-25-content/block-4-photo-selection.json",
+      "sha256": "e956ab24560aee6c72cf38f71eca871bd65bba7fa012dc8a30ffdb024c9ea2e3"
+    },
+    {
+      "path": "data/research/bulk-25-content/block-4-photos.json",
+      "sha256": "bdf940f3ec7c06a5166acb068e39a114968b8e4bee555ade1e9459a943f710d4"
+    },
+    {
+      "path": "data/research/bulk-25-content/block-5-drafts.json",
+      "sha256": "b76ffa6b0c7c8e8d2841c4278ed1ce1c9e181c21a5694cb1fbda8ac57f690ecc"
+    },
+    {
+      "path": "data/research/bulk-25-content/block-5-facts.json",
+      "sha256": "5fd48164e51d71c02d6c4e34b7f02c741ae18a746cc406873f658e0ca7703f0a"
+    },
+    {
+      "path": "data/research/bulk-25-content/block-5-photo-selection.json",
+      "sha256": "81fad9101548dd0b94a32aafc20fdcac5e69f22442652da1e8b64de22f31be2f"
+    },
+    {
+      "path": "data/research/bulk-25-content/block-5-photos.json",
+      "sha256": "3e3b4b8bc0afe1f0a65245cafeabc0740cc11b7e622c157099664f1946df10a2"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/allium-dodecadontum.json",
+      "sha256": "6ac525c12f54046a39a1ebd34cd8d2dbec244fc93112f73c8b57367f1a8ec603"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/allium-semenovii.json",
+      "sha256": "09a710174095558f09cae5b776e4035aa4f823a74d7539c29f3a16ce33877990"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/aythya-nyroca.json",
+      "sha256": "3dce980d082ab15eaa9fdc04df19a13cde5c474a9f087821ace05d8236333481"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/cygnus-cygnus.json",
+      "sha256": "778abef2f8e6befd7c503da97852a34b4b3591a8852bf4fd89de63998097df81"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/delphinium-knorringianum.json",
+      "sha256": "70a3a331faa366132c45571ffa00e11eeda94737eef8808a0924ed1c0dfd44c6"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/eminium-regelii.json",
+      "sha256": "1dd08898763edb59a3e6cad88c0681c22faea8a7ae5c4a4624b743e366fc4290"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/eremurus-zenaidae.json",
+      "sha256": "0be68ab42546099684faa6c3aa1c1464a66fffa8c0ace6690f68872eb929b9c9"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/eremurus-zoae.json",
+      "sha256": "409a65cbe3c0854c9903c4e1bfa900c1f71b28a05bbd8e8fa1dfdced91cad00b"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/eryx-tataricus.json",
+      "sha256": "1bc97925cb7a18eecef14799015ddc583d3f598676f9ece49e0c6d6fe7787788"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/gavia-arctica.json",
+      "sha256": "f658181bc5527d1dce5e098d506e8e367fe9ab48a3fe329328b43e31bc9afdea"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/iridodictyum-kolpakowskianum.json",
+      "sha256": "cab2cf07d20e0635a9d4e5b836900060ff3fe4e520be6f20d5dbf59fc291d6be"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/juno-orchioides.json",
+      "sha256": "e27e8d43b5e21abe8b023becdb34fd5b13c610b921a43fb5590e98b25933ff81"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/lyrurus-tetrix.json",
+      "sha256": "7e9ae132b21f8759919497fd3f6b7f7b7ca5e28be5550a3186e8552317632908"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/masaris-longicornis.json",
+      "sha256": "ed59558b6e6fc7a3a15ab547c9f3213949d241143c6f6ea50bdb0df9d006f7d1"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/mergus-serrator.json",
+      "sha256": "868606d4c735d80345cc45de2f23019f493eb1d953390edf1118caa6d85c0962"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/oxyura-leucocephala.json",
+      "sha256": "50cf5255554c0ce5693a49821c2d0fa618cdfaf460cb1a4de340b3119a0425d0"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/thesium-minkwitzianum.json",
+      "sha256": "6af8bd2849aa2f947a793387a634984a49ce0b49f68410fa98b9b13b691bc63c"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/tulipa-affinis.json",
+      "sha256": "ff0741e2cd9dbfd8a9025e9a3b765bfb491f78510e91e571ef167109c46a2bee"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/tulipa-anadroma.json",
+      "sha256": "a9df98bca06523d072b6f57a82979be5098d36f2bb87613c1463c981d68215ed"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/tulipa-korolkowii.json",
+      "sha256": "e06194973c0096c55476518911c1da33a2774c2a8151d160a35ce87b9d4053b6"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/tulipa-platystemon.json",
+      "sha256": "7809ca724da102937206fc4c534ad9bf12dc67751c1acf4cfc2cf54387f86de5"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/tulipa-tetraphylla.json",
+      "sha256": "684584f366712f802613b04e5fe28f671eacf61efae993d7defcf47b78ede853"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/tulipa-zenaidae.json",
+      "sha256": "e7dd49b45bca702c1da57d751fb12064902d836957a6e8f6c517fa470bb371e5"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/urocerus-sah.json",
+      "sha256": "51584a4aa67531543f317a3195f2a47e93aabdbdbfcf61b0b0a4f74adfc298b3"
+    },
+    {
+      "path": "data/research/bulk-25-content/drafts/varanus-griseus-caspius.json",
+      "sha256": "6b0b1aa2f61a928e27443c5ae1586a8b459a884e128b99876033e00bdfa9ca0c"
+    },
+    {
+      "path": "data/research/bulk-25-release-review-manifest.json",
+      "sha256": "3121973b41a6cf9423fe211f33c95bdb70102ba9e8fe30a9e02801dd3d757cf8"
+    },
+    {
+      "path": "data/research/bulk-expansion-selection.json",
+      "sha256": "d335a2342d49bcda7466cf7f7ff2975a149b6816710d4f1ba429bf692df758ec"
+    },
+    {
+      "path": "data/research/catalog-100-content-manifest.json",
+      "sha256": "9921360fd4fc32b2a498aac6f6e261dd880d375dae5ab045cb1db80ca516b5e4"
+    },
+    {
+      "path": "data/research/catalog-100-content-registry.json",
+      "sha256": "f470dc496abd081d14657095b71c69a4a69e40f63e400b10e25ed26ce8535de7"
+    },
+    {
+      "path": "data/research/catalog-100-content/block-1-drafts.json",
+      "sha256": "60b8f2ea4c042a4bcdf2f77f1f18c97ae63bb900d51c6358f9021dd88cabb94c"
+    },
+    {
+      "path": "data/research/catalog-100-content/block-1-facts.json",
+      "sha256": "084574bcf83127667a7978eb22be018091b9b18b947c7a6b35df605b0a84817a"
+    },
+    {
+      "path": "data/research/catalog-100-content/block-1-photo-selection.json",
+      "sha256": "a947f607f161c4d2172dc3b871c162128f4ae41281ee151e74b1ec6022c56332"
+    },
+    {
+      "path": "data/research/catalog-100-content/block-2-drafts.json",
+      "sha256": "e4a28b8ee7558daf2b3e2368b1b0d783445e4fa3e263a4d1fca2ea35c7951889"
+    },
+    {
+      "path": "data/research/catalog-100-content/block-2-facts.json",
+      "sha256": "4a3ed7c3bd769555ce79cab71fe131dd2e5c64b12e80e076550d5f306d3a0311"
+    },
+    {
+      "path": "data/research/catalog-100-content/block-2-photo-selection.json",
+      "sha256": "526496b65d0cfa9ad095a5dfff6286dba09d1925fca0da47a3fefaee1f628fa4"
+    },
+    {
+      "path": "data/research/catalog-100-content/drafts/allochrusa-gypsophiloides.json",
+      "sha256": "bf28839f93782ff6ba338a87807842d5e3313727e5837989d3918d92892d377f"
+    },
+    {
+      "path": "data/research/catalog-100-content/drafts/ammopiptanthus-nanus.json",
+      "sha256": "885ad88cc6774be215a892f6f1a9e58b1931372997dc7e9b3a0dfd73dbccbcf0"
+    },
+    {
+      "path": "data/research/catalog-100-content/drafts/barbus-brachycephalus.json",
+      "sha256": "b530aea2fa126d0200a6a339b4587e9eb28d985fc9ea9dde9526ded5bf543e3d"
+    },
+    {
+      "path": "data/research/catalog-100-content/drafts/colutea-brachyptera.json",
+      "sha256": "506fe89aac49bc7ee964ef411f60bb091e6180def420331363f580d48b686d1e"
+    },
+    {
+      "path": "data/research/catalog-100-content/drafts/corydalis-pseudoadunca.json",
+      "sha256": "d9521bcf5175d28c1aeccbc52afb0a8548a506215911d68d35c154380b73e3b8"
+    },
+    {
+      "path": "data/research/catalog-100-content/drafts/crataegus-knorringiana.json",
+      "sha256": "f282f6c5158bd9a017ae74a5e87fd525fde1d961113a119f1ef0298a5d27917c"
+    },
+    {
+      "path": "data/research/catalog-100-content/drafts/dictyocephalus-attenuatus.json",
+      "sha256": "d48d53f904a7872427bffef5f12ee6922eb7816708cb92ad92e4560366e4d1cd"
+    },
+    {
+      "path": "data/research/catalog-100-content/drafts/fumariola-turkestanica.json",
+      "sha256": "c0e134884e2402deaa80ff53812b824d5d6eb940865ec36f2383b9ef11620cd5"
+    },
+    {
+      "path": "data/research/catalog-100-content/drafts/incarvillea-olgae.json",
+      "sha256": "b4980e998de2f323600fdb986b548a437a4218b7efbdd47c83d83f6f84c62c11"
+    },
+    {
+      "path": "data/research/catalog-100-content/drafts/physochlaina-alaica.json",
+      "sha256": "cd3f1de4c31a75e201015befa27b96877d8a00309ff1072c48b91541df290390"
+    },
+    {
+      "path": "data/research/catalog-100-content/drafts/primula-eugeniae.json",
+      "sha256": "1557448c6e04694c3e9bd45ff6b42a60cf0305cfc41ef79cb05cd2220e93b114"
+    },
+    {
+      "path": "data/research/catalog-100-content/drafts/prionus-tschitscherini.json",
+      "sha256": "d0d7ef6b56aae07a7f4de6a42670121829224446bf77de5ff9da6fe1a03e644b"
+    },
+    {
+      "path": "data/research/catalog-100-content/drafts/rhodiola-litwinowii.json",
+      "sha256": "2842c6c3a402a4b1c65b9854712e1066fe47d044e94458063607cfe11ffa2033"
+    },
+    {
+      "path": "data/research/catalog-100-content/drafts/rossomyrmex-proformicarum.json",
+      "sha256": "d19b977dfba62364e241a3a2dd23aa4acff1f8c3111a7ada70edf7d046475f5a"
+    },
+    {
+      "path": "data/research/catalog-100-content/drafts/saussurea-involucrata.json",
+      "sha256": "9f20395a44c2ed76a09c9158438bb39f771ec01326aedba77ce0f1515a37dca6"
+    },
+    {
+      "path": "data/research/catalog-100-content/drafts/sibiraea-tianschanica.json",
+      "sha256": "de94f373b5ad5ad87e5d48eecf0cc06448fb1f763f6a66ec276fa990e983c651"
+    },
+    {
+      "path": "data/research/catalog-100-photo-choices.json",
+      "sha256": "7357db20b4a2ef8a1dbb99d81013092e0b0c0593ccd09fbb8abfa9a1f39163a6"
+    },
+    {
+      "path": "data/research/catalog-100-photo-final-selection.json",
+      "sha256": "8460d6c8a6315ab920a763ca88b5d50ae5353ce974ad7f29f85b13f06485a98f"
+    },
+    {
+      "path": "data/research/catalog-100-photo-final-unresolved.json",
+      "sha256": "5ef8d9ed3956e602d2dcfb04e51d5411c0e4eb923646a8170d4819dee0375bc9"
+    },
+    {
+      "path": "data/research/catalog-100-photo-final-updates.json",
+      "sha256": "5d4e575e0e021df9cb8db54b8aa28c4b0b83b3550e99eb52f70668993f35616f"
+    },
+    {
+      "path": "data/research/catalog-100-photo-research-selection.json",
+      "sha256": "9833a0a5aa86ed35e92560758c2f4e5ede5e50778ef9a429287f8cd47218c436"
+    },
+    {
+      "path": "data/research/catalog-100-photo-research.json",
+      "sha256": "f4a820c50476d713537a94f9a382a717bf7fc38e2e1c1ebf46f84aaa2f934b89"
+    },
+    {
+      "path": "data/research/catalog-100-photo-selection.json",
+      "sha256": "e13a3bc4efbf417148df8505e0ad7ba39f4fc8437bcd0d77b6ab5be6d8a21922"
+    },
+    {
+      "path": "data/research/catalog-100-photo-unresolved.json",
+      "sha256": "02bc80819c48e21920dd5626d19afb9644ebd902d306a6b7df5b8758e2c5a343"
+    },
+    {
+      "path": "data/research/catalog-100-photo-updates.json",
+      "sha256": "c77fbad064291ecdcdea9c7e886ea7490c0ca27b37f5bba994dc1f0b94e51c5e"
+    },
+    {
+      "path": "data/research/catalog-100-research-registry.json",
+      "sha256": "51fbbae494b41ed3a370cef063c82dcb1a21f864ba6fd62890a337d5c8165047"
+    },
+    {
+      "path": "data/research/catalog-100-review-manifest.json",
+      "sha256": "592f264f91bb1628d7ff6e84925395dfd6894517348fc6df07eb16870b9ac74b"
+    },
+    {
+      "path": "data/research/catalog-125-content-manifest.json",
+      "sha256": "d3986a59d5500ce35ffe6a855ac19a49989fb0cf2c1a7ab84952739136c3a818"
+    },
+    {
+      "path": "data/research/catalog-125-content-registry.json",
+      "sha256": "a11c5621fe0ec4668e565e2984cc0f541fccf0b1320f520d40ffca51a380f820"
+    },
+    {
+      "path": "data/research/catalog-125-content/block-1-facts.json",
+      "sha256": "113e903c8149176167fbdceea4a5784a3f4f2b432f4f64e008c4fe98071374b8"
+    },
+    {
+      "path": "data/research/catalog-125-content/block-2-facts.json",
+      "sha256": "5baf2bf74ac0fdbd43bfb5cf6b18447e085feb6d02936985f6fe1ed8d2d854ff"
+    },
+    {
+      "path": "data/research/catalog-125-content/block-3-facts.json",
+      "sha256": "d9aa3e0113a3577ebaa7d543b120aeeb6fbb5c86d18ba1a103872057c71ef887"
+    },
+    {
+      "path": "data/research/catalog-125-content/block-4-facts.json",
+      "sha256": "2225668d05790edbb57de3c5acef6100b2a69a51fdf4c713a80639179a815c4d"
+    },
+    {
+      "path": "data/research/catalog-125-content/block-5-facts.json",
+      "sha256": "df8e83bee216c9e25877bb18d9ead229b4fdd202b68c19ffaad74cf3d824a450"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/acantholimon-compactum.json",
+      "sha256": "1e2c71ea01bcc0f9c641ffe91656006bf443146567c7403643bc1f9ffc479b35"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/bupleurum-rosulare.json",
+      "sha256": "c8e765f17aa6883ee26c7865950cbe476cb1dffb44974aa51590b908ed6b0752"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/campanula-eugeniae.json",
+      "sha256": "e1d33358dcf3bd72c176485e422a1c4dc005cc18050ed432f5ec9f7eaaaeae53"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/chesneya-villosa.json",
+      "sha256": "f16463f426f2779add2b39395c8df206cc587fc8b5b0429d4bb83523e60fa722"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/cnidiocarpa-alaica.json",
+      "sha256": "4f67501716b77d2cfdd9c3bab5b6933d71bff8538a37dca08806624863097d66"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/hedysarum-chaitocarpum.json",
+      "sha256": "ccc61220a254aba298bb6c9026247664fa09b72d7bea3aa34b5030e40e4cc463"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/hyalolaena-intermedia.json",
+      "sha256": "860ca5bd8755f7e880293fd34b551d9674bf216036218ff6d4cddb61976781c6"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/iskandera-alaica.json",
+      "sha256": "e4ea78474a57673cbd55f417aaff465bba602314715f1f0972b44d17859907ea"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/kaufmannia-semenovii.json",
+      "sha256": "1ef3d03167a09ce673f6aeef6ca39f0951a90a5e9cb78f4889d64656e2fa9854"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/lamyropappus-schakaptaricus.json",
+      "sha256": "528fce480fb559cb2a5af19c9bfd9eab8ec7bb4db96853d2d1cd8649ae134158"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/lepidolopha-komarowii.json",
+      "sha256": "978b3796f9689e7dd2b4ecdba7f9ff56e1f73c3f6e17992996569e4c62dda25f"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/lonicera-paradoxa.json",
+      "sha256": "1eaf7ba7b8d045e85c3d81b0caa41162830d3e44f2e45ea1ff96ef83f14e91ef"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/nathaliella-alaica.json",
+      "sha256": "49d945db29e5f8e316d86aa6446f82c8b2d1457415ed5e0b8831b3554d7bb0f9"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/pastinacopsis-glacialis.json",
+      "sha256": "9cdfcebda53db56d9daf58851ff84135b38779e02722bb569777b0f23f1a6f3d"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/salvia-korolkowii.json",
+      "sha256": "e0ae4bccf9d289f9b3af683633c291b7f485ab142b11d9890d02d15398ae5900"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/sclerotiaria-pentaceros.json",
+      "sha256": "0ba0fea1ec2598b927ed7d6d15ab951f796b5de0d61ab889a676a17773195047"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/scutellaria-andrachnoides.json",
+      "sha256": "e0e5cf1635956252f93f66d98fe9024646adf7a79fc43cf16b97c2d44ebf76b8"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/scutellaria-nepetoides.json",
+      "sha256": "cc14c4ea5ef4d058de92aaacad3859b19c961b5250289e0610398d749c23611e"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/seseli-eryngioides.json",
+      "sha256": "18c88f01db0456f380db5a556d06413202815d8218aaabe494480eecdac526d6"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/seseli-korshinskyi.json",
+      "sha256": "1d2bc0a1e2bcdd43f94ff976a3ac9e536c101e9b15e5e48f6fb626549d3d831d"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/silene-sussamyrica.json",
+      "sha256": "2d03d39b70303f98e6b22e768e2c4edbee321249a3859b043e0d1b921ad32e18"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/spiraeanthus-schrenkianus.json",
+      "sha256": "d0f8662e81283e5f642b20429208cbd7d261a6ca26f2fc87bb5b7eee193f049d"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/trichanthemis-aulieatensis.json",
+      "sha256": "71ab4ca6c9a7b7420ebfa0098f585b2dabcb2b7544f6cd2ce6a58049db566f2d"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/trichanthemis-aurea.json",
+      "sha256": "d3e82615f195ef0aefbd42dde8968edcf89f3f48212377266f30b4a7c4d75e63"
+    },
+    {
+      "path": "data/research/catalog-125-content/drafts/zygophyllum-kaschgaricum.json",
+      "sha256": "f5e51c80878deee7aab907131d0c6168f27145d971713eccc611c08eb40fdfbf"
+    },
+    {
+      "path": "data/research/catalog-125-research-registry.json",
+      "sha256": "4836fc4988526a70cd1724636ffaf0e4fcba81daffd408438fdb95938edbd43d"
+    },
+    {
+      "path": "data/research/catalog-125-review-manifest.json",
+      "sha256": "e2cb306acf708d13fe53e0ec3ddcdd620489593b4c96d640abd8121ebbc7e1dd"
+    },
+    {
+      "path": "data/research/catalog-150-content-manifest.json",
+      "sha256": "a45a9652997419b39217dfb47ed30079c3d903f55fad4b14845b7e9c3a01f7cf"
+    },
+    {
+      "path": "data/research/catalog-150-content-registry.json",
+      "sha256": "5e3e710583968c8cbcf301411950c06588ddfcdb9c4f75e33c76926412bc0111"
+    },
+    {
+      "path": "data/research/catalog-150-content/block-1-facts.json",
+      "sha256": "1e45fda9619497b78f49ee196be48ee17217d121cbca64216fef149b4be7ede0"
+    },
+    {
+      "path": "data/research/catalog-150-content/block-1-photo-selection.json",
+      "sha256": "02f8c0c3919ec60254b7e1d5763dd684af32878d7721f60ec09e38b2d18e26a8"
+    },
+    {
+      "path": "data/research/catalog-150-content/block-2-facts.json",
+      "sha256": "263e18385a4da96da063872ac9163a00b550d4c762bb65f8772d6b28b04db3fa"
+    },
+    {
+      "path": "data/research/catalog-150-content/block-2-photo-selection.json",
+      "sha256": "30949ea84f4a087d131950812dd2a6f637f8e9a38b6bc2174fb58568f6ee300f"
+    },
+    {
+      "path": "data/research/catalog-150-content/block-3-facts.json",
+      "sha256": "7856a05fb62f0d0da498637f2dc791ceb619c94d93730c022f3d63796c1b4276"
+    },
+    {
+      "path": "data/research/catalog-150-content/block-3-photo-selection.json",
+      "sha256": "d7f721da1db08362833f22f71f9baa33ccdebc2a908f0b2bf684162eec0d2343"
+    },
+    {
+      "path": "data/research/catalog-150-content/block-4-facts.json",
+      "sha256": "dbe74dfdeb2e837a06e4b9be36662e6d4824102a4269e0a289dae87acec2beb1"
+    },
+    {
+      "path": "data/research/catalog-150-content/block-4-photo-selection.json",
+      "sha256": "61ebd6e9242ca5de78e2e01c5b2bcbca109ce45a6951c76a5f8ac4cf2d1da2ea"
+    },
+    {
+      "path": "data/research/catalog-150-content/block-5-facts.json",
+      "sha256": "5d22633d1e62598f04b0583c77dc4cdbd63b3c1ee1c749ec3e96101194a97543"
+    },
+    {
+      "path": "data/research/catalog-150-content/block-5-photo-selection.json",
+      "sha256": "17113d6b89ee80d51efba2bdcc1c7bfef4366f4fcdc857eba85f12f4b2e97b83"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/accipiter-badius.json",
+      "sha256": "7a246d3f22d7bfaaa486c89ae8a1d7d76b4674430dde568a9634603feab910c2"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/anser-indica.json",
+      "sha256": "f118a1bd8b036f87168080d7aba1b31b6869d38f885c049d4debe072213b2895"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/anthropoides-virgo.json",
+      "sha256": "9180e81474e70966a3307062da08a64a8e4f9711bfb65c6c1aa4dd4d035e1ce0"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/aquila-clanga.json",
+      "sha256": "dd2f676d051909412db093d60d5058369c77be5021c4a5ab1e5757dea4cbaf98"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/aquila-heliaca.json",
+      "sha256": "3369adc49f0b95f052409bc2234b1315a95bac7f05c22686b9b3710e115c3170"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/aquila-nipalensis.json",
+      "sha256": "5570a63c78d36fe2b970e3a291c7b6718787bd56d3010053ee82994ae21d532d"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/barbus-capito-conocephalus.json",
+      "sha256": "a8c153ae64a33cb806d73197f8ec4eda3b3e799f5aa4a70fbe2c86241efdacbf"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/bubo-bubo.json",
+      "sha256": "90a8c757b699c1caa049b07ea90302dec926c37dce4613aaf00a8d5192c3e2a5"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/burhinus-oedicnemus.json",
+      "sha256": "823b89a4eee9ed964c922334fc57b2999daad867aa9bc215be7e95a04f091cd8"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/columba-eversmanni.json",
+      "sha256": "faa942b32d751ad68e2eadb4ca67074ae86820bae3829185c3927d6a854fda7d"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/columba-leuconota.json",
+      "sha256": "f88e43bc8859791857b01e4c19be771ed4753967a807479fd70d1bd1e56f7798"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/crex-crex.json",
+      "sha256": "4818020d3bc0fff031c049e59c8b0da2c56040354e150a6f9e973fc7dbb4e704"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/glareola-nordmanni.json",
+      "sha256": "70096116e0fb5bc53e3cccd847f7db91110f9b5ba4803e69ed9ab01484d03cca"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/hieraaetus-fasciatus.json",
+      "sha256": "f9bc2eb38873fb4c1dad8b6c20839e8e9786b52019fb965a2634926195b930de"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/hieraaetus-pennatus.json",
+      "sha256": "c32a92f6a09a6e6da629c51263c515c2ace8d4026328f2876ebf4e4a91ba671c"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/kirgisobia-bohnei.json",
+      "sha256": "ef7bad9d1763ac5276fcfda3ba06e4f4c0d6f21ec76ba2ebc66212e52de67c29"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/pterocles-alchata.json",
+      "sha256": "78fc5fc0a38f2055d2a75557cd45e3116dbfc7214031d85f4c1853adee46e953"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/pterocles-orientalis.json",
+      "sha256": "27c0ae3209f67318115cc518e74745f89694e229f795ef5aeee60df5e9ef4f48"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/strix-aluco.json",
+      "sha256": "36241bb3f2acf341d9347e7016eb3c0885ceaff0abddd039b5ed7ef46bcdd363"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/syrrhaptes-paradoxus.json",
+      "sha256": "2fa136a679829e840b96a8a8bb3300f14e75f45042f5dcc32c94cbb6109bc00c"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/tetrax-tetrax.json",
+      "sha256": "e2ada0543616ad52f52d3da1637d8348b1b8946b6ffb786e1198148993194fe7"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/vanellus-gregarius.json",
+      "sha256": "263c707aeb9aa355cad6c48d7f55b8dd9499b170dbb6f09d775e32cee3d3cc3f"
+    },
+    {
+      "path": "data/research/catalog-150-content/drafts/vipera-ursinii-renardi.json",
+      "sha256": "56860726a582afebf4b99f5e2c885050b419a4326e929368276299e5b8f8bcd9"
+    },
+    {
+      "path": "data/research/catalog-150-content/supplement/block-1-facts.json",
+      "sha256": "88637651b7b15e1e6910c378d7c36e1880741a2ccb7dc826e1dd608e26fb9ffc"
+    },
+    {
+      "path": "data/research/catalog-150-content/supplement/drafts/dendrocopos-leucopterus.json",
+      "sha256": "c3f5c8fdd2043e8e03fc1483c236d70a52944ed5117177ad37b2cc1d1fc2deb4"
+    },
+    {
+      "path": "data/research/catalog-150-content/supplement/drafts/gazella-subgutturosa.json",
+      "sha256": "559e755e3c285a4fe53f2414b7a049b4e91a0382203e2f2f8a0fb43f779f16d0"
+    },
+    {
+      "path": "data/research/catalog-150-national-inventory.json",
+      "sha256": "d3cfabf1375df0d434c8d80cd37f12cbdb2ec4bc444ab375ee0fd023c6d92c08"
+    },
+    {
+      "path": "data/research/catalog-150-photo-research.json",
+      "sha256": "cb708fe2a19bbf8848194c0332a51cbb11a1200b19b28f2b27c87306819be410"
+    },
+    {
+      "path": "data/research/catalog-150-research-registry.json",
+      "sha256": "72501d1ced8315963ff347c6a4af090d37f221aedd12d55a29fd613dbc10f5e8"
+    },
+    {
+      "path": "data/research/catalog-150-review-manifest.json",
+      "sha256": "85bed9d67e06af5bbcdcd47ff8947d5deb70658c48bd89ea23e7bc4da43f5d82"
+    },
+    {
+      "path": "data/research/catalog-150-unified-registry.json",
+      "sha256": "3431a1779ae196bfcc5f58bf4ed85ed0bcbb403681777e39a0a16e5404de7268"
+    },
+    {
+      "path": "data/research/catalog-150-unified-review-manifest.json",
+      "sha256": "e1b61981b42be0f9885eeb97a0f32b4b13aa931a4a87ceb22e11409e77e47b27"
+    },
+    {
+      "path": "data/research/catalog-150-unified-selection.json",
+      "sha256": "76795f3e1770861580a7e0a7052033d2822fa30ee034f70fb96183d100e2aade"
+    },
+    {
+      "path": "data/research/catalog-150b-content-manifest.json",
+      "sha256": "9e9e046a3b930e623274c8c939a4247a766ae927b771f6d3cdfa67d7246bcde9"
+    },
+    {
+      "path": "data/research/catalog-150b-content-registry.json",
+      "sha256": "0dff1f315b8d822dfb281c2be6a16b92d0396e017e1fe2ff0eeee3f49a97d779"
+    },
+    {
+      "path": "data/research/catalog-150b-research-registry.json",
+      "sha256": "f3bbf5c9e9926735c759c6aaf20fa0c38c7175c2afcfb17c92b2ec29c98bcb59"
+    },
+    {
+      "path": "data/research/catalog-167-content-manifest.json",
+      "sha256": "44f0bf677fae799a67016ec803d76107e1f8b94e640394bfeb0f36e0084e4482"
+    },
+    {
+      "path": "data/research/catalog-167-content-registry.json",
+      "sha256": "af04c03391ef2fe7e06fd49ef1319b2fb1d739438b3f822f59124786f81f971e"
+    },
+    {
+      "path": "data/research/catalog-167-content/block-1-facts.json",
+      "sha256": "4bb26e0cec66b30ff819f3a3e2ea60b529ad770e0bea9cfcd829d9ffb251c523"
+    },
+    {
+      "path": "data/research/catalog-167-content/block-2-facts.json",
+      "sha256": "d03706abf80c2ce489db0f0b4c0ddedd3fcfe2e4c49e8b7de13e30f9f44c39a5"
+    },
+    {
+      "path": "data/research/catalog-167-content/block-3-facts.json",
+      "sha256": "5dfa51f9fdb7ce243e7709531881470c657ebff7de1f1357681200a39a214960"
+    },
+    {
+      "path": "data/research/catalog-167-content/drafts/alajja-anomala.json",
+      "sha256": "56e2df5fbed0103e5b431e4c77c5ce3b92e10687501e22750183334ba0af5e5e"
+    },
+    {
+      "path": "data/research/catalog-167-content/drafts/allactaga-severtzovi.json",
+      "sha256": "4494e2d819e464d42f37b6f0c3560de2e8d0be2f05a31cb4d313d6e00340caa7"
+    },
+    {
+      "path": "data/research/catalog-167-content/drafts/amygdalus-petunnikowii.json",
+      "sha256": "d519ee11c9b48d287ea373a226825d8433e715946af4770f009ad07fd200e054"
+    },
+    {
+      "path": "data/research/catalog-167-content/drafts/centaurea-alaica.json",
+      "sha256": "b1ebd0b4f23e738cd01c40cf431222cae8c4ae3bb3503bf8706dff6e724ec530"
+    },
+    {
+      "path": "data/research/catalog-167-content/drafts/chlamydotis-macqueenii.json",
+      "sha256": "1ed0ed060465707f9885ffe4825513dbd6b27d4071b9a536d09d95a2cc0979ea"
+    },
+    {
+      "path": "data/research/catalog-167-content/drafts/dendrocopos-major.json",
+      "sha256": "f95ae6c4d72d4f8577ec3e903d41434c989ce3058f99995aeb7602da0d40eac1"
+    },
+    {
+      "path": "data/research/catalog-167-content/drafts/hemiechinus-hypomelas.json",
+      "sha256": "56840eedea917f3476a5f61cef3f2dd3cafd821d31a6529fe86ce5a794661512"
+    },
+    {
+      "path": "data/research/catalog-167-content/drafts/kosopoljanskia-hebecarpa.json",
+      "sha256": "b3311ec493b977c3e26e6d3aea3fbb841e61477f475087478f8eccda3197797b"
+    },
+    {
+      "path": "data/research/catalog-167-content/drafts/kosopoljanskia-turkestanica.json",
+      "sha256": "85d66ec2dc6cd64b4c11f6b1e44a8a56c6ba4d84cbe112653b73f88152e165d9"
+    },
+    {
+      "path": "data/research/catalog-167-content/drafts/larus-ichtyaetus.json",
+      "sha256": "d115d2318e6e9c6796e9d148b9da76877784fe2724b4850a6478477fc8682845"
+    },
+    {
+      "path": "data/research/catalog-167-content/drafts/numenius-tenuirostris.json",
+      "sha256": "c38a3abb5dd2f2e5668a1e829502e119445d5d9f1addc930b3b1d601228d56b0"
+    },
+    {
+      "path": "data/research/catalog-167-content/drafts/otostegia-schennikovii.json",
+      "sha256": "4239aa9fa861bc09548a0298f7bc1f01a04777d3faf926b400908b56642d4fcc"
+    },
+    {
+      "path": "data/research/catalog-167-content/drafts/phoenicopterus-roseus.json",
+      "sha256": "bc905220059d31b77c51a384bb000b5126acad934ccbf076913469fd9104e4e7"
+    },
+    {
+      "path": "data/research/catalog-167-content/drafts/pyrethrum-leontopodium.json",
+      "sha256": "171079cbce0c4608792deff7e903ef3c6c35d29b820c6fdad3ebec3d2aed9a8d"
+    },
+    {
+      "path": "data/research/catalog-167-content/drafts/salvia-vvedenskyi.json",
+      "sha256": "ccf6849e4b11aa68a32b05fc5c0991ff87357741e1dddc9675e433c6c2a2647e"
+    },
+    {
+      "path": "data/research/catalog-167-content/drafts/sorbus-persica.json",
+      "sha256": "e1fb29e9a2ec644da6573a694105b40d149c79acf2e894c3fa4dc9061ea1c2d5"
+    },
+    {
+      "path": "data/research/catalog-167-content/drafts/stemmacantha-aulieatensis.json",
+      "sha256": "b141cb35dcb4b81d45b5ac415b66ac353c7470b4ea26156bfc3d56c56be06fa3"
+    },
+    {
+      "path": "data/research/catalog-167-research-registry.json",
+      "sha256": "b192325573b61f082195a6187fe80848ca758094c174e6b18d5360e769d27f19"
+    },
+    {
+      "path": "data/research/catalog-167-review-manifest.json",
+      "sha256": "a56943c3295e3619a6e5c6d418071b813cc89970499e655b1cf923bbf428aefe"
+    },
+    {
+      "path": "data/research/catalog-181-content-registry.json",
+      "sha256": "797b8e530bc1934101a735e93d904ed1eca74728942b9ecb324b62c6249fa125"
+    },
+    {
+      "path": "data/research/catalog-181-content/drafts/allactaga-saltator.json",
+      "sha256": "1a52d3e7712e31a19001247ccd359ad2ded4eb542ebeca39ce1793ab86ad0435"
+    },
+    {
+      "path": "data/research/catalog-181-content/drafts/anemone-obtusiloba.json",
+      "sha256": "115eb04a0b510a64cbfee10ab9cc4c66236d3099fde856c3144c84fe73e17936"
+    },
+    {
+      "path": "data/research/catalog-181-content/drafts/berberis-kaschgarica.json",
+      "sha256": "8edfe28513778782303d070096283f982384ec5d4e76f4858acb62fb7f82d164"
+    },
+    {
+      "path": "data/research/catalog-181-content/drafts/capoetobrama-kuschakewitschi-orientalis.json",
+      "sha256": "bcb21c1bb5243e5933f3db02912135c2803c840cd92df40b75c3e4734d022a08"
+    },
+    {
+      "path": "data/research/catalog-181-content/drafts/cervus-elaphus-asiaticus.json",
+      "sha256": "03dd40c5ff074e3f06da81e95f13068d33d6eaa2c9189ea6ac56284c6fe3b185"
+    },
+    {
+      "path": "data/research/catalog-181-content/drafts/diptychus-dybowskii-lansdelli.json",
+      "sha256": "eca3aeaf47686b0227b8101d2ee16a91e020c127f92d76cda8123471d3a63339"
+    },
+    {
+      "path": "data/research/catalog-181-content/drafts/eryx-tataricus.json",
+      "sha256": "c8327660afde75ad21bfe8a35b84cdeea06fca15aafb89f7918dd33244625a8f"
+    },
+    {
+      "path": "data/research/catalog-181-content/drafts/megalodontes-kuznetzovi.json",
+      "sha256": "3470655eea598397a8cea4a110592a5b672748c71fc3d66bb43f4a6f06c0160d"
+    },
+    {
+      "path": "data/research/catalog-181-content/drafts/otonycteris-hemprichi.json",
+      "sha256": "2e3caf8c975820d12b0c876b89e4f3a152b25bc3c521fa905eab971d4145efb9"
+    },
+    {
+      "path": "data/research/catalog-181-content/drafts/papilio-alexanor-voldemar.json",
+      "sha256": "8eafcbacecab6f6164da7eb6ac0ffa2e7686727063f7a424736c56866baa3d80"
+    },
+    {
+      "path": "data/research/catalog-181-content/drafts/polochrum-pamirepandum.json",
+      "sha256": "9c30a1dc5eb4109a701dba6557725ebaea11a4786d8a81b5ea32c8e4f46ac65b"
+    },
+    {
+      "path": "data/research/catalog-181-content/drafts/primula-macrocalyx.json",
+      "sha256": "381447ec3db5d4ee68f4acd3cb9606345d25e714c6c954df983081199b924e1c"
+    },
+    {
+      "path": "data/research/catalog-181-content/drafts/schizothorax-issykkuli.json",
+      "sha256": "df01f386f7f56f216e12a2610d27613ab719ba74ed1cc433baa1743b67206f86"
+    },
+    {
+      "path": "data/research/catalog-181-content/drafts/sonjagaster-coronatus.json",
+      "sha256": "438ddf7a23994e8b99e31da215677335d503b791008acc85f43889ef298dd4c2"
+    },
+    {
+      "path": "data/research/catalog-181-content/drafts/terpsiphone-paradisi.json",
+      "sha256": "0599091ff14cfa8d6e984e1f191b796d9c3e1a069dfb3e31d7a4a1cc76cfa46a"
+    },
+    {
+      "path": "data/research/catalog-181-content/facts.json",
+      "sha256": "3f6c1b1ecee974a90cc46320cb9d015031f282837bbd276a1aad3bd1c6ff50ed"
+    },
+    {
+      "path": "data/research/catalog-181-review-manifest.json",
+      "sha256": "0ba2e9ea7922b13b10baed4b37ea48fb61befe766c170120379ccb51c6c1882e"
+    },
+    {
+      "path": "data/research/catalog-187-content-registry.json",
+      "sha256": "30a22dc3960bba6996af6529127f19dd9bf58663166528fb2bc18570378bb73d"
+    },
+    {
+      "path": "data/research/catalog-187-content/drafts/cuon-alpinus.json",
+      "sha256": "285c3eb6703d562d67f4f65faa0167235d8f9d29e1ea0338306f0b0c6f7de943"
+    },
+    {
+      "path": "data/research/catalog-187-content/drafts/dorema-microcarpum.json",
+      "sha256": "6f445ffccf2dbac313c03eb08ecd0ff9bf63bfb0aedbc706848e3b17174ab3d1"
+    },
+    {
+      "path": "data/research/catalog-187-content/drafts/megalodontes-kuznetzovi.json",
+      "sha256": "f232d8b72ce79abc2eb108409df4917174efc0f4938aab832dff87903909ef94"
+    },
+    {
+      "path": "data/research/catalog-187-content/drafts/papilio-alexanor-voldemar.json",
+      "sha256": "fa247e1fefa2b419fd01eba5212003454611bca3d339b2a71ef35beb6666ce65"
+    },
+    {
+      "path": "data/research/catalog-187-content/drafts/parnassius-apollo-merzbacheri.json",
+      "sha256": "e76e13479e9f2fdff4718e397b43e17d72846f9b2e8143461174ce5b20944122"
+    },
+    {
+      "path": "data/research/catalog-187-content/drafts/parnassius-loxias-tashkorensis.json",
+      "sha256": "3fc1eafb68fc2380e37c04cd764429accf4222b48ddb8f0cc75d3cac3b11eab7"
+    },
+    {
+      "path": "data/research/catalog-187-content/drafts/polochrum-pamirepandum.json",
+      "sha256": "aa2633c9a9daef1c5977a9b01ecc9cce6e36c6a1a132cf994213392804a90fe9"
+    },
+    {
+      "path": "data/research/catalog-187-content/drafts/sorbaria-olgae.json",
+      "sha256": "a865e9ec509706f75b5e0cf48ee99bd02d451d5cbaf1c635eedcca66641f57f2"
+    },
+    {
+      "path": "data/research/catalog-187-content/drafts/tianschaniella-umbellifera.json",
+      "sha256": "1ebf5a27f9f9d66f773aac6497f4ad23bb2ab5d74c0e90e080e12d1e2a367abd"
+    },
+    {
+      "path": "data/research/catalog-187-content/facts.json",
+      "sha256": "8a44d16578a2bb5d8bcd626531dd3b4979ae165e67ce33e08c515225ab5550aa"
+    },
+    {
+      "path": "data/research/catalog-187-review-manifest.json",
+      "sha256": "ea602571d211f948738d5016c70fd235f01d211b144e324687764a99906922f7"
+    },
+    {
+      "path": "data/research/catalog-200-conflict-resolution.json",
+      "sha256": "ff663aa68037ab8cfedce7af7412a9d84867b275c1d2f0009afecbb80299bc5c"
+    },
+    {
+      "path": "data/research/catalog-200-final-taxonomy-review.json",
+      "sha256": "93c0b979d51aea0553cc39087cad14a88ac29a535da2f96eb36f8fc308205f2f"
+    },
+    {
+      "path": "data/research/catalog-200-inventory.json",
+      "sha256": "e020df98fc31cb813fcea8844107adc5d0a5f635644076e1e83f6e1d9fef45d8"
+    },
+    {
+      "path": "data/research/catalog-40-population-notes.json",
+      "sha256": "516fc4cd87be8bea66c68ce3467c2e41a6ecda078b1c9a1ecc536f86964a6a81"
+    },
+    {
+      "path": "data/research/catalog-84-content-manifest.json",
+      "sha256": "05bc04469f555f6b705e48aafcf9c71c8da4ea0e2104461be7f88568440f1025"
+    },
+    {
+      "path": "data/research/catalog-84-content-registry.json",
+      "sha256": "215088004ce373f13efc61dd06470b60c9987ca88c7254a1fdd960493e38f9b0"
+    },
+    {
+      "path": "data/research/catalog-84-content/block-1-drafts.json",
+      "sha256": "ea490bb4d26773a197d38c58b5edc721828f4143eb9c74331084f123c9c7acd5"
+    },
+    {
+      "path": "data/research/catalog-84-content/block-1-facts.json",
+      "sha256": "1cf8221b781f39fa676327cb944662ee27802032bb9b954e01fd62f8d00662df"
+    },
+    {
+      "path": "data/research/catalog-84-content/block-2-drafts.json",
+      "sha256": "217aae4ba1e2aeacaeac8cdb51f74dcd4fba49582e649d4fab61be8e50c4f636"
+    },
+    {
+      "path": "data/research/catalog-84-content/block-2-facts.json",
+      "sha256": "bc3f0d61fa73c5b25574450d55b5cc73db44a4f7918d247d89c63dfb8149745b"
+    },
+    {
+      "path": "data/research/catalog-84-content/block-3-drafts.json",
+      "sha256": "ab8432fba3c53069d68047e75028debe93ed6ac9345d1bd02cdd9dacd31a0894"
+    },
+    {
+      "path": "data/research/catalog-84-content/block-3-facts.json",
+      "sha256": "67b4c35448a3ce0cfc9f6a3b980df3b1dee444ab44ca77a0ec7094261469cd8a"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/allactaga-elater.json",
+      "sha256": "c44f658ea33e43386ca4937e585704208fae3cec4bbdaf4182e74e207ec87549"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/barbastella-leucomelas.json",
+      "sha256": "c7241e22c09ea91a03310665c906801f3da625dca250f85a2a020aaafc103389"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/ciconia-ciconia.json",
+      "sha256": "36ab0f963a1a3f7e86ceb6a6017e90188ede31e565222fc7921300d843fd9344"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/circaetus-gallicus.json",
+      "sha256": "36416206a31e54a21320131c28b209436071a78e502759ed8296704a208587f2"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/circus-macrourus.json",
+      "sha256": "d8a0ef2137a24faf3e4808166eb07e0562a894e06a7368b3f5002978d9b3c862"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/falco-naumanni.json",
+      "sha256": "8420b4c378bd2a922b39e31045c834fce6b2d4c001a2451db2c34bac1c2cc8b0"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/falco-rusticolus.json",
+      "sha256": "6bc7d6bdb773f8bb2ad2f03785e11db3c9812ecc651a0b2481c3b72be0b17220"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/gyps-fulvus.json",
+      "sha256": "bcf882af25b89b250f6106425802f9f28a81ecebd922d734d76e5f0264a79d67"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/gyps-himalayensis.json",
+      "sha256": "a9195dfc4312482bdf45fe9ccd3581ca06def538a0faefe12c450d1e35edf6ca"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/haliaeetus-albicilla.json",
+      "sha256": "7c659b3e2697ebc68a0535569d08994a4dda1ed10ff751e18b12609badc3a8f0"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/haliaeetus-leucoryphus.json",
+      "sha256": "7588ccd588cf37f07b68f56fc9f2f946053c2d60ec81dd84570441ec210d68a9"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/lutra-lutra.json",
+      "sha256": "3cc33f9857cde9e7bfecf4c314cf31ed366ccff6bfe20f3267779f78d66cfc9f"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/martes-foina.json",
+      "sha256": "1201341ca593a078246dd300f3e9800b012bcbfd1662be1a0fd458a2f84ed42e"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/neomys-fodiens.json",
+      "sha256": "c235881c98228d695fe469281ca64a04b49ecf3b65652645d528e0bd30d3d78c"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/pandion-haliaetus.json",
+      "sha256": "4644b8e7b5f89ca089c71f7cb23c71ece59ae1fb362109d1e4a3796140281004"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/pelecanus-onocrotalus.json",
+      "sha256": "feb89433e8b194224b2b3ceafeff543e7cacdae9b1213f5d37cb97f927f460eb"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/phalacrocorax-pygmaeus.json",
+      "sha256": "e9bc3385d14c0dbaca01cc89436642836df45a77a1c1059396d3340a62cff06b"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/platalea-leucorodia.json",
+      "sha256": "a7d69f231e14ff24287e76049511937622680fd8feb7d734c33f9d55d6bc8870"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/rhinolophus-bocharicus.json",
+      "sha256": "014e9dbca16998afa489c3526a0cc4e4a47e97cb6312d3e5a99ae1d786a5752b"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/tadarida-teniotis.json",
+      "sha256": "2278eb70f84fe4d95b02c0bfbe651156c5800f0bdfa8bcbe07940a97bccab35c"
+    },
+    {
+      "path": "data/research/catalog-84-content/drafts/ursus-arctos.json",
+      "sha256": "f3c1a73a61e8980e3789b674200ae4d56c4084307eb8d79e8c432c05e19c8820"
+    },
+    {
+      "path": "data/research/catalog-84-review-manifest.json",
+      "sha256": "fbe1c33118ae86dbaca13ccfe6e7149ee267861f0fd2158a884b66d574de0c9d"
+    },
+    {
+      "path": "data/research/catalog-candidates.json",
+      "sha256": "d5905b22177abf21931e6b6681d6e1cc1934a5df753a6741b3a244f47529dbfe"
+    },
+    {
+      "path": "data/research/first-batch-regions.json",
+      "sha256": "6105cbaf5d04bbec7e9167b283de07164249f9f8240363e193550f78cf6a8801"
+    },
+    {
+      "path": "data/research/publication-decisions/muras-22-5b-owner-provisional.json",
+      "sha256": "08dea63d18c452baf4b86b736790a7591eee2482f98173e23f5a3fa281f2b233"
+    },
+    {
+      "path": "data/research/publication-decisions/muras-22-6-owner-provisional.json",
+      "sha256": "662f8fc11b7c23e47ba51ce1d37561d419da7208205c4592146921fafb6a805f"
+    },
+    {
+      "path": "data/research/publication-decisions/muras-22-7-owner-provisional.json",
+      "sha256": "06e30eb2a98287e9da5d8fe679b407359d9a65f88a03660b4823affb197b2e8c"
+    },
+    {
+      "path": "data/research/publication-decisions/muras-24-1-owner-provisional.json",
+      "sha256": "bd4b79cd01500e50c90d160cf1c86d9cf7a67d3fd382d9df2bd4779b750fc6d9"
+    },
+    {
+      "path": "data/research/publication-decisions/muras-24-4-owner-provisional.json",
+      "sha256": "2c49255990bc68b5bc681d5fd11c32a17cefbb60a02fbe2f63ae999d8c0d4dc7"
+    },
+    {
+      "path": "data/research/publication-decisions/muras-25-3-owner-provisional.json",
+      "sha256": "46ecdab8c21f147154ad122b3b506366641a99eca7ebe104fad403f47cf630f7"
+    },
+    {
+      "path": "data/research/publication-decisions/muras-25-7-owner-provisional.json",
+      "sha256": "2de1fa65ed7b412f6db0e099da680b7a4067d36ebb870444c401213e0c290243"
+    },
+    {
+      "path": "data/research/redbook-master-candidates.json",
+      "sha256": "df658ea7fd4ea6e5fd5202add6af8bcc6a5c7ca62078c40b767f695f80d6c9d8"
+    },
+    {
+      "path": "data/research/redbook-master-national-lists.json",
+      "sha256": "0394cd310600afe2fdd7245c9b8eb26a5776763be55c2b9a727dfb8c456b52f0"
+    },
+    {
+      "path": "data/research/redbook-master-reconciliation.json",
+      "sha256": "9ad05adfd116202f6155ee3f8ae4aff5769f9ff271a96966d84049f55410d5bc"
+    },
+    {
+      "path": "data/research/redbook-master-registry.json",
+      "sha256": "ffd5b35b7a9744b763011e69ce30ef3c2de65da073212040decb1d5fc8a2d5ab"
+    },
+    {
+      "path": "data/research/redbook-master-selection.json",
+      "sha256": "73286201c703a6444ca7b75626d565b6e9f603885c666b715e3b69e2fc1ffa4b"
+    },
+    {
+      "path": "data/research/task23-gbif-photo-choices.json",
+      "sha256": "dd46c58cb8800411e37fe425e9b67a88aeb46a064a853bf2a546abfcf3aefd02"
+    },
+    {
+      "path": "data/research/task23-photo-block-1.json",
+      "sha256": "4106204335ac2d2de86a4adcdfd83a742901faebf42b0320a99faa24cd423113"
+    },
+    {
+      "path": "data/research/task23-photo-block-2.json",
+      "sha256": "30479cde06bf26ba5bc9a36a7703c9c791aedf2d77d6f4c8665b3372a88b48da"
+    },
+    {
+      "path": "data/research/task23-photo-block-3.json",
+      "sha256": "eb8359b280689756ee1b1ce45768a0702760fe0fee0afc0685e012be01fdf02b"
+    },
+    {
+      "path": "data/research/task23-photo-block-4.json",
+      "sha256": "1a277b5f614255d192aff56d30dd6b96494c5f13a45e8f62a89277c151e7f297"
+    },
+    {
+      "path": "data/research/task23-photo-block-5.json",
+      "sha256": "4013ffa6a30e3a1b18b8b0d6c1cd165fbf6e7affa3a5a1433937847792f3ab4c"
+    },
+    {
+      "path": "data/research/task23-photo-research-1.json",
+      "sha256": "8f27858e5cb03ddaadf7f17be73dcdd0fcc504f11df87a6d65271ca8dbf8fc6e"
+    },
+    {
+      "path": "data/research/task23-photo-research-2.json",
+      "sha256": "b680bf5bbc4db6921e8cd5217505a38e652b0625daa93c6797a24d269ccfa1af"
+    },
+    {
+      "path": "data/research/task23-photo-research-3.json",
+      "sha256": "9469b171f612426b93702221191ab761e9341a8271e2c09a27ff31ecb3ee2143"
+    },
+    {
+      "path": "data/research/task23-photo-selection-1.json",
+      "sha256": "b051491c9fe0761a366169d39427093940cf779eb1d488bc4a3114850003d2dc"
+    },
+    {
+      "path": "data/research/task23-photo-selection-2.json",
+      "sha256": "71f84d4b81e2cb495ee58922e29af0169ce558f73571a95c208805da887bb62b"
+    },
+    {
+      "path": "data/research/task23-photo-selection-3.json",
+      "sha256": "9d1af3d4e4ba165d55284989eb8947de6523f539401229f248fee4229af3c057"
+    },
+    {
+      "path": "data/species.source.json",
+      "sha256": "088f8f2fc78462a1721e293974b1054dc7a80b215f25bd111be3565318948f60"
+    },
+    {
+      "path": "docs/admin-validation.md",
+      "sha256": "7129e14ebc71210dc867be0ca1d89bf5934a1f1b6c0d1abb21f3b16b6953dfb6"
+    },
+    {
+      "path": "docs/backend-migration.md",
+      "sha256": "bdfd60c7964711f3bdd512aa2262426cc9b3a30c33bc990704f80f68bf4529b3"
+    },
+    {
+      "path": "docs/branding-validation.md",
+      "sha256": "8a405bad55ed6e4796ce8117d81c7277f95ab436c7a9773451ac644084e446e3"
+    },
+    {
+      "path": "docs/catalog-expansion.md",
+      "sha256": "30ad8759ed10490e053a5a3f9943377d7fac1ec142874ef983f453a45fde0866"
+    },
+    {
+      "path": "docs/catalog-ux-validation.md",
+      "sha256": "b1fffee5d5c28d30f15bed8d42dd687f71f4f55c7cc43d390b7db36aab7f39bd"
+    },
+    {
+      "path": "docs/data-model.md",
+      "sha256": "20a10a6548814a3dc5f10f29d07d3c32b756eabab465aa96795702a7b62ca03c"
+    },
+    {
+      "path": "docs/evidence/.gitattributes",
+      "sha256": "6d22cecd8c54dc02f93ced20f0e1ad431df64229084bd85e7476a629111bc022"
+    },
+    {
+      "path": "docs/evidence/README.md",
+      "sha256": "667803eab76bae1165ca42eda01336decbb998d8ed731f587eb0ac2d8dc2b357"
+    },
+    {
+      "path": "docs/evidence/bulk-25-block-1-accounts.json",
+      "sha256": "c87add0d29cf4208c3933059d34c30d564e46b40638c2b9ad616615412ab2d8f"
+    },
+    {
+      "path": "docs/evidence/bulk-25-block-1-images.json",
+      "sha256": "2d1b18d83c698b1db050056315d8bd033ebc17f868f2efde343273551ddb612f"
+    },
+    {
+      "path": "docs/evidence/bulk-25-block-1-validation.json",
+      "sha256": "d6343f05984a569f5a48db66395d77d56e278d3464e939c555d2d90abec9ff84"
+    },
+    {
+      "path": "docs/evidence/bulk-25-block-2-accounts.json",
+      "sha256": "b3a60eee06e1023a7b466464b31ff36fdcbd067c4fb1b2eef3b9e1e458a3284c"
+    },
+    {
+      "path": "docs/evidence/bulk-25-block-2-images.json",
+      "sha256": "a5b9c66ed5209a63bb898c045ed5871d1ad29a03eab7c32a68e7eb6ba1fe781a"
+    },
+    {
+      "path": "docs/evidence/bulk-25-block-2-validation.json",
+      "sha256": "8d0e7465fe04415474c1aa0670cda9925efe27b68e2b2bee64e4902106dc617a"
+    },
+    {
+      "path": "docs/evidence/bulk-25-block-3-accounts.json",
+      "sha256": "148471b65199676a49f59786d3dc055c23ff56ca2f027c698a222a10e86faa4c"
+    },
+    {
+      "path": "docs/evidence/bulk-25-block-3-images.json",
+      "sha256": "2f78a86d2fdfd2be871f40e1546c2d8159d1b307bb8d7926970751269c373a48"
+    },
+    {
+      "path": "docs/evidence/bulk-25-block-3-validation.json",
+      "sha256": "3c66fa83621c92cb189f5cb81c62ccba3c5f2acf18c44a277d07e68b02f8bbbf"
+    },
+    {
+      "path": "docs/evidence/bulk-25-block-4-accounts.json",
+      "sha256": "72cd8d4c69f76d6da8e39d8fe7ab99bf44fea782739a8b9bd065b4987d248851"
+    },
+    {
+      "path": "docs/evidence/bulk-25-block-4-images.json",
+      "sha256": "0103462c842dfe66e37193dfc04b0e41278d8ec1d29f9f082f0a54684bc1c98e"
+    },
+    {
+      "path": "docs/evidence/bulk-25-block-4-validation.json",
+      "sha256": "68c81fa2947d809c4ebbc078a7162f3f5eef3940c49b3dff43b4506d01e103e3"
+    },
+    {
+      "path": "docs/evidence/bulk-25-block-5-accounts.json",
+      "sha256": "b750206d17f55a4014ebb30c33b8d6da2eaad91f4964fc813c033196a9b7caea"
+    },
+    {
+      "path": "docs/evidence/bulk-25-block-5-biology.json",
+      "sha256": "ec85205a960ce1d45e2ed18d79447860fbe3db89581a6c08098a62a3539086c8"
+    },
+    {
+      "path": "docs/evidence/bulk-25-block-5-images.json",
+      "sha256": "42daa32345b7d1e3ac2745b920cd24da3bc0dd78ba2c5a177bed178fc729594b"
+    },
+    {
+      "path": "docs/evidence/bulk-25-block-5-validation.json",
+      "sha256": "9a7b6c01f1c756bd2d98b1c9140c93ea91aa602da37a202d90c1eaad5aac8f88"
+    },
+    {
+      "path": "docs/evidence/bulk-25-final-validation.json",
+      "sha256": "566cb36f1dbdc2d02be834176161955c92c9bf7dee978ed9d5e05e2698607189"
+    },
+    {
+      "path": "docs/evidence/bulk-25-image-validation.json",
+      "sha256": "a6fe9706b9ced5e7f2d224981bfdb05132e1f0f11487363aa08d7c6ab3ffcbab"
+    },
+    {
+      "path": "docs/evidence/bulk-25-photo-search.json",
+      "sha256": "28ca3c9674295d7443a1bd5d66b0b2b4808b60e9674508dff4e53a8e3f17744e"
+    },
+    {
+      "path": "docs/evidence/bulk-25-preservation.json",
+      "sha256": "e3adfdc0d3fcececf173810ba45ee9662f779ce8e2b5457f90c22d99e3a920cc"
+    },
+    {
+      "path": "docs/evidence/bulk-25-provisional-image-validation.json",
+      "sha256": "a6fe9706b9ced5e7f2d224981bfdb05132e1f0f11487363aa08d7c6ab3ffcbab"
+    },
+    {
+      "path": "docs/evidence/bulk-25-provisional-publication.json",
+      "sha256": "d90f53df98ac66c9193c503dd05af9cc3de03d6c6fa3e387d8b1f2d40b14174b"
+    },
+    {
+      "path": "docs/evidence/bulk-25-release-audit.json",
+      "sha256": "71102d5dd8aa38c51befb5c62cae803126db18fe0933a08011aa24978c2a27a5"
+    },
+    {
+      "path": "docs/evidence/bulk-25-release-image-validation.json",
+      "sha256": "a6fe9706b9ced5e7f2d224981bfdb05132e1f0f11487363aa08d7c6ab3ffcbab"
+    },
+    {
+      "path": "docs/evidence/bulk-25-release-repeat-validation.json",
+      "sha256": "b64137cd6a7e109df4fa422f75ef8a41a9bc6f8ff7508afb9dbd2adc6d3f62dd"
+    },
+    {
+      "path": "docs/evidence/bulk-25-release-test-validation.json",
+      "sha256": "656d19033050c0c5367333388a0305760b9d37f1d77750dfc9bc89d0a9e27688"
+    },
+    {
+      "path": "docs/evidence/bulk-25-resume-validation.json",
+      "sha256": "49b93f9a6945e41570470e82b1a2f6ed8c9a16738b84ff2ea0f5d5fa8ac70c1b"
+    },
+    {
+      "path": "docs/evidence/bulk-25-test-validation.json",
+      "sha256": "36da310115806e1e3324e5d491fc2dedf01585b5db3f50952ca1568624dffa83"
+    },
+    {
+      "path": "docs/evidence/bulk-expansion-images.json",
+      "sha256": "b1f189eacff021048dc1f56bff13df93e43c76e65c739611a487f995c8386e42"
+    },
+    {
+      "path": "docs/evidence/bulk-expansion-taxonomy.json",
+      "sha256": "5cc4cb2777036c7fca8df0cd8243ffda078da256a6ec947035630c8077655e05"
+    },
+    {
+      "path": "docs/evidence/catalog-100-block-1-accounts.json",
+      "sha256": "ea2e50802ac3d01e68c0b32d369b91f5bfe3c4b81cad1fd0b0c718612df67607"
+    },
+    {
+      "path": "docs/evidence/catalog-100-block-1-images.json",
+      "sha256": "03ed0d64c0f420b734f0fac9a774c7ffd140565da8a3e004b326bef00eb296e1"
+    },
+    {
+      "path": "docs/evidence/catalog-100-block-1-validation.json",
+      "sha256": "d247c255ea4931f7e700d52123eacd2a94ced5d1b0900d25b8b6cf3d412e0a26"
+    },
+    {
+      "path": "docs/evidence/catalog-100-block-2-accounts.json",
+      "sha256": "baa735618f9362c541defdbb5853c80aac88126e2ee83509a740fda09c0a82a7"
+    },
+    {
+      "path": "docs/evidence/catalog-100-block-2-images.json",
+      "sha256": "aa6d0c05b3099480c3d0e18845dff58d2511af83d83b37f46d36cae533ae62ac"
+    },
+    {
+      "path": "docs/evidence/catalog-100-block-2-validation.json",
+      "sha256": "bd7eaf36e2ff4307c74fb683ae829e7882f4b0038123a84a1285de7733bc58e7"
+    },
+    {
+      "path": "docs/evidence/catalog-100-duplicate-check.json",
+      "sha256": "1ad24c07fc57a2332874540955b927b23b9e567cd8e05c1604ab73399e6ce740"
+    },
+    {
+      "path": "docs/evidence/catalog-100-final-validation.json",
+      "sha256": "2a40760bfd5a5518b05743021f8102dae4f575a5974b0b52fb9fa96b82bb5433"
+    },
+    {
+      "path": "docs/evidence/catalog-100-http-validation.json",
+      "sha256": "68f9f5130bc07fcd6a4af81fd615280e3fa64db11ec5f3a9bec31d794262c670"
+    },
+    {
+      "path": "docs/evidence/catalog-100-image-validation.json",
+      "sha256": "b2c7be107372731a32994346850ddc2c8f617d23b51fc55e9163efe929af6124"
+    },
+    {
+      "path": "docs/evidence/catalog-100-import-repeat.json",
+      "sha256": "75e0024b569f9fea30d72a5d1e9a6213f67b6c747dd7a4e1c37498f4ea318b71"
+    },
+    {
+      "path": "docs/evidence/catalog-100-needs-evidence-audit.json",
+      "sha256": "70cdd4d1af3cbd2b4e29312b01bbfc9f0b90d78b6f8e98e671abb07921469a83"
+    },
+    {
+      "path": "docs/evidence/catalog-100-photo-baseline.json",
+      "sha256": "90feae41c9a15d393cef5429fec6a8232d54ce0a05fff4dfddc3f0306952ddc6"
+    },
+    {
+      "path": "docs/evidence/catalog-100-photo-review.json",
+      "sha256": "9729941912e6bab7b686fdc3d1a9dbfd666c8c051245719f3382f1cb85221ef8"
+    },
+    {
+      "path": "docs/evidence/catalog-100-photo-search.json",
+      "sha256": "203abbcf4408db178bd5e748287252753e47ac7c0c07928ee005f40acc00abf5"
+    },
+    {
+      "path": "docs/evidence/catalog-100-preparation-validation.json",
+      "sha256": "b884caa5ae940aca93741f409280173da58446537d2a957287e685d7c526c285"
+    },
+    {
+      "path": "docs/evidence/catalog-100-preservation.json",
+      "sha256": "b41fd09ff5ead49399e20fd38039d3e1d2546daefb68f2215b070463cf997516"
+    },
+    {
+      "path": "docs/evidence/catalog-100-publication-validation.json",
+      "sha256": "5fac1e75009cddb25619abaa96d463d58109910d14ef9e3e81d170d469d3600a"
+    },
+    {
+      "path": "docs/evidence/catalog-100-repeat-validation.json",
+      "sha256": "ca24e6dc0f8eeb740e868b2b869855a4cc4f6422db8fd6ad658571078bd30ecc"
+    },
+    {
+      "path": "docs/evidence/catalog-100-source-availability.json",
+      "sha256": "654558ac8f98190e71edf02dd59884b640dcc40318899cf240b13893a1bf9ef2"
+    },
+    {
+      "path": "docs/evidence/catalog-100-taxonomy.json",
+      "sha256": "044d50ed1f46b74df8baef5e346cf40038491dadcb9f26d7a747c15e43dee6d2"
+    },
+    {
+      "path": "docs/evidence/catalog-125-audit.json",
+      "sha256": "72d916c974a43e0013afa905b9d2488b6f565cd6a4bbcb5e06b72dad4e244f2c"
+    },
+    {
+      "path": "docs/evidence/catalog-125-baseline.json",
+      "sha256": "9620abbf13eaf8c7782c6f3e166112ea7dc4adce6446dbbf0e9e3e783420d189"
+    },
+    {
+      "path": "docs/evidence/catalog-125-block-1-accounts.json",
+      "sha256": "3493c20f31c7927ab1cc1add22636e9c6dd96fb6dbc0cdfd77a8b4b9b11e0dac"
+    },
+    {
+      "path": "docs/evidence/catalog-125-block-1-images.json",
+      "sha256": "f7711669b143b04974df57d6942618219c4b73cd1bdf661c8ed3c61ca2d1a568"
+    },
+    {
+      "path": "docs/evidence/catalog-125-block-1-validation.json",
+      "sha256": "509272e2a0da270c6004481d6c9957b94626e525c43768eab8ec3dc70b789fcb"
+    },
+    {
+      "path": "docs/evidence/catalog-125-block-2-accounts.json",
+      "sha256": "3acf01f195266ac0c4d4f8f1d12ee17ba44d701a3a9b4bd1a621728304877d36"
+    },
+    {
+      "path": "docs/evidence/catalog-125-block-2-images.json",
+      "sha256": "5aa4e8669c7c11438c608e9f88dd2f688288a6cd8031146fbc2dccd706b6a297"
+    },
+    {
+      "path": "docs/evidence/catalog-125-block-2-validation.json",
+      "sha256": "fa782484cde09add43bdc493585064f413cc825e08c1dce11811e4e4c28984f5"
+    },
+    {
+      "path": "docs/evidence/catalog-125-block-3-accounts.json",
+      "sha256": "ad787efd56502a2ffd6dff776521906dd6f7912805314b6ad3e11a2367ce3fe5"
+    },
+    {
+      "path": "docs/evidence/catalog-125-block-3-images.json",
+      "sha256": "365131d2abb6ed1f827f46cbeb71ec97766b6487f66d2d1f7d1bdc66a560e4bc"
+    },
+    {
+      "path": "docs/evidence/catalog-125-block-3-validation.json",
+      "sha256": "0a79358aefdb2b6f6ac47b8dc15dc3e09fd536a391e638272cd9fbc3b6466917"
+    },
+    {
+      "path": "docs/evidence/catalog-125-block-4-accounts.json",
+      "sha256": "3670ee35ea006176e0e236a7570f16ec884f4612deea09719f9000901176056e"
+    },
+    {
+      "path": "docs/evidence/catalog-125-block-4-images.json",
+      "sha256": "f10509ec7d9e0885226bdec8c74dc79addd796f6bbc5fc6b9a005a1f1b81273c"
+    },
+    {
+      "path": "docs/evidence/catalog-125-block-4-validation.json",
+      "sha256": "8bfe05255a5aa3ed5db118cfec530c2830054a468208e1dd1dd657720d25185a"
+    },
+    {
+      "path": "docs/evidence/catalog-125-block-5-accounts.json",
+      "sha256": "4aa293f341ef01cf4cd5f5df46b4b1c5b5fe327b36af1724b27f778bd96fd378"
+    },
+    {
+      "path": "docs/evidence/catalog-125-block-5-images.json",
+      "sha256": "6d13d7387afe24ba9cd6c40ae8a067f098e3e0b2b2a6c20fee3c534db1cf713a"
+    },
+    {
+      "path": "docs/evidence/catalog-125-block-5-validation.json",
+      "sha256": "2f9053ff3a458c7d2db5311a6f9663e1ab6565a28ceafc94e8115c312054290e"
+    },
+    {
+      "path": "docs/evidence/catalog-125-final-validation.json",
+      "sha256": "4be33abd951eab6549e6814e8d1733bd9688eacb30893aa33712b2b8c5dbffa3"
+    },
+    {
+      "path": "docs/evidence/catalog-125-import-dry-run.json",
+      "sha256": "71e67f18103196ce36b98b2511d77cbe72a9fb0634d17e88eae4ff4ddaccab84"
+    },
+    {
+      "path": "docs/evidence/catalog-125-iucn-crosscheck.json",
+      "sha256": "a83d5ab03edadce33a434f8cc6c6f8a8ac64c528f5d80dbb5599822ae848288b"
+    },
+    {
+      "path": "docs/evidence/catalog-125-photo-preparation.json",
+      "sha256": "7fcb354cb16efc14b657eb1903fa4c5468178183e2b288c02c7d77b915eb18b3"
+    },
+    {
+      "path": "docs/evidence/catalog-125-photo-search.json",
+      "sha256": "7be890b12591269eff33efb4b9da97b22c0c8a691bef495d0bebe45905f92781"
+    },
+    {
+      "path": "docs/evidence/catalog-125-photo-secondary-search.json",
+      "sha256": "0edcc8cc175f308e4d73567536c342d428ebfc5522c372caa4f87d5bd652e8c4"
+    },
+    {
+      "path": "docs/evidence/catalog-125-photo-synonym.json",
+      "sha256": "63054df8624918adeadd50c68fe223c47c15ddaaef480483d962b56a7c81be97"
+    },
+    {
+      "path": "docs/evidence/catalog-125-publication-apply.json",
+      "sha256": "4cc36e3dfcfaea6aab4cd2fce890a81e3d8b5e14815e904187f0759c28e7c825"
+    },
+    {
+      "path": "docs/evidence/catalog-125-publication-check-after.json",
+      "sha256": "71132c029793d03617b83cb4f1c86c260e1164478b467302e6da5347b9cb4c67"
+    },
+    {
+      "path": "docs/evidence/catalog-125-publication-check.json",
+      "sha256": "10a41b6107e057ed30eba088af1baf43a47de2c2359524bf0bc187cd040889c4"
+    },
+    {
+      "path": "docs/evidence/catalog-125-publication-dry-run.json",
+      "sha256": "fe16d989d32c7c90a6001e22b9a9b93cb3ad8e7a6367d9fe2431cee70eb740f7"
+    },
+    {
+      "path": "docs/evidence/catalog-125-publication-http.json",
+      "sha256": "d1fdd57c5adb4180ca2d5f766128ea9b84e1365687bf4f738ce2bb3bb6572a86"
+    },
+    {
+      "path": "docs/evidence/catalog-125-publication-repeat.json",
+      "sha256": "83be64d5aa5f2bb66861558a204e23d1754a8e3ca5af72d2f5ce7888e585d58d"
+    },
+    {
+      "path": "docs/evidence/catalog-125-publication-validation.json",
+      "sha256": "983b997fb89c160e903059cccf4a4e04ec04c2c60255f2932417cd3320358168"
+    },
+    {
+      "path": "docs/evidence/catalog-125-selection-audit.json",
+      "sha256": "f8cb05e1903b51000ef8ae13a1438a8dd5277d24a318be624337bf0e958b7f60"
+    },
+    {
+      "path": "docs/evidence/catalog-125-taxonomy.json",
+      "sha256": "b0c3d10d57b985204d4a119636ff566a2d005813a5f0b4542d20cadcd3a6ae25"
+    },
+    {
+      "path": "docs/evidence/catalog-125-test-validation.json",
+      "sha256": "2d5414fec137f171957d7c0ecd4c357373986fb8d321a01b00965ee409d9dcff"
+    },
+    {
+      "path": "docs/evidence/catalog-150-audit.json",
+      "sha256": "9ecd3dcaabd77a9a76c126ab3ee89095a93d78ded019d2eb267ba7f15d2999b1"
+    },
+    {
+      "path": "docs/evidence/catalog-150-baseline.json",
+      "sha256": "658310c832485e1f39f155d0b75db130914af5289434f4efae046bcf74361d17"
+    },
+    {
+      "path": "docs/evidence/catalog-150-block-1-accounts.json",
+      "sha256": "00f4193913515c8a9a844d18004fa2fa88c0d712c91c716403045abe35649867"
+    },
+    {
+      "path": "docs/evidence/catalog-150-block-1-check.json",
+      "sha256": "284536cd0e94f705c5a15d9de01d63bde769a5ea3370f8e9478d84113745819a"
+    },
+    {
+      "path": "docs/evidence/catalog-150-block-1-images.json",
+      "sha256": "50731f1153ba4c087af76e0d475884cd319253f2369709226639bf9d7fb17c18"
+    },
+    {
+      "path": "docs/evidence/catalog-150-block-2-accounts.json",
+      "sha256": "5057c9394b6faf57fc63180f96ad4ed73810f9ee771ed9a5b3c45f9b94e10b96"
+    },
+    {
+      "path": "docs/evidence/catalog-150-block-2-check.json",
+      "sha256": "e9b7cab5efab6a4319a4eddfea92687223419d11b9f2951f0eb2e1238f1b8c6e"
+    },
+    {
+      "path": "docs/evidence/catalog-150-block-2-images.json",
+      "sha256": "1b3db1167ef342a05c12863ccbe14dd9a4acaca63160383c863b6c088bbcc111"
+    },
+    {
+      "path": "docs/evidence/catalog-150-block-3-accounts.json",
+      "sha256": "4e5291886822ce61b977c9e2e08da06df7f3e0593da042a076a9c970ae83ba00"
+    },
+    {
+      "path": "docs/evidence/catalog-150-block-3-check.json",
+      "sha256": "6f5ca1c3e2e98695eec645819e8ddf3571ac47a50a21439a245d540e8a5e187e"
+    },
+    {
+      "path": "docs/evidence/catalog-150-block-3-images.json",
+      "sha256": "5d136ddb847ee9ac1d7ab86ee13a811b62d906a7a4fcc8b4fe23392f98689fb5"
+    },
+    {
+      "path": "docs/evidence/catalog-150-block-4-accounts.json",
+      "sha256": "eaac19b8722ba22534294e2e09dad69924980eb795adbe16f9f294271a9d6138"
+    },
+    {
+      "path": "docs/evidence/catalog-150-block-4-check.json",
+      "sha256": "9fb37d86000254bac11c00c7c0cac96ffa1ec8f70220eadba0598e2fb93d6b82"
+    },
+    {
+      "path": "docs/evidence/catalog-150-block-4-images.json",
+      "sha256": "59885c16bf379f3c0afa0f635fff5b33a83426b327d1bb2025e6d6bbd879e52c"
+    },
+    {
+      "path": "docs/evidence/catalog-150-block-5-accounts.json",
+      "sha256": "eb8796b68d48798b9077de0b2432e38dcb7e78f21ad528ae22c61adba1944fb7"
+    },
+    {
+      "path": "docs/evidence/catalog-150-block-5-check.json",
+      "sha256": "8eaeda3dc053cf0fe325aed5e65188e02a55c6f467cce026d5cac852f64c4abd"
+    },
+    {
+      "path": "docs/evidence/catalog-150-block-5-images.json",
+      "sha256": "2b04da00080f3603dc4aaa6841395025eaa6c6b9e02871dc958d094dcd8b6c2d"
+    },
+    {
+      "path": "docs/evidence/catalog-150-final-validation.json",
+      "sha256": "68d886631e8026b9d6ff3269af218940d355d5672c18043db6071597baf27ef9"
+    },
+    {
+      "path": "docs/evidence/catalog-150-import-dry-run.json",
+      "sha256": "24ca66de5faae18b5a2bd4d74e2da7c0c4c8c029c462d3370322cbccf39c9b25"
+    },
+    {
+      "path": "docs/evidence/catalog-150-inaturalist-license-map.json",
+      "sha256": "ab720c52b69f9b5d212b030729d0ca92b3dbb685359d2b36605fd5e9fe28b8bd"
+    },
+    {
+      "path": "docs/evidence/catalog-150-photo-primary-fallback.json",
+      "sha256": "cb4ad37508d71e6c5e5ea084854088a0109f1266d961825896e941ec5c04a6c1"
+    },
+    {
+      "path": "docs/evidence/catalog-150-photo-search.json",
+      "sha256": "863149f1279e510cc3223b12ff43ecc5cf71e287ea8e9814c65618d582b67e87"
+    },
+    {
+      "path": "docs/evidence/catalog-150-photo-secondary-search.json",
+      "sha256": "3ad2f3af67e366061db32668132b52f31d361d0b5451044581a74824133734a6"
+    },
+    {
+      "path": "docs/evidence/catalog-150-photo-synonym.json",
+      "sha256": "64a77af6d1a23f15c0f1f87b78950027e611f33aacd19059bcef010045adfa9c"
+    },
+    {
+      "path": "docs/evidence/catalog-150-publication-apply.json",
+      "sha256": "9ffa28c920395e9c2aebe6894e68e00f30907f87fc33fa24db6396f83491d0ed"
+    },
+    {
+      "path": "docs/evidence/catalog-150-publication-check-after.json",
+      "sha256": "16513683b1fe42df1d0bf0654fd2e98038311640b7de94b1df099d58442f2c6b"
+    },
+    {
+      "path": "docs/evidence/catalog-150-publication-check-before.json",
+      "sha256": "e0481f151e9aab81798d237c564f92fd361616b890740fd88bf5d81eebc6694d"
+    },
+    {
+      "path": "docs/evidence/catalog-150-publication-http.json",
+      "sha256": "02e86fb81ea7335a7db4595be84c5941e6a31bf951c38441e1e6863aa265bc12"
+    },
+    {
+      "path": "docs/evidence/catalog-150-publication-preview.json",
+      "sha256": "21710d414a3d5299faa80c6e7add841e6c248cc102f0ddda6e802ba2f1f6932a"
+    },
+    {
+      "path": "docs/evidence/catalog-150-publication-repeat.json",
+      "sha256": "e532470ea8421fb5685602eba3918a5dc60c2e144f2a0679fa7942ec93ab8540"
+    },
+    {
+      "path": "docs/evidence/catalog-150-publication-validation.json",
+      "sha256": "c2119ed3474d0da750f1ace358d6701ad10a00b4e52e2b8520483da0b59fc97a"
+    },
+    {
+      "path": "docs/evidence/catalog-150-selection-decisions.json",
+      "sha256": "36dca292d4af7fdb17ebf9123e15dbd78d250dc99d2f691d3ff1e76c03c4cfe5"
+    },
+    {
+      "path": "docs/evidence/catalog-150-source-receipts.json",
+      "sha256": "36037c65b09c25782e4de0f8c4bacc057cb4ef468dfd7ad11b5a72f46b89e565"
+    },
+    {
+      "path": "docs/evidence/catalog-150-taxonomy.json",
+      "sha256": "42a8b83da9b4a9c87d984e798666c82b3baa634c6d48536511b57e6d66374fa9"
+    },
+    {
+      "path": "docs/evidence/catalog-150-test-validation.json",
+      "sha256": "c6957a7d9aa6cef313f6232f45a9af938b44020dde31f96e67a3c12f0ea79485"
+    },
+    {
+      "path": "docs/evidence/catalog-150b-audit.json",
+      "sha256": "cab3da21644de38290de0b398aa7389bfbe8f8a55e67c6bcc5da6b4b2fb18eac"
+    },
+    {
+      "path": "docs/evidence/catalog-150b-baseline.json",
+      "sha256": "e9957e104093d9a22edb64472191cb80d4d369e2c2bc0e18e9d7ef4443f04ad7"
+    },
+    {
+      "path": "docs/evidence/catalog-150b-block-1-accounts.json",
+      "sha256": "366e49696821b2fde2d51673cd612f0d39bcd618e2c2dbdf52837433cbfe400e"
+    },
+    {
+      "path": "docs/evidence/catalog-150b-block-1-images.json",
+      "sha256": "d25b4d2595e9a4e48300fa914eaf31d67694f9158fb1398722f80810c5d2aacb"
+    },
+    {
+      "path": "docs/evidence/catalog-150b-country-research.json",
+      "sha256": "6ab6e5625d75130c4c537f0fbd69a6445e555d1f0971acef0178bae7ea261b57"
+    },
+    {
+      "path": "docs/evidence/catalog-150b-final-validation.json",
+      "sha256": "b4531c2b4ef92babf804b928de011bd438bdce601d48b925d0e3b8e6a84be1e3"
+    },
+    {
+      "path": "docs/evidence/catalog-150b-import-dry-run.json",
+      "sha256": "61a00b3b2e5140cd33e7a3d8213caf7ca7d64b663b824efbe4d673597f8207de"
+    },
+    {
+      "path": "docs/evidence/catalog-150b-photo-search.json",
+      "sha256": "c976d2d3f29e63e082dcdb3bbafe2a5b90f8fa278f989b5a5718688872aaca41"
+    },
+    {
+      "path": "docs/evidence/catalog-150b-selection-decisions.json",
+      "sha256": "739ed6a29ba87036adaad52e6f28ad9ba7d12b70349bd7b95c329dc9d2e2ea2e"
+    },
+    {
+      "path": "docs/evidence/catalog-150b-source-receipts.json",
+      "sha256": "540045a11c66adc5bd123be5400b7ff6368a5523168fae4688172ebe9535d633"
+    },
+    {
+      "path": "docs/evidence/catalog-150b-synonyms.json",
+      "sha256": "20a85c801d7c71080b35d47580afd7be9d32a7942b952b2256630a6d1fa8b546"
+    },
+    {
+      "path": "docs/evidence/catalog-150b-taxonomy.json",
+      "sha256": "c6c09984c927eaa0939b556f03dc341e11d56e84e7267fa36a0964652f7be333"
+    },
+    {
+      "path": "docs/evidence/catalog-150b-test-validation.json",
+      "sha256": "fcda1113bf16ba220c7bacdb65b03434d05a311d30da5465dfbc56db07fe33c0"
+    },
+    {
+      "path": "docs/evidence/catalog-166-http-smoke.json",
+      "sha256": "4263424cc1c678cbc6b200837f2e995e3425235b1524c0c6ef97e309170102df"
+    },
+    {
+      "path": "docs/evidence/catalog-166-import-result.json",
+      "sha256": "f8b7168acb153b00f1bd57fec0482abe211719929eae6c9413be8c73f604ed6f"
+    },
+    {
+      "path": "docs/evidence/catalog-166-pre-import-dry-run.json",
+      "sha256": "2e9ae2b89160b205e8829b6a34c1919bf3a7132811f98b6cabc55c4bad5b75f5"
+    },
+    {
+      "path": "docs/evidence/catalog-166-preparation-audit.json",
+      "sha256": "2e006f64c0b9cfd99796a999752c6301763c2c590855ccfdb84d37114dcee76a"
+    },
+    {
+      "path": "docs/evidence/catalog-166-preservation.json",
+      "sha256": "fc62b4bb161816805f4c920734e201ea1b2712a959953cce0a67bc9d9104b886"
+    },
+    {
+      "path": "docs/evidence/catalog-166-publication-audit.json",
+      "sha256": "31342963a22e6bed1670e8e0796e56f186d855202dcb9ad5167f8d23dd69763a"
+    },
+    {
+      "path": "docs/evidence/catalog-166-repeat-dry-run.json",
+      "sha256": "3d2e71c394f10025f45b1cd8532a2bf739ff31c88291686eb6e7c2dff48eafa2"
+    },
+    {
+      "path": "docs/evidence/catalog-167-baseline.json",
+      "sha256": "63e8654bdbf4a9730331cd230aff1c5cf8688df8cf1f1430bd06d30232d8617e"
+    },
+    {
+      "path": "docs/evidence/catalog-167-block-1-accounts.json",
+      "sha256": "34f51968f5ee911cba7cdbc1a4c60389db5a628e3ea900f52224a0508fb31974"
+    },
+    {
+      "path": "docs/evidence/catalog-167-block-1-check.json",
+      "sha256": "9f6691ece7ed47843e77aa0963fec4ca6eec7be3c69196e27cebe06fa5495145"
+    },
+    {
+      "path": "docs/evidence/catalog-167-block-1-images.json",
+      "sha256": "2fe6c9cc1d195d4071961b73b3932e047623f1828c64fc62ad5d6d94493fc3fc"
+    },
+    {
+      "path": "docs/evidence/catalog-167-block-2-accounts.json",
+      "sha256": "a6714a0df8c09b09b855f796f948aaf1e45b5562516fe73f143dda35fad6bd64"
+    },
+    {
+      "path": "docs/evidence/catalog-167-block-2-check.json",
+      "sha256": "41a9d6c7b062a7da3af4dedece4623f7f3382ce1871743f443855f59c769d3cf"
+    },
+    {
+      "path": "docs/evidence/catalog-167-block-2-images.json",
+      "sha256": "a722c1523a61e20abed9f64c417cc551c478d3f602cb90d33bd29d368fda4903"
+    },
+    {
+      "path": "docs/evidence/catalog-167-block-3-accounts.json",
+      "sha256": "b3ef69536a083ac48878312906b8ee23b74b9776fcc47dff8f54c2eb9117088c"
+    },
+    {
+      "path": "docs/evidence/catalog-167-block-3-check.json",
+      "sha256": "52aae20d7e989842a8f8ae2c16a82739212608c926efffed3b8583435e1b2642"
+    },
+    {
+      "path": "docs/evidence/catalog-167-block-3-images.json",
+      "sha256": "11d227de67362b1a721782141051f3f87439e2c7230c93895c312f03eae58da6"
+    },
+    {
+      "path": "docs/evidence/catalog-167-final-check.json",
+      "sha256": "a2b63a1b795235dd25e89cf6a3cb2c618f9f9a60f9a31504df3ea3d04969a80d"
+    },
+    {
+      "path": "docs/evidence/catalog-167-final-source-decisions.json",
+      "sha256": "7a6f3c1b5bc38a62a7ba0261444e052e4899ec85693504098f447930d7229f8d"
+    },
+    {
+      "path": "docs/evidence/catalog-167-import-dry-run.json",
+      "sha256": "800ba55986c240ca6eb6036c3d0551adb7b42315712bf382b9a4d56f82b8b5ef"
+    },
+    {
+      "path": "docs/evidence/catalog-167-photo-search.json",
+      "sha256": "067912c09b54c0c547c8fb51c4a114fc4c4f1eacd873c9cb45066c7d0ef4228f"
+    },
+    {
+      "path": "docs/evidence/catalog-167-preparation-audit.json",
+      "sha256": "2e006f64c0b9cfd99796a999752c6301763c2c590855ccfdb84d37114dcee76a"
+    },
+    {
+      "path": "docs/evidence/catalog-167-preservation.json",
+      "sha256": "20c5a426851c13939dbe1112c768165aa7e6fc6281ca475cfbd39157f6d7ca57"
+    },
+    {
+      "path": "docs/evidence/catalog-167-scientific-review.json",
+      "sha256": "dc4417856f099d8100a32d6ee15f89cd5d5ee672b59a73427d9c15ea9c416ca9"
+    },
+    {
+      "path": "docs/evidence/catalog-167-supplementary-photo-search.json",
+      "sha256": "07b8d96d9203b2bd3e7a0d1c8dc15b209a2697dd1bccc87efda6c929fb1472f3"
+    },
+    {
+      "path": "docs/evidence/catalog-167-taxonomy.json",
+      "sha256": "8464ccc10931ce49e4cfd2d2bc65aadcede57083bdf86ea2695acf174a87504d"
+    },
+    {
+      "path": "docs/evidence/catalog-167-validation.json",
+      "sha256": "59894cd5b668506e40fdf2d9ae5fd0076c7d637f749b447a7990b47e7bb0468c"
+    },
+    {
+      "path": "docs/evidence/catalog-178-preservation.json",
+      "sha256": "25641db6880a18ef05cd2d36d935d9b98934efea16bd48337bc5d6da1d787cf3"
+    },
+    {
+      "path": "docs/evidence/catalog-178-protected-before.json",
+      "sha256": "8620021858512d1a3df3cf357b912b705c8ea3f0e5ae28f5ae66805a5ccaccdd"
+    },
+    {
+      "path": "docs/evidence/catalog-178-protected-import.json",
+      "sha256": "94bb944f47d55188d554603bbeb21ea53c589628dec6a45ed1847fc6eb930804"
+    },
+    {
+      "path": "docs/evidence/catalog-178-protected-repeat.json",
+      "sha256": "d4ae65f0b825f49ac35ff5435cf78f35219f6331a437388269e92f2ead172b52"
+    },
+    {
+      "path": "docs/evidence/catalog-178-validation.json",
+      "sha256": "fc7ef8612addf147c272cc672779e81a8fc03090c7463cfbb6256856dd306251"
+    },
+    {
+      "path": "docs/evidence/catalog-181-baseline.json",
+      "sha256": "8c63ed21eb17384fb6027dc6274955aaf214f441ca0536b293ff4a9ef103f264"
+    },
+    {
+      "path": "docs/evidence/catalog-181-bulk-check.json",
+      "sha256": "c5fef083a60074b46f0208931b635917c57a5e09d164bbddffa612c218f35589"
+    },
+    {
+      "path": "docs/evidence/catalog-181-images.json",
+      "sha256": "e46cdf82c03c59411ad6aba1ad721693da9313ff932b5ab9e0fe63393a347e82"
+    },
+    {
+      "path": "docs/evidence/catalog-181-import-dry-run.json",
+      "sha256": "f6c7187f359008c454e154f066b4425feb0b6c89fe737ffddded1dd0975c6908"
+    },
+    {
+      "path": "docs/evidence/catalog-181-national-accounts.json",
+      "sha256": "fb4e8d4ff73fd081898eb3c3b675634c1c132b4a8262e0fb701753cba21c65d9"
+    },
+    {
+      "path": "docs/evidence/catalog-181-photo-search.json",
+      "sha256": "e5577296864a986d9405c73ab4bf464d8f605057012ea81dfc07349b97886154"
+    },
+    {
+      "path": "docs/evidence/catalog-181-preparation-audit.json",
+      "sha256": "865f94f36a6875884da00f046931211e320fb742585c6a7f9e22bd66c9c3857a"
+    },
+    {
+      "path": "docs/evidence/catalog-181-taxonomy-search.json",
+      "sha256": "584804d5a9553687e5d5e585ddb47974a2193ab9867021a08e3cf51440b5a0cd"
+    },
+    {
+      "path": "docs/evidence/catalog-181-taxonomy.json",
+      "sha256": "9280809fb203aefa5dbd97e2f1373220ad8918028d9661f35a0b8d8f49449425"
+    },
+    {
+      "path": "docs/evidence/catalog-181-validation.json",
+      "sha256": "e278d1c0797c34b549141b598110cd210285e5d3d191bb9a51a5aff8b15913a8"
+    },
+    {
+      "path": "docs/evidence/catalog-187-baseline.json",
+      "sha256": "d6c7cb8104a8d2e663684b86b1a15f9d51e09ced1a9368dae21f3032105231e9"
+    },
+    {
+      "path": "docs/evidence/catalog-187-bulk-check.json",
+      "sha256": "bfe377086e80f719829dc251a533d001af30be444190d9647f4eb5a6016c0a85"
+    },
+    {
+      "path": "docs/evidence/catalog-187-dry-runs.json",
+      "sha256": "41a5d7d813338fca110cda666b0714e2939ee5336a52e8e975298f7a6623e5ef"
+    },
+    {
+      "path": "docs/evidence/catalog-187-images.json",
+      "sha256": "18e9dd7e93de1b9eeed1b1fb0c54c6c6671f068aa26043c7a255a8ac44954ed0"
+    },
+    {
+      "path": "docs/evidence/catalog-187-national-accounts.json",
+      "sha256": "cf2b96dac89b9cbbbfe73be948c1f89a298d9c42809061faf0ee6f45dbdeb0ef"
+    },
+    {
+      "path": "docs/evidence/catalog-187-photo-search.json",
+      "sha256": "a33287bf88e9c06d936ec8ea7f24ce14d6fdd379bc47554cd17120fd514c9014"
+    },
+    {
+      "path": "docs/evidence/catalog-187-taxonomy.json",
+      "sha256": "00a1cb8699a4a31799e37d445b7afe15843ff7e7a2e41e8f652bb6dac48621e3"
+    },
+    {
+      "path": "docs/evidence/catalog-187-validation.json",
+      "sha256": "704c09607bb819e42dea1f8ecde74c17bc1635343a5ffafac30092f818a496cc"
+    },
+    {
+      "path": "docs/evidence/catalog-200-conflict-baseline.json",
+      "sha256": "f59a9f7392b26d7335a0bd2894c28d4133d298f4df16a4b21f9923882808d545"
+    },
+    {
+      "path": "docs/evidence/catalog-200-conflict-sources.json",
+      "sha256": "ed3db701e03053951178b5f5c16c3a829e560d2b02113c101375c1725253af48"
+    },
+    {
+      "path": "docs/evidence/catalog-200-conflict-taxonomy.json",
+      "sha256": "cabc791b601ea04615415d62444f64c64ec1dae4bd48e1b2cb54793f402ec10a"
+    },
+    {
+      "path": "docs/evidence/catalog-200-final-gbif.json",
+      "sha256": "18e6207ba30236d8b47321041cc993a7b0135c3ddab5becfd78d6d7f2a5adc2d"
+    },
+    {
+      "path": "docs/evidence/catalog-200-final-preservation.json",
+      "sha256": "e45ba3e1d619ca57f1f6e0ae5f85d031e6374485f898f4e49d5eca3286e26f75"
+    },
+    {
+      "path": "docs/evidence/catalog-200-final-sources.json",
+      "sha256": "da014cb13ac56717c17b0f18fde5f7d5e5c9b98bf19e9a01d60d7201373a684b"
+    },
+    {
+      "path": "docs/evidence/catalog-200-final-validation.json",
+      "sha256": "1ac1cde118aad038ca420ba893482fe47f995a53416f2ee7eab0bdf0e82ebeb4"
+    },
+    {
+      "path": "docs/evidence/catalog-200-preservation.json",
+      "sha256": "ed8ff1a82108078c7c8d747ca7b31f9ee2f33ea18474e050decdd6955e01adb5"
+    },
+    {
+      "path": "docs/evidence/catalog-200-source-review.json",
+      "sha256": "6f7fbcaa551250739846f842df04a424c68e47c0d2cd26b4dd418fa6c243ce52"
+    },
+    {
+      "path": "docs/evidence/catalog-200-taxonomy.json",
+      "sha256": "c08377b76e2c6f06a6e789adb7086e2a8165291855ee98ec8db850be1f0eaa21"
+    },
+    {
+      "path": "docs/evidence/catalog-40-baseline.json",
+      "sha256": "376b90f025f99bd3ea736e10ab738aa66f7ecfd9151134cc958f2e272af19c55"
+    },
+    {
+      "path": "docs/evidence/catalog-40-batch-1-final-repeat.json",
+      "sha256": "1bf057fd7f13d914bb50c59cd30d23e81850007538ff03637ea0c38622da3a2e"
+    },
+    {
+      "path": "docs/evidence/catalog-40-batch-1-images.json",
+      "sha256": "95ffa85c2e8961d0ad109ccd1b5dcdc218f6e3bf1a84e0efd7cdadacd829a6fa"
+    },
+    {
+      "path": "docs/evidence/catalog-40-batch-1-import.json",
+      "sha256": "3b3d14070907434e826d85b76f25ee986ca8fba7365ea7859c38a0ad4202c949"
+    },
+    {
+      "path": "docs/evidence/catalog-40-batch-1-preview.json",
+      "sha256": "357b1d54ad9e403c57e27f8060457c2d65344b14ae61584ab113aa19712ed43a"
+    },
+    {
+      "path": "docs/evidence/catalog-40-batch-1-repeat.json",
+      "sha256": "ac67b10bda20a919dc96a40b7e2f040775028a9973570a779c5053af14468f2e"
+    },
+    {
+      "path": "docs/evidence/catalog-40-batch-1-taxonomy.json",
+      "sha256": "cbd14f3e00e3a82334c7777d64496bdaaede4e54561fc05a18658ccd5098b6bc"
+    },
+    {
+      "path": "docs/evidence/catalog-40-batch-2-images.json",
+      "sha256": "fcb89c0573e82a952b8196176a85f1898026c808b02f12335f94e5d37afbc11c"
+    },
+    {
+      "path": "docs/evidence/catalog-40-batch-2-import.json",
+      "sha256": "069ec64f158bd376fbb8a862675175383d9d5e5e95c2e5b59351d86f51a82846"
+    },
+    {
+      "path": "docs/evidence/catalog-40-batch-2-preview.json",
+      "sha256": "a84818c76607a2cecd4bddfcea19f7315398c5c837aa03978e803bfea0000362"
+    },
+    {
+      "path": "docs/evidence/catalog-40-batch-2-repeat.json",
+      "sha256": "1978b6cce2ecaab30c1c5398af789a94f375d52496e2c21432aef46b301af6b4"
+    },
+    {
+      "path": "docs/evidence/catalog-40-batch-2-taxonomy.json",
+      "sha256": "3c7bce9757da21790e4b83bfbdb671a5e33a0548022b0d8116e41415ab32c55c"
+    },
+    {
+      "path": "docs/evidence/catalog-40-browser.json",
+      "sha256": "45e954284896699a8d0131894dd5c90bab51cdd4ec59958cc8ddb76441c334c2"
+    },
+    {
+      "path": "docs/evidence/catalog-40-photo-research.json",
+      "sha256": "2c41f7ffdf0316da14fe532b1c7705d32ce3a37c1df0dd94de21b23b1b3993ed"
+    },
+    {
+      "path": "docs/evidence/catalog-40-robber-fly-rights.json",
+      "sha256": "19e634436393097ea2f3fbca99bcfdd84b0f425421ea772703d4f5ce9569d30c"
+    },
+    {
+      "path": "docs/evidence/catalog-84-block-1-accounts.json",
+      "sha256": "b7536aacdf1679651d018e3a8d739665a921a58107b6ee6ff97ac716d309cffb"
+    },
+    {
+      "path": "docs/evidence/catalog-84-block-1-images.json",
+      "sha256": "e8eab71f259b7178dbca18dce57ac64cfb548e458ee11cf56eae69bcbff667c2"
+    },
+    {
+      "path": "docs/evidence/catalog-84-block-2-accounts.json",
+      "sha256": "d1d7fdfa3248582e98c3e2b61209469dc28152800af71d74fb07dbeab7a7df2f"
+    },
+    {
+      "path": "docs/evidence/catalog-84-block-2-images.json",
+      "sha256": "be41fbea6f8371113269e1dfc044fe59cc55df3b296c3ea5e9cf81df2860d158"
+    },
+    {
+      "path": "docs/evidence/catalog-84-block-3-accounts.json",
+      "sha256": "91949596582976181d1d1fdf5da0aa98236c8a51a19151cd2bcc38ee462358f5"
+    },
+    {
+      "path": "docs/evidence/catalog-84-block-3-images.json",
+      "sha256": "a24ed9c3146e88f9ed658ddc816e9e8fe42e1817be5f236fcc939466117cdcd6"
+    },
+    {
+      "path": "docs/evidence/catalog-84-final-validation.json",
+      "sha256": "db6c4814c6f4bca19ce232c09585e730f812445e4b736f6a68d7145cf30c0c30"
+    },
+    {
+      "path": "docs/evidence/catalog-84-preservation.json",
+      "sha256": "d5d58e6547692bb8077314c5464758f7965388f826a2af84eaa05d249e6f2e56"
+    },
+    {
+      "path": "docs/evidence/catalog-84-publication-validation.json",
+      "sha256": "9a21a59cd3e4b2309ed5de6f5cb9fe23f7fea45a058d37cf1ac773ff4a5f0464"
+    },
+    {
+      "path": "docs/evidence/catalog-84-repeat-validation.json",
+      "sha256": "c202d20a84d1f66d3c79e94995d27d1b96d8c533d3ea36ac8a4cbb33a420e5ea"
+    },
+    {
+      "path": "docs/evidence/commons-photos.json",
+      "sha256": "3c95bb89ddc4c4909c3e1e33fc09f1c8924e9b38a52c4139c31cca086611249d"
+    },
+    {
+      "path": "docs/evidence/gbif-taxonomy-matches.json",
+      "sha256": "d86892056662fdd77bc6b68cb6740689b0ae64c2c54f0dc7034b5f4d09300d1f"
+    },
+    {
+      "path": "docs/evidence/iucn-dataset.json",
+      "sha256": "4a872151902a7f62c6bea41e0e2e5157c73c1cbdd75aa5df403b2f284f3eb7c0"
+    },
+    {
+      "path": "docs/evidence/iucn-taxa.json",
+      "sha256": "2c631bd7afbf1c53e90ffc8a85841364056fb828b6db6669cab81e21b840e0f0"
+    },
+    {
+      "path": "docs/evidence/redbook-master-catalog-baseline.json",
+      "sha256": "4468e7d4ef9907fc3a238f983311d6c50a31c15da6ac39b6a340249e668715be"
+    },
+    {
+      "path": "docs/evidence/redbook-master-pipeline-report.json",
+      "sha256": "b3e622400205f2e3330a11233b51618273822e66ac13f0a494eb94dbe1dc956d"
+    },
+    {
+      "path": "docs/evidence/redbook-master-sources.json",
+      "sha256": "063c7175763f86c08590de70de5253515bd2007211a24c556ae3f60eaf75e65e"
+    },
+    {
+      "path": "docs/evidence/redbook-master-taxonomy.json",
+      "sha256": "cca1ca65b480effe36c49724feb865300744783c9c53ac521ff8774a1758316d"
+    },
+    {
+      "path": "docs/evidence/species-content-layout.json",
+      "sha256": "df9a415c237df35ed5605ba9196796bd901bd12bc6ed07ed11614929e7931cc8"
+    },
+    {
+      "path": "docs/evidence/species-photo-baseline.json",
+      "sha256": "1cb794e62311c9e65a7b18af002b21731b088cf3e4c5cc933d4d19fa6690e4f9"
+    },
+    {
+      "path": "docs/evidence/species-photo-browser.json",
+      "sha256": "a004b8d02fa5f4d6883c8b1b2b3c6bdfa7bc62ec5b438d70e77195301eba4417"
+    },
+    {
+      "path": "docs/evidence/species-photo-preparation.json",
+      "sha256": "cc00bb531e71c6eedb6620bd866379cfaf13b6dd0b5ab2b01fe7f9518c82380d"
+    },
+    {
+      "path": "docs/evidence/species-photo-rejections.json",
+      "sha256": "6ac73b42281ba8b0efc583f664441908dce2f10966163304e196466054d3f289"
+    },
+    {
+      "path": "docs/evidence/species-photo-research.json",
+      "sha256": "ac377ec9f4619deeceee0becfc4da68ab81e30fa9ed2b3b8995301ac80874d8e"
+    },
+    {
+      "path": "docs/evidence/task23-1-bhl-plate.json",
+      "sha256": "10b4d4f308a52c1b3dd7eeaf58abc7f8ebb3f91abc29ad4b6f9df970b2a4745a"
+    },
+    {
+      "path": "docs/evidence/task23-1-check-results.json",
+      "sha256": "b23584375816f96024afa5f61b0d26c849686f4b9ff8dc3ba1abd9f0fa42d67b"
+    },
+    {
+      "path": "docs/evidence/task23-1-collection-pages.json",
+      "sha256": "cd536c79fd38ad40c8414456aa0008dda546ba5c3d7b82f95fbca27c17c58e8b"
+    },
+    {
+      "path": "docs/evidence/task23-1-discovery.json",
+      "sha256": "c9d68af87f3eb0321391ece9e41d52d664d59fb3facfc00237fd187ca1d6605a"
+    },
+    {
+      "path": "docs/evidence/task23-1-gbif-expanded.json",
+      "sha256": "413b752d3ce3345d147d4e785f412ba1061d7b64f1eb179aaa60ba74f3ac0adf"
+    },
+    {
+      "path": "docs/evidence/task23-1-inaturalist.json",
+      "sha256": "d840df71e37dd5fa0ae2251621467fa39565414d394524c9dd13cf2dbb49c5e9"
+    },
+    {
+      "path": "docs/evidence/task23-1-production-http.json",
+      "sha256": "53a2933e463abd598d057773894e217c9d3c8d3b6315a683248cf71ea353b4cc"
+    },
+    {
+      "path": "docs/evidence/task23-1-reptile-synonym.json",
+      "sha256": "17023ce5f6be89f83a4d40b2e9ed63e4e7c6286edd896b5d9f31aff020d9d3a5"
+    },
+    {
+      "path": "docs/evidence/task23-1-saIdalievi-sources.json",
+      "sha256": "b10aacd9ae4a48cabada000e9e8793b2e3c01e871ec61be3ed21cebc9779edb5"
+    },
+    {
+      "path": "docs/evidence/task23-1-specimen-pages.json",
+      "sha256": "e927fb446922f987696a1bf4e0a33919d30dda7966f606581d4790123d4039de"
+    },
+    {
+      "path": "docs/evidence/task23-1-taxonomy-pages.json",
+      "sha256": "ffb169e7df50e5158333394d5270e12166ceb52def5a60a1d8e07957321f6bfd"
+    },
+    {
+      "path": "docs/evidence/task23-1-validation.json",
+      "sha256": "9badb08027a8ec2e147c3c1f05519492eb62cc1b32bd7a2e3998c46a350993d4"
+    },
+    {
+      "path": "docs/evidence/task23-antweb-permission.json",
+      "sha256": "7f8d43bace5069d774712df55608f88dc100a0935e561b27eff8e27c2b0f6d3f"
+    },
+    {
+      "path": "docs/evidence/task23-check-results.json",
+      "sha256": "526a4374246b07517a4d114fc69332c844fe3e056b14f3b301763c34a9b6ba3b"
+    },
+    {
+      "path": "docs/evidence/task23-commons-categories.json",
+      "sha256": "8451960b77d186994e70c186690c72ea98aeabf5a74568c20bf19f465be51362"
+    },
+    {
+      "path": "docs/evidence/task23-existing-image-decoding.json",
+      "sha256": "fd3d6ea99df1f35451abf11c89f6f130960edeeb9b31d0dc4179ef380204016b"
+    },
+    {
+      "path": "docs/evidence/task23-gbif-inaturalist-search.json",
+      "sha256": "f6afebef3a22fdfe10e2ed9190e47521795314d3e9d6ba04eb0a9e636ccdd5be"
+    },
+    {
+      "path": "docs/evidence/task23-gbif-license-search.json",
+      "sha256": "c987b634551f51b07ef3c423e4ffff6c04688402b198ee9b5bcbbf822a1c74bd"
+    },
+    {
+      "path": "docs/evidence/task23-gbif-search.json",
+      "sha256": "021e942b34dd9c4b812e93a49bf667c062517b5cf166a6c284a52da9863f3d8b"
+    },
+    {
+      "path": "docs/evidence/task23-image-validation.json",
+      "sha256": "5a0250eca5bd59f365191ac752f6a6381e8ab1918b52a4ff08665b2d3f3425bb"
+    },
+    {
+      "path": "docs/evidence/task23-inaturalist-search.json",
+      "sha256": "c52d960fc071b54c34d4cf3b79e3c3e1671cdab8add5ca802ac88a1d19f4f99d"
+    },
+    {
+      "path": "docs/evidence/task23-photo-images-1.json",
+      "sha256": "0e2b04fd5c7310413cfdc7b25aecd47db4e4f961c0ca5eb894434bb2bd264865"
+    },
+    {
+      "path": "docs/evidence/task23-photo-images-2.json",
+      "sha256": "e3b00799a5ed46d40a0bef9f7d833478ab7317efe26b81f800f9eb20672faef9"
+    },
+    {
+      "path": "docs/evidence/task23-photo-images-3.json",
+      "sha256": "dc395d01ffc324d627e9d33f575117bf8c95aba3a3acffa96648138cd6920c36"
+    },
+    {
+      "path": "docs/evidence/task23-photo-images-4.json",
+      "sha256": "824c09541165b70c268e0931c9093854eb717e038351ee2fa636b28db58aa549"
+    },
+    {
+      "path": "docs/evidence/task23-photo-images-5.json",
+      "sha256": "ab49be932aa9576711db303682719872666f71b02c78d7328cb21843dd6ed7af"
+    },
+    {
+      "path": "docs/evidence/task23-photo-rejected.json",
+      "sha256": "516279c725e9f4960ed125f14938c8615db14877a797df0df35c840e3ea63920"
+    },
+    {
+      "path": "docs/evidence/task23-photo-search-1.json",
+      "sha256": "f3a591e8f900949a6e2d0228508677249bb7857cdf543ff108660f4dd25609b6"
+    },
+    {
+      "path": "docs/evidence/task23-photo-search-2.json",
+      "sha256": "e2923b8dd181bfb4754cd1f1807ec680821feb67a37995f103dd86ad4d7c2f4d"
+    },
+    {
+      "path": "docs/evidence/task23-photo-search-3.json",
+      "sha256": "225e6a5d50941850051b93d52b6182c53606a6fd7199abfdce1b2c7f3b505ce1"
+    },
+    {
+      "path": "docs/evidence/task23-photo-search-4.json",
+      "sha256": "f9460e6a0fd62178eb741d1661439e4a63855de3bc4a0bd90b9dd557e177c589"
+    },
+    {
+      "path": "docs/evidence/task23-photo-search-5.json",
+      "sha256": "163b6c61e30a43dcb9ac0c8f23d70f5fea73dbe0e8937a5c43b1bc563609eb89"
+    },
+    {
+      "path": "docs/evidence/task23-production-http.json",
+      "sha256": "fc0b3f0619d923c6935df80a0abd233a7ffcaee34b83ba884d75de917ffab943"
+    },
+    {
+      "path": "docs/evidence/task23-scientific-preservation.json",
+      "sha256": "5936702599fd17de4758bc3450eb0fdef8ade9259d75a6b07ab401c5c7940506"
+    },
+    {
+      "path": "docs/evidence/task23-sizes.json",
+      "sha256": "e61ae8f20ab8db346a3aa200e5909adf0c55199b2a9bc4a6ecc6c6673a0bdc97"
+    },
+    {
+      "path": "docs/lesson-validation.md",
+      "sha256": "538799f016f041a11e5cdc3b1447db1bc6eea71a2cf2f6881dadd13b1cdd3d83"
+    },
+    {
+      "path": "docs/localization-validation.md",
+      "sha256": "7aa12c2b0483838e244c31ed4b6ef750decbafe6bb6998d7969c0907109cdf27"
+    },
+    {
+      "path": "docs/manual-qa-checklist.md",
+      "sha256": "2801799682d2876bf1bc3c945686dd1af512a2b0ab4d0f5694c8703fa5584dca"
+    },
+    {
+      "path": "docs/map-research.md",
+      "sha256": "3778c5bc71b1974d60a3b397cb81d47145e2d7a78c1ee7cf52bad6d47d712a21"
+    },
+    {
+      "path": "docs/population-visualization.md",
+      "sha256": "e1944977c98b26fcc3c4187c751ccb07c861a50af44e60bdaa3d4faa9e7865ad"
+    },
+    {
+      "path": "docs/quiz-validation.md",
+      "sha256": "b76dc1eb480b4909a481b9b83f48ea1903569e6709f0336b746e55af39eada18"
+    },
+    {
+      "path": "docs/release-readiness.md",
+      "sha256": "7179155f540bbd2ecbd93c435a33643208f12b574b560d7956747578dc754236"
+    },
+    {
+      "path": "docs/research/bulk-23-provisional-publication.md",
+      "sha256": "f07aab11778c7226d99814c8aedf642c429acb32c1b19bd338080e976dbf3ded"
+    },
+    {
+      "path": "docs/research/bulk-25-content-validation.md",
+      "sha256": "5e13501261423321e7b5abd67469c8a2094b556b3c8b5116bbef6b3313415284"
+    },
+    {
+      "path": "docs/research/bulk-25-release-audit.md",
+      "sha256": "2c4e59eeeb280a466cbf605b94dffb5ef7bfef549b98fb085243103dd182b56d"
+    },
+    {
+      "path": "docs/research/bulk-expansion-validation.md",
+      "sha256": "f328dd935395621b57ec4ab99e4a192c7d8a83d938636e0a869ab847386a3ef0"
+    },
+    {
+      "path": "docs/research/bulk-import-pipeline-validation.md",
+      "sha256": "31fb2be57cd1ee7ccf30239bb1ed707a7cf9df1da870b1cf8d6489697a323eca"
+    },
+    {
+      "path": "docs/research/catalog-100-photo-audit.md",
+      "sha256": "37ebb52e6c6f17fff30e5569f5e069248b5b774e211659e8a97922fca4fa790e"
+    },
+    {
+      "path": "docs/research/catalog-100-photo-final.md",
+      "sha256": "80df6f48acc125bec28ff342c42ab01f2374cb457f219a251c8d39c591c4398b"
+    },
+    {
+      "path": "docs/research/catalog-100-preparation.md",
+      "sha256": "60f27375e809eee3f2329e2c2039436209e9850e592d74fb2cac25c666d58221"
+    },
+    {
+      "path": "docs/research/catalog-100-publication.md",
+      "sha256": "5c84d46b91fbaa2464624e9548cf3491e130eeffebc933cd7258918cdb47b36e"
+    },
+    {
+      "path": "docs/research/catalog-125-preparation.md",
+      "sha256": "5acf660c6379ddd6b7ce902fa611fb72420d50fc9f372f61cc3d359ce59f9598"
+    },
+    {
+      "path": "docs/research/catalog-125-publication.md",
+      "sha256": "da0eb1dfd191d18ccd2c3b9c935eccb833b9bf1a130d290c33e97893ab681e33"
+    },
+    {
+      "path": "docs/research/catalog-150-preparation.md",
+      "sha256": "798da697c334d04826cec040e020b9eb7fa20c46b821f23bc6b4c2cef0a8625b"
+    },
+    {
+      "path": "docs/research/catalog-150-publication.md",
+      "sha256": "b64a6e9ed034a21f089458f20cddce64081160509dadab6056fd65e18808e860"
+    },
+    {
+      "path": "docs/research/catalog-166-publication.md",
+      "sha256": "b05b12a4edcdab46aaba7e87750298861b247f74856f7e2027769f638a4156de"
+    },
+    {
+      "path": "docs/research/catalog-167-preparation.md",
+      "sha256": "9325e34d4f3b064c0331e561214e0395ab1f4c7df5eda2ffec9ad130e4dfa5dd"
+    },
+    {
+      "path": "docs/research/catalog-178-publication.md",
+      "sha256": "ab46c2a22dd020d3ea0dfb921701fc59ce0389631c737250a169e68f0db1f7b0"
+    },
+    {
+      "path": "docs/research/catalog-178-release-readiness.md",
+      "sha256": "c60219457653a9040773a567f0d5749ab9d5360b51f03fbd7248d2ec5686a024"
+    },
+    {
+      "path": "docs/research/catalog-181-preparation.md",
+      "sha256": "1abc783d27a1aad2d9250dd6fc038988218731d7a0d089b7f5215d2b864078fd"
+    },
+    {
+      "path": "docs/research/catalog-184-release-readiness.md",
+      "sha256": "fb6ba2c62acb5500be95cc9adc074cf0e6c565dd87fc7622eab398dae148687e"
+    },
+    {
+      "path": "docs/research/catalog-187-preparation.md",
+      "sha256": "195d1c400297eaa5a5fe63fdaf320ab7e659856981b696f0c4a9bc84ae785800"
+    },
+    {
+      "path": "docs/research/catalog-200-conflict-resolution.md",
+      "sha256": "84e2f105a901cd897cd77e0be4f6fd7e3ffa791a4b84e25dafc0058c6df90648"
+    },
+    {
+      "path": "docs/research/catalog-200-final-taxonomy-review.md",
+      "sha256": "4135f9c148cdf6c72c5f91f93c1df3ddb8cc7ba31bbf91c4618d0c1504d3855d"
+    },
+    {
+      "path": "docs/research/catalog-200-inventory.md",
+      "sha256": "d6bd7471aa0ed976d6ec54e7e34237526cda94d4b3dd81b523d0494fb12f823f"
+    },
+    {
+      "path": "docs/research/catalog-40-validation.md",
+      "sha256": "9f7cf4bf4457a63d85464378fd2f4f80bb430d8ccc4212caf06820713d153fca"
+    },
+    {
+      "path": "docs/research/catalog-84-validation.md",
+      "sha256": "27751a4cba5a8246b93906b6a996cff1a7e9ca533a94f62cebeefa0ade7af163"
+    },
+    {
+      "path": "docs/research/catalog-candidates.md",
+      "sha256": "37f6c6993a77822031c090c9e605a6ae15c407adeaeabc9e42a06231e59c1a3e"
+    },
+    {
+      "path": "docs/research/first-batch-validation.md",
+      "sha256": "9b37f21e405a2d2a61b2192ed6c4867ca18997468a2c86425d29fe48d5ad3fe0"
+    },
+    {
+      "path": "docs/research/redbook-master-registry-validation.md",
+      "sha256": "dc9383871164d4901f2b5f9234391c5986a4298ce229a330a652eb891e6360ee"
+    },
+    {
+      "path": "docs/research/species-content-30-validation.md",
+      "sha256": "c8e2ba94c40f3c6d15693f85337ea3fe7e8a36edbce684d9136e963e81409351"
+    },
+    {
+      "path": "docs/research/species-photo-30-validation.md",
+      "sha256": "deccfd7c48acd780af87646d5a6e0bdf1bb0e3e5a5dbf78cce60301543852378"
+    },
+    {
+      "path": "docs/species-research.md",
+      "sha256": "6d5771814104bc330395ea04135909c1d460f0eae47a46860fda8da4d41fd945"
+    },
+    {
+      "path": "docs/support-architecture.md",
+      "sha256": "04661b88b84385f0b71af595b5de8a9ef8bff88a00f502b3812893f5fada61ef"
+    },
+    {
+      "path": "docs/support-validation.md",
+      "sha256": "5b8de47a2f605453100d19abe82a41f43587e87384b6c4d5b21fe61611a20e6c"
+    },
+    {
+      "path": "docs/ui-validation.md",
+      "sha256": "804342a6a531221b44992a204975b50876df70a0d1266de1d42bd3e6e6451dbf"
+    },
+    {
+      "path": "docs/ui/muras-100-design-revision.md",
+      "sha256": "d6f75aa71ade9d24b727bac0267e0fd50132ca7cc0457b616edfba96034d3c8b"
+    },
+    {
+      "path": "docs/uz-localization-validation.md",
+      "sha256": "36df41a3d109187241195434dfbf4618a14f53df79a68c78d1c908724d085d4e"
+    },
+    {
+      "path": "docs/vercel-deployment.md",
+      "sha256": "c8bdb68bf059456fc9900bd9ef46aef5091039e320d30355997822aa60c2e761"
+    },
+    {
+      "path": "docs/visualization-validation.md",
+      "sha256": "85df5dbd69d4333ec8add819c3fa04a84edd92e20aa99da02d13ec0c0567a9f2"
+    },
+    {
+      "path": "index.html",
+      "sha256": "c7a1a75a576a0f72ea2068fecb5c8dd8e372d55a8df64b116e26ae1253348aeb"
+    },
+    {
+      "path": "package-lock.json",
+      "sha256": "1235161b7025e5aa5d11ec69b6d1ea6bfda25c53c5bf6b2092699c2f73dd6b51"
+    },
+    {
+      "path": "package.json",
+      "sha256": "b48fcd82b43b414d1cc4bb390571afc07a11e6e3a4dad678c2acb07cda7c0d7d"
+    },
+    {
+      "path": "postcss.config.js",
+      "sha256": "374f669f08b18e67d0a7264fa45b71228017e604fe7f6db8a5c1bd5ba27e5c98"
+    },
+    {
+      "path": "public/data/geography/ODbL-1.0.txt",
+      "sha256": "607680718977f6f6c9607972afd98f208573f19251315ed1362a8589b51beaf5"
+    },
+    {
+      "path": "public/data/geography/map.json",
+      "sha256": "1ccd0586865bb65aabd50547f96cda7b09465cc88d8c1986f8131dbc0dab3b6f"
+    },
+    {
+      "path": "public/data/geography/metadata.json",
+      "sha256": "c3f7d0dbe7537003e864bd2b276dc32c4669e72d12eadf96bb290c91c867946d"
+    },
+    {
+      "path": "public/data/geography/occurrences.json",
+      "sha256": "d0e9376659d73f5001daa7926693813d49aed6d4210a29127a9fbc7d5d427579"
+    },
+    {
+      "path": "public/data/geography/regions.geojson",
+      "sha256": "a3eceb8c810b8c13a34ddc2e69c1bd67e4d2a8facfdbda79ddd75f2ef83d5a21"
+    },
+    {
+      "path": "public/data/quiz.json",
+      "sha256": "157a1a2b939ea64a7dfe28d7f164582573d157d9f7af8df5de7d6634e1ef7752"
+    },
+    {
+      "path": "public/data/species.json",
+      "sha256": "1bfe3899a1e83aed43d2bbb5f62dc5d01fb257c153934374c6a3f0862a1d1162"
+    },
+    {
+      "path": "public/favicon.svg",
+      "sha256": "c27137a83c2878791ad78d00da62eb038c8c432e3f3a6d4c058d546a6bd8bb65"
+    },
+    {
+      "path": "public/images/approved/acantholimon-compactum-1.webp",
+      "sha256": "a4aebe6b362eb27207298cb953ffa4b96309032c1dcce64964e355ad896c599d"
+    },
+    {
+      "path": "public/images/approved/accipiter-badius-1.webp",
+      "sha256": "1012c0b2ae5756c1cb2a7da26777e63a5982b641698c92a4d60ef192d1d5a3dd"
+    },
+    {
+      "path": "public/images/approved/alajja-anomala-1.webp",
+      "sha256": "2c79dc055906a040df53f7d52265dea28e3e61444f65e02c6170dfaee3b41ffe"
+    },
+    {
+      "path": "public/images/approved/allactaga-elater-1.webp",
+      "sha256": "a2a5ce7ecf6684539aa91449321d1cff08782980b41ef3317de5c1ce10d0e340"
+    },
+    {
+      "path": "public/images/approved/allactaga-severtzovi-1.webp",
+      "sha256": "6fa83363d260ef07a6e488d908eac8dffd6762f95fa74ce01f116f4d50d65858"
+    },
+    {
+      "path": "public/images/approved/allium-dodecadontum-1.webp",
+      "sha256": "f7525d351226ec7dafb8c3ff5af01cb73da915aa5c41532247af9900bcab8f55"
+    },
+    {
+      "path": "public/images/approved/allium-semenovii-1.webp",
+      "sha256": "ef0c723594e21b189743ac7e76fa8418a4580df89c28256c418b2d93e7f1f513"
+    },
+    {
+      "path": "public/images/approved/allochrusa-gypsophiloides-1.webp",
+      "sha256": "d81c051e7d6a7ea75012ce14903d31efd527da94ba2bba789d063ddac7d97e30"
+    },
+    {
+      "path": "public/images/approved/ammopiptanthus-nanus-1.webp",
+      "sha256": "44206f067287168caa9a17cbb10aef842e909fdf520ab325e13f836f8ca670d2"
+    },
+    {
+      "path": "public/images/approved/amygdalus-petunnikowii-1.webp",
+      "sha256": "79a5bd655adb5888e4bfdbe87935945963fb35c905ccfc056230445d36d4a7dd"
+    },
+    {
+      "path": "public/images/approved/anemone-obtusiloba-1.webp",
+      "sha256": "461a2aa25ab5d3b30178ad6975abf0102ff3e8ba79ccabf1aaa46e98cb8533d8"
+    },
+    {
+      "path": "public/images/approved/anser-indica-1.webp",
+      "sha256": "6af7804c2b6ad960f4750eecc6d9ccd914d273a33171d5cd3771d6ebf65b3840"
+    },
+    {
+      "path": "public/images/approved/anthropoides-virgo-1.webp",
+      "sha256": "33ffc5a69d145d6d9f4b7d2a5247fc8b2f5ca5ae82920d0def27c0b37e5f9819"
+    },
+    {
+      "path": "public/images/approved/aquila-clanga-1.webp",
+      "sha256": "4c9e152c4db1939c6edcf09b353fbc990f5a81558d041b8166c768a4ebe852d3"
+    },
+    {
+      "path": "public/images/approved/aquila-heliaca-1.webp",
+      "sha256": "2a2f8f73acb3acb385bc02a1f97180859f013e854ac005d0467e07e521885fd9"
+    },
+    {
+      "path": "public/images/approved/aquila-nipalensis-1.webp",
+      "sha256": "f426e4489b52a0be3dddc2da85bd5eafbdb927f8507e3e187fc6ef09edbc94af"
+    },
+    {
+      "path": "public/images/approved/argali-1.webp",
+      "sha256": "05cd846a1cd67d1401d6b08b50b6c57505bbd26552494f2fe3f7680b503739dd"
+    },
+    {
+      "path": "public/images/approved/aythya-nyroca-1.webp",
+      "sha256": "369c049d90ae87fd30775fafc91cc6d7c2edc0cfb172b3c29c029989d6c8c54e"
+    },
+    {
+      "path": "public/images/approved/barbastella-leucomelas-1.webp",
+      "sha256": "0108cccdc7845c3202e41135ade5dadf5e6cb9b45ef4a49b00e9847db17c20ba"
+    },
+    {
+      "path": "public/images/approved/barbus-brachycephalus-1.webp",
+      "sha256": "d1c34b3e3d1ae19dcf455aaa85cf6415da0e68ad16de11fe5f04dafe2d0cf778"
+    },
+    {
+      "path": "public/images/approved/bearded-vulture-1.webp",
+      "sha256": "d46960f9a9244255c91b2a96b78d579491c97f42fd6a2e99e8ef58309dd67922"
+    },
+    {
+      "path": "public/images/approved/black-stork-1.webp",
+      "sha256": "cf027d88081ac71d5079987af5d40d0bc256d559891f9405245c659b7f809687"
+    },
+    {
+      "path": "public/images/approved/bubo-bubo-1.webp",
+      "sha256": "3673cf76bafb634d4cdd3092d2783b1e2a8cc3a266fad08e6ccb877c4e840b92"
+    },
+    {
+      "path": "public/images/approved/bupleurum-rosulare-1.webp",
+      "sha256": "af364b6a52b5fa0788468a75ffbf560d8d27042e53033f15d219c34e7fc557c6"
+    },
+    {
+      "path": "public/images/approved/burhinus-oedicnemus-1.webp",
+      "sha256": "d1336bdbbf7ec65ce753fc856c8f832ce0ad1fd93c30446c00238cae122b1724"
+    },
+    {
+      "path": "public/images/approved/central-asian-frog-1.webp",
+      "sha256": "9e68faf61fe4b14224cce2706bd2d5c8e11f5dcefe86fdea3c8b3f3219b54e18"
+    },
+    {
+      "path": "public/images/approved/central-asian-tortoise-1.webp",
+      "sha256": "d37b5f8eedf3d9a96b0f07097689b0537f1dde7096ee07c049f6768dc07c0795"
+    },
+    {
+      "path": "public/images/approved/chesneya-villosa-1.webp",
+      "sha256": "c6196fb7892eb111412f2d93091bb08d8bd40eafdf1bd5f79f22f7a382ae1190"
+    },
+    {
+      "path": "public/images/approved/chlamydotis-macqueenii-1.webp",
+      "sha256": "18772843110483377a766a79fbb0bea11600f91043f4c4ad59873c86c3985776"
+    },
+    {
+      "path": "public/images/approved/christophs-clouded-yellow-1.webp",
+      "sha256": "e3bba6988ffa3850d717e2e8fb9c68975cee2648148d8ff6d08db4886ffef425"
+    },
+    {
+      "path": "public/images/approved/ciconia-ciconia-1.webp",
+      "sha256": "12f7c8a1c700c6ea2bde1f0ec920adcae2d1a5155d2e32c5efb10bd16e842013"
+    },
+    {
+      "path": "public/images/approved/cinereous-vulture-1.webp",
+      "sha256": "dd32de6437931ca037bf0dde283aaed1bc29ac37d6bdb2dc6ef36e0fe5172761"
+    },
+    {
+      "path": "public/images/approved/circaetus-gallicus-1.webp",
+      "sha256": "dbd70fb4abe80a938139cb0460f5c528766109b63d75a7a2bf6c93ae2c38d710"
+    },
+    {
+      "path": "public/images/approved/circus-macrourus-1.webp",
+      "sha256": "8e2688b098115cf75e1ad1682e460e881aa310635f55a61884cbd46214b0e0a9"
+    },
+    {
+      "path": "public/images/approved/cnidiocarpa-alaica-1.webp",
+      "sha256": "eaf29cfd542e3e01544ee4e94c56622c059edf940dff4c805452cb3c8d19860c"
+    },
+    {
+      "path": "public/images/approved/columba-eversmanni-1.webp",
+      "sha256": "f514ab8fc13f8b13c31de68d1f38a50373f44ab8fb458437aa4b7404bac5de7c"
+    },
+    {
+      "path": "public/images/approved/columba-leuconota-1.webp",
+      "sha256": "a0363b38059b86cb387420f9b986b3117ed865ab499eccb97ff9ec92fd232450"
+    },
+    {
+      "path": "public/images/approved/colutea-brachyptera-1.webp",
+      "sha256": "50e81da22a7a42b5e370c6bac77e5355ea60f5b10f20d9b1ed56e2cbebe01d48"
+    },
+    {
+      "path": "public/images/approved/corydalis-pseudoadunca-1.webp",
+      "sha256": "b4fe2178d60c8d35eb1bb770180fcc9a1d52257c538c5a14e688aba276787ffc"
+    },
+    {
+      "path": "public/images/approved/crex-crex-1.webp",
+      "sha256": "d752fcd217ea8c5182f70f0201b2912837a7a7e642d94f1f36bbc7ca504b6282"
+    },
+    {
+      "path": "public/images/approved/cygnus-cygnus-1.webp",
+      "sha256": "1cc4fd4c5a86bfbd98c7374b3784158fdb734419202d96dbd9ec394aeb84871e"
+    },
+    {
+      "path": "public/images/approved/dalmatian-pelican-1.webp",
+      "sha256": "1e0182e145dfbc89402535446c4e9db987dd5689fea9881c4f33d36356f4bc20"
+    },
+    {
+      "path": "public/images/approved/dendrocopos-leucopterus-1.webp",
+      "sha256": "75fe364b7a84a6a6e4fffd4869d4ffc4d7c89708cdf5fe775430cea6f4a44210"
+    },
+    {
+      "path": "public/images/approved/dendrocopos-major-1.webp",
+      "sha256": "3e14bf17d754510ab3da33af340e42f3f2b61415823637c23a965c95ae2b1c06"
+    },
+    {
+      "path": "public/images/approved/dictyocephalus-attenuatus-1.webp",
+      "sha256": "0a109660a2caa346b47d3ee630dc5e370b8a0eff22c60e1d30b20f41029a045e"
+    },
+    {
+      "path": "public/images/approved/dog-stinkhorn-1.webp",
+      "sha256": "98af1ec652407ce317722ddb77df7ffa9816c54d018cfb89ded7f461a17f830f"
+    },
+    {
+      "path": "public/images/approved/eduards-fritillary-1.webp",
+      "sha256": "8c0664bf42afe98e7de029f6ac4fc35382a885e40f86851fa90586401c259abe"
+    },
+    {
+      "path": "public/images/approved/egyptian-vulture-1.webp",
+      "sha256": "c316177c52699ceeedeade6643652c086422caa869fb1b46a8f0ec778da2fbe4"
+    },
+    {
+      "path": "public/images/approved/eminium-regelii-1.webp",
+      "sha256": "2443bc7d68476b5c8223d302b273a0dfb4907d72858b7ffe78b6ff5bb8ebd7df"
+    },
+    {
+      "path": "public/images/approved/eremurus-zenaidae-1.webp",
+      "sha256": "b82a44c8d2c693aeac225a1303f823cc1578268d125d6093792aca0bdd64625b"
+    },
+    {
+      "path": "public/images/approved/eremurus-zoae-1.webp",
+      "sha256": "3ea71a9076e0e01938fe0255717c19e1a1a9cfcfbebca2df40914e6652122b76"
+    },
+    {
+      "path": "public/images/approved/eurasian-lynx-1.webp",
+      "sha256": "27961ddf57c1f5c5d19d0c56d3ed8ca0413b2c53a654da590c8fc3a6ef72b31d"
+    },
+    {
+      "path": "public/images/approved/european-glass-lizard-1.webp",
+      "sha256": "196f274ee1309b36402d030cd80aafa8221fa3482cd3bb46a3b9d13b575e9801"
+    },
+    {
+      "path": "public/images/approved/falco-naumanni-1.webp",
+      "sha256": "5418e5d0bc197e881ae5b37d369339c866f350ded08707833264d7de9a775fd6"
+    },
+    {
+      "path": "public/images/approved/falco-rusticolus-1.webp",
+      "sha256": "dd1157398fb926a5a948e115478134a431c156ef07a9a172c2f1af01f102ac77"
+    },
+    {
+      "path": "public/images/approved/fumariola-turkestanica-1.webp",
+      "sha256": "554a61936cc17d8dbff563cec11962296308b6ff5962e9cbb847345f01aa6022"
+    },
+    {
+      "path": "public/images/approved/gavia-arctica-1.webp",
+      "sha256": "afca282d2bf1ceb0466e05dd84ea58291bbaffe81a044a5533c017b268dd46fe"
+    },
+    {
+      "path": "public/images/approved/gazella-subgutturosa-1.webp",
+      "sha256": "fdfd5028cece9e8b5d352a603184c1fb8454613d1332382c240e4e12c9532df6"
+    },
+    {
+      "path": "public/images/approved/giant-robber-fly-1.webp",
+      "sha256": "ba4728fc48f629e504924b139890693fcf08f590baa31626280db96e3c6fe650"
+    },
+    {
+      "path": "public/images/approved/glareola-nordmanni-1.webp",
+      "sha256": "6c51ef8917a8283eb23bd45727dbb8d276cd8ad5428815d95777b45512e4e993"
+    },
+    {
+      "path": "public/images/approved/golden-eagle-1.webp",
+      "sha256": "d8c618e27182eb9fddb4cdff7e58aa4f42bc8cc5a192390e598ef81be197c1fa"
+    },
+    {
+      "path": "public/images/approved/great-bustard-1.webp",
+      "sha256": "394f1bf720a1bab1459f1326aeef082ca2b40ef3f2ca673714ab541fd86f2924"
+    },
+    {
+      "path": "public/images/approved/greigs-tulip-1.webp",
+      "sha256": "e86e885c1857def6585336cf554b73ed80532d39c4594c2cb7c458a856a84b2e"
+    },
+    {
+      "path": "public/images/approved/gyps-fulvus-1.webp",
+      "sha256": "0afc9fd993989cb636316e549fbf4f07ec80f4e1f24e7d078f1542c502b83576"
+    },
+    {
+      "path": "public/images/approved/gyps-himalayensis-1.webp",
+      "sha256": "0e49b1b37a460da71b5e7bc39ea64de307377e85761da36af59024bb2c137a6e"
+    },
+    {
+      "path": "public/images/approved/haliaeetus-albicilla-1.webp",
+      "sha256": "004dfff7af3e71723cf372460a21f4f06e8158cd1fd853998b4e16d5f7bb4e0a"
+    },
+    {
+      "path": "public/images/approved/haliaeetus-leucoryphus-1.webp",
+      "sha256": "f1bd9c20603ea765588b0630be3334479788040307db7bfc14e7625f6f0264a4"
+    },
+    {
+      "path": "public/images/approved/hedysarum-chaitocarpum-1.webp",
+      "sha256": "17f14191336274226329ae1666f4217943fef61c8da3afeb307784ce072a13fd"
+    },
+    {
+      "path": "public/images/approved/hemiechinus-hypomelas-1.webp",
+      "sha256": "7c4e53b0a30ddd23438008fb6704743327fa873c66dc467c1d2a75a041ac0b41"
+    },
+    {
+      "path": "public/images/approved/hieraaetus-fasciatus-1.webp",
+      "sha256": "0950d072b83f61d2417cfb657aca94d814f833b900aed9c2c91b2cfe2eaa36b0"
+    },
+    {
+      "path": "public/images/approved/hieraaetus-pennatus-1.webp",
+      "sha256": "e2d38785968184591115fddf0d638fc3fd483bb1a18419d95a00ef5cde332e98"
+    },
+    {
+      "path": "public/images/approved/hyalolaena-intermedia-1.webp",
+      "sha256": "1cfdab01742ff9287b19a9a5877b925ccf4540ac7dddee5e3f96fa0ef98dbb05"
+    },
+    {
+      "path": "public/images/approved/ibisbill-1.webp",
+      "sha256": "1e13016f52bbcbb3ef5ddb95c1e35494d87e0912dde92e1ddc7f608baedf852d"
+    },
+    {
+      "path": "public/images/approved/incarvillea-olgae-1.webp",
+      "sha256": "1dd50724bba68446224d21bf249399c6cdc10e1ef92990517fccf1ab82472c42"
+    },
+    {
+      "path": "public/images/approved/indian-crested-porcupine-1.webp",
+      "sha256": "3aaf49bfd0b37dfe0535a139efffa54d45448685c8e7c853fc1851260e2486e2"
+    },
+    {
+      "path": "public/images/approved/irbis-1.webp",
+      "sha256": "250c124488aa1008011eecff378bf31a3397978918403408ce977b4b4c5748dd"
+    },
+    {
+      "path": "public/images/approved/iridodictyum-kolpakowskianum-1.webp",
+      "sha256": "a473358b2097c103a64cfc2366c7fcf469c1b83ca43c1a359405eb0b773039aa"
+    },
+    {
+      "path": "public/images/approved/juno-orchioides-1.webp",
+      "sha256": "ec630795b16d6400dd7ca3656edc08f921fb48b3e375964e2ff72f82e0a0342a"
+    },
+    {
+      "path": "public/images/approved/kaufmannia-semenovii-1.webp",
+      "sha256": "c60c6045333167d41f8f00e6617de6fb33799ef3613ef79c5656c451bac526f7"
+    },
+    {
+      "path": "public/images/approved/kaufmanns-tulip-1.webp",
+      "sha256": "ca1bb2eecc5c3e3e7b2246b611fff9157b7bdcaf577fb04254f998097c347a7d"
+    },
+    {
+      "path": "public/images/approved/kolpakowskis-tulip-1.webp",
+      "sha256": "9c39ebf9886db953639088f3ec4d9768e4786ca345ba1c8778beb639f03b35ad"
+    },
+    {
+      "path": "public/images/approved/korzhinskys-pear-1.webp",
+      "sha256": "0773e5979b56a68e712c3ff9a8e45cc8c67d545e129ee6cea366a0b007405338"
+    },
+    {
+      "path": "public/images/approved/kosopoljanskia-turkestanica-1.webp",
+      "sha256": "8bd93f5f22cfc24f28b7df4db6bf3faa017bdb896fbb4885c67633a7b5e33072"
+    },
+    {
+      "path": "public/images/approved/kostychevs-pasque-flower-1.webp",
+      "sha256": "ddc39cc9eff90f74a1194840d9d54e76b2e97f169e34feca8a383b7e1d05b366"
+    },
+    {
+      "path": "public/images/approved/lamyropappus-schakaptaricus-1.webp",
+      "sha256": "9cbadcba558cbc78de7370dfed9494ce6ff9ddbeb224e657cde3b2ec273b033a"
+    },
+    {
+      "path": "public/images/approved/larus-ichtyaetus-1.webp",
+      "sha256": "dfef49079c0bbc259df2cc9f757cd90fef3f45fcc00083f899aac65765854dd8"
+    },
+    {
+      "path": "public/images/approved/lepidolopha-komarowii-1.webp",
+      "sha256": "87a8bb1f54d96b228da0957a63e937e887958256454de40d29d9dfd243f15da6"
+    },
+    {
+      "path": "public/images/approved/lutra-lutra-1.webp",
+      "sha256": "e2960ad835a3ff35cf8b39aea76f7bed1d6a9af7e4513124d3b072edb77d7ebc"
+    },
+    {
+      "path": "public/images/approved/lyrurus-tetrix-1.webp",
+      "sha256": "c161d75ef1478e7f9cfdba7a30b8b84dd73a84fadb957df50bea684f82431360"
+    },
+    {
+      "path": "public/images/approved/manul-1.webp",
+      "sha256": "f5f0c8394805636748d0da7709f69becc961e51cb8b2fbfd17bc8051113d54b1"
+    },
+    {
+      "path": "public/images/approved/marbled-polecat-1.webp",
+      "sha256": "dab719e3fd431506df3969d1d6f42ce166b15c07f86dc8e8dc2abaefb2359b7c"
+    },
+    {
+      "path": "public/images/approved/martes-foina-1.webp",
+      "sha256": "817a207452c35d05a2beeee610b4d89112cad73a53ca016336705e20c116acb4"
+    },
+    {
+      "path": "public/images/approved/mergus-serrator-1.webp",
+      "sha256": "9d85633340e60994021d1d3b41ca9641e96ece515318419895f69dc85358af41"
+    },
+    {
+      "path": "public/images/approved/nathaliella-alaica-1.webp",
+      "sha256": "5e805d75f6942d0401b9e5232a3395ae6809162afa39109991925d5c99b790aa"
+    },
+    {
+      "path": "public/images/approved/neomys-fodiens-1.webp",
+      "sha256": "3044c2a4892ca976509a469188413fe6c581f998f9b6b965dea9aac205725514"
+    },
+    {
+      "path": "public/images/approved/numenius-tenuirostris-1.webp",
+      "sha256": "941aaf4658f5a4a893607cb70941dc22c6925ff667fb152c7cb6ea1eb2fff638"
+    },
+    {
+      "path": "public/images/approved/ostrowskis-tulip-1.webp",
+      "sha256": "bde6fad74185b66b65d21d9f9b8a9c72a22484ae5fc2e94e8381c2da24fc97c4"
+    },
+    {
+      "path": "public/images/approved/oxyura-leucocephala-1.webp",
+      "sha256": "7630668650650cadf43e9b23c8c5196adfda70e702c8e278335afb5a78020326"
+    },
+    {
+      "path": "public/images/approved/pandion-haliaetus-1.webp",
+      "sha256": "19e3932c5a8498f27bac1584af2ef45012086bc6b358832282ff4289a266c5ce"
+    },
+    {
+      "path": "public/images/approved/pastinacopsis-glacialis-1.webp",
+      "sha256": "ae02ba9f493a5cf75f6cc841a4638aec54d9212c26a7814d609390b071e4eb6e"
+    },
+    {
+      "path": "public/images/approved/pelecanus-onocrotalus-1.webp",
+      "sha256": "a2254ed984a5af64a863f983002c6ad729d79daac9872a8f4ec0f14c8b670a34"
+    },
+    {
+      "path": "public/images/approved/phalacrocorax-pygmaeus-1.webp",
+      "sha256": "a60170d2d7d4993306bd8df2adc1db69787e7b651e824a031fe1a5ab04625be8"
+    },
+    {
+      "path": "public/images/approved/phoenicopterus-roseus-1.webp",
+      "sha256": "351ca2fe21d410149f3d32b4c6b0367e3bfbb4299091893adeb0d6f1c2baf6cf"
+    },
+    {
+      "path": "public/images/approved/physochlaina-alaica-1.webp",
+      "sha256": "3e7395176a550e40e503aa550076d04915021a96e79f5e5280570e8358277d42"
+    },
+    {
+      "path": "public/images/approved/platalea-leucorodia-1.webp",
+      "sha256": "bda6ca8a8e03cb3eee9598fcd7f9c5beaae804068619c34317b15df3bbc6d451"
+    },
+    {
+      "path": "public/images/approved/predatory-bush-cricket-1.webp",
+      "sha256": "3e8dbf107742d44384832ce07d7a7332f5a693aab893f505b869e4bb62519e12"
+    },
+    {
+      "path": "public/images/approved/primula-macrocalyx-1.webp",
+      "sha256": "d5ec59b08be3673d41303d12740da3b57a899dcf35ad9a015345de287abceacd"
+    },
+    {
+      "path": "public/images/approved/pskem-onion-1.webp",
+      "sha256": "ffcb628f76c771ca18ddc43fd37f0f4d6b247ea1db57164301a3955289ad541e"
+    },
+    {
+      "path": "public/images/approved/pterocles-alchata-1.webp",
+      "sha256": "7f804dc71600f9a6f70d2831d8e7106307dc83552c1acd12614b8dc7ddb66aca"
+    },
+    {
+      "path": "public/images/approved/pterocles-orientalis-1.webp",
+      "sha256": "c3f1cd305778fdcf9185d77486f96a5e530d0fcdb029dc0d43cf183290cc308c"
+    },
+    {
+      "path": "public/images/approved/pyrethrum-leontopodium-1.webp",
+      "sha256": "11c08c548ce5df7f6ed94130840f9f0446c571bf233c80a4e161198cc2f7e11c"
+    },
+    {
+      "path": "public/images/approved/rhinolophus-bocharicus-1.webp",
+      "sha256": "ba4827a47bf3bd3c4c076c25c7fa8df38e5d63eb33b990591f61f593a1ee60e3"
+    },
+    {
+      "path": "public/images/approved/rhodiola-litwinowii-1.webp",
+      "sha256": "1cb23145fc1ff01eaf7cf526a46cab6729a9c16a45d1ce9bbcf26622626e5a1c"
+    },
+    {
+      "path": "public/images/approved/rossomyrmex-proformicarum-1.webp",
+      "sha256": "03d90f22c9f4ad73dd4e0a2eafb23aec68b750bdc99179c69ec2e8f57c99b6b2"
+    },
+    {
+      "path": "public/images/approved/said-alievs-toad-agama-1.webp",
+      "sha256": "e71d3343f5c6dd59b91f1cd912e243627228a82ef3db5007cf638d246b3a0816"
+    },
+    {
+      "path": "public/images/approved/saker-falcon-1.webp",
+      "sha256": "c8755f98c96ebb2d88929b7ceefa882b3f622b2c3da5373aa3474a370ac9c9a7"
+    },
+    {
+      "path": "public/images/approved/salvia-korolkowii-1.webp",
+      "sha256": "3b54895cf6152206b592890c850c4893b51192038fce3655fcfb7b60f1fe6a6e"
+    },
+    {
+      "path": "public/images/approved/salvia-vvedenskyi-1.webp",
+      "sha256": "ccab53eb16c50faf51e0c2c8d46147989037b29d4f7304d2271a90099dd8c2c1"
+    },
+    {
+      "path": "public/images/approved/saussurea-involucrata-1.webp",
+      "sha256": "5415546a85c921f89b749a45d4c6bead134a21d9f557ae6cc52cbca0a2ce1332"
+    },
+    {
+      "path": "public/images/approved/scutellaria-andrachnoides-1.webp",
+      "sha256": "a9abdba32d8a3d010954d1dc1b5b771fe74a466898c6cad3d88b1278a8a45ac7"
+    },
+    {
+      "path": "public/images/approved/semenovs-fir-1.webp",
+      "sha256": "e7574a5e8fc3f261c8484474695b36517bc5535bd731a1a3d1633d2e5596b4ef"
+    },
+    {
+      "path": "public/images/approved/seseli-eryngioides-1.webp",
+      "sha256": "7372f98d3faa098f35be8b726932639db15fef2b48f60fd159978e6efdbf373f"
+    },
+    {
+      "path": "public/images/approved/seseli-korshinskyi-1.webp",
+      "sha256": "03027ddea9826879f025ff69ab637b02f3e16c322bf36f2e7827bcd842f92de0"
+    },
+    {
+      "path": "public/images/approved/sibiraea-tianschanica-1.webp",
+      "sha256": "a79b70f97a9cd784a07d7705a96a9d369735ca41584478dae12bc35eea53d5df"
+    },
+    {
+      "path": "public/images/approved/sievers-apple-1.webp",
+      "sha256": "273f73a29bb105f970b1d70d526418eadbd743676da38ba2af7b36cf72b91e88"
+    },
+    {
+      "path": "public/images/approved/silene-sussamyrica-1.webp",
+      "sha256": "fc938fe266d63cff9f3a40e6b2ddf009b1b13ee1f00ea176b331d2a61ec765b5"
+    },
+    {
+      "path": "public/images/approved/spiraeanthus-schrenkianus-1.webp",
+      "sha256": "592950e20a18f7510f13a2f8ea03724d8df4c5fc73548fa6ebbc28566b94ee97"
+    },
+    {
+      "path": "public/images/approved/stemmacantha-aulieatensis-1.webp",
+      "sha256": "cf1fd20e01554748782424ece66dbed2d0b3588eb1686afbacc8e8579b15a084"
+    },
+    {
+      "path": "public/images/approved/strix-aluco-1.webp",
+      "sha256": "b822a70ee53abd2577d0df440fd6d23d3124d1f9cbd57e260a56b03af4168d00"
+    },
+    {
+      "path": "public/images/approved/syrrhaptes-paradoxus-1.webp",
+      "sha256": "728fdd7aa841cd29948f6d63807d5813d89091176876c12514e4bf80bf8ad6e2"
+    },
+    {
+      "path": "public/images/approved/tadarida-teniotis-1.webp",
+      "sha256": "d7e7f1130a7d82064aa7d2b877dfd4b39303337dab94c25ba36839d9a5fc92fb"
+    },
+    {
+      "path": "public/images/approved/tetrax-tetrax-1.webp",
+      "sha256": "78696e0e3302fdee3a3d82cf30d9cd7039ccfac8b526d8253d451320c1406e8b"
+    },
+    {
+      "path": "public/images/approved/thesium-minkwitzianum-1.webp",
+      "sha256": "8804a895a23c150fe80b60798c4eff463c2e99d53ed06c538d18ab54efaed633"
+    },
+    {
+      "path": "public/images/approved/trichanthemis-aulieatensis-1.webp",
+      "sha256": "b86a3401ebc19e50ad4d5f45c0856726d88a394b762acbb47bfe3f5076f59ebb"
+    },
+    {
+      "path": "public/images/approved/trichanthemis-aurea-1.webp",
+      "sha256": "551e08d4f0290b7d98f923ee998f5d6fdae8f6233ead5d73b8c6ecdd3371352f"
+    },
+    {
+      "path": "public/images/approved/tulipa-affinis-1.webp",
+      "sha256": "f2b9c25db202b2044b0c998eff3e785e12096a6ec82ea8ce37d6ad360792bffd"
+    },
+    {
+      "path": "public/images/approved/tulipa-korolkowii-1.webp",
+      "sha256": "702be54f053ea22c997aa3e6c1dd6856f2b21615ac50d5a6c91c9bcf4156f66d"
+    },
+    {
+      "path": "public/images/approved/tulipa-platystemon-1.webp",
+      "sha256": "f31dff47d90f7d75db84d8ceb2b61631cc42d6469f42fe063c7a7b6c1eeb87e6"
+    },
+    {
+      "path": "public/images/approved/tulipa-tetraphylla-1.webp",
+      "sha256": "c18f4901cbd1074dcf55d94b962d2d65c357ffc3eee96292396ad3f72ade09ca"
+    },
+    {
+      "path": "public/images/approved/tulipa-zenaidae-1.webp",
+      "sha256": "b891d7eb9093c066909e09715aa2a9c419e43378c222ab3d8208e0ea15865c6b"
+    },
+    {
+      "path": "public/images/approved/urocerus-sah-1.webp",
+      "sha256": "131cf6a2f6a34eac29d493cdbf3745b159b0b17a81d7387b3f912e3b7a23ad8f"
+    },
+    {
+      "path": "public/images/approved/ursus-arctos-1.webp",
+      "sha256": "5ec06f04e7d4a44be474af845ceab7fc15c501c1045084bd226dfefb3748fc69"
+    },
+    {
+      "path": "public/images/approved/vanellus-gregarius-1.webp",
+      "sha256": "69a7fc798d3f2f47e4901c040db3ec4e5a19428e264b86d022f86e75938cd3dc"
+    },
+    {
+      "path": "public/images/approved/varanus-griseus-caspius-1.webp",
+      "sha256": "0b1c99d07a193d6c5dcd5cc7cee91306f3c832e1ca3a648801bd2b3bb356d6a0"
+    },
+    {
+      "path": "public/images/approved/zygophyllum-kaschgaricum-1.webp",
+      "sha256": "8d1ce4bc22ce9b596458088fe4a5b7951f6d75d7057edb5197ac45a1f35ecd2c"
+    },
+    {
+      "path": "public/images/placeholder.svg",
+      "sha256": "03537a61fb781b00a6068b6e8e3b797471f81627fb1fe0776de1ca7cf135197f"
+    },
+    {
+      "path": "public/images/processed/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "public/images/source/.gitkeep",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "public/licenses/photos/Apache-2.0.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "public/licenses/photos/kolpakowskis-tulip-NOTICE.txt",
+      "sha256": "630b233c78ff7bc4ae9e601f1e869183b1aee16cd147f5645ee08778cdda9a2b"
+    },
+    {
+      "path": "public/robots.txt",
+      "sha256": "92503f6c0aa9a80de0f5696f72e247c1ca84bf6d65260b64789af189cbacb4d3"
+    },
+    {
+      "path": "scripts/admin-entry.mjs",
+      "sha256": "70465d2ed293e229c30a299d4bf842f8e64d2b685b640bd6b09af9d40e1e55c2"
+    },
+    {
+      "path": "scripts/audit-bulk-25-release.mjs",
+      "sha256": "6d8a3a9791d488bd35e0eb0f91ac61b9bbac905850a117898fc16a1ef06adeb7"
+    },
+    {
+      "path": "scripts/build-data.mjs",
+      "sha256": "c049743b6f65006b59f2413546201e63c6dc5057362fb673cc21db6505316a9a"
+    },
+    {
+      "path": "scripts/build-map.mjs",
+      "sha256": "de3d625709fb3c5db8194f578a75a4c1c6572b74b836cbb2641db8602c8c426c"
+    },
+    {
+      "path": "scripts/build-quiz.mjs",
+      "sha256": "8b95c684fd61b39d6d475218d102b30cb0133660c1a25f17b2d6148c890b2e1f"
+    },
+    {
+      "path": "scripts/bulk-pipeline.mjs",
+      "sha256": "5e7378132e5cb80bb5cf04aa464692189b0349914d0e1fd12f3b986018679a4f"
+    },
+    {
+      "path": "scripts/check-bulk-25-content.mjs",
+      "sha256": "a88141e973ada7a5a8c87d5cf97bf36663ebd9ff73e1087bfee6d64d8f3ba257"
+    },
+    {
+      "path": "scripts/import-species-batch.mjs",
+      "sha256": "b1577b3791fe7ef0f1dd85f471641a90b0d319625d498060d9e524d0d88c56ff"
+    },
+    {
+      "path": "scripts/lib/bulk-import.mjs",
+      "sha256": "841d6047b7bca4903877a60b3b0227e636cc66bdd6dfdcc3b66e9b59a99101da"
+    },
+    {
+      "path": "scripts/lib/local-research-adapter.mjs",
+      "sha256": "cb27fe2089c2dc7f8f6f6fb5ef27d37ba729f522d1564f73d6b87f777efa2034"
+    },
+    {
+      "path": "scripts/lib/provisional-publication.mjs",
+      "sha256": "6a75a2dfbe6cf62f865ec74b1f779b424683bceea203e09191ef535368591618"
+    },
+    {
+      "path": "scripts/lib/research-pipeline.mjs",
+      "sha256": "2b54b5a777a0a89f190879920606f7994fa3f700185bfdd07ad769da71b88f74"
+    },
+    {
+      "path": "scripts/lib/ui-design-scope.mjs",
+      "sha256": "a75f1c258197ad72af7ac87272b6f17d3797ad3328bc69b9f7a009fb4e79009a"
+    },
+    {
+      "path": "scripts/prepare-batch-images.mjs",
+      "sha256": "51f993bebf8f9f2572c68798d11cc100e9328236bc7db63ef4e59d70aafd94e4"
+    },
+    {
+      "path": "scripts/prepare-bulk-25-content.mjs",
+      "sha256": "4bf8aa30cfcaf838993d98cad3ba20afabbd0db1a6674bd972eb5a1ae8a32182"
+    },
+    {
+      "path": "scripts/prepare-catalog-181.mjs",
+      "sha256": "5dd16cdb7997aef5edaa5f7b92f619d53974800204bed65807cd4b73a37f5bdc"
+    },
+    {
+      "path": "scripts/prepare-catalog-187.mjs",
+      "sha256": "62100f8ba6eff0add437abaca033c5a752d561d9f706f7aa9aa60aff0d61c506"
+    },
+    {
+      "path": "scripts/prepare-redbook-master-registry.mjs",
+      "sha256": "77b7a280cd58c77c79d782caaf32127ef661fa4fcc842aa3444a69dd81260bf7"
+    },
+    {
+      "path": "scripts/prepare-research-batch.mjs",
+      "sha256": "5705a7392738445d9b8a6f7caa7ad3dcb06e36f1d96dfc2bc498560b2f8e25c1"
+    },
+    {
+      "path": "scripts/process_data.py",
+      "sha256": "9f49cde71d6c8ce9c03866c3218b3a6f32d033f059f607d27bdf64f3e454e383"
+    },
+    {
+      "path": "scripts/requirements.txt",
+      "sha256": "6e8dc94ff4a80b48dad10f1ced6003c04011826b83cf02f847219d07e8898fb7"
+    },
+    {
+      "path": "scripts/research-bulk-25-photos.mjs",
+      "sha256": "7e2796f60616e3b9d0d30a1135259462ed916bc95e58b3178c413ce5e84864c8"
+    },
+    {
+      "path": "scripts/validate-catalog-167-preparation.mjs",
+      "sha256": "bbd00ad2169fae92828c8acb3f9d7d738d1d6a8621b75d3dc996bd89ab8bdf17"
+    },
+    {
+      "path": "scripts/validate-catalog-181-preparation.mjs",
+      "sha256": "840419ced4551de612c47160edca4e7ad39a134112f5eb2c1ad5070a509f4081"
+    },
+    {
+      "path": "scripts/validate-catalog-187-preparation.mjs",
+      "sha256": "375165fea0aceb51c2d572c0499918b7855fde087eeeb44f130bc10fcd5bc065"
+    },
+    {
+      "path": "scripts/validate-catalog-200-conflicts.mjs",
+      "sha256": "e842d2f880162b4b3cfa49a3028629c626ef4d9804d4ca28dccc1ce4c75698cf"
+    },
+    {
+      "path": "scripts/validate-catalog-200-inventory.mjs",
+      "sha256": "f75b579450f13c40c0db894dc8056b1784db48ab83dd07b469765737bde2e8f2"
+    },
+    {
+      "path": "scripts/validate-locales.mjs",
+      "sha256": "69245eedb6d8fdc3fdc5dac9f142a9e30e8cd79f4b231636908c333e7f9cb263"
+    },
+    {
+      "path": "src/App.vue",
+      "sha256": "9d9def975d2bf586407a0584657a6de1aabb9e07acfa3cdcae41420a1893b65f"
+    },
+    {
+      "path": "src/admin/AdminApp.vue",
+      "sha256": "e9ab54cf59fdc0c0ba8698c5e31b2e3720b4bbbe02b87b3d29bce5aed94eeada"
+    },
+    {
+      "path": "src/admin/admin.css",
+      "sha256": "d414d80ad0538df79606bf70bb241da0f733f94e9e081132ac2d55d521d2fbde"
+    },
+    {
+      "path": "src/admin/components/ConfirmDialog.vue",
+      "sha256": "fbc754141eb98528cb94665b155892a12b5bea153b091af1ac90e61a21422ad2"
+    },
+    {
+      "path": "src/admin/components/LocalizedFields.vue",
+      "sha256": "537c22353ed55f3b93ca1245089f9f2387832587078aa922c6c5832a7baaf48c"
+    },
+    {
+      "path": "src/admin/components/PhotoEditor.vue",
+      "sha256": "954add7fbb0c7019ae35ced1919ad4a94c4166fafb933405bb11e2a5919a6faa"
+    },
+    {
+      "path": "src/admin/components/PopulationEditor.vue",
+      "sha256": "d6285d7ef0bfbed05fa0d935832f868a9a2f63a51ee3b479886bf49bd4da0de3"
+    },
+    {
+      "path": "src/admin/components/SourcePicker.vue",
+      "sha256": "9616569f3fd26444ee7ce937d3e55d51baa28ad03847e2eaba8ae5f5f7394d30"
+    },
+    {
+      "path": "src/admin/components/SourcesEditor.vue",
+      "sha256": "9bec04e370c0c514fd855e36b1cfd4c9e723d5be7f21e10af76d0949e51115c4"
+    },
+    {
+      "path": "src/admin/components/SpeciesFields.vue",
+      "sha256": "a427fbeb660a603b22d3de79de5a942bf4863a950c94a3ac328bd58a6b993bfe"
+    },
+    {
+      "path": "src/admin/data/images.js",
+      "sha256": "29eb93942e4bd09f56b25a4fad9fbb3260bab37acc5e2687f6541f85c0633b72"
+    },
+    {
+      "path": "src/admin/data/model.js",
+      "sha256": "7ef5a18e3c9346021c7d24bc6bf425af0d0a46d441e3f4d1f4ebab14f7e6a495"
+    },
+    {
+      "path": "src/admin/data/repository.js",
+      "sha256": "8195ff1b89725b11c74f3f33085f5ab6baedc436f80bf536ab2daff79f7543f1"
+    },
+    {
+      "path": "src/admin/locales/en.json",
+      "sha256": "755682999ff91cb66b4c1206e5c54230733c3302eadf4e09a35c80f4dc1affda"
+    },
+    {
+      "path": "src/admin/locales/index.js",
+      "sha256": "4381c61d4a21c2f368576ed70718d0653929bda22d9e3b1809e1e365f5977050"
+    },
+    {
+      "path": "src/admin/locales/ky.json",
+      "sha256": "0e8f04e747a7e2a222b5a309dbfc69e66c3af2842776640a74923110209bd6d4"
+    },
+    {
+      "path": "src/admin/locales/ru.json",
+      "sha256": "0cdce0eb6ec76e3515ef0e0392fa6544c4716dba37a3fb02b3d2b37bb8317a11"
+    },
+    {
+      "path": "src/admin/locales/uz.json",
+      "sha256": "7a26a1393b24df713ba9cdeef3f66856b71cfe5c548ab3a3ed747611d180daa8"
+    },
+    {
+      "path": "src/admin/useAdminEditor.js",
+      "sha256": "2662448b9cdbff6772f17ab34dbf36e6c52ba1fd77290af9f4a371c8b26532dd"
+    },
+    {
+      "path": "src/components/BrandLogo.vue",
+      "sha256": "4d461afa67b3bb9aab0185877b233a7b8c1edb5f78f79e812001affe4fed91c2"
+    },
+    {
+      "path": "src/components/CatalogSearch.vue",
+      "sha256": "4129bb30d3903c6eecba603fa77b031386dfa5d4c85e67de0a5c83450365d2d3"
+    },
+    {
+      "path": "src/components/ErrorNotice.vue",
+      "sha256": "880c88b0ade9d5502ae390906f937d73011f34d8580b5a46640e4f78baed4542"
+    },
+    {
+      "path": "src/components/GroupFilter.vue",
+      "sha256": "5ac737dab22fe64025d1647e824ec1f8a0757e50bfb91b43594c872ac6bfacae"
+    },
+    {
+      "path": "src/components/HeroIllustrations.vue",
+      "sha256": "ae3e411159f47b4a7ecfdc0172b88e3494f585fa330bc74423bbedb5b3c421e2"
+    },
+    {
+      "path": "src/components/LanguageMenu.vue",
+      "sha256": "13b4b24c04e82a39f1e19287166d50e93fb3279b6afaccae73bd902773efa7ad"
+    },
+    {
+      "path": "src/components/PopulationInfo.vue",
+      "sha256": "d7f8f94ab4d0caf072b019adf1d8783dc0b4e6cc51f81e102d1efca6154aecb8"
+    },
+    {
+      "path": "src/components/ScientificText.vue",
+      "sha256": "b9d70d2441e4a956cbbe01e66fbdb57ce0d453362d0c63e2f326e9c4701bca11"
+    },
+    {
+      "path": "src/components/SourceLink.vue",
+      "sha256": "aeaad0395792da0ea874374c41dccf8b5bf3b2586a8834877d8a6ece4fb75dcd"
+    },
+    {
+      "path": "src/components/SpeciesCard.vue",
+      "sha256": "9245cd134a99f3888ce598f8fa529c985e79bbafc13dbfbcbb3add0fe42f07a1"
+    },
+    {
+      "path": "src/components/SpeciesModal.vue",
+      "sha256": "c6bfa21eacd40efd23745e920d2bfc321c021c68b2da30a0052b57e8b7bf2f1d"
+    },
+    {
+      "path": "src/components/SpeciesPage.vue",
+      "sha256": "ee479dc95397699a67fd12ff818b68b18f289ba2c7196522875671e742ff8094"
+    },
+    {
+      "path": "src/components/SpeciesVisualization.vue",
+      "sha256": "414fb96842306e9b25dc76a98338243c685c30f043b1553063e81783f001ebef"
+    },
+    {
+      "path": "src/components/catalog.css",
+      "sha256": "5453a4246ecaaea46fca787be4fce0e884801160b9285fb9116a37d6d2b6e159"
+    },
+    {
+      "path": "src/components/lesson/LessonDetails.vue",
+      "sha256": "1dbbae440e03c8cca7b5f4f8e3b51593dca92f91c89ea313734ecf08617e784f"
+    },
+    {
+      "path": "src/components/lesson/LessonPhoto.vue",
+      "sha256": "47eff3db324b91709d71f231608fe2e90db3d1d192a052d69aff85dbd89b48e8"
+    },
+    {
+      "path": "src/components/lesson/LessonReferences.vue",
+      "sha256": "6c6adaf0970f92e4030aed2bbe4cc8067e0fadb9b4282d66b7ff484e78631010"
+    },
+    {
+      "path": "src/components/lesson/LessonView.vue",
+      "sha256": "b817c0e1cf784666244d27995fdf59772b1baff8a0618db929861075722aa1ca"
+    },
+    {
+      "path": "src/components/map/MapOverviewPanel.vue",
+      "sha256": "c9825bd1b6533a12c033fba0bead02d6710bdb385314ab1949cf0ab97668ac0b"
+    },
+    {
+      "path": "src/components/map/MapSection.vue",
+      "sha256": "d7e11747a1d63ea88b1680e7ca1434c11591e40044e050716fd93c34d4f59ae8"
+    },
+    {
+      "path": "src/components/map/RegionMap.vue",
+      "sha256": "6b650e2a5d41658d2b1dc5a665e11700b1e287e70508e55bc1e24b296c033e86"
+    },
+    {
+      "path": "src/components/map/RegionPanel.vue",
+      "sha256": "9a5e48ca755bc374ec43d50ba472da0eb47106e35759e618030113f22b947fcb"
+    },
+    {
+      "path": "src/components/map/RegionalSpecies.vue",
+      "sha256": "a797b29b9993f2798e2af01e005a6a094855a3ff65b19b66d342ae60bb013003"
+    },
+    {
+      "path": "src/components/map/map.css",
+      "sha256": "349865b26e46d70e5bc59588be9fdf8131035434b75b906dcb531c52e551e4af"
+    },
+    {
+      "path": "src/components/quiz/QuizQuestion.vue",
+      "sha256": "1c0e171d5c4ac42b7f09194d66d93f56ec1fa90b8b82932cc1f9cabcd6f077d6"
+    },
+    {
+      "path": "src/components/quiz/QuizResult.vue",
+      "sha256": "b8d711c5dedaa90ea5a3c36e3fdd4f6675df6d5233505393a733f2a30bb9b578"
+    },
+    {
+      "path": "src/components/quiz/QuizView.vue",
+      "sha256": "7d236424dac551740c09eb1d5500ffcb2c7f8671e60c9123e4adb8343b1f9418"
+    },
+    {
+      "path": "src/components/support/SupportSpecies.vue",
+      "sha256": "b1b31ad5cd7f41a9fdf6ddfce03a21b3044a04c89de337439750d594bb15612e"
+    },
+    {
+      "path": "src/components/support/SupportView.vue",
+      "sha256": "10df20cd4723373a1595fa12cc7c7147e1fa378bea77cee7b1ec26ad71f9feef"
+    },
+    {
+      "path": "src/components/support/SupportWall.vue",
+      "sha256": "a79cdd8fa33aede9bddb8f3ca1ccd4a05febb24bdb7d7273acb10c656f5f0bfc"
+    },
+    {
+      "path": "src/components/support/support.css",
+      "sha256": "510e7b6d0f1a4685021805fed06f8506b318faf0ea94a1d1cbf8464602afcd29"
+    },
+    {
+      "path": "src/composables/useCatalog.js",
+      "sha256": "4863acbd8cd75a5ef94da352caff3f062a568126b462690b9c064afd85bf4035"
+    },
+    {
+      "path": "src/composables/useImageVisualization.js",
+      "sha256": "eb346783940e2d0bf1f3bd213a1267d9374ec63f9732c9fcdb4ec1b6a6bf0cd4"
+    },
+    {
+      "path": "src/composables/useLesson.js",
+      "sha256": "fb9ede4903fa048f7a82f196d736eec1556e5f5d59639b3266b638b9e80d0e3e"
+    },
+    {
+      "path": "src/composables/useLessonFullscreen.js",
+      "sha256": "501e49e47cb6719c368262381ee94285a9f0159d936c6397e9e564153a95541f"
+    },
+    {
+      "path": "src/composables/useLocale.js",
+      "sha256": "3f2499d2282e7e21436376b8c5c164baf6ea5c5f064f7bd45c0abcccb9ef5ff7"
+    },
+    {
+      "path": "src/composables/useModalDialog.js",
+      "sha256": "ab94282ae0f283e15fb7401d9e079d63172f06993760710295c72c4c5ba6a2f6"
+    },
+    {
+      "path": "src/composables/useQuiz.js",
+      "sha256": "41f3e16176e0994377bd2dc620a9a5128a370784d68ca3dfe8f339e1a6012a9f"
+    },
+    {
+      "path": "src/composables/useSupportWall.js",
+      "sha256": "5bf55bca90e64fb3d1db7ba5eb7e20eb8bdfe2940e301932479d7bb16d01ee46"
+    },
+    {
+      "path": "src/data/brand.js",
+      "sha256": "61cc9d397e749c573b9ef7af1e708d1166249559f896e7543b5bcf5e0b42c03f"
+    },
+    {
+      "path": "src/data/catalog-pagination.js",
+      "sha256": "84303d87ae4d1c95a34962cde0e936d34b189d7e7e2fc0d9f09b3e0169e9a30c"
+    },
+    {
+      "path": "src/data/catalog-repository.js",
+      "sha256": "e9f34d517804c6f70426d0585b09fb54f92c4f544802a3a3464764e4fdcf0252"
+    },
+    {
+      "path": "src/data/catalog-search.js",
+      "sha256": "ef1728158d6466abbadaa1a30613f6477bfe28798ba8670e9a34ed19a5374754"
+    },
+    {
+      "path": "src/data/geography/model.js",
+      "sha256": "7b108b5670c6c236135835cb814f7983b334216c44f35c280481f5d6c6bf5e8b"
+    },
+    {
+      "path": "src/data/image-composition.js",
+      "sha256": "62731c5ca3897798180ac150bbfff39971e120b9c40b08b325a66912ebf58964"
+    },
+    {
+      "path": "src/data/lesson.js",
+      "sha256": "b5b9d76e936c544c05e5b293603e8847211515558da40a5410b74ee1d3cd2156"
+    },
+    {
+      "path": "src/data/localization.js",
+      "sha256": "f0ae04831ac250500caa2a623c4be3656decb5539841874fac9c6995ac7958a9"
+    },
+    {
+      "path": "src/data/population.js",
+      "sha256": "422e7ab881cc6ede3fa944298b0020f86c2fd5504087f7853ea055edbc4e0013"
+    },
+    {
+      "path": "src/data/presentation.js",
+      "sha256": "53c6d21591bc7487764f34223b3e64a8c549e4a059b902ac6c95055b3bc919e0"
+    },
+    {
+      "path": "src/data/quiz/engine.js",
+      "sha256": "7efc73353e2f7095fa69d1cec529b1c1b4cc2bcd4a4dfdf72fd842c6eff196c2"
+    },
+    {
+      "path": "src/data/quiz/history.js",
+      "sha256": "d5567f2f6176bc381c1754684173ca20e4bae22b1cabdad91c1c22322725c044"
+    },
+    {
+      "path": "src/data/quiz/model.js",
+      "sha256": "7ab8dd8bcab6ffca01346dbc09fae07e5c8f9042dc757e2596cccb94a0afc5af"
+    },
+    {
+      "path": "src/data/quiz/questions.json",
+      "sha256": "3c85a42684f2c22b768cede3c37c4c354bd265dec46926230ffbe5f77b88efb4"
+    },
+    {
+      "path": "src/data/species-content.js",
+      "sha256": "47a2fabe173a7e77de87b83247163d432826496b1c0083e85d868f96b78d5658"
+    },
+    {
+      "path": "src/data/species-groups.js",
+      "sha256": "0ab2466a413c00eeb0edf38ace10f48082faa0ab8b84c275f0aa470899c3ec5d"
+    },
+    {
+      "path": "src/data/species-model.js",
+      "sha256": "14e02baf3ffbafc7ba24e399cf1786e25b1a7138625c267da1b268ee80251ef2"
+    },
+    {
+      "path": "src/data/species-routes.js",
+      "sha256": "515be2c850fde34e4de885b06952a7dfaab9d314c8408968f7913f3c2de64a47"
+    },
+    {
+      "path": "src/data/support/model.js",
+      "sha256": "9db8b42bba509d0743bffe146e194403acdc7cbfb06b28bb494613e7150fe784"
+    },
+    {
+      "path": "src/data/support/wall.js",
+      "sha256": "6c77249781711469efc5fccb2678b441fbc5832ff7cbf1d220c08b16a7a69cd5"
+    },
+    {
+      "path": "src/data/visualization/engine.js",
+      "sha256": "51f1b11e3a2a7c6dbf4eeab7e379aa74aebdde67e8cce4e7af30d9050761e25f"
+    },
+    {
+      "path": "src/data/visualization/environment.js",
+      "sha256": "a9a6d2c1ed5622a0392e3721f7d395b7dd94302d249aa0d8253a52e58ca4a172"
+    },
+    {
+      "path": "src/locales/en.json",
+      "sha256": "5aa0ac3b48f4222d7912259bbf4b37648a834000560619718fb5c30625873e18"
+    },
+    {
+      "path": "src/locales/index.js",
+      "sha256": "2f5571c9ef225580f7e1b0d5fe2a2aa05310104c330d023c5e41f9cff38fe163"
+    },
+    {
+      "path": "src/locales/ky.json",
+      "sha256": "971bb245488860c61a5ebe06bb30374fc32c072a62d54bd898d4c06570036242"
+    },
+    {
+      "path": "src/locales/ru.json",
+      "sha256": "7426be23cef245c424585a46ed5abfc67cf62e5c4d15e8ffe741b1885b978805"
+    },
+    {
+      "path": "src/locales/uz.json",
+      "sha256": "26259432b044ff45e18bc58be893bda3730a8cd270356ea40b2e182359649430"
+    },
+    {
+      "path": "src/main.js",
+      "sha256": "2500ca9ff7f73175a156475824a3756fc5ce4c8f3d12e90dc505d739989f6674"
+    },
+    {
+      "path": "src/style.css",
+      "sha256": "c34462014afcfbbae933c1205750b86c549b3a202638c3e476e455c00237ae95"
+    },
+    {
+      "path": "tailwind.config.js",
+      "sha256": "4a21a0903e81a9e6c1c69be3f0d96dac06f22b0794c1c922bb1ca148e46938d0"
+    },
+    {
+      "path": "tests/admin.test.mjs",
+      "sha256": "45ebd94c0570d202a12de6a6e2d1a03553b0c6800bd97b4c61c3240b61624d9b"
+    },
+    {
+      "path": "tests/branding.test.mjs",
+      "sha256": "16a0fef3f8668c974732fd1ae05bf9f0e3684d052290c967decc00d655907f35"
+    },
+    {
+      "path": "tests/bulk-25-content.test.mjs",
+      "sha256": "98cdc6912b27e71db8d806934640342dfd7d37c8acfb1c13546cfb5f7d2ea9ff"
+    },
+    {
+      "path": "tests/bulk-import.test.mjs",
+      "sha256": "39b664f8bdeef758d06e34465e50ee81b9a1c8bf73207a5553961b9ade03bde4"
+    },
+    {
+      "path": "tests/bulk-pipeline.test.mjs",
+      "sha256": "2203217d2d8156c066c44669c8553d9260c2820eb8942978c3b4fef953339677"
+    },
+    {
+      "path": "tests/catalog-100-photo-final.test.mjs",
+      "sha256": "874acd32a34e2ed06f37aad2f09b9e22d1d88b759d12e1a3c1bfb475c7859b1b"
+    },
+    {
+      "path": "tests/catalog-100-photos.test.mjs",
+      "sha256": "e8497aae2544249a628973620728895879e6315cfbc8026cd018e3aeb6ff7ae3"
+    },
+    {
+      "path": "tests/catalog-100-preparation.test.mjs",
+      "sha256": "f652445e1483a2bd4aec4470bff50a9ceaa7f241905cae567307b0846d3e25ac"
+    },
+    {
+      "path": "tests/catalog-100-publication.test.mjs",
+      "sha256": "dbefa48d3615ca51ee39bd4ba715104b37768463a642ac0fb67753c739050096"
+    },
+    {
+      "path": "tests/catalog-125-publication.test.mjs",
+      "sha256": "10969b586e9e56face96ce6e3e158222dad96481676eba97ace69e9e5ae824d3"
+    },
+    {
+      "path": "tests/catalog-150-publication.test.mjs",
+      "sha256": "ba4d49acf8643cb75aacd8aad0ec979faf99f9dfbdd2ff5354721e187af0372c"
+    },
+    {
+      "path": "tests/catalog-166-publication.test.mjs",
+      "sha256": "11695d6d9273c53d1ff42c7e244c5abea0c11531333f868f49c14098cb5d4a47"
+    },
+    {
+      "path": "tests/catalog-178-publication.test.mjs",
+      "sha256": "743a9aeaf0c275e15a2fe45cfce67daff8cd0c9646100507a1f7441fd3fcb172"
+    },
+    {
+      "path": "tests/catalog-84-preparation.test.mjs",
+      "sha256": "b6c5bc996f66a884939990d772195e9982362a7a588f59ee3d368dbbbc21c102"
+    },
+    {
+      "path": "tests/catalog-84-publication.test.mjs",
+      "sha256": "cd6cb4ec8ff72cfca82c8d17bf677e907aa9b6f739b4f2885953e17c6584beb0"
+    },
+    {
+      "path": "tests/catalog-expansion-40.test.mjs",
+      "sha256": "e4ed1ab11e511152102485bb2b18382b79b21c74acba6da88afacc5c86b94db2"
+    },
+    {
+      "path": "tests/catalog-pagination.test.mjs",
+      "sha256": "728ee19df424e6aa090ab06312c923e32b96c6566ced270c8e565717a6b4316f"
+    },
+    {
+      "path": "tests/catalog-search.test.mjs",
+      "sha256": "2c0ce1f02af8d9470e75186a2b7b65b591da59c8254ee0fd1e222bab648d6d1d"
+    },
+    {
+      "path": "tests/catalog-visual-order.test.mjs",
+      "sha256": "f8c42c357f384a35127d722e52a996e9f3a1a1774b0df8b079ee9d48a1f26032"
+    },
+    {
+      "path": "tests/data.test.mjs",
+      "sha256": "364ca751ec189e83acf6e199aa74203909b62a2c1eb8c906f9a7f1d4844ee156"
+    },
+    {
+      "path": "tests/first-batch.test.mjs",
+      "sha256": "af1e31d1b5acb4de019d4244522bacf2a6b87f23a37e5e1371fdd2fd1e73ccda"
+    },
+    {
+      "path": "tests/fixtures/bulk-candidates.json",
+      "sha256": "9dd4b213a1b9f9d5d8d58eca8305ec30080139bbcc97ad633eb9ce12ec524761"
+    },
+    {
+      "path": "tests/helpers/historical-pipeline.mjs",
+      "sha256": "bd81f461e7a79497bee8bfdb726d66c1201e528405a566cc496807cfdfc57ca1"
+    },
+    {
+      "path": "tests/helpers/legacy-scientific-source.mjs",
+      "sha256": "816820bce5c1564edebb725aa91dd682453600470e78fd97bd65fa8772fd0ea9"
+    },
+    {
+      "path": "tests/helpers/offline-network.mjs",
+      "sha256": "c4dc1fcf0ae9ba9a94c12ad77b41cd3878f84ea1ce5ea66a1cef6cdc9342cc08"
+    },
+    {
+      "path": "tests/helpers/synthetic-bulk-candidates.mjs",
+      "sha256": "70bc926ac3f83679f4402d22d750243fd6897cf68b998a61f79c038a5552b703"
+    },
+    {
+      "path": "tests/lesson.test.mjs",
+      "sha256": "1afd127f72c5e64efbb6a773cc075e968bb9951e43e4eb0733da89b7714334e4"
+    },
+    {
+      "path": "tests/localization.test.mjs",
+      "sha256": "1f8f8e90a4683e37adf326d3aa64dc3be925cc22a9f85ff3315e022325adc2cc"
+    },
+    {
+      "path": "tests/map.test.mjs",
+      "sha256": "0084d5e929c430be1c160e36900d65e42742e1ad23fb550207b8928796d6717b"
+    },
+    {
+      "path": "tests/population-integration.test.mjs",
+      "sha256": "97b270bbb6ca0f08bc2db907c269b1ccd7f67ef2fb47d34287e4417933409e67"
+    },
+    {
+      "path": "tests/population.test.mjs",
+      "sha256": "a7b54d9a7f34b9d6b295087320feb77c07b6a86b0eeb592bce18d701c5fa20a9"
+    },
+    {
+      "path": "tests/provisional-catalog.test.mjs",
+      "sha256": "c53ab9e35886daa9865ce10a460d414ab9e0aea4b18ddc7676d11533116b05e3"
+    },
+    {
+      "path": "tests/provisional-publication.test.mjs",
+      "sha256": "989515f82a70313868ee8d491d65e773a4d872693ebf3aaac4b9556d2d25d98e"
+    },
+    {
+      "path": "tests/quiz.test.mjs",
+      "sha256": "ed5a47703788995513414a293f493b200f6122a39112bff62d7cf1b470cb82ce"
+    },
+    {
+      "path": "tests/redbook-master-registry.test.mjs",
+      "sha256": "fa6a2d6e6d89b51405d3fb8406a73092ea50bb39e33689e07eff502b6663e696"
+    },
+    {
+      "path": "tests/release.test.mjs",
+      "sha256": "581c499e2673c783bd479974a56fc6de3c4620d0159051d7c203d12944ec98e4"
+    },
+    {
+      "path": "tests/species-content.test.mjs",
+      "sha256": "a143a9c5ed18c5370d084bb45db637bf6865ada8ab56ad916ee583d2f5e996f3"
+    },
+    {
+      "path": "tests/species-groups.test.mjs",
+      "sha256": "756ad9a9e59daa81e6318d76b7ba80407ae055f1d6f79a2b10ea464ada220b63"
+    },
+    {
+      "path": "tests/species-photos.test.mjs",
+      "sha256": "52e4cfe669caf36525138f6d35d57fb79b336273a43dc65211fd83e778a34fe8"
+    },
+    {
+      "path": "tests/species-routes.test.mjs",
+      "sha256": "e19efc444fe698cae5c73989a0dce705f2c7f6fa0989d7cfcd5bebfe1e140244"
+    },
+    {
+      "path": "tests/support.test.mjs",
+      "sha256": "2b92067b74bdfe0ceb9ba64bf4e2fcf4ef8e4ec9f7f8d893b8f84acfe548346c"
+    },
+    {
+      "path": "tests/uz-localization.test.mjs",
+      "sha256": "f60a28e647c0a7060e15da83444ed07639a46d8419b00db94a839d73377de394"
+    },
+    {
+      "path": "tests/visualization-core.test.mjs",
+      "sha256": "03313f1c9aabb605b1f55fe7a4d6a0553289e5969c93fc0741f22bb7edac6700"
+    },
+    {
+      "path": "tests/visualization.test.mjs",
+      "sha256": "80f1e4b26055ee53bf52da0a3512d4868993d496942d21d5385c15cf9fa3de80"
+    },
+    {
+      "path": "vercel.json",
+      "sha256": "a90b0e65d33fc9dfc007db950f776d5fd74996389b206f9b201bf75148e8b34c"
+    },
+    {
+      "path": "vite.config.js",
+      "sha256": "45ef5b760bfef4e700b1e67240ce8220f455c28a67ac07356f1c1793db67d85b"
+    }
+  ]
+}

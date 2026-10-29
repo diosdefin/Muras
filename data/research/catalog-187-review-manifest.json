@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "documentType": "independent-scientific-review-manifest",
+  "preparedAt": "2026-10-28",
+  "sourceCommit": "841110e08bbd262d3624a5553f39e682cf921c93",
+  "registry": "data/research/catalog-187-content-registry.json",
+  "registryFingerprint": "e464a27088b435607d373d58154fff1fcb385ad55ba3d294765c17384c4800e6",
+  "registrySha256": "30a22dc3960bba6996af6529127f19dd9bf58663166528fb2bc18570378bb73d",
+  "sourceDecisionFile": "data/research/catalog-200-final-taxonomy-review.json",
+  "sourceDecisionSha256": "93c0b979d51aea0553cc39087cad14a88ac29a535da2f96eb36f8fc308205f2f",
+  "sourceReadyCandidateIds": [
+    "sorbaria-olgae",
+    "dorema-microcarpum",
+    "tianschaniella-umbellifera",
+    "parnassius-loxias-tashkorensis",
+    "parnassius-apollo-merzbacheri",
+    "cuon-alpinus",
+    "papilio-alexanor-voldemar",
+    "megalodontes-kuznetzovi",
+    "polochrum-pamirepandum"
+  ],
+  "candidateIds": [
+    "sorbaria-olgae",
+    "dorema-microcarpum",
+    "tianschaniella-umbellifera",
+    "parnassius-loxias-tashkorensis",
+    "parnassius-apollo-merzbacheri",
+    "cuon-alpinus"
+  ],
+  "candidates": [
+    {
+      "id": "sorbaria-olgae",
+      "scientificName": "Sorbaria tomentosa",
+      "rank": "SPECIES",
+      "draftFile": "data/research/catalog-187-content/drafts/sorbaria-olgae.json",
+      "draftSha256": "a865e9ec509706f75b5e0cf48ee99bd02d451d5cbaf1c635eedcca66641f57f2",
+      "checkedFingerprint": "c90fe2e86b7075bc2e879d2498b069218f3eb0a781886907e17efd8389e4bb4b",
+      "independentReview": "pending"
+    },
+    {
+      "id": "dorema-microcarpum",
+      "scientificName": "Ferula namanganica",
+      "rank": "SPECIES",
+      "draftFile": "data/research/catalog-187-content/drafts/dorema-microcarpum.json",
+      "draftSha256": "6f445ffccf2dbac313c03eb08ecd0ff9bf63bfb0aedbc706848e3b17174ab3d1",
+      "checkedFingerprint": "28196ecc55278901d71b2f203a92dfc9d22fc8436374df2d9d37416fccb4166c",
+      "independentReview": "pending"
+    },
+    {
+      "id": "tianschaniella-umbellifera",
+      "scientificName": "Tianschaniella umbellulifera",
+      "rank": "SPECIES",
+      "draftFile": "data/research/catalog-187-content/drafts/tianschaniella-umbellifera.json",
+      "draftSha256": "1ebf5a27f9f9d66f773aac6497f4ad23bb2ab5d74c0e90e080e12d1e2a367abd",
+      "checkedFingerprint": "912c3c2bf6677a48e7d97c8a429dcf5851c8d78d2bdcf357260872a03c51e48e",
+      "independentReview": "pending"
+    },
+    {
+      "id": "parnassius-loxias-tashkorensis",
+      "scientificName": "Parnassius loxias loxias",
+      "rank": "SUBSPECIES",
+      "draftFile": "data/research/catalog-187-content/drafts/parnassius-loxias-tashkorensis.json",
+      "draftSha256": "3fc1eafb68fc2380e37c04cd764429accf4222b48ddb8f0cc75d3cac3b11eab7",
+      "checkedFingerprint": "612ac26580cd1f08e979517dd605e977c18ad250ce891b6333359193581b072a",
+      "independentReview": "pending"
+    },
+    {
+      "id": "parnassius-apollo-merzbacheri",
+      "scientificName": "Parnassius apollo merzbacheri",
+      "rank": "SUBSPECIES",
+      "draftFile": "data/research/catalog-187-content/drafts/parnassius-apollo-merzbacheri.json",
+      "draftSha256": "e76e13479e9f2fdff4718e397b43e17d72846f9b2e8143461174ce5b20944122",
+      "checkedFingerprint": "d4894e8c3107800ef208f595e34dca337245dcfe11b6c592aeb39e0cc9f52afa",
+      "independentReview": "pending"
+    },
+    {
+      "id": "cuon-alpinus",
+      "scientificName": "Cuon alpinus",
+      "rank": "SPECIES",
+      "draftFile": "data/research/catalog-187-content/drafts/cuon-alpinus.json",
+      "draftSha256": "285c3eb6703d562d67f4f65faa0167235d8f9d29e1ea0338306f0b0c6f7de943",
+      "checkedFingerprint": "f23d3fedebf63dd40bb44d405410a0ec623a4924111e01884be64efabff9dd50",
+      "independentReview": "pending"
+    }
+  ],
+  "withheldCandidates": [
+    {
+      "id": "papilio-alexanor-voldemar",
+      "scientificName": "Papilio alexanor voldemar",
+      "rank": "SUBSPECIES",
+      "draftFile": "data/research/catalog-187-content/drafts/papilio-alexanor-voldemar.json",
+      "draftSha256": "fa247e1fefa2b419fd01eba5212003454611bca3d339b2a71ef35beb6666ce65",
+      "checkedFingerprint": "73b621aed61453a50677d8e5a8fc97a4701757dbd0ed7adc02b1088c44c64414",
+      "state": "needs_evidence",
+      "reason": "В GBIF найден только SYNONYM SUBSPECIES voldemar → SPECIES alexanor. Точный принятый подвидовой идентификатор не установлен; родительский вид не подставляется.",
+      "upstreamScientificStatus": "READY",
+      "publicationAllowed": false
+    },
+    {
+      "id": "megalodontes-kuznetzovi",
+      "scientificName": "Megalodontes kuznetzovi",
+      "rank": "SPECIES",
+      "draftFile": "data/research/catalog-187-content/drafts/megalodontes-kuznetzovi.json",
+      "draftSha256": "f232d8b72ce79abc2eb108409df4917174efc0f4938aab832dff87903909ef94",
+      "checkedFingerprint": "1f71da793eedbbe3c384598ee1864d3d717cb87b28753954733f7d18f7c71d8e",
+      "state": "needs_evidence",
+      "reason": "Точный принятый вид с числовым GBIF-ключом в ограниченном поиске не найден; профильный WaspWeb не заменён вымышленным gbif: ID.",
+      "upstreamScientificStatus": "READY",
+      "publicationAllowed": false
+    },
+    {
+      "id": "polochrum-pamirepandum",
+      "scientificName": "Polochrum pamirepandum",
+      "rank": "SPECIES",
+      "draftFile": "data/research/catalog-187-content/drafts/polochrum-pamirepandum.json",
+      "draftSha256": "aa2633c9a9daef1c5977a9b01ecc9cce6e36c6a1a132cf994213392804a90fe9",
+      "checkedFingerprint": "3fa5c56d2a2ce8bdab60f6ee901beb33ddf7a897232139dd1fb0954742595fe0",
+      "state": "needs_evidence",
+      "reason": "В точном поиске GBIF видовой accepted record не найден. Ни P. repandum, ни родовой ключ не подставлены.",
+      "upstreamScientificStatus": "READY",
+      "publicationAllowed": false
+    }
+  ],
+  "draftedCandidateCount": 9,
+  "preparedCandidateCount": 6,
+  "withheldCandidateCount": 3,
+  "baselineCatalogCount": 178,
+  "potentialCatalogCountAfterSeparateAuthorizedImport": 184,
+  "originalTargetCatalogCount": 187,
+  "technicalReadinessOnly": true,
+  "verified": false,
+  "lastReviewedAt": null,
+  "scientificReviewStatus": "pending",
+  "scientificApproval": null,
+  "ownerAuthorization": null,
+  "publicationAllowed": false
+}

@@ -1,0 +1,111 @@
+{
+  "task": "27.1",
+  "checkedAt": "2026-10-28",
+  "baseline": "43ff31186ea54eafdb6eec654c50828fb4c99eb3",
+  "reviewStatus": "documented_pending_review",
+  "independentReviewer": null,
+  "precision": "oblast only; no point coordinates copied into this report or public payload",
+  "acceptedUniqueLinks": [
+    {
+      "speciesId": "hedysarum-chaitocarpum",
+      "regionId": "jalal-abad",
+      "sourceIds": [
+        "kendirbaeva-2025"
+      ],
+      "observationYear": 2022
+    },
+    {
+      "speciesId": "amygdalus-petunnikowii",
+      "regionId": "jalal-abad",
+      "sourceIds": [
+        "kendirbaeva-2025"
+      ],
+      "observationYear": 2022
+    },
+    {
+      "speciesId": "sorbus-persica",
+      "regionId": "jalal-abad",
+      "sourceIds": [
+        "kendirbaeva-2025"
+      ],
+      "observationYear": 2022
+    },
+    {
+      "speciesId": "tianschaniella-umbellifera",
+      "regionId": "issyk-kul",
+      "sourceIds": [
+        "rbge-e00714915"
+      ],
+      "observationYear": 2000
+    }
+  ],
+  "sources": [
+    {
+      "id": "kendirbaeva-2025",
+      "url": "https://doi.org/10.11648/j.ajls.20251302.14",
+      "publicationDate": "2025-04-14",
+      "observationYear": 2022,
+      "locationEvidence": "Abstract explicitly places the surveyed reserves in Jalal-Abad oblast.",
+      "taxonEvidence": "Abstract and section 1 explicitly enumerate Hedysarum chaitocarpum, Amygdalus petunnikowii and Sorbus persica.",
+      "taxonomy": "Existing catalog taxonomy and saved research identify Prunus petunnikowii / Amygdalus petunnikowii and Hedlundia persica / Sorbus persica. No taxonomy was changed.",
+      "license": "CC BY 4.0"
+    },
+    {
+      "id": "rbge-e00714915",
+      "url": "https://data.rbge.org.uk/herb/E00714915",
+      "occurrenceUrl": "https://www.gbif.org/occurrence/1061254332",
+      "snapshotSha256": "b1965480b53bd26038f98eea2bdf7330bb16c8203a4e0f5395c34aca0c429b5f",
+      "labelImageUrl": "https://iiif.rbge.org.uk/herb/iiif/E00714915/full/1600,/0/default.jpg",
+      "inspectedOriginalSha256": "52f604f86fa62fd3bca8de54a2a5ea7c193239c8568dcc8a70499d6590b3f11a",
+      "administrativeEvidence": "Label explicitly says Plants of Issyk-Kul Region, Kyrgyzstan; not inferred from mountains or coordinates.",
+      "taxonEvidence": "Label Tianschaniella umbellifera, determined Georgy A. Lazkov (FRU), October 2000; accepted canonical Tianschaniella umbellulifera; GBIF 10874182, species. Identity supported by existing primary typification/taxonomy sources in catalog.",
+      "date": "2000-07-20",
+      "publicationDate": null,
+      "reliability": "Preserved herbarium specimen; collector and specialist determination on label. GBIF TAXON_MATCH_FUZZY examined against exact label and existing nomenclatural sources; not treated as independent verification.",
+      "license": "CC0 1.0"
+    }
+  ],
+  "corroboration": [
+    {
+      "speciesId": "sorbus-persica",
+      "regionId": "jalal-abad",
+      "occurrenceUrl": "https://www.gbif.org/occurrence/1799011099",
+      "primaryUrl": "https://plant.depo.msu.ru/open/public/item/MW0839339",
+      "label": "Sorbus persica Hedl.; explicit Djalalabad prov.; 10.08.1995; M.G. Pimenov, E.V. Kljuykov, G.A. Lazkov; MW0839339.",
+      "limitations": "GBIF omits stateProvince; label inspected directly. Same species-region pair as the 2022 study, not an extra unique link. No exact location transcribed.",
+      "snapshotSha256": "70036124f49b56c460e0a993a38109e2605bc281f1f94ae663334851558b067a"
+    }
+  ],
+  "drafts": [
+    {
+      "speciesId": "semenovs-fir",
+      "regionId": "jalal-abad",
+      "source": "https://doi.org/10.11648/j.ajls.20251302.14",
+      "status": "needs_evidence",
+      "reason": "Publication names Abies semenovii; catalog represents Abies sibirica semenovii. Infraspecific concept needs explicit regional nomenclatural reconciliation before publication."
+    },
+    {
+      "scientificName": "Tulipa anadroma",
+      "regionId": "jalal-abad",
+      "source": "https://doi.org/10.11648/j.ajls.20251302.14",
+      "status": "needs_evidence",
+      "reason": "Exact catalog identity not established in this targeted check; no synonym or random replacement inferred."
+    },
+    {
+      "speciesId": "campanula-eugeniae",
+      "regionId": null,
+      "source": "https://www.gbif.org/occurrence/5058366279",
+      "status": "needs_evidence",
+      "reason": "Specimen record gives a mountain locality but no explicit administrative oblast. A mountain range is insufficient."
+    },
+    {
+      "speciesId": "berberis-kaschgarica",
+      "regionId": null,
+      "source": "https://www.gbif.org/occurrence/1320618564",
+      "status": "needs_evidence",
+      "reason": "GBIF countryCode KZ conflicts with proposed Kyrgyz regional use; no oblast stated. Record cannot support a Kyrgyz oblast link."
+    }
+  ],
+  "previousDrafts": "data/research/first-batch-regions.json remains unchanged and private; its two black-stork links were not admitted.",
+  "limits": "Dated occurrences do not prove present occupancy, range, abundance or population. No new species cards or scientific approvals."
+}

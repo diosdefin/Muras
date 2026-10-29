@@ -1,0 +1,3022 @@
+{
+  "schemaVersion": 1,
+  "documentType": "catalog-photo-only-amendments",
+  "task": "26.2",
+  "date": "2026-10-28",
+  "sourceCommit": "63f8e43d7d6b504079412c03c7cbf6eda421567a",
+  "authorization": "Владелец MURAS, задание №26.2: разрешено добавление проверенных лицензированных изображений только в пустые images первой партии из аудита №26.1; без изменения науки, прежних изображений и тестов.",
+  "candidateIds": [
+    "vipera-ursinii-renardi",
+    "cervus-elaphus-asiaticus",
+    "sorbaria-olgae",
+    "iskandera-alaica",
+    "scutellaria-nepetoides",
+    "lonicera-paradoxa",
+    "campanula-eugeniae",
+    "sorbus-persica",
+    "centaurea-alaica",
+    "berberis-kaschgarica",
+    "dorema-microcarpum",
+    "tianschaniella-umbellifera",
+    "eryx-tataricus",
+    "allactaga-saltator",
+    "otonycteris-hemprichi",
+    "sonjagaster-coronatus",
+    "barbus-capito-conocephalus",
+    "pike-asp",
+    "parnassius-loxias-tashkorensis"
+  ],
+  "connectedIds": [
+    "vipera-ursinii-renardi",
+    "cervus-elaphus-asiaticus",
+    "sorbaria-olgae",
+    "campanula-eugeniae",
+    "sorbus-persica",
+    "berberis-kaschgarica",
+    "dorema-microcarpum",
+    "tianschaniella-umbellifera",
+    "eryx-tataricus",
+    "allactaga-saltator",
+    "sonjagaster-coronatus",
+    "barbus-capito-conocephalus"
+  ],
+  "counts": {
+    "selected": 19,
+    "connected": 12,
+    "photograph": 8,
+    "herbarium": 4,
+    "scientificIllustration": 0,
+    "remainingSelectedPlaceholders": 7,
+    "beforeWithImages": 146,
+    "afterWithImages": 158,
+    "beforePlaceholders": 38,
+    "afterPlaceholders": 26,
+    "foundSuitableImages": 12,
+    "taxaSearched": 19,
+    "otherBatchUntouched": 19,
+    "afterCatalog": 184,
+    "archive": 2
+  },
+  "records": [
+    {
+      "id": "vipera-ursinii-renardi",
+      "scientificName": "Vipera renardi",
+      "kind": "photograph",
+      "status": "connected",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Juvenile_Vipera_renardi_retreating.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Juvenile_Vipera_renardi_retreating.jpg",
+      "author": "Matvey",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "originalPath": ".generated/bulk-originals/catalog184b1-vipera-ursinii-renardi.jpg",
+      "originalSha256": "eed3c605359b9276d251272866d716b14b5974c185bdb3e49ba41faace13a10a",
+      "originalBytes": 2697452,
+      "originalDimensions": {
+        "width": 3840,
+        "height": 2160
+      },
+      "image": {
+        "path": "assets/images/species/catalog184b1-vipera-ursinii-renardi.webp",
+        "width": 1800,
+        "height": 1013,
+        "sha256": "bc5ba72ae5500b79fcf276a4e8ac3b20667a6c7252c3b9644a1726c64339feb8",
+        "author": "Matvey",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Juvenile_Vipera_renardi_retreating.jpg",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Juvenile Vipera renardi retreating.jpg — Matvey, CC0; Wikimedia Commons.",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+          "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Vipera renardi по определению конкретного файла Commons. Не подтверждает местную кыргызстанскую популяцию или исторический подвид.",
+          "ky": null,
+          "en": null
+        }
+      },
+      "rightsEvidence": {
+        "platform": "Wikimedia Commons",
+        "page": "File:Juvenile Vipera renardi retreating.jpg",
+        "revisionId": 687295820,
+        "metadata": {
+          "license": "CC0",
+          "author": "Matvey",
+          "artistStatementSha256": "25d9e9cbceebd4183e90ab499ce0f74dfa3771468274724f16300e5312f4f5b0",
+          "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Juvenile_Vipera_renardi_retreating.jpg",
+          "revisionId": 687295820,
+          "width": 3840,
+          "height": 2160,
+          "description": "A snake (Vipera renardi) crawling away from the photographer.",
+          "metadataUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=File%3AJuvenile+Vipera+renardi+retreating.jpg&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids%7Ccontent&rvslots=main",
+          "accessedAt": "2026-10-28",
+          "originalSha256": "eed3c605359b9276d251272866d716b14b5974c185bdb3e49ba41faace13a10a"
+        },
+        "extmetadata": {
+          "DateTime": {
+            "value": "2020-02-06 11:19:58",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "Juvenile Vipera renardi retreating",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "CC-Zero|Self-published work|Files with coordinates missing SDC location of creation|Vipera renardi in Ukraine",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "GPSLatitude": {
+            "value": "46.860232",
+            "source": "commons-desc-page"
+          },
+          "GPSLongitude": {
+            "value": "35.203661",
+            "source": "commons-desc-page"
+          },
+          "GPSMapDatum": {
+            "value": "WGS-84",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "A snake (Vipera renardi) crawling away from the photographer.",
+            "source": "commons-desc-page"
+          },
+          "DateTimeOriginal": {
+            "value": "2019-10-13",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "<a href=\"//commons.wikimedia.org/wiki/User:Matvey\" title=\"User:Matvey\">Matvey</a>",
+            "source": "commons-desc-page"
+          },
+          "LicenseShortName": {
+            "value": "CC0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Zero, Public Domain Dedication",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "false",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        },
+        "wikitextSha256": "87faea35cb777eac6287ec813db0de64e9dda3670dc118d2a351ebe7708e1b50",
+        "licenseTemplates": [
+          "{{self|cc-zero}}"
+        ]
+      },
+      "visualReview": {
+        "reviewed": true,
+        "independentTaxonomicDetermination": false,
+        "scope": "организм и тип медиа соответствуют документированной подписи; без нового установления местного подвида"
+      },
+      "finalWebPBytes": 452492,
+      "scientificFingerprint": "f75ca35dc12a60db0dcd805738e13371eef9ae21d938ee4a7afcb9393c22661c",
+      "finalWebPSha256": "bc5ba72ae5500b79fcf276a4e8ac3b20667a6c7252c3b9644a1726c64339feb8",
+      "primaryEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Juvenile_Vipera_renardi_retreating.jpg",
+      "originalDimensionsMeaning": "размеры исходного скачанного файла; не заявление о полном мастер-файле камеры/сканера"
+    },
+    {
+      "id": "cervus-elaphus-asiaticus",
+      "scientificName": "Cervus canadensis",
+      "kind": "photograph",
+      "status": "connected",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/3/32/Altai_maral_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Altai_maral_2.jpg",
+      "author": "Dmitry A. Mottl",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "originalPath": ".generated/bulk-originals/catalog184b1-cervus-elaphus-asiaticus.jpg",
+      "originalSha256": "79e5973166b2af39b7abda3c4a05c2e73579c9b9cbd940ea4ccd89a5bc337913",
+      "originalBytes": 3110752,
+      "originalDimensions": {
+        "width": 3888,
+        "height": 2592
+      },
+      "image": {
+        "path": "assets/images/species/catalog184b1-cervus-elaphus-asiaticus.webp",
+        "width": 1800,
+        "height": 1200,
+        "sha256": "5924cdd5e75c79c3e5cd020f1ca1ba4597d950dd1a0dc6f00417249de9e04d52",
+        "author": "Dmitry A. Mottl",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Altai_maral_2.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "attribution": "Altai maral 2.jpg — Dmitry A. Mottl, CC BY-SA 3.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+          "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Алтайский марал, Cervus canadensis по категории источника. Фото вида не удостоверяет историческую форму asiaticus и не является находкой в Кыргызстане.",
+          "ky": null,
+          "en": null
+        }
+      },
+      "rightsEvidence": {
+        "platform": "Wikimedia Commons",
+        "page": "File:Altai maral 2.jpg",
+        "revisionId": 789734670,
+        "metadata": {
+          "license": "CC BY-SA 3.0",
+          "author": "Dmitry A. Mottl",
+          "artistStatementSha256": "60cb4f92154b8ce8c4be22a0544409de24cdf8ab89d727670358aa6390da4654",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Altai_maral_2.jpg",
+          "revisionId": 789734670,
+          "width": 3888,
+          "height": 2592,
+          "description": "Altai maral",
+          "metadataUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=File%3AAltai+maral+2.jpg&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids%7Ccontent&rvslots=main",
+          "accessedAt": "2026-10-28",
+          "originalSha256": "79e5973166b2af39b7abda3c4a05c2e73579c9b9cbd940ea4ccd89a5bc337913"
+        },
+        "extmetadata": {
+          "DateTime": {
+            "value": "2009-02-03 12:36:46",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "Altai maral 2",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "Cervus canadensis sibiricus|GFDL|License migration redundant|Self-published work|Animals in the Altai Mountains|May 2008 Kazakhstan photographs|Artiodactyla of Kazakhstan|Mountains of East Kazakhstan Region|Cervus elaphus (antlers in velvet)|Photos by Mottl",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "Altai maral",
+            "source": "commons-desc-page"
+          },
+          "DateTimeOriginal": {
+            "value": "Taken in May 2008",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "<a href=\"//commons.wikimedia.org/wiki/User:Dmottl\" title=\"User:Dmottl\">Dmitry A. Mottl</a>",
+            "source": "commons-desc-page"
+          },
+          "LicenseShortName": {
+            "value": "CC BY-SA 3.0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Attribution-Share Alike 3.0",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "true",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc-by-sa-3.0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        },
+        "wikitextSha256": "140a305db3177f9709e90fb28aea3a875e4cf05e19500b67b5fd5af70a2e86b4",
+        "licenseTemplates": [
+          "{{self|cc-by-sa-3.0|GFDL}}"
+        ]
+      },
+      "visualReview": {
+        "reviewed": true,
+        "independentTaxonomicDetermination": false,
+        "scope": "организм и тип медиа соответствуют документированной подписи; без нового установления местного подвида"
+      },
+      "finalWebPBytes": 235536,
+      "scientificFingerprint": "0c75160dc1a1dab35c852832eff75440d4254ea41fd3b9b53dd98d51c1c21302",
+      "finalWebPSha256": "5924cdd5e75c79c3e5cd020f1ca1ba4597d950dd1a0dc6f00417249de9e04d52",
+      "primaryEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Altai_maral_2.jpg",
+      "originalDimensionsMeaning": "размеры исходного скачанного файла; не заявление о полном мастер-файле камеры/сканера"
+    },
+    {
+      "id": "sorbaria-olgae",
+      "scientificName": "Sorbaria tomentosa",
+      "kind": "photograph",
+      "status": "connected",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/7/70/Sorbaria-tomentosa-flowers.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Sorbaria-tomentosa-flowers.JPG",
+      "author": "Sten Porse",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "originalPath": ".generated/bulk-originals/catalog184b1-sorbaria-olgae.jpg",
+      "originalSha256": "df893cabbf454d438199dffb66315666339a0a6ade3ec59e138b68cc827ff184",
+      "originalBytes": 164637,
+      "originalDimensions": {
+        "width": 1232,
+        "height": 792
+      },
+      "image": {
+        "path": "assets/images/species/catalog184b1-sorbaria-olgae.webp",
+        "width": 1232,
+        "height": 792,
+        "sha256": "0a4f23ee21bbb0ad169618006f711688b62ee4bf0868b15b89ef2c6a98213ea8",
+        "author": "Sten Porse",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Sorbaria-tomentosa-flowers.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "attribution": "Sorbaria-tomentosa-flowers.JPG — Sten Porse, CC BY-SA 3.0; Wikimedia Commons. Производные изображения распространяются под той же лицензией.",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+          "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Цветки Sorbaria tomentosa по подписи источника; фото широкого принятого вида не удостоверяет историческую местную форму olgae.",
+          "ky": null,
+          "en": null
+        }
+      },
+      "rightsEvidence": {
+        "platform": "Wikimedia Commons",
+        "page": "File:Sorbaria-tomentosa-flowers.JPG",
+        "revisionId": 1263983778,
+        "metadata": {
+          "license": "CC BY-SA 3.0",
+          "author": "Sten Porse",
+          "artistStatementSha256": "f48c52ef3756d5c82f14eda7f392e70f2e3a6388aa296eeedc4026540ac954ef",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Sorbaria-tomentosa-flowers.JPG",
+          "revisionId": 1263983778,
+          "width": 1232,
+          "height": 792,
+          "description": "Sorbaria tomentosa: Flowers",
+          "metadataUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=File%3ASorbaria-tomentosa-flowers.JPG&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids%7Ccontent&rvslots=main",
+          "accessedAt": "2026-10-28",
+          "originalSha256": "df893cabbf454d438199dffb66315666339a0a6ade3ec59e138b68cc827ff184"
+        },
+        "extmetadata": {
+          "DateTime": {
+            "value": "2006-09-29 13:34:14",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "Sorbaria-tomentosa-flowers",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "Sorbaria tomentosa|GFDL|Taken with Canon EOS 300D|License migration redundant|License migration completed|Self-published work|Images by User:Sten from da.wikipedia|Unidentified Syrphidae|Files with coordinates missing SDC location of creation|Insects on Sorbaria flowers",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "GPSLatitude": {
+            "value": "56.057833",
+            "source": "commons-desc-page"
+          },
+          "GPSLongitude": {
+            "value": "10.200417",
+            "source": "commons-desc-page"
+          },
+          "GPSMapDatum": {
+            "value": "WGS-84",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "<i><a href=\"//commons.wikimedia.org/wiki/Sorbaria_tomentosa\" title=\"Sorbaria tomentosa\">Sorbaria tomentosa</a></i>: Flowers",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "<a href=\"//commons.wikimedia.org/wiki/User:Sten\" title=\"User:Sten\">Sten Porse</a>",
+            "source": "commons-desc-page"
+          },
+          "LicenseShortName": {
+            "value": "CC BY-SA 3.0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Attribution-Share Alike 3.0",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "true",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "https://creativecommons.org/licenses/by-sa/3.0",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc-by-sa-3.0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        },
+        "wikitextSha256": "38c789b9c9506920108799c58c96adde3bd34cb65b09940025b3f83a93e3d341",
+        "licenseTemplates": [
+          "{{self|cc-by-sa-3.0|GFDL}}"
+        ]
+      },
+      "visualReview": {
+        "reviewed": true,
+        "independentTaxonomicDetermination": false,
+        "scope": "организм и тип медиа соответствуют документированной подписи; без нового установления местного подвида"
+      },
+      "finalWebPBytes": 79964,
+      "scientificFingerprint": "a8151e7afd3083058330b8e61ea009d7583b27dd51fb13c81f4e020841c1a46d",
+      "finalWebPSha256": "0a4f23ee21bbb0ad169618006f711688b62ee4bf0868b15b89ef2c6a98213ea8",
+      "primaryEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Sorbaria-tomentosa-flowers.JPG",
+      "originalDimensionsMeaning": "размеры исходного скачанного файла; не заявление о полном мастер-файле камеры/сканера"
+    },
+    {
+      "id": "campanula-eugeniae",
+      "scientificName": "Campanula eugeniae",
+      "kind": "herbarium",
+      "status": "connected",
+      "sourceUrl": "https://d2jcv3kl45hlgi.cloudfront.net/1cbffa57060410b44a51238c9a9ac792.jpg",
+      "originalPage": "https://www.gbif.org/occurrence/5058366279",
+      "author": "Royal Botanic Gardens, Kew (правообладатель коллекции; фотограф не указан)",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "subjectAsDocumented": "Campanula eugeniae Fed.",
+      "primaryEvidence": {
+        "key": 5058366279,
+        "scientificName": "Campanula eugeniae Fed.",
+        "acceptedScientificName": "Campanula eugeniae Fed.",
+        "taxonRank": "SPECIES",
+        "taxonKey": 5411287,
+        "acceptedTaxonKey": 5411287,
+        "institutionCode": "K",
+        "collectionCode": "Herbarium",
+        "catalogNumber": "K005240166",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "recordedBy": "Lazkov, G.A.",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "media": [
+          {
+            "type": "StillImage",
+            "format": "image/jpeg",
+            "references": "http://specimens.kew.org/Herbarium/K005240166",
+            "license": "http://creativecommons.org/licenses/by/4.0/",
+            "rightsHolder": "Royal Botanic Gardens, Kew",
+            "identifier": "https://d2jcv3kl45hlgi.cloudfront.net/1cbffa57060410b44a51238c9a9ac792.jpg"
+          }
+        ]
+      },
+      "sourceMedia": {
+        "type": "StillImage",
+        "format": "image/jpeg",
+        "references": "http://specimens.kew.org/Herbarium/K005240166",
+        "license": "http://creativecommons.org/licenses/by/4.0/",
+        "rightsHolder": "Royal Botanic Gardens, Kew",
+        "identifier": "https://d2jcv3kl45hlgi.cloudfront.net/1cbffa57060410b44a51238c9a9ac792.jpg"
+      },
+      "originalSha256": "04ec4039fd7823d525093dfe00e1d0389ac26783db77f8355021fe6c6599ce36",
+      "originalBytes": 17510341,
+      "originalDimensions": {
+        "width": 8736,
+        "height": 11648,
+        "format": "JPEG"
+      },
+      "image": {
+        "path": "assets/images/species/catalog184b1-campanula-eugeniae.webp",
+        "width": 1350,
+        "height": 1800,
+        "sha256": "6d721dd475db7ffa8481a824c8635ad710066436907c5e3b033361348b453962",
+        "author": "Royal Botanic Gardens, Kew (правообладатель коллекции; фотограф не указан)",
+        "originalPage": "https://www.gbif.org/occurrence/5058366279",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Campanula eugeniae Fed. — Royal Botanic Gardens, Kew (правообладатель коллекции; фотограф не указан), CC BY 4.0; https://www.gbif.org/occurrence/5058366279.",
+        "modifications": [
+          "Оптимизация существующим scripts/process_data.py: WebP quality 82, max-edge 1800, без апскейла, EXIF-transpose и удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Гербарный лист K005240166, Royal Botanic Gardens, Kew: Campanula eugeniae по определению коллекции. Не современное наблюдение или оценка популяции Кыргызстана.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "independentTaxonomicDetermination": false,
+        "scope": "проверены пиксели, этикетка/штрихкод для гербария и связь точного вида с первичным наблюдением"
+      },
+      "finalWebPBytes": 92712,
+      "scientificFingerprint": "63f383ff138e54796ed6fbd9041491d2aa26c4fd4ed38dd0a75a6cedf2f52469",
+      "finalWebPSha256": "6d721dd475db7ffa8481a824c8635ad710066436907c5e3b033361348b453962",
+      "primaryEvidenceUrl": "https://api.gbif.org/v1/occurrence/5058366279",
+      "originalDimensionsMeaning": "размеры исходного скачанного файла; не заявление о полном мастер-файле камеры/сканера",
+      "rightsNote": "Печатная цветовая шкала содержит старую надпись copyright/all rights reserved; её не удаляли. Использовано явное отдельное разрешение media.license на конкретный цифровой файл, опубликованное соответствующим учреждением через GBIF, а не лицензия occurrence/dataset."
+    },
+    {
+      "id": "sorbus-persica",
+      "scientificName": "Hedlundia persica",
+      "kind": "herbarium",
+      "status": "connected",
+      "sourceUrl": "https://plant.depo.msu.ru/open/public/item/MW0839339/img/0.jpg?gbif",
+      "originalPage": "https://plant.depo.msu.ru/open/public/item/MW0839339",
+      "author": "ELAR corporation (Moscow, Russia); Moscow State University (правообладатель)",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "subjectAsDocumented": "Hedlundia persica (Hedl.) Mezhenskyj",
+      "primaryEvidence": {
+        "key": 1799011099,
+        "scientificName": "Hedlundia persica (Hedl.) Mezhenskyj",
+        "acceptedScientificName": "Hedlundia persica (Hedl.) Mezhenskyj",
+        "taxonRank": "SPECIES",
+        "taxonKey": 10830289,
+        "acceptedTaxonKey": 10830289,
+        "institutionCode": "Moscow State University",
+        "collectionCode": "MW",
+        "catalogNumber": "MW0839339",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "recordedBy": "Pimenov M. G.",
+        "rightsHolder": "Moscow State University",
+        "references": "https://plant.depo.msu.ru/open/public/item/MW0839339",
+        "license": "http://creativecommons.org/licenses/by/4.0/legalcode",
+        "media": [
+          {
+            "type": "StillImage",
+            "format": "image/jpg",
+            "references": "https://plant.depo.msu.ru/open/public/item/MW0839339",
+            "title": "Hedlundia persica (Hedl.) Mezhenskyj, Moscow University Herbarium",
+            "description": "Scan of Hedlundia persica (Hedl.) Mezhenskyj from Kyrgyzstan deposited in the Moscow University Herbarium (MW0839339)",
+            "creator": "ELAR corporation (Moscow, Russia)",
+            "publisher": "Moscow State University",
+            "license": "http://creativecommons.org/licenses/by/4.0/",
+            "rightsHolder": "Moscow State University (copyright is managed by Dr. Alexey P. Seregin)",
+            "identifier": "https://plant.depo.msu.ru/open/public/item/MW0839339/img/0.jpg?gbif"
+          }
+        ]
+      },
+      "sourceMedia": {
+        "type": "StillImage",
+        "format": "image/jpg",
+        "references": "https://plant.depo.msu.ru/open/public/item/MW0839339",
+        "title": "Hedlundia persica (Hedl.) Mezhenskyj, Moscow University Herbarium",
+        "description": "Scan of Hedlundia persica (Hedl.) Mezhenskyj from Kyrgyzstan deposited in the Moscow University Herbarium (MW0839339)",
+        "creator": "ELAR corporation (Moscow, Russia)",
+        "publisher": "Moscow State University",
+        "license": "http://creativecommons.org/licenses/by/4.0/",
+        "rightsHolder": "Moscow State University (copyright is managed by Dr. Alexey P. Seregin)",
+        "identifier": "https://plant.depo.msu.ru/open/public/item/MW0839339/img/0.jpg?gbif"
+      },
+      "originalSha256": "d71c1a60a994b57a30bd6b02cf05ab9dd15f4fea474ad256bac4a00240367496",
+      "originalBytes": 2301866,
+      "originalDimensions": {
+        "width": 3736,
+        "height": 5272,
+        "format": "JPEG"
+      },
+      "image": {
+        "path": "assets/images/species/catalog184b1-sorbus-persica.webp",
+        "width": 1276,
+        "height": 1800,
+        "sha256": "ba3ba124886b567765ea065b1060351ecd04a2cc13e340535282eee85e0e583d",
+        "author": "ELAR corporation (Moscow, Russia); Moscow State University (правообладатель)",
+        "originalPage": "https://plant.depo.msu.ru/open/public/item/MW0839339",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Hedlundia persica (Hedl.) Mezhenskyj — ELAR corporation (Moscow, Russia); Moscow State University (правообладатель), CC BY 4.0; https://plant.depo.msu.ru/open/public/item/MW0839339.",
+        "modifications": [
+          "Оптимизация существующим scripts/process_data.py: WebP quality 82, max-edge 1800, без апскейла, EXIF-transpose и удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Гербарный лист MW0839339, Moscow State University: Hedlundia persica по определению коллекции; скан ELAR corporation. Исторический образец, не подтверждение современного состояния популяции.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "independentTaxonomicDetermination": false,
+        "scope": "проверены пиксели, этикетка/штрихкод для гербария и связь точного вида с первичным наблюдением"
+      },
+      "finalWebPBytes": 187528,
+      "scientificFingerprint": "03c98c4991669b0647bbe882ba2140b1d51518b687c7ea2918e0b92d4368ff76",
+      "finalWebPSha256": "ba3ba124886b567765ea065b1060351ecd04a2cc13e340535282eee85e0e583d",
+      "primaryEvidenceUrl": "https://api.gbif.org/v1/occurrence/1799011099",
+      "originalDimensionsMeaning": "размеры исходного скачанного файла; не заявление о полном мастер-файле камеры/сканера"
+    },
+    {
+      "id": "berberis-kaschgarica",
+      "scientificName": "Berberis ulicina",
+      "kind": "herbarium",
+      "status": "connected",
+      "sourceUrl": "https://collections.nmnh.si.edu/media/?i=10319955&h=2000",
+      "originalPage": "https://www.gbif.org/occurrence/1320618564",
+      "author": "Ingrid P. Lin; Smithsonian Institution, National Museum of Natural History (коллекция)",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "subjectAsDocumented": "Berberis kaschgarica Rupr.",
+      "primaryEvidence": {
+        "key": 1320618564,
+        "scientificName": "Berberis kaschgarica Rupr.",
+        "acceptedScientificName": "Berberis ulicina Hook.fil. & Thomson",
+        "taxonRank": "SPECIES",
+        "taxonKey": 5792962,
+        "acceptedTaxonKey": 3980999,
+        "institutionCode": "US",
+        "collectionCode": "US",
+        "catalogNumber": "US 2879014",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "recordedBy": "V. Vassiljeva",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "media": [
+          {
+            "type": "StillImage",
+            "format": "image/jpeg",
+            "title": "01121980.tif",
+            "description": "US National Herbarium Sheet , Barcode 01121980",
+            "source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "creator": "Ingrid P. Lin",
+            "publisher": "Smithsonian Institution, NMNH, Botany",
+            "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "identifier": "https://collections.nmnh.si.edu/media/?i=10319955&h=2000"
+          },
+          {
+            "type": "StillImage",
+            "format": "image/jpeg",
+            "title": "01121980.tif",
+            "description": "Barcode 01121980",
+            "source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+            "creator": "Conveyor Belt",
+            "publisher": "Smithsonian Institution, NMNH, Botany",
+            "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "identifier": "https://collections.nmnh.si.edu/media/?i=14050718&h=2000"
+          }
+        ]
+      },
+      "sourceMedia": {
+        "type": "StillImage",
+        "format": "image/jpeg",
+        "title": "01121980.tif",
+        "description": "US National Herbarium Sheet , Barcode 01121980",
+        "source": "US National Herbarium, Department of Botany, NMNH, Smithsonian Institution",
+        "creator": "Ingrid P. Lin",
+        "publisher": "Smithsonian Institution, NMNH, Botany",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "identifier": "https://collections.nmnh.si.edu/media/?i=10319955&h=2000"
+      },
+      "originalSha256": "dfc2a894c0d4b7311ad19af1687b0a1a104191e5a5e4eed38b099397c8dfa4ff",
+      "originalBytes": 432212,
+      "originalDimensions": {
+        "width": 1520,
+        "height": 2000,
+        "format": "JPEG"
+      },
+      "image": {
+        "path": "assets/images/species/catalog184b1-berberis-kaschgarica.webp",
+        "width": 1368,
+        "height": 1800,
+        "sha256": "a36568be9db9c2a4ee9b4ed5b95e75d05d1731343e157af0681c820ed1e7ad47",
+        "author": "Ingrid P. Lin; Smithsonian Institution, National Museum of Natural History (коллекция)",
+        "originalPage": "https://www.gbif.org/occurrence/1320618564",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Berberis kaschgarica Rupr. — Ingrid P. Lin; Smithsonian Institution, National Museum of Natural History (коллекция), CC0; https://www.gbif.org/occurrence/1320618564.",
+        "modifications": [
+          "Оптимизация существующим scripts/process_data.py: WebP quality 82, max-edge 1800, без апскейла, EXIF-transpose и удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Гербарный образец US 2879014 / 01121980, Smithsonian NMNH: историческое имя Berberis kaschgarica, в MURAS принято Berberis ulicina. Не новая находка в Кыргызстане.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "independentTaxonomicDetermination": false,
+        "scope": "проверены пиксели, этикетка/штрихкод для гербария и связь точного вида с первичным наблюдением"
+      },
+      "finalWebPBytes": 288174,
+      "scientificFingerprint": "f19df7079bb1ff2247800d8d279405dde583a229e4d9295d8f3eb588b7c42fb4",
+      "finalWebPSha256": "a36568be9db9c2a4ee9b4ed5b95e75d05d1731343e157af0681c820ed1e7ad47",
+      "primaryEvidenceUrl": "https://api.gbif.org/v1/occurrence/1320618564",
+      "originalDimensionsMeaning": "размеры исходного скачанного файла; не заявление о полном мастер-файле камеры/сканера",
+      "deliveryRendition": true,
+      "rightsNote": "Печатная цветовая шкала содержит старую надпись copyright/all rights reserved; её не удаляли. Использовано явное отдельное разрешение media.license на конкретный цифровой файл, опубликованное соответствующим учреждением через GBIF, а не лицензия occurrence/dataset."
+    },
+    {
+      "id": "dorema-microcarpum",
+      "scientificName": "Ferula namanganica",
+      "kind": "photograph",
+      "status": "connected",
+      "sourceUrl": "https://binary.pensoft.net/fig/705892/oo/file.jpg",
+      "originalPage": "https://natureconservation.pensoft.net/article/84834/",
+      "author": "Komiljon Sh. Tojibaev et al. (2022; авторский коллектив статьи)",
+      "articleAuthors": [
+        "Komiljon Sh. Tojibaev",
+        "Farkhod I. Karimov",
+        "Hushbaht R. Hoshimov",
+        "Chang-Gee Jang",
+        "Nu-Ree Na",
+        "Min-Su Park",
+        "Kae-Sun Chang",
+        "Hee-Young Gil",
+        "Shukherdorj Baasanmunkh",
+        "Hyeok Jae Choi"
+      ],
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "originalPath": ".generated/catalog-184-photo-batch-1/originals/dorema-figure-3.jpg",
+      "originalSha256": "33679346d8848a4ce4367d392e6cd1f827117c1be4097be957ce878a0b176233",
+      "originalBytes": 2896317,
+      "originalDimensions": {
+        "width": 1512,
+        "height": 1767
+      },
+      "crop": {
+        "panel": "Figure 3A",
+        "box": [
+          0,
+          0,
+          493,
+          880
+        ],
+        "cropSha256": "e62d110f56ecd95e77319ae8d803dfbe697abaeab83ef8335e98329908e853c4",
+        "method": "точное прямоугольное выделение панели; пиксели не дорисовывались и не перекрашивались"
+      },
+      "identity": {
+        "documentedName": "Dorema microcarpum",
+        "acceptedName": "Ferula namanganica",
+        "existingTaxonomyDecision": "data/research/catalog-200-final-taxonomy-review.json",
+        "unrelatedPanelsExcluded": true
+      },
+      "rightsEvidence": {
+        "doi": "10.3897/natureconservation.49.84834",
+        "articleXmlSha256": "419eb2d58c72c18f474edfd1ce610644644331d1f905011beda6044a09e9d637",
+        "license": "CC BY 4.0",
+        "figure": "3",
+        "panel": "A",
+        "photographerSeparatelyNamed": false,
+        "rightsHolder": "авторский коллектив статьи"
+      },
+      "image": {
+        "path": "assets/images/species/catalog184b1-dorema-microcarpum.webp",
+        "width": 493,
+        "height": 880,
+        "sha256": "230d8889e36d41daf1cff843426656b7e7fb509a670472a6c559b4960b196f2d",
+        "author": "Komiljon Sh. Tojibaev et al. (2022; авторский коллектив статьи)",
+        "originalPage": "https://natureconservation.pensoft.net/article/84834/",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Dorema microcarpum (= Ferula namanganica) — Komiljon Sh. Tojibaev et al., 2022, Figure 3A, Nature Conservation 49:1–30, DOI 10.3897/natureconservation.49.84834; CC BY 4.0. Выделена панель A; фотограф отдельно в статье не указан.",
+        "modifications": [
+          "Выделение только панели A (0,0,493,880) из Figure 3, без изменения формы и окраски; соседние виды не включены.",
+          "Штатная оптимизация scripts/process_data.py: WebP quality 82, без апскейла, сохранены пропорции; удалены EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Ferula namanganica под документированным историческим именем Dorema microcarpum: фотография из статьи Tojibaev et al. (2022), Figure 3A. Снимок в Узбекистане не подтверждает современную популяцию Кыргызстана.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "scope": "полная таблица и панель A просмотрены; сверена буквенная подпись первоисточника",
+        "independentTaxonomicDetermination": false
+      },
+      "finalWebPBytes": 159458,
+      "scientificFingerprint": "a3b3dd7ad50f2f998b2e9c842ae9e70be7811f7a28a1f3a218587cf7ec2e2edb",
+      "finalWebPSha256": "230d8889e36d41daf1cff843426656b7e7fb509a670472a6c559b4960b196f2d",
+      "primaryEvidenceUrl": "https://doi.org/10.3897/natureconservation.49.84834",
+      "originalDimensionsMeaning": "размеры исходного скачанного файла; не заявление о полном мастер-файле камеры/сканера"
+    },
+    {
+      "id": "tianschaniella-umbellifera",
+      "scientificName": "Tianschaniella umbellulifera",
+      "kind": "herbarium",
+      "status": "connected",
+      "sourceUrl": "https://iiif.rbge.org.uk/herb/iiif/E00714915/full/1600,/0/default.jpg",
+      "originalPage": "https://www.gbif.org/occurrence/1061254332",
+      "author": "Royal Botanic Garden Edinburgh (коллекция и поставщик изображения; фотограф не указан)",
+      "license": "CC0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "subjectAsDocumented": "Tianschaniella umbellulifera B.Fedtsch. ex Popov",
+      "primaryEvidence": {
+        "key": 1061254332,
+        "scientificName": "Tianschaniella umbellulifera B.Fedtsch. ex Popov, 1951",
+        "acceptedScientificName": "Tianschaniella umbellulifera B.Fedtsch. ex Popov, 1951",
+        "taxonRank": "SPECIES",
+        "taxonKey": 10874182,
+        "acceptedTaxonKey": 10874182,
+        "institutionCode": "RBGE",
+        "collectionCode": "E",
+        "catalogNumber": "E00714915",
+        "basisOfRecord": "PRESERVED_SPECIMEN",
+        "recordedBy": "Phillippe, Loy R.; Taft, John B.; Dietrich, Christopher H.; Warren, Emily; Lazkov, Georgy A.,",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/legalcode",
+        "media": [
+          {
+            "type": "InteractiveResource",
+            "format": "application/ld+json",
+            "description": "IIIF Manifest for specimen E00714915",
+            "creator": "Royal Botanic Garden Edinburgh",
+            "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "rightsHolder": "Royal Botanic Garden Edinburgh",
+            "identifier": "https://iiif.rbge.org.uk/herb/iiif/E00714915/manifest"
+          },
+          {
+            "type": "StillImage",
+            "format": "image/jpeg",
+            "description": "JPEG Image of specimen E00714915",
+            "creator": "Royal Botanic Garden Edinburgh",
+            "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+            "rightsHolder": "Royal Botanic Garden Edinburgh",
+            "identifier": "https://iiif.rbge.org.uk/herb/iiif/E00714915/full/1600,/0/default.jpg"
+          },
+          {
+            "type": "StillImage",
+            "format": "image/jpeg",
+            "identifier": "https://iiif.rbge.org.uk/herb/iiif/E00714915/full/300,/0/default.jpg"
+          }
+        ]
+      },
+      "sourceMedia": {
+        "type": "StillImage",
+        "format": "image/jpeg",
+        "description": "JPEG Image of specimen E00714915",
+        "creator": "Royal Botanic Garden Edinburgh",
+        "license": "http://creativecommons.org/publicdomain/zero/1.0/",
+        "rightsHolder": "Royal Botanic Garden Edinburgh",
+        "identifier": "https://iiif.rbge.org.uk/herb/iiif/E00714915/full/1600,/0/default.jpg"
+      },
+      "originalSha256": "52f604f86fa62fd3bca8de54a2a5ea7c193239c8568dcc8a70499d6590b3f11a",
+      "originalBytes": 641993,
+      "originalDimensions": {
+        "width": 2912,
+        "height": 4096,
+        "format": "JPEG"
+      },
+      "image": {
+        "path": "assets/images/species/catalog184b1-tianschaniella-umbellifera.webp",
+        "width": 1280,
+        "height": 1800,
+        "sha256": "32ac313c1422e57f35c49cdfebcee6bb93149c3c7ba2197d47c22db43b21fec8",
+        "author": "Royal Botanic Garden Edinburgh (коллекция и поставщик изображения; фотограф не указан)",
+        "originalPage": "https://www.gbif.org/occurrence/1061254332",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "attribution": "Tianschaniella umbellulifera B.Fedtsch. ex Popov — Royal Botanic Garden Edinburgh (коллекция и поставщик изображения; фотограф не указан), CC0; https://www.gbif.org/occurrence/1061254332.",
+        "modifications": [
+          "Оптимизация существующим scripts/process_data.py: WebP quality 82, max-edge 1800, без апскейла, EXIF-transpose и удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Гербарный лист E00714915, Royal Botanic Garden Edinburgh: Tianschaniella umbellulifera по определению коллекции. Не новое полевое наблюдение и не современная численность.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "independentTaxonomicDetermination": false,
+        "scope": "проверены пиксели, этикетка/штрихкод для гербария и связь точного вида с первичным наблюдением"
+      },
+      "finalWebPBytes": 67136,
+      "scientificFingerprint": "599f1a8dbf739fd5f08687f5ea636502f66a46e781d903f03c6972fa49d66e93",
+      "finalWebPSha256": "32ac313c1422e57f35c49cdfebcee6bb93149c3c7ba2197d47c22db43b21fec8",
+      "primaryEvidenceUrl": "https://api.gbif.org/v1/occurrence/1061254332",
+      "originalDimensionsMeaning": "размеры исходного скачанного файла; не заявление о полном мастер-файле камеры/сканера",
+      "deliveryRendition": true,
+      "identityNote": "На этикетке историческое написание Tianschaniella umbellifera; в записи RBGE/GBIF и сохранённом научном пакете — T. umbellulifera. Таксономическое решение проекта не изменялось.",
+      "rightsNote": "Печатная цветовая шкала содержит старую надпись copyright/all rights reserved; её не удаляли. Использовано явное отдельное разрешение media.license на конкретный цифровой файл, опубликованное соответствующим учреждением через GBIF, а не лицензия occurrence/dataset."
+    },
+    {
+      "id": "eryx-tataricus",
+      "scientificName": "Eryx miliaris",
+      "kind": "photograph",
+      "status": "connected",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2d/BennyTrapp_Eryx_miliaris.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:BennyTrapp_Eryx_miliaris.jpg",
+      "author": "Benny Trapp",
+      "license": "CC BY 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+      "originalPath": ".generated/bulk-originals/catalog184b1-eryx-tataricus.jpg",
+      "originalSha256": "c86a0e4226be1de9b2d2319be2630c20455c4949c6f333c14faf6d414da1e535",
+      "originalBytes": 3617987,
+      "originalDimensions": {
+        "width": 3969,
+        "height": 2490
+      },
+      "image": {
+        "path": "assets/images/species/catalog184b1-eryx-tataricus.webp",
+        "width": 1800,
+        "height": 1129,
+        "sha256": "9a41582f445496593e0e45c70ebd925f22fbd877173e02d15b4050753a8bfd2c",
+        "author": "Benny Trapp",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:BennyTrapp_Eryx_miliaris.jpg",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+        "attribution": "BennyTrapp Eryx miliaris.jpg — Benny Trapp, CC BY 3.0; Wikimedia Commons.",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+          "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Eryx miliaris по подписи Commons; не новое наблюдение в Кыргызстане, не подтверждение исторической локальной формы tataricus.",
+          "ky": null,
+          "en": null
+        }
+      },
+      "rightsEvidence": {
+        "platform": "Wikimedia Commons",
+        "page": "File:BennyTrapp Eryx miliaris.jpg",
+        "revisionId": 1123417427,
+        "metadata": {
+          "license": "CC BY 3.0",
+          "author": "Benny Trapp",
+          "artistStatementSha256": "27d4298bdb809ac2ba7cced6a2253c1ab91a73daa450d1bba57dd46ecc78a27e",
+          "licenseUrl": "https://creativecommons.org/licenses/by/3.0/",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:BennyTrapp_Eryx_miliaris.jpg",
+          "revisionId": 1123417427,
+          "width": 3969,
+          "height": 2490,
+          "description": "Eryx miliaris",
+          "metadataUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=File%3ABennyTrapp+Eryx+miliaris.jpg&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids%7Ccontent&rvslots=main",
+          "accessedAt": "2026-10-28",
+          "originalSha256": "c86a0e4226be1de9b2d2319be2630c20455c4949c6f333c14faf6d414da1e535"
+        },
+        "extmetadata": {
+          "DateTime": {
+            "value": "2011-01-09 06:37:54",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "BennyTrapp Eryx miliaris",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "Eryx miliaris|GFDL|Taken with Nikon D700|License migration redundant|Self-published work|Photographs by Benny Trapp|Boidae heads",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "quality",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "Eryx miliaris",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<span class=\"int-own-work\" lang=\"en\">Own work</span>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "<a href=\"//commons.wikimedia.org/wiki/User:Benny_Trapp\" title=\"User:Benny Trapp\">Benny Trapp</a>",
+            "source": "commons-desc-page"
+          },
+          "LicenseShortName": {
+            "value": "CC BY 3.0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Attribution 3.0",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "true",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "https://creativecommons.org/licenses/by/3.0",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc-by-3.0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        },
+        "wikitextSha256": "920efd7bdad94a031e696ab465512199157c69d9c4988ebdab04f3d7f81414a4",
+        "licenseTemplates": [
+          "{{self|GFDL|cc-by-3.0}}"
+        ]
+      },
+      "visualReview": {
+        "reviewed": true,
+        "independentTaxonomicDetermination": false,
+        "scope": "организм и тип медиа соответствуют документированной подписи; без нового установления местного подвида"
+      },
+      "finalWebPBytes": 261434,
+      "scientificFingerprint": "47da2d2799ed3409c8ffe7f0e2901846b400bf821178f095a3b78d773df0cb87",
+      "finalWebPSha256": "9a41582f445496593e0e45c70ebd925f22fbd877173e02d15b4050753a8bfd2c",
+      "primaryEvidenceUrl": "https://commons.wikimedia.org/wiki/File:BennyTrapp_Eryx_miliaris.jpg",
+      "originalDimensionsMeaning": "размеры исходного скачанного файла; не заявление о полном мастер-файле камеры/сканера"
+    },
+    {
+      "id": "allactaga-saltator",
+      "scientificName": "Orientallactaga sibirica",
+      "kind": "photograph",
+      "status": "connected",
+      "sourceUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Orientallactaga_sibirica.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Orientallactaga_sibirica.jpg",
+      "author": "Jan Ebr & Ivana Ebrová",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "originalPath": ".generated/bulk-originals/catalog184b1-allactaga-saltator.jpg",
+      "originalSha256": "6ff7d0cd9f171c1e712821516bcbfa0b9972af148d1f67110c4f2b8529bac1e8",
+      "originalBytes": 898088,
+      "originalDimensions": {
+        "width": 1453,
+        "height": 1260
+      },
+      "image": {
+        "path": "assets/images/species/catalog184b1-allactaga-saltator.webp",
+        "width": 1453,
+        "height": 1260,
+        "sha256": "de8aca33682df2fbdfd80dc0f349f4de11dd5dfe51ddf2e354706f1fae94b01c",
+        "author": "Jan Ebr & Ivana Ebrová",
+        "originalPage": "https://commons.wikimedia.org/wiki/File:Orientallactaga_sibirica.jpg",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Orientallactaga sibirica.jpg — Jan Ebr & Ivana Ebrová, CC BY 4.0; Wikimedia Commons.",
+        "modifications": [
+          "Уменьшение без апскейла до 1800 px; WebP quality 82; удаление EXIF/XMP.",
+          "CSS cover и индивидуальная композиция, где указана; учебная пикселизация/обесцвечивание canvas не отражают фактическую численность."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Orientallactaga sibirica по точному определению источника; не новое свидетельство о кыргызстанской популяции.",
+          "ky": null,
+          "en": null
+        }
+      },
+      "rightsEvidence": {
+        "platform": "Wikimedia Commons",
+        "page": "File:Orientallactaga sibirica.jpg",
+        "revisionId": 1245336670,
+        "metadata": {
+          "license": "CC BY 4.0",
+          "author": "Jan Ebr & Ivana Ebrová",
+          "artistStatementSha256": "e3e9481871408dce4bcfe879c22dddbbab0650795c116ebac6c4c1186b69a67a",
+          "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+          "originalPage": "https://commons.wikimedia.org/wiki/File:Orientallactaga_sibirica.jpg",
+          "revisionId": 1245336670,
+          "width": 1453,
+          "height": 1260,
+          "description": "Orientallactaga sibirica",
+          "metadataUrl": "https://commons.wikimedia.org/w/api.php?action=query&format=json&titles=File%3AOrientallactaga+sibirica.jpg&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata&rvprop=ids%7Ccontent&rvslots=main",
+          "accessedAt": "2026-10-28",
+          "originalSha256": "6ff7d0cd9f171c1e712821516bcbfa0b9972af148d1f67110c4f2b8529bac1e8"
+        },
+        "extmetadata": {
+          "DateTime": {
+            "value": "2025-09-12 01:50:16",
+            "source": "mediawiki-metadata",
+            "hidden": ""
+          },
+          "ObjectName": {
+            "value": "Orientallactaga sibirica",
+            "source": "mediawiki-metadata"
+          },
+          "CommonsMetadataExtension": {
+            "value": 1.2,
+            "source": "extension",
+            "hidden": ""
+          },
+          "Categories": {
+            "value": "Dipodidae|Media from iNaturalist|INaturalist images reviewed by iNaturalistReviewBot|Media from GBIF",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "Assessments": {
+            "value": "",
+            "source": "commons-categories",
+            "hidden": ""
+          },
+          "ImageDescription": {
+            "value": "Orientallactaga sibirica",
+            "source": "commons-desc-page"
+          },
+          "DateTimeOriginal": {
+            "value": "2024-05-06",
+            "source": "commons-desc-page"
+          },
+          "Credit": {
+            "value": "<a rel=\"nofollow\" class=\"external autonumber\" href=\"https://www.inaturalist.org/photos/381343509\">[1]</a>",
+            "source": "commons-desc-page"
+          },
+          "Artist": {
+            "value": "Jan Ebr &amp; Ivana Ebrová",
+            "source": "commons-desc-page"
+          },
+          "LicenseShortName": {
+            "value": "CC BY 4.0",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "UsageTerms": {
+            "value": "Creative Commons Attribution 4.0",
+            "source": "commons-desc-page"
+          },
+          "AttributionRequired": {
+            "value": "true",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "LicenseUrl": {
+            "value": "https://creativecommons.org/licenses/by/4.0",
+            "source": "commons-desc-page"
+          },
+          "Copyrighted": {
+            "value": "True",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "Restrictions": {
+            "value": "",
+            "source": "commons-desc-page",
+            "hidden": ""
+          },
+          "License": {
+            "value": "cc-by-4.0",
+            "source": "commons-templates",
+            "hidden": ""
+          }
+        },
+        "wikitextSha256": "aaaa03523c152264069ac2cf931cc3f4e526d314970bc615f4d0dc5497fb07b3",
+        "licenseTemplates": [
+          "{{cc-by-4.0}}"
+        ]
+      },
+      "visualReview": {
+        "reviewed": true,
+        "independentTaxonomicDetermination": false,
+        "scope": "организм и тип медиа соответствуют документированной подписи; без нового установления местного подвида"
+      },
+      "finalWebPBytes": 165620,
+      "scientificFingerprint": "ea7852218c5f2752ffdbde7b40f60d4ff7850edac9e7ef56d5b4c632e51b4c59",
+      "finalWebPSha256": "de8aca33682df2fbdfd80dc0f349f4de11dd5dfe51ddf2e354706f1fae94b01c",
+      "primaryEvidenceUrl": "https://commons.wikimedia.org/wiki/File:Orientallactaga_sibirica.jpg",
+      "originalDimensionsMeaning": "размеры исходного скачанного файла; не заявление о полном мастер-файле камеры/сканера"
+    },
+    {
+      "id": "sonjagaster-coronatus",
+      "scientificName": "Thecagaster coronata",
+      "kind": "photograph",
+      "status": "connected",
+      "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/519688055/original.jpg",
+      "originalPage": "https://www.inaturalist.org/photos/519688055",
+      "author": "Askar Akhmedov",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "subjectAsDocumented": "Thecagaster coronata",
+      "primaryEvidence": {
+        "id": 288955114,
+        "uri": "https://www.inaturalist.org/observations/288955114",
+        "quality_grade": "research",
+        "community_taxon_id": 1578638,
+        "taxon": {
+          "id": 1578638,
+          "name": "Thecagaster coronata",
+          "rank": "species",
+          "is_active": true
+        },
+        "user": {
+          "login": "askarakhmedov",
+          "name": "Askar Akhmedov"
+        },
+        "photos": [
+          {
+            "id": 519688055,
+            "license_code": "cc-by",
+            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/519688055/square.jpg",
+            "attribution": "(c) Askar Akhmedov, some rights reserved (CC BY)",
+            "original_dimensions": {
+              "width": 1542,
+              "height": 2048
+            }
+          }
+        ],
+        "identifications": [
+          {
+            "id": 647601359,
+            "current": true,
+            "taxon": {
+              "id": 1578638,
+              "name": "Thecagaster coronata",
+              "rank": "species"
+            }
+          },
+          {
+            "id": 647585149,
+            "current": false,
+            "taxon": {
+              "id": 1578629,
+              "name": "Thecagaster",
+              "rank": "genus"
+            }
+          },
+          {
+            "id": 649693116,
+            "current": true,
+            "taxon": {
+              "id": 1578638,
+              "name": "Thecagaster coronata",
+              "rank": "species"
+            }
+          },
+          {
+            "id": 649712557,
+            "current": true,
+            "taxon": {
+              "id": 1578638,
+              "name": "Thecagaster coronata",
+              "rank": "species"
+            }
+          },
+          {
+            "id": 649765853,
+            "current": true,
+            "taxon": {
+              "id": 1578638,
+              "name": "Thecagaster coronata",
+              "rank": "species"
+            }
+          }
+        ]
+      },
+      "sourceMedia": {
+        "identifier": "https://inaturalist-open-data.s3.amazonaws.com/photos/519688055/original.jpg",
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "originalSha256": "9bcd528bb489891aae26c80bbce2f8faac668ec8f1bf5dfc66be694c231bbf6d",
+      "originalBytes": 844754,
+      "originalDimensions": {
+        "width": 1542,
+        "height": 2048,
+        "format": "JPEG"
+      },
+      "image": {
+        "path": "assets/images/species/catalog184b1-sonjagaster-coronatus.webp",
+        "width": 1355,
+        "height": 1800,
+        "sha256": "68ce232be7d7a583b862fcc8932c1a4705ffe9f844cefed4c280cf044f46fe41",
+        "author": "Askar Akhmedov",
+        "originalPage": "https://www.inaturalist.org/photos/519688055",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Thecagaster coronata — Askar Akhmedov, CC BY 4.0; https://www.inaturalist.org/photos/519688055.",
+        "modifications": [
+          "Оптимизация существующим scripts/process_data.py: WebP quality 82, max-edge 1800, без апскейла, EXIF-transpose и удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Thecagaster coronata по определению наблюдения iNaturalist 288955114, фото 519688055. Снимок не используется как новое свидетельство о популяции Кыргызстана.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "independentTaxonomicDetermination": false,
+        "scope": "проверены пиксели, этикетка/штрихкод для гербария и связь точного вида с первичным наблюдением"
+      },
+      "finalWebPBytes": 199460,
+      "scientificFingerprint": "1cfb7d2f49e01eae527ba22510a42b5cc2e063fd67e3b87386be7e2ea5daed4b",
+      "finalWebPSha256": "68ce232be7d7a583b862fcc8932c1a4705ffe9f844cefed4c280cf044f46fe41",
+      "primaryEvidenceUrl": "https://api.inaturalist.org/v1/observations/288955114",
+      "originalDimensionsMeaning": "размеры исходного скачанного файла; не заявление о полном мастер-файле камеры/сканера",
+      "identityNote": "Точное видовое имя и research grade подтверждены первичным iNaturalist. Интерпретатор GBIF свёл новую комбинацию к роду; его родовой результат не использован как определение вида. Лицензия конкретного media CC BY 4.0 совпала с photo.license_code.",
+      "mediaLicenseEvidence": {
+        "primaryApiUrl": "https://api.gbif.org/v1/occurrence/5198640921",
+        "occurrenceKey": 5198640921,
+        "interpretedScientificName": "Thecagaster Selys, 1854",
+        "media": [
+          {
+            "type": "StillImage",
+            "format": "image/jpeg",
+            "references": "https://www.inaturalist.org/photos/519688055",
+            "created": "2025-06-10T15:35:12.000+00:00",
+            "creator": "Askar Akhmedov",
+            "publisher": "iNaturalist",
+            "license": "http://creativecommons.org/licenses/by/4.0/",
+            "rightsHolder": "Askar Akhmedov",
+            "identifier": "https://inaturalist-open-data.s3.amazonaws.com/photos/519688055/original.jpg"
+          }
+        ],
+        "primaryTaxonDefinitionUsed": "exact primary iNaturalist observation, not GBIF genus interpretation"
+      }
+    },
+    {
+      "id": "barbus-capito-conocephalus",
+      "scientificName": "Luciobarbus conocephalus",
+      "kind": "photograph",
+      "status": "connected",
+      "sourceUrl": "https://inaturalist-open-data.s3.amazonaws.com/photos/390287886/original.jpeg",
+      "originalPage": "https://www.inaturalist.org/photos/390287886",
+      "author": "Murodjon Rakhmonov",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "subjectAsDocumented": "Luciobarbus conocephalus",
+      "primaryEvidence": {
+        "id": 220237332,
+        "uri": "https://www.inaturalist.org/observations/220237332",
+        "quality_grade": "research",
+        "community_taxon_id": 1316816,
+        "taxon": {
+          "id": 1316816,
+          "name": "Luciobarbus conocephalus",
+          "rank": "species",
+          "is_active": true
+        },
+        "user": {
+          "login": "murodjon_rakhmonov",
+          "name": "Murodjon Rakhmonov"
+        },
+        "photos": [
+          {
+            "id": 390287886,
+            "license_code": "cc-by",
+            "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/390287886/square.jpeg",
+            "attribution": "(c) Murodjon Rakhmonov, some rights reserved (CC BY)",
+            "original_dimensions": {
+              "width": 2048,
+              "height": 923
+            }
+          }
+        ],
+        "identifications": [
+          {
+            "id": 550150472,
+            "current": true,
+            "taxon": {
+              "id": 1316816,
+              "name": "Luciobarbus conocephalus",
+              "rank": "species"
+            }
+          },
+          {
+            "id": 496046592,
+            "current": true,
+            "taxon": {
+              "id": 1316816,
+              "name": "Luciobarbus conocephalus",
+              "rank": "species"
+            }
+          },
+          {
+            "id": 581441291,
+            "current": true,
+            "taxon": {
+              "id": 1316816,
+              "name": "Luciobarbus conocephalus",
+              "rank": "species"
+            }
+          }
+        ]
+      },
+      "sourceMedia": {
+        "identifier": "https://inaturalist-open-data.s3.amazonaws.com/photos/390287886/original.jpeg",
+        "license": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "originalSha256": "e04ddfd779065ad25871bb54cf07ac7ce7701289d17c5d39f9aa2a042e64c18b",
+      "originalBytes": 1335131,
+      "originalDimensions": {
+        "width": 2048,
+        "height": 923,
+        "format": "JPEG"
+      },
+      "image": {
+        "path": "assets/images/species/catalog184b1-barbus-capito-conocephalus.webp",
+        "width": 1800,
+        "height": 811,
+        "sha256": "fd0a7fed77d2a97f1ece26a424a75880decd90d80939fe24d8c1915d4de4fde9",
+        "author": "Murodjon Rakhmonov",
+        "originalPage": "https://www.inaturalist.org/photos/390287886",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "attribution": "Luciobarbus conocephalus — Murodjon Rakhmonov, CC BY 4.0; https://www.inaturalist.org/photos/390287886.",
+        "modifications": [
+          "Оптимизация существующим scripts/process_data.py: WebP quality 82, max-edge 1800, без апскейла, EXIF-transpose и удаление EXIF/XMP."
+        ],
+        "licenseVerified": true,
+        "caption": {
+          "ru": "Luciobarbus conocephalus по определению наблюдения iNaturalist 220237332, фото 390287886. Не подтверждение локальной формы или современной популяции Кыргызстана.",
+          "ky": null,
+          "uz": null,
+          "en": null
+        }
+      },
+      "visualReview": {
+        "reviewed": true,
+        "independentTaxonomicDetermination": false,
+        "scope": "проверены пиксели, этикетка/штрихкод для гербария и связь точного вида с первичным наблюдением"
+      },
+      "finalWebPBytes": 188294,
+      "scientificFingerprint": "20da79bd452db96352e07ebb08cd5cb877e8f4daad3db002296872edb86ff89c",
+      "finalWebPSha256": "fd0a7fed77d2a97f1ece26a424a75880decd90d80939fe24d8c1915d4de4fde9",
+      "primaryEvidenceUrl": "https://api.inaturalist.org/v1/observations/220237332",
+      "originalDimensionsMeaning": "размеры исходного скачанного файла; не заявление о полном мастер-файле камеры/сканера",
+      "mediaLicenseEvidence": {
+        "primaryApiUrl": "https://api.gbif.org/v1/occurrence/4953170346",
+        "occurrenceKey": 4953170346,
+        "interpretedScientificName": "Luciobarbus conocephalus (Kessler, 1872)",
+        "media": [
+          {
+            "type": "StillImage",
+            "format": "image/jpeg",
+            "references": "https://www.inaturalist.org/photos/390287886",
+            "created": "2023-07-01T05:00:48.000+00:00",
+            "creator": "Murodjon Rakhmonov",
+            "publisher": "iNaturalist",
+            "license": "http://creativecommons.org/licenses/by/4.0/",
+            "rightsHolder": "Murodjon Rakhmonov",
+            "identifier": "https://inaturalist-open-data.s3.amazonaws.com/photos/390287886/original.jpeg"
+          }
+        ],
+        "primaryTaxonDefinitionUsed": "exact primary iNaturalist observation, not GBIF genus interpretation"
+      }
+    }
+  ],
+  "checks": {
+    "scientificFieldsUnchanged": true,
+    "archiveUnchanged": true,
+    "previous146ImageArraysUnchanged": true,
+    "testsModified": false,
+    "initialGitHead": "63f8e43d7d6b504079412c03c7cbf6eda421567a",
+    "sourceNoImagesSha256": "74c9c54ba95374d0a578e2c1c0260d94598b323fceb8e3615d5a0c541df8b085",
+    "catalog": 184,
+    "archive": 2,
+    "connected": 12,
+    "oldImageArraysPreserved": 146,
+    "scientificFingerprint": "74c9c54ba95374d0a578e2c1c0260d94598b323fceb8e3615d5a0c541df8b085",
+    "protectedTrackedFiles": 1129,
+    "renderedCardsModalsPages": 144,
+    "languages": [
+      "ky",
+      "uz",
+      "ru",
+      "en"
+    ],
+    "allCatalogNamesSearchable": true,
+    "staticHttp200": 12,
+    "distImageHashesCorrect": 12,
+    "allSelectedAssetsValid": true,
+    "beforeWebPBytes": 31705262,
+    "afterWebPBytes": 34083070,
+    "additionalWebPBytes": 2377808,
+    "sourceSha256": "e079d24d0dc1b23bf40cab66a19f2276deb0a5940a4eefc4c1d6e810a7c0139c",
+    "publicSha256": "0eebd3129fa441592dabcf665cf0e9f1807fb500ea6525e918ec3f8cdd078a1d",
+    "testSummary": {
+      "passed": 324,
+      "failed": 7,
+      "skipped": 0,
+      "testsModified": false
+    },
+    "data1Exit": 0,
+    "data2Exit": 0,
+    "buildExit": 0,
+    "pillowDecodedNewFiles": 24,
+    "photoModelGatePassed": 12,
+    "existingOriginalFilesOnlyChanged": [
+      "data/species.source.json",
+      "public/data/species.json"
+    ],
+    "otherStartingFilesUnchanged": 1129,
+    "previousCatalogSize": 184,
+    "currentCatalogSize": 184,
+    "archiveCount": 2,
+    "old146ArraysExactlyEqual": true,
+    "oldImagesAndLicenseArtifactsByteIdentical": true,
+    "searchFourLanguages": true,
+    "heavyCommandsSequential": true,
+    "ENOSPC": false,
+    "logs": [
+      {
+        "path": ".generated/catalog-184-photo-batch-1/npm-test.log",
+        "sha256": "f50ee66df9c1187969eb7301f4a25c6b988e7ff110fb8a54009b9cc981ec00a8"
+      },
+      {
+        "path": ".generated/catalog-184-photo-batch-1/npm-data-1.log",
+        "sha256": "db9ed72befe6ec0a5e774dec8723c32ddad1109ef5b1b18263b36024f5362216"
+      },
+      {
+        "path": ".generated/catalog-184-photo-batch-1/npm-data-2.log",
+        "sha256": "db9ed72befe6ec0a5e774dec8723c32ddad1109ef5b1b18263b36024f5362216"
+      },
+      {
+        "path": ".generated/catalog-184-photo-batch-1/npm-build.log",
+        "sha256": "85e1f4ccb9bbd59d4ffc25e4b8b025e24ace3d22d15b8d68ca8eb1249c66b27a"
+      }
+    ],
+    "testFailures": [
+      {
+        "test": 77,
+        "file": "tests/catalog-150-publication.test.mjs",
+        "line": 131,
+        "reason": "Повтор старого разрешения на живом каталоге отвергает отдельно добавленное фото barbus-capito-conocephalus."
+      },
+      {
+        "test": 81,
+        "file": "tests/catalog-166-publication.test.mjs",
+        "line": 145,
+        "reason": "Повтор старого разрешения отвергает новое фото sorbus-persica."
+      },
+      {
+        "test": 86,
+        "file": "tests/catalog-178-publication.test.mjs",
+        "line": 146,
+        "reason": "Повтор старого разрешения отвергает новое фото berberis-kaschgarica."
+      },
+      {
+        "test": 88,
+        "file": "tests/catalog-184-publication.test.mjs",
+        "line": 34,
+        "reason": "Старое сравнение объектов целиком включает ранее пустые images; научные поля отдельно совпадают."
+      },
+      {
+        "test": 89,
+        "file": "tests/catalog-184-publication.test.mjs",
+        "line": 88,
+        "reason": "Историческое ожидание 1 фото среди последних 6 и общего числа 146; теперь в шестёрке 4 фото, всего 158."
+      },
+      {
+        "test": 91,
+        "file": "tests/catalog-184-publication.test.mjs",
+        "line": 144,
+        "reason": "Повтор старого разрешения отвергает фото sorbaria-olgae; исходный защищённый pipeline не ослаблен."
+      },
+      {
+        "test": 150,
+        "file": "tests/data.test.mjs",
+        "line": 240,
+        "reason": "Закрытый список источников читает только прежние фото-журналы, без нового catalog-184-photo-batch-1.json. URL и SHA новых файлов не подменялись ради прохождения."
+      }
+    ],
+    "testsChanged": 0,
+    "productionValidatorsChanged": 0,
+    "sourceBeforeSha256": "cee3277b598a87b40126fc24064a6c5c05487a8d107cd7a95d401ad1d380a881",
+    "publicBeforeSha256": "74a09270cafbf4444f750fe64e9a2e9966b52d0cef4187814b6b22ba043fedd4"
+  },
+  "status": "MEDIA_CONNECTED_TEST_COMPATIBILITY_BLOCKED",
+  "searchResults": [
+    {
+      "id": "vipera-ursinii-renardi",
+      "scientificName": "Vipera renardi",
+      "priority": "A",
+      "acceptedNameAndDocumentedAliases": [
+        "Vipera renardi"
+      ],
+      "status": "connected",
+      "queries": [
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Vipera+renardi%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "bd1a0c3b3daaa6e7331655839fb0477c0e5dd4b73c950c149da29cf3ce964e3a",
+          "error": null,
+          "resultCount": 5,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF taxon match",
+          "url": "https://api.gbif.org/v1/species/match?name=Vipera%20renardi",
+          "status": 200,
+          "rawResponseSha256": "cccfc17cb7ebc9a3ad23e529208b6adaaeef87eddcfebf0894c54a4c83d089b8",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF media",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=8568628&mediaType=StillImage&limit=15",
+          "status": 200,
+          "rawResponseSha256": "e8a3308fb169dda98b8153e09af6e857ba7d41edb0aecdba40fe7a9905a222e5",
+          "error": null,
+          "resultCount": 732,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist taxa",
+          "url": "https://api.inaturalist.org/v1/taxa?q=Vipera%20renardi&per_page=10",
+          "status": 200,
+          "rawResponseSha256": "7635936816e0d001ab1184d9484a3c1ba1e90d15061dad8ad8f9f84066500e0c",
+          "error": null,
+          "resultCount": 9,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist observations",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_id=114991&photos=true&photo_license=cc0,cc-by,cc-by-sa&per_page=5",
+          "status": 200,
+          "rawResponseSha256": "95da616cb08873aef627590caca42c17746704cdbaf893237debc262255c7a04",
+          "error": null,
+          "resultCount": 214,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        }
+      ],
+      "collectionSearch": {
+        "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=8568628&mediaType=StillImage&basisOfRecord=PRESERVED_SPECIMEN&limit=8",
+        "status": 200,
+        "rawResponseSha256": "5c5057b83dbc167ca781a76b4e9435a3c7205fcfbe94f61158ac949c50d9b430",
+        "count": 0,
+        "queryKeyBasis": "exact GBIF match for image search only",
+        "providers": []
+      }
+    },
+    {
+      "id": "cervus-elaphus-asiaticus",
+      "scientificName": "Cervus canadensis",
+      "priority": "A",
+      "acceptedNameAndDocumentedAliases": [
+        "Cervus canadensis"
+      ],
+      "status": "connected",
+      "queries": [
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Cervus+canadensis%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "57469258c1f47c0e0117de9a35999550e2c6dfc7d6f1aa87caa6856f1a02fbe2",
+          "error": null,
+          "resultCount": 5,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF taxon match",
+          "url": "https://api.gbif.org/v1/species/match?name=Cervus%20canadensis",
+          "status": 200,
+          "rawResponseSha256": "e381af35df94bf245370be7415f4e95cfdb09e80de1f2caff9175b3611e42a09",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF media",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=8600904&mediaType=StillImage&limit=15",
+          "status": 200,
+          "rawResponseSha256": "cfa0a703ae8608c9fcca11a1f2d1bd0cb1846f7f1b4cb447a51e47d838dff88f",
+          "error": null,
+          "resultCount": 41108,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist taxa",
+          "url": "https://api.inaturalist.org/v1/taxa?q=Cervus%20canadensis&per_page=10",
+          "status": 200,
+          "rawResponseSha256": "2d426a8d6971b5b2ff2405dd0d97a7a57840cf10d5f0bc08eec29c757330121f",
+          "error": null,
+          "resultCount": 11,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist observations",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_id=204114&photos=true&photo_license=cc0,cc-by,cc-by-sa&per_page=5",
+          "status": 200,
+          "rawResponseSha256": "db9dbc3d782bc0ef614722e29b41a8bd2ebb49934b7816f1a78db6d4f130b5c2",
+          "error": null,
+          "resultCount": 6082,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        }
+      ],
+      "collectionSearch": {
+        "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=8600904&mediaType=StillImage&basisOfRecord=PRESERVED_SPECIMEN&limit=8",
+        "status": 200,
+        "rawResponseSha256": "c6d9ae497c3613eed3234523cba827adc15659493ba2d5e455d94e4228977a52",
+        "count": 13,
+        "queryKeyBasis": "exact GBIF match for image search only",
+        "providers": [
+          "MZH",
+          "KU",
+          "BBM",
+          "UCMP",
+          "NHMUK"
+        ]
+      }
+    },
+    {
+      "id": "sorbaria-olgae",
+      "scientificName": "Sorbaria tomentosa",
+      "priority": "A",
+      "acceptedNameAndDocumentedAliases": [
+        "Sorbaria tomentosa",
+        "Sorbaria olgae"
+      ],
+      "status": "connected",
+      "queries": [
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Sorbaria+tomentosa%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "998d3555cbe9ea95deb589897049ee34d75c138f3382983226fdbdc496415afa",
+          "error": null,
+          "resultCount": 5,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Sorbaria+olgae%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "967b14a2f1e9c483ad096051d5bda3318be526eb3f2b4f6e7410d08cbb8cd82b",
+          "error": null,
+          "resultCount": 5,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF taxon match",
+          "url": "https://api.gbif.org/v1/species/match?name=Sorbaria%20tomentosa",
+          "status": 200,
+          "rawResponseSha256": "cd2cc64aac5d6843b45c1e65f97f9122ccc1eaabe943f798cc361de7d317b6ec",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF media",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=3012117&mediaType=StillImage&limit=15",
+          "status": 200,
+          "rawResponseSha256": "9a7535e1b4ab94b82e1c1c968f5f888ba96dc255b9c9e11403fba60560c4d6b2",
+          "error": null,
+          "resultCount": 320,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist taxa",
+          "url": "https://api.inaturalist.org/v1/taxa?q=Sorbaria%20tomentosa&per_page=10",
+          "status": 200,
+          "rawResponseSha256": "f77ec03b3a560e054da0cdcc7cc0a2b4dda3a4903b63b015e290b0c17bcfcf36",
+          "error": null,
+          "resultCount": 1,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist observations",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_id=363704&photos=true&photo_license=cc0,cc-by,cc-by-sa&per_page=5",
+          "status": 200,
+          "rawResponseSha256": "ca290cc01037842e567d57e4453a88e743b2339f74ee87741d821bcb4c6ad437",
+          "error": null,
+          "resultCount": 13,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        }
+      ],
+      "collectionSearch": {
+        "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=3012117&mediaType=StillImage&basisOfRecord=PRESERVED_SPECIMEN&limit=8",
+        "status": 200,
+        "rawResponseSha256": "2d636d3e1dadeb2199024ee130efc40ff1dd2576456137feb6615499a3684ace",
+        "count": 276,
+        "queryKeyBasis": "exact GBIF match for image search only",
+        "providers": [
+          "CHR",
+          "WU",
+          "AK",
+          "Moscow State University",
+          "MeiseBG"
+        ]
+      }
+    },
+    {
+      "id": "iskandera-alaica",
+      "scientificName": "Iskandera alaica",
+      "priority": "B",
+      "acceptedNameAndDocumentedAliases": [
+        "Iskandera alaica"
+      ],
+      "status": "placeholder",
+      "queries": [
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Iskandera+alaica%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "4c10b51e11091efbf7af119a1a94d1b8c568dc4a067c0ed3982feba33f0b110b",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF taxon match",
+          "url": "https://api.gbif.org/v1/species/match?name=Iskandera%20alaica",
+          "status": 200,
+          "rawResponseSha256": "232fe541c7c0630dcb73a4d8ac6d669556970a70e28102df4c5f1b88399fcec5",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF media",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=3044433&mediaType=StillImage&limit=15",
+          "status": 200,
+          "rawResponseSha256": "bcd7adef8bc7f2b26ba205abff3914d9a5c968556845c96d9676a7ec6189fc2e",
+          "error": null,
+          "resultCount": 2,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist taxa",
+          "url": "https://api.inaturalist.org/v1/taxa?q=Iskandera%20alaica&per_page=10",
+          "status": 200,
+          "rawResponseSha256": "7a10546d79d2f28f38716e53b9e7c709da0fc96e24b44ff698d0762af31a3499",
+          "error": null,
+          "resultCount": 1,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        }
+      ],
+      "collectionSearch": {
+        "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=3044433&mediaType=StillImage&basisOfRecord=PRESERVED_SPECIMEN&limit=8",
+        "status": 200,
+        "rawResponseSha256": "b51c196211b921f88d3c5ef717b0a699ba62a8eaef2877ef8fadd9d3aea5bf7b",
+        "count": 2,
+        "queryKeyBasis": "exact GBIF match for image search only",
+        "providers": [
+          "MO"
+        ]
+      },
+      "reason": "Точные гербарные медиа MO имеют CC BY-NC-SA 3.0; свободное разрешение конкретного файла не найдено. Материалы Plantarium не дают автоматического разрешения.",
+      "sources": [
+        "https://www.gbif.org/occurrence/5000602727",
+        "https://www.gbif.org/occurrence/6561551056",
+        "https://www.plantarium.ru/lang/en/page/view/item/43072.html"
+      ]
+    },
+    {
+      "id": "scutellaria-nepetoides",
+      "scientificName": "Scutellaria nepetoides",
+      "priority": "B",
+      "acceptedNameAndDocumentedAliases": [
+        "Scutellaria nepetoides"
+      ],
+      "status": "placeholder",
+      "queries": [
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Scutellaria+nepetoides%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "ada2a601f24c7f102c6432340d6adca256996c391606174b387338725fe7cf7d",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF taxon match",
+          "url": "https://api.gbif.org/v1/species/match?name=Scutellaria%20nepetoides",
+          "status": 200,
+          "rawResponseSha256": "fe7e8d54768d1929eee8c6aa020a627b1d245f8d2f9df9d3564ef2c684e6f63b",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF media",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=5608807&mediaType=StillImage&limit=15",
+          "status": 200,
+          "rawResponseSha256": "ba81fd54b0e24db1a248ea8ecc78385a3c980d2ab6d75b8de13428742d6a9f53",
+          "error": null,
+          "resultCount": 1,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist taxa",
+          "url": "https://api.inaturalist.org/v1/taxa?q=Scutellaria%20nepetoides&per_page=10",
+          "status": 200,
+          "rawResponseSha256": "7a9a7ffeb3403827b50b829e3cf6942e81d0d5c0d45ddf142880577866b98554",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        }
+      ],
+      "collectionSearch": {
+        "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=5608807&mediaType=StillImage&basisOfRecord=PRESERVED_SPECIMEN&limit=8",
+        "status": 200,
+        "rawResponseSha256": "b18f4c7b0cbe8882ad6c80ba1256ff1694c4c592be2632ff5d9f1701a12e7b1e",
+        "count": 1,
+        "queryKeyBasis": "exact GBIF match for image search only",
+        "providers": []
+      },
+      "reason": "У точного TASH002760 нет media-level лицензии; сайт TASH требует письменное разрешение на воспроизведение. Фото Plantarium — all rights reserved.",
+      "sources": [
+        "https://www.gbif.org/occurrence/3889491944",
+        "https://floragridmap.uz/",
+        "https://www.plantarium.ru/lang/en/page/image/id/597265.html"
+      ]
+    },
+    {
+      "id": "lonicera-paradoxa",
+      "scientificName": "Lonicera paradoxa",
+      "priority": "B",
+      "acceptedNameAndDocumentedAliases": [
+        "Lonicera paradoxa"
+      ],
+      "status": "placeholder",
+      "queries": [
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Lonicera+paradoxa%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "ada2a601f24c7f102c6432340d6adca256996c391606174b387338725fe7cf7d",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF taxon match",
+          "url": "https://api.gbif.org/v1/species/match?name=Lonicera%20paradoxa",
+          "status": 200,
+          "rawResponseSha256": "16a4829af96789c47b75237cd6616291e87340f120534597b16e69baf07b70f5",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF media",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=5599068&mediaType=StillImage&limit=15",
+          "status": 200,
+          "rawResponseSha256": "ebcfb1c1c27b0e706057468406cc37ca9babb9cafeb5d60acd0fd9003e2cea54",
+          "error": null,
+          "resultCount": 2,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist taxa",
+          "url": "https://api.inaturalist.org/v1/taxa?q=Lonicera%20paradoxa&per_page=10",
+          "status": 200,
+          "rawResponseSha256": "69617cf0429617cfe36e0a7987310821ee5e675eed075cd001c38de5d3a943c0",
+          "error": null,
+          "resultCount": 2,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist observations",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_id=439804&photos=true&photo_license=cc0,cc-by,cc-by-sa&per_page=5",
+          "status": 200,
+          "rawResponseSha256": "810158c73d4461f06d7dacdb0475b69eb4fb9544f477527e067179daf74322be",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        }
+      ],
+      "collectionSearch": {
+        "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=5599068&mediaType=StillImage&basisOfRecord=PRESERVED_SPECIMEN&limit=8",
+        "status": 200,
+        "rawResponseSha256": "eac4ef3568f2b0271b61182d6f5e5d975ad10a39bf4342c367861f57be502f7d",
+        "count": 2,
+        "queryKeyBasis": "exact GBIF match for image search only",
+        "providers": [
+          "Academy of Sciences of the Republic of Uzbekistan"
+        ]
+      },
+      "reason": "TASH003106/TASH135331 не имеют явной лицензии медиа; LE01056033 идентифицирован, но свободное разрешение на скан не установлено. Доступность просмотра не даёт права публикации.",
+      "sources": [
+        "https://www.gbif.org/occurrence/4910181152",
+        "https://www.gbif.org/occurrence/3889492002",
+        "https://en.herbariumle.ru/?id=7487&t=occ"
+      ]
+    },
+    {
+      "id": "campanula-eugeniae",
+      "scientificName": "Campanula eugeniae",
+      "priority": "B",
+      "acceptedNameAndDocumentedAliases": [
+        "Campanula eugeniae"
+      ],
+      "status": "connected",
+      "queries": [
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Campanula+eugeniae%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "ada2a601f24c7f102c6432340d6adca256996c391606174b387338725fe7cf7d",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF taxon match",
+          "url": "https://api.gbif.org/v1/species/match?name=Campanula%20eugeniae",
+          "status": 200,
+          "rawResponseSha256": "6b67a6a05e471590d0e9c3fb45f299a1f0fde36630b1cdf1b2b86407a3c98909",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF media",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=5411287&mediaType=StillImage&limit=15",
+          "status": 200,
+          "rawResponseSha256": "ee37c1879f753b35c8bd68d6448f55a8d73d1c57afab92420c85a14801c0a97f",
+          "error": null,
+          "resultCount": 1,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist taxa",
+          "url": "https://api.inaturalist.org/v1/taxa?q=Campanula%20eugeniae&per_page=10",
+          "status": 200,
+          "rawResponseSha256": "59240f20336268b8f8eed894ba81210614ad4398b2d3c11abb506539dde0e42f",
+          "error": null,
+          "resultCount": 1,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist observations",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_id=1296909&photos=true&photo_license=cc0,cc-by,cc-by-sa&per_page=5",
+          "status": 200,
+          "rawResponseSha256": "810158c73d4461f06d7dacdb0475b69eb4fb9544f477527e067179daf74322be",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        }
+      ],
+      "collectionSearch": {
+        "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=5411287&mediaType=StillImage&basisOfRecord=PRESERVED_SPECIMEN&limit=8",
+        "status": 200,
+        "rawResponseSha256": "dceb44f7235d1863ce557724af073994a84f343253da5423a2906555963093d1",
+        "count": 1,
+        "queryKeyBasis": "exact GBIF match for image search only",
+        "providers": [
+          "K"
+        ]
+      }
+    },
+    {
+      "id": "sorbus-persica",
+      "scientificName": "Hedlundia persica",
+      "priority": "B",
+      "acceptedNameAndDocumentedAliases": [
+        "Hedlundia persica",
+        "Sorbus persica"
+      ],
+      "status": "connected",
+      "queries": [
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Hedlundia+persica%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "ada2a601f24c7f102c6432340d6adca256996c391606174b387338725fe7cf7d",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Sorbus+persica%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "6af7aa2fb83ec390db1a711753ceb004725b2c59528bfc5e6d237b30a75ee32d",
+          "error": null,
+          "resultCount": 4,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF taxon match",
+          "url": "https://api.gbif.org/v1/species/match?name=Hedlundia%20persica",
+          "status": 200,
+          "rawResponseSha256": "6ef47c86675b227a6836eed76d5dd74ec9adf739911ac4892c3af803808873d3",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF media",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=10830289&mediaType=StillImage&limit=15",
+          "status": 200,
+          "rawResponseSha256": "eed9ef43d859ad6f2399dc3ba9b8058b1a3d5066ae07be20c9b467fe8ea35635",
+          "error": null,
+          "resultCount": 118,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist taxa",
+          "url": "https://api.inaturalist.org/v1/taxa?q=Hedlundia%20persica&per_page=10",
+          "status": 200,
+          "rawResponseSha256": "af629b892f527cdb2e2b3ba3ff29cdad74790033e382d51eb076ad58d5d5cb52",
+          "error": null,
+          "resultCount": 1,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist observations",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_id=1277883&photos=true&photo_license=cc0,cc-by,cc-by-sa&per_page=5",
+          "status": 200,
+          "rawResponseSha256": "810158c73d4461f06d7dacdb0475b69eb4fb9544f477527e067179daf74322be",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        }
+      ],
+      "collectionSearch": {
+        "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=10830289&mediaType=StillImage&basisOfRecord=PRESERVED_SPECIMEN&limit=8",
+        "status": 200,
+        "rawResponseSha256": "051cf3a45b237b2a507d6630fb15d19b4a113f5b77d5f21d7d5ec42863170bc8",
+        "count": 111,
+        "queryKeyBasis": "exact GBIF match for image search only",
+        "providers": [
+          "Academy of Sciences of the Republic of Uzbekistan",
+          "Moscow State University",
+          "K",
+          "MO"
+        ]
+      }
+    },
+    {
+      "id": "centaurea-alaica",
+      "scientificName": "Rhaponticoides alaica",
+      "priority": "B",
+      "acceptedNameAndDocumentedAliases": [
+        "Rhaponticoides alaica",
+        "Centaurea alaica"
+      ],
+      "status": "placeholder",
+      "queries": [
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Rhaponticoides+alaica%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "ada2a601f24c7f102c6432340d6adca256996c391606174b387338725fe7cf7d",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Centaurea+alaica%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "ada2a601f24c7f102c6432340d6adca256996c391606174b387338725fe7cf7d",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF taxon match",
+          "url": "https://api.gbif.org/v1/species/match?name=Rhaponticoides%20alaica",
+          "status": 200,
+          "rawResponseSha256": "5ecb8046a1fb1bf10b0bf77d148f1b6b03f199447f335bc91e64538cbbc68f37",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF media",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=10855762&mediaType=StillImage&limit=15",
+          "status": 200,
+          "rawResponseSha256": "0d66449b13ae47c572f190b3897209ffa760fdfedc6b78bbb8d76cf3cd53ede3",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist taxa",
+          "url": "https://api.inaturalist.org/v1/taxa?q=Rhaponticoides%20alaica&per_page=10",
+          "status": 200,
+          "rawResponseSha256": "7a9a7ffeb3403827b50b829e3cf6942e81d0d5c0d45ddf142880577866b98554",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        }
+      ],
+      "collectionSearch": {
+        "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=10855762&mediaType=StillImage&basisOfRecord=PRESERVED_SPECIMEN&limit=8",
+        "status": 200,
+        "rawResponseSha256": "5c5057b83dbc167ca781a76b4e9435a3c7205fcfbe94f61158ac949c50d9b430",
+        "count": 0,
+        "queryKeyBasis": "exact GBIF match for image search only",
+        "providers": []
+      },
+      "reason": "В ограниченном поиске по Rhaponticoides alaica и Centaurea alaica точного доступного лицензированного изображения не найдено; научная статья о роде сама по себе не заменяет файл вида.",
+      "sources": [
+        "https://www.biotaxa.org/Phytotaxa/article/view/phytotaxa.422.1.2"
+      ]
+    },
+    {
+      "id": "berberis-kaschgarica",
+      "scientificName": "Berberis ulicina",
+      "priority": "B",
+      "acceptedNameAndDocumentedAliases": [
+        "Berberis ulicina"
+      ],
+      "status": "connected",
+      "queries": [
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Berberis+ulicina%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "ada2a601f24c7f102c6432340d6adca256996c391606174b387338725fe7cf7d",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF taxon match",
+          "url": "https://api.gbif.org/v1/species/match?name=Berberis%20ulicina",
+          "status": 200,
+          "rawResponseSha256": "bc05fda15d0407f5659b58fb054a390f9fe2cdf6f074345772d8700384f76d03",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF media",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=3980999&mediaType=StillImage&limit=15",
+          "status": 200,
+          "rawResponseSha256": "1e7dd90090c97ce93dade75d2a839a428862906598bd7ebb085bf06c1949deb8",
+          "error": null,
+          "resultCount": 73,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist taxa",
+          "url": "https://api.inaturalist.org/v1/taxa?q=Berberis%20ulicina&per_page=10",
+          "status": 200,
+          "rawResponseSha256": "9ddb8dfe536783623a605921b6e48cfdb7fd2d4376dd93e88a2ebd049d309be0",
+          "error": null,
+          "resultCount": 1,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist observations",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_id=961447&photos=true&photo_license=cc0,cc-by,cc-by-sa&per_page=5",
+          "status": 200,
+          "rawResponseSha256": "810158c73d4461f06d7dacdb0475b69eb4fb9544f477527e067179daf74322be",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        }
+      ],
+      "collectionSearch": {
+        "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=3980999&mediaType=StillImage&basisOfRecord=PRESERVED_SPECIMEN&limit=8",
+        "status": 200,
+        "rawResponseSha256": "b42e3c1ed995bfc17c30605bdaec3c5e90c025b4c9ad8399c97bb8f6aa9960b7",
+        "count": 70,
+        "queryKeyBasis": "exact GBIF match for image search only",
+        "providers": [
+          "CAS",
+          "MO",
+          "Moscow State University"
+        ]
+      }
+    },
+    {
+      "id": "dorema-microcarpum",
+      "scientificName": "Ferula namanganica",
+      "priority": "B",
+      "acceptedNameAndDocumentedAliases": [
+        "Ferula namanganica",
+        "Dorema microcarpum"
+      ],
+      "status": "connected",
+      "queries": [
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Ferula+namanganica%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "ada2a601f24c7f102c6432340d6adca256996c391606174b387338725fe7cf7d",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Dorema+microcarpum%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "ada2a601f24c7f102c6432340d6adca256996c391606174b387338725fe7cf7d",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF taxon match",
+          "url": "https://api.gbif.org/v1/species/match?name=Ferula%20namanganica",
+          "status": 200,
+          "rawResponseSha256": "e4444e1e0a26a8038f496047c63da58509136c898ee9de35d25b3d281844e810",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist taxa",
+          "url": "https://api.inaturalist.org/v1/taxa?q=Ferula%20namanganica&per_page=10",
+          "status": 200,
+          "rawResponseSha256": "dfdf41c8dfa4d51d0d64c5d4726c65f6c2122361a5d74a08f41031b249054ebf",
+          "error": null,
+          "resultCount": 1,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist observations",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_id=1604412&photos=true&photo_license=cc0,cc-by,cc-by-sa&per_page=5",
+          "status": 200,
+          "rawResponseSha256": "810158c73d4461f06d7dacdb0475b69eb4fb9544f477527e067179daf74322be",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        }
+      ],
+      "collectionSearch": {
+        "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=295893852&mediaType=StillImage&basisOfRecord=PRESERVED_SPECIMEN&limit=8",
+        "status": 200,
+        "rawResponseSha256": "5c5057b83dbc167ca781a76b4e9435a3c7205fcfbe94f61158ac949c50d9b430",
+        "count": 0,
+        "queryKeyBasis": "existing exact project taxon reference; no parent fallback",
+        "providers": []
+      }
+    },
+    {
+      "id": "tianschaniella-umbellifera",
+      "scientificName": "Tianschaniella umbellulifera",
+      "priority": "B",
+      "acceptedNameAndDocumentedAliases": [
+        "Tianschaniella umbellulifera",
+        "Tianschaniella umbellifera"
+      ],
+      "status": "connected",
+      "queries": [
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Tianschaniella+umbellulifera%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "ada2a601f24c7f102c6432340d6adca256996c391606174b387338725fe7cf7d",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Tianschaniella+umbellifera%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "ada2a601f24c7f102c6432340d6adca256996c391606174b387338725fe7cf7d",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF taxon match",
+          "url": "https://api.gbif.org/v1/species/match?name=Tianschaniella%20umbellulifera",
+          "status": 200,
+          "rawResponseSha256": "14f87b92c6cb42c3c63f358c4b6ad09da7e829ace5aca947b1bebff597e30d38",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF media",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=10874182&mediaType=StillImage&limit=15",
+          "status": 200,
+          "rawResponseSha256": "4907d9bf072d6e562a30749d369fa64848fda844f6e10b71f9b98690c4beb46a",
+          "error": null,
+          "resultCount": 2,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist taxa",
+          "url": "https://api.inaturalist.org/v1/taxa?q=Tianschaniella%20umbellulifera&per_page=10",
+          "status": 200,
+          "rawResponseSha256": "42e776e96c307349a48499237f1abfa3f7c291cddfdbb7da35b78472aff0e1fc",
+          "error": null,
+          "resultCount": 1,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist observations",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_id=771087&photos=true&photo_license=cc0,cc-by,cc-by-sa&per_page=5",
+          "status": 200,
+          "rawResponseSha256": "810158c73d4461f06d7dacdb0475b69eb4fb9544f477527e067179daf74322be",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        }
+      ],
+      "collectionSearch": {
+        "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=10874182&mediaType=StillImage&basisOfRecord=PRESERVED_SPECIMEN&limit=8",
+        "status": 200,
+        "rawResponseSha256": "ecd643beb99c09dce4ecd5a8a7f3f68d57207306375d9b1f6916dc0c93a8ab27",
+        "count": 2,
+        "queryKeyBasis": "exact GBIF match for image search only",
+        "providers": [
+          "RBGE",
+          "MeiseBG"
+        ]
+      }
+    },
+    {
+      "id": "eryx-tataricus",
+      "scientificName": "Eryx miliaris",
+      "priority": "B",
+      "acceptedNameAndDocumentedAliases": [
+        "Eryx miliaris"
+      ],
+      "status": "connected",
+      "queries": [
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Eryx+miliaris%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "3ab63ac158f2d30032e807349223fd3ec6e9e8654038833bf8816795d9de96d5",
+          "error": null,
+          "resultCount": 5,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF taxon match",
+          "url": "https://api.gbif.org/v1/species/match?name=Eryx%20miliaris",
+          "status": 200,
+          "rawResponseSha256": "1cacc16e3c3b95e8c8df3a4b72b5ff7e9584274a9e368508ba573b1c3b1720d7",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF media",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=2465319&mediaType=StillImage&limit=15",
+          "status": 200,
+          "rawResponseSha256": "bada2acc38c865c4cfeeae183214f6cee87b19b3cda7ed401b5ce80048882e12",
+          "error": null,
+          "resultCount": 205,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist taxa",
+          "url": "https://api.inaturalist.org/v1/taxa?q=Eryx%20miliaris&per_page=10",
+          "status": 200,
+          "rawResponseSha256": "3cb71b590115d510c0862ca817aabdef30863d363595a104669309a94c566a66",
+          "error": null,
+          "resultCount": 3,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist observations",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_id=32219&photos=true&photo_license=cc0,cc-by,cc-by-sa&per_page=5",
+          "status": 200,
+          "rawResponseSha256": "db71da8d5bd71583051b8bd7f76a57126c246da3ab0565cf6cbdda7b813ce66d",
+          "error": null,
+          "resultCount": 39,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        }
+      ],
+      "collectionSearch": {
+        "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=2465319&mediaType=StillImage&basisOfRecord=PRESERVED_SPECIMEN&limit=8",
+        "status": 200,
+        "rawResponseSha256": "b5740a2f3361f392a369aebf8d36f0043172e246248a0c197a5b0fa5f0dc37bf",
+        "count": 9,
+        "queryKeyBasis": "exact GBIF match for image search only",
+        "providers": [
+          "CAS"
+        ]
+      }
+    },
+    {
+      "id": "allactaga-saltator",
+      "scientificName": "Orientallactaga sibirica",
+      "priority": "B",
+      "acceptedNameAndDocumentedAliases": [
+        "Orientallactaga sibirica",
+        "Allactaga sibirica"
+      ],
+      "status": "connected",
+      "queries": [
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Orientallactaga+sibirica%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "e4d3da292d821ee39f8449de6dcb5b297f74e6d134dd66557038c9f765344edd",
+          "error": null,
+          "resultCount": 2,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Allactaga+sibirica%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "76a9d72e058f6c1e9648d59c91466e8ba97e0d4df26e2078ed6f57deec6ab921",
+          "error": null,
+          "resultCount": 5,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF taxon match",
+          "url": "https://api.gbif.org/v1/species/match?name=Orientallactaga%20sibirica",
+          "status": 200,
+          "rawResponseSha256": "b0dcd88c72c16dc5a1c25e7fbd33fd1142ee6501c7645f12be34a4e638b1b7a4",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF media",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=12162532&mediaType=StillImage&limit=15",
+          "status": 200,
+          "rawResponseSha256": "ea9b6d466a7d6c120b88924a530a5856fa81968475f9b6639407fcca5e08017b",
+          "error": null,
+          "resultCount": 41,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist taxa",
+          "url": "https://api.inaturalist.org/v1/taxa?q=Orientallactaga%20sibirica&per_page=10",
+          "status": 200,
+          "rawResponseSha256": "a71b68a7f0db494f6d23dfa338b42be7fb1d3b733ae0cb716c5e8eaadceb1a32",
+          "error": null,
+          "resultCount": 1,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist observations",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_id=1594998&photos=true&photo_license=cc0,cc-by,cc-by-sa&per_page=5",
+          "status": 200,
+          "rawResponseSha256": "7ba049a3efae3522afdb26af69ad2cc64eecdc1f343b24290293ecab4dba6ecd",
+          "error": null,
+          "resultCount": 11,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        }
+      ],
+      "collectionSearch": {
+        "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=12162532&mediaType=StillImage&basisOfRecord=PRESERVED_SPECIMEN&limit=8",
+        "status": 200,
+        "rawResponseSha256": "5c5057b83dbc167ca781a76b4e9435a3c7205fcfbe94f61158ac949c50d9b430",
+        "count": 0,
+        "queryKeyBasis": "exact GBIF match for image search only",
+        "providers": []
+      }
+    },
+    {
+      "id": "otonycteris-hemprichi",
+      "scientificName": "Otonycteris leucophaea",
+      "priority": "B",
+      "acceptedNameAndDocumentedAliases": [
+        "Otonycteris leucophaea"
+      ],
+      "status": "placeholder",
+      "queries": [
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Otonycteris+leucophaea%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "ada2a601f24c7f102c6432340d6adca256996c391606174b387338725fe7cf7d",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF taxon match",
+          "url": "https://api.gbif.org/v1/species/match?name=Otonycteris%20leucophaea",
+          "status": 200,
+          "rawResponseSha256": "9384f87d74d6406f2d2ea3329669f5d875eb3a437f3e88a7ba0e86a365cbb9ca",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF media",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=7584928&mediaType=StillImage&limit=15",
+          "status": 200,
+          "rawResponseSha256": "742209f90297ecd97c36f339960f06cd4abadc23ae39c81432ef2f42e6ea683e",
+          "error": null,
+          "resultCount": 2,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist taxa",
+          "url": "https://api.inaturalist.org/v1/taxa?q=Otonycteris%20leucophaea&per_page=10",
+          "status": 200,
+          "rawResponseSha256": "8fe824bd55ae81a03908d065ec649cbb58c4703d64f963920ccbc92e652b2a83",
+          "error": null,
+          "resultCount": 1,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist observations",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_id=765477&photos=true&photo_license=cc0,cc-by,cc-by-sa&per_page=5",
+          "status": 200,
+          "rawResponseSha256": "810158c73d4461f06d7dacdb0475b69eb4fb9544f477527e067179daf74322be",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        }
+      ],
+      "collectionSearch": {
+        "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=7584928&mediaType=StillImage&basisOfRecord=PRESERVED_SPECIMEN&limit=8",
+        "status": 200,
+        "rawResponseSha256": "5c5057b83dbc167ca781a76b4e9435a3c7205fcfbe94f61158ac949c50d9b430",
+        "count": 0,
+        "queryKeyBasis": "exact GBIF match for image search only",
+        "providers": []
+      },
+      "reason": "У точных iNaturalist-фото Otonycteris leucophaea CC BY-NC 4.0; в музейной галерее МГУ разрешение на повторное использование конкретных фото не указано. O. hemprichii не подставлялся.",
+      "sources": [
+        "https://www.inaturalist.org/observations/400490187",
+        "https://www.inaturalist.org/observations/74498035",
+        "https://zmmu.msu.ru/bats/rusbats/gallery/pohempr.htm"
+      ]
+    },
+    {
+      "id": "sonjagaster-coronatus",
+      "scientificName": "Thecagaster coronata",
+      "priority": "B",
+      "acceptedNameAndDocumentedAliases": [
+        "Thecagaster coronata",
+        "Sonjagaster coronatus"
+      ],
+      "status": "connected",
+      "queries": [
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Thecagaster+coronata%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "ada2a601f24c7f102c6432340d6adca256996c391606174b387338725fe7cf7d",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Sonjagaster+coronatus%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "ada2a601f24c7f102c6432340d6adca256996c391606174b387338725fe7cf7d",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF taxon match",
+          "url": "https://api.gbif.org/v1/species/match?name=Thecagaster%20coronata",
+          "status": 200,
+          "rawResponseSha256": "40c55940749fbbe15639d173d80fbb032c63a30d95c843582a94775f7e2b3fb3",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist taxa",
+          "url": "https://api.inaturalist.org/v1/taxa?q=Thecagaster%20coronata&per_page=10",
+          "status": 200,
+          "rawResponseSha256": "15cebb859750d82e59dcbb2f443f2d619f4dd23c6a1d23d363de39f071cdc931",
+          "error": null,
+          "resultCount": 1,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist observations",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_id=1578638&photos=true&photo_license=cc0,cc-by,cc-by-sa&per_page=5",
+          "status": 200,
+          "rawResponseSha256": "997007cd7069d95a2e0a274b1ac71d35d147e19e75cfdb240a26ab1171a231f5",
+          "error": null,
+          "resultCount": 7,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        }
+      ],
+      "collectionSearch": {
+        "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=296781457&mediaType=StillImage&basisOfRecord=PRESERVED_SPECIMEN&limit=8",
+        "status": 200,
+        "rawResponseSha256": "5c5057b83dbc167ca781a76b4e9435a3c7205fcfbe94f61158ac949c50d9b430",
+        "count": 0,
+        "queryKeyBasis": "existing exact project taxon reference; no parent fallback",
+        "providers": []
+      }
+    },
+    {
+      "id": "barbus-capito-conocephalus",
+      "scientificName": "Luciobarbus conocephalus",
+      "priority": "B",
+      "acceptedNameAndDocumentedAliases": [
+        "Luciobarbus conocephalus",
+        "Barbus conocephalus"
+      ],
+      "status": "connected",
+      "queries": [
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Luciobarbus+conocephalus%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "ada2a601f24c7f102c6432340d6adca256996c391606174b387338725fe7cf7d",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Barbus+conocephalus%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "ba6dd3c862c6c508a660af93d852b3e6826a5a662ca39f78e829ba98241f9e20",
+          "error": null,
+          "resultCount": 3,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF taxon match",
+          "url": "https://api.gbif.org/v1/species/match?name=Luciobarbus%20conocephalus",
+          "status": 200,
+          "rawResponseSha256": "d4e8736ea11113a8ba8e09a7d5b6d3d5fdbacf44199083861f962ec8969efede",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF media",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=11619334&mediaType=StillImage&limit=15",
+          "status": 200,
+          "rawResponseSha256": "6b1d83298a4b0b7deec750c11d6b888e5065d499cdcfc9c3c1f13158336ed64f",
+          "error": null,
+          "resultCount": 2,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist taxa",
+          "url": "https://api.inaturalist.org/v1/taxa?q=Luciobarbus%20conocephalus&per_page=10",
+          "status": 200,
+          "rawResponseSha256": "bb71620fe60905d17b362eb82bbc1135667119e86349cb9a6f87fe455c98747e",
+          "error": null,
+          "resultCount": 1,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist observations",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_id=1316816&photos=true&photo_license=cc0,cc-by,cc-by-sa&per_page=5",
+          "status": 200,
+          "rawResponseSha256": "562d0a5f856818fe4953eadbc97bfcd65ceee2e3b2aa5c3f754df1c8557330e5",
+          "error": null,
+          "resultCount": 1,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        }
+      ],
+      "collectionSearch": {
+        "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=11619334&mediaType=StillImage&basisOfRecord=PRESERVED_SPECIMEN&limit=8",
+        "status": 200,
+        "rawResponseSha256": "5c5057b83dbc167ca781a76b4e9435a3c7205fcfbe94f61158ac949c50d9b430",
+        "count": 0,
+        "queryKeyBasis": "exact GBIF match for image search only",
+        "providers": []
+      }
+    },
+    {
+      "id": "pike-asp",
+      "scientificName": "Aspiolucius esocinus",
+      "priority": "B",
+      "acceptedNameAndDocumentedAliases": [
+        "Aspiolucius esocinus"
+      ],
+      "status": "placeholder",
+      "queries": [
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Aspiolucius+esocinus%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "e0ab17ea1c3372f99c0cf30631c4599348d3afdba3b58a5eb298c3eaf1e3a6c4",
+          "error": null,
+          "resultCount": 5,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF taxon match",
+          "url": "https://api.gbif.org/v1/species/match?name=Aspiolucius%20esocinus",
+          "status": 200,
+          "rawResponseSha256": "45932346236040720b0c4a60fc9ca5b9826b684ff669ef98f88d9a9361f21a9e",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF media",
+          "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=2363766&mediaType=StillImage&limit=15",
+          "status": 200,
+          "rawResponseSha256": "193131b1cdbfb84594a653887657b8b8766a6f22f1ca76dd11fb8eb20c747216",
+          "error": null,
+          "resultCount": 1,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist taxa",
+          "url": "https://api.inaturalist.org/v1/taxa?q=Aspiolucius%20esocinus&per_page=10",
+          "status": 200,
+          "rawResponseSha256": "53d5401045956716c9cd28983ea1a3dabc07f83de79e336e04391497b9bea315",
+          "error": null,
+          "resultCount": 1,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist observations",
+          "url": "https://api.inaturalist.org/v1/observations?taxon_id=94701&photos=true&photo_license=cc0,cc-by,cc-by-sa&per_page=5",
+          "status": 200,
+          "rawResponseSha256": "810158c73d4461f06d7dacdb0475b69eb4fb9544f477527e067179daf74322be",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        }
+      ],
+      "collectionSearch": {
+        "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=2363766&mediaType=StillImage&basisOfRecord=PRESERVED_SPECIMEN&limit=8",
+        "status": 200,
+        "rawResponseSha256": "5e95b9531907e08b7b500790e5600594791953203eaace61d464698d2cb1d421",
+        "count": 1,
+        "queryKeyBasis": "exact GBIF match for image search only",
+        "providers": [
+          "NHMUK"
+        ]
+      },
+      "reason": "Commons выдаёт марки/конверты, GBIF — музейный журнал поступлений, не организм. Точная свободная фотография либо первичный научный рисунок с проверенными правами не установлены; рыба другого вида не подставлялась.",
+      "sources": [
+        "https://commons.wikimedia.org/wiki/File:Aspiolucius_esocinus.jpg",
+        "https://www.gbif.org/occurrence/1057512046",
+        "https://www.zin.ru/publications/fauna_keys/keys_29_berg_1949.pdf"
+      ]
+    },
+    {
+      "id": "parnassius-loxias-tashkorensis",
+      "scientificName": "Parnassius loxias loxias",
+      "priority": "B",
+      "acceptedNameAndDocumentedAliases": [
+        "Parnassius loxias loxias",
+        "Parnassius loxias tashkorensis"
+      ],
+      "status": "placeholder",
+      "queries": [
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Parnassius+loxias+loxias%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "c4b4d4d5908ff9a8350fc811ac278e4164dab8891bd4b0a8530771475800c363",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "Commons",
+          "url": "https://commons.wikimedia.org/w/api.php?action=query&format=json&generator=search&gsrsearch=%22Parnassius+loxias+tashkorensis%22&gsrnamespace=6&gsrlimit=5&prop=imageinfo%7Crevisions&iiprop=url%7Csize%7Cextmetadata%7Csha1&rvprop=ids%7Ccontent&rvslots=main",
+          "status": 200,
+          "rawResponseSha256": "ada2a601f24c7f102c6432340d6adca256996c391606174b387338725fe7cf7d",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "GBIF taxon match",
+          "url": "https://api.gbif.org/v1/species/match?name=Parnassius%20loxias%20loxias",
+          "status": 200,
+          "rawResponseSha256": "6610e4d806a9c6face3e750dbc3c228e4dd838ed07638ca977eb43f92148eacb",
+          "error": null,
+          "resultCount": 0,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        },
+        {
+          "platform": "iNaturalist taxa",
+          "url": "https://api.inaturalist.org/v1/taxa?q=Parnassius%20loxias%20loxias&per_page=10",
+          "status": 200,
+          "rawResponseSha256": "ce28a07b5b3b5933a5d7a403e04c99297657131661a0f1349aa702210ca824e7",
+          "error": null,
+          "resultCount": 1,
+          "meaning": "число записей/результатов в ограниченном запросе; не число разрешённых фотографий"
+        }
+      ],
+      "collectionSearch": {
+        "url": "https://api.gbif.org/v1/occurrence/search?taxonKey=307395113&mediaType=StillImage&basisOfRecord=PRESERVED_SPECIMEN&limit=8",
+        "status": 200,
+        "rawResponseSha256": "5c5057b83dbc167ca781a76b4e9435a3c7205fcfbe94f61158ac949c50d9b430",
+        "count": 0,
+        "queryKeyBasis": "existing exact project taxon reference; no parent fallback",
+        "providers": []
+      },
+      "reason": "Файл Commons определён только как Parnassius loxias; нужный номинативный подвид loxias loxias документально не установлен. Музейный университетский список содержит лишь видовой ранг. Родительский вид не подставлялся.",
+      "sources": [
+        "https://commons.wikimedia.org/wiki/File:Parnassiusloxias.jpg",
+        "https://umdb.um.u-tokyo.ac.jp/DEntomology/IgarashiInsect1/en/cabinet2.php?Number=1007&max=all&skip=0"
+      ]
+    }
+  ],
+  "rejectedExamples": [
+    {
+      "taxon": "Vipera altaica",
+      "reason": "Не заменяет Vipera renardi без отдельного подтверждения; выбран файл с точным именем."
+    },
+    {
+      "file": "Siberian Wapiti, Altanbulag, Töv, Mongolia.jpg",
+      "reason": "Ненадёжный Artist: no rights reserved вместо автора и неопределённое латинское имя в описании; выбран другой файл с указанным автором и документированной категорией."
+    },
+    {
+      "file": "Parnassiusloxias.jpg",
+      "reason": "Недостаточен точный ранг; unknown author / Public domain не повышены до разрешения для нужного подвида."
+    },
+    {
+      "source": "floragridmap.uz",
+      "reason": "Общая оговорка research/teaching не трактуется как свободное право публикации изображений вопреки требованию письменного разрешения."
+    }
+  ],
+  "limitations": [
+    "Полный npm test не зелёный: 324/331, 7 исторических/источниковых контрактов не учитывают новую отдельно разрешённую медиа-партию. Не готов к релизу с зелёным suite; тесты по прямому запрету задания не менялись.",
+    "Независимая биологическая переидентификация и научное одобрение не предоставлялись.",
+    "У Campanula исходник Kew 101756928 пикселей вызвал штатное Pillow DecompressionBombWarning; лимиты Pillow не отключались, файл прошёл обработку, в public только WebP 1800 px.",
+    "Первый скачивающий запрос Vipera истёк по времени; один ограниченный повтор через тот же pipeline прошёл. HTTP 403 на некоторых HTML-страницах не обходился; использованы доступные первичные API/другие проверенные источники."
+  ]
+}

@@ -1,3 +1,4 @@
+import { allPhotoAmendments } from './helpers/photo-batch-2.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile, writeFile, mkdir, mkdtemp, readdir, rm } from 'node:fs/promises'
@@ -46,7 +47,12 @@ test('canonical data preserves original nine records and two archived examples w
         assert.ok(s.sources.some(reference => reference.supports.includes(`names.${language}`)))
       }
     }
-    assert.equal(s.iucn.year, null) // Dataset publication year is not an assessment year.
+    if (s.id === 'numenius-tenuirostris') {
+      assert.equal(s.iucn.category, 'EX')
+      assert.equal(s.iucn.year, 2025)
+      assert.deepEqual(s.iucn.sourceIds, ['birdlife-2025'])
+      assert.ok(s.sources.find(r => r.id === 'birdlife-2025').supports.includes('iucn.year'))
+    } else assert.equal(s.iucn.year, null) // Dataset publication year is not an assessment year.
     if (source.catalog.indexOf(s) < 17) assert.ok(speciesPhoto(s)) // Preserve the first two photographic batches.
   }
   assert.equal(source.catalog.find(s => s.id === 'argali').nationalRedBook.category, null)
@@ -244,6 +250,15 @@ test('licensed assets are local WebP, have declared dimensions, captions and mat
     assert.equal(createHash('sha256').update(bytes).digest('hex'), entry.draftSha256)
     restoration.records.push(...JSON.parse(bytes).images.map(image => ({ id: entry.id, image, sha256: image.sha256 })))
   }
+  const catalog166Manifest = JSON.parse(await readFile(join(PROJECT_ROOT, 'data/research/catalog-167-review-manifest.json'), 'utf8'))
+  for (const entry of catalog166Manifest.candidates) {
+    const bytes = await readFile(join(PROJECT_ROOT, entry.draftFile))
+    assert.equal(createHash('sha256').update(bytes).digest('hex'), entry.draftSha256)
+    restoration.records.push(...JSON.parse(bytes).images.map(image => ({ id: entry.id, image, sha256: image.sha256 })))
+  }
+  const currentPublic = JSON.parse(await readFile(join(PROJECT_ROOT, 'public/data/species.json'), 'utf8'))
+  const amendments = await allPhotoAmendments(source, currentPublic)
+  restoration.records.push(...amendments.map(r => ({ id: r.id, image: r.image, sha256: r.finalWebPSha256 })))
   for (const s of source.catalog.filter(s => speciesPhoto(s))) {
     const image = speciesPhoto(s)
     const bytes = await readFile(join(PROJECT_ROOT, image.path))

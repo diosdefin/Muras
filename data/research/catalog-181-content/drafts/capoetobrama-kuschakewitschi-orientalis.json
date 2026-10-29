@@ -1,0 +1,259 @@
+{
+  "id": "capoetobrama-kuschakewitschi-orientalis",
+  "scientificName": "Capoetobrama kuschakewitschi",
+  "names": {
+    "ru": "Чуйская остролучка",
+    "ky": "Учтуу канат",
+    "uz": "Capoetobrama kuschakewitschi",
+    "en": "Eastern Ostroluchka"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": null,
+    "order": "Cypriniformes",
+    "family": "Cyprinidae",
+    "genus": "Capoetobrama"
+  },
+  "group": "fish",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "CR",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Capoetobrama kuschakewitschi orientalis, с.302–303); Статус:  2 [CR: C]",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Речные перекаты и заводи с галечно-песчаным грунтом; исторические сведения чуйского очерка.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "code": "KG",
+      "type": "country",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Строительство плотины, загрязнение и воздействие интродуцированных рыб в очерке предложены как возможные, а не доказанные причины.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендации 2006 года: ограничения лова, охрана воды от загрязнения, уточнение состояния чуйской формы.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Capoetobrama kuschakewitschi orientalis, с.302–303",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=303",
+      "accessedAt": "2026-10-22",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.category",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "content.diet",
+        "threats.0",
+        "conservationMeasures.0",
+        "content.appearance",
+        "names.en"
+      ],
+      "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 302-бет; проверенный кыргызский заголовок",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=302",
+      "accessedAt": "2026-10-22",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    },
+    {
+      "id": "itis-capoetobrama",
+      "title": "ITIS: Capoetobrama kuschakewitschi",
+      "publisher": "Integrated Taxonomic Information System",
+      "url": "https://www.itis.gov/ITISWebService/jsonservice/getFullRecordFromTSN?tsn=688845",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.shortDescription"
+      ],
+      "notes": "synonymList; hierarchyUp; taxonUsageRating valid; source Eschmeyer 11-Jan-2023; переиспользованы доказательства №25.4 (live_primary_API_response). Полный текст недоступного источника не объявлен заново прочитанным."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone Taxonomy: Capoetobrama kuschakewitschi (Kessler, 1872); exact SPECIES",
+      "publisher": "GBIF / GBIF Backbone Taxonomy",
+      "url": "https://api.gbif.org/v1/species/4286997",
+      "accessedAt": "2026-10-22",
+      "language": "en",
+      "taxonId": "gbif:4286997",
+      "supports": [
+        "scientificName",
+        "names.uz",
+        "content.overview",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "notes": "Источник — реальная запись указанного чек-листа. EXACT означает локальную строгую проверку canonicalName и rank; не вымышленный ответ API match. nubKey другого ранга не подставлен."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Историческая чуйская форма Capoetobrama kuschakewitschi из книги 2006 года. Современное сохранение популяции в Кыргызстане не подтверждено.",
+        "ky": "2006-жылкы китептеги Capoetobrama kuschakewitschi балыгынын Чүйдөгү тарыхый формасы. Кыргызстанда популяциясынын азыр сакталышы тастыкталган эмес.",
+        "uz": "2006-yilgi kitobdagi Capoetobrama kuschakewitschi baligʻining Chu tarixiy shakli. Qirgʻizistonda populyatsiyaning hozir saqlangani tasdiqlanmagan.",
+        "en": "The historical Chu River form of Capoetobrama kuschakewitschi treated in 2006. Persistence of a present Kyrgyz population is unconfirmed."
+      },
+      "sourceIds": [
+        "national-book",
+        "itis-capoetobrama"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Чуйская остролучка — историческая локальная форма рыбы Capoetobrama kuschakewitschi (Kessler, 1872). В принятой видовой обработке ITIS имя orientalis включено в синонимику этого вида. Карточка сохраняет охват национального чуйского очерка, не утверждая самостоятельного современного подвида и не распространяя его историческую категорию на весь ареал вида.\n\nНациональный очерк описывает небольшую рыбу с зеленовато-жёлтой спиной, серебристыми боками, бесчешуйным брюшным килем и гладкой колючкой спинного плавника. Речные перекаты и заводи с галечно-песчаным грунтом; исторические сведения чуйского очерка. По книге донный рацион включает детрит и заглатываемых с ним мелких беспозвоночных, а также нитчатые водоросли. Это сведения о локальной форме из исторического источника.\n\nВ очерке перечислены детрит, черви, остракоды, личинки насекомых и нитчатые водоросли. Национальная книга указывает растянутый нерест с конца апреля до конца июля и откладку икры в спокойных участках реки с песчано-каменистым грунтом.\n\nИсторический очерк ограничен рекой Чу. Возможное исчезновение в стране отмечено самим источником 2006 года и не заменяется утверждением о подтверждённой современной популяции.\n\nСтроительство плотины, загрязнение и воздействие интродуцированных рыб в очерке предложены как возможные, а не доказанные причины. Рекомендации 2006 года: ограничения лова, охрана воды от загрязнения, уточнение состояния чуйской формы.\n\nНациональная CR категория относится к историческому очерку 2006 года и названной местной единице охраны. Она не является глобальной оценкой всего современного таксона или проверенным действующим правовым статусом. Современная численность неизвестна; независимая научная проверка ожидается.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "itis-capoetobrama",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальный очерк описывает небольшую рыбу с зеленовато-жёлтой спиной, серебристыми боками, бесчешуйным брюшным килем и гладкой колючкой спинного плавника.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге донный рацион включает детрит и заглатываемых с ним мелких беспозвоночных, а также нитчатые водоросли. Это сведения о локальной форме из исторического источника.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В очерке перечислены детрит, черви, остракоды, личинки насекомых и нитчатые водоросли.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Национальная книга указывает растянутый нерест с конца апреля до конца июля и откладку икры в спокойных участках реки с песчано-каменистым грунтом.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический очерк ограничен рекой Чу. Возможное исчезновение в стране отмечено самим источником 2006 года и не заменяется утверждением о подтверждённой современной популяции.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

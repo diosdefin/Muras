@@ -2,7 +2,7 @@
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { useLocale } from '../../composables/useLocale.js'
 import { availableGroups } from '../../data/species-groups.js'
-import { groupLabel, publicImageUrl, regionLabel, speciesName, speciesPhoto, PLACEHOLDER } from '../../data/presentation.js'
+import { groupLabel, publicImageUrl, regionLabel, speciesPhoto, PLACEHOLDER } from '../../data/presentation.js'
 
 const { t, language } = useLocale()
 const props = defineProps({
@@ -27,7 +27,18 @@ const slides = computed(() => [
   { key: 'largest', eyebrow: t('mapPreview.largestGroup'), value: largest.value[1], label: largest.value[0] ? groupLabel({ group: largest.value[0] }, language.value) : t('mapPreview.records'), detail: t('mapPreview.shareOfCatalog', { p0: props.species.length ? Math.round(largest.value[1] / props.species.length * 100) : 0 }), ratio: props.species.length ? largest.value[1] / props.species.length * 100 : 0 },
 ])
 const current = computed(() => slides.value[slide.value] || slides.value[0])
-const previewEntries = computed(() => props.entries.slice(0, 2))
+// The regional preview represents every documented group, not just the first two animals.
+const regionGroups = computed(() => {
+  const bucket = new Map()
+  for (const entry of props.entries) {
+    const group = entry.species.group
+    if (!bucket.has(group)) bucket.set(group, { group, count: 0, representative: entry.species })
+    const item = bucket.get(group)
+    item.count += 1
+    if (!speciesPhoto(item.representative) && speciesPhoto(entry.species)) item.representative = entry.species
+  }
+  return [...bucket.values()].sort((a, b) => b.count - a.count)
+})
 
 function next(direction = 1) { slide.value = (slide.value + direction + slides.value.length) % slides.value.length }
 let rotation
@@ -35,7 +46,7 @@ onMounted(() => {
   if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return
   rotation = window.setInterval(() => {
     if (!props.region && !paused.value && !document.hidden) next()
-  }, 7000)
+  }, 6500)
 })
 onUnmounted(() => window.clearInterval(rotation))
 </script>
@@ -46,28 +57,22 @@ onUnmounted(() => window.clearInterval(rotation))
     <Transition name="overview-fade" mode="out-in">
       <div v-if="region" :key="`region-${region.id}`" class="map-overview-content map-region-summary">
         <div class="map-overview-topline">
-          <p class="map-overview-eyebrow">{{ t('mapPreview.regionSubtitle') }}</p>
-          <button type="button" class="map-overview-clear" :aria-label="t('mapPreview.clear')" @click="emit('clear')">×</button>
+          <button type="button" class="map-overview-clear" :aria-label="t('mapPreview.clear')" @click="emit('clear')"><svg viewBox="0 0 20 20" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.65" aria-hidden="true"><path d="M5 5 15 15M15 5 5 15" stroke-linecap="round"/></svg></button>
         </div>
         <h3>{{ regionLabel(region.id, language) }}</h3>
         <p v-if="entries.length" class="map-region-count" role="status">{{ t('mapPreview.regionRecords', { p0: entries.length }) }}</p>
         <p v-else class="map-region-empty" role="status">{{ t('mapPreview.regionNoData') }}</p>
-        <div v-if="previewEntries.length" class="map-region-gallery" :aria-label="t('mapPreview.photoSources')">
-          <div v-for="entry in previewEntries" :key="entry.species.id" class="map-region-thumb">
-            <img :src="imageFailures[entry.species.id] ? PLACEHOLDER : publicImageUrl(speciesPhoto(entry.species)?.path)" :alt="speciesName(entry.species, language)"
-              width="58" height="58" loading="lazy" decoding="async" @error="imageFailures[entry.species.id] = true" />
-            <span>{{ speciesName(entry.species, language) }}</span>
+        <div v-if="regionGroups.length" class="map-region-gallery" :aria-label="t('mapPreview.groups')">
+          <div v-for="item in regionGroups" :key="item.group" class="map-region-thumb">
+            <div class="map-region-avatar">
+              <img :src="imageFailures[item.group] ? PLACEHOLDER : publicImageUrl(speciesPhoto(item.representative)?.path)"
+                :alt="groupLabel({ group: item.group }, language)" width="60" height="60" loading="lazy" decoding="async"
+                @error="imageFailures[item.group] = true" />
+              <span class="map-region-badge" :aria-label="String(item.count)">{{ item.count }}</span>
+            </div>
+            <span>{{ groupLabel({ group: item.group }, language) }}</span>
           </div>
         </div>
-        <details v-if="previewEntries.some(entry => speciesPhoto(entry.species))" class="map-overview-credits">
-          <summary>{{ t('mapPreview.photoSources') }} ↗</summary>
-          <div class="map-overview-credit-links">
-            <template v-for="entry in previewEntries" :key="entry.species.id">
-              <a v-if="speciesPhoto(entry.species)" :href="speciesPhoto(entry.species).originalPage" target="_blank" rel="noopener noreferrer">{{ speciesPhoto(entry.species).author }} · {{ speciesPhoto(entry.species).license }}</a>
-            </template>
-          </div>
-        </details>
-        <p class="map-region-review">{{ t('mapPreview.regionReview') }}</p>
         <button type="button" class="map-overview-action" @click="emit('details')">{{ t('mapPreview.details') }} <span aria-hidden="true">↗</span></button>
       </div>
       <div v-else :key="current.key" class="map-overview-content map-fact-slide" aria-live="off">

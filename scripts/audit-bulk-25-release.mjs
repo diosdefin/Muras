@@ -1,3 +1,4 @@
+import { historicalMapBytes } from './lib/map-history.mjs'
 import { isHistoricalEvidenceUnchanged } from './lib/ui-design-scope.mjs'
 // Audit only: existing validators/planner perform all checks. No approve/apply/import.
 import { readFile, writeFile, mkdir } from 'node:fs/promises'
@@ -23,7 +24,8 @@ export async function auditBulk25(root = PROJECT_ROOT, { historical = false } = 
   const baselinePath = p => historical ? ({ 'data/species.source.json': 'data/backups/bulk-25-provisional/species.source.json',
     'public/data/species.json': 'data/backups/bulk-25-provisional/public-species.json',
     'src/data/species-model.js': 'data/backups/bulk-25-provisional/species-model.js',
-    'src/admin/data/repository.js': 'data/backups/catalog-125/admin-draft-repository.js' }[p] || p) : p
+    'src/admin/data/repository.js': 'data/backups/catalog-125/admin-draft-repository.js',
+    'src/admin/data/model.js': 'data/backups/catalog-166/admin-model.js' }[p] || p) : p
   const [registry, manifest, master, source, national, taxonomy, legacy, selection, preserved] = await Promise.all([
     'data/research/bulk-25-content-registry.json', 'data/research/bulk-25-content-manifest.json',
     'data/research/redbook-master-registry.json', 'data/species.source.json',
@@ -37,7 +39,7 @@ export async function auditBulk25(root = PROJECT_ROOT, { historical = false } = 
   assert.equal(fingerprint(master), manifest.masterRegistryFingerprint)
   assert.deepEqual(registry.candidates.map(c => c.id), manifest.candidateIds)
   assert.equal(manifest.candidateIds.length, 25)
-  for (const [p, sha] of Object.entries(preserved).filter(([p]) => isHistoricalEvidenceUnchanged(p))) assert.equal(digest(await readFile(resolve(root, baselinePath(p)))), sha, p)
+  for (const [p, sha] of Object.entries(preserved).filter(([p]) => isHistoricalEvidenceUnchanged(p))) assert.equal(digest(historical ? await historicalMapBytes(root, baselinePath(p), sha) : await readFile(resolve(root, baselinePath(p)))), sha, p)
   const sourceRecords = new Map(national.lists.flatMap(l => l.records).map(r => [r.recordId, r]))
   const selectedIds = new Set(manifest.candidateIds)
   const remaining = master.candidates.filter(c => !selectedIds.has(c.id))

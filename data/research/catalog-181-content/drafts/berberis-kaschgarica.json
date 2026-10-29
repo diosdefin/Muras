@@ -1,0 +1,264 @@
+{
+  "id": "berberis-kaschgarica",
+  "scientificName": "Berberis ulicina",
+  "names": {
+    "ru": "Барбарис кашгарский",
+    "ky": "Кашкар бөрү карагаты",
+    "uz": "Berberis ulicina",
+    "en": "Kashgarian Barberry"
+  },
+  "taxonomy": {
+    "kingdom": "Plantae",
+    "phylum": "Tracheophyta",
+    "class": "Magnoliopsida",
+    "order": "Ranunculales",
+    "family": "Berberidaceae",
+    "genus": "Berberis"
+  },
+  "group": "plants",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "VU",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (исторический национальный очерк Berberis kaschgarica, с.114–115); Статус:  VU",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Каменистые склоны, старые морены и сырты; сведения исторического национального очерка.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "code": "KG",
+      "type": "country",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторический источник называет хозяйственное освоение территории произрастания.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В 2006 году предложены исследования биологии и численности и заказник в месте концентрации растений.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2006; Berberis kaschgarica, с.114–115",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=115",
+      "accessedAt": "2026-10-22",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.category",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.reproduction",
+        "content.distribution",
+        "content.diet",
+        "threats.0",
+        "conservationMeasures.0",
+        "content.appearance",
+        "names.en"
+      ],
+      "notes": "Использована сохранённая исходная книга; редакционные переводы кратких описаний KY/UZ/EN не являются цитатами. Исторический очерк не подтверждает текущее присутствие."
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 114-бет; проверенный кыргызский заголовок",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=114",
+      "accessedAt": "2026-10-22",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    },
+    {
+      "id": "powo-berberis-old",
+      "title": "POWO: Berberis kaschgarica Rupr.",
+      "publisher": "Royal Botanic Gardens, Kew",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:106805-1",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview",
+        "content.shortDescription"
+      ],
+      "notes": "Publications; Sert. Tiansch.:38 (1869); переиспользованы доказательства №25.4 (web_indexed_primary_text). Полный текст недоступного источника не объявлен заново прочитанным."
+    },
+    {
+      "id": "powo-berberis",
+      "title": "POWO: Berberis ulicina",
+      "publisher": "Royal Botanic Gardens, Kew",
+      "url": "https://powo.science.kew.org/taxon/urn:lsid:ipni.org:names:107162-1",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "content.overview"
+      ],
+      "notes": "Heterotypic Synonyms; Distribution; переиспользованы доказательства №25.4 (web_indexed_primary_text). Полный текст недоступного источника не объявлен заново прочитанным."
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone Taxonomy: Berberis ulicina Hook.fil. & Thomson; exact SPECIES",
+      "publisher": "GBIF / GBIF Backbone Taxonomy",
+      "url": "https://api.gbif.org/v1/species/3980999",
+      "accessedAt": "2026-10-22",
+      "language": "en",
+      "taxonId": "gbif:3980999",
+      "supports": [
+        "scientificName",
+        "names.uz",
+        "content.overview",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus"
+      ],
+      "notes": "Источник — реальная запись указанного чек-листа. EXACT означает локальную строгую проверку canonicalName и rank; не вымышленный ответ API match. nubKey другого ранга не подставлен."
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Колючий кустарник каменистых склонов и морен. Национальный очерк 2006 года посвящён Berberis kaschgarica, включённому в Berberis ulicina.",
+        "ky": "Таштак беттерде жана мореналарда өскөн тикендүү бадал. 2006-жылкы очерктеги Berberis kaschgarica аты азыр Berberis ulicina түрүнө киргизилет.",
+        "uz": "Toshloq yonbagʻirlar va morenalarning tikanli butasi. 2006-yilgi milliy ocherkdagi Berberis kaschgarica hozir Berberis ulicina tarkibida qaraladi.",
+        "en": "A thorny shrub of stony slopes and moraines. The 2006 national account concerns Berberis kaschgarica, now included in Berberis ulicina."
+      },
+      "sourceIds": [
+        "national-book",
+        "powo-berberis-old"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Барбарис кашгарский — колючий высокогорный кустарник, описанный в национальном очерке как Berberis kaschgarica Rupr. Принятая здесь видовая модель POWO и GBIF включает это имя в Berberis ulicina Hook.f. & Thomson. Национальное описание относится к историческому кашгарскому концепту внутри более широкого вида.\n\nВ русском очерке описан густо ветвящийся кустарник высотой около 0,5–1 м, с трёхраздельными колючками, небольшими кожистыми листьями и чёрными широкоовальными ягодами. Каменистые склоны, старые морены и сырты; сведения исторического национального очерка. В национальном источнике растение связано с высокогорными каменистыми участками и обычно отмечено одиночно. Это качественная характеристика редкости, не численный современный учёт.\n\nСеменное размножение прямо указано в очерке. Календарь цветения и плодоношения русской и английской версий различается, поэтому точные месяцы в подготовленный текст не перенесены.\n\nВ Кыргызстане книга 2006 года приводит бассейн Сары-Джаза в Центральном Тянь-Шане. Этот национальный охват не равен всему современному ареалу B. ulicina.\n\nИсторический источник называет хозяйственное освоение территории произрастания. В 2006 году предложены исследования биологии и численности и заказник в месте концентрации растений.\n\nНациональная VU категория относится к историческому очерку 2006 года и названной местной единице охраны. Она не является глобальной оценкой всего современного таксона или проверенным действующим правовым статусом. Современная численность неизвестна; независимая научная проверка ожидается.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "powo-berberis-old",
+        "powo-berberis",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В русском очерке описан густо ветвящийся кустарник высотой около 0,5–1 м, с трёхраздельными колючками, небольшими кожистыми листьями и чёрными широкоовальными ягодами.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальном источнике растение связано с высокогорными каменистыми участками и обычно отмечено одиночно. Это качественная характеристика редкости, не численный современный учёт.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": null,
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Семенное размножение прямо указано в очерке. Календарь цветения и плодоношения русской и английской версий различается, поэтому точные месяцы в подготовленный текст не перенесены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В Кыргызстане книга 2006 года приводит бассейн Сары-Джаза в Центральном Тянь-Шане. Этот национальный охват не равен всему современному ареалу B. ulicina.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

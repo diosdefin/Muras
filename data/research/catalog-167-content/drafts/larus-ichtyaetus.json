@@ -1,0 +1,297 @@
+{
+  "id": "larus-ichtyaetus",
+  "scientificName": "Ichthyaetus ichthyaetus",
+  "names": {
+    "ru": "Черноголовый хохотун",
+    "ky": "Чоң карабаштуу чардак",
+    "uz": "Ichthyaetus ichthyaetus",
+    "en": "Great Black-headed Gull"
+  },
+  "taxonomy": {
+    "kingdom": "Animalia",
+    "phylum": "Chordata",
+    "class": "Aves",
+    "order": "Charadriiformes",
+    "family": "Laridae",
+    "genus": "Ichthyaetus"
+  },
+  "group": "birds",
+  "nationalRedBook": {
+    "listed": true,
+    "category": "NT",
+    "edition": "Красная книга Кыргызской Республики, 2-е издание 2006 (историческая национальная запись); запись под именем Larus ichtyaetus",
+    "year": 2006,
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "iucn": {
+    "category": null,
+    "year": null,
+    "sourceIds": []
+  },
+  "habitat": {
+    "description": {
+      "ky": null,
+      "uz": null,
+      "ru": "Берега озёр и других крупных водоёмов, реже рек; исторический национальный источник 2006 года.",
+      "en": null
+    },
+    "sourceIds": [
+      "national-book"
+    ]
+  },
+  "regions": [
+    {
+      "type": "country",
+      "code": "KG",
+      "names": {
+        "ru": "Кыргызстан",
+        "ky": "Кыргызстан",
+        "uz": "Qirgʻiziston",
+        "en": "Kyrgyzstan"
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "threats": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге 2006 года: беспокойство на потенциальных гнездовых участках, рекреация на берегах, прямое уничтожение птиц и разорение гнёзд.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "conservationMeasures": [
+    {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Рекомендации 2006 года: картировать места гнездования, организовать минизаказники, охранять места пролёта и вести разъяснительную работу.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  ],
+  "population": {
+    "type": "unknown",
+    "value": null,
+    "min": null,
+    "max": null,
+    "territory": null,
+    "year": null,
+    "unit": null,
+    "sourceIds": [],
+    "reviewStatus": "pending",
+    "method": null
+  },
+  "images": [
+    {
+      "path": "assets/images/species/larus-ichtyaetus.webp",
+      "width": 1800,
+      "height": 1200,
+      "sha256": "dfef49079c0bbc259df2cc9f757cd90fef3f45fcc00083f899aac65765854dd8",
+      "author": "Tisha Mukherjee",
+      "originalPage": "https://commons.wikimedia.org/wiki/File:Pallas%27s_Gull_by_Tisha_Mukherjee_20.jpg",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "attribution": "Tisha Mukherjee; CC BY-SA 4.0; https://commons.wikimedia.org/wiki/File:Pallas%27s_Gull_by_Tisha_Mukherjee_20.jpg. Производные изображения распространяются под той же лицензией.",
+      "modifications": [
+        "Уменьшение без увеличения до 1800 px; конвертация WebP quality 82; удаление EXIF/XMP."
+      ],
+      "licenseVerified": true,
+      "caption": {
+        "ky": null,
+        "uz": null,
+        "ru": "Ichthyaetus ichthyaetus в Баккхали, Западная Бенгалия, Индия; не современная находка в Кыргызстане.",
+        "en": null
+      }
+    }
+  ],
+  "sources": [
+    {
+      "id": "national-book",
+      "title": "Красная книга Кыргызской Республики, 2-е изд., 2006; Larus ichtyaetus, с. 450–451",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=451",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "nationalRedBook.edition",
+        "nationalRedBook.year",
+        "group",
+        "regions.0",
+        "originalScientificName",
+        "names.ru",
+        "habitat",
+        "content.shortDescription",
+        "content.overview",
+        "content.ecology",
+        "content.diet",
+        "content.reproduction",
+        "content.distribution",
+        "threats.0",
+        "conservationMeasures.0",
+        "names.en",
+        "nationalRedBook.category"
+      ]
+    },
+    {
+      "id": "national-decree",
+      "title": "Постановление №170 от 28.04.2005, документированная редакция 25.07.2009; decree-170-2009-3-49",
+      "publisher": "Правительство Кыргызской Республики; FAOLEX",
+      "url": "https://faolex.fao.org/docs/pdf/kyr104340.pdf#page=10",
+      "accessedAt": "2026-10-21",
+      "language": "ru",
+      "supports": [
+        "nationalRedBook.listed",
+        "originalScientificName"
+      ]
+    },
+    {
+      "id": "gbif-taxonomy",
+      "title": "GBIF Backbone: Ichthyaetus ichthyaetus (Pallas, 1773)",
+      "publisher": "GBIF",
+      "url": "https://api.gbif.org/v1/species/8028588",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "scientificName",
+        "taxonomy.kingdom",
+        "taxonomy.phylum",
+        "taxonomy.class",
+        "taxonomy.order",
+        "taxonomy.family",
+        "taxonomy.genus",
+        "content.overview",
+        "names.uz"
+      ],
+      "taxonId": "gbif:8028588"
+    },
+    {
+      "id": "cornell-gull",
+      "title": "Cornell Lab of Ornithology, eBird/Merlin. Pallas’s Gull: identification",
+      "publisher": "Cornell Lab of Ornithology",
+      "url": "https://ebird.org/species/gbhgul2",
+      "accessedAt": "2026-10-21",
+      "language": "en",
+      "supports": [
+        "content.appearance"
+      ]
+    },
+    {
+      "id": "photo-commons",
+      "title": "Ichthyaetus ichthyaetus; лицензированное изображение, Tisha Mukherjee",
+      "publisher": "Wikimedia Commons",
+      "url": "https://commons.wikimedia.org/wiki/File:Pallas%27s_Gull_by_Tisha_Mukherjee_20.jpg",
+      "accessedAt": "2026-10-21",
+      "supports": [
+        "images.0.caption"
+      ],
+      "language": null
+    },
+    {
+      "id": "national-ky",
+      "title": "Кыргыз Республикасынын Кызыл китеби, 2006, 450-бет; визуалдык текшерилген аталыш",
+      "publisher": "ГАОСЛХ при Правительстве КР; НАН КР",
+      "url": "https://macrolepidoptera.ru/lnk/282.pdf#page=450",
+      "accessedAt": "2026-10-21",
+      "language": "ky",
+      "supports": [
+        "names.ky"
+      ]
+    }
+  ],
+  "verified": false,
+  "lastReviewedAt": null,
+  "content": {
+    "shortDescription": {
+      "text": {
+        "ru": "Крупная чайка, исторически включённая как Larus ichtyaetus. Принятое имя — Ichthyaetus ichthyaetus; старые локальные учёты не равны современной национальной численности.",
+        "ky": "Тарыхый китепте Larus ichtyaetus деп берилген ири чардак. Кабыл алынган аты — Ichthyaetus ichthyaetus; эски жергиликтүү эсептер азыркы жалпы санды билдирбейт.",
+        "uz": "Tarixiy kitobda Larus ichtyaetus deb berilgan yirik chayka. Qabul qilingan nomi — Ichthyaetus ichthyaetus; eski mahalliy hisoblar hozirgi milliy sonni bildirmaydi.",
+        "en": "A large gull historically listed as Larus ichtyaetus, now accepted as Ichthyaetus ichthyaetus. Old local counts do not establish current national abundance."
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "overview": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Черноголовый хохотун — крупная чайка, представленная в национальном очерке 2006 года под историческим написанием Larus ichtyaetus. Прежний таксономический блок был снят в инвентаризации документальной сверкой: в постановлении стоит Larus ichthyaetus, совпадает автор Pallas, 1773, а сохранённые точные ответы GBIF связывают синоним с Ichthyaetus ichthyaetus. Это разрешение основано на источниках, а не на похожести строк.\n\nНациональный очерк приводит наблюдения в Чуйской долине и Иссыккульской котловине и трактует встречу молодых на Сон-Куле как свидетельство гнездования. Последнее сохранено именно как вывод авторов исторического текста, а не как новая проверенная колония. Количества птиц на отдельных маршрутах и учётах 2004 года не складываются в национальную оценку.\n\nКнига связывает вид с берегами крупных водоёмов и описывает питание рыбой и небольшими беспозвоночными. Среди неблагоприятных воздействий названы беспокойство, рекреационное использование берегов и разрушение гнёзд. Авторы предлагали картирование гнездовых мест, малые охраняемые участки и работу с местными жителями.\n\nКатегория NT здесь относится к книге 2006 года; она не является заявлением о текущем глобальном статусе. Современный национальный мониторинг не включён в пакет, population остаётся unknown. Исторический ID с написанием ichtyaetus сохранён ради непрерывности исследования, научное имя в карточке дано в принятом написании.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book",
+        "gbif-taxonomy"
+      ]
+    },
+    "appearance": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По определителю Cornell/eBird крупная мощная чайка. У взрослой птицы в брачном наряде чёрная голова, неполные светлые полукольца у глаз и красно-чёрный конец клюва; вне брачного сезона тёмная окраска головы сохраняется частично. Молодые отличаются, поэтому фото молодой птицы не иллюстрирует брачный наряд.",
+        "en": null
+      },
+      "sourceIds": [
+        "cornell-gull"
+      ]
+    },
+    "ecology": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "По книге встречается одиночно и небольшими стаями, особенно во время миграций; предпочитает крупные водоёмы. Исторические наблюдения не заменяют современного учёта.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "diet": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "В национальном очерке названы рыба, мелкие ракообразные и жуки; также отмечено отнимание пищи у других птиц.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "reproduction": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Книга 2006 года рассматривает наблюдения молодых на Сон-Куле как указание на гнездование. Конкретная современная колония, сроки и успех размножения в пакете не подтверждены.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    },
+    "distribution": {
+      "text": {
+        "ky": null,
+        "uz": null,
+        "ru": "Исторические наблюдения: Чуйская долина, Иссыккульская котловина, Сон-Куль; отдельно упомянут Чатыр-Куль в 1972 году. Современная сохранность местных популяций не исследовалась.",
+        "en": null
+      },
+      "sourceIds": [
+        "national-book"
+      ]
+    }
+  }
+}

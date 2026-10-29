@@ -1,3 +1,4 @@
+import { historicalBytes } from './helpers/photo-amendment.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile, writeFile, mkdir, mkdtemp, cp, rm } from 'node:fs/promises'
@@ -21,7 +22,7 @@ const read = async file => JSON.parse(await readFile(join(PROJECT_ROOT, file), '
 const source = await read('data/species.source.json')
 const published = await read('public/data/species.json')
 const questions = await read('src/data/quiz/questions.json')
-const evidence = await read('data/geography/occurrences.source.json')
+const evidence = JSON.parse(historicalBytes('43ff31186ea54eafdb6eec654c50828fb4c99eb3', 'data/geography/occurrences.source.json'))
 const ids = ['mammals', 'birds', 'plants', 'fish', 'reptiles', 'amphibians', 'arthropods', 'fungi']
 
 // Technical fixtures only: no real species, photographs, populations or scientific claims.
@@ -135,6 +136,7 @@ test('import/export and full generator support all groups without rewriting IDs,
   try {
     await mkdir(join(root, 'data'), { recursive: true }); await writeFile(join(root, 'data/species.source.json'), text)
     await cp(join(PROJECT_ROOT, 'data/geography'), join(root, 'data/geography'), { recursive: true })
+    await writeFile(join(root, 'data/geography/occurrences.source.json'), historicalBytes('43ff31186ea54eafdb6eec654c50828fb4c99eb3', 'data/geography/occurrences.source.json'))
     await mkdir(join(root, 'src/data/quiz'), { recursive: true })
     await cp(join(PROJECT_ROOT, 'src/data/quiz/questions.json'), join(root, 'src/data/quiz/questions.json'))
     for (const record of source.catalog) for (const image of record.images.filter(canPublishImage)) {
