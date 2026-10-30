@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "documentType": "bulk-research-registry",
+  "registryId": "new-species-template",
+  "batchSize": 20,
+  "candidates": [
+    {
+      "originalScientificName": null,
+      "acceptedScientificName": null,
+      "rank": null,
+      "group": null,
+      "nationalRedBook": null,
+      "countryOccurrence": null,
+      "taxonomyEvidence": null,
+      "taxonomySourceIds": [],
+      "sources": [],
+      "contradictions": [],
+      "missingData": [
+        "No documented national inclusion or Kyrgyzstan occurrence yet.",
+        "Accepted scientific name, rank and exact taxon identifier are unconfirmed.",
+        "Evidence, citations and reviewed localizations must be supplied before review."
+      ],
+      "materials": [],
+      "draft": {
+        "id": "replace-with-documented-id",
+        "scientificName": null,
+        "names": {
+          "ky": null,
+          "uz": null,
+          "ru": null,
+          "en": null
+        },
+        "taxonomy": {
+          "kingdom": null,
+          "phylum": null,
+          "class": null,
+          "order": null,
+          "family": null,
+          "genus": null
+        },
+        "group": null,
+        "nationalRedBook": {
+          "listed": null,
+          "category": null,
+          "edition": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "iucn": {
+          "category": null,
+          "year": null,
+          "sourceIds": []
+        },
+        "habitat": null,
+        "regions": null,
+        "threats": null,
+        "conservationMeasures": null,
+        "population": {
+          "type": "unknown",
+          "value": null,
+          "min": null,
+          "max": null,
+          "territory": null,
+          "year": null,
+          "unit": null,
+          "sourceIds": [],
+          "reviewStatus": "pending",
+          "method": null
+        },
+        "images": [],
+        "sources": [],
+        "verified": false,
+        "lastReviewedAt": null,
+        "content": {
+          "shortDescription": null,
+          "overview": null,
+          "appearance": null,
+          "ecology": null,
+          "diet": null,
+          "reproduction": null,
+          "distribution": null
+        }
+      },
+      "id": "replace-with-documented-id",
+      "state": "pending",
+      "approval": null
+    }
+  ]
+}

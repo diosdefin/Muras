@@ -163,8 +163,8 @@ test('admin messages have complete parity and are kept separate from public dict
  assert.deepEqual(validateMessages(messages),[]);assert.ok(Object.keys(messages.ru).every(key=>key.startsWith('admin.')))
  assert.ok(Object.keys(messages.ru).length>=160)
 })
-test('build creates a physical /admin/ entry with the same asset URLs for static hosting',async()=>{
- const root=await mkdtemp(join(tmpdir(),'redbook-admin-entry-'));try{await mkdir(join(root,'dist'));const html='<html><script src="/assets/main.js"></script></html>';await writeFile(join(root,'dist/index.html'),html);await writeAdminEntry(root);assert.equal(await readFile(join(root,'dist/admin/index.html'),'utf8'),html)}finally{await rm(root,{recursive:true,force:true})}
+test('production /admin/ entry contains an informational page without the editor or executable scripts',async()=>{
+ const root=await mkdtemp(join(tmpdir(),'redbook-admin-entry-'));try{await mkdir(join(root,'dist'));const html='<html><script src="/assets/main.js"></script></html>';await writeFile(join(root,'dist/index.html'),html);await writeAdminEntry(root);const disabled=await readFile(join(root,'dist/admin/index.html'),'utf8');assert.ok(disabled.includes('local editor only'));assert.ok(!disabled.includes('<script'));assert.ok(!disabled.includes('/assets/'));assert.ok(!disabled.includes('__muras_admin'))}finally{await rm(root,{recursive:true,force:true})}
 })
 test('Vue editor persists through proxies, resets approval after a change, confirms deletion and restores checkpoints',async()=>{
  const memory=storage(),repository=createDraftRepository(memory),node=type=>({type,children:[]})
