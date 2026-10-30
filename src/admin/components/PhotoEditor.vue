@@ -6,7 +6,7 @@ import {newImage,previewUrl,safeHttpUrl,textValue} from '../data/model.js'
 import {inspectImage} from '../data/images.js'
 import SpeciesVisualization from '../../components/SpeciesVisualization.vue'
 import LocalizedFields from './LocalizedFields.vue'
-const props=defineProps({species:{type:Object,required:true},speciesIndex:{type:Number,required:true},published:{type:Array,required:true},assets:{type:Array,required:true},session:{type:Object,required:true},revision:Number,ask:{type:Function,required:true}})
+const props=defineProps({species:{type:Object,required:true},speciesIndex:{type:Number,required:true},published:{type:Array,required:true},assets:{type:Array,required:true},session:{type:Object,required:true},revision:Number,ask:{type:Function,required:true},upload:{type:Function,default:null},mediaPreview:{type:Function,default:null}})
 const emit=defineEmits(['change','assets','file']);const {t}=useLocale()
 const index=ref(0),view=ref('detail'),fileInput=ref(null),loading=ref(false),error=ref(''),failed=ref(false)
 const photo=computed(()=>props.species.images[index.value] || null)
@@ -28,16 +28,18 @@ async function selected(event){
  try {
   uploadController?.abort();uploadController=new AbortController()
   inspected=await inspectImage(file,{signal:uploadController.signal})
+  let receipt=null
+  if(props.upload){receipt=await props.upload(file,inspected.sha256);const originalUrl=inspected.url;inspected={...inspected,...receipt,url:await props.mediaPreview(receipt.id)};URL.revokeObjectURL(originalUrl)}
   const existing=targetIndex===null?null:props.species.images[targetIndex]
-  const same=existing?.sha256===inspected.sha256
+  const same=existing?.sha256===inspected.sha256&&(!receipt||existing.path===receipt.path)
   if(existing&&!same&&!await props.ask('admin.replacePhoto','admin.replacePhotoHint')){URL.revokeObjectURL(inspected.url);return}
   const nextIndex=targetIndex===null?props.species.images.length:targetIndex
-  const image=same?existing:{...newImage(),width:inspected.width,height:inspected.height,sha256:inspected.sha256}
+  const image=same?existing:{...newImage(),width:inspected.width,height:inspected.height,sha256:inspected.sha256,...(receipt?{path:receipt.path,originalSha256:receipt.originalSha256,originalPath:receipt.originalAssetPath,originalWidth:receipt.originalWidth,originalHeight:receipt.originalHeight,modifications:receipt.modifications,editorialEvidence:{taxonScientificName:props.species.scientificName,sourceUrl:null,taxonConfirmed:false,rightsConfirmed:false}}:{})}
   const images=props.species.images.slice();images[nextIndex]=image
-  const id=crypto.randomUUID()
+  const id=receipt?.id || crypto.randomUUID()
   props.session.put(id,inspected)
   const previous=props.assets.find(a=>a.speciesIndex===props.speciesIndex&&a.index===nextIndex)
-  const descriptor={id,speciesIndex:props.speciesIndex,index:nextIndex,fileName:inspected.fileName,size:inspected.size,sha256:inspected.sha256,prepared:Boolean(same&&(previous?.prepared||previewUrl(props.species,nextIndex,props.published)))}
+  const descriptor={id,speciesIndex:props.speciesIndex,index:nextIndex,fileName:inspected.fileName,size:inspected.size,sha256:inspected.sha256,prepared:Boolean(receipt||same&&(previous?.prepared||previewUrl(props.species,nextIndex,props.published)))}
   emit('change',['images'],images);emit('assets',[...props.assets.filter(a=>a!==previous),descriptor]);emit('file');index.value=nextIndex;failed.value=false
  }catch(e){error.value=e.message.startsWith('admin.')?e.message:'admin.error.imageDecode'}finally{loading.value=false}
 }
@@ -60,7 +62,7 @@ onBeforeUnmount(()=>{end();uploadController?.abort()})
         <p v-if="zoomWarning" class="admin-notice">{{ t('admin.zoomWarning') }}</p>
       </section>
       <section class="admin-subpanel"><h3>{{ t('admin.photoMetadata') }}</h3><div class="admin-form-grid">
-        <label>{{ t('admin.filePath') }}<input :value="photo.path || ''" placeholder="assets/images/species/photo.webp" @input="update(['path'],textValue($event.target.value))" /></label>
+        <label>{{ t('admin.filePath') }}<input :readonly="Boolean(upload)" :value="photo.path || ''" placeholder="assets/images/species/photo.webp" @input="update(['path'],textValue($event.target.value))" /></label>
         <label>{{ t('admin.author') }}<input :value="photo.author || ''" @input="update(['author'],textValue($event.target.value))" /></label>
         <label>{{ t('admin.originalPage') }}<input type="url" :value="photo.originalPage || ''" @input="update(['originalPage'],textValue($event.target.value))" /></label>
         <label>{{ t('admin.license') }}<input :value="photo.license || ''" @input="update(['license'],textValue($event.target.value))" /></label>
@@ -69,7 +71,8 @@ onBeforeUnmount(()=>{end();uploadController?.abort()})
         <label>{{ t('admin.modifications') }}<textarea :value="(photo.modifications||[]).join('\n')" rows="2" @input="update(['modifications'],$event.target.value.split('\n').map(v=>v.trim()).filter(Boolean))" /></label>
         <label class="admin-check"><input type="checkbox" :checked="photo.licenseVerified" @change="update(['licenseVerified'],$event.target.checked)" />{{ t('admin.licenseReviewed') }}</label>
       </div><LocalizedFields :label="t('admin.caption')" :value="photo.caption" multiline @change="(lang,value)=>update(['caption'],{ru:null,ky:null,en:null,...photo.caption,[lang]:value})" />
-      <label v-if="asset" class="admin-check"><input type="checkbox" :checked="asset.prepared" @change="emit('assets',assets.map(a=>a===asset?{...a,prepared:$event.target.checked}:a))" />{{ t('admin.filePrepared') }}</label>
+      <button v-if="upload&&!photo.editorialEvidence" type="button" @click="update(['editorialEvidence'],{taxonScientificName:species.scientificName,sourceUrl:null,taxonConfirmed:false,rightsConfirmed:false})">{{ t('admin.files.correctEvidence') }}</button><template v-if="photo.editorialEvidence"><label>{{ t('admin.files.originalUrl') }}<input type="url" :value="photo.editorialEvidence.sourceUrl || ''" @input="update(['editorialEvidence','sourceUrl'],textValue($event.target.value))" /></label><label>{{ t('admin.files.taxonName') }}<input :value="photo.editorialEvidence.taxonScientificName || ''" @input="update(['editorialEvidence','taxonScientificName'],$event.target.value)" /></label><label class="admin-check"><input type="checkbox" :checked="photo.editorialEvidence.taxonConfirmed" @change="update(['editorialEvidence','taxonConfirmed'],$event.target.checked)" />{{ t('admin.files.taxonConfirmed') }}</label><label class="admin-check"><input type="checkbox" :checked="photo.editorialEvidence.rightsConfirmed" @change="update(['editorialEvidence','rightsConfirmed'],$event.target.checked)" />{{ t('admin.files.rightsConfirmed') }}</label></template>
+      <label v-if="asset&&!upload" class="admin-check"><input type="checkbox" :checked="asset.prepared" @change="emit('assets',assets.map(a=>a===asset?{...a,prepared:$event.target.checked}:a))" />{{ t('admin.filePrepared') }}</label>
       <p v-if="asset&&!asset.prepared" class="admin-notice">{{ t('admin.filePendingHint') }}</p>
       <div class="admin-actions"><a v-if="safeHttpUrl(photo.originalPage)" :href="safeHttpUrl(photo.originalPage)" target="_blank" rel="noopener noreferrer">{{ t('ui.m083') }}</a><button type="button" @click="pick(index)">{{ t('admin.chooseFile') }}</button><button type="button" @click="remove">{{ t('admin.removePhoto') }}</button></div>
       </section>

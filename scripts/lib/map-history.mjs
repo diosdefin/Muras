@@ -5,6 +5,7 @@ import { execFileSync } from 'node:child_process'
 import { resolve } from 'node:path'
 import assert from 'node:assert/strict'
 import { digest } from './research-pipeline.mjs'
+import { localAdminHistoricalBytes } from './local-admin-history.mjs'
 export const MAP_APPLICATION_FILES = new Set([
   // Task 28.1 also evolves presentation/lifecycle files; their earlier scientific-release checksums stay pinned.
   'src/admin/components/PhotoEditor.vue', 'src/components/SpeciesVisualization.vue',
@@ -20,6 +21,8 @@ export const MAP_APPLICATION_FILES = new Set([
   'src/locales/ky.json', 'src/locales/uz.json', 'src/locales/ru.json', 'src/locales/en.json',
 ])
 export async function historicalMapBytes(root, path, sha256) {
+  const beforeLocalEditor = localAdminHistoricalBytes(root, path, sha256)
+  if (beforeLocalEditor) return beforeLocalEditor
   if (!MAP_APPLICATION_FILES.has(path)) return readFile(resolve(root, path))
   // The regional-map view was a UI-only edit after map publication.
   // Its pre-UI bytes are still pinned by the old checksum and are available

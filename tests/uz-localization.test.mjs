@@ -1,4 +1,5 @@
 import test from 'node:test'
+import {execFileSync} from 'node:child_process'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { createHash } from 'node:crypto'
@@ -58,7 +59,13 @@ test('public and admin UZ dictionaries have complete keys and exact interpolatio
     adminMessages[language] = await read(`../src/admin/locales/${language}.json`)
   }
   assert.ok(Object.keys(publicMessages.uz).length >= 435)
-  assert.equal(Object.keys(adminMessages.uz).length, 168)
+  // Retain all 168 historical keys; explicitly permit the local file editor's new messages.
+  const legacyAdmin=JSON.parse(execFileSync('git',['show','50951765ab52c32fdae30309cc19ede7e9bd279d:src/admin/locales/uz.json'],{encoding:'utf8'}))
+  assert.equal(Object.keys(legacyAdmin).length,168)
+  for(const key of Object.keys(legacyAdmin))assert.ok(Object.hasOwn(adminMessages.uz,key),key)
+  const newKeys=Object.keys(adminMessages.uz).filter(key=>!Object.hasOwn(legacyAdmin,key))
+  assert.ok(newKeys.length>0&&newKeys.every(key=>key.startsWith('admin.files.')||key.startsWith('admin.error.')))
+  for(const key of ['admin.files.apply','admin.files.draftSaved','admin.files.openLegacy','admin.error.conflict','admin.error.recovery'])assert.ok(adminMessages.uz[key])
   assert.deepEqual(validateMessages(publicMessages), [])
   assert.deepEqual(validateMessages(adminMessages), [])
   assert.equal(await checkLocales(), Object.keys(publicMessages.ru).length + Object.keys(adminMessages.ru).length)
