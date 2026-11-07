@@ -14,7 +14,7 @@ try{
  for(const lang of ['ky','ru','uz','en']){
   const ctx=await browser.newContext({viewport:{width:1300,height:900}});await ctx.addInitScript(l=>localStorage.setItem('redbook.locale.v1',l),lang)
   const page=await ctx.newPage();page.on('pageerror',e=>errors.push(e.message))
-  for(const id of ['irbis','argali','golden-eagle','eduards-fritillary']){
+  for(const id of ['irbis','argali','golden-eagle','eduards-fritillary','greigs-tulip','central-asian-frog','dog-stinkhorn','european-glass-lizard']){
    await page.goto(base+'/species/'+id);await page.locator('section[aria-labelledby="profile-about"] .scientific-content > span').first().waitFor()
    const paragraphs=page.locator('section[aria-labelledby="profile-about"] .scientific-content > span'),s=source.catalog.find(s=>s.id===id)
    assert.deepEqual(await paragraphs.allTextContents(),s.content.overview.text[lang].split('\n\n'))

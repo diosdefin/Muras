@@ -1,3 +1,4 @@
+import { beforeTranslations } from './helpers/translation-evolution.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile,writeFile,mkdir,mkdtemp,rm,stat } from 'node:fs/promises'
@@ -159,10 +160,11 @@ test('new records preserve unknown populations and scientific language fallbacks
   const originalAdded=historicalSource.catalog.slice(17)
   assert.equal(originalAdded.filter(s=>s.images.length).length,4);assert.equal(originalAdded.filter(s=>!s.images.length).length,9)
   for(const s of added){
+    const historicalHabitat=beforeTranslations(s).habitat.description
     assert.equal(s.verified,false);assert.equal(s.lastReviewedAt,null);assert.equal(s.population.type,'unknown');assert.equal(s.population.reviewStatus,'pending');assert.equal(s.population.value,null)
     assert.equal(s.nationalRedBook.year,2006);assert.match(s.nationalRedBook.edition,/историческая/)
     assert.deepEqual(s.regions.map(r=>r.code),['KG']);assert.equal(s.iucn.year,null)
-    for(const lang of ['ky','en'])assert.deepEqual(scientificContent(s.habitat.description,lang),{text:s.habitat.description.ru,language:'ru',fallback:true})
+    for(const lang of ['ky','en'])assert.deepEqual(scientificContent(historicalHabitat,lang),{text:historicalHabitat.ru,language:'ru',fallback:true})
   }
   const bustard=added.find(s=>s.id==='great-bustard')
   assert.equal(bustard.scientificName,'Otis tarda tarda');assert.equal(bustard.iucn.category,null)
@@ -187,9 +189,11 @@ test('all 13 new records render in KY/UZ/RU/EN with licensed local photos or hon
   try{
     const {siteLanguage}=await vite.ssrLoadModule('/src/composables/useLocale.js'),components={}
     for(const name of ['SpeciesCard.vue','SpeciesModal.vue','lesson/LessonPhoto.vue'])components[name]=(await vite.ssrLoadModule(`/src/components/${name}`)).default
+    // Replay this original release fallback scenario; live translated pages have browser coverage.
+    const historicalPublished=beforeTranslations(published.slice(17,30))
     for(const language of ['ky','uz','ru','en']){
       siteLanguage.value=language
-      for(const s of published.slice(17,30))for(const [file,Component]of Object.entries(components)){
+      for(const s of historicalPublished)for(const [file,Component]of Object.entries(components)){
         const html=await renderToString(createSSRApp(Component,{species:s}))
         assert.ok(html.includes(s.images[0]?.path||'placeholder.svg'),`${file}: ${s.id}`)
         // Compact cards keep credits in the modal; lesson and modal must retain them.
