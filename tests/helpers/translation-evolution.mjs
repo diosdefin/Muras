@@ -13,8 +13,14 @@ const fourthBase = JSON.parse(execFileSync('git',['show',fourth.baselineCommit+'
 const current = JSON.parse(readFileSync(new URL('../../data/species.source.json',import.meta.url)))
 // Verify the entire live source first. The historical view removes only exact,
 // journalled additions and never changes the pinned historical checksum/evidence.
-assertTranslationOnlyEvolution(base,assertTranslationOnlyEvolution(checkpoint,assertTranslationOnlyEvolution(thirdBase,assertTranslationOnlyEvolution(fourthBase,current,fourth),third),next),batch)
-export function beforeTranslations(document) {
+let checked = false
+export const TRANSLATION_JOURNALS = new Set(['001','002','003','004'].map(id => 'data/localization/batch-' + id + '.json'))
+export const TRANSLATED_CATALOGUES = new Set(['data/species.source.json','public/data/species.json'])
+export function beforeTranslations(document, { requireTranslations = false } = {}) {
+ if (!checked) {
+  assertTranslationOnlyEvolution(base,assertTranslationOnlyEvolution(checkpoint,assertTranslationOnlyEvolution(thirdBase,assertTranslationOnlyEvolution(fourthBase,current,fourth),third),next),batch)
+  checked = true
+ }
  const copy = structuredClone(document)
  const records = Array.isArray(copy) ? copy : copy.catalog || [copy]
  for (const c of [...batch.changes,...next.changes,...third.changes,...fourth.changes]) {
@@ -23,8 +29,8 @@ export function beforeTranslations(document) {
   const keys=c.path.split('.'),lang=keys.pop()
   const at=o=>keys.reduce((v,k)=>v?.[k],o)
   const target=at(s),previous=at(old)
-  if(!target)continue
-  if(target[lang]==null||target[lang]==='')continue
+  if(!requireTranslations && (!target||target[lang]==null||target[lang]===''))continue
+  assert.ok(target, c.id+' '+c.path)
   assert.equal(target[lang],c.text,'Only documented translation additions may be viewed historically')
   if(Object.hasOwn(previous,lang))target[lang]=previous[lang];else delete target[lang]
  }

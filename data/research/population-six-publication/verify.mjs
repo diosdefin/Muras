@@ -1,3 +1,7 @@
+import { checkoutBytesMatching } from '../../../scripts/lib/historical-checksum.mjs'
+import { generateData } from '../../../scripts/build-data.mjs'
+import { historicalCatalogueBytes } from '../../../tests/helpers/photo-amendment.mjs'
+import { TRANSLATED_CATALOGUES } from '../../../tests/helpers/translation-evolution.mjs'
 import { UI_V3_FILES, assertUiV3File } from '../../../tests/helpers/ui-v3-preservation.mjs'
 // Read-only audit of the real owner decision; it never issues or changes permissions.
 import {readFileSync,statfsSync} from 'node:fs'
@@ -14,11 +18,17 @@ export async function verifySixPublication(){
  const errors=[],fail=s=>errors.push(s)
  if(baseline.head!=='b77e2030974778ebd1cfaba7f87a4d75d02a6739')fail('Unexpected baseline HEAD')
  const changedProtectedFiles=Object.entries(baseline.hashes).filter(([p,h])=>{
-  if(sha(p)===h)return false
+  const live = readFileSync(p)
+  if(TRANSLATED_CATALOGUES.has(p)){
+   try { historicalCatalogueBytes(baseline.head,p,h,live); return false }
+   catch(error) { if(error.code!=='ERR_ASSERTION') throw error; return true }
+  }
+  if(checkoutBytesMatching(p,live,h))return false
   if(!UI_V3_FILES.has(p))return true
-  try{return !assertUiV3File(p)}catch{return true}
+  try{return !assertUiV3File(p)}catch(error){if(error.code!=='ERR_ASSERTION')throw error;return true}
  }).map(([p])=>p)
  errors.push(...changedProtectedFiles.map(p=>'Protected bytes changed: '+p))
+ if(!changedProtectedFiles.some(p=>TRANSLATED_CATALOGUES.has(p))) await generateData(process.cwd(),{check:true})
  if(sha('data/research/population-publication-candidates.json')!=='9b949266a1b96b2d39277040898f175fb071f98fb517c873e7855075418df8c1')fail('Preparation SHA-256 mismatch')
  const {registryFingerprint,...body}=packet
  if(registryFingerprint!=='13f2c5b5f958dda341502a84e00782a59310745ebfdd146880fae9df56696de8'||await populationFingerprint(body)!==registryFingerprint)fail('Preparation fingerprint mismatch')

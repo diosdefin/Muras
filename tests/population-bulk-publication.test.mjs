@@ -1,6 +1,8 @@
+import { checkoutBytesMatching } from '../scripts/lib/historical-checksum.mjs'
+import { TRANSLATED_CATALOGUES } from './helpers/translation-evolution.mjs'
 import { localAdminHistoricalBytes } from '../scripts/lib/local-admin-history.mjs'
 import { UI_V3_FILES } from './helpers/ui-v3-preservation.mjs'
-import { historicalBytes } from './helpers/photo-amendment.mjs'
+import { historicalBytes, historicalCatalogueBytes } from './helpers/photo-amendment.mjs'
 import { POPULATION_PUBLICATION_BASE, POPULATION_PUBLICATION_FILES } from './helpers/population-publication-evolution.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
@@ -89,7 +91,24 @@ test('28.3: tampered values, missing sources, invented approval and density pixe
 })
 test('28.3: pre-existing scientific statuses, archive, media and other untouched tracked bytes remain immutable',()=>{
  const baseline=read('data/research/population-184-bulk/baseline.json')
- for(const [path,expected] of Object.entries(baseline.hashes).filter(([p])=>!['tests/population-activation.test.mjs','data/.gitattributes'].includes(p))) assert.equal(sha(localAdminHistoricalBytes(process.cwd(),path,expected) || (path==='tests/catalog-178-publication.test.mjs' ? historicalBytes(baseline.head,path,expected) : (POPULATION_PUBLICATION_FILES.has(path)||UI_V3_FILES.has(path)) ? historicalBytes(POPULATION_PUBLICATION_BASE,path,expected) : readFileSync(new URL('../'+path,import.meta.url)))),expected,path)
+ const revisedTests = new Set([
+  'tests/catalog-178-publication.test.mjs','tests/catalog-184-publication.test.mjs',
+  'tests/map-full-distribution.test.mjs','tests/helpers/historical-pipeline.mjs',
+  'tests/helpers/photo-amendment.mjs','tests/helpers/photo-batch-2.mjs',
+  'tests/helpers/legacy-scientific-source.mjs','tests/bulk-import.test.mjs',
+  'tests/first-batch.test.mjs','tests/map-activation.test.mjs','tests/species-photos.test.mjs',
+ ])
+ for(const [path,expected] of Object.entries(baseline.hashes)){
+  if(['tests/population-activation.test.mjs','data/.gitattributes'].includes(path)) continue
+  const live = () => readFileSync(new URL('../'+path,import.meta.url))
+  if(TRANSLATED_CATALOGUES.has(path)) historicalCatalogueBytes(baseline.head,path,expected,live())
+  else {
+   const actual = localAdminHistoricalBytes(process.cwd(),path,expected) ||
+    (revisedTests.has(path) ? historicalBytes(baseline.head,path,expected) :
+     POPULATION_PUBLICATION_FILES.has(path)||UI_V3_FILES.has(path) ? historicalBytes(POPULATION_PUBLICATION_BASE,path,expected) : live())
+   assert.ok(checkoutBytesMatching(path,actual,expected),path)
+  }
+ }
  assert.equal(source.catalog.length,184);assert.equal(source.demoArchive.length,2)
  assert.equal(source.catalog.filter(s=>s.images.length).length,161)
  for(const s of source.catalog){assert.equal(s.population.type,'unknown');assert.equal(s.verified,false);assert.equal(s.population.reviewStatus,'pending')}

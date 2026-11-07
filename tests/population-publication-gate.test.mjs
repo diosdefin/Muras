@@ -1,3 +1,5 @@
+import { checkoutBytesMatching } from '../scripts/lib/historical-checksum.mjs'
+import { TRANSLATED_CATALOGUES } from './helpers/translation-evolution.mjs'
 import { UI_V3_FILES, assertUiV3File } from './helpers/ui-v3-preservation.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
@@ -8,7 +10,7 @@ import {checkPopulationPublication, documentedPopulationPresentation, validateDo
 import {populationPresentation,populationCells,UNKNOWN_POPULATION,validatePopulation} from '../src/data/population.js'
 import {usePopulationPresentation} from '../src/composables/usePopulationPresentation.js'
 import {syntheticOwnerDecision,candidateIdentity} from './helpers/population-publication-fixtures.mjs'
-import {historicalBytes} from './helpers/photo-amendment.mjs'
+import {historicalBytes,historicalCatalogueBytes} from './helpers/photo-amendment.mjs'
 const BASE='c043497581bb3a5722830a22a2177b97a4594a1e'
 const bytes=p=>readFileSync(new URL('../'+p,import.meta.url))
 const read=p=>JSON.parse(bytes(p).toString('utf8').replace(/^\uFEFF/,''))
@@ -114,14 +116,17 @@ test('28.4: reactive revocation, invalid identity and rapid changes cannot resto
 })
 test('28.4: scientific records, source history, media, licences, archive and 208 links remain byte-identical',()=>{
  const baseline=read('data/research/population-publication/baseline.json')
- for(const [path,expected]of Object.entries(baseline.hashes))if((/^(data|public|assets)\//.test(path))&&path!=='data/.gitattributes')assert.equal(sha(bytes(path)),expected,path)
+ for(const [path,expected]of Object.entries(baseline.hashes))if((/^(data|public|assets)\//.test(path))&&path!=='data/.gitattributes'){
+  if(TRANSLATED_CATALOGUES.has(path)) historicalCatalogueBytes(baseline.head,path,expected,bytes(path))
+  else assert.ok(checkoutBytesMatching(path,bytes(path),expected),path)
+ }
  assert.equal(source.catalog.length,184);assert.equal(source.demoArchive.length,2);assert.equal(source.catalog.filter(s=>s.images.length).length,161)
  assert.equal(read('data/geography/occurrences.source.json').records.length,208)
  for(const file of ['PopulationInfo.vue','SpeciesVisualization.vue','SpeciesModal.vue','SpeciesPage.vue']){
   const path='src/components/'+file,styles=b=>b.toString('utf8').match(/<style[\s\S]*$/)[0].replace(/\r\n/g,'\n')
   assert.equal(styles(bytes(path)),styles(historicalBytes(BASE,path)),path+' CSS')
  }
- assert.equal(bytes('src/App.vue').toString('utf8').match(/<style[\s\S]*$/)?.[0] || '',historicalBytes(BASE,'src/App.vue').toString('utf8').match(/<style[\s\S]*$/)?.[0] || '')
+ assert.equal(bytes('src/App.vue').toString('utf8').replace(/\r\n/g,'\n').match(/<style[\s\S]*$/)?.[0] || '',historicalBytes(BASE,'src/App.vue').toString('utf8').match(/<style[\s\S]*$/)?.[0] || '')
  for(const path of ['src/style.css','src/components/catalog.css']){if(UI_V3_FILES.has(path))assertUiV3File(path);else assert.equal(sha(bytes(path)),baseline.hashes[path],path)}
  for(const lang of ['ky','uz','ru','en']){const path=`src/locales/${lang}.json`,old=JSON.parse(historicalBytes(BASE,path)),now=read(path);for(const [key,value]of Object.entries(old))assert.equal(now[key],value,lang+':'+key)}
 })

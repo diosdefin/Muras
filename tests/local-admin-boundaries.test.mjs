@@ -3,6 +3,7 @@ import assert from 'node:assert/strict'
 import {readFileSync} from 'node:fs'
 import {createHash} from 'node:crypto'
 import {execFileSync} from 'node:child_process'
+import {checkoutBytesMatching} from '../scripts/lib/historical-checksum.mjs'
 import {localAdminHistoricalBytes} from '../scripts/lib/local-admin-history.mjs'
 import {createLocalAdminAPI} from '../src/admin/data/local-api.js'
 const read=p=>readFileSync(p,'utf8')
@@ -11,6 +12,9 @@ test('local editor historical scope checks authentic pre-feature bytes, never ca
  const hash=createHash('sha256').update(bytes).digest('hex');assert.deepEqual(localAdminHistoricalBytes(process.cwd(),'package.json',hash),bytes)
  for(const path of ['data/species.source.json','public/data/species.json','assets/images/species/irbis.webp','src/data/species-model.js','src/locales/ru.json'])assert.equal(localAdminHistoricalBytes(process.cwd(),path,hash),null)
  assert.equal(localAdminHistoricalBytes(process.cwd(),'package.json','0'.repeat(64)),null)
+ const field='src/admin/components/LocalizedFields.vue'
+ const oldField=execFileSync('git',['show','50951765ab52c32fdae30309cc19ede7e9bd279d:'+field])
+ assert.deepEqual(localAdminHistoricalBytes(process.cwd(),field,createHash('sha256').update(oldField).digest('hex')),oldField)
 })
 test('local client carries same-origin headers, revision and confirmation and has a localized offline state',async()=>{
  const requests=[],api=createLocalAdminAPI(async(url,options)=>{requests.push({url,...options});return{ok:true,json:async()=>({})}})
@@ -25,4 +29,19 @@ test('working admin requires the dev-only entry; scientific validators remain ou
  const script=read('scripts/dev-admin.mjs');assert.ok(script.includes("host:'127.0.0.1'"));assert.ok(script.includes('cors:false'));assert.ok(script.includes('adminMiddleware(service)'))
  assert.ok(!read('src/admin/AdminApp.vue').includes('В·'));assert.ok(!read('src/admin/components/PhotoEditor.vue').includes('Г—'))
  assert.ok(read('.gitignore').split(/\r?\n/).includes('data/drafts/'))
+})
+
+test('historical checks distinguish Windows checkout line endings from damaged evidence',()=>{
+ const path='data/research/catalog-184-photo-batch-1.json'
+ const lf=Buffer.from('{\n  "record": "original"\n}\n')
+ const crlf=Buffer.from(lf.toString().replace(/\n/g,'\r\n'))
+ const hash=b=>createHash('sha256').update(b).digest('hex')
+ assert.deepEqual(checkoutBytesMatching(path,crlf,hash(lf)),lf)
+ assert.deepEqual(checkoutBytesMatching(path,lf,hash(crlf)),crlf)
+ for(const changed of [crlf.toString().replace('original','altered'),lf.toString().replace('\n','\r\n'),lf.toString().replace('  ',' ')]) {
+  assert.equal(checkoutBytesMatching(path,Buffer.from(changed),hash(lf)),null)
+ }
+ for(const raw of ['data/backups/catalog-178/baseline.json','public/licenses/photos/license.txt','assets/images/species/example.webp']){
+  assert.equal(checkoutBytesMatching(raw,crlf,hash(lf)),null)
+ }
 })

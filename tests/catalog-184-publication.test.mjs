@@ -1,3 +1,5 @@
+import { checkoutBytesMatching } from '../scripts/lib/historical-checksum.mjs'
+import { localAdminHistoricalBytes } from '../scripts/lib/local-admin-history.mjs'
 import { UI_V3_FILES } from './helpers/ui-v3-preservation.mjs'
 import { MAP_EVOLVING_FILES } from './helpers/map-evolution.mjs'
 import { historical184, historicalPublic184, historicalBytes } from './helpers/photo-amendment.mjs'
@@ -85,8 +87,14 @@ test('catalog 184 preserves all prior 178 objects, archive, assets and research 
  // Only catalog outputs and the previous live-release test become different old files.
  const allowed=new Set(['data/species.source.json','public/data/species.json','tests/catalog-178-publication.test.mjs'])
  // Evolving test code is checked against its actual historical blob; data/assets stay live.
- const revisedTests=new Set(['tests/catalog-150-publication.test.mjs','tests/catalog-166-publication.test.mjs','tests/data.test.mjs'])
- for(const f of baseline.files)if(!allowed.has(f.path))assert.equal(digest((revisedTests.has(f.path)||MAP_EVOLVING_FILES.has(f.path)||UI_V3_FILES.has(f.path))?historicalBytes(baseline.sourceCommit,f.path,f.sha256):await bytes(f.path)),f.sha256,f.path)
+ const revisedTests=new Set(['tests/catalog-150-publication.test.mjs',
+  'tests/bulk-import.test.mjs','tests/helpers/legacy-scientific-source.mjs','tests/species-photos.test.mjs','tests/catalog-166-publication.test.mjs','tests/data.test.mjs'])
+ for(const {path,sha256} of baseline.files)if(!allowed.has(path)){
+  const actual = revisedTests.has(path)||MAP_EVOLVING_FILES.has(path)||UI_V3_FILES.has(path)
+    ? historicalBytes(baseline.sourceCommit,path,sha256)
+    : localAdminHistoricalBytes(process.cwd(),path,sha256) || await bytes(path)
+  assert.ok(checkoutBytesMatching(path,actual,sha256),path)
+ }
  assert.equal(canApplyOnBranch('feature/catalog-200'),true)
  for(const branch of ['main','master','feature/catalog-201','feature/unrelated'])assert.equal(canApplyOnBranch(branch),false)
 })

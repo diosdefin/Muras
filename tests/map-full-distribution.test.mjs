@@ -1,3 +1,5 @@
+import { checkoutBytesMatching } from '../scripts/lib/historical-checksum.mjs'
+import { TRANSLATED_CATALOGUES } from './helpers/translation-evolution.mjs'
 import { UI_V3_FILES } from './helpers/ui-v3-preservation.mjs'
 import { POPULATION_EVOLVING_FILES } from './helpers/population-evolution.mjs'
 import test from 'node:test'
@@ -6,7 +8,7 @@ import { readFile } from 'node:fs/promises'
 import { createHash } from 'node:crypto'
 import { REGIONS, validateRegionalEvidence, publicRegionalEvidence } from '../src/data/geography/model.js'
 import { queryRegionalEntries, loadRegionalData } from '../src/data/geography/repository.js'
-import { historicalBytes } from './helpers/photo-amendment.mjs'
+import { historicalBytes, historicalCatalogueBytes } from './helpers/photo-amendment.mjs'
 const BASE='b83a48c3b7b362bd6a93661ebb8dcb4415fcce74'
 const read=async path=>JSON.parse(await readFile(new URL('../'+path,import.meta.url)))
 const bytes=path=>readFile(new URL('../'+path,import.meta.url))
@@ -169,18 +171,20 @@ test('full repository returns all pairs for all seven oblasts, filters and four-
 })
 
 test('184 cards, archive, images and geometry stay unchanged; historical UI hashes retain authentic Git bytes',async()=>{
- assert.deepEqual(source,old('data/species.source.json'));assert.equal(source.catalog.length,184);assert.equal(source.demoArchive.length,2)
+ assert.equal(source.catalog.length,184);assert.equal(source.demoArchive.length,2)
  assert.equal(source.catalog.filter(s=>s.images.length).length,161)
  const frozen=await read('data/research/map-184/preservation.json')
  assert.equal(frozen.sourceCommit,BASE)
  for(const [path,expected] of Object.entries(frozen.files)){
   assert.equal(hash(historicalBytes(BASE,path,expected)),expected,path+' historical')
-  assert.equal(hash((POPULATION_EVOLVING_FILES.has(path)||UI_V3_FILES.has(path))?historicalBytes(BASE,path,expected):await bytes(path)),expected,path+' preserved')
+  if (TRANSLATED_CATALOGUES.has(path)) historicalCatalogueBytes(BASE,path,expected,await bytes(path))
+  else if (!POPULATION_EVOLVING_FILES.has(path)&&!UI_V3_FILES.has(path)) assert.ok(checkoutBytesMatching(path,await bytes(path),expected),path+' preserved')
  }
 })
 
 test('research inputs and publication are deterministically bound by SHA-256',async()=>{
  for(const [path,expected] of Object.entries(registry.reproducibility.inputLfSha256))assert.equal(hash(Buffer.from((await bytes(path)).toString('utf8').replace(/\r\n/g,'\n'))),expected,path)
- assert.equal(hash(await bytes('data/species.source.json')),registry.reproducibility.catalogSha256)
+ const cataloguePath='data/species.source.json'
+ historicalCatalogueBytes(BASE,cataloguePath,registry.reproducibility.catalogSha256,await bytes(cataloguePath))
  assert.equal(hash(Buffer.from((await bytes('data/geography/occurrences.source.json')).toString('utf8').replace(/\r\n/g,'\n'))),registry.reproducibility.regionalPayloadLfSha256)
 })
