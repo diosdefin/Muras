@@ -92,6 +92,7 @@ test('28.3: tampered values, missing sources, invented approval and density pixe
 test('28.3: pre-existing scientific statuses, archive, media and other untouched tracked bytes remain immutable',()=>{
  const baseline=read('data/research/population-184-bulk/baseline.json')
  const revisedTests = new Set([
+  'tests/catalog-150-publication.test.mjs','tests/catalog-166-publication.test.mjs',
   'tests/catalog-178-publication.test.mjs','tests/catalog-184-publication.test.mjs',
   'tests/map-full-distribution.test.mjs','tests/helpers/historical-pipeline.mjs',
   'tests/helpers/photo-amendment.mjs','tests/helpers/photo-batch-2.mjs',

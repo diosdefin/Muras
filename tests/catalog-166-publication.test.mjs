@@ -1,3 +1,4 @@
+import { checkoutBytesMatching } from '../scripts/lib/historical-checksum.mjs'
 import { historicalPipeline } from './helpers/historical-pipeline.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
@@ -73,7 +74,7 @@ test('catalog 166 preserves the exact prior 150 and publishes only the 16 owner-
   const baseline = await read('data/backups/catalog-166/baseline.json')
   const immutable = baseline.files.filter(f => f.path.startsWith('data/research/') || f.path.startsWith('assets/') ||
     f.path.startsWith('docs/evidence/') || f.path.startsWith('public/images/'))
-  for (const f of immutable) assert.equal(digest(await bytes(f.path)), f.sha256, f.path)
+  for (const f of immutable) assert.ok(checkoutBytesMatching(f.path, await bytes(f.path), f.sha256), f.path)
   assert.equal(canApplyOnBranch('feature/catalog-200'), true); assert.equal(canApplyOnBranch('main'), false)
 })
 

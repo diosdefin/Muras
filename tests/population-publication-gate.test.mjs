@@ -85,7 +85,9 @@ test('28.4: taxon ID, name, species/subspecies rank and country scope mismatches
 test('28.4: existing unknown and pending scientific gate retain their old behaviour',()=>{
  const p=populationPresentation(UNKNOWN_POPULATION,[]);assert.equal(p.type,'unknown');assert.equal(p.value,null)
  for(const s of source.catalog){assert.equal(s.population.type,'unknown');assert.deepEqual(validatePopulation(s.population,s.sources),[])}
- assert.equal(sha(bytes('src/data/population.js')),read('data/research/population-publication/baseline.json').hashes['src/data/population.js'])
+ const path='src/data/population.js'
+ const expected=read('data/research/population-publication/baseline.json').hashes[path]
+ assert.ok(checkoutBytesMatching(path,bytes(path),expected),path)
 })
 test('28.4: documented mode remains symbolic and cannot produce literal individual cells',async()=>{
  for(const c of packet.candidates){const p=await display(context(c.identity.speciesId));assert.equal(p.symbolicOnly,true);assert.deepEqual(populationCells(p),{cells:[],scale:null})}

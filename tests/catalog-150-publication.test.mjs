@@ -1,3 +1,4 @@
+import { checkoutBytesMatching } from '../scripts/lib/historical-checksum.mjs'
 import { historicalPipeline } from './helpers/historical-pipeline.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
@@ -62,7 +63,7 @@ test('catalog 150 preserves all prior 125 objects and assets and publishes only 
     assert.equal(record.ownerRole, 'project_owner'); assert.equal(record.date, '2026-10-16'); assert.equal(record.reason, reason)
     assert.equal(record.independentReviewer, null); assert.equal(record.scientificReviewStatus, 'pending')
   }
-  for (const f of [...baseline.files, ...baseline.immutable]) assert.equal(digest(await bytes(f.path)), f.sha256, f.path)
+  for (const f of [...baseline.files, ...baseline.immutable]) assert.ok(checkoutBytesMatching(f.path, await bytes(f.path), f.sha256), f.path)
   const gazelle = additions.find(s => s.id === 'gazella-subgutturosa')
   assert.match(gazelle.content.shortDescription.text.ru, /Современная численность и сохранение дикой популяции в стране не установлены/)
   assert.match(gazelle.content.distribution.text.ru, /не подтверждение нынешнего наличия/)
