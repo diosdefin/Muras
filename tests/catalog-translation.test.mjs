@@ -11,9 +11,11 @@ const source = JSON.parse(await readFile(new URL('../data/species.source.json',i
 const batch = JSON.parse(await readFile(new URL('../data/localization/batch-001.json',import.meta.url)))
 const next = JSON.parse(await readFile(new URL('../data/localization/batch-002.json',import.meta.url)))
 const checkpoint = JSON.parse(execFileSync('git',['show',next.baselineCommit+':data/species.source.json'],{maxBuffer:16*1024*1024}))
-const combined = {...batch,selectedIds:[...batch.selectedIds,...next.selectedIds],changes:[...batch.changes,...next.changes]}
+const third = JSON.parse(await readFile(new URL('../data/localization/batch-003.json',import.meta.url)))
+const thirdBase = JSON.parse(execFileSync('git',['show',third.baselineCommit+':data/species.source.json'],{maxBuffer:16*1024*1024}))
+const combined = {...batch,selectedIds:[...new Set([...batch.selectedIds,...next.selectedIds,...third.selectedIds])],changes:[...batch.changes,...next.changes,...third.changes]}
 test('all 184 scientific records and two archives preserve facts, source IDs, Russian originals, existing translations and image licences',()=>{
- assertTranslationOnlyEvolution(before,assertTranslationOnlyEvolution(checkpoint,source,next),batch)
+ assertTranslationOnlyEvolution(before,assertTranslationOnlyEvolution(checkpoint,assertTranslationOnlyEvolution(thirdBase,source,third),next),batch)
  assert.equal(source.catalog.length,184);assert.equal(source.demoArchive.length,2)
 })
 test('unknown names and fallback copies are never counted as completed translations; empty future species stays incomplete',()=>{
@@ -45,10 +47,11 @@ test('changing both a translated year and its journal cannot conceal a change of
  assert.throws(()=>assertTranslationOnlyEvolution(before,copy,journal),/Numbers and historical years/)
 })
 
-test('batch 002 fills every existing body block, keeps source paragraph boundaries and leaves names untouched',()=>{
+test('batches 002 and 003 fill every existing body block, keeps source paragraph boundaries and leaves names untouched',()=>{
  assert.equal(next.selectedIds.length,8)
- for(const id of next.selectedIds){
-  const item=source.catalog.find(s=>s.id===id),old=checkpoint.catalog.find(s=>s.id===id)
+ assert.equal(third.selectedIds.length,8)
+ for(const id of [...next.selectedIds,...third.selectedIds]){
+  const item=source.catalog.find(s=>s.id===id),old=(third.selectedIds.includes(id)?thirdBase:checkpoint).catalog.find(s=>s.id===id)
   const completeness=translationCompleteness(item)
   assert.deepEqual(item.names,old.names,id)
   for(const language of LANGUAGES){
@@ -59,4 +62,13 @@ test('batch 002 fills every existing body block, keeps source paragraph boundari
    }
   }
  }
+})
+
+test('batch 003 follows the remaining editorial queue, then catalogue order; English and Uzbek additions contain no Cyrillic',()=>{
+ const needsBody=s=>LANGUAGES.some(l=>!translationCompleteness(s).languages[l].bodyComplete)
+ const tail=batch.selectedIds.filter(id=>needsBody(thirdBase.catalog.find(s=>s.id===id)))
+ const queue=[...tail,...thirdBase.catalog.filter(s=>!tail.includes(s.id)&&needsBody(s)).map(s=>s.id)]
+ assert.equal(queue[0],'pike-asp')
+ assert.deepEqual(third.selectedIds,queue.slice(0,8))
+ for(const c of third.changes.filter(c=>/\.(en|uz)$/.test(c.path))) assert.doesNotMatch(c.text,/\p{Script=Cyrillic}/u,c.id+' '+c.path)
 })
