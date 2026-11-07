@@ -5,4 +5,4 @@ defineProps({ label:{type:String,required:true},value:{type:Object,default:null}
 const emit=defineEmits(['change'])
 const {t}=useLocale()
 </script>
-<template><fieldset class="admin-localized"><legend>{{ label }}</legend><label v-for="lang in LANGUAGES" :key="lang"><span>{{ lang.toUpperCase() }}</span><textarea v-if="multiline" :value="value?.[lang] || ''" :lang="lang" rows="3" @input="emit('change',lang,$event.target.value || null)" /><input v-else :value="value?.[lang] || ''" :lang="lang" type="text" @input="emit('change',lang,$event.target.value || null)" /></label></fieldset></template>
+<template><fieldset class="admin-localized"><legend>{{ label }}</legend><label v-for="lang in LANGUAGES" :key="lang"><span>{{ lang.toUpperCase() }} <small v-if="!value?.[lang]?.trim()">— {{ t('admin.translation.empty') }}</small></span><textarea v-if="multiline" :value="value?.[lang] || ''" :lang="lang" rows="3" @input="emit('change',lang,$event.target.value || null)" /><input v-else :value="value?.[lang] || ''" :lang="lang" type="text" @input="emit('change',lang,$event.target.value || null)" /></label></fieldset></template>

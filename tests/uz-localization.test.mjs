@@ -1,3 +1,5 @@
+import { beforeTranslations } from './helpers/translation-evolution.mjs'
+// These historical scenarios retain their original scientific snapshot; live translation integrity is tested separately.
 import test from 'node:test'
 import {execFileSync} from 'node:child_process'
 import assert from 'node:assert/strict'
@@ -20,8 +22,8 @@ import { validateMessages, checkLocales } from '../scripts/validate-locales.mjs'
 import { legacyScientificSource } from './helpers/legacy-scientific-source.mjs'
 
 const read = path => readFile(new URL(path, import.meta.url), 'utf8').then(JSON.parse)
-const source = await read('../data/species.source.json')
-const catalog = await read('../public/data/species.json')
+const source = beforeTranslations(await read('../data/species.source.json'))
+const catalog = beforeTranslations(await read('../public/data/species.json'))
 const questions = await read('../src/data/quiz/questions.json')
 const hash = value => createHash('sha256').update(JSON.stringify(value)).digest('hex')
 const memory = () => { const values = new Map(); return { getItem: key => values.get(key) ?? null, setItem: (key, value) => values.set(key, value) } }
@@ -64,7 +66,7 @@ test('public and admin UZ dictionaries have complete keys and exact interpolatio
   assert.equal(Object.keys(legacyAdmin).length,168)
   for(const key of Object.keys(legacyAdmin))assert.ok(Object.hasOwn(adminMessages.uz,key),key)
   const newKeys=Object.keys(adminMessages.uz).filter(key=>!Object.hasOwn(legacyAdmin,key))
-  assert.ok(newKeys.length>0&&newKeys.every(key=>key.startsWith('admin.files.')||key.startsWith('admin.error.')))
+  assert.ok(newKeys.length>0&&newKeys.every(key=>key.startsWith('admin.files.')||key.startsWith('admin.error.')||key.startsWith('admin.translation.')))
   for(const key of ['admin.files.apply','admin.files.draftSaved','admin.files.openLegacy','admin.error.conflict','admin.error.recovery'])assert.ok(adminMessages.uz[key])
   assert.deepEqual(validateMessages(publicMessages), [])
   assert.deepEqual(validateMessages(adminMessages), [])
@@ -250,9 +252,9 @@ test('SSR renders UZ in catalog/profile/modal/quiz/lesson/support/map/admin with
     }
     const Editor = (await vite.ssrLoadModule('/src/admin/components/LocalizedFields.vue')).default
     const html = await renderToString(createSSRApp(Editor, { label: 'Nomlar', value: catalog[0].names }))
-    assert.ok(html.indexOf('>KY<') < html.indexOf('>UZ<'))
-    assert.ok(html.indexOf('>UZ<') < html.indexOf('>RU<'))
-    assert.ok(html.indexOf('>RU<') < html.indexOf('>EN<'))
+    assert.ok(html.indexOf('lang="ky"') < html.indexOf('lang="uz"'))
+    assert.ok(html.indexOf('lang="uz"') < html.indexOf('lang="ru"'))
+    assert.ok(html.indexOf('lang="ru"') < html.indexOf('lang="en"'))
     assert.ok(html.includes('lang="uz"'))
     // The SPA metadata watcher needs a document; provide the head-only DOM in this SSR test.
     const originalDocument = globalThis.document

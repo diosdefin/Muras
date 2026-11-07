@@ -74,7 +74,7 @@ const locations = computed(() => props.species ? regionNames(props.species, lang
           </section>
           <section class="profile-section" aria-labelledby="profile-regions">
             <h2 id="profile-regions">{{ t('ui.m246') }}</h2>
-            <p>{{ locations.join(', ') || t('ui.m247') }}</p>
+            <p v-if="species.regions?.length"><template v-for="(region, index) in species.regions" :key="region.code"><span v-if="index">, </span><ScientificText :value="region.names" /></template></p><p v-else>{{ t('ui.m247') }}</p>
             <template v-if="species.content?.distribution">
               <p v-for="(paragraph, index) in contentParagraphs(species.content.distribution, language)" :key="index"><ScientificText :value="paragraph" /></p>
               <LessonReferences :species="species" :ids="species.content.distribution.sourceIds" />

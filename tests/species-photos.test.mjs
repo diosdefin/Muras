@@ -1,3 +1,5 @@
+import { beforeTranslations } from './helpers/translation-evolution.mjs'
+// These historical scenarios retain their original scientific snapshot; live translation integrity is tested separately.
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import {readFile,readdir} from 'node:fs/promises'
@@ -11,7 +13,7 @@ import {checkCommonsMetadata} from '../scripts/prepare-batch-images.mjs'
 import {webpMetadata} from '../scripts/import-species-batch.mjs'
 
 const read=path=>readFile(new URL('../'+path,import.meta.url),'utf8').then(JSON.parse)
-const source=await read('data/species.source.json'),published=await read('public/data/species.json')
+const source=beforeTranslations(await read('data/species.source.json')),published=beforeTranslations(await read('public/data/species.json'))
 const baseline=await read('docs/evidence/species-photo-baseline.json'),preparation=await read('docs/evidence/species-photo-preparation.json')
 const research=await read('docs/evidence/species-photo-research.json')
 const digest=bytes=>createHash('sha256').update(bytes).digest('hex')

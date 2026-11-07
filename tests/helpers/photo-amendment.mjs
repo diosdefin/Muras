@@ -1,3 +1,4 @@
+import { beforeTranslations } from './translation-evolution.mjs'
 import assert from 'node:assert/strict'
 import { execFileSync } from 'node:child_process'
 import { readFile } from 'node:fs/promises'
@@ -101,6 +102,7 @@ export function assertPhotoEvidence(r, species) {
 // Validate the actual amendment against a fixed pre-photo release and fixed evidence.
 // No configurable replacement baseline and no ignoring images for old nonempty arrays.
 export async function assertPhotoAmendment(source, published, journal, load = readBytes) {
+  source = beforeTranslations(source); published = beforeTranslations(published)
   assert.deepEqual({ ...source, catalog: null }, { ...before, catalog: null }, 'archive and root scientific data')
   assert.deepEqual(source.catalog.map(noImages), before.catalog.map(noImages), 'all 184 scientific objects')
   assert.deepEqual(published.map(noImages), beforePublic.map(noImages), 'all 184 public scientific objects')

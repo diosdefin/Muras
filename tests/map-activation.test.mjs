@@ -1,3 +1,5 @@
+import { beforeTranslations } from './helpers/translation-evolution.mjs'
+// These historical scenarios retain their original scientific snapshot; live translation integrity is tested separately.
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
@@ -12,7 +14,7 @@ import { historicalBytes } from './helpers/photo-amendment.mjs'
 const read = async path => JSON.parse(await readFile(new URL('../'+path, import.meta.url)))
 // Replay task 27.1 against its immutable six-link publication; live expansion is tested separately.
 const activation = path => JSON.parse(historicalBytes('b83a48c3b7b362bd6a93661ebb8dcb4415fcce74',path))
-const species = await read('public/data/species.json'), evidence = activation('data/geography/occurrences.source.json')
+const species = beforeTranslations(await read('public/data/species.json')), evidence = activation('data/geography/occurrences.source.json')
 const geometry = await read('public/data/geography/map.json'), published = activation('public/data/geography/occurrences.json')
 const base = '43ff31186ea54eafdb6eec654c50828fb4c99eb3'
 const old = path => historicalBytes(base, path)
@@ -21,7 +23,7 @@ const clone = value => structuredClone(value)
 const added = ['hedysarum-chaitocarpum','amygdalus-petunnikowii','sorbus-persica','tianschaniella-umbellifera']
 
 test('map activation preserves every scientific object, archive, original image and license byte', async () => {
-  const source = await read('data/species.source.json')
+  const source = beforeTranslations(await read('data/species.source.json'))
   assert.equal(source.catalog.length,184); assert.equal(source.demoArchive.length,2)
   assert.equal(source.catalog.filter(s=>s.images.length).length,161)
   const originalSource=JSON.parse(old('data/species.source.json'))

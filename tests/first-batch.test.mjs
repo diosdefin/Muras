@@ -1,3 +1,5 @@
+import { beforeTranslations } from './helpers/translation-evolution.mjs'
+// These historical scenarios retain their original scientific snapshot; live translation integrity is tested separately.
 import { historicalBytes } from './helpers/photo-amendment.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
@@ -18,7 +20,7 @@ import { regionalEntries } from '../src/data/geography/model.js'
 import { legacyScientificSource } from './helpers/legacy-scientific-source.mjs'
 
 const read = async p => JSON.parse(await readFile(new URL(`../${p}`, import.meta.url), 'utf8'))
-const source = await read('data/species.source.json'), published = await read('public/data/species.json')
+const source = beforeTranslations(await read('data/species.source.json')), published = beforeTranslations(await read('public/data/species.json'))
 const research = await read('data/research/catalog-candidates.json')
 const added = source.catalog.slice(9,17)
 const firstBatchPublished = published.slice(0,17)
