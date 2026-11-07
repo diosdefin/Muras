@@ -8,14 +8,16 @@ const next = JSON.parse(readFileSync(new URL('../../data/localization/batch-002.
 const checkpoint = JSON.parse(execFileSync('git',['show',next.baselineCommit+':data/species.source.json'],{maxBuffer:16*1024*1024}))
 const third = JSON.parse(readFileSync(new URL('../../data/localization/batch-003.json',import.meta.url)))
 const thirdBase = JSON.parse(execFileSync('git',['show',third.baselineCommit+':data/species.source.json'],{maxBuffer:16*1024*1024}))
+const fourth = JSON.parse(readFileSync(new URL('../../data/localization/batch-004.json',import.meta.url)))
+const fourthBase = JSON.parse(execFileSync('git',['show',fourth.baselineCommit+':data/species.source.json'],{maxBuffer:16*1024*1024}))
 const current = JSON.parse(readFileSync(new URL('../../data/species.source.json',import.meta.url)))
 // Verify the entire live source first. The historical view removes only exact,
 // journalled additions and never changes the pinned historical checksum/evidence.
-assertTranslationOnlyEvolution(base,assertTranslationOnlyEvolution(checkpoint,assertTranslationOnlyEvolution(thirdBase,current,third),next),batch)
+assertTranslationOnlyEvolution(base,assertTranslationOnlyEvolution(checkpoint,assertTranslationOnlyEvolution(thirdBase,assertTranslationOnlyEvolution(fourthBase,current,fourth),third),next),batch)
 export function beforeTranslations(document) {
  const copy = structuredClone(document)
  const records = Array.isArray(copy) ? copy : copy.catalog || [copy]
- for (const c of [...batch.changes,...next.changes,...third.changes]) {
+ for (const c of [...batch.changes,...next.changes,...third.changes,...fourth.changes]) {
   const s=records.find(s=>s.id===c.id),old=base.catalog.find(s=>s.id===c.id)
   if(!s)continue
   const keys=c.path.split('.'),lang=keys.pop()

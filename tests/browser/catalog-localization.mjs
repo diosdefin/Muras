@@ -14,7 +14,7 @@ try{
  for(const lang of ['ky','ru','uz','en']){
   const ctx=await browser.newContext({viewport:{width:1300,height:900}});await ctx.addInitScript(l=>localStorage.setItem('redbook.locale.v1',l),lang)
   const page=await ctx.newPage();page.on('pageerror',e=>errors.push(e.message))
-  for(const id of ['irbis','argali','golden-eagle','eduards-fritillary','greigs-tulip','central-asian-frog','dog-stinkhorn','european-glass-lizard','pike-asp','turkestan-catfish','tien-shan-scutiger','black-stork']){
+  for(const id of ['irbis','argali','golden-eagle','eduards-fritillary','greigs-tulip','central-asian-frog','dog-stinkhorn','european-glass-lizard','pike-asp','turkestan-catfish','tien-shan-scutiger','black-stork','ibisbill','dalmatian-pelican','kolpakowskis-tulip','relict-spider']){
    await page.goto(base+'/species/'+id);await page.locator('section[aria-labelledby="profile-about"] .scientific-content > span').first().waitFor()
    const paragraphs=page.locator('section[aria-labelledby="profile-about"] .scientific-content > span'),s=source.catalog.find(s=>s.id===id)
    assert.deepEqual(await paragraphs.allTextContents(),s.content.overview.text[lang].split('\n\n'))
@@ -27,7 +27,7 @@ try{
   await ctx.close()
  }
  const ctx=await browser.newContext();await ctx.addInitScript(()=>localStorage.setItem('redbook.locale.v1','en'));const page=await ctx.newPage()
- await page.goto(base+'/species/ibisbill');await page.locator('section[aria-labelledby="profile-about"] .scientific-content > span').first().waitFor();assert.equal(await page.locator('section[aria-labelledby="profile-about"] .scientific-content > span').first().getAttribute('lang'),'ru');assert.ok(await page.locator('section[aria-labelledby="profile-about"] .language-note').count());results.push('untranslated profile: explicitly labelled Russian fallback')
+ await page.goto(base+'/species/semenovs-fir');await page.locator('section[aria-labelledby="profile-about"] .scientific-content > span').first().waitFor();assert.equal(await page.locator('section[aria-labelledby="profile-about"] .scientific-content > span').first().getAttribute('lang'),'ru');assert.ok(await page.locator('section[aria-labelledby="profile-about"] .language-note').count());results.push('untranslated profile: explicitly labelled Russian fallback')
  await page.goto(base+'/species/irbis');await page.locator('.language-trigger').click();await page.locator('[role="menuitemradio"][lang="ky"]').click();assert.equal(await page.locator('section[aria-labelledby="profile-about"] .scientific-content > span').first().getAttribute('lang'),'ky');results.push('real language menu updates scientific content without reload')
  await page.goto(base+'/admin/');await page.locator('.admin-table').waitFor();await page.locator('.admin-row-actions button').first().click();await page.locator('input[lang="uz"]').fill('')
  await page.locator('.admin-header select').selectOption('ru');await page.getByRole('button',{name:'Сохранить черновик',exact:true}).click();await page.getByText('Черновик сохранён в файлах проекта. Каталог не изменён.',{exact:true}).waitFor();assert.ok((await service.draft()).envelope);assert.ok((await page.locator('[data-testid="translation-status"]').textContent()).includes('Не все переводы'));results.push('incomplete translation saves to disposable file draft without marking it complete or changing source')
