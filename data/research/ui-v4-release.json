@@ -1,0 +1,162 @@
+{
+  "baseCommit": "f2f7adaabe33eeaeb928f81d58ad163893391b14",
+  "purpose": "Allow precisely UI v4 — seamless hero animations with preloaded, cached clips; hero video cache headers; phone adaptation (mobile.css); the support-page placeholder; home navigation without anchor; paged, compact map species list; the new vector MURAS logo; cleaner lesson, quiz, map and catalogue presentation; regional preview no longer traps page scrolling; \"finish test\" (one added locale key, quiz.finish); pull-down-to-close species card on phones and tablets; compact card action on the map; quiz focused on the question with an always-reachable next step; quiz batches 2–3 (25 + 31 catalogue-sourced questions published separately as quiz-extra.json, the original 18-question bank untouched), group chips and unseen-first ordering (locale key quiz.groupOther added) — while retaining every historic snapshot and UI v3 check. Not a scientific approval.",
+  "files": {
+    "index.html": {
+      "before": "9f1905801905eb96916ecae939a3a3ca0ed74a866b8c40b777b58b986f1e42b3",
+      "after": "fb9cf754c43b2ff1033980e5acd9aab80f178d7a2359887d049ee8c23e4a7f9d"
+    },
+    "public/data/quiz-extra.json": {
+      "before": null,
+      "after": "6f4695e2e35d1048daa0d5769b3d88569c750031cc0a0b84a6fa3181fb93930b"
+    },
+    "scripts/build-data.mjs": {
+      "before": "02fc70c03e40320e4de587aa752ba8427e90e147555d20fe2ae56e6232b776e9",
+      "after": "3d8d6cf5fe526a9e648fae3fba19e99b01af86fc97ebce52b6a6b1c047aff98a"
+    },
+    "scripts/build-quiz.mjs": {
+      "before": "97a57c5fe6b46ee8db07e18621f3c386d31a53b2d99ccab22fd7b6f7788a31df",
+      "after": "f86f06dd85076e83329188d2777b10f17cc5fee345edd2a79a34460defbbcb40"
+    },
+    "src/App.vue": {
+      "before": "11ecc0d666913b094e58cc2be587306d29530478e37504f0af777ddac05a7bb2",
+      "after": "3d0a66daa603b2ef8d8402ca850bf199c6eeca8bb2d4105ea6b841809dc2959c"
+    },
+    "src/admin/data/model.js": {
+      "before": "83f1a4f04057434bf524371756b28be176bbba93b54be11dbc78801cdf0a8e8a",
+      "after": "880bd7ee084fac1ea6809ce566570100c21d19b22dc34eb51ea02f80f0555cdd"
+    },
+    "src/components/BrandLogo.vue": {
+      "before": "4154487b880c0036a024fe8d546616821cac1c00c205570dd864da98622cf67d",
+      "after": "c8210fe75cd0c9da79cdeafb35962772f0c312bfa6939170481029235c8508e5"
+    },
+    "src/components/HeroIllustrations.vue": {
+      "before": "8e713e38d48e9fa8c39e343abb75e879a9b8b58924c5269566d550eb5da1851b",
+      "after": "5c7264a88a443e4d83647679331d7fdfbc72ec37f4b955a3e7edbdb608443282"
+    },
+    "src/components/SourceLink.vue": {
+      "before": "9d345243a739c0c08293f0949bc2f0c521d4bd4d026a7136894e6d3a94b1efe9",
+      "after": "57a5c9512ad165c2c20bfc36348eb17c7089cd2aa18d0a14515fec20684ac881"
+    },
+    "src/components/SpeciesModal.vue": {
+      "before": "2d011ef82d0c61c0a25bb43c971be5993af7c8d29e4a3b0c051a438d652204b9",
+      "after": "dfc87dbd7a53ad409213d9bc80a1f5f904eda22d79059cc00bf1bc3c14440de0"
+    },
+    "src/components/SpeciesPage.vue": {
+      "before": "b2f472060d1f5aba3b9e010cf58053496273b2984e6115998456382fb2f953a8",
+      "after": "9b9ec56c69ac87ea1e50dc2b0f84c9d914952c5614da8f6375de0dbebb625c04"
+    },
+    "src/components/lesson/LessonView.vue": {
+      "before": "755fed02c1f3fff6f46a1bca3095a10fa7fd02cc2d6dd2c4b5685d6ae1599c6b",
+      "after": "e038d23b5f204b25309ebffedc87f80567c302003cd94219c911ac50607708dc"
+    },
+    "src/components/map/MapSection.vue": {
+      "before": "bd123fb53d8b632cf3ac10eb3699b75f57b345d4856188119c6afad64975fa71",
+      "after": "94ec691f660e6b4a978d07784f23cf10449452ecf7ef4df5cbab4393f4e98d09"
+    },
+    "src/components/map/RegionMap.vue": {
+      "before": "20ebf9f54fb62d77e1ee354a7de87276685b2095604b50518278147627f6def2",
+      "after": "229b91ea142cda8b25587848146389b233e7291fe3627ba8e4a7a92e261360a7"
+    },
+    "src/components/map/RegionPanel.vue": {
+      "before": "191a01a574f81053eec27cac95a68b162673faee15dbbce148179c2ad4fa58a6",
+      "after": "c8a922ea053401fb12cfec387a259a4777abd292ff97dfe77ff96a47bc4d8a21"
+    },
+    "src/components/map/RegionalSpecies.vue": {
+      "before": "435959deb97a50c3b755a9dcbcca1f4974dde370f4a628947396dd4c91f5a3de",
+      "after": "35217ad045c72723a413aaf99a011c47c16d49a220c20529021c65cfed47e7f7"
+    },
+    "src/components/map/map.css": {
+      "before": "70e3e25da0dd23e516da9c06cb749cc2e5dc59f6bfed7ab6368329c9f41d7f88",
+      "after": "66311272f141b5c559ce7bfaae5bebda3494bd9587633aa5b7bb4cc96476d3ee"
+    },
+    "src/components/quiz/QuizQuestion.vue": {
+      "before": "994663b627e529ccbf3e2b53997423e324d4bc6134a839870ac1a35adadb7aef",
+      "after": "0a8429ecf4d1a3c55ad171848480df860ad649edf0393882d7c66fd1d8ba3f20"
+    },
+    "src/components/quiz/QuizResult.vue": {
+      "before": "05b1029e64288f285f66fcf33307f2eba6a181d3241f866bac1b3d8d762537c2",
+      "after": "e36cb35cc3558bc701e8f53f5d8f9bda9a7900aa8ffc3eb2394ca0374f7da618"
+    },
+    "src/components/quiz/QuizView.vue": {
+      "before": "7d236424dac551740c09eb1d5500ffcb2c7f8671e60c9123e4adb8343b1f9418",
+      "after": "5c3b294c6226ff8455a052d18848e1f07e667fda2ef22405ee8c3a33383720c2"
+    },
+    "src/components/support/SupportStub.vue": {
+      "before": null,
+      "after": "4b7ecd4457a2a4cfc67bac7d40cf3a2da3ae97a0cf058a1bc16717cce26f617b"
+    },
+    "src/composables/useQuiz.js": {
+      "before": "39da70d3fe9143859699513df5aaf804d071e0633abe39e7f5f2c827e94dd1f2",
+      "after": "86b6c7f830d1fa33bcd9f4701cdd745e56ab0ffed46146b8c8ed976703c1732f"
+    },
+    "src/composables/useSheetDismiss.js": {
+      "before": null,
+      "after": "c43d48cfeddfa580cd104d1346b0e748c93db1046667f74f3946732985a7f9bf"
+    },
+    "src/data/presentation.js": {
+      "before": "fe7e12f437887433412eabf075e261f888c77c5b3e71d3019cc51dfe738cd9ba",
+      "after": "37c5c4f49ff776e9af53106370603c6f84847a41d8c489de7f3585b2bfb78c49"
+    },
+    "src/data/quiz/engine.js": {
+      "before": "61bdb5c9cf01fb39d20250d7bce32c249f7080528b02118ce04882516828d664",
+      "after": "3c4506c626f952816c138761e8f62321df422e252421c3b34f6d9e05dc212652"
+    },
+    "src/data/quiz/history.js": {
+      "before": "ec1ca5f486aa01664c25d5d02c656365e77e9ca9c78b65c5fe6c0f51aa128e4b",
+      "after": "13adb19d8c366deb0f9ebf52be8300ba4f5bc4b38079312d446e67b05711b7e8"
+    },
+    "src/data/quiz/questions-batch-2.json": {
+      "before": null,
+      "after": "6a4e422414e705758ea83e84df4d4801ed80bea75a8cb9b0fe5a8af6d256b5f3"
+    },
+    "src/data/quiz/questions-batch-3.json": {
+      "before": null,
+      "after": "e3ff02c1f7b50eca585b95002fc9603ff83e299255da53ded22db6a6dcd43ed4"
+    },
+    "src/data/quiz/questions-batch-4.json": {
+      "before": null,
+      "after": "e17aa2f5fc8f5ee21236476f4417ee813741954f0a8e3f283fa8e5e7f1635f89"
+    },
+    "src/data/uz-names.json": {
+      "before": null,
+      "after": "896d3b22b65a635d0d32487624bc6d71c5aa319be15b0ada49b67b1f3ebedecc"
+    },
+    "src/locales/en.json": {
+      "before": "72005dde09c5fd226cbfcd0e50625dda288b150f75437f7dd23abcf46ee3af41",
+      "after": "13a92235b109c8fe0c8a8a63dbce2645d662b56e681172dd1400ad9567c1d6b7"
+    },
+    "src/locales/ky.json": {
+      "before": "592e1c272f2bbf8db3b3296d48155cb1780e3746e5e9852031b35ec95fd16137",
+      "after": "ff87edf257783aa5ade33c5b312fa15d294abe399998a1b2f71ad114a88ae559"
+    },
+    "src/locales/ru.json": {
+      "before": "4d2462d84c84986ae9f2e4c5d7e9832b6ab42f8fc377f6ee2e7baff8be83bb44",
+      "after": "080d4d07293f177f7ab4f721274014a039e4cead2113699e8769d0a96a294c83"
+    },
+    "src/locales/uz.json": {
+      "before": "bcf31cd481b7bc3571d49adcbd150b08c07df768a480c2edbe6978b44b1ef8ee",
+      "after": "a82374cfc11ff0394117b548511586cfdfbe2afbae2246c9e0b50ee67152e7aa"
+    },
+    "src/main.js": {
+      "before": "9176b11f8d9e4a18893febbc31d09ea86f44d27066bdf20233b35e73b98a1621",
+      "after": "bab0e10c0dfe078c382f169ca19dfcaf258050c33881893d35708266b3d53dd6"
+    },
+    "src/styles/mobile.css": {
+      "before": null,
+      "after": "a9f73b25b03413e8e1d20cf3651febb1982f45999bc5619dffc95b9d4780a711"
+    },
+    "src/styles/ornaments.css": {
+      "before": null,
+      "after": "c807979c7f65e9d71ec371853b61a2099efc1a3035f4fba0ef61b5e73dd4fbcb"
+    },
+    "tests/map-activation.test.mjs": {
+      "before": "670f9a3208622513257a909598895df6dca5246901e75f365ca43abeebce39e2",
+      "after": "5b6eda724b443c8fb9b54be78322837ae61e4022d73c893f2b7fa47ba8932d76"
+    },
+    "vercel.json": {
+      "before": "adac1eefcd81de206cb008d42c394719aeee0fd54ac3027827945e1bf69b79ef",
+      "after": "952c13e8b1c99b0ac39dc3429ad678e46a5b716a498f0d60b36fcda0f1c1b44c"
+    }
+  }
+}

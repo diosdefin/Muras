@@ -85,7 +85,7 @@ export async function generateAllData(root = PROJECT_ROOT, options = {}) {
   const result = await generateData(root, options)
   await publishQuiz(root, quiz, options)
   await publishMap(root, map, options)
-  return { ...result, questionCount: quiz.questions.length, regionCount: map.geometry.regions.length, occurrenceCount: map.occurrences.records.length }
+  return { ...result, questionCount: quiz.questions.length, extraQuestionCount: quiz.extra.length, regionCount: map.geometry.regions.length, occurrenceCount: map.occurrences.records.length }
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1])).href) {
@@ -94,6 +94,6 @@ if (process.argv[1] && import.meta.url === pathToFileURL(resolve(process.argv[1]
       check: process.argv.includes('--check'), validateOnly: process.argv.includes('--validate-only'),
     }
     const result = await generateAllData(PROJECT_ROOT, options)
-    console.log(`Данные проверены: каталог ${result.catalog.length}, архив ${result.archive.length}, викторина ${result.questionCount}, области ${result.regionCount}, региональные свидетельства ${result.occurrenceCount}.`)
+    console.log(`Данные проверены: каталог ${result.catalog.length}, архив ${result.archive.length}, викторина ${result.questionCount}${result.extraQuestionCount ? ` + ${result.extraQuestionCount}` : ''}, области ${result.regionCount}, региональные свидетельства ${result.occurrenceCount}.`)
   } catch (error) { console.error(error.message); process.exitCode = 1 }
 }

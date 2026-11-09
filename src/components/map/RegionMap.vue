@@ -18,7 +18,7 @@ const activeName = computed(() => { const id = hovered.value || focused.value ||
 
 <template>
   <div class="region-map">
-    <div class="map-caption"><span>{{ t('ui.m006') }}</span><span>{{ t('ui.m133') }}</span></div>
+    <div class="map-caption"><span>{{ t('ui.m006') }}</span><span>{{ t('ui.m133') }}<span class="map-compass" aria-hidden="true"></span></span></div>
     <svg :viewBox="geometry.viewBox.join(' ')" class="oblast-map" role="group" aria-labelledby="oblast-map-title oblast-map-description">
       <title id="oblast-map-title">{{ t('ui.m134') }}</title>
       <desc id="oblast-map-description">{{ t('ui.m135') }}</desc>
@@ -29,7 +29,8 @@ const activeName = computed(() => { const id = hovered.value || focused.value ||
         <title>{{ regionLabel(region.id, language) }}</title>
       </path>
     </svg>
-    <p class="map-hover-name">{{ activeName || t('ui.m136') }}</p>
+    <!-- The home-page preview has no region list, so its hint mentions only the map. -->
+    <p class="map-hover-name">{{ activeName || (preview ? t('mapPreview.regionPrompt') : t('ui.m136')) }}</p>
     <div v-if="!preview" class="map-legend"><span><i aria-hidden="true"></i> {{ t('ui.m137') }}</span><span><i class="selected" aria-hidden="true"></i> {{ t('ui.m138') }}</span></div>
     <details v-if="!preview" id="map-region-select" class="map-region-select" :open="!compact" tabindex="-1">
       <summary id="region-choice-label">{{ t('ui.m139') }} <span aria-hidden="true">⌄</span></summary>

@@ -9,12 +9,13 @@ import { PROJECT_ROOT } from '../../scripts/build-data.mjs'
 export async function historicalPipeline(source, action) {
   const root = await mkdtemp(join(tmpdir(), 'muras-history-'))
   try {
-    for (const path of ['data', 'assets', 'docs/evidence', 'public/licenses']) {
+    for (const path of ['data/research', 'assets/images', 'docs/evidence', 'public/licenses']) {
       await mkdir(join(root, path), { recursive: true })
       await cp(join(PROJECT_ROOT, path), join(root, path), { recursive: true })
     }
     await writeFile(join(root, 'data/species.source.json'), JSON.stringify(source, null, 2) + '\n')
     // Replay the original two-link regional dataset, not later links to species absent from this historical catalog.
+    await mkdir(join(root, 'data/geography'), { recursive: true })
     await writeFile(join(root, 'data/geography/occurrences.source.json'), historicalBytes('43ff31186ea54eafdb6eec654c50828fb4c99eb3','data/geography/occurrences.source.json'))
     return await action(root)
   } finally {

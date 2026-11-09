@@ -31,3 +31,22 @@ export function appendHistory(results, result, storage) {
     return { results: updated, available: true }
   } catch { return { results: updated, available: false } }
 }
+
+// Answered question ids (this browser only), so new sessions start with unseen questions.
+export const SEEN_KEY = 'redbook.quiz.seen.v1'
+export const SEEN_LIMIT = 1000
+
+export function readSeen(storage) {
+  try {
+    const document = JSON.parse(storage?.getItem(SEEN_KEY) || 'null')
+    return new Set(document?.version === 1 && Array.isArray(document.ids) ? document.ids.filter(id => typeof id === 'string').slice(-SEEN_LIMIT) : [])
+  } catch { return new Set() }
+}
+
+export function rememberSeen(seen, id, storage) {
+  const updated = new Set([...seen].filter(item => item !== id))
+  updated.add(id)
+  const ids = [...updated].slice(-SEEN_LIMIT)
+  try { storage?.setItem(SEEN_KEY, JSON.stringify({ version: 1, ids })) } catch { /* private mode: keep in memory */ }
+  return new Set(ids)
+}

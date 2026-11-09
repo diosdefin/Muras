@@ -1,3 +1,5 @@
+import { checkoutBytesMatching } from '../scripts/lib/historical-checksum.mjs'
+import { TRANSLATED_CATALOGUES, TRANSLATION_JOURNALS } from './helpers/translation-evolution.mjs'
 import { POPULATION_PUBLICATION_BASE, POPULATION_PUBLICATION_FILES } from './helpers/population-publication-evolution.mjs'
 import test from 'node:test'
 import assert from 'node:assert/strict'
@@ -9,7 +11,7 @@ import { renderToString } from 'vue/server-renderer'
 import { createServer } from 'vite'
 import { fixtures,sources } from './helpers/population-fixtures.mjs'
 import { populationPresentation } from '../src/data/population.js'
-import { historicalBytes } from './helpers/photo-amendment.mjs'
+import { historicalBytes, historicalCatalogueBytes } from './helpers/photo-amendment.mjs'
 const BASE='029a89e00a136ab3d9edfe78d937082cf31c343d'
 const read=async p=>JSON.parse(await readFile(new URL('../'+p,import.meta.url)))
 const bytes=p=>readFile(new URL('../'+p,import.meta.url))
@@ -57,19 +59,24 @@ test('scientific records, images, licences, archive, adapter and all 208 regiona
  // New unpublished research is not a mutation of the activation baseline.
  // Existing protected paths still reject modifications, deletions or renames.
  const changes=execFileSync('git',['diff','--name-status','--no-renames',BASE,'--','data','assets','public','src/data/population.js','src/data/geography','src/data/species-model.js'],{encoding:'utf8'}).trim().split('\n').filter(Boolean)
- const allowedResearchAddition=line=>{
+ const allowedChange=line=>{
   const [status,path]=line.trim().split('\t')
-  return status==='A'&&(path.startsWith('data/research/')||path==='data/.gitattributes')
+  return (status==='M'&&TRANSLATED_CATALOGUES.has(path)) ||
+    (status==='A'&&(path.startsWith('data/research/')||path==='data/.gitattributes'||TRANSLATION_JOURNALS.has(path))) ||
+    // Additional quiz questions are published as a separate educational file; scientific data stay untouched.
+    (status==='A'&&path==='public/data/quiz-extra.json')
  }
- assert.deepEqual(changes.filter(line=>!allowedResearchAddition(line)),[])
+ assert.deepEqual(changes.filter(line=>!allowedChange(line)),[])
  // Attributes affect only these fingerprinted, unpublished research JSONs.
  const attributeRules=historicalBytes(POPULATION_PUBLICATION_BASE,'data/.gitattributes').toString('utf8').split(/\r?\n/).map(l=>l.trim()).filter(l=>l&&!l.startsWith('#'))
  assert.deepEqual(attributeRules,['research/population-184-evidence-audit.json text eol=lf','research/population-184-bulk-publication.json text eol=lf'])
  const source=await read('data/species.source.json'),evidence=await read('data/geography/occurrences.source.json')
- assert.deepEqual(source,JSON.parse(historicalBytes(BASE,'data/species.source.json')))
  assert.equal(source.catalog.length,184);assert.equal(source.demoArchive.length,2);assert.equal(source.catalog.filter(s=>s.images.length).length,161)
  assert.equal(evidence.records.length,208);assert.equal(new Set(evidence.records.map(r=>r.speciesId)).size,118)
- for(const [path,expected]of Object.entries({'data/species.source.json':'22cab3d3dbad13cb44343646081fbcf9880d9fe244956e694314e808e1593935','public/data/species.json':'8c87e8254851ad70ecafd256f6f8138a65d8181660b03abe20121233655ea532','data/geography/occurrences.source.json':'bc439cb62781cafdf632679f1a2d3d67f2af28d842099d72b6105c715eeecbba','public/data/geography/occurrences.json':'7789bdde826bcb60b5fbf7f9d392cd76019f95b091f8f37cadcda789e5103c91'}))assert.equal(hash(await bytes(path)),expected,path)
+ for(const [path,expected]of Object.entries({'data/species.source.json':'22cab3d3dbad13cb44343646081fbcf9880d9fe244956e694314e808e1593935','public/data/species.json':'8c87e8254851ad70ecafd256f6f8138a65d8181660b03abe20121233655ea532','data/geography/occurrences.source.json':'bc439cb62781cafdf632679f1a2d3d67f2af28d842099d72b6105c715eeecbba','public/data/geography/occurrences.json':'7789bdde826bcb60b5fbf7f9d392cd76019f95b091f8f37cadcda789e5103c91'})){
+  if(TRANSLATED_CATALOGUES.has(path)) historicalCatalogueBytes(BASE,path,expected,await bytes(path))
+  else assert.ok(checkoutBytesMatching(path,await bytes(path),expected),path)
+ }
  for(const s of source.catalog)for(const im of s.images)assert.equal(hash(await bytes(im.path)),hash(historicalBytes(BASE,im.path)),im.path)
 })
 

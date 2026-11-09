@@ -1,3 +1,4 @@
+import UZ_NAMES from './uz-names.json' with { type: 'json' }
 import { canPublishImage } from './species-model.js'
 import { populationPresentation } from './population.js'
 import { tr } from '../locales/index.js'
@@ -21,11 +22,26 @@ export function localized(value, language = 'ru') {
   return value?.[language] || value?.ru || value?.en || value?.ky || value?.uz || null
 }
 
+// Uzbek and English use the Latin script: when no name exists in that language the scientific
+// (Latin) name is shown instead of a Russian Cyrillic name. No folk names are invented: Uzbek
+// names come only from src/data/uz-names.json (source-confirmed, see data/research/uz-names-sources.json).
+const LATIN_SCRIPT_LANGUAGES = new Set(['uz', 'en'])
+const ownName = (species, language) => {
+  const own = species.names?.[language]
+  if (language === 'uz' && (!own || own === species.scientificName)) return UZ_NAMES[species.id] || null
+  return own || null
+}
+
 export function speciesName(species, language = 'ru') {
+  const own = ownName(species, language)
+  if (own) return own
+  if (LATIN_SCRIPT_LANGUAGES.has(language) && species.scientificName) return species.scientificName
   return localized(species.names, language) || species.scientificName || species.id
 }
 
 export function speciesNameLanguage(species, language = 'ru') {
+  if (ownName(species, language)) return language
+  if (LATIN_SCRIPT_LANGUAGES.has(language) && species.scientificName) return 'la'
   const content = scientificContent(species.names, language)
   return content.text ? content.language : species.scientificName ? 'la' : 'und'
 }

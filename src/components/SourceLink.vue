@@ -19,8 +19,10 @@ const title = computed(() => `${content.value.title} · ${languageNote.value}`)
     <slot />
     <span v-if="!compact" :lang="content.language || 'und'">{{ content.title }}</span>
     <span class="sr-only"> {{ t('ui.m107') }}</span>
-    <small v-if="content.language !== language" :class="compact ? 'source-language-code' : 'language-note'">
-      {{ compact ? content.language?.toUpperCase() || '?' : languageNote }}
+    <!-- A language note appears only for a known foreign-language source; an unknown language
+         (a bare "?" or "language not specified" under every link) stays in the title tooltip. -->
+    <small v-if="content.language && content.language !== language" :class="compact ? 'source-language-code' : 'language-note'">
+      {{ compact ? content.language.toUpperCase() : languageNote }}
     </small>
   </a>
 </template>

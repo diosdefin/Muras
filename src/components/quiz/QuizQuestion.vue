@@ -63,14 +63,34 @@ function answerState(option) {
         <p v-if="!answer.correct">{{ t('ui.m185') }} <strong :lang="latinOptions ? 'la' : correctOption.language">{{ correctOption.text }}</strong>.</p>
         <p :lang="displayQuestion.language">{{ displayQuestion.explanation }}</p>
       </div>
-      <ul class="quiz-sources" :aria-label="t('ui.m186')">
-        <li v-for="source in sources" :key="source.id"><SourceLink :source="source" /></li>
-      </ul>
-      <div class="quiz-actions">
-        <button type="button" class="quiz-primary" @click="emit('next')">{{ last ? t('ui.m187') : t('ui.m188') }} <span aria-hidden="true">→</span></button>
-        <button type="button" class="quiz-secondary" @click="emit('study', question.speciesId)">{{ t('ui.m126') }}</button>
-      </div>
+      <details v-if="sources.length" class="quiz-sources-details">
+        <summary>{{ t('ui.m186') }} · {{ sources.length }}</summary>
+        <ul class="quiz-sources" :aria-label="t('ui.m186')">
+          <li v-for="source in sources" :key="source.id"><SourceLink :source="source" /></li>
+        </ul>
+      </details>
     </section>
-    <p v-else class="quiz-hint">{{ t('ui.m189') }}</p>
+    <!-- After an answer the next step stays at hand at the bottom of the screen; no scrolling needed. -->
+    <div v-if="answer" class="quiz-actions quiz-next-bar">
+      <button type="button" class="quiz-primary" @click="emit('next')">{{ last ? t('ui.m187') : t('ui.m188') }} <span aria-hidden="true">→</span></button>
+      <button type="button" class="quiz-secondary" @click="emit('study', question.speciesId)">{{ t('ui.m126') }}</button>
+    </div>
   </article>
 </template>
+
+<style scoped>
+.quiz-next-bar {
+  position: sticky; bottom: 0; z-index: 5; display: flex; flex-wrap: wrap; gap: 10px;
+  margin-top: 16px; padding: 10px 0 calc(10px + env(safe-area-inset-bottom));
+  background: rgb(255 255 255 / .96); border-top: 1px solid var(--line);
+  backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+}
+.quiz-question-with-photo > .quiz-next-bar { grid-column: 1 / -1; }
+.quiz-sources-details { margin-top: 12px; }
+.quiz-sources-details > summary { cursor: pointer; min-height: 36px; display: flex; align-items: center; color: var(--muted); font-size: 14px; font-weight: 600; }
+.quiz-sources-details .quiz-sources { margin-top: 4px; }
+/* A smaller photo keeps the answers in view. */
+@media (min-width: 768px) {
+  .quiz-photo > img, .quiz-photo :deep(.quiz-photo-fallback img) { max-height: 300px; object-fit: contain; background: #eef2ec; }
+}
+</style>

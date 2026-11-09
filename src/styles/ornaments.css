@@ -1,0 +1,65 @@
+/* Kyrgyz accents: small, line-only ornaments in the site's own colours.
+   Decorative only — nothing here changes text or icon sizes. */
+
+/* Kochkor müiüz (ram's horn) replaces the plain red rule in eyebrows; same width as before. */
+.eyebrow .red-rule { height: 12px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 12'%3E%3Cpath d='M14 10.5C14 5.5 10.8 2.2 7.6 3.1 5.2 3.8 5.3 7.2 7.6 7.4 9 7.5 9.4 5.6 8.2 5.2M14 10.5C14 5.5 17.2 2.2 20.4 3.1 22.8 3.8 22.7 7.2 20.4 7.4 19 7.5 18.6 5.6 19.8 5.2M0 10.5H28' fill='none' stroke='%23b94d48' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center bottom / contain no-repeat; }
+
+/* Footer: a thin border of horn motifs with a tündük medallion on the top edge. */
+.page-footer { position: relative; }
+.page-footer::before {
+  content: ""; position: absolute; top: 6px; left: 0; right: 0; height: 14px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 14'%3E%3Cpath d='M16 12C16 7.5 13.2 4.6 10.4 5.4 8.3 6 8.4 9 10.4 9.2 11.6 9.3 12 7.7 10.9 7.3M16 12C16 7.5 18.8 4.6 21.6 5.4 23.7 6 23.6 9 21.6 9.2 20.4 9.3 20 7.7 21.1 7.3M0 12H32' fill='none' stroke='%238fa892' stroke-width='1' stroke-linecap='round' stroke-linejoin='round' opacity='.45'/%3E%3C/svg%3E") center top / 32px 14px repeat-x; pointer-events: none;
+}
+.page-footer::after {
+  content: ""; position: absolute; top: -19px; left: 50%; width: 36px; height: 36px; transform: translateX(-50%);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 36 36'%3E%3Ccircle cx='18' cy='18' r='17' fill='%232c4439' stroke='%23748f77' stroke-width='1.2'/%3E%3Cg transform='translate(2 2)' fill='none' stroke='%23c1d0c3' stroke-width='1.1' stroke-linecap='round'%3E%3Ccircle cx='16' cy='16' r='12'/%3E%3Cpath d='M12.4 4.55V27.45M4.55 12.4H27.45M16.0 4.00V28.00M4.00 16.0H28.00M19.6 4.55V27.45M4.55 19.6H27.45'/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat; pointer-events: none;
+}
+
+/* Empty catalog results: snow leopard tracks instead of a bare box. */
+.catalog-message.catalog-empty { text-align: center; }
+.catalog-message.catalog-empty::before {
+  content: ""; display: block; width: 64px; height: 40px; margin: 0 auto 10px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 40'%3E%3Cg fill='%2368816e' opacity='.55'%3E%3Cg transform='translate(14 28)'%3E%3Cpath d='M0 4.5C-3.8 4.5-6 2.2-5.2-.6-4.6-2.6-2.6-2.8 0-2.8S4.6-2.6 5.2-.6C6 2.2 3.8 4.5 0 4.5Z'/%3E%3Cellipse cx='-6.2' cy='-5.6' rx='1.9' ry='2.4'/%3E%3Cellipse cx='-2.2' cy='-8.4' rx='1.9' ry='2.5'/%3E%3Cellipse cx='2.2' cy='-8.4' rx='1.9' ry='2.5'/%3E%3Cellipse cx='6.2' cy='-5.6' rx='1.9' ry='2.4'/%3E%3C/g%3E%3Cg transform='translate(46 15)'%3E%3Cpath d='M0 4.5C-3.8 4.5-6 2.2-5.2-.6-4.6-2.6-2.6-2.8 0-2.8S4.6-2.6 5.2-.6C6 2.2 3.8 4.5 0 4.5Z'/%3E%3Cellipse cx='-6.2' cy='-5.6' rx='1.9' ry='2.4'/%3E%3Cellipse cx='-2.2' cy='-8.4' rx='1.9' ry='2.5'/%3E%3Cellipse cx='2.2' cy='-8.4' rx='1.9' ry='2.5'/%3E%3Cellipse cx='6.2' cy='-5.6' rx='1.9' ry='2.4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat;
+}
+
+/* Loading states: a slowly turning tündük instead of bare text (still in reduced-motion mode). */
+.muras-loading { display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center; }
+.muras-loading::before {
+  content: ""; width: 34px; height: 34px; flex-shrink: 0;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cg fill='none' stroke='%2368816e' stroke-width='1.3' stroke-linecap='round'%3E%3Ccircle cx='16' cy='16' r='13'/%3E%3Cpath d='M12.10 3.60V28.40M3.60 12.10H28.40M16.00 3.00V29.00M3.00 16.00H29.00M19.90 3.60V28.40M3.60 19.90H28.40'/%3E%3C/g%3E%3Ccircle cx='16' cy='3' r='1.8' fill='%23b94d48'/%3E%3C/svg%3E") center / contain no-repeat;
+  animation: muras-tunduk-turn 6s linear infinite;
+}
+@keyframes muras-tunduk-turn { to { transform: rotate(360deg); } }
+@media (prefers-reduced-motion: reduce) { .muras-loading::before { animation: none; } }
+
+/* Quiz result: the score sits inside a tündük ring that fills with the percentage. */
+.quiz-result .quiz-percent {
+  position: relative; isolation: isolate; display: inline-block;
+  width: 2.7em; height: 2.7em; line-height: 2.7em; text-align: center; white-space: nowrap;
+}
+.quiz-result .quiz-percent::before, .quiz-result .quiz-percent::after { content: ""; position: absolute; inset: 0; z-index: -1; border-radius: 50%; pointer-events: none; }
+.quiz-result .quiz-percent::before {
+  background: conic-gradient(var(--green) calc(var(--quiz-p, 0) * 1%), var(--line) 0);
+  -webkit-mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 3px));
+          mask: radial-gradient(farthest-side, transparent calc(100% - 4px), #000 calc(100% - 3px));
+}
+.quiz-result .quiz-percent::after { inset: 12%; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M38.00 11.84V88.16M11.84 38.00H88.16M50.00 10.00V90.00M10.00 50.00H90.00M62.00 11.84V88.16M11.84 62.00H88.16' fill='none' stroke='%2368816e' stroke-width='1.2'/%3E%3C/svg%3E") center / contain no-repeat; opacity: .16; }
+
+/* Map: a small tündük compass next to the region count, north marked in red. */
+.region-map .map-compass {
+  display: inline-block; width: 20px; height: 23px; margin-left: 10px; vertical-align: -6px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 46'%3E%3Cg fill='none' stroke-linecap='round'%3E%3Ccircle cx='20' cy='26' r='15' stroke='%2368816e' stroke-width='1.2'/%3E%3Cg transform='translate(0 6)'%3E%3Cpath d='M15.50 5.69V34.31M5.69 15.50H34.31M20.00 5.00V35.00M5.00 20.00H35.00M24.50 5.69V34.31M5.69 24.50H34.31' stroke='%2368816e' stroke-width='1' opacity='.5'/%3E%3C/g%3E%3Cpath d='M20 11V4.5' stroke='%23b94d48' stroke-width='1.6'/%3E%3C/g%3E%3Cpath d='M17.4 5.6 20 1l2.6 4.6z' fill='%23b94d48'/%3E%3C/svg%3E") center / contain no-repeat; opacity: .85;
+}
+
+/* Species page: the section rules carry a small horn motif in the middle. */
+.species-page .profile-section { position: relative; }
+.species-page .profile-section::after {
+  content: ""; position: absolute; left: 50%; bottom: -7px; width: 40px; height: 13px; transform: translateX(-50%);
+  background: var(--paper) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 28 12'%3E%3Cpath d='M14 10.5C14 5.5 10.8 2.2 7.6 3.1 5.2 3.8 5.3 7.2 7.6 7.4 9 7.5 9.4 5.6 8.2 5.2M14 10.5C14 5.5 17.2 2.2 20.4 3.1 22.8 3.8 22.7 7.2 20.4 7.4 19 7.5 18.6 5.6 19.8 5.2' fill='none' stroke='%2368816e' stroke-width='1.3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center / 24px 11px no-repeat; pointer-events: none;
+}
+
+/* Species not found: a trail of snow leopard tracks. */
+.profile-not-found::before {
+  content: ""; display: block; width: 96px; height: 48px; margin-bottom: 18px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 96 48'%3E%3Cg fill='%2368816e' opacity='.5'%3E%3Cg transform='translate(12 36)'%3E%3Cpath d='M0 4.5C-3.8 4.5-6 2.2-5.2-.6-4.6-2.6-2.6-2.8 0-2.8S4.6-2.6 5.2-.6C6 2.2 3.8 4.5 0 4.5Z'/%3E%3Cellipse cx='-6.2' cy='-5.6' rx='1.9' ry='2.4'/%3E%3Cellipse cx='-2.2' cy='-8.4' rx='1.9' ry='2.5'/%3E%3Cellipse cx='2.2' cy='-8.4' rx='1.9' ry='2.5'/%3E%3Cellipse cx='6.2' cy='-5.6' rx='1.9' ry='2.4'/%3E%3C/g%3E%3Cg transform='translate(48 22) rotate(8)'%3E%3Cpath d='M0 4.5C-3.8 4.5-6 2.2-5.2-.6-4.6-2.6-2.6-2.8 0-2.8S4.6-2.6 5.2-.6C6 2.2 3.8 4.5 0 4.5Z'/%3E%3Cellipse cx='-6.2' cy='-5.6' rx='1.9' ry='2.4'/%3E%3Cellipse cx='-2.2' cy='-8.4' rx='1.9' ry='2.5'/%3E%3Cellipse cx='2.2' cy='-8.4' rx='1.9' ry='2.5'/%3E%3Cellipse cx='6.2' cy='-5.6' rx='1.9' ry='2.4'/%3E%3C/g%3E%3Cg transform='translate(84 12) rotate(-6)'%3E%3Cpath d='M0 4.5C-3.8 4.5-6 2.2-5.2-.6-4.6-2.6-2.6-2.8 0-2.8S4.6-2.6 5.2-.6C6 2.2 3.8 4.5 0 4.5Z'/%3E%3Cellipse cx='-6.2' cy='-5.6' rx='1.9' ry='2.4'/%3E%3Cellipse cx='-2.2' cy='-8.4' rx='1.9' ry='2.5'/%3E%3Cellipse cx='2.2' cy='-8.4' rx='1.9' ry='2.5'/%3E%3Cellipse cx='6.2' cy='-5.6' rx='1.9' ry='2.4'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat;
+}

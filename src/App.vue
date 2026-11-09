@@ -6,13 +6,13 @@ import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { speciesPath, speciesIdFromPath } from './data/species-routes.js'
 import SpeciesPage from './components/SpeciesPage.vue'
 import { searchContentLanguage } from './data/localization.js'
-import { groupLabel, regionFilterLabel, statusDetails } from './data/presentation.js'
+import { groupLabel, statusDetails } from './data/presentation.js'
 import SpeciesCard from './components/SpeciesCard.vue'
 import SpeciesModal from './components/SpeciesModal.vue'
 import QuizView from './components/quiz/QuizView.vue'
 import LessonView from './components/lesson/LessonView.vue'
 import MapSection from './components/map/MapSection.vue'
-import SupportView from './components/support/SupportView.vue'
+import SupportStub from './components/support/SupportStub.vue'
 import CatalogSearch from './components/CatalogSearch.vue'
 import LanguageMenu from './components/LanguageMenu.vue'
 import { paginateCatalog, pageNumbers } from './data/catalog-pagination.js'
@@ -29,6 +29,9 @@ import { populationPublicationContexts } from './data/population-publication.js'
 import editorialPopulationRelease from './data/population-editorial-release.json'
 import { createSearchIndex, searchSpecies } from './data/catalog-search.js'
 import { validateQuestions } from './data/quiz/model.js'
+// Phone adaptation is imported last so it follows every component stylesheet.
+import './styles/ornaments.css'
+import './styles/mobile.css'
 
 const { t, language, siteLanguage, setLanguage } = useLocale()
 
@@ -65,7 +68,7 @@ const desktopColumnOptions = computed(() => [1, 2, 3, 4, 5].map(n => ({ value: n
 const mobileColumnOptions = computed(() => [1, 2].map(n => ({ value: n, label: t('catalogUI.inRow', { p0: n }) })))
 const columnOptions = computed(() => isCompactViewport.value ? mobileColumnOptions.value : desktopColumnOptions.value)
 const statusOptions = computed(() => options.value.statuses.map(option => ({ value: option.value, label: statusLabel(option.value) })))
-const regionOptions = computed(() => options.value.regions.map(region => ({ value: region, label: regionFilterLabel(region, language.value) })))
+// All records are national (Kyrgyzstan); regional browsing lives on the map, so the catalogue has no region filter.
 watch([query, selectedStatus, selectedRegion, selectedGroup, species], () => { catalogPageNumber.value = 1 }, { flush: 'sync' })
 const isLoading = ref(true)
 const errorMessage = ref('')
@@ -261,12 +264,15 @@ onMounted(async () => {
     errorMessage.value = error.message
   } finally {
     isLoading.value = false
+    window.murasHideSplash?.()
   }
   try {
     if (errorMessage.value) throw new Error('Для викторины нужен доступный каталог видов.')
     const response = await fetch(`${import.meta.env.BASE_URL}data/quiz.json`)
     if (!response.ok) throw new Error(`HTTP ${response.status}: data/quiz.json`)
-    const questions = await response.json()
+    // Later batches are published separately; a missing batch file leaves the original bank.
+    const extra = await fetch(`${import.meta.env.BASE_URL}data/quiz-extra.json`).then(r => r.ok ? r.json() : []).catch(() => [])
+    const questions = [...await response.json(), ...(Array.isArray(extra) ? extra : [])]
     const errors = validateQuestions(questions, species.value)
     if (errors.length) throw new Error(errors[0])
     quizQuestions.value = questions
@@ -295,7 +301,7 @@ onUnmounted(() => {
       <LanguageMenu :model-value="siteLanguage" :label="t('chooseLanguage')" @change="setLanguage" />
     </div>
     <nav class="main-navigation" :aria-label="t('ui.m007')">
-      <a class="header-link" href="#catalog" :aria-label="`${t('ui.m009')} — ${t('ui.m008')}`" :aria-current="activeView === 'catalog' ? 'page' : undefined" @click.prevent="showView('catalog')">{{ t('ui.m009') }}</a>
+      <a class="header-link" href="/" :aria-label="`${t('ui.m009')} — ${t('ui.m008')}`" :aria-current="activeView === 'catalog' ? 'page' : undefined" @click.prevent="showHome()">{{ t('ui.m009') }}</a>
       <a class="header-link" href="/map" :aria-current="activeView === 'map' ? 'page' : undefined" @click.prevent="showMap()">{{ t('ui.m010') }}</a>
       <a class="header-link" href="#quiz" :aria-current="activeView === 'quiz' ? 'page' : undefined" @click.prevent="showView('quiz')">{{ t('ui.m011') }}</a>
       <a class="header-link" href="#lesson" :aria-current="activeView === 'lesson' ? 'page' : undefined" @click.prevent="showView('lesson')">{{ t('ui.m012') }}</a>
@@ -331,10 +337,6 @@ onUnmounted(() => {
               <label for="status-filter">{{ t('ui.m026') }}</label>
               <CustomSelect id="status-filter" v-model="selectedStatus" :options="statusOptions" :label="t('ui.m027')" />
             </div>
-            <div class="filter-field">
-              <label for="region-filter">{{ t('ui.m028') }}</label>
-              <CustomSelect id="region-filter" v-model="selectedRegion" :options="regionOptions" :label="t('ui.m029')" />
-            </div>
             <button type="button" class="catalog-reset" :disabled="!hasFilters" @click="catalog.reset">{{ t('ui.m031') }}</button>
           </div>
         </div>
@@ -350,10 +352,6 @@ onUnmounted(() => {
                 <label for="status-filter-compact">{{ t('ui.m026') }}</label>
                 <CustomSelect id="status-filter-compact" v-model="selectedStatus" :options="statusOptions" :label="t('ui.m027')" />
               </div>
-              <div class="filter-field">
-                <label for="region-filter-compact">{{ t('ui.m028') }}</label>
-                <CustomSelect id="region-filter-compact" v-model="selectedRegion" :options="regionOptions" :label="t('ui.m029')" />
-              </div>
               <button type="button" class="catalog-reset" :disabled="!hasFilters" @click="catalog.reset">{{ t('ui.m031') }}</button>
             </div>
           </details>
@@ -366,9 +364,9 @@ onUnmounted(() => {
           </div>
         </div>
       </div>
-      <p v-if="isLoading" class="catalog-message" role="status">{{ t('ui.m036') }}</p>
+      <p v-if="isLoading" class="catalog-message muras-loading" role="status">{{ t('ui.m036') }}</p>
       <ErrorNotice v-else-if="errorMessage" :message="errorMessage"></ErrorNotice>
-      <p v-else-if="results.length === 0" class="catalog-message">{{ t('ui.m037') }}</p>
+      <p v-else-if="results.length === 0" class="catalog-message catalog-empty">{{ t('ui.m037') }}</p>
       <div v-else class="catalog-grid-viewport">
         <div class="species-grid catalog-custom-grid" :data-columns="catalogColumns" :style="catalogGridStyle">
           <SpeciesCard v-for="result in catalogPagination.entries" :key="result.species.id" :species="result.species" @open="openSearchResult(result)" />
@@ -388,8 +386,8 @@ onUnmounted(() => {
     <LessonView v-if="mountedViews.has('lesson')" ref="lessonView" v-show="activeView === 'lesson'" :species="species" :active="activeView === 'lesson'" :loading="isLoading" :error="errorMessage"
       @catalog="showView('catalog')" @quiz="openQuizFromLesson" />
     <SpeciesPage v-if="activeView === 'species'" :species="profileSpecies" :population-publication="populationContexts.get(profileSpecies?.id) || null" :loading="isLoading" :error="errorMessage" :content-language="contentLanguage" @catalog="showView('catalog')" @support="openSupport" />
-    <SupportView v-if="mountedViews.has('support')" v-show="activeView === 'support'" :species="species" :species-id="supportSpeciesId" :loading="isLoading" :error="errorMessage"
-      @select="supportSpeciesId = $event" @study="studySpecies" @catalog="showView('catalog')" />
+    <!-- The full support page (SupportView) stays in the codebase until it is finished. -->
+    <SupportStub v-if="mountedViews.has('support')" v-show="activeView === 'support'" @catalog="showView('catalog')" />
   </main>
   <footer class="page-footer">
     <div class="page-container footer-inner">

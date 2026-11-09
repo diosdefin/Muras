@@ -1,3 +1,5 @@
+import { beforeTranslations } from './helpers/translation-evolution.mjs'
+// These historical scenarios retain their original scientific snapshot; live translation integrity is tested separately.
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
@@ -12,7 +14,7 @@ import { historicalBytes } from './helpers/photo-amendment.mjs'
 const read = async path => JSON.parse(await readFile(new URL('../'+path, import.meta.url)))
 // Replay task 27.1 against its immutable six-link publication; live expansion is tested separately.
 const activation = path => JSON.parse(historicalBytes('b83a48c3b7b362bd6a93661ebb8dcb4415fcce74',path))
-const species = await read('public/data/species.json'), evidence = activation('data/geography/occurrences.source.json')
+const species = beforeTranslations(await read('public/data/species.json')), evidence = activation('data/geography/occurrences.source.json')
 const geometry = await read('public/data/geography/map.json'), published = activation('public/data/geography/occurrences.json')
 const base = '43ff31186ea54eafdb6eec654c50828fb4c99eb3'
 const old = path => historicalBytes(base, path)
@@ -21,7 +23,7 @@ const clone = value => structuredClone(value)
 const added = ['hedysarum-chaitocarpum','amygdalus-petunnikowii','sorbus-persica','tianschaniella-umbellifera']
 
 test('map activation preserves every scientific object, archive, original image and license byte', async () => {
-  const source = await read('data/species.source.json')
+  const source = beforeTranslations(await read('data/species.source.json'))
   assert.equal(source.catalog.length,184); assert.equal(source.demoArchive.length,2)
   assert.equal(source.catalog.filter(s=>s.images.length).length,161)
   const originalSource=JSON.parse(old('data/species.source.json'))
@@ -117,7 +119,7 @@ test('historical map-only locale migration preserves every unrelated translation
   }
 })
 
-test('regional panels render accessible search, groups, dated evidence, honest empty states and real routes in four languages', async () => {
+test('regional panels render accessible groups, dated evidence, honest empty states and one card action per species in four languages', async () => {
   const vite=await createServer({server:{middlewareMode:true,ws:false,hmr:false,watch:null},appType:'custom',logLevel:'error'})
   try{
     const{siteLanguage}=await vite.ssrLoadModule('/src/composables/useLocale.js')
@@ -128,13 +130,19 @@ test('regional panels render accessible search, groups, dated evidence, honest e
       for(const region of REGIONS){
         const entries=queryRegionalEntries(published,species,{regionId:region.id})
         const html=await renderToString(createSSRApp(Panel,{species,region,entries,unfilteredCount:entries.length}))
-        assert.match(html,/id="map-species-search" type="search"/)
+        // UI v4: the header search replaces the panel search; each category appears once and
+        // long categories start with six records plus "Show more"; folded details stay in the document.
+        assert.doesNotMatch(html,/id="map-species-search"/)
         assert.match(html,/aria-live="polite"/)
         if(!entries.length)assert.ok(html.includes(tr(language,'ui.m153')))
-        for(const entry of entries){
-          assert.ok(html.includes(`href="${speciesPath(entry.species.id)}"`))
+        const perGroup=new Map(),visible=entries.filter(entry=>{const n=(perGroup.get(entry.species.group)||0)+1;perGroup.set(entry.species.group,n);return n<=6})
+        assert.equal(html.includes('regional-more-button'),visible.length<entries.length)
+        assert.equal((html.match(/class="regional-group-title"/g)||[]).length,perGroup.size)
+        // UI v4: each card opens the species card through one compact icon button.
+        assert.equal((html.match(/class="regional-explore"/g)||[]).length,visible.length)
+        for(const entry of visible){
           assert.equal(speciesIdFromPath(speciesPath(entry.species.id)),entry.species.id)
-          assert.ok(html.includes('loading="lazy"'));assert.ok(html.includes('<time datetime='))
+          assert.ok(html.includes('loading="lazy"'));if(entry.evidence.observationDate||entry.evidence.observationYear!=null)assert.ok(html.includes('<time datetime='))
           assert.ok(html.includes(tr(language,'mapUI.historical')))
           for(const source of entry.sources)assert.ok(html.includes(source.url))
         }

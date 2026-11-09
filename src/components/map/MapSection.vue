@@ -57,7 +57,7 @@ watch(() => [props.loading, props.species], ([loading, species]) => {
       <p>{{ t('ui.m111') }}</p>
     </div>
     <ErrorNotice v-if="errorMessage" :message="errorMessage"></ErrorNotice>
-    <p v-else-if="loadingMap || loading" class="catalog-message" role="status">{{ t('ui.m112') }}</p>
+    <p v-else-if="loadingMap || loading" class="catalog-message muras-loading" role="status">{{ t('ui.m112') }}</p>
     <div v-else class="map-layout" :class="{ 'map-mobile-show-info': mode === 'preview' && mobilePreviewSlide === 'info', 'map-mobile-show-map': mode === 'preview' && mobilePreviewSlide === 'map' }">
       <RegionMap :geometry="geometry" :selected="selected" :preview="mode === 'preview'" :panel-id="mode === 'preview' ? 'map-overview-panel' : 'map-region-panel'" @select="selectRegion" />
       <MapOverviewPanel v-if="mode === 'preview'" :species="species" :region="region" :entries="regionalEntries(evidence, species, selected)" @clear="dismissPreview" @details="emit('details', selected)" />

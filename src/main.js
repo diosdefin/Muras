@@ -10,3 +10,5 @@ const loadAdmin = import.meta.env.DEV && __MURAS_LOCAL_ADMIN__
 const loadPublic = () => import('./App.vue')
 const Root = defineAsyncComponent(isAdmin ? loadAdmin : loadPublic)
 createApp(Root).mount('#app')
+// The public app hides the splash once its catalog is in; the editor has nothing to wait for.
+if (isAdmin) window.murasHideSplash?.()

@@ -1,3 +1,4 @@
+import { beforeTranslations } from './translation-evolution.mjs'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { PROJECT_ROOT } from '../../scripts/build-data.mjs'
@@ -56,6 +57,7 @@ export function assertBatch2Evidence(r, species) {
 }
 
 export async function assertPhotoBatch2(source, published, journal, load = readBytes) {
+  source = beforeTranslations(source); published = beforeTranslations(published)
   assert.equal(journal.sourceCommit, BATCH2_BASE)
   assert.equal(journal.task, '26.3')
   assert.equal(journal.documentType, 'catalog-photo-only-amendments')

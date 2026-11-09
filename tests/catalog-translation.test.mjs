@@ -1,0 +1,116 @@
+import test from 'node:test'
+import assert from 'node:assert/strict'
+import { readFile } from 'node:fs/promises'
+import { execFileSync } from 'node:child_process'
+import { translationCompleteness, translationCell } from '../src/data/translation-completeness.js'
+import { assertTranslationOnlyEvolution } from '../scripts/lib/translation-integrity.mjs'
+import { LATER_TRANSLATIONS, unwindLaterTranslations } from './helpers/translation-evolution.mjs'
+import { contentParagraphs } from '../src/data/species-content.js'
+import { scientificContent, LANGUAGES } from '../src/data/localization.js'
+const before = JSON.parse(execFileSync('git',['show','5f253100ac61c825b72b9fb22ca9b4a45f7aa953:data/species.source.json'],{maxBuffer:16*1024*1024}))
+const source = JSON.parse(await readFile(new URL('../data/species.source.json',import.meta.url)))
+const batch = JSON.parse(await readFile(new URL('../data/localization/batch-001.json',import.meta.url)))
+const next = JSON.parse(await readFile(new URL('../data/localization/batch-002.json',import.meta.url)))
+const checkpoint = JSON.parse(execFileSync('git',['show',next.baselineCommit+':data/species.source.json'],{maxBuffer:16*1024*1024}))
+const third = JSON.parse(await readFile(new URL('../data/localization/batch-003.json',import.meta.url)))
+const thirdBase = JSON.parse(execFileSync('git',['show',third.baselineCommit+':data/species.source.json'],{maxBuffer:16*1024*1024}))
+const fourth = JSON.parse(await readFile(new URL('../data/localization/batch-004.json',import.meta.url)))
+const fourthBase = JSON.parse(execFileSync('git',['show',fourth.baselineCommit+':data/species.source.json'],{maxBuffer:16*1024*1024}))
+const fifth = JSON.parse(await readFile(new URL('../data/localization/batch-005.json',import.meta.url)))
+const fifthBase = JSON.parse(execFileSync('git',['show',fifth.baselineCommit+':data/species.source.json'],{maxBuffer:16*1024*1024}))
+const sixth = JSON.parse(await readFile(new URL('../data/localization/batch-006.json',import.meta.url)))
+const sixthBase = JSON.parse(execFileSync('git',['show',sixth.baselineCommit+':data/species.source.json'],{maxBuffer:16*1024*1024}))
+const combined = {...batch,selectedIds:[...new Set([...batch.selectedIds,...next.selectedIds,...third.selectedIds,...fourth.selectedIds,...LATER_TRANSLATIONS.flatMap(x=>x.journal.selectedIds)])],changes:[...batch.changes,...next.changes,...third.changes,...fourth.changes,...LATER_TRANSLATIONS.flatMap(x=>x.journal.changes)]}
+test('all 184 scientific records and two archives preserve facts, source IDs, Russian originals, existing translations and image licences',()=>{
+ assertTranslationOnlyEvolution(before,assertTranslationOnlyEvolution(checkpoint,assertTranslationOnlyEvolution(thirdBase,assertTranslationOnlyEvolution(fourthBase,unwindLaterTranslations(source),fourth),third),next),batch)
+ assert.equal(source.catalog.length,184);assert.equal(source.demoArchive.length,2)
+})
+test('unknown names and fallback copies are never counted as completed translations; empty future species stays incomplete',()=>{
+ assert.equal(translationCell({field:'names',value:{ru:null,ky:null,en:null,uz:null}},'uz',null),'missing')
+ assert.equal(translationCell({field:'content.overview',value:{ru:'Русский текст',ky:'Русский текст'}},'ky'),'same_as_russian_requires_review')
+ assert.equal(translationCell({field:'names',value:{ru:'Ирбис',en:'Panthera uncia'}},'en','Panthera uncia'),'scientific_name_fallback')
+ assert.equal(translationCompleteness({names:{},images:[]}).complete,false)
+})
+test('four translated bodies retain paragraphs, historical years and real language selection without claiming unknown Uzbek names',()=>{
+ for(const id of ['irbis','argali','golden-eagle','eduards-fritillary']){
+  const s=source.catalog.find(s=>s.id===id),c=translationCompleteness(s)
+  for(const l of LANGUAGES){assert.ok(c.languages[l].bodyComplete,`${id} ${l}`);assert.equal(scientificContent(s.content.overview.text,l).language,l);assert.equal(contentParagraphs(s.content.overview,l).length,2);assert.ok(s.content.overview.text[l].includes('2006'))}
+  assert.equal(c.languages.uz.complete,false);assert.ok(!s.names.uz)
+ }
+})
+test('fallback keeps the actual Russian language rather than mislabelling it as Uzbek or English',()=>{
+ for(const l of ['ky','uz','en']) assert.deepEqual(scientificContent({ru:'Оригинал',ky:null,en:null},l),{text:'Оригинал',language:'ru',fallback:true})
+})
+test('tampering with science, source URLs, Russian text, licence or a translated historical year fails the independent preservation check',()=>{
+ for(const mutate of [s=>s.catalog[0].verified=true,s=>s.catalog[0].sources[0].url='https://example.invalid',s=>s.catalog[0].content.overview.text.ru+=' text',s=>s.catalog[0].images[0].sha256='0'.repeat(64),s=>s.catalog[0].images[0].license=null,s=>s.demoArchive.pop(),s=>s.catalog[0].content.overview.text.en+=' 2026']){
+  const copy=structuredClone(source);mutate(copy);assert.throws(()=>assertTranslationOnlyEvolution(before,copy,combined))
+ }
+})
+
+test('changing both a translated year and its journal cannot conceal a change of historical meaning',()=>{
+ const copy=structuredClone(source),journal=structuredClone(combined)
+ const entry=journal.changes.find(c=>c.id==='irbis'&&c.path==='content.overview.text.en')
+ entry.text=entry.text.replace('2006','2026');copy.catalog[0].content.overview.text.en=entry.text
+ assert.throws(()=>assertTranslationOnlyEvolution(before,copy,journal),/Numbers and historical years/)
+})
+
+test('batches 002–004 fill every existing body block, keep source paragraph boundaries and leave names untouched',()=>{
+ assert.equal(next.selectedIds.length,8)
+ assert.equal(third.selectedIds.length,8)
+ for(const id of [...next.selectedIds,...third.selectedIds,...fourth.selectedIds]){
+  const item=source.catalog.find(s=>s.id===id),old=(third.selectedIds.includes(id)?thirdBase:checkpoint).catalog.find(s=>s.id===id)
+  const completeness=translationCompleteness(item)
+  assert.deepEqual(item.names,old.names,id)
+  for(const language of LANGUAGES){
+   assert.ok(completeness.languages[language].bodyComplete,id+' '+language)
+   for(const section of Object.values(item.content).filter(Boolean)){
+    assert.equal(scientificContent(section.text,language).language,language)
+    assert.equal(contentParagraphs(section,language).length,contentParagraphs(section,'ru').length)
+   }
+  }
+ }
+})
+
+test('batch 003 follows the remaining editorial queue, then catalogue order; English and Uzbek additions contain no Cyrillic',()=>{
+ const needsBody=s=>LANGUAGES.some(l=>!translationCompleteness(s).languages[l].bodyComplete)
+ const tail=batch.selectedIds.filter(id=>needsBody(thirdBase.catalog.find(s=>s.id===id)))
+ const queue=[...tail,...thirdBase.catalog.filter(s=>!tail.includes(s.id)&&needsBody(s)).map(s=>s.id)]
+ assert.equal(queue[0],'pike-asp')
+ assert.deepEqual(third.selectedIds,queue.slice(0,8))
+ for(const c of third.changes.filter(c=>/\.(en|uz)$/.test(c.path))) assert.doesNotMatch(c.text,/\p{Script=Cyrillic}/u,c.id+' '+c.path)
+})
+
+test('batch 004 starts at ibisbill, follows catalogue order and never copies Cyrillic into new EN or UZ text',()=>{
+ const queue=fourthBase.catalog.filter(s=>LANGUAGES.some(l=>!translationCompleteness(s).languages[l].bodyComplete))
+ assert.equal(queue[0].id,'ibisbill')
+ assert.deepEqual(fourth.selectedIds,queue.slice(0,8).map(s=>s.id))
+ for(const c of fourth.changes.filter(c=>/\.(en|uz)$/.test(c.path))) assert.doesNotMatch(c.text,/\p{Script=Cyrillic}/u,c.id+' '+c.path)
+})
+
+test('batch 005 translates every remaining photo caption and the Uzbek name of Kyrgyzstan without inventing names',()=>{
+ for(const s of source.catalog){
+  for(const image of s.images||[]) if(image.caption?.ru) for(const l of ['ky','uz','en']) assert.ok(image.caption[l]?.trim(),s.id+' caption '+l)
+  for(const r of s.regions||[]) if(r.code==='KG') assert.deepEqual([r.names.ky,r.names.uz,r.names.en],['Кыргызстан','Qirgʻiziston','Kyrgyzstan'],s.id)
+ }
+ assert.ok(fifth.changes.every(c=>/^(images\.\d+\.caption|regions\.\d+\.names)\.(ky|uz|en)$/.test(c.path)))
+ for(const c of fifth.changes.filter(c=>/\.(en|uz)$/.test(c.path))) assert.doesNotMatch(c.text,/\p{Script=Cyrillic}/u,c.id+' '+c.path)
+ for(const id of fifth.selectedIds) assert.deepEqual(source.catalog.find(s=>s.id===id).names,fifthBase.catalog.find(s=>s.id===id).names,id)
+})
+
+test('batch 006 completes every threat and conservation measure in all four languages',()=>{
+ for(const s of source.catalog) for(const key of ['threats','conservationMeasures']) for(const item of s[key]||[]) if(item.text?.ru) for(const l of ['ky','uz','en']) assert.ok(item.text[l]?.trim(),s.id+' '+key+' '+l)
+ assert.ok(sixth.changes.every(c=>/^(threats|conservationMeasures)\.\d+\.text\.(ky|uz|en)$/.test(c.path)))
+ for(const c of sixth.changes.filter(c=>/\.(en|uz)$/.test(c.path))) assert.doesNotMatch(c.text,/\p{Script=Cyrillic}/u,c.id+' '+c.path)
+})
+
+test('body batches from 007 keep paragraphs, numbers and scripts and complete every body block of their species',()=>{
+ const body=LATER_TRANSLATIONS.filter(x=>Number(x.file.slice(-8,-5))>=7)
+ assert.ok(body.length>=1)
+ for(const {journal} of body){
+  // A batch may cover one language (KY first); every language it adds must be complete for its species.
+  const added=[...new Set(journal.changes.map(c=>c.path.split('.').pop()))]
+  for(const id of journal.selectedIds){const c=translationCompleteness(source.catalog.find(s=>s.id===id));for(const l of ['ru',...added])assert.ok(c.languages[l].bodyComplete,id+' '+l)}
+  for(const c of journal.changes.filter(c=>/\.(en|uz)$/.test(c.path))) assert.doesNotMatch(c.text,/\p{Script=Cyrillic}/u,c.id+' '+c.path)
+  assert.ok(journal.changes.every(c=>/^(content\.[a-zA-Z]+\.text|habitat\.description)\.(ky|uz|en)$/.test(c.path)))
+ }
+})

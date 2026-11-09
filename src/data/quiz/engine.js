@@ -10,12 +10,15 @@ export function shuffle(items, random = Math.random) {
   return result
 }
 
-export function createAttempt(bank, difficulty, { random = Math.random, questionIds = null } = {}) {
+export function createAttempt(bank, difficulty, { random = Math.random, questionIds = null, seen = null } = {}) {
   if (!DIFFICULTIES.some(level => level.id === difficulty)) throw new Error('Неизвестный уровень викторины')
   const pool = [...new Map(bank.filter(q => q.difficulty === difficulty && (!questionIds || questionIds.includes(q.id)))
     .map(q => [q.id, q])).values()]
   if (!pool.length) throw new Error('Для этого уровня пока нет подходящих вопросов')
-  const questions = shuffle(pool, random).slice(0, QUESTION_LIMIT).map(q => ({ ...q, options: shuffle(q.options, random) }))
+  // Questions the visitor has not answered before come first, in random order.
+  const shuffled = shuffle(pool, random)
+  const ordered = seen?.size ? [...shuffled.filter(q => !seen.has(q.id)), ...shuffled.filter(q => seen.has(q.id))] : shuffled
+  const questions = ordered.slice(0, QUESTION_LIMIT).map(q => ({ ...q, options: shuffle(q.options, random) }))
   return { difficulty, mode: questionIds ? 'mistakes' : 'standard', questions, index: 0, answers: {}, completedAt: null }
 }
 
@@ -46,4 +49,14 @@ export function attemptResult(attempt) {
   const skipped = Object.values(attempt.answers).filter(answer => answer.skipped).length
   return { difficulty: attempt.difficulty, mode: attempt.mode, total, correct, skipped,
     percent: Math.round(correct / total * 100), completedAt: attempt.completedAt }
+}
+
+// "Finish test": unanswered questions count as skipped and the attempt is completed now.
+export function finishAttempt(attempt, now = () => new Date().toISOString()) {
+  if (!attempt || attempt.completedAt) return attempt
+  const answers = { ...attempt.answers }
+  for (const question of attempt.questions) {
+    if (!answers[question.id]) answers[question.id] = { answerId: null, correct: false, skipped: true }
+  }
+  return { ...attempt, answers, completedAt: now() }
 }

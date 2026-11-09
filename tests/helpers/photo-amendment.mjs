@@ -1,3 +1,5 @@
+import { checkoutBytesMatching } from '../../scripts/lib/historical-checksum.mjs'
+import { beforeTranslations, TRANSLATED_CATALOGUES } from './translation-evolution.mjs'
 import assert from 'node:assert/strict'
 import { execFileSync } from 'node:child_process'
 import { readFile } from 'node:fs/promises'
@@ -19,17 +21,19 @@ export function historicalBytes(commit, path, expectedSha256) {
   let bytes = Buffer.from(cache.get(key))
   // Historical checksums describe Windows working-tree bytes, while Git stores LF.
   // Reconstruct CRLF only if it matches the original fixed checksum exactly.
-  if (expectedSha256 && digest(bytes) !== expectedSha256) {
-    const text = bytes.toString('utf8')
-    // This original test had exactly one CRLF (line 22), all other lines LF.
-    // Its old fixed raw checksum remains authoritative.
-    if (path === 'tests/catalog-166-publication.test.mjs' && expectedSha256 === '11695d6d9273c53d1ff42c7e244c5abea0c11531333f868f49c14098cb5d4a47') {
-      bytes = Buffer.from(text.split('\n').map((line, i) => i === 21 ? line + '\r' : line).join('\n'))
-    } else bytes = Buffer.from(text.replace(/\r?\n/g, '\r\n'))
-  }
+  if (expectedSha256) bytes = checkoutBytesMatching(path, bytes, expectedSha256) || bytes
   if (expectedSha256) assert.equal(digest(bytes), expectedSha256, key)
   return bytes
 }
+// A historical catalogue receipt still checks the Git blob. Validate the live
+// document separately, allowing only the independently checked translation ledger.
+export function historicalCatalogueBytes(commit, path, expected, live) {
+  assert.ok(TRANSLATED_CATALOGUES.has(path), path)
+  const snapshot = historicalBytes(commit, path, expected)
+  assert.deepEqual(beforeTranslations(JSON.parse(live), { requireTranslations: true }), JSON.parse(snapshot), path)
+  return snapshot
+}
+
 const originalBytes = historicalBytes(PHOTO_BASE_COMMIT, 'data/species.source.json')
 assert.equal(digest(originalBytes), 'cee3277b598a87b40126fc24064a6c5c05487a8d107cd7a95d401ad1d380a881')
 const originalPublicBytes = historicalBytes(PHOTO_BASE_COMMIT, 'public/data/species.json')
@@ -44,7 +48,7 @@ export function historical184() { return structuredClone(before) }
 export function historicalPublic184() { return structuredClone(beforePublic) }
 export async function photoBatch() {
   const raw = await readBytes(PHOTO_JOURNAL)
-  assert.equal(digest(raw), digest(historicalBytes(PHOTO_COMMIT, PHOTO_JOURNAL)), 'immutable photo journal')
+  assert.ok(checkoutBytesMatching(PHOTO_JOURNAL, raw, digest(historicalBytes(PHOTO_COMMIT, PHOTO_JOURNAL))), 'immutable photo journal')
   return JSON.parse(raw)
 }
 
@@ -101,6 +105,7 @@ export function assertPhotoEvidence(r, species) {
 // Validate the actual amendment against a fixed pre-photo release and fixed evidence.
 // No configurable replacement baseline and no ignoring images for old nonempty arrays.
 export async function assertPhotoAmendment(source, published, journal, load = readBytes) {
+  source = beforeTranslations(source); published = beforeTranslations(published)
   assert.deepEqual({ ...source, catalog: null }, { ...before, catalog: null }, 'archive and root scientific data')
   assert.deepEqual(source.catalog.map(noImages), before.catalog.map(noImages), 'all 184 scientific objects')
   assert.deepEqual(published.map(noImages), beforePublic.map(noImages), 'all 184 public scientific objects')

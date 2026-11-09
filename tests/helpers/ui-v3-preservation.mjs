@@ -7,6 +7,7 @@ import { readFileSync } from 'node:fs'
 import { execFileSync } from 'node:child_process'
 import { createHash } from 'node:crypto'
 import { PROJECT_ROOT } from '../../scripts/build-data.mjs'
+import { UI_V4_FILES, uiV4BaseBytes } from './ui-v4-release.mjs'
 const manifest = JSON.parse(readFileSync(new URL('../../data/research/ui-v3-release.json', import.meta.url), 'utf8'))
 
 const sha = bytes => createHash('sha256').update(bytes).digest('hex')
@@ -26,7 +27,9 @@ export function assertUiV3File(path) {
   const entry = manifest.files[path]
   assert.ok(entry && UI_V3_FILES.has(path), `${path}: not in scoped UI v3 manifest`)
   assert.equal(manifest.baseCommit, 'ce646a90262e9cf1b0636bdd1963251aa74981b1')
-  const current = readFileSync(`${PROJECT_ROOT}/${path}`)
+  // A file revised again by UI v4 keeps its v3 result in the v4 base commit;
+  // ui-v4-release.mjs pins the exact v4 replacement separately.
+  const current = UI_V4_FILES.has(path) ? uiV4BaseBytes(path) : readFileSync(`${PROJECT_ROOT}/${path}`)
   assert.ok(matches(current, entry.after), `${path}: UI v3 differs from approved replacement`)
   if (entry.before) {
     const previous = execFileSync('git', ['show', `${manifest.baseCommit}:${path}`], {cwd: PROJECT_ROOT, windowsHide: true})

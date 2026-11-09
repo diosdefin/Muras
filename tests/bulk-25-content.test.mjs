@@ -1,3 +1,4 @@
+import UZ_NAMES from '../src/data/uz-names.json' with { type: 'json' }
 import { historicalMapBytes } from '../scripts/lib/map-history.mjs'
 import { isHistoricalEvidenceUnchanged } from '../scripts/lib/ui-design-scope.mjs'
 import test from 'node:test'
@@ -84,9 +85,9 @@ test('four short languages, honest long-text/name fallback and unknown science r
       if (lang !== 'ru') {
         assert.equal(scientificContent(s.content.overview.text, lang).language, 'ru')
         assert.equal(scientificContent(s.content.overview.text, lang).fallback, true)
-        assert.equal(speciesName(s, lang), s.names[lang] || s.names.ru)
-        assert.equal(speciesNameLanguage(s, lang), s.names[lang] ? lang : 'ru')
-        const unnamed = { ...s, names: { ky: null, uz: null, ru: null, en: null } }
+        assert.equal(speciesName(s, lang), s.names[lang] || (lang === 'uz' && UZ_NAMES[s.id]) || (['uz', 'en'].includes(lang) ? s.scientificName : s.names.ru))
+        assert.equal(speciesNameLanguage(s, lang), s.names[lang] || (lang === 'uz' && UZ_NAMES[s.id]) ? lang : ['uz', 'en'].includes(lang) ? 'la' : 'ru')
+        const unnamed = { ...s, id: 'unnamed-fixture', names: { ky: null, uz: null, ru: null, en: null } }
         assert.equal(speciesName(unnamed, lang), s.scientificName)
         assert.equal(speciesNameLanguage(unnamed, lang), 'la')
       }

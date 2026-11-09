@@ -188,9 +188,9 @@ test('Vue admin selects and map buttons expose localized available groups withou
       }
       const legacy = await renderToString(createSSRApp(Fields, { species: fixture('invertebrates'), tab: 'basic' }))
       assert.ok(legacy.includes('<select value="invertebrates">'))
-      const html = await renderToString(createSSRApp(Panel, { species: published }))
+      const html = await renderToString(createSSRApp(Panel, { species: published, region: { id: 'issyk-kul' } }))
       for (const group of ids) assert.ok(html.includes(groupLabel({ group }, language)))
-      const expanded = await renderToString(createSSRApp(Panel, { species: ids.map(fixture), group: 'arthropods' }))
+      const expanded = await renderToString(createSSRApp(Panel, { species: ids.map(fixture), group: 'arthropods', region: { id: 'issyk-kul' } }))
       for (const group of ids) assert.ok(expanded.includes(groupLabel({ group }, language)))
       assert.match(expanded, /aria-pressed="true"[^>]*>Членистоногие|aria-pressed="true"[^>]*>Муунак буттуулар|aria-pressed="true"[^>]*>Arthropods/)
     }

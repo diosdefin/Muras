@@ -2,8 +2,9 @@
 import SourceLink from './SourceLink.vue'
 import { provideContentLanguage, useLocale } from '../composables/useLocale.js'
 import { computed, ref, toRef } from 'vue'
-import { groupLabel, nationalStatus, regionNames, speciesName, speciesPhoto, statusDetails } from '../data/presentation.js'
+import { groupLabel, nationalStatus, regionNames, speciesName, speciesNameLanguage, speciesPhoto, statusDetails } from '../data/presentation.js'
 import { useModalDialog } from '../composables/useModalDialog.js'
+import { useSheetDismiss } from '../composables/useSheetDismiss.js'
 import { siteLanguage } from '../composables/useLocale.js'
 import ScientificText from './ScientificText.vue'
 import SpeciesVisualization from './SpeciesVisualization.vue'
@@ -24,10 +25,11 @@ const knownRegions = computed(() => regionNames(props.species, language.value))
 function preferredLanguage(dictionary) {
   return [language.value, 'ru', 'en', 'ky', 'uz'].find(key => dictionary?.[key]) || 'ru'
 }
-const nameLanguage = computed(() => Object.values(props.species.names || {}).some(Boolean)
-  ? preferredLanguage(props.species.names) : props.species.scientificName ? 'la' : 'ru')
+const nameLanguage = computed(() => speciesNameLanguage(props.species, language.value))
 
 useModalDialog(dialog, closeButton)
+// Phones and tablets: slide-up opening, pull-down-to-close from the top, animated dismissal.
+const { dismiss } = useSheetDismiss(dialog, { onClose: () => emit('close') })
 
 let backdropPointer = false
 function outsideDialog(event) {
@@ -38,14 +40,14 @@ function outsideDialog(event) {
 }
 function beginBackdrop(event) { backdropPointer = outsideDialog(event) }
 function closeFromBackdrop(event) {
-  if (backdropPointer && outsideDialog(event)) emit('close')
+  if (backdropPointer && outsideDialog(event)) dismiss()
   backdropPointer = false
 }
 </script>
 
 <template>
   <dialog ref="dialog" class="modal-shell species-detail-modal" :lang="language" aria-modal="true" aria-labelledby="species-title"
-    @cancel.prevent="emit('close')" @pointerdown="beginBackdrop" @click="closeFromBackdrop">
+    @cancel.prevent="dismiss()" @pointerdown="beginBackdrop" @click="closeFromBackdrop">
     <header class="modal-header modal-header-profile">
       <div class="modal-heading-left">
         <div class="modal-heading-meta">
@@ -58,7 +60,7 @@ function closeFromBackdrop(event) {
         <button class="modal-detail-button" type="button" :aria-label="`${t('ui.m232')} — ${currentName}`" @click="emit('details', species.id)">
           {{ t('ui.m232') }} <span aria-hidden="true">↗</span>
         </button>
-        <button ref="closeButton" type="button" class="close-button" :aria-label="t('ui.m237')" autofocus @click="emit('close')">
+        <button ref="closeButton" type="button" class="close-button" :aria-label="t('ui.m237')" autofocus @click="dismiss()">
           <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
             <path d="m6 6 12 12M6 18 18 6" />
           </svg>

@@ -1,12 +1,12 @@
 import { computed, ref, shallowRef, unref } from 'vue'
-import { attemptResult, createAttempt, mistakeQuestions, nextQuestion, recordAnswer } from '../data/quiz/engine.js'
-import { appendHistory, readHistory } from '../data/quiz/history.js'
+import { attemptResult, createAttempt, finishAttempt, mistakeQuestions, nextQuestion, recordAnswer } from '../data/quiz/engine.js'
+import { appendHistory, readHistory, readSeen, rememberSeen } from '../data/quiz/history.js'
 
 function browserStorage() {
   try { return typeof window !== 'undefined' ? window.localStorage : null } catch { return null }
 }
 
-export function useQuiz(bank, { storage = browserStorage(), random = Math.random, now } = {}) {
+export function useQuiz(bank, { storage = browserStorage(), seenStorage = browserStorage(), random = Math.random, now } = {}) {
   const attempt = shallowRef(null)
   const restored = readHistory(storage)
   const history = ref(restored.results)
@@ -18,16 +18,23 @@ export function useQuiz(bank, { storage = browserStorage(), random = Math.random
   const mistakes = computed(() => mistakeQuestions(attempt.value))
   const progress = computed(() => attempt.value ? attempt.value.index + (currentAnswer.value ? 1 : 0) : 0)
 
-  function start(difficulty) { attempt.value = createAttempt(unref(bank), difficulty, { random }) }
-  function answer(questionId, answerId) { attempt.value = recordAnswer(attempt.value, questionId, answerId) }
-  function next() {
+  // Answered question ids live in their own storage entry; results keep their single write per attempt.
+  let seen = readSeen(seenStorage)
+  function start(difficulty) { attempt.value = createAttempt(unref(bank), difficulty, { random, seen }) }
+  function answer(questionId, answerId) {
+    attempt.value = recordAnswer(attempt.value, questionId, answerId)
+    seen = rememberSeen(seen, questionId, seenStorage)
+  }
+  function complete(update) {
     const before = attempt.value
-    attempt.value = nextQuestion(before, now)
+    attempt.value = update(before, now)
     if (before && !before.completedAt && attempt.value.completedAt) {
       const saved = appendHistory(history.value, result.value, storage)
       history.value = saved.results; storageAvailable.value = saved.available
     }
   }
+  function next() { complete(nextQuestion) }
+  function finish() { complete(finishAttempt) }
   function restart() { if (attempt.value) start(attempt.value.difficulty) }
   function repeatMistakes() {
     if (!mistakes.value.length || stage.value !== 'result') return
@@ -36,5 +43,5 @@ export function useQuiz(bank, { storage = browserStorage(), random = Math.random
   function selectDifficulty() { attempt.value = null }
 
   return { attempt, stage, currentQuestion, currentAnswer, result, mistakes, progress, history,
-    storageAvailable, start, answer, next, restart, repeatMistakes, selectDifficulty }
+    storageAvailable, start, answer, next, finish, restart, repeatMistakes, selectDifficulty }
 }

@@ -1,0 +1,184 @@
+/*
+ * Phone adaptation (≤ 767px). Imported last by App.vue so these rules follow
+ * style.css and every component stylesheet; desktop layouts are not affected.
+ */
+
+/* Programmatic focus targets (whole sections) must not draw a page-sized frame. */
+section[tabindex="-1"]:focus,
+section[tabindex="-1"]:focus-visible { outline: none; }
+
+@media (max-width: 767px) {
+  /* Shared rhythm */
+  .eyebrow { gap: 10px; font-size: 11px; letter-spacing: .08em; line-height: 1.4; }
+  .eyebrow .red-rule { width: 22px; }
+  .quiz-primary, .quiz-secondary { min-height: 44px; padding: 10px 16px; font-size: 14px; }
+
+  /* Header: the logo column hugs the logo, so the search field sits with equal
+     gaps on both sides in the normal and the compact (scrolled) header. */
+  .page-header .header-main-row { grid-template-columns: auto minmax(0, 1fr) auto; }
+  .page-header .brand .brand-logo,
+  .page-header.header-compact .brand .brand-logo { width: auto; aspect-ratio: 1018.25 / 476.5; }
+
+  /* Navigation: an inner margin so "Catalogue" does not touch the edge;
+     all five sections still fit on a common 390px screen. */
+  .page-header .main-navigation { justify-content: space-between; gap: 4px clamp(4px, 1.4vw, 10px); padding-inline: 8px; }
+  .page-header .main-navigation .header-link { padding-inline: 1px; }
+
+  /* Home hero: one-line eyebrow, tighter spacing above and below it */
+  .hero.page-container { padding-top: 22px; padding-bottom: 12px; }
+  .hero .eyebrow { white-space: nowrap; font-size: clamp(10px, 3vw, 11.5px); letter-spacing: .06em; }
+  .hero h1 { margin-top: 10px; }
+  .hero-description { margin-top: 18px; font-size: 19px; }
+  .hero-intro { font-size: 15px; line-height: 1.7; }
+
+  /* Catalogue: the cards-per-row switch sits compactly on the right */
+  .catalog-options-row { flex-wrap: nowrap; align-items: center; }
+  .catalog-options-row .result-count { flex: 1 1 auto; min-width: 0; font-size: 13px; }
+  .catalog-density { flex: 0 0 auto; margin-left: auto; }
+  .catalog-density label {
+    position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+  }
+  .catalog-density > .muras-select { width: 118px; }
+  .catalog-density .muras-select-trigger { min-height: 38px; font-size: 13px; }
+  .compact-filter-fields { gap: 12px; padding: 14px; }
+  .compact-filter-fields .catalog-reset { grid-column: 1 / -1; justify-self: start; min-height: 40px; padding: 4px 0; }
+
+  /* Quiz */
+  .quiz-section { padding-block: 24px 48px; }
+  .quiz-heading { margin-bottom: 24px; }
+  .quiz-heading h1 { margin-top: 12px; font-size: 27px; line-height: 1.18; }
+  .quiz-heading > p:last-child { margin-top: 12px; font-size: 15px; line-height: 1.6; }
+  .quiz-selection h2, .quiz-question h2, .quiz-result h2 { font-size: 21px; line-height: 1.3; }
+  .quiz-hint { margin-top: 8px; font-size: 13px; line-height: 1.55; }
+  .quiz-levels { gap: 12px; margin-top: 18px; }
+  .quiz-level { gap: 10px; padding: 16px 18px; }
+  .quiz-level-title { font-size: 21px; }
+  .quiz-level > span:not([class]) { font-size: 14px; line-height: 1.55; }
+  .quiz-level-action { padding-top: 12px; font-size: 14px; }
+  .quiz-session, .quiz-result { padding: 16px 14px; }
+  .quiz-progress { margin-block: 10px 18px; }
+  .quiz-answer { min-height: 54px; padding: 10px 12px; font-size: 15px; }
+  .quiz-answer[data-state="correct"], .quiz-answer[data-state="incorrect"] { padding: 9px 11px; }
+  .quiz-answer-letter { width: 28px; height: 28px; font-size: 13px; }
+  .quiz-answer { grid-template-columns: 28px minmax(0, 1fr); }
+  .quiz-options { gap: 10px; margin-top: 18px; }
+  .quiz-feedback { margin-top: 18px; padding: 14px; font-size: 14px; }
+  .quiz-feedback h3 { font-size: 16px; }
+  .quiz-feedback p { margin-top: 8px; }
+  .quiz-percent { margin-block: 16px 8px; font-size: 56px; }
+  .quiz-percent span { font-size: 28px; }
+  .quiz-result-count { font-size: 16px; }
+  .quiz-review h3 { font-size: 17px; }
+  .quiz-review li { padding-block: 14px; font-size: 14px; }
+  /* Answer and result actions as one even column instead of a ragged row. */
+  .quiz-actions { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; }
+  .quiz-actions > button { width: 100%; padding-inline: 12px; }
+  /* Next question + study: one row in the sticky bar. */
+  .quiz-next-bar.quiz-actions { flex-wrap: nowrap; gap: 8px; }
+  .quiz-next-bar.quiz-actions > .quiz-primary { flex: 1 1 auto; width: auto; }
+  .quiz-next-bar.quiz-actions > .quiz-secondary { flex: 0 0 auto; width: auto; }
+  /* Smaller question photo; the whole picture stays visible. */
+  .quiz-photo { margin-top: 14px; }
+  .quiz-photo > img, .quiz-photo-fallback img { height: clamp(150px, 26vh, 220px); aspect-ratio: auto; object-fit: contain; background: #eef2ec; }
+  .quiz-photo-credit { font-size: 12px; }
+  .quiz-photo-credit a { min-height: 32px; }
+  /* Catalogue card focus ring sits just inside the card so the grid edge cannot clip it. */
+  .species-card:focus-within { outline-offset: -3px; }
+
+  /* Map: one-line eyebrow and tight top spacing, as on the home page */
+  .map-section.map-full { padding-top: 22px; }
+  .map-section-heading { gap: 12px; margin-bottom: 20px; }
+  .map-section-heading .eyebrow { white-space: nowrap; font-size: clamp(10px, 3vw, 11.5px); letter-spacing: .06em; }
+  .map-section-heading h2 { margin-top: 6px; font-size: 24px; }
+  .map-section-heading p { font-size: 14px; }
+  .map-panel > h3 { font-size: 21px; }
+  .map-panel-intro, .map-panel-status { font-size: 13px; }
+  .map-hover-name { font-size: 14px; }
+  .regional-species-heading h4 { font-size: 15px; }
+  .regional-more > p:not([class]),
+  .regional-species .map-review { font-size: 13px; line-height: 1.55; }
+  .regional-species .map-review { margin-top: 8px; }
+  .regional-actions { justify-content: flex-start; gap: 0 16px; margin-top: 6px; }
+  /* Species-group filter on the map: compact chips instead of a two-column wall of buttons. */
+  .map-filters-content .group-filter { display: flex; flex-wrap: wrap; gap: 6px; }
+  .map-filters-content .group-filter button { min-height: 32px; padding: 4px 10px; border-radius: 999px; font-size: 12px; }
+  .regional-actions > a, .regional-actions > button { min-height: 38px; font-size: 13px; }
+  .regional-species details.map-photo-credit > summary { font-size: 13px; padding-block: 8px; }
+  .regional-species details.map-photo-credit > p,
+  .regional-species details.map-photo-credit > a { font-size: 13px; }
+
+  /* Lesson mode */
+  .lesson-section { padding-block: 16px 36px; }
+  .lesson-toolbar { gap: 12px; margin-bottom: 16px; }
+  .lesson-toolbar h1 { font-size: 23px; }
+  .lesson-toolbar, .lesson-tools { width: 100%; }
+  .lesson-tools { flex-wrap: nowrap; gap: 8px; }
+  .lesson-tools > .muras-select { flex: 1 1 auto; width: auto; min-width: 0; }
+  .lesson-tools > button { flex: 0 0 auto; }
+  .lesson-slide { gap: 16px; }
+  .lesson-photo figcaption { margin-top: 8px; font-size: 13px; }
+  .lesson-photo-links a { min-height: 36px; }
+  .lesson-group { font-size: 13px; }
+  .lesson-content h2 { font-size: 27px; margin-block: 4px 8px; }
+  .lesson-names { gap: 2px 14px; font-size: 16px; }
+  .lesson-editorial { font-size: 13px; }
+  .lesson-brief-facts { gap: 10px; margin-top: 14px; }
+  .lesson-brief-facts h3 { font-size: 13px; }
+  .lesson-brief-facts p, .lesson-brief-facts li { font-size: 15px; line-height: 1.5; }
+  .lesson-references a { min-height: 32px; min-width: 26px; font-size: 12px; }
+  .lesson-statuses { font-size: 13px; }
+  .lesson-navigation { gap: 12px; margin-top: 16px; }
+  .lesson-paging > p { font-size: 14px; }
+  .lesson-keyboard-note { display: none; }
+  /* Phones: the header already links to the catalogue; fullscreen is a small icon at the top right. */
+  .lesson-actions > .quiz-secondary { display: none; }
+  .lesson-toolbar { position: relative; }
+  .lesson-toolbar > div:first-child { padding-right: 48px; }
+  .lesson-tools > .lesson-fullscreen {
+    position: absolute; top: 0; right: 0; display: grid; place-items: center;
+    width: 38px; height: 38px; min-height: 38px; padding: 0; border-radius: 10px; color: var(--green);
+  }
+  .lesson-tools > .lesson-fullscreen .lesson-fullscreen-icon { display: block; }
+  .lesson-tools > .lesson-fullscreen .lesson-fullscreen-label {
+    position: absolute; width: 1px; height: 1px; overflow: hidden;
+    clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+  }
+  .lesson-actions, .lesson-actions > .quiz-primary { width: 100%; }
+  /* Previous / counter / next stay at hand at the bottom of the screen (swipe works too). */
+  .lesson-section { padding-bottom: 96px; }
+  .lesson-navigation { margin-top: 20px; }
+  .lesson-paging {
+    position: fixed; z-index: 15; left: 0; right: 0; bottom: 0;
+    display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: 10px; align-items: center;
+    padding: 8px 16px calc(8px + env(safe-area-inset-bottom));
+    background: rgb(247 248 244 / .96); border-top: 1px solid var(--line);
+    backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  }
+  .lesson-paging > button { width: 100%; min-height: 44px; }
+  .lesson-paging > p { min-width: 64px; text-align: center; color: var(--muted); }
+  main:has(> #lesson:not([style*="display: none"])) + .page-footer { padding-bottom: 76px; }
+  .lesson-details summary { min-height: 44px; padding-block: 10px; font-size: 15px; }
+  .lesson-details-content { gap: 16px; padding-block: 12px; font-size: 14px; }
+  .lesson-details-content h3 { font-size: 16px; margin-bottom: 8px; }
+  .lesson-details-content li + li, .lesson-details-content p + p { margin-top: 6px; }
+  .lesson-taxonomy > div { padding-block: 6px; }
+  .lesson-details-content .population-value { font-size: 15px; line-height: 1.5; }
+  .lesson-source-list a { min-height: 38px; padding-block: 8px; font-size: 13px; }
+  .lesson-notice { padding: 12px 14px; font-size: 14px; }
+}
+
+/* Catalogue filters on phones: group and IUCN status side by side (one column on the narrowest screens). */
+@media (min-width: 391px) and (max-width: 767px) {
+  .compact-filter-fields { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .compact-filter-fields .filter-field:first-child { grid-column: auto; }
+}
+
+/* Phones and tablets: a grab handle shows that the species card can be pulled down to close. */
+@media (max-width: 1023.98px) and (hover: none) {
+  .species-detail-modal > .modal-header { position: relative; }
+  .species-detail-modal > .modal-header::before {
+    content: ""; position: absolute; top: 6px; left: 50%; width: 38px; height: 4px; margin-left: -19px;
+    border-radius: 2px; background: #c8d2c6;
+  }
+}
