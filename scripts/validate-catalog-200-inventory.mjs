@@ -1,13 +1,13 @@
 // Read-only integrity check for task 25.1; this script cannot authorize imports.
 import fs from 'node:fs'
 import assert from 'node:assert/strict'
-import { execFileSync } from 'node:child_process'
+import { gitShow } from './lib/git-history.mjs'
 import { digest } from './lib/research-pipeline.mjs'
 
 const read = p => JSON.parse(fs.readFileSync(p))
 const d = read('data/research/catalog-200-inventory.json')
 const source = read('data/species.source.json'), published = read('public/data/species.json')
-const original = path => execFileSync('git', ['show', `${d.sourceCommit}:${path}`], { maxBuffer: 16 * 1024 * 1024 })
+const original = path => gitShow(d.sourceCommit, path)
 assert.equal(d.sourceCommit, '5c26da5a3b235d93143a62dee2f70b906a09e070')
 assert.deepEqual(source, JSON.parse(original('data/species.source.json')))
 assert.deepEqual(published, JSON.parse(original('public/data/species.json')))

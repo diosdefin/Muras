@@ -2,7 +2,7 @@ import UZ_NAMES from '../src/data/uz-names.json' with { type: 'json' }
 import { beforeTranslations } from './helpers/translation-evolution.mjs'
 // These historical scenarios retain their original scientific snapshot; live translation integrity is tested separately.
 import test from 'node:test'
-import {execFileSync} from 'node:child_process'
+import { gitShow } from '../scripts/lib/git-history.mjs'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { createHash } from 'node:crypto'
@@ -63,7 +63,7 @@ test('public and admin UZ dictionaries have complete keys and exact interpolatio
   }
   assert.ok(Object.keys(publicMessages.uz).length >= 435)
   // Retain all 168 historical keys; explicitly permit the local file editor's new messages.
-  const legacyAdmin=JSON.parse(execFileSync('git',['show','50951765ab52c32fdae30309cc19ede7e9bd279d:src/admin/locales/uz.json'],{encoding:'utf8'}))
+  const legacyAdmin=JSON.parse(gitShow('50951765ab52c32fdae30309cc19ede7e9bd279d','src/admin/locales/uz.json'))
   assert.equal(Object.keys(legacyAdmin).length,168)
   for(const key of Object.keys(legacyAdmin))assert.ok(Object.hasOwn(adminMessages.uz,key),key)
   const newKeys=Object.keys(adminMessages.uz).filter(key=>!Object.hasOwn(legacyAdmin,key))

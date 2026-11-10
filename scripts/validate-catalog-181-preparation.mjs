@@ -2,6 +2,7 @@
 import fs from 'node:fs'
 import assert from 'node:assert/strict'
 import { execFileSync } from 'node:child_process'
+import { gitShow } from './lib/git-history.mjs'
 import { resolve, join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { digest, fingerprint, candidateFingerprint, checkRegistry } from './lib/research-pipeline.mjs'
@@ -28,13 +29,13 @@ assert.equal(baseline.sourceCommit,'903a932a8b7577b85d9c3734bee03ce512e0b72e')
 git('merge-base','--is-ancestor',baseline.sourceCommit,'HEAD')
 assert.equal(source.catalog.length,166)
 assert.equal(source.demoArchive.length,2)
-assert.deepEqual(source,JSON.parse(git('show',`${baseline.sourceCommit}:data/species.source.json`)))
+assert.deepEqual(source,JSON.parse(gitShow(baseline.sourceCommit,'data/species.source.json')))
 assert.equal(sha('data/species.source.json'),'79197b9323386983951a56c889b5246884a5d9a17bc203b94ad077bd96892360')
 for(const f of baseline.files){
  if(f.path!=='.gitattributes')assert.equal(sha(f.path),f.sha256,`Previously tracked file changed: ${f.path}`)
 }
 // The sole old-file edit appends LF rules for new fingerprinted JSON.
-const oldAttributes=git('show',`${baseline.sourceCommit}:.gitattributes`).toString().replace(/\r\n/g,'\n')
+const oldAttributes=gitShow(baseline.sourceCommit,'.gitattributes').toString().replace(/\r\n/g,'\n')
 const attributes=bytes('.gitattributes').toString().replace(/\r\n/g,'\n')
 assert.equal(attributes.slice(0,oldAttributes.length),oldAttributes)
 assert.equal(attributes.slice(oldAttributes.length).trim(),[

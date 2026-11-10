@@ -1,7 +1,7 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
-import { execFileSync } from 'node:child_process'
+import { gitListFiles } from '../scripts/lib/git-history.mjs'
 import { createSSRApp } from 'vue'
 import { renderToString } from 'vue/server-renderer'
 import { createServer } from 'vite'
@@ -23,7 +23,7 @@ const published = JSON.parse(historicalBytes(PHOTO_COMMIT, 'public/data/species.
 const journal = await photoBatch()
 const fresh = () => [structuredClone(source), structuredClone(published), structuredClone(journal)]
 const check = (...args) => assertPhotoAmendment(...args)
-const files = execFileSync('git', ['ls-files', '-z'], { cwd: PROJECT_ROOT, windowsHide: true }).toString().split('\0').filter(Boolean)
+const files = gitListFiles()
 async function trackedHashes() {
   const hashes = {}
   for (const path of files) hashes[path] = digest(await bytes(path))

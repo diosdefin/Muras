@@ -1,207 +1,95 @@
-# MURAS — природное наследие Кыргызстана
+# MURAS
 
-MURAS («Мурас», «Жаратылыш — биздин мурас») — образовательный проект на Vue 3 + Vite,
-посвящённый редким видам Кыргызстана. Это не государственный правовой реестр и не новое
-официальное издание Красной книги. Исторические национальные категории и глобальные
-оценки IUCN учитываются отдельно. Независимая научная проверка остаётся отдельной процедурой.
+**An educational atlas of the rare species and protected territories of Kyrgyzstan** — a static single-page
+web app (Vue 3 + Vite) with a four-language interface (Kyrgyz, Russian, Uzbek, English), an interactive map,
+a quiz, a lesson mode and offline support.
 
-В исходном каталоге **184 записи**, **2 архивные записи**, **161 запись с изображениями**
-и **23 placeholder**. Карта содержит **208 региональных свидетельств для 118 видов**.
-Интерфейс поддерживает KY/RU/UZ/EN. Научные имена, идентификаторы, источники, лицензии,
-статусы и региональные сведения сохраняются при редактировании.
+> MURAS is an educational project. It is not an official legal register and not a new edition of the national Red Book.
+> National classifications and IUCN categories are stored separately; independent scientific review is a separate procedure.
+
+## What is inside
+
+- **Species catalogue** — 184 records with scientific names, sources, national and IUCN status, licensed photographs
+  (or an honest placeholder), four-language search with typo tolerance, filters and stable URLs (`/species/<id>`).
+- **Map** — seven oblasts with 208 documented regional links; no occurrence is inferred without evidence.
+- **Protected territories** — 24 reserves, national parks and biosphere areas with photographs, founding years and quoted sources.
+- **Quiz and lesson mode** — a sourced question bank and a fullscreen presentation mode for teachers.
+- **Offline PWA** — installable; catalogue, map and territories work without a network. Lightweight WebP/AVIF photo
+  copies are used on slow connections.
+- **Local editor** — a separate admin tool that exists only in local development and never ships to production.
+
+## Design principles
+
+- **Unknown stays unknown.** Missing data is never rendered as zero; population numbers appear only with an owner decision
+  bound to a SHA-256 fingerprint of the exact source.
+- **Provenance first.** Every photo records author, licence, source page and file hash; every claim references a source.
+- **Translations never change science.** Names, ids, numbers and sources are preserved byte-logically.
+- **No vendor lock-in.** The build is a plain static folder; see [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
+
+## Tech stack
+
+Vue 3 · Vite 6 · Tailwind CSS 3 · Node.js 22 · `node:test` · Python 3 + Pillow (image scripts only) · service worker (no libraries).
+
+## Quick start
+
+Requirements: Node.js 22 LTS and npm.
+
+```bash
+git clone https://github.com/diosdefin/Muras.git
+cd Muras
+npm ci
+npm run dev          # public site with hot reload
+```
+
+| Command | Purpose |
+| --- | --- |
+| `npm run dev` | Dev server (generates data first) |
+| `npm run build` | Validates locales and data, builds `dist/`, writes the static `/admin/` page and the offline file list |
+| `npm run preview` | Serves `dist/` locally |
+| `npm test` | Full test suite (about 480 tests; needs the full Git history, see below) |
+| `npm run data:validate` | Locale key parity + generated-data check |
+| `npm run data:areas` | Rebuilds the protected-areas projection |
+| `npm run dev:admin` | Local editor at `http://127.0.0.1:5173/admin/` (read [README.ru.md](README.ru.md) for the workflow) |
+| `python3 scripts/make-thumbs.py` | Recreates the lightweight photo copies |
+
+## Project layout
+
+```
+src/          Vue app: components, composables, pure data logic, locales (ky/ru/uz/en), local admin
+public/       Static files: generated JSON, licensed photos, thumbnails, icons, service worker, manifest
+data/         Source of truth (species, protected areas, geography) plus research receipts
+scripts/      Data pipeline, importers, validators, tooling
+tests/        node:test suite
+docs/         Architecture, testing guide, deployment, licences, validation reports
+deploy/       nginx and Docker files for non-Vercel hosting
+```
+
+Details: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+
+## Testing
+
+`npm test` guards data integrity: scientific records, licences, photo hashes, translations and the map must not change
+silently. Some tests compare the working tree with earlier Git commits, so **clone with full history** (no `--depth 1`).
+How the guards work and how to change a protected file on purpose: [docs/TESTING.md](docs/TESTING.md).
+
+## Deployment
+
+Any static host works; the only requirement is a single-page-app fallback to `index.html`.
+Vercel is used today. Ready-made instructions for nginx/Docker, Netlify, Cloudflare Pages and GitHub Pages:
+[docs/DEPLOYMENT.md](docs/DEPLOYMENT.md).
 
 ## Documentation
 
 | Document | Purpose |
 | --- | --- |
 | [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Folder map, data pipeline, design principles |
-| [docs/TESTING.md](docs/TESTING.md) | How to run tests, which tests depend on Git history or receipts, how to make an intentional change |
-| [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) | Host-independent deployment (Vercel, nginx/Docker, Netlify, Cloudflare, GitHub Pages) |
+| [docs/TESTING.md](docs/TESTING.md) | Running tests, history- and receipt-dependent tests, intentional changes |
+| [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) | Host-independent deployment |
 | [docs/LICENSES.md](docs/LICENSES.md) | Licences of code, photos, data and map geometry |
 | [docs/MAINTENANCE-ROADMAP.md](docs/MAINTENANCE-ROADMAP.md) | Repository clean-up plan and status |
+| [README.ru.md](README.ru.md) | Russian README: local editor, drafts, photo workflow, recovery |
 
-Code is MIT-licensed (see `LICENSE`); photographs and data keep their own licences.
+## Licence
 
-## Установка после git clone
-
-Нужны Node.js 22 LTS и npm. Зависимости устанавливаются по package-lock.json.
-Python не нужен для редактирования существующих записей или production-сборки.
-
-```powershell
-git clone https://github.com/diosdefin/Muras.git
-Set-Location Muras
-npm ci
-npm run dev
-```
-
-Откройте адрес, напечатанный Vite. Обычный `npm run dev` запускает публичный сайт;
-записывающий API и рабочая админка в этом режиме выключены.
-
-## Локальная админка
-
-Остановите обычный dev-сервер и выполните:
-
-```powershell
-npm run dev:admin
-```
-
-Откройте **http://127.0.0.1:5173/admin/**. Используйте именно `127.0.0.1`, а не `localhost`:
-API проверяет точные Host и Origin. Сервер слушает только loopback; порт занят — запуск
-останавливается, а не выбирает неожиданный другой адрес. Ctrl+C завершает сервер.
-
-`data/species.source.json` автоматически загружается из репозитория. Все 184 записи
-сразу доступны для поиска и редактирования без импорта JSON, учётной записи и браузерного
-черновика. localStorage используется только для прежних пользовательских настроек и
-явно запрошенной миграции старых черновиков; он не заменяет исходный каталог.
-
-Сохраняется существующий редактор с шестью вкладками, четырьмя языками, источниками,
-научными статусами и редактором композиций изображений. Нет второй независимой базы данных.
-`demoArchive` и служебные корневые поля через API изменять нельзя.
-
-## Черновик и применение — разные операции
-
-1. Измените запись или нажмите «Добавить вид». Новый незавершённый вид можно сохранить
-   как черновик; недоказанные факты и численность не заполняются автоматически.
-2. «Сохранить черновик» и отложенное автосохранение пишут только в **data/drafts/current.json**.
-   Они не меняют исходный каталог или публичные данные. Перед контрольным сохранением
-   прежняя версия сохраняется как previous.json. Весь data/drafts/ исключён из Git.
-3. При новом запуске снова загружается актуальный исходный каталог. Файловый черновик
-   открывается только явно через «Открыть файловый черновик»; он необязателен для работы.
-4. «Проверить данные» выполняет общую научную/схемную проверку, проверку изображений и
-   штатные генераторы в отдельной временной области. В интерфейсе появляется список
-   добавленных, удалённых и изменённых ID с путями изменённых полей.
-5. «Применить к исходному каталогу» требует отдельного подтверждения этого списка.
-   Проверенная версия действует 10 минут и не переносится на последующие правки.
-   Только после подтверждения записываются источник и согласованные generated-файлы;
-   штатные генераторы повторно проверяют результат. Неудачная операция откатывается.
-6. Сообщение «Изменения применены к файлам проекта» означает локальные файлы.
-   **Git commit, push и deployment не выполняются автоматически.**
-
-Схема и общие валидаторы: [docs/data-model.md](docs/data-model.md),
-[src/data/species-model.js](src/data/species-model.js). Само наличие ссылки не доказывает
-истинность научного утверждения; реальное содержание и применимость источника проверяет редактор.
-
-## Восстановление и перенос исследований
-
-- «Экспорт черновика с материалами» сохраняет JSON-пакет с рабочей копией, исходным
-  снимком, метаданными, оригиналами и обработанными изображениями текущего черновика.
-- «Импорт черновика с материалами» восстанавливает его в data/drafts/, не в каталог.
-  Пакет ограничен 80 MiB, изображения повторно проверяются; абсолютные пути не принимаются.
-- «Предыдущий черновик» открывает контрольную копию. «Перезагрузить из файлов» возвращает
-  актуальный каталог; сохранённый файловый черновик при этом не удаляется.
-- Для большой резервной копии можно вручную сохранить весь data/drafts/ вне Git.
-  Удаление браузерных данных не удаляет файловые черновики.
-
-Старые localStorage-черновики **не удаляются и не открываются автоматически**.
-«Скопировать старый черновик браузера» создаёт отдельный снимок
-`data/drafts/migrations/<SHA-256>.json`. Повторная миграция того же снимка идемпотентна.
-«Открыть отдельную копию старого черновика» позволяет продолжить исследование, сохраняя
-проверку исходной ревизии. Старые файлы, существовавшие только как blob URL в браузере,
-восстановить нельзя: их нужно выбрать заново. Исходные метаданные сохранены в миграционном снимке.
-
-Если другой процесс изменил каталог, применение старого черновика блокируется. Сначала
-экспортируйте свою работу, перезагрузите актуальный источник и вручную перенесите нужные
-изменения после сравнения. Не заменяйте исходную checksum значением текущего каталога
-ради обхода конфликта. Аналогично защищены сохранения из двух вкладок.
-
-## Фотографии
-
-Для **новых** фотографий дополнительно установите Python 3 и Pillow:
-
-```powershell
-python -m pip install Pillow
-# Необязательно: полный путь к выбранному Python, если он не находится через PATH.
-$env:MURAS_PYTHON = (Get-Command python).Source
-npm run dev:admin
-```
-
-Разрешены декодируемые однофреймовые JPEG/PNG/WebP, до 20 MiB и 40 миллионов пикселей.
-Используется существующий `scripts/process_data.py`: EXIF-ориентация, уменьшение без
-апскейла до 1800 px, WebP quality 82, без EXIF/XMP. До применения оригинал, WebP и
-квитанция с обеими SHA-256 и размерами находятся только в data/drafts/media/.
-
-Заполните автора, страницу первоисточника, прямой URL оригинала, лицензию/URL лицензии,
-атрибуцию, сведения об изменениях и точное научное определение. Отдельно подтвердите,
-что действительно проверили таксон и разрешение распространения. Декодирование файла
-**не подтверждает права или научное определение**. CC BY и BY-SA 2.0/3.0/4.0, CC0 и
-документированный Public domain проверяются сервером. NC/ND и неизвестные права не
-допускаются к новому применению. Для других лицензий нужен отдельный проверенный процесс;
-старые разрешённые изображения при этом сохраняются без изменения лицензии.
-
-После подтверждённого применения оригинал сохраняется в
-`assets/images/originals/<original-SHA>.<format>`, WebP — в
-`assets/images/species/local-<WebP-SHA>.webp`. Публичный путь назначает штатный генератор
-в public/images/approved/. Пути клиентом не выбираются, одинаковые загрузки повторно
-не копируются. Исправление метаданных старой фотографии можно документировать без
-замены её байтов. Изображения без установленных прав остаются в исследовательском черновике.
-
-## Единственный источник и генераторы
-
-Не редактируйте generated-файлы как отдельную базу:
-
-- `public/data/species.json` — публичная проекция каталога;
-- `data/archive/demo-species.generated.json` — непубличный архив;
-- `public/images/approved/` — разрешённые изображения;
-- `public/data/geography/` и `public/data/quiz.json` — проекции региональных данных и викторины.
-
-```powershell
-npm test -- --test-concurrency=1
-npm run data:validate
-npm run build
-npm run preview
-```
-
-Проверки и сборка запускаются последовательно. В production `/admin/` содержит только
-информационную страницу: рабочие Vue-панели, клиент записи и Node API не входят в dist.
-Preview и Vercel не предоставляют API записи. Защита не основана на скрытых кнопках.
-
-На исходном коммите этого этапа `5095176` тесты имели **16 ранее существовавших ошибок**
-исторических проверок (подробности — [docs/local-admin-validation.md](docs/local-admin-validation.md)).
-Их нельзя скрывать механическим обновлением checksum или снимков.
-
-## Сохранение в Git и обновление Vercel
-
-После локальной проверки просмотрите именно нужные изменения:
-
-```powershell
-git status --short
-git diff --stat
-git diff -- data/species.source.json
-npm test -- --test-concurrency=1
-npm run data:validate
-npm run build
-# Выполняется владельцем вручную, после просмотра diff:
-git add -- data/species.source.json assets/images public/data public/images/approved data/archive/demo-species.generated.json
-git diff --cached --stat
-git commit -m "Update reviewed catalogue content"
-```
-
-Черновики не нужно добавлять в Git. Работайте в feature-ветке, сохраняйте исследовательские
-пакеты отдельно и не подменяйте ими научное одобрение. После проверки владелец самостоятельно
-решает вопрос push, PR/merge и обновления Vercel. Деплой Vercel из main может запускаться
-автоматически после разрешённого обновления main — локальное «Применить» его не запускает.
-Проверьте preview-деплой, каталог, источники, изображения и недоступность редактора, затем
-осознанно разрешите production. Настройки и откат: [docs/vercel-deployment.md](docs/vercel-deployment.md).
-
-## Защита локальных файлов и восстановление после сбоя
-
-API доступен только командой dev:admin на 127.0.0.1. Проверяются Host/Origin, специальный
-заголовок same-origin клиента, маршруты/методы, лимиты, схема, пути, символические ссылки,
-checksum и исходная ревизия. Временный файл синхронизируется и атомарно переименовывается.
-Есть последовательная очередь одного процесса и межпроцессная блокировка; произвольных
-путей, секретов в репозитории и операций Git в API нет.
-
-Изменение нескольких файлов не является одной операцией файловой системы. Перед записью
-создаются резервные копии и журнал в data/drafts/transactions/. При обычном сбое выполняется
-проверяемый откат только собственных изменений. При аварийном завершении процесса
-незавершённый журнал блокирует новые применения; не удаляйте его и резервные копии.
-Остановите сервер, сохраните data/drafts/, сравните oldHash/newHash и backup в журнале,
-восстановите согласованный источник/проекции после ручного анализа и выполните
-`npm run data`, `npm run data:validate`, тесты. Только после проверки пометьте журнал
-как `resolved`. Файл .editor.lock разрешается убрать вручную только после проверки,
-что указанный в нём PID уже не работает. При ENOSPC остановитесь и освободите место
-без удаления научных материалов, фотографий и Git-истории.
-
-Дополнительные сведения: [docs/research/population-six-publication-report.md](docs/research/population-six-publication-report.md),
-[docs/catalog-expansion.md](docs/catalog-expansion.md), [docs/backend-migration.md](docs/backend-migration.md).
-Django, внешняя CMS и серверная база данных на этом этапе не добавлялись.
+Source code: MIT (see [LICENSE](LICENSE)). Photographs, species data and map geometry keep their own licences
+(CC0, CC BY, CC BY-SA, ODbL); attribution is recorded per file. See [docs/LICENSES.md](docs/LICENSES.md).

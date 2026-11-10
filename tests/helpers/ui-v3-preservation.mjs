@@ -4,7 +4,7 @@
 // it never permits an arbitrary edit to a protected file.
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
-import { execFileSync } from 'node:child_process'
+import { gitExists, gitShow } from '../../scripts/lib/git-history.mjs'
 import { createHash } from 'node:crypto'
 import { PROJECT_ROOT } from '../../scripts/build-data.mjs'
 import { UI_V4_FILES, uiV4BaseBytes } from './ui-v4-release.mjs'
@@ -32,14 +32,11 @@ export function assertUiV3File(path) {
   const current = UI_V4_FILES.has(path) ? uiV4BaseBytes(path) : readFileSync(`${PROJECT_ROOT}/${path}`)
   assert.ok(matches(current, entry.after), `${path}: UI v3 differs from approved replacement`)
   if (entry.before) {
-    const previous = execFileSync('git', ['show', `${manifest.baseCommit}:${path}`], {cwd: PROJECT_ROOT, windowsHide: true})
+    const previous = gitShow(manifest.baseCommit, path)
     assert.ok(matches(previous, entry.before), `${path}: original UI Git snapshot differs`)
   } else {
     // New UI files must not exist in the historical commit.
-    let exists = false
-    try { execFileSync('git', ['cat-file', '-e', `${manifest.baseCommit}:${path}`], {cwd: PROJECT_ROOT, windowsHide: true, stdio:'ignore'}); exists = true }
-    catch { /* expected */ }
-    assert.equal(exists, false, `${path}: supposedly new UI path exists in base commit`)
+    assert.equal(gitExists(manifest.baseCommit, path), false, `${path}: supposedly new UI path exists in base commit`)
   }
   return true
 }

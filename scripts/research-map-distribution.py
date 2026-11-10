@@ -64,7 +64,9 @@ def norm(s):return re.sub(r'[\W_]+','',s.lower().replace('ё','е'))
 def finalize(publish=False):
  import subprocess,copy,collections
  import pypdfium2 as pdfium
- def gitjson(path):return json.loads(subprocess.check_output(['git','show',BASE+':'+path],cwd=ROOT))
+ node=os.environ.get('NODE_BINARY','node')
+ history=ROOT/'scripts/lib/git-history.mjs'
+ def gitjson(path):return json.loads(subprocess.check_output([node,str(history),'show',BASE,path],cwd=ROOT))
  catalog=read('data/species.source.json')
  if catalog!=gitjson('data/species.source.json'):raise ValueError('Protected catalog changed')
  if sha(BOOK.read_bytes())!=BOOK_SHA:raise ValueError('Book changed')

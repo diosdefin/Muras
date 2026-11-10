@@ -1,5 +1,5 @@
 import { readFile, mkdir, writeFile } from 'node:fs/promises'
-import { execFileSync } from 'node:child_process'
+import { gitShow } from './lib/git-history.mjs'
 import { resolve } from 'node:path'
 import { pathToFileURL } from 'node:url'
 import { PROJECT_ROOT } from './build-data.mjs'
@@ -18,12 +18,12 @@ export function auditTranslations(source) {
 if(process.argv[1]&&import.meta.url===pathToFileURL(resolve(process.argv[1])).href){
  const args=process.argv.slice(2);if(args.some(a=>a!=='--write')||args.length>1)throw Error('Only --write is supported')
  const source=JSON.parse(await readFile(resolve(PROJECT_ROOT,'data/species.source.json'),'utf8'))
- const baseline=JSON.parse(execFileSync('git',['show','5f253100ac61c825b72b9fb22ca9b4a45f7aa953:data/species.source.json'],{cwd:PROJECT_ROOT,maxBuffer:16*1024*1024}))
+ const baseline=JSON.parse(gitShow('5f253100ac61c825b72b9fb22ca9b4a45f7aa953','data/species.source.json'))
  const before=auditTranslations(baseline),after=auditTranslations(source)
  if(!args.length){console.log(JSON.stringify(after,null,2))}else{
   const first = JSON.parse(await readFile(resolve(PROJECT_ROOT,'data/localization/batch-001.json'),'utf8'))
   const batch = JSON.parse(await readFile(resolve(PROJECT_ROOT,'data/localization/batch-004.json'),'utf8'))
-  const prev = auditTranslations(JSON.parse(execFileSync('git',['show',batch.baselineCommit+':data/species.source.json'],{cwd:PROJECT_ROOT,maxBuffer:16*1024*1024})))
+  const prev = auditTranslations(JSON.parse(gitShow(batch.baselineCommit,'data/species.source.json')))
   const lines=['# Аудит переводов KY / RU / UZ / EN','','Дата последней партии: 07.11.2026. Каталог 184, архив 2. Партии 001–003 отправлены в origin/feature/local-file-admin; партия 004 подготовлена на основе `bdc8a5d`.','',
    '## Методика','','Считается фактический текст каждого применимого поля, без fallback. null-раздел не считается недостающим научным фактом. Латинское научное имя вместо народного не засчитывается переводом. Полное совпадение с RU и подозрительный алфавит требуют просмотра (не автоматический приговор ошибочности). Для KY название страны Кыргызстан совпадает с RU закономерно. Числа не означают независимую лингвистическую проверку.','',
    '## Матрица до → после','','В ячейке: присутствующие / применимые значения. Сомнительные копии и латинские fallback не входят в числитель. Архив включён.','','| Поле | KY | RU | UZ | EN |','|---|---:|---:|---:|---:|']

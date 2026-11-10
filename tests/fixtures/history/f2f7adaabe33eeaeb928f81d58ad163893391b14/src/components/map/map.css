@@ -1,0 +1,229 @@
+.map-section { border-top: 1px solid var(--line); padding-block: 36px 56px; scroll-margin-top: 24px; }
+.map-section-heading { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; align-items: end; margin-bottom: 28px; }
+.map-section-heading h2 { font-family: Georgia, "Times New Roman", serif; font-size: clamp(28px, 3vw, 40px); font-weight: 400; line-height: 1.2; margin-top: 10px; }
+.map-section-heading > p { max-width: 330px; color: var(--muted); font-size: 15px; }
+.map-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; align-items: start; }
+.region-map, .map-panel { min-width: 0; border: 1px solid var(--line); border-radius: 10px; background: white; padding: 20px; }
+.region-map { background: linear-gradient(135deg, #fff, #edf1e8); }
+.map-caption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 12px; color: var(--muted); font-size: 13px; letter-spacing: .08em; text-transform: uppercase; }
+.oblast-map { display: block; width: 100%; height: auto; margin-block: 32px 16px; overflow: visible; }
+.oblast-map path { cursor: pointer; fill: #d8e3d2; stroke: #68816e; stroke-width: 1.2; vector-effect: non-scaling-stroke; transition: fill .2s ease, stroke .2s ease; }
+.oblast-map path:hover { fill: #b4c9ad; stroke: #253b32; }
+.oblast-map path[aria-pressed="true"] { fill: #68816e; stroke: #253b32; stroke-width: 2.5; }
+.oblast-map path:focus-visible { outline: none; stroke: #b94d48; stroke-width: 4; filter: drop-shadow(0 0 2px white); }
+.map-hover-name { min-height: 3.2em; font-size: 16px; font-weight: 600; }
+.map-legend { display: flex; flex-wrap: wrap; gap: 8px 18px; font-size: 13px; color: var(--muted); }
+.map-legend span { display: flex; align-items: center; gap: 8px; }
+.map-legend i { display: inline-block; width: 14px; height: 14px; flex-shrink: 0; background: #d8e3d2; border: 1px solid #68816e; border-radius: 2px; }
+.map-legend i.selected { background: #68816e; border-color: var(--ink); }
+.map-region-select { margin-top: 24px; }
+.map-panel h3 { margin-top: 12px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(26px, 2.3vw, 32px); line-height: 1.2; font-weight: 400; }
+.map-panel-intro, .map-empty { margin-block: 16px 20px; font-size: 15px; color: var(--muted); }
+.map-panel-status { margin-top: 20px; font-size: 15px; font-weight: 600; }
+.map-empty { padding-top: 16px; border-top: 1px solid var(--line); }
+.regional-species { padding-top: 20px; margin-top: 20px; border-top: 1px solid var(--line); font-size: 14px; }
+.regional-species-heading { display: flex; align-items: center; gap: 14px; margin-bottom: 14px; }
+.regional-species-heading > div { min-width: 0; }
+.regional-species-heading img { flex-shrink: 0; width: 80px; height: 80px; object-fit: cover; border-radius: 6px; background: var(--paper); }
+.regional-species-heading h4 { font-size: 18px; line-height: 1.3; font-weight: 600; overflow-wrap: anywhere; }
+.regional-species-heading .scientific-name { font-size: 15px; margin-top: 4px; }
+.map-review { color: var(--muted); margin-top: 10px; }
+.map-photo-caption { color: var(--muted); font-size: 13px; margin-bottom: 14px; }
+.regional-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 16px; margin-top: 10px; }
+.regional-actions a, .map-photo-credit a { display: inline-flex; align-items: center; min-height: 44px; text-decoration: underline; text-underline-offset: 3px; }
+.map-photo-credit { color: var(--muted); margin-top: 8px; }
+.map-photo-credit summary { cursor: pointer; min-height: 44px; padding-block: 10px; }
+.map-photo-credit a { margin-right: 12px; }
+.map-reset { min-height: 48px; padding: 10px 16px; border: 1px solid #839388; border-radius: 5px; margin-top: 20px; }
+.map-reset:hover { background: var(--paper); }
+.map-provenance { margin-top: 20px; color: var(--muted); font-size: 13px; }
+.map-provenance p + p { margin-top: 8px; }
+.map-provenance a { display: inline-block; padding-block: 5px; text-decoration: underline; text-underline-offset: 3px; }
+@media (min-width: 900px) { .map-layout { grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr); } .region-map, .map-panel { padding: 28px; } .region-map { position: sticky; top: 24px; } }
+@media (max-width: 359px) { .region-map, .map-panel { padding: 16px; } .regional-species-heading { gap: 10px; } .regional-species-heading img { width: 64px; height: 64px; } }
+@media (prefers-reduced-motion: reduce) { .oblast-map path { transition: none; } }
+
+/* MURAS homepage map preview: same geometry and evidence as the full map. */
+.map-preview .map-layout { align-items: stretch; }
+.map-preview .region-map { position: static; display: flex; flex-direction: column; min-height: 345px; }
+.map-preview .oblast-map { flex: 1; margin-block: 20px 10px; min-height: 0; }
+.map-preview .map-hover-name { min-height: 1.6em; font-size: 14px; color: var(--muted); }
+.map-preview .map-provenance-compact { font-size: 12px; margin-top: 10px; }
+.map-full { min-height: 75vh; }
+.map-overview { min-width: 0; min-height: 345px; padding: clamp(20px, 2.5vw, 30px); display: flex; flex-direction: column; justify-content: space-between; background: #fff; border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.map-overview-content { min-width: 0; }
+.map-overview-eyebrow { color: var(--muted); font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+.map-fact-slide { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+.map-fact-number { margin-block: 16px 0; color: var(--red); font-family: Georgia, "Times New Roman", serif; font-size: clamp(60px, 6vw, 96px); font-weight: 400; line-height: 1; font-variant-numeric: tabular-nums; }
+.map-fact-slide h3 { margin-top: 10px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(23px, 2.5vw, 32px); line-height: 1.2; font-weight: 400; }
+.map-fact-track { height: 5px; margin-top: 20px; overflow: hidden; border-radius: 4px; background: #e9efea; }
+.map-fact-track span { display: block; height: 100%; border-radius: inherit; background: var(--green); transition: width .3s ease; }
+.map-fact-description { margin-top: 16px; color: var(--muted); font-size: 13px; max-width: 42ch; }
+.map-fact-controls { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-top: 20px; }
+.map-fact-dots { display: flex; gap: 6px; align-items: center; }
+.map-fact-dots i { display: block; width: 7px; height: 7px; border-radius: 8px; background: var(--line); transition: width .2s ease; }
+.map-fact-dots i.active { width: 23px; background: var(--green); }
+.map-fact-arrows { display: flex; gap: 8px; }
+.map-fact-arrows button, .map-overview-clear { min-height: 44px; min-width: 44px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 50%; background: white; font-size: 18px; }
+.map-fact-arrows button:hover, .map-overview-clear:hover { background: var(--paper); }
+.map-overview-topline { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.map-region-summary h3 { margin-top: 10px; font-family: Georgia, "Times New Roman", serif; font-size: clamp(26px, 3vw, 37px); font-weight: 400; line-height: 1.15; }
+.map-region-count { font-size: 16px; margin-top: 14px; font-weight: 600; }
+.map-region-empty { color: var(--muted); font-size: 14px; margin-top: 20px; }
+.map-region-gallery { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 18px; }
+.map-region-thumb { display: flex; flex-direction: column; align-items: center; width: 88px; gap: 6px; text-align: center; }
+.map-region-thumb img { display: block; width: 60px; height: 60px; border-radius: 50%; border: 2px solid var(--line); background: var(--paper); object-fit: cover; }
+.map-region-thumb span { font-size: 12px; line-height: 1.3; overflow-wrap: anywhere; }
+.map-overview-credits { display: flex; flex-wrap: wrap; gap: 4px 10px; font-size: 11px; color: var(--muted); margin-top: 10px; }
+.map-overview-credits a { text-decoration: underline; text-underline-offset: 2px; }
+.map-region-review { font-size: 12px; color: var(--muted); margin-top: 14px; }
+.map-overview-action { display: flex; justify-content: space-between; align-items: center; gap: 16px; width: 100%; min-height: 48px; text-align: left; padding: 12px 14px; border: 1px solid var(--ink); border-radius: 6px; font-size: 14px; font-weight: 650; margin-top: 18px; }
+.map-overview-action:hover { background: var(--paper); }
+.overview-fade-enter-active, .overview-fade-leave-active { transition: opacity .18s ease, transform .18s ease; }
+.overview-fade-enter-from { opacity: 0; transform: translateY(4px); }
+.overview-fade-leave-to { opacity: 0; transform: translateY(-4px); }
+@media (min-width: 900px) { .map-preview .map-layout { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); } }
+@media (max-width: 479px) { .map-preview .region-map, .map-overview { min-height: 300px; padding: 16px; } .map-preview .oblast-map { margin-block: 14px 8px; } }
+@media (prefers-reduced-motion: reduce) { .map-fact-track span, .map-fact-dots i, .overview-fade-enter-active, .overview-fade-leave-active { transition: none; } }
+
+
+/* MURAS UI v2: keep both preview cards the same height in every state. */
+.map-preview .map-layout { align-items: stretch; }
+.map-preview .region-map,
+.map-preview .map-overview { height: 420px; min-height: 0; max-height: 420px; }
+.map-preview .region-map { overflow: hidden; }
+.map-preview .oblast-map { flex: 1 1 auto; min-height: 0; max-height: calc(100% - 95px); }
+.map-preview .map-overview { overflow: hidden; justify-content: flex-start; }
+.map-preview .map-overview-content { flex: 1 1 auto; min-height: 0; }
+.map-preview .map-region-summary { overflow-y: auto; overscroll-behavior: contain; scrollbar-width: thin; padding-right: 3px; }
+.map-preview .map-fact-slide { justify-content: center; }
+.map-preview .map-fact-controls { flex: 0 0 auto; }
+/* SVG pointer focus should not render a rectangular browser outline.
+   Keyboard focus remains visible as a stronger red region boundary. */
+.oblast-map path:focus { outline: none !important; }
+.oblast-map path[aria-pressed="true"] { stroke: var(--red); stroke-width: 3; }
+.oblast-map path[aria-pressed="true"]:hover { stroke: var(--red); stroke-width: 3.4; }
+.oblast-map path:focus-visible { outline: none !important; stroke: var(--red); stroke-width: 4; filter: drop-shadow(0 0 2px white); }
+@media (max-width: 899px) {
+  .map-preview .region-map,
+  .map-preview .map-overview { height: 370px; max-height: 370px; }
+}
+@media (max-width: 479px) {
+  .map-preview .region-map,
+  .map-preview .map-overview { height: 340px; max-height: 340px; }
+  .map-preview .map-region-gallery { gap: 6px; }
+}
+
+/* MURAS 100: fixed dimensions, with natural page scroll rather than an inner
+   scrollbar that traps touch / trackpad gestures. */
+.map-preview .map-region-summary { overflow: hidden; overflow-y: hidden; overscroll-behavior: auto; scrollbar-width: none; padding-right: 0; }
+.map-preview .map-region-gallery { margin-top: 12px; }
+.map-preview .map-region-review { margin-top: 9px; font-size: 12px; }
+.map-preview .map-overview-action { margin-top: auto; min-height: 44px; flex-shrink: 0; }
+.map-preview .map-overview-content { display: flex; flex-direction: column; }
+.map-preview .map-region-summary .map-overview-topline { flex-shrink: 0; }
+.map-preview .map-region-count, .map-preview .map-region-empty { margin-top: 10px; }
+.map-mobile-pager { display: none; }
+@media (max-width: 767px) {
+  .map-preview .map-layout { display: block; position: relative; }
+  .map-preview .map-layout > .region-map,
+  .map-preview .map-layout > .map-overview { width: 100%; height: 340px; min-height: 340px; max-height: 340px; }
+  .map-preview .map-mobile-show-map > .map-overview,
+  .map-preview .map-mobile-show-info > .region-map { display: none; }
+  .map-preview .map-overview h3 { font-size: clamp(25px, 6.5vw, 33px); }
+  .map-preview .map-overview-eyebrow { font-size: 11px; }
+  .map-preview .map-region-gallery { margin-top: 8px; gap: 6px; }
+  .map-preview .map-region-thumb { width: 78px; gap: 2px; }
+  .map-preview .map-region-thumb img { width: 48px; height: 48px; }
+  .map-preview .map-region-thumb span { font-size: 10px; line-height: 1.25; }
+  .map-preview .map-region-review { margin-top: 6px; }
+  .map-preview .map-overview-credits { font-size: 10px; }
+  .map-preview .map-overview-action { font-size: 13px; }
+  .map-mobile-pager { display: flex; justify-content: center; align-items: center; gap: 4px; margin-top: 12px; }
+  .map-mobile-pager button { width: 36px; height: 28px; display: grid; place-items: center; }
+  .map-mobile-pager button::after { content: ''; width: 6px; height: 6px; border-radius: 50%; background: #b6c4b9; transition: background .2s, width .2s; }
+  .map-mobile-pager button[aria-pressed="true"]::after { width: 19px; border-radius: 10px; background: var(--ink); }
+}
+@media (prefers-reduced-motion: reduce) { .map-mobile-pager button::after { transition: none; } }
+
+/* Attribution remains accessible on demand, without changing the preview height. */
+.map-preview .map-region-summary { position: relative; }
+.map-preview .map-overview-credits { position: relative; flex: 0 0 auto; margin-top: 6px; }
+.map-preview .map-overview-credits summary { cursor: pointer; width: fit-content; min-height: 24px; text-decoration: underline; text-underline-offset: 3px; }
+.map-preview .map-overview-credit-links { position: absolute; bottom: 100%; left: 0; z-index: 3; width: min(300px, 80vw); max-height: 126px; padding: 12px; display: flex; flex-direction: column; gap: 5px; overflow-y: auto; background: white; border: 1px solid var(--line); border-radius: 8px; box-shadow: 0 6px 24px #253b3222; }
+.map-preview .map-overview-credits:not([open]) .map-overview-credit-links { display: none; }
+
+/* Regional search uses the existing map panel and remains touch/keyboard accessible. */
+.map-search-label { display: block; margin-top: 16px; font-weight: 600; }
+#map-species-search { display: block; width: 100%; min-width: 0; min-height: 44px; margin-block: 6px 14px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 6px; background: white; color: var(--ink); }
+#map-species-search:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+.map-observation { margin-top: 10px; font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+.regional-actions a, .regional-actions button { min-height: 44px; display: inline-flex; align-items: center; }
+.map-full .map-panel { min-width: 0; overflow-wrap: anywhere; }
+
+/* MURAS surgical UX update: group summaries fit inside the fixed preview. */
+.map-region-summary { position: relative; display: flex; flex-direction: column; min-height: 0; }
+.map-region-summary .map-overview-topline { position: absolute; top: 0; right: 0; z-index: 2; }
+.map-overview-clear { width: 30px; height: 30px; min-width: 30px; min-height: 30px; border-color: var(--line); }
+.map-region-summary h3 { padding-inline-end: 38px; margin-top: 0; font-size: clamp(26px, 2.7vw, 37px); overflow-wrap: anywhere; }
+.map-region-count { font-size: 14px; line-height: 1.45; margin-top: 8px; }
+.map-region-gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(72px, 1fr)); gap: 12px 4px; min-width: 0; align-content: start; margin-top: 16px; }
+.map-region-thumb { display: flex; width: auto; min-width: 0; align-items: center; gap: 5px; font-size: 12px; }
+.map-region-avatar { position: relative; width: 60px; height: 60px; margin: 0 auto; flex: 0 0 auto; }
+.map-region-thumb .map-region-avatar img { width: 60px; height: 60px; }
+.map-region-badge { position: absolute; right: -5px; bottom: -4px; display: grid; place-items: center; width: auto; min-width: 24px; height: 24px; padding: 2px 5px; color: white; background: var(--ink); border: 2px solid white; border-radius: 999px; font-size: 11px !important; font-weight: 700; line-height: 1; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.map-region-thumb > span:last-child { display: block; width: 100%; line-height: 1.2; font-size: 11px; text-align: center; overflow-wrap: anywhere; }
+.map-preview .map-region-summary { overflow: hidden; }
+.map-preview .map-overview-action { position: relative; z-index: 1; margin-top: auto; flex-shrink: 0; min-height: 42px; padding-block: 9px; }
+.map-preview .map-region-gallery { flex: 1 1 auto; overflow-y: auto; overflow-x: hidden; overscroll-behavior: contain; scrollbar-width: thin; padding: 6px 6px 10px 0; }
+@media (max-width: 767px) {
+  .map-preview .map-region-gallery { margin-top: 9px; grid-template-columns: repeat(auto-fit, minmax(65px, 1fr)); gap: 8px 2px; }
+  .map-preview .map-region-avatar { width: 48px; height: 48px; }
+  .map-preview .map-region-avatar img { width: 48px; height: 48px; }
+  .map-preview .map-region-badge { min-width: 22px; height: 22px; font-size: 10px !important; }
+  .map-preview .map-region-thumb > span:last-child { font-size: 10px; }
+  .map-preview .map-region-summary h3 { font-size: clamp(24px, 6.2vw, 31px); }
+  .map-preview .map-region-count { font-size: 12px; }
+  .map-preview .map-overview-action { font-size: 13px; min-height: 44px; }
+}
+/* Improve long regional results without changing map geometry or evidence. */
+.map-full .map-layout { align-items: start; }
+.map-full .region-map, .map-full .map-panel { min-width: 0; }
+.map-panel-intro { margin-block: 10px 14px; }
+.map-filters-disclosure { margin-top: 16px; }
+.map-filters-summary { display: none; }
+.map-filters-content .group-filter { margin-top: 8px; }
+.map-panel-status { margin-top: 16px; border-bottom: 1px solid var(--line); padding-bottom: 12px; }
+.regional-species-list { display: grid; gap: 26px; margin-top: 16px; }
+.regional-species-group { min-width: 0; }
+.regional-group-title { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; font-size: 15px; font-weight: 650; color: var(--ink); }
+.regional-group-title span { min-width: 25px; height: 25px; display: grid; place-items: center; border-radius: 99px; background: #e6eee5; color: var(--ink); font-size: 12px; font-variant-numeric: tabular-nums; }
+.regional-group-items { display: grid; gap: 10px; min-width: 0; }
+.regional-group-items .regional-species { margin-top: 0; padding: 14px; border: 1px solid var(--line); border-radius: 9px; background: #fff; min-width: 0; }
+.regional-group-items .regional-species-heading { gap: 10px; margin-bottom: 8px; }
+.regional-group-items .regional-species-heading img { width: 64px; height: 64px; }
+.regional-group-items .regional-species-heading h4 { font-size: 16px; }
+.regional-group-items .regional-species-heading .scientific-name { font-size: 13px; }
+.regional-group-items .map-observation { margin-top: 6px; }
+@media (min-width: 1400px) {
+  .map-full .map-layout { grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); }
+  .regional-group-items { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 767px) {
+  .map-full .map-layout { display: grid; grid-template-columns: minmax(0, 1fr); gap: 14px; }
+  .map-full .region-map { position: static; padding: 16px; }
+  .map-full .map-panel { padding: 16px; }
+  .map-full .oblast-map { margin-block: 16px 10px; }
+  .map-filters-summary, .map-region-select > summary { display: flex; justify-content: space-between; align-items: center; gap: 10px; min-height: 44px; padding: 10px 12px; border: 1px solid var(--line); border-radius: 7px; cursor: pointer; list-style: none; background: white; font-size: 14px; font-weight: 600; }
+  .map-filters-summary::-webkit-details-marker, .map-region-select > summary::-webkit-details-marker { display: none; }
+  .map-filters-summary span, .map-region-select > summary span { font-size: 19px; }
+  .map-filters-disclosure[open] .map-filters-summary span, .map-region-select[open] > summary span { transform: rotate(180deg); }
+  .map-filters-content { padding: 10px 0 5px; }
+  .map-filters-content .group-filter { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; }
+  .map-filters-content .group-filter button { font-size: 12px; min-width: 0; }
+  .map-region-select { margin-top: 14px; }
+  .map-region-select .region-choices { padding-top: 8px; }
+  .map-region-select .region-choices button { flex-basis: calc(50% - 8px); }
+  .regional-group-items .regional-species { padding: 12px; }
+  .regional-group-items .regional-actions { justify-content: flex-start; }
+}

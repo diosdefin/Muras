@@ -5,7 +5,8 @@
 // permits an arbitrary edit to a protected file.
 import assert from 'node:assert/strict'
 import { readFileSync } from 'node:fs'
-import { execFileSync } from 'node:child_process'
+import { gitExists, gitShow } from '../../scripts/lib/git-history.mjs'
+import { historyMigrationBytes } from './history-migration.mjs'
 import { createHash } from 'node:crypto'
 import { PROJECT_ROOT } from '../../scripts/build-data.mjs'
 const manifest = JSON.parse(readFileSync(new URL('../../data/research/ui-v4-release.json', import.meta.url), 'utf8'))
@@ -19,22 +20,21 @@ const matches = (bytes, fingerprint) => {
 }
 export const UI_V4_BASE = manifest.baseCommit
 export const UI_V4_FILES = new Set(Object.keys(manifest.files))
-export const uiV4BaseBytes = path => execFileSync('git', ['show', `${UI_V4_BASE}:${path}`], { cwd: PROJECT_ROOT, windowsHide: true })
+export const uiV4BaseBytes = path => gitShow(UI_V4_BASE, path)
 
 export function assertUiV4File(path) {
   const entry = manifest.files[path]
   assert.ok(entry && UI_V4_FILES.has(path), `${path}: not in scoped UI v4 manifest`)
   assert.equal(manifest.baseCommit, 'f2f7adaabe33eeaeb928f81d58ad163893391b14')
-  const current = readFileSync(`${PROJECT_ROOT}/${path}`)
+  const live = readFileSync(`${PROJECT_ROOT}/${path}`)
+  // Preserve the exact UI v4 result when Step A migrates one of its audit files.
+  const current = historyMigrationBytes('e03c076553e7500e3d9b3b784bc3e3d879e1c73e', path, live) || live
   assert.ok(matches(current, entry.after), `${path}: differs from the approved UI v4 replacement`)
   if (entry.before) {
     assert.ok(matches(uiV4BaseBytes(path), entry.before), `${path}: original Git snapshot differs`)
   } else {
     // New UI files must not exist in the base commit.
-    let exists = false
-    try { execFileSync('git', ['cat-file', '-e', `${UI_V4_BASE}:${path}`], { cwd: PROJECT_ROOT, windowsHide: true, stdio: 'ignore' }); exists = true }
-    catch { /* expected */ }
-    assert.equal(exists, false, `${path}: supposedly new UI path exists in base commit`)
+    assert.equal(gitExists(UI_V4_BASE, path), false, `${path}: supposedly new UI path exists in base commit`)
   }
   return true
 }

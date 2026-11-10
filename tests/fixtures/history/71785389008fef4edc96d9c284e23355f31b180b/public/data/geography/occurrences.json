@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "id": "kendirbaeva-2025",
+      "title": "Kendirbaeva et al. (2025). Current Status of the Vegetation of the South-Western Tenir-too Reserves. American Journal of Life Sciences 13(2): 35–45",
+      "url": "https://doi.org/10.11648/j.ajls.20251302.14",
+      "year": 2025,
+      "kind": "regional-field-study",
+      "locator": "Abstract; sections 1–3; Table 1",
+      "checkedAt": "2026-10-12",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ],
+  "records": [
+    {
+      "speciesId": "kaufmanns-tulip",
+      "regionId": "jalal-abad",
+      "sourceIds": [
+        "kendirbaeva-2025"
+      ],
+      "evidence": "Авторы отмечают тюльпан Кауфмана при полевом обследовании Беш-Аральского заповедника в 2022 году. Район исследования отнесён в статье к Джалал-Абадской области.",
+      "locator": "Abstract; section 3, Besh-Aral; Table 1, Tulipa kaufmanniana",
+      "reviewStatus": "documented_pending_review",
+      "localityPrecision": "oblast",
+      "observationYear": 2022
+    },
+    {
+      "speciesId": "sievers-apple",
+      "regionId": "jalal-abad",
+      "sourceIds": [
+        "kendirbaeva-2025"
+      ],
+      "evidence": "В результатах полевого обследования 2022 года указано присутствие Malus sieversii в районе Сары-Челека. Район исследования отнесён в статье к Джалал-Абадской области.",
+      "locator": "Abstract; section 3, control plot K#6; Table 1, description 9, Malus sieversii",
+      "reviewStatus": "documented_pending_review",
+      "localityPrecision": "oblast",
+      "observationYear": 2022
+    }
+  ]
+}

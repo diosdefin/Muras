@@ -4,7 +4,7 @@ import { POPULATION_PUBLICATION_BASE, POPULATION_PUBLICATION_FILES } from './hel
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
-import { execFileSync } from 'node:child_process'
+import { gitChangesSince, gitSha256 } from '../scripts/lib/git-history.mjs'
 import { createHash } from 'node:crypto'
 import { createSSRApp } from 'vue'
 import { renderToString } from 'vue/server-renderer'
@@ -58,9 +58,8 @@ test('real visualization SSR defaults to full-colour photo and manual action in 
 test('scientific records, images, licences, archive, adapter and all 208 regional links remain unchanged',async()=>{
  // New unpublished research is not a mutation of the activation baseline.
  // Existing protected paths still reject modifications, deletions or renames.
- const changes=execFileSync('git',['diff','--name-status','--no-renames',BASE,'--','data','assets','public','src/data/population.js','src/data/geography','src/data/species-model.js'],{encoding:'utf8'}).trim().split('\n').filter(Boolean)
- const allowedChange=line=>{
-  const [status,path]=line.trim().split('\t')
+ const changes=gitChangesSince(BASE,['data','assets','public','src/data/population.js','src/data/geography','src/data/species-model.js'])
+ const allowedChange=({status,path})=>{
   return (status==='M'&&TRANSLATED_CATALOGUES.has(path)) ||
     (status==='A'&&(path.startsWith('data/research/')||path==='data/.gitattributes'||TRANSLATION_JOURNALS.has(path))) ||
     // Additional quiz questions are published as a separate educational file; scientific data stay untouched.
@@ -81,7 +80,7 @@ test('scientific records, images, licences, archive, adapter and all 208 regiona
   if(TRANSLATED_CATALOGUES.has(path)) historicalCatalogueBytes(BASE,path,expected,await bytes(path))
   else assert.ok(checkoutBytesMatching(path,await bytes(path),expected),path)
  }
- for(const s of source.catalog)for(const im of s.images)assert.equal(hash(await bytes(im.path)),hash(historicalBytes(BASE,im.path)),im.path)
+ for(const s of source.catalog)for(const im of s.images)assert.equal(hash(await bytes(im.path)),gitSha256(BASE,im.path),im.path)
 })
 
 test('activation adds only three localized messages and leaves catalogue cards, map, lesson and global design unchanged',async()=>{

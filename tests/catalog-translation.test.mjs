@@ -1,25 +1,25 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
-import { execFileSync } from 'node:child_process'
+import { gitShow } from '../scripts/lib/git-history.mjs'
 import { translationCompleteness, translationCell } from '../src/data/translation-completeness.js'
 import { assertTranslationOnlyEvolution } from '../scripts/lib/translation-integrity.mjs'
 import { LATER_TRANSLATIONS, unwindLaterTranslations } from './helpers/translation-evolution.mjs'
 import { contentParagraphs } from '../src/data/species-content.js'
 import { scientificContent, LANGUAGES } from '../src/data/localization.js'
-const before = JSON.parse(execFileSync('git',['show','5f253100ac61c825b72b9fb22ca9b4a45f7aa953:data/species.source.json'],{maxBuffer:16*1024*1024}))
+const before = JSON.parse(gitShow('5f253100ac61c825b72b9fb22ca9b4a45f7aa953','data/species.source.json'))
 const source = JSON.parse(await readFile(new URL('../data/species.source.json',import.meta.url)))
 const batch = JSON.parse(await readFile(new URL('../data/localization/batch-001.json',import.meta.url)))
 const next = JSON.parse(await readFile(new URL('../data/localization/batch-002.json',import.meta.url)))
-const checkpoint = JSON.parse(execFileSync('git',['show',next.baselineCommit+':data/species.source.json'],{maxBuffer:16*1024*1024}))
+const checkpoint = JSON.parse(gitShow(next.baselineCommit,'data/species.source.json'))
 const third = JSON.parse(await readFile(new URL('../data/localization/batch-003.json',import.meta.url)))
-const thirdBase = JSON.parse(execFileSync('git',['show',third.baselineCommit+':data/species.source.json'],{maxBuffer:16*1024*1024}))
+const thirdBase = JSON.parse(gitShow(third.baselineCommit,'data/species.source.json'))
 const fourth = JSON.parse(await readFile(new URL('../data/localization/batch-004.json',import.meta.url)))
-const fourthBase = JSON.parse(execFileSync('git',['show',fourth.baselineCommit+':data/species.source.json'],{maxBuffer:16*1024*1024}))
+const fourthBase = JSON.parse(gitShow(fourth.baselineCommit,'data/species.source.json'))
 const fifth = JSON.parse(await readFile(new URL('../data/localization/batch-005.json',import.meta.url)))
-const fifthBase = JSON.parse(execFileSync('git',['show',fifth.baselineCommit+':data/species.source.json'],{maxBuffer:16*1024*1024}))
+const fifthBase = JSON.parse(gitShow(fifth.baselineCommit,'data/species.source.json'))
 const sixth = JSON.parse(await readFile(new URL('../data/localization/batch-006.json',import.meta.url)))
-const sixthBase = JSON.parse(execFileSync('git',['show',sixth.baselineCommit+':data/species.source.json'],{maxBuffer:16*1024*1024}))
+const sixthBase = JSON.parse(gitShow(sixth.baselineCommit,'data/species.source.json'))
 const combined = {...batch,selectedIds:[...new Set([...batch.selectedIds,...next.selectedIds,...third.selectedIds,...fourth.selectedIds,...LATER_TRANSLATIONS.flatMap(x=>x.journal.selectedIds)])],changes:[...batch.changes,...next.changes,...third.changes,...fourth.changes,...LATER_TRANSLATIONS.flatMap(x=>x.journal.changes)]}
 test('all 184 scientific records and two archives preserve facts, source IDs, Russian originals, existing translations and image licences',()=>{
  assertTranslationOnlyEvolution(before,assertTranslationOnlyEvolution(checkpoint,assertTranslationOnlyEvolution(thirdBase,assertTranslationOnlyEvolution(fourthBase,unwindLaterTranslations(source),fourth),third),next),batch)

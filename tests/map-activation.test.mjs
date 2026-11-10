@@ -4,6 +4,7 @@ import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { createHash } from 'node:crypto'
+import { gitSha256 } from '../scripts/lib/git-history.mjs'
 import { createSSRApp } from 'vue'
 import { renderToString } from 'vue/server-renderer'
 import { createServer } from 'vite'
@@ -31,7 +32,7 @@ test('map activation preserves every scientific object, archive, original image 
   assert.deepEqual(species,JSON.parse(old('public/data/species.json')))
   for (const item of source.catalog) for (const im of item.images) {
     const bytes=await readFile(new URL('../'+im.path,import.meta.url))
-    assert.equal(hash(bytes),hash(old(im.path)),im.path)
+    assert.equal(hash(bytes),gitSha256(base,im.path),im.path)
     if(im.sha256)assert.equal(hash(bytes),im.sha256)
     assert.deepEqual(im,originalSource.catalog.find(s=>s.id===item.id).images.find(i=>i.path===im.path))
   }

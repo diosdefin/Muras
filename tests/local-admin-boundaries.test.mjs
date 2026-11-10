@@ -2,18 +2,18 @@ import test from 'node:test'
 import assert from 'node:assert/strict'
 import {readFileSync} from 'node:fs'
 import {createHash} from 'node:crypto'
-import {execFileSync} from 'node:child_process'
+import { gitShow } from '../scripts/lib/git-history.mjs'
 import {checkoutBytesMatching} from '../scripts/lib/historical-checksum.mjs'
 import {localAdminHistoricalBytes} from '../scripts/lib/local-admin-history.mjs'
 import {createLocalAdminAPI} from '../src/admin/data/local-api.js'
 const read=p=>readFileSync(p,'utf8')
 test('local editor historical scope checks authentic pre-feature bytes, never catalogue or media replacements',()=>{
- const bytes=execFileSync('git',['show','50951765ab52c32fdae30309cc19ede7e9bd279d:package.json'])
+ const bytes=gitShow('50951765ab52c32fdae30309cc19ede7e9bd279d','package.json')
  const hash=createHash('sha256').update(bytes).digest('hex');assert.deepEqual(localAdminHistoricalBytes(process.cwd(),'package.json',hash),bytes)
  for(const path of ['data/species.source.json','public/data/species.json','assets/images/species/irbis.webp','src/data/species-model.js','src/locales/ru.json'])assert.equal(localAdminHistoricalBytes(process.cwd(),path,hash),null)
  assert.equal(localAdminHistoricalBytes(process.cwd(),'package.json','0'.repeat(64)),null)
  const field='src/admin/components/LocalizedFields.vue'
- const oldField=execFileSync('git',['show','50951765ab52c32fdae30309cc19ede7e9bd279d:'+field])
+ const oldField=gitShow('50951765ab52c32fdae30309cc19ede7e9bd279d',field)
  assert.deepEqual(localAdminHistoricalBytes(process.cwd(),field,createHash('sha256').update(oldField).digest('hex')),oldField)
 })
 test('local client carries same-origin headers, revision and confirmation and has a localized offline state',async()=>{

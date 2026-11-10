@@ -1,7 +1,7 @@
 import { checkoutBytesMatching } from '../../scripts/lib/historical-checksum.mjs'
 import { beforeTranslations, TRANSLATED_CATALOGUES } from './translation-evolution.mjs'
 import assert from 'node:assert/strict'
-import { execFileSync } from 'node:child_process'
+import { gitSha256, gitShow } from '../../scripts/lib/git-history.mjs'
 import { readFile } from 'node:fs/promises'
 import { PROJECT_ROOT } from '../../scripts/build-data.mjs'
 import { digest } from '../../scripts/lib/research-pipeline.mjs'
@@ -17,7 +17,7 @@ export function historicalBytes(commit, path, expectedSha256) {
   assert.match(commit, /^[a-f0-9]{40}$/)
   assert.match(path, /^[a-zA-Z0-9_./-]+$/)
   const key = `${commit}:${path}`
-  if (!cache.has(key)) cache.set(key, execFileSync('git', ['show', key], { cwd: PROJECT_ROOT, maxBuffer: 16 * 1024 * 1024, windowsHide: true }))
+  if (!cache.has(key)) cache.set(key, gitShow(commit, path))
   let bytes = Buffer.from(cache.get(key))
   // Historical checksums describe Windows working-tree bytes, while Git stores LF.
   // Reconstruct CRLF only if it matches the original fixed checksum exactly.
@@ -138,7 +138,7 @@ export async function assertPhotoAmendment(source, published, journal, load = re
         assert.deepEqual(webpMetadata(bytes), { width: im.width, height: im.height, privateMetadata: false })
       } else {
         // Quarantined legacy originals remain byte-identical and never become public.
-        assert.equal(digest(bytes), digest(historicalBytes(PHOTO_BASE_COMMIT, im.path)), `${old.id}: legacy source bytes`)
+        assert.equal(digest(bytes), gitSha256(PHOTO_BASE_COMMIT, im.path), `${old.id}: legacy source bytes`)
       }
     }
     for (const im of pub.images) assert.equal(digest(await load(`public${im.path}`)), im.sha256, `${old.id}: public image SHA-256`)

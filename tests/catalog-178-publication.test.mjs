@@ -3,6 +3,7 @@ import { localAdminHistoricalBytes } from '../scripts/lib/local-admin-history.mj
 import { UI_V3_FILES } from './helpers/ui-v3-preservation.mjs'
 import { UI_V4_FILES } from './helpers/ui-v4-release.mjs'
 import { MAP_EVOLVING_FILES } from './helpers/map-evolution.mjs'
+import { historyMigrationBytes } from './helpers/history-migration.mjs'
 import { historicalBytes } from './helpers/photo-amendment.mjs'
 import { historicalPipeline } from './helpers/historical-pipeline.mjs'
 import test from 'node:test'
@@ -94,7 +95,7 @@ test('catalog 178 preserves all prior 166 objects, archive, assets and research 
  for(const {path,sha256} of baseline.files)if(!allowed.has(path)){
   const actual = revisedTests.has(path)||MAP_EVOLVING_FILES.has(path)||UI_V3_FILES.has(path)||UI_V4_FILES.has(path)
     ? historicalBytes(baseline.initialHead,path,sha256)
-    : localAdminHistoricalBytes(process.cwd(),path,sha256) || await bytes(path)
+    : historyMigrationBytes(baseline.initialHead,path) || localAdminHistoricalBytes(process.cwd(),path,sha256) || await bytes(path)
   assert.ok(checkoutBytesMatching(path,actual,sha256),path)
  }
  assert.equal(canApplyOnBranch('feature/catalog-200'),true)

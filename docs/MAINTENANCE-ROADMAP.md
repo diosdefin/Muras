@@ -17,16 +17,24 @@ old commits (see `docs/TESTING.md`, section 3).
 
 Goal: `npm test` passes in a repository with a single squashed commit.
 
-1. Replace each `historicalBytes(<sha>, <path>)` use with a committed copy: either the file itself under
-   `tests/fixtures/history/<name>` or only its SHA-256 receipt (where the test just compares bytes).
-   Files: `tests/helpers/{historical-pipeline,photo-amendment,photo-batch-2,population-publication-evolution,
-   ui-v3-preservation,ui-v4-release,map-evolution,population-evolution,translation-evolution}.mjs`,
-   `scripts/lib/{map-history,local-admin-history,historical-checksum}.mjs`,
-   `data/research/population-*/verify.mjs`, `scripts/audit-bulk-25-release.mjs`, `scripts/validate-catalog-*.mjs`.
-2. Keep the intent of each test (nothing scientific may change silently); replace "compare with commit X" by
-   "compare with receipt Y committed in the repository".
-3. Remove the hard-coded 40-hex commit constants listed in `TESTING.md`.
-4. Gate: run `npm test` from a fresh `git clone --depth 1` copy; it must be green.
+Recommended design (analysed 2026-11-10): one shared module instead of ~15 separate `git show` call sites.
+
+1. Add `scripts/lib/git-history.mjs` exporting `gitShow(sha, path)`, `gitExists(sha, path)` and `gitListFiles(sha)`.
+   Lookup order: committed fixture `tests/fixtures/history/<sha>/<path>` first, then real `git` (only when the fixture is missing).
+   Record mode (`MURAS_RECORD_HISTORY=1`): every call that falls through to real `git` writes its result into the fixtures folder.
+2. Replace every direct `execFileSync('git', ['show'|'cat-file'|'ls-files'|'diff', ...])` in the files below by the module.
+   Tests/helpers: `tests/helpers/{photo-amendment,translation-evolution,ui-v3-preservation,ui-v4-release,historical-pipeline}.mjs`,
+   `tests/{catalog-translation,local-admin-boundaries,uz-localization,population-activation,catalog-184-photo-batch-1,catalog-184-photo-batch-2}.test.mjs`
+   (`historicalBytes`/`historicalCatalogueBytes` helpers are the main entry points; find them with `git grep historicalBytes`).
+   Scripts: `scripts/lib/{local-admin-history,map-history}.mjs`, `scripts/audit-translations.mjs`, `scripts/validate-catalog-{181,200-inventory,200-conflicts}*.mjs`,
+   `scripts/research-map-distribution.py`, `data/research/population-184/validate.py`.
+   Production code that only asks "which branch am I on" (`bulk-pipeline.mjs`, `import-species-batch.mjs`) stays as is.
+3. Record the fixtures once on a full clone: `MURAS_RECORD_HISTORY=1 npm test -- --test-concurrency=1`, commit `tests/fixtures/history/`.
+   If the folder gets large (> 30 MB), store only SHA-256 receipts for tests that merely compare bytes, and full files only where content is parsed.
+4. Replace `git diff --name-status <BASE>` in `population-activation` by a committed list of the files that existed at BASE.
+5. Keep the meaning of every test (nothing scientific may change silently). Do not delete tests or edit stored SHA-256 values.
+6. Gate: `git clone --depth 1 . /tmp/check && cd /tmp/check && npm ci && npm test` must be green.
+   Also change `fetch-depth: 0` in `.github/workflows/ci.yml` to `1` and update the history section of `docs/TESTING.md`.
 
 ### Step B. Move evidence out of the main tree (optional, after A)
 

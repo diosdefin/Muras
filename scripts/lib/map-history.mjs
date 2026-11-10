@@ -1,7 +1,7 @@
 // Historical release audits must read the original map when replaying pre-27.1 releases.
 // This never exempts live catalog science, photos, licenses, boundaries or research material.
 import { readFile } from 'node:fs/promises'
-import { execFileSync } from 'node:child_process'
+import { gitShow } from './git-history.mjs'
 import { resolve } from 'node:path'
 import assert from 'node:assert/strict'
 import { checkoutBytesMatching } from './historical-checksum.mjs'
@@ -37,7 +37,7 @@ export async function historicalMapBytes(root, path, sha256) {
   const snapshot = path === 'src/components/map/RegionMap.vue'
     ? 'ce646a90262e9cf1b0636bdd1963251aa74981b1'
     : '43ff31186ea54eafdb6eec654c50828fb4c99eb3'
-  let bytes = execFileSync('git', ['show', `${snapshot}:${path}`], { cwd: root, windowsHide: true })
+  let bytes = gitShow(snapshot, path, { root })
   bytes = checkoutBytesMatching(path, bytes, sha256) || bytes
   assert.equal(digest(bytes), sha256, `original map snapshot: ${path}`)
   return bytes
@@ -51,6 +51,6 @@ function uiV4PreviousBytes(root, path, bytes, sha256) {
   if (!entry?.before) return null
   const lf = createHash('sha256').update(bytes.toString('utf8').replace(/\r\n/g, '\n')).digest('hex')
   if (lf !== entry.after) return null
-  const previous = execFileSync('git', ['show', `${manifest.baseCommit}:${path}`], { cwd: root, windowsHide: true })
+  const previous = gitShow(manifest.baseCommit, path, { root })
   return checkoutBytesMatching(path, previous, sha256)
 }

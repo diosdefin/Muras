@@ -13,7 +13,7 @@ node --test tests/protected-areas.test.mjs   # one file
 npm run data:validate             # locale keys + generated-data check (also part of `npm run build`)
 ```
 
-Requirements: Node.js 22+, a full `git` checkout with **all history** (see section 3), and free disk space
+Requirements: Node.js 22+, a Git checkout (shallow is sufficient), and free disk space
 (some tests copy the repository into `%TEMP%\muras-*`; delete those folders if the disk fills up).
 Python is needed only for the image/research scripts, not for tests.
 
@@ -32,17 +32,34 @@ The project is an educational catalogue, so the suite mainly guards **data integ
 | Admin (local only) | `admin`, `local-admin*` | Editor exists only in `npm run dev:admin`; production has a static page without scripts |
 | New features | `protected-areas`, `pwa-thumbs` | Protected-area data and photos; lightweight photo copies, service worker, offline file list |
 
-## 3. Tests that depend on Git history (important)
+## 3. Historical test fixtures
 
-About 18 files read old commits with `git show <sha>:<path>` (helper `historicalBytes`, and
-`scripts/lib/*-history.mjs`) and compare current files with SHA-256 receipts. They prove that
-"science, photos, licences and archive have not changed since release X".
+The release checks compare historical catalogues, photos, licences and archives with their original
+SHA-256 receipts. `scripts/lib/git-history.mjs` reads committed fixtures in
+`tests/fixtures/history/<commit>/` first and falls back to Git for a missing fixture.
+A depth-one checkout can run the suite. Tests that audit the current index still need a Git
+checkout.
 
-Consequences:
+Each commit directory contains the exact original blobs where the tests read content, SHA-256
+receipts where they compare only a digest, and tree inventories where they check path existence
+or compare the tracked working tree with a base commit. Large snapshots are stored as gzip files
+and read back as their original bytes. The population activation test still
+detects modifications and removals of protected paths, and applies the existing allow-list to
+additions. The original release digests remain pinned.
 
-- **Never squash, rebase or rewrite history** while these tests exist: the referenced commits would disappear.
-- A shallow clone (`git clone --depth 1`) fails these tests. Clone the full history.
-- The old commit hashes are listed below. They are constants inside the files named next to them.
+Record new fixtures in a full checkout, with the original commits available:
+
+```sh
+MURAS_RECORD_HISTORY=1 npm test -- --test-concurrency=1
+```
+
+In PowerShell, set `$env:MURAS_RECORD_HISTORY = '1'` before running the test command and clear it
+with `Remove-Item Env:MURAS_RECORD_HISTORY` afterwards. Review and commit the new fixtures.
+Maintenance scripts that query additional old objects can record them through the same module.
+Historical branch and ancestry checks in the standalone preparation audits still need their
+original Git refs.
+
+These commit IDs remain the provenance of the fixtures:
 
 | Constant (commit) | Used by |
 | --- | --- |

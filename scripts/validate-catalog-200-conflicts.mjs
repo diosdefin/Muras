@@ -3,6 +3,7 @@ import assert from 'node:assert/strict'
 import { readFile, stat } from 'node:fs/promises'
 import { createHash } from 'node:crypto'
 import { execFileSync } from 'node:child_process'
+import { gitChangesSince, gitListFiles, gitShow } from './lib/git-history.mjs'
 import { resolve } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -18,7 +19,7 @@ const baseline = await read(result.preservation.baselineFile)
 const source = await read('data/species.source.json')
 const evidence = await read('docs/evidence/catalog-200-conflict-sources.json')
 const taxonomy = await read(evidence.taxonomyEvidenceFile)
-const prior = JSON.parse(git('show', `${result.sourceCommit}:data/species.source.json`))
+const prior = JSON.parse(gitShow(result.sourceCommit, 'data/species.source.json'))
 
 assert.equal(git('branch', '--show-current'), 'feature/catalog-200')
 assert.equal(result.sourceCommit, 'e5b7427bc3f25074711255945398d8fbaef1483e')
@@ -29,10 +30,10 @@ assert.deepEqual(source, prior, 'The original 166 objects or archive changed')
 assert.equal(digest(await bytes('data/species.source.json')), baseline.catalogSourceSha256)
 assert.equal(digest(await bytes(result.sourceInventory.path)), result.sourceInventory.sha256)
 assert.equal(baseline.sourceCommit, result.sourceCommit)
-assert.deepEqual(baseline.files.map(f => f.path).sort(), git('ls-tree', '-r', '--name-only', result.sourceCommit).split(/\r?\n/).sort())
+assert.deepEqual(baseline.files.map(f => f.path).sort(), gitListFiles(result.sourceCommit).sort())
 for (const f of baseline.files) assert.equal(digest(await bytes(f.path)), f.sha256, `Previous tracked file changed: ${f.path}`)
 const previousPaths = new Set(baseline.files.map(f => f.path))
-assert.deepEqual(git('diff', '--name-only', result.sourceCommit).split(/\r?\n/).filter(p => previousPaths.has(p)), [], 'A previously tracked file has a Git diff')
+assert.deepEqual(gitChangesSince(result.sourceCommit).map(({ path }) => path).filter(p => previousPaths.has(p)), [], 'A previously tracked file has a Git diff')
 for (const f of result.evidenceFiles) assert.equal(digest(await bytes(f.path)), f.sha256, `Evidence checksum: ${f.path}`)
 
 const originalB = inventory.candidates.filter(c => c.classification === 'B')

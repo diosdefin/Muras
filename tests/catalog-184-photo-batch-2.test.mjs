@@ -1,7 +1,7 @@
 import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
-import { execFileSync } from 'node:child_process'
+import { gitListFiles } from '../scripts/lib/git-history.mjs'
 import { createSSRApp } from 'vue'
 import { renderToString } from 'vue/server-renderer'
 import { createServer } from 'vite'
@@ -64,7 +64,7 @@ test('new files require their own author, exact species or subspecies and origin
 })
 
 test('two complete photo-journal checks are deterministic and leave all tracked files unchanged',async()=>{
-  const files=execFileSync('git',['ls-files','-z'],{cwd:PROJECT_ROOT,windowsHide:true}).toString().split('\0').filter(Boolean)
+  const files=gitListFiles()
   const hashes=async()=>{const result={};for(const p of files)result[p]=digest(await bytes(p));return result}
   const before=await hashes(),first=await allPhotoAmendments(source,published),second=await allPhotoAmendments(source,published)
   assert.deepEqual(first,second);assert.deepEqual(await hashes(),before)

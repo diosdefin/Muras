@@ -1,5 +1,5 @@
 """Validate the research package and protected base commit; never writes data."""
-import json,hashlib,subprocess,collections
+import json,hashlib,subprocess,collections,os
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[3]
 def read(p):return json.loads((ROOT/p).read_text(encoding='utf-8-sig'))
@@ -42,8 +42,11 @@ def validate_document(doc):
 if __name__=='__main__':
     doc=read('data/research/population-184-evidence-audit.json');counts=validate_document(doc)
     base=doc['sourceCommit']
-    files=subprocess.check_output(['git','ls-tree','-r','--name-only',base],cwd=ROOT,text=True,encoding='utf-8').splitlines()
-    changed=subprocess.check_output(['git','diff',base,'--name-only'],cwd=ROOT,text=True,encoding='utf-8').splitlines()
+    node=os.environ.get('NODE_BINARY','node')
+    history=ROOT/'scripts/lib/git-history.mjs'
+    def query(command):return json.loads(subprocess.check_output([node,str(history),command,base],cwd=ROOT))
+    files=query('list')
+    changed=[entry['path'] for entry in query('changes')]
     assert not [p for p in changed if p in files],changed
     protected={p:sha((ROOT/p).read_bytes()) for p in files if p.startswith(('data/','public/','assets/','src/'))}
     assert sha(json.dumps(protected,sort_keys=True,separators=(',',':')).encode())==doc['integrity']['protectedManifestSHA256']

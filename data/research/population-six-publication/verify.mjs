@@ -1,4 +1,5 @@
 import { checkoutBytesMatching } from '../../../scripts/lib/historical-checksum.mjs'
+import { historyMigrationBytes } from '../../../tests/helpers/history-migration.mjs'
 import { generateData } from '../../../scripts/build-data.mjs'
 import { historicalCatalogueBytes } from '../../../tests/helpers/photo-amendment.mjs'
 import { TRANSLATED_CATALOGUES } from '../../../tests/helpers/translation-evolution.mjs'
@@ -23,7 +24,7 @@ export async function verifySixPublication(){
    try { historicalCatalogueBytes(baseline.head,p,h,live); return false }
    catch(error) { if(error.code!=='ERR_ASSERTION') throw error; return true }
   }
-  if(checkoutBytesMatching(p,live,h))return false
+  if(checkoutBytesMatching(p,historyMigrationBytes(baseline.head,p,live)||live,h))return false
   if(!UI_V3_FILES.has(p))return true
   try{return !assertUiV3File(p)}catch(error){if(error.code!=='ERR_ASSERTION')throw error;return true}
  }).map(([p])=>p)

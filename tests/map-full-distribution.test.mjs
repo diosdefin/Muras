@@ -7,6 +7,7 @@ import test from 'node:test'
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
 import { createHash } from 'node:crypto'
+import { gitSha256 } from '../scripts/lib/git-history.mjs'
 import { REGIONS, validateRegionalEvidence, publicRegionalEvidence } from '../src/data/geography/model.js'
 import { queryRegionalEntries, loadRegionalData } from '../src/data/geography/repository.js'
 import { historicalBytes, historicalCatalogueBytes } from './helpers/photo-amendment.mjs'
@@ -177,7 +178,11 @@ test('184 cards, archive, images and geometry stay unchanged; historical UI hash
  const frozen=await read('data/research/map-184/preservation.json')
  assert.equal(frozen.sourceCommit,BASE)
  for(const [path,expected] of Object.entries(frozen.files)){
-  assert.equal(hash(historicalBytes(BASE,path,expected)),expected,path+' historical')
+  const photo = path.startsWith('assets/') || path.startsWith('public/images/')
+  const historicalHash = photo && /[.](webp|jpg)$/.test(path)
+   ? gitSha256(BASE,path)
+   : hash(historicalBytes(BASE,path,expected))
+  assert.equal(historicalHash,expected,path+' historical')
   if (TRANSLATED_CATALOGUES.has(path)) historicalCatalogueBytes(BASE,path,expected,await bytes(path))
   else if (!POPULATION_EVOLVING_FILES.has(path)&&!UI_V3_FILES.has(path)&&!UI_V4_FILES.has(path)) assert.ok(checkoutBytesMatching(path,await bytes(path),expected),path+' preserved')
  }

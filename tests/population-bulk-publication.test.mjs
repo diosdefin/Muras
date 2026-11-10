@@ -3,6 +3,7 @@ import { TRANSLATED_CATALOGUES } from './helpers/translation-evolution.mjs'
 import { localAdminHistoricalBytes } from '../scripts/lib/local-admin-history.mjs'
 import { UI_V3_FILES } from './helpers/ui-v3-preservation.mjs'
 import { UI_V4_FILES } from './helpers/ui-v4-release.mjs'
+import { historyMigrationBytes } from './helpers/history-migration.mjs'
 import { historicalBytes, historicalCatalogueBytes } from './helpers/photo-amendment.mjs'
 import { POPULATION_PUBLICATION_BASE, POPULATION_PUBLICATION_FILES } from './helpers/population-publication-evolution.mjs'
 import test from 'node:test'
@@ -109,7 +110,7 @@ test('28.3: pre-existing scientific statuses, archive, media and other untouched
   const live = () => readFileSync(new URL('../'+path,import.meta.url))
   if(TRANSLATED_CATALOGUES.has(path)) historicalCatalogueBytes(baseline.head,path,expected,live())
   else {
-   const actual = localAdminHistoricalBytes(process.cwd(),path,expected) ||
+   const actual = historyMigrationBytes(baseline.head,path) || localAdminHistoricalBytes(process.cwd(),path,expected) ||
     (revisedTests.has(path) ? historicalBytes(baseline.head,path,expected) :
      POPULATION_PUBLICATION_FILES.has(path)||UI_V3_FILES.has(path)||UI_V4_FILES.has(path) ? historicalBytes(POPULATION_PUBLICATION_BASE,path,expected) : live())
    assert.ok(checkoutBytesMatching(path,actual,expected),path)

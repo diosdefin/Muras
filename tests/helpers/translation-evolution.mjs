@@ -1,19 +1,19 @@
 import assert from 'node:assert/strict'
 import { readFileSync, readdirSync } from 'node:fs'
-import { execFileSync } from 'node:child_process'
+import { gitShow } from '../../scripts/lib/git-history.mjs'
 import { assertTranslationOnlyEvolution } from '../../scripts/lib/translation-integrity.mjs'
-const base = JSON.parse(execFileSync('git',['show','5f253100ac61c825b72b9fb22ca9b4a45f7aa953:data/species.source.json'],{maxBuffer:16*1024*1024}))
+const base = JSON.parse(gitShow('5f253100ac61c825b72b9fb22ca9b4a45f7aa953','data/species.source.json'))
 const batch = JSON.parse(readFileSync(new URL('../../data/localization/batch-001.json',import.meta.url)))
 const next = JSON.parse(readFileSync(new URL('../../data/localization/batch-002.json',import.meta.url)))
-const checkpoint = JSON.parse(execFileSync('git',['show',next.baselineCommit+':data/species.source.json'],{maxBuffer:16*1024*1024}))
+const checkpoint = JSON.parse(gitShow(next.baselineCommit,'data/species.source.json'))
 const third = JSON.parse(readFileSync(new URL('../../data/localization/batch-003.json',import.meta.url)))
-const thirdBase = JSON.parse(execFileSync('git',['show',third.baselineCommit+':data/species.source.json'],{maxBuffer:16*1024*1024}))
+const thirdBase = JSON.parse(gitShow(third.baselineCommit,'data/species.source.json'))
 const fourth = JSON.parse(readFileSync(new URL('../../data/localization/batch-004.json',import.meta.url)))
-const fourthBase = JSON.parse(execFileSync('git',['show',fourth.baselineCommit+':data/species.source.json'],{maxBuffer:16*1024*1024}))
+const fourthBase = JSON.parse(gitShow(fourth.baselineCommit,'data/species.source.json'))
 // Batches 005 onward are discovered automatically; each one is verified against its own baseline commit.
 const LATER = readdirSync(new URL('../../data/localization/',import.meta.url)).filter(f=>/^batch-\d{3}\.json$/.test(f)&&Number(f.slice(6,9))>=5).sort().map(f=>{
  const journal=JSON.parse(readFileSync(new URL('../../data/localization/'+f,import.meta.url)))
- return {file:'data/localization/'+f,journal,base:JSON.parse(execFileSync('git',['show',journal.baselineCommit+':data/species.source.json'],{maxBuffer:16*1024*1024}))}
+ return {file:'data/localization/'+f,journal,base:JSON.parse(gitShow(journal.baselineCommit,'data/species.source.json'))}
 })
 export const LATER_TRANSLATIONS = LATER
 export const unwindLaterTranslations = document => LATER.slice().reverse().reduce((doc,{journal,base})=>assertTranslationOnlyEvolution(base,doc,journal),document)

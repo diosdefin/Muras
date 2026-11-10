@@ -1,4 +1,5 @@
 import { checkoutBytesMatching } from '../scripts/lib/historical-checksum.mjs'
+import { historyMigrationBytes } from './helpers/history-migration.mjs'
 import { TRANSLATED_CATALOGUES } from './helpers/translation-evolution.mjs'
 import { UI_V3_FILES, assertUiV3File } from './helpers/ui-v3-preservation.mjs'
 import test from 'node:test'
@@ -120,7 +121,10 @@ test('28.4: scientific records, source history, media, licences, archive and 208
  const baseline=read('data/research/population-publication/baseline.json')
  for(const [path,expected]of Object.entries(baseline.hashes))if((/^(data|public|assets)\//.test(path))&&path!=='data/.gitattributes'){
   if(TRANSLATED_CATALOGUES.has(path)) historicalCatalogueBytes(baseline.head,path,expected,bytes(path))
-  else assert.ok(checkoutBytesMatching(path,bytes(path),expected),path)
+  else {
+   const live=bytes(path)
+   assert.ok(checkoutBytesMatching(path,historyMigrationBytes(baseline.head,path,live)||live,expected),path)
+  }
  }
  assert.equal(source.catalog.length,184);assert.equal(source.demoArchive.length,2);assert.equal(source.catalog.filter(s=>s.images.length).length,161)
  assert.equal(read('data/geography/occurrences.source.json').records.length,208)
