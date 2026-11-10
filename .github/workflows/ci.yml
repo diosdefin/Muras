@@ -17,6 +17,13 @@ jobs:
         with:
           node-version: 22
           cache: npm
+      - name: Fetch historical commits used by audit fixtures
+        shell: bash
+        run: |
+          grep -RhoE (initialHead|sourceCommit|baseCommit|baselineCommit|readinessCommit|commit)[[:space:]]*:[[:space:]]*[0-9a-f]{40} data tests \\
+            | grep -oE [0-9a-f]{40} | sort -u | while read -r commit; do
+              git cat-file -e "$commit^{commit}" 2>/dev/null || git fetch --no-tags origin "$commit"
+            done
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
