@@ -10,6 +10,18 @@ MURAS («Мурас», «Жаратылыш — биздин мурас») — �
 Интерфейс поддерживает KY/RU/UZ/EN. Научные имена, идентификаторы, источники, лицензии,
 статусы и региональные сведения сохраняются при редактировании.
 
+## Documentation
+
+| Document | Purpose |
+| --- | --- |
+| [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) | Folder map, data pipeline, design principles |
+| [docs/TESTING.md](docs/TESTING.md) | How to run tests, which tests depend on Git history or receipts, how to make an intentional change |
+| [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) | Host-independent deployment (Vercel, nginx/Docker, Netlify, Cloudflare, GitHub Pages) |
+| [docs/LICENSES.md](docs/LICENSES.md) | Licences of code, photos, data and map geometry |
+| [docs/MAINTENANCE-ROADMAP.md](docs/MAINTENANCE-ROADMAP.md) | Repository clean-up plan and status |
+
+Code is MIT-licensed (see `LICENSE`); photographs and data keep their own licences.
+
 ## Установка после git clone
 
 Нужны Node.js 22 LTS и npm. Зависимости устанавливаются по package-lock.json.
