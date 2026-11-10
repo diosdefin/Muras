@@ -1,5 +1,7 @@
 # MURAS
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.24115386.svg)](https://doi.org/10.5281/zenodo.24115386) [![License: MIT](https://img.shields.io/badge/code-MIT-green.svg)](LICENSE)
+
 **An educational atlas of the rare species and protected territories of Kyrgyzstan** — a static single-page
 web app (Vue 3 + Vite) with a four-language interface (Kyrgyz, Russian, Uzbek, English), an interactive map,
 a quiz, a lesson mode and offline support.
