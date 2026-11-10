@@ -34,6 +34,11 @@ The project is an educational catalogue, so the suite mainly guards **data integ
 
 ## 3. Historical test fixtures
 
+> **Commit hashes in this document and in the tests** (for example `5095176…`) name commits of the original,
+> pre-release development history. In 2026 the public history was condensed into milestone commits; the original
+> commits are no longer part of the repository, and their contents are preserved in `tests/fixtures/history/<hash>/`.
+> This is why the tests do not need them.
+
 The release checks compare historical catalogues, photos, licences and archives with their original
 SHA-256 receipts. `scripts/lib/git-history.mjs` reads committed fixtures in
 `tests/fixtures/history/<commit>/` first and falls back to Git for a missing fixture.

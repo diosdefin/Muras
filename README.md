@@ -69,7 +69,7 @@ Details: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 ## Testing
 
 `npm test` guards data integrity: scientific records, licences, photo hashes, translations and the map must not change
-silently. Some tests compare the working tree with earlier Git commits, so **clone with full history** (no `--depth 1`).
+silently. Historical comparisons use committed fixtures (`tests/fixtures/history/`), so a shallow clone (`--depth 1`) is enough.
 How the guards work and how to change a protected file on purpose: [docs/TESTING.md](docs/TESTING.md).
 
 ## Deployment

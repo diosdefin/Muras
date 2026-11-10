@@ -13,7 +13,7 @@ old commits (see `docs/TESTING.md`, section 3).
 
 ## Remaining work, in order
 
-### Step A. Make tests independent of Git history (prerequisite for everything below)
+### Step A. Make tests independent of Git history (DONE 2026-11-10: 480/480 tests green in a depth-one clone)
 
 Goal: `npm test` passes in a repository with a single squashed commit.
 
@@ -36,13 +36,21 @@ Recommended design (analysed 2026-11-10): one shared module instead of ~15 separ
 6. Gate: `git clone --depth 1 . /tmp/check && cd /tmp/check && npm ci && npm test` must be green.
    Also change `fetch-depth: 0` in `.github/workflows/ci.yml` to `1` and update the history section of `docs/TESTING.md`.
 
-### Step B. Move evidence out of the main tree (optional, after A)
+### Step B. Move evidence out of the main tree (investigated 2026-11-10: NOT recommended now)
 
-After step A the receipts do not need the files they describe. Candidates (about 100 MB in total):
-`data/backups/` (30 MB), `docs/evidence/` (25 MB), `data/research/` (16 MB), `assets/images/species/` (36 MB).
-Move them to a separate archive (private repository, release asset or Zenodo), keep a short `docs/PROVENANCE.md` that
-explains what existed and how to verify it, and keep the pipeline (`scripts/`) plus a small sample dataset.
-Update the receipts and the allow-lists in `tests/population-activation.test.mjs` accordingly.
+Step A removed the dependency on Git *history*, not on the *files*. Findings:
+
+| Folder | Tracked size | Files | Tests/scripts that read it |
+| --- | --- | --- | --- |
+| `assets/images/species/` | 34 MB | 163 | all 163 originals are pinned by SHA-256 receipts |
+| `data/backups/` | 29 MB | 39 | 21 test files compare current data with these stage snapshots |
+| `docs/evidence/` | 25 MB | 270 | 25 files |
+| `data/research/` | 16 MB | 339 | 54 files, plus `baseline.json` receipts |
+
+The whole tracked tree is about 190 MB and `.git` about 74 MB, which is normal for a data-heavy project. Moving the folders
+out would mean rewriting 25+ tests or letting them skip silently when a file is absent; that weakens the guarantees the project
+is built on. Decision: keep them in place; they are the test evidence. Revisit only if repository size becomes a real problem
+(then use a separate evidence archive plus tests that verify the archive checksum list, as a dedicated, reviewed task).
 
 ### Step C. Rewrite history
 
@@ -50,12 +58,13 @@ Only after A is green: create a curated history (15–25 Conventional-Commit mes
 `git checkout --orphan`, or squash by milestones. Tag it `v1.0`. Keep the backup bundle. Do not force-push over `main`
 without a second copy of the old history (the bundle in `_backup/` or a separate private repository).
 
-### Step D. Repository polish
+### Step D. Repository polish (done 2026-11-10 except Step C)
 
-- English `README.md` with screenshots, feature list, architecture diagram, quick start, provenance section.
-- GitHub Actions: `npm ci`, `npm run data:validate`, `npm test`, `npm run build`.
-- Consistent folder layout (move one-off `prepare-*`/`validate-catalog-*` scripts to `scripts/archive/` once step A removes their coupling).
-- Short statement about tooling used during development (AI-assisted) in the README; keep it factual.
+- Done: English `README.md`, CI, `scripts/README.md` (script catalogue), `docs/README.md` (index).
+- Not done on purpose: moving one-off `prepare-*` / `validate-catalog-*` scripts to `scripts/archive/` and editing root files
+  such as `DEPENDENCIES.md` or `MURAS-UI-100-INSTALL.txt`. Their paths and bytes are pinned by receipts and tests.
+- Not done on purpose: removing unused imports in `src/` (each edit needs a UI v4 manifest update for no functional gain).
+- README contains no statement about tooling used during development (owner's decision).
 
 ## Rules for any clean-up task
 
