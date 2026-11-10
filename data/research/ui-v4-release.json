@@ -24,11 +24,11 @@
     },
     "scripts/lib/ui-design-scope.mjs": {
       "before": "8d22d20b68603430e544180080fabb8e27c8f4b815c4a5f1d0c5b8319669b0de",
-      "after": "b16c92cce1592bcd4324955b7c9544470e8df667e6dc3b08982a2b1381162807"
+      "after": "4af34ef9a37c4924c5113042a89668417a2d9d8f5137aeaa74b6b951d361dd26"
     },
     "src/App.vue": {
       "before": "11ecc0d666913b094e58cc2be587306d29530478e37504f0af777ddac05a7bb2",
-      "after": "ad7e5ca68ebf647557a0dce55bfd8bb2035701bd49a8773f17ed1883eb63fe53"
+      "after": "4df0be7108f188d2171526a4d67f8152ae86754dd38a4ded984b072fc86f2345"
     },
     "src/admin/data/model.js": {
       "before": "83f1a4f04057434bf524371756b28be176bbba93b54be11dbc78801cdf0a8e8a",
@@ -185,6 +185,10 @@
     "vercel.json": {
       "before": "adac1eefcd81de206cb008d42c394719aeee0fd54ac3027827945e1bf69b79ef",
       "after": "f18090dfa72b1d2367aece35eaa1620e747c4f51b5920c5e0ecfe632bce6911a"
+    },
+    "src/composables/useLocale.js": {
+      "before": "c58626be88d4562a05feaf3cea62423e28de662c33d09291b5aa5fbaea7f1316",
+      "after": "13265f29930b56efb648f25ab11fe1d76a719d7b22b04fcc57ce3a528cce0a1b"
     }
   }
 }

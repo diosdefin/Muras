@@ -7,6 +7,8 @@
  */
 export const intentionalUiRevision = new Set([
   'src/App.vue',
+  'src/composables/useLocale.js',
+  'package.json',
   'src/components/CatalogSearch.vue',
   'src/components/catalog.css',
   'src/components/map/MapOverviewPanel.vue',

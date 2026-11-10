@@ -4,6 +4,9 @@ import BrandLogo from './components/BrandLogo.vue'
 import { syncLocaleMetadata, useLocale } from './composables/useLocale.js'
 import { computed, nextTick, onMounted, onUnmounted, ref, watch } from 'vue'
 import { speciesPath, speciesIdFromPath } from './data/species-routes.js'
+import { languagePath, splitLanguagePath } from './data/language-routes.js'
+import { HOME_ROUTE, MAP_ROUTE, TERRITORIES_ROUTE, speciesRoute, territoryRoute } from './data/seo.js'
+import { useSeoMetadata } from './composables/useSeoMetadata.js'
 import SpeciesPage from './components/SpeciesPage.vue'
 import { searchContentLanguage } from './data/localization.js'
 import { groupLabel, statusDetails } from './data/presentation.js'
@@ -114,14 +117,17 @@ const scrollBehavior = () => window.matchMedia('(prefers-reduced-motion: reduce)
 syncLocaleMetadata()
 const translatedGroups = computed(() => options.value.groups.map(option => ({ ...option, label: option.value === 'ALL' ? t('ui.m140') : groupLabel({ group: option.value }, language.value) })))
 function statusLabel(value) { return value === 'ALL' ? t('status.all') : statusDetails({ iucn: { category: value } }, language.value).label }
+// Routes are read without the language prefix (/ru/map -> /map) and written with the current language's prefix.
+const routePathname = () => splitLanguagePath(window.location.pathname).path
+const pushRoute = path => window.history.pushState({}, '', languagePath(path, siteLanguage.value))
 // /map is a real shareable page; existing quiz, lesson and support views stay intact.
-const isMapPath = () => typeof window !== 'undefined' && window.location.pathname.replace(/\/$/, '') === '/map'
+const isMapPath = () => typeof window !== 'undefined' && routePathname().replace(/\/$/, '') === '/map'
 const readMapRegion = () => typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('region') || '' : ''
-const readSpeciesId = () => typeof window !== 'undefined' ? speciesIdFromPath(window.location.pathname) : null
+const readSpeciesId = () => typeof window !== 'undefined' ? speciesIdFromPath(routePathname()) : null
 const speciesRouteId = ref(readSpeciesId())
 // Protected territories: /territories (list) and /territories/<id> (page); a dataset separate from the species catalogue.
-const readAreaId = () => typeof window !== 'undefined' ? areaIdFromPath(window.location.pathname) : null
-const isAreasPath = () => typeof window !== 'undefined' && isAreasListPath(window.location.pathname)
+const readAreaId = () => typeof window !== 'undefined' ? areaIdFromPath(routePathname()) : null
+const isAreasPath = () => typeof window !== 'undefined' && isAreasListPath(routePathname())
 const areaRouteId = ref(readAreaId())
 const viewFromUrl = () => isMapPath() ? 'map' : readSpeciesId() ? 'species' : readAreaId() ? 'territory' : isAreasPath() ? 'territories' : 'catalog'
 const activeView = ref(viewFromUrl())
@@ -132,6 +138,20 @@ async function ensureAreas() {
 const currentArea = computed(() => areas.value.find(item => item.id === areaRouteId.value) || null)
 const profileSpecies = computed(() => species.value.find(item => item.id === speciesRouteId.value) || null)
 const mapRouteRegion = ref(isMapPath() ? readMapRegion() : '')
+// Search-engine metadata follows the page and language; the same builder pre-renders the static HTML.
+const seoRoute = computed(() => activeView.value === 'species' && speciesRouteId.value ? speciesRoute(speciesRouteId.value)
+  : activeView.value === 'territory' && areaRouteId.value ? territoryRoute(areaRouteId.value)
+  : activeView.value === 'map' ? MAP_ROUTE : activeView.value === 'territories' ? TERRITORIES_ROUTE : HOME_ROUTE)
+useSeoMetadata({ language: siteLanguage, route: seoRoute, species, areas })
+// The address bar follows the visitor's language: /ru/..., /uz/..., /en/...; Kyrgyz stays on the unprefixed address.
+watch(siteLanguage, language => {
+  if (typeof window === 'undefined') return
+  try {
+    const { search = '', hash = '', pathname = '/' } = window.location
+    const target = `${languagePath(routePathname(), language)}${search}${hash}`
+    if (target !== `${pathname}${search}${hash}`) window.history.replaceState(window.history.state, '', target)
+  } catch { /* history is unavailable in some embedded views */ }
+}, { immediate: true })
 
 function onBrowserNavigation() {
   speciesRouteId.value = readSpeciesId()
@@ -143,7 +163,7 @@ function onBrowserNavigation() {
 }
 function leaveSpeciesUrl() {
   if (readSpeciesId()) {
-    window.history.pushState({}, '', '/')
+    pushRoute('/')
     speciesRouteId.value = null
   }
 }
@@ -152,7 +172,7 @@ async function openSpeciesPage(id) {
   closeSpecies()
   await nextTick() // Let the dialog release the scroll lock before navigating.
   if (activeView.value === 'lesson' && await lessonView.value?.exitFullscreen() === false) return
-  const path = speciesPath(id)
+  const path = languagePath(speciesPath(id), siteLanguage.value)
   if (window.location.pathname !== path) window.history.pushState({}, '', path)
   speciesRouteId.value = id
   areaRouteId.value = null
@@ -163,16 +183,16 @@ async function openSpeciesPage(id) {
   document.getElementById('profile-heading')?.focus({ preventScroll: true })
 }
 function leaveMapUrl() {
-  if (isMapPath()) window.history.pushState({}, '', '/')
+  if (isMapPath()) pushRoute('/')
   mapRouteRegion.value = ''
 }
 function leaveAreaUrl() {
-  if (readAreaId() || isAreasPath()) window.history.pushState({}, '', '/')
+  if (readAreaId() || isAreasPath()) pushRoute('/')
   areaRouteId.value = null
 }
 async function showTerritories() {
   if (activeView.value === 'lesson' && await lessonView.value?.exitFullscreen() === false) return
-  if (window.location.pathname.replace(/\/$/, '') !== '/territories') window.history.pushState({}, '', '/territories')
+  if (routePathname().replace(/\/$/, '') !== '/territories') pushRoute('/territories')
   areaRouteId.value = null
   speciesRouteId.value = null
   mapRouteRegion.value = ''
@@ -186,7 +206,7 @@ async function openTerritory(id) {
   if (activeView.value === 'lesson' && await lessonView.value?.exitFullscreen() === false) return
   closeSpecies()
   await nextTick()
-  const path = areaPath(id)
+  const path = languagePath(areaPath(id), siteLanguage.value)
   if (window.location.pathname !== path) window.history.pushState({}, '', path)
   areaRouteId.value = id
   speciesRouteId.value = null
@@ -198,7 +218,7 @@ async function openTerritory(id) {
 }
 async function showMap(regionId = '') {
   if (activeView.value === 'lesson' && await lessonView.value?.exitFullscreen() === false) return
-  const url = new URL('/map', window.location.origin)
+  const url = new URL(languagePath('/map', siteLanguage.value), window.location.origin)
   if (regionId) url.searchParams.set('region', regionId)
   window.history.pushState({}, '', url.pathname + url.search)
   mapRouteRegion.value = regionId
@@ -211,7 +231,7 @@ async function showMap(regionId = '') {
 }
 function updateMapRegion(regionId) {
   if (!isMapPath()) return
-  const url = new URL('/map', window.location.origin)
+  const url = new URL(languagePath('/map', siteLanguage.value), window.location.origin)
   if (regionId) url.searchParams.set('region', regionId)
   window.history.replaceState({}, '', url.pathname + url.search)
   mapRouteRegion.value = regionId

@@ -35,6 +35,7 @@ test('UI v4 changes exactly the approved presentation files and preserves origin
     'src/components/quiz/QuizResult.vue',
     'src/components/quiz/QuizView.vue',
     'src/components/support/SupportStub.vue',
+    'src/composables/useLocale.js',
     'src/composables/useQuiz.js',
     'src/composables/useSheetDismiss.js',
     'src/data/catalog-search.js',
