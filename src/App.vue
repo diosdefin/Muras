@@ -13,12 +13,16 @@ import QuizView from './components/quiz/QuizView.vue'
 import LessonView from './components/lesson/LessonView.vue'
 import MapSection from './components/map/MapSection.vue'
 import SupportStub from './components/support/SupportStub.vue'
+import TerritoriesView from './components/areas/TerritoriesView.vue'
+import TerritoryPage from './components/areas/TerritoryPage.vue'
+import { areaIdFromPath, areaPath, isAreasListPath, loadAreas } from './data/protected-areas.js'
 import CatalogSearch from './components/CatalogSearch.vue'
 import LanguageMenu from './components/LanguageMenu.vue'
 import { paginateCatalog, pageNumbers } from './data/catalog-pagination.js'
 import GroupFilter from './components/GroupFilter.vue'
 import CustomSelect from './components/CustomSelect.vue'
 import './components/custom-select.css'
+import './components/areas/areas.css'
 import HeroIllustrations from './components/HeroIllustrations.vue'
 import { speciesPhoto } from './data/presentation.js'
 import { prioritizeIllustratedResults } from './data/catalog-pagination.js'
@@ -114,13 +118,24 @@ const isMapPath = () => typeof window !== 'undefined' && window.location.pathnam
 const readMapRegion = () => typeof window !== 'undefined' ? new URLSearchParams(window.location.search).get('region') || '' : ''
 const readSpeciesId = () => typeof window !== 'undefined' ? speciesIdFromPath(window.location.pathname) : null
 const speciesRouteId = ref(readSpeciesId())
-const activeView = ref(isMapPath() ? 'map' : speciesRouteId.value ? 'species' : 'catalog')
+// Protected territories: /territories (list) and /territories/<id> (page); a dataset separate from the species catalogue.
+const readAreaId = () => typeof window !== 'undefined' ? areaIdFromPath(window.location.pathname) : null
+const isAreasPath = () => typeof window !== 'undefined' && isAreasListPath(window.location.pathname)
+const areaRouteId = ref(readAreaId())
+const viewFromUrl = () => isMapPath() ? 'map' : readSpeciesId() ? 'species' : readAreaId() ? 'territory' : isAreasPath() ? 'territories' : 'catalog'
+const activeView = ref(viewFromUrl())
+const areas = ref([]), areasLoading = ref(true), areasError = ref('')
+async function ensureAreas() {
+  try { areas.value = await loadAreas(); areasError.value = '' } catch { areasError.value = 'areas.error' } finally { areasLoading.value = false }
+}
+const currentArea = computed(() => areas.value.find(item => item.id === areaRouteId.value) || null)
 const profileSpecies = computed(() => species.value.find(item => item.id === speciesRouteId.value) || null)
 const mapRouteRegion = ref(isMapPath() ? readMapRegion() : '')
 
 function onBrowserNavigation() {
   speciesRouteId.value = readSpeciesId()
-  activeView.value = isMapPath() ? 'map' : speciesRouteId.value ? 'species' : 'catalog'
+  areaRouteId.value = readAreaId()
+  activeView.value = viewFromUrl()
   if (activeView.value === 'map') mapRouteRegion.value = readMapRegion()
   headerHidden.value = false
   window.scrollTo({ top: 0, behavior: 'instant' })
@@ -139,6 +154,7 @@ async function openSpeciesPage(id) {
   const path = speciesPath(id)
   if (window.location.pathname !== path) window.history.pushState({}, '', path)
   speciesRouteId.value = id
+  areaRouteId.value = null
   activeView.value = 'species'
   headerHidden.value = false
   await nextTick()
@@ -148,6 +164,36 @@ async function openSpeciesPage(id) {
 function leaveMapUrl() {
   if (isMapPath()) window.history.pushState({}, '', '/')
   mapRouteRegion.value = ''
+}
+function leaveAreaUrl() {
+  if (readAreaId() || isAreasPath()) window.history.pushState({}, '', '/')
+  areaRouteId.value = null
+}
+async function showTerritories() {
+  if (activeView.value === 'lesson' && await lessonView.value?.exitFullscreen() === false) return
+  if (window.location.pathname.replace(/\/$/, '') !== '/territories') window.history.pushState({}, '', '/territories')
+  areaRouteId.value = null
+  speciesRouteId.value = null
+  mapRouteRegion.value = ''
+  activeView.value = 'territories'
+  headerHidden.value = false
+  await nextTick()
+  window.scrollTo({ top: 0, behavior: 'instant' })
+  document.getElementById('territories-title')?.focus({ preventScroll: true })
+}
+async function openTerritory(id) {
+  if (activeView.value === 'lesson' && await lessonView.value?.exitFullscreen() === false) return
+  closeSpecies()
+  await nextTick()
+  const path = areaPath(id)
+  if (window.location.pathname !== path) window.history.pushState({}, '', path)
+  areaRouteId.value = id
+  speciesRouteId.value = null
+  activeView.value = 'territory'
+  headerHidden.value = false
+  await nextTick()
+  window.scrollTo({ top: 0, behavior: 'instant' })
+  document.getElementById('territory-heading')?.focus({ preventScroll: true })
 }
 async function showMap(regionId = '') {
   if (activeView.value === 'lesson' && await lessonView.value?.exitFullscreen() === false) return
@@ -190,6 +236,7 @@ async function showView(view, focusId = view) {
   if (activeView.value === 'lesson' && view !== 'lesson' && await lessonView.value?.exitFullscreen() === false) return
   mountedViews.value.add(view)
   if (isMapPath() && view !== 'map') leaveMapUrl()
+  if (readAreaId() || isAreasPath()) leaveAreaUrl()
   if (readSpeciesId()) leaveSpeciesUrl()
   activeView.value = view
   await nextTick()
@@ -248,6 +295,9 @@ function closeSpecies() {
 }
 
 onMounted(async () => {
+  // Territory data is small; fetch it right away on its own pages, otherwise once the browser is idle.
+  if (['territories', 'territory'].includes(activeView.value)) ensureAreas()
+  else (window.requestIdleCallback || (cb => setTimeout(cb, 1500)))(() => ensureAreas())
   previousScrollY = Math.max(0, window.scrollY)
   await nextTick()
   measureExpandedHeader()
@@ -285,6 +335,17 @@ onUnmounted(() => {
   window.removeEventListener('popstate', onBrowserNavigation)
   viewportQuery?.removeEventListener('change', updateViewport)
 })
+// "More" menu in the header: lesson mode and support live in one dropdown to keep the navigation short.
+const moreOpen = ref(false)
+const moreRef = ref(null)
+const moreActive = computed(() => ['lesson', 'support'].includes(activeView.value))
+// The button shows the name of the open page from the menu, otherwise the generic label.
+const moreLabel = computed(() => activeView.value === 'lesson' ? t('ui.m012') : activeView.value === 'support' ? t('ui.m013') : t('nav.more'))
+const closeMoreOutside = event => { if (moreOpen.value && moreRef.value && !moreRef.value.contains(event.target)) moreOpen.value = false }
+const closeMoreOnEscape = event => { if (event.key === 'Escape' && moreOpen.value) { moreOpen.value = false; moreRef.value?.querySelector('button')?.focus() } }
+onMounted(() => { document.addEventListener('pointerdown', closeMoreOutside); document.addEventListener('keydown', closeMoreOnEscape) })
+onUnmounted(() => { document.removeEventListener('pointerdown', closeMoreOutside); document.removeEventListener('keydown', closeMoreOnEscape) })
+watch(activeView, () => { moreOpen.value = false })
 </script>
 
 <template>
@@ -303,9 +364,18 @@ onUnmounted(() => {
     <nav class="main-navigation" :aria-label="t('ui.m007')">
       <a class="header-link" href="/" :aria-label="`${t('ui.m009')} — ${t('ui.m008')}`" :aria-current="activeView === 'catalog' ? 'page' : undefined" @click.prevent="showHome()">{{ t('ui.m009') }}</a>
       <a class="header-link" href="/map" :aria-current="activeView === 'map' ? 'page' : undefined" @click.prevent="showMap()">{{ t('ui.m010') }}</a>
+      <a class="header-link" href="/territories" :aria-current="activeView === 'territories' || activeView === 'territory' ? 'page' : undefined" @click.prevent="showTerritories()">{{ t('areas.nav') }}</a>
       <a class="header-link" href="#quiz" :aria-current="activeView === 'quiz' ? 'page' : undefined" @click.prevent="showView('quiz')">{{ t('ui.m011') }}</a>
-      <a class="header-link" href="#lesson" :aria-current="activeView === 'lesson' ? 'page' : undefined" @click.prevent="showView('lesson')">{{ t('ui.m012') }}</a>
-      <a class="header-link" href="#support" :aria-current="activeView === 'support' ? 'page' : undefined" @click.prevent="openSupport()">{{ t('ui.m013') }}</a>
+      <div ref="moreRef" class="nav-more">
+        <button type="button" class="header-link nav-more-btn" :class="{ 'is-active': moreActive }" :aria-expanded="moreOpen" aria-haspopup="true" aria-controls="nav-more-menu" :aria-current="moreActive ? 'page' : undefined" @click="moreOpen = !moreOpen">
+          <span class="nav-more-label">{{ moreLabel }}</span>
+          <svg class="nav-more-chevron" :class="{ open: moreOpen }" width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        </button>
+        <div v-if="moreOpen" id="nav-more-menu" class="nav-more-menu">
+          <a class="header-link nav-more-item" href="#lesson" :aria-current="activeView === 'lesson' ? 'page' : undefined" @click.prevent="moreOpen = false; showView('lesson')">{{ t('ui.m012') }}</a>
+          <a class="header-link nav-more-item" href="#support" :aria-current="activeView === 'support' ? 'page' : undefined" @click.prevent="moreOpen = false; openSupport()">{{ t('ui.m013') }}</a>
+        </div>
+      </div>
     </nav>
   </header>
   <main>
@@ -319,7 +389,7 @@ onUnmounted(() => {
       </div>
       <div class="hero-landscape"><HeroIllustrations /></div>
     </section>
-    <MapSection v-show="activeView === 'catalog' || activeView === 'map'" :mode="activeView === 'map' ? 'full' : 'preview'" :route-region="mapRouteRegion" :species="species" :loading="isLoading" :error="errorMessage" @open="openSpecies" @profile="openSpeciesPage" @details="showMap" @regionchange="updateMapRegion" />
+    <MapSection v-show="activeView === 'catalog' || activeView === 'map'" :areas="areas" @territory="openTerritory" :mode="activeView === 'map' ? 'full' : 'preview'" :route-region="mapRouteRegion" :species="species" :loading="isLoading" :error="errorMessage" @open="openSpecies" @profile="openSpeciesPage" @details="showMap" @regionchange="updateMapRegion" />
     <section v-show="activeView === 'catalog'" id="catalog" class="catalog page-container" aria-labelledby="catalog-title" tabindex="-1" :aria-busy="isLoading">
       <div class="catalog-heading">
         <div>
@@ -385,7 +455,9 @@ onUnmounted(() => {
       @catalog="showView('catalog')" @study="studySpecies" @lesson="showView('lesson')" />
     <LessonView v-if="mountedViews.has('lesson')" ref="lessonView" v-show="activeView === 'lesson'" :species="species" :active="activeView === 'lesson'" :loading="isLoading" :error="errorMessage"
       @catalog="showView('catalog')" @quiz="openQuizFromLesson" />
-    <SpeciesPage v-if="activeView === 'species'" :species="profileSpecies" :population-publication="populationContexts.get(profileSpecies?.id) || null" :loading="isLoading" :error="errorMessage" :content-language="contentLanguage" @catalog="showView('catalog')" @support="openSupport" />
+    <SpeciesPage v-if="activeView === 'species'" :areas="areas" @territory="openTerritory" :species="profileSpecies" :population-publication="populationContexts.get(profileSpecies?.id) || null" :loading="isLoading" :error="errorMessage" :content-language="contentLanguage" @catalog="showView('catalog')" @support="openSupport" />
+    <TerritoriesView v-if="activeView === 'territories'" :areas="areas" :loading="areasLoading" :error="areasError" @open="openTerritory" />
+    <TerritoryPage v-if="activeView === 'territory'" :area="currentArea" :species="species" :loading="areasLoading" :error="areasError" @list="showTerritories" @species="openSpeciesPage" />
     <!-- The full support page (SupportView) stays in the codebase until it is finished. -->
     <SupportStub v-if="mountedViews.has('support')" v-show="activeView === 'support'" @catalog="showView('catalog')" />
   </main>

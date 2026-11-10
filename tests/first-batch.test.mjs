@@ -9,6 +9,7 @@ import { ref, createSSRApp } from 'vue'
 import { renderToString } from 'vue/server-renderer'
 import { createServer } from 'vite'
 import { validateSource, validateSpecies } from '../src/data/species-model.js'
+import { speciesName } from '../src/data/presentation.js'
 import { availableGroups } from '../src/data/species-groups.js'
 import { createSearchIndex, searchSpecies } from '../src/data/catalog-search.js'
 import { scientificContent } from '../src/data/localization.js'
@@ -135,7 +136,7 @@ test('all eight render card, lesson, modal, sources and an honest Russian scient
       siteLanguage.value=language
       for(const s of published.slice(9,17)){
         const card=await renderToString(createSSRApp(components['SpeciesCard.vue'],{species:s}))
-        assert.ok(card.includes(s.names[language] || s.names.ru));assert.ok(card.includes(s.images[0].path))
+        assert.ok(card.includes(speciesName(s,language)));assert.ok(card.includes(s.images[0].path))
         if(s.content?.shortDescription)assert.ok(card.includes(`lang="${scientificContent(s.content.shortDescription.text,language).language}"`))
         for(const file of ['SpeciesModal.vue','lesson/LessonPhoto.vue']){
           const html=await renderToString(createSSRApp(components[file],{species:s}))

@@ -99,6 +99,10 @@ test('28.3: pre-existing scientific statuses, archive, media and other untouched
   'tests/helpers/photo-amendment.mjs','tests/helpers/photo-batch-2.mjs',
   'tests/helpers/legacy-scientific-source.mjs','tests/bulk-import.test.mjs',
   'tests/first-batch.test.mjs','tests/map-activation.test.mjs','tests/species-photos.test.mjs',
+  'tests/bulk-25-content.test.mjs',
+  'scripts/admin-entry.mjs','scripts/lib/ui-design-scope.mjs',
+  'tests/species-groups.test.mjs',
+  'src/data/catalog-search.js',
  ])
  for(const [path,expected] of Object.entries(baseline.hashes)){
   if(['tests/population-activation.test.mjs','data/.gitattributes'].includes(path)) continue

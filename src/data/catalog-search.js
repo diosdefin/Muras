@@ -1,5 +1,6 @@
 import { groupLabel, localized, regionNames, STATUS_DETAILS } from './presentation.js'
 import { availableGroups } from './species-groups.js'
+import UZ_NAMES from './uz-names.json' with { type: 'json' }
 
 export function normalizeSearch(value) {
   return typeof value === 'string' ? value.normalize('NFC').toLowerCase().replace(/ё/g, 'е')
@@ -15,6 +16,8 @@ const words = value => value.split(/[^\p{L}\p{N}]+/u).filter(Boolean)
 export function createSearchIndex(catalog) {
   return catalog.map((species, order) => {
     const names = [...Object.entries(species.names || {}), ['la', species.scientificName]]
+    // Source-confirmed Uzbek names live in a separate overlay (the catalog's own names are protected).
+    if (UZ_NAMES[species.id] && UZ_NAMES[species.id] !== species.names?.uz) names.push(['uz', UZ_NAMES[species.id]])
     const aliases = []
     for (const [language, name] of names) {
       const text = normalizeSearch(name)

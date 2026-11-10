@@ -11,8 +11,8 @@ import './map.css'
 
 const { t } = useLocale()
 
-const props = defineProps({ species: { type: Array, default: () => [] }, loading: { type: Boolean, default: false }, error: { type: String, default: '' }, mode: { type: String, default: 'full' }, routeRegion: { type: String, default: '' } })
-const emit = defineEmits(['open', 'profile', 'details', 'regionchange'])
+const props = defineProps({ species: { type: Array, default: () => [] }, loading: { type: Boolean, default: false }, error: { type: String, default: '' }, mode: { type: String, default: 'full' }, routeRegion: { type: String, default: '' }, areas: { type: Array, default: () => [] } })
+const emit = defineEmits(['open', 'profile', 'details', 'regionchange', 'territory'])
 const geometry = ref(null), evidence = ref(null), loadingMap = ref(true), loadError = ref('')
 const selected = ref(''), group = ref('ALL'), query = ref('')
 const mobilePreviewSlide = ref('map')
@@ -61,7 +61,7 @@ watch(() => [props.loading, props.species], ([loading, species]) => {
     <div v-else class="map-layout" :class="{ 'map-mobile-show-info': mode === 'preview' && mobilePreviewSlide === 'info', 'map-mobile-show-map': mode === 'preview' && mobilePreviewSlide === 'map' }">
       <RegionMap :geometry="geometry" :selected="selected" :preview="mode === 'preview'" :panel-id="mode === 'preview' ? 'map-overview-panel' : 'map-region-panel'" @select="selectRegion" />
       <MapOverviewPanel v-if="mode === 'preview'" :species="species" :region="region" :entries="regionalEntries(evidence, species, selected)" @clear="dismissPreview" @details="emit('details', selected)" />
-      <RegionPanel v-else :species="species" :region="region" :entries="entries" :group="group" :query="query" :unfiltered-count="unfilteredCount" @query="query = $event" @group="group = $event" @reset="reset" @open="emit('open', $event)" @profile="emit('profile', $event)" />
+      <RegionPanel v-else :areas="areas" @territory="emit('territory', $event)" :species="species" :region="region" :entries="entries" :group="group" :query="query" :unfiltered-count="unfilteredCount" @query="query = $event" @group="group = $event" @reset="reset" @open="emit('open', $event)" @profile="emit('profile', $event)" />
     </div>
     <div v-if="mode === 'preview' && !loadingMap && !errorMessage" class="map-mobile-pager" role="group" :aria-label="t('mapUI.pager')">
       <button type="button" :aria-label="t('mapUI.map')" :aria-pressed="mobilePreviewSlide === 'map'" @click="mobilePreviewSlide = 'map'"></button>

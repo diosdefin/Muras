@@ -64,7 +64,9 @@ test('scientific records, images, licences, archive, adapter and all 208 regiona
   return (status==='M'&&TRANSLATED_CATALOGUES.has(path)) ||
     (status==='A'&&(path.startsWith('data/research/')||path==='data/.gitattributes'||TRANSLATION_JOURNALS.has(path))) ||
     // Additional quiz questions are published as a separate educational file; scientific data stay untouched.
-    (status==='A'&&path==='public/data/quiz-extra.json')
+    (status==='A'&&path==='public/data/quiz-extra.json') ||
+    // Protected territories are a separate section; the species catalogue is untouched.
+    (status==='A'&&(path==='public/data/protected-areas.json'||path.startsWith('data/protected-areas/')||path.startsWith('public/images/areas/')))
  }
  assert.deepEqual(changes.filter(line=>!allowedChange(line)),[])
  // Attributes affect only these fingerprinted, unpublished research JSONs.

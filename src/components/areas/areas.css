@@ -1,0 +1,44 @@
+/* Protected territories: reuses the species-card / profile layout; only the extras live here. */
+.territory-card .card-image img { object-fit: cover; }
+.territory-species, .territory-sources, .map-territory-list { margin: 0; padding-left: 18px; display: grid; gap: 6px; }
+.map-territories { margin-top: 16px; }
+.map-territory-list { list-style: none; padding-left: 0; }
+.map-territory-list li { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.map-territory-type { font-size: 13px; color: var(--muted); }
+.map-territory-list a { overflow-wrap: anywhere; }
+@media (max-width: 520px) { .map-territory-list li { flex-direction: column; gap: 0; } }
+/* Territories list: the column switch must not touch the first row of cards. */
+.territories-view .catalog-options-row { margin-top: 6px; margin-bottom: 16px; }
+/* Territories list on phones: compact heading and spacing, like the catalogue. */
+@media (max-width: 767px) {
+  .territories-view .catalog-heading { gap: 6px; margin-bottom: 12px; }
+  .territories-view .catalog-heading h2 { font-size: clamp(22px, 6.4vw, 28px); line-height: 1.18; margin-top: 4px; }
+  .territories-view .catalog-note { font-size: 12.5px; line-height: 1.5; }
+  .territories-view .territory-card .card-description { display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
+  .territories-view .catalog-custom-grid[data-columns="1"] .card-description { -webkit-line-clamp: 4; }
+  .territories-view .catalog-tools { margin-bottom: 10px; }
+  .territories-view .territory-card .card-body h3 { hyphens: auto; overflow-wrap: anywhere; }
+}
+
+/* Header "More" dropdown (quiz, lesson mode, support). */
+header.page-header nav.main-navigation { overflow: visible; }
+.nav-more { position: relative; flex: 0 0 auto; }
+.page-header .nav-more-btn { appearance: none; background: none; border: 0; margin: 0; padding-inline: 4px; color: inherit; font-family: inherit; font-weight: inherit; letter-spacing: inherit; line-height: 1.2; cursor: pointer; gap: 6px; text-decoration: none; }
+.nav-more-label { text-underline-offset: 8px; text-decoration-color: var(--red); }
+.nav-more-btn:hover .nav-more-label { text-decoration: underline; }
+.nav-more-btn.is-active { color: var(--ink); font-weight: 650; }
+.nav-more-btn.is-active .nav-more-label { text-decoration: underline; }
+.nav-more-chevron { flex: none; opacity: .7; transition: transform .2s ease, opacity .2s ease; }
+.nav-more-btn:hover .nav-more-chevron, .nav-more-btn[aria-expanded="true"] .nav-more-chevron { opacity: 1; }
+.nav-more-chevron.open { transform: rotate(180deg); }
+.nav-more-btn:focus-visible, .page-header .nav-more-item:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; border-radius: 6px; }
+.nav-more-menu { position: absolute; top: calc(100% + 6px); right: 0; z-index: 60; display: grid; gap: 2px; min-width: 190px; padding: 6px; background: #fff; border: 1px solid var(--line); border-radius: 12px; box-shadow: 0 12px 32px rgba(28, 43, 34, .16); animation: nav-more-in .14s ease-out; }
+@keyframes nav-more-in { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
+.page-header .nav-more-item { display: flex; min-height: 44px; padding: 0 12px; border-radius: 8px; font-size: 14px; white-space: nowrap; }
+.page-header .nav-more-item:hover { background: var(--paper); text-decoration: none; }
+.main-navigation .nav-more-item[aria-current="page"] { text-decoration: none; background: var(--paper); color: var(--ink); font-weight: 650; }
+@media (max-width: 480px) {
+  header.page-header nav.main-navigation { gap: 4px 10px; flex-wrap: wrap; justify-content: center; }
+  .page-header .nav-more-btn { gap: 4px; }
+}
+@media (prefers-reduced-motion: reduce) { .nav-more-menu { animation: none; } .nav-more-chevron { transition: none; } }

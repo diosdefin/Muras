@@ -3,14 +3,17 @@ import { useLocale } from '../../composables/useLocale.js'
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import { groupLabel, regionLabel } from '../../data/presentation.js'
 import { availableGroups } from '../../data/species-groups.js'
+import { areaName, areaPath, areasForRegion, sortAreas } from '../../data/protected-areas.js'
 import RegionalSpecies from './RegionalSpecies.vue'
 import GroupFilter from '../GroupFilter.vue'
 
 const { t, language } = useLocale()
 
-const props = defineProps({ species: { type: Array, default: () => [] }, region: { type: Object, default: null }, entries: { type: Array, default: () => [] }, group: { type: String, default: 'ALL' }, query: { type: String, default: '' }, unfilteredCount: { type: Number, default: 0 } })
+const props = defineProps({ species: { type: Array, default: () => [] }, region: { type: Object, default: null }, entries: { type: Array, default: () => [] }, group: { type: String, default: 'ALL' }, query: { type: String, default: '' }, unfilteredCount: { type: Number, default: 0 }, areas: { type: Array, default: () => [] } })
 const groups = computed(() => [{ value: 'ALL', label: t('ui.m140') }, ...availableGroups(props.species).map(value => ({ value, label: groupLabel({ group: value }, language.value) }))])
-const emit = defineEmits(['open', 'profile', 'reset', 'group', 'query'])
+const emit = defineEmits(['open', 'profile', 'reset', 'group', 'query', 'territory'])
+const regionAreas = computed(() => props.region ? sortAreas(areasForRegion(props.areas, props.region.id), language.value) : [])
+const areaTypeKey = { reserve: 'areas.typeReserve', 'national-park': 'areas.typeNationalPark', biosphere: 'areas.typeBiosphere' }
 const compact = ref(false)
 let media
 function viewport(event) { compact.value = event.matches }
@@ -62,6 +65,15 @@ function expand(id) { expanded.value = new Set([...expanded.value, id]) }
           <button v-if="bucket.hidden" type="button" class="regional-more-button" @click="expand(bucket.id)">{{ t('ui.m038') }} · {{ bucket.hidden }}</button>
         </section>
       </div>
+      <section v-if="regionAreas.length" class="map-territories" :aria-label="t('areas.mapTitle')">
+        <h4 class="regional-group-title">{{ t('areas.mapTitle') }} <span>{{ regionAreas.length }}</span></h4>
+        <ul class="map-territory-list">
+          <li v-for="item in regionAreas" :key="item.id">
+            <a :href="areaPath(item.id)" class="text-link" @click.prevent="emit('territory', item.id)">{{ areaName(item, language) }}</a>
+            <span class="map-territory-type">{{ t(areaTypeKey[item.type]) }}</span>
+          </li>
+        </ul>
+      </section>
     </template>
 
     <button v-if="region || group !== 'ALL' || query" type="button" class="map-reset" @click="emit('reset')">{{ t('ui.m156') }}</button>

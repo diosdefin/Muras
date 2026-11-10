@@ -89,7 +89,7 @@ test('catalog 178 preserves all prior 166 objects, archive, assets and research 
  }
  // Only catalog outputs and the previous live-release test become different old files.
  const allowed=new Set(['data/species.source.json','public/data/species.json','tests/catalog-166-publication.test.mjs'])
- const revisedTests=new Set(['tests/catalog-150-publication.test.mjs',
+ const revisedTests=new Set(['tests/catalog-150-publication.test.mjs','scripts/admin-entry.mjs','scripts/lib/ui-design-scope.mjs',
   'tests/bulk-import.test.mjs','tests/helpers/legacy-scientific-source.mjs','tests/species-photos.test.mjs','tests/data.test.mjs'])
  for(const {path,sha256} of baseline.files)if(!allowed.has(path)){
   const actual = revisedTests.has(path)||MAP_EVOLVING_FILES.has(path)||UI_V3_FILES.has(path)||UI_V4_FILES.has(path)

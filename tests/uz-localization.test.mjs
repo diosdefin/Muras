@@ -160,8 +160,9 @@ test('actual catalog remains searchable in KY/RU/EN/Latin while UZ never synthes
   }
   for (const entry of index) {
     const uz = entry.aliases.filter(alias => alias.language === 'uz')
-    if (!entry.species.names.uz) assert.deepEqual(uz, [])
-    else assert.ok(uz.every(alias => alias.name === entry.species.names.uz && !alias.transliterated))
+    const allowed = [entry.species.names.uz, UZ_NAMES[entry.species.id]].filter(Boolean)
+    if (!allowed.length) assert.deepEqual(uz, [])
+    else assert.ok(uz.every(alias => allowed.includes(alias.name) && !alias.transliterated))
   }
   const leopard = searchSpecies(index, 'ирбис')[0]
   assert.equal(searchContentLanguage(leopard, 'uz'), 'ru')

@@ -7,6 +7,7 @@ import SpeciesVisualization from './SpeciesVisualization.vue'
 import LessonReferences from './lesson/LessonReferences.vue'
 import SourceLink from './SourceLink.vue'
 import { contentParagraphs } from '../data/species-content.js'
+import { areaName, areaPath, areasForSpecies } from '../data/protected-areas.js'
 
 const props = defineProps({
   populationPublication: { type: Object, default: null },
@@ -14,10 +15,12 @@ const props = defineProps({
   loading: { type: Boolean, default: false },
   error: { type: String, default: '' },
   contentLanguage: { type: String, default: null },
+  areas: { type: Array, default: () => [] },
 })
-const emit = defineEmits(['catalog', 'support'])
+const emit = defineEmits(['catalog', 'support', 'territory'])
 const preferredLanguage = computed(() => props.contentLanguage || siteLanguage.value)
 const { t, language } = useLocale(preferredLanguage)
+const protectedIn = computed(() => props.species ? areasForSpecies(props.areas, props.species.id) : [])
 provideContentLanguage(toRef(props, 'contentLanguage'))
 const name = computed(() => props.species ? speciesName(props.species, language.value) : '')
 const photo = computed(() => props.species ? speciesPhoto(props.species) : null)
@@ -100,6 +103,13 @@ const locations = computed(() => props.species ? regionNames(props.species, lang
             <h2 id="profile-status">{{ t('speciesProfile.scientificStatus') }}</h2>
             <p>{{ nationalStatus(species, language) }} · {{ species.nationalRedBook?.edition }}</p>
             <p class="profile-note">{{ species.verified ? t('ui.m062') : t('ui.m243') }}</p>
+          </section>
+          <section v-if="protectedIn.length" class="profile-section" aria-labelledby="profile-protected">
+            <h2 id="profile-protected">{{ t('areas.protectedIn') }}</h2>
+            <ul class="territory-species">
+              <li v-for="item in protectedIn" :key="item.id"><a :href="areaPath(item.id)" class="text-link" @click.prevent="emit('territory', item.id)">{{ areaName(item, language) }}</a></li>
+            </ul>
+            <p class="profile-note">{{ t('areas.protectedInNote') }}</p>
           </section>
           <section class="profile-section" aria-labelledby="profile-sources">
             <h2 id="profile-sources">{{ t('ui.m250') }} ({{ species.sources?.length || 0 }})</h2>

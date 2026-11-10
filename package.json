@@ -12,6 +12,7 @@
     "preview": "vite preview",
     "data": "node scripts/build-data.mjs",
     "data:generate": "node scripts/build-data.mjs",
+    "data:areas": "node scripts/build-protected-areas.mjs",
     "data:validate": "node scripts/validate-locales.mjs && node scripts/build-data.mjs --check",
     "data:images": "python scripts/process_data.py",
     "data:batch:prepare": "node scripts/prepare-research-batch.mjs",

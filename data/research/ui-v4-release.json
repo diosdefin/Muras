@@ -10,6 +10,14 @@
       "before": null,
       "after": "6f4695e2e35d1048daa0d5769b3d88569c750031cc0a0b84a6fa3181fb93930b"
     },
+    "public/favicon.svg": {
+      "before": "e29765329f2972ac1cc074f9b96d0ba1a1186524f9153086135bf52dc6bf1aaa",
+      "after": "ae1c89097ca5d6ce188a934a027059fa692864b001c233e9031db23beae2bea3"
+    },
+    "scripts/admin-entry.mjs": {
+      "before": "f5e45c5717170016a7e2731a658ce0b8516bf7be42c478014ff84c77849b0043",
+      "after": "17c7a3e0c5c46af72a8f3831af03f9a24fd2ce5fa01c4e78f6dbad4379b27666"
+    },
     "scripts/build-data.mjs": {
       "before": "02fc70c03e40320e4de587aa752ba8427e90e147555d20fe2ae56e6232b776e9",
       "after": "3d8d6cf5fe526a9e648fae3fba19e99b01af86fc97ebce52b6a6b1c047aff98a"
@@ -18,9 +26,13 @@
       "before": "97a57c5fe6b46ee8db07e18621f3c386d31a53b2d99ccab22fd7b6f7788a31df",
       "after": "f86f06dd85076e83329188d2777b10f17cc5fee345edd2a79a34460defbbcb40"
     },
+    "scripts/lib/ui-design-scope.mjs": {
+      "before": "8d22d20b68603430e544180080fabb8e27c8f4b815c4a5f1d0c5b8319669b0de",
+      "after": "b16c92cce1592bcd4324955b7c9544470e8df667e6dc3b08982a2b1381162807"
+    },
     "src/App.vue": {
       "before": "11ecc0d666913b094e58cc2be587306d29530478e37504f0af777ddac05a7bb2",
-      "after": "3d0a66daa603b2ef8d8402ca850bf199c6eeca8bb2d4105ea6b841809dc2959c"
+      "after": "1e076a8caa5714acf87df4939d6073e9fc1bcf051d6afafe35d9fd08cef94d0f"
     },
     "src/admin/data/model.js": {
       "before": "83f1a4f04057434bf524371756b28be176bbba93b54be11dbc78801cdf0a8e8a",
@@ -44,7 +56,11 @@
     },
     "src/components/SpeciesPage.vue": {
       "before": "b2f472060d1f5aba3b9e010cf58053496273b2984e6115998456382fb2f953a8",
-      "after": "9b9ec56c69ac87ea1e50dc2b0f84c9d914952c5614da8f6375de0dbebb625c04"
+      "after": "41a82eb4841092e058d4e19963f4989348727924fda22f2a6673a3d0cb29e267"
+    },
+    "src/components/areas/areas.css": {
+      "before": null,
+      "after": "d29f21a2aa1b3d281a50c3b5ff8b2503f538182e37c0f751990e3dc9fd1207ce"
     },
     "src/components/lesson/LessonView.vue": {
       "before": "755fed02c1f3fff6f46a1bca3095a10fa7fd02cc2d6dd2c4b5685d6ae1599c6b",
@@ -52,7 +68,7 @@
     },
     "src/components/map/MapSection.vue": {
       "before": "bd123fb53d8b632cf3ac10eb3699b75f57b345d4856188119c6afad64975fa71",
-      "after": "94ec691f660e6b4a978d07784f23cf10449452ecf7ef4df5cbab4393f4e98d09"
+      "after": "47d6bac03e2e036c4522dd035a84b1245cc32c9b564ffa474733c25edc4788ba"
     },
     "src/components/map/RegionMap.vue": {
       "before": "20ebf9f54fb62d77e1ee354a7de87276685b2095604b50518278147627f6def2",
@@ -60,7 +76,7 @@
     },
     "src/components/map/RegionPanel.vue": {
       "before": "191a01a574f81053eec27cac95a68b162673faee15dbbce148179c2ad4fa58a6",
-      "after": "c8a922ea053401fb12cfec387a259a4777abd292ff97dfe77ff96a47bc4d8a21"
+      "after": "4b5179bd2a07c14777ad7a2c3175ff0bcadca7f0d245f7ef6ab7ddf061b55929"
     },
     "src/components/map/RegionalSpecies.vue": {
       "before": "435959deb97a50c3b755a9dcbcca1f4974dde370f4a628947396dd4c91f5a3de",
@@ -94,6 +110,10 @@
       "before": null,
       "after": "c43d48cfeddfa580cd104d1346b0e748c93db1046667f74f3946732985a7f9bf"
     },
+    "src/data/catalog-search.js": {
+      "before": "ba46f48902949fa5c4a1d6a067b15072f9630cbdf3fac2898289bbf9e678f82b",
+      "after": "b682649a663a067ed8be5aa343a56452089198d829babd993600f49b959a1ff7"
+    },
     "src/data/presentation.js": {
       "before": "fe7e12f437887433412eabf075e261f888c77c5b3e71d3019cc51dfe738cd9ba",
       "after": "37c5c4f49ff776e9af53106370603c6f84847a41d8c489de7f3585b2bfb78c49"
@@ -124,19 +144,19 @@
     },
     "src/locales/en.json": {
       "before": "72005dde09c5fd226cbfcd0e50625dda288b150f75437f7dd23abcf46ee3af41",
-      "after": "13a92235b109c8fe0c8a8a63dbce2645d662b56e681172dd1400ad9567c1d6b7"
+      "after": "72182455cc67d21cac9f9d93b7f849fc2167577e786f42164746f1e9652f7130"
     },
     "src/locales/ky.json": {
       "before": "592e1c272f2bbf8db3b3296d48155cb1780e3746e5e9852031b35ec95fd16137",
-      "after": "ff87edf257783aa5ade33c5b312fa15d294abe399998a1b2f71ad114a88ae559"
+      "after": "c8e21adb435c868493d8d5552952fd04f7f96fc3a2a58d12e6451f5c083f9f91"
     },
     "src/locales/ru.json": {
       "before": "4d2462d84c84986ae9f2e4c5d7e9832b6ab42f8fc377f6ee2e7baff8be83bb44",
-      "after": "080d4d07293f177f7ab4f721274014a039e4cead2113699e8769d0a96a294c83"
+      "after": "78aff5ab94582b35c91018deacc812b1b5032e9ffb9ad48691df41eeb9f7e08a"
     },
     "src/locales/uz.json": {
       "before": "bcf31cd481b7bc3571d49adcbd150b08c07df768a480c2edbe6978b44b1ef8ee",
-      "after": "a82374cfc11ff0394117b548511586cfdfbe2afbae2246c9e0b50ee67152e7aa"
+      "after": "3b4165667a5b7246fd6a501b1c5ee0a7609665afa78c3e682388e1b5c32a630a"
     },
     "src/main.js": {
       "before": "9176b11f8d9e4a18893febbc31d09ea86f44d27066bdf20233b35e73b98a1621",
@@ -156,7 +176,7 @@
     },
     "vercel.json": {
       "before": "adac1eefcd81de206cb008d42c394719aeee0fd54ac3027827945e1bf69b79ef",
-      "after": "952c13e8b1c99b0ac39dc3429ad678e46a5b716a498f0d60b36fcda0f1c1b44c"
+      "after": "f18090dfa72b1d2367aece35eaa1620e747c4f51b5920c5e0ecfe632bce6911a"
     }
   }
 }

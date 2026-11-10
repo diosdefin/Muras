@@ -13,6 +13,8 @@ export const intentionalUiRevision = new Set([
   'src/components/map/MapSection.vue',
   'src/components/map/map.css',
   'src/data/catalog-pagination.js',
+  'src/data/catalog-search.js',
+  'scripts/admin-entry.mjs',
   'src/locales/en.json',
   'src/locales/ky.json',
   'src/locales/ru.json',

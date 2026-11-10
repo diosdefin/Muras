@@ -33,6 +33,22 @@
       "destination": "/index.html"
     },
     {
+      "source": "/territories",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/territories/",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/territories/:id",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/territories/:id/",
+      "destination": "/index.html"
+    },
+    {
       "source": "/admin",
       "destination": "/admin/index.html"
     },
