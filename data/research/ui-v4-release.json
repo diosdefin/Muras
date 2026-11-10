@@ -4,19 +4,15 @@
   "files": {
     "index.html": {
       "before": "9f1905801905eb96916ecae939a3a3ca0ed74a866b8c40b777b58b986f1e42b3",
-      "after": "fb9cf754c43b2ff1033980e5acd9aab80f178d7a2359887d049ee8c23e4a7f9d"
+      "after": "5a0cdee767de8340228ae7befcb5b0dd4b00229b175b5a9b849ab9ab643e5fad"
     },
     "public/data/quiz-extra.json": {
       "before": null,
       "after": "6f4695e2e35d1048daa0d5769b3d88569c750031cc0a0b84a6fa3181fb93930b"
     },
-    "public/favicon.svg": {
-      "before": "e29765329f2972ac1cc074f9b96d0ba1a1186524f9153086135bf52dc6bf1aaa",
-      "after": "ae1c89097ca5d6ce188a934a027059fa692864b001c233e9031db23beae2bea3"
-    },
     "scripts/admin-entry.mjs": {
       "before": "f5e45c5717170016a7e2731a658ce0b8516bf7be42c478014ff84c77849b0043",
-      "after": "17c7a3e0c5c46af72a8f3831af03f9a24fd2ce5fa01c4e78f6dbad4379b27666"
+      "after": "1c7d16cf602677fcc4ecaa734bc339d4f927ccaed68d968033ce83b5224449a6"
     },
     "scripts/build-data.mjs": {
       "before": "02fc70c03e40320e4de587aa752ba8427e90e147555d20fe2ae56e6232b776e9",
@@ -32,7 +28,7 @@
     },
     "src/App.vue": {
       "before": "11ecc0d666913b094e58cc2be587306d29530478e37504f0af777ddac05a7bb2",
-      "after": "1e076a8caa5714acf87df4939d6073e9fc1bcf051d6afafe35d9fd08cef94d0f"
+      "after": "6bede159233311e1088118dffde5cb0a2a8c3339c3a4b51d49323814b34f37bb"
     },
     "src/admin/data/model.js": {
       "before": "83f1a4f04057434bf524371756b28be176bbba93b54be11dbc78801cdf0a8e8a",
@@ -50,6 +46,10 @@
       "before": "9d345243a739c0c08293f0949bc2f0c521d4bd4d026a7136894e6d3a94b1efe9",
       "after": "57a5c9512ad165c2c20bfc36348eb17c7089cd2aa18d0a14515fec20684ac881"
     },
+    "src/components/SpeciesCard.vue": {
+      "before": "dd4275fa2c17dbe24c95ba1d549d96622c85ce4863f447dbc59c40e8c13b2cdc",
+      "after": "06a45a28112b061d37952f799bda5b7c6926a2c167ab2b835af748833ee2a625"
+    },
     "src/components/SpeciesModal.vue": {
       "before": "2d011ef82d0c61c0a25bb43c971be5993af7c8d29e4a3b0c051a438d652204b9",
       "after": "dfc87dbd7a53ad409213d9bc80a1f5f904eda22d79059cc00bf1bc3c14440de0"
@@ -58,13 +58,21 @@
       "before": "b2f472060d1f5aba3b9e010cf58053496273b2984e6115998456382fb2f953a8",
       "after": "41a82eb4841092e058d4e19963f4989348727924fda22f2a6673a3d0cb29e267"
     },
+    "src/components/SpeciesVisualization.vue": {
+      "before": "6d7d70c03818572ad6d42fa6e6d38ccbb0c7355153e22dca5566779e6a8fd4db",
+      "after": "4b22c278df09156effab001d3e5b1390f5d495919c08df94ec8a5f80f2373c1a"
+    },
     "src/components/areas/areas.css": {
       "before": null,
-      "after": "d29f21a2aa1b3d281a50c3b5ff8b2503f538182e37c0f751990e3dc9fd1207ce"
+      "after": "26d558141cbef5eca5af3eac27e30f24de6aaa2800145d6f5124cd04ab6d74b7"
     },
     "src/components/lesson/LessonView.vue": {
       "before": "755fed02c1f3fff6f46a1bca3095a10fa7fd02cc2d6dd2c4b5685d6ae1599c6b",
       "after": "e038d23b5f204b25309ebffedc87f80567c302003cd94219c911ac50607708dc"
+    },
+    "src/components/map/MapOverviewPanel.vue": {
+      "before": "8315b84dd163768f16b5d4b2e93cecee15f2280ab16ab71ec13ded22f750d896",
+      "after": "3efb5315af0c40e079ccb8939bf0853b995525200bcd396cafec72bd9d4cffed"
     },
     "src/components/map/MapSection.vue": {
       "before": "bd123fb53d8b632cf3ac10eb3699b75f57b345d4856188119c6afad64975fa71",
@@ -80,7 +88,7 @@
     },
     "src/components/map/RegionalSpecies.vue": {
       "before": "435959deb97a50c3b755a9dcbcca1f4974dde370f4a628947396dd4c91f5a3de",
-      "after": "35217ad045c72723a413aaf99a011c47c16d49a220c20529021c65cfed47e7f7"
+      "after": "a6e0f94d5b4166809d7f0af1e00bb0eef86d90d0ec4f4ad6ba984cf4ffa5570b"
     },
     "src/components/map/map.css": {
       "before": "70e3e25da0dd23e516da9c06cb749cc2e5dc59f6bfed7ab6368329c9f41d7f88",
@@ -144,23 +152,23 @@
     },
     "src/locales/en.json": {
       "before": "72005dde09c5fd226cbfcd0e50625dda288b150f75437f7dd23abcf46ee3af41",
-      "after": "72182455cc67d21cac9f9d93b7f849fc2167577e786f42164746f1e9652f7130"
+      "after": "64475d33856dde35a14a1422dfa6472540067db430218935de3144272b00ac1e"
     },
     "src/locales/ky.json": {
       "before": "592e1c272f2bbf8db3b3296d48155cb1780e3746e5e9852031b35ec95fd16137",
-      "after": "c8e21adb435c868493d8d5552952fd04f7f96fc3a2a58d12e6451f5c083f9f91"
+      "after": "1ac2a601c22f42d37e637c07477c9aac4f5550892bea37a91d8ac3351f51c45c"
     },
     "src/locales/ru.json": {
       "before": "4d2462d84c84986ae9f2e4c5d7e9832b6ab42f8fc377f6ee2e7baff8be83bb44",
-      "after": "78aff5ab94582b35c91018deacc812b1b5032e9ffb9ad48691df41eeb9f7e08a"
+      "after": "019017941ab5c03c7d19f23ab6f539a00163e601b8077e59d2d6608888aa0d59"
     },
     "src/locales/uz.json": {
       "before": "bcf31cd481b7bc3571d49adcbd150b08c07df768a480c2edbe6978b44b1ef8ee",
-      "after": "3b4165667a5b7246fd6a501b1c5ee0a7609665afa78c3e682388e1b5c32a630a"
+      "after": "1a755924fbbcb4c72d72d227a19104e448749d9cd6cf90ef2bbd51439fd54a14"
     },
     "src/main.js": {
       "before": "9176b11f8d9e4a18893febbc31d09ea86f44d27066bdf20233b35e73b98a1621",
-      "after": "bab0e10c0dfe078c382f169ca19dfcaf258050c33881893d35708266b3d53dd6"
+      "after": "339dc6d92c8c697358390695f5752ec02efba7225c6c00560e6d262ef0620561"
     },
     "src/styles/mobile.css": {
       "before": null,

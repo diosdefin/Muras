@@ -2,6 +2,7 @@
 import { computed, onMounted, onUnmounted, ref } from 'vue'
 import { useLocale } from '../../composables/useLocale.js'
 import { availableGroups } from '../../data/species-groups.js'
+import ThumbPicture from '../ThumbPicture.vue'
 import { groupLabel, publicImageUrl, regionLabel, speciesPhoto, PLACEHOLDER } from '../../data/presentation.js'
 
 const { t, language } = useLocale()
@@ -65,9 +66,10 @@ onUnmounted(() => window.clearInterval(rotation))
         <div v-if="regionGroups.length" class="map-region-gallery" :aria-label="t('mapPreview.groups')">
           <div v-for="item in regionGroups" :key="item.group" class="map-region-thumb">
             <div class="map-region-avatar">
-              <img :src="imageFailures[item.group] ? PLACEHOLDER : publicImageUrl(speciesPhoto(item.representative)?.path)"
+              <ThumbPicture v-if="!imageFailures[item.group] && speciesPhoto(item.representative)?.path" :path="speciesPhoto(item.representative).path"
                 :alt="groupLabel({ group: item.group }, language)" width="60" height="60" loading="lazy" decoding="async"
                 @error="imageFailures[item.group] = true" />
+              <img v-else :src="PLACEHOLDER" :alt="groupLabel({ group: item.group }, language)" width="60" height="60" loading="lazy" decoding="async" />
               <span class="map-region-badge" :aria-label="String(item.count)">{{ item.count }}</span>
             </div>
             <span>{{ groupLabel({ group: item.group }, language) }}</span>

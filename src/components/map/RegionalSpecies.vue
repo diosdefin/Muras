@@ -4,6 +4,7 @@ import ScientificText from "../ScientificText.vue"
 import SourceLink from '../SourceLink.vue'
 import { useLocale } from '../../composables/useLocale.js'
 import { computed, ref } from 'vue'
+import ThumbPicture from '../ThumbPicture.vue'
 import { publicImageUrl, speciesName, speciesNameLanguage, speciesPhoto, PLACEHOLDER } from '../../data/presentation.js'
 
 const { t, language } = useLocale()
@@ -33,8 +34,9 @@ const evidenceText = computed(() => {
       </svg>
     </button>
     <div class="regional-species-heading">
-      <img :src="failed ? PLACEHOLDER : publicImageUrl(photo?.path)" width="96" height="96" loading="lazy" decoding="async"
+      <ThumbPicture v-if="!failed && photo?.path" :path="photo.path" width="96" height="96" loading="lazy" decoding="async"
         :alt="photo && !failed ? t('ui.m078', { p0: speciesName(entry.species, language) }) : t('ui.m121')" @error="failed = true" />
+      <img v-else :src="PLACEHOLDER" width="96" height="96" loading="lazy" decoding="async" :alt="t('ui.m121')" />
       <div><h4 :lang="speciesNameLanguage(entry.species, language)">{{ speciesName(entry.species, language) }}</h4><p class="scientific-name" lang="la">{{ entry.species.scientificName }}</p></div>
     </div>
     <p v-if="showRegion || observed" class="map-observation"><template v-if="showRegion">{{ regionLabel(entry.evidence.regionId, language) }}</template><template v-if="showRegion && observed"> · </template><template v-if="observed">{{ t('mapUI.observed') }} <time :datetime="String(observed)">{{ observed }}</time></template></p>

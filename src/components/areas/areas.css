@@ -42,3 +42,8 @@ header.page-header nav.main-navigation { overflow: visible; }
   .page-header .nav-more-btn { gap: 4px; }
 }
 @media (prefers-reduced-motion: reduce) { .nav-more-menu { animation: none; } .nav-more-chevron { transition: none; } }
+
+/* "More" menu action (offline save) looks like the links above it. */
+.page-header button.nav-more-item { appearance: none; width: 100%; margin: 2px 0 0; border: 0; border-top: 1px solid var(--line); border-radius: 0 0 8px 8px; background: none; color: inherit; font-family: inherit; text-align: left; align-items: center; cursor: pointer; }
+.page-header button.nav-more-item:hover:not(:disabled) { background: var(--paper); }
+.page-header button.nav-more-item:disabled { opacity: .7; cursor: progress; }

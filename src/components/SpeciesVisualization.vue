@@ -7,16 +7,21 @@ import { usePopulationPresentation } from '../composables/usePopulationPresentat
 import { useImageVisualization } from '../composables/useImageVisualization.js'
 import { ANIMATION_DURATION } from '../data/visualization/engine.js'
 import PopulationInfo from './PopulationInfo.vue'
+import { thumbPaths } from '../data/photo-thumbs.js'
+import { usePhotoQuality } from '../composables/usePhotoQuality.js'
 
 const { t, language, uiMessage } = useLocale()
 const props = defineProps({ photo: { type: Object, default: null }, name: { type: String, required: true },
   population: { type: Object, default: null }, sources: { type: Array, default: () => [] },
   populationPublication: { type: Object, default: null }, scientificName: { type: String, default: '' }, taxonIds: { type: Array, default: () => [] }, speciesId: { type: String, default: '' }, previewUrl: { type: String, default: null } })
+const { lowData, fullRequested, requestFull } = usePhotoQuality()
 const canvas = ref(null), container = ref(null), failed = ref(false), active = ref(false)
 // The same validated adapter serves local JSON and future REST records; a type string is not approval.
 const presentation = usePopulationPresentation(props, language)
 const known = computed(() => presentation.value.type !== 'unknown')
-const input = computed(() => ({ path: props.previewUrl || (props.photo ? publicImageUrl(props.photo.path) : null),
+// On a slow or data-saving connection the lightweight copy is shown first; the visitor can ask for the original.
+const lightweight = computed(() => lowData.value && !fullRequested.value && props.photo ? thumbPaths(props.photo.path) : null)
+const input = computed(() => ({ path: props.previewUrl || (props.photo ? publicImageUrl(lightweight.value ? lightweight.value.webp : props.photo.path) : null),
   composition: imageComposition(props.photo), type: presentation.value.type, id: props.speciesId, estimateKey: presentation.value.candidateFingerprint || '' }))
 const { state, start, restore } = useImageVisualization(canvas, container, input)
 const canvasVisible = computed(() => active.value && known.value && state.value.mode !== 'photo' && !state.value.error)
@@ -46,6 +51,7 @@ watch(() => state.value.error, value => { if (value) active.value = false })
           :aria-hidden="!canvasVisible" :aria-label="`${name} — ${t('ui.m256')}`">{{ t('ui.m257') }}</canvas>
       </div>
     </figure>
+    <button v-if="lightweight && !previewUrl" class="visualization-button photo-full-button" type="button" @click="requestFull">{{ t('photo.loadFull') }}</button>
     <button class="visualization-button" type="button" :disabled="!photo || failed" :aria-pressed="active" @click="toggle">
       {{ active ? t('visualization.restore') : t('visualization.start') }} <span aria-hidden="true">{{ active ? '↗' : '↘' }}</span>
     </button>

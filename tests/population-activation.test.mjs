@@ -66,7 +66,9 @@ test('scientific records, images, licences, archive, adapter and all 208 regiona
     // Additional quiz questions are published as a separate educational file; scientific data stay untouched.
     (status==='A'&&path==='public/data/quiz-extra.json') ||
     // Protected territories are a separate section; the species catalogue is untouched.
-    (status==='A'&&(path==='public/data/protected-areas.json'||path.startsWith('data/protected-areas/')||path.startsWith('public/images/areas/')))
+    (status==='A'&&(path==='public/data/protected-areas.json'||path.startsWith('data/protected-areas/')||path.startsWith('public/images/areas/'))) ||
+    // Offline support: icons, lightweight photo copies, manifest and service worker; no scientific data.
+    (status==='A'&&(path.startsWith('public/images/thumbs/')||path.startsWith('public/icons/')||path==='public/manifest.webmanifest'||path==='public/sw.js'))
  }
  assert.deepEqual(changes.filter(line=>!allowedChange(line)),[])
  // Attributes affect only these fingerprinted, unpublished research JSONs.
@@ -88,6 +90,9 @@ test('activation adds only three localized messages and leaves catalogue cards, 
   for(const [key,value]of Object.entries(before))assert.equal(after[key],value,lang+':'+key)
   assert.deepEqual(Object.keys(after).filter(k=>!(k in before)).sort(),['visualization.restore','visualization.start','visualization.unknown'])
  }
- const stable=['src/App.vue','src/components/SpeciesCard.vue','src/components/lesson/LessonPhoto.vue','src/components/PopulationInfo.vue','src/data/visualization/environment.js','src/data/geography/repository.js']
+ const stable=['src/App.vue','src/components/lesson/LessonPhoto.vue','src/components/PopulationInfo.vue','src/data/visualization/environment.js','src/data/geography/repository.js']
+ // The card keeps its design; only its photo element may use a lightweight copy (see ThumbPicture.vue).
+ const cardStyle=text=>{const lf=text.replace(/\r\n/g,'\n');return lf.slice(lf.indexOf('<style'))}
+ assert.equal(cardStyle((await bytes('src/components/SpeciesCard.vue')).toString('utf8')),cardStyle(historicalBytes(BASE,'src/components/SpeciesCard.vue').toString('utf8')))
  for(const p of stable)assert.deepEqual((POPULATION_PUBLICATION_FILES.has(p)?historicalBytes(POPULATION_PUBLICATION_BASE,p):await bytes(p)).toString('utf8').replace(/\r\n/g,'\n'),historicalBytes(BASE,p).toString('utf8'),p)
 })

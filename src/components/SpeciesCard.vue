@@ -2,6 +2,7 @@
 import ScientificText from './ScientificText.vue'
 import { useLocale } from '../composables/useLocale.js'
 import { computed, ref, watch } from 'vue'
+import ThumbPicture from './ThumbPicture.vue'
 import { compositionStyle } from '../data/image-composition.js'
 import { groupLabel, publicImageUrl, speciesName, speciesNameLanguage, speciesPhoto, statusDetails } from '../data/presentation.js'
 
@@ -20,10 +21,11 @@ watch(imagePath, () => { imageFailed.value = false })
 <template>
   <article class="species-card">
     <div class="card-image">
-      <img v-if="!imageFailed" :src="imagePath" :style="compositionStyle(photo, 'card')"
+      <ThumbPicture v-if="!imageFailed && photo?.path" :path="photo.path" :style="compositionStyle(photo, 'card')"
         :width="photo?.width || 800" :height="photo?.height || 600" loading="lazy" decoding="async"
         :alt="photo ? t('ui.m078', { p0: speciesName(species, language) }) : t('ui.m227')"
         @error="imageFailed = true" />
+      <img v-else-if="!imageFailed" :src="imagePath" width="800" height="600" loading="lazy" decoding="async" :alt="t('ui.m227')" @error="imageFailed = true" />
       <p v-else class="image-fallback">{{ t('ui.m228') }}</p>
       <div class="card-overlay-meta">
         <span class="card-overlay-group">{{ groupLabel(species, language) }}</span>

@@ -4,6 +4,7 @@ import { useLocale } from '../../composables/useLocale.js'
 import CustomSelect from '../CustomSelect.vue'
 import GroupFilter from '../GroupFilter.vue'
 import AreaPlaceholder from './AreaPlaceholder.vue'
+import ThumbPicture from '../ThumbPicture.vue'
 import { publicImageUrl, regionLabel } from '../../data/presentation.js'
 import { AREA_REGIONS, areaDescription, areaName, filterAreas, primaryPhoto, sortAreas } from '../../data/protected-areas.js'
 
@@ -85,7 +86,7 @@ function reset() { type.value = 'ALL'; region.value = 'ALL' }
       <div v-else class="catalog-grid-viewport"><div class="species-grid catalog-custom-grid" :data-columns="columns" :style="{ '--catalog-columns': columns }">
         <article v-for="area in visible" :key="area.id" class="species-card territory-card">
           <div class="card-image">
-            <img v-if="primaryPhoto(area)" :src="publicImageUrl(primaryPhoto(area).path)" :width="primaryPhoto(area).width" :height="primaryPhoto(area).height"
+            <ThumbPicture v-if="primaryPhoto(area)" :path="primaryPhoto(area).path" :width="primaryPhoto(area).width" :height="primaryPhoto(area).height"
               loading="lazy" decoding="async" :alt="primaryPhoto(area).caption?.[language] || primaryPhoto(area).caption?.ru || areaName(area, language)" />
             <AreaPlaceholder v-else :label="t(typeKey[area.type])" :caption="t('areas.noPhoto')" />
             <div class="card-overlay-meta">

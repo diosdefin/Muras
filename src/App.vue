@@ -35,6 +35,7 @@ import { createSearchIndex, searchSpecies } from './data/catalog-search.js'
 import { validateQuestions } from './data/quiz/model.js'
 // Phone adaptation is imported last so it follows every component stylesheet.
 import './styles/ornaments.css'
+import { useOfflineSave } from './composables/useOfflineSave.js'
 import './styles/mobile.css'
 
 const { t, language, siteLanguage, setLanguage } = useLocale()
@@ -336,6 +337,7 @@ onUnmounted(() => {
   viewportQuery?.removeEventListener('change', updateViewport)
 })
 // "More" menu in the header: lesson mode and support live in one dropdown to keep the navigation short.
+const offline = useOfflineSave()
 const moreOpen = ref(false)
 const moreRef = ref(null)
 const moreActive = computed(() => ['lesson', 'support'].includes(activeView.value))
@@ -373,6 +375,9 @@ watch(activeView, () => { moreOpen.value = false })
         </button>
         <div v-if="moreOpen" id="nav-more-menu" class="nav-more-menu">
           <a class="header-link nav-more-item" href="#lesson" :aria-current="activeView === 'lesson' ? 'page' : undefined" @click.prevent="moreOpen = false; showView('lesson')">{{ t('ui.m012') }}</a>
+          <button v-if="offline.available.value" type="button" class="header-link nav-more-item nav-more-action" :disabled="offline.state.value === 'working'" @click="offline.save()">
+            {{ offline.state.value === 'working' ? t('offline.working', { p0: offline.progress.value }) : offline.state.value === 'done' ? t('offline.done') : offline.state.value === 'error' ? t('offline.error') : t('offline.save') }}
+          </button>
           <a class="header-link nav-more-item" href="#support" :aria-current="activeView === 'support' ? 'page' : undefined" @click.prevent="moreOpen = false; openSupport()">{{ t('ui.m013') }}</a>
         </div>
       </div>
