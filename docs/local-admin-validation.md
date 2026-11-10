@@ -111,7 +111,7 @@ node tests/browser/local-admin.mjs
 node tests/browser/local-admin-production.mjs
 ```
 
-Playwright использован из доступного окружения Codex; новая npm-зависимость проекта не добавлялась. Логи и screenshots находятся в игнорируемой `.generated/local-admin/`. Порядок Git commit/push и осознанного обновления Vercel описан в README; автоматически эти действия не выполняются.
+Playwright использован из окружения разработки; новая npm-зависимость проекта не добавлялась. Логи и screenshots находятся в игнорируемой `.generated/local-admin/`. Порядок Git commit/push и осознанного обновления Vercel описан в README; автоматически эти действия не выполняются.
 
 ## Изменённые файлы
 
