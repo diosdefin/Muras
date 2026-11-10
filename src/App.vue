@@ -469,7 +469,7 @@ watch(activeView, () => { moreOpen.value = false })
   <footer class="page-footer">
     <div class="page-container footer-inner">
       <p><span class="footer-brand">MURAS</span> {{ t('ui.m041') }}</p>
-      <p class="footer-note">Полотова А.</p>
+      <p class="footer-note"><a href="mailto:danielaybekuulu@gmail.com" style="color:inherit">danielaybekuulu@gmail.com</a></p>
     </div>
   </footer>
   <SpeciesModal v-if="selectedSpecies" :species="selectedSpecies" :population-publication="populationContexts.get(selectedSpecies.id) || null" :content-language="contentLanguage" @close="closeSpecies" @support="openSupport" @details="openSpeciesPage" />
